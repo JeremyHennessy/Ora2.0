@@ -2,8 +2,6 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Verified state
-
 ## User-facing run summaries (standing preference)
 
 After every run, provide a plain-English, self-contained summary: the question
@@ -15,7 +13,7 @@ Distinguish software validation from scientific results and coupon counts from
 independent populations. Report unsuccessful attempts too. This is a reporting
 preference, not authorization for unattended scheduling or recurring execution.
 
-## Verified state continued
+## Verified state
 
 - CLOSURE-02 implementation, protocol and strengthened auditor entered main through [PR #11](https://github.com/JeremyHennessy/Ora2.0/pull/11), merge `b279f729e5a30a199bbfff91f6ddd95c212bfea0`. [PR #12](https://github.com/JeremyHennessy/Ora2.0/pull/12) carries the final custodian verification and this plan.
 - Original execution `675b786a90af7d8e23f51f6eedf30a7fe03ddb81`: 960 records, 57,600 traces, 157/192 eligible worlds, 136 initial tests. Independent original ZIP/source/raw-count recount verified all hashes and recovery 70 / 50 / 71 / 52 / 148 in shell_effect / shell_inert / ghost_effect / ghost_inert / no_shell order.
@@ -61,6 +59,32 @@ Design implications:
 - Keep living organization, individual learning and consciousness as distinct hypotheses. Changing a catalog classification is not an evolved computational capability.
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
+
+**Current gate: EXPOSURE-01 completed.** The [precommitted exposure protocol](CLOSURE-03-EXPOSURE-PROTOCOL.md)
+and independent checker diagnose post-damage applicability using fresh seeds16..23.
+[Run summary and receipt](CLOSURE-03-EXPOSURE-RECEIPT.md):16 paired snapshots
+from8 seeds; funded setting5/8 ready for paired paid controls, of which4/8 also
+eligible for the earlier repair assay; resource-free setting0/8 ready. Thirty
+externally scheduled coupon records validate10 paid suppressions and exact
+triplet material/fuel matching. This is not spontaneous self-restoration.
+Windows172 tests, exact raw/manifest/audit replay; sources and evidence on D:.
+
+**Next scientific step:** freeze a separate natural-event exposure/causal
+study before running fresh development seeds. Measure first eligible birth
+opportunities, time/exposure denominators and all unavailable/extinct worlds;
+select interventions from structural information at a predeclared time.
+Do not schedule favorable repair encounters or condition claims on successful
+worlds. Keep the frozen pilot, diagnostic and old reserved8000..8063 panel
+unchanged. A future full restoration contrast requires observed natural
+exposure, equal paid intervention work and explicit trajectory-budget limits.
+Later inherited group function/EERC is a separate gate.
+
+Latest AI-Research intake `79fd6d19502f52b9f238bfad50b0315df0738271`: inspected
+the new catalog-growth testing change; no new scientific result changes this
+decision. AI-Research remains separate and unmodified.
+
+The following earlier gates are retained history; the current step above
+supersedes their next-action wording.
 
 **2026-10-08 development gate completed:** the [finite pilot protocol](CLOSURE-03-PROTOCOL.md)
 was frozen before implementation. A development-only simulator and independent
