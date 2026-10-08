@@ -107,6 +107,8 @@ class World:
         self.free_units = set(range(len(founder_ops), material_units))
         self.genesis_energy = initial_energy + ENERGY_PER_FOOD * (self.food_a + self.food_b)
         self.genesis_material = material_units
+        self.initial_food_a = self.food_a
+        self.initial_food_b = self.food_b
         founder_tape = tuple(Gene(op, i) for i, op in enumerate(founder_ops))
         self.organisms: dict[int, Organism] = {
             0: Organism(0, founder_tape, initial_energy, 0, None, 0)
@@ -163,6 +165,14 @@ class World:
             raise AssertionError(f"Resource violation: material {material_residual}, energy {energy_residual}")
         if len(self.organisms) > self.population_limit:
             raise AssertionError("Population exceeded physical cap")
+        birth_authorized_ids = {0} | {b["child_id"] for b in self.births}
+        if not set(self.organisms).issubset(birth_authorized_ids):
+            raise AssertionError("Unregistered live organism without executed birth")
+        for org in self.organisms.values():
+            if org.organism_id != 0 and (
+                org.parent_id is None or org.organism_id not in birth_authorized_ids
+            ):
+                raise AssertionError("Unverified descendant ancestry")
         return material_residual, energy_residual
 
     def die(self, org: Organism, reason: str) -> None:
@@ -330,10 +340,6 @@ class World:
         while self.tick_count < maximum_ticks and self.organisms:
             self.execute_one()
         copied = sum(1 for e in self.events if e["kind"] == "COPY_WRITE")
-        food_consumed_a = (
-            (12 if self.variant != "no_food" else 0) - self.food_a
-            if False else None
-        )
         return {
             "seed": self.seed,
             "variant": self.variant,
@@ -349,6 +355,8 @@ class World:
             "failed_divisions": self.failed_divisions,
             "remaining_food_a": self.food_a,
             "remaining_food_b": self.food_b,
+            "consumed_food_a": self.initial_food_a - self.food_a,
+            "consumed_food_b": self.initial_food_b - self.food_b,
             "remaining_material": len(self.free_units),
             "heat": self.heat,
             "max_material_residual": self.material_residual_max,
@@ -456,6 +464,8 @@ def study(output: Path, seeds: list[int], revision: str = "unspecified") -> dict
         and b["child_genome_ops"]
             == birth_ids[(b["seed"], b["parent_id"])]["child_genome_ops"]
     ]
+    with (output / "events.jsonl").open(encoding="utf-8") as events_input:
+        total_event_count = sum(1 for _ in events_input)
     output_summary = {
         "experiment": "AL02-COPY",
         "status": "engineered_virtual_replicator_not_artificial_life",
@@ -475,9 +485,7 @@ def study(output: Path, seeds: list[int], revision: str = "unspecified") -> dict
         "births_sha256": digests["births.jsonl"].hexdigest(),
         "events_sha256": digests["events.jsonl"].hexdigest(),
         "total_births": len(all_births),
-        "total_recorded_events": sum(
-            1 for _ in (output / "events.jsonl").open(encoding="utf-8")
-        ),
+        "total_recorded_events": total_event_count,
         "meaning": (
             "Positive outcomes can demonstrate executed copying and heritable "
             "opcode changes inside a deliberately designed interpreter, NOT "
