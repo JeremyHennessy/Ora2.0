@@ -60,6 +60,36 @@ Design implications:
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
 
+**Current gate: INTERFACE-01 completed, access exercised but not sustained.**
+[Frozen protocol](INTERFACE-01-OPPORTUNITY-PROTOCOL.md) and
+[receipt](INTERFACE-01-OPPORTUNITY-RECEIPT.md):16 fresh initializations80..95,
+two material settings, five arms,64 ticks,32 seed/regime records/160 correlated
+receipts. Funded active16/16 constructed and converted,109 carriers/136
+conversions;ghost16/16 constructed but zero converted. All material0 arms had
+zero construction/conversion. All work banks reached zero by the endpoint.
+32/32 fixed histories and32/32 retrospective source-yoke states/costs matched.
+195 Windows tests, independent complete regeneration, exact replay and17-file
+same-D restore passed. This is installed resource access without actor/genome,
+autonomous constructor, production closure, repair or organismhood.
+
+**Next scientific step:** close this access-opportunity assay and specify a
+physical constructor/production-network candidate before coding or more
+science runs. Require a system-produced material/work-accounted component for
+interface assembly and logged dependencies for its own production. Direct
+construction from a shared free-material bank is the null. Precommit targeted
+constructor impairment, matched paid damage and external constructor/source
+controls, natural opportunities and finite limits. Establish paid constructor
+production before any repair endpoint; use a separately registered generator
+without success-filtering, old-seed tuning or longer horizons. No held-out
+confirmation of installed access is justified. Genomes, offspring and memory
+are later questions, not automatically combined modules.
+
+AI-Research054f0567 unchanged at intake; Pass14 remains processed research and
+unimplemented EERC-R hypotheses, not Ora reproduction. Old source/data and
+reserved8000..8063 preserved. Off-D backup, power loss and isolation remain open.
+
+Earlier gates below are retained history, superseded by this current decision.
+
 **Current gate: SUBSTRATE-01 budget calibration completed.** The
 [precommitted comparison](SUBSTRATE-01-BUDGET-PROTOCOL.md) and
 [receipt](SUBSTRATE-01-BUDGET-RECEIPT.md) contain63 authored receipts, no new
