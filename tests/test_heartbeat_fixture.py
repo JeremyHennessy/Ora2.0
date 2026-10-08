@@ -3,6 +3,8 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
+from threading import Barrier
 from datetime import timedelta
 from experiments import heartbeat_fixture as worker
 from experiments import heartbeat_observer as observer
@@ -20,6 +22,25 @@ def rewrite(path, frames):
 
 
 class HeartbeatTests(unittest.TestCase):
+    def test_two_simultaneous_writers_admit_exactly_one_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path, barrier = Path(tmp)/"competing", Barrier(2)
+            def launch(name):
+                barrier.wait(timeout=10)
+                return worker.run(path,name,"a"*40,4,4)
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                futures = [pool.submit(launch,name) for name in ("one","two")]
+                admitted, rejected = [], 0
+                for future in futures:
+                    try:
+                        admitted.append(future.result(timeout=20))
+                    except FileExistsError:
+                        rejected += 1
+            self.assertEqual((len(admitted),rejected),(1,1))
+            report = observer.inspect(path)
+            self.assertEqual(report["world_id"],admitted[0]["state"]["world_id"])
+            self.assertEqual(report["verified_simulation_tick"],4)
+
     def test_energy_pause_quota_identity_and_read_only_observer(self):
         with tempfile.TemporaryDirectory() as tmp:
             for name, work, ticks, pause, final, status in (("energy",12,32,None,12,"stopped"),("pause",12,32,5,5,"paused"),("quota",20,7,None,7,"stopped"),("empty",0,32,None,0,"stopped")):
