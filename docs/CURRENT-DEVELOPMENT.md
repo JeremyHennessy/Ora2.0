@@ -82,6 +82,26 @@ is justified by a zero-pair causal comparison. Heredity/EERC remains separate.
 AI-Research checked again at intake: unchanged79fd6d19502f52b9f238bfad50b0315df0738271.
 No new processed research or Ora reproduction altered this experiment.
 
+At the final research checkpoint, AI-Research advanced to
+`9eb921bfbd96f8348ec4ed76d0026a07c4ba4d3e`. Read the complete
+[Pass-12 handoff](https://github.com/JeremyHennessy/AI-Research/blob/9eb921bfbd96f8348ec4ed76d0026a07c4ba4d3e/docs/artificial-life/59-pass12-research-handoff.md),
+[Pass-13 handoff](https://github.com/JeremyHennessy/AI-Research/blob/9eb921bfbd96f8348ec4ed76d0026a07c4ba4d3e/docs/artificial-life/65-pass13-research-handoff.md),
+and their external-trace/selective-inheritance and circuit-shortcut syntheses
+(documents64 and63). Hosted offline validation at that exact revision passed.
+These are processed literature reviews and prospective hypotheses; no Ora
+experiment or independent paper reproduction was supplied or performed here.
+
+The new EERC-T v3 proposal makes costly environmental traces and selective
+history inheritance competing candidates, preserving earlier proposals. Carry
+its causal distinctions into the next substrate assessment: trace authorship,
+production/readout costs, fixed-physics/reflex comparators, false/foreign traces
+and resource reversal before any inheritance gate. Evaluate alternatives
+against exposure adequacy and falsifiable controls; do not select an
+architecture because a memory analogy sounds promising. No trace/memory module
+or daughter mechanism is imported into this failed repair assay. The new
+research does not change NATURAL-01's zero-exposure result or unlock held-out
+confirmation. AI-Research remains separate and unmodified.
+
 Earlier next-action text below is retained history and is superseded by the
 current gate and decision above.
 

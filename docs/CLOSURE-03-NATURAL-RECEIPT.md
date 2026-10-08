@@ -92,5 +92,27 @@ process-population checkpoint restart remain unverified. No model API, paid
 service, self-hosted runner or legacy Ora change was introduced.
 
 Ora2.0 main intake `93d06b8`; AI-Research remained
-`79fd6d19502f52b9f238bfad50b0315df0738271` at this checkpoint. No new processed
-research changed the decision; EERC remains a separate untested hypothesis.
+`79fd6d19502f52b9f238bfad50b0315df0738271` at experiment intake.
+
+## Final research checkpoint, after the frozen experiment
+
+AI-Research then advanced to `9eb921bfbd96f8348ec4ed76d0026a07c4ba4d3e`.
+Read its complete Pass-12/13 handoffs and the external-trace/selective-inheritance
+and circuit-shortcut syntheses (documents59,65,64,63); hosted offline validation
+at that revision passed. This intake is repository research review, not an
+independent replication of the underlying papers or a new Ora result.
+
+The new EERC-T v3 hypothesis suggests costly environmental traces and selective
+state inheritance as candidates for future discrimination. Its fixed-physics,
+false-trace and resource-reversal comparisons inform the later substrate
+assessment; they do not establish that adding memory fixes this law. No new
+mechanism, world, seed or outcome was added after inspection. First assess
+whether a substrate permits enough natural exposure for a causal test, then
+register competing mechanisms and controls before execution. The frozen
+protocol and all experimental bytes remain unchanged; EERC is unimplemented.
+
+Same-drive evidence archive SHA256
+`ff724ad95837d2b2318831fdb4941a1acc3080662fc7828ad7e0afba7f45ead0`:
+`D:\OraLab\archives\closure03-natural-dev-20261008T174243Z-30507891-evidence.zip`.
+Fresh extraction matched all23 archived files byte for byte. This is a
+same-D restoration check, not protection against drive failure or power loss.
