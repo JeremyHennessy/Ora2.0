@@ -164,7 +164,7 @@ The user/local Codex **reported** commissioning an offline Windows 11 / Python 3
 
 New independent **engineering fixture** `experiments/checkpoint_pilot.py` uses the unchanged AL01-CAL reactor law (one seed, one variant) to demonstrate **immutable source/run identity, a validated event journal, atomic checkpoints containing PRNG state, last-checkpoint recovery plus journal replay, and refusal of corrupted or mismatched history**. Deliberately terminated subprocesses test interrupted-before-commit, interrupted-after-journal, and interrupted-after-checkpoint recovery.
 
-**GitHub-hosted Python 3.12.10 tests passed** including all previous research regressions. **Local Windows acceptance remains pending**, as do power-loss durability, persistent runtime isolation, unattended running, independent off-D backups and evidence of a living digital organism.
+**RUNTIME-01 now has two distinct evidence stages:** GitHub-hosted Python 3.12.10 tests passed, and **local Codex reported Windows 3.12.10 acceptance passed** at exact commit `205e0030de07986ef4244f38f01890bdf62d5a10` (126 tests; exits 77/78/79; byte-identical recovery, corruption rejection, 300-second operator timeout). Cloud ChatGPT **did not inspect D:**; see [local acceptance receipt](docs/RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md). Power-loss durability, hardened isolation, unattended simulation and independent off-D backups remain unverified.
 
 - [Frozen recovery pilot protocol](docs/RUNTIME-01-CHECKPOINT-PROTOCOL.md)
 - [Operator-controlled Windows Codex handoff and acceptance matrix](docs/DESKTOP-CODEX-HANDOFF-2026-10-08.md)
@@ -173,6 +173,20 @@ New independent **engineering fixture** `experiments/checkpoint_pilot.py` uses t
 - [Passing GitHub RUNTIME-01 validation](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37802792212)
 
 This fixture is **not** CLOSURE-02's biological experiment and cannot validate persistence for any other experiment's specific state schema. No GitHub update is automatically applied or executed on the local machine.
+
+## CLOSURE-02 — Testing shell function independently of production costs
+
+Using a separate finite **9×9 reaction/diffusion experiment** with 64 fresh seed groups, three origin types and five controlled intervention arms, we tested whether actively produced M “shell” material improves internally restorative A/R chemistry when substrate spent on its synthesis is explicitly compared with a **ghost-shell W product**.
+
+Of **192 initial worlds, 157 were eligible** under the frozen pre-damage screen. Internal catalyst recovery (no shell appearance included in score) occurred in **70/157** shell-effect, **50/157** M-inert, **71/157** ghost-effect, **52/157** ghost-inert, and **148/157** no-shell conditions. Every one of the **960** run records and **57,600** step traces was retained, mass ledgers balanced, and the second execution matched the original raw hashes. **140 tests passed**.
+
+**Scientific interpretation:** an authored M shell suppresses migration and may help internal processes compared with inert M, but *producing additional M is not beneficial under this model*; the no-shell condition recovers best. This is a **qualified negative for the current shell-production mechanism**, not evidence against all possible digital life. No spatial organism, endogenous individuality, metabolism, reproduction or intelligence was demonstrated.
+
+- [Frozen CLOSURE-02 protocol](docs/CLOSURE-02-PROTOCOL.md)
+- [Complete results, confounds and evidence hashes](docs/CLOSURE-02-RESULTS.md)
+- [Independent archive auditor](experiments/closure02_audit.py)
+- [Next independent research direction: process organization](docs/CLOSURE-03-PROCESS-ORGANIZATION-DESIGN.md)
+- [Successful 140-test second trial and raw archive audit](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37807961098)
 
 ## Privacy
 
