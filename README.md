@@ -158,6 +158,22 @@ The original study passed **104 tests**; a second full replay with a separate ra
 - [Independent archived-data replay and diagnostics (110 tests)](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37796741385)
 - [Read-only diagnostics source](experiments/closure_spatial_diagnostics.py)
 
+## RUNTIME-01 — Bounded checkpoint and exact process restart
+
+The user/local Codex **reported** commissioning an offline Windows 11 / Python 3.12.10 lab under `D:\OraLab`. Cloud ChatGPT cannot access or inspect that desktop, and does not control local files.
+
+New independent **engineering fixture** `experiments/checkpoint_pilot.py` uses the unchanged AL01-CAL reactor law (one seed, one variant) to demonstrate **immutable source/run identity, a validated event journal, atomic checkpoints containing PRNG state, last-checkpoint recovery plus journal replay, and refusal of corrupted or mismatched history**. Deliberately terminated subprocesses test interrupted-before-commit, interrupted-after-journal, and interrupted-after-checkpoint recovery.
+
+**GitHub-hosted Python 3.12.10 tests passed** including all previous research regressions. **Local Windows acceptance remains pending**, as do power-loss durability, persistent runtime isolation, unattended running, independent off-D backups and evidence of a living digital organism.
+
+- [Frozen recovery pilot protocol](docs/RUNTIME-01-CHECKPOINT-PROTOCOL.md)
+- [Operator-controlled Windows Codex handoff and acceptance matrix](docs/DESKTOP-CODEX-HANDOFF-2026-10-08.md)
+- [Updated reported local runtime capabilities and blockers](docs/LOCAL-RUNTIME.md)
+- [Recovery pilot source](experiments/checkpoint_pilot.py) and [15 fault-injection tests](tests/test_checkpoint_pilot.py)
+- [Passing GitHub RUNTIME-01 validation](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37802792212)
+
+This fixture is **not** CLOSURE-02's biological experiment and cannot validate persistence for any other experiment's specific state schema. No GitHub update is automatically applied or executed on the local machine.
+
 ## Privacy
 
 This repository was **public when the founding scaffold was created**. Never commit credentials, private-machine addresses, personal files, checkpoint data containing sensitive information, private paper archives, or environment secrets. Review visibility before connecting a dedicated machine or any self-hosted runner.
