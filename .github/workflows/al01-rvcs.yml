@@ -1,0 +1,33 @@
+name: AL01-RVCS redundant-path stress test
+on:
+  push:
+    branches: [main, 'research/al01-redundancy-cutsets']
+    paths:
+      - 'experiments/redundancy_probe.py'
+      - 'tests/test_redundancy_probe.py'
+      - 'docs/AL01-RVCS-PROTOCOL.md'
+      - '.github/workflows/al01-rvcs.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  causal-cuts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify every simulator invariant
+        run: python -m unittest discover -s tests -v
+      - name: Run all 144 prespecified fresh networks and seven variants
+        run: python -m experiments.redundancy_probe --networks 9000:9144 --replicates 3 --output-dir runs/al01-rvcs --source-revision "$GITHUB_SHA"
+      - name: Preserve full synthetic graphs and event traces
+        uses: actions/upload-artifact@v4
+        with:
+          name: al01-rvcs-complete
+          path: runs/al01-rvcs/
+          retention-days: 90
