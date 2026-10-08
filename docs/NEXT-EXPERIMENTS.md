@@ -1,8 +1,8 @@
 # Next research experiments — independent, falsifiable and substrate-neutral
 
-**Planning status:** not run, not an authorization to claim digital life. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
+**Status:** AL01-DISCOVERY and its independent AL01-RVCS follow-up are complete as synthetic model studies; AL02-LINEAGE and AL07-IDENTITY remain proposals, with no artificial organism demonstrated. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
 
-The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) demonstrates the apparatus detects a **designed** catalytic cycle. The next tests must remove that scientific shortcut.
+The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) calibrated a designed feedback loop. [AL01-DISCOVERY](AL01-DISCOVERY-RESULTS.md) subsequently tested 80 unscreened catalytic networks and its [AL01-RVCS follow-up](AL01-RVCS-RESULTS.md) tested 144 fresh networks for nontrivial two-path redundancy, with both experiments preserving all negative outcomes. These are **toy reaction networks, not life**. Original future-study language below remains as an archived proposal; the action priority is updated at the end.
 
 ## Priority A — AL01-DISCOVERY: non-handpicked chemical feedback
 
@@ -58,9 +58,9 @@ Do not merge the chemistry world and instruction ecology into a hybrid until **e
 
 ## Prioritization
 
-1. AL01-DISCOVERY is the **next implementation candidate** because AL01-CAL already validates molecule-accounting and controlled knockout measurements.
-2. AL02-LINEAGE is the most informative **independent comparator**, with separately testable inheritance.
-3. AL07-IDENTITY should follow to prevent attractive patterns from being mislabeled organisms.
-4. Only then design cross-substrate experiments on resource exchange, repairable boundaries, ecological novelty and acquired memory.
+1. **Completed:** AL01-CAL, AL01-DISCOVERY and AL01-RVCS. Preserve protocol and outcome archives without after-the-fact threshold changes.
+2. **Next implementation candidate:** AL02-LINEAGE, a substrate-independent test of *executed* reproduction, transmitted differences and functional heredity without designer-supplied logic bonuses or LLM rewards.
+3. **Then:** AL07-IDENTITY to test whether apparently persistent digital structures are genuinely process-dependent rather than passive attractors.
+4. **Later:** independently justify any hybrid architecture on held-out functional evidence; avoid merging chemistry and hereditary programs merely because both seem promising.
 
 All hypotheses should remain open to null outcomes; no claim that intelligence must emerge from evolution.

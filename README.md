@@ -1,6 +1,6 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): independent artificial-life research laboratory with one completed, reproducible chemical-feedback measurement calibration. No artificial organism has been created, trained, or demonstrated to be alive.**
+**Status (2026-10-08): independent artificial-life research laboratory with three independently recorded chemical-feedback studies (one calibration and two exploratory random-network surveys). No artificial organism has been created, trained, or demonstrated to be alive.**
 
 ## Research mission
 
@@ -76,6 +76,16 @@ The second experiment sampled 80 unscreened six-species reaction graphs, preserv
 - [Full experimental results and confounds](docs/AL01-DISCOVERY-RESULTS.md)
 - [Original research hypotheses (untested)](docs/NEW-RESEARCH-HYPOTHESES.md)
 - [Run and archived artifacts](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37779761681)
+
+## Independent redundancy experiment (AL01-RVCS)
+
+Fresh random networks were required to have **three or more alternate incoming synthesis paths** to avoid the trivial single-producer confound. In 144 unscreened graph draws, 50 met the graph eligibility rule; 147 trajectories were evaluable. The precommitted strict redundancy signature occurred in **63/147 eligible paths**, with 22 of 144 networks meeting a 2-of-3 repeatability screen. The **29** suite tests passed, the full 3,024 variants and 166,320 step traces were hash-verified, and all negative outcomes were retained.
+
+This supports **redundancy-like synthetic chemistry**, **not living digital organization**. The next priority is independent testing of *hereditary reproduction* in a bounded program substrate, rather than optimizing further chemical results.
+
+- [Frozen experimental protocol](docs/AL01-RVCS-PROTOCOL.md)
+- [Measured result and confound analysis](docs/AL01-RVCS-RESULTS.md)
+- [Verified workflow and complete artifact](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37780922686)
 
 ## Privacy
 
