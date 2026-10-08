@@ -2,7 +2,43 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest engineering gate — HEARTBEAT-01 finite fixture completed
+## Latest engineering gate — HEARTBEAT-02 finite continuity completed
+
+[Precommitted contract](HEARTBEAT-02-CONTRACT.md)1a14b7b and
+[receipt](HEARTBEAT-02-RECEIPT.md): executed1b3d57b8 on existing Windows
+Python3.12.10;226 tests passed.11 forced exits across eight single-fault
+histories and one triple-fault continuing history recovered the exact
+uninterrupted authoritative state sequence. Pause/resume and post-lock recovery
+also matched;11 completed comparison histories total, zero new independent
+scientific initializations. Identity and every committed journal prefix retained;
+no double tick. Source/config/corrupt tail/competing process rejected without
+mutation, observer read-only, terminal resume idempotent.210-file same-D restore
+passed. Two initial development invocation/test failures are preserved, corrected
+and described in the receipt. No old law/data/interface/workflow changes.
+
+**Highest-value next science step:** freeze and check a competing paid
+material-turnover/compositional substrate against the shared-bank stationary
+constructor null. Require explicit precursor regeneration, finite usable energy,
+heat/waste and producer dependencies; no desired named cycle/free recycling,
+selected founder or observer reward. Precommit structural opportunities and
+controls before fresh finite sample execution; preserve reserved8000..8063.
+
+**Research update:** AI-Research advanced to46311a3f/Pass17; current documents88..94
+and exact successful CI37835990167/37835927369 reviewed. [Intake](RESEARCH-INTAKE-PASS17.md)
+qualifies material-rescue interpretation and shared enzyme trajectory provenance.
+Separate endogenous production, specific effects beyond generic subsidy, and
+eventual descendant reconstruction. No independent paper replication or new
+organism capability follows. CONSTRUCTOR-01 remains closed at0/16 renewed use.
+
+**Next engineering step:** adapt finite journal/checkpoint continuity to the
+chosen frozen scientific state schema, including full PRNG and object-ID history,
+with independent replay/control evidence. This counter has no population or
+stochastic continuity claim. Existing AL01 RUNTIME-01 remains a separate reference.
+Physical power-loss/storage-failure, independent off-D backup and hardened runtime
+isolation remain open. No service, automatic resume or unattended/external runtime
+activation; those require independent gates and separate authorization.
+
+## Earlier engineering gate — HEARTBEAT-01 finite fixture completed
 
 [Precommitted contract](HEARTBEAT-01-CONTRACT.md)bedd4457 and
 [acceptance receipt](HEARTBEAT-01-RECEIPT.md): executed6eaa8547 after preserving
