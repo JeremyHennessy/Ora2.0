@@ -8,6 +8,14 @@
 
 **New active priority:** preregister a distinct **AL03-ecological resource-feedback** experiment, including active producer-vs-consumer causation, external matched-resource counterfactual, explicit conservation, and all failed worlds, before implementing any new eco-world. The AI-Research compendium added potentially relevant Stringmol and autopoiesis reviews, but its latest inspected `c88ed39` catalog revision failed offline CI; treat those reviews as leads pending validation, not new established results.
 
+## Experimental checkpoint: AL03-NICHE completed
+
+[AL03-NICHE](AL03-NICHE-RESULTS.md) tested 240 wholly recorded worlds in a separate finite, resource-conserving ecological system; its intended B-feeding lineage appeared in 42 heritable, 12 nonheritable, 0 sink, 0 no-mutation and 25 no-replenishment worlds (of 48 per arm). The model has **predefined roles and engine-assigned offspring**, so these results are not equivalent to AL02's executed copying. All no-inflow worlds became extinct; all other worlds still relied on externally timed A supply and were evaluated only for a finite 480-step horizon. **Do not combine AL01, AL02, AL03 and AL07 success counts into an artificial-life badge.**
+
+**Best next scientific question (untested):** Would a downstream-feeding mutant lineage still show a survival advantage if resource-flow schedules were matched by a **physically consistent external A→B conversion** and if heritability/role frequencies were normalized for the different transition probabilities? Pre-register both independent controls, with exact energy accounting, seed families, and a held-out perturbation before changing the ecological simulator. Alternatively pursue a read-only evolutionary-effect decomposition using AL03's existing raw events first, rather than adding another mechanism to production.
+
+A more ambitious later hypothesis from the latest validated Stringmol/semantic-closure literature concerns genuinely inherited changes in **genotype interpretation**, as opposed to simple role mutation. Its feasibility and possible interpreter-failure cascades need separate cost-matched controls; no permission to run arbitrary host-executed evolving instructions follows from this idea.
+
 ## What we now know from independent Ora2.0 research
 
 - **AL01-CAL:** a deliberately seeded catalytic loop can causally recover after damage under an explicit nutrient feed.
