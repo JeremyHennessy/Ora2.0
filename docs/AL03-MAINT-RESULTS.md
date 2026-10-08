@@ -52,7 +52,7 @@ AL03-NICHE world data was regenerated using the originally frozen source, protoc
 
 ## Independent output checks and scope
 
-Archive `al03-maintance-complete` was independently inspected and contains two distinct output folders. Data SHA-256 and row counts:
+Archive `al03-maintenance-complete` was independently inspected and contains two distinct output folders. Data SHA-256 and row counts:
 
 | File | SHA-256 | Rows |
 | --- | --- | ---: |
@@ -62,8 +62,6 @@ Archive `al03-maintance-complete` was independently inspected and contains two d
 | `al03-cap-audit/world-cap-audit.jsonl` | `0383a57fea7752060035a28395ee00e3fba972b9f80b150959568d656874d8a4` | 240 |
 
 All three `al03-maint` hashes matched the emitted `summary.json`; old AL03 SHA records matched the independent historical audit. Tests include strict byte-identical baseline against original engine for development seed(s), trace-after-upkeep equality, forged material/energy rejection, replay and full-seed coverage.
-
-**Typo warning:** The GitHub artifact's authoritative name is `al03-maintenance-complete` (not the shortened spelling in any narrative). The data manifest and source SHA are the integrity authorities.
 
 ## Scientific interpretation
 
