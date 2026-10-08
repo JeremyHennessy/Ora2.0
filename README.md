@@ -1,6 +1,6 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): independently recorded catalytic-chemistry, executed-heredity, lineage-audit, resource-ecology and maintenance-stress studies. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
+**Status (2026-10-08): independent catalytic, heredity, ecological and spatial-organization experiments with reproducible negative controls. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
 
 ## Research mission
 
@@ -141,6 +141,20 @@ A read-only audit first regenerated and **matched all three original AL03 raw-fi
 - [Source code](experiments/maintenance_stress.py) · [Read-only retrospective analyzer](experiments/retrospective_saturation.py)
 - [Next research direction: endogenous organizational closure](docs/CLOSURE-01-RESEARCH-DESIGN.md)
 - [Successful preregistered GitHub Actions evidence](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37791242970)
+
+## CLOSURE-01-SPATIAL — Testing an apparently protective shell
+
+A **new independent 9×9 spatial chemistry** uses five abstract molecule types (S/A/R/M/W), locally constructed material M and an explicitly authored rule that lets M reduce catalyst movement. We tested **36 seeds × three independently defined origins × six interventions** (648 runs) with an identical preregistered post-damage 3×3 target. The nutrient-only origin can activate A through a **hardcoded basal S→A conversion**; it is not a simulation of abiogenesis.
+
+Across **93/108 eligible pre-damage worlds**, the intact network achieved **37** independent *core A/R recoveries*. When M synthesis was disabled, that rose to **79**, whereas disabling only M's effect on diffusion yielded **33**. The combined shell+core criterion occurred **27/93** times under both intact and permeability-null conditions. The result **does not establish a protective shell**; disabling M synthesis also frees resources for A/R, so a cost-matched follow-up would be needed.
+
+All **104 tests passed**, **648** treatment records and **38,880** step traces were saved, and no molecule-count residual was found. This is **negative evidence about a particular engineered reaction-diffusion rule**, not a result about the possibility of artificial life generally. Previously approved simulator code/results are unchanged.
+
+- [Frozen spatial chemistry protocol](docs/CLOSURE-01-SPATIAL-PROTOCOL.md)
+- [Verified outcomes, negative evidence and source hashes](docs/CLOSURE-01-SPATIAL-RESULTS.md)
+- [Designer-shortcut ledger](docs/CLOSURE-01-SHORTCUT-LEDGER.md)
+- [Next design: cost-controlled function or an independent substrate](docs/CLOSURE-02-RESEARCH-DESIGN.md)
+- [Successful 104-test experimental run](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37795271005)
 
 ## Privacy
 
