@@ -33,11 +33,13 @@ accounts before another fresh world panel. No winning founder, direct group copy
 novelty/fitness reward, named desired cycle or compulsory cooperation; templating
 would be an installed rule, not a discovered capability. No final architecture.
 
-**Latest research:** AI-Research `cc501951`/Pass 19, complete notes 100..104 and ledger
-reviewed; exact CI 37839590313/37839532898 successful. [Intake](RESEARCH-INTAKE-PASS19.md)
-separates inherited components, environmental carryover and fresh recruitment;
-declare propagules and unconditional descendant-function denominators. Paper
-readings remain unreplicated; earlier source-access/count/legend gaps remain open.
+**Latest research:** AI-Research advanced again to `43d6abfb`/Pass 20 during final
+integration. Complete notes 105..108 and ledger reviewed; exact CI 37844009511/
+37843965584 successful. [Intake including the Pass 20 addendum](RESEARCH-INTAKE-PASS19.md)
+separates presence, source-specific acquisition, parent-linked transmission,
+descendant benefit and repeated reproduction; retain unconditional denominators.
+Selective recruitment requires evidence beyond partner prevalence. Paper readings
+remain unreplicated; earlier source-access/count/legend gaps remain open.
 
 **Engineering next:** finite state/noise-cursor/object-ID checkpoint adapter using
 the conserving sequence law as a reference fixture, preserving original identity
