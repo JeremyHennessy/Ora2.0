@@ -7,11 +7,22 @@
 - The 99-line [precommitted protocol](CLOSURE-01-SPATIAL-PROTOCOL.md) was committed at `d8f1f79927a0943778c527ee6fc1e56848cf94f4`, **before held-out runs**.
 - Simulator `experiments/closure_spatial.py` added at `80cbf6e0869948ac6fa06372e947555c1c6da1c8`, tests at `dd4a1e80514022760e155f53257c4b543034ac21`.
 - Exact first held-out execution source: `9fd542528c6524240cd935fcd0e6a07c1e4c533d`, Python **3.11.17**, [GitHub Actions #37795271005](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37795271005) completed **success**.
-- **104/104** regression tests completed before the study. No previous AL01/AL02/AL03/AL07 software was edited, and no host-code execution was available to virtual chemical processes.
+- **104/104** regression tests completed before the first study; **110/110** passed after the separate read-only diagnostic was added. No previous AL01/AL02/AL03/AL07 software was edited, and no host-code execution was available to virtual chemical processes.
 - Retained archive `closure01-spatial-all-worlds` (GitHub artifact ID `11557349648`, time-limited 90-day storage), downloaded and independently inspected with an external SHA256 calculation.
 - Original `worlds.jsonl`: **648 records**, SHA256 `6a8a81296bffd650ae927a66b7ae21d1ce93690e78ccf4c3190f8aaddd9c6253`.
 - Original `traces.jsonl`: **38,880 post-intervention time-step records**, SHA256 `79eceef3f3e9e4d492d4b5b955103a50a26ba09569eae9f6322db641f425c28e`.
 - **Both independent file checksums exactly matched the archived summary's manifest**, all 648 (seed, origin, treatment) combinations were unique/complete, and **0/38,880 traces showed a nonzero molecule-count residual**.
+
+## Independent reproducibility and post-hoc audit
+
+After the first held-out study was completed, a **separate read-only analyzer** `experiments/closure_spatial_diagnostics.py` and six adversarial tests were added, without changing the original simulator parameters or its original `worlds.jsonl` and `traces.jsonl` bytes.
+
+- [Second GitHub Actions execution #37796741385](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37796741385), execution commit `669d42f00eb63e4afc8da27c4101a53dc395e652`, **success**; **110/110 tests passed**.
+- Entire original 36-seed / 3-origin / 6-arm panel was regenerated, and both raw file hashes matched the **original first run exactly**.
+- The independent analyzer checked **648 world-specific trace SHA256 chains**, all **38,880** contiguous per-treatment steps, all paired branches and all particle ledger residuals.
+- The combined GitHub artifact `closure01-spatial-all-worlds`, ID `11559470583`, includes the original results and a new `closure01-analysis/diagnostic-summary.json`. The ZIP was downloaded and independently checked: hashes and all counts agree.
+- The **exploratory** pooled 36-seed-cluster bootstrap values below are now reproducible by running this separate analyzer on the archived JSONL files; they are **not** to be mistaken for prespecified confirmatory estimates.
+- Deterministic rerun is a software-replay result, **not** an independent scientific reproduction in a different physical, chemical or software substrate.
 
 ## What was actually tested
 
