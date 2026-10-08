@@ -132,5 +132,41 @@ class OutputTests(unittest.TestCase):
             summarize(records + [records[0]], [0], p)
 
 
+
+class HistoricalSaturationAuditTests(unittest.TestCase):
+    def test_original_model_small_fixture_reanalyzes_without_running_different_physics(self):
+        from experiments.niche_selection import write_study
+        from experiments.retrospective_saturation import audit
+        with tempfile.TemporaryDirectory() as td:
+            original = Path(td) / "original"
+            output = Path(td) / "output"
+            write_study(original, [0], revision="test")
+            result = audit(original, output, verify_original=False)
+            self.assertEqual(result["worlds"], 5)
+            self.assertTrue(all(v["worlds"] == 1 for v in result["per_variant"].values()))
+            self.assertEqual(len((output / "world-cap-audit.jsonl").read_text().splitlines()), 5)
+
+    def test_new_dataset_is_not_silently_accepted_as_original_archive(self):
+        from experiments.niche_selection import write_study
+        from experiments.retrospective_saturation import audit
+        with tempfile.TemporaryDirectory() as td:
+            original = Path(td) / "original"
+            write_study(original, [0], revision="test")
+            with self.assertRaisesRegex(ValueError, "identity mismatch"):
+                audit(original, Path(td) / "output", verify_original=True)
+
+    def test_corrupted_population_or_truncated_ticks_are_rejected(self):
+        from experiments.niche_selection import write_study
+        from experiments.retrospective_saturation import audit
+        with tempfile.TemporaryDirectory() as td:
+            original = Path(td) / "original"
+            write_study(original, [0], revision="test")
+            trace_file = original / "traces.jsonl"
+            trace = trace_file.read_text().splitlines()
+            trace[0] = json.dumps(dict(json.loads(trace[0]), population=41))
+            trace_file.write_text("\\n".join(trace) + "\\n")
+            with self.assertRaisesRegex(ValueError, "outside declared cap"):
+                audit(original, Path(td) / "output", verify_original=False)
+
 if __name__ == "__main__":
     unittest.main()
