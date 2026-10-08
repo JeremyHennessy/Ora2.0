@@ -95,6 +95,24 @@ class MeasurementGate(unittest.TestCase):
         data["law"] = "opaque"
         self.assertEqual(audit(data)["status"], "indeterminate")
 
+    def test_clean_counts_without_required_causal_parent_fail(self):
+        data = fixture()
+        data["initial_tokens"].append({"id": "x", "genome": [0, 1, 3, 2]})
+        for event in data["events"]:
+            event["state"]["live_ids"].append("x")
+        data["events"][2]["a"] = "x"
+        self.assertFalse(audit(data)["restored"])
+
+    def test_ineligible_receipt_stays_in_denominator(self):
+        data = fixture()
+        data["initial_tokens"] = data["initial_tokens"][:-1]
+        data["events"][0]["removed_ids"] = ["old_p"]
+        for event in data["events"]:
+            event["state"]["waste"] = 4
+        result = audit(data)
+        self.assertFalse(result["eligible"])
+        self.assertFalse(result["restored"])
+
     def test_digest_new_output_and_repeatability(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
