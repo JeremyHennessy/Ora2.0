@@ -4,6 +4,19 @@
 
 The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) calibrated a designed feedback loop. [AL01-DISCOVERY](AL01-DISCOVERY-RESULTS.md) subsequently tested 80 unscreened catalytic networks and its [AL01-RVCS follow-up](AL01-RVCS-RESULTS.md) tested 144 fresh networks for nontrivial two-path redundancy, with both experiments preserving all negative outcomes. These are **toy reaction networks, not life**. Original future-study language below remains as an archived proposal; the action priority is updated at the end.
 
+## Updated current program (2026-10-08)
+
+The original proposals below are preserved as historical research questions, **not** current incomplete commitments.
+
+- [AL01-CAL / DISCOVERY / RVCS](AL01-RVCS-RESULTS.md): completed synthetic catalytic experiments (no organism boundaries).
+- [AL02-COPY](AL02-COPY-RESULTS.md): completed executed-copy heredity in author-seeded virtual programs (no self-produced body).
+- [AL07-TRACE](AL07-TRACE-RESULTS.md): completed independent read-only causal write-ancestry audit (not spatial organism individuation).
+- [AL03-NICHE](AL03-NICHE-RESULTS.md): completed and controlled predefined byproduct-role ecology, with serious inheritance-probability confounds.
+- [AL03-MAINT](AL03-MAINT-RESULTS.md): completed independent idle-cost test; all continually supplied worlds survived but population fell from 40.0 to ~5.8 under maximum upkeep.
+- **New design priority:** [CLOSURE-01](CLOSURE-01-RESEARCH-DESIGN.md), an as-yet-unimplemented falsification study of internally repaired organizational prerequisites and endogenous boundaries, without presupposing a human/LLM brain.
+
+Do not translate successes on separate substrates into a synthetic 'alive' score; record new results only under a new protocol, preserve approved code and preserve all failed worlds.
+
 ## Priority A — AL01-DISCOVERY: non-handpicked chemical feedback
 
 **Research question:** how frequently do randomly generated, resource-conserving, local catalytic reaction networks produce repeatable resource-funded **recovery under disturbance**, and is any recovery causally dependent on the network's internal reaction structure?

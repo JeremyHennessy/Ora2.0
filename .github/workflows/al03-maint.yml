@@ -1,0 +1,42 @@
+name: AL03-MAINT maintenance and saturation falsification
+on:
+  push:
+    branches: [main, 'research/al03-maintenance-stress']
+    paths:
+      - 'experiments/maintenance_stress.py'
+      - 'experiments/retrospective_saturation.py'
+      - 'tests/test_maintenance_stress.py'
+      - 'docs/AL03-MAINT-PROTOCOL.md'
+      - '.github/workflows/al03-maint.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@v4
+      - name: Pin Python for baseline and new studies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.17'
+      - name: Pass every existing and new invariant test first
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Recreate approved AL03-NICHE world data exactly
+        run: python -W error::ResourceWarning -m experiments.niche_selection --seeds 8000:8048 --output-dir runs/al03-original --source-revision 5049d52b1bcccff6ee896b01d3f1105260080afd
+      - name: Verify all historical file hashes and quantify population saturation
+        run: python -W error::ResourceWarning -m experiments.retrospective_saturation --input-dir runs/al03-original --output-dir runs/al03-cap-audit
+      - name: Run 48 newly frozen world seeds across all maintenance controls
+        run: python -W error::ResourceWarning -m experiments.maintenance_stress --seeds 8500:8548 --output-dir runs/al03-maint --source-revision "$GITHUB_SHA"
+      - name: Preserve complete worlds, conservation events and both summaries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: al03-maintenance-complete
+          path: |
+            runs/al03-cap-audit/
+            runs/al03-maint/
+          if-no-files-found: warn
+          retention-days: 90

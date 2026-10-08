@@ -1,6 +1,6 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): three verified synthetic-chemistry studies plus one separately verified executed-heredity experiment. This is a research laboratory, not a demonstrably living or self-sustaining digital organism.**
+**Status (2026-10-08): independently recorded catalytic-chemistry, executed-heredity, lineage-audit, resource-ecology and maintenance-stress studies. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
 
 ## Research mission
 
@@ -119,6 +119,28 @@ In the frozen 48-seed/5-treatment survey, **42/48** heritable worlds exhibited a
 - [AL03 frozen protocol](docs/AL03-NICHE-PROTOCOL.md)
 - [AL03 completed results and serious confounds](docs/AL03-NICHE-RESULTS.md)
 - [Reproducible 48-seed GitHub Actions run](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37788831042)
+
+## AL03-MAINT — The cost of merely staying alive in our model
+
+A new preregistered stress study tested the original AL03 finite world without maintenance debit, then independently added small, medium or large periodic energy costs to **every** live entity (including entities not scheduled to act). The approved AL03 model was **not changed**.
+
+A read-only audit first regenerated and **matched all three original AL03 raw-file SHA256 hashes**. All 192 original externally fed worlds finished at population cap 40 and spent 71–76% of their recorded step histories at that cap. The new study included **48 fresh seeds per each of five treatment conditions**. All fed conditions still had survivors at step 480, but mean finishing population varied dramatically:
+
+| Condition | Mean population at tick 480 | Surviving worlds |
+| --- | ---: | ---: |
+| No idle upkeep (original rules) | 40.0 | 48/48 |
+| 1 unit every 8th tick | 37.875 | 48/48 |
+| 1 unit every 4th tick | 24.8125 | 48/48 |
+| 1 unit every tick | 5.8125 | 48/48 |
+| 1 unit every 8th tick; **no outside supply** | 0 | 0/48 |
+
+**Crucial negative result:** the prespecified binary survival endpoint **could not discriminate any of the four continually fed maintenance conditions**, despite dramatic population and turnover changes. Persistence at a fixed horizon is not an aliveness or sustainable-organization metric. Exact conservation records and failure cases were retained.
+
+- [AL03-MAINT frozen protocol](docs/AL03-MAINT-PROTOCOL.md)
+- [AL03-MAINT independent historical saturation audit and measured result](docs/AL03-MAINT-RESULTS.md)
+- [Source code](experiments/maintenance_stress.py) · [Read-only retrospective analyzer](experiments/retrospective_saturation.py)
+- [Next research direction: endogenous organizational closure](docs/CLOSURE-01-RESEARCH-DESIGN.md)
+- [Successful preregistered GitHub Actions evidence](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37791242970)
 
 ## Privacy
 

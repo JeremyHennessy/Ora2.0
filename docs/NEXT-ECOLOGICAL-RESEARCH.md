@@ -2,6 +2,12 @@
 
 **Prepared 2026-10-08. Research design only.** This document does not assert that Ora2.0 is alive, indefinitely evolving, intelligent or consciously experiencing anything.
 
+## Current experimental checkpoint — AL03-MAINT completed
+
+The [original AL03-NICHE](AL03-NICHE-RESULTS.md) data has now been reanalyzed with every original SHA256 verified; all 192 fed worlds ended at the author-imposed cap (40) and spent 71–76% of observed time fully saturated. In the separate preregistered [AL03-MAINT study](AL03-MAINT-RESULTS.md), adding whole-world upkeep every 8/4/1 ticks reduced average final populations from 40.0 to 37.875/24.8125/5.8125 respectively, yet **all 48 worlds in each fed arm still survived to tick 480**. Every no-replenishment world died. The **primary binary persistence endpoint was uninformative** among fed arms; that is a research finding worth preserving, not hiding.
+
+**Next priority:** stop enlarging this fixed two-role ecology. Test [CLOSURE-01](CLOSURE-01-RESEARCH-DESIGN.md): an independently designed substrate with actively produced and causally repaired *internal prerequisites* and potentially endogenous boundaries, contrasted against passive-attractor and engineer-protected null worlds. No completed result establishes that process yet.
+
 ## Evidence checkpoint: AL07-TRACE completed
 
 [AL07-TRACE](AL07-TRACE-RESULTS.md) has now audited all historical AL02 worlds using independent, read-only event replay. The 1,621 original births, generation depth, material release/reuse and energy ledger reconciled with no invalid worlds; 66 tests passed, including fabricated-parent/material/time controls. This **does not** demonstrate physical sibling independence or endogenous individual formation. The read-only genealogy work described below is now a **completed baseline**, not a pending promise. Further counterfactual lineage tracing would require a new separately frozen protocol.
