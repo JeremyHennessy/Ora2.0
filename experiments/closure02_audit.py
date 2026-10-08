@@ -44,6 +44,8 @@ def audit(source: Path, dest: Path, *, first_run: bool = True) -> dict:
     count_by_world=defaultdict(int)
     chain_by_world={k:hashlib.sha256() for k in mapping}
     last_row={}
+    core_streaks=defaultdict(int)
+    independently_recovered=defaultdict(bool)
     for raw_line in originals["traces.jsonl"].splitlines():
         if not raw_line.strip():continue
         row=json.loads(raw_line)
@@ -65,6 +67,9 @@ def audit(source: Path, dest: Path, *, first_run: bool = True) -> dict:
                 if value<previous["cumulative_flow"][field]:
                     raise ValueError("Nonmonotonic cumulative reaction/hop counter")
         chain_by_world[key].update((canonical(row)+"\n").encode("utf-8"))
+        core_streaks[key]=core_streaks[key]+1 if row["core_ok"] else 0
+        if core_streaks[key]>=3:
+            independently_recovered[key]=True
         last_row[key]=row
     results=[]
     for key,row in sorted(mapping.items()):
@@ -79,11 +84,9 @@ def audit(source: Path, dest: Path, *, first_run: bool = True) -> dict:
             raise ValueError("Final cumulative flux disagrees with record")
         if bool(row["eligible"])!=bool(final["eligible"]):
             raise ValueError("Eligibility changed after intervention")
-        if row["eligible"]:
-            streak=0
-            recovered=False
-            for trace in iter_trace_slice_placeholder:
-                pass
+        independently_expected=bool(independently_recovered[key]) if row["eligible"] else None
+        if row["core_recovered"] is not independently_expected:
+            raise ValueError("Core-recovery certificate contradicts raw three-step sequence")
         if row["max_mass_residual"]:
             raise ValueError("World records declare invalid conservation")
         grid=row["final_grid"]
