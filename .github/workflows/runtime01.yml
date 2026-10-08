@@ -1,0 +1,41 @@
+name: RUNTIME-01 bounded crash/restart checkpoint pilot
+on:
+  push:
+    branches: ['runtime/**', main]
+    paths:
+      - 'experiments/checkpoint_pilot.py'
+      - 'tests/test_checkpoint_pilot.py'
+      - 'docs/RUNTIME-01-CHECKPOINT-PROTOCOL.md'
+      - '.github/workflows/runtime01.yml'
+  pull_request:
+    paths:
+      - 'experiments/checkpoint_pilot.py'
+      - 'tests/test_checkpoint_pilot.py'
+      - 'docs/RUNTIME-01-CHECKPOINT-PROTOCOL.md'
+      - '.github/workflows/runtime01.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  process-restart-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact Git commit (not desktop)
+        uses: actions/checkout@v4
+      - name: Pin desktop-matching Python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+      - name: Run all research regression and forced-exit recovery tests
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Perform one bounded manual-equivalent 120-tick fixture
+        run: python -W error::ResourceWarning -m experiments.checkpoint_pilot --run-dir runs/runtime01-ci --revision "$GITHUB_SHA" --seed 1000 --variant intact --steps 120 --checkpoint-every 10
+      - name: Independently verify complete immutable pilot journal
+        run: python -W error::ResourceWarning -m experiments.checkpoint_pilot --run-dir runs/runtime01-ci --revision "$GITHUB_SHA" --seed 1000 --variant intact --steps 120 --checkpoint-every 10 --verify-only
+      - name: Preserve synthetic run receipt and immutable source/provenance
+        uses: actions/upload-artifact@v4
+        with:
+          name: runtime01-checkpoint-ci
+          path: runs/runtime01-ci/
+          retention-days: 90
