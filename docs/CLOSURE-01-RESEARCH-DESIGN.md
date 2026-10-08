@@ -2,6 +2,10 @@
 
 **Status:** unimplemented original research proposal, 2026-10-08. This is not a proven AI architecture, a living organism, or a report of a world-first mechanism. Do not merge existing Ora2.0 substrates merely to fill a checklist. No prior Ora/AgentTest method is a design input.
 
+## October 8 experimental follow-up
+
+The **first narrow candidate** from this broad research design has now been implemented and tested as a separate [CLOSURE-01-SPATIAL study](CLOSURE-01-SPATIAL-RESULTS.md). Its fixed reaction-diffusion chemistry could produce M material around catalysts, but did **not** demonstrate that the M transport barrier improves core maintenance. Do not continue calling that first candidate “unimplemented,” and do not count the M shell as endogenous organism individuality. The broader, independent organizational-closure hypothesis remains **open and unproven**. The next [CLOSURE-02 cost-controlled design](CLOSURE-02-RESEARCH-DESIGN.md) proposes stronger nulls before building a different mechanism.
+
 ## Why this is the next independent scientific question
 
 Four distinct existing observations remain confined to separate models:
