@@ -79,4 +79,3 @@ Pass 20: distinguish material identity, source acquisition, parent-linked sequen
 production, useful descendant function and repeated reproduction. All 28
 starting templates count, including failures; do not count only successful
 offspring or confuse reserve consumption with sustained external autonomy.
-
