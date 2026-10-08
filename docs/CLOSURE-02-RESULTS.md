@@ -54,7 +54,7 @@ None of the above intervals generalizes beyond the author-specified reaction/dif
 
 ## Strong alternative mechanisms and remaining shortcomings
 
-1. **Production cost dominates.** Shell channels consume precursor S and finite reaction encounters that otherwise might regenerate A/R. Suppressing shell synthesis improved recovery from 70/157 to **148/157**. This *disfavors* current shell production, not necessarily all possible boundary chemistries.
+1. **Suppressing the production pathway strongly benefits recovery.** Shell channels consume precursor S and finite reaction encounters that otherwise might regenerate A/R. Suppressing shell synthesis improved recovery from 70/157 to **148/157**. Resource competition is a plausible mechanism, but this intervention also changes reaction-selection probabilities and subsequent trajectories; it does not isolate cost alone. This *disfavors* the current pathway, not all possible boundary chemistries.
 2. **Residual M confound:** `ghost_effect` does not create new M after damage, but remaining M from warmup **still reduces diffusion**. Thus its 71/157 does not prove M never matters; it suggests continued synthesis is not needed for the measured short-horizon result.
 3. **Only per-event cost matching:** each selected ghost reaction spends one S, one encounter and deposits W instead of M; the evolving trajectories have **different numbers** of selected conversions (35,837 M events in shell-effect vs 36,297 ghost events among eligible worlds). Therefore **total resource flux, opportunity cost and exposure are not globally matched**. This could account for some recovery differences.
 4. **No true energy equation:** an equal-count particle conservation ledger does not constitute a thermodynamic potential/free-energy balance. Shell diffusion reduction is a convenience authored by the scientist.
@@ -63,7 +63,7 @@ None of the above intervals generalizes beyond the author-specified reaction/dif
 
 ## Current scientific verdict
 
-**CLOSURE-02 successfully falsified the idea that simply synthesizing more of this particular M material improves A/R maintenance under the declared regime.** The observed short-horizon diffusion suppression is mechanistically expected, and the no-shell treatment is substantially more effective at restoring core A and R. The proposed shell *production pathway* should be **retired as the leading self-maintained-boundary candidate** and preserved as a **negative control**, not made more attractive by retroactive rate tuning.
+**CLOSURE-02 does not support a net maintenance advantage for continued synthesis of this particular M material under the declared regime.** The observed short-horizon diffusion suppression is mechanistically expected, and the no-shell treatment is substantially more effective at restoring core A and R. The proposed shell *production pathway* should be **retired as the leading self-maintained-boundary candidate** and preserved as a **negative control**, not made more attractive by retroactive rate tuning.
 
 **This does not refute the wider possibility of endogenous organization.** The next independent design should test a substrate where *functional organizational prerequisites regenerate one another under material/energy costs*, with passive persistent-process, external-rescue and internal-repair-knockout comparators. Crucially, it must not predeclare that a shell/ring is the organism.
 
@@ -76,3 +76,19 @@ python -W error::ResourceWarning -m experiments.closure02_functional --seeds 640
 ```
 
 **Operational boundary:** This is GitHub-hosted bounded science; it has not been executed on the Windows desktop. The separate RUNTIME-01 local Codex report shows AL01 fixture *process-exit recovery*, **not** CLOSURE-02 restart resilience, crash recovery under all reactions or a persistent virtual organism.
+
+## Custodian verification and closure receipt (2026-10-08)
+
+The primary Work/Codex custodian read the **original ZIP in memory**, independently recalculated its ZIP and two raw-file hashes, verified both source-module checksums against the original execution revision, checked all 960 world-specific trace hashes and 57,600 raw-count/ledger observations, and recomputed recovery directly from A/R counts. No downloaded simulator was executed on the desktop and no D: evidence was accessed.
+
+- Original ZIP SHA256: `c1aabbe1429a41533dbc66c6622a21144b95da101524e0b80e7a91d3d038e755`.
+- Independent recovery recount: shell_effect 70, shell_inert 50, ghost_effect 71, ghost_inert 52, no_shell 148; denominator 157.
+- Hardened auditor no longer trusts `core_ok`: it derives eligibility, threshold flags and recovery time from counts; checks raw conservation, event debits, forbidden products, flux totals, final-grid core counts and exact source identity.
+- **145 tests passed** at `7564736f8878f5640039f84d9adfa6eff2a01d89`, including coherent-rehash adversarial fixtures.
+- [Manually dispatched replay/audit #37808679089](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37808679089) passed at that revision, Python 3.11.17. Original worlds/traces hashes matched exactly; every raw recovery count and flow total passed the strengthened audit.
+- Verified replay artifact ID **11564510728**, ZIP digest `c17227eed46efb8a57322e4204cd3ff1975449f7498d817040a2bd3fae801eb6`; contains raw records and audit receipts. GitHub retention expires **2027-01-06**; independent archival preservation remains necessary.
+- Intermediate workflow **#37808289640** failed because the newly required audit revision argument had not yet been added to its invocation. This integration failure is retained; it is not a new scientific failure or a reason to replace seeds. The invocation was fixed and the reviewed manual run above passed.
+
+The full-study workflow is now **manual-only**. Its repeated held-out executions are deterministic software replay of the same study, not fresh statistical replication. No new study protocol, treatment definition, chemistry rate or historical raw data was changed.
+
+**Decision:** close this study as a qualified negative for the shell-production candidate. The shell-vs-ghost interval spanning zero is not evidence of equivalence. Continue with a discriminating repair-of-repair measurement gate; no automatic shell tuning or positive life claim.
