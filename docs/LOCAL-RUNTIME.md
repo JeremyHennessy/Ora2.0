@@ -1,6 +1,6 @@
 # Dedicated Computer — Runtime and Integration Plan
 
-**Status (2026-10-08):** Local Codex **reported** an installed, manually operated Windows laboratory at `D:\OraLab` and verified bounded replay and local archive restoration. Cloud ChatGPT has **not** independently accessed or inspected the computer. No continuous organism process, automatic update service or independently tested checkpoint recovery is running. RUNTIME-01 now implements a bounded checkpoint test **in GitHub**, pending local Windows acceptance.
+**Status (2026-10-08):** Local Codex **reports RUNTIME-01 Windows process-exit/restart acceptance PASSED** at Ora2.0 commit `205e0030de07986ef4244f38f01890bdf62d5a10`, Python 3.12.10, with all 126 tests and the three crash points, exact byte replay and D: restore verified. This is **reported local evidence**, not a direct cloud inspection of D:. [See Codex-reported acceptance receipt](RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md). Still no continuous digital organism, hardened sandbox, off-D backup, power-loss-tested restart or automatic code execution.
 
 ## Responsibility split
 
@@ -60,9 +60,9 @@ These guarantees must be demonstrated by tests before they are described as oper
 
 1. **Locally reported complete:** hardware/OS inventory, D: layout, Git clones, Python environment and manual launchers; see [Desktop Codex handoff](DESKTOP-CODEX-HANDOFF-2026-10-08.md).
 2. **Locally reported complete:** bounded AL01-CAL verification and archive-copy restoration, 90 tests with Python 3.12.10; not checkpoint recovery.
-3. **Implemented and passing on GitHub-hosted Linux/Python 3.12.10:** [RUNTIME-01 protocol](RUNTIME-01-CHECKPOINT-PROTOCOL.md), atomic checkpoint + append-only journal fixture, interrupted-process/replay/corruption checks. **Windows not yet verified.**
-4. **Next local Codex action:** manually review updated repo, pin Git SHA, use an isolated D: directory, run RUNTIME-01 under reported operator lock/free-space/time limits, inject process exit and replay, compare receipts and archived restoration.
-5. **After local proof:** decide whether another bounded experiment needs checkpoint integration. Do **not** generalize this one-reactor fixture to all AL01/AL02/AL03/CLOSURE environments without separate state schemas and tests.
+3. **GitHub-hosted pass:** RUNTIME-01 immutable source/journal/checkpoint replay and injected process termination, Python 3.12.10, 126 passing tests on approved source.
+4. **Codex-reported local Windows pass:** the identical reviewed Git commit, 126 passing tests, intentional exits 77/78/79 with exact recovery, corruption and concurrent-writer rejection, restored archive, and operator lock/space/300s timeout checks. The local report and raw hashes remain on D:, **uninspected by cloud ChatGPT**. See [acceptance receipt](RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md).
+5. **Next implementation stage:** continue [CLOSURE-02](CLOSURE-02-PROTOCOL.md) as a **separate bounded scientific experiment** via reviewed GitHub changes. Do **not** generalize the AL01 one-reactor checkpoint schema to spatial/lineage worlds without new tests.
 6. **Still not implemented/verified:** continuous worker, unattended scheduling, power-loss recovery, hardening of runtime isolation, real organism state, independently durable off-D backups. Do not activate these by implication.
 
 ## Local-versus-cloud decision
