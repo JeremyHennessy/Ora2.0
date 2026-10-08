@@ -2,6 +2,52 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest science gate — TURNOVER-01 opportunity pilot closed
+
+[Frozen protocol](TURNOVER-01-PROTOCOL.md) `1d783f3` and
+[receipt](TURNOVER-01-RECEIPT.md): executed `d07cbdf4`, fresh seeds 112..127,
+16 independent initializations/two paired budgets/seven arms: 224 correlated
+histories and 28,672 events. Funded active assembled 297 polymers, recovered 45
+polymer-origin atoms and used 54 nutrients, but registered turnover use occurred
+once in 1/16. Paid ghost/local stock used 56; active/ghost paired conversion
+differences were positive 2/16, negative 3/16, equal 11/16, pooled -2.
+Active retained 464 usable W versus ghost 515/local stock 660. All admission
+conditions failed: close this pilot; no retuning, longer horizon or confirmation.
+
+233 Windows tests passed, independent full-stream source/cost/atom-ancestry audit,
+32/32 fixed matches, 3,584 static reaction cases, exact replay and 14-file same-D
+restore passed. Post-hoc read-only census (no new worlds): 21 polymers contained
+polymer-recovered material, 19 had funded compatible nutrient at birth, only 1
+later converted; 0/21 earned a positive own-contact-minus-assembly work margin.
+Margins omit upstream costs and are not fitness. Separate five-file census
+archive/restore includes an initial source-byte mismatch rejection; successful
+census used original archived bytes. All old data/source and reserved8000..8063
+preserved. Material reuse expresses installed laws, not self-maintenance/evolution.
+
+**Highest-value next science priority:** separately freeze/check a generic paid
+template-dependent production/resource-coupling feasibility hypothesis against
+untemplated/shared-bank and paid ghost controls. Current assembly consumes
+reactants, shared W does not identify lineage benefit, and atom reuse supplies
+no functional inheritance mechanism. Require full energy/material/ancestry
+accounts before another fresh world panel. No winning founder, direct group copy,
+novelty/fitness reward, named desired cycle or compulsory cooperation; templating
+would be an installed rule, not a discovered capability. No final architecture.
+
+**Latest research:** AI-Research advanced again to `43d6abfb`/Pass 20 during final
+integration. Complete notes 105..108 and ledger reviewed; exact CI 37844009511/
+37843965584 successful. [Intake including the Pass 20 addendum](RESEARCH-INTAKE-PASS19.md)
+separates presence, source-specific acquisition, parent-linked transmission,
+descendant benefit and repeated reproduction; retain unconditional denominators.
+Selective recruitment requires evidence beyond partner prevalence. Paper readings
+remain unreplicated; earlier source-access/count/legend gaps remain open.
+
+**Engineering next:** finite state/noise-cursor/object-ID checkpoint adapter using
+the conserving sequence law as a reference fixture, preserving original identity
+and total horizon. This does not promote the failed science candidate to organism
+or claim population continuity. HEARTBEAT-02 counter acceptance remains separate.
+Off-D backup, actual power-loss/storage-fault recovery and hardened runtime
+isolation remain open; no unattended/external service or automatic activation.
+
 ## Latest engineering gate — HEARTBEAT-02 finite continuity completed
 
 [Precommitted contract](HEARTBEAT-02-CONTRACT.md)1a14b7b and
