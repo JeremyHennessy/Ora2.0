@@ -2,6 +2,12 @@
 
 **Status: original, unexecuted research proposal (2026-10-08).** Not an approved source recipe for “digital life,” a published first, a working protocell, an organism, or a result. Any implementation requires its **own separately frozen protocol before held-out data**. No code or problems from the previous Ora project are design inputs.
 
+## Precommit advancement (2026-10-08)
+
+The exact next study is now specified in [CLOSURE-02-PROTOCOL.md](CLOSURE-02-PROTOCOL.md), initially committed at `a1f6a89c8790b9a367826df7104d618942f95ecc` before implementation or held-out execution. It freezes five interventions, per-event cost accounting, crossing-opportunity denominators, native/shuffled M strata, seed panels, endpoints, falsifiers and manual acceptance gates. The original proposal below remains historical context; the frozen protocol governs the next implementation. Simulator implementation, acceptance tests and held-out results are pending. Exactly equal-total-cost effects are not identified by this design.
+
+Latest inspected AI-Research main: `63914404809d799923832f83b0b2dc0ae6cb8bc3`; its pass-8 evidence rubric requires separate accounting and held-out functionality. No scientific claims are promoted by the reported RUNTIME-01 receipt.
+
 ## What CLOSURE-01 changed
 
 The [completed CLOSURE-01 trial](CLOSURE-01-SPATIAL-RESULTS.md) showed something useful and adverse: generating M-rich shell-like material did not generate measurable net functional benefit under the current definitions. Across 93 prequalified worlds, intact core A/R recovery was 37, but it rose to 79 when M-production reactions were disabled; intact and M-inert controls had 37 vs 33 core recoveries and **27 vs 27** “dual” recoveries. The latter primary metric requires M-production events **by definition** and cannot establish independently useful boundary function.
