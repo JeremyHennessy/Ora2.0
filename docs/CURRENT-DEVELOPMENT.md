@@ -60,6 +60,33 @@ Design implications:
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
 
+**Current gate: ADEQUACY-01 completed.** The separately
+[precommitted static reference](CLOSURE-03-ADEQUACY-PROTOCOL.md) and
+[receipt](CLOSURE-03-ADEQUACY-RECEIPT.md) count recipes in32 independent new
+genesis snapshots, two paired budgets and eight authored calibration cases.
+17/32 random snapshots had recipes,16/32 had a matchable recipe;0/32 funded
+snapshots met the80% static encounter benchmark within128 attempts. Dense
+authored control passed; starved references did not.185 Windows tests,
+independent multiplicity/constraint audit, exact replay and15-file same-D
+restoration passed. No new dynamical repair experiment or held-out panel.
+The frozen-pool reference is not a bound or repair probability for the full
+dynamics, and its fixed target differs from NATURAL-01's selected motif.
+
+**Next scientific step:** keep the exact splice assay as a null/control and
+prepare a separately frozen competing-substrate design and budget check:
+locally constructed resource-access interface versus costly environmental
+trace, each with fixed-physics/table/reflex counterparts. Establish paid
+construction/use and natural opportunities before any dynamic repair study.
+Carry forward AL03's missing flux-matched controls and CLOSURE-01/02's ghost/
+permeability controls; traces require endogenous authorship, false/foreign
+traces and resource reversal before memory or inheritance claims. No module
+combination, longer horizon, selected starting world or old-data tuning is
+justified. Reserved8000..8063 remain untouched; no held-out confirmation yet.
+AI-Research unchanged9eb921bf at intake; Pass12/13 findings remain hypotheses/
+processed research, not Ora reproduction. Operational risks remain open.
+
+Earlier gates below are retained history, superseded by this current decision.
+
 **Current gate: NATURAL-01 completed without exposure.** The [precommitted natural-event protocol](CLOSURE-03-NATURAL-PROTOCOL.md)
 ran fresh seeds32..47, two resource regimes,32 baseline histories. [Run receipt](CLOSURE-03-NATURAL-RECEIPT.md):
 zero paid post-damage prerequisite births, zero matched causal pairs and zero
