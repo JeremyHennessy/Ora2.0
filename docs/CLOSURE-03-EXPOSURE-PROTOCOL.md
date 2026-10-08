@@ -15,8 +15,10 @@ exposure; do not infer unnecessary causal relations from inactive controls.
 
 ## Frozen population and observation
 
-Fresh development seeds16..23, regimes128/0 precursor,160 fuel;16 independent
-seed/regime snapshots. Use the unchanged CLOSURE-03 pilot generator, observer
+Fresh development seeds16..23, regimes128/0 precursor,160 fuel;16 paired
+seed/regime snapshots from8 independent seeds. Coupons are within-snapshot
+counterfactuals, not additional independent replicates. Use the unchanged
+CLOSURE-03 pilot generator, observer
 motif and32-tick constructive burn-in; remove all P/T copies at damage. No
 follow-up ticks, mutations, fresh resources or replacement worlds. All16
 snapshots remain in denominators. Payloads, law, selection, decay, cost and ID

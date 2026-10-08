@@ -4,6 +4,19 @@
 
 ## Verified state
 
+## User-facing run summaries (standing preference)
+
+After every run, provide a plain-English, self-contained summary: the question
+tested; exactly what ran (development, held-out or authored fixture); observed
+outcomes and denominators; what the evidence supports and cannot establish;
+any failed checks or inactive controls; and the next concrete step with its
+reason. Link the detailed receipt instead of overwhelming the user with hashes.
+Distinguish software validation from scientific results and coupon counts from
+independent populations. Report unsuccessful attempts too. This is a reporting
+preference, not authorization for unattended scheduling or recurring execution.
+
+## Verified state continued
+
 - CLOSURE-02 implementation, protocol and strengthened auditor entered main through [PR #11](https://github.com/JeremyHennessy/Ora2.0/pull/11), merge `b279f729e5a30a199bbfff91f6ddd95c212bfea0`. [PR #12](https://github.com/JeremyHennessy/Ora2.0/pull/12) carries the final custodian verification and this plan.
 - Original execution `675b786a90af7d8e23f51f6eedf30a7fe03ddb81`: 960 records, 57,600 traces, 157/192 eligible worlds, 136 initial tests. Independent original ZIP/source/raw-count recount verified all hashes and recovery 70 / 50 / 71 / 52 / 148 in shell_effect / shell_inert / ghost_effect / ghost_inert / no_shell order.
 - Strengthened audit execution `7564736f8878f5640039f84d9adfa6eff2a01d89`: **145 tests**, [manual replay #37808679089](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37808679089) successful. Both historical raw hashes matched; raw-count threshold, mass, cost, provenance, final-state and per-world chain checks passed.
