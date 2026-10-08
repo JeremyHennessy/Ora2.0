@@ -1,5 +1,7 @@
 # Desktop Codex handoff — Ora2.0 RUNTIME-01
 
+**Historical commissioning instructions — now locally reported PASS.** Local Codex completed these RUNTIME-01 Windows acceptance tests at source `205e0030de07986ef4244f38f01890bdf62d5a10` with Python 3.12.10 (126 tests, controlled exit 77/78/79, exact resumed files, failures rejected, on-D restoration, operator safeguards). Cloud ChatGPT did not inspect the D: report; see [recorded Codex verification receipt](RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md). **Do not re-run the commissioning instructions unnecessarily.** They remain here for provenance and later regression testing.
+
 **2026-10-08 · Operator-controlled Windows execution, not a request for unattended deployment.** This is the actionable next desktop stage, based on the user's reported local Codex setup plus a separately verified GitHub-hosted checkpoint prototype. Cloud ChatGPT **has not opened, scanned or commanded** the user's computer or any file under D:.
 
 ## 1. Do not repeat setup
