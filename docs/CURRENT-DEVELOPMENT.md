@@ -2,7 +2,70 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest verified work — TEMPLATE-02 negative and HEARTBEAT-04 continuity
+## Latest verified work — ENERGY-01 feasibility and OBSERVER-01 repair
+
+Precommit `9fe789ea`, executed `6a68c21b`, existing Windows Python 3.12.10:
+**268 tests passed**. [Energy receipt](ENERGY-01-RECEIPT.md): 4,192 authored
+cases / 22,624 events, all 28 binary sequences of lengths 2..4 and registered
+budgets/controls. Zero natural worlds or reserved samples. Paid recognition,
+binding potential, processing, storage overflow, decay and inert reclamation
+conserve unique atom/work ownership and total energy. Funded complementary
+single encounters capture work; ghost consumption returns none. One-work
+components can bind food but cannot process it. This is installed-law physical
+possibility, not evolved recognition, new heredity or naturally realized life.
+
+Balanced authored paths start with total 56 work per 28-fixture arm. Selective
+finite/uncapped accounts retain 24/28; nonspecific and price-yoked selective
+retain 0. The advantage depends on lower failed-encounter expenditure. Exact
+uncapped sufficient-work drift at balanced matching is 0 for selective and
+-1/2 for nonspecific/yoked; actual paths also lose work through order/starvation
+and overflow. Capacity n is below unchanged copy debit 3n+1 for every length.
+No copying/reconstruction action is installed: their absence is by construction.
+Paid capture passes; this mechanism alone is insufficient to justify a fresh
+reproduction pilot. Do not tune capacity, prices, food or horizon to defeat it.
+Protected engine-bank reclaims are external restoration, not body regeneration.
+
+[Observer receipt](OBSERVER-01-RECEIPT.md): original local status schema failure
+reproduced on a disposable copy, then manually repaired with pinned code.
+Existing Lab Status.cmd now displays all 28 receipts, including three historical
+failed outcomes; source/label fallback and reported tests remain explicit.
+Read-only bounded input, malformed/ambiguous receipts, HTML escaping and stable
+replay verified. Status labels are reported evidence, not independent audits or
+process-health proof. Only oralab.status delegated to the reviewed new module;
+other lab operations, original clean clones and launcher/UI interaction preserved.
+55 historical manifest/archive/launcher inputs unchanged; 28-file same-D restore
+passed. Additional review matched all 18 recorded restoration archive hashes
+against 23 existing archives. No unattended/external operation activated.
+
+**Highest-value science priority:** separately precommit/check paid activated
+precursors and incremental reaction-energy coupling. Track producer-derived
+versus externally supplied activation, all stored potential, atom/work ancestry,
+heat/waste and recognition/ligation/release/endowment costs. Use inert,
+cost-matched ghost and external-activation/subsidy-withdrawal controls. Test
+accounting and authored feasibility before any fresh neutral panel. No selected
+successful organism, larger private-account retuning or final architecture.
+
+**Engineering priority:** precommit/test supervised finite process resource
+caps, child-tree termination and timeout evidence on a bounded reference.
+CPU/memory caps are not filesystem/network isolation. Independent off-D
+backup/restore, physical power-loss/storage-fault recovery and hardened restricted
+execution remain open; future unattended operation still requires independent
+verification and separate authorization. HEARTBEAT-04 continuity remains frozen.
+
+**Research update:** AI-Research advanced during acceptance through merged
+Pass 23/24/26 to `ba158155` (exact CI 37854235132 successful). Complete notes,
+structured ledgers and current handoff reviewed. [Intake/addendum](RESEARCH-INTAKE-PASS22.md)
+records source-depth limits, reconstructed versus evolved functionality,
+manual passage/sorting/rescue and unconditional descendant outcomes. Pass 25
+PR 5 at `f03bc1df` was reviewed as still-open provisional branch evidence;
+do not describe it as merged or independently replicated. Frozen protocols
+and historical findings are not revised by new reading. Recheck remote state
+before integration and retain concurrent work.
+
+All sections below preserve earlier outcomes and their historical next-step
+statements. The priorities immediately above govern current development.
+
+## Earlier verified work — TEMPLATE-02 negative and HEARTBEAT-04 continuity
 
 Science precommit `db620bf9`, executed `876f0bfa`, Windows Python 3.12.10:
 **252 tests passed**; [receipt](TEMPLATE-02-RECEIPT.md). After 2,176 authored
