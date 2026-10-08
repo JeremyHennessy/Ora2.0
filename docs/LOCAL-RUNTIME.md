@@ -1,6 +1,6 @@
 # Dedicated Computer — Runtime and Integration Plan
 
-**Status (2026-10-08):** Local Codex **reported** an installed, manually operated Windows laboratory at `D:\\OraLab` and verified bounded replay and local archive restoration. Cloud ChatGPT has **not** independently accessed or inspected the computer. No continuous organism process, automatic update service or independently tested checkpoint recovery is running. RUNTIME-01 now implements a bounded checkpoint test **in GitHub**, pending local Windows acceptance.
+**Status (2026-10-08):** Local Codex **reported** an installed, manually operated Windows laboratory at `D:\OraLab` and verified bounded replay and local archive restoration. Cloud ChatGPT has **not** independently accessed or inspected the computer. No continuous organism process, automatic update service or independently tested checkpoint recovery is running. RUNTIME-01 now implements a bounded checkpoint test **in GitHub**, pending local Windows acceptance.
 
 ## Responsibility split
 
@@ -14,7 +14,7 @@
 - Windows 11 Home 25H2 (build 26200.9457), Dell XPS 8950, Intel i7-12700K / 20 logical processors, **128 GB RAM**.
 - NVIDIA RTX 3070 (**8 GB VRAM**) present, **not needed or enabled for the current CPU-based experiment**.
 - C: approximately 1 TB NVMe SSD; **D: approximately 1 TB mechanical disk** is the authoritative local lab drive.
-- Git/GitHub Desktop/VS Code/Python extension installed; Python **3.12.10** at `D:\\OraLab\\tools\\Python312`; virtual environment at `D:\\OraLab\\src\\Ora2.0.venv`.
+- Git/GitHub Desktop/VS Code/Python extension installed; Python **3.12.10** at `D:\OraLab\tools\Python312`; virtual environment at `D:\OraLab\src\Ora2.0.venv`.
 - Both Ora2.0 and the **private** AI-Research repos reportedly cloned with clean working trees at handoff; verify **reviewed HEAD** before applying subsequent GitHub work.
 - No BIOS changes, paid services, model installs, self-hosted runner, direct inbound machine access or GPU requirements for the current gate.
 - A distinct physical/offsite backup medium was **not available** at handoff. Copies elsewhere on D: will not survive mechanical D: failure.
@@ -30,7 +30,7 @@
 - `observer/`: generated read-only local reports; not a state authority.
 - `logs/`: setup, hardware and restoration receipts; `tools/`: Python and existing manual `oralab.py` helper.
 
-**Reported existing paths:** `D:\\OraLab\\README.txt`, `tools\\oralab.py`, and manually launched `Open Lab.cmd`, `Lab Status.cmd`, `Run Calibration.cmd`, `Fetch Research Updates.cmd`, `Apply Reviewed Updates.cmd`.
+**Reported existing paths:** `D:\OraLab\README.txt`, `tools\oralab.py`, and manually launched `Open Lab.cmd`, `Lab Status.cmd`, `Run Calibration.cmd`, `Fetch Research Updates.cmd`, `Apply Reviewed Updates.cmd`.
 
 The helper reportedly provides 5 GB minimum free space, a single-operator lock, five-minute command timeout, checked source archive and replay/restore. Its **source and effects have not been inspected from this chat**. Any new runtime operation must be manually reviewed and integrated with those safeguards by Codex; GitHub CI alone is not evidence that `oralab.py` invokes RUNTIME-01.
 
