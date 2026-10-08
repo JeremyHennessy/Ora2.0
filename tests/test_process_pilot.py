@@ -97,3 +97,9 @@ class PilotTests(unittest.TestCase):
         self.assertEqual(exact_p(0, 0), 1)
         self.assertEqual(exact_p(4, 0), 0.125)
         self.assertEqual(exact_p(2, 2), 1)
+
+    def test_boolean_panel_identity_rejected(self):
+        w = json.loads(canonical(run_world(0, 128, "constructive")))
+        w["seed"] = False
+        with self.assertRaisesRegex(ValueError, "integer panel"):
+            verify_world(w, expected_setup(0))

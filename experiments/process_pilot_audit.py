@@ -58,6 +58,8 @@ def expected_setup(seed):
 def verify_world(world, setup):
     initial, p, t, cut, sham, motif, draws = setup
     arm = world["arm"]
+    if type(world["seed"]) is not int or type(world["regime"]) is not int:
+        raise ValueError("integer panel identities required")
     receipt = world["receipt"]
     if (receipt["initial_tokens"] != initial or receipt["target"] != t or receipt["prerequisite"] != p
             or receipt["precursor"] != world["regime"] or receipt["fuel"] != 160
@@ -69,6 +71,8 @@ def verify_world(world, setup):
     live = {x["id"]: x["genome"] for x in initial}
     resources, fuel, serial = world["regime"], 160, 0
     encountered = {}
+    suppressed_births = 0
+    targeted_collisions = 0
 
     def consume(kind, **fields):
         nonlocal cursor
@@ -118,7 +122,9 @@ def verify_world(world, setup):
             pair = [list(a), list(b)]
             blocked = (arm == "inert" or (tick >= 32 and
                        ((arm == "cut" and pair == cut) or (arm == "sham" and pair == sham))))
+            targeted_collisions += int(blocked)
             if newborn is not None and blocked:
+                suppressed_births += 1
                 consume("decay", id=newborn["id"])
                 del live[newborn["id"]]
         if w < 0.0625 and live:
@@ -128,7 +134,7 @@ def verify_world(world, setup):
             del live[ident]
         expected_tick = {"tick": tick, "draws": draws[tick], "event_start": start,
                          "event_end": cursor, "live_ids": sorted(live)}
-        if world["ticks"][tick] != expected_tick:
+        if type(world["ticks"][tick]["tick"]) is not int or world["ticks"][tick] != expected_tick:
             raise ValueError("tick/draw history mismatch")
     if cursor != len(events):
         raise ValueError("unscheduled events")
@@ -146,6 +152,7 @@ def verify_world(world, setup):
                   motif=motif, matched=sham is not None, extinct=not live,
                   primary=motif and result["eligible"] and result["restored"],
                   material_transformed=world["regime"] - resources, fuel_used=160 - fuel,
+                  suppressed_births=suppressed_births, targeted_collisions=targeted_collisions,
                   terminal_counts=terminal,
                   rescue_births=sum(e["kind"] == "rescue" for e in events))
     return result
@@ -197,6 +204,7 @@ def audit_study(source, output, expected_revision):
             summary["arms"].append({"regime": regime, "arm": arm, "total": len(subset),
                                      **{k: sum(r[k] for r in subset) for k in
                                         ("eligible", "motif", "matched", "primary", "extinct", "fuel_used",
+                                         "suppressed_births", "targeted_collisions",
                                          "material_transformed", "rescue_births")}})
         by = {(r["seed"], r["arm"]): r for r in rows if r["regime"] == regime}
         selected = [s for s in range(8) if by[s, "constructive"]["motif"] and
