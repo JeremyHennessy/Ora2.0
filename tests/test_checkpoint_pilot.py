@@ -218,6 +218,25 @@ class CorruptionAndLockTests(unittest.TestCase):
             with self.assertRaisesRegex(IntegrityError, "Checkpoint checksum"):
                 local(root, steps=12, verify_only=True)
 
+    def test_genesis_rng_does_not_accept_rehashed_seed_tamper(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            crashed = subprocess.run(
+                command(root, steps=10, fault_step=1, fault_point="pre_commit"),
+                cwd=Path(__file__).resolve().parents[1],
+                capture_output=True, check=False, timeout=40,
+            )
+            self.assertEqual(crashed.returncode, 77)
+            cp_path = root / "checkpoint.json"
+            envelope = json.loads(cp_path.read_text())
+            envelope["body"]["rng_state"][1][0] += 1
+            # Recompute ordinary SHA256 to ensure checks do not just trust an
+            # internally consistent but forged step-zero checkpoint.
+            envelope["sha256"] = digest(envelope["body"])
+            cp_path.write_text(canonical(envelope) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(IntegrityError, "Genesis PRNG snapshot"):
+                local(root, steps=10)
+
     def test_wrong_journal_suffix_even_if_attacker_rehashes_one_record_rejected(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
