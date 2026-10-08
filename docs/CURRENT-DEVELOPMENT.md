@@ -2,7 +2,37 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest completed gate — CONSTRUCTOR-01 static design
+## Latest completed gate — CONSTRUCTOR-01 component-history measurement
+
+[Precommitted measurement contract](CONSTRUCTOR-01-MEASUREMENT-CONTRACT.md)
+cacc867a and [acceptance receipt](CONSTRUCTOR-01-MEASUREMENT-RECEIPT.md):
+executed dcbc892e,209 Windows tests,16 authored receipts/60 attempted events,
+zero new independent scientific initializations. Independent semantic replay
+recognizes only active/fixed renewed-chain examples; supplied/rescued/direct
+machinery, ghost access, passive retention and low-work/material cases fail
+that endpoint. Two qualifying authored uses retain external root A0; no de-novo
+or natural formation claim. Repeated uses count one interface, and fixed
+histories match. Coherently rehashed cost/ID/ancestry forgeries are rejected.
+Exact raw/manifest/audit replay and15-file same-D restore passed. Earlier208-test
+acceptance preserved; no failed acceptance or changed law/old data.
+
+**Current next science step:** freeze the separate complete finite stochastic
+opportunity protocol before simulator implementation. Fresh unscreened seeds96
+onward, explicit geometry/genesis/budgets, neutral proposal law, full-stream
+audit and all availability/exhaustion/missing-trigger denominators. Predeclare
+first-natural-C knockout/matched paid D damage before later outcomes, branch/
+decay order and finite limits. Paid ghost/fixed/direct/external constructor/source
+controls remain required. Authored schedules and this recorded-request checker
+alone cannot establish natural exposure. No held-out execution or reserved
+8000..8063 use; no repair/life/maintenance inference from these fixtures.
+
+Ora main d0012036 and AI-Research f2839a5c remained unchanged at both checkpoints.
+Pass16 is processed research, not a reproduced mechanism. Track B stays separate
+and inactive. RUNTIME-01 remains reported AL01 acceptance, not new-schema
+restart evidence. Off-D backup, actual power loss and hardened isolation are
+open. Earlier gates below retain history and do not override this next step.
+
+## Earlier completed gate — CONSTRUCTOR-01 static design
 
 [Precommitted design](CONSTRUCTOR-01-DESIGN-CONTRACT.md) ca19666 and
 [acceptance receipt](CONSTRUCTOR-01-DESIGN-RECEIPT.md): execution82348bb6,
