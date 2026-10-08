@@ -8,7 +8,7 @@ from pathlib import Path
 from experiments import precursor_coupling_audit as core
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ('docs/CONTACT-01-PROTOCOL.md', 'experiments/contact_loss.py',
+FILES = ('docs/CONTACT-01-PROTOCOL.md', 'docs/CONTACT-01-COUNT-ADDENDUM.md', 'experiments/contact_loss.py',
          'experiments/contact_loss_audit.py', 'docs/ENERGY-02-PROTOCOL.md',
          'experiments/precursor_coupling.py', 'experiments/precursor_coupling_audit.py')
 
@@ -169,7 +169,7 @@ def audit(directory, revision):
                     robust_producer_funded_matching_functional=robust,
                     decision='possibility_survives_registered_challenge' if robust else 'fragile_under_registered_combined_challenge',
                     natural_worlds=0, reserved_samples_executed=False, founder_ablation_is_not_origin_test=True, no_emergence_claim=True)
-    core.need(summary == expected and count == 6144 and events == 255488, 'Complete independently reconstructed summary/source')
+    core.need(summary == expected and count == 12288 and events == 510976, 'Complete independently reconstructed summary/source')
     return dict(schema='contact01-audit-v1', revision=revision, authored_cases=count, events=events,
                 conservation_and_provenance=True, independent_full_event_replay=True, failed_contact_and_loss_prices_verified=True,
                 robust_producer_funded_matching_functional=robust, records_sha256=checksum.hexdigest(),

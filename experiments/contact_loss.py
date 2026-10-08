@@ -8,7 +8,7 @@ from pathlib import Path
 from experiments import precursor_coupling as core
 
 ROOT = Path(__file__).resolve().parents[1]
-FILES = ('docs/CONTACT-01-PROTOCOL.md', 'experiments/contact_loss.py',
+FILES = ('docs/CONTACT-01-PROTOCOL.md', 'docs/CONTACT-01-COUNT-ADDENDUM.md', 'experiments/contact_loss.py',
          'experiments/contact_loss_audit.py', 'docs/ENERGY-02-PROTOCOL.md',
          'experiments/precursor_coupling.py', 'experiments/precursor_coupling_audit.py')
 

@@ -20,8 +20,8 @@ class ContactTests(unittest.TestCase):
     def test_registered_scope_and_canonical_order_inventory(self):
         panel = list(worker.configs())
         self.assertEqual(panel, list(audit.panel()))
-        self.assertEqual(len(panel), 6144)
-        self.assertEqual(sum(len(list(worker.requests(c))) for c in panel), 255488)
+        self.assertEqual(len(panel), 12288)
+        self.assertEqual(sum(len(list(worker.requests(c))) for c in panel), 510976)
         totals = {n: 0 for n in (2, 3, 4)}
         for n in totals:
             for bits in map(''.join, itertools.product('01', repeat=n)):
