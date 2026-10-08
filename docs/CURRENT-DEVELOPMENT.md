@@ -49,6 +49,28 @@ Design implications:
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
 
+**2026-10-08 development gate completed:** the [finite pilot protocol](CLOSURE-03-PROTOCOL.md)
+was frozen before implementation. A development-only simulator and independent
+schedule/archive auditor now exist. [Development receipt](CLOSURE-03-DEVELOPMENT-RECEIPT.md):
+96 finite receipts (8 seeds,2 regimes,6 arms), exact replay, zero restoration
+endpoints;7/8 eligible worlds and6 matched eligible pairs per regime. Cut/sham
+interventions never fired, so their null contrast is uninformative. The fixed
+table reproduces all constructive events exactly, as required by this toy law.
+No held-out panel, closed organization or life claim follows.
+
+**Current next step supersedes the earlier sequence below:** resolve causal
+intervention exposure before spending reserved seeds. Compare prospective
+selectors/substrates by structural opportunity and paid work, independently
+of observed restoration success. Any redesign needs a separately versioned
+precommit and fresh development panel; preserve this frozen pilot and leave
+8000..8063 unexamined. No tuning its horizon to produce a desired outcome.
+
+AI-Research checkpoint advanced to `a7574096e73123227338366a41d0bb013ced4d39`;
+read the new [Pass11 handoff](https://github.com/JeremyHennessy/AI-Research/blob/a7574096e73123227338366a41d0bb013ced4d39/docs/artificial-life/54-pass11-research-handoff.md)
+and latest integration changes. New handoff/catalog consolidation does not
+change the separation between repair and inherited collective function.
+No reviewed paper has been independently reproduced by this development run.
+
 Question: **can a process ensemble rebuild a damaged prerequisite for its own productive restoration, through paid internal events, while a passive persistent ensemble and an externally repaired ensemble fail an endogenous-restoration assay?**
 
 Advance the [existing CLOSURE-03 design](CLOSURE-03-PROCESS-ORGANIZATION-DESIGN.md); do not create a duplicate architecture. The next gate must address its risk of reproducing ordinary fault-tolerant computation or the already-tested fixed catalytic graph.
@@ -62,7 +84,8 @@ immutable IDs, live parents, damage, fuel/material debits and external ancestry.
 It reports paid causal payload restoration separately from fixed-table
 comparator recovery. Payload identity is not proof of functional equivalence
 or productive closure. Authored adversarial fixtures are measurement tests,
-not evidence of emergence. No CLOSURE-03 simulator or held-out panel exists.
+not evidence of emergence. At that measurement checkpoint no simulator or
+held-out panel existed; the development pilot above is the subsequent gate.
 
 Windows regression acceptance at `4d513b1c` passed **156 tests**, Python
 3.12.10, under the existing operator lock, 5 GB minimum-space check and
@@ -75,17 +98,21 @@ original frozen hashes and historical archives are unchanged. Regression
 tests use the same byte convention. This acceptance adds no power-loss,
 off-drive backup, hardened-isolation or CLOSURE-03 restart evidence.
 
-**Next scientific gate:** item 4 below: freeze a complete finite world protocol
-and unscreened generator distribution, causal cut/sham controls and independent
-development/held-out panels. The splice fixture is an auditor test law, not a
-validated substrate choice or permission to select favorable worlds.
+**Previous ordered gate, now completed for development:** the finite protocol
+and unscreened generator are frozen, and the development pilot is validated.
+The current exposure gate above replaces the former item4 planning step.
+The splice fixture is not a validated substrate for organizational emergence
+or permission to select favorable worlds.
 1. Compare a material/fuel-funded **constructive process-object** substrate (object structure determines interaction) against a **fixed-rule graph** comparator related to AL01. Select the smallest discriminating law; document installed copying/interpretation and finite execution limits. Reproducing an AL01 loop with process names is not an advance.
 2. Precommit a measurement contract and adversarial fixtures **before simulator development**: unique component IDs, immutable function/payload identities, parents and interpreter-step receipts, material/fuel debits, damage/removal events, external rescue tags and complete extinction histories. A replacement must regenerate both a damaged productive function and a producer of that function, via post-damage internal events; retained old material, relabeling and unverified cloning cannot count.
 3. Implement the independent read-only evaluator first. Test passive persistence, inert cycles, engine rescue, missing creators, forged ancestry, cost-free repair and ordinary redundant fixed-graph recovery. Report indeterminate cases where receipts cannot prove execution. No 'alive' score.
 4. Only after the measurement gate passes, freeze the full simulator law, unscreened generator distribution, development/held-out seeds, multi-point damage, resource gaps, compute/material budgets, knockout/sham matching, ambiguity exclusions and stop/falsification rules in an immutable protocol commit.
 5. Implement and validate the finite simulator on dev-only seeds; manually run the held-out study on free hosted compute only after source/measurement review. Preserve all nulls and failures. Close the study before proposing heredity, group offspring or niche-construction claims.
 
-This is a **next experiment decision**, not an operating CLOSURE-03 world. No held-out CLOSURE-03 panel has been chosen or run. Do not claim a world-first; check primary literature before any priority statement.
+This ordered sequence is the retained design history. A finite development
+simulator now exists; the reserved CLOSURE-03 panel is8000..8063 and remains
+unrun. Do not claim a world-first; check primary literature before any priority
+statement.
 
 ## Local Codex handoff
 
