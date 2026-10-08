@@ -41,7 +41,7 @@ class IndependentArchivedRecords(unittest.TestCase):
             first=json.loads(lines[0])
             first["core_a"]+=1
             lines[0]=json.dumps(first,sort_keys=True)
-            trace_file.write_text("\n".join(lines)+"\n",encoding="utf-8")
+            trace_file.write_text("\n".join(lines)+"\n",encoding="utf-8",newline="\n")
             with self.assertRaisesRegex(ValueError,"SHA256 manifest"):
                 audit(input_dir,output,first_run=False)
 
@@ -51,11 +51,11 @@ class IndependentArchivedRecords(unittest.TestCase):
             input_dir,output=self._fixture(Path(td))
             f=input_dir/"worlds.jsonl"
             rows=f.read_text().splitlines()
-            f.write_text("\n".join(rows[:-1])+"\n",encoding="utf-8")
+            f.write_text("\n".join(rows[:-1])+"\n",encoding="utf-8",newline="\n")
             summary_f=input_dir/"summary.json"
             summary=json.loads(summary_f.read_text())
             summary["worlds_sha256"]=hashlib.sha256(f.read_bytes()).hexdigest()
-            summary_f.write_text(json.dumps(summary),encoding="utf-8")
+            summary_f.write_text(json.dumps(summary),encoding="utf-8",newline="\n")
             with self.assertRaisesRegex(ValueError,"Incomplete or extra treatment"):
                 audit(input_dir,output,first_run=False)
 
@@ -73,13 +73,13 @@ class IndependentArchivedRecords(unittest.TestCase):
                      if (t["seed"],t["origin"],t["arm"]) ==
                         (w["seed"],w["origin"],w["arm"])]
             w["trace_sha256"] = hashlib.sha256("".join(lines).encode()).hexdigest()
-        wf.write_text("".join(canonical(w)+"\n" for w in worlds), encoding="utf-8")
-        tf.write_text("".join(canonical(t)+"\n" for t in traces), encoding="utf-8")
+        wf.write_text("".join(canonical(w)+"\n" for w in worlds), encoding="utf-8",newline="\n")
+        tf.write_text("".join(canonical(t)+"\n" for t in traces), encoding="utf-8",newline="\n")
         sf = input_dir/"summary.json"
         s = json.loads(sf.read_text())
         s["worlds_sha256"] = hashlib.sha256(wf.read_bytes()).hexdigest()
         s["traces_sha256"] = hashlib.sha256(tf.read_bytes()).hexdigest()
-        sf.write_text(json.dumps(s), encoding="utf-8")
+        sf.write_text(json.dumps(s), encoding="utf-8",newline="\n")
 
     def test_forged_core_flag_rejected_even_with_valid_rebuilt_hashes(self):
         with tempfile.TemporaryDirectory() as td:
@@ -116,7 +116,7 @@ class IndependentArchivedRecords(unittest.TestCase):
             sf = src/"summary.json"
             s = json.loads(sf.read_text())
             s["source_sha256"] = "0"*64
-            sf.write_text(json.dumps(s), encoding="utf-8")
+            sf.write_text(json.dumps(s), encoding="utf-8",newline="\n")
             with self.assertRaisesRegex(ValueError, "source checksum"):
                 audit(src, out, first_run=False)
 

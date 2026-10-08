@@ -413,8 +413,8 @@ def run_study(
     paths=("worlds.jsonl","traces.jsonl")
     checksums={name:hashlib.sha256() for name in paths}
     rows=[]
-    with (folder/paths[0]).open("w",encoding="utf-8") as wf, (
-         folder/paths[1]).open("w",encoding="utf-8") as tf:
+    with (folder/paths[0]).open("w",encoding="utf-8",newline="\n") as wf, (
+         folder/paths[1]).open("w",encoding="utf-8",newline="\n") as tf:
         for seed in seeds:
             for origin in ORIGINS:
                 world_rows,observations=run_world(seed,origin,p)
