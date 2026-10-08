@@ -1,6 +1,6 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): independent artificial-life research laboratory with three independently recorded chemical-feedback studies (one calibration and two exploratory random-network surveys). No artificial organism has been created, trained, or demonstrated to be alive.**
+**Status (2026-10-08): three verified synthetic-chemistry studies plus one separately verified executed-heredity experiment. This is a research laboratory, not a demonstrably living or self-sustaining digital organism.**
 
 ## Research mission
 
@@ -86,6 +86,20 @@ This supports **redundancy-like synthetic chemistry**, **not living digital orga
 - [Frozen experimental protocol](docs/AL01-RVCS-PROTOCOL.md)
 - [Measured result and confound analysis](docs/AL01-RVCS-RESULTS.md)
 - [Verified workflow and complete artifact](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37780922686)
+
+## AL02-COPY — Executed heredity under finite resources
+
+The separately designed virtual instruction system can **execute one-byte COPY writes**, assemble daughter tapes from paid virtual material, and provide per-byte causal birth receipts. A four-opcode self-copying tape was **intentionally supplied at genesis**—there is no claim of spontaneous replication.
+
+A frozen study of **64 world seeds × 4 conditions** recorded **853** mutating-arm births and **768** faithful-arm births, all with valid write-linked ancestry; copy-disabled and no-food arms produced **0** births. The mutation-enabled arm included **254 children with altered genomes** and **118 faithfully inherited mutant grandchildren**. A source-recorded A-food→B-food opcode variant produced 3 children in a sealed B-only assay; the original A-only tape produced none. **All 256 worlds eventually went extinct** when usable resources ran out. Energy/material residuals remained zero. Full test and artifact hashes are documented below.
+
+- [AL02-COPY frozen protocol](docs/AL02-COPY-PROTOCOL.md)
+- [AL02-COPY measured results, limitations, checksums](docs/AL02-COPY-RESULTS.md)
+- [AL02 heredity architecture comparison](docs/AL02-HEREDITY-DESIGN.md)
+- [Next science: ecological inheritance and causal-lineage analysis](docs/NEXT-ECOLOGICAL-RESEARCH.md)
+- [First 64-seed experimental receipt](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37783308992)
+
+This is **executed inheritance inside an authored, bounded simulator**, not evidence of a self-maintained living entity, learned cognition, self-created interpreter, or open-ended evolution.
 
 ## Privacy
 

@@ -1,6 +1,6 @@
 # Next research experiments — independent, falsifiable and substrate-neutral
 
-**Status:** AL01-DISCOVERY and its independent AL01-RVCS follow-up are complete as synthetic model studies; AL02-LINEAGE and AL07-IDENTITY remain proposals, with no artificial organism demonstrated. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
+**Status:** Three synthetic chemistry studies and the positive-control AL02-COPY heredity experiment are complete and verified. Their frozen code/protocols remain preserved. The next unimplemented questions are ecological heredity/novelty and independent organizational identity; no artificial organism has been demonstrated. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
 
 The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) calibrated a designed feedback loop. [AL01-DISCOVERY](AL01-DISCOVERY-RESULTS.md) subsequently tested 80 unscreened catalytic networks and its [AL01-RVCS follow-up](AL01-RVCS-RESULTS.md) tested 144 fresh networks for nontrivial two-path redundancy, with both experiments preserving all negative outcomes. These are **toy reaction networks, not life**. Original future-study language below remains as an archived proposal; the action priority is updated at the end.
 
@@ -59,8 +59,9 @@ Do not merge the chemistry world and instruction ecology into a hybrid until **e
 ## Prioritization
 
 1. **Completed:** AL01-CAL, AL01-DISCOVERY and AL01-RVCS. Preserve protocol and outcome archives without after-the-fact threshold changes.
-2. **Next implementation candidate:** AL02-LINEAGE, a substrate-independent test of *executed* reproduction, transmitted differences and functional heredity without designer-supplied logic bonuses or LLM rewards.
-3. **Then:** AL07-IDENTITY to test whether apparently persistent digital structures are genuinely process-dependent rather than passive attractors.
-4. **Later:** independently justify any hybrid architecture on held-out functional evidence; avoid merging chemistry and hereditary programs merely because both seem promising.
+2. **Completed:** [AL02-COPY](AL02-COPY-RESULTS.md) demonstrated a founder-supplied copy loop with byte-provenance, heritable mutation and a predefined nutrient preference; all worlds extinct. This is only a positive-control heredity system.
+3. **Next independent research question:** does heritable organization persist across **naturally arising resource feedback**, with new causal ecological affordances rather than merely flipping an existing hardcoded nutrient-opcode choice? Freeze a new experiment and its null controls *before* any implementation or new worlds.
+4. **Parallel measurement proposal:** AL07-IDENTITY — test whether apparent individuals are causally cohesive rather than engine-defined tapes or passive attractors.
+5. **Longer term:** consider bounded, data-only semantics changes only if source-backed evidence justifies it; avoid exposing host Python or deploying self-changing code.
 
 All hypotheses should remain open to null outcomes; no claim that intelligence must emerge from evolution.
