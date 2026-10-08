@@ -60,6 +60,37 @@ Design implications:
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
 
+**Current gate: SUBSTRATE-01 budget calibration completed.** The
+[precommitted comparison](SUBSTRATE-01-BUDGET-PROTOCOL.md) and
+[receipt](SUBSTRATE-01-BUDGET-RECEIPT.md) contain63 authored receipts, no new
+scientific seed populations. All material/potential ledgers conserved;14/14
+fixed counterpart histories matched active;7/7 interface external-source
+states/costs matched with explicit function/source-label differences. Trace
+markers suppressed usable resources after renewal and foreign marking; fixed
+reflexes explain their effect. These are calibration checks, not natural
+repair, evolved memory, collective organization or head-to-head fitness.
+190 Windows tests, independent audit, exact replay and15-file same-D restore.
+
+**Next scientific step:** precommit an interface-first finite local opportunity
+pilot before stochastic implementation/execution. Specify neutral local build/
+contact proposals, geometry/generator, finite budgets and all availability
+denominators. Compare paid ghost/disabled function, unmatched no assembly,
+fixed counterpart and explicitly funded external-source effects; do not assume
+authored fixture flux matching carries over to divergent populations. Endpoint
+is paid resource access and opportunities, not repair or heredity. The current
+kernel lacks an autonomous constructor, genome/ancestry, individuality or
+reproduction; these require later evidence rather than concatenated old
+positive results. Trace remains a competitor, with future false/foreign-state,
+resource reversal, fixed feedback and retention-cost controls.
+
+AI-Research now inspected at054f056787f6f000c1f507688c310bcf604540ea: complete
+Pass14 documents66..72 and successful exact-revision offline CI. Primary
+Lambert2014/Yi2000/Abreu2024 spot checks informed limits; no paper replication.
+EERC-R v4 remains a hypothesis and v1..v3 unchanged. Historical experiment
+source/data and reserved8000..8063 preserved. Operational risks remain open.
+
+Earlier gates below are retained history, superseded by this current decision.
+
 **Current gate: ADEQUACY-01 completed.** The separately
 [precommitted static reference](CLOSURE-03-ADEQUACY-PROTOCOL.md) and
 [receipt](CLOSURE-03-ADEQUACY-RECEIPT.md) count recipes in32 independent new
