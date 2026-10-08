@@ -67,4 +67,4 @@ These guarantees must be demonstrated by tests before they are described as oper
 
 ## Local-versus-cloud decision
 
-A dedicated local workstation or server is an excellent first always-on environment when power, cooling, networking, security and backups are adequate. Cloud or GPU rental may eventually be useful for burst workloads, but it is not a prerequisite for the first artificial-life experiments.
+Use the existing **owned D:-based local workstation** for bounded, operator-reviewed experiments. Paid cloud/GPU rental, metered APIs, subscriptions and self-hosted public GitHub runners are **out of scope under the user's current requirements**. Do not enable always-on operation until Windows checkpoint-restart, least-privilege execution, stop controls and independent physical backups are addressed in separate evidence gates.
