@@ -1,0 +1,28 @@
+name: Artificial-life laboratory tests
+on:
+  push:
+    branches: [main, 'research/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test deterministic AL01-CAL harness
+        run: python -m unittest discover -s tests -v
+      - name: Execute frozen AL01-CAL 32-seed calibration
+        run: python -m experiments.chemical_calibration --seeds 1000:1032 --output-dir runs/al01-cal --source-revision "$GITHUB_SHA"
+      - name: Preserve run records and complete step traces
+        uses: actions/upload-artifact@v4
+        with:
+          name: al01-cal-results
+          path: runs/al01-cal/
+          retention-days: 90
