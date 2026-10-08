@@ -169,7 +169,7 @@ New independent **engineering fixture** `experiments/checkpoint_pilot.py` uses t
 - [Frozen recovery pilot protocol](docs/RUNTIME-01-CHECKPOINT-PROTOCOL.md)
 - [Operator-controlled Windows Codex handoff and acceptance matrix](docs/DESKTOP-CODEX-HANDOFF-2026-10-08.md)
 - [Updated reported local runtime capabilities and blockers](docs/LOCAL-RUNTIME.md)
-- [Recovery pilot source](experiments/checkpoint_pilot.py) and [15 fault-injection tests](tests/test_checkpoint_pilot.py)
+- [Recovery pilot source](experiments/checkpoint_pilot.py) and [16 fault-injection and corruption tests](tests/test_checkpoint_pilot.py)
 - [Passing GitHub RUNTIME-01 validation](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37802792212)
 
 This fixture is **not** CLOSURE-02's biological experiment and cannot validate persistence for any other experiment's specific state schema. No GitHub update is automatically applied or executed on the local machine.
