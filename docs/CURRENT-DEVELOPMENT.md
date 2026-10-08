@@ -2,7 +2,38 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest completed gate — CONSTRUCTOR-01 component-history measurement
+## Latest science result — CONSTRUCTOR-01 opportunity pilot closed
+
+[Frozen protocol](CONSTRUCTOR-01-OPPORTUNITY-PROTOCOL.md)27ffc04f and
+[receipt](CONSTRUCTOR-01-OPPORTUNITY-RECEIPT.md): executed5770dc57, fresh96..111,
+16 independent initializations/two paired budgets/six arms,192 baseline histories
+plus4 matched branches. Funded active made70 components including10 internal C
+in6/16 worlds, used29 nutrients, but0/16 expressed registered renewed-chain use.
+Only2/16 first-birth matched impairments; intact/C-cut/D-cut post-trigger counts
+were0/0/0 and1/1/1. Admission threshold failed. All32 fixed histories matched;
+213 Windows tests, independent full-stream/identity audit, exact replay and
+15-file same-D restore passed. No engineering failure, changed old data or
+reserved8000..8063 execution. Read-only post-hoc ancestry census:28/29 converted
+units came through I built by genesis C;1 by internally born C. This is paid
+installed-law expression, not renewed maintenance, evolution or life.
+
+**Decision:** close this pilot and retire stationary A/C cycle as leading renewed
+organization candidate under this regime. Preserve as a paid access/production
+null; no extended horizon, selected first birth, retuning or confirmation.
+
+**Next science priority:** separately precommit a competing energy-accounted
+material-turnover/compositional substrate and structural opportunity comparison
+against this shared-bank null. Do not install a desired named cycle or free
+recycling. Assess usable precursor regeneration and producer dependencies,
+not merely resource-access events. No final architecture is assumed.
+
+**Engineering priority in progress:** separate HEARTBEAT-01 bounded state-linked
+heartbeat and read-only observer, then schema-specific continuity validation.
+No unattended activation. Off-D backup, physical power loss and hardened
+isolation remain open. Ora base2a0be5b9/CI37832589215 and AI-Research
+f2839a5c/Pass16 were reviewed; no newer main/open-PR work at intake.
+
+## Earlier completed gate — CONSTRUCTOR-01 component-history measurement
 
 [Precommitted measurement contract](CONSTRUCTOR-01-MEASUREMENT-CONTRACT.md)
 cacc867a and [acceptance receipt](CONSTRUCTOR-01-MEASUREMENT-RECEIPT.md):
