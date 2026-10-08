@@ -2,6 +2,33 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest engineering gate — HEARTBEAT-01 finite fixture completed
+
+[Precommitted contract](HEARTBEAT-01-CONTRACT.md)bedd4457 and
+[acceptance receipt](HEARTBEAT-01-RECEIPT.md): executed6eaa8547 after preserving
+science PR23/main5d23624.218 Windows tests passed; finite authored work counter
+stopped exhausted at tick12, paused at5, stopped by tick cap at7. Independent
+read-only observer verified identity/tick/state hash; abandoned running journal
+reported stale. Real simultaneous writer race admitted one identity; forged
+timer/energy/status/source evidence rejected. Authoritative replay (excluding
+UTC frame/hash fields) matched;34-file same-D restoration passed. No new
+scientific initializations or background/continuous service, API, UI change or
+legacy reuse. Clock execution does not establish learning or maintenance.
+
+**Next engineering priority:** preregister and implement finite schema-specific
+checkpoint/journal resume on a disposable copy, immutable world identity,
+before/after write process-exit injection, exact state recovery, no double tick,
+source/config mismatch and competing-resume rejection. Current fixture has no
+resume API or population continuity proof. Keep actual power-loss/off-D backup/
+unprivileged isolation and separately authorized unattended activation gated.
+
+**Science next priority remains independent:** CONSTRUCTOR-01 is closed with
+zero renewed-chain use; compare a separately registered paid material-turnover/
+compositional substrate against its shared-bank null. Do not persist the failed
+stationary cycle as a claimed organism. AI-Research mainf2839a5c remained
+unchanged at final checkpoints; published claims and EERC-S remain unreplicated
+research. Both prior desktop clones and frozen data/source remain preserved.
+
 ## Latest science result — CONSTRUCTOR-01 opportunity pilot closed
 
 [Frozen protocol](CONSTRUCTOR-01-OPPORTUNITY-PROTOCOL.md)27ffc04f and
@@ -27,8 +54,8 @@ against this shared-bank null. Do not install a desired named cycle or free
 recycling. Assess usable precursor regeneration and producer dependencies,
 not merely resource-access events. No final architecture is assumed.
 
-**Engineering priority in progress:** separate HEARTBEAT-01 bounded state-linked
-heartbeat and read-only observer, then schema-specific continuity validation.
+**Engineering priority:** HEARTBEAT-01 bounded state-linked heartbeat and
+read-only observer is completed above; schema-specific continuity is next.
 No unattended activation. Off-D backup, physical power loss and hardened
 isolation remain open. Ora base2a0be5b9/CI37832589215 and AI-Research
 f2839a5c/Pass16 were reviewed; no newer main/open-PR work at intake.
