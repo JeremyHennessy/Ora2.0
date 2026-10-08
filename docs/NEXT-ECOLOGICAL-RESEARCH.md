@@ -2,6 +2,12 @@
 
 **Prepared 2026-10-08. Research design only.** This document does not assert that Ora2.0 is alive, indefinitely evolving, intelligent or consciously experiencing anything.
 
+## Evidence checkpoint: AL07-TRACE completed
+
+[AL07-TRACE](AL07-TRACE-RESULTS.md) has now audited all historical AL02 worlds using independent, read-only event replay. The 1,621 original births, generation depth, material release/reuse and energy ledger reconciled with no invalid worlds; 66 tests passed, including fabricated-parent/material/time controls. This **does not** demonstrate physical sibling independence or endogenous individual formation. The read-only genealogy work described below is now a **completed baseline**, not a pending promise. Further counterfactual lineage tracing would require a new separately frozen protocol.
+
+**New active priority:** preregister a distinct **AL03-ecological resource-feedback** experiment, including active producer-vs-consumer causation, external matched-resource counterfactual, explicit conservation, and all failed worlds, before implementing any new eco-world. The AI-Research compendium added potentially relevant Stringmol and autopoiesis reviews, but its latest inspected `c88ed39` catalog revision failed offline CI; treat those reviews as leads pending validation, not new established results.
+
 ## What we now know from independent Ora2.0 research
 
 - **AL01-CAL:** a deliberately seeded catalytic loop can causally recover after damage under an explicit nutrient feed.
