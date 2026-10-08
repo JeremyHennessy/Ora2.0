@@ -116,7 +116,7 @@ Check Windows filesystem behavior under controlled **process** termination. Do *
 | Test / evidence | Pass condition | Where verified |
 | --- | --- | --- |
 | Git/source/venv | Reviewed exact commit, clean tree, Python 3.12.10 | Local Codex |
-| Regression | All original and new tests pass, **125 expected at initial RUNTIME-01 commit** | GitHub already passed; repeat locally |
+| Regression | All original and new tests pass, **126 expected at reviewed RUNTIME-01 branch** | GitHub already passed; repeat locally |
 | Exact cold run | 120 journal steps, zero AL01 ledger residual, final verified receipt | Local Codex |
 | Precommit crash (37) | Exit 77; restart equals uninterrupted run byte-for-byte | Local Codex |
 | Post-journal crash (43) | Exit 78; journal suffix replay; no duplicated transition | Local Codex |
