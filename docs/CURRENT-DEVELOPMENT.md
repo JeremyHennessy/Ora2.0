@@ -2,6 +2,42 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest completed gate — CONSTRUCTOR-01 static design
+
+[Precommitted design](CONSTRUCTOR-01-DESIGN-CONTRACT.md) ca19666 and
+[acceptance receipt](CONSTRUCTOR-01-DESIGN-RECEIPT.md): execution82348bb6,
+201 Windows tests,11 conserving reaction vectors,5616 bounded one-event
+inputs and9 authored feasibility envelopes. Five permit ideal resource use,
+four do not. A reciprocal A/C production law can pay for I under a suitable
+work buffer; C/I construction at W4 instead exhausts the bank before use.
+Externally installed I can capture without any constructor production.
+Exact report replay and9-file same-D restoration passed. This checker runs
+no new scientific panel and proves neither natural ancestry nor maintenance.
+
+**Current next science gate:** precommit the immutable-ID event/ancestry
+measurement contract and adversarial receipts before simulator development.
+Require live local catalysts, paid births, nonreused IDs, external-root tags,
+and a renewed A/C chain supporting I use. Then separately freeze the finite
+unscreened opportunity experiment, fresh seeds96 onward, actual funded
+availability and all missing/failed controls; no researcher search schedule
+or selected founder. Constructor knockout/matched paid D damage, paid ghost,
+fixed/direct-bank/external constructor and external-source controls remain
+required. Preserve all earlier laws/data and reserved8000..8063.
+
+**Latest research intake:** AI-Research main advanced from369e2863 to
+f2839a5c3ca8871d97a18f00073e00590966e122, final Pass16 integration. Complete
+documents79..87 read; unchanged across integration, concurrent crosswalk
+preserved; exact-revision workflows37830010729 and37829686273 successful.
+EERC-S v6 and possible/useful/inherited distinctions inform future controls;
+no independent paper replication or new organism capability follows. Ora main
+ba2abbaf/PR20's coordinated roadmap and exact CI37828725175 were reviewed.
+
+Track B still awaits its own finite heartbeat contract/dry-run gate. Nothing
+continuous is activated. Original RUNTIME-01 remains reported AL01 acceptance,
+not new constructor restart evidence. Off-D backup, physical power loss and
+hardened isolation remain open. Historical next-action paragraphs below are
+retained dated context; this latest completed gate controls Track A's next step.
+
 ## 2026-10-08 coordinated priorities — science plus bounded runtime engineering
 
 **Documentation checkpoint, not an activation or experiment run.** This is an addendum to the **single** current plan, not a second roadmap. It incorporates [AI-Research Pass 15](https://github.com/JeremyHennessy/AI-Research/blob/8f736fd2333a80e32f722faa09f9fb218acf62aa/docs/artificial-life/78-pass15-research-handoff.md), the [research-to-Ora evidence crosswalk](https://github.com/JeremyHennessy/AI-Research/blob/main/docs/artificial-life/ora2-evidence-to-roadmap-2026-10-08.md), and INTERFACE-01 merged on Ora2.0 main at `0c712e07722a13dc8c06f7d5a935b3bec01a05e6` ([PR #19](https://github.com/JeremyHennessy/Ora2.0/pull/19); [passing CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37827762930)). The parallel research Pass 16 branch on AI-Research is still **in progress** at this planning snapshot; do not silently treat its provisional reviews or new hypothesis as a finalized experimental result. Recheck both main heads and receipts before acting.
