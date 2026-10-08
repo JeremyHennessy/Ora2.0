@@ -137,6 +137,27 @@ class ConstructorEventTests(unittest.TestCase):
         self.assertEqual(summary["renewed_chain_conversions"], 0)
         self.assertEqual(summary["internal_C_births"], 1)
 
+    def test_fixed_physics_matches_and_repeat_use_keeps_one_interface(self):
+        active = fixtures.renewed("active")
+        fixed = fixtures.renewed("fixed", "fixed")
+        for key in ("initial", "events", "terminal"):
+            self.assertEqual(active[key], fixed[key])
+        f = fixtures.Authored("repeat", stock=(2,))
+        for action, role, cid in (("build","C","C1"), ("decay","A",None),
+                                  ("build","A","A2"), ("decay","C",None),
+                                  ("build","C","C3"), ("build","I","I4"),
+                                  ("contact",None,None), ("contact",None,None)):
+            f.step(action, role, cid)
+        summary = audit.audit_receipt(f.receipt())
+        self.assertEqual(summary["renewed_chain_conversions"], 2)
+        self.assertEqual(summary["renewed_chain_interface_ids"], ["I4"])
+        self.assertEqual(summary["renewed_chain_external_roots"], ["A0"])
+        c_cut, d_cut = (next(r for r in fixtures.fixtures() if r["case"] == "impair_" + role) for role in ("C", "D"))
+        for key in ("P", "W", "S", "waste", "heat"):
+            self.assertEqual(c_cut["events"][0]["after"][key], d_cut["events"][0]["after"][key])
+        self.assertEqual(c_cut["events"][1]["result"]["reason"], "catalyst")
+        self.assertEqual(d_cut["events"][1]["result"]["outcome"], "birth")
+
 
 if __name__ == "__main__":
     unittest.main()
