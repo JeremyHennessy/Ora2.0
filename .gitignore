@@ -1,0 +1,48 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.*
+secrets/
+
+# Python/build caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Simulation and generated research results (store in designated external state)
+runs/
+state/
+checkpoints/
+archives/
+artifacts/
+outputs/
+logs/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.parquet
+*.npy
+*.npz
+*.ckpt
+*.pt
+*.pth
+
+# Local tooling and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
