@@ -36,3 +36,15 @@ AI-Research main SHA `da7297629d1208774df758029cf3efc6a9800035`, workflow `37779
 ## Source type note
 
 Links and methods in AI-Research are citations and scientific context, *not* endorsements of the present simulations. This document records actual check-ins and their boundaries, not a promise of constant monitoring.
+
+## 2026-10-08 — Intake R3, following AL02-COPY preregistration
+
+AI-Research advanced from `da7297629d1208774df758029cf3efc6a9800035` to `3a4d7c7017d3136f88dd08fffe733e7313538a7f`, with successful offline-validation run `37783268207`. **These findings were reviewed after AL02-COPY protocol commit `60932ea12f577605bb25baef4341853346072676`**, so they were not used to alter the already frozen first heredity experiment.
+
+New reviewed materials:
+- `docs/artificial-life/20-outlier-original-2025-full-review.md`: binary CA physics was discovered under an *external* novelty objective, and recurrent form does not by itself establish heritable new function.
+- `docs/artificial-life/21-outlier-causal-selfhood-2026.md`: Hintze & Bohm's peer-reviewed causal ancestry analysis of branching, sometimes disconnected replication; independently corroborated method in a particular binary CA, not our experiment replicated.
+- `docs/artificial-life/22-engineering-life-and-transformational-novelty.md`: Susan Stepney's proposed distinctions between life requirements, design and implementation; a brief 2026 mutable-language concept remains too preliminary to declare transformational evolution.
+- `docs/artificial-life/23-unified-organism-evidence-standard.md` and `data/alife/operational-tests.json`: C01–C10 report axes separately. Our simple tape copier offers causal **write provenance** and **mutational inheritance**, but does not implement Outlier-like causal graph analysis across spatially disconnected entities, self-produced boundaries, agency, evolving interpreter semantics or open-ended innovation.
+
+**Decision:** preserve AL02-COPY's original ISA/seed distribution, and formulate a *separate* ecological niche-construction and causality experiment with fresh held-out worlds. Priority is functional inheritance and environmentally grounded maintenance, not a bigger language model or a more elaborate observer animation.
