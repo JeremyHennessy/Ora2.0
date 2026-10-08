@@ -101,6 +101,15 @@ A frozen study of **64 world seeds × 4 conditions** recorded **853** mutating-a
 
 This is **executed inheritance inside an authored, bounded simulator**, not evidence of a self-maintained living entity, learned cognition, self-created interpreter, or open-ended evolution.
 
+## AL07-TRACE — Verified causal genealogy (read-only)
+
+Using the **unchanged and hash-verified** AL02 archive, an independent read-only analysis replayed execution receipts, material ownership/turnover, program counters, parent-child IDs, energy/resource ledgers and deaths across all 256 worlds. **All 1,621 recorded births passed**, with **0 invalid worlds** and an observed maximum descendant generation of **8** in the mutation-enabled condition. Of the observed authors of offspring, **219** had at least two children that themselves reproduced across the complete study. This does **not** prove independent spatial causal selfhood, living autonomy or open-ended evolution.
+
+- [Frozen genealogy audit protocol](docs/AL07-TRACE-PROTOCOL.md)
+- [Complete results, reproducibility and limits](docs/AL07-TRACE-RESULTS.md)
+- [Independent source code](experiments/causal_genealogy_audit.py)
+- [Successful 66-test CI and preserved evidence](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37786729570)
+
 ## Privacy
 
 This repository was **public when the founding scaffold was created**. Never commit credentials, private-machine addresses, personal files, checkpoint data containing sensitive information, private paper archives, or environment secrets. Review visibility before connecting a dedicated machine or any self-hosted runner.
