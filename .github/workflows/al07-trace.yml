@@ -1,0 +1,37 @@
+name: AL07 read-only genealogical provenance
+on:
+  push:
+    branches: [main, 'research/al07-causal-genealogy']
+    paths:
+      - 'experiments/causal_genealogy_audit.py'
+      - 'tests/test_causal_genealogy.py'
+      - 'docs/AL07-TRACE-PROTOCOL.md'
+      - '.github/workflows/al07-trace.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  genealogical-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout pinned Ora2.0 experiment source
+        uses: actions/checkout@v4
+      - name: Pin recorded interpreter patch version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.17'
+      - name: Run all tests including forged-lineage counterexamples
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Recreate frozen AL02 input records without changing its source
+        run: python -W error::ResourceWarning -m experiments.executed_heredity --seeds 5000:5064 --output-dir runs/al02-al07-input --source-revision 1322657ee5189c483aa12f04f14fc54c55100502
+      - name: Verify original hashes and independently audit all recorded generations
+        run: python -W error::ResourceWarning -m experiments.causal_genealogy_audit --input-dir runs/al02-al07-input --output-dir runs/al07-trace
+      - name: Preserve complete output and anomaly receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: al07-trace-evidence
+          path: runs/al07-trace/
+          if-no-files-found: warn
+          retention-days: 90
