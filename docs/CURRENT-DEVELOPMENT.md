@@ -19,7 +19,7 @@ See [complete evidence, retained integration failure and confounds](CLOSURE-02-R
 
 ## Research intake checkpoint
 
-Latest inspected AI-Research main: `be7230b78881633bffd7f9885f244b1bd7a5c472`, descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39–42; AI-Research remains separate and research-only.
+Latest inspected AI-Research main at the final intake checkpoint: `599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1` (advanced from `be7230b78881633bffd7f9885f244b1bd7a5c472` during review), descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39–42, then the new Pass-10 transition synthesis (document 47) and its source/independence matrix. AI-Research remains separate and research-only.
 
 Direct primary-method check: [Mathis et al., AlChemy v2, 23 August 2024](https://arxiv.org/html/2408.12137v2), especially sections 4.2–5.2 and 6. The study reports that stable aggregate diversity can hide changes in expression membership, higher-order combinations often fail, and initialization/standardization changes outcomes. Its formal CRN construction is not a demonstration that random worlds find a viable metabolism. This is published/manuscript evidence **reported by those authors**, not reproduced by Ora2.0.
 
@@ -27,6 +27,7 @@ Design implications:
 - Count restoration of specific causal functions and their producers, not diversity/persistence alone.
 - Vary the object generator as a prespecified factor, without selecting successful worlds.
 - Separate resource access from construction of a new usable niche.
+- The new [Pass-10 transition synthesis](https://github.com/JeremyHennessy/AI-Research/blob/599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1/docs/artificial-life/47-pass10-major-transition-mechanism-synthesis.md) adds an explicit later gate: independently viable group daughters must transmit collective function; temporary clustering, researcher-separated propagules and parameter-weakened scaffolding do not establish endogenous reproductive individuality. These are reviewed author-reported studies and a prospective hypothesis, not Ora reproduction. Keep this gate separate from CLOSURE-03 repair.
 - Keep living organization, individual learning and consciousness as distinct hypotheses. Changing a catalog classification is not an evolved computational capability.
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
