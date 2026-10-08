@@ -52,7 +52,8 @@ burn-in ticks then remove every live P/T copy, even when one is absent.
 Follow for 128 ticks. A tick consumes three Random draws made after genesis:
 u,v,w=random(),random(),random(). If at least two tokens live, sort IDs,
 select actor floor(u*n), partner floor(v*(n-1)) from remaining IDs, and
-attempt a collision. If fewer than two, no collision/fuel spend occurs.
+attempt a collision if fuel remains. If fewer than two or fuel is exhausted,
+no collision/fuel spend occurs (including rescue-depleted final ticks).
 If w<1/16 and any token remains after collision/control, remove the token
 at floor((w*16)*n) in sorted live IDs. Damage is an event between ticks31/32.
 No early stopping; empty worlds retain their remaining tick histories.
