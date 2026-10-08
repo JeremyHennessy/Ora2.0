@@ -26,6 +26,16 @@ New commits consolidate the handoff, catalog and links; they add no Ora
 reproduction. Continue separating paid restoration from transmission of
 collective function. AI-Research remains separate and unmodified.
 
+The final review checkpoint advanced to
+`f279549e38239d31df78b577c4aab097da5da810`: inspected the new commit/file
+changes and complete [Pass-11 EERC proposal](https://github.com/JeremyHennessy/AI-Research/blob/f279549e38239d31df78b577c4aab097da5da810/docs/artificial-life/53-pass11-new-path-ecological-reproductive-closure.md).
+It is explicitly an untested hypothesis, not a software specification or
+experiment result. Retain matched external-resource controls, independent
+daughter/granddaughter function, interface knockout/rescue and extinction
+denominators as later gates. The new paper reviews were not independently
+reproduced or fully re-audited here. No EERC implementation is imported;
+CLOSURE-03 remains the narrower restoration-measurement program.
+
 Latest inspected AI-Research main at the final intake checkpoint: `599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1` (advanced from `be7230b78881633bffd7f9885f244b1bd7a5c472` during review), descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39–42, then the new Pass-10 transition synthesis (document 47) and its source/independence matrix. AI-Research remains separate and research-only.
 
 Direct primary-method check: [Mathis et al., AlChemy v2, 23 August 2024](https://arxiv.org/html/2408.12137v2), especially sections 4.2–5.2 and 6. The study reports that stable aggregate diversity can hide changes in expression membership, higher-order combinations often fail, and initialization/standardization changes outcomes. Its formal CRN construction is not a demonstration that random worlds find a viable metabolism. This is published/manuscript evidence **reported by those authors**, not reproduced by Ora2.0.
