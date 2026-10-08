@@ -79,3 +79,27 @@ schedules; physical capture under that law cannot establish evolved recognition
 or lineage autonomy. New source findings do not silently alter its frozen law,
 cases, prices, decision rule or historical studies. Check remote heads/CI again
 at integration; a successful old check does not validate later changes.
+
+## ENERGY-02 checkpoint — operational update, frozen scientific intake
+
+Synchronization first found research mainba158155/Pass 26 unchanged and new
+[operational recovery PR 7](https://github.com/JeremyHennessy/AI-Research/pull/7)
+at 2d4ba3d8. During source-pinned acceptance it merged as
+50bfa5b0b5fd1e20e10eabe036d0bb88ac8f1baa, with exact-main
+[CI 37858186418](https://github.com/JeremyHennessy/AI-Research/actions/runs/37858186418)
+successful. Read the complete 32-line checklist and one-commit comparison:
+only docs/artificial-life/CUSTODIAN_WRITE_RECOVERY.md changed. It is operational
+write/reconciliation guidance, not a scientific finding or experiment permission.
+Pass 25 PR 5 remains open/provisional. Pass 27 branch has no newly merged science.
+Research source classifications, canonical EERC/history and AI-Research code
+were not modified or independently recertified by Ora.
+
+Applied prospectively from merged Pass 26: ENERGY-02 separates supplied template,
+initial work, food/raw material and environment activation from producer-funded
+construction. Its activation-withdrawal control removes only external activation;
+successful length 4 descendants still have externally supplied compatible stocks
+and timing. Their two-generation authored possibility is not autonomous
+transmission, population reproduction or learned recognition. Untemplated
+exact-stock renewal also works, so genotype matching under supplied sequences
+cannot by itself demonstrate functional inheritance or template necessity.
+No new intake silently changes the frozen ENERGY-02 law or old experiments.
