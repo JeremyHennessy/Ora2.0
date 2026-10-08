@@ -2,7 +2,70 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest verified work — TEMPLATE-01 feasibility and HEARTBEAT-03 continuity
+## Latest verified work — TEMPLATE-02 negative and HEARTBEAT-04 continuity
+
+Science precommit `db620bf9`, executed `876f0bfa`, Windows Python 3.12.10:
+**252 tests passed**; [receipt](TEMPLATE-02-RECEIPT.md). After 2,176 authored
+assembly/accounting checks, fresh unscreened seeds 128..143/two budgets/five arms
+produced 160 correlated histories/20,480 events. Funded active assembled 245
+polymers and used 14 nutrients but made 0 copies, 0 own-funded functioning
+descendants and 0 renewed descendants. There were 115 material-ready copy
+proposals, none funded; 0/16 worlds ever attained copy funding. All 16
+active/untemplated primary contrasts tied. Priced ghost never activated.
+Shared bank produced 26 sequence-matching copies, none later used nutrients;
+global financing and decay protection are installed subsidies, not autonomy.
+All admission conditions failed: close this pilot without retuning, longer
+horizon, seed reuse or confirmation. Old outcomes/reserved 8000..8063 preserved.
+
+Post-hoc read-only energy census, no new worlds/endpoints: private polymer work
+never exceeded 4, at least 3 below any observed copy debit. Initial 1,024 plus 42
+captured units balanced 490 ligation, 237 contact, 99 reclamation and 240 decay
+expenditure/loss; terminal 0. Shared bank escapes decay; its individual financing
+and protection effects are not isolated. Exact replay/independent accounting
+and same-D restores passed: 14 science files plus 7 separately archived census
+files. Initial census archival lock refusal preserved; deferred retry succeeded.
+
+Engineering precommit `9852081d`, executed `3bc1ca65`: **260 Windows tests passed**;
+[receipt](HEARTBEAT-04-RECEIPT.md). Finite TEMPLATE-02 world serialization includes
+all 96 atom IDs, complete birth/parent/producer history, unique energy-token
+capture/ownership provenance, stocks/heat/bonds, PRNG and noise cursor. Seven
+actual process exits and ten complete canonical state-sequence comparisons
+passed. Corrupt/rehashed source/configuration/history/work/noise and competing
+resume reject before mutation; observer read-only, terminal resume idempotent,
+197-file same-D restoration exact. Existing development seed 1 only; no new
+scientific samples. This persists an installed reference kernel, not an organism.
+
+**Highest-value science priority:** separately precommit energy capture and
+retention feasibility before another fresh copying panel. Make resource binding,
+storage, failed encounters and loss explicit; use relevant cost-matched
+nonselective-contact and protected/global-subsidy controls. Check generic
+sequence/budget accounting, waste/regeneration and ancestry first. No winning
+founder, cheaper-copy retuning, free filtering/recycling or installed target
+cycle. Separate authored possibility, neutral realization and useful inheritance;
+private accounts are allocation proxies, not evolved compartments. Follow
+evidence rather than requiring this template architecture to succeed.
+
+**Engineering priority:** supervised resource/isolation feasibility plus
+independent off-D backup/restore and power-loss/storage-fault verification.
+No suitable independent backup medium or successful physical power-loss test
+was verified in this session. Cooperative locks/checkpoints are not hardened
+isolation. Keep observer/finite runtime/science separate; no evolving-population
+claim or unattended/external service/automatic local update activated. Such
+operation still needs the independent gates and separate authorization.
+
+**Latest research:** AI-Research remains `ced8f509`/Pass 21 at synchronization and
+post-acceptance check, exact CI 37846268170/37846174382 successful; Ora base
+`f1fa5ac3`/PR27 preserved. [Pass 21 intake](RESEARCH-INTAKE-PASS21.md) remains
+applicable: availability, selective entry, persistence, function and descendant
+reconstruction require distinct evidence. Compatibility/occupancy and engine
+subsidy do not establish quality control, inherited organization or adaptation.
+Published sources remain independently unreplicated; source/count/legend/
+statistical gaps remain open. Read current remote heads again before integration.
+
+The following sections preserve earlier decisions and context. Their former
+next-step statements are historical; the priorities immediately above govern.
+
+## Earlier verified work — TEMPLATE-01 feasibility and HEARTBEAT-03 continuity
 
 Precommit `04ad26e`; source-pinned acceptance `2159d4de`, Windows Python 3.12.10:
 **246 tests passed**. [Science receipt](TEMPLATE-01-RECEIPT.md): 392 authored cases,
