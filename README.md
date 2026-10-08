@@ -110,6 +110,16 @@ Using the **unchanged and hash-verified** AL02 archive, an independent read-only
 - [Independent source code](experiments/causal_genealogy_audit.py)
 - [Successful 66-test CI and preserved evidence](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37786729570)
 
+## AL03-NICHE — Ecological resource specialization study
+
+In a separate **engine-replicated** two-role ecological model, a P entity uses resource A and produces byproduct B; C entities use B. This model has **fixed, designer-authored** resource skills and cloning thresholds, unlike AL02's independently traced byte-write inheritance.
+
+In the frozen 48-seed/5-treatment survey, **42/48** heritable worlds exhibited a predeclared multi-generation B-feeding lineage, compared with **12/48** worlds under independently assigned offspring roles and **0/48** worlds with B production disabled or mutations disabled. All 48 no-inflow worlds ultimately became extinct (25 transiently produced the lineage). **76 tests passed** and all 240 world outputs and material/energy receipts matched checksums. These outcomes primarily reflect authored resource conversion and inheritance parameters, **not spontaneous novelty, organism-level autopoiesis or perpetual survival**.
+
+- [AL03 frozen protocol](docs/AL03-NICHE-PROTOCOL.md)
+- [AL03 completed results and serious confounds](docs/AL03-NICHE-RESULTS.md)
+- [Reproducible 48-seed GitHub Actions run](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37788831042)
+
 ## Privacy
 
 This repository was **public when the founding scaffold was created**. Never commit credentials, private-machine addresses, personal files, checkpoint data containing sensitive information, private paper archives, or environment secrets. Review visibility before connecting a dedicated machine or any self-hosted runner.
