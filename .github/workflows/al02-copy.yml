@@ -21,7 +21,7 @@ jobs:
       - name: Pin Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.11.17'
       - name: Run all invariant and fraud-detection tests
         run: python -W error::ResourceWarning -m unittest discover -s tests -v
       - name: Run exactly 64 preregistered virtual-world seeds and four controls
