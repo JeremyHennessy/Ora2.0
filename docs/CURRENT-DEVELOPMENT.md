@@ -19,6 +19,13 @@ See [complete evidence, retained integration failure and confounds](CLOSURE-02-R
 
 ## Research intake checkpoint
 
+2026-10-08 follow-up: inspected AI-Research main
+`af1b7b97507e2d7df5558f977cec985c1f8b30eb` and its new
+[tenth-pass handoff](https://github.com/JeremyHennessy/AI-Research/blob/af1b7b97507e2d7df5558f977cec985c1f8b30eb/docs/artificial-life/48-pass10-research-handoff.md).
+New commits consolidate the handoff, catalog and links; they add no Ora
+reproduction. Continue separating paid restoration from transmission of
+collective function. AI-Research remains separate and unmodified.
+
 Latest inspected AI-Research main at the final intake checkpoint: `599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1` (advanced from `be7230b78881633bffd7f9885f244b1bd7a5c472` during review), descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39–42, then the new Pass-10 transition synthesis (document 47) and its source/independence matrix. AI-Research remains separate and research-only.
 
 Direct primary-method check: [Mathis et al., AlChemy v2, 23 August 2024](https://arxiv.org/html/2408.12137v2), especially sections 4.2–5.2 and 6. The study reports that stable aggregate diversity can hide changes in expression membership, higher-order combinations often fail, and initialization/standardization changes outcomes. Its formal CRN construction is not a demonstration that random worlds find a viable metabolism. This is published/manuscript evidence **reported by those authors**, not reproduced by Ora2.0.
@@ -37,6 +44,31 @@ Question: **can a process ensemble rebuild a damaged prerequisite for its own pr
 Advance the [existing CLOSURE-03 design](CLOSURE-03-PROCESS-ORGANIZATION-DESIGN.md); do not create a duplicate architecture. The next gate must address its risk of reproducing ordinary fault-tolerant computation or the already-tested fixed catalytic graph.
 
 Ordered work:
+
+**Measurement gate implemented:** [frozen contract](CLOSURE-03-MEASUREMENT-CONTRACT.md)
+was committed at `5f38ed1` before evaluator implementation. The read-only
+`experiments/process_restoration_audit.py` verifies the explicit splice law,
+immutable IDs, live parents, damage, fuel/material debits and external ancestry.
+It reports paid causal payload restoration separately from fixed-table
+comparator recovery. Payload identity is not proof of functional equivalence
+or productive closure. Authored adversarial fixtures are measurement tests,
+not evidence of emergence. No CLOSURE-03 simulator or held-out panel exists.
+
+Windows regression acceptance at `4d513b1c` passed **156 tests**, Python
+3.12.10, under the existing operator lock, 5 GB minimum-space check and
+300-second timeout, from a pinned source archive. Evidence is retained locally
+under `D:\OraLab\runs\closure03-measure-20261008T164525Z-4d513b1c`.
+Earlier attempts are preserved: sandbox temporary-path permissions, then
+four CLOSURE-02 audit failures caused by Windows newline translation. The
+writer now explicitly emits LF, preserving Linux receipt format; chemistry,
+original frozen hashes and historical archives are unchanged. Regression
+tests use the same byte convention. This acceptance adds no power-loss,
+off-drive backup, hardened-isolation or CLOSURE-03 restart evidence.
+
+**Next scientific gate:** item 4 below: freeze a complete finite world protocol
+and unscreened generator distribution, causal cut/sham controls and independent
+development/held-out panels. The splice fixture is an auditor test law, not a
+validated substrate choice or permission to select favorable worlds.
 1. Compare a material/fuel-funded **constructive process-object** substrate (object structure determines interaction) against a **fixed-rule graph** comparator related to AL01. Select the smallest discriminating law; document installed copying/interpretation and finite execution limits. Reproducing an AL01 loop with process names is not an advance.
 2. Precommit a measurement contract and adversarial fixtures **before simulator development**: unique component IDs, immutable function/payload identities, parents and interpreter-step receipts, material/fuel debits, damage/removal events, external rescue tags and complete extinction histories. A replacement must regenerate both a damaged productive function and a producer of that function, via post-damage internal events; retained old material, relabeling and unverified cloning cannot count.
 3. Implement the independent read-only evaluator first. Test passive persistence, inert cycles, engine rescue, missing creators, forged ancestry, cost-free repair and ordinary redundant fixed-graph recovery. Report indeterminate cases where receipts cannot prove execution. No 'alive' score.
