@@ -71,6 +71,14 @@ The independent audit catches a fabricated birth lacking COPY receipts, shuffled
 
 AI-Research advanced to SHA `3a4d7c7017d3136f88dd08fffe733e7313538a7f` with CI run `37783268207` passing. Its new dossiers include the independent causal-lineage analysis of the Outlier cellular automaton ([Hintze & Bohm, 2026](https://doi.org/10.1038/s44260-026-00074-2)) and [Stepney's 2025 engineering framework](https://doi.org/10.1098/rstb.2024.0298). A new 10-property evidence specification distinguishes branching causal reproduction, functional heredity, self-maintenance and transformational novelty. These are important **new candidate measurement standards**, but they did **not** modify the preregistered AL02 outcomes or simulator physics. They will inform a **separately preregistered follow-up**, not retrofit stronger claims to the current data.
 
+## Exact patch-level replay receipt
+
+After the first study was frozen, the GitHub Actions interpreter was explicitly pinned from `3.11` to **`3.11.17`** without modifying any simulation, evidence, or evaluation code. [Second successful workflow #37783986289](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37783986289) ran the same 64-seed, four-condition protocol at head `14df81239490646eebf55b1054175f328d814c7e`.
+
+The two independent GitHub workflow executions generated **byte-for-byte identical `worlds.jsonl` (256 rows), `births.jsonl` (1,621 rows), and `events.jsonl` (42,249 rows)**. The three complete SHA-256 values in the table above were confirmed for **both downloaded archives**; only the summary's Git revision differs, as it should. Both report Python **3.11.17**.
+
+This is a **deterministic rerun / reproducibility check of the same dataset**, NOT a claim of independent scientific replication across other simulators, datasets or fundamentally different environments.
+
 ## Next scientific decision
 
 Close the positive-control heredity study here. Next investigate whether inherited behaviors remain viable within resource feedback and ecological interactions, with **new environments** and an explicit no-evolution/null baseline; separately investigate whether entity identity and repair can be endogenous instead of memory-protected. A possible high-value original hypothesis is that offspring can **construct a persistent, costly ecological niche** that improves viability of unrelated descendants without anyone rewarding cooperation—then test if that effect survives removing cross-feeding and fake environmental memory. This is **untested speculation**, not an existing result.
