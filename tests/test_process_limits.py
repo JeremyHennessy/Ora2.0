@@ -39,7 +39,8 @@ class ConfigTests(unittest.TestCase):
 class WindowsCapsTests(unittest.TestCase):
     def invoke(self, kind, **overrides):
         result = resource.run([PYTHON, str(FIXTURE), kind], resource.Limits(**overrides))
-        self.assertLessEqual(result['usage']['peak_job_memory_bytes'], result['limits']['memory_bytes'])
+        self.assertEqual(result['usage']['configured_memory_bytes'], result['limits']['memory_bytes'])
+        self.assertEqual(result['usage']['configured_processes'], result['limits']['processes'])
         self.assertLessEqual(result['retained_bytes'], resource.OUTPUT_LIMIT)
         self.assertFalse(result['isolation_verified'])
         return result
@@ -63,6 +64,12 @@ class WindowsCapsTests(unittest.TestCase):
         self.assertIn('memory-denied', result['output'])
         self.assertNotIn('allocation-succeeded', result['output'])
         self.assertFalse(result['timed_out'])
+
+    def test_causal_memory_allowance_control(self):
+        result = self.invoke('memory', memory_bytes=512 * 1024**2)
+        self.assertEqual(result['exit_code'], 0)
+        self.assertIn('allocation-succeeded 268435456', result['output'])
+        self.assertNotIn('memory-denied', result['output'])
 
     def assert_child_gone(self, result):
         rows = [json.loads(line) for line in result['output'].splitlines()]

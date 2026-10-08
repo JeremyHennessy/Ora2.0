@@ -98,6 +98,12 @@ class Job:
             checked(self.k.SetInformationJobObject(self.handle, 9, ctypes.byref(setting), ctypes.sizeof(setting)))
             action = wt.DWORD(0)  # JOB_OBJECT_TERMINATE_AT_END_OF_JOB.
             checked(self.k.SetInformationJobObject(self.handle, 6, ctypes.byref(action), ctypes.sizeof(action)))
+            readback = self.usage()
+            if (readback['configured_memory_bytes'] != limits.memory_bytes or
+                    readback['configured_processes'] != limits.processes or
+                    readback['configured_cpu_ticks'] != setting.basic.job_cpu or
+                    readback['flags'] & setting.basic.flags != setting.basic.flags):
+                raise RuntimeError('Job limit readback differs; refuse command')
         except BaseException:
             self.close()
             raise
@@ -110,7 +116,10 @@ class Job:
         checked(self.k.QueryInformationJobObject(self.handle, 1, ctypes.byref(accounting), ctypes.sizeof(accounting), None))
         checked(self.k.QueryInformationJobObject(self.handle, 9, ctypes.byref(limits), ctypes.sizeof(limits), None))
         return dict(user_cpu_seconds=accounting.user / 10_000_000,
-                    peak_job_memory_bytes=limits.peak_job_memory,
+                    windows_reported_peak_job_memory_bytes=limits.peak_job_memory,
+                    configured_memory_bytes=limits.job_memory,
+                    configured_processes=limits.basic.active_processes,
+                    configured_cpu_ticks=limits.basic.job_cpu, flags=limits.basic.flags,
                     started_processes=accounting.total_processes,
                     active_before_close=accounting.active_processes)
 
@@ -155,6 +164,7 @@ def run(command, limits=Limits(), cwd=None):
             kept.extend(block[:max(0, OUTPUT_LIMIT - len(kept))])
     started = time.monotonic()
     timed_out = False
+    supervisor_cpu_stop = False
     try:
         # The known stdlib bootstrap uses the existing base interpreter directly.
         # Windows venv redirectors consume additional job process slots.
@@ -169,12 +179,22 @@ def run(command, limits=Limits(), cwd=None):
         reader.start()
         process.stdin.write(b'go\n')
         process.stdin.close()
-        try:
-            process.wait(timeout=max(0.001, limits.wall_seconds - (time.monotonic() - started)))
-        except subprocess.TimeoutExpired:
-            timed_out = True
-            job.terminate()
-            process.wait(timeout=5)
+        while process.poll() is None:
+            if job.usage()['user_cpu_seconds'] >= limits.cpu_seconds:
+                supervisor_cpu_stop = True
+                job.terminate()
+                process.wait(timeout=5)
+                break
+            remaining = limits.wall_seconds - (time.monotonic() - started)
+            if remaining <= 0:
+                timed_out = True
+                job.terminate()
+                process.wait(timeout=5)
+                break
+            try:
+                process.wait(timeout=min(0.01, remaining))
+            except subprocess.TimeoutExpired:
+                pass
         usage = job.usage()
         job.close()  # Kill residual descendants on normal exits too.
         reader.join(timeout=5)
@@ -183,6 +203,7 @@ def run(command, limits=Limits(), cwd=None):
         return dict(schema='resource01-result-v1', platform='Windows', command=list(command),
                     bootstrap_python=bootstrap_python,
                     limits=vars(limits), exit_code=process.returncode, timed_out=timed_out,
+                    supervisor_cpu_stop=supervisor_cpu_stop,
                     elapsed_seconds=time.monotonic()-started, usage=usage,
                     output=kept.decode('utf-8', errors='replace'),
                     output_bytes=counts['bytes'], retained_bytes=len(kept),
