@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from experiments.process_pilot import ARMS, run_world, run_study, setup, canonical
 from experiments.process_pilot_audit import audit_study, expected_setup, verify_world, exact_p
@@ -103,3 +104,21 @@ class PilotTests(unittest.TestCase):
         w["seed"] = False
         with self.assertRaisesRegex(ValueError, "integer panel"):
             verify_world(w, expected_setup(0))
+
+    def test_authored_control_exposure_fixture_pays_for_suppressed_births(self):
+        # Deliberately authored branch-coverage fixture, never a sampled world.
+        a, b, c, p, t, d = ((2, 0, 3, 0), (0, 1, 1, 2), (0, 2, 0, 0),
+                            (0, 1, 3, 1), (1, 2, 3, 0), (0, 2, 0, 2))
+        genesis = [{"id": f"g{i}", "genome": list(g)} for i, g in enumerate((a, b, c, p, t, d))]
+        draws = [[0.0, 0.3, 0.9] for _ in range(160)]
+        draws[32] = [0.0, 0.0, 0.9]  # A/B => P, paid cut intercept
+        draws[33] = [0.9, 0.6, 0.9]  # rebuilt P/C => T in intact arm
+        draws[34] = [0.0, 0.45, 0.9]  # A/D => sham product in sham arm
+        prepared = (genesis, p, t, (a, b), (a, d), True, draws)
+        independent_fixture = json.loads(canonical(prepared))
+        with patch("experiments.process_pilot.setup", return_value=prepared):
+            for arm in ("cut", "sham", "inert"):
+                w = json.loads(canonical(run_world(0, 128, arm)))
+                result = verify_world(w, independent_fixture)
+                self.assertGreater(result["suppressed_births"], 0)
+                self.assertGreaterEqual(result["material_transformed"], 4 * result["suppressed_births"])
