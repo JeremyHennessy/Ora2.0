@@ -1,8 +1,8 @@
 # HEARTBEAT-01 finite engineering acceptance — 2026-10-08
 
 **Completed:** an operator-launched finite state-counter fixture and independent
-read-only telemetry observer. Heartbeat ticks correspond to verified physical
-counter transitions, not a clock callback. This is infrastructure validation,
+read-only telemetry observer. Heartbeat ticks correspond to verified counter
+transitions, not a clock callback. This is infrastructure validation,
 not a population world, learning experiment, checkpoint restart or service.
 
 ## Frozen contract and executed source
