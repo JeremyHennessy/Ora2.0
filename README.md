@@ -1,6 +1,6 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): founding research scaffold. No digital organism has been created, trained, or demonstrated to be alive.**
+**Status (2026-10-08): independent artificial-life research laboratory with one completed, reproducible chemical-feedback measurement calibration. No artificial organism has been created, trained, or demonstrated to be alive.**
 
 ## Research mission
 
@@ -37,6 +37,11 @@ It is not established that such a system would count as living or conscious. We 
 - [Founding research charter](docs/FOUNDING-CHARTER.md)
 - [Experiments and progression gates](docs/EXPERIMENT-PLAN.md)
 - [Dedicated computer / runtime design](docs/LOCAL-RUNTIME.md)
+- [Source-backed artificial-life research synthesis](docs/RESEARCH-SYNTHESIS-2026-10-08.md)
+- [Substrate-neutral experimental system design](docs/SYSTEM-DESIGN.md)
+- [AL01-CAL frozen experimental protocol](docs/AL01-CAL-PROTOCOL.md)
+- [AL01-CAL verified results and limitations](docs/RESULT-AL01-CAL-2026-10-08.md)
+- [Next competing hypotheses and experiments](docs/NEXT-EXPERIMENTS.md)
 
 ## Immediate direction
 
@@ -46,7 +51,20 @@ It is not established that such a system would count as living or conscious. We 
 4. Measure evidence of adaptation, maintenance, heredity, novelty, and transfer against controls.
 5. Only after reproducible results, add persistent local runtime and a strictly observational web interface.
 
-**Current implementation:** none. This initial repository scaffold is documentation, not an organism, model, or running simulation.
+## First experimental artifact
+
+The standard-library-only `experiments/chemical_calibration.py` implements a deliberately **designed** two-species catalytic loop, matched disruption/ablation/resource-denial conditions and exact molecule accounting. It is an engineering measurement calibration, **not** a digital organism or spontaneous chemical-life discovery.
+
+On 2026-10-08, the preregistered 32-seed run recorded sustained component recovery in **29/32 intact worlds** and **0/32** of each knockout, inert and starvation control; **3 intact failures were retained**. All 10 tests passed and the 128 records / 7,680 time-step traces passed independent checksum verification. See [full limitations and receipts](docs/RESULT-AL01-CAL-2026-10-08.md).
+
+Run independently with Python 3.11+ (no third-party dependencies):
+
+```bash
+python -m unittest discover -s tests -v
+python -m experiments.chemical_calibration --seeds 1000:1032 --output-dir runs/al01-cal
+```
+
+The generated `runs/` directory is Git-ignored. GitHub Actions archives the short-lived synthetic outputs, but only an externally backed-up copy provides durable retention. **No persistent autonomous process or remote machine is connected.**
 
 ## Privacy
 
