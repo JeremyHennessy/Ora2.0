@@ -1,0 +1,28 @@
+{
+  "schema": "turnover01-law-v1",
+  "alphabet": "01",
+  "sites": 8,
+  "max_chain_length": 6,
+  "atom_mass": 1,
+  "bond_potential": 1,
+  "nutrient_potential": 8,
+  "ligation_work": 2,
+  "ligation_heat": 1,
+  "reclaim_work": 1,
+  "reclaim_heat": 1,
+  "contact_read_work": 1,
+  "contact_process_work": 1,
+  "contact_return_work": 3,
+  "contact_release_heat": 5,
+  "binding_rule": "length_at_least_two_and_terminal_bit_complements_nutrient",
+  "decay_rule": "all_atoms_to_local_waste_and_all_bond_potential_to_heat",
+  "passive_upkeep_work": 0,
+  "pilot": {
+    "seeds": [112, 128],
+    "ticks": 128,
+    "monomers_per_site": 4,
+    "nutrients": 32,
+    "work_regimes": [96, 0],
+    "arms": ["active", "fixed", "ghost_reclaim", "ghost_capture", "local_stock", "shared_stock", "direct_access"]
+  }
+}
