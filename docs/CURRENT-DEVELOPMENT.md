@@ -60,6 +60,31 @@ Design implications:
 
 ## Next bounded milestone: CLOSURE-03 measurement and substrate discrimination
 
+**Current gate: NATURAL-01 completed without exposure.** The [precommitted natural-event protocol](CLOSURE-03-NATURAL-PROTOCOL.md)
+ran fresh seeds32..47, two resource regimes,32 baseline histories. [Run receipt](CLOSURE-03-NATURAL-RECEIPT.md):
+zero paid post-damage prerequisite births, zero matched causal pairs and zero
+qualifying restoration; all histories retained. Starved arm had2 potentially
+productive collisions but could not pay.178 tests at executed source3050789;
+exact raw/manifest/audit replay. Added read-only post-hoc census passed180 tests
+atfe77412 without changing model data or running new worlds. Funded histories
+had399 other births after damage and12/16 had some funded prerequisite-producing
+opportunity, but no such collision occurred;14/16 depleted birth material.
+
+**Next scientific step:** pause further restoration runs under this exact
+toy law. Precommit an exposure-adequacy assessment using structural recipe
+counts, finite collision budgets and separately registered calibration cases,
+independently of observed repair success. If it cannot justify a discriminating
+causal assay, compare a competing substrate rather than tuning these frozen
+worlds, adding favorable encounters or expanding their horizon. Preserve the
+pilot, EXPOSURE-01, NATURAL-01 and reserved8000..8063. No held-out confirmation
+is justified by a zero-pair causal comparison. Heredity/EERC remains separate.
+
+AI-Research checked again at intake: unchanged79fd6d19502f52b9f238bfad50b0315df0738271.
+No new processed research or Ora reproduction altered this experiment.
+
+Earlier next-action text below is retained history and is superseded by the
+current gate and decision above.
+
 **Current gate: EXPOSURE-01 completed.** The [precommitted exposure protocol](CLOSURE-03-EXPOSURE-PROTOCOL.md)
 and independent checker diagnose post-damage applicability using fresh seeds16..23.
 [Run summary and receipt](CLOSURE-03-EXPOSURE-RECEIPT.md):16 paired snapshots
