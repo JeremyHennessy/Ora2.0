@@ -1,0 +1,35 @@
+name: AL03-NICHE ecological-selection study
+on:
+  push:
+    branches: [main, 'research/al03-niche-selection']
+    paths:
+      - 'experiments/niche_selection.py'
+      - 'tests/test_niche_selection.py'
+      - 'docs/AL03-NICHE-PROTOCOL.md'
+      - '.github/workflows/al03-niche.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preregistered-ecology:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout pinned experiment source
+        uses: actions/checkout@v4
+      - name: Use pinned Python interpreter
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.17'
+      - name: Prove invariants on all dev-only tests
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Run exactly 48 preregistered network-free ecology seeds and five treatments
+        run: python -W error::ResourceWarning -m experiments.niche_selection --seeds 8000:8048 --output-dir runs/al03-niche --source-revision "$GITHUB_SHA"
+      - name: Preserve all worlds and failures with complete receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: al03-niche-complete
+          path: runs/al03-niche/
+          if-no-files-found: warn
+          retention-days: 90
