@@ -164,7 +164,7 @@ class HistoricalSaturationAuditTests(unittest.TestCase):
             trace_file = original / "traces.jsonl"
             trace = trace_file.read_text().splitlines()
             trace[0] = json.dumps(dict(json.loads(trace[0]), population=41))
-            trace_file.write_text("\\n".join(trace) + "\\n")
+            trace_file.write_text("\n".join(trace) + "\n")
             with self.assertRaisesRegex(ValueError, "outside declared cap"):
                 audit(original, Path(td) / "output", verify_original=False)
 
