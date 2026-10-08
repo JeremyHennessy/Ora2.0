@@ -88,6 +88,17 @@ AI-Research054f0567 unchanged at intake; Pass14 remains processed research and
 unimplemented EERC-R hypotheses, not Ora reproduction. Old source/data and
 reserved8000..8063 preserved. Off-D backup, power loss and isolation remain open.
 
+Final research checkpoint advanced to8f736fd2333a80e32f722faa09f9fb218acf62aa.
+Read complete Pass15 documents73..78 and verified exact-revision offline CI.
+The new EERC-L v5 remains untested. Carry its primitive/reachable-state
+inventory into the constructor design, and distinguish within-trajectory
+physical changes from future inherited accessibility changes. Fixed physical
+laws/table representations do not by themselves defeat emergent organization;
+the present assay lacks a system-produced constructor/network or lineage.
+Do not infer a newly evolved RNN, memory kernel or heritable mechanism from
+these reviews. No new primary-paper reproduction or Ora experiment came from
+AI-Research, and no protocol, law or outcome changed after this intake.
+
 Earlier gates below are retained history, superseded by this current decision.
 
 **Current gate: SUBSTRATE-01 budget calibration completed.** The

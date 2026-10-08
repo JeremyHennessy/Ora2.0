@@ -123,3 +123,24 @@ review. No new processed research altered this frozen protocol. Prior EERC-R
 temporal-reliability hypothesis remains research-only; this pilot does not
 test its memory/learning/transmission requirements. AI-Research stays separate
 and unmodified; later intake belongs to future hypotheses, not these outcomes.
+
+At final integration AI-Research advanced to
+`8f736fd2333a80e32f722faa09f9fb218acf62aa`. Inspected the new commits/files,
+read complete Pass15 documents73..78 and verified successful exact-revision
+offline CI. The [Pass15 handoff](https://github.com/JeremyHennessy/AI-Research/blob/8f736fd2333a80e32f722faa09f9fb218acf62aa/docs/artificial-life/78-pass15-research-handoff.md)
+and [EERC-L v5 proposal](https://github.com/JeremyHennessy/AI-Research/blob/8f736fd2333a80e32f722faa09f9fb218acf62aa/docs/artificial-life/77-pass15-eerc-latent-repertoire-two-clocks-hypothesis.md)
+separate recruitment of previously available network behavior, within-life
+state changes and heritable changes across generations. This is repository
+review of author-reported studies and hypotheses; the underlying new papers
+were not independently method-audited or reproduced here.
+
+Future constructor design must inventory installed primitives, initial
+production dependencies and reachable states. Fixed foundational physics
+does not itself rule out new reachable organization: table equivalence alone
+is not a general falsifier of emergence. Here the narrower limitation is that
+assembly/access are directly installed, the free bank/scheduler supplies the
+constructor and no production organization or lineage is present. The new
+research adds no RNN/controller, phenotype reward, mutation, new primitive or
+future score to this frozen pilot. Its within-life/evolution distinction is a
+later evidence gate, not a claim this pilot measures either adaptive learning
+or heritable innovation. All original protocols and data remain unchanged.
