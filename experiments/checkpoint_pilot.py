@@ -306,10 +306,12 @@ def restored(
     )
     if expected_head != cp["journal_head"]:
         raise IntegrityError("Checkpoint journal-head mismatch")
-    initial_state_for_mass, _, mass = initial_state(expected_identity)
+    initial_state_for_mass, genesis_rng, mass = initial_state(expected_identity)
     if checkpoint_step == 0:
         if cp["state"] != asdict(initial_state_for_mass):
             raise IntegrityError("Genesis checkpoint state modified")
+        if cp["rng_state"] != pack_rng(genesis_rng):
+            raise IntegrityError("Genesis PRNG snapshot does not match declared seed")
     else:
         if cp["state"] != records[checkpoint_step - 1]["body"]["state"]:
             raise IntegrityError("Checkpoint state differs from committed journal")
