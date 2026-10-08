@@ -42,9 +42,10 @@ class AdequacyTests(unittest.TestCase):
         measured = producer.measure(pool, 128)
         self.assertEqual((measured["recipe_pairs"], measured["matched_recipe_pairs"]), (2, 2))
         self.assertEqual(measured, auditor.expected_measure(pool, 128))
-        # Same-genome self-pair needs distinct IDs; here both parents can create P.
+        # Three identical genomes still allow six distinct-ID pairs, not nine.
         pool = producer.tokens([(0, 0, 2, 0)] * 3)
         self.assertEqual(producer.measure(pool, 128), auditor.expected_measure(pool, 128))
+        self.assertEqual(producer.measure(pool, 128)["ordered_distinct_id_pairs"], 6)
         removed = producer.tokens([producer.P, producer.T])
         self.assertEqual(producer.measure(removed, 128)["ordered_distinct_id_pairs"], 0)
 
