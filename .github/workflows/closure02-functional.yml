@@ -1,14 +1,5 @@
 name: CLOSURE-02 cost-controlled functional boundary assay
 on:
-  push:
-    branches: [main, 'research/closure02-functional-controls-20261008']
-    paths:
-      - 'experiments/closure02_functional.py'
-      - 'experiments/closure02_audit.py'
-      - 'tests/test_closure02_audit.py'
-      - 'tests/test_closure02_functional.py'
-      - 'docs/CLOSURE-02-PROTOCOL.md'
-      - '.github/workflows/closure02-functional.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,7 +19,7 @@ jobs:
       - name: Run full preregistered 64 seed, 3 origin, 5 arm study
         run: python -W error::ResourceWarning -m experiments.closure02_functional --seeds 6400:6464 --output-dir runs/closure02-functional --source-revision "$GITHUB_SHA"
       - name: Independently verify original raw SHA and all 960 world step chains
-        run: python -W error::ResourceWarning -m experiments.closure02_audit --input-dir runs/closure02-functional --output-dir runs/closure02-audit
+        run: python -W error::ResourceWarning -m experiments.closure02_audit --input-dir runs/closure02-functional --output-dir runs/closure02-audit --expected-revision "$GITHUB_SHA"
       - name: Archive all sampled worlds, ineligible trials and step traces
         if: always()
         uses: actions/upload-artifact@v4
