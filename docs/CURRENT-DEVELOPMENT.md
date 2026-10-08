@@ -23,12 +23,16 @@ heat/waste and producer dependencies; no desired named cycle/free recycling,
 selected founder or observer reward. Precommit structural opportunities and
 controls before fresh finite sample execution; preserve reserved8000..8063.
 
-**Research update:** AI-Research advanced to46311a3f/Pass17; current documents88..94
-and exact successful CI37835990167/37835927369 reviewed. [Intake](RESEARCH-INTAKE-PASS17.md)
-qualifies material-rescue interpretation and shared enzyme trajectory provenance.
-Separate endogenous production, specific effects beyond generic subsidy, and
-eventual descendant reconstruction. No independent paper replication or new
-organism capability follows. CONSTRUCTOR-01 remains closed at0/16 renewed use.
+**Research update:** reviewed AI-Research46311a3f/Pass17 documents88..94 and
+472ab24c/Pass18 documents95..99 plus its evidence ledger, discovered at final
+integration check. Exact successful latest CI37838127446/37838081280 reviewed.
+[Intake](RESEARCH-INTAKE-PASS17.md) qualifies material rescue, shared trajectory
+provenance and relational continuity. Separate endogenous production, effects
+beyond generic subsidy, component survival/autonomy escape, ancestry, exchange
+function and eventual descendant reconstruction. Preserve unresolved source
+counts/legend discrepancies; no forced-cooperation reward or rate pooling.
+No independent paper replication or new organism capability follows.
+CONSTRUCTOR-01 remains closed at0/16 renewed use.
 
 **Next engineering step:** adapt finite journal/checkpoint continuity to the
 chosen frozen scientific state schema, including full PRNG and object-ID history,

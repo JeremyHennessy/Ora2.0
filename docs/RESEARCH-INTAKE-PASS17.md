@@ -57,3 +57,33 @@ measure installed access, not endogenous maintenance or inheritance.
 This change improves prospective interpretation only. It creates no organism,
 world, functional inheritance, evolution, learning or consciousness result.
 The engineering counter checkpoint acceptance has zero new science samples.
+
+## Pass 18 addendum — new main discovered at final integration check
+
+Before merging, AI-Research advanced to
+`472ab24ca6d7e3411c9686500d5981e80f84fa05`. Read its complete documents95..99
+and machine-readable relational-continuity ledger. Exact-source integrity CI
+[37838127446](https://github.com/JeremyHennessy/AI-Research/actions/runs/37838127446)
+and[37838081280](https://github.com/JeremyHennessy/AI-Research/actions/runs/37838081280)
+completed-success. New totals:261 publications,45 E2 reviews, zero independent
+source reproductions; two existing sources were promoted and one source added,
+not three new independently evolved systems. Prior EERC versions remain intact.
+
+[Pass18 handoff](https://github.com/JeremyHennessy/AI-Research/blob/472ab24ca6d7e3411c9686500d5981e80f84fa05/docs/artificial-life/99-pass18-research-handoff.md)
+adds a positive reported producer-dependent opportunity case (Turner), qualified
+limits on dependent adaptation (Pauli), and component rescue accompanied by
+partnership loss (Melero). These are processed primary reviews, not experiments
+reproduced here. Melero's conflicting denominators and Turner's conflicting
+figure legend remain unresolved; do not pool rates or repair plots by assumption.
+Chemical timecourses and descendant samples retain their nested provenance.
+
+Prospectively record component survival, compositional ancestry, exchange function,
+autonomy escape and eventual reconstruction separately. Survival after partner
+loss must not be relabeled preservation of that relationship, but it may be a
+valid individual adaptation. Do not force cooperation as an organism reward.
+Define before sampling whether a claim concerns the original partners, functional
+relation or a changed relation. Continuing parental material, co-presence or
+researcher pairing/copying cannot establish daughter reconstruction. Ordinary
+environmental energy/material inflow is allowed; thermodynamic closure is not
+a requirement for life. These refinements leave the negative constructor result
+and next paid turnover/composition feasibility priority unchanged.

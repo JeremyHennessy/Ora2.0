@@ -87,7 +87,11 @@ reported AL01 evidence; this acceptance does not relabel it as a new full rerun.
 Next science priority is the separately frozen paid material-turnover/composition
 feasibility/opportunity comparison. [Pass17 intake](RESEARCH-INTAKE-PASS17.md)
 sharpens producer/removal, specific-material/generic-resource rescue and eventual
-descendant reconstruction comparisons. Next engineering step is an independently
+descendant reconstruction comparisons. Pass18 main472ab24c was discovered at
+final integration check; its full notes95..99/ledger and exact green CI were
+reviewed. Component survival, relationship loss and descendant reconstruction
+remain distinct; current plan incorporates this without rerunning or altering
+the accepted counter. Next engineering step is an independently
 audited finite stochastic-state adapter once its immutable scientific law/state
 schema is selected, including PRNG/object-ID continuity. Keep the unchanged AL01
 checkpoint implementation as an existing reference rather than claim a second
