@@ -2,7 +2,59 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest engineering verification and observer coordination — RESOURCE-01
+## Latest science gate — ENERGY-02 precursor coupling
+
+Prospective protocol 536cc114, executed source 7da1b691, Windows Python 3.12.10:
+**284 tests passed /1 platform guard skipped**,285 attempted. The separate
+[receipt](ENERGY-02-RECEIPT.md) records 9,264 authored cases /189,120 events,
+independent semantic energy/material/provenance verification and all controls.
+Exact raw/summary/audit replay and read-only audits passed; 66 historical/shared
+inputs unchanged, 16-file same-D archive restoration passed.
+Zero natural worlds or reserved samples. Private capacity n and copy price 3n+1
+stay unchanged; a new explicit precursor-local potential law enables incremental
+paid recognition/ligation/release with finite producer or external activation.
+
+**Scientific result:** 48 producer-funded matching functional primary children
+occur only in registered length 4/budget 2..4/maintenance-food 8 cases. All 16
+length 4 sequences repeat for two authored generations. External activation
+allows shorter construction, but after its withdrawal only 16 length 4 descendants
+fund the second child. Both generations are producer-funded only in the fully
+producer source arm. Uncoupled construction fails; cost-matched energetic ghosts
+have 0 child captures. Untemplated exact-input renewal also passes: matching
+supplied sequences/function are not evidence of independent functional heredity.
+Old ENERGY-01/TEMPLATE-02 negative results and frozen laws remain unchanged.
+
+**Current science priority:** precommit startup/contact/stability feasibility
+before any fresh neutral-world panel. Remove the sorted compatible-feed shortcut
+prospectively, account paid failed encounters and precursor loss, and assess
+generic startup against supplied polymer/external activation controls. Present
+law requires a supplied polymer for biological activation/templating; longer
+monomer-only runs cannot supply a missing reaction. Favorable genesis work,
+organization, input bits, ordered timing and stable activation remain subsidies.
+No natural reproduction, sustained self-maintenance, adaptation or learning claim.
+
+**Current engineering priority:** separately precommit resource-triggered
+interruption and same-world recovery on a disposable finite HEARTBEAT-04 reference.
+RESOURCE-01 process caps and HEARTBEAT-04 continuity passed independently; their
+composition remains unverified. Investigate anomalous Windows memory peaks;
+off-D backup/restore, power-loss/storage faults and hardened filesystem/network
+isolation remain open. No unattended world is authorized or activated here.
+
+**Research/observer coordination:** AI-Research advanced to 50bfa5b0/merged PR 7,
+exact CI 37858186418 successful. Complete diff adds only an operational write-
+recovery checklist; merged Pass 26 remains the scientific intake, Pass 25 PR 5
+provisional. See [intake](RESEARCH-INTAKE-PASS22.md). Observer chat published
+[recorded HEARTBEAT-04 view](https://jeremyhennessy.github.io/Ora2.0/) from separate
+gh-pages 0fe06cb2; Pages run 37859671215 successful. That chat reports public
+desktop/mobile Chromium checks; actual iPhone Safari remains unverified.
+Observer sourcefcfa7ce is separate, shared local main 4937612 stays preserved
+during science acceptance. Current observer does not display ENERGY-02 or run a
+world. Pages UI, future read-only feed and simulated execution remain separate.
+
+Earlier sections retain dated history. The science and engineering priorities
+immediately above govern the next work; do not resume their completed proposals.
+
+## Earlier engineering verification and observer coordination — RESOURCE-01
 
 Prospective contract `1f51448`, diagnostic addendum `e6fc005`, executed source
 `cdaff83f`, Windows Python3.12.10: **278 tests passed / 1 platform guard skipped**
