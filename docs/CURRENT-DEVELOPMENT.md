@@ -2,7 +2,46 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest verified work — ENERGY-01 feasibility and OBSERVER-01 repair
+## Latest engineering verification and observer coordination — RESOURCE-01
+
+Prospective contract `1f51448`, diagnostic addendum `e6fc005`, executed source
+`cdaff83f`, Windows Python3.12.10: **278 tests passed / 1 platform guard skipped**
+(279 attempted). [Receipt](RESOURCE-01-RECEIPT.md) preserves initial failures,
+16 repeated causal fixtures and six independent OS child-exit checks. Manual
+Job Object supervision verifies configured allocation constraints, observed
+user-CPU-budget termination, active-process limit, wall timeout, bounded output
+and orphan cleanup. CPU polling supplements the periodic OS timer. Refused256MiB
+allocation at128MiB succeeds under the512MiB control. Raw Windows memory peaks
+remain anomalous; exact peak-memory/CPU ceilings and hardened isolation are
+unverified. 63 historical/shared inputs unchanged; 16-file same-D restore passed.
+No simulation law, scientific samples, launchers or unattended runtime changed.
+
+**Current science priority:** separately precommit paid activated precursors and
+incremental reaction-energy coupling with complete producer/external activation,
+recognition/ligation/release/endowment costs, provenance, waste and subsidy-
+withdrawal controls. Check authored accounting feasibility before fresh worlds;
+ENERGY-01 and TEMPLATE-02 negative sufficiency results stay frozen.
+
+**Current engineering priority:** investigate memory accounting; prospectively
+test resource-triggered interruption and same-world checkpoint recovery on a
+disposable finite reference. These fixtures do not establish cap integration
+with a simulated world. Off-D backup/restore, physical power-loss/storage faults
+and hardened filesystem/network execution remain separate open gates.
+
+**Observer coordination:** Build Read-Only Universe Observer completed a
+local-only app through `aa84f64` and advanced local main with three commits;
+GitHub main remained `2648b118` during resource acceptance. Preserve those
+commits and its appended OBSERVER-02 plan section during local integration.
+This resource publication does not publish observer code, recordings or images.
+The app uses `ora-observer-v1` for the frozen HEARTBEAT-04 reference, with
+schematic coordinates and recorded activity only; actual Safari unverified.
+Existing receipt dashboard/tools/launchers stayed unchanged. AI-Research remains
+`ba158155` / merged Pass26; Pass25 PR5 still open/conflicted and provisional.
+
+Earlier sections preserve their historical priorities; the current two-track
+priorities immediately above govern development.
+
+## Earlier science and observer verification — ENERGY-01 and OBSERVER-01
 
 Precommit `9fe789ea`, executed `6a68c21b`, existing Windows Python 3.12.10:
 **268 tests passed**. [Energy receipt](ENERGY-01-RECEIPT.md): 4,192 authored
