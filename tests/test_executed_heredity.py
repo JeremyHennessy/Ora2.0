@@ -78,6 +78,28 @@ class VirtualPhysicsTests(unittest.TestCase):
         self.assertEqual(w.heat, w.genesis_energy)
         self.assertEqual(w.assert_invariants(), (0, 0))
 
+    def test_fake_unregistered_organism_is_rejected_even_when_material_balances(self):
+        from experiments.executed_heredity import Gene, Organism
+        w = World(0, variant="faithful")
+        material_unit = min(w.free_units)
+        w.free_units.remove(material_unit)
+        w.organisms[41] = Organism(
+            organism_id=41, tape=(Gene(NOP, material_unit),),
+            energy=0, generation=1, parent_id=0, born_tick=0
+        )
+        # Mass and energy alone cannot catch an unauthorized engine-side duplication.
+        with self.assertRaisesRegex(AssertionError, "Unregistered live organism"):
+            w.assert_invariants()
+
+    def test_consumption_is_accounted_separately_by_food_species(self):
+        w = World(4, variant="faithful", food_a=3, food_b=8)
+        r = w.run(50)
+        self.assertEqual(r["consumed_food_a"], 3 - r["remaining_food_a"])
+        self.assertEqual(r["consumed_food_b"], 8 - r["remaining_food_b"])
+        self.assertGreater(r["consumed_food_a"], 0)
+        self.assertEqual(r["consumed_food_b"], 0)
+        self.assertEqual(w.assert_invariants(), (0, 0))
+
 
 class LineageAuditTests(unittest.TestCase):
     def setUp(self):
