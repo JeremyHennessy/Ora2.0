@@ -2,7 +2,50 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science gate — TURNOVER-01 opportunity pilot closed
+## Latest verified work — TEMPLATE-01 feasibility and HEARTBEAT-03 continuity
+
+Precommit `04ad26e`; source-pinned acceptance `2159d4de`, Windows Python 3.12.10:
+**246 tests passed**. [Science receipt](TEMPLATE-01-RECEIPT.md): 392 authored cases,
+all 28 binary sequences 2..4, zero fresh natural worlds. Every active supplied
+template produced two paid sequence-matching generations with nutrient-funded
+production, explicit child endowment and conserved per-bit material/energy.
+Priced untemplated null produced 14/28 second products and 3/28 exact sequences;
+shared bank produced 28/28. Function uses only the terminal bit; neither full
+sequence utility nor a unique advantage of private accounts was established.
+This is installed-mechanism feasibility, not spontaneous reproduction/evolution.
+TURNOVER-01 remains closed without altered data, prices, horizons or samples.
+
+[Engineering receipt](HEARTBEAT-03-RECEIPT.md): full finite reference-world state,
+PRNG/noise cursor, immutable object IDs/ancestry and history survive seven actual
+process exits. Ten canonical state sequences matched uninterrupted output;
+partial/corrupt/coherently rehashed history and competing resumes reject without
+mutation. Observer read-only; terminal resume idempotent. Existing seed 1 only,
+32-tick manual reference plus 128-tick regression match to the old stream.
+Exact science replay and 200-file same-D evidence restoration passed. Original
+clones, old runtime interfaces, historical experiments and reserved samples remain
+preserved; no unattended/external service or automatic local updates activated.
+
+**Highest-value science priority:** separately freeze generic spontaneous assembly
+from monomers and neutral encounters before any fresh template opportunity panel.
+First check accounting for added assembly and work allocation. Supply no functional
+template or selected founder; retain untemplated/shared-bank/priced-ghost nulls,
+complete exposure/cost/provenance and unconditional functional-descendant counts.
+Passing authored feasibility is not admission to confirmation or a final architecture.
+
+**Engineering priority:** adapt bounded continuity to that prospectively frozen
+schema with independent ancestry/PRNG replay. Off-D backup, physical power-loss/
+storage-fault recovery and hardened isolation remain open prerequisites for
+separately authorized unattended operation; no evolving-population claim yet.
+
+**Latest research:** AI-Research advanced to `ced8f509`/Pass 21 during acceptance.
+Complete notes 109..113 and ledger reviewed; exact CI 37846268170/37846174382 passed.
+[Intake](RESEARCH-INTAKE-PASS21.md) distinguishes availability, entry, persistence,
+function, descendant reconstruction and evolved capacity. Compatibility/occupancy
+does not prove quality assessment. Arrival-order, plausible alternative components
+and source-linked unconditional outcomes inform future controls. Source readings
+remain unreplicated; historical access/count/legend/statistical gaps remain open.
+
+## Earlier science gate — TURNOVER-01 opportunity pilot closed
 
 [Frozen protocol](TURNOVER-01-PROTOCOL.md) `1d783f3` and
 [receipt](TURNOVER-01-RECEIPT.md): executed `d07cbdf4`, fresh seeds 112..127,
