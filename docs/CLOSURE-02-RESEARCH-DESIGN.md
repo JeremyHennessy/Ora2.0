@@ -1,6 +1,9 @@
 # CLOSURE-02 — Cost-controlled boundary function, or replace the model
 
-**Status: original, unexecuted research proposal (2026-10-08).** Not an approved source recipe for “digital life,” a published first, a working protocell, an organism, or a result. Any implementation requires its **own separately frozen protocol before held-out data**. No code or problems from the previous Ora project are design inputs.
+**Completed decision:** [CLOSURE-02-FUNCTION results](CLOSURE-02-RESULTS.md) evaluated the five branch types specified below with 64 new seed groups, 157 eligible origins and 140 passing tests. Although programmed M permeability reduced catalyst escape and produced modest benefit relative to inert M, active additional M synthesis **did not improve core restoration beyond the cost-matched ghost**, while `no_shell` had the highest recovery. We therefore retire the current shell-production mechanism as a leading candidate and preserve it as a negative control. The process-based alternative below remains **planned**, not implemented.
+
+
+**Historical research proposal, now experimentally evaluated in a separate preregistered study (2026-10-08).** Not an approved source recipe for “digital life,” a published first, a working protocell, an organism, or a result. Any implementation requires its **own separately frozen protocol before held-out data**. No code or problems from the previous Ora project are design inputs.
 
 ## What CLOSURE-01 changed
 
