@@ -4,6 +4,14 @@
 
 The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) calibrated a designed feedback loop. [AL01-DISCOVERY](AL01-DISCOVERY-RESULTS.md) subsequently tested 80 unscreened catalytic networks and its [AL01-RVCS follow-up](AL01-RVCS-RESULTS.md) tested 144 fresh networks for nontrivial two-path redundancy, with both experiments preserving all negative outcomes. These are **toy reaction networks, not life**. Original future-study language below remains as an archived proposal; the action priority is updated at the end.
 
+## CLOSURE-02 and current next research choice
+
+**Completed:** [CLOSURE-02-FUNCTION](CLOSURE-02-RESULTS.md) tested an authored shell vs inert shell, spent-S ghost-shell, inert ghost and no synthesis, using **64 fresh seeds**, three starting states and **960 treatments**. The read-only auditor independently verified all **57,600** traces and original raw hashes; **140 tests passed**. The shell's direct diffusion effect helps compared with inert M under some starting modes, but **new M production is not cost-effective**: core recovery in 70/157 eligible shell-effect cases versus 71/157 ghost-effect and 148/157 no-shell. Model is not life and lacks real thermodynamic metabolism. The candidate M production route is **retired as the leading self-maintenance hypothesis**, preserving its negative evidence.
+
+**Now planned, not executed:** [CLOSURE-03 independent process-organization hypothesis](CLOSURE-03-PROCESS-ORGANIZATION-DESIGN.md). Before any code or run, independently preregister an exact causal repair-of-repair assay with passive attraction, external rescue, and resource/compute matched knockout nulls. Do not carry over old Ora project design or equate fault-tolerant processes with living organisms.
+
+**Locally reported operational gate:** [RUNTIME-01 Windows process-exit recovery accepted by local Codex](RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md), but actual power-loss recovery, off-D backup, hardened security and continuous operation remain open. That checkpoint prototype is limited to its AL01 reactor fixture.
+
 ## Current decisive evidence from CLOSURE-01-SPATIAL
 
 The complete [CLOSURE-01-SPATIAL results](CLOSURE-01-SPATIAL-RESULTS.md) **did not demonstrate functional membrane protection**: 37/93 eligible worlds had core A/R recovery with M synthesis versus 79/93 with that synthesis disabled; M made inert to catalyst diffusion produced 33/93 recoveries and the same total combined shell+core recovery count, 27/93, as intact. The added shell is currently a weak/negative design choice, not an organism.

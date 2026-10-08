@@ -1,0 +1,32 @@
+name: CLOSURE-02 cost-controlled functional boundary assay
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  functional-assay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact experiment and historical control source
+        uses: actions/checkout@v4
+      - name: Pin Python used for prior CLOSURE study
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.17'
+      - name: Validate unchanged physics and all research/runtime tests
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Run full preregistered 64 seed, 3 origin, 5 arm study
+        run: python -W error::ResourceWarning -m experiments.closure02_functional --seeds 6400:6464 --output-dir runs/closure02-functional --source-revision "$GITHUB_SHA"
+      - name: Independently verify original raw SHA and all 960 world step chains
+        run: python -W error::ResourceWarning -m experiments.closure02_audit --input-dir runs/closure02-functional --output-dir runs/closure02-audit --expected-revision "$GITHUB_SHA"
+      - name: Archive all sampled worlds, ineligible trials and step traces
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: closure02-functional-all-worlds
+          path: |
+            runs/closure02-functional/
+            runs/closure02-audit/
+          retention-days: 90
+          if-no-files-found: warn
