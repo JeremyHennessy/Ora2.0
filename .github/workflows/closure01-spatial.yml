@@ -1,0 +1,41 @@
+name: CLOSURE-01 spatial organization falsification
+on:
+  push:
+    branches: [main, 'research/closure01-spatial-organization']
+    paths:
+      - 'experiments/closure_spatial.py'
+      - 'tests/test_closure_spatial.py'
+      - 'experiments/closure_spatial_diagnostics.py'
+      - 'tests/test_closure_spatial_diagnostics.py'
+      - 'docs/CLOSURE-01-SPATIAL-PROTOCOL.md'
+      - '.github/workflows/closure01-spatial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  spatial-assay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout preregistered model
+        uses: actions/checkout@v4
+      - name: Pin Python patch version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.17'
+      - name: Test original models and new spatial controls
+        run: python -W error::ResourceWarning -m unittest discover -s tests -v
+      - name: Run all 36 seed groups with three origins and six matched variants
+        run: python -W error::ResourceWarning -m experiments.closure_spatial --seeds 6100:6136 --output-dir runs/closure01-spatial --source-revision "$GITHUB_SHA"
+      - name: Verify raw hashes, all 648 treatment traces and post-hoc comparisons
+        run: python -W error::ResourceWarning -m experiments.closure_spatial_diagnostics --input-dir runs/closure01-spatial --output-dir runs/closure01-analysis
+      - name: Archive every eligible, ineligible, negative and retained world
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: closure01-spatial-all-worlds
+          path: |
+            runs/closure01-spatial/
+            runs/closure01-analysis/
+          if-no-files-found: warn
+          retention-days: 90

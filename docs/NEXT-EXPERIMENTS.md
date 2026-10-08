@@ -1,8 +1,14 @@
 # Next research experiments — independent, falsifiable and substrate-neutral
 
-**Status:** Three synthetic chemistry studies and the positive-control AL02-COPY heredity experiment are complete and verified. Their frozen code/protocols remain preserved. The next unimplemented questions are ecological heredity/novelty and independent organizational identity; no artificial organism has been demonstrated. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
+**Status (2026-10-08):** Frozen and verified synthetic catalytic, inherited-copy, genealogy, ecology and spatial-organization studies exist in this repo. All historical source and negative outcomes remain preserved. No autonomous, living or self-sustaining digital organism has been demonstrated. Scientific premises from independent artificial-life publications and the [AI-Research ALife atlas](https://github.com/JeremyHennessy/AI-Research/tree/52161ce4ce08208232621845f3f08424f3adbc35/docs/artificial-life).
 
 The completed [AL01-CAL](RESULT-AL01-CAL-2026-10-08.md) calibrated a designed feedback loop. [AL01-DISCOVERY](AL01-DISCOVERY-RESULTS.md) subsequently tested 80 unscreened catalytic networks and its [AL01-RVCS follow-up](AL01-RVCS-RESULTS.md) tested 144 fresh networks for nontrivial two-path redundancy, with both experiments preserving all negative outcomes. These are **toy reaction networks, not life**. Original future-study language below remains as an archived proposal; the action priority is updated at the end.
+
+## Current decisive evidence from CLOSURE-01-SPATIAL
+
+The complete [CLOSURE-01-SPATIAL results](CLOSURE-01-SPATIAL-RESULTS.md) **did not demonstrate functional membrane protection**: 37/93 eligible worlds had core A/R recovery with M synthesis versus 79/93 with that synthesis disabled; M made inert to catalyst diffusion produced 33/93 recoveries and the same total combined shell+core recovery count, 27/93, as intact. The added shell is currently a weak/negative design choice, not an organism.
+
+**Next scientific priority** is the controlled research question in [CLOSURE-02](CLOSURE-02-RESEARCH-DESIGN.md): compare permeability function against ghost-shell synthesis that spends substrate on inert products, using fresh seeds and a membrane-independent work/retention metric; otherwise retire the model and explore an independent process-closure substrate. No AL01/02/03/CLOSURE-01 parameters will be quietly revised.
 
 ## Updated current program (2026-10-08)
 
