@@ -16,6 +16,7 @@ Directly cross-checked primary publications:
 - Plantec et al. (2025), [Flow-Lenia](https://doi.org/10.1162/artl_a_00471). Mass-conserving local transport supports complex localized patterns and mixed parameter landscapes; complexity and evolutionary activity are not established open-ended biological organization.
 - Mordvintsev et al. (2020), [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/). Regeneration experiments use target-derived learning or damage training; don't infer organism-derived developmental purpose.
 - Taylor (2015), [requirements for open-ended evolution](https://www.tim-taylor.com/papers/taylor2015requirements.web.html). The five requirements are theoretical proposals, **not** a theorem proving sufficiency or a universally accepted definition.
+- Segura (2026), [experimental probes of autopoietic self-maintenance](https://doi.org/10.1016/j.biosystems.2026.105928). **Abstract/publisher text screened, not full methodology reviewed:** the author distinguishes a system's causal closure from its measured response profile, a direct caution against calling a successful perturbation test "life".
 
 ## Significant findings
 
