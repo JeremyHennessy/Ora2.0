@@ -34,16 +34,16 @@ Before applying updates, manually use the **existing** fetch / apply-reviewed-up
 
 1. Open **D:\OraLab\README.txt** and **D:\OraLab\tools\oralab.py** to verify its existing operator lock, 5 GB free-space check, per-command **5-minute** timeout, snapshot verification, backup manifest and output-only-on-D behavior.
 2. Adapt/wrap RUNTIME-01 with those existing local-only safeguards **if necessary**. Cloud GitHub does not inspect this helper. Avoid making unreviewed changes to either repository: document local helper differences separately and propose GitHub patch review if needed.
-3. The new pilot has its **own run-local OS writer lock**. That is not a hardened sandbox or replacement for the already reported global \`oralab.py\` operator lock.
+3. The new pilot has its **own run-local OS writer lock**. That is not a hardened sandbox or replacement for the already reported global `oralab.py` operator lock.
 4. No network or external tool calls are issued by the pilot; however, local execution of Python from a Git clone **is not a hardened process sandbox**. Use the existing least-privilege lab account/filesystem restrictions, don't run unreviewed PRs.
-5. Each test uses a **brand-new run directory** under \`D:\OraLab\runs\`, never the original AL01 result folder. The pilot itself writes its checkpoint and journal inside that run-specific folder, not directly into the current reserved \`D:\OraLab\checkpoints\` or \`D:\OraLab\state\`.
+5. Each test uses a **brand-new run directory** under `D:\OraLab\runs`, never the original AL01 result folder. The pilot itself writes its checkpoint and journal inside that run-specific folder, not directly into the current reserved `D:\OraLab\checkpoints` or `D:\OraLab\state`.
 6. The remote GH Linux proof is **not** evidence of Windows msvcrt file-lock behavior, Windows atomic rename behavior, Windows power-failure durability, a recovery daemon or persistent life. No off-D independent backup yet exists.
 
 ## 4. Manual PowerShell acceptance script (review before execution)
 
 Run from a PowerShell terminal opened under the existing D: lab setup. This is a **finite, offline test**, not a scheduled job. The commands below assume the reported venv is still present and the reviewed source is checked out:
 
-\`\`\`powershell
+```powershell
 $repo = 'D:\OraLab\src\Ora2.0'
 $python = 'D:\OraLab\src\Ora2.0.venv\Scripts\python.exe'
 Set-Location $repo
@@ -91,19 +91,19 @@ foreach ($runName in @('precommit','afterjournal','aftercheckpoint')) {
     }
 }
 'RUNTIME-01 PASS: bounded Windows process exit/restart is deterministic'
-\`\`\`
+```
 
-**Operator caution:** The script uses a fixed folder name as an illustrative *new* test directory. Before running, choose a unique run ID that does not exist, and verify 5 GB free D: space. The script does **not** independently enforce \`oralab.py\`'s global operator lock or 5-minute timeout; local Codex must wrap it under those established protections. The code in the repo applies its own per-run writer lock and an upper limit of 10,000 ticks, but that is **not** a whole-machine resource quota.
+**Operator caution:** The script uses a fixed folder name as an illustrative *new* test directory. Before running, choose a unique run ID that does not exist, and verify 5 GB free D: space. The script does **not** independently enforce `oralab.py`'s global operator lock or 5-minute timeout; local Codex must wrap it under those established protections. The code in the repo applies its own per-run writer lock and an upper limit of 10,000 ticks, but that is **not** a whole-machine resource quota.
 
 **Cross-OS hashes:** Linux-vs-Windows manifest bytes may differ because the manifest records platform identity; the required comparison is *four Windows runs on the same local reviewed source*, not byte equality of Windows and Linux archive files. If different run configurations are used, equivalence is no longer the valid acceptance claim.
 
 ## 5. Local Codex validation beyond the happy path
 
 In **copies** of the completed synthetic run only, verify:
-- truncated or modified \`journal.jsonl\` is rejected (no silent repair);
-- missing or altered \`checkpoint.json\` is rejected;
-- a wrong \`--revision\`, source hash, Python version or changed seed/horizon refuses resume;
-- an unfinished interrupted run refuses \`--verify-only\` until recovery completes;
+- truncated or modified `journal.jsonl` is rejected (no silent repair);
+- missing or altered `checkpoint.json` is rejected;
+- a wrong `--revision`, source hash, Python version or changed seed/horizon refuses resume;
+- an unfinished interrupted run refuses `--verify-only` until recovery completes;
 - two simultaneous writers to the same pilot directory cannot both proceed;
 - a completed run re-verifies as idempotent without adding a step;
 - a copy/restore of the *checkpoint-pilot run directory* is verified after restore using unchanged reviewed code;
@@ -135,11 +135,11 @@ Check Windows filesystem behavior under controlled **process** termination. Do *
 ## 7. What to return to the Ora2.0 development chat
 
 Give a concise verification receipt containing:
-1. reviewed Git SHA, \`git status --short\` result, Python executable/version and D: free space;
+1. reviewed Git SHA, `git status --short` result, Python executable/version and D: free space;
 2. pass/fail and total tests, cold and each crash/recovery exit code;
 3. final journal and receipt hashes from cold/three restarts and archived restore;
 4. any material Windows-only deviations, code patch/PR links if made, and which are unmerged;
-5. evidence that existing \`oralab.py\` operator lock, free-space and time limit still apply;
+5. evidence that existing `oralab.py` operator lock, free-space and time limit still apply;
 6. **separate outstanding blockers:** no independent off-D backup, no hard power-cut recovery, no 24/7 worker, no hardened sandbox or entity autonomy.
 
 Do not paste secrets, private repo credentials, account IDs, private hostnames, file-system access tokens or a full personal hardware inventory into a public GitHub issue. Local Codex can attach a redacted, checksum-indexed receipt to the secure lab history and summarize it to the chat.
