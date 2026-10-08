@@ -8,6 +8,18 @@ Can a computational substrate yield persistent self-maintaining organization, ad
 
 **Do not conflate this with creating consciousness.** Whether a digital process can be alive, conscious, or have subjective experience is unsettled and requires distinct philosophical and scientific treatment. This program studies observable properties.
 
+## Strict independence from previous Ora projects
+
+**User direction (2026-10-08): Ora2.0 must not be influenced by the original Ora/AgentTest project or its problems.**
+
+- The shared **name** does not imply architectural, experimental, developmental, or historical continuity.
+- **Do not import, copy, adapt, or use** legacy code, phases, benchmarks, rewards, goals, prompts, UI, observer architecture, handoffs, experiments, roadmaps, or data as a starting point.
+- **Do not design around** old Ora's bugs, failures, operational incidents, constraints, or proposed fixes. No “lessons learned from previous Ora” as requirements or design guidance.
+- No inherited stage numbers, aspirations, intelligence milestones, agent personalities, or continuation of a prior organism.
+- All future design decisions must be independently justified by **artificial-life science, explicit new hypotheses, and experiments performed for Ora2.0 itself**.
+- Standard software safety, verification, provenance, and reproducibility practices are allowed, but must stand on their own merits rather than being imported as legacy-project solutions.
+- Only revisit legacy Ora material if the user specifically requests a comparison or authorizes an exception; otherwise keep it out of design reviews and research inputs.
+
 ## What “no goals” does and does not mean
 
 - Do not impose chatbot utility, human imitation, predefined skill curricula, or a targeted intelligence score.
