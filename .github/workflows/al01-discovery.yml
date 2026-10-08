@@ -1,0 +1,33 @@
+name: AL01-DISCOVERY preregistered survey
+on:
+  push:
+    branches: [main, 'research/al01-network-discovery']
+    paths:
+      - 'experiments/network_discovery.py'
+      - 'tests/test_network_discovery.py'
+      - 'docs/AL01-DISCOVERY-PROTOCOL.md'
+      - '.github/workflows/al01-discovery.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout frozen source
+        uses: actions/checkout@v4
+      - name: Set Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run every deterministic substrate test
+        run: python -m unittest discover -s tests -v
+      - name: Execute complete prespecified 80-network survey
+        run: python -m experiments.network_discovery --networks 7000:7080 --replicates 3 --output-dir runs/al01-discovery --source-revision "$GITHUB_SHA"
+      - name: Archive every network, all variants, full traces, and summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: al01-discovery-complete
+          path: runs/al01-discovery/
+          retention-days: 90

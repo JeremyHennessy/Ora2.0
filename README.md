@@ -66,6 +66,17 @@ python -m experiments.chemical_calibration --seeds 1000:1032 --output-dir runs/a
 
 The generated `runs/` directory is Git-ignored. GitHub Actions archives the short-lived synthetic outputs, but only an externally backed-up copy provides durable retention. **No persistent autonomous process or remote machine is connected.**
 
+## Random-network exploration (AL01-DISCOVERY)
+
+The second experiment sampled 80 unscreened six-species reaction graphs, preserving the 21 acyclic ones and all failures. **151/240 trajectories** were eligible under the frozen pre-damage rule; intact recovery was **142/151**, compared with **47/151** after preselected cyclic-edge removal and **146/151** under a non-cycle-edge-control (including logged no-op cases). The full 79,200 post-step traces and 1,440 variant records were hash-verified. All 21 unit/integration tests passed.
+
+**Interpretation:** this is causal measurement inside a deliberately authored toy chemistry, **not** evidence of digital life, replication, true metabolism or emergent general intelligence. Post-hoc inspection found some effect is trivially explained by deleting a target's only production route. A new blinded follow-up is therefore needed before stronger conclusions.
+
+- [Frozen random-network protocol](docs/AL01-DISCOVERY-PROTOCOL.md)
+- [Full experimental results and confounds](docs/AL01-DISCOVERY-RESULTS.md)
+- [Original research hypotheses (untested)](docs/NEW-RESEARCH-HYPOTHESES.md)
+- [Run and archived artifacts](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37779761681)
+
 ## Privacy
 
 This repository was **public when the founding scaffold was created**. Never commit credentials, private-machine addresses, personal files, checkpoint data containing sensitive information, private paper archives, or environment secrets. Review visibility before connecting a dedicated machine or any self-hosted runner.
