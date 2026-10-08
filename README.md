@@ -96,6 +96,7 @@ A frozen study of **64 world seeds × 4 conditions** recorded **853** mutating-a
 - [AL02-COPY frozen protocol](docs/AL02-COPY-PROTOCOL.md)
 - [AL02-COPY measured results, limitations, checksums](docs/AL02-COPY-RESULTS.md)
 - [AL02 heredity architecture comparison](docs/AL02-HEREDITY-DESIGN.md)
+- [Next science: ecological inheritance and causal-lineage analysis](docs/NEXT-ECOLOGICAL-RESEARCH.md)
 - [First 64-seed experimental receipt](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37783308992)
 
 This is **executed inheritance inside an authored, bounded simulator**, not evidence of a self-maintained living entity, learned cognition, self-created interpreter, or open-ended evolution.
