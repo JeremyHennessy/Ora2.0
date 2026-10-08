@@ -1,0 +1,39 @@
+{
+  "schema": "constructor01-design-v1",
+  "species": ["P", "S", "A", "C", "I", "D", "waste", "W", "heat"],
+  "material_weights": [1, 1, 4, 4, 4, 4, 1, 0, 0],
+  "potential_weights": [0, 8, 0, 0, 0, 0, 0, 1, 1],
+  "slots": ["A", "C", "I", "D"],
+  "passive_work_cost": 0,
+  "construction_material": 4,
+  "construction_work": 2,
+  "contact_read_work": 1,
+  "contact_process_work": 1,
+  "contact_return_work": 3,
+  "contact_release_heat": 5,
+  "impairment_work": 1,
+  "reactions": [
+    {"name": "make_A", "catalyst": "C", "product": "A", "minimum_W": 2, "delta": [-4,0,1,0,0,0,0,-2,2]},
+    {"name": "make_C", "catalyst": "A", "product": "C", "minimum_W": 2, "delta": [-4,0,0,1,0,0,0,-2,2]},
+    {"name": "make_I", "catalyst": "C", "product": "I", "minimum_W": 2, "delta": [-4,0,0,0,1,0,0,-2,2]},
+    {"name": "make_D", "catalyst": "C", "product": "D", "minimum_W": 2, "delta": [-4,0,0,0,0,1,0,-2,2]},
+    {"name": "convert", "catalyst": "I", "product": null, "minimum_W": 2, "delta": [0,-1,0,0,0,0,1,1,7]},
+    {"name": "read_only", "catalyst": null, "product": null, "minimum_W": 1, "delta": [0,0,0,0,0,0,0,-1,1]},
+    {"name": "failed_contact", "catalyst": null, "product": null, "minimum_W": 2, "delta": [0,0,0,0,0,0,0,-2,2]},
+    {"name": "decay_A", "catalyst": "A", "product": null, "minimum_W": 0, "delta": [0,0,-1,0,0,0,4,0,0]},
+    {"name": "decay_C", "catalyst": "C", "product": null, "minimum_W": 0, "delta": [0,0,0,-1,0,0,4,0,0]},
+    {"name": "decay_I", "catalyst": "I", "product": null, "minimum_W": 0, "delta": [0,0,0,0,-1,0,4,0,0]},
+    {"name": "decay_D", "catalyst": "D", "product": null, "minimum_W": 0, "delta": [0,0,0,0,0,-1,4,0,0]}
+  ],
+  "authored_envelopes": [
+    {"name": "no_producer", "state": [12,2,0,0,0,1,0,8,0], "conversion_reachable": false},
+    {"name": "interface_only", "state": [12,1,0,0,1,0,0,2,0], "conversion_reachable": true},
+    {"name": "A_bootstrap", "state": [8,1,1,0,0,0,0,6,0], "conversion_reachable": true},
+    {"name": "C_bootstrap", "state": [4,1,0,1,0,0,0,4,0], "conversion_reachable": true},
+    {"name": "material_starved", "state": [0,1,1,0,0,0,0,8,0], "conversion_reachable": false},
+    {"name": "work_trap", "state": [8,1,1,0,0,0,0,4,0], "conversion_reachable": false},
+    {"name": "productive_buffer", "state": [8,2,1,0,0,0,0,6,0], "conversion_reachable": true},
+    {"name": "no_nutrient", "state": [12,0,1,1,0,0,0,8,0], "conversion_reachable": false},
+    {"name": "renewal_envelope", "state": [16,1,1,0,0,0,0,10,0], "conversion_reachable": true}
+  ]
+}
