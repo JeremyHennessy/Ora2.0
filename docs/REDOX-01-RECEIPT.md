@@ -107,3 +107,22 @@ hostile-writer, physical durability, persistent-runtime or learning claim.
 Exact source, all192 records, decision, raw file seals, process exits, regression
 evidence, preserved packaging failure and backup proof are retained in the local
 laboratory and compact public evidence. See [Stage3 assessment](STAGE-3-ASSESSMENT-2026-10-09.md).
+
+Independent C:/ora/redox01-20261009 backup and guarded readback now pass:all1073
+sealed files,all192 recorded worlds separately reinterpreted,51 authoritative
+replay files,241 prior C files unchanged,and full captured Git-history bundles
+verified without making new clones. Final ZIP SHA256
+`0a68ceaae63847b8e2cddb935982a9d1e6b8c0163e432c1106aa56edeca1eff9`.
+[Backup proof](../data/redox01/backup-proof.json).
+The first readback's final self-ledger failed because its preallocated64KiB
+metadata extent was smaller than its serialized ledger. Preserve it; a fresh
+restore preallocates1MiB inside the SAME phase/combined ceilings and passes.
+All first-readback data hashes and192 interpretations had already passed; no
+science sample, law, cost or evidence quota was enlarged or overwritten.
+
+A third relational raw-event check independently verifies both rare control
+witnesses:background63024/atoms88,89 and mixed63027/atoms18,19. Each shows prior
+causal use,blind2048 loss,two fresh later photons,natural rebuilding and later
+causal use. Types change1→11 and2→6; neither is exact-state inheritance.
+[Witness payments/times](../data/redox01/control-witnesses.json). No witness used
+as a selected founder or success claim for the failed candidate.

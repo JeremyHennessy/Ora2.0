@@ -13,6 +13,8 @@ and paid well-mixed1/32; adequate19/32 candidate damage exposure; paired P=1.
 paid reactions under installed physics, not self-maintenance. Stop this law and
 horizon. [Decision/receipt](REDOX-01-RECEIPT.md);
 [compact evidence](../data/redox01/decision.json).
+All1073 sealed evidence files and192 recorded worlds also pass independent
+C:/ora backup/readback; previous backups preserved. [Proof](../data/redox01/backup-proof.json).
 
 **Stage3 sprint assessment:** [substages3.1–3.6](STAGE-3-ASSESSMENT-2026-10-09.md)
 map to the user's October9 six objectives. No autonomous self-maintenance or

@@ -1,0 +1,48 @@
+[
+  {
+    "seed": 63024,
+    "arm": "background",
+    "slot": 44,
+    "old_uid": 49,
+    "new_uid": 125,
+    "atoms": [
+      88,
+      89
+    ],
+    "prior_catalysis": 328,
+    "damage": 2048,
+    "photon_capture_times": [
+      2275,
+      2275
+    ],
+    "formation": 3060,
+    "later_catalysis": 3397,
+    "old_kind": 1,
+    "new_kind": 11,
+    "raw_sha256": "d6fe83a76e55343e9883bf2682f30d938a55843c7b60c536cb455c775ba01acf",
+    "scope": "Rare control functional replacement, not candidate success or inheritance"
+  },
+  {
+    "seed": 63027,
+    "arm": "mixed",
+    "slot": 9,
+    "old_uid": 60,
+    "new_uid": 80,
+    "atoms": [
+      18,
+      19
+    ],
+    "prior_catalysis": 1608,
+    "damage": 2048,
+    "photon_capture_times": [
+      2523,
+      2523
+    ],
+    "formation": 3490,
+    "later_catalysis": 4025,
+    "old_kind": 2,
+    "new_kind": 6,
+    "raw_sha256": "8edf0da2bbcbba5bc9eb11bb94509702aa78fdb4f449db1378bfb6bcbb0217bc",
+    "scope": "Rare control functional replacement, not candidate success or inheritance"
+  }
+]
