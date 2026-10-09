@@ -1,0 +1,68 @@
+# Stage3 scientific assessment — October9,2026
+
+**Self-sustaining organization is not yet demonstrated.** This assessment maps
+3.1–3.6 to the six objectives in the user's October9 Stage3 sprint. The older
+EXPERIMENT-PLAN's separately named Stage3 remains historical; its gates have not
+been silently renamed or declared complete. Installed chemistry, authored
+possibility, rare natural reactions and repeatable organization are distinct.
+
+| Sprint substage | Demonstrated in unscreened worlds | Controlled-only capabilities | Failed hypotheses | Remaining obstacle | Evidence required for acceptance |
+| --- | --- | --- | --- | --- | --- |
+| 3.1 Energy capture and productive use | GRADIENT paid capture/transport; REDOX candidate1844 captures/168 causal catalytic uses without functional founders | ENERGY-01 supplied complementary capture; priced ghosts and endowment fixtures | ENERGY-01 selective advantage disappears under price matching; RECYCLE capture-funded productive startup absent | Captured potential can remain inaccessible or unproductive; installed capture is not autonomous organizational benefit | Repeatable useful activity funded by natural resources, beating resource-matched inert/background controls with causal structure ablation |
+| 3.2 Local construction and recycling | Ordinary KINETIC associations; GRADIENT one paid renewal lifecycle; REDOX623 candidate conformer formations | ENERGY-02 fully priced supplied-template production,48 functional children; paid REDOX state reconstruction fixture | RECYCLE0 capture-paid recycled releases/probes across288 worlds; KINETIC0 completed reconstruction across192 | Feedstock state cycling is not new component manufacture; local funding and waste remain restrictive | Fresh unscreened, fully paid material recovery and reconstruction of useful components; formation/release/endowment and waste independently conserved |
+| 3.3 Maintenance after damage | REDOX candidate continues314 formations/101 catalytic uses after blind damage, but no qualifying restoration | CLOSURE-02 conditional shell effects; authored REDOX damage/rebuild/use path | CLOSURE shell effect70/157 versus ghost71/157 and no-shell148/157 does not establish net benefit; REDOX candidate0/32 despite adequate19/32 damage exposure | Generic reaction throughput does not preserve particular useful organization | Repeatable precommitted loss/reconstruction/use endpoint above matched nulls, plus independent reproduction and causal organizational dependence |
+| 3.4 Founder-free organization | Natural catalysis and construction in KINETIC/GRADIENT/REDOX start without working founders | Supplied template, boundary, catalytic states and successful fixture geometry remain separate | KINETIC192-world organization gate failed; GRADIENT rare1/32,P=.5 failed; REDOX0/32,P=1 failed | Raw chemistry still comes with installed substrate/scaffolding; useful interactions do not form a reliably maintaining system | Unscreened founder-free organization with endogenous component renewal and independent removal tests, without selected seeds or researcher rescue |
+| 3.5 Activity after assistance withdrawal | REDOX withdrawal has276 later formations/88 causal uses from stored paid potential | Supplied founders/genesis and external-work arms; runtime continuation is engineering only | No post-buffer-depletion maintenance demonstrated; withdrawing natural energy makes fresh-funded REDOX endpoint unavailable by design | Environmental energy supply differs from reproductive/startup rescue; retained buffers mask ongoing dependency | Withdraw researcher-specific support while retaining matched natural resource opportunities; account for buffers until depletion and test continued resource use/renewal |
+| 3.6 Reconstruction and early inheritance | GRADIENT one rare natural renewal; REDOX background and mixed arms one rare functional replacement each, zero exact-state restoration | AL02 programmed copying/functional heredity and AL03 conditional population maintenance; ENERGY-02 supplied template production | Repeatable functional reconstruction absent in KINETIC/GRADIENT/REDOX candidate; RECYCLE negative | Atom-pair reuse, environmental reacquisition, copying and descendant reconstruction are different mechanisms | Independently reproduced useful reconstruction first; then unselected descendants reconstruct function with causal ancestry, transmission/selection-withdrawal controls and no rescue |
+
+## Strongest evidence and limits
+
+REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter
+change to the preserved polymer or bond-transport failures. Exact frozen source
+f466d7f76ed40c6b6c91da7b33c7254c5593250b,192 worlds/786432 transitions, all six
+controls and all independent replays. Candidate0 reconstruction worlds versus
+background1 and mixed1; adequate damage exposure19/32, no exact-state restorations.
+Photons898..924 and potential73..93 remain per candidate world: the negative result
+cannot simply be called whole-world energy depletion. Close this tested law.
+[Full decision and verification](REDOX-01-RECEIPT.md).
+
+RECYCLE-01's288-world failure shows blind paid cutting undermining construction:
+candidate2 assemblies/2 captures versus matched irreversible37/88,zero full
+capture-funded recycled births. KINETIC's192 worlds have catalysis30/32 candidate
+worlds but no completed reconstruction. GRADIENT's192 worlds contain one fully
+paid natural renewal witness, but fail the frequency/statistical gate; bond-free
+distal construction357 versus candidate29 rejects network necessity for that task.
+These results narrow mechanisms; they are not evidence that artificial life is
+impossible. Do not raise stocks, lower prices, extend these horizons or screen seeds.
+[RECYCLE](RECYCLE-01-RECEIPT.md),[KINETIC](KINETIC-01-RECEIPT.md),[GRADIENT](GRADIENT-01-RECEIPT.md).
+
+## Research interpretation and next decision
+
+AI-Research main1a7d572d5f11b064478de1321502a7a7366f8a67/Pass36 distinguishes
+supplied sequence-dependent droplet or vesicle growth from reproductive closure.
+Pass35's supplied genome replication and abiotic compartment offspring are also
+separate achievements. None reproduces integrated autonomous self-maintenance
+here. Growth/throughput cannot replace a renewal/lineage endpoint; do not install
+an untested phase-separation mechanism based only on literature.
+
+Next scientific priority is **a cross-mechanism comparison of mutually dependent
+resource transformation and genuinely new component construction**, with a
+resource-matched independent-component/background null. Require a prospective
+finite accounting feasibility gate and distinguish self-maintaining organization
+from a faster passive catalyst population. A new candidate must change the causal
+resource/construction law, not rescue REDOX,RECYCLE,KINETIC or GRADIENT with rates,
+stocks or favorable initial structures. This is the next question, not a claimed
+implementation or new frozen panel. Adaptive useful-action design stays independent;
+no controller or legacy AgentTest modification follows from this assessment.
+
+## Engineering remains a separate track
+
+EVIDENCE-01 now has independent off-D readback at C:/ora/evidence01-20261009:
+accepted791-file case passes; preserved failed case still rejects;24 historical
+traces separately audit. LAUNCH/ISOLATION finite recovery and telemetry remain
+verified; the approved observer stays saved-data-only and its owner remains paused.
+Physical power-loss durability, acceptable lost-work/checkpoint cadence, full-host
+restore, production isolation scope and separate supervised-pilot authorization
+remain open. No continuously running world, learning or life follows from these
+engineering receipts. This sprint does not mark any autonomous-maintenance gate
+or Stage3 as complete.
