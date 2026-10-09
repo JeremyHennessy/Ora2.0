@@ -8,7 +8,7 @@ from pathlib import Path
 import platform
 import random
 
-from experiments.heartbeat_checkpoint import writer_lock, write_file, FAULTS
+from experiments.heartbeat_checkpoint import writer_lock, write_file, write_exact, FAULTS
 from experiments.heartbeat_template_audit import inspect, validate_config, source_hashes, tuples
 from experiments.template_neutral import genesis, step, encode, digest
 
@@ -86,7 +86,7 @@ def run(output, world_id, revision, work=2, max_ticks=32, seed=1, resume=False,
                     os._exit(FAULTS[point])
             fault('pre_commit')
             with (output/'frames.jsonl').open('ab') as journal:
-                journal.write((encode(value)+'\n').encode())
+                write_exact(journal, (encode(value)+'\n').encode())
                 journal.flush()
                 os.fsync(journal.fileno())
             fault('post_journal')
