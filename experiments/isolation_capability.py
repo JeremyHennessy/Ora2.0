@@ -186,8 +186,9 @@ def launch(executable, worker, workspace, outside, port, sid, sid_string, confin
 
 
 def command_log(log, args):
-    result = subprocess.run(args, capture_output=True, text=True, timeout=30, check=True)
-    log.append(dict(command=args, stdout=result.stdout, stderr=result.stderr))
+    result = subprocess.run(args, capture_output=True, text=True, timeout=30)
+    log.append(dict(command=args, stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
+    result.check_returncode()
 
 
 def copy_runtime(destination):
@@ -245,7 +246,10 @@ def run_panel(output, revision):
                     raise OSError('Panel disk ceiling reached')
                 workspace = output/f'{trial}-{case}'
                 workspace.mkdir()
-                command_log(data['acl'], ['icacls', str(workspace), '/grant', f'*{data["package_sid"]}:(OI)(CI)M'])
+                # Explicit owner WRITE_OWNER is needed to lower the new folder's
+                # mandatory label; inherited Modify rights alone do not include it.
+                command_log(data['acl'], ['icacls', str(workspace), '/grant',
+                    f'{account}:(OI)(CI)F', f'*{data["package_sid"]}:(OI)(CI)M'])
                 command_log(data['acl'], ['icacls', str(workspace), '/setintegritylevel', '(OI)(CI)L'])
                 canary = outside/'canary.txt'
                 canary.write_text('outside-canary-'+str(trial), encoding='utf-8')
