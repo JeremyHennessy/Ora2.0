@@ -57,7 +57,7 @@ def inspect(output, revision):
             raise ValueError('Exactly one targeted injection')
         raw = before['frames.jsonl']
         # Reconstruct the entire undamaged chain through the proposed advancing5.
-        prefix = raw if case == 'journal-zero-return' else raw[:-len(target)//2] if case in ('journal-short-return','journal-short-error','journal-kill') else raw[:-len(target)]
+        prefix = raw if case == 'journal-zero-return' else raw[:-(len(target)//2)] if case in ('journal-short-return','journal-short-error','journal-kill') else raw[:-len(target)]
         frames = [heartbeat.decode(x) for x in prefix.splitlines()]+[value]
         if len(frames) != 6 or not prefix.endswith(b'\n'):
             raise ValueError('Exact advancing5 boundary')
