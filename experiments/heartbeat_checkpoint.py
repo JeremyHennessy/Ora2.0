@@ -27,7 +27,7 @@ def writer_lock(output, create=False):
     path = output / "writer.lock"
     if create:
         with path.open("xb") as stream:
-            stream.write(b"L")
+            write_exact(stream, b"L")
             stream.flush()
             os.fsync(stream.fileno())
     with path.open("r+b") as stream:
@@ -62,9 +62,16 @@ def identity_for(world_id, revision, config):
     return identity
 
 
+def write_exact(stream, data):
+    """A short successful write is an error, never an acknowledged commit."""
+    count = stream.write(data)
+    if type(count) is not int or count != len(data):
+        raise OSError("Incomplete authoritative write")
+
+
 def write_file(path, value):
     with path.open("wb") as stream:
-        stream.write((encode(value) + "\n").encode())
+        write_exact(stream, (encode(value) + "\n").encode())
         stream.flush()
         os.fsync(stream.fileno())
 
@@ -116,7 +123,7 @@ def run(output, world_id, revision, work=12, max_ticks=32, resume=False,
             value["frame_sha256"] = sha(value)
             fault("pre_commit", advancing)
             with (output / "frames.jsonl").open("ab") as journal:
-                journal.write((encode(value) + "\n").encode())
+                write_exact(journal, (encode(value) + "\n").encode())
                 journal.flush()
                 os.fsync(journal.fileno())
             fault("post_journal", advancing)
