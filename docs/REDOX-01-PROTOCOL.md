@@ -61,8 +61,9 @@ batches. No discarded/replacement sample, horizon or rate change after execution
 
 * Candidate: local basal4/catalyzed64 law.
 * Catalysis inert: basal4 even with an otherwise compatible active partner; same prices.
-* Background null: basal19, catalyzed64.19=4+(64-4)/4 is the maximum well-occupied
-  mean compatibility boost. It supplies no functional founder, memory or free work;
+* Background null: basal19, catalyzed64.19=4+(64-4)/4 is a nominal fully occupied
+  mean under a quarter-compatible hash distribution, NOT an upper bound on the
+  realized fixed table or organized states. It supplies no founder or free work;
   same gross stocks/costs. A simple fast background must remain a serious alternative.
 * Well mixed: same reactions; a motion attempts the drawn arbitrary destination and
   costs TWO thermal units, both debited atomically. Routing assistance is not free.
@@ -106,6 +107,16 @@ must precede self-maintaining-organization or inheritance claims. No reproductio
 evolution, intelligence or Stage3 completion inferred.
 
 ## Feasibility and verification before science
+
+Prospective draw/endpoint clarification: only acceptance bytes in [basal,64)
+establish causal catalytic influence; a transition accepted below basal is
+spontaneous even with a compatible contact. Inert never has causal catalysis.
+Damage exposure refers to the current conformer ID having actually catalyzed,
+not an old conformer of the same atom pair. At2048 apply source withdrawal,
+then blind damage, then the action; captures during that action count as after
+damage. The draw cursor counts API calls, not internal variable MT word usage.
+The primary endpoint concerns replacement of fixed feedstock pairs, not component
+manufacture, reproduction or a demonstrated continuing organizational lineage.
 
 Authored fixtures must prove full two-photon capture/one-potential formation,
 paid decay/recycling/reconstruction, local shortage without global borrowing,
