@@ -2,7 +2,35 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science checkpoint — RENEWAL-01 paid opportunity diagnosis
+## Latest science checkpoint — DISSOCIATE-01 full-cost breakup feasibility
+
+Frozen9537f1b, executed81f4b64c:1,344 authored feasibility conditions/58,272
+requests, zero natural worlds. Generic cut costs actual n+1 work, dissipates all
+bond/residual charge, preserves component recycling and immutable history.41
+Windows checks passed; independent semantic/ledger/provenance and exact replay
+passed.133 historical/shared inputs unchanged;17 sealed files restored on D:.
+[Receipt](DISSOCIATE-01-RECEIPT.md).
+
+Candidate12 paid returns, supplied24, but zero capture-paid recycled releases or
+probes across all1,344 conditions. Ghost spends identical work/bond/charge costs.
+External work supports24 reused releases/12 probes; these are subsidized. A
+four-unit payer cannot pay n+1 cut and retain2 reaction reserve: n+3 requires5/6/7.
+Fresh-material capture-funded construction occurs in14 authored conditions even
+without cut, separately labelled exploratory; it does not satisfy recycled renewal.
+Prior RENEWAL-01 exploratory replay shows larger products in4/32 active worlds and
+cut-plus-reserve work availability in1/32, without demonstrating any breakup.
+
+**Next science priority:** separately freeze a generic capacity/reserve feasibility
+matrix at the same prices, fully paying formation of each payer size and retaining
+all controls, fresh-versus-recycled distinctions and initial-assistance caveats.
+Use physically realized prior sizes and the n+3 bound to select the matrix; do not
+lower prices/enlarge this frozen founder or tune closed samples toward success.
+Require affordable full paths before fresh unscreened realization. No lineage,
+autonomous origin or world-runtime mechanism installed. Engineering isolation and
+physical durability remain open. AI-Research mainfef0a523/Pass29 unchanged; newer
+66ad85de navigation errata reviewed without adopting scientific mechanisms.
+
+## Preserved science checkpoint — RENEWAL-01 paid opportunity diagnosis
 
 Frozen9fc5ec9, executede503f70e:32 fresh seed blocks/seven paired controls,
 224 worlds/57,344 events with unchanged STARTUP-02 physics and full finite ledger.
