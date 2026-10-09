@@ -88,6 +88,15 @@ the failed metadata/test root as accepted or all regression temporary writes as
 guarded. A separately registered eight-process outer regression topology leaves
 each internal cap unchanged and separates existing test temporary files from
 guarded evidence metadata. No scientific law/cap/sample/horizon is changed.
+The corrected aggregate wrapper also exceeds300seconds at that old pressure
+panel. A third aggregate excludes it but reaches the deadline during the unchanged
+STORAGE-02 full fault/restore panel. Stop repeating these unrelated integration
+panels. Complete only the10 unreached snapshot/telemetry checks separately:all pass.
+Local combined coverage402 checks,398 passed/four skipped, with those two expensive
+unchanged panels NOT reverified. No full Windows suite pass claim. Exact-head Linux
+CI37949598677/job113884622707 passes all404 attempted tests:392 pass/12 expected
+platform skips. This verifies the isolated new science and shared portable regressions;
+it does not replace Windows integration or extend previously verified runtime claims.
 
 Rehashed independent-copy forgeries of noise,payment and birth provenance exit2;
 authentic histories remain unchanged. Nine batch storage ledgers (eight primary
