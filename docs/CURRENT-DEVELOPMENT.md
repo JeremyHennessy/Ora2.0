@@ -2,48 +2,48 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — GRADIENT-01 completed; return to bounded live-state integration
+## Latest checkpoint — scientific negatives closed; actual-launch telemetry verified
 
-**Current decision:** GRADIENT-01 is closed negative under its frozen law/horizon.
-All192 unscreened worlds/six arms/3,145,728 attempts passed independent full causal,
-resource and ancestry audits. One candidate world realized paid productive-link
-renewal; that is below>=8/32, and one win/31 ties gives exact P=0.5. Bond-free paid
-transport produces357 distal bonds versus29, rejecting bound-network necessity.
-Flattened source produces2456; withdrawal has no endpoints and retains3..15 charge.
-Installed conduction and the fixed lattice are explicit physics/scaffolding, not
-life or learned ability. A separate direct-history check verifies all three reported
-witnesses, including two supplied-control worlds; no favorable reruns. Ten Windows
-checks,145-file exact replay,two rehashed-forgery refusals,1064 restored files;
-315 shared and219 prior C: files unchanged. [Receipt](GRADIENT-01-RECEIPT.md).
+**Science:** KINETIC-01 closed negative(192 worlds,zero reconstruction endpoints).
+GRADIENT-01 closed negative(192 worlds,one paid natural renewal candidate world,
+P=0.5; bond-free distal construction357 versus29). Neither is reliable useful
+organization or learning; no favorable tuning. Exact source/evidence:
+[KINETIC receipt](KINETIC-01-RECEIPT.md), [GRADIENT receipt](GRADIENT-01-RECEIPT.md).
 
-**Next engineering priority:** register and execute the smallest actual trusted
-launcher / finite advancing world / read-only telemetry composition. Require birth
-identity binding, monotonic exact authoritative state, clean stop/resource stop,
-expiry, stale/PID-reuse rejection and interrupted/restored-world observation without
-mutation. Preserve the approved saved-data observer; its owner controls publication.
-This is a bounded disposable verification, not authorization for a persistent pilot.
-RESTORE-01 already verified cold application recovery from independent C: backup.
-Physical power-loss/storage durability, acceptable lost-work policy, full-host
-restoration, production filesystem/network isolation and a separately approved finite
-supervised pilot contract remain open; do not repeat completed recovery proofs.
+**Engineering:** LAUNCH-01 accepted0d32812e closes actual separate confined launch,
+advancing authoritative telemetry, live expiry, resource-stop and new-birth/SID
+continuation. Six accepted launches/120 read-only samples; two exact33-state/32-event
+histories; six native access-denied5 protected-binding probes. All processes stopped
+and profiles deleted. First limited storage block and failed missing-winerror audit
+preserved:18 total launches. Six Windows passes/one expected skip; two forgeries
+refused;471 restored files. [Contract/receipt](LAUNCH-01-RECEIPT.md). No active lab
+run remains after its final handoff. This is engineering reliability, not learning.
 
-**Next scientific priority:** stop surface-network tuning. Prospectively specify a
-distinct paid physical experience-state/useful-action experiment against fixed-reactive,
-memory-disabled and shuffled-history controls on unseen changes. ADAPTATION-01 remains
-a design, not an installed controller, successful policy, reward, legacy AgentTest
-change or LLM. First establish informative exposure and full finite costs; then freeze
-fresh samples. Reproduction is not required for this independent within-life question.
-Do not proceed to evolutionary inheritance from the rare bond-renewal witness alone.
+**Next primary science action:** specify and audit a distinct passive full-cost
+experience-trace substrate and an informative unseen-change useful-action protocol.
+Compare fixed-reactive, memory-disabled and shuffled histories; keep costs and failed
+actors. ADAPTATION-01 remains [design-only](ADAPTATION-01-DESIGN.md), no controller,
+successful policy, reward, LLM or legacy AgentTest change. Reproduction is not a
+prerequisite. Freeze law/exposure/budgets/falsifiers before fresh behavioral samples;
+never promote installed plasticity to a discovered ability.
 
-**Research synchronized through Pass34:** AI-Research9ed45ff5/mainCI37929718329
-passed; [prospective intake](RESEARCH-INTAKE-PASSES33-34.md). Environmental energy
-is normal; investigator-selected founders, switch timing, habitat assembly and rescue
-are separate scaffolds. Parameter reversal in a model is not removing its authored
-renewal/lifecycle rules. No research mechanisms were installed or frozen data altered.
+**Runtime gates:** independent cold application restore passed(RESTORE-01); actual
+launcher/finite telemetry composition now passes. Physical power-loss/storage durability,
+acceptable lost-work/cadence policy, full-host recovery, production filesystem/network/
+import/escape scope and a finite supervised-pilot contract remain open. These need
+disposable, explicit tests; no zero-loss/memory-peak/hostile-escape guarantee. Pilot
+activation still requires separate authorization. The approved saved-data viewer stays
+recorded; its owner controls publication and remains paused. No world/service activated.
 
-Prior completed receipts and execution-order notes below are preserved chronology;
-this checkpoint governs the next action. No world/service/pilot activated; approved
-local saved-data viewer remains recorded and publication remains paused.
+**Research:** both repos checked; AI-Research9ed45ff5/Pass34 mainCI37929718329 passed.
+[Pass33/34 intake](RESEARCH-INTAKE-PASSES33-34.md). Targeted earlier Pass13/14 memory
+counterexamples inform retention cost, fixed-filter/history controls and unseen reversal;
+Pass31 separates propagules/selection withdrawal from autonomous establishment. No
+new literature pass, research code execution or historical research alteration.
+
+This compact checkpoint governs next action; detailed historical receipts below
+retain their dates and are not pending tasks. Exact CI, backup proofs and source
+checksums are preserved in each completed local final receipt.
 
 ## Historical checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
