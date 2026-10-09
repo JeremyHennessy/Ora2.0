@@ -53,7 +53,7 @@ def inspect(output, revision):
         target = (directory/'target-frame.json').read_bytes()
         value = heartbeat.decode(target)
         trace = heartbeat.decode((directory/'injection.json').read_bytes())
-        if trace != dict(case=case, tick=5, injections=1, payload_size=len(target), payload_sha256=hashlib.sha256(target).hexdigest()):
+        if heartbeat.canonical(trace) != heartbeat.canonical(dict(case=case, tick=5, injections=1, payload_size=len(target), payload_sha256=hashlib.sha256(target).hexdigest())):
             raise ValueError('Exactly one targeted injection')
         raw = before['frames.jsonl']
         # Reconstruct the entire undamaged chain through the proposed advancing5.
@@ -81,9 +81,9 @@ def inspect(output, revision):
         if before != expected_bytes:
             raise ValueError('Interrupted file bytes differ: '+case)
         fault_exit, resume_exit = expected(case)
-        if row != dict(case=case, fault_exit=fault_exit, resume_exit=resume_exit,
+        if heartbeat.canonical(row) != heartbeat.canonical(dict(case=case, fault_exit=fault_exit, resume_exit=resume_exit,
                        before_sha256=hashes(directory/'before'), after_sha256=hashes(directory/'world'),
-                       restored_sha256=hashes(directory/'restored'), observer_read_only=True):
+                       restored_sha256=hashes(directory/'restored'), observer_read_only=True)):
             raise ValueError('Exit/hash/read-only evidence')
         if resume_exit:
             rejected += 1
@@ -115,7 +115,7 @@ def inspect(output, revision):
             ('experiments.world_snapshot',['restore','--world-dir',str(directory/'restored'),'--archive',str(output/'snapshot.zip'),'--source-revision',revision],case+'/restore.log',0),
             ('experiments.heartbeat_template',[*args(directory/'restored'),'--resume'],case+'/continued.log',0),
             ('experiments.heartbeat_template_audit',['--input-dir',str(directory/'restored'),'--source-revision',revision],case+'/observer.json',0)])
-    if evidence['commands'] != [dict(module=m,args=a,log=l,exit_code=c) for m,a,l,c in commands] or any(not (output/l).is_file() for _,_,l,_ in commands):
+    if heartbeat.canonical(evidence['commands']) != heartbeat.canonical([dict(module=m,args=a,log=l,exit_code=c) for m,a,l,c in commands]) or any(not (output/l).is_file() for _,_,l,_ in commands):
         raise ValueError('Exact complete process/exit denominator')
     return dict(schema='storage02-audit-v1',cases=16,direct_continuations=direct,preserved_rejections=rejected,
                 backup_continuations=16,states_per_continuation=33,canonical_state_sequence_sha256=heartbeat.digest(ref['states']),
