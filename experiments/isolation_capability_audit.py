@@ -81,7 +81,8 @@ def audit(output, source, revision):
             # TotalProcesses counts associations, including rejected creation;
             # it is not the concurrent process cap or evidence user code ran.
             require(row['child_marker'] is False, 'Confined child executed')
-        require(row['job_after']['active_before_close'] == 0, 'Residual job process')
+        # ActiveProcesses can retain the signaled root while our process handle
+        # exists. Parent verifies stopped after releasing handles / closing job.
     return dict(schema='isolation01-audit-v1', cases=10, controls=2, confined=2,
                 fail_closed=6, evidence_sha256=sha(output/'evidence.json'),
                 production_world_verified=False, hardened_runtime_verified=False,
