@@ -125,6 +125,8 @@ First paid authored fixtures must demonstrate conserved reversible binding,
 mass-priced motion and a two-round reconstruction/use path. Demonstrate the
 endpoint is possible in no-bond and shuffled, not disabled by their definitions.
 These deliberately authored fixtures are NOT panel founders or unscreened results.
+Authored fixture seed74999 is separate from all reserved74000..74031 worlds;
+no reserved sample trajectory is executed during the accounting gate.
 Refuse forged RNG, balanced unpaid history and identity/ancestry copies.
 
 Global operator lock, no overlapping writers. Python3.12.10 existing environment.
