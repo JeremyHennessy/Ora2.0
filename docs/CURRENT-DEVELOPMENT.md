@@ -2,7 +2,42 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Current checkpoint — RESOURCE-02 and ordered next priorities
+## Latest science checkpoint — REACTIVATE-01 existing-law renewal
+
+Protocol `cf26e1c`, executed source `22fc9f67`: **1,792 authored cases /8,064
+events**, 18 relevant science regressions passed. Independent conservation,
+source/provenance and semantic replay passed; raw/summary/audits replay exactly;
+rehashed funding/event forgeries rejected.20 files restored on D:,76 guarded
+historical/shared inputs unchanged. [Receipt](REACTIVATE-01-RECEIPT.md).
+
+Existing-law empty-ready activation is feasible in88 registered cases:32 producer
+cases (16 captured-resource-funded,16 genesis-funded) and56 finite external-work
+cases. The16 captured-work successes cover all16 length4 founder words under the
+registered depletion/maintenance/fresh-donor path. Length2/3 producer routes fail.
+All1,120 nonempty cases reject reactivation; the raw `partial_rejected` field
+includes fully charged residual3, not only partially depleted1/2. With C removed,
+external initial activation can occur, but actor-dependent mismatch depletion
+cannot; this does not demonstrate founder-free organization. No release request,
+reproduction, descendants or natural-world evidence. Supplied founder, compatible
+resources and authored timing remain scaffolding. No old reaction or study changed.
+
+**Highest-value science next:** separately precommit a distinct generic-startup/
+renewal candidate under finite full formation/release/endowment accounting, with
+founder-free nonspecific association, template/supplied-founder, external-work,
+resource-matched inert and subsidy-withdrawal controls against current negative
+baselines. Do not represent newly installed reaction possibilities as naturally
+realized functions. Partial top-up and generic assembly remain absent from the
+current law. Fresh natural realization and later descendant reconstruction need
+their own protocols, independence and failures, after feasibility is established.
+
+RESOURCE-02 engineering composition is separately verified and merged through
+PR33/`8e1537eb`; record exact main CI before manual local integration. Its12 full
+state continuations do not establish biological autonomy or physical power-loss
+safety. Retain the user's startup→engineering foundations→real-state observer→
+evolution priorities and all backup/storage/isolation gates below. Human-authorized
+bounded scheduling is active; continuous unattended Ora operation remains gated.
+
+## Earlier engineering checkpoint — RESOURCE-02 and ordered next priorities
 
 RESOURCE-02 contract fbc830e/addendum2afea78, executed source d49f768c:
 **297 Windows tests passed /1 platform skip**, complete298-test inventory in
