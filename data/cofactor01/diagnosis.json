@@ -1,0 +1,93 @@
+{
+  "descriptive_only": true,
+  "registered_round_metrics": {
+    "annealed": [
+      {
+        "exposed": 30,
+        "outputs_complete": 1,
+        "rebuilt": 26,
+        "success": 1
+      },
+      {
+        "exposed": 32,
+        "outputs_complete": 4,
+        "rebuilt": 22,
+        "success": 4
+      }
+    ],
+    "candidate": [
+      {
+        "exposed": 30,
+        "outputs_complete": 2,
+        "rebuilt": 26,
+        "success": 1
+      },
+      {
+        "exposed": 32,
+        "outputs_complete": 4,
+        "rebuilt": 25,
+        "success": 4
+      }
+    ],
+    "catalyst-ghost": [
+      {
+        "exposed": 30,
+        "outputs_complete": 1,
+        "rebuilt": 26,
+        "success": 1
+      },
+      {
+        "exposed": 32,
+        "outputs_complete": 4,
+        "rebuilt": 21,
+        "success": 4
+      }
+    ],
+    "food-withdrawn": [
+      {
+        "exposed": 30,
+        "outputs_complete": 2,
+        "rebuilt": 26,
+        "success": 1
+      },
+      {
+        "exposed": 32,
+        "outputs_complete": 4,
+        "rebuilt": 25,
+        "success": 4
+      }
+    ],
+    "recycle-ghost": [
+      {
+        "exposed": 29,
+        "outputs_complete": 1,
+        "rebuilt": 22,
+        "success": 1
+      },
+      {
+        "exposed": 32,
+        "outputs_complete": 2,
+        "rebuilt": 20,
+        "success": 2
+      }
+    ],
+    "sham": [
+      {
+        "exposed": 0,
+        "outputs_complete": 3,
+        "rebuilt": 26,
+        "success": 0
+      },
+      {
+        "exposed": 0,
+        "outputs_complete": 5,
+        "rebuilt": 22,
+        "success": 0
+      }
+    ]
+  },
+  "primary_tests_unchanged": true,
+  "candidate_meaningful_losses": 62,
+  "whole_output_bottleneck": "Candidate target returns26/32 then25/32, but both-round success0/32; primary nulls also0/32.62/64 candidate loss windows exposed, so this is not missing damage opportunities.",
+  "closed_claim": "Joint chemistry under tested density/law/horizon provides no registered repeatable whole-output reconstruction advantage; no retuning permitted."
+}

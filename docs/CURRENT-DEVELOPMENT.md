@@ -2,7 +2,41 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — chemical fuel gives opportunities; comparative gate saturated
+## Latest checkpoint — joint nutrient chemistry tested under two blind losses
+
+**Exact source:** COFACTOR-01 4f32b201a9181881167e523997f55fe3213e258d,
+prospective08453bc protocol.192 founder-free worlds/1572864 independently
+interpreted attempts. Candidate two-round endpoint0/32;
+catalyst-ghost0/32; annealed0/32.
+**REGISTERED PRIMARY FAIL; stop tested law/horizon.** [Receipt](COFACTOR-01-RECEIPT.md),
+[paired statistics/all-window evidence](../data/cofactor01/decision.json).
+
+**Meaning:** nutrient matter and chemical potential fund new productive molecules
+and donor-paid waste reconstruction. Joint reaction catalogue is generic random
+installed physics; raw starts have no active founder. Two blind paid whole-species
+losses assess fresh reconstruction then four-class chemical output and abundance.
+This is not an ecological task, inherited organization, adaptation or life.
+Both primary nulls can attain the endpoint; annealed comparator mean availability
+and16 row-mask discriminability checked before samples. No old-law retuning.
+
+**Next scientific decision:** stop tested law/horizon; use round-level exposure, rebuilding and output failures to choose genuinely different physical organization, not higher rates/food or selected seeds.
+Require useful whole-function reconstruction, full resource/matter/provenance
+costs and prospective null symmetry/ceiling checks. Stage3 incomplete.
+Prioritize a distinct physical-work or necessary resource-transformation assay:
+usable output must remain after paying renewal costs. Four-label diversity in
+this study is an observer assay, not established ecological usefulness; do not
+make it the acceptance definition of autonomous organization.
+
+**Verification/activity:**17 focused local checks,6 exact complete replays,
+3 forged-record refusals;640-file independent C: restoration
+and all192 restored-source audits. Previous FUEL/history/observer preserved.
+No active world. Integration acceptance requires exact-head and merged-main CI
+and deliberate preservation review, recorded in the laboratory continuity receipt.
+AI-Research09f4f33/Pass39 unchanged; no unverified branch imported. Observer
+publication paused; physical durability/lost-work/cadence/full-host restore/
+production isolation and separate supervised-pilot authorization remain open.
+
+## Historical checkpoint — chemical fuel gives opportunities; comparative gate saturated
 
 **Exact source:** FUEL-01 fa41e009a93cbb429400b41574453af8650dfd2a,
 prospectivea76454f protocol.128 founder-free worlds/524288 independently audited
@@ -32,8 +66,8 @@ No new mechanism or damage run is justified by retrospective gate relaxation.
 **Verification/activity:**17 focused local checks,4 complete replayed worlds,
 3 forgery rejections,562-file C: restore/all128 restored-source independent audits.
 Prior TRANSFER/history/observer preserved. AI-ResearchPass39 unchanged; Pass40
-branch label is not published research evidence. No active world; publication
-acceptance awaits exact-headCI and reviewed integration. Observer publication
+branch label is not published research evidence. FUEL PR66 and mergedc64a3c1 CI passed425/12; reviewed local integration
+preserved the observer. No active world; Observer publication
 paused. Physical durability/lost-work/cadence/full-host restore/production isolation
 and separately authorized supervised pilot remain engineering gates.
 

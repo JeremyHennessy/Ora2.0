@@ -190,3 +190,18 @@ adaptation or reproduction evidence. Chemistry's shuffled rule is a cyclic type
 relabelling (posthoc64-case check), not a broken-network control. A future distinct
 approach must address functional specificity, competing pathways and repeated
 blind useful-loss reconstruction; retain costs/seeds/negative evidence unchanged.
+
+
+## COFACTOR-01 — joint chemical reconstruction under blind losses
+
+3.1 finite nutrient matter/energy converts to active productive molecules;
+3.2 no external production work or supplied founder, full donor costs paid;
+3.3 waste reconstruction paid from another whole nutrient and full ancestry;
+3.4 two blind whole-species losses, fresh rebuilding then four-class output/stock:
+candidate0/32, catalyst-ghost0/32,
+annealed0/32;REGISTERED PRIMARY FAIL; stop tested law/horizon. Independent self-maintenance
+NOT accepted.3.5 founder-free molecular populations are installed-law outcomes,
+not organism emergence.3.6 no functional heredity, reproduction or adaptation
+tested. Environmental food withdrawal leaves no accessible donor and must not
+be confused with researcher-scaffold withdrawal. Full all-world/round diagnosis
+and controls retained. Prior laws, failed gates and samples unchanged.

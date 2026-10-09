@@ -1,0 +1,44 @@
+{
+  "annealed": {
+    "food_min": 68,
+    "food_max": 95,
+    "natural_depletions": 0,
+    "bank_min": 276,
+    "bank_max": 286
+  },
+  "candidate": {
+    "food_min": 68,
+    "food_max": 95,
+    "natural_depletions": 0,
+    "bank_min": 276,
+    "bank_max": 286
+  },
+  "catalyst-ghost": {
+    "food_min": 70,
+    "food_max": 95,
+    "natural_depletions": 0,
+    "bank_min": 276,
+    "bank_max": 286
+  },
+  "food-withdrawn": {
+    "food_min": 0,
+    "food_max": 0,
+    "natural_depletions": 0,
+    "bank_min": 276,
+    "bank_max": 286
+  },
+  "recycle-ghost": {
+    "food_min": 70,
+    "food_max": 94,
+    "natural_depletions": 0,
+    "bank_min": 277,
+    "bank_max": 287
+  },
+  "sham": {
+    "food_min": 68,
+    "food_max": 95,
+    "natural_depletions": 0,
+    "bank_min": 276,
+    "bank_max": 286
+  }
+}
