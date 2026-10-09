@@ -2,7 +2,50 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
+## Latest checkpoint — GRADIENT-01 completed; return to bounded live-state integration
+
+**Current decision:** GRADIENT-01 is closed negative under its frozen law/horizon.
+All192 unscreened worlds/six arms/3,145,728 attempts passed independent full causal,
+resource and ancestry audits. One candidate world realized paid productive-link
+renewal; that is below>=8/32, and one win/31 ties gives exact P=0.5. Bond-free paid
+transport produces357 distal bonds versus29, rejecting bound-network necessity.
+Flattened source produces2456; withdrawal has no endpoints and retains3..15 charge.
+Installed conduction and the fixed lattice are explicit physics/scaffolding, not
+life or learned ability. A separate direct-history check verifies all three reported
+witnesses, including two supplied-control worlds; no favorable reruns. Ten Windows
+checks,145-file exact replay,two rehashed-forgery refusals,1064 restored files;
+315 shared and219 prior C: files unchanged. [Receipt](GRADIENT-01-RECEIPT.md).
+
+**Next engineering priority:** register and execute the smallest actual trusted
+launcher / finite advancing world / read-only telemetry composition. Require birth
+identity binding, monotonic exact authoritative state, clean stop/resource stop,
+expiry, stale/PID-reuse rejection and interrupted/restored-world observation without
+mutation. Preserve the approved saved-data observer; its owner controls publication.
+This is a bounded disposable verification, not authorization for a persistent pilot.
+RESTORE-01 already verified cold application recovery from independent C: backup.
+Physical power-loss/storage durability, acceptable lost-work policy, full-host
+restoration, production filesystem/network isolation and a separately approved finite
+supervised pilot contract remain open; do not repeat completed recovery proofs.
+
+**Next scientific priority:** stop surface-network tuning. Prospectively specify a
+distinct paid physical experience-state/useful-action experiment against fixed-reactive,
+memory-disabled and shuffled-history controls on unseen changes. ADAPTATION-01 remains
+a design, not an installed controller, successful policy, reward, legacy AgentTest
+change or LLM. First establish informative exposure and full finite costs; then freeze
+fresh samples. Reproduction is not required for this independent within-life question.
+Do not proceed to evolutionary inheritance from the rare bond-renewal witness alone.
+
+**Research synchronized through Pass34:** AI-Research9ed45ff5/mainCI37929718329
+passed; [prospective intake](RESEARCH-INTAKE-PASSES33-34.md). Environmental energy
+is normal; investigator-selected founders, switch timing, habitat assembly and rescue
+are separate scaffolds. Parameter reversal in a model is not removing its authored
+renewal/lifecycle rules. No research mechanisms were installed or frozen data altered.
+
+Prior completed receipts and execution-order notes below are preserved chronology;
+this checkpoint governs the next action. No world/service/pilot activated; approved
+local saved-data viewer remains recorded and publication remains paused.
+
+## Historical checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
 **Current scientific decision — KINETIC-01 negative:** executed c819079b after
 prospective draw clarification. All192 unscreened worlds/six arms/1,572,864 attempts
