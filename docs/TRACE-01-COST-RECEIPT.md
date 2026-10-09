@@ -35,7 +35,10 @@ shuffled trace occupies different sites and retains8. At256 the first unpaid
 refresh is clock241, all active potential dissipates, all32 reads are null and
 all rewrites fail. These observations bound exposure, not learning performance.
 
-Raw panel6,151,975 bytes below the16MiB ceiling. Exclusive operator locking and
+Raw panel6,151,975 bytes below the implemented16MiB panel check. The complete
+source/replay/forgery ledger exceeded the contract's unqualified evidence ceiling;
+the launcher lacked an aggregate check. [Preserved scope discrepancy](TRACE-01-LIMIT-SCOPE-ERRATUM.md).
+Do not describe this as a passed16MiB bound over all evidence. Exclusive operator locking and
 512MiB/60CPU/four-process/300wall caps applied.333 prior shared files and232 older
 C: backup files stayed identical during execution.392 sealed files restored on D:.
 Exact source ZIP SHA256:

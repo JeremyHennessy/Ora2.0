@@ -25,6 +25,9 @@ All24 authored four-arm/six-horizon traces /3,904 requests independently audited
 loses all state at clock241 of the256 horizon;224 horizon exhausts fuel before
 reconstruction. Short traces retain/rebuild paid state with new IDs and provenance.
 All analytical predictions match. [Receipt/full decision](TRACE-01-COST-RECEIPT.md).
+Operational gap:16MiB checked only raw panel; complete evidence exceeded that
+ceiling. [Preserved scope erratum](TRACE-01-LIMIT-SCOPE-ERRATUM.md); future runs
+need prospective aggregate raw/archive/restore caps before execution.
 This is installed-component feasibility preparation, not natural useful organization,
 learning, reproduction or behavioral execution. No controller or world activated.
 
