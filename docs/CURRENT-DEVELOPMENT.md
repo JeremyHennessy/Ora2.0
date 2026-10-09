@@ -20,12 +20,25 @@ rebuilds the registered functioning assembly after fixed loss. Sparse exposure
 limits the inference. Work=4-F rules out a work-per-fuel advantage by construction.
 No macroscopic phase separation, autonomous origin/self-maintenance or heredity.
 
-**Next decision:** stop this microscopic law/horizon. Reproduce a primary
-thermodynamically derived active-droplet reaction/diffusion reference before new
-finite-reservoir/raw-start extensions. First inspect original methods/equations,
-supplied resources/geometry, numerical convergence and full budgets; freeze a
-discriminating reproduction protocol. Do not enlarge/tune this failed toy for
-success. No reference implementation or new natural panel is yet registered.
+**Next decision — user-prioritized net work after repair:** stop the CONDENSE
+microscopic law/horizon. [NET-WORK-01 contract](NET-WORK-01-CONTRACT.md) freezes
+admission requirements: an explicit usable load, finite resource/exergy accounting,
+paid reconstruction, positive post-damage AND whole-life surplus, and independent/
+shuffled controls with equivalent conversion and recovery opportunities.
+An impossible surplus bound stops a candidate before dynamics; equal resource
+ceilings alone do not exclude a throughput advantage. Unknown prices are not free.
+
+[Read-only accounting review](NET-WORK-01-RECEIPT.md) independently confirms
+CONDENSE work=4-F in all 256 records and RATCHET candidate net load transfer -106.
+Its 51 funded replacements can use initial work10 against replacement cost7.
+No frozen endpoint changed, no new world, and no self-maintenance claim.
+The inspected active-droplet benchmark is NOT ADMITTED as this primary experiment:
+imposed fuel drive/supplied droplet geometry and no explicit finite-fuel/load/repair
+surplus ledger. Reproduction may inform a specific law, but growth/division alone
+does not answer the new question. Next specify a genuinely distinct, physically
+grounded converter and renewal law, freeze all prices/reverses/matched controls,
+and independently check positive net-work reachability before fresh sampling.
+No new physical candidate or natural panel is yet admitted. Do not tune old laws.
 
 **Verification/activity:**24 focused local checks,4 exact replays,6 total forgery
 refusals,481/751-file independent C: restoration and complete restored-source
