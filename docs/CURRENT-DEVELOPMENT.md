@@ -2,7 +2,7 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — ISOLATION-04 integrated recovery across launch identities
+## Latest checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
 User priorities updated: first integrated persistent-world foundations, then a
 genuinely different full-cost scientific mechanism, then validated observer
@@ -22,8 +22,9 @@ skips; 284 shared files unchanged; 1,188 sealed files restored on D:.
 
 **Engineering:** registered resource/software-storage/new-identity composition
 is verified. Remaining: actual physical durability and acceptable lost-work policy,
-full-host restoration rehearsal, production isolation scope, validated live-state /
-process telemetry and a finite supervised pilot contract with separate approval.
+full-host restoration rehearsal, production isolation scope, trusted launcher /
+observer end-to-end live telemetry and a finite supervised pilot contract with
+separate approval. The read-only telemetry adapter below is verified in fixtures.
 No unattended world, service, public access, memory-peak or hostile-escape claim.
 
 **Science:** preserve all recent negative results, especially RECYCLE-01. Stop
@@ -40,11 +41,18 @@ Next implement/freeze the complete local dynamics and independent interpreter,
 then execute the unscreened registered panel. Budget feasibility is preparation,
 not realized self-maintenance, reproduction, functional inheritance or evolution.
 
-**Observer:** preserve UI/playback; prepare a source-bound read-only telemetry
-contract joining verified world state with actual process identity and advancement.
-Recorded fixtures remain labelled recorded. Observer work stays paused unless its
-authorized owning chat resumes; no publication duplicated here. AI-Research main
-fef0a523 / Pass 29 unchanged; no unproven paper mechanism installed into production.
+**Observer:** [TELEMETRY-01 readiness](TELEMETRY-01-RECEIPT.md) verified at e2dce7f7:
+three Windows tests, four independent snapshot replays, two advancing native-bound
+active samples; repeated state, wrong birth and bad history inactive. A stopped
+world stays stopped while its process is alive; recorded mode never probes a PID
+or claims active. Forged reported state rejects; private packaging failure retained,
+same-source rerun passes. Existing UI/playback preserved; no service or publication.
+Next trusted actual-launcher birth-time binding and observer end-to-end validation,
+including active-display expiry; existing receipts remain recorded. Observer work
+stays paused unless its authorized owning chat resumes. AI-Research main
+d6e68cff / Pass 29: latest verified navigation errata adds no scientific result;
+Pass 29's benefit/transmission/external-supply distinctions remain. No unproven
+paper mechanism installed into production.
 
 ## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
