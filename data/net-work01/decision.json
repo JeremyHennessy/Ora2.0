@@ -1,0 +1,16 @@
+{
+  "condense_efficiency_advantage_possible": false,
+  "condense_invariant": "work=4-fuel",
+  "condense_kinetic_advantage_excluded_by_invariant": false,
+  "condense_primary": false,
+  "condense_records": 256,
+  "historical_endpoints_changed": false,
+  "initial_reserve_can_pay_replacement": true,
+  "new_worlds": 0,
+  "ratchet_candidate_records": 64,
+  "ratchet_funded_replacements": 51,
+  "ratchet_initial_work_after_startup": 10,
+  "ratchet_net_load_transfer": -106,
+  "ratchet_replacement_cost": 7,
+  "verified": true
+}

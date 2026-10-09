@@ -1,0 +1,14 @@
+{
+  "contract_revision": "b02ec74ae4526791abb52528b7ff61c4cda69b88",
+  "inputs": {
+    "condense.json": "2f0e33582cbbd8496218fc82432ea53f672a25d114a836ec27c2c4a2b1e80164",
+    "contract.md": "6ed788066a7f84616effe61c5cf05e0faf2cd0fd7b15ccf827012e1bc3851286",
+    "ratchet.json": "e4292075ad9968b6bfd7838c9df94ab9052c0dc60c1f186a9c9272043c289b6c"
+  },
+  "new_worlds": 0,
+  "retrospective_accounting_only": true,
+  "source_revisions": [
+    "250f9f579851529f7957a388a2bb30e9cd2d3986",
+    "5db0b4cb8f63dcd89b27d68e7de5a1ef033c580e"
+  ]
+}
