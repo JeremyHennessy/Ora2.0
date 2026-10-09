@@ -161,3 +161,11 @@ science or reserved samples, no biological organization/adaptation inference.
 Reviewed bounded scheduled development is now human-authorized; the independent
 observer schedule maintains verified publication. Neither authorizes continuous
 unattended Ora simulation or automatic execution of newly fetched commits.
+
+REACTIVATE-01 applies this intake prospectively: supplied C/initial work and
+external environmental activation remain distinct subsidies.16 captured-work
+second activations use supplied length4 founders and authored opportunities;
+they are not autonomous-origin, daughter-transmission or adaptive-organizational
+results. The panel has no release action and consumes no natural/reserved sample.
+Next new startup physics is a separately tested candidate, not a consequence
+established by literature synthesis. Frozen ENERGY-02/CONTACT-01 are unchanged.
