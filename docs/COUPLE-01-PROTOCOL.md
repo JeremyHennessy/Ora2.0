@@ -20,6 +20,14 @@ laws, NOT spontaneous organization, a natural frequency, self-maintenance,
 reproduction, inheritance, learning or an organism. No witness or successful
 network will be supplied as the founder of a future dynamics experiment.
 Search depth/state counts are algorithm measurements, not physical time.
+Implementation clarification frozen before execution: search states are inventory
+projections (phase, photons, fuels, raw/waste atoms, component counts). Heat,
+removed energy and object ancestry do not affect available reactions and are
+interpreted completely in each witness. Report projection states/edges rather
+than claiming enumeration of every possible historical identity/heat path.
+Endpoint states are terminal; action-order BFS chooses the first shortest witness,
+while an independent DFS re-enumerates the entire projected closure. All minimum-P
+feasible mask/arm witnesses are retained, including null and withdrawal witnesses.
 
 ## Frozen accounting law
 
