@@ -1,0 +1,5059 @@
+{
+  "schema": "kinetic01-decision-v1",
+  "worlds": 192,
+  "attempts": 1572864,
+  "frequency": {
+    "candidate": 0,
+    "inert": 0,
+    "well-mixed": 0,
+    "regeneration-off": 0,
+    "withdrawal": 0,
+    "supplied-dimers": 0
+  },
+  "paired_deltas": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "wins": 0,
+  "losses": 0,
+  "ties": 32,
+  "sign_test": {
+    "numerator": 1,
+    "denominator": 1,
+    "p": 1.0
+  },
+  "positive_gate": false,
+  "reproduction_demonstrated": false,
+  "inheritance_demonstrated": false,
+  "adaptation_demonstrated": false,
+  "rows": [
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 64,
+        "catalytic": 9,
+        "cleave": 37,
+        "diffuse": 2020,
+        "noop": 5945,
+        "regenerate": 126
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 227,
+        "photons": 260,
+        "waste": 2
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 59,
+        "catalytic": 0,
+        "cleave": 34,
+        "diffuse": 2017,
+        "noop": 5966,
+        "regenerate": 116
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 209,
+        "photons": 280,
+        "waste": 2
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 80,
+        "catalytic": 19,
+        "cleave": 38,
+        "diffuse": 2076,
+        "noop": 5838,
+        "regenerate": 160
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 278,
+        "photons": 192,
+        "waste": 0
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 64,
+        "catalytic": 9,
+        "cleave": 37,
+        "diffuse": 2020,
+        "noop": 6071,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 128,
+        "exported": 0,
+        "heat": 101,
+        "photons": 512,
+        "waste": 128
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 64,
+        "catalytic": 9,
+        "cleave": 37,
+        "diffuse": 2020,
+        "noop": 5989,
+        "regenerate": 82
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 210,
+        "exported": 348,
+        "heat": 183,
+        "photons": 0,
+        "waste": 46
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 64,
+        "catalytic": 7,
+        "cleave": 45,
+        "diffuse": 2013,
+        "noop": 5920,
+        "regenerate": 150
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 271,
+        "photons": 212,
+        "waste": 2
+      },
+      "seed": 43000,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 66,
+        "catalytic": 6,
+        "cleave": 28,
+        "diffuse": 1990,
+        "noop": 5981,
+        "regenerate": 127
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 221,
+        "photons": 258,
+        "waste": 5
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 59,
+        "catalytic": 0,
+        "cleave": 23,
+        "diffuse": 1990,
+        "noop": 6009,
+        "regenerate": 111
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 249,
+        "exported": 0,
+        "heat": 193,
+        "photons": 290,
+        "waste": 7
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 70,
+        "catalytic": 4,
+        "cleave": 34,
+        "diffuse": 2007,
+        "noop": 5948,
+        "regenerate": 133
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 249,
+        "exported": 0,
+        "heat": 237,
+        "photons": 246,
+        "waste": 7
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 66,
+        "catalytic": 6,
+        "cleave": 28,
+        "diffuse": 1990,
+        "noop": 6108,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 124,
+        "exported": 0,
+        "heat": 94,
+        "photons": 512,
+        "waste": 132
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 66,
+        "catalytic": 6,
+        "cleave": 28,
+        "diffuse": 1990,
+        "noop": 6053,
+        "regenerate": 55
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 179,
+        "exported": 402,
+        "heat": 149,
+        "photons": 0,
+        "waste": 77
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 63,
+        "catalytic": 6,
+        "cleave": 39,
+        "diffuse": 1994,
+        "noop": 5957,
+        "regenerate": 139
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 245,
+        "exported": 0,
+        "heat": 253,
+        "photons": 234,
+        "waste": 11
+      },
+      "seed": 43001,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 49,
+        "catalytic": 3,
+        "cleave": 22,
+        "diffuse": 2045,
+        "noop": 5978,
+        "regenerate": 98
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 169,
+        "photons": 316,
+        "waste": 0
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 46,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2046,
+        "noop": 5990,
+        "regenerate": 92
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 156,
+        "photons": 328,
+        "waste": 0
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 61,
+        "catalytic": 8,
+        "cleave": 20,
+        "diffuse": 2056,
+        "noop": 5933,
+        "regenerate": 122
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 203,
+        "photons": 268,
+        "waste": 0
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 49,
+        "catalytic": 3,
+        "cleave": 22,
+        "diffuse": 2045,
+        "noop": 6076,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 158,
+        "exported": 0,
+        "heat": 71,
+        "photons": 512,
+        "waste": 98
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 49,
+        "catalytic": 3,
+        "cleave": 22,
+        "diffuse": 2045,
+        "noop": 6036,
+        "regenerate": 40
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 198,
+        "exported": 432,
+        "heat": 111,
+        "photons": 0,
+        "waste": 58
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 48,
+        "catalytic": 4,
+        "cleave": 23,
+        "diffuse": 2041,
+        "noop": 5961,
+        "regenerate": 119
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 202,
+        "photons": 274,
+        "waste": 1
+      },
+      "seed": 43002,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 66,
+        "catalytic": 12,
+        "cleave": 25,
+        "diffuse": 2016,
+        "noop": 5958,
+        "regenerate": 127
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 218,
+        "photons": 258,
+        "waste": 5
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 58,
+        "catalytic": 0,
+        "cleave": 23,
+        "diffuse": 2021,
+        "noop": 5979,
+        "regenerate": 111
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 192,
+        "photons": 290,
+        "waste": 5
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 81,
+        "catalytic": 18,
+        "cleave": 36,
+        "diffuse": 2032,
+        "noop": 5881,
+        "regenerate": 162
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 279,
+        "photons": 188,
+        "waste": 0
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 65,
+        "catalytic": 12,
+        "cleave": 25,
+        "diffuse": 2019,
+        "noop": 6083,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 126,
+        "exported": 0,
+        "heat": 90,
+        "photons": 512,
+        "waste": 130
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 66,
+        "catalytic": 12,
+        "cleave": 25,
+        "diffuse": 2016,
+        "noop": 6007,
+        "regenerate": 78
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 202,
+        "exported": 356,
+        "heat": 169,
+        "photons": 0,
+        "waste": 54
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 67,
+        "catalytic": 14,
+        "cleave": 36,
+        "diffuse": 2020,
+        "noop": 5916,
+        "regenerate": 153
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 268,
+        "photons": 206,
+        "waste": 5
+      },
+      "seed": 43003,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 53,
+        "catalytic": 3,
+        "cleave": 18,
+        "diffuse": 2011,
+        "noop": 6009,
+        "regenerate": 101
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 172,
+        "photons": 310,
+        "waste": 5
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 52,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2011,
+        "noop": 6010,
+        "regenerate": 101
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 171,
+        "photons": 310,
+        "waste": 3
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 63,
+        "catalytic": 5,
+        "cleave": 19,
+        "diffuse": 2028,
+        "noop": 5956,
+        "regenerate": 126
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 208,
+        "photons": 260,
+        "waste": 0
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 52,
+        "catalytic": 3,
+        "cleave": 18,
+        "diffuse": 2011,
+        "noop": 6111,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 152,
+        "exported": 0,
+        "heat": 70,
+        "photons": 512,
+        "waste": 104
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 53,
+        "catalytic": 3,
+        "cleave": 18,
+        "diffuse": 2011,
+        "noop": 6068,
+        "regenerate": 42
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 192,
+        "exported": 428,
+        "heat": 113,
+        "photons": 0,
+        "waste": 64
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 25,
+        "diffuse": 2011,
+        "noop": 5984,
+        "regenerate": 122
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 209,
+        "photons": 268,
+        "waste": 2
+      },
+      "seed": 43004,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 59,
+        "catalytic": 3,
+        "cleave": 27,
+        "diffuse": 2033,
+        "noop": 5958,
+        "regenerate": 115
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 201,
+        "photons": 282,
+        "waste": 3
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 59,
+        "catalytic": 0,
+        "cleave": 28,
+        "diffuse": 2032,
+        "noop": 5958,
+        "regenerate": 115
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 202,
+        "photons": 282,
+        "waste": 3
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 78,
+        "catalytic": 16,
+        "cleave": 30,
+        "diffuse": 2051,
+        "noop": 5877,
+        "regenerate": 156
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 264,
+        "photons": 200,
+        "waste": 0
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 59,
+        "catalytic": 3,
+        "cleave": 27,
+        "diffuse": 2033,
+        "noop": 6073,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 138,
+        "exported": 0,
+        "heat": 86,
+        "photons": 512,
+        "waste": 118
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 59,
+        "catalytic": 3,
+        "cleave": 27,
+        "diffuse": 2033,
+        "noop": 6026,
+        "regenerate": 47
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 185,
+        "exported": 418,
+        "heat": 133,
+        "photons": 0,
+        "waste": 71
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 29,
+        "diffuse": 2030,
+        "noop": 5940,
+        "regenerate": 136
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 234,
+        "photons": 240,
+        "waste": 2
+      },
+      "seed": 43005,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 62,
+        "catalytic": 1,
+        "cleave": 32,
+        "diffuse": 2033,
+        "noop": 5942,
+        "regenerate": 123
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 217,
+        "photons": 266,
+        "waste": 1
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 62,
+        "catalytic": 0,
+        "cleave": 32,
+        "diffuse": 2033,
+        "noop": 5942,
+        "regenerate": 123
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 217,
+        "photons": 266,
+        "waste": 1
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 80,
+        "catalytic": 9,
+        "cleave": 33,
+        "diffuse": 2081,
+        "noop": 5838,
+        "regenerate": 160
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 273,
+        "photons": 192,
+        "waste": 0
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 61,
+        "catalytic": 0,
+        "cleave": 32,
+        "diffuse": 2034,
+        "noop": 6065,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 134,
+        "exported": 0,
+        "heat": 93,
+        "photons": 512,
+        "waste": 122
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 61,
+        "catalytic": 0,
+        "cleave": 32,
+        "diffuse": 2034,
+        "noop": 5992,
+        "regenerate": 73
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 207,
+        "exported": 366,
+        "heat": 166,
+        "photons": 0,
+        "waste": 49
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 61,
+        "catalytic": 3,
+        "cleave": 37,
+        "diffuse": 2031,
+        "noop": 5918,
+        "regenerate": 145
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 255,
+        "photons": 222,
+        "waste": 1
+      },
+      "seed": 43006,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 51,
+        "catalytic": 1,
+        "cleave": 27,
+        "diffuse": 2022,
+        "noop": 5993,
+        "regenerate": 99
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 177,
+        "photons": 314,
+        "waste": 3
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 51,
+        "catalytic": 0,
+        "cleave": 24,
+        "diffuse": 2022,
+        "noop": 5996,
+        "regenerate": 99
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 174,
+        "photons": 314,
+        "waste": 3
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 77,
+        "catalytic": 18,
+        "cleave": 35,
+        "diffuse": 2051,
+        "noop": 5875,
+        "regenerate": 154
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 266,
+        "photons": 204,
+        "waste": 0
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 27,
+        "diffuse": 2022,
+        "noop": 6093,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 156,
+        "exported": 0,
+        "heat": 77,
+        "photons": 512,
+        "waste": 100
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 27,
+        "diffuse": 2022,
+        "noop": 6034,
+        "regenerate": 59
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 215,
+        "exported": 394,
+        "heat": 136,
+        "photons": 0,
+        "waste": 41
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 55,
+        "catalytic": 2,
+        "cleave": 37,
+        "diffuse": 2020,
+        "noop": 5946,
+        "regenerate": 134
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 238,
+        "photons": 244,
+        "waste": 0
+      },
+      "seed": 43007,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 51,
+        "catalytic": 3,
+        "cleave": 26,
+        "diffuse": 2025,
+        "noop": 5990,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 177,
+        "photons": 312,
+        "waste": 2
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 48,
+        "catalytic": 0,
+        "cleave": 22,
+        "diffuse": 2025,
+        "noop": 6003,
+        "regenerate": 94
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 164,
+        "photons": 324,
+        "waste": 2
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 64,
+        "catalytic": 5,
+        "cleave": 28,
+        "diffuse": 2036,
+        "noop": 5936,
+        "regenerate": 128
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 220,
+        "photons": 256,
+        "waste": 0
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 49,
+        "catalytic": 3,
+        "cleave": 28,
+        "diffuse": 2025,
+        "noop": 6090,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 158,
+        "exported": 0,
+        "heat": 77,
+        "photons": 512,
+        "waste": 98
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 51,
+        "catalytic": 3,
+        "cleave": 26,
+        "diffuse": 2025,
+        "noop": 6040,
+        "regenerate": 50
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 204,
+        "exported": 412,
+        "heat": 127,
+        "photons": 0,
+        "waste": 52
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 49,
+        "catalytic": 6,
+        "cleave": 25,
+        "diffuse": 2024,
+        "noop": 5973,
+        "regenerate": 121
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 207,
+        "photons": 270,
+        "waste": 1
+      },
+      "seed": 43008,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 22,
+        "diffuse": 2039,
+        "noop": 5961,
+        "regenerate": 113
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 192,
+        "photons": 286,
+        "waste": 1
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 53,
+        "catalytic": 0,
+        "cleave": 22,
+        "diffuse": 2038,
+        "noop": 5976,
+        "regenerate": 103
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 178,
+        "photons": 306,
+        "waste": 3
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 74,
+        "catalytic": 11,
+        "cleave": 35,
+        "diffuse": 2079,
+        "noop": 5856,
+        "regenerate": 148
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 257,
+        "photons": 216,
+        "waste": 0
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 22,
+        "diffuse": 2039,
+        "noop": 6074,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 142,
+        "exported": 0,
+        "heat": 79,
+        "photons": 512,
+        "waste": 114
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 22,
+        "diffuse": 2039,
+        "noop": 6008,
+        "regenerate": 66
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 208,
+        "exported": 380,
+        "heat": 145,
+        "photons": 0,
+        "waste": 48
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 55,
+        "catalytic": 1,
+        "cleave": 27,
+        "diffuse": 2037,
+        "noop": 5942,
+        "regenerate": 131
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 225,
+        "photons": 250,
+        "waste": 3
+      },
+      "seed": 43009,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 47,
+        "catalytic": 6,
+        "cleave": 15,
+        "diffuse": 2102,
+        "noop": 5938,
+        "regenerate": 90
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 152,
+        "photons": 332,
+        "waste": 4
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 45,
+        "catalytic": 0,
+        "cleave": 20,
+        "diffuse": 2101,
+        "noop": 5939,
+        "regenerate": 87
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 152,
+        "photons": 338,
+        "waste": 3
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 78,
+        "catalytic": 26,
+        "cleave": 31,
+        "diffuse": 2117,
+        "noop": 5810,
+        "regenerate": 156
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 265,
+        "photons": 200,
+        "waste": 0
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 47,
+        "catalytic": 6,
+        "cleave": 15,
+        "diffuse": 2102,
+        "noop": 6028,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 162,
+        "exported": 0,
+        "heat": 62,
+        "photons": 512,
+        "waste": 94
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 47,
+        "catalytic": 6,
+        "cleave": 15,
+        "diffuse": 2102,
+        "noop": 5979,
+        "regenerate": 49
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 211,
+        "exported": 414,
+        "heat": 111,
+        "photons": 0,
+        "waste": 45
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 47,
+        "catalytic": 7,
+        "cleave": 25,
+        "diffuse": 2102,
+        "noop": 5903,
+        "regenerate": 115
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 199,
+        "photons": 282,
+        "waste": 3
+      },
+      "seed": 43010,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 72,
+        "catalytic": 14,
+        "cleave": 34,
+        "diffuse": 2060,
+        "noop": 5889,
+        "regenerate": 137
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 249,
+        "exported": 0,
+        "heat": 243,
+        "photons": 238,
+        "waste": 7
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 56,
+        "catalytic": 0,
+        "cleave": 23,
+        "diffuse": 2061,
+        "noop": 5942,
+        "regenerate": 110
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 189,
+        "photons": 292,
+        "waste": 2
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 84,
+        "catalytic": 17,
+        "cleave": 32,
+        "diffuse": 2093,
+        "noop": 5815,
+        "regenerate": 168
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 284,
+        "photons": 176,
+        "waste": 0
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 72,
+        "catalytic": 14,
+        "cleave": 34,
+        "diffuse": 2060,
+        "noop": 6026,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 112,
+        "exported": 0,
+        "heat": 106,
+        "photons": 512,
+        "waste": 144
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 72,
+        "catalytic": 14,
+        "cleave": 34,
+        "diffuse": 2060,
+        "noop": 5949,
+        "regenerate": 77
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 189,
+        "exported": 358,
+        "heat": 183,
+        "photons": 0,
+        "waste": 67
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 59,
+        "catalytic": 5,
+        "cleave": 37,
+        "diffuse": 2057,
+        "noop": 5902,
+        "regenerate": 137
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 245,
+        "photons": 238,
+        "waste": 5
+      },
+      "seed": 43011,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 44,
+        "catalytic": 1,
+        "cleave": 17,
+        "diffuse": 2052,
+        "noop": 5992,
+        "regenerate": 87
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 148,
+        "photons": 338,
+        "waste": 1
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 44,
+        "catalytic": 0,
+        "cleave": 17,
+        "diffuse": 2052,
+        "noop": 5992,
+        "regenerate": 87
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 148,
+        "photons": 338,
+        "waste": 1
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 58,
+        "catalytic": 9,
+        "cleave": 26,
+        "diffuse": 2087,
+        "noop": 5905,
+        "regenerate": 116
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 200,
+        "photons": 280,
+        "waste": 0
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 44,
+        "catalytic": 1,
+        "cleave": 19,
+        "diffuse": 2053,
+        "noop": 6076,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 168,
+        "exported": 0,
+        "heat": 63,
+        "photons": 512,
+        "waste": 88
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 44,
+        "catalytic": 1,
+        "cleave": 17,
+        "diffuse": 2052,
+        "noop": 6033,
+        "regenerate": 46
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 214,
+        "exported": 420,
+        "heat": 107,
+        "photons": 0,
+        "waste": 42
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 43,
+        "catalytic": 3,
+        "cleave": 18,
+        "diffuse": 2049,
+        "noop": 5972,
+        "regenerate": 110
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 183,
+        "photons": 292,
+        "waste": 0
+      },
+      "seed": 43012,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 65,
+        "catalytic": 8,
+        "cleave": 33,
+        "diffuse": 2040,
+        "noop": 5931,
+        "regenerate": 123
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 249,
+        "exported": 0,
+        "heat": 221,
+        "photons": 266,
+        "waste": 7
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 60,
+        "catalytic": 0,
+        "cleave": 31,
+        "diffuse": 2044,
+        "noop": 5945,
+        "regenerate": 112
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 248,
+        "exported": 0,
+        "heat": 203,
+        "photons": 288,
+        "waste": 8
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 95,
+        "catalytic": 29,
+        "cleave": 59,
+        "diffuse": 2061,
+        "noop": 5796,
+        "regenerate": 181
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 247,
+        "exported": 0,
+        "heat": 335,
+        "photons": 150,
+        "waste": 9
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 65,
+        "catalytic": 8,
+        "cleave": 32,
+        "diffuse": 2040,
+        "noop": 6055,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 126,
+        "exported": 0,
+        "heat": 97,
+        "photons": 512,
+        "waste": 130
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 65,
+        "catalytic": 8,
+        "cleave": 33,
+        "diffuse": 2040,
+        "noop": 5981,
+        "regenerate": 73
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 199,
+        "exported": 366,
+        "heat": 171,
+        "photons": 0,
+        "waste": 57
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 67,
+        "catalytic": 9,
+        "cleave": 42,
+        "diffuse": 2042,
+        "noop": 5887,
+        "regenerate": 154
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 275,
+        "photons": 204,
+        "waste": 4
+      },
+      "seed": 43013,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 53,
+        "catalytic": 1,
+        "cleave": 16,
+        "diffuse": 2048,
+        "noop": 5970,
+        "regenerate": 105
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 174,
+        "photons": 302,
+        "waste": 1
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 52,
+        "catalytic": 0,
+        "cleave": 16,
+        "diffuse": 2048,
+        "noop": 5973,
+        "regenerate": 103
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 171,
+        "photons": 306,
+        "waste": 1
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 60,
+        "catalytic": 1,
+        "cleave": 19,
+        "diffuse": 2052,
+        "noop": 5941,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 199,
+        "photons": 272,
+        "waste": 0
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 53,
+        "catalytic": 1,
+        "cleave": 16,
+        "diffuse": 2048,
+        "noop": 6075,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 150,
+        "exported": 0,
+        "heat": 69,
+        "photons": 512,
+        "waste": 106
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 53,
+        "catalytic": 1,
+        "cleave": 16,
+        "diffuse": 2048,
+        "noop": 6033,
+        "regenerate": 42
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 192,
+        "exported": 428,
+        "heat": 111,
+        "photons": 0,
+        "waste": 64
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 51,
+        "catalytic": 3,
+        "cleave": 23,
+        "diffuse": 2045,
+        "noop": 5947,
+        "regenerate": 126
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 212,
+        "photons": 260,
+        "waste": 0
+      },
+      "seed": 43014,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 50,
+        "catalytic": 2,
+        "cleave": 21,
+        "diffuse": 2054,
+        "noop": 5967,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 171,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 23,
+        "diffuse": 2054,
+        "noop": 5965,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 173,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 59,
+        "catalytic": 3,
+        "cleave": 27,
+        "diffuse": 2073,
+        "noop": 5915,
+        "regenerate": 118
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 204,
+        "photons": 276,
+        "waste": 0
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 50,
+        "catalytic": 2,
+        "cleave": 21,
+        "diffuse": 2054,
+        "noop": 6067,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 156,
+        "exported": 0,
+        "heat": 71,
+        "photons": 512,
+        "waste": 100
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 50,
+        "catalytic": 2,
+        "cleave": 21,
+        "diffuse": 2054,
+        "noop": 6019,
+        "regenerate": 48
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 204,
+        "exported": 416,
+        "heat": 119,
+        "photons": 0,
+        "waste": 52
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 45,
+        "catalytic": 2,
+        "cleave": 23,
+        "diffuse": 2054,
+        "noop": 5956,
+        "regenerate": 114
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 194,
+        "photons": 284,
+        "waste": 0
+      },
+      "seed": 43015,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2045,
+        "noop": 5979,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 168,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2045,
+        "noop": 5979,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 168,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 67,
+        "catalytic": 8,
+        "cleave": 27,
+        "diffuse": 2066,
+        "noop": 5898,
+        "regenerate": 134
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 228,
+        "photons": 244,
+        "waste": 0
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2045,
+        "noop": 6079,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 156,
+        "exported": 0,
+        "heat": 68,
+        "photons": 512,
+        "waste": 100
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2045,
+        "noop": 6020,
+        "regenerate": 59
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 215,
+        "exported": 394,
+        "heat": 127,
+        "photons": 0,
+        "waste": 41
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 51,
+        "catalytic": 6,
+        "cleave": 27,
+        "diffuse": 2045,
+        "noop": 5943,
+        "regenerate": 126
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 216,
+        "photons": 260,
+        "waste": 0
+      },
+      "seed": 43016,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 50,
+        "catalytic": 2,
+        "cleave": 23,
+        "diffuse": 1972,
+        "noop": 6049,
+        "regenerate": 98
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 171,
+        "photons": 316,
+        "waste": 2
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 27,
+        "diffuse": 1969,
+        "noop": 6046,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 177,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 60,
+        "catalytic": 6,
+        "cleave": 19,
+        "diffuse": 1977,
+        "noop": 6016,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 199,
+        "photons": 272,
+        "waste": 0
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 50,
+        "catalytic": 2,
+        "cleave": 23,
+        "diffuse": 1972,
+        "noop": 6147,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 156,
+        "exported": 0,
+        "heat": 73,
+        "photons": 512,
+        "waste": 100
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 48,
+        "catalytic": 2,
+        "cleave": 21,
+        "diffuse": 1972,
+        "noop": 6099,
+        "regenerate": 52
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 212,
+        "exported": 408,
+        "heat": 121,
+        "photons": 0,
+        "waste": 44
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 45,
+        "catalytic": 0,
+        "cleave": 27,
+        "diffuse": 1972,
+        "noop": 6034,
+        "regenerate": 114
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 198,
+        "photons": 284,
+        "waste": 0
+      },
+      "seed": 43017,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 55,
+        "catalytic": 15,
+        "cleave": 23,
+        "diffuse": 2024,
+        "noop": 5981,
+        "regenerate": 109
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 187,
+        "photons": 294,
+        "waste": 1
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 43,
+        "catalytic": 0,
+        "cleave": 16,
+        "diffuse": 2017,
+        "noop": 6030,
+        "regenerate": 86
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 145,
+        "photons": 340,
+        "waste": 0
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 77,
+        "catalytic": 25,
+        "cleave": 28,
+        "diffuse": 2058,
+        "noop": 5876,
+        "regenerate": 153
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 258,
+        "photons": 206,
+        "waste": 1
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 55,
+        "catalytic": 15,
+        "cleave": 23,
+        "diffuse": 2024,
+        "noop": 6090,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 146,
+        "exported": 0,
+        "heat": 78,
+        "photons": 512,
+        "waste": 110
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 55,
+        "catalytic": 15,
+        "cleave": 23,
+        "diffuse": 2024,
+        "noop": 6028,
+        "regenerate": 62
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 208,
+        "exported": 388,
+        "heat": 140,
+        "photons": 0,
+        "waste": 48
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 55,
+        "catalytic": 16,
+        "cleave": 29,
+        "diffuse": 2017,
+        "noop": 5961,
+        "regenerate": 130
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 226,
+        "photons": 252,
+        "waste": 4
+      },
+      "seed": 43018,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 22,
+        "diffuse": 1998,
+        "noop": 6028,
+        "regenerate": 94
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 250,
+        "exported": 0,
+        "heat": 166,
+        "photons": 324,
+        "waste": 6
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 49,
+        "catalytic": 0,
+        "cleave": 22,
+        "diffuse": 1998,
+        "noop": 6031,
+        "regenerate": 92
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 250,
+        "exported": 0,
+        "heat": 163,
+        "photons": 328,
+        "waste": 6
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 74,
+        "catalytic": 11,
+        "cleave": 20,
+        "diffuse": 2007,
+        "noop": 5949,
+        "regenerate": 142
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 250,
+        "exported": 0,
+        "heat": 236,
+        "photons": 228,
+        "waste": 6
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 22,
+        "diffuse": 1998,
+        "noop": 6122,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 156,
+        "exported": 0,
+        "heat": 72,
+        "photons": 512,
+        "waste": 100
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 50,
+        "catalytic": 1,
+        "cleave": 22,
+        "diffuse": 1998,
+        "noop": 6084,
+        "regenerate": 38
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 194,
+        "exported": 436,
+        "heat": 110,
+        "photons": 0,
+        "waste": 62
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 51,
+        "catalytic": 3,
+        "cleave": 27,
+        "diffuse": 2000,
+        "noop": 5994,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 250,
+        "exported": 0,
+        "heat": 210,
+        "photons": 272,
+        "waste": 6
+      },
+      "seed": 43019,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 49,
+        "catalytic": 0,
+        "cleave": 25,
+        "diffuse": 2065,
+        "noop": 5957,
+        "regenerate": 96
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 170,
+        "photons": 320,
+        "waste": 2
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 49,
+        "catalytic": 0,
+        "cleave": 25,
+        "diffuse": 2065,
+        "noop": 5957,
+        "regenerate": 96
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 170,
+        "photons": 320,
+        "waste": 2
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 61,
+        "catalytic": 8,
+        "cleave": 27,
+        "diffuse": 2103,
+        "noop": 5879,
+        "regenerate": 122
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 210,
+        "photons": 268,
+        "waste": 0
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 49,
+        "catalytic": 0,
+        "cleave": 24,
+        "diffuse": 2066,
+        "noop": 6053,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 158,
+        "exported": 0,
+        "heat": 73,
+        "photons": 512,
+        "waste": 98
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 49,
+        "catalytic": 0,
+        "cleave": 25,
+        "diffuse": 2065,
+        "noop": 6001,
+        "regenerate": 52
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 210,
+        "exported": 408,
+        "heat": 126,
+        "photons": 0,
+        "waste": 46
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 49,
+        "catalytic": 3,
+        "cleave": 34,
+        "diffuse": 2066,
+        "noop": 5923,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 215,
+        "photons": 272,
+        "waste": 2
+      },
+      "seed": 43020,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 61,
+        "catalytic": 6,
+        "cleave": 31,
+        "diffuse": 2023,
+        "noop": 5958,
+        "regenerate": 119
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 211,
+        "photons": 274,
+        "waste": 3
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 54,
+        "catalytic": 0,
+        "cleave": 34,
+        "diffuse": 2023,
+        "noop": 5973,
+        "regenerate": 108
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 196,
+        "photons": 296,
+        "waste": 0
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 84,
+        "catalytic": 30,
+        "cleave": 50,
+        "diffuse": 2028,
+        "noop": 5863,
+        "regenerate": 167
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 301,
+        "photons": 178,
+        "waste": 1
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 57,
+        "catalytic": 3,
+        "cleave": 31,
+        "diffuse": 2023,
+        "noop": 6081,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 142,
+        "exported": 0,
+        "heat": 88,
+        "photons": 512,
+        "waste": 114
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 61,
+        "catalytic": 6,
+        "cleave": 31,
+        "diffuse": 2023,
+        "noop": 6016,
+        "regenerate": 61
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 195,
+        "exported": 390,
+        "heat": 153,
+        "photons": 0,
+        "waste": 61
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 53,
+        "catalytic": 2,
+        "cleave": 35,
+        "diffuse": 2021,
+        "noop": 5953,
+        "regenerate": 130
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 230,
+        "photons": 252,
+        "waste": 0
+      },
+      "seed": 43021,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 60,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2006,
+        "noop": 5985,
+        "regenerate": 117
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 201,
+        "photons": 278,
+        "waste": 3
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 58,
+        "catalytic": 0,
+        "cleave": 23,
+        "diffuse": 2006,
+        "noop": 5991,
+        "regenerate": 114
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 195,
+        "photons": 284,
+        "waste": 2
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 70,
+        "catalytic": 4,
+        "cleave": 27,
+        "diffuse": 2024,
+        "noop": 5931,
+        "regenerate": 140
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 237,
+        "photons": 232,
+        "waste": 0
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 60,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2006,
+        "noop": 6102,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 136,
+        "exported": 0,
+        "heat": 84,
+        "photons": 512,
+        "waste": 120
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 60,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2006,
+        "noop": 6042,
+        "regenerate": 60
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 196,
+        "exported": 392,
+        "heat": 144,
+        "photons": 0,
+        "waste": 60
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 59,
+        "catalytic": 1,
+        "cleave": 37,
+        "diffuse": 2005,
+        "noop": 5954,
+        "regenerate": 137
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 245,
+        "photons": 238,
+        "waste": 5
+      },
+      "seed": 43022,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 47,
+        "catalytic": 2,
+        "cleave": 18,
+        "diffuse": 2039,
+        "noop": 5994,
+        "regenerate": 94
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 159,
+        "photons": 324,
+        "waste": 0
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 45,
+        "catalytic": 0,
+        "cleave": 20,
+        "diffuse": 2040,
+        "noop": 5997,
+        "regenerate": 90
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 155,
+        "photons": 332,
+        "waste": 0
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 61,
+        "catalytic": 5,
+        "cleave": 22,
+        "diffuse": 2064,
+        "noop": 5923,
+        "regenerate": 122
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 205,
+        "photons": 268,
+        "waste": 0
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 47,
+        "catalytic": 2,
+        "cleave": 18,
+        "diffuse": 2039,
+        "noop": 6088,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 162,
+        "exported": 0,
+        "heat": 65,
+        "photons": 512,
+        "waste": 94
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 47,
+        "catalytic": 2,
+        "cleave": 18,
+        "diffuse": 2039,
+        "noop": 6035,
+        "regenerate": 53
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 215,
+        "exported": 406,
+        "heat": 118,
+        "photons": 0,
+        "waste": 41
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 48,
+        "catalytic": 2,
+        "cleave": 28,
+        "diffuse": 2036,
+        "noop": 5960,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 208,
+        "photons": 272,
+        "waste": 0
+      },
+      "seed": 43023,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 46,
+        "catalytic": 6,
+        "cleave": 22,
+        "diffuse": 2048,
+        "noop": 5986,
+        "regenerate": 90
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 158,
+        "photons": 332,
+        "waste": 2
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 40,
+        "catalytic": 0,
+        "cleave": 17,
+        "diffuse": 2047,
+        "noop": 6009,
+        "regenerate": 79
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 136,
+        "photons": 354,
+        "waste": 1
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 54,
+        "catalytic": 8,
+        "cleave": 21,
+        "diffuse": 2055,
+        "noop": 5954,
+        "regenerate": 108
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 183,
+        "photons": 296,
+        "waste": 0
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 46,
+        "catalytic": 6,
+        "cleave": 21,
+        "diffuse": 2049,
+        "noop": 6076,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 164,
+        "exported": 0,
+        "heat": 67,
+        "photons": 512,
+        "waste": 92
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 46,
+        "catalytic": 6,
+        "cleave": 22,
+        "diffuse": 2048,
+        "noop": 6030,
+        "regenerate": 46
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 210,
+        "exported": 420,
+        "heat": 114,
+        "photons": 0,
+        "waste": 46
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 37,
+        "catalytic": 1,
+        "cleave": 25,
+        "diffuse": 2048,
+        "noop": 5987,
+        "regenerate": 95
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 169,
+        "photons": 322,
+        "waste": 3
+      },
+      "seed": 43024,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 52,
+        "catalytic": 1,
+        "cleave": 23,
+        "diffuse": 2064,
+        "noop": 5950,
+        "regenerate": 103
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 178,
+        "photons": 306,
+        "waste": 1
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 54,
+        "catalytic": 0,
+        "cleave": 18,
+        "diffuse": 2064,
+        "noop": 5949,
+        "regenerate": 107
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 179,
+        "photons": 298,
+        "waste": 1
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 74,
+        "catalytic": 10,
+        "cleave": 27,
+        "diffuse": 2090,
+        "noop": 5856,
+        "regenerate": 145
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 253,
+        "exported": 0,
+        "heat": 246,
+        "photons": 222,
+        "waste": 3
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 52,
+        "catalytic": 1,
+        "cleave": 23,
+        "diffuse": 2064,
+        "noop": 6053,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 152,
+        "exported": 0,
+        "heat": 75,
+        "photons": 512,
+        "waste": 104
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 52,
+        "catalytic": 1,
+        "cleave": 23,
+        "diffuse": 2064,
+        "noop": 5992,
+        "regenerate": 61
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 213,
+        "exported": 390,
+        "heat": 136,
+        "photons": 0,
+        "waste": 43
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 51,
+        "catalytic": 1,
+        "cleave": 23,
+        "diffuse": 2065,
+        "noop": 5929,
+        "regenerate": 124
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 210,
+        "photons": 264,
+        "waste": 2
+      },
+      "seed": 43025,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 64,
+        "catalytic": 1,
+        "cleave": 28,
+        "diffuse": 2029,
+        "noop": 5947,
+        "regenerate": 124
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 216,
+        "photons": 264,
+        "waste": 4
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 62,
+        "catalytic": 0,
+        "cleave": 28,
+        "diffuse": 2030,
+        "noop": 5952,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 210,
+        "photons": 272,
+        "waste": 4
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 75,
+        "catalytic": 6,
+        "cleave": 31,
+        "diffuse": 2074,
+        "noop": 5863,
+        "regenerate": 149
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 255,
+        "photons": 214,
+        "waste": 1
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 64,
+        "catalytic": 1,
+        "cleave": 28,
+        "diffuse": 2029,
+        "noop": 6071,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 128,
+        "exported": 0,
+        "heat": 92,
+        "photons": 512,
+        "waste": 128
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 64,
+        "catalytic": 1,
+        "cleave": 28,
+        "diffuse": 2029,
+        "noop": 6005,
+        "regenerate": 66
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 194,
+        "exported": 380,
+        "heat": 158,
+        "photons": 0,
+        "waste": 62
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 62,
+        "catalytic": 2,
+        "cleave": 36,
+        "diffuse": 2026,
+        "noop": 5925,
+        "regenerate": 143
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 253,
+        "photons": 226,
+        "waste": 5
+      },
+      "seed": 43026,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 60,
+        "catalytic": 6,
+        "cleave": 28,
+        "diffuse": 2035,
+        "noop": 5949,
+        "regenerate": 120
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 208,
+        "photons": 272,
+        "waste": 0
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 54,
+        "catalytic": 0,
+        "cleave": 19,
+        "diffuse": 2035,
+        "noop": 5976,
+        "regenerate": 108
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 181,
+        "photons": 296,
+        "waste": 0
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 75,
+        "catalytic": 17,
+        "cleave": 30,
+        "diffuse": 2061,
+        "noop": 5876,
+        "regenerate": 150
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 255,
+        "photons": 212,
+        "waste": 0
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 59,
+        "catalytic": 6,
+        "cleave": 29,
+        "diffuse": 2035,
+        "noop": 6069,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 138,
+        "exported": 0,
+        "heat": 88,
+        "photons": 512,
+        "waste": 118
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 60,
+        "catalytic": 6,
+        "cleave": 28,
+        "diffuse": 2035,
+        "noop": 6007,
+        "regenerate": 62
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 198,
+        "exported": 388,
+        "heat": 150,
+        "photons": 0,
+        "waste": 58
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 55,
+        "catalytic": 4,
+        "cleave": 32,
+        "diffuse": 2031,
+        "noop": 5941,
+        "regenerate": 133
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 232,
+        "photons": 246,
+        "waste": 1
+      },
+      "seed": 43027,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 53,
+        "catalytic": 2,
+        "cleave": 27,
+        "diffuse": 2002,
+        "noop": 6005,
+        "regenerate": 105
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 185,
+        "photons": 302,
+        "waste": 1
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 50,
+        "catalytic": 0,
+        "cleave": 26,
+        "diffuse": 2002,
+        "noop": 6014,
+        "regenerate": 100
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 176,
+        "photons": 312,
+        "waste": 0
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 66,
+        "catalytic": 7,
+        "cleave": 23,
+        "diffuse": 2026,
+        "noop": 5945,
+        "regenerate": 132
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 221,
+        "photons": 248,
+        "waste": 0
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 52,
+        "catalytic": 2,
+        "cleave": 27,
+        "diffuse": 2002,
+        "noop": 6111,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 152,
+        "exported": 0,
+        "heat": 79,
+        "photons": 512,
+        "waste": 104
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 53,
+        "catalytic": 2,
+        "cleave": 27,
+        "diffuse": 2002,
+        "noop": 6060,
+        "regenerate": 50
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 200,
+        "exported": 412,
+        "heat": 130,
+        "photons": 0,
+        "waste": 56
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 51,
+        "catalytic": 4,
+        "cleave": 31,
+        "diffuse": 1998,
+        "noop": 5988,
+        "regenerate": 124
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 218,
+        "photons": 264,
+        "waste": 2
+      },
+      "seed": 43028,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2074,
+        "noop": 5923,
+        "regenerate": 114
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 195,
+        "photons": 284,
+        "waste": 0
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 55,
+        "catalytic": 0,
+        "cleave": 22,
+        "diffuse": 2074,
+        "noop": 5931,
+        "regenerate": 110
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 187,
+        "photons": 292,
+        "waste": 0
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 78,
+        "catalytic": 13,
+        "cleave": 33,
+        "diffuse": 2098,
+        "noop": 5827,
+        "regenerate": 156
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 267,
+        "photons": 200,
+        "waste": 0
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2074,
+        "noop": 6037,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 142,
+        "exported": 0,
+        "heat": 81,
+        "photons": 512,
+        "waste": 114
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 57,
+        "catalytic": 2,
+        "cleave": 24,
+        "diffuse": 2074,
+        "noop": 5971,
+        "regenerate": 66
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 208,
+        "exported": 380,
+        "heat": 147,
+        "photons": 0,
+        "waste": 48
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 59,
+        "catalytic": 5,
+        "cleave": 37,
+        "diffuse": 2071,
+        "noop": 5883,
+        "regenerate": 142
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 250,
+        "photons": 228,
+        "waste": 0
+      },
+      "seed": 43029,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 76,
+        "catalytic": 3,
+        "cleave": 36,
+        "diffuse": 2000,
+        "noop": 5930,
+        "regenerate": 150
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 262,
+        "photons": 212,
+        "waste": 2
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 74,
+        "catalytic": 0,
+        "cleave": 38,
+        "diffuse": 2000,
+        "noop": 5934,
+        "regenerate": 146
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 258,
+        "photons": 220,
+        "waste": 2
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 89,
+        "catalytic": 9,
+        "cleave": 40,
+        "diffuse": 2012,
+        "noop": 5877,
+        "regenerate": 174
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 252,
+        "exported": 0,
+        "heat": 303,
+        "photons": 164,
+        "waste": 4
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 73,
+        "catalytic": 2,
+        "cleave": 37,
+        "diffuse": 2001,
+        "noop": 6081,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 110,
+        "exported": 0,
+        "heat": 110,
+        "photons": 512,
+        "waste": 146
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 76,
+        "catalytic": 3,
+        "cleave": 36,
+        "diffuse": 2000,
+        "noop": 5997,
+        "regenerate": 83
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 187,
+        "exported": 346,
+        "heat": 195,
+        "photons": 0,
+        "waste": 69
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 78,
+        "catalytic": 7,
+        "cleave": 41,
+        "diffuse": 1998,
+        "noop": 5900,
+        "regenerate": 175
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 251,
+        "exported": 0,
+        "heat": 306,
+        "photons": 162,
+        "waste": 5
+      },
+      "seed": 43030,
+      "steps": 8192
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "associate": 46,
+        "catalytic": 1,
+        "cleave": 30,
+        "diffuse": 1980,
+        "noop": 6045,
+        "regenerate": 91
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 167,
+        "photons": 330,
+        "waste": 1
+      },
+      "seed": 43031,
+      "steps": 8192
+    },
+    {
+      "arm": "inert",
+      "counts": {
+        "associate": 46,
+        "catalytic": 0,
+        "cleave": 26,
+        "diffuse": 1980,
+        "noop": 6049,
+        "regenerate": 91
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 255,
+        "exported": 0,
+        "heat": 163,
+        "photons": 330,
+        "waste": 1
+      },
+      "seed": 43031,
+      "steps": 8192
+    },
+    {
+      "arm": "well-mixed",
+      "counts": {
+        "associate": 59,
+        "catalytic": 9,
+        "cleave": 27,
+        "diffuse": 1982,
+        "noop": 6006,
+        "regenerate": 118
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 256,
+        "exported": 0,
+        "heat": 204,
+        "photons": 276,
+        "waste": 0
+      },
+      "seed": 43031,
+      "steps": 8192
+    },
+    {
+      "arm": "regeneration-off",
+      "counts": {
+        "associate": 46,
+        "catalytic": 1,
+        "cleave": 30,
+        "diffuse": 1980,
+        "noop": 6136,
+        "regenerate": 0
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 164,
+        "exported": 0,
+        "heat": 76,
+        "photons": 512,
+        "waste": 92
+      },
+      "seed": 43031,
+      "steps": 8192
+    },
+    {
+      "arm": "withdrawal",
+      "counts": {
+        "associate": 46,
+        "catalytic": 1,
+        "cleave": 30,
+        "diffuse": 1980,
+        "noop": 6085,
+        "regenerate": 51
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": 4096
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 215,
+        "exported": 410,
+        "heat": 127,
+        "photons": 0,
+        "waste": 41
+      },
+      "seed": 43031,
+      "steps": 8192
+    },
+    {
+      "arm": "supplied-dimers",
+      "counts": {
+        "associate": 50,
+        "catalytic": 3,
+        "cleave": 31,
+        "diffuse": 1981,
+        "noop": 6008,
+        "regenerate": 122
+      },
+      "depletion": {
+        "charged_zero": null,
+        "photons_zero": null
+      },
+      "endpoint_count": 0,
+      "endpoints": {},
+      "final": {
+        "charged": 254,
+        "exported": 0,
+        "heat": 215,
+        "photons": 268,
+        "waste": 2
+      },
+      "seed": 43031,
+      "steps": 8192
+    }
+  ],
+  "source_revision": "c819079b6c5ba0bb182f53034f863ef551728838",
+  "protocol_revision": "5c80d222efa119d5713ef25f61c26c46bdf64bf5",
+  "draw_contract_revision": "a1c0238",
+  "source_zip_sha256": "f781f15c9c7fbc209ff7e9d44a185cc078c092647a05dd354a6e065bf7b4d1f2",
+  "evidence_archive_sha256": "432e507ea27b5da9d242c4246307873d675dc13280a6767a35dcbfde400818c3",
+  "decision": "Reject realized reconstruction under this frozen law and horizon. Preserve all zero outcomes; do not tune this panel."
+}
