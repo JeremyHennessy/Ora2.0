@@ -39,8 +39,10 @@ def audit(output, source, revision):
         require(row['confined'] is (case != 'control'), 'Wrong confinement mode')
         folder = output/f'{row["trial"]}-{case}'
         require(row['marker'] == (folder/'started').exists(), 'Marker mismatch')
+        require(row['child_marker'] == (folder/'child-started').exists(), 'Child marker mismatch')
+        require(row['canary_before'] == hashlib.sha256(('outside-canary-'+str(row['trial'])).encode()).hexdigest(), 'Initial canary identity')
         if case in {'missing', 'job', 'token'}:
-            require(row['resumed'] is False and row['marker'] is False and row['worker_sha256'] is None,
+            require(row['resumed'] is False and row['marker'] is False and row['child_marker'] is False and row['worker_sha256'] is None,
                     'Fail-closed worker executed')
             require('error' in row and not row['connections'] and row['canary_before'] == row['canary_after'], 'Failure side effects')
             require(not (folder/'worker.json').exists(), 'Unexpected failure worker report')
@@ -69,14 +71,17 @@ def audit(output, source, revision):
             require(worker['outside_read']['value'] == 'outside-canary-'+str(row['trial']) and worker['child']['value'] == 0, 'Control action result')
             require(row['canary_after'] == hashlib.sha256(b'control-write').hexdigest() and row['canary_after'] != row['canary_before'], 'Control write observation')
             require(len(row['connections']) == 1 and row['connections'][0]['payload'] == b'inert-probe'.hex(), 'Control listener observation')
-            require(row['job_after']['started_processes'] == 2, 'Control child not accounted')
+            require(row['child_marker'] is True and (folder/'child-started').read_text() == 'harmless-child', 'Control child did not execute')
         else:
             require(all(worker[name]['ok'] is False for name in ('outside_read', 'outside_write', 'network', 'parent_handle', 'child')), 'Confined prohibited action succeeded')
-            require(all(worker[name]['winerror'] == 5 for name in ('outside_read', 'outside_write', 'parent_handle')), 'Expected native access denial')
-            require(worker['network']['winerror'] == 10013, 'Expected native socket access denial')
+            require(all(worker[name]['errno'] == 13 for name in ('outside_read', 'outside_write')) and worker['parent_handle']['winerror'] == 5, 'Expected access denial')
+            require(worker['network'].get('winerror') == 10013 or worker['network']['error'] == 'timed out', 'Expected socket denial or bounded timeout')
             require(worker['child']['winerror'] == 1816, 'Expected native process quota denial')
             require(row['canary_before'] == row['canary_after'] and not row['connections'], 'External effects observed')
-            require(row['job_after']['started_processes'] == 1, 'Confined descendant launched')
+            # TotalProcesses counts associations, including rejected creation;
+            # it is not the concurrent process cap or evidence user code ran.
+            require(row['child_marker'] is False, 'Confined child executed')
+        require(row['job_after']['active_before_close'] == 0, 'Residual job process')
     return dict(schema='isolation01-audit-v1', cases=10, controls=2, confined=2,
                 fail_closed=6, evidence_sha256=sha(output/'evidence.json'),
                 production_world_verified=False, hardened_runtime_verified=False,

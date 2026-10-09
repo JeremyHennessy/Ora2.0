@@ -43,7 +43,8 @@ def run(work, outside, port, parent):
         return True
     report['parent_handle'] = attempt(parent_handle)
     report['child'] = attempt(lambda: subprocess.run(
-        [sys.executable, '-I', '-c', 'raise SystemExit(0)'],
+        [sys.executable, '-I', '-c',
+         'from pathlib import Path; Path("child-started").write_text("harmless-child")'],
         stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
         timeout=3, close_fds=True).returncode)
     (work/'worker.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')

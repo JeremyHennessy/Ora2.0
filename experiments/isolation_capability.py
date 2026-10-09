@@ -272,6 +272,7 @@ def run_panel(output, revision):
                             connections.append(dict(address=address, payload=stream.recv(32).hex()))
                 row.update(trial=trial, case=case, canary_before=before, canary_after=sha(canary),
                     connections=connections, marker=(workspace/'started').exists(),
+                    child_marker=(workspace/'child-started').exists(),
                     worker_sha256=sha(workspace/'worker.json') if (workspace/'worker.json').exists() else None)
                 data['rows'].append(row)
                 save(output/'evidence.json', data)
