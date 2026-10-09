@@ -61,6 +61,8 @@ function energy02Summary(){return explain('A new way to pay for building','In EN
 function stop(){clearInterval(timer);timer=null;$('play').textContent='Play';}
 function setTick(i){index=Math.max(0,Math.min(states.length-1,i));render();}
 function render(){
+  $('world').textContent=recording.manifest.identity.world_id+' / seed 1 / bounded reference';
+  $('markers').innerHTML=states.filter(f=>f.event&&['ligated','decayed','captured','reclaimed','copied'].includes(f.event.result.outcome)).map(f=>`<button data-tick="${f.state.simulation_tick}">${f.event.tick} · ${f.event.result.outcome}</button>`).join('');
   const w=world(),l=Ora.ledger(w);$('tick').textContent=index;$('scrub').value=index;$('scrubvalue').textContent=index;
   $('metrics').innerHTML=[['Present structures',Object.keys(w.objects).length,`${Object.keys(w.history).length} recorded births`,'Assembly does not establish life'],['Usable work',l.usable,'model work units',`${l.heat} heat · ${l.bonds} stored in bonds`],['Material inventory',l.atoms,'unique model atoms',`${l.ready} ready · ${l.nutrients} nutrients · ${l.waste} waste`],['Accounting',`${l.total} / 320`,'model work equivalents','Material and energy ledgers conserved']].map(([label,value,unit,note])=>`<div class="metric"><div class="label">${label}</div><div class="value"><strong>${value}</strong><small>${unit}</small></div><div class="note">${note}</div></div>`).join('');
   $('lastEvent').textContent=current().event ? `State ${index} follows ${eventLabel(current())}. Event ticks begin at 0.` : 'Genesis state · before event 0';
