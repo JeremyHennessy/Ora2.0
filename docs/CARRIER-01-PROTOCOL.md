@@ -91,12 +91,15 @@ path by1535. Every price and provenance must be paid. This is functional recipe
 replacement and a type-level exchange loop, not exact object continuity, copying,
 reproduction or inherited organization. Other interactions are retained as data.
 
+Pre-execution comparator clarification: inert also cannot produce a causally
+catalyst-funded endpoint by definition. Treat inert/private/no-recycle as causal
+path-removal diagnostics, not independent frequency evidence of emergence.
 Primary pass: candidate>=8/32 endpoint worlds, adequate damage exposure>=16/32,
-and one-sided exact paired McNemar P<=.05 versus BOTH inert and shuffled, with
-Holm correction across those two comparisons. Record all ties/wins/losses, all
+and one-sided exact paired McNemar P<=.05 versus shuffled (one registered test).
+Record all ties/wins/losses, all
 arm frequencies, exposure, capture/manufacture/recycling/transport/decay counts,
 source assistance, energy remaining/depletion and post-photon-removal activity.
-Private/no-recycle/supplied are diagnostics, not extra hypotheses to shop among.
+Inert/private/no-recycle/supplied are diagnostics, not extra hypotheses to shop among.
 
 If exposure<16, classify underexposed and stop the tested law/horizon; do not
 call zero renewal a decisive negative or change damage time/seeds/horizon toward
