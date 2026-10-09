@@ -1,0 +1,14 @@
+{
+  "archive_bytes": 2760616,
+  "archive_sha256": "49fb71a13542d3a67e6a9a0c536445e26541c90ebaea930fd93b1406b17a76e4",
+  "cases_reaudited": 5376,
+  "physical_disks": [
+    0,
+    1
+  ],
+  "physical_power_loss_tested": false,
+  "previous_files_unchanged": 273,
+  "restored_files": 423,
+  "source_revision": "c7b65a37d19a29d1ef55433db1507149e3a2283b",
+  "verified": true
+}

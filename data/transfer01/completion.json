@@ -1,0 +1,11 @@
+{
+  "cases": 5376,
+  "edges": 521808,
+  "focused_checks": 16,
+  "forgeries": 3,
+  "gate_pass": false,
+  "natural_worlds": 0,
+  "shared_files_unchanged": 405,
+  "states": 184872,
+  "verified": true
+}
