@@ -2,7 +2,35 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science checkpoint — STARTUP-02 unscreened opportunities
+## Latest science checkpoint — RENEWAL-01 paid opportunity diagnosis
+
+Frozen9fc5ec9, executede503f70e:32 fresh seed blocks/seven paired controls,
+224 worlds/57,344 events with unchanged STARTUP-02 physics and full finite ledger.
+37 Windows checks passed. Independent reaction/noise/accounting plus prospective
+opportunity/provenance interpretation and exact raw/summary/audit replay passed;
+rehashed opportunity forgery rejects.129 historical/shared inputs unchanged;
+17 files restored on D:. [Receipt](RENEWAL-01-RECEIPT.md).
+
+Active founder-free paid capture23/32 worlds,46 assemblies/98 captures (50 later).
+Zero fully capture-funded release/probe in all224 worlds. Capture funds31 later
+component charges and6 clean starts;18/32 worlds offer clean starts and2/32 offer
+clean extensions (59 state-times), but no clean extension is selected. All85 later
+active extensions and19 releases retain nonqualifying construction debits. No
+clean release opportunity exists. Supplied founder likewise fails clean extension
+despite opportunities in9/32 worlds. This diagnoses a finite encounter/mixing gap,
+not physical impossibility, autonomous origin or inheritance. Old laws/data intact.
+
+**Next science priority:** separately precommit feasibility of generic paid
+reversible association/component exchange against the preserved irreversible
+baseline, including complete breakup, reconstruction and endowment costs and
+matched founder-free/inert/supplied/external/withdrawal controls. Establish an
+affordable path before unscreened samples. Never let physics select researcher-only
+funding/clean labels, extend/tune closed samples or install unproven world physics.
+Engineering next remains hardened isolation and physical durability. AI-Research
+fef0a523/Pass29 unchanged; no unproven literature mechanism installed. Source-bound
+historical worlds and paused observer remain preserved; no continuous world active.
+
+## Preserved science checkpoint — STARTUP-02 unscreened opportunities
 
 Protocol512c116, executed421b6da1:224 finite worlds/57,344 events in32 unscreened
 seed blocks across seven paired controls. No supplied channels, target length,
