@@ -2,7 +2,39 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest engineering checkpoint — STORAGE-01
+## Latest engineering checkpoint — BACKUP-01
+
+Contract `b4206fc`: verified a manual backup on a physically separate local disk.
+40 sealed evidence archives, both repositories' complete reachable histories and
+approved observer/laboratory files were preserved;111 copied files passed two
+independent hash implementations and42 ZIP CRC checks. Both restored Git object
+histories verified. A tick5 snapshot read from the backup drive resumed to tick32;
+all33 complete states matched the original reference, preserving identity,
+ancestry, provenance, PRNG and journal prefix.99 historical/shared inputs unchanged.
+[Receipt](BACKUP-01-RECEIPT.md) records capture cutoff and recovery limitations.
+
+This closes the tested independent physical-drive copy/readback gate. It does not
+prove whole-host rebuilding with D: absent, off-host/offline disaster backup,
+physical power-loss/device reliability, low-level I/O durability or hardened
+isolation. Active laboratory work stays on D:, backup copies on the user-selected
+other drive. No persistent pilot or unattended world was activated.
+
+**Next priorities:** preserve the completed STORAGE-01/BACKUP-01 verification;
+precommit a distinct generic-startup feasibility candidate under full finite
+formation/release/endowment accounting and independent controls, retaining
+supplied-founder and subsidy-withdrawal contrasts. In parallel, independently scope
+interrupted-write/fsync/replace rejection/recovery and restricted filesystem/network
+execution before any separately authorized persistent pilot. Do not repeatedly
+retune old negative experiments or install an untested research architecture.
+
+AI-Research advanced during acceptance to `fef0a523` through Pass29 PR13; the newly
+merged review/ledger are identical to the provisional branch already read. Benefit,
+descendant transmission, reproductive packaging and external resource/partner
+resupply remain distinct scientific questions. No new Ora mechanism was installed.
+The initial backup captures research main `bfbd53c7`; newer evidence must retain
+its own explicit backup cutoff. Preserve earlier intake as historical context.
+
+## Completed engineering checkpoint — STORAGE-01
 
 Contract f26919e, final executed sourcec9a3fb49: verified create-new finite-world
 snapshots and restoration, preserving complete identity/history/PRNG/provenance.
@@ -17,11 +49,12 @@ Old laws, interfaces, data, reserved samples and approved observer remain intact
 
 The user's latest priorities govern: finish any open verification, then advance
 recoverable/observable finite-world foundations and independent startup science.
-Next engineering gates are an independently located backup/restore, explicitly
-registered interrupted-write/fsync/replace faults, and hardened process isolation.
+The independent-drive copy/readback gate subsequently passed BACKUP-01 above;
+remaining engineering gates include explicitly registered interrupted-write/fsync/
+replace faults and hardened process isolation.
 No persistent pilot or unattended world is authorized by these results. On the
 science track, retain the separate generic-startup accounting question below;
-review unmerged research as provisional intake, not an installed mechanism.
+review new research prospectively, not as an installed mechanism.
 
 ## Latest science checkpoint — REACTIVATE-01 existing-law renewal
 

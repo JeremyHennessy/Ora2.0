@@ -192,3 +192,16 @@ Ora supplied-founder reactivation and engineering snapshot continuity do not
 establish those scientific properties. Preserve founder failures and all current
 negative baselines; freeze any new startup candidate before execution. No past
 study, source grade, research dataset, legacy code or physical law changed.
+
+## Pass29 publication reconciliation after BACKUP-01
+
+Research main advanced during backup acceptance to `fef0a523688918448e7cafb39b969c2f01681d9e`
+through PR13. The complete merged diff was reviewed; its review text and evidence
+ledger match the already inspected `bf3a9bdc` branch exactly. Its publication status
+supersedes the provisional status above without changing scientific grading or
+independent-reproduction claims. No research experiment was performed and no Ora
+physics or frozen evidence changed. Original research local main remains intact.
+The first independent-drive history capture predates this merge at `bfbd53c7`;
+the completion supplement must preserve newer history with its own explicit cutoff.
+Keep partner resupply, transmitted material and reconstructed useful function
+independently measured in prospective generic-startup and later descendant tests.
