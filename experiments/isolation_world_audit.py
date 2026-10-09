@@ -1,6 +1,5 @@
 """Independent confined-world replay audit; imports no launcher/worker/driver."""
 import argparse
-from datetime import datetime
 import hashlib
 import json
 from pathlib import Path
@@ -31,7 +30,7 @@ def tree(folder):
 def observed(folder, revision):
     before=tree(folder)
     evidence=replay.inspect(folder,revision)
-    report=replay.inspect(folder,revision,current=datetime.fromisoformat(evidence['frames'][-1]['last_heartbeat']))['report']
+    report=replay.inspect(folder,revision,current=evidence['frames'][-1]['last_heartbeat'])['report']
     require(tree(folder)==before,'Observer modified world')
     return evidence,dict(recorded=True,report=report,world_tree_sha256=before,
         states_sha256=replay.digest(evidence['states']),

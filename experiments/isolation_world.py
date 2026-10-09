@@ -1,7 +1,6 @@
 """ISOLATION-02 explicit finite-world confinement/continuity composition."""
 import argparse
 import ctypes as c
-from datetime import datetime
 import json
 import os
 from pathlib import Path
@@ -27,7 +26,7 @@ def tree(folder):
 def observe(folder, revision):
     before = tree(folder)
     evidence = replay.inspect(folder, revision)
-    current = datetime.fromisoformat(evidence['frames'][-1]['last_heartbeat'])
+    current = evidence['frames'][-1]['last_heartbeat']
     report = replay.inspect(folder, revision, current=current)['report']
     if tree(folder) != before:
         raise RuntimeError('Read-only observation modified world')
