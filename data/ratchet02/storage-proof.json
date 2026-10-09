@@ -1,0 +1,34 @@
+{
+  "control": {
+    "files": 1186,
+    "logical_bytes": 20599211,
+    "reserved_bytes": 21575536,
+    "reserved_by_phase": {
+      "raw": 6875414,
+      "archive": 3061444,
+      "restore": 10590102,
+      "failure": 1048576
+    },
+    "limits": {
+      "raw": 33554432,
+      "archive": 33554432,
+      "restore": 88080384,
+      "failure": 2097152
+    },
+    "total_limit": 157286400
+  },
+  "panel": {
+    "files": 258,
+    "logical_bytes": 3834339,
+    "reserved_bytes": 4874184,
+    "reserved_by_phase": {
+      "failure": 1048576,
+      "raw": 3825608
+    },
+    "limits": {
+      "failure": 2097152,
+      "raw": 50331648
+    },
+    "total_limit": 52428800
+  }
+}

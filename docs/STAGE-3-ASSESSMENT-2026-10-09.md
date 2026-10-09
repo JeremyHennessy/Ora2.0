@@ -205,3 +205,26 @@ not organism emergence.3.6 no functional heredity, reproduction or adaptation
 tested. Environmental food withdrawal leaves no accessible donor and must not
 be confused with researcher-scaffold withdrawal. Full all-world/round diagnosis
 and controls retained. Prior laws, failed gates and samples unchanged.
+
+
+## RATCHET-01/02 — end-of-day useful-work assessment
+
+| Substage | Demonstrated / controlled only | Failed or unproven | Evidence needed |
+| --- | --- | --- | --- |
+|3.1 energy capture|Installed finite chemical-to-work coupling, exact reversible ledger|No natural self-built capture; work surplus0/64|Founder-free coupling with positive full-cost useful output|
+|3.2 locally funded construction|Paid supplied startup6; candidate pays scheduled replacement7 in51/64|Final work0–9<initial16, primary fails|Retained useful output after ALL formation/renewal/transport costs|
+|3.3 recycling|Labelled fuel↔waste and structural atoms reused under fresh ancestry|Reverse chemistry/atom reuse is not functional recycling|Recycled material causally restores useful function under matched nulls|
+|3.4 self-maintenance|Controlled replacement funded; all256 dynamics independently audited|No endogenous repair; whole-cost surplus0/64, both nulls0,P1|Repeated blind damage and spontaneous paid useful reconstruction|
+|3.5 autonomous origin|Prior raw-start studies preserved; RATCHET contains supplied apparatus|Zero founder-free RATCHET worlds; no autonomous origin|Generic raw environment naturally assembles productive coupling|
+|3.6 continued function/inheritance|Finite fuel/no replenishment; full ID/provenance records|No subsidy-withdrawal confirmation, heredity, adaptation or reproduction|Independent persistent useful function and separately controlled functional inheritance|
+
+Stop RATCHET's tested law/horizon. Feasibility29210 states/107861 edges and
+28160 exact rate checks passes; kinetics256 worlds/1048576 attempts fails.
+Candidate's51/64 funded operator replacements are secondary descriptive outcomes,
+not self-maintenance. A14-cycle authored certificate is possible but not observed
+whole-cost success. Preserve all negative samples and laws. Next prospective
+question concerns endogenous spatial coupling and retention, not removal of slip
+or free initial structure. Full Stage3 acceptance remains unsupported.
+Candidate aggregate work-edge output2389 minus reverse input2495 is NET minus106.
+Initial work10 can pay the replacement7; funded replacement is not evidence of
+newly produced work. Neither positive net work nor autonomous repair is accepted.
