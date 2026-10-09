@@ -119,7 +119,12 @@ Existing global operator lock; per child512MiB allocation cap,300 CPU seconds,
 4 processes,300 wall seconds; no memory-peak guarantee. Eight sequential batches
 of4 seeds/24 worlds plus first-batch byte replay. Each fresh case raw32MiB,
 archive16MiB,restore32MiB,failure2MiB,total82MiB; control metadata another82MiB.
-Complete precharged reservation820MiB, plus5GiB free-space floor. Every transition,
+Panel/control precharged reservation820MiB. Before any execution, also reserve a
+final evidence package: raw128MiB,archive128MiB,restore256MiB,failure8MiB,total520MiB,
+and final source-history/CI continuity raw16MiB,archive16MiB,restore16MiB,failure2MiB,
+total50MiB. Complete laboratory reservation1390MiB, plus5GiB free-space floor.
+The package retains all primary raw histories and failed processes, without
+duplicating byte-identical already restored science files. Every transition,
 draw, event, snapshot and ancestry preserved with exact source. Separate interpreter
 must rederive every event/RNG/state, independent evidence-budget audit, forged-copy
 refusal and complete byte restoration. No new runtime/observer/legacy code changes,

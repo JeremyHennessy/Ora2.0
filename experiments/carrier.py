@@ -62,7 +62,7 @@ def new(seed,arm):
             w['carriers'][0].update(charged=True,charge=dict(step=0,donor=None,kind=None,atoms=None,assisted=False))
             w['stats']['capture']+=1;w['stats']['basal']+=1
             for i in (a,b):w['atoms'][i]['assisted']=True
-            w['genesis'].append(['founder',make(w,a,b,0,0)])
+            w['genesis'].append(['founder',copy.deepcopy(make(w,a,b,0,0))])
     check(w)
     return w
 

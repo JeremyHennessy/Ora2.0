@@ -86,7 +86,7 @@ def genesis(seed,mode):
             s['photons'][dest]-=4;s['heat']+=1;s['stats']['capture']+=1;s['stats']['basal']+=1
             s['carriers'][0]['charged']=True;s['carriers'][0]['charge']=dict(step=0,donor=None,kind=None,atoms=None,assisted=False)
             s['atoms'][a]['assisted']=s['atoms'][b]['assisted']=True
-            s['genesis'].append(['founder',build(s,[a,b],0,0)])
+            s['genesis'].append(['founder',json.loads(json.dumps(build(s,[a,b],0,0)))])
     conservation(s)
     return s
 
