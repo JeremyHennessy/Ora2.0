@@ -2,7 +2,44 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science checkpoint — CAPACITY-01 affordable recycled reconstruction
+## Latest checkpoint — RECYCLE-01 negative unscreened realization; state fixture
+
+Frozen c559749a, executed 6180ff8e: 32 fresh seed blocks / nine paired controls,
+288 finite worlds / 73,728 events plus 576 fully paid supplied-manufacture events.
+49 Windows checks passed; independent reaction/opportunity/noise/RNG/ledger/
+provenance audit and exact raw/summary/audit rerun passed. Fully rehashed
+opportunity forgery rejects; 141 historical/shared inputs unchanged; 17 sealed
+science files restored on D:. [Receipt](RECYCLE-01-RECEIPT.md).
+
+Zero capture-paid recycled releases/probes and zero wholly capture-funded births
+in every arm. Candidate made two assemblies / two captures, versus matched
+irreversible 37 / 88. Its 117 blind cuts dissipated 262 work + 28 bond + 238
+residual-charge units; no large payer or size-two-plus private cut-plus-reserve
+opportunity existed. Supplied founder had affordable pairs in three worlds and
+clean extension opportunities in eight, but no clean release opportunity.
+No-initial-work worlds stayed inactive. Supplied capture, externally funded
+partial recycling, material reuse and true functional construction remain distinct.
+Authored CAPACITY-01 feasibility survives; unselected realization fails here.
+
+Separate closed-tape engineering check: 27 fresh-process JSON continuations from
+first-seed modes at steps 37/128/193 match every remaining audited event/state,
+identity, ancestry, RNG and cursor; rehashed snapshot corruption rejects. Initial
+missing-helper packaging failure preserved; corrected self-contained fixture
+passes without changing physics or contract. This verifies data completeness,
+not production HEARTBEAT recovery, persistent identity or physical durability.
+
+**Next highest-value priority:** bounded hardened filesystem/network/process
+isolation capability verification, with unrestricted controls and fail-closed
+cases; preserve existing runtime/observer configuration. Physical power-loss and
+full-host recovery remain unverified; no persistent pilot authorized or activated.
+Park uniform cut as a failed realization candidate. Future science must separately
+register a distinct generic local resource/reaction coupling approach at full
+cost, not tune this frozen stream or supply a successful organism. Direct startup
+without a working payer remains unresolved; repeatable productive realization
+must precede descendant functional inheritance. AI-Research main fef0a523 / Pass 29
+unchanged; no unproven research mechanism installed. Observer remains paused.
+
+## Preserved science checkpoint — CAPACITY-01 affordable recycled reconstruction
 
 Frozen dcc0bc8c, executed d2de1bb0: 2,688 authored feasibility conditions,
 126,288 panel requests plus 5,040 fully paid supplied-manufacture requests;
