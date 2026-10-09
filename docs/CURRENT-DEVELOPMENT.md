@@ -27,9 +27,16 @@ formation, startup, flux, waste, stored energy and donor replacement. Feasibilit
 first, then disjoint unscreened opportunity gate before confirmatory damage/use.
 Do not tune or rerun closed laws or supply successful founders. Stage3 incomplete.
 
-**Current activity:** no science writer/world active. Acceptance requires current
-exact-head CI/Git evidence. AI-Researchce044ee/Pass38 remains independent/unchanged;
-observer approved and publication paused, records not live telemetry. Physical
+**Current activity:** no science writer/world active. TRANSFER PR64 exact-head
+and merged5902738 CI pass419 tests/12 expected Linux skips. Latest research
+intake is AI-Research09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948/Pass39,
+merged after the TRANSFER freeze, with passing main CI37977207230. It separates
+objective discrimination from confidence/metacognitive report; future adaptation
+tests must measure useful action separately from prediction/confidence. No new
+artificial-life experiment, controller or consciousness result; no change to
+frozen TRANSFER physics, accounting or interpretation. Research stays independent.
+[Intake](AI-RESEARCH-INTAKE.md). Observer approved and publication paused,
+records not live telemetry. Physical
 durability/lost-work/cadence/full-host recovery/production isolation and separate
 pilot permission remain engineering gates. No unrelated runtime/UI expansion.
 
