@@ -8,10 +8,10 @@ Prospective protocol `9044025`, arithmetic-only addendum `0b5bcb2`, executed
 source `8a727eb6`, existing Windows Python 3.12.10: **292 tests passed / 1 platform
 guard skipped**, 293 attempted. [Receipt](CONTACT-01-RECEIPT.md) records the
 complete 12,288-case / 510,976-event authored cross and independent semantic
-accounting. The initial scope-count failure and original source are preserved;
+accounting. The initial scope-count failure and original source are preserved:
+the unchanged four modes × five binary factors equal 128, not 64, per recipe.
 Exact raw/summary/audit replay and read-only audits passed; 69 historical/shared
 inputs unchanged, 17-file same-D archive restoration passed.
-the unchanged four modes × five binary factors equal 128, not 64, per recipe.
 Zero fresh natural worlds or reserved samples. ENERGY-02 stays immutable.
 
 **Scientific result:** combined paid-failure/mixed-food/loss challenge gives
