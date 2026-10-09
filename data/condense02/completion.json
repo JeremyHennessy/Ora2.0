@@ -1,0 +1,13 @@
+{
+  "attempts": 262144,
+  "focused_checks": 24,
+  "forgeries": 3,
+  "founder_free": true,
+  "gate_pass": false,
+  "primary_rerun": false,
+  "self_maintenance_demonstrated": false,
+  "shared_files_unchanged": 465,
+  "verified": true,
+  "worlds": 256,
+  "wrapper_failure_preserved": true
+}

@@ -1,0 +1,52 @@
+{
+  "condense02-kinetics-20261009\\control": {
+    "files": 476,
+    "logical_bytes": 6749459,
+    "reserved_bytes": 7773199,
+    "reserved_by_phase": {
+      "raw": 6723870,
+      "archive": 0,
+      "restore": 0,
+      "failure": 1049329
+    },
+    "limits": {
+      "raw": 33554432,
+      "archive": 33554432,
+      "restore": 88080384,
+      "failure": 2097152
+    },
+    "total_limit": 157286400
+  },
+  "condense02-kinetics-20261009\\panel": {
+    "files": 258,
+    "logical_bytes": 2892516,
+    "reserved_bytes": 3931857,
+    "reserved_by_phase": {
+      "failure": 1048576,
+      "raw": 2883281
+    },
+    "limits": {
+      "failure": 2097152,
+      "raw": 50331648
+    },
+    "total_limit": 52428800
+  },
+  "condense02-postchecks-20261009": {
+    "files": 772,
+    "logical_bytes": 13901552,
+    "reserved_bytes": 14892453,
+    "reserved_by_phase": {
+      "raw": 591479,
+      "archive": 3147590,
+      "restore": 10104808,
+      "failure": 1048576
+    },
+    "limits": {
+      "raw": 12582912,
+      "archive": 16777216,
+      "restore": 41943040,
+      "failure": 2097152
+    },
+    "total_limit": 73400320
+  }
+}

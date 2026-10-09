@@ -1,0 +1,39 @@
+{
+  "descriptive_only": true,
+  "registered_endpoint_unchanged": true,
+  "arms": {
+    "affinity-ghost": {
+      "exposed": 7,
+      "raw_atom0_reactivated": 7,
+      "reactivated0_bound": 4,
+      "any_postloss_fuel_work": 6,
+      "registered_rebuilt_pair_function": 0,
+      "primary": 0
+    },
+    "candidate": {
+      "exposed": 12,
+      "raw_atom0_reactivated": 11,
+      "reactivated0_bound": 7,
+      "any_postloss_fuel_work": 10,
+      "registered_rebuilt_pair_function": 0,
+      "primary": 0
+    },
+    "catalysis-ghost": {
+      "exposed": 10,
+      "raw_atom0_reactivated": 6,
+      "reactivated0_bound": 3,
+      "any_postloss_fuel_work": 6,
+      "registered_rebuilt_pair_function": 0,
+      "primary": 0
+    },
+    "passive": {
+      "exposed": 0,
+      "raw_atom0_reactivated": 0,
+      "reactivated0_bound": 0,
+      "any_postloss_fuel_work": 0,
+      "registered_rebuilt_pair_function": 0,
+      "primary": 0
+    }
+  },
+  "interpretation": "Sparse challenge exposure and no reconstructed-pair function; stop law/horizon, do not tune density/barriers/geometry. Load=4-F rules out work-per-fuel advantage by construction."
+}
