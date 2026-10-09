@@ -111,7 +111,7 @@ class StartupFeasibilityTests(unittest.TestCase):
         for field,value in [('captured_resource_funded',True),('parent','invented')]:
             forged=copy.deepcopy(valid); forged['terminal']['history']['D1'][field]=value
             with self.assertRaises(ValueError): audit.inspect(forged,c)
-        c=config(budget=0); forged=law.simulate(c); forged['config']['budget']=False
+        c=config(budget=0); forged=copy.deepcopy(law.simulate(c)); forged['config']['budget']=False
         with self.assertRaisesRegex(ValueError,'configuration'): audit.inspect(forged,c)
 
 if __name__=='__main__': unittest.main()

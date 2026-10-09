@@ -14,3 +14,10 @@ heat. Preserve initial source, test log, process exit1 and sealed/restored evide
 The frozen law, prices, finite stocks, schedule,3024-case panel,133920 events,
 controls, success criteria and reserved samples remain unchanged. No full-panel
 negative or positive science result came from this failed acceptance attempt.
+
+The corrected-source631c71a attempt ran28 tests:27 passed and one adversarial
+configuration test failed. Its fixture mutated the same configuration dictionary
+used as the expected independent value, so both sides changed to False. Fix the
+fixture to copy the forged record before mutation, preserving the expected budget0.
+Canonical auditor comparisons already distinguish False from0. Preserve this
+second source/log/exit1/archive too; no full panel ran and no physics changed.
