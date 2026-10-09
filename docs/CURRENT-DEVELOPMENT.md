@@ -4,6 +4,31 @@
 
 ## Latest checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
+**Current scientific decision — KINETIC-01 negative:** executed c819079b after
+prospective draw clarification. All192 unscreened worlds/six arms/1,572,864 attempts
+and separate causal replays completed. Zero reconstruction endpoints in every arm;
+candidate/inert32 ties, exact paired P=1. Candidate catalysis30/32 worlds, so the
+law did realize catalytic reactions; no charged-fuel exhaustion and withdrawal
+retained179..215 fuel, so no post-depletion maintenance claim. Ten Windows checks,
+48-world byte replay, rehashed-noise refusal,1,051 restored files;307 historical
+shared and214 C: files unchanged. [Decision/receipt](KINETIC-01-RECEIPT.md).
+Stop this law under its registered horizon; no favorable parameter/seed/founder
+tuning. Budget feasibility was necessary preparation, not realized organization.
+Post-hoc recorded-history diagnosis: candidate37 previously catalytic type/world
+pairs,three last-copy cleavage losses,zero catalytic reconstruction; well-mixed
+108/19/0. Descriptive only, no new worlds or revised primary decision. The next
+substrate must test productive rebuilding after actual loss, not just faster bonds.
+
+**Next major science step:** discriminate a genuinely different gradient-coupled,
+reversible-binding substrate with complete formation/activation/release costs and
+measurable reconstruction exposure before freezing a fresh panel. Keep all negatives.
+In a separate design track, [ADAPTATION-01](ADAPTATION-01-DESIGN.md) asks whether
+paid experience-dependent state improves useful actions on unseen changes versus
+fixed-reactive, memory-disabled and shuffled-history controls. No controller,
+AgentTest change or LLM installed; reproduction is not a prerequisite.
+The following KINETIC-01 preparation/execution-order text is preserved chronology
+and superseded by this completed decision.
+
 **RESTORE-01 completed:** frozen4d67e47a; accepted e806a026. The independent C:
 backup rebuilt complete child Python/runtime/source and trusted tick7 worlds in
 fresh D: folders. Eight attempts / two exact cold application restorations under
