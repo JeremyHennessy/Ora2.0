@@ -195,8 +195,8 @@ def metrics(record):
 
 def inspect(record,c):
     require(set(record)=={'config','initial','events','terminal'},'Record schema')
-    require(record['config']==c,'Panel order/configuration')
-    state=genesis(c); require(record['initial']==state,'Genesis/scaffolding')
+    require(text(record['config'])==text(c),'Panel order/configuration')
+    state=genesis(c); require(text(record['initial'])==text(state),'Genesis/scaffolding')
     chain=digest(state); expected=list(schedule(c))
     require(len(record['events'])==len(expected),'Event count')
     for tick,(event,q) in enumerate(zip(record['events'],expected)):
@@ -204,10 +204,10 @@ def inspect(record,c):
         require(event['tick']==tick and type(event['tick']) is int and event['request']==q,'Schedule')
         require(event['before']==digest(state) and event['previous']==chain,'Event prefix')
         state,result=interpret(state,c,tick,q); accounting(state,c)
-        require(event['result']==result and event['after']==digest(state),'Independent reaction/provenance divergence')
+        require(text(event['result'])==text(result) and event['after']==digest(state),'Independent reaction/provenance divergence')
         require(event['sha256']==digest({k:v for k,v in event.items() if k!='sha256'}),'Event hash')
         chain=event['sha256']
-    require(record['terminal']==state,'Terminal state/history')
+    require(text(record['terminal'])==text(state),'Terminal state/history')
     for key,birth in state['history'].items():
         if key!='C': require(len(birth['debits'])==3*len(c['bits'])+1,'Full formation price')
     return metrics(record)
@@ -230,7 +230,7 @@ def audit(directory,revision):
     expected=dict(schema='startup01-summary-v1',revision=revision,source_sha256=hashes,records_sha256=digestor.hexdigest(),
                   authored_cases=count,events=events,groups=rows,total=dict(total),natural_worlds=0,
                   reserved_samples_executed=False,reproduction_demonstrated=False)
-    require(summary==expected,'Summary/full-case aggregation')
+    require(text(summary)==text(expected),'Summary/full-case aggregation')
     require(count==3024 and events==133920,'Frozen panel completeness')
     for key,row in rows.items():
         if any('/'+mode+'/' in key for mode in ('ghost','association_off','topup_off','parent_release')):
