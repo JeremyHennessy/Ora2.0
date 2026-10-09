@@ -205,3 +205,11 @@ The first independent-drive history capture predates this merge at `bfbd53c7`;
 the completion supplement must preserve newer history with its own explicit cutoff.
 Keep partner resupply, transmitted material and reconstructed useful function
 independently measured in prospective generic-startup and later descendant tests.
+
+STARTUP-01 applies those distinctions in a separate prospective feasibility assay:
+no supplied template is needed for registered generic paid paths, but initial
+external activation, authored encounters/channels and repeated raw input words
+remain scaffolding. Captured-resource-paid second construction is not evidence of
+functional inheritance or autonomous joint-lineage reproduction. Research main
+fef0a523 and passing main CI were rechecked; no newer main result changed this
+decision. AI-Research, EERC proposals and all historical Ora laws remain unchanged.

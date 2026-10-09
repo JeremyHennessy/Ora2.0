@@ -2,6 +2,33 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest science checkpoint — STARTUP-01 generic feasibility
+
+Protocol b390d7f, executed77bf4d7e:3,024 authored cases/133,920 events, independent
+conservation/provenance audit and exact raw/summary/audit replay.28 Windows focused
+checks passed (10 new,18 unchanged-law).110 historical/shared inputs unchanged;
+18 files restored on the laboratory drive. Two pre-panel failures were preserved
+and corrected without altering frozen physics, costs, stocks or controls.
+[Receipt](STARTUP-01-RECEIPT.md), [diagnostic](STARTUP-01-DIAGNOSTIC.md).
+
+Distinct candidate installs actor-free nonspecific association, paid partial
+recharge and local release funding. Generic mode had168 first structures/84 paid
+probes; all28 words work at sufficient finite external budget and complementary
+food.16 length4 generic conditions fund a second construction/probe from captured
+work after external activation is withdrawn. Length2/3 fail under the fixed path.
+Ghost/reaction knockouts have zero first functional endpoints; food withdrawal
+prevents second construction. These are authored feasibility conditions, not
+independent origins, natural kinetics, functional inheritance or self-maintenance.
+Supplied encounters, raw ordering, channels, target length and initial charging
+remain explicit scaffolding. Old ENERGY-02/REACTIVATE-01 laws and negatives remain.
+
+**Next science priority:** separately precommit an unscreened finite encounter/
+opportunity study, first assessing the substrate after removing externally supplied
+ordering and target-channel assistance. Keep all failures/denominators, fresh
+independent samples, full resource accounting and matched nulls. No retuning this
+frozen assay, consuming old reserved samples, or installing its reactions in the
+world runtime. A positive paid path is not evidence of autonomous origin.
+
 ## Latest engineering checkpoint — BACKUP-01
 
 Contract `b4206fc`: verified a manual backup on a physically separate local disk.
@@ -20,9 +47,9 @@ isolation. Active laboratory work stays on D:, backup copies on the user-selecte
 other drive. No persistent pilot or unattended world was activated.
 
 **Next priorities:** preserve the completed STORAGE-01/BACKUP-01 verification;
-precommit a distinct generic-startup feasibility candidate under full finite
-formation/release/endowment accounting and independent controls, retaining
-supplied-founder and subsidy-withdrawal contrasts. In parallel, independently scope
+STARTUP-01 subsequently passed the distinct generic-startup feasibility gate above,
+with full formation/release/endowment accounting, supplied-founder and withdrawal
+controls. In parallel, independently scope
 interrupted-write/fsync/replace rejection/recovery and restricted filesystem/network
 execution before any separately authorized persistent pilot. Do not repeatedly
 retune old negative experiments or install an untested research architecture.
@@ -56,7 +83,7 @@ No persistent pilot or unattended world is authorized by these results. On the
 science track, retain the separate generic-startup accounting question below;
 review new research prospectively, not as an installed mechanism.
 
-## Latest science checkpoint — REACTIVATE-01 existing-law renewal
+## Preserved earlier science checkpoint — REACTIVATE-01 existing-law renewal
 
 Protocol `cf26e1c`, executed source `22fc9f67`: **1,792 authored cases /8,064
 events**, 18 relevant science regressions passed. Independent conservation,
