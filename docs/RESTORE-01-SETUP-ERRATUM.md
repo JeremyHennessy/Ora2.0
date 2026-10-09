@@ -42,3 +42,19 @@ still differ from every original archived SID. No budget, capability, world law,
 endpoint or control changes. Preserve all prior failures. Two private diagnostic
 packaging failures (missing helper import; duplicate reporting keyword) are also
 retained separately and do not constitute world execution.
+### Host launcher diagnosis supersedes the identifier correction
+
+The tool sandbox parent was itself AppContainer (two capabilities); the ordinary
+host parent was not (zero capabilities). The same prospective 2x2 diagnostic
+under the ordinary host created all four labels successfully, including both
+51-character labels, under unchanged four/eight process caps. All were deleted.
+Thus the sandbox label comparison does not justify changing the host identifier.
+Restore the original prefix; record and require the ordinary-host token before
+creating profiles. No elevation of child privilege or relaxation of confinement.
+
+The v4 sandbox panel produced eight refused launch attempts (WinError87), zero
+world execution, two cleaned nested profiles, and an independent audit rejection.
+Earlier profile refusals and the private packaging failures remain preserved.
+Run subsequent native acceptance from the existing ordinary host launcher, as the
+previous verified native laboratory panels did. This is an orchestration context
+correction; no scientific law, world state, resources or child caps change.

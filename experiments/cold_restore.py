@@ -46,6 +46,10 @@ def run_panel(output,revision):
     data=dict(schema='restore01-v1',revision=revision,world_revision=WORLD_REVISION,
         backup=str(BACKUP),backup_sha256=BACKUP_SHA,panel_root=str(output),source_sha256={p:gate.sha(ROOT/p) for p in FILES},rows=[],profiles={},profile_attempts=[],acl=[])
     def save(): gate.save(output/'evidence.json',data)
+    kernel.GetCurrentProcess.restype=c.c_void_p
+    data['parent_token']=gate.token_info(kernel.GetCurrentProcess(),kernel,adv); save()
+    if data['parent_token']!=dict(is_appcontainer=False,capabilities=0,package_sid=None):
+        raise RuntimeError('Ordinary host launcher required; nested confinement is not this contract')
     runtime=output/'runtime'; bad=output/'corrupt-runtime'
     try:
         with zipfile.ZipFile(BACKUP) as z:
@@ -66,7 +70,7 @@ def run_panel(output,revision):
         data['corrupt_runtime_sha256']=observation.tree(bad)
         account=subprocess.run(['whoami'],check=True,capture_output=True,text=True,timeout=10).stdout.strip()
         for trial in range(2):
-            name='OraLab.Integrated.'+uuid.uuid4().hex; sid=c.c_void_p()
+            name='OraLab.ColdRestore.'+uuid.uuid4().hex; sid=c.c_void_p()
             result=user.CreateAppContainerProfile(name,name,'Disposable independent-backup restore',None,0,c.byref(sid))
             data['profile_attempts'].append(dict(name=name,hresult=result & 0xffffffff)); save()
             if result!=0: raise OSError(f'Profile HRESULT {result & 0xffffffff:08x}')

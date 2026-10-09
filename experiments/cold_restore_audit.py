@@ -24,6 +24,7 @@ def tree(folder): return {p.relative_to(folder).as_posix():sha(p) for p in Path(
 def audit(output,source,revision):
     output,source=Path(output),Path(source); data=json.loads((output/'evidence.json').read_text(encoding='utf-8'))
     require(data['schema']=='restore01-v1' and data['revision']==revision and data['world_revision']==OLD_REVISION,'Source revisions')
+    require(data['parent_token']==dict(is_appcontainer=False,capabilities=0,package_sid=None),'Registered ordinary host launcher')
     backup=Path(data['backup']); require(backup==Path('C:/ora/isolation04-20261009/isolation04-integrated-20261009-evidence.zip'),'Registered independent backup')
     require(sha(backup)==data['backup_sha256']==ARCHIVE_SHA,'Independent archive hash')
     names={'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md',*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py','experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md','docs/RESTORE-01-SETUP-ERRATUM.md'}
