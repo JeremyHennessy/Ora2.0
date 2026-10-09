@@ -22,10 +22,10 @@ selects a second from remaining charged tokens. No resampling invalid requests.
 Diffusion pool at the site comprises molecules first (sorted molecule ID), then
 fuel/waste tokens (sorted token ID). One selected carrier moves one lattice edge;
 no work or atom change. Photons are local site stocks, not carriers. Association
-and catalyst/fuel pools are site-local except the well-mixed arm, which uses all
-sites. Product keeps left reactant site. Cleavage and regeneration remain local
-in all arms. A regeneration selects a spent token at draw1 site using draw2 and
-consumes exactly two photons there. Molecule maximum length six, eligible catalyst
+and all carrier/catalyst/fuel pools are site-local except the well-mixed arm,
+which uses all sites. Product keeps left reactant site. A regeneration selects
+a spent token from that eligible pool using draw2 and consumes exactly two
+photons at the token's actual site. Molecule maximum length six, eligible catalyst
 length2..6. Mapping tests oriented words, seed and UTF8 SHA as original protocol.
 
 Initial atom IDs0..95 at sites floor(ID/6); object IDs0..95 contain one atom.
