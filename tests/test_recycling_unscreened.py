@@ -37,10 +37,18 @@ class RecyclingTests(unittest.TestCase):
             r = self.records[mode]; bad = copy.deepcopy(r)
             if field == 'opportunity':
                 bad['events'][128]['opportunities']['capture_cut_reserve_pairs'] += 1
-                event = bad['events'][128]; event.pop('sha256'); event['sha256'] = worker.cut.digest(event)
+                previous = bad['events'][0]['previous']
+                for event in bad['events']:
+                    event['previous'] = previous; event.pop('sha256')
+                    event['sha256'] = worker.cut.digest(event); previous = event['sha256']
             elif field == 'noise': bad['rng_terminal'] = bad['rng_initial']
             elif field == 'cursor': bad['noise_cursor'] = True
-            elif field == 'manufacture': bad['preparation'][0]['result']['spent'] = []
+            elif field == 'manufacture':
+                bad['preparation'][0]['result']['spent'] = []
+                previous = bad['preparation'][0]['previous']
+                for event in bad['preparation']:
+                    event['previous'] = previous; event.pop('sha256')
+                    event['sha256'] = worker.cut.digest(event); previous = event['sha256']
             else: bad['terminal']['heat'] += 1
             with self.subTest(field=field), self.assertRaises(ValueError): audit.verify_record(bad, r['config'])
 
