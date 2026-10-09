@@ -14,7 +14,7 @@ ROOT=Path(__file__).resolve().parents[1]
 CASES=('cpu','cpu-control','memory','memory-control','wall','wall-control')
 FILES=(*observation.FILES,'experiments/isolation_resource.py',
        'experiments/isolation_resource_worker.py','experiments/isolation_resource_audit.py',
-       'docs/ISOLATION-03-CONTRACT.md')
+       'docs/ISOLATION-03-CONTRACT.md','docs/ISOLATION-03-EXECUTION-ERRATUM.md')
 
 
 def run_panel(output,revision):

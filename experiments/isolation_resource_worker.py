@@ -31,8 +31,10 @@ def main(workspace):
         mark(**trace)
         if kind=='cpu':
             end=time.process_time()+amount
+            value=1
             while time.process_time()<end:
-                pass
+                for _ in range(10_000):
+                    value=(value*1664525+1013904223) % 2**32
         elif kind=='wall':
             time.sleep(amount)
         else:

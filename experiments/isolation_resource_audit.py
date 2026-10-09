@@ -5,7 +5,8 @@ from pathlib import Path
 from experiments import isolation_world_audit as independent
 
 FILES=(*independent.FILES,'experiments/isolation_resource.py','experiments/isolation_resource_worker.py',
-       'experiments/isolation_resource_audit.py','docs/ISOLATION-03-CONTRACT.md')
+       'experiments/isolation_resource_audit.py','docs/ISOLATION-03-CONTRACT.md',
+       'docs/ISOLATION-03-EXECUTION-ERRATUM.md')
 require=independent.require
 sha=independent.sha
 tree=independent.tree
@@ -43,10 +44,11 @@ def audit(output,source,revision):
             else:
                 require(row['exit_code'] in ({1816,124} if case=='cpu' else {124}),'Actual CPU/wall stop')
                 if row['exit_code']==124:
-                    require(row.get('error')=='Capability worker exceeded time cap','Supervisor time stop')
+                    require(row.get('error')=='Capability worker exceeded time cap' and row['termination_reason']==case,'Supervisor causal time stop')
                 else:
                     require('error' not in row,'Native CPU stop')
                 require(row['elapsed_seconds']<10 if case=='cpu' else 10<=row['elapsed_seconds']<12,'Causal CPU/wall boundary')
+                require(row['job_after']['user_cpu_seconds']>=4.8 if case=='cpu' else row['job_after']['user_cpu_seconds']<5,'CPU versus wall usage')
             evidence,observed=independent.observed(folder/'before-resume',revision)
             require(evidence['report']['verified_simulation_tick']==5 and evidence['report']['checkpoint_current'] is False,'Durable tick-five boundary')
             checkpoint=json.loads((folder/'before-resume/checkpoint.json').read_bytes())

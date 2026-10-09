@@ -115,6 +115,20 @@ def token_info(handle, kernel, adv):
         kernel.CloseHandle(token)
 
 
+def terminate_and_wait(kernel, handle):
+    """A concurrent Job exit can make TerminateProcess return access denied.
+
+    Accept that race only when the process handle actually becomes signaled;
+    access denial alone is never evidence of successful termination.
+    """
+    if not kernel.TerminateProcess(handle, 125):
+        error = c.get_last_error()
+        if error != 5:
+            raise c.WinError(error)
+    if kernel.WaitForSingleObject(handle, 2000) != 0:
+        raise RuntimeError('Cannot establish process exit after termination')
+
+
 def launch(executable, worker, workspace, outside, port, sid, sid_string, confined, fault=None):
     kernel, adv, _ = libraries()
     started = time.monotonic()
@@ -155,7 +169,10 @@ def launch(executable, worker, workspace, outside, port, sid, sid_string, confin
             raise RuntimeError('Unexpected primary-thread suspension count')
         row['resumed'] = True
         while kernel.WaitForSingleObject(process.process, 10) == 258:
-            if time.monotonic()-started > 10 or job.usage()['user_cpu_seconds'] >= 5:
+            usage = job.usage()
+            if time.monotonic()-started > 10 or usage['user_cpu_seconds'] >= 5:
+                row['termination_reason'] = 'cpu' if usage['user_cpu_seconds'] >= 5 else 'wall'
+                row['usage_at_termination'] = usage
                 job.terminate()
                 raise RuntimeError('Capability worker exceeded time cap')
         code = w.DWORD()
@@ -167,13 +184,13 @@ def launch(executable, worker, workspace, outside, port, sid, sid_string, confin
     finally:
         if process.process:
             if kernel.WaitForSingleObject(process.process, 0) == 258:
-                checked(kernel.TerminateProcess(process.process, 125))
-                checked(kernel.WaitForSingleObject(process.process, 2000) == 0)
+                terminate_and_wait(kernel, process.process)
             if 'exit_code' not in row:
                 code = w.DWORD()
                 checked(kernel.GetExitCodeProcess(process.process, c.byref(code)))
                 row['exit_code'] = code.value
         if job:
+            row['job_after'] = job.usage()
             job.close()
         for handle in (process.thread, process.process):
             if handle:
