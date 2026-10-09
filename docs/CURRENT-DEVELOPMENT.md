@@ -2,7 +2,39 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — ISOLATION-01 disposable Windows capability gate
+## Latest checkpoint — ISOLATION-02 confined actual-world continuity
+
+Frozen a56f8cc1, executed 14521c83. Two trials / 28 launch cases / 12 existing
+seed-1 finite engineering world histories: ordinary/confined references, eight
+actual confined interruptions (77/78/79/80 at tick 5) and eight exact fresh-process
+resumes. Every completed history matches all 33 full states and 32 events,
+including identity, finite resources, ancestry/provenance, RNG and noise cursor;
+durable journal prefixes retained. Two wrong-identity resumes reject without
+world mutation; six failed setups run no world code. Kernel token/caps checked
+while suspended; existing job limits compose with unchanged checkpoint/recovery.
+Independent replay, recorded read-only observations and rehashed state-forgery
+rejection pass. 14 Windows tests pass; 271 shared files unchanged; 641 accepted
+files restored on D:. Initial UTC-wrapper API failure retained with 346 files
+restored. [Receipt](ISOLATION-02-RECEIPT.md). No legacy law, observer UI or service
+configuration changed; no approved world migrated or fresh science run.
+
+**Next engineering priority:** separately precommit actual resource-triggered
+termination and software-storage faults inside confinement, then profile /
+filesystem-permission restoration across a new launch identity. Earlier resource
+and storage checks are outside this composition and cannot substitute for it.
+Review production isolation gaps and physical durability/full-host recovery before
+any separately authorized supervised persistent pilot. Controlled AppContainer
+continuity is not hostile-escape proof, complete filesystem/network confinement,
+physical power-loss recovery, memory-peak bound or unattended operation permission.
+
+**Science:** preserve negative RECYCLE-01 and authored feasibility. Next distinct
+generic local resource/reaction coupling candidate needs full formation/activation/
+release/endowment costs and prospective controls; do not tune frozen negative cuts.
+No self-maintenance, autonomous origin, functional inheritance or evolution newly
+demonstrated. AI-Research main fef0a523 / Pass 29 unchanged; benefit, transmission,
+resupply and founder assistance remain separate. Observer remains paused.
+
+## Preserved checkpoint — ISOLATION-01 disposable Windows capability gate
 
 Frozen e74b345f; accepted execution 22dd90d6. Two trial blocks / ten cases:
 two ordinary controls, two AppContainer workers and six fail-closed setup cases.
