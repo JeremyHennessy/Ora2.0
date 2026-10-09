@@ -1,0 +1,30 @@
+{
+  "initial_all_file_gate_failed": true,
+  "archive_byte_identity": false,
+  "mismatches": [
+    "archive/raw.zip"
+  ],
+  "timestamps": [
+    [
+      2026,
+      10,
+      9,
+      11,
+      51,
+      22
+    ],
+    [
+      2026,
+      10,
+      9,
+      11,
+      54,
+      36
+    ]
+  ],
+  "authoritative_files_equal": 51,
+  "worlds": 24,
+  "archive_members_equal": 25,
+  "scientific_protocol_unchanged": true,
+  "initial_failure_preserved": "D:\\OraLab\\runs\\redox01-panel-20261009\\control\\failure\\failure.json"
+}

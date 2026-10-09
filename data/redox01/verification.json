@@ -1,0 +1,29 @@
+{
+  "scientific_source": "f466d7f76ed40c6b6c91da7b33c7254c5593250b",
+  "initial_public_head": "351ac7dc9f2e2b747847b3fe83d7b344cf6f010f",
+  "ci_run": 37949598677,
+  "ci_job": 113884622707,
+  "linux_attempted": 404,
+  "linux_passed": 392,
+  "linux_expected_skips": 12,
+  "local_completed": 402,
+  "local_passed": 398,
+  "local_skipped": 4,
+  "full_windows_suite_reverified": false,
+  "locally_incomplete_unchanged_integration_panels": [
+    "RESOURCE-02 full native pressure/recovery",
+    "STORAGE-02 full storage-fault/restore"
+  ],
+  "new_fixtures_passed": 7,
+  "independent_science_audits": 8,
+  "noise_payment_provenance_forgery_exits": [
+    2,
+    2,
+    2
+  ],
+  "preserved_aggregate_timeouts": [
+    124,
+    124,
+    124
+  ]
+}

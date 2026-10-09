@@ -1,0 +1,19 @@
+{
+  "independent_backup_readback": true,
+  "physically_separate": true,
+  "sha256": "0a68ceaae63847b8e2cddb935982a9d1e6b8c0163e432c1106aa56edeca1eff9",
+  "sealed_files": 1073,
+  "all192_recorded_worlds_independently_reinterpreted": true,
+  "authoritative_replay_files": 51,
+  "archive_byte_identity": false,
+  "primary_pass": false,
+  "prior_C_files_unchanged": 241,
+  "full_git_bundles_verified": {
+    "Ora2.0": 121,
+    "AI-Research": 45
+  },
+  "no_new_clone": true,
+  "scientific_source": "f466d7f76ed40c6b6c91da7b33c7254c5593250b",
+  "active_world": false,
+  "full_native_pressure_panel_reverified": false
+}

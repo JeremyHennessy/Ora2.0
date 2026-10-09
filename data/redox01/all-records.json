@@ -1,0 +1,7273 @@
+[
+  {
+    "arm": "candidate",
+    "births": 75,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "4d2d8ddda9da614fc0599c96f170c97f384a97e52529e7ebe2a5f05aa1c06ed9",
+    "heat": 283,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63000,
+    "stats": {
+      "capture": 57,
+      "catalysis": 7,
+      "damage": 3,
+      "decay": 6,
+      "formation": 18,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 12,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 64,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      90,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "47703b2d39f6dbb5bd7a9ddddb721c860f1c3ecd1f61bf7def8b7937fd92289a",
+    "heat": 272,
+    "operator": 16,
+    "photons": 918,
+    "seed": 63000,
+    "stats": {
+      "capture": 53,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 3,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "background",
+    "births": 136,
+    "buffer": 72,
+    "damage_snapshot": [
+      912,
+      61,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "4283b9618b3050fc20958620cc0d460cc2b4d741fe34976e9e543160cc0fc41a",
+    "heat": 344,
+    "operator": 16,
+    "photons": 864,
+    "seed": 63000,
+    "stats": {
+      "capture": 80,
+      "catalysis": 7,
+      "damage": 14,
+      "decay": 19,
+      "formation": 55,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 26,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 65,
+    "buffer": 85,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "4584dc1c7d1172abef576d217d00bbd65a0286c8e1224ed3837d586209b50e61",
+    "heat": 273,
+    "operator": 16,
+    "photons": 922,
+    "seed": 63000,
+    "stats": {
+      "capture": 51,
+      "catalysis": 3,
+      "damage": 0,
+      "decay": 3,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 485
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 72,
+    "buffer": 74,
+    "damage_snapshot": [
+      0,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "4631722a7abfc0cd3131c8f747bd68ad33d9918d481713ccbd42c1c96604537e",
+    "heat": 280,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63000,
+    "stats": {
+      "capture": 49,
+      "catalysis": 5,
+      "damage": 3,
+      "decay": 5,
+      "formation": 16,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 10,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 111,
+    "buffer": 85,
+    "damage_snapshot": [
+      912,
+      66,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "52a88defb0de1bd9c7b3d076aac7e40f8ee0c1c93eece6b10326294a2e1e23a2",
+    "heat": 331,
+    "operator": 4,
+    "photons": 876,
+    "seed": 63000,
+    "stats": {
+      "capture": 62,
+      "catalysis": 17,
+      "damage": 13,
+      "decay": 13,
+      "formation": 25,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 12,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 82,
+    "buffer": 86,
+    "damage_snapshot": [
+      922,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "d3b0286944651b7e7387744e0dc37e16f6b5abb927104adae48a82fe49bb5c26",
+    "heat": 290,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63001,
+    "stats": {
+      "capture": 60,
+      "catalysis": 3,
+      "damage": 6,
+      "decay": 6,
+      "formation": 22,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 11,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1017
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 77,
+    "buffer": 87,
+    "damage_snapshot": [
+      922,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e1585f9688eca82a48dac0583f42b41e805835873b07cb444a6b84b43a03b3ff",
+    "heat": 285,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63001,
+    "stats": {
+      "capture": 58,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 6,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1017
+    }
+  },
+  {
+    "arm": "background",
+    "births": 143,
+    "buffer": 69,
+    "damage_snapshot": [
+      914,
+      56,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "c67b51e0567a43540ee0f99df1d9f06e5d25e19de1809ea28671659b2de156dd",
+    "heat": 351,
+    "operator": 16,
+    "photons": 860,
+    "seed": 63001,
+    "stats": {
+      "capture": 82,
+      "catalysis": 13,
+      "damage": 15,
+      "decay": 20,
+      "formation": 60,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 29,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1017
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 88,
+    "buffer": 76,
+    "damage_snapshot": [
+      922,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "15ca13ce6d124ad241f91872a55b6112508b980bef8f26b5e5221c1e19365169",
+    "heat": 296,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63001,
+    "stats": {
+      "capture": 58,
+      "catalysis": 11,
+      "damage": 4,
+      "decay": 6,
+      "formation": 30,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 9,
+      "post_formation": 19,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 488
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 78,
+    "buffer": 72,
+    "damage_snapshot": [
+      0,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": true,
+    "final_hash": "1a806274c7e32e9d2601fc29b3ab7c35c127947d820b80c8ce7863f3c06a7c5d",
+    "heat": 286,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63001,
+    "stats": {
+      "capture": 51,
+      "catalysis": 2,
+      "damage": 6,
+      "decay": 5,
+      "formation": 19,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1017
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 108,
+    "buffer": 84,
+    "damage_snapshot": [
+      910,
+      72,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "23cb7f7598cec89073d8778f6f53d2a1863036f0428721ac806e9b8773afa211",
+    "heat": 328,
+    "operator": 4,
+    "photons": 880,
+    "seed": 63001,
+    "stats": {
+      "capture": 60,
+      "catalysis": 6,
+      "damage": 10,
+      "decay": 15,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1017
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 71,
+    "buffer": 89,
+    "damage_snapshot": [
+      920,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "396dd4978dba1492ce1802cc3654d161748e4cf98d1803a7d15373a94db53f85",
+    "heat": 279,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63002,
+    "stats": {
+      "capture": 56,
+      "catalysis": 3,
+      "damage": 0,
+      "decay": 9,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 4,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1085
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 66,
+    "buffer": 90,
+    "damage_snapshot": [
+      920,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "9abfaeaefff689fabfc8e46e91072ac545cd7df541618598e93a56282ce9e640",
+    "heat": 274,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63002,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 0,
+      "decay": 7,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 4,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1085
+    }
+  },
+  {
+    "arm": "background",
+    "births": 148,
+    "buffer": 72,
+    "damage_snapshot": [
+      902,
+      66,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "cf1384723cba295050bee7c876d86b05cade6d86533ba57d147db965b41e78de",
+    "heat": 356,
+    "operator": 16,
+    "photons": 852,
+    "seed": 63002,
+    "stats": {
+      "capture": 86,
+      "catalysis": 14,
+      "damage": 6,
+      "decay": 33,
+      "formation": 61,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 9,
+      "post_formation": 27,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1085
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 79,
+    "buffer": 87,
+    "damage_snapshot": [
+      918,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "86a411cdd1c33dc9d615672705973ef4d373a353ce1cd638ff2df003dd14a0fc",
+    "heat": 287,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63002,
+    "stats": {
+      "capture": 59,
+      "catalysis": 11,
+      "damage": 3,
+      "decay": 9,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 4,
+      "post_formation": 6,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 513
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 70,
+    "buffer": 82,
+    "damage_snapshot": [
+      0,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 920,
+    "exposed": false,
+    "final_hash": "27de3dceceaced316671f0766be1c7b82b576479a6f2b1b89a690beec12b8e2e",
+    "heat": 278,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63002,
+    "stats": {
+      "capture": 52,
+      "catalysis": 3,
+      "damage": 0,
+      "decay": 9,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1085
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 92,
+    "buffer": 84,
+    "damage_snapshot": [
+      914,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ef64c50897bdd231d43364384d6382e92eed6c5b3821b41dcaee806e8785dec7",
+    "heat": 312,
+    "operator": 4,
+    "photons": 896,
+    "seed": 63002,
+    "stats": {
+      "capture": 52,
+      "catalysis": 8,
+      "damage": 5,
+      "decay": 12,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 5,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1085
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 72,
+    "buffer": 88,
+    "damage_snapshot": [
+      926,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "9bebb3fe32864705ac96e78759736e2ed60e875e01493fe5887485285056ba49",
+    "heat": 280,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63003,
+    "stats": {
+      "capture": 56,
+      "catalysis": 3,
+      "damage": 2,
+      "decay": 7,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1018
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 68,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "13a1599b64d5e49de9f7201ef65367039c5407aa3f0fe607b056da570be3cee7",
+    "heat": 276,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63003,
+    "stats": {
+      "capture": 55,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 6,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1018
+    }
+  },
+  {
+    "arm": "background",
+    "births": 131,
+    "buffer": 71,
+    "damage_snapshot": [
+      920,
+      56,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "526a3348451d810c8accf3d9ee38f290e24d7ec5b667ab49fcc32fa0f67512f5",
+    "heat": 339,
+    "operator": 16,
+    "photons": 870,
+    "seed": 63003,
+    "stats": {
+      "capture": 77,
+      "catalysis": 7,
+      "damage": 15,
+      "decay": 15,
+      "formation": 53,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 24,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1018
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 70,
+    "buffer": 88,
+    "damage_snapshot": [
+      926,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ed8f63a6f46f483a6a0593bcf26040c0b2cc0eb28c3729142817043ad55ee38a",
+    "heat": 278,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63003,
+    "stats": {
+      "capture": 55,
+      "catalysis": 2,
+      "damage": 3,
+      "decay": 5,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 541
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 72,
+    "buffer": 74,
+    "damage_snapshot": [
+      0,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "442c89672e6cf1ee4e22f5b8fd51dd3b31251cef5c64ebb72e13ef242aff5b10",
+    "heat": 280,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63003,
+    "stats": {
+      "capture": 49,
+      "catalysis": 3,
+      "damage": 2,
+      "decay": 7,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1018
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 108,
+    "buffer": 84,
+    "damage_snapshot": [
+      914,
+      69,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "8aa494518346f58be66acceb2853660526778dc0d8300a83f84f59bfb102c381",
+    "heat": 328,
+    "operator": 4,
+    "photons": 880,
+    "seed": 63003,
+    "stats": {
+      "capture": 60,
+      "catalysis": 14,
+      "damage": 9,
+      "decay": 16,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1018
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 80,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "680c8e19fac30bfda2b7cb85f64253fc61b70f74d2e2641876719fcc50f70d23",
+    "heat": 288,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63004,
+    "stats": {
+      "capture": 60,
+      "catalysis": 4,
+      "damage": 6,
+      "decay": 6,
+      "formation": 20,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 6,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 73,
+    "buffer": 89,
+    "damage_snapshot": [
+      924,
+      83,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e58125d0cf11fdd0400d1a84595aded1c26ad552d2c16522b0d98e919c08386a",
+    "heat": 281,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63004,
+    "stats": {
+      "capture": 57,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 5,
+      "formation": 16,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 5,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "background",
+    "births": 143,
+    "buffer": 73,
+    "damage_snapshot": [
+      914,
+      55,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "d14a539681421b575902daba4ce65902fd2e58ee809b8dd6e439b1498611580e",
+    "heat": 351,
+    "operator": 16,
+    "photons": 856,
+    "seed": 63004,
+    "stats": {
+      "capture": 84,
+      "catalysis": 5,
+      "damage": 15,
+      "decay": 21,
+      "formation": 59,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 26,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 84,
+    "buffer": 84,
+    "damage_snapshot": [
+      922,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "36043e2a9d2429f1b16e5720ec7bfa4758dcd694107624e15b245b66e82083e8",
+    "heat": 292,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63004,
+    "stats": {
+      "capture": 60,
+      "catalysis": 9,
+      "damage": 4,
+      "decay": 8,
+      "formation": 24,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 5,
+      "post_formation": 10,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 524
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 79,
+    "buffer": 69,
+    "damage_snapshot": [
+      0,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "8bf7db5f20d710b5032189c6211b90662a381a3cc56a9fe2e0e0a252fb32a8f5",
+    "heat": 287,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63004,
+    "stats": {
+      "capture": 50,
+      "catalysis": 4,
+      "damage": 6,
+      "decay": 6,
+      "formation": 19,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 5,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 108,
+    "buffer": 88,
+    "damage_snapshot": [
+      908,
+      69,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "f6e998c01bbea99564fb953cdadd9a2a5301a709dfb37b4a1f8f7735b738d1dd",
+    "heat": 328,
+    "operator": 4,
+    "photons": 876,
+    "seed": 63004,
+    "stats": {
+      "capture": 62,
+      "catalysis": 9,
+      "damage": 8,
+      "decay": 18,
+      "formation": 22,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 5,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 72,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      87,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "083746fd7c0323fc1dcdaadb83af9057b9708ebcdb45ef7d2aa3ff652e1a3cf6",
+    "heat": 280,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63005,
+    "stats": {
+      "capture": 56,
+      "catalysis": 5,
+      "damage": 3,
+      "decay": 5,
+      "formation": 16,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1036
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 64,
+    "buffer": 88,
+    "damage_snapshot": [
+      928,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "8b2471e3b9510e3c93ef79a06dae51341fad0678ce0b896da5ff2059cab5493d",
+    "heat": 272,
+    "operator": 16,
+    "photons": 920,
+    "seed": 63005,
+    "stats": {
+      "capture": 52,
+      "catalysis": 0,
+      "damage": 3,
+      "decay": 1,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1036
+    }
+  },
+  {
+    "arm": "background",
+    "births": 135,
+    "buffer": 73,
+    "damage_snapshot": [
+      922,
+      54,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "60ea6314989653d03686b607e84d4ca4f0e16d0756d5ab128b5e8f04d78c023a",
+    "heat": 343,
+    "operator": 16,
+    "photons": 864,
+    "seed": 63005,
+    "stats": {
+      "capture": 80,
+      "catalysis": 8,
+      "damage": 13,
+      "decay": 19,
+      "formation": 55,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 26,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1036
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 61,
+    "buffer": 85,
+    "damage_snapshot": [
+      928,
+      90,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "5727656734ca9cf780de84ecb4b77761c7c858109c668d7d1c2425735cb4153f",
+    "heat": 269,
+    "operator": 16,
+    "photons": 926,
+    "seed": 63005,
+    "stats": {
+      "capture": 49,
+      "catalysis": 1,
+      "damage": 0,
+      "decay": 1,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 512
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 71,
+    "buffer": 77,
+    "damage_snapshot": [
+      0,
+      87,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "7be6d4fab38858c521c374627d38d43e13aee92fc0f87d8b0a8500a4e2f6dfe8",
+    "heat": 279,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63005,
+    "stats": {
+      "capture": 50,
+      "catalysis": 5,
+      "damage": 3,
+      "decay": 5,
+      "formation": 15,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 7,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1036
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 98,
+    "buffer": 88,
+    "damage_snapshot": [
+      910,
+      77,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "254ffea981e413e7c5867425c1c3e384b64e32be8998695ea4a1e1b52b53fcd5",
+    "heat": 318,
+    "operator": 4,
+    "photons": 886,
+    "seed": 63005,
+    "stats": {
+      "capture": 57,
+      "catalysis": 7,
+      "damage": 7,
+      "decay": 14,
+      "formation": 17,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1036
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 78,
+    "buffer": 86,
+    "damage_snapshot": [
+      924,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "4f5158f7f0bee1c581249c13e3df78f113ce26c6251b3826e43133406d5711f1",
+    "heat": 286,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63006,
+    "stats": {
+      "capture": 58,
+      "catalysis": 6,
+      "damage": 2,
+      "decay": 8,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 6,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1057
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 72,
+    "buffer": 90,
+    "damage_snapshot": [
+      924,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "a0da1f3b0ed275255d2077039987bb9f804fa696ca2839d45920029564e4a455",
+    "heat": 280,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63006,
+    "stats": {
+      "capture": 57,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 7,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1057
+    }
+  },
+  {
+    "arm": "background",
+    "births": 124,
+    "buffer": 70,
+    "damage_snapshot": [
+      916,
+      64,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "70ab3d146f7bbcf4ac95e81da1932755c677f3f51c96180413816476d29a88e8",
+    "heat": 332,
+    "operator": 16,
+    "photons": 878,
+    "seed": 63006,
+    "stats": {
+      "capture": 73,
+      "catalysis": 9,
+      "damage": 6,
+      "decay": 21,
+      "formation": 49,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 19,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1057
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 84,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      75,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "0c21f13a821e3c6e9f28e27aef6e1c802ac2926ce4a55f98a85f5bdd7b0583ce",
+    "heat": 292,
+    "operator": 16,
+    "photons": 900,
+    "seed": 63006,
+    "stats": {
+      "capture": 62,
+      "catalysis": 6,
+      "damage": 7,
+      "decay": 7,
+      "formation": 22,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 2,
+      "post_formation": 6,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 513
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 78,
+    "buffer": 70,
+    "damage_snapshot": [
+      0,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": false,
+    "final_hash": "d48f24ee060a193a6486600e22545c80eeb345c27d99596eb5108dc12488c2a4",
+    "heat": 286,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63006,
+    "stats": {
+      "capture": 50,
+      "catalysis": 6,
+      "damage": 2,
+      "decay": 8,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 6,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1057
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 101,
+    "buffer": 81,
+    "damage_snapshot": [
+      910,
+      75,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "910ec318abd037e5dc1cfd860d0f6acc8b90bd7d787edbaf1baa3c7753299209",
+    "heat": 321,
+    "operator": 4,
+    "photons": 890,
+    "seed": 63006,
+    "stats": {
+      "capture": 55,
+      "catalysis": 10,
+      "damage": 2,
+      "decay": 18,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1057
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 74,
+    "buffer": 86,
+    "damage_snapshot": [
+      922,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "fcef1ecbb80f8f0f3a12a57e210b287a49d1dde2b5e08824d4ebea3cf0fe742a",
+    "heat": 282,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63007,
+    "stats": {
+      "capture": 56,
+      "catalysis": 6,
+      "damage": 1,
+      "decay": 7,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1080
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 66,
+    "buffer": 90,
+    "damage_snapshot": [
+      922,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "b099fa414a2c0c4faf0c0d6c9c05c9cc7ff4851f6c24cf21136e56b5863f6418",
+    "heat": 274,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63007,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 5,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1080
+    }
+  },
+  {
+    "arm": "background",
+    "births": 121,
+    "buffer": 67,
+    "damage_snapshot": [
+      918,
+      70,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "60f8a584545665d27d4c586342494a2a772c63b3d2c63a642fcb8e2c364e8fc3",
+    "heat": 329,
+    "operator": 16,
+    "photons": 884,
+    "seed": 63007,
+    "stats": {
+      "capture": 70,
+      "catalysis": 10,
+      "damage": 6,
+      "decay": 16,
+      "formation": 51,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 26,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1080
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 75,
+    "buffer": 89,
+    "damage_snapshot": [
+      922,
+      87,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "b639b91b0e978e64f0951bfb52323d728a63c3e8ecef1975dc14df30dd07ce24",
+    "heat": 283,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63007,
+    "stats": {
+      "capture": 58,
+      "catalysis": 5,
+      "damage": 2,
+      "decay": 8,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 4,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 553
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 73,
+    "buffer": 77,
+    "damage_snapshot": [
+      0,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": false,
+    "final_hash": "9e068c053705972c70fe7a69ef69696de2f60563e1b5daae692c1188447db274",
+    "heat": 281,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63007,
+    "stats": {
+      "capture": 51,
+      "catalysis": 5,
+      "damage": 1,
+      "decay": 7,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "photons": 2048,
+      "thermal": 1080
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 101,
+    "buffer": 83,
+    "damage_snapshot": [
+      914,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "0f9a18065b4cae8bc38288c5cdf7e800c22d19dbbab553f031941f8eb13e9682",
+    "heat": 321,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63007,
+    "stats": {
+      "capture": 56,
+      "catalysis": 11,
+      "damage": 6,
+      "decay": 14,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1080
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 80,
+    "buffer": 90,
+    "damage_snapshot": [
+      924,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "0170a6fcdd2883970c9d28b0ee7105cc88772c691a61c2d7510f1810878406e4",
+    "heat": 288,
+    "operator": 16,
+    "photons": 902,
+    "seed": 63008,
+    "stats": {
+      "capture": 61,
+      "catalysis": 4,
+      "damage": 5,
+      "decay": 8,
+      "formation": 19,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 975
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 72,
+    "buffer": 90,
+    "damage_snapshot": [
+      924,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "71e3e96bf14f68c294bae56e97e1527264dd876935e5c3e0c905cc2d69aaf671",
+    "heat": 280,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63008,
+    "stats": {
+      "capture": 57,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 5,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 975
+    }
+  },
+  {
+    "arm": "background",
+    "births": 129,
+    "buffer": 67,
+    "damage_snapshot": [
+      918,
+      63,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "3c21dccf09598db2e36a4b9919f96d641f5af914dffa5f09fdbac101109e38de",
+    "heat": 337,
+    "operator": 16,
+    "photons": 876,
+    "seed": 63008,
+    "stats": {
+      "capture": 74,
+      "catalysis": 3,
+      "damage": 9,
+      "decay": 19,
+      "formation": 53,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 26,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 975
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 85,
+    "buffer": 87,
+    "damage_snapshot": [
+      922,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "7a5abde56ad39e7972d04425da2c2b8fbfe7b24f02341edf5da40879589f53b1",
+    "heat": 293,
+    "operator": 16,
+    "photons": 900,
+    "seed": 63008,
+    "stats": {
+      "capture": 62,
+      "catalysis": 9,
+      "damage": 7,
+      "decay": 7,
+      "formation": 23,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 504
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 78,
+    "buffer": 70,
+    "damage_snapshot": [
+      0,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "28a6ef1fa61a872cced12e1f41027da0f295a44f6549c1caecca76665d2c68e3",
+    "heat": 286,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63008,
+    "stats": {
+      "capture": 50,
+      "catalysis": 4,
+      "damage": 5,
+      "decay": 7,
+      "formation": 18,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 7,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 975
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 97,
+    "buffer": 89,
+    "damage_snapshot": [
+      912,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "7c1c14b2ddcd55d937815ac804b6e717f09548c97276c9474ecd1230d4099499",
+    "heat": 317,
+    "operator": 4,
+    "photons": 886,
+    "seed": 63008,
+    "stats": {
+      "capture": 57,
+      "catalysis": 6,
+      "damage": 4,
+      "decay": 17,
+      "formation": 16,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 975
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 84,
+    "buffer": 80,
+    "damage_snapshot": [
+      924,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "f9f275d928b6bd22c1b5e3d3c76fea47e79bce2a3d96db857fea281df0e0be0e",
+    "heat": 292,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63009,
+    "stats": {
+      "capture": 58,
+      "catalysis": 10,
+      "damage": 1,
+      "decay": 10,
+      "formation": 25,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 17,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1040
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 71,
+    "buffer": 85,
+    "damage_snapshot": [
+      924,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "028ac5f8bc41fc9154c0e7b69dcb199d689c76092e4079b311ebb5023f1be3fa",
+    "heat": 279,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63009,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 5,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 11,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1040
+    }
+  },
+  {
+    "arm": "background",
+    "births": 140,
+    "buffer": 66,
+    "damage_snapshot": [
+      918,
+      51,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "8bafe7f7df6445b8b406b5845e1bbe082467cb5e9140f5d058b6e673e88a5bab",
+    "heat": 348,
+    "operator": 16,
+    "photons": 866,
+    "seed": 63009,
+    "stats": {
+      "capture": 79,
+      "catalysis": 6,
+      "damage": 13,
+      "decay": 20,
+      "formation": 59,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 24,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1040
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 77,
+    "buffer": 83,
+    "damage_snapshot": [
+      922,
+      90,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "da3cae8062594b24fa0f0caeb19fba73b5bb5c8268c25acb402b6ba4358a0f70",
+    "heat": 285,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63009,
+    "stats": {
+      "capture": 56,
+      "catalysis": 5,
+      "damage": 2,
+      "decay": 6,
+      "formation": 21,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 4,
+      "post_formation": 14,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 523
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 83,
+    "buffer": 65,
+    "damage_snapshot": [
+      0,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": false,
+    "final_hash": "faa745074d61a659b9c47ebfc835626d96ed48be2ebe9ec0964d98c2649501eb",
+    "heat": 291,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63009,
+    "stats": {
+      "capture": 50,
+      "catalysis": 10,
+      "damage": 1,
+      "decay": 10,
+      "formation": 24,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 16,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1040
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 104,
+    "buffer": 80,
+    "damage_snapshot": [
+      918,
+      75,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "1d5e6dd873eb99c63ad681e6740f57073a06a7a467c42c18d4ed009645ee4fb7",
+    "heat": 324,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63009,
+    "stats": {
+      "capture": 56,
+      "catalysis": 10,
+      "damage": 5,
+      "decay": 16,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 14,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1040
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 87,
+    "buffer": 83,
+    "damage_snapshot": [
+      926,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "4030a84f5fe48a22cb4b23d5442e8e2b5b8994f66a196465add0180a82e8294c",
+    "heat": 295,
+    "operator": 16,
+    "photons": 902,
+    "seed": 63010,
+    "stats": {
+      "capture": 61,
+      "catalysis": 11,
+      "damage": 5,
+      "decay": 8,
+      "formation": 26,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 16,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1110
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 71,
+    "buffer": 85,
+    "damage_snapshot": [
+      928,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ac3043f14f0334231ac8c553c51c9d9f7c22516b15cd30a30fae0b1eb24ed215",
+    "heat": 279,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63010,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 4,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 11,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1110
+    }
+  },
+  {
+    "arm": "background",
+    "births": 131,
+    "buffer": 73,
+    "damage_snapshot": [
+      918,
+      61,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "24fb1bd73dec7c3b3057f202b7654b7ce710294cc9514b308486ec982b86bd6e",
+    "heat": 339,
+    "operator": 16,
+    "photons": 868,
+    "seed": 63010,
+    "stats": {
+      "capture": 78,
+      "catalysis": 7,
+      "damage": 12,
+      "decay": 18,
+      "formation": 53,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 25,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1110
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 85,
+    "buffer": 79,
+    "damage_snapshot": [
+      928,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "cdab39bd44836d1f22c2304dd3fe908200d907107c88a74506d9dc99737d6920",
+    "heat": 293,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63010,
+    "stats": {
+      "capture": 58,
+      "catalysis": 11,
+      "damage": 5,
+      "decay": 5,
+      "formation": 27,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 8,
+      "post_formation": 18,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 522
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 82,
+    "buffer": 64,
+    "damage_snapshot": [
+      0,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "dd0cbbce6f9ef43354191c9cb7369660f804d1cb0ec54f1aed682d0b372b2ef3",
+    "heat": 290,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63010,
+    "stats": {
+      "capture": 49,
+      "catalysis": 9,
+      "damage": 5,
+      "decay": 7,
+      "formation": 22,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 12,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1110
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 111,
+    "buffer": 81,
+    "damage_snapshot": [
+      916,
+      71,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "ec2b4ef21b344a61de293b9292dda9ef96d0376c272c7b29fbe64dd2091ae28a",
+    "heat": 331,
+    "operator": 4,
+    "photons": 880,
+    "seed": 63010,
+    "stats": {
+      "capture": 60,
+      "catalysis": 16,
+      "damage": 10,
+      "decay": 14,
+      "formation": 27,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 10,
+      "post_formation": 18,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1110
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 79,
+    "buffer": 85,
+    "damage_snapshot": [
+      926,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "207040ecc93e2396d4a0a2a95ecf1a54d8917869f449f2b037c116f4d6f31e34",
+    "heat": 287,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63011,
+    "stats": {
+      "capture": 58,
+      "catalysis": 7,
+      "damage": 5,
+      "decay": 6,
+      "formation": 20,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 6,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 990
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 69,
+    "buffer": 89,
+    "damage_snapshot": [
+      928,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "0e7f064908ef97606d749265346f8f18747f64490161201948647a017bf613ff",
+    "heat": 277,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63011,
+    "stats": {
+      "capture": 55,
+      "catalysis": 0,
+      "damage": 5,
+      "decay": 3,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 990
+    }
+  },
+  {
+    "arm": "background",
+    "births": 123,
+    "buffer": 69,
+    "damage_snapshot": [
+      920,
+      62,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "820b6904ad2921398509664a6220546a9bddb8e5cb5043f291f66d7c728c6efc",
+    "heat": 331,
+    "operator": 16,
+    "photons": 880,
+    "seed": 63011,
+    "stats": {
+      "capture": 72,
+      "catalysis": 7,
+      "damage": 12,
+      "decay": 13,
+      "formation": 50,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 24,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 990
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 74,
+    "buffer": 88,
+    "damage_snapshot": [
+      928,
+      77,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "6ddc2946d9047240f4babe3b41471a780d7d58c0695e910be2adb0b7bd844284",
+    "heat": 282,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63011,
+    "stats": {
+      "capture": 57,
+      "catalysis": 3,
+      "damage": 8,
+      "decay": 2,
+      "formation": 16,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 2,
+      "post_formation": 5,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 484
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 76,
+    "buffer": 70,
+    "damage_snapshot": [
+      0,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "f45a56ee2b2b658ad0f6fdf6a8f026e666a6d1704fbe44f93750e08c4bf0a151",
+    "heat": 284,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63011,
+    "stats": {
+      "capture": 49,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 6,
+      "formation": 17,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 3,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "photons": 2048,
+      "thermal": 990
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 104,
+    "buffer": 84,
+    "damage_snapshot": [
+      918,
+      65,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "706f07af8e3b2a17c66399d36153e3de6cbf8857c743144d01cf188671a101c4",
+    "heat": 324,
+    "operator": 4,
+    "photons": 884,
+    "seed": 63011,
+    "stats": {
+      "capture": 58,
+      "catalysis": 11,
+      "damage": 8,
+      "decay": 15,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 6,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 990
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 83,
+    "buffer": 85,
+    "damage_snapshot": [
+      924,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "cc8c5fe33f85a0e784357c2d3fca168b868c5aba8a78ae248c6747fc453191bf",
+    "heat": 291,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63012,
+    "stats": {
+      "capture": 60,
+      "catalysis": 9,
+      "damage": 3,
+      "decay": 9,
+      "formation": 23,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 10,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 969
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 70,
+    "buffer": 90,
+    "damage_snapshot": [
+      924,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "bb318e706d4350948b7f4727c64a91d646d26f92f650b906ec2359ed74cfab0f",
+    "heat": 278,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63012,
+    "stats": {
+      "capture": 56,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 7,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 969
+    }
+  },
+  {
+    "arm": "background",
+    "births": 131,
+    "buffer": 65,
+    "damage_snapshot": [
+      922,
+      58,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "fb48950d0df75e771832c1b3cf2fca8a9853635d028cbccc95b4209160505ee1",
+    "heat": 339,
+    "operator": 16,
+    "photons": 876,
+    "seed": 63012,
+    "stats": {
+      "capture": 74,
+      "catalysis": 10,
+      "damage": 8,
+      "decay": 18,
+      "formation": 57,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 25,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 969
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 79,
+    "buffer": 85,
+    "damage_snapshot": [
+      924,
+      87,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "a65d7226f648f5b345c8ced75f83c271c8cdab7d83363679425c948c0f387739",
+    "heat": 287,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63012,
+    "stats": {
+      "capture": 58,
+      "catalysis": 7,
+      "damage": 2,
+      "decay": 8,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 7,
+      "post_formation": 13,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 462
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 81,
+    "buffer": 67,
+    "damage_snapshot": [
+      0,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "c871b3156ff3c39dcaed1ec3eae2cd3800a37792dff1dd37b513b641e914dbaa",
+    "heat": 289,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63012,
+    "stats": {
+      "capture": 50,
+      "catalysis": 9,
+      "damage": 3,
+      "decay": 9,
+      "formation": 21,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 8,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 969
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 93,
+    "buffer": 83,
+    "damage_snapshot": [
+      910,
+      83,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "6e1b2bec12f14171ec0fda09fbd57c7ec27479eeff07e272b95b49f0385f55bd",
+    "heat": 313,
+    "operator": 4,
+    "photons": 896,
+    "seed": 63012,
+    "stats": {
+      "capture": 52,
+      "catalysis": 6,
+      "damage": 3,
+      "decay": 13,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 11,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 969
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 88,
+    "buffer": 86,
+    "damage_snapshot": [
+      922,
+      79,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "6ac6c1b046efdaff5139d95ede0d8b7cedc0c014c4e6641af29bbf27a2f1a79d",
+    "heat": 296,
+    "operator": 16,
+    "photons": 898,
+    "seed": 63013,
+    "stats": {
+      "capture": 63,
+      "catalysis": 6,
+      "damage": 7,
+      "decay": 9,
+      "formation": 24,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 11,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 78,
+    "buffer": 90,
+    "damage_snapshot": [
+      922,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "39e7595b5e11c0ee47bd7922eadcee336e19add25b154cd24406a811b2937399",
+    "heat": 286,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63013,
+    "stats": {
+      "capture": 60,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 8,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "background",
+    "births": 153,
+    "buffer": 65,
+    "damage_snapshot": [
+      910,
+      57,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "391a1b9e540157187a4dc89f2990b323fdf760f4dada66eb2260e133a8f7a8d4",
+    "heat": 361,
+    "operator": 16,
+    "photons": 854,
+    "seed": 63013,
+    "stats": {
+      "capture": 85,
+      "catalysis": 7,
+      "damage": 12,
+      "decay": 29,
+      "formation": 64,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 29,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 87,
+    "buffer": 87,
+    "damage_snapshot": [
+      922,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "7be71ec3c77512f5146f7a290cc21cb6274baa2aa44449fa4a457c1a4dc8dd16",
+    "heat": 295,
+    "operator": 16,
+    "photons": 898,
+    "seed": 63013,
+    "stats": {
+      "capture": 63,
+      "catalysis": 6,
+      "damage": 6,
+      "decay": 9,
+      "formation": 24,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 5,
+      "post_formation": 13,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 476
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 86,
+    "buffer": 64,
+    "damage_snapshot": [
+      0,
+      79,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": true,
+    "final_hash": "27a6d90ce0c7c5f65c83032aa96a27bfe2b3ecb7a5bc36a74afeeebfc6604314",
+    "heat": 294,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63013,
+    "stats": {
+      "capture": 51,
+      "catalysis": 6,
+      "damage": 7,
+      "decay": 8,
+      "formation": 23,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 10,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 105,
+    "buffer": 85,
+    "damage_snapshot": [
+      908,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "ec07ba29adf904418ca005be3c44bb2c8ab3a8f46101998a3a9eea47217af3ec",
+    "heat": 325,
+    "operator": 4,
+    "photons": 882,
+    "seed": 63013,
+    "stats": {
+      "capture": 59,
+      "catalysis": 5,
+      "damage": 6,
+      "decay": 18,
+      "formation": 21,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 11,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1039
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 79,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "c8e5c92a330029af082e376043d1c2eeb63ca9d4c798420c352dcc0a8b0b0362",
+    "heat": 287,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63014,
+    "stats": {
+      "capture": 59,
+      "catalysis": 4,
+      "damage": 4,
+      "decay": 7,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 13,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1022
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 76,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "89a2be94502c54af8bf6e92ea230f59e16a9c455b481d65a8751283b711ad8bc",
+    "heat": 284,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63014,
+    "stats": {
+      "capture": 59,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 7,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1022
+    }
+  },
+  {
+    "arm": "background",
+    "births": 155,
+    "buffer": 63,
+    "damage_snapshot": [
+      918,
+      55,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "de48cf94c149527bf6e1ae852b5d232f1a637703715109ea450cff25b44e50b9",
+    "heat": 363,
+    "operator": 16,
+    "photons": 854,
+    "seed": 63014,
+    "stats": {
+      "capture": 85,
+      "catalysis": 13,
+      "damage": 15,
+      "decay": 24,
+      "formation": 68,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 37,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1022
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 81,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "f386658de8495b460e27e59e9fc375eb432b0bd9d273a83a414c2cf6ff0ed470",
+    "heat": 289,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63014,
+    "stats": {
+      "capture": 60,
+      "catalysis": 3,
+      "damage": 6,
+      "decay": 7,
+      "formation": 20,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 1,
+      "post_formation": 11,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 514
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 74,
+    "buffer": 72,
+    "damage_snapshot": [
+      0,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "cfb849eeb37cf7471c639d5e45531ec8d7f5dcbacb4e1892ef1175c0454d3a35",
+    "heat": 282,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63014,
+    "stats": {
+      "capture": 49,
+      "catalysis": 3,
+      "damage": 4,
+      "decay": 5,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1022
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 105,
+    "buffer": 83,
+    "damage_snapshot": [
+      920,
+      68,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "73233a212b66d3070720d4dfb2a0213e7f8c1930058caef8cedbd45886648777",
+    "heat": 325,
+    "operator": 4,
+    "photons": 884,
+    "seed": 63014,
+    "stats": {
+      "capture": 58,
+      "catalysis": 8,
+      "damage": 10,
+      "decay": 12,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1022
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 68,
+    "buffer": 88,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "cb3170d894eb6f1a5c524a0b0ade56e033406adde537538417c1b2ea2b2e0076",
+    "heat": 276,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63015,
+    "stats": {
+      "capture": 54,
+      "catalysis": 1,
+      "damage": 5,
+      "decay": 2,
+      "formation": 13,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 982
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 68,
+    "buffer": 88,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ab04c6ee3659a08e54ca57ac0371dda7fd79a92b58684c0f0f3e4f8ce01b70d0",
+    "heat": 276,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63015,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 5,
+      "decay": 2,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 982
+    }
+  },
+  {
+    "arm": "background",
+    "births": 121,
+    "buffer": 73,
+    "damage_snapshot": [
+      920,
+      55,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "7e52b74885395f70d8af2d8996a72e1e0e3bbd3d5a0e5fe3294118731e1cfbb1",
+    "heat": 329,
+    "operator": 16,
+    "photons": 878,
+    "seed": 63015,
+    "stats": {
+      "capture": 73,
+      "catalysis": 7,
+      "damage": 15,
+      "decay": 12,
+      "formation": 46,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 16,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 982
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 80,
+    "buffer": 84,
+    "damage_snapshot": [
+      926,
+      80,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "abb3b3963b4f77d3ccecede90f257be6e345887d8e84a21beb43ae2ccca6140e",
+    "heat": 288,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63015,
+    "stats": {
+      "capture": 58,
+      "catalysis": 7,
+      "damage": 7,
+      "decay": 5,
+      "formation": 20,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 10,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 482
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 68,
+    "buffer": 78,
+    "damage_snapshot": [
+      0,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "b8ab273430e48f73cc7775f41fbcc8bba073b05e975763548a762214dc239dc2",
+    "heat": 276,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63015,
+    "stats": {
+      "capture": 49,
+      "catalysis": 1,
+      "damage": 5,
+      "decay": 2,
+      "formation": 13,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 982
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 95,
+    "buffer": 87,
+    "damage_snapshot": [
+      910,
+      79,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ea52c30efe0c14fbfd4d20c69ee0836b4e5aec339dc8e36d85c7cf281e41ffb4",
+    "heat": 315,
+    "operator": 4,
+    "photons": 890,
+    "seed": 63015,
+    "stats": {
+      "capture": 55,
+      "catalysis": 5,
+      "damage": 8,
+      "decay": 12,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 982
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 62,
+    "buffer": 86,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "1cd4a77265c0e63eba414ec0ced0778edf5cb5f9561bf28ce801932e759900c4",
+    "heat": 270,
+    "operator": 16,
+    "photons": 924,
+    "seed": 63016,
+    "stats": {
+      "capture": 50,
+      "catalysis": 5,
+      "damage": 0,
+      "decay": 2,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 58,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      94,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e80f34ded582f5012e74d10c90ce783598fe333a5107c3f50813cdcfa217c337",
+    "heat": 266,
+    "operator": 16,
+    "photons": 924,
+    "seed": 63016,
+    "stats": {
+      "capture": 50,
+      "catalysis": 0,
+      "damage": 0,
+      "decay": 2,
+      "formation": 8,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 5,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "background",
+    "births": 119,
+    "buffer": 75,
+    "damage_snapshot": [
+      914,
+      66,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "d9cce5c9cdf5abbae8f7c6aa1362fc895e991ef9ba88c27ee32a1acbc2406a1d",
+    "heat": 327,
+    "operator": 16,
+    "photons": 878,
+    "seed": 63016,
+    "stats": {
+      "capture": 73,
+      "catalysis": 4,
+      "damage": 9,
+      "decay": 16,
+      "formation": 46,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 20,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 66,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "2bca3bee5b5ec7ceeeade074565d64ed0b896a1fca3bd37aba8990b6d60dff34",
+    "heat": 274,
+    "operator": 16,
+    "photons": 918,
+    "seed": 63016,
+    "stats": {
+      "capture": 53,
+      "catalysis": 4,
+      "damage": 2,
+      "decay": 3,
+      "formation": 13,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 444
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 62,
+    "buffer": 84,
+    "damage_snapshot": [
+      0,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "0936df7e21069e97870393abbd9a78adf06e389632a47d5bdca443c7332faca7",
+    "heat": 270,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63016,
+    "stats": {
+      "capture": 49,
+      "catalysis": 5,
+      "damage": 0,
+      "decay": 2,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 97,
+    "buffer": 83,
+    "damage_snapshot": [
+      916,
+      75,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "50346d5b6e2b7f8a3a08b505c15b36b89ddce814908460d55dfb1a530d0e40d1",
+    "heat": 317,
+    "operator": 4,
+    "photons": 892,
+    "seed": 63016,
+    "stats": {
+      "capture": 54,
+      "catalysis": 13,
+      "damage": 5,
+      "decay": 13,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 11,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 78,
+    "buffer": 86,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "3f4f0f88a66eff25b4243612fd626fad977a9ad616cbbea50019074be9e0357e",
+    "heat": 286,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63017,
+    "stats": {
+      "capture": 58,
+      "catalysis": 1,
+      "damage": 3,
+      "decay": 7,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 13,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1104
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 77,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "fae708ba7066e3bdac6f2890f429bc25bc1272a74184a61f793b27ab194ec881",
+    "heat": 285,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63017,
+    "stats": {
+      "capture": 58,
+      "catalysis": 0,
+      "damage": 3,
+      "decay": 7,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1104
+    }
+  },
+  {
+    "arm": "background",
+    "births": 124,
+    "buffer": 72,
+    "damage_snapshot": [
+      916,
+      63,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "f97798d232a0ec5f8fd85db147ca3eb0425f27fffa17dd606bd0f22f8305634f",
+    "heat": 332,
+    "operator": 16,
+    "photons": 876,
+    "seed": 63017,
+    "stats": {
+      "capture": 74,
+      "catalysis": 2,
+      "damage": 11,
+      "decay": 15,
+      "formation": 50,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 23,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1104
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 81,
+    "buffer": 85,
+    "damage_snapshot": [
+      926,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "1842107de25567be9bb28b16a86708ffe5f879af23ae9585f0ef9133067a6fd7",
+    "heat": 289,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63017,
+    "stats": {
+      "capture": 59,
+      "catalysis": 3,
+      "damage": 3,
+      "decay": 8,
+      "formation": 22,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 15,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 531
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 78,
+    "buffer": 68,
+    "damage_snapshot": [
+      0,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "cdf20e6f4e2aa397cc58595c5c7c0f8109568c42eb355da7f252b0c3be6e70bf",
+    "heat": 286,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63017,
+    "stats": {
+      "capture": 49,
+      "catalysis": 1,
+      "damage": 3,
+      "decay": 7,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 13,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1104
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 105,
+    "buffer": 83,
+    "damage_snapshot": [
+      910,
+      75,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "3171011f21418edf3e1bc5ed4f596946cf206ce935451bb45e52b025c079117c",
+    "heat": 325,
+    "operator": 4,
+    "photons": 884,
+    "seed": 63017,
+    "stats": {
+      "capture": 58,
+      "catalysis": 9,
+      "damage": 5,
+      "decay": 17,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1104
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 66,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "253cc8c0ba3e124cf70ecf162a64fb4c7acbcabf02ae1c11dc912736b0e9899b",
+    "heat": 274,
+    "operator": 16,
+    "photons": 918,
+    "seed": 63018,
+    "stats": {
+      "capture": 53,
+      "catalysis": 4,
+      "damage": 0,
+      "decay": 6,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 5,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1095
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 60,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      93,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "17668ae85a9a38fbeae129d1a3109970f1355199681ed7e75610d9d9869c653a",
+    "heat": 268,
+    "operator": 16,
+    "photons": 922,
+    "seed": 63018,
+    "stats": {
+      "capture": 51,
+      "catalysis": 0,
+      "damage": 0,
+      "decay": 4,
+      "formation": 8,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 4,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1095
+    }
+  },
+  {
+    "arm": "background",
+    "births": 121,
+    "buffer": 75,
+    "damage_snapshot": [
+      916,
+      69,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "0ee4a2da93e7fa365809c7a053d58b2d81ace5a5a36d9dd398ab518592aa6955",
+    "heat": 329,
+    "operator": 16,
+    "photons": 876,
+    "seed": 63018,
+    "stats": {
+      "capture": 74,
+      "catalysis": 6,
+      "damage": 7,
+      "decay": 21,
+      "formation": 45,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 19,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1095
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 71,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "c12c595e743b65196948e8f263bcd3ea6346866d09e1448d59afce2bcc06ac9e",
+    "heat": 279,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63018,
+    "stats": {
+      "capture": 55,
+      "catalysis": 7,
+      "damage": 2,
+      "decay": 5,
+      "formation": 16,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 7,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 590
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 66,
+    "buffer": 82,
+    "damage_snapshot": [
+      0,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": false,
+    "final_hash": "d0a29706f1f9ccef530022b4b4588b39c19e910d320c8bf8295cff19528548b1",
+    "heat": 274,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63018,
+    "stats": {
+      "capture": 50,
+      "catalysis": 4,
+      "damage": 0,
+      "decay": 6,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 5,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "photons": 2048,
+      "thermal": 1095
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 88,
+    "buffer": 86,
+    "damage_snapshot": [
+      914,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "7461389c7f7080cd2b7328a29c0df9097e794cb2359613ff6f57ffd0117defdb",
+    "heat": 308,
+    "operator": 4,
+    "photons": 898,
+    "seed": 63018,
+    "stats": {
+      "capture": 51,
+      "catalysis": 5,
+      "damage": 3,
+      "decay": 14,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 5,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1095
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 67,
+    "buffer": 89,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "5691edf75080b8690aee329bc20e06f981b85be620ae28a298ae401990f64e64",
+    "heat": 275,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63019,
+    "stats": {
+      "capture": 54,
+      "catalysis": 2,
+      "damage": 0,
+      "decay": 6,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1050
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 64,
+    "buffer": 90,
+    "damage_snapshot": [
+      926,
+      93,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "351227359843c9f1a5088a3654b58aaeeb55045d02ccacef0ed391a56d8be753",
+    "heat": 272,
+    "operator": 16,
+    "photons": 918,
+    "seed": 63019,
+    "stats": {
+      "capture": 53,
+      "catalysis": 0,
+      "damage": 0,
+      "decay": 5,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1050
+    }
+  },
+  {
+    "arm": "background",
+    "births": 131,
+    "buffer": 69,
+    "damage_snapshot": [
+      918,
+      61,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "f4cf010a2919a61027df3f841c0f9b9a444d28269b65970e30428ec9f45a2940",
+    "heat": 339,
+    "operator": 16,
+    "photons": 872,
+    "seed": 63019,
+    "stats": {
+      "capture": 76,
+      "catalysis": 9,
+      "damage": 13,
+      "decay": 17,
+      "formation": 53,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 26,
+      "pre_functional": 7
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1050
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 65,
+    "buffer": 89,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "70641485f53f2186a1731b0268b1608df4425727b00673da801fb0e885c9c39c",
+    "heat": 273,
+    "operator": 16,
+    "photons": 918,
+    "seed": 63019,
+    "stats": {
+      "capture": 53,
+      "catalysis": 1,
+      "damage": 1,
+      "decay": 4,
+      "formation": 12,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 1,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 524
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 67,
+    "buffer": 79,
+    "damage_snapshot": [
+      0,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "c8dfec0e3ea625906b7d0830772e08f06a0f649771fd5a2dd83b5cb04588cb04",
+    "heat": 275,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63019,
+    "stats": {
+      "capture": 49,
+      "catalysis": 2,
+      "damage": 0,
+      "decay": 6,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "photons": 2048,
+      "thermal": 1050
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 104,
+    "buffer": 86,
+    "damage_snapshot": [
+      916,
+      69,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "bf06714fb3f66e642dd5bd1cc73b2d72d7774bd71c4492ffe37fae4d960470d3",
+    "heat": 324,
+    "operator": 4,
+    "photons": 882,
+    "seed": 63019,
+    "stats": {
+      "capture": 59,
+      "catalysis": 11,
+      "damage": 9,
+      "decay": 14,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1050
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 75,
+    "buffer": 89,
+    "damage_snapshot": [
+      920,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "4f757eb4472ab0665c0705081dcfb7298a9921ab90d45dda37ab8819e4cd33cb",
+    "heat": 283,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63020,
+    "stats": {
+      "capture": 58,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 6,
+      "formation": 16,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 6,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1048
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 66,
+    "buffer": 90,
+    "damage_snapshot": [
+      922,
+      90,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "78629433bb53befc126ff69ff5c06d04e6cb8e8bf17d708f91ddf8d97f24b126",
+    "heat": 274,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63020,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 5,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 5,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1048
+    }
+  },
+  {
+    "arm": "background",
+    "births": 133,
+    "buffer": 71,
+    "damage_snapshot": [
+      916,
+      59,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "5ad2fafae10b426b0ff9f3aaa8dee818164474e10b9d8d0d60ac89cfe9899c5c",
+    "heat": 341,
+    "operator": 16,
+    "photons": 868,
+    "seed": 63020,
+    "stats": {
+      "capture": 78,
+      "catalysis": 10,
+      "damage": 11,
+      "decay": 20,
+      "formation": 54,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 26,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1048
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 70,
+    "buffer": 90,
+    "damage_snapshot": [
+      922,
+      89,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "36c868f91cc41667e0514852dc28dfedc0a450b44763e874b4f6515f6c275494",
+    "heat": 278,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63020,
+    "stats": {
+      "capture": 56,
+      "catalysis": 3,
+      "damage": 2,
+      "decay": 7,
+      "formation": 13,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 1,
+      "post_formation": 6,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 523
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 75,
+    "buffer": 77,
+    "damage_snapshot": [
+      0,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 920,
+    "exposed": true,
+    "final_hash": "787907105f5bdad7524d68067e86b96acc6bf4ade5c1baaae0e7aace741479d0",
+    "heat": 283,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63020,
+    "stats": {
+      "capture": 52,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 6,
+      "formation": 16,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 6,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1048
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 98,
+    "buffer": 88,
+    "damage_snapshot": [
+      912,
+      72,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "cce9a046be853a01f40a7e5e13a5074e0c5867d92b470e02274b5269564c9ab0",
+    "heat": 318,
+    "operator": 4,
+    "photons": 886,
+    "seed": 63020,
+    "stats": {
+      "capture": 57,
+      "catalysis": 8,
+      "damage": 7,
+      "decay": 15,
+      "formation": 16,
+      "functional_damage": 2,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 6,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1048
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 88,
+    "buffer": 80,
+    "damage_snapshot": [
+      922,
+      80,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "8cc6e1e50ff3327969f7989642976d26e9f0c6789367fd8fe2249ab5b38baaf3",
+    "heat": 296,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63021,
+    "stats": {
+      "capture": 60,
+      "catalysis": 10,
+      "damage": 4,
+      "decay": 9,
+      "formation": 27,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 13,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1023
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 72,
+    "buffer": 86,
+    "damage_snapshot": [
+      922,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "c78425d0f9a30163f0b9b0a331dc579f3cd55277263ae49da4fd0bed08b9c3d0",
+    "heat": 280,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63021,
+    "stats": {
+      "capture": 55,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 6,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1023
+    }
+  },
+  {
+    "arm": "background",
+    "births": 132,
+    "buffer": 68,
+    "damage_snapshot": [
+      910,
+      62,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "761f0d5277007220841433e7a5c91725b49b281d79c9cc49b61f910383e4a4ce",
+    "heat": 340,
+    "operator": 16,
+    "photons": 872,
+    "seed": 63021,
+    "stats": {
+      "capture": 76,
+      "catalysis": 11,
+      "damage": 8,
+      "decay": 21,
+      "formation": 55,
+      "functional_damage": 4,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 22,
+      "pre_functional": 6
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1023
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 83,
+    "buffer": 85,
+    "damage_snapshot": [
+      920,
+      83,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "3441852e6a08890435eb896b6e77cd1f036372ffe4ba670637cc5f73b82c71d9",
+    "heat": 291,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63021,
+    "stats": {
+      "capture": 60,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 7,
+      "formation": 23,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 12,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 535
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 88,
+    "buffer": 62,
+    "damage_snapshot": [
+      0,
+      80,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": true,
+    "final_hash": "3b2d7b3c1ab485a8430be45efdc5af59d5a392ebd31bc83b6f82b4eda8f23230",
+    "heat": 296,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63021,
+    "stats": {
+      "capture": 51,
+      "catalysis": 10,
+      "damage": 4,
+      "decay": 9,
+      "formation": 27,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 13,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1023
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 102,
+    "buffer": 82,
+    "damage_snapshot": [
+      910,
+      77,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "5e4d9c8941be39267c35fa4d11727d3021a131f72bded95583ec05a73ff25698",
+    "heat": 322,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63021,
+    "stats": {
+      "capture": 56,
+      "catalysis": 8,
+      "damage": 5,
+      "decay": 15,
+      "formation": 22,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1023
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 73,
+    "buffer": 93,
+    "damage_snapshot": [
+      922,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "4cd11114c49930e7e79b8bcf712e97e2805e58cca36aa015e02347652803f49f",
+    "heat": 281,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63022,
+    "stats": {
+      "capture": 59,
+      "catalysis": 1,
+      "damage": 4,
+      "decay": 7,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 71,
+    "buffer": 93,
+    "damage_snapshot": [
+      922,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "93ee835c26ecc46291bf5c5926dd36d5ecb86a7ff7bef86ca30cddb676367a0f",
+    "heat": 279,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63022,
+    "stats": {
+      "capture": 58,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 6,
+      "formation": 13,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 2,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "background",
+    "births": 144,
+    "buffer": 70,
+    "damage_snapshot": [
+      908,
+      54,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "030e59d7efb2715b0cb80636fe3efd1ff7db596f522384be15255dd8136fc00b",
+    "heat": 352,
+    "operator": 16,
+    "photons": 858,
+    "seed": 63022,
+    "stats": {
+      "capture": 83,
+      "catalysis": 5,
+      "damage": 12,
+      "decay": 24,
+      "formation": 60,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 24,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 81,
+    "buffer": 89,
+    "damage_snapshot": [
+      922,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "02369e64b7c0dc44a16242ece5a49ed573a10a8e57c4bd06ef9a7bece0215362",
+    "heat": 289,
+    "operator": 16,
+    "photons": 902,
+    "seed": 63022,
+    "stats": {
+      "capture": 61,
+      "catalysis": 6,
+      "damage": 3,
+      "decay": 11,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 5,
+      "post_formation": 7,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 477
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 73,
+    "buffer": 77,
+    "damage_snapshot": [
+      0,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": false,
+    "final_hash": "47ada5db867e6f2f4b0d3e61711ee4042f611e2e6f6ca632683a9d6ed57c5ea4",
+    "heat": 281,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63022,
+    "stats": {
+      "capture": 51,
+      "catalysis": 1,
+      "damage": 4,
+      "decay": 7,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 99,
+    "buffer": 93,
+    "damage_snapshot": [
+      906,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "ec7961c6c80c20d60d8166c75fdf39aad583ff7fc81553b3a00b8a8e2eea1921",
+    "heat": 319,
+    "operator": 4,
+    "photons": 880,
+    "seed": 63022,
+    "stats": {
+      "capture": 60,
+      "catalysis": 4,
+      "damage": 6,
+      "decay": 18,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1030
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 92,
+    "buffer": 80,
+    "damage_snapshot": [
+      926,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "8af2f29af9397e2410a5bb866ffaece6077ac7f4f821591c0422f09266e1de89",
+    "heat": 300,
+    "operator": 16,
+    "photons": 900,
+    "seed": 63023,
+    "stats": {
+      "capture": 62,
+      "catalysis": 7,
+      "damage": 5,
+      "decay": 10,
+      "formation": 29,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 16,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1064
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 82,
+    "buffer": 84,
+    "damage_snapshot": [
+      926,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "795c04088d84a9420c33b8af3c8e51cc8e0223c104332f3d10954290c23e60ee",
+    "heat": 290,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63023,
+    "stats": {
+      "capture": 59,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 8,
+      "formation": 22,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1064
+    }
+  },
+  {
+    "arm": "background",
+    "births": 135,
+    "buffer": 75,
+    "damage_snapshot": [
+      916,
+      59,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "bbc1683e903b9e89ec636656f7ef7b269639dfca9577aba336142e6102f66739",
+    "heat": 343,
+    "operator": 16,
+    "photons": 862,
+    "seed": 63023,
+    "stats": {
+      "capture": 81,
+      "catalysis": 5,
+      "damage": 12,
+      "decay": 23,
+      "formation": 52,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 23,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1064
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 93,
+    "buffer": 77,
+    "damage_snapshot": [
+      926,
+      80,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "9d79b93028f27ca5c977e30a9865eb65640e55c9e37bc80258d40ab140f96400",
+    "heat": 301,
+    "operator": 16,
+    "photons": 902,
+    "seed": 63023,
+    "stats": {
+      "capture": 61,
+      "catalysis": 9,
+      "damage": 5,
+      "decay": 11,
+      "formation": 29,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 8,
+      "post_formation": 18,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 530
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 83,
+    "buffer": 63,
+    "damage_snapshot": [
+      0,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "201bcdca25342ff789666ab667a508c4a711d36a4f3d65f07d8f46fcd1a7df40",
+    "heat": 291,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63023,
+    "stats": {
+      "capture": 49,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 8,
+      "formation": 22,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 9,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1064
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 124,
+    "buffer": 78,
+    "damage_snapshot": [
+      912,
+      67,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "bf731c6fcad2f68c2f93b24e73d3c3fe43e762794611dec668fa9109dfd2af59",
+    "heat": 344,
+    "operator": 4,
+    "photons": 870,
+    "seed": 63023,
+    "stats": {
+      "capture": 65,
+      "catalysis": 15,
+      "damage": 9,
+      "decay": 21,
+      "formation": 34,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 9,
+      "post_formation": 19,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1064
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 71,
+    "buffer": 81,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "2dc9455bbccf508a9613712a640ddfcf6eae14761b77e7c47ce36da0ef4da9ff",
+    "heat": 279,
+    "operator": 16,
+    "photons": 920,
+    "seed": 63024,
+    "stats": {
+      "capture": 52,
+      "catalysis": 7,
+      "damage": 1,
+      "decay": 4,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 998
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 63,
+    "buffer": 87,
+    "damage_snapshot": [
+      926,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "a7dca38f57f077794cd5c6cee8f8e0e5c52cb7b68d33371b054c1175de7bc719",
+    "heat": 271,
+    "operator": 16,
+    "photons": 922,
+    "seed": 63024,
+    "stats": {
+      "capture": 51,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 3,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 998
+    }
+  },
+  {
+    "arm": "background",
+    "births": 141,
+    "buffer": 69,
+    "damage_snapshot": [
+      908,
+      56,
+      0
+    ],
+    "endpoint": true,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "8de8bf51c0966304fd6ecfc67cfce00e2079298489894e269d432bd5b6f49954",
+    "heat": 349,
+    "operator": 16,
+    "photons": 862,
+    "seed": 63024,
+    "stats": {
+      "capture": 81,
+      "catalysis": 11,
+      "damage": 13,
+      "decay": 21,
+      "formation": 59,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 22,
+      "pre_functional": 6
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 998
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 69,
+    "buffer": 79,
+    "damage_snapshot": [
+      926,
+      93,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "94c293014dfdb5ac039f6a0c32bb0e5d19adad25a8ed348f36f6b6f23ab1c1cb",
+    "heat": 277,
+    "operator": 16,
+    "photons": 924,
+    "seed": 63024,
+    "stats": {
+      "capture": 50,
+      "catalysis": 7,
+      "damage": 0,
+      "decay": 3,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 7,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 550
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 71,
+    "buffer": 75,
+    "damage_snapshot": [
+      0,
+      92,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": false,
+    "final_hash": "3758b56736b2bbeeab80c6005ffa4f3b6dc232a16282538a3048d7b124d3b908",
+    "heat": 279,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63024,
+    "stats": {
+      "capture": 49,
+      "catalysis": 7,
+      "damage": 1,
+      "decay": 4,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 998
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 95,
+    "buffer": 81,
+    "damage_snapshot": [
+      914,
+      80,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "66cbf64b9e4f611bbe64893dfd29c42b7c1e9750e4d2744c4fc6b3860dfe9a33",
+    "heat": 315,
+    "operator": 4,
+    "photons": 896,
+    "seed": 63024,
+    "stats": {
+      "capture": 52,
+      "catalysis": 9,
+      "damage": 6,
+      "decay": 11,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 13,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 998
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 72,
+    "buffer": 92,
+    "damage_snapshot": [
+      924,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "3b168a0625ec3fa998e1aeecf97a58be236f461e154de8d384038e22bc8a4645",
+    "heat": 280,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63025,
+    "stats": {
+      "capture": 58,
+      "catalysis": 3,
+      "damage": 5,
+      "decay": 5,
+      "formation": 14,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 5,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 68,
+    "buffer": 94,
+    "damage_snapshot": [
+      924,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e91d901ad13dab92c19d862ef3d7008f5b9a65aefe1cfff624c2748edfd5a0c4",
+    "heat": 276,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63025,
+    "stats": {
+      "capture": 57,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 5,
+      "formation": 11,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "background",
+    "births": 140,
+    "buffer": 70,
+    "damage_snapshot": [
+      918,
+      56,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "415039ddef767fb4f2ea8f812afa512ce6323ccdb1a1dce983c4bf03ed638e33",
+    "heat": 348,
+    "operator": 16,
+    "photons": 862,
+    "seed": 63025,
+    "stats": {
+      "capture": 81,
+      "catalysis": 5,
+      "damage": 16,
+      "decay": 20,
+      "formation": 56,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 28,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 73,
+    "buffer": 93,
+    "damage_snapshot": [
+      924,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e9e69491ceda3da506697d5966786e500d49b6c565addc6d3ffcd1bba86c4f20",
+    "heat": 281,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63025,
+    "stats": {
+      "capture": 59,
+      "catalysis": 3,
+      "damage": 4,
+      "decay": 7,
+      "formation": 14,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 0,
+      "post_formation": 3,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 560
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 72,
+    "buffer": 76,
+    "damage_snapshot": [
+      0,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "bb60cd228b33efeb1328297629e23f6a69839fb47784e272ef4aaf704493dce8",
+    "heat": 280,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63025,
+    "stats": {
+      "capture": 50,
+      "catalysis": 3,
+      "damage": 5,
+      "decay": 5,
+      "formation": 14,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 5,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 100,
+    "buffer": 88,
+    "damage_snapshot": [
+      910,
+      72,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "3b82ff2f629ac5797c89c8ef59fd1b10ddcfaaf370a86d3f1494532fc0887ead",
+    "heat": 320,
+    "operator": 4,
+    "photons": 884,
+    "seed": 63025,
+    "stats": {
+      "capture": 58,
+      "catalysis": 8,
+      "damage": 8,
+      "decay": 15,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 5,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1029
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 79,
+    "buffer": 83,
+    "damage_snapshot": [
+      928,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "c5ca0fb2302270fe074fd9334dc5e0e74588a050fc6646a9111f7ed48acfddf7",
+    "heat": 287,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63026,
+    "stats": {
+      "capture": 57,
+      "catalysis": 6,
+      "damage": 7,
+      "decay": 3,
+      "formation": 21,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 10,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1012
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 71,
+    "buffer": 87,
+    "damage_snapshot": [
+      928,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "072fd9c74cbdd75f124497a6487b28a33268033a198bce90a2dd0c56e89156f8",
+    "heat": 279,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63026,
+    "stats": {
+      "capture": 55,
+      "catalysis": 0,
+      "damage": 5,
+      "decay": 3,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 6,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1012
+    }
+  },
+  {
+    "arm": "background",
+    "births": 136,
+    "buffer": 66,
+    "damage_snapshot": [
+      924,
+      57,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "a085d5141f14153a7ed09dee0210ce874651b5cd85631bd522e838333e6e4699",
+    "heat": 344,
+    "operator": 16,
+    "photons": 870,
+    "seed": 63026,
+    "stats": {
+      "capture": 77,
+      "catalysis": 18,
+      "damage": 12,
+      "decay": 19,
+      "formation": 57,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 10,
+      "post_formation": 29,
+      "pre_functional": 6
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1012
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 83,
+    "buffer": 89,
+    "damage_snapshot": [
+      926,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "f1bd68538986b70fc717f4b61b7c6520ee6be1dc26012b506f66c999aa32c9bc",
+    "heat": 291,
+    "operator": 16,
+    "photons": 900,
+    "seed": 63026,
+    "stats": {
+      "capture": 62,
+      "catalysis": 7,
+      "damage": 10,
+      "decay": 4,
+      "formation": 21,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 8,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 517
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 78,
+    "buffer": 66,
+    "damage_snapshot": [
+      0,
+      78,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 928,
+    "exposed": true,
+    "final_hash": "d375b8a6426172b77394d342556d8dfe207bd0023d441cacf32184629c442a91",
+    "heat": 286,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63026,
+    "stats": {
+      "capture": 48,
+      "catalysis": 5,
+      "damage": 7,
+      "decay": 3,
+      "formation": 20,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 9,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1012
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 105,
+    "buffer": 81,
+    "damage_snapshot": [
+      912,
+      68,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "1f5695ae0d3e6b3f4de60ae1e5f2c127f6158d1aae62c6cee1bf0df3a03d8a6f",
+    "heat": 325,
+    "operator": 4,
+    "photons": 886,
+    "seed": 63026,
+    "stats": {
+      "capture": 57,
+      "catalysis": 11,
+      "damage": 10,
+      "decay": 12,
+      "formation": 23,
+      "functional_damage": 2,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 9,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1012
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 90,
+    "buffer": 80,
+    "damage_snapshot": [
+      926,
+      72,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "6a351595f6690ca130fb64581a1390c57956729ebb40af1a74a5fae22f9ad72a",
+    "heat": 298,
+    "operator": 16,
+    "photons": 902,
+    "seed": 63027,
+    "stats": {
+      "capture": 61,
+      "catalysis": 8,
+      "damage": 8,
+      "decay": 7,
+      "formation": 27,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 10,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1102
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 77,
+    "buffer": 85,
+    "damage_snapshot": [
+      926,
+      81,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "5008271eb456e2d358c6ce7e167069c38e612bc7f25bd9d725a84e379acd2132",
+    "heat": 285,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63027,
+    "stats": {
+      "capture": 57,
+      "catalysis": 0,
+      "damage": 5,
+      "decay": 5,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1102
+    }
+  },
+  {
+    "arm": "background",
+    "births": 139,
+    "buffer": 61,
+    "damage_snapshot": [
+      922,
+      49,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "3664abff1be9785b080089b79a1ff48f9d821bfc8162713b102eff38600b1964",
+    "heat": 347,
+    "operator": 16,
+    "photons": 872,
+    "seed": 63027,
+    "stats": {
+      "capture": 76,
+      "catalysis": 11,
+      "damage": 15,
+      "decay": 17,
+      "formation": 59,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 6,
+      "post_formation": 24,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1102
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 90,
+    "buffer": 74,
+    "damage_snapshot": [
+      926,
+      78,
+      0
+    ],
+    "endpoint": true,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "eb6a7f9df7defbd4e3b06858551b05a7a98f5c5322a8f10a57062680a15e0d9a",
+    "heat": 298,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63027,
+    "stats": {
+      "capture": 58,
+      "catalysis": 12,
+      "damage": 5,
+      "decay": 6,
+      "formation": 31,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 9,
+      "post_formation": 17,
+      "pre_functional": 3
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 565
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 87,
+    "buffer": 59,
+    "damage_snapshot": [
+      0,
+      72,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 926,
+    "exposed": true,
+    "final_hash": "1583401a34aa2579ee5e8ae514df206c99456c14fe654ccf3bfcf09cf31b1af1",
+    "heat": 295,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63027,
+    "stats": {
+      "capture": 49,
+      "catalysis": 8,
+      "damage": 8,
+      "decay": 6,
+      "formation": 25,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 8,
+      "pre_functional": 5
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1102
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 109,
+    "buffer": 75,
+    "damage_snapshot": [
+      914,
+      68,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "e6ecdf1a597f7272614930029eab4fc8700c187dae80af7058c4ef4fff9ef1da",
+    "heat": 329,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63027,
+    "stats": {
+      "capture": 56,
+      "catalysis": 13,
+      "damage": 7,
+      "decay": 15,
+      "formation": 27,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 11,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1102
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 89,
+    "buffer": 73,
+    "damage_snapshot": [
+      928,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "3581df9ed4ce53132a10debfdbceb3db7086bebce9f611456723750735cacd37",
+    "heat": 297,
+    "operator": 16,
+    "photons": 910,
+    "seed": 63028,
+    "stats": {
+      "capture": 57,
+      "catalysis": 9,
+      "damage": 4,
+      "decay": 9,
+      "formation": 28,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 21,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1003
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 76,
+    "buffer": 80,
+    "damage_snapshot": [
+      928,
+      87,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "997ff9d3303f900fbcf80553511aefee1c34f28572b9a95b3d4f86c6bd9f38d1",
+    "heat": 284,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63028,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 3,
+      "decay": 5,
+      "formation": 20,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1003
+    }
+  },
+  {
+    "arm": "background",
+    "births": 149,
+    "buffer": 57,
+    "damage_snapshot": [
+      924,
+      53,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "b568d3e643727176e9dca8c380d608df4e8afb7489258023f1ec1e4108dcaa2c",
+    "heat": 357,
+    "operator": 16,
+    "photons": 866,
+    "seed": 63028,
+    "stats": {
+      "capture": 79,
+      "catalysis": 12,
+      "damage": 13,
+      "decay": 23,
+      "formation": 65,
+      "functional_damage": 3,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 34,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1003
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 83,
+    "buffer": 75,
+    "damage_snapshot": [
+      928,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "817637ea0d78bf705a1d0eead2ec03d09c60527218abd408a62f5e21aef3b88d",
+    "heat": 291,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63028,
+    "stats": {
+      "capture": 55,
+      "catalysis": 5,
+      "damage": 3,
+      "decay": 8,
+      "formation": 24,
+      "functional_damage": 2,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 16,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 441
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 83,
+    "buffer": 61,
+    "damage_snapshot": [
+      0,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 928,
+    "exposed": true,
+    "final_hash": "a08f5c5ec0b703a9b4e8f2fcc3cc69c0ea5b7cf239b05c84c627af03e8a19a64",
+    "heat": 291,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63028,
+    "stats": {
+      "capture": 48,
+      "catalysis": 8,
+      "damage": 4,
+      "decay": 7,
+      "formation": 24,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 7,
+      "post_formation": 17,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1003
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 114,
+    "buffer": 70,
+    "damage_snapshot": [
+      914,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "29f941cef74a5f1dd56cb6a19b7231ca4a02a62cdb8b288854c9f651b817d472",
+    "heat": 334,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63028,
+    "stats": {
+      "capture": 56,
+      "catalysis": 12,
+      "damage": 8,
+      "decay": 16,
+      "formation": 30,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 8,
+      "post_formation": 21,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1003
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 76,
+    "buffer": 88,
+    "damage_snapshot": [
+      924,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "f68a306155c57769637ac8fede916de3e5f32065c56bd75c88718e28d2a4022b",
+    "heat": 284,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63029,
+    "stats": {
+      "capture": 58,
+      "catalysis": 3,
+      "damage": 5,
+      "decay": 5,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1112
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 71,
+    "buffer": 89,
+    "damage_snapshot": [
+      924,
+      86,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "868cd2b9ae9c6616e406641913d9c93deda205f53043da5da3155348696d37ec",
+    "heat": 279,
+    "operator": 16,
+    "photons": 912,
+    "seed": 63029,
+    "stats": {
+      "capture": 56,
+      "catalysis": 0,
+      "damage": 4,
+      "decay": 4,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 7,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1112
+    }
+  },
+  {
+    "arm": "background",
+    "births": 133,
+    "buffer": 61,
+    "damage_snapshot": [
+      914,
+      64,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "4bfdaec0e210c1e779a01201d6c4f19d39f47c24b5eda0b38cdbec4abdf69c1d",
+    "heat": 341,
+    "operator": 16,
+    "photons": 878,
+    "seed": 63029,
+    "stats": {
+      "capture": 73,
+      "catalysis": 4,
+      "damage": 10,
+      "decay": 17,
+      "formation": 58,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 30,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1112
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 84,
+    "buffer": 84,
+    "damage_snapshot": [
+      920,
+      85,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "d419322233b9b747522b7ce728f8005e4331fa5d2ceed080d7b71c2e70f810bf",
+    "heat": 292,
+    "operator": 16,
+    "photons": 904,
+    "seed": 63029,
+    "stats": {
+      "capture": 60,
+      "catalysis": 9,
+      "damage": 3,
+      "decay": 9,
+      "formation": 24,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 5,
+      "post_formation": 12,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 537
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 76,
+    "buffer": 72,
+    "damage_snapshot": [
+      0,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": false,
+    "final_hash": "ed89e0d3b09d96b364f4d78b227ec22fb51f1440b8c5c1b147f8c4a94077eac9",
+    "heat": 284,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63029,
+    "stats": {
+      "capture": 50,
+      "catalysis": 3,
+      "damage": 5,
+      "decay": 5,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1112
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 97,
+    "buffer": 87,
+    "damage_snapshot": [
+      908,
+      82,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "41c4185267421c228264435b23c8a5b92a123d5832a926f58f97de54c50259f3",
+    "heat": 317,
+    "operator": 4,
+    "photons": 888,
+    "seed": 63029,
+    "stats": {
+      "capture": 56,
+      "catalysis": 5,
+      "damage": 5,
+      "decay": 15,
+      "formation": 17,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 3,
+      "post_formation": 10,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1112
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 76,
+    "buffer": 82,
+    "damage_snapshot": [
+      924,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "20aa0543b5d58b9476a4257c913b4c209f7caefa96f596a17b8df07f3b63f516",
+    "heat": 284,
+    "operator": 16,
+    "photons": 914,
+    "seed": 63030,
+    "stats": {
+      "capture": 55,
+      "catalysis": 6,
+      "damage": 2,
+      "decay": 5,
+      "formation": 21,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 13,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1028
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 69,
+    "buffer": 87,
+    "damage_snapshot": [
+      924,
+      91,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "c2fb01f4262a844bf88709a48b914d28960c639d863830d5efdf65008006f67f",
+    "heat": 277,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63030,
+    "stats": {
+      "capture": 54,
+      "catalysis": 0,
+      "damage": 1,
+      "decay": 5,
+      "formation": 15,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 9,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1028
+    }
+  },
+  {
+    "arm": "background",
+    "births": 116,
+    "buffer": 68,
+    "damage_snapshot": [
+      918,
+      66,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "a241bf76833bd6c254c8f07811dd89498c11950d9429b1ae5037e07bd16d7e10",
+    "heat": 324,
+    "operator": 16,
+    "photons": 888,
+    "seed": 63030,
+    "stats": {
+      "capture": 68,
+      "catalysis": 4,
+      "damage": 8,
+      "decay": 13,
+      "formation": 47,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 20,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1028
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 72,
+    "buffer": 84,
+    "damage_snapshot": [
+      924,
+      90,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "c58c574744c8c2d3f9d2efcf06d65ed1b1bf1a8211eca4ed2598330f8185e0c8",
+    "heat": 280,
+    "operator": 16,
+    "photons": 916,
+    "seed": 63030,
+    "stats": {
+      "capture": 54,
+      "catalysis": 3,
+      "damage": 2,
+      "decay": 4,
+      "formation": 18,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 3,
+      "post_formation": 12,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 511
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 76,
+    "buffer": 72,
+    "damage_snapshot": [
+      0,
+      88,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 924,
+    "exposed": true,
+    "final_hash": "61a125bb0c135e04d853349dd256105e2bfccc252535c0ef3a3f73d685b96e4b",
+    "heat": 284,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63030,
+    "stats": {
+      "capture": 50,
+      "catalysis": 6,
+      "damage": 2,
+      "decay": 5,
+      "formation": 21,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 4,
+      "post_formation": 13,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "photons": 2048,
+      "thermal": 1028
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 97,
+    "buffer": 77,
+    "damage_snapshot": [
+      918,
+      76,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "5f7f820768bb5c7c708000ab33dd0df6db51d12b1fc138d56581825d72660a61",
+    "heat": 317,
+    "operator": 4,
+    "photons": 898,
+    "seed": 63030,
+    "stats": {
+      "capture": 51,
+      "catalysis": 7,
+      "damage": 5,
+      "decay": 11,
+      "formation": 21,
+      "functional_damage": 0,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 5,
+      "post_formation": 14,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1028
+    }
+  },
+  {
+    "arm": "candidate",
+    "births": 80,
+    "buffer": 86,
+    "damage_snapshot": [
+      922,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "7e99695e80a578660443899fb8aa8f1c2a04089bb3321994058fc3483a5ff6c6",
+    "heat": 288,
+    "operator": 16,
+    "photons": 906,
+    "seed": 63031,
+    "stats": {
+      "capture": 59,
+      "catalysis": 2,
+      "damage": 2,
+      "decay": 10,
+      "formation": 20,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1073
+    }
+  },
+  {
+    "arm": "inert",
+    "births": 78,
+    "buffer": 86,
+    "damage_snapshot": [
+      924,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": false,
+    "final_hash": "09dd48874a6ae38e5feabeba46ae9dd76ab7c2db5f38fa81a6bbf2be589da4a0",
+    "heat": 286,
+    "operator": 16,
+    "photons": 908,
+    "seed": 63031,
+    "stats": {
+      "capture": 58,
+      "catalysis": 0,
+      "damage": 2,
+      "decay": 9,
+      "formation": 19,
+      "functional_damage": 0,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 0
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1073
+    }
+  },
+  {
+    "arm": "background",
+    "births": 148,
+    "buffer": 66,
+    "damage_snapshot": [
+      906,
+      60,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "dc66195bee0e09a2efd21d3d392e2dc62a5dafc593f9e3d7fe297822532ce3d8",
+    "heat": 356,
+    "operator": 16,
+    "photons": 858,
+    "seed": 63031,
+    "stats": {
+      "capture": 83,
+      "catalysis": 7,
+      "damage": 11,
+      "decay": 27,
+      "formation": 62,
+      "functional_damage": 4,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 2,
+      "post_formation": 27,
+      "pre_functional": 4
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 1073
+    }
+  },
+  {
+    "arm": "mixed",
+    "births": 89,
+    "buffer": 83,
+    "damage_snapshot": [
+      920,
+      79,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "faf859e0ff7ab51a6190a2b1df81aef9b0ad340f8d8361ec553dbcda35a9707e",
+    "heat": 297,
+    "operator": 16,
+    "photons": 900,
+    "seed": 63031,
+    "stats": {
+      "capture": 62,
+      "catalysis": 8,
+      "damage": 6,
+      "decay": 9,
+      "formation": 26,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 128,
+      "post_catalysis": 4,
+      "post_formation": 12,
+      "pre_functional": 2
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "thermal": 553
+    }
+  },
+  {
+    "arm": "withdrawal",
+    "births": 80,
+    "buffer": 70,
+    "damage_snapshot": [
+      0,
+      84,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 922,
+    "exposed": true,
+    "final_hash": "34a521a3eea7a2b1c7c84404d74496e3a3f0ada1f1f9c2f7a156b33f23038fb4",
+    "heat": 288,
+    "operator": 16,
+    "photons": 0,
+    "seed": 63031,
+    "stats": {
+      "capture": 51,
+      "catalysis": 2,
+      "damage": 2,
+      "decay": 10,
+      "formation": 20,
+      "functional_damage": 1,
+      "genesis": 0,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 1,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "buffer": 0,
+      "photons": 2048,
+      "thermal": 1073
+    }
+  },
+  {
+    "arm": "supplied",
+    "births": 102,
+    "buffer": 86,
+    "damage_snapshot": [
+      910,
+      74,
+      0
+    ],
+    "endpoint": false,
+    "exact": false,
+    "exported": 0,
+    "exposed": true,
+    "final_hash": "73fafaebee56e744d851560fc90f0116dcddb8f0aebab6a4b302983c4cf33314",
+    "heat": 322,
+    "operator": 4,
+    "photons": 884,
+    "seed": 63031,
+    "stats": {
+      "capture": 58,
+      "catalysis": 3,
+      "damage": 7,
+      "decay": 16,
+      "formation": 19,
+      "functional_damage": 1,
+      "genesis": 12,
+      "genesis_refused": 0,
+      "motion": 256,
+      "post_catalysis": 0,
+      "post_formation": 8,
+      "pre_functional": 1
+    },
+    "thermal": 0,
+    "zeros": {
+      "thermal": 1073
+    }
+  }
+]

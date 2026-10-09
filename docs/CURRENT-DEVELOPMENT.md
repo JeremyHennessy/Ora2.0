@@ -2,74 +2,61 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — guarded evidence path verified; useful-action coupling next
+## Latest checkpoint — Stage3 photochemical comparison closed negative
 
-**Science:** KINETIC-01 closed negative(192 worlds,zero reconstruction endpoints).
-GRADIENT-01 closed negative(192 worlds,one paid natural renewal candidate world,
-P=0.5; bond-free distal construction357 versus29). Neither is reliable useful
-organization or learning; no favorable tuning. Exact source/evidence:
-[KINETIC receipt](KINETIC-01-RECEIPT.md), [GRADIENT receipt](GRADIENT-01-RECEIPT.md).
+**Current source/evidence:** REDOX-01 executed frozen
+f466d7f76ed40c6b6c91da7b33c7254c5593250b after prospective e3a766f6/cb5b116f
+commits. All192 founder-free/control worlds,786432 transitions independently
+reinterpreted. Candidate0/32 qualifying reconstructions versus background1/32
+and paid well-mixed1/32; adequate19/32 candidate damage exposure; paired P=1.
+168 candidate causal catalytic uses and623 natural state formations establish
+paid reactions under installed physics, not self-maintenance. Stop this law and
+horizon. [Decision/receipt](REDOX-01-RECEIPT.md);
+[compact evidence](../data/redox01/decision.json).
+All1073 sealed evidence files and192 recorded worlds also pass independent
+C:/ora backup/readback; previous backups preserved. [Proof](../data/redox01/backup-proof.json).
 
-**Engineering:** LAUNCH-01 accepted0d32812e closes actual separate confined launch,
-advancing authoritative telemetry, live expiry, resource-stop and new-birth/SID
-continuation. Six accepted launches/120 read-only samples; two exact33-state/32-event
-histories; six native access-denied5 protected-binding probes. All processes stopped
-and profiles deleted. First limited storage block and failed missing-winerror audit
-preserved:18 total launches. Six Windows passes/one expected skip; two forgeries
-refused;471 restored files. [Contract/receipt](LAUNCH-01-RECEIPT.md). No active lab
-run remains after its final handoff. This is engineering reliability, not learning.
+**Stage3 sprint assessment:** [substages3.1–3.6](STAGE-3-ASSESSMENT-2026-10-09.md)
+map to the user's October9 six objectives. No autonomous self-maintenance or
+Stage3 completion; no manufactured new feedstock pairs, reproduction, inheritance
+or learning demonstrated. RECYCLE288-world negative, KINETIC192-world negative
+and GRADIENT rare1/32,P=.5 remain closed and immutable. Rare control replacement
+is not repeatability or organizational lineage. No favorable tuning.
 
-**TRACE-01 cost gate:** frozen/executed ca6b24aa after prospective844915e3 contract.
-All24 authored four-arm/six-horizon traces /3,904 requests independently audited,
-25-file exact replay, five checks and three rehashed forgery refusals. Finite refresh
-loses all state at clock241 of the256 horizon;224 horizon exhausts fuel before
-reconstruction. Short traces retain/rebuild paid state with new IDs and provenance.
-All analytical predictions match. [Receipt/full decision](TRACE-01-COST-RECEIPT.md).
-Operational gap:16MiB checked only raw panel; complete evidence exceeded that
-ceiling. [Preserved scope erratum](TRACE-01-LIMIT-SCOPE-ERRATUM.md). Original claim
-remains failed; the separately registered guarded path below does not rewrite it.
-This is installed-component feasibility preparation, not natural useful organization,
-learning, reproduction or behavioral execution. No controller or world activated.
+**Active scientific run:** none after final verification; these are bounded
+recorded experiments. Authoritative first24 replay state/history files identical;
+ZIP timestamp identity and nested native-regression orchestration failures remain
+explicit in the receipt. Independent-copy noise/payment/provenance forgeries reject.
 
-**EVIDENCE-01:** accepted197b3c23 preserves393 old members, archives/restores394
-identical files and separately reinterprets all24 old traces, with791 case files
-within raw/archive/restore/failure and combined prewrite reservations. Seven native
-checks pass; oversized growth and forged accounting refuse. First copied-byte
-rehearsal failed final audit after unguarded interpreter-cache writes; preserved.
-Prospective no-bytecode wrapper passes after replay, same writer/limits. [Receipt](EVIDENCE-01-RECEIPT.md).
-Future experiments must use this trusted-writer path or a separately verified
-quota; no automatic upgrade of old code or OS/hostile-writer guarantee. No new panel.
+**Next highest-value scientific decision:** register and first test the accounting
+feasibility of mutually dependent resource transformation and actual new component
+construction against resource-matched independent-component/background nulls.
+Change the causal law, rather than rates/stocks/founders of failed candidates.
+Only then freeze fresh unscreened dynamics and organizational ablations. ADAPTATION-01
+remains separately [design-only](ADAPTATION-01-DESIGN.md); no controller/LLM/legacy
+AgentTest change follows from this assessment. Reproduction is not a prerequisite
+for a separately justified useful-action experiment.
 
-**Next primary science action:** separately freeze generic encounter-to-trace and
-resource-use coupling, complete sensing/delivery/read/write/movement/interaction
-prices, unseen reversal/delay/location challenges and a useful-action endpoint.
-Compare fixed-reactive, memory-disabled, shuffled history and relevant passive-filter
-nulls; retain all failed actors and exposure limits. ADAPTATION-01 remains
-[design-only](ADAPTATION-01-DESIGN.md), no successful policy, reward, LLM or legacy
-AgentTest change. Reproduction is not a prerequisite. Controller activation cannot
-follow design alone; never promote installed plasticity to a discovered ability.
+**Engineering accepted independently:** EVIDENCE-01 source197b3c23/PR58 main
+b27cf833 has seven native checks,791-file guarded case and independent C:/ora
+backup/readback. Accepted case passes; preserved failed case still refuses;24
+historical TRACE traces reinterpreted. No new science in that storage rehearsal.
+LAUNCH-01 finite actual-world identity, expiry, resource-stop and recovery remain
+verified; no active world/service. [EVIDENCE receipt](EVIDENCE-01-RECEIPT.md),
+[LAUNCH receipt](LAUNCH-01-RECEIPT.md). TRACE's old16MiB complete-evidence claim
+remains failed under its [scope erratum](TRACE-01-LIMIT-SCOPE-ERRATUM.md).
 
-**Runtime gates:** independent cold application restore passed(RESTORE-01); actual
-launcher/finite telemetry composition now passes. Physical power-loss/storage durability,
-acceptable lost-work/cadence policy, full-host recovery, production filesystem/network/
-import/escape scope and a finite supervised-pilot contract remain open. These need
-disposable, explicit tests; no zero-loss/memory-peak/hostile-escape guarantee. Pilot
-activation still requires separate authorization. The approved saved-data viewer stays
-recorded; its owner controls publication and remains paused. No world/service activated.
+**Runtime blockers:** physical power-loss/storage durability, acceptable lost-work/
+checkpoint cadence, full-host recovery, production filesystem/network/import/escape
+scope, and a finite supervised-pilot contract with separate activation authorization.
+No memory-peak, hostile-writer/escape or zero-loss claim. Approved observer stays
+saved-data-only; its owner remains paused and owns publication. No UI redesign.
 
-**Research:** both repos rechecked; AI-Research9db4a6b3/Pass35 mainCI37935367403 passed.
-Pass35 and its ledger reviewed: supplied DNA/liposome replication and abiotic
-compartment offspring are distinct achievements, not integrated autonomous closure.
-This changes interpretation of supplied trace rebuilding, not the frozen law.
-[Targeted intake](TRACE-01-COST-RECEIPT.md).
-[Pass33/34 intake](RESEARCH-INTAKE-PASSES33-34.md). Targeted earlier Pass13/14 memory
-counterexamples inform retention cost, fixed-filter/history controls and unseen reversal;
-Pass31 separates propagules/selection withdrawal from autonomous establishment. No
-new literature pass performed here, research code execution or historical research alteration.
-
-This compact checkpoint governs next action; detailed historical receipts below
-retain their dates and are not pending tasks. Exact CI, backup proofs and source
-checksums are preserved in each completed local final receipt.
+**Research synchronization:** AI-Research1a7d572d/Pass36 reviewed, mainCI37943831964
+passed; local old checkout remains deliberately unmerged. Supplied sequence-dependent
+phase growth and compartment growth are not reproductive closure. Pass35 supplied
+genome replication and abiotic offspring remain separate achievements. This intake
+changes interpretation/comparators, not frozen old studies or an installed mechanism.
 
 ## Historical checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
