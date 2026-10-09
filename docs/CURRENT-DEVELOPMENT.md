@@ -1,6 +1,6 @@
 # Current development plan and handoff
 
-**Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
+**Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
 ## Latest science checkpoint — STARTUP-01 generic feasibility
 
@@ -29,7 +29,33 @@ independent samples, full resource accounting and matched nulls. No retuning thi
 frozen assay, consuming old reserved samples, or installing its reactions in the
 world runtime. A positive paid path is not evidence of autonomous origin.
 
-## Latest engineering checkpoint — BACKUP-01
+## Latest engineering checkpoint — STORAGE-02
+
+Protocol87737ab, accepted source7a137e14:33 Windows tests passed in three bounded
+groups. Two fresh16-case I/O panels each independently verified13 direct
+continuations,3 unchanged-input partial-journal rejections and16 trusted-snapshot
+continuations. Each of29 histories matched all33 full reference states, including
+identity, PRNG/cursor, ancestry/provenance and prior journal prefix;16 read-only
+observer checks passed per panel. Normalized audits agree exactly; forged success
+claims reject.118 historical/shared inputs unchanged;1,180 files restored on the
+same laboratory drive. [Receipt](STORAGE-02-RECEIPT.md).
+
+Preserved baseline revealed acknowledged half writes. The narrow shared I/O guard
+now rejects incomplete writes before acknowledging a commit; old formats/physics/
+evidence and source-bound resumption remain intact. The combined regression
+timeout is preserved; the unchanged33-test scope then passed in bounded groups.
+No continuously running world or observer publication was activated.
+
+**Next engineering priority:** independently scope hardened filesystem/network/
+process isolation and remaining physical durability/recovery gates. Same-OS/cache
+readback after injected errors does not prove power-loss or directory-fsync safety.
+Keep independent backup current for new sealed evidence and repository histories;
+whole-host rebuilding with the laboratory drive absent remains unverified.
+Science next remains the separately precommitted unscreened startup/opportunity
+study above, removing supplied ordering and target-channel assistance. AI-Research
+mainfef0a523/Pass29 remains unchanged with passing CI; no research mechanism added.
+
+## Completed engineering checkpoint — BACKUP-01
 
 Contract `b4206fc`: verified a manual backup on a physically separate local disk.
 40 sealed evidence archives, both repositories' complete reachable histories and
