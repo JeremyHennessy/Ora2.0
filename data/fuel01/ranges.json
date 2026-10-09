@@ -1,0 +1,30 @@
+{
+  "candidate": {
+    "fuel_min": 53,
+    "fuel_max": 70,
+    "live_min": 4,
+    "live_max": 12,
+    "natural_depletion": 0
+  },
+  "fuel-withdrawn": {
+    "fuel_min": 0,
+    "fuel_max": 0,
+    "live_min": 0,
+    "live_max": 6,
+    "natural_depletion": 0
+  },
+  "inert": {
+    "fuel_min": 60,
+    "fuel_max": 71,
+    "live_min": 4,
+    "live_max": 11,
+    "natural_depletion": 0
+  },
+  "shuffled": {
+    "fuel_min": 53,
+    "fuel_max": 68,
+    "live_min": 6,
+    "live_max": 12,
+    "natural_depletion": 0
+  }
+}
