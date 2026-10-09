@@ -17,7 +17,7 @@ BACKUP=Path('C:/ora/isolation04-20261009/isolation04-integrated-20261009-evidenc
 BACKUP_SHA='d1956130ee5c359561e948870b5288f352615ed63edb0118b5861758d2bdc564'
 WORLD_REVISION='b5d3104087b397d07c62a45592dde4bc13d58e51'
 FILES=(*gate.FILES,*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py',
-    'experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md')
+    'experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md')
 CORRUPTION=b'\n# RESTORE01 registered source-corruption control\n'
 
 

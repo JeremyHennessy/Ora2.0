@@ -26,7 +26,7 @@ def audit(output,source,revision):
     require(data['schema']=='restore01-v1' and data['revision']==revision and data['world_revision']==OLD_REVISION,'Source revisions')
     backup=Path(data['backup']); require(backup==Path('C:/ora/isolation04-20261009/isolation04-integrated-20261009-evidence.zip'),'Registered independent backup')
     require(sha(backup)==data['backup_sha256']==ARCHIVE_SHA,'Independent archive hash')
-    names={'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md',*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py','experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md'}
+    names={'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md',*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py','experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md'}
     require(set(data['source_sha256'])==names and all(sha(source/p)==v for p,v in data['source_sha256'].items()),'Complete new adapter source')
     with zipfile.ZipFile(backup) as z:
         old=json.loads(z.read('panel/evidence.json')); archived={n[len('panel/runtime/'):]:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith('panel/runtime/') and not n.endswith('/')}
