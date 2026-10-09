@@ -1,0 +1,249 @@
+{
+  "classification": "UNDEREXPOSED: renewal hypothesis unresolved",
+  "exposure_adequate": false,
+  "forgeries": [
+    {
+      "exit_code": 2,
+      "kind": "noise",
+      "reason": "Draw/event/state mismatch at 1"
+    },
+    {
+      "exit_code": 2,
+      "kind": "payment",
+      "reason": "Final snapshot/history mismatch"
+    },
+    {
+      "exit_code": 2,
+      "fixture": "fixed first seed73000 supplied control; four paid genesis objects; no sample rerun",
+      "kind": "ancestry",
+      "reason": "Final snapshot/history mismatch"
+    }
+  ],
+  "paired": {
+    "inert": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "no-recycle": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "private": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "shuffled": {
+      "inference": "registered primary",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "supplied": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    }
+  },
+  "preserved_wrapper_failure": "All science/audits/replay completed; fixed first candidate had no object for ancestry forgery. Final security fixture uses same seed supplied arm; no science rerun.",
+  "primary_pass": false,
+  "protocol_revision": "498216a",
+  "scope": "Programmed carrier chemistry; no autonomous self-maintenance, reproduction, inheritance or intelligence acceptance",
+  "source_revision": "8400e177649a0be6022081bab3807f8dd9e43320",
+  "stop": "Stop tested law/horizon; no cost, resource, seed, horizon or founder tuning",
+  "totals": {
+    "candidate": {
+      "charged_remaining": [
+        3,
+        10
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        468,
+        500
+      ],
+      "stats": {
+        "after_damage_manufacture": 27,
+        "after_damage_recycle": 0,
+        "after_removal_manufacture": 9,
+        "after_removal_recycle": 0,
+        "basal": 206,
+        "capture": 210,
+        "catalytic": 4,
+        "damage": 0,
+        "decay": 13,
+        "manufacture": 29,
+        "motion": 4096,
+        "recycle": 0
+      },
+      "zero_thermal": [
+        326,
+        419
+      ]
+    },
+    "inert": {
+      "charged_remaining": [
+        2,
+        10
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        468,
+        500
+      ],
+      "stats": {
+        "after_damage_manufacture": 27,
+        "after_damage_recycle": 0,
+        "after_removal_manufacture": 9,
+        "after_removal_recycle": 0,
+        "basal": 207,
+        "capture": 207,
+        "catalytic": 0,
+        "damage": 0,
+        "decay": 13,
+        "manufacture": 29,
+        "motion": 4096,
+        "recycle": 0
+      },
+      "zero_thermal": [
+        326,
+        419
+      ]
+    },
+    "no-recycle": {
+      "charged_remaining": [
+        3,
+        10
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        468,
+        500
+      ],
+      "stats": {
+        "after_damage_manufacture": 27,
+        "after_damage_recycle": 0,
+        "after_removal_manufacture": 9,
+        "after_removal_recycle": 0,
+        "basal": 206,
+        "capture": 210,
+        "catalytic": 4,
+        "damage": 0,
+        "decay": 13,
+        "manufacture": 29,
+        "motion": 4096,
+        "recycle": 0
+      },
+      "zero_thermal": [
+        326,
+        419
+      ]
+    },
+    "private": {
+      "charged_remaining": [
+        3,
+        10
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        468,
+        500
+      ],
+      "stats": {
+        "after_damage_manufacture": 27,
+        "after_damage_recycle": 0,
+        "after_removal_manufacture": 9,
+        "after_removal_recycle": 0,
+        "basal": 206,
+        "capture": 210,
+        "catalytic": 4,
+        "damage": 0,
+        "decay": 13,
+        "manufacture": 29,
+        "motion": 4096,
+        "recycle": 0
+      },
+      "zero_thermal": [
+        326,
+        419
+      ]
+    },
+    "shuffled": {
+      "charged_remaining": [
+        2,
+        10
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        468,
+        500
+      ],
+      "stats": {
+        "after_damage_manufacture": 27,
+        "after_damage_recycle": 0,
+        "after_removal_manufacture": 9,
+        "after_removal_recycle": 0,
+        "basal": 207,
+        "capture": 207,
+        "catalytic": 0,
+        "damage": 0,
+        "decay": 13,
+        "manufacture": 29,
+        "motion": 4096,
+        "recycle": 0
+      },
+      "zero_thermal": [
+        326,
+        419
+      ]
+    },
+    "supplied": {
+      "charged_remaining": [
+        2,
+        11
+      ],
+      "endpoint": 0,
+      "exposed": 0,
+      "removed": [
+        452,
+        484
+      ],
+      "stats": {
+        "after_damage_manufacture": 15,
+        "after_damage_recycle": 3,
+        "after_removal_manufacture": 7,
+        "after_removal_recycle": 1,
+        "basal": 331,
+        "capture": 343,
+        "catalytic": 12,
+        "damage": 53,
+        "decay": 49,
+        "manufacture": 145,
+        "motion": 4096,
+        "recycle": 3
+      },
+      "zero_thermal": [
+        265,
+        367
+      ]
+    }
+  },
+  "transitions": 393216,
+  "worlds": 192
+}

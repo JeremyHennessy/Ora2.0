@@ -2,7 +2,42 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — construction accounting feasible; coupling benefit rejected
+## Latest checkpoint — carrier dynamics underexposed; stop without tuning
+
+**Exact source/evidence:** CARRIER-01
+8400e177649a0be6022081bab3807f8dd9e43320; prospective498216a protocol and991e070
+comparator clarification. All192 unscreened worlds/393216 transitions separately
+interpreted;192 also reverified from independent C:/ora backup. Candidate29 paid
+fresh components,210 captures,4 causal catalytic charges,0 recycling; inert also
+29 components. All arms0 renewal; candidate0 productive damage exposure.
+[Receipt](CARRIER-01-RECEIPT.md),[decision](../data/carrier01/decision.json).
+
+**Decision:** UNDEREXPOSED, not a decisive negative of renewal feasibility.
+The fully paid authored return-path fixture is controlled possibility only.
+No natural productive cross-recipe manufacture, functional reconstruction,
+inheritance, adaptation or autonomous self-maintenance.17 local focused checks,
+24-world exact replay,3 separate forgery refusals; preserved final-wrapper
+ancestry-fixture failure did not change or rerun science.672 sealed files restore
+independently from C:; previous253 backups intact. No memory-peak/power-loss claim.
+
+**Next highest-value science:** first assess fully priced generic reversible
+aggregation/local resource retention against independent components, shuffled
+relations and paid passive-retention nulls. Recorded diagnosis:8614/10847 draws
+had separated raw atoms,1039 then separated carriers; thermal motion depleted
+before damage, yet charged carriers and photons remained. This motivates a
+distinct encounter/retention law, not more fuel, selected geometry or an extended
+CARRIER horizon. Freeze a new accounting/control gate before fresh dynamics;
+do not install a successful fixture, rewarded policy or adaptive controller.
+
+**Current activity:** no science writer/world active after acceptance. Prior
+COUPLE/REDOX/RECYCLE/KINETIC/GRADIENT decisions remain closed. All historical
+data, legacy code and approved observer preserved. AI-Research main1a7d572d,
+Pass31/36 reviewed for interpretation; research and adaptive useful-action design
+remain independent. Observer publication stays paused; recorded receipts are
+not live telemetry. Runtime gates still physical durability, lost-work/cadence,
+full-host restore, production isolation and separate pilot activation permission.
+
+## Historical checkpoint — construction accounting feasible; coupling benefit rejected
 
 **Exact source/evidence:** COUPLE-01 f32e005a8da3618f3da99c18e79e7e270ecc49d9,
 prospective64bae8c protocol. All1040 exhaustive accounting cases independently

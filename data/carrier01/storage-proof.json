@@ -1,0 +1,18 @@
+{
+  "files": 2029,
+  "logical_bytes": 342232579,
+  "reserved_bytes": 343134611,
+  "reserved_by_phase": {
+    "raw": 99459857,
+    "archive": 43726542,
+    "restore": 198899636,
+    "failure": 1048576
+  },
+  "limits": {
+    "raw": 134217728,
+    "archive": 134217728,
+    "restore": 268435456,
+    "failure": 8388608
+  },
+  "total_limit": 545259520
+}

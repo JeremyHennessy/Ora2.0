@@ -1,0 +1,14 @@
+{
+  "continuous": false,
+  "forgery_refusals": 3,
+  "independent_panel_audits": 8,
+  "no_new_science_after_failure": true,
+  "previous_backup_files_unchanged": 253,
+  "replay_all_authoritative_bytes_equal": true,
+  "replay_worlds": 24,
+  "scoped_checks": 17,
+  "shared_files_unchanged": 369,
+  "transitions": 393216,
+  "verified": true,
+  "worlds": 192
+}
