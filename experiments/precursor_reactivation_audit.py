@@ -78,7 +78,8 @@ def inspect_record(record,c):
         for uid in last['spent']:
             meta=state['units'][uid]
             funded = funded and meta['origin']=='harvest' and meta['actor']=='C'
-    law.need(record['second_producer_funded']==funded,'Producer funding/subsidy forgery')
+    law.need(type(record['second_producer_funded']) is bool and record['second_producer_funded']==funded,
+             'Producer funding/subsidy forgery')
     # No reproduction action was requested: classify only activation chemistry.
     law.need(set(state['history'])=={'C'},'Unexpected child history')
     return dict(cases=1,first_activated=int(record['events'][0]['result']['outcome']=='activated'),
