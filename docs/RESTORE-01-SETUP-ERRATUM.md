@@ -25,3 +25,20 @@ load an old laboratory installation during readback. All recorded module paths m
 remain under that original new runtime; source/dependency hashes and exact replay
 must validate the actual independent restored copy. This changes evidence plumbing,
 not the frozen world source, state, physics, controls or success criteria.
+
+### Prospective identifier correction after the controlled diagnostic
+
+Two independent disposable calls for each prefix crossed four/eight aggregate
+process slots. The established `OraLab.Integrated.` prefix plus a fresh UUID
+(50 characters) created successfully under both budgets. `OraLab.ColdRestore.`
+plus a fresh UUID (51 characters) returned E_INVALIDARG under both budgets.
+Every diagnostic profile deletion returned zero; no world ran. This isolates a
+label-dependent refusal in those calls, not a general documented 50-character
+Windows limit or proof of its underlying cause. The earlier prose character
+counts were off by one; measured lengths are authoritative.
+
+Use the established accepted prefix with new unscreened UUIDs. Every new SID must
+still differ from every original archived SID. No budget, capability, world law,
+endpoint or control changes. Preserve all prior failures. Two private diagnostic
+packaging failures (missing helper import; duplicate reporting keyword) are also
+retained separately and do not constitute world execution.

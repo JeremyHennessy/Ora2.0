@@ -66,7 +66,7 @@ def run_panel(output,revision):
         data['corrupt_runtime_sha256']=observation.tree(bad)
         account=subprocess.run(['whoami'],check=True,capture_output=True,text=True,timeout=10).stdout.strip()
         for trial in range(2):
-            name='OraLab.ColdRestore.'+uuid.uuid4().hex; sid=c.c_void_p()
+            name='OraLab.Integrated.'+uuid.uuid4().hex; sid=c.c_void_p()
             result=user.CreateAppContainerProfile(name,name,'Disposable independent-backup restore',None,0,c.byref(sid))
             data['profile_attempts'].append(dict(name=name,hresult=result & 0xffffffff)); save()
             if result!=0: raise OSError(f'Profile HRESULT {result & 0xffffffff:08x}')
