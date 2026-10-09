@@ -2,7 +2,43 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — carrier dynamics underexposed; stop without tuning
+## Latest checkpoint — aggregate recovery realized; self-maintenance underexposed
+
+**Exact source/evidence:** AGGREGATE-01
+a852333cf976999727a6ef40d0ea3907391d5ce8, prospective579e9cb protocol.
+192 unscreened worlds/786432 independently reinterpreted transitions. Candidate
+84 fresh components,489 paid binds,4 unassisted waste recoveries,3 causal
+cross-recipe manufactures. Passive inert has85 components/4 recoveries;
+no-bond also4 recoveries/3 cross-recipe manufactures. No organizational advantage
+or qualifying reconstruction. [Receipt](AGGREGATE-01-RECEIPT.md),
+[decision](../data/aggregate01/decision.json).
+
+**Decision:** UNDEREXPOSED: productive damage exposure0/32 then2/32; no round
+rebuild/use or two-round endpoint; both registered primary P=1. Stop exact law/
+horizon without tuning. Paid authored two-round path works in BOTH primary
+nulls, but never supplies a panel founder.675-file independent C:/ora restore
+and all192 restored-source audits;23 local focused checks; first24 exact replay;
+3 forgery refusals. CARRIER's868 primary files preserved. Historical CONTACT
+protocol naming collision corrected before execution on a clean new branch;
+unexecuted draft retained in private Git history. All closed studies immutable.
+
+**Next highest-value science:** different resource-transformation cycle, first
+full accounting/generic startup and causal-null feasibility. A prospective
+disjoint-sample unscreened opportunity gate must establish useful production
+and meaningful productive loss BEFORE another confirmatory self-maintenance
+panel. Publish failures and stop failed laws; no favorable founders, more fuel,
+delayed damage, selected geometry or cost/horizon tuning. Geometry/retention
+alone did not resolve useful resource coupling. Keep focus on founder-free
+functional reconstruction; no peripheral runtime/UI expansion this sprint.
+
+**Current activity:** no science writer/world active after acceptance. Stage3
+not complete; no reproduction, inheritance, adaptation or consciousness accepted.
+AI-Research ce044ee/Pass38 reviewed for proxy boundaries only, independent and
+unmodified. Observer stays approved and publication paused; saved receipts
+are not live telemetry. Runtime gates remain physical durability, lost-work/
+cadence, full-host recovery, production isolation and separate pilot permission.
+
+## Historical checkpoint — carrier dynamics underexposed; stop without tuning
 
 **Exact source/evidence:** CARRIER-01
 8400e177649a0be6022081bab3807f8dd9e43320; prospective498216a protocol and991e070

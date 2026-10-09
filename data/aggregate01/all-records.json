@@ -1,0 +1,9560 @@
+[
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 915
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 177,
+    "max_aggregate": 2,
+    "removed": 460,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 12,
+      "bind": 0,
+      "capture": 13,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 1,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1089
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 915
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 915
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 915
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 201,
+    "max_aggregate": 4,
+    "removed": 426,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74000,
+    "stats": {
+      "basal": 11,
+      "bind": 13,
+      "capture": 15,
+      "catalytic": 4,
+      "damage": 2,
+      "decay": 3,
+      "funded_motion": 15,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 809
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 11,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 9,
+      "bind": 11,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 886
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 154,
+    "max_aggregate": 2,
+    "removed": 476,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 9,
+      "bind": 0,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 5,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1071
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 3,
+    "removed": 445,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 9,
+      "bind": 13,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 886
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 11,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 9,
+      "bind": 11,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 886
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 11,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 9,
+      "bind": 11,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 886
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 211,
+    "max_aggregate": 4,
+    "removed": 413,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74001,
+    "stats": {
+      "basal": 10,
+      "bind": 18,
+      "capture": 15,
+      "catalytic": 5,
+      "damage": 4,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 598
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 437,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 2,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 921
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 190,
+    "max_aggregate": 2,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 15,
+      "bind": 0,
+      "capture": 16,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 2,
+      "funded_motion": 11,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1162
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 437,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 2,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 921
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 437,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 2,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 921
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 437,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 2,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 921
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 201,
+    "max_aggregate": 3,
+    "removed": 426,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3,
+          5
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74002,
+    "stats": {
+      "basal": 12,
+      "bind": 13,
+      "capture": 15,
+      "catalytic": 3,
+      "damage": 5,
+      "decay": 1,
+      "funded_motion": 14,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 745
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 164,
+    "max_aggregate": 3,
+    "removed": 461,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 4,
+      "bind": 15,
+      "capture": 5,
+      "catalytic": 1,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 141,
+    "max_aggregate": 1,
+    "removed": 496,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 4,
+      "bind": 0,
+      "capture": 4,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 0,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1192
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 3,
+    "removed": 467,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 4,
+      "bind": 14,
+      "capture": 4,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 7,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 3,
+    "removed": 467,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 4,
+      "bind": 14,
+      "capture": 4,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 7,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 164,
+    "max_aggregate": 3,
+    "removed": 461,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 4,
+      "bind": 15,
+      "capture": 5,
+      "catalytic": 1,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 200,
+    "max_aggregate": 4,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74003,
+    "stats": {
+      "basal": 11,
+      "bind": 14,
+      "capture": 14,
+      "catalytic": 3,
+      "damage": 3,
+      "decay": 2,
+      "funded_motion": 16,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 902
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 9,
+      "bind": 17,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 846
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 164,
+    "max_aggregate": 2,
+    "removed": 476,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 9,
+      "catalytic": 2,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1020
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 9,
+      "bind": 17,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 846
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 9,
+      "bind": 17,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 846
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 2,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 9,
+      "bind": 17,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 846
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 4,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74004,
+    "stats": {
+      "basal": 11,
+      "bind": 16,
+      "capture": 13,
+      "catalytic": 2,
+      "damage": 5,
+      "decay": 0,
+      "funded_motion": 14,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 584
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 4,
+    "removed": 458,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 7,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 982
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 150,
+    "max_aggregate": 2,
+    "removed": 488,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 6,
+      "bind": 0,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 3,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1120
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 4,
+    "removed": 458,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 7,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 982
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 4,
+    "removed": 458,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 7,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 982
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 13,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 4,
+    "removed": 458,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 7,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 982
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 196,
+    "max_aggregate": 4,
+    "removed": 428,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          5
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74005,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 13,
+      "catalytic": 3,
+      "damage": 4,
+      "decay": 2,
+      "funded_motion": 9,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 889
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 449,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 8,
+      "bind": 15,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 814
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 2,
+    "removed": 464,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 12,
+      "bind": 0,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 999
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 449,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 8,
+      "bind": 15,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 814
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 449,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 8,
+      "bind": 15,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 814
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 449,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 8,
+      "bind": 15,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 814
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 206,
+    "max_aggregate": 4,
+    "removed": 420,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74006,
+    "stats": {
+      "basal": 14,
+      "bind": 14,
+      "capture": 16,
+      "catalytic": 2,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 16,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 662
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 3,
+    "removed": 456,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 8,
+      "bind": 12,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 5,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 919
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 161,
+    "max_aggregate": 2,
+    "removed": 476,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 8,
+      "bind": 0,
+      "capture": 9,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 5,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1040
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 8,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 919
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 3,
+    "removed": 456,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 8,
+      "bind": 12,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 5,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 919
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 3,
+    "removed": 456,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 8,
+      "bind": 12,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 5,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 919
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 188,
+    "max_aggregate": 3,
+    "removed": 436,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74007,
+    "stats": {
+      "basal": 11,
+      "bind": 16,
+      "capture": 11,
+      "catalytic": 0,
+      "damage": 5,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 677
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 194,
+    "max_aggregate": 3,
+    "removed": 430,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 12,
+      "bind": 16,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 994
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 169,
+    "max_aggregate": 2,
+    "removed": 468,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 10,
+      "bind": 0,
+      "capture": 11,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1125
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 194,
+    "max_aggregate": 3,
+    "removed": 430,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 12,
+      "bind": 16,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 994
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 194,
+    "max_aggregate": 3,
+    "removed": 430,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 12,
+      "bind": 16,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 994
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 194,
+    "max_aggregate": 3,
+    "removed": 430,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 12,
+      "bind": 16,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 994
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 222,
+    "max_aggregate": 3,
+    "removed": 401,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74008,
+    "stats": {
+      "basal": 18,
+      "bind": 15,
+      "capture": 20,
+      "catalytic": 2,
+      "damage": 4,
+      "decay": 0,
+      "funded_motion": 26,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 738
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 4,
+    "removed": 422,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 15,
+      "bind": 15,
+      "capture": 15,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 841
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 179,
+    "max_aggregate": 2,
+    "removed": 452,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 13,
+      "bind": 0,
+      "capture": 15,
+      "catalytic": 2,
+      "damage": 4,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1017
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 209,
+    "max_aggregate": 4,
+    "removed": 414,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 15,
+      "bind": 15,
+      "capture": 17,
+      "catalytic": 2,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 21,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 841
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 4,
+    "removed": 422,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 15,
+      "bind": 15,
+      "capture": 15,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 841
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 4,
+    "removed": 422,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 15,
+      "bind": 15,
+      "capture": 15,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 841
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 216,
+    "max_aggregate": 6,
+    "removed": 410,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3,
+          5
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74009,
+    "stats": {
+      "basal": 17,
+      "bind": 16,
+      "capture": 17,
+      "catalytic": 0,
+      "damage": 6,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 7,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 656
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 190,
+    "max_aggregate": 4,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 11,
+      "bind": 16,
+      "capture": 13,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 14,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 969
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 2,
+    "removed": 468,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 11,
+      "bind": 0,
+      "capture": 11,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 7,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1223
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 4,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 10,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 969
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 4,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 10,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 969
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 190,
+    "max_aggregate": 4,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 11,
+      "bind": 16,
+      "capture": 13,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 14,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 969
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 197,
+    "max_aggregate": 3,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74010,
+    "stats": {
+      "basal": 14,
+      "bind": 14,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 5,
+      "decay": 0,
+      "funded_motion": 13,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 732
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 3,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 12,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 953
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 156,
+    "max_aggregate": 2,
+    "removed": 484,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 5,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1133
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 3,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 12,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 953
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 3,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 12,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 953
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 180,
+    "max_aggregate": 3,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 12,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 953
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 6,
+    "removed": 435,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74011,
+    "stats": {
+      "basal": 11,
+      "bind": 16,
+      "capture": 11,
+      "catalytic": 0,
+      "damage": 4,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 833
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 3,
+    "removed": 443,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 7,
+      "bind": 19,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 149,
+    "max_aggregate": 2,
+    "removed": 488,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 6,
+      "bind": 0,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1204
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 3,
+    "removed": 443,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 7,
+      "bind": 19,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 3,
+    "removed": 443,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 7,
+      "bind": 19,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 3,
+    "removed": 443,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 7,
+      "bind": 19,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 188,
+    "max_aggregate": 4,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74012,
+    "stats": {
+      "basal": 10,
+      "bind": 14,
+      "capture": 11,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 778
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 166,
+    "max_aggregate": 3,
+    "removed": 459,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 5,
+      "bind": 16,
+      "capture": 5,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 713
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 152,
+    "max_aggregate": 1,
+    "removed": 488,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 6,
+      "bind": 0,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 0,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 935
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 166,
+    "max_aggregate": 3,
+    "removed": 459,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 5,
+      "bind": 16,
+      "capture": 5,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 713
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 166,
+    "max_aggregate": 3,
+    "removed": 459,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 5,
+      "bind": 16,
+      "capture": 5,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 713
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 166,
+    "max_aggregate": 3,
+    "removed": 459,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 5,
+      "bind": 16,
+      "capture": 5,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 713
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 186,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74013,
+    "stats": {
+      "basal": 10,
+      "bind": 14,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 4,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 584
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 16,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 438,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 859
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 170,
+    "max_aggregate": 2,
+    "removed": 468,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 9,
+      "bind": 0,
+      "capture": 11,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1061
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 16,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 187,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 859
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 16,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 438,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 859
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 16,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 438,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 9,
+      "bind": 18,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 859
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 6,
+    "removed": 428,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74014,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 14,
+      "catalytic": 2,
+      "damage": 3,
+      "decay": 3,
+      "funded_motion": 13,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 663
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 208,
+    "max_aggregate": 4,
+    "removed": 416,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 15,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 20,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 809
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 178,
+    "max_aggregate": 2,
+    "removed": 460,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [
+          6
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 12,
+      "bind": 0,
+      "capture": 13,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 9,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1022
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 208,
+    "max_aggregate": 4,
+    "removed": 416,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 15,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 20,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 809
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 200,
+    "max_aggregate": 4,
+    "removed": 423,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 14,
+      "bind": 16,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 15,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 780
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 208,
+    "max_aggregate": 4,
+    "removed": 416,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 15,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 20,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 809
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 213,
+    "max_aggregate": 4,
+    "removed": 412,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74015,
+    "stats": {
+      "basal": 15,
+      "bind": 17,
+      "capture": 16,
+      "catalytic": 1,
+      "damage": 5,
+      "decay": 0,
+      "funded_motion": 17,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 618
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 174,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 779
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 160,
+    "max_aggregate": 2,
+    "removed": 480,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 8,
+      "bind": 0,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 5,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 945
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 174,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 779
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 174,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 779
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 174,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 779
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 11,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 6,
+    "removed": 431,
+    "rounds": [
+      {
+        "damaged": [
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3,
+          5
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74016,
+    "stats": {
+      "basal": 13,
+      "bind": 12,
+      "capture": 14,
+      "catalytic": 1,
+      "damage": 5,
+      "decay": 2,
+      "funded_motion": 12,
+      "manufacture": 7,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 684
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 192,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 16,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 797
+  },
+  {
+    "active": 4,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 2,
+    "removed": 468,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 11,
+      "bind": 0,
+      "capture": 11,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 977
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 192,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 16,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 797
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 192,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 16,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 797
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 192,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 16,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 797
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 191,
+    "max_aggregate": 5,
+    "removed": 432,
+    "rounds": [
+      {
+        "damaged": [
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74017,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 13,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 7,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 566
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 3,
+    "removed": 460,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 6,
+      "bind": 12,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 912
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 2,
+    "removed": 480,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 8,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1124
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 161,
+    "max_aggregate": 3,
+    "removed": 464,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 6,
+      "bind": 12,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 912
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 161,
+    "max_aggregate": 3,
+    "removed": 464,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 6,
+      "bind": 12,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 912
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 3,
+    "removed": 460,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 6,
+      "bind": 12,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 912
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "supplied",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 174,
+    "max_aggregate": 3,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74018,
+    "stats": {
+      "basal": 9,
+      "bind": 12,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 3,
+      "funded_motion": 5,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 799
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 185,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 2,
+      "funded_motion": 11,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 944
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 152,
+    "max_aggregate": 2,
+    "removed": 488,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 6,
+      "bind": 0,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 5,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1145
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 4,
+    "removed": 446,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 2,
+      "funded_motion": 9,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 944
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 4,
+    "removed": 446,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 2,
+      "funded_motion": 9,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 944
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 185,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 2,
+      "funded_motion": 11,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 944
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 187,
+    "max_aggregate": 3,
+    "removed": 437,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3,
+          5
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74019,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 5,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 3
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 716
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 186,
+    "max_aggregate": 4,
+    "removed": 436,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 10,
+      "bind": 17,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1016
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 164,
+    "max_aggregate": 2,
+    "removed": 476,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 9,
+      "bind": 0,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 7,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 1,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1242
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 187,
+    "max_aggregate": 4,
+    "removed": 432,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 9,
+      "bind": 17,
+      "capture": 11,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1016
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 186,
+    "max_aggregate": 4,
+    "removed": 436,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 10,
+      "bind": 17,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1016
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 186,
+    "max_aggregate": 4,
+    "removed": 436,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 10,
+      "bind": 17,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1016
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 192,
+    "max_aggregate": 4,
+    "removed": 433,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74020,
+    "stats": {
+      "basal": 12,
+      "bind": 13,
+      "capture": 13,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 2,
+      "funded_motion": 12,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 906
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 185,
+    "max_aggregate": 4,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 9,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 732
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 163,
+    "max_aggregate": 2,
+    "removed": 476,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 9,
+      "bind": 0,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 969
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 188,
+    "max_aggregate": 4,
+    "removed": 439,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 11,
+      "catalytic": 2,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 732
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 184,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 9,
+      "bind": 16,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 7,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 732
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 185,
+    "max_aggregate": 4,
+    "removed": 441,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 9,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 732
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 3,
+    "removed": 427,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74021,
+    "stats": {
+      "basal": 13,
+      "bind": 16,
+      "capture": 13,
+      "catalytic": 0,
+      "damage": 4,
+      "decay": 2,
+      "funded_motion": 9,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 643
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 175,
+    "max_aggregate": 4,
+    "removed": 450,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 165,
+    "max_aggregate": 2,
+    "removed": 472,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 9,
+      "bind": 0,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1190
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 175,
+    "max_aggregate": 4,
+    "removed": 450,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 175,
+    "max_aggregate": 4,
+    "removed": 450,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 175,
+    "max_aggregate": 4,
+    "removed": 450,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 937
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 201,
+    "max_aggregate": 4,
+    "removed": 425,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74022,
+    "stats": {
+      "basal": 12,
+      "bind": 15,
+      "capture": 14,
+      "catalytic": 2,
+      "damage": 4,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 613
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 17,
+    "arm": "candidate",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 200,
+    "max_aggregate": 4,
+    "removed": 419,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [
+          10
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 13,
+      "bind": 18,
+      "capture": 14,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 857
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 172,
+    "max_aggregate": 2,
+    "removed": 468,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 11,
+      "bind": 0,
+      "capture": 11,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 3,
+      "funded_motion": 7,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1118
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 17,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 204,
+    "max_aggregate": 4,
+    "removed": 419,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [
+          10
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 12,
+      "bind": 18,
+      "capture": 14,
+      "catalytic": 2,
+      "damage": 2,
+      "decay": 2,
+      "funded_motion": 15,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 1,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 857
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 17,
+    "arm": "inert",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 196,
+    "max_aggregate": 4,
+    "removed": 423,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 13,
+      "bind": 18,
+      "capture": 13,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 857
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 17,
+    "arm": "no-recycle",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 200,
+    "max_aggregate": 4,
+    "removed": 419,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [
+          10
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 13,
+      "bind": 18,
+      "capture": 14,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 17,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 857
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 4,
+    "endpoint": false,
+    "heat": 209,
+    "max_aggregate": 3,
+    "removed": 404,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74023,
+    "stats": {
+      "basal": 17,
+      "bind": 17,
+      "capture": 18,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 2,
+      "funded_motion": 18,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 652
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 6,
+      "bind": 15,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 837
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 152,
+    "max_aggregate": 2,
+    "removed": 488,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 6,
+      "bind": 0,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 3,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 994
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 6,
+      "bind": 15,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 837
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 169,
+    "max_aggregate": 3,
+    "removed": 457,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 6,
+      "bind": 15,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 837
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 171,
+    "max_aggregate": 3,
+    "removed": 454,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 6,
+      "bind": 15,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 12,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 837
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 187,
+    "max_aggregate": 3,
+    "removed": 435,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74024,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 11,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 10,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 704
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 12,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 169,
+    "max_aggregate": 3,
+    "removed": 457,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 6,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 927
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 153,
+    "max_aggregate": 2,
+    "removed": 484,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1026
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 170,
+    "max_aggregate": 3,
+    "removed": 457,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 6,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 927
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 12,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 166,
+    "max_aggregate": 3,
+    "removed": 461,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 6,
+      "bind": 13,
+      "capture": 6,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 4,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 927
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 12,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 168,
+    "max_aggregate": 3,
+    "removed": 457,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 6,
+      "bind": 13,
+      "capture": 7,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 927
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 178,
+    "max_aggregate": 4,
+    "removed": 444,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74025,
+    "stats": {
+      "basal": 10,
+      "bind": 14,
+      "capture": 10,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 2,
+      "funded_motion": 4,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 576
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 156,
+    "max_aggregate": 2,
+    "removed": 471,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 3,
+      "bind": 14,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 903
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 140,
+    "max_aggregate": 2,
+    "removed": 500,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 3,
+      "bind": 0,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 2,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1000
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 156,
+    "max_aggregate": 2,
+    "removed": 471,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 3,
+      "bind": 14,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 903
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 156,
+    "max_aggregate": 2,
+    "removed": 471,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 3,
+      "bind": 14,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 903
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 13,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 156,
+    "max_aggregate": 2,
+    "removed": 471,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 3,
+      "bind": 14,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 903
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 181,
+    "max_aggregate": 4,
+    "removed": 444,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74026,
+    "stats": {
+      "basal": 8,
+      "bind": 17,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 6,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 669
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 4,
+    "removed": 465,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 3,
+      "bind": 17,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 0,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 933
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 160,
+    "max_aggregate": 2,
+    "removed": 480,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [
+          1
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 3,
+      "bind": 0,
+      "capture": 8,
+      "catalytic": 5,
+      "damage": 2,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1129
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 4,
+    "removed": 465,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 3,
+      "bind": 17,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 0,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 933
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 159,
+    "max_aggregate": 4,
+    "removed": 465,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 3,
+      "bind": 17,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 0,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 933
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 16,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 162,
+    "max_aggregate": 4,
+    "removed": 462,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 3,
+      "bind": 18,
+      "capture": 3,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 2,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 933
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 189,
+    "max_aggregate": 4,
+    "removed": 434,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74027,
+    "stats": {
+      "basal": 10,
+      "bind": 16,
+      "capture": 11,
+      "catalytic": 1,
+      "damage": 4,
+      "decay": 1,
+      "funded_motion": 7,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 770
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 4,
+    "removed": 420,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 11,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 966
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 2,
+    "removed": 464,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 12,
+      "bind": 0,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 1,
+      "funded_motion": 11,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1166
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 4,
+    "removed": 420,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 11,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 966
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 4,
+    "removed": 420,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 11,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 966
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 3,
+    "endpoint": false,
+    "heat": 195,
+    "max_aggregate": 4,
+    "removed": 420,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 14,
+      "bind": 17,
+      "capture": 14,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 11,
+      "manufacture": 1,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 966
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 12,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 198,
+    "max_aggregate": 3,
+    "removed": 430,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74028,
+    "stats": {
+      "basal": 12,
+      "bind": 14,
+      "capture": 13,
+      "catalytic": 1,
+      "damage": 3,
+      "decay": 3,
+      "funded_motion": 9,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 790
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 5,
+    "removed": 451,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 965
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 153,
+    "max_aggregate": 1,
+    "removed": 484,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 0,
+      "funded_motion": 6,
+      "manufacture": 0,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1189
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "shuffled",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 178,
+    "max_aggregate": 5,
+    "removed": 443,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 9,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 10,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 965
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 5,
+    "removed": 451,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 965
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 173,
+    "max_aggregate": 5,
+    "removed": 451,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 7,
+      "bind": 16,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 9,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 965
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 202,
+    "max_aggregate": 6,
+    "removed": 415,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74029,
+    "stats": {
+      "basal": 13,
+      "bind": 16,
+      "capture": 16,
+      "catalytic": 3,
+      "damage": 3,
+      "decay": 1,
+      "funded_motion": 15,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 714
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "candidate",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 182,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 9,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 13,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 876
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 152,
+    "max_aggregate": 2,
+    "removed": 484,
+    "rounds": [
+      {
+        "damaged": [
+          0
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 7,
+      "bind": 0,
+      "capture": 7,
+      "catalytic": 0,
+      "damage": 2,
+      "decay": 0,
+      "funded_motion": 3,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 982
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "shuffled",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 177,
+    "max_aggregate": 4,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 876
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 14,
+    "arm": "inert",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 177,
+    "max_aggregate": 4,
+    "removed": 448,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 9,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 1,
+      "funded_motion": 8,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 876
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 15,
+    "arm": "no-recycle",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 182,
+    "max_aggregate": 4,
+    "removed": 442,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 9,
+      "bind": 15,
+      "capture": 10,
+      "catalytic": 1,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 13,
+      "manufacture": 2,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 876
+  },
+  {
+    "active": 2,
+    "adhesive_edges": 14,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 191,
+    "max_aggregate": 4,
+    "removed": 433,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74030,
+    "stats": {
+      "basal": 11,
+      "bind": 15,
+      "capture": 12,
+      "catalytic": 1,
+      "damage": 2,
+      "decay": 3,
+      "funded_motion": 8,
+      "manufacture": 7,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 714
+  },
+  {
+    "active": 4,
+    "adhesive_edges": 13,
+    "arm": "candidate",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 170,
+    "max_aggregate": 6,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [
+          5
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 7,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 938
+  },
+  {
+    "active": 1,
+    "adhesive_edges": 0,
+    "arm": "no-bond",
+    "charged_remaining": 1,
+    "endpoint": false,
+    "heat": 172,
+    "max_aggregate": 2,
+    "removed": 464,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 12,
+      "bind": 0,
+      "capture": 12,
+      "catalytic": 0,
+      "damage": 0,
+      "decay": 2,
+      "funded_motion": 11,
+      "manufacture": 3,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 0
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 1162
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 13,
+    "arm": "shuffled",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 167,
+    "max_aggregate": 4,
+    "removed": 451,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 8,
+      "bind": 14,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 938
+  },
+  {
+    "active": 3,
+    "adhesive_edges": 13,
+    "arm": "inert",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 167,
+    "max_aggregate": 4,
+    "removed": 451,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 8,
+      "bind": 14,
+      "capture": 8,
+      "catalytic": 0,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 4,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 938
+  },
+  {
+    "active": 4,
+    "adhesive_edges": 13,
+    "arm": "no-recycle",
+    "charged_remaining": 2,
+    "endpoint": false,
+    "heat": 170,
+    "max_aggregate": 6,
+    "removed": 447,
+    "rounds": [
+      {
+        "damaged": [],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1
+        ],
+        "deadline": 3072,
+        "lost": [
+          5
+        ],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 7,
+      "bind": 14,
+      "capture": 9,
+      "catalytic": 2,
+      "damage": 1,
+      "decay": 0,
+      "funded_motion": 4,
+      "manufacture": 5,
+      "post_withdrawal_manufacture": 1,
+      "post_withdrawal_recycle": 0,
+      "recycle": 0,
+      "thermal_motion": 128,
+      "unbind": 1
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 938
+  },
+  {
+    "active": 0,
+    "adhesive_edges": 15,
+    "arm": "supplied",
+    "charged_remaining": 0,
+    "endpoint": false,
+    "heat": 217,
+    "max_aggregate": 4,
+    "removed": 408,
+    "rounds": [
+      {
+        "damaged": [
+          0,
+          2,
+          4
+        ],
+        "deadline": 2048,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 1024
+      },
+      {
+        "damaged": [
+          1,
+          3
+        ],
+        "deadline": 3072,
+        "lost": [],
+        "qualified": false,
+        "rebuilt": [],
+        "step": 2048
+      }
+    ],
+    "seed": 74031,
+    "stats": {
+      "basal": 15,
+      "bind": 17,
+      "capture": 17,
+      "catalytic": 2,
+      "damage": 5,
+      "decay": 1,
+      "funded_motion": 18,
+      "manufacture": 6,
+      "post_withdrawal_manufacture": 0,
+      "post_withdrawal_recycle": 0,
+      "recycle": 1,
+      "thermal_motion": 128,
+      "unbind": 2
+    },
+    "thermal": 0,
+    "zero_photons": 3072,
+    "zero_thermal": 753
+  }
+]
