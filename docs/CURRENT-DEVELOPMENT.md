@@ -14,6 +14,10 @@ retained179..215 fuel, so no post-depletion maintenance claim. Ten Windows check
 shared and214 C: files unchanged. [Decision/receipt](KINETIC-01-RECEIPT.md).
 Stop this law under its registered horizon; no favorable parameter/seed/founder
 tuning. Budget feasibility was necessary preparation, not realized organization.
+Post-hoc recorded-history diagnosis: candidate37 previously catalytic type/world
+pairs,three last-copy cleavage losses,zero catalytic reconstruction; well-mixed
+108/19/0. Descriptive only, no new worlds or revised primary decision. The next
+substrate must test productive rebuilding after actual loss, not just faster bonds.
 
 **Next major science step:** discriminate a genuinely different gradient-coupled,
 reversible-binding substrate with complete formation/activation/release costs and

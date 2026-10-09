@@ -46,6 +46,20 @@ Candidate catalysis exposure30/32 and well-mixed32/32 rule out a blanket claim
 that no catalytic reactions were available. They do not establish adequate
 exposure to the full loss/reconstruction lifecycle in every world.
 
+**Exploratory post-hoc exposure diagnosis, not a changed endpoint:** replaying
+the same192 recorded tapes through the frozen interpreter's lifecycle tracker
+counts candidate433 naturally formed type/world pairs,37 previously catalytic,
+three losing their last active copy through cleavage, and zero catalyst-assisted
+reconstructions. Well-mixed596/108/19/0 respectively. These are summed type/world
+opportunities, not independent organisms or extra samples. All arms and seeds,
+including supplied/inactive cases, are in the [descriptive stage counts](../data/kinetic01/exploratory-exposure.json).
+The discriminator failed at catalyst-mediated reconstruction after documented
+loss, not merely at initial association. Counts do not explain causation or
+establish impossibility. No new worlds, altered law, horizon or success test.
+Original1,051 evidence files unchanged; private first cwd/import packaging failure
+and successful read-only diagnostic preserved. Diagnostic archive SHA256
+`bd159e35c7e3192e66c0de82f018dc540134f69a480c0a1d4ab7cfae4983d7e3`.
+
 No world exhausted all charged fuel during its registered horizon. Candidate
 final charged249..256 and photons212..338; regeneration-off charged110..168 with
 all512 inaccessible photons retained. Withdrawal exports346..436 remaining photon

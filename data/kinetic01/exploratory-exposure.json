@@ -1,0 +1,1780 @@
+{
+  "exploratory_post_hoc": true,
+  "new_worlds": 0,
+  "changes_registered_decision": false,
+  "method": "Counts of frozen interpreter lifecycle stages within registered4096..8191 window. No conditioning or selected seeds.",
+  "rows": [
+    {
+      "seed": 43000,
+      "arm": "candidate",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43000,
+      "arm": "inert",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43000,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43000,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43000,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43000,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "candidate",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "inert",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43001,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "inert",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43002,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "candidate",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "inert",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 20,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43003,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "candidate",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "inert",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 20,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43004,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "candidate",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "inert",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 22,
+      "previously_catalyzed_types": 7,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43005,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "candidate",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "inert",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 25,
+      "previously_catalyzed_types": 5,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43006,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 5,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "candidate",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "inert",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 20,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43007,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "candidate",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "inert",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43008,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "candidate",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "inert",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43009,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "candidate",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "inert",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 21,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43010,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 6,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "candidate",
+      "formed_unassisted_types": 21,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "inert",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 24,
+      "previously_catalyzed_types": 9,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 21,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 21,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43011,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 6,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "candidate",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "inert",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 20,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43012,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "candidate",
+      "formed_unassisted_types": 18,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "inert",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 19,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 2,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 18,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43013,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "inert",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43014,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "candidate",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "inert",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43015,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 6,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "candidate",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "inert",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 18,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43016,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "candidate",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "inert",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43017,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 6,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "candidate",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "inert",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43018,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "candidate",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "inert",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 24,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43019,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "candidate",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "inert",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43020,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 6,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "candidate",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "inert",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43021,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "inert",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 16,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43022,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "candidate",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "inert",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 19,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 2,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43023,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "candidate",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "inert",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43024,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 5,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "candidate",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "inert",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 21,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 11,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43025,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "inert",
+      "formed_unassisted_types": 18,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 22,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43026,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 5,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "inert",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 18,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43027,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "candidate",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "inert",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 22,
+      "previously_catalyzed_types": 5,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 13,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43028,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 7,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "candidate",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "inert",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 20,
+      "previously_catalyzed_types": 6,
+      "last_copy_cleaved_types": 2,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 2,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43029,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 9,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "candidate",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "inert",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 23,
+      "previously_catalyzed_types": 4,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 15,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 17,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43030,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 12,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "candidate",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "inert",
+      "formed_unassisted_types": 10,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "well-mixed",
+      "formed_unassisted_types": 14,
+      "previously_catalyzed_types": 3,
+      "last_copy_cleaved_types": 1,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "regeneration-off",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "withdrawal",
+      "formed_unassisted_types": 8,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    {
+      "seed": 43031,
+      "arm": "supplied-dimers",
+      "formed_unassisted_types": 4,
+      "previously_catalyzed_types": 1,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    }
+  ],
+  "totals": {
+    "candidate": {
+      "formed_unassisted_types": 433,
+      "previously_catalyzed_types": 37,
+      "last_copy_cleaved_types": 3,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    "inert": {
+      "formed_unassisted_types": 393,
+      "previously_catalyzed_types": 0,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    "well-mixed": {
+      "formed_unassisted_types": 596,
+      "previously_catalyzed_types": 108,
+      "last_copy_cleaved_types": 19,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    "regeneration-off": {
+      "formed_unassisted_types": 423,
+      "previously_catalyzed_types": 34,
+      "last_copy_cleaved_types": 3,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    "withdrawal": {
+      "formed_unassisted_types": 430,
+      "previously_catalyzed_types": 36,
+      "last_copy_cleaved_types": 3,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    },
+    "supplied-dimers": {
+      "formed_unassisted_types": 245,
+      "previously_catalyzed_types": 12,
+      "last_copy_cleaved_types": 0,
+      "catalytically_reconstructed_types": 0,
+      "complete_types": 0
+    }
+  }
+}
