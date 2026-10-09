@@ -18,6 +18,10 @@ obtains the native birth time from the suspended child's PID, validates the expe
 capability SID and zero capabilities, writes its explicit launch binding before
 resume, and later confirms the live PID has that birth time. Binding files are
 operator-owned external evidence, not claimed authenticated against a hostile host.
+Hardened launch storage is a separate parent-only folder outside the writable
+workspace. Before simulation starts, every child attempts to overwrite its own
+binding; this must produce native PermissionError/winerror5 and leave the parent
+record byte-identical. No live consumer may promote a child-writable binding.
 
 Scheduling-only child wrapper holds at committed ticks1,2,5 while the parent reads;
 the continuation holds at ticks5,6,7 so its new launch must prove fresh advancement.

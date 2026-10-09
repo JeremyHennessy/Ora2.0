@@ -13,7 +13,7 @@ def require(value,reason):
 def audit(folder,source,revision):
     folder,source=Path(folder),Path(source);data=json.loads((folder/'evidence.json').read_bytes())
     require(data['schema']=='launch01-v1' and data['revision']==revision,'Exact panel source')
-    expected_sources=set((*replay.FILES,'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md','experiments/__init__.py','experiments/world_telemetry.py','experiments/launch_telemetry.py','experiments/launch_telemetry_worker.py','experiments/launch_telemetry_audit.py','docs/LAUNCH-01-CONTRACT.md'))
+    expected_sources=set((*replay.FILES,'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md','experiments/__init__.py','experiments/world_telemetry.py','experiments/launch_telemetry.py','experiments/launch_telemetry_worker.py','experiments/launch_telemetry_audit.py','docs/LAUNCH-01-CONTRACT.md','docs/LAUNCH-01-STORAGE-ERRATUM.md'))
     require(set(data['source_sha256'])==expected_sources and data['source_sha256']=={p:hashlib.sha256((source/p).read_bytes()).hexdigest() for p in expected_sources},'Pinned full launcher/law/contract')
     require(data['runtime_sha256']=={p.relative_to(folder/'runtime').as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in (folder/'runtime').rglob('*') if p.is_file()},'Copied runtime unchanged')
     require(len(data['rows'])==6 and [(r['trial'],r['case']) for r in data['rows']]==[(t,k) for t in range(2) for k in ('reference','resource','resume')],'All six launches')
@@ -25,6 +25,8 @@ def audit(folder,source,revision):
         require(row['token']==dict(is_appcontainer=True,capabilities=0,package_sid=row['package_sid']),'Zero-capability token')
         for limits in (row['job_before'],row['job_after']):require(limits['configured_memory_bytes']==128*1024**2 and limits['configured_processes']==1 and limits['configured_cpu_ticks']==50000000 and limits['flags'] & (0x4|0x8|0x200|0x2000)==(0x4|0x8|0x200|0x2000),'Actual resource caps')
         launch=folder/f"{row['trial']}-{row['case']}-launch";require(json.loads((launch/'launch-binding.json').read_bytes())==binding,'Recorded operator birth binding')
+        protected=folder/'operator-bindings'/f"{row['package_sid']}.json";require(row['binding_before_sha256']==row['binding_after_sha256']==hashlib.sha256(protected.read_bytes()).hexdigest() and json.loads(protected.read_bytes())==binding,'Protected operator binding unchanged')
+        probe=json.loads((launch/'binding-probe.json').read_bytes());require(probe['denied'] and probe['error']=='PermissionError' and probe['winerror']==5 and probe['path']==row['binding_path'],'Native child binding overwrite refused')
         origins=json.loads((launch/'origins.json').read_bytes());runtime=str((folder/'runtime').resolve()).lower()
         # Root paths may relocate during backup restoration; validate original origin suffixes.
         original_runtime=Path(origins['executable']).parent

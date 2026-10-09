@@ -17,7 +17,7 @@ from experiments import world_telemetry as telemetry
 from experiments.process_limits import Job,checked,process_exited
 
 ROOT=Path(__file__).resolve().parents[1]
-FILES=tuple(dict.fromkeys((*gate.FILES,*replay.FILES,'experiments/__init__.py','experiments/world_telemetry.py','experiments/launch_telemetry.py','experiments/launch_telemetry_worker.py','experiments/launch_telemetry_audit.py','docs/LAUNCH-01-CONTRACT.md')))
+FILES=tuple(dict.fromkeys((*gate.FILES,*replay.FILES,'experiments/__init__.py','experiments/world_telemetry.py','experiments/launch_telemetry.py','experiments/launch_telemetry_worker.py','experiments/launch_telemetry_audit.py','docs/LAUNCH-01-CONTRACT.md','docs/LAUNCH-01-STORAGE-ERRATUM.md')))
 
 
 def identity(world_id,revision):
@@ -41,7 +41,8 @@ def native(runtime,workspace,sid,sid_string,expected):
         probe=telemetry.process_sample(process.pid)
         if not probe.get('verified') or not probe.get('alive'):raise RuntimeError('Suspended native birth unavailable')
         binding=dict(pid=process.pid,birth_filetime=probe['birth_filetime'],**{k:expected[k] for k in ('world_id','run_id','source_revision')});row['binding']=binding
-        gate.save(workspace/'launch-binding.json',binding)
+        binding_path=workspace.parent/'operator-bindings'/f'{sid_string}.json'
+        gate.save(binding_path,binding);row['binding_path']=str(binding_path);row['binding_before_sha256']=gate.sha(binding_path)
         job=Job(SimpleNamespace(memory_bytes=128*1024**2,cpu_seconds=5,processes=1));job.assign(SimpleNamespace(_handle=process.process));row['job_before']=job.usage()
         if kernel.ResumeThread(process.thread)!=1:raise RuntimeError('Suspended resume failed')
         row['resumed']=True;previous=None;handled=set();request=json.loads((workspace/'request.json').read_bytes());ticks=(5,6,7) if request['resume'] else (1,2,5)
@@ -66,7 +67,7 @@ def native(runtime,workspace,sid,sid_string,expected):
                 row['expiry_wait_seconds']=time.monotonic()-wait;previous=sample('expired-alive',current)
             gate.save(workspace/'release.pending',dict(tick=tick));(workspace/'release.pending').replace(workspace/'release.json')
         code=w.DWORD();checked(kernel.GetExitCodeProcess(process.process,c.byref(code)));row['exit_code']=code.value
-        sample('stopped',previous);row['job_after']=job.usage();row['handled_ticks']=sorted(handled)
+        sample('stopped',previous);row['job_after']=job.usage();row['handled_ticks']=sorted(handled);row['binding_after_sha256']=gate.sha(binding_path)
     except (OSError,RuntimeError,ValueError,KeyError,TypeError) as error:row['error']=str(error)
     finally:
         if process.process and kernel.WaitForSingleObject(process.process,0)==258:gate.terminate_and_wait(kernel,process.process)
@@ -90,6 +91,8 @@ def panel(output,revision):
         path=runtime/name;path.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,path)
     shutil.copy2(ROOT/'experiments/launch_telemetry_worker.py',runtime/'worker.py');data['runtime_sha256']={p.relative_to(runtime).as_posix():gate.sha(p) for p in runtime.rglob('*') if p.is_file()}
     account=subprocess.run(['whoami'],check=True,capture_output=True,text=True,timeout=10).stdout.strip()
+    binding_folder=output/'operator-bindings';binding_folder.mkdir()
+    gate.command_log(data['acl'],['icacls',str(binding_folder),'/inheritance:r','/grant:r',f'{account}:(OI)(CI)F','*S-1-5-18:(OI)(CI)F','*S-1-5-32-544:(OI)(CI)F'])
     try:
         for trial in range(2):
             expected=identity(f'launch01-trial-{trial}',revision)
@@ -108,11 +111,12 @@ def panel(output,revision):
                     if case=='resume':shutil.copy2(path/'world/frames.jsonl',path/'before-resume.jsonl')
                     for name in ('hold.json','release.json'):
                         if (path/name).exists():(path/name).unlink()
-                    gate.save(path/'request.json',dict(world_id=expected['world_id'],revision=revision,resume=case=='resume',resource=case=='resource'))
+                    gate.save(path/'request.json',dict(world_id=expected['world_id'],revision=revision,resume=case=='resume',resource=case=='resource',binding_path=str(binding_folder/f'{profile_row["sid"]}.json')))
                     row=native(runtime,path,sid,profile_row['sid'],expected);row.update(trial=trial,case=case,workspace=path.name,package_sid=profile_row['sid'])
                     # Preserve per-launch operator evidence before the next launch overwrites scheduling files.
                     evidence=output/f'{trial}-{case}-launch';evidence.mkdir()
-                    for name in ('launch-binding.json','origins.json','resource-result.json','rejection.json','request.json','hold.json','release.json'):
+                    shutil.copy2(binding_folder/f'{profile_row["sid"]}.json',evidence/'launch-binding.json')
+                    for name in ('binding-probe.json','origins.json','resource-result.json','rejection.json','request.json','hold.json','release.json'):
                         if (path/name).exists():shutil.copy2(path/name,evidence/name)
                     data['rows'].append(row);gate.save(output/'evidence.json',data)
                     if 'error' in row or row.get('exit_code')!=(86 if case=='resource' else 0):raise RuntimeError('Native launch failed; preserve')

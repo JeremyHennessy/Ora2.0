@@ -11,7 +11,12 @@ def write(path,value):path.write_text(json.dumps(value)+'\n',encoding='utf-8')
 
 def main(workspace):
     workspace=Path(workspace);request=json.loads((workspace/'request.json').read_bytes())
-    if set(request)!={'world_id','revision','resume','resource'} or type(request['resume']) is not bool or type(request['resource']) is not bool:raise ValueError('Fixed finite request')
+    if set(request)!={'world_id','revision','resume','resource','binding_path'} or type(request['resume']) is not bool or type(request['resource']) is not bool:raise ValueError('Fixed finite request')
+    binding=Path(request['binding_path']).resolve()
+    if binding.parent!=workspace.resolve().parent/'operator-bindings':raise ValueError('Fixed parent-only fixture binding')
+    try:binding.write_text('forged-child-binding',encoding='utf-8')
+    except PermissionError as error:write(workspace/'binding-probe.json',dict(denied=True,error='PermissionError',winerror=error.winerror,path=str(binding)))
+    else:write(workspace/'binding-probe.json',dict(denied=False,path=str(binding)));raise RuntimeError('Child can overwrite launch authority')
     ticks=(5,6,7) if request['resume'] else (1,2,5);original=world.next_state
     def advance(old):
         tick=old['simulation_tick']
