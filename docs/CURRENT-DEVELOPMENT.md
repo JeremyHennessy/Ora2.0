@@ -4,6 +4,29 @@
 
 ## Latest checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
+**RESTORE-01 completed:** frozen4d67e47a; accepted e806a026. The independent C:
+backup rebuilt complete child Python/runtime/source and trusted tick7 worlds in
+fresh D: folders. Eight attempts / two exact cold application restorations under
+new SIDs / six fail-closed controls; all33 states/32 events and raw prefixes match.
+Independent replay/module provenance, two forgeries,25 Windows passes/two skips,
+historical shared files and202 previous C: files unchanged. Setup/tool-sandbox and
+private packaging failures preserved. [Receipt](RESTORE-01-RECEIPT.md).
+Full-host restoration and physical durability are still open; no persistent pilot
+activated. Finish current handoff, then concentrate on the registered KINETIC-01
+192-world panel instead of repeating completed engineering checks.
+
+**Current execution order:** complete KINETIC-01 dynamics and its independent
+interpreter; prospectively freeze draw-layout clarifications and exact code before
+unscreened execution. One decision report must include the primary endpoint,
+registered paired statistics, all six controls, depletion and every failure. Stop
+the candidate if negative under this law; independently reproduce any positive
+result before extending claims. Separately design useful experience-dependent
+behavior under unseen environmental changes against resource-matched fixed-reactive,
+memory-disabled and shuffled-history controls. This design does not require
+reproduction first and does not authorize a new controller, legacy AgentTest changes
+or an LLM. Prediction accuracy, action quality, within-life adaptation and selection
+remain separate measurements.
+
 User priorities updated: first integrated persistent-world foundations, then a
 genuinely different full-cost scientific mechanism, then validated observer
 readiness without UI redesign. These tracks remain independent.
@@ -49,7 +72,11 @@ or claims active. Forged reported state rejects; private packaging failure retai
 same-source rerun passes. Existing UI/playback preserved; no service or publication.
 Next trusted actual-launcher birth-time binding and observer end-to-end validation,
 including active-display expiry; existing receipts remain recorded. Observer work
-stays paused unless its authorized owning chat resumes.
+has resumed locally in its authorized owning chat: the human selected saved-data
+refresh only and confirmed phone access to the read-only LAN viewer. Three validated
+recordings remain clearly recorded/stopped; no world was launched or receipt PID
+promoted. Owner publication automation remains paused. Preserve that UI/server and
+coordinate actual launcher telemetry later; the present panel does not activate it.
 
 **Latest research intake:** AI-Research a9268623 / Pass 30, including the preceding
 navigation errata; exact resulting main CI passed. Read the complete
@@ -66,6 +93,15 @@ founders to obtain success. Any later descendant/co-transmission experiment need
 its own prospective contract and withdrawal controls. No reviewed mechanism
 installed into production; the verified engineering and current science priorities
 are unchanged by this research-only intake.
+
+**Targeted update:** AI-Research79e27cc3 / Pass31–32 reviewed for the imminent
+withdrawal interpretation. Clonal propagules, phenotype persistence after removal
+of an inducer, and survival during investigator-managed transfers do not establish
+unassisted daughter establishment. This affects KINETIC-01 reporting: finite photon
+withdrawal and reconstructed catalytic components cannot count as reproduction or
+ecological closure. Frozen samples/law unchanged; no new literature mechanism
+installed. [Pass31](https://github.com/JeremyHennessy/AI-Research/blob/79e27cc312e34fe4198746a8dc8887883c9a3603/docs/artificial-life/124-pass31-clonal-propagules-and-selection-withdrawal.md),
+[Pass32](https://github.com/JeremyHennessy/AI-Research/blob/79e27cc312e34fe4198746a8dc8887883c9a3603/docs/artificial-life/125-pass32-trigger-withdrawal-vs-life-cycle-autonomy.md).
 
 ## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
