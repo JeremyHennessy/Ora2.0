@@ -2,6 +2,27 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest engineering checkpoint — STORAGE-01
+
+Contract f26919e, final executed sourcec9a3fb49: verified create-new finite-world
+snapshots and restoration, preserving complete identity/history/PRNG/provenance.
+Two fresh ten-case panels each verified3 direct recoveries,7 unchanged-input
+rejections and10 trusted-snapshot continuations. All13 continuing histories per
+panel matched the complete33-state reference;10 read-only observer checks passed.
+Seven new Windows tests passed;33 earlier heartbeat/resource regressions were
+reused only with byte-identical old-input guards. Initial Windows capture failure
+is preserved. [Receipt](STORAGE-01-RECEIPT.md) distinguishes software corruption
+from physical storage faults and same-drive restoration from independent backup.
+Old laws, interfaces, data, reserved samples and approved observer remain intact.
+
+The user's latest priorities govern: finish any open verification, then advance
+recoverable/observable finite-world foundations and independent startup science.
+Next engineering gates are an independently located backup/restore, explicitly
+registered interrupted-write/fsync/replace faults, and hardened process isolation.
+No persistent pilot or unattended world is authorized by these results. On the
+science track, retain the separate generic-startup accounting question below;
+review unmerged research as provisional intake, not an installed mechanism.
+
 ## Latest science checkpoint — REACTIVATE-01 existing-law renewal
 
 Protocol `cf26e1c`, executed source `22fc9f67`: **1,792 authored cases /8,064
@@ -53,7 +74,8 @@ This closes the tested composition gate; it does not establish power-loss,
 arbitrary partial-write recovery, backup independence, memory-peak bounds or
 hardened isolation.
 
-User priority order now governs both tracks:
+Earlier four-track priorities below remain context; the current ordering and
+completed STORAGE-01 gate are recorded above:
 
 1. **Science — startup first.** Separate REACTIVATE-01 protocol cf26e1c/source
    22fc9f67 completed source-pinned local acceptance and merged through PR34:
