@@ -2,7 +2,7 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — scientific negatives closed; actual-launch telemetry verified
+## Latest checkpoint — finite launch verified; passive trace cost gate completed
 
 **Science:** KINETIC-01 closed negative(192 worlds,zero reconstruction endpoints).
 GRADIENT-01 closed negative(192 worlds,one paid natural renewal candidate world,
@@ -19,13 +19,23 @@ preserved:18 total launches. Six Windows passes/one expected skip; two forgeries
 refused;471 restored files. [Contract/receipt](LAUNCH-01-RECEIPT.md). No active lab
 run remains after its final handoff. This is engineering reliability, not learning.
 
-**Next primary science action:** specify and audit a distinct passive full-cost
-experience-trace substrate and an informative unseen-change useful-action protocol.
-Compare fixed-reactive, memory-disabled and shuffled histories; keep costs and failed
-actors. ADAPTATION-01 remains [design-only](ADAPTATION-01-DESIGN.md), no controller,
-successful policy, reward, LLM or legacy AgentTest change. Reproduction is not a
-prerequisite. Freeze law/exposure/budgets/falsifiers before fresh behavioral samples;
-never promote installed plasticity to a discovered ability.
+**TRACE-01 cost gate:** frozen/executed ca6b24aa after prospective844915e3 contract.
+All24 authored four-arm/six-horizon traces /3,904 requests independently audited,
+25-file exact replay, five checks and three rehashed forgery refusals. Finite refresh
+loses all state at clock241 of the256 horizon;224 horizon exhausts fuel before
+reconstruction. Short traces retain/rebuild paid state with new IDs and provenance.
+All analytical predictions match. [Receipt/full decision](TRACE-01-COST-RECEIPT.md).
+This is installed-component feasibility preparation, not natural useful organization,
+learning, reproduction or behavioral execution. No controller or world activated.
+
+**Next primary science action:** separately freeze generic encounter-to-trace and
+resource-use coupling, complete sensing/delivery/read/write/movement/interaction
+prices, unseen reversal/delay/location challenges and a useful-action endpoint.
+Compare fixed-reactive, memory-disabled, shuffled history and relevant passive-filter
+nulls; retain all failed actors and exposure limits. ADAPTATION-01 remains
+[design-only](ADAPTATION-01-DESIGN.md), no successful policy, reward, LLM or legacy
+AgentTest change. Reproduction is not a prerequisite. Controller activation cannot
+follow design alone; never promote installed plasticity to a discovered ability.
 
 **Runtime gates:** independent cold application restore passed(RESTORE-01); actual
 launcher/finite telemetry composition now passes. Physical power-loss/storage durability,
@@ -35,11 +45,15 @@ disposable, explicit tests; no zero-loss/memory-peak/hostile-escape guarantee. P
 activation still requires separate authorization. The approved saved-data viewer stays
 recorded; its owner controls publication and remains paused. No world/service activated.
 
-**Research:** both repos checked; AI-Research9ed45ff5/Pass34 mainCI37929718329 passed.
+**Research:** both repos rechecked; AI-Research9db4a6b3/Pass35 mainCI37935367403 passed.
+Pass35 and its ledger reviewed: supplied DNA/liposome replication and abiotic
+compartment offspring are distinct achievements, not integrated autonomous closure.
+This changes interpretation of supplied trace rebuilding, not the frozen law.
+[Targeted intake](TRACE-01-COST-RECEIPT.md).
 [Pass33/34 intake](RESEARCH-INTAKE-PASSES33-34.md). Targeted earlier Pass13/14 memory
 counterexamples inform retention cost, fixed-filter/history controls and unseen reversal;
 Pass31 separates propagules/selection withdrawal from autonomous establishment. No
-new literature pass, research code execution or historical research alteration.
+new literature pass performed here, research code execution or historical research alteration.
 
 This compact checkpoint governs next action; detailed historical receipts below
 retain their dates and are not pending tasks. Exact CI, backup proofs and source
