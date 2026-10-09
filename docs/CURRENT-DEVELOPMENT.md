@@ -2,7 +2,59 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science gate — ENERGY-02 precursor coupling
+## Latest science gate — CONTACT-01 contact order and activation loss
+
+Prospective protocol `9044025`, arithmetic-only addendum `0b5bcb2`, executed
+source `8a727eb6`, existing Windows Python 3.12.10: **292 tests passed / 1 platform
+guard skipped**, 293 attempted. [Receipt](CONTACT-01-RECEIPT.md) records the
+complete 12,288-case / 510,976-event authored cross and independent semantic
+accounting. The initial scope-count failure and original source are preserved;
+Exact raw/summary/audit replay and read-only audits passed; 69 historical/shared
+inputs unchanged, 17-file same-D archive restoration passed.
+the unchanged four modes × five binary factors equal 128, not 64, per recipe.
+Zero fresh natural worlds or reserved samples. ENERGY-02 stays immutable.
+
+**Scientific result:** combined paid-failure/mixed-food/loss challenge gives
+0 matching producer-funded functional children / 96 distinct input recipes.
+With stable potential, wholly compatible supplies and paid failed contacts,
+length 4 coupled construction works in 16/70 word cases—all 16 already matching
+orders, none of 54 reordered words. Untemplated construction gives 70 children,
+40 actual captures and 16 functional full-sequence matches. Length 2/3 producer
+cases fail. Mixed food blocks producer construction even with free failures;
+do not attribute that whole effect to paid failed encounters. External mixed
+activation releases 28 functional matches with free failure pricing and 0 with
+paid failure pricing. Loss 1 and founder removal give 0 releases; ghosts 0 captures.
+
+**Interpretation and next science priority:** this is a fragile authored
+construction path, not naturally realized reproduction or functional heredity.
+Recognition/ligation/endowment consume the full 3n precursor potential, with no
+margin in these paths for loss/mismatch; no renewal phase follows activation.
+Original activation can reuse an entirely emptied ready precursor with available
+food/work, but partial top-up and generic founder-free assembly are absent.
+Precommit finite resource-funded renewal/contact scheduling and generic startup
+feasibility, distinguishing existing reactivation from proposed new reactions,
+external energy from supplied organization, and nonspecific from template-assisted
+production. No favorable retuning of CONTACT-01 or fresh neutral panel under a
+law missing startup. New physical mechanisms need separate protocols and controls.
+
+**Next engineering priority:** separately precommit/test resource-triggered
+interruption and continuation of the same finite HEARTBEAT-04 world. Caps and
+checkpoint recovery passed independently; their composition is unverified.
+Off-drive backup/restore, physical power-loss/storage faults, memory-peak
+interpretation and hardened filesystem/network isolation remain open. No
+unattended world or automatic local scientific execution is enabled here.
+
+**Research and observer:** AI-Research main `50bfa5b0`, exact CI `37858186418`,
+unchanged operational update; merged Pass 26 remains scientific intake, Pass 25
+PR5 provisional. Observer chat separately published navigation and simpler
+explanations, including source-pinned ENERGY-02 receipt summaries. Its recording
+remains HEARTBEAT-04; no CONTACT-01/world adapter exists. Publication checks and
+its human-authorized maintenance do not establish current world/process health
+or scientific verification. Preserve that chat's source branch, Pages artifacts,
+data and shared local main `1e00fd4` during science integration. Actual iPhone
+Safari remains unverified. Current priorities here supersede dated sections below.
+
+## Earlier science gate — ENERGY-02 precursor coupling
 
 Prospective protocol 536cc114, executed source 7da1b691, Windows Python 3.12.10:
 **284 tests passed /1 platform guard skipped**,285 attempted. The separate
