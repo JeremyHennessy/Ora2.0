@@ -171,3 +171,22 @@ origin; kinetics untested.16 local checks, every independent graph/witness audit
 3 forgeries refused,423-file off-drive restore reaudits all5376 cases.
 [Receipt](TRANSFER-01-RECEIPT.md). Next CURRENT resource-transformation gate
 supersedes older suggestions; no retuning, observer or persistent activation.
+
+
+## FUEL-01 update — finite chemical coupling; no Stage3 acceptance
+
+3.1 usable resource capture:1149 candidate paid chemical activations,475 extra
+catalyst-caused events; substrate/fuel/waste/heat fully accounted. Installed law.
+3.2 locally funded construction:1107 formations, no external work or founder;
+basal964 and shuffled1122, so no organizational superiority demonstrated.
+3.3 recycling:788 candidate reused-atom formations versus657 basal/809 shuffled.
+3.4 self-maintenance:NOT tested/accepted; coarse opportunity32/32 in every main
+arm saturates, both registeredP=1. No useful-loss confirmation permitted by gate.
+3.5 founder-free organization:raw-material assemblies realized in all main arms;
+useful autonomous organization unproven. No working structures supplied.
+3.6 reconstruction/inheritance:material reuse only;57 starvation-arm formations
+spend stored activation. No functional reconstruction, inherited organization,
+adaptation or reproduction evidence. Chemistry's shuffled rule is a cyclic type
+relabelling (posthoc64-case check), not a broken-network control. A future distinct
+approach must address functional specificity, competing pathways and repeated
+blind useful-loss reconstruction; retain costs/seeds/negative evidence unchanged.

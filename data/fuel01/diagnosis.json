@@ -1,0 +1,10 @@
+{
+  "posthoc": true,
+  "compatibility_truth_table_cases": 64,
+  "cyclic_type_relabelling_equivalent": true,
+  "change_of_variables": "all substrate types minus1 modulo4 maps candidate compatibility to shuffled compatibility",
+  "qualification": "Not identical paired trajectories: atom IDs/type map, object histories and draws retained. No claim that observed laws have different distributions from this chemistry alone.",
+  "opportunity_endpoint_saturated": true,
+  "registered_gate_pass": false,
+  "no_new_panel": true
+}

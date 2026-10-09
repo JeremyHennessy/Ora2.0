@@ -2,7 +2,42 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — whole-system resource transfer advantage ruled out
+## Latest checkpoint — chemical fuel gives opportunities; comparative gate saturated
+
+**Exact source:** FUEL-01 fa41e009a93cbb429400b41574453af8650dfd2a,
+prospectivea76454f protocol.128 founder-free worlds/524288 independently audited
+attempts. Candidate32/32 opportunity, inert32/32, shuffled32/32, starvation23/32.
+Both pairedP=1; registered gate fails. No damage confirmation or reproduction.
+[Receipt](FUEL-01-RECEIPT.md),[decision](../data/fuel01/decision.json).
+
+**What advanced:** mass-bearing chemical fuel drives paid activation, new dimer
+construction and reuse. Candidate1107 formations/788 reused-atom formations/475
+extra catalyst-caused activations; inert964/657 and shuffled1122/809. All120 mass
+tokens and384 energy units conserved every attempt. Installed reactions and
+material reuse are not useful functional reconstruction or self-maintenance.
+Main controls retain fuel;57 formations after starvation spend stored activation.
+
+**Limitations/decision:** opportunity endpoint is saturated in all main arms.
+Posthoc64-entry compatibility audit shows shuffled chemistry is cyclic relabelling,
+not an intrinsically disrupted network. Do not tune this law, thresholds or seeds;
+stop registered candidate gate. Preserve all negative data. Stage3 incomplete.
+
+**Next priority:** prospectively distinct resource transformation with joint
+component dependence and competing waste pathways; finite priced flux/work/
+formation/material/ancestry. Check comparator symmetries and endpoint ceiling
+before registration. Aim at repeated blind loss and useful whole-function
+reconstruction; basal assembly itself must not be mistaken for self-maintenance.
+No new mechanism or damage run is justified by retrospective gate relaxation.
+
+**Verification/activity:**17 focused local checks,4 complete replayed worlds,
+3 forgery rejections,562-file C: restore/all128 restored-source independent audits.
+Prior TRANSFER/history/observer preserved. AI-ResearchPass39 unchanged; Pass40
+branch label is not published research evidence. No active world; publication
+acceptance awaits exact-headCI and reviewed integration. Observer publication
+paused. Physical durability/lost-work/cadence/full-host restore/production isolation
+and separately authorized supervised pilot remain engineering gates.
+
+## Historical checkpoint — whole-system resource transfer advantage ruled out
 
 **Exact source/evidence:** TRANSFER-01 c7b65a37d19a29d1ef55433db1507149e3a2283b,
 prospective9edf684 protocol.5376 complete accounting cases/184872 independently
