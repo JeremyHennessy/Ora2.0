@@ -98,6 +98,17 @@ link. Both productive-use times, transfer routes, payments, losses and IDs requi
 No retained link, relabel, stored genesis charge or external actuator counts.
 This is paid component renewal under installed physics, not organism reproduction.
 
+Prospective measurement convention, before natural execution: track the first
+qualifying formation per pair. If it is lost before productive use, restart that
+pair's tracker on its next formation. After a productive original is lost, retain
+that original and accept the first replacement completing the full endpoint;
+later qualified replacement attempts may supersede incomplete attempts. Stored
+route ancestry counts only at its actual transfer time, never the later payment
+time. A different paid product is required at each productive-use stage. Count
+each spatial pair once. Charge depletion means the first zero after a positive
+stock, not the initially empty state; report this separately from withdrawal and
+remaining photons. All 128 initialization draws precede the complete request tape.
+
 Candidate must have endpoints in>=8/32 worlds and exceed ghost counts with one-sided
 exact paired sign P<=0.05 excluding ties. Report all32 pairs and zero/tied samples.
 Also report total paid natural bonds at non-source sites (payer x>0), conductive
