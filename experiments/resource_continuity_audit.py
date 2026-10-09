@@ -11,7 +11,8 @@ from experiments.process_limits_audit import FILES as RESOURCE_FILES
 CASES = ('cpu', 'cpu-control', 'memory', 'memory-control', 'wall', 'wall-control')
 NORMAL = dict(memory_bytes=512*1024**2, cpu_seconds=15, processes=4, wall_seconds=30)
 FILES = tuple(dict.fromkeys((*heartbeat.FILES, *RESOURCE_FILES,
-              'docs/RESOURCE-02-CONTRACT.md', 'experiments/resource_continuity.py',
+              'docs/RESOURCE-02-CONTRACT.md', 'docs/RESOURCE-02-DIAGNOSTIC-ADDENDUM.md',
+              'experiments/resource_continuity.py',
               'experiments/resource_continuity_audit.py', 'tests/test_resource_continuity.py')))
 
 

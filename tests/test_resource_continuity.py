@@ -42,9 +42,11 @@ class PortableContinuityTests(unittest.TestCase):
         self.assertNotIn('experiments.heartbeat_template', imports)
 
     def test_nonwindows_has_no_execution_fallback(self):
-        with tempfile.TemporaryDirectory() as t, patch.object(driver.os, 'name', 'posix'):
-            with self.assertRaisesRegex(OSError, 'real Windows'):
-                driver.run_panel(Path(t)/'absent', REVISION)
+        with tempfile.TemporaryDirectory() as t:
+            output = Path(t)/'absent'
+            with patch.object(driver.os, 'name', 'posix'):
+                with self.assertRaisesRegex(OSError, 'real Windows'):
+                    driver.run_panel(output, REVISION)
 
 
 @unittest.skipUnless(os.name == 'nt', 'Real Windows caps/recovery composition requires Windows')

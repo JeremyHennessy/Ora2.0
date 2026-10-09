@@ -56,7 +56,8 @@ def pressure_fixture(case, output, revision):
             end = time.process_time() + 1.5
             value = 1
             while time.process_time() < end:
-                value = (value*1664525+1013904223) % 2**32
+                for _ in range(10_000):
+                    value = (value*1664525+1013904223) % 2**32
             print(json.dumps(dict(cpu_pressure_complete=True)), flush=True)
         elif kind == 'memory':
             try:
