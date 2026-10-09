@@ -1,0 +1,557 @@
+{
+  "classification": "UNDEREXPOSED: two-round self-maintenance unresolved",
+  "exposure_adequate": false,
+  "forgeries": [
+    {
+      "exit_code": 2,
+      "fixture": "fixed first seed supplied arm; security only",
+      "kind": "noise",
+      "reason": "Independent event/RNG/state mismatch at 1"
+    },
+    {
+      "exit_code": 2,
+      "fixture": "fixed first seed supplied arm; security only",
+      "kind": "payment",
+      "reason": "Independent final/ancestry mismatch"
+    },
+    {
+      "exit_code": 2,
+      "fixture": "fixed first seed supplied arm; security only",
+      "kind": "ancestry",
+      "reason": "Independent final/ancestry mismatch"
+    }
+  ],
+  "holm_pass": false,
+  "paired": {
+    "inert": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "no-bond": {
+      "inference": "registered primary",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "no-recycle": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "shuffled": {
+      "inference": "registered primary",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    },
+    "supplied": {
+      "inference": "diagnostic only",
+      "losses": 0,
+      "p": 1,
+      "ties": 32,
+      "wins": 0
+    }
+  },
+  "primary_pass": false,
+  "protocol_revision": "579e9cb",
+  "scope": "Installed local-contact chemistry; no Stage3 completion, reproduction, inheritance or intelligence acceptance",
+  "source_revision": "a852333cf976999727a6ef40d0ea3907391d5ce8",
+  "stop": "Stop tested law/horizon without tuning",
+  "totals": {
+    "candidate": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        3
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        2,
+        6
+      ],
+      "removed": [
+        416,
+        471
+      ],
+      "round_exposure": [
+        0,
+        2
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 276,
+        "bind": 489,
+        "capture": 289,
+        "catalytic": 13,
+        "damage": 35,
+        "decay": 19,
+        "funded_motion": 305,
+        "manufacture": 84,
+        "post_withdrawal_manufacture": 4,
+        "post_withdrawal_recycle": 0,
+        "recycle": 4,
+        "thermal_motion": 4096,
+        "unbind": 36
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    },
+    "inert": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        3
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        2,
+        5
+      ],
+      "removed": [
+        420,
+        471
+      ],
+      "round_exposure": [
+        0,
+        0
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 276,
+        "bind": 486,
+        "capture": 276,
+        "catalytic": 0,
+        "damage": 36,
+        "decay": 20,
+        "funded_motion": 274,
+        "manufacture": 85,
+        "post_withdrawal_manufacture": 4,
+        "post_withdrawal_recycle": 0,
+        "recycle": 4,
+        "thermal_motion": 4096,
+        "unbind": 37
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    },
+    "no-bond": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        3
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        1,
+        2
+      ],
+      "removed": [
+        448,
+        500
+      ],
+      "round_exposure": [
+        0,
+        2
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 274,
+        "bind": 0,
+        "capture": 292,
+        "catalytic": 18,
+        "damage": 39,
+        "decay": 17,
+        "funded_motion": 210,
+        "manufacture": 80,
+        "post_withdrawal_manufacture": 3,
+        "post_withdrawal_recycle": 2,
+        "recycle": 4,
+        "thermal_motion": 4096,
+        "unbind": 0
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    },
+    "no-recycle": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        3
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        2,
+        6
+      ],
+      "removed": [
+        416,
+        471
+      ],
+      "round_exposure": [
+        0,
+        2
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 276,
+        "bind": 490,
+        "capture": 289,
+        "catalytic": 13,
+        "damage": 35,
+        "decay": 19,
+        "funded_motion": 310,
+        "manufacture": 85,
+        "post_withdrawal_manufacture": 4,
+        "post_withdrawal_recycle": 0,
+        "recycle": 0,
+        "thermal_motion": 4096,
+        "unbind": 37
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    },
+    "shuffled": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        3
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        2,
+        5
+      ],
+      "removed": [
+        414,
+        471
+      ],
+      "round_exposure": [
+        0,
+        1
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 274,
+        "bind": 489,
+        "capture": 290,
+        "catalytic": 16,
+        "damage": 35,
+        "decay": 21,
+        "funded_motion": 298,
+        "manufacture": 85,
+        "post_withdrawal_manufacture": 4,
+        "post_withdrawal_recycle": 1,
+        "recycle": 4,
+        "thermal_motion": 4096,
+        "unbind": 37
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    },
+    "supplied": {
+      "any_round_qualified": 0,
+      "charged_remaining": [
+        0,
+        4
+      ],
+      "endpoint": 0,
+      "max_aggregate": [
+        3,
+        6
+      ],
+      "removed": [
+        401,
+        448
+      ],
+      "round_exposure": [
+        0,
+        0
+      ],
+      "round_qualified": [
+        0,
+        0
+      ],
+      "round_rebuilt_objects": [
+        0,
+        0
+      ],
+      "round_rebuilt_worlds": [
+        0,
+        0
+      ],
+      "stats": {
+        "basal": 384,
+        "bind": 480,
+        "capture": 428,
+        "catalytic": 44,
+        "damage": 118,
+        "decay": 42,
+        "funded_motion": 378,
+        "manufacture": 169,
+        "post_withdrawal_manufacture": 1,
+        "post_withdrawal_recycle": 0,
+        "recycle": 11,
+        "thermal_motion": 4096,
+        "unbind": 35
+      },
+      "zero_photons": [
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072,
+        3072
+      ]
+    }
+  },
+  "transitions": 786432,
+  "worlds": 192
+}

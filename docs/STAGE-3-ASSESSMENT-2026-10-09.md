@@ -111,3 +111,28 @@ off-drive restore and all192 restored-source audits pass. Final wrapper's
 empty-first-world ancestry-fixture failure preserved; no science rerun.
 Every acceptance gate in the table remains outstanding for autonomous
 self-maintenance. Stage3 is not complete; engineering continuity is separate.
+
+
+## AGGREGATE-01 update — two-round founder-free maintenance remains unproven
+
+Exacta852333 source,192 worlds/786432 independently audited transitions;
+[receipt](AGGREGATE-01-RECEIPT.md).3.1:289 candidate captures/13 causal charges,
+3 paid cross-recipe manufactures (no-bond also3), not an organization advantage.
+3.2:84 unassisted new components and4 paid waste-to-raw recoveries realized;
+passive85/4 and no-bond80/4, so recycling alone is not autonomous maintenance.
+3.3:35 objects damaged, useful loss in0/32 then2/32 worlds,0 qualifying rebuilds/
+uses.3.4:founder-free aggregates2..6 particles realized, no two-round maintenance
+or spontaneous useful organization accepted. The stricter requested maintenance
+test is UNDEREXPOSED, not an adequate-exposure negative.3.5:4 manufactures after
+natural-energy removal, passive also4; stored buffers, not autonomy after
+depletion or withdrawal of human rescue.3.6:no functional reconstruction,
+reproduction, inheritance or adaptation. Authored two-round paid paths in
+candidate/no-bond/shuffled are controlled-only and unreserved, never founders.
+
+Stop this law/horizon. Next register a distinct resource-transformation mechanism
+and disjoint discovery/opportunity gate before another confirmatory maintenance
+panel. Avoid repeated glue/rate/cost/fuel/geometry tuning. CARRIER868 files
+unchanged;23 scoped checks/24-world replay/3 forgery refusals/675-file off-drive
+restore and all192 restored-source interpretations pass. Historical CONTACT
+protocol exact blob restored after a pre-execution draft name collision;
+published history changes no frozen studies. Stage3 remains incomplete.

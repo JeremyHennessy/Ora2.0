@@ -1,0 +1,2503 @@
+{
+  "new_worlds": 0,
+  "post_hoc": true,
+  "scope": "Recorded final histories and causal carrier uses, not a changed endpoint",
+  "worlds": [
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 3,
+        "recycle": 1
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74000
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 5,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74001
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 6,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74002
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 0,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 5,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74003
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74004
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 3,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74005
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74006
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74007
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74008
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 7,
+      "productive_objects": 0,
+      "seed": 74009
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74010
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74011
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74012
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 0,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74013
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74014
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74014
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 1,
+      "seed": 74014
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74014
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 1,
+      "seed": 74014
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74014
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74015
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74015
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 1,
+      "seed": 74015
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74015
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74015
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74015
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 7,
+      "productive_objects": 0,
+      "seed": 74016
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 1
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 7,
+      "productive_objects": 0,
+      "seed": 74017
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74018
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74019
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74020
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74021
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 2,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74022
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 1,
+      "seed": 74023
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74023
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74023
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 1,
+      "seed": 74023
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 1,
+      "seed": 74023
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 4,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74023
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74024
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74025
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74026
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74027
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74027
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 4,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 1,
+      "seed": 74027
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74027
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74027
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 5,
+      "productive_objects": 0,
+      "seed": 74027
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 3,
+      "objects": 1,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74028
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74029
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74029
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 0,
+      "productive_objects": 0,
+      "seed": 74029
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74029
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74029
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 1,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 6,
+      "productive_objects": 1,
+      "seed": 74029
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 2,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 1,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 7,
+      "productive_objects": 0,
+      "seed": 74030
+    },
+    {
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 2,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 5,
+      "productive_objects": 1,
+      "seed": 74031
+    },
+    {
+      "arm": "inert",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74031
+    },
+    {
+      "arm": "no-bond",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 1,
+      "objects": 3,
+      "productive_objects": 0,
+      "seed": 74031
+    },
+    {
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 2,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 5,
+      "productive_objects": 1,
+      "seed": 74031
+    },
+    {
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 0
+      },
+      "finite_charged_carriers_remaining": 2,
+      "objects": 4,
+      "productive_objects": 0,
+      "seed": 74031
+    },
+    {
+      "arm": "supplied",
+      "assisted_objects": 5,
+      "causal_charge_uses": {
+        "cross_manufacture": 0,
+        "funded_motion": 0,
+        "recycle": 1
+      },
+      "finite_charged_carriers_remaining": 0,
+      "objects": 6,
+      "productive_objects": 0,
+      "seed": 74031
+    }
+  ]
+}
