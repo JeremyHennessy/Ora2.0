@@ -169,3 +169,26 @@ they are not autonomous-origin, daughter-transmission or adaptive-organizational
 results. The panel has no release action and consumes no natural/reserved sample.
 Next new startup physics is a separately tested candidate, not a consequence
 established by literature synthesis. Frozen ENERGY-02/CONTACT-01 are unchanged.
+# Provisional Pass29 branch intake after STORAGE-01
+
+AI-Research main was rechecked at bfbd53c7, with successful main CI; no new main
+publication or open PR was found. The passing-CI Pass29 branch at bf3a9bdc was
+read prospectively (primary-review text and evidence ledger). It is research-only,
+unmerged, contains no scientific experiments/independent reproductions and does
+not authorize installing EERC or a new Ora mechanism.
+
+The 2005 aphid paper's publisher main text was independently inspected here:
+transmission after researcher introduction and host fitness are separate outcomes;
+some transmitted infections reduced growth. Nested descendant generations are
+not independent origins. [Primary source](https://journals.asm.org/doi/full/10.1128/aem.71.12.7987-7994.2005).
+The branch reports a 2021 host-adaptation experiment with recurring external
+microbial supply; publisher/PMC retrieval was unavailable in this review, so its
+detailed outcomes remain attributed to that branch review, not independently
+reproduced or regraded here. The 2013 comparator retains its reported E1 boundary.
+
+Prospective implication: independently test benefit, transmission, reproductive
+packaging and persistence after withdrawing partner/food/work assistance. Current
+Ora supplied-founder reactivation and engineering snapshot continuity do not
+establish those scientific properties. Preserve founder failures and all current
+negative baselines; freeze any new startup candidate before execution. No past
+study, source grade, research dataset, legacy code or physical law changed.
