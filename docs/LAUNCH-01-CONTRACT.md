@@ -5,7 +5,7 @@ unchanged. Existing TELEMETRY-01 tests use an in-writer hook; this panel has a
 separate observer/launcher and a real capability-confined child. No service, UI
 publication, controller, persistent pilot or unattended world.
 
-Two fixed trial blocks, each with a32-tick ordinary finite template-world
+Two fixed trial blocks, each with a32-tick uninterrupted finite template-world
 reference, a confined resource-interrupted world and its confined continuation.
 Engineering seed1/work2 only. All world physics files unchanged. Each real launch
 gets a fresh AppContainer SID, zero capabilities, new PID/native creation FILETIME,
@@ -19,7 +19,8 @@ capability SID and zero capabilities, writes its explicit launch binding before
 resume, and later confirms the live PID has that birth time. Binding files are
 operator-owned external evidence, not claimed authenticated against a hostile host.
 
-Scheduling-only child wrapper holds at committed ticks1,2,5 while the parent reads.
+Scheduling-only child wrapper holds at committed ticks1,2,5 while the parent reads;
+the continuation holds at ticks5,6,7 so its new launch must prove fresh advancement.
 Hold/release records lie outside the authoritative world. Each hold is bounded;
 it does not change the physical state, random draws or simulation law. At tick1,
 the first sample must await advancement. At tick2, a fresh sample versus tick1
@@ -32,7 +33,8 @@ Read-only samples must leave every authoritative byte unchanged during stable ho
 
 At tick5, the resource-interrupted child requests256MiB under128MiB aggregate
 allowance; allocation must refuse/terminate, with process exit and actual cap
-evidence preserved. No memory-peak bound is inferred. The stopped process must
+evidence preserved. A caught MemoryError is recorded and exits86; unexpected
+allocation success fails the panel. No memory-peak bound is inferred. The stopped process must
 report inactive despite the last running heartbeat. Resume in the SAME folder
 under a different launch birth/SID must restore exact identity, ancestry, resources,
 all33 simulation states/32 events, full PRNG/noise cursor and original raw prefix.
