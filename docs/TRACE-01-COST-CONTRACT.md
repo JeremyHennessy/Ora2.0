@@ -59,7 +59,9 @@ required. Analytical predictions before execution: fuel demand without unafforda
 requests is56+horizon; candidate final potential8 at horizons<=128, ghost/fixed0,
 shuffled8. Candidate loses state at the first unpaid refresh step after240 paid
 clocks when horizon256; subsequent reads must be null, never fabricated successes.
-At224, no powered reconstruction remains after32 reads. These negatives matter.
+At224, no powered reconstruction remains after32 read requests (only the first16
+can be powered). These negatives matter. These are installed, abstract priced
+state reactions, not a validated molecular chemistry or autonomous origin model.
 
 ## Stop and behavior gates
 
