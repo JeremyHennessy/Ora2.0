@@ -1,0 +1,85 @@
+{
+  "decision": {
+    "classification": "FAILED OPPORTUNITY GATE: stop exact law/horizon",
+    "gate_pass": false,
+    "limitations": [
+      "Inert and constitutive cannot meet catalyst-provenance opportunity by definition; their zero endpoints are not evidence of comparative superiority.",
+      "Shuffled is endpoint-capable and candidate has no advantage; candidate8 below precommitted16.",
+      "Well-mixed encounter selection supplies idealized mixing; no verified transport or autonomous origin.",
+      "Post-withdrawal production consumes activation stored before fuel removal; no external-assistance withdrawal or self-maintenance claim."
+    ],
+    "maintenance_demonstrated": false,
+    "opportunity_counts": {
+      "candidate": 8,
+      "constitutive": 0,
+      "inert": 0,
+      "shuffled": 8
+    },
+    "paired": [
+      {
+        "losses": 0,
+        "null": "inert",
+        "p": 0.00390625,
+        "wins": 8
+      },
+      {
+        "losses": 4,
+        "null": "shuffled",
+        "p": 0.63671875,
+        "wins": 4
+      }
+    ],
+    "source_revision": "ced7158552bee53bc840fceed08d2afac02cf77d",
+    "totals": {
+      "candidate": {
+        "activation": 635,
+        "basal": 387,
+        "catalytic": 248,
+        "cleavage": 248,
+        "cross": 231,
+        "ligation": 635,
+        "post_withdrawal": 18,
+        "reused": 142
+      },
+      "constitutive": {
+        "activation": 1006,
+        "basal": 1006,
+        "catalytic": 0,
+        "cleavage": 470,
+        "cross": 0,
+        "ligation": 1006,
+        "post_withdrawal": 22,
+        "reused": 369
+      },
+      "inert": {
+        "activation": 435,
+        "basal": 435,
+        "catalytic": 0,
+        "cleavage": 177,
+        "cross": 0,
+        "ligation": 435,
+        "post_withdrawal": 21,
+        "reused": 64
+      },
+      "shuffled": {
+        "activation": 617,
+        "basal": 381,
+        "catalytic": 236,
+        "cleavage": 240,
+        "cross": 187,
+        "ligation": 617,
+        "post_withdrawal": 21,
+        "reused": 134
+      }
+    },
+    "transitions": 262144,
+    "worlds": 128
+  },
+  "focused_checks": 17,
+  "forgeries": 3,
+  "primary_repeated": false,
+  "shared_files_unchanged": 392,
+  "transitions": 262144,
+  "verified": true,
+  "worlds": 128
+}

@@ -1,0 +1,56 @@
+{
+  "control": {
+    "files": 1102,
+    "logical_bytes": 87197037,
+    "reserved_bytes": 89205757,
+    "reserved_by_phase": {
+      "raw": 6780639,
+      "archive": 24656227,
+      "restore": 55671461,
+      "failure": 2097430
+    },
+    "limits": {
+      "raw": 33554432,
+      "archive": 65011712,
+      "restore": 132120576,
+      "failure": 4194304
+    },
+    "total_limit": 234881024
+  },
+  "panel": {
+    "files": 257,
+    "logical_bytes": 47442066,
+    "reserved_bytes": 48481112,
+    "reserved_by_phase": {
+      "archive": 0,
+      "failure": 1048576,
+      "raw": 47432536,
+      "restore": 0
+    },
+    "limits": {
+      "archive": 1048576,
+      "failure": 2097152,
+      "raw": 83886080,
+      "restore": 1048576
+    },
+    "total_limit": 88080384
+  },
+  "replay": {
+    "files": 9,
+    "logical_bytes": 1485559,
+    "reserved_bytes": 2533578,
+    "reserved_by_phase": {
+      "archive": 0,
+      "failure": 1048576,
+      "raw": 1485002,
+      "restore": 0
+    },
+    "limits": {
+      "archive": 1048576,
+      "failure": 2097152,
+      "raw": 16777216,
+      "restore": 1048576
+    },
+    "total_limit": 20971520
+  }
+}
