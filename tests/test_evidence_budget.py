@@ -1,5 +1,6 @@
 import copy
 import io
+import os
 import tempfile
 from pathlib import Path
 import unittest
@@ -69,6 +70,15 @@ class EvidenceBudgetTests(unittest.TestCase):
         with patch('experiments.evidence_budget.plain',side_effect=QuotaError('reparse')):
             with self.assertRaises(QuotaError):b.create('raw','b')
         self.assertEqual((self.root/'raw/a').read_bytes(),b'x')
+    def test_actual_hard_link_is_refused_before_write(self):
+        b=Budget(self.root,{'raw':10},10)
+        with b.create('raw','a') as f:
+            f.write(b'x');os.link(self.root/'raw/a',self.root/'raw/alias')
+            before=copy.deepcopy(b.snapshot())
+            with self.assertRaises(QuotaError):f.write(b'y')
+            self.assertEqual(b.snapshot(),before)
+        self.assertEqual((self.root/'raw/alias').read_bytes(),b'x')
+        with self.assertRaises(ValueError):audit(self.root,b.snapshot(),{'raw':10},10)
 
 
 if __name__=='__main__':unittest.main()
