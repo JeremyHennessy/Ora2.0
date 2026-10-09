@@ -1,0 +1,123 @@
+{
+  "descriptive_only": true,
+  "primary_unchanged": true,
+  "arms": {
+    "candidate": {
+      "pre_replacement_work_min": 0,
+      "pre_replacement_work_max": 17,
+      "final_work_sum": 177,
+      "final_heat_min": 64,
+      "final_heat_max": 142,
+      "physical_counts": {
+        "0": {
+          "forward": 894,
+          "reverse": 68
+        },
+        "1": {
+          "forward": 2385,
+          "reverse": 2439
+        },
+        "2": {
+          "forward": 2389,
+          "reverse": 2495
+        },
+        "3": {
+          "forward": 1612,
+          "reverse": 2471
+        },
+        "4": {
+          "forward": 0,
+          "reverse": 0
+        }
+      }
+    },
+    "equilibrium": {
+      "pre_replacement_work_min": 0,
+      "pre_replacement_work_max": 15,
+      "final_work_sum": 144,
+      "final_heat_min": 39,
+      "final_heat_max": 46,
+      "physical_counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1612,
+          "reverse": 1851
+        },
+        "2": {
+          "forward": 1990,
+          "reverse": 2269
+        },
+        "3": {
+          "forward": 1411,
+          "reverse": 1632
+        },
+        "4": {
+          "forward": 0,
+          "reverse": 0
+        }
+      }
+    },
+    "isotropic": {
+      "pre_replacement_work_min": 0,
+      "pre_replacement_work_max": 14,
+      "final_work_sum": 132,
+      "final_heat_min": 64,
+      "final_heat_max": 142,
+      "physical_counts": {
+        "0": {
+          "forward": 375,
+          "reverse": 38
+        },
+        "1": {
+          "forward": 1954,
+          "reverse": 1729
+        },
+        "2": {
+          "forward": 1697,
+          "reverse": 2009
+        },
+        "3": {
+          "forward": 1409,
+          "reverse": 2006
+        },
+        "4": {
+          "forward": 526,
+          "reverse": 23
+        }
+      }
+    },
+    "uncoupled": {
+      "pre_replacement_work_min": 0,
+      "pre_replacement_work_max": 8,
+      "final_work_sum": 68,
+      "final_heat_min": 60,
+      "final_heat_max": 142,
+      "physical_counts": {
+        "0": {
+          "forward": 658,
+          "reverse": 31
+        },
+        "1": {
+          "forward": 1500,
+          "reverse": 1471
+        },
+        "2": {
+          "forward": 3072,
+          "reverse": 3630
+        },
+        "3": {
+          "forward": 868,
+          "reverse": 1448
+        },
+        "4": {
+          "forward": 0,
+          "reverse": 0
+        }
+      }
+    }
+  },
+  "limitation": "Supplied structure and paid scheduled replacement; neither counts as autonomous formation or self-repair."
+}

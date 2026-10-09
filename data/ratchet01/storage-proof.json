@@ -1,0 +1,20 @@
+{
+  "ratchet01-feasibility-20261009": {
+    "files": 920,
+    "logical_bytes": 15439210,
+    "reserved_bytes": 16433958,
+    "reserved_by_phase": {
+      "raw": 6426940,
+      "archive": 2534329,
+      "restore": 6424113,
+      "failure": 1048576
+    },
+    "limits": {
+      "raw": 25165824,
+      "archive": 25165824,
+      "restore": 52428800,
+      "failure": 2097152
+    },
+    "total_limit": 104857600
+  }
+}

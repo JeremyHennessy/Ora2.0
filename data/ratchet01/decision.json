@@ -1,0 +1,58 @@
+{
+  "autonomous_self_maintenance": false,
+  "certificate_final": [
+    2,
+    0,
+    17,
+    1,
+    113
+  ],
+  "decision": "CONTROLLED WORK FEASIBLE; kinetics and founder-free origin untested",
+  "feasibility_pass": true,
+  "kinetic_superiority_tested": false,
+  "natural_worlds": 0,
+  "records": [
+    {
+      "arm": "candidate",
+      "barrier_checks": 8576,
+      "edges": 29518,
+      "endpoint_states": 2336,
+      "physical_edges": 25064,
+      "rate_signatures": 134,
+      "state_sha256": "baf24d626d58ac8b14e91a320079d765f8c90b0c5a6dcfec2bb7e06cc591a773",
+      "states": 9622
+    },
+    {
+      "arm": "uncoupled",
+      "barrier_checks": 8576,
+      "edges": 42251,
+      "endpoint_states": 2336,
+      "physical_edges": 37780,
+      "rate_signatures": 134,
+      "state_sha256": "d2e75b3b1a4c75d576188195b0e428398420c2f711404f8c6da157839c3dce34",
+      "states": 9656
+    },
+    {
+      "arm": "isotropic",
+      "barrier_checks": 10624,
+      "edges": 35422,
+      "endpoint_states": 2336,
+      "physical_edges": 30952,
+      "rate_signatures": 166,
+      "state_sha256": "7674b1f5cdb5d0d99ddc4c57e5afdad8db92c435bb4d55596a9e29bd02bdab78",
+      "states": 9654
+    },
+    {
+      "arm": "equilibrium",
+      "barrier_checks": 384,
+      "edges": 670,
+      "endpoint_states": 0,
+      "physical_edges": 552,
+      "rate_signatures": 6,
+      "state_sha256": "792cc641df7b8885a7927cdc226aae6d6338231e28a973487c4292d640522f62",
+      "states": 278
+    }
+  ],
+  "source_revision": "4319db0288a893ce167b00e0c0b3b04628589bfe",
+  "verified": true
+}

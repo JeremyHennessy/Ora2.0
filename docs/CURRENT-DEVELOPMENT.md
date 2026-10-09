@@ -2,7 +2,42 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — joint nutrient chemistry tested under two blind losses
+## Latest checkpoint — reversible useful-work test fails whole-cost surplus
+
+**Exact sources:** RATCHET-01 feasibility4319db0288a893ce167b00e0c0b3b04628589bfe;
+RATCHET-02 dynamics5db0b4cb8f63dcd89b27d68e7de5a1ef033c580e.
+Prospective protocolsd3e3a22/5a53dea.29210 exhaustive states/107861 edges;
+256 controlled worlds/1048576 independently audited random attempts.
+**Primary FAIL:** candidate0/64,uncoupled0/64,isotropic0/64;both pairedP=1.
+[Receipt](RATCHET-01-02-RECEIPT.md),[all-world decision](../data/ratchet02/decision.json).
+
+**Actual advance:** finite reversible chemical/work accounting includes reverse
+fuel synthesis, paid startup6 and whole replacement7, complete material/object
+ancestry, useful mechanical output and initial thermal-capital protection.
+Possibility exists in candidate and BOTH primary nulls; no impossible null is
+used to claim superiority. Candidate funds supplied replacement51/64 but ends
+with work0–9 versus initial16: no whole-cost surplus. This is installed apparatus
+and scheduled replacement, not spontaneous organization or self-repair.
+Initial work reserve can pay replacement; candidate aggregate mechanical transfer
+is minus106, so funded replacement is not newly produced work funding repair.
+
+**Next decision:** close tested law/horizon without cost/rate/fuel/seed tuning.
+Choose distinct endogenous coupling/spatial resource-retention physics after
+comparison with GRADIENT/REDOX/RATCHET negatives. Derive useful work/resource
+conversion, local assembly/leakage/transport/renewal costs and founder-free start;
+prospectively check comparator attainability before implementing. No new spatial
+mechanism is registered or installed yet. Stage3 self-maintenance incomplete.
+
+**Verification/activity:**26 focused local kinetic checks;4 exact complete
+replays;3 kinetic and3 feasibility forgery refusals. Independent C: restoration
+of458/720 files re-audits complete graphs/all256 worlds. Historical COFACTOR and
+all approved observer bytes preserved. No active world. CI and deliberate local
+integration acceptance are recorded in the closing laboratory receipt.
+AI-Research09f4f33/Pass39 unchanged; observer publication paused. Physical
+durability/lost-work/cadence/full-host restore/production isolation and separate
+supervised-pilot authorization remain engineering gates.
+
+## Historical checkpoint — joint nutrient chemistry tested under two blind losses
 
 **Exact source:** COFACTOR-01 4f32b201a9181881167e523997f55fe3213e258d,
 prospective08453bc protocol.192 founder-free worlds/1572864 independently

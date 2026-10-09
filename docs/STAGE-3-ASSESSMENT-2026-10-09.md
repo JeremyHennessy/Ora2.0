@@ -205,3 +205,28 @@ not organism emergence.3.6 no functional heredity, reproduction or adaptation
 tested. Environmental food withdrawal leaves no accessible donor and must not
 be confused with researcher-scaffold withdrawal. Full all-world/round diagnosis
 and controls retained. Prior laws, failed gates and samples unchanged.
+
+
+## RATCHET-01/02 — end-of-day useful-work assessment
+
+Substage numbering follows the six sprint objectives in the opening table.
+
+| Substage | Demonstrated / controlled only | Failed or unproven | Evidence needed |
+| --- | --- | --- | --- |
+|3.1 energy capture|Installed finite chemical-to-work coupling, exact reversible ledger|No natural self-built capture; work surplus0/64|Founder-free coupling with positive full-cost useful output|
+|3.2 local construction and recycling|Paid supplied startup6; labelled fuel↔waste and structural atoms reused under fresh ancestry|Final work0–9<initial16; atom reuse is not useful functional recycling|Retained useful output after ALL formation/renewal/transport costs and causal recycled-material reconstruction|
+|3.3 maintenance after damage|Controlled replacement funded51/64; all256 dynamics independently audited|No endogenous repair; whole-cost surplus0/64, both nulls0,P1|Repeated blind damage and spontaneous paid useful reconstruction|
+|3.4 founder-free organization|Prior raw-start studies preserved; RATCHET contains supplied apparatus|Zero founder-free RATCHET worlds; no autonomous origin|Generic raw environment naturally assembles productive coupling|
+|3.5 activity after assistance withdrawal|Finite fuel/no replenishment; supplied interventions fully accounted|No researcher-assistance withdrawal test; finite stocks are not autonomous support|Withdraw researcher-specific scaffold while retaining matched natural resources and accounting for all buffers|
+|3.6 reconstruction and early inheritance|Full new-object identity and component provenance records|No endogenous functional reconstruction, heredity, adaptation or reproduction|Independently useful reconstruction then causal functional inheritance tests|
+
+Stop RATCHET's tested law/horizon. Feasibility29210 states/107861 edges and
+28160 exact rate checks passes; kinetics256 worlds/1048576 attempts fails.
+Candidate's51/64 funded operator replacements are secondary descriptive outcomes,
+not self-maintenance. A14-cycle authored certificate is possible but not observed
+whole-cost success. Preserve all negative samples and laws. Next prospective
+question concerns endogenous spatial coupling and retention, not removal of slip
+or free initial structure. Full Stage3 acceptance remains unsupported.
+Candidate aggregate work-edge output2389 minus reverse input2495 is NET minus106.
+Initial work10 can pay the replacement7; funded replacement is not evidence of
+newly produced work. Neither positive net work nor autonomous repair is accepted.
