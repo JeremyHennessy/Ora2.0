@@ -2,7 +2,38 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — RECYCLE-01 negative unscreened realization; state fixture
+## Latest checkpoint — ISOLATION-01 disposable Windows capability gate
+
+Frozen e74b345f; accepted execution 22dd90d6. Two trial blocks / ten cases:
+two ordinary controls, two AppContainer workers and six fail-closed setup cases.
+Kernel token / zero-capability / Job Object cap checks occur while suspended,
+before user code. Workspace succeeds; external canary read/write, parent VM-write
+handle and child execution deny. Both confined local TCP attempts time out with
+zero accepted connections; both controls connect. No external destination used.
+All executing workers exit zero; suspended failures terminate without markers.
+Separate audit and recomputed-hash leak forgery rejection pass. 18 Windows checks
+pass with one expected skip; 265 shared tracked files unchanged, 400 accepted
+evidence files restored on D:. Initial folder-label failure and incorrect process-
+counter audit preserved, with 323 / 338 files restored. [Receipt](ISOLATION-01-RECEIPT.md).
+
+This is controlled local capability verification, not production hardened-world
+isolation, a complete filesystem allowlist, every-network-route test, hostile
+escape proof or physical memory-peak bound. Ordinary AppContainer Windows/profile
+access remains. Existing installation ACLs, global firewall, services, observer,
+scientific laws and histories unchanged. Profile metadata is Windows-owned;
+active laboratory files and copied runtime stay on D:.
+
+**Next engineering priority:** separately freeze bounded actual finite-world
+checkpoint / interruption / resume composition inside confinement, including exact
+state/identity/RNG/noise/ancestry, independent replay and read-only observation;
+retain rejected-setup controls. No approved world migration or persistent pilot.
+Physical power-loss, full-host recovery and production isolation assessment remain
+open; no unattended runtime authorized or activated. RECYCLE-01 negative science
+is preserved. Future science requires a distinct full-cost local resource/reaction
+coupling candidate rather than tuning frozen negative cuts. AI-Research main
+fef0a523 / Pass 29 unchanged; no unproven mechanism installed. Observer stays paused.
+
+## Preserved checkpoint — RECYCLE-01 negative unscreened realization; state fixture
 
 Frozen c559749a, executed 6180ff8e: 32 fresh seed blocks / nine paired controls,
 288 finite worlds / 73,728 events plus 576 fully paid supplied-manufacture events.
