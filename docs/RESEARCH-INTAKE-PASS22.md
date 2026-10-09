@@ -122,3 +122,42 @@ Loss challenges a path with no scheduled renewal; founder removal is an exogenou
 ablation of a law with no generic startup reaction. Neither is a biological-origin
 refutation or independent naturally evolved lineage experiment. No literature
 finding changes the frozen original protocol/count addendum or historical data.
+
+## RESOURCE-02 / startup checkpoint — Passes 25–28 and unified synthesis
+
+Rechecked both repositories, branches, pull requests and recent runs. Ora baseline
+`e67eae76` retains CONTACT-01. AI-Research advanced from `57e9bcda` (Pass28) through
+`a789a4d0` (publication reconciliation) to `bfbd53c7b9ad92e03f15f3d31a133337b19ad8de`
+(unified synthesis, PR12). Read the complete Pass27/28 reviews and Pass28 source
+ledger, restored Pass25 review, publication index, latest handoff and
+[unified synthesis](https://github.com/JeremyHennessy/AI-Research/blob/bfbd53c7b9ad92e03f15f3d31a133337b19ad8de/docs/artificial-life/UNIFIED-RESEARCH-SYNTHESIS.md).
+Pass25 documentation was restored through PR10; original PR5 closed unmerged.
+The former provisional status remains historical above, not the current status.
+Alternative Pass21 reading stays archived/unverified at canonical E1; Pass22
+stays draft-level. No literature classification is an independently reproduced
+Ora finding. AI-Research code, datasets and EERC versions remain untouched.
+
+Read primary main-text passages for the two Pass28 studies:
+[Krüsemer 2026](https://www.nature.com/articles/s41467-026-71143-2) reports maternal
+transmission after introduced infection alongside reduced host survival and
+reproduction; [Pons 2026](https://www.nature.com/articles/s41467-026-69366-4)
+reports nonnative gland colonization without observed daughter packaging.
+This corroborates those qualitative distinctions only, not raw-data reanalysis,
+figure/supplement replication or a general biological law. Pass27 comparative
+detections are not independent observed founders; cohort overlap and failed-
+founder denominators remain unresolved. Do not pool studies or equate different
+gates: colonization, transmission, useful function, net fitness and reproduction.
+
+Applied prospectively: first test the current finite law's empty-precursor
+reactivation and resource renewal. Explicit supplied-founder and external-work
+controls prevent calling a constructed path autonomous origin. Partial top-up or
+generic startup physics, if needed, requires a distinct candidate, protocol,
+accounting and appropriate nonspecific/template and subsidy-withdrawal controls.
+The unified synthesis treats EERC as a competing unverified hypothesis, not an
+architecture mandate. No new intake silently changes frozen experiments.
+
+RESOURCE-02 remains engineering: unchanged finite development world, no fresh
+science or reserved samples, no biological organization/adaptation inference.
+Reviewed bounded scheduled development is now human-authorized; the independent
+observer schedule maintains verified publication. Neither authorizes continuous
+unattended Ora simulation or automatic execution of newly fetched commits.
