@@ -1,5 +1,6 @@
 """Authored stoichiometric checks, not naturally realized organization."""
 import copy
+import json
 import unittest
 from experiments import coupled_construction as producer
 from experiments import coupled_construction_audit as verifier
@@ -28,7 +29,7 @@ class Accounting(unittest.TestCase):
     def test_immutable_raw_provenance_and_new_identity(self):
         case = producer.enumerate_case(15, 36, 'network')
         self.assertTrue(case['feasible'])
-        w = dict(rows=producer.witness(case))
+        w = json.loads(json.dumps(dict(rows=producer.witness(case))))
         verifier.interpret(w, case)
         self.assertEqual(len(w['rows'][-1]['objects']), 4)
         for field in ('heat', 'id', 'atoms'):
