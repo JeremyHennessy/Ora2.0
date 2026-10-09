@@ -1,0 +1,87 @@
+{
+  "schema": "launch01-audit-v1",
+  "native_launches": 6,
+  "profiles_deleted": 6,
+  "exact_world_histories": 2,
+  "states_per_history": 33,
+  "events_per_history": 32,
+  "checks": [
+    {
+      "trial": 0,
+      "case": "reference",
+      "samples": 20,
+      "active_ticks": [
+        2,
+        5
+      ],
+      "expiry_seconds": 5.25,
+      "exit": 0
+    },
+    {
+      "trial": 0,
+      "case": "resource",
+      "samples": 20,
+      "active_ticks": [
+        2,
+        5
+      ],
+      "expiry_seconds": 5.264999999999418,
+      "exit": 86
+    },
+    {
+      "trial": 0,
+      "case": "resume",
+      "samples": 20,
+      "active_ticks": [
+        6,
+        7
+      ],
+      "expiry_seconds": 5.265999999988708,
+      "exit": 0
+    },
+    {
+      "trial": 1,
+      "case": "reference",
+      "samples": 20,
+      "active_ticks": [
+        2,
+        5
+      ],
+      "expiry_seconds": 5.26600000000326,
+      "exit": 0
+    },
+    {
+      "trial": 1,
+      "case": "resource",
+      "samples": 20,
+      "active_ticks": [
+        2,
+        5
+      ],
+      "expiry_seconds": 5.264999999999418,
+      "exit": 86
+    },
+    {
+      "trial": 1,
+      "case": "resume",
+      "samples": 20,
+      "active_ticks": [
+        6,
+        7
+      ],
+      "expiry_seconds": 5.25,
+      "exit": 0
+    }
+  ],
+  "continuous_world": false,
+  "science_demonstrated": false,
+  "executed_source": "0d32812e344ac6c7f88dde8c19f71005c128c5a2",
+  "contract_revision": "1a493b3fd63a852d4a5837e1de7e984c25fa5e36",
+  "protected_binding_native_denials": 6,
+  "earlier_launches_preserved": 12,
+  "earlier_hardened_audit_exit": 2,
+  "accepted_archive_sha256": "e6f665061f8a6f4d2f3ff4b1fb31de69863902fa1948f74debc079b4ba3ed361",
+  "accepted_restored_files": 471,
+  "world_physics_changed": false,
+  "controller_activated": false
+}
