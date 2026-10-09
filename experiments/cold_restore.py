@@ -17,7 +17,7 @@ BACKUP=Path('C:/ora/isolation04-20261009/isolation04-integrated-20261009-evidenc
 BACKUP_SHA='d1956130ee5c359561e948870b5288f352615ed63edb0118b5861758d2bdc564'
 WORLD_REVISION='b5d3104087b397d07c62a45592dde4bc13d58e51'
 FILES=(*gate.FILES,*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py',
-    'experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md')
+    'experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md','docs/RESTORE-01-SETUP-ERRATUM.md')
 CORRUPTION=b'\n# RESTORE01 registered source-corruption control\n'
 
 
@@ -44,7 +44,7 @@ def run_panel(output,revision):
     verify_backup()
     output.mkdir(); started=time.monotonic(); pointers={}
     data=dict(schema='restore01-v1',revision=revision,world_revision=WORLD_REVISION,
-        backup=str(BACKUP),backup_sha256=BACKUP_SHA,source_sha256={p:gate.sha(ROOT/p) for p in FILES},rows=[],profiles={},acl=[])
+        backup=str(BACKUP),backup_sha256=BACKUP_SHA,panel_root=str(output),source_sha256={p:gate.sha(ROOT/p) for p in FILES},rows=[],profiles={},profile_attempts=[],acl=[])
     def save(): gate.save(output/'evidence.json',data)
     runtime=output/'runtime'; bad=output/'corrupt-runtime'
     try:
@@ -68,6 +68,7 @@ def run_panel(output,revision):
         for trial in range(2):
             name='OraLab.ColdRestore.'+uuid.uuid4().hex; sid=c.c_void_p()
             result=user.CreateAppContainerProfile(name,name,'Disposable independent-backup restore',None,0,c.byref(sid))
+            data['profile_attempts'].append(dict(name=name,hresult=result & 0xffffffff)); save()
             if result!=0: raise OSError(f'Profile HRESULT {result & 0xffffffff:08x}')
             pointers[trial]=sid; data['profiles'][str(trial)]=dict(name=name,sid=gate.sid_text(sid,kernel,adv),deleted=False); save()
             sid_string=data['profiles'][str(trial)]['sid']

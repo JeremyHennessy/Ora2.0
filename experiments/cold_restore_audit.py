@@ -26,7 +26,7 @@ def audit(output,source,revision):
     require(data['schema']=='restore01-v1' and data['revision']==revision and data['world_revision']==OLD_REVISION,'Source revisions')
     backup=Path(data['backup']); require(backup==Path('C:/ora/isolation04-20261009/isolation04-integrated-20261009-evidence.zip'),'Registered independent backup')
     require(sha(backup)==data['backup_sha256']==ARCHIVE_SHA,'Independent archive hash')
-    names={'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md',*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py','experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md'}
+    names={'experiments/isolation_capability.py','experiments/isolation_worker.py','experiments/isolation_capability_audit.py','experiments/process_limits.py','docs/ISOLATION-01-CONTRACT.md',*replay.FILES,'experiments/__init__.py','experiments/cold_restore.py','experiments/cold_restore_worker.py','experiments/cold_restore_audit.py','docs/RESTORE-01-CONTRACT.md','docs/RESTORE-01-EXECUTION-ERRATUM.md','docs/RESTORE-01-SETUP-ERRATUM.md'}
     require(set(data['source_sha256'])==names and all(sha(source/p)==v for p,v in data['source_sha256'].items()),'Complete new adapter source')
     with zipfile.ZipFile(backup) as z:
         old=json.loads(z.read('panel/evidence.json')); archived={n[len('panel/runtime/'):]:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith('panel/runtime/') and not n.endswith('/')}
@@ -40,6 +40,8 @@ def audit(output,source,revision):
                 hashes={n[len(prefix):]:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if n.startswith(prefix) and not n.endswith('/')}
                 require(tree(target)==hashes,'Exact cold input/reference')
     profiles=data['profiles']; require(set(profiles)=={'0','1'} and len({p['sid'] for p in profiles.values()})==2,'Two fresh identities')
+    require(data['profile_attempts']==[dict(name=profiles[str(t)]['name'],hresult=0) for t in range(2)],'Successful recorded profile setup')
+    origin=Path(data['panel_root']).resolve(); require(origin.drive.upper()=='D:' and origin.is_relative_to(Path('D:/OraLab/runs').resolve()) and origin.name=='panel','Original fresh laboratory evidence path')
     require(all(p['deleted'] and p['cleanup_hresult']==0 and p['sid'] not in data['original_profiles'].values() for p in profiles.values()),'Fresh profiles cleaned')
     require(data['original_profiles']=={k:p['sid'] for k,p in old['profiles'].items()},'Original profiles preserved')
     require(0<data['elapsed_seconds']<280,'Finite panel')
@@ -57,14 +59,14 @@ def audit(output,source,revision):
             u=row[key]; require(u['configured_memory_bytes']==128*1024**2 and u['configured_processes']==1 and u['configured_cpu_ticks']==50_000_000 and u['flags'] & 0x220c==0x220c,'Unchanged suspended caps')
         if case=='ungranted':
             require(row['exit_code']==2 and not row['marker'] and 'runtime_report' not in row and row['world_after']==initial_tree,'Ungrant refusal without mutation'); continue
-        report=row['runtime_report']; root=(output/row['runtime']).resolve()
+        report=row['runtime_report']; root=(origin/row['runtime']).resolve()
         require(report['pid']==row['pid'] and report['isolated'] and row['marker'],'Restored child identity')
         require(Path(report['executable']).resolve()==root/'python.exe' and Path(report['prefix']).resolve()==root,'Restored executable/prefix')
         require(report['sys_path']==[str(root/'python312.zip'),str(root/'DLLs'),str(root)],'Isolated restored path only')
         require(report['module_files'] and all(Path(p).resolve().is_relative_to(root) for p in report['module_files'].values()),'External module provenance')
         for module in ('experiments.heartbeat_template','experiments.heartbeat_template_audit'):
             require(Path(report['module_files'][module]).resolve()==root/(module.replace('.','/')+'.py'),'Restored critical module origin')
-        source_hashes={p:sha(root/p) for p in replay.FILES}; require(report['source_sha256']==source_hashes,'Loaded source binding')
+        source_hashes={p:sha(output/row['runtime']/p) for p in replay.FILES}; require(report['source_sha256']==source_hashes,'Loaded source binding')
         if case=='corrupt-source':
             require(row['exit_code']==2 and report['phase']=='before_resume' and row['world_after']==initial_tree and row['rejection']['reason']=='Source/Python mismatch','Corrupt source refusal'); continue
         require(row['exit_code']==0 and 'error' not in row and report['phase']=='complete','Successful cold restore')
