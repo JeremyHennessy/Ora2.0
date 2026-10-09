@@ -58,7 +58,12 @@ def read_package(archive, revision):
     if (metadata['source_revision'] != revision or metadata['source_sha256'] != sources()
             or type(metadata['captured_tick']) is not int or not 0 <= metadata['captured_tick'] <= 128):
         raise ValueError('Snapshot source/capture binding')
-    if metadata['files'] != describe(blobs) or blobs['writer.lock'] != b'L':
+    descriptions = metadata['files']
+    if (not isinstance(descriptions, dict) or set(descriptions) != set(blobs)
+            or any(not isinstance(v, dict) or set(v) != {'size','sha256'} or type(v['size']) is not int
+                   or v['size'] < 0 or not heartbeat.hex_string(v['sha256'],64) for v in descriptions.values())):
+        raise ValueError('Snapshot file descriptor schema')
+    if descriptions != describe(blobs) or blobs['writer.lock'] != b'L':
         raise ValueError('Snapshot file sizes/hashes/lock')
     for name in ('last_frame_sha256', 'state_sha256'):
         if not heartbeat.hex_string(metadata[name], 64):

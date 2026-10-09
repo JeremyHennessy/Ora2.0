@@ -70,7 +70,7 @@ class WorldSnapshotTests(unittest.TestCase):
             _, archive = self.fixture(root)
             with zipfile.ZipFile(archive) as z:
                 original = {name:z.read(name) for name in z.namelist()}
-            for index, kind in enumerate(('duplicate', 'path', 'symlink', 'oversize', 'json')):
+            for index, kind in enumerate(('duplicate', 'path', 'symlink', 'oversize', 'json', 'size-bool')):
                 blobs = dict(original)
                 attributes, extra = None, None
                 if kind == 'duplicate':
@@ -81,8 +81,12 @@ class WorldSnapshotTests(unittest.TestCase):
                     attributes = {'writer.lock':0o120777 << 16}
                 elif kind == 'oversize':
                     blobs['manifest.json'] = b'x'*(1024**2+1)
-                else:
+                elif kind == 'json':
                     blobs['metadata.json'] = b'{"schema":"bad",'+blobs['metadata.json'][1:]
+                else:
+                    metadata = json.loads(blobs['metadata.json'])
+                    metadata['files']['writer.lock']['size'] = True
+                    blobs['metadata.json'] = (heartbeat.canonical(metadata)+'\n').encode()
                 forged = root/(str(index)+'.zip')
                 self.rewrite(forged, blobs, attributes, extra)
                 target = root/(str(index)+'-restore')
