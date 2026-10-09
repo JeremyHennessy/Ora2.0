@@ -91,7 +91,7 @@ def accounting(s,c):
         require(len(ch['bonds'])==max(0,len(ch['atoms'])-1),'Assembly bonds')
     for pool in s['potential'].values(): require(len(pool)<=3,'Local capacity'); live+=pool
     for pool in s['environment'].values(): live+=pool
-    require(Counter(owners)==Counter(s['atoms']),'Mass identity/unique ownership')
+    require(Counter(owners)==Counter(s['atoms'].keys()),'Mass identity/unique ownership')
     require(len(live)==len(set(live)) and all(u in s['units'] for u in live),'Energy ownership')
     initial=genesis(c)
     total=8*len(initial['food'])+2*c['budget']+len(c['bits'])-1

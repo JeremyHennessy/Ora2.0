@@ -81,6 +81,14 @@ class StartupFeasibilityTests(unittest.TestCase):
         c=config(budget=0); s=law.initial(c)
         after,_=law.step(s,c,0,['activate',0,'C','M0.0','A0.0'])
         self.assertEqual(after,s)
+
+    def test_ledger_rejects_duplicate_material_and_hidden_energy(self):
+        c=config(); valid=law.initial(c)
+        audit.accounting(valid,c)
+        duplicate=copy.deepcopy(valid); duplicate['reserve'].append(duplicate['reserve'][0])
+        with self.assertRaisesRegex(ValueError,'Mass'): audit.accounting(duplicate,c)
+        forged=copy.deepcopy(valid); forged['heat']+=1
+        with self.assertRaisesRegex(ValueError,'energy conservation'): audit.accounting(forged,c)
         c=config(); s=law.initial(c)
         s,_=law.step(s,c,0,['activate',0,'C','M0.0','A0.0'])
         after,_=law.step(s,c,1,['topup',0,'C','M0.0','Q0'])
