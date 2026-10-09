@@ -36,6 +36,26 @@ These results narrow mechanisms; they are not evidence that artificial life is
 impossible. Do not raise stocks, lower prices, extend these horizons or screen seeds.
 [RECYCLE](RECYCLE-01-RECEIPT.md),[KINETIC](KINETIC-01-RECEIPT.md),[GRADIENT](GRADIENT-01-RECEIPT.md).
 
+## Subsequent COUPLE-01 control gate — no Stage3 acceptance
+
+The next finite accounting gate is now executed at f32e005a:1040 cases,576459
+projected states/1707540 edges independently re-enumerated. New components can
+be manufactured from four individually identified raw atoms, fully damaged,
+recycled and reconstructed with fresh IDs under an authored oracle. This extends
+**controlled-only3.2/3.3/3.6** possibilities, not the unscreened-world column above.
+Fifteen network topologies are feasible, but diagonal independent components are
+also feasible and the equally efficient background needs less energy (24 versus
+27 minimum photons). All network inventory edges are available to background:
+there is no organization-specific reachability advantage under this law.
+Stop that claim before fresh dynamics, rather than tune it toward a positive.
+Withdrawal41/208 feasible cases use finite stored fuel plus oracle assistance;
+this does not advance natural3.5 or activity after buffer depletion. No new
+founder-free natural world, autonomous maintenance or inherited organization.
+[Complete receipt/control decision](COUPLE-01-RECEIPT.md).
+
+The earlier next-decision text below is preserved chronology. It is superseded
+by this control result and CURRENT-DEVELOPMENT's next discriminating physics gate.
+
 ## Research interpretation and next decision
 
 AI-Research main1a7d572d5f11b064478de1321502a7a7366f8a67/Pass36 distinguishes

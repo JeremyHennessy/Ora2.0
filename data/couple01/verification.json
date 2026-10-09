@@ -1,0 +1,203 @@
+{
+  "autonomous_self_maintenance": false,
+  "cases": 1040,
+  "edges": 1707540,
+  "minima": [
+    {
+      "diagonal_only": true,
+      "mask": 0,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": null,
+        "no-recycling": null,
+        "withdrawal": null
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": true,
+      "mask": 1,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 36,
+        "no-recycling": null,
+        "withdrawal": 36
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 2,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 33,
+        "no-recycling": null,
+        "withdrawal": 33
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 3,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 4,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 33,
+        "no-recycling": null,
+        "withdrawal": 33
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 5,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 33,
+        "no-recycling": null,
+        "withdrawal": 33
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 6,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 33
+      },
+      "reciprocal": true
+    },
+    {
+      "diagonal_only": false,
+      "mask": 7,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": true
+    },
+    {
+      "diagonal_only": true,
+      "mask": 8,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 36,
+        "no-recycling": null,
+        "withdrawal": 36
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": true,
+      "mask": 9,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 36,
+        "no-recycling": null,
+        "withdrawal": 36
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 10,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 33,
+        "no-recycling": null,
+        "withdrawal": 33
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 11,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 12,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 13,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": false
+    },
+    {
+      "diagonal_only": false,
+      "mask": 14,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": true
+    },
+    {
+      "diagonal_only": false,
+      "mask": 15,
+      "minimum": {
+        "background": 24,
+        "inert": null,
+        "network": 27,
+        "no-recycling": null,
+        "withdrawal": 27
+      },
+      "reciprocal": true
+    }
+  ],
+  "natural_worlds": 0,
+  "object_witnesses": 46,
+  "states": 576459,
+  "verified": true
+}
