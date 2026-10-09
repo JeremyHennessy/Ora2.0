@@ -2,7 +2,39 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science checkpoint — STARTUP-01 generic feasibility
+## Latest science checkpoint — STARTUP-02 unscreened opportunities
+
+Protocol512c116, executed421b6da1:224 finite worlds/57,344 events in32 unscreened
+seed blocks across seven paired controls. No supplied channels, target length,
+sorted word or successful encounter schedule.33 Windows checks passed; independent
+material/energy/provenance/noise audit and exact raw/summary/audit replay passed.
+124 historical/shared inputs unchanged;17 files restored. Initial fixture failure
+preserved and corrected without changing frozen law, stocks, seeds or controls.
+[Receipt](STARTUP-02-RECEIPT.md).
+
+Active founder-free paid assembly/capture occurred in20/32 worlds:38 variable-length
+assemblies,107 captures,66 after external charging withdrawal (16/32 worlds).
+Ghosts released33 inert structures with zero captures; association-off zero births.
+Food withdrawal zero later captures. Partial-recharge-off succeeds in10/32 through
+full empty-component renewal, a possibility absent from STARTUP-01's authored path.
+All prior laws/results remain immutable. This is programmed finite-substrate
+realization with initial external charging, not autonomous origin or inheritance.
+
+No fully capture-funded assembly/probe occurred in any of224 worlds. Closed-tape
+exploratory analysis found all14 active late assemblies retained external-charge
+construction debits, although26/33 later charge events used direct captured inputs.
+Capture can replenish components; entirely renewed productive organization is
+unverified. Ancestry tracks structural consumption, not reproductive descendants.
+
+**Next science priority:** separately precommit a paid renewal/opportunity study
+separating externally charged carryover from fresh capture-funded construction.
+Measure fresh-component assembly cohorts, paid work/capacity and opportunities;
+do not retune the closed STARTUP-02 stocks/horizon/seeds or install it in the world.
+Resource-funded renewal, functional inheritance and ecology remain independent
+gates. AI-Researchfef0a523/Pass29 remains unchanged; no unproven research mechanism
+installed. Engineering next remains isolation and physical durability below.
+
+## Preserved science checkpoint — STARTUP-01 generic feasibility
 
 Protocol b390d7f, executed77bf4d7e:3,024 authored cases/133,920 events, independent
 conservation/provenance audit and exact raw/summary/audit replay.28 Windows focused
