@@ -139,9 +139,10 @@ def verify_record(r, c):
 
 def inspect(output, revision):
     output = Path(output); configs = configurations(); records = []; h = hashlib.sha256()
-    for i, raw in enumerate((output / 'records.jsonl').open('rb')):
-        if i >= len(configs) or not raw.endswith(b'\n'): raise ValueError('Panel size/LF')
-        h.update(raw); record = prior.old.decode(raw); verify_record(record, configs[i]); records.append(record)
+    with (output / 'records.jsonl').open('rb') as f:
+        for i, raw in enumerate(f):
+            if i >= len(configs) or not raw.endswith(b'\n'): raise ValueError('Panel size/LF')
+            h.update(raw); record = prior.old.decode(raw); verify_record(record, configs[i]); records.append(record)
     if len(records) != 2688: raise ValueError('Complete 2688 cases')
     expected = dict(schema='capacity01-summary-v1', revision=revision,
                     sources={f: hashlib.sha256((ROOT / f).read_bytes()).hexdigest() for f in FILES},
