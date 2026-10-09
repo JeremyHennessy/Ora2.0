@@ -27,12 +27,18 @@ process telemetry and a finite supervised pilot contract with separate approval.
 No unattended world, service, public access, memory-peak or hostile-escape claim.
 
 **Science:** preserve all recent negative results, especially RECYCLE-01. Stop
-varying uniform cuts toward positive outcomes. Compare a distinct finite-fuel,
-local catalytic-reaction chemistry: spontaneous precursor association and generic
-catalytic rate changes, with all formation/regeneration/decay costs explicit,
-no supplied successful template and precommitted fresh controls. Structural
-reaction possibility and accounting feasibility do not demonstrate realized
-self-maintenance, reproduction, functional inheritance or evolution.
+varying uniform cuts toward positive outcomes. [KINETIC-01](KINETIC-01-PROTOCOL.md)
+registers a genuinely different finite-fuel local catalytic chemistry: spontaneous
+precursor association and generic catalytic rates, with identical reaction prices,
+full waste/regeneration accounting and no supplied successful template. Fresh
+192-world/six-arm protocol and primary reconstruction endpoint precommitted.
+Necessary budget gate e1e94873 passes: five authored lengths / 5,022 events,
+256 paid associations and finite exhaustion each; independent prices/material/
+energy audit and conserving-price forgery rejection, three tests. **Zero natural
+worlds or future seed maps screened.** [Feasibility receipt](KINETIC-01-FEASIBILITY-RECEIPT.md).
+Next implement/freeze the complete local dynamics and independent interpreter,
+then execute the unscreened registered panel. Budget feasibility is preparation,
+not realized self-maintenance, reproduction, functional inheritance or evolution.
 
 **Observer:** preserve UI/playback; prepare a source-bound read-only telemetry
 contract joining verified world state with actual process identity and advancement.
