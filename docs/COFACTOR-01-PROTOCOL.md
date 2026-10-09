@@ -73,6 +73,8 @@ primary nulls. No strict-subset reachability or cost advantage is asserted.
 32 new unscreened blocks77000..77031, six arms in above order,8192 attempts each:
 192 worlds/1572864 attempts. No old/reserved samples or retuning/extension/retry.
 Dynamics xorshift32 seed; shifts13,17,5, unsigned32 masking. Eight requested draws
+are stored as eight concatenated8-digit hex values, preserving all32 bits each;
+this prospective storage clarification changes no random layout or law. Draws
 per attempt, even on failure. Draw0%3 reaction; ascending live-object inventory:
 draw1 selects substrate; draw2 nutrient payer for reaction1; draw3/4 cofactors.
 Draw5%4 target; draw6 low byte chance; draw7 annealed selection. Uniform whole
