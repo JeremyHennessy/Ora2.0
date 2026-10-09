@@ -83,3 +83,9 @@ audit and replay proofs. Before publication independently restore the sealed
 evidence to user-approved C:/ora and audit backed-up source/data. This is not
 physical power-loss durability or full-host recovery. No persistent service,
 legacy changes, observer redesign or publication activation.
+
+Pre-execution budget clarification: panel raw80/archive1/restore1/failure2MiB
+(84 total), first-seed replay raw16/archive1/restore1/failure2 (20), control
+raw32/archive62/restore126/failure4 (224). Sum exactly matches registered
+raw128/archive64/restore128/failure8 and328MiB combined. C: readback is the
+control restore; ZIP member comparison needs no additional extracted copy.

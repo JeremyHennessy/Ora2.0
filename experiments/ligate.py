@@ -116,7 +116,9 @@ def main():
     p.add_argument('--start', type=int, default=75000); p.add_argument('--count', type=int, default=32)
     args = p.parse_args()
     from .evidence_budget import Budget
-    b = Budget(args.output, dict(raw=128*1024**2, archive=64*1024**2, restore=128*1024**2, failure=8*1024**2), 328*1024**2)
+    if args.count not in (1,32) or args.start != 75000: raise ValueError('Registered panel/replay')
+    raw_limit = 80 if args.count == 32 else 16
+    b = Budget(args.output, dict(raw=raw_limit*1024**2, archive=1024**2, restore=1024**2, failure=2*1024**2), (raw_limit+4)*1024**2)
     try:
         for seed in range(args.start, args.start + args.count):
             for arm in ARMS:
