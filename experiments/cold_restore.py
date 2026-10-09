@@ -21,6 +21,10 @@ FILES=(*gate.FILES,*replay.FILES,'experiments/__init__.py','experiments/cold_res
 CORRUPTION=b'\n# RESTORE01 registered source-corruption control\n'
 
 
+def verify_backup():
+    if gate.sha(BACKUP)!=BACKUP_SHA: raise ValueError('Independent archive changed')
+
+
 def restore_members(archive,prefix,destination):
     destination=Path(destination).resolve(); count=0
     for name in archive.namelist():
@@ -37,7 +41,7 @@ def run_panel(output,revision):
     output=Path(output).resolve()
     if output.drive.upper()!='D:' or output.exists(): raise ValueError('Fresh D: output')
     if shutil.disk_usage(output.parent).free<5*1024**3: raise OSError('Space floor')
-    if gate.sha(BACKUP)!=BACKUP_SHA: raise ValueError('Independent archive changed')
+    verify_backup()
     output.mkdir(); started=time.monotonic(); pointers={}
     data=dict(schema='restore01-v1',revision=revision,world_revision=WORLD_REVISION,
         backup=str(BACKUP),backup_sha256=BACKUP_SHA,source_sha256={p:gate.sha(ROOT/p) for p in FILES},rows=[],profiles={},acl=[])

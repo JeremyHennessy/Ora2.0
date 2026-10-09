@@ -20,8 +20,8 @@ class ColdRestoreTests(unittest.TestCase):
     def test_wrong_archive_refused_before_output(self):
         with tempfile.TemporaryDirectory(dir=os.environ.get('ORA_TEST_TEMP')) as folder:
             root=Path(folder); bad=root/'bad.zip'; bad.write_bytes(b'forged'); output=root/'output'
-            with patch.object(restore.gate,'libraries',return_value=(None,None,None)),patch.object(restore,'BACKUP',bad):
-                with self.assertRaisesRegex(ValueError,'archive changed'): restore.run_panel(output,'0'*40)
+            with patch.object(restore,'BACKUP',bad):
+                with self.assertRaisesRegex(ValueError,'archive changed'): restore.verify_backup()
             self.assertFalse(output.exists())
 
     def test_incomplete_evidence_refused(self):
