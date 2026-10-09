@@ -42,7 +42,8 @@ def request(s,c,op,atom,phase):
     ordered=sorted(s['chains'],key=lambda key:(-len(s['chains'][key]['atoms']),key))
     chain=ordered[0] if ordered else None
     products=sorted((key for key,v in s['history'].items() if v['kind']=='product' and v['origin']=='assembly'),key=lambda key:s['history'][key]['born'])
-    founder='C' if c['mode']=='supplied' else products[0] if products else None
+    foundations=[key for key in products if set(s['history'][key]['atoms'])=={'M0','M1','M2','M3'}]
+    founder='C' if c['mode']=='supplied' else foundations[0] if foundations else None
     target=[key for key in products if all(f'M{i}' in s['history'][key]['atoms'] for i in range(4,4+len(c['word'])))]
     actor=target[-1] if phase=='post' and op==5 and atom==4 and target else None if phase=='post' and op==5 and atom==4 else founder
     food=min(s['food'],key=lambda key:int(key[1:])) if s['food'] else 'F0'
@@ -101,21 +102,24 @@ def aggregate(records):
         c=r['config']; key=f"{c['mode']}/{len(c['word'])}/{c['budget']}/{c['food_bit']}"; row=totals.setdefault(key,{})
         for field,value in metrics(r).items(): row[field]=row.get(field,0)+value
     return totals
+def verify_record(r,c):
+    if old.canonical(r['config'])!=old.canonical(c): raise ValueError('Frozen authored configuration')
+    s=genesis(c); validate(s); chain=old.digest(s)
+    if old.canonical(r['initial'])!=old.canonical(s) or len(r['events'])!=len(program(c)): raise ValueError('Genesis/schedule')
+    for event,(tick,op,atom,phase) in zip(r['events'],program(c)):
+        q=request(s,c,op,atom,phase); before=old.digest(s); result=transition(s,c,tick,q); validate(s)
+        expected=dict(tick=tick,request=q,before=before,after=old.digest(s),previous=chain,result=result); expected['sha256']=old.digest(expected)
+        if old.canonical(event)!=old.canonical(expected): raise ValueError('Reaction/accounting/provenance divergence')
+        chain=expected['sha256']
+    if old.canonical(r['terminal'])!=old.canonical(s): raise ValueError('Terminal/recycling history')
+    return metrics(r)
 def inspect(output,revision):
     output=Path(output); configs=configurations(); records=[]; h=hashlib.sha256()
     with (output/'records.jsonl').open('rb') as f:
         for i,raw in enumerate(f):
             if i>=len(configs) or not raw.endswith(b'\n'): raise ValueError('Panel size/LF')
             h.update(raw); r=old.decode(raw); c=configs[i]
-            if old.canonical(r['config'])!=old.canonical(c): raise ValueError('Frozen authored configuration')
-            s=genesis(c); validate(s); chain=old.digest(s)
-            if old.canonical(r['initial'])!=old.canonical(s) or len(r['events'])!=len(program(c)): raise ValueError('Genesis/schedule')
-            for event,(tick,op,atom,phase) in zip(r['events'],program(c)):
-                q=request(s,c,op,atom,phase); before=old.digest(s); result=transition(s,c,tick,q); validate(s)
-                expected=dict(tick=tick,request=q,before=before,after=old.digest(s),previous=chain,result=result); expected['sha256']=old.digest(expected)
-                if old.canonical(event)!=old.canonical(expected): raise ValueError('Reaction/accounting/provenance divergence')
-                chain=expected['sha256']
-            if old.canonical(r['terminal'])!=old.canonical(s): raise ValueError('Terminal/recycling history')
+            verify_record(r,c)
             records.append(r)
     if len(records)!=1344: raise ValueError('Complete1344 cases')
     expected=dict(schema='dissociate01-summary-v1',revision=revision,sources=sources(),records_sha256=h.hexdigest(),cases=1344,events=sum(len(r['events']) for r in records),authored_feasibility_only=True,natural_worlds=0,totals=aggregate(records))
