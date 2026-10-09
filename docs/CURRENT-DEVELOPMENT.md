@@ -33,7 +33,7 @@ their own protocols, independence and failures, after feasibility is established
 RESOURCE-02 engineering composition is separately verified and merged through
 PR33/`8e1537eb`. REACTIVATE-01 merged through PR34/`3b589549`; exact merged-main
 CI run37866907682 passed302 attempted tests (292 passed/10 platform skips).
-The completed review advances the next registered startup candidate below. Its12 full
+The completed review advances the next startup feasibility question below. Its12 full
 state continuations do not establish biological autonomy or physical power-loss
 safety. Retain the user's startup→engineering foundations→real-state observer→
 evolution priorities and all backup/storage/isolation gates below. Human-authorized
