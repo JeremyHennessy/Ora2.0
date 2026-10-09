@@ -65,6 +65,8 @@ def unpack(archive, destination, revision):
             stream.write(value)
             stream.flush()
             os.fsync(stream.fileno())
+    if any((destination/name).read_bytes() != value for name, value in blobs.items()):
+        raise ValueError('Restored file bytes differ from verified snapshot')
     evidence = audit.heartbeat.inspect(destination, revision)
     audit.compare_capture(metadata, evidence)
     return evidence['report']

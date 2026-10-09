@@ -18,3 +18,11 @@ This corrects a capture implementation error, not a physical-world hypothesis,
 storage severity, fault outcome, accounting parameter or frozen law. The ten
 frozen cases, source binding, independent replay, no-overwrite requirements and
 all limits are unchanged. Preserve and report the failure alongside acceptance.
+
+Subsequent code review found that the old read-only world interpreter deliberately
+does not validate the writer-lock byte. Restoration now checks every written
+file against the verified snapshot before semantic replay and reporting success.
+A focused short initializer-write test is added: the injected zero-byte write
+must fail even though the simulation data could remain readable. This is a
+software fault injection, not evidence of a real device short write. No old
+world interface, fault severity, initial conditions or frozen outcome is changed.

@@ -7,6 +7,7 @@ import tempfile
 import unittest
 import warnings
 import zipfile
+from unittest.mock import patch
 from experiments import heartbeat_template as worker
 from experiments import heartbeat_template_audit as heartbeat
 from experiments import world_snapshot as snapshot
@@ -145,6 +146,34 @@ class WorldSnapshotTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 snapshot.unpack(archive, root/'mismatched', 'b'*40)
             self.assertFalse((root/'mismatched').exists())
+
+    def test_short_lock_initializer_write_cannot_report_success(self):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t)
+            _, archive = self.fixture(root)
+            saved = archive.read_bytes()
+            original_open = Path.open
+            class ShortWriter:
+                def __init__(self, stream):
+                    self.stream = stream
+                def __enter__(self):
+                    return self
+                def __exit__(self, *args):
+                    self.stream.close()
+                def write(self, value):
+                    return 0
+                def __getattr__(self, name):
+                    return getattr(self.stream, name)
+            def opening(path, *args, **kwargs):
+                stream = original_open(path, *args, **kwargs)
+                if path.name == 'writer.lock' and args and args[0] == 'xb':
+                    return ShortWriter(stream)
+                return stream
+            with patch.object(Path, 'open', opening):
+                with self.assertRaisesRegex(ValueError, 'Restored file bytes differ'):
+                    snapshot.unpack(archive, root/'short-output', REVISION)
+            self.assertEqual((root/'short-output/writer.lock').read_bytes(), b'')
+            self.assertEqual(archive.read_bytes(), saved)
 
 
 if __name__ == '__main__':
