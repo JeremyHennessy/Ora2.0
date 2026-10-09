@@ -1,0 +1,43 @@
+{
+  "guarded_storage_gate": true,
+  "case_files": 791,
+  "case_logical_bytes": 46070283,
+  "case_reserved_bytes": 46090391,
+  "case_phase_reserved": {
+    "raw": 21727297,
+    "archive": 2570129,
+    "restore": 21727297,
+    "failure": 65668
+  },
+  "case_limits": {
+    "raw": 67108864,
+    "archive": 33554432,
+    "restore": 67108864,
+    "failure": 8388608
+  },
+  "case_combined_limit": 150994944,
+  "supervisor_bytes": 4031159,
+  "staging_reserved_bytes": 226492416,
+  "historical_files_copied": 393,
+  "archive_members": 394,
+  "restored_files": 394,
+  "historical_traces": 24,
+  "historical_requests": 3904,
+  "new_panels": 0,
+  "new_worlds": 0,
+  "tests": 7,
+  "post_replay_filesystem_identical": true,
+  "bytecode_writes_disabled": true,
+  "oversized_growth_refused_before_write": true,
+  "forged_accounting_refused": true,
+  "original_trace01_quota_failure_preserved": true,
+  "prior_shared_unchanged": 340,
+  "prior_C_unchanged": 236,
+  "controller_activated": false,
+  "operating_system_disk_quota": false,
+  "source_revision": "197b3c235f8a5eee99fc191caee474d5e17f5278",
+  "contract_revision": "081dfa3a1050d09d39f35d24ca798c93d5736334",
+  "first_rehearsal_final_audit_failed": true,
+  "failed_evidence_preserved": true,
+  "guarded_writer_only": true
+}
