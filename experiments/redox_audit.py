@@ -30,8 +30,8 @@ def initialize(seed,arm):
     r=random.Random(seed);places=[r.randrange(64) for _ in range(48)];types=[r.randrange(16) for _ in range(12)]
     s={'arm':arm,'slots':[],'photons':[16 for _ in range(64)],'thermal':256,'operator':16,
        'heat':0,'exported':0,'next_id':0,'birth_head':'0'*64,'lost':{},'endpoint':[],
-       'exact':[],'stats':{k:0 for k in ['capture','formation','catalysis','decay','motion',
-             'damage','functional_damage','genesis','genesis_refused','post_formation','post_catalysis']},'zeros':{}}
+       'exact':[],'damage_snapshot':None,'stats':{k:0 for k in ['capture','formation','catalysis','decay','motion',
+             'damage','functional_damage','genesis','genesis_refused','post_formation','post_catalysis','pre_functional']},'zeros':{}}
     b=[]
     for i in range(48):s['slots'].append(new_object(s,b,i,places[i],None,0,False,[],[]))
     if arm=='supplied':
@@ -52,6 +52,7 @@ def draw(r):
 def step(s,b,t,d):
     ev=[];counts=s['stats']
     if t==2048:
+        counts['pre_functional']=sum(1 for x in s['slots'] if x['kind'] is not None and not x['assisted'] and x['used']>0)
         if s['arm']=='withdrawal':
             s['exported']=sum(s['photons']);s['photons']=[0 for _ in range(64)]
             ev.append(['withdraw',s['exported']])
@@ -63,6 +64,7 @@ def step(s,b,t,d):
             counts['damage']+=1;s['heat']+=1
             s['slots'][i]=new_object(s,b,i,obj['cell'],None,0,obj['assisted'],[],[obj['uid']])
             ev.append(['damage',obj['uid'],s['slots'][i]['uid']])
+        s['damage_snapshot']=[sum(s['photons']),sum(x['q'] for x in s['slots']),s['thermal']]
     action,i,token,typ,byte,direction,destination,noise=d
     obj=s['slots'][i];where=obj['cell'];event=['refuse',action,obj['uid']]
     if action==0:
@@ -134,7 +136,7 @@ def record(s,b,seed):
             'exposed':bool(s['lost']),'stats':s['stats'],'zeros':s['zeros'],
             'photons':sum(s['photons']),'buffer':sum(x['q'] for x in s['slots']),
             'thermal':s['thermal'],'operator':s['operator'],'heat':s['heat'],'exported':s['exported'],
-            'final_hash':sha(s),'births':len(b)}
+            'final_hash':sha(s),'births':len(b),'damage_snapshot':s['damage_snapshot']}
 
 def audit_world(path,revision):
     with Path(path).open('rb') as incoming:

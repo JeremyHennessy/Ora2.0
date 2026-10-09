@@ -27,10 +27,10 @@ class World:
         positions=[self.rng.randrange(64) for _ in range(48)]
         supplied=[self.rng.randrange(16) for _ in range(12)]
         self.state=dict(arm=arm,slots=[],photons=[16]*64,thermal=256,operator=16,heat=0,
-                        exported=0,next_id=0,birth_head='0'*64,lost={},endpoint=[],exact=[],
+                        exported=0,next_id=0,birth_head='0'*64,lost={},endpoint=[],exact=[],damage_snapshot=None,
                         stats={k:0 for k in ('capture','formation','catalysis','decay','motion',
                                             'damage','functional_damage','genesis','genesis_refused',
-                                            'post_formation','post_catalysis')},zeros={})
+                                            'post_formation','post_catalysis','pre_functional')},zeros={})
         for i,cell in enumerate(positions):
             self.state['slots'].append(self.birth(i,cell,None,0,False,[],[],False))
         if arm=='supplied':
@@ -64,6 +64,7 @@ class World:
     def advance(self,t,d):
         s=self.state;events=[]
         if t==2048:
+            s['stats']['pre_functional']=sum(not p['assisted'] and bool(p['used']) for p in s['slots'] if p['kind'] is not None)
             if s['arm']=='withdrawal':
                 s['exported']+=sum(s['photons']);s['photons']=[0]*64
                 events.append(['withdraw',s['exported']])
@@ -75,6 +76,7 @@ class World:
                     s['heat']+=1;s['stats']['damage']+=1
                     s['slots'][i]=self.birth(i,p['cell'],None,0,p['assisted'],[],[p['uid']],False)
                     events.append(['damage',p['uid'],s['slots'][i]['uid']])
+            s['damage_snapshot']=[sum(s['photons']),sum(p['q'] for p in s['slots']),s['thermal']]
         action,i,token,j,byte,direction,dest,noise=d;p=s['slots'][i];cell=p['cell']
         result=['refuse',action,p['uid']]
         if action==0 and p['kind'] is None and p['q']==0 and s['photons'][cell]>=2:
@@ -136,7 +138,7 @@ class World:
                     exposed=bool(s['lost']),stats=copy.deepcopy(s['stats']),zeros=s['zeros'],
                     photons=sum(s['photons']),buffer=sum(p['q'] for p in s['slots']),
                     thermal=s['thermal'],operator=s['operator'],heat=s['heat'],exported=s['exported'],
-                    final_hash=digest(s),births=len(self.births))
+                    final_hash=digest(s),births=len(self.births),damage_snapshot=s['damage_snapshot'])
 
 def run_batch(root,start,revision):
     if start not in range(63000,63032,4):raise ValueError('Frozen four-seed batch')
