@@ -28,6 +28,9 @@ than claiming enumeration of every possible historical identity/heat path.
 Endpoint states are terminal; action-order BFS chooses the first shortest witness,
 while an independent DFS re-enumerates the entire projected closure. All minimum-P
 feasible mask/arm witnesses are retained, including null and withdrawal witnesses.
+The child emits deterministic compressed JSON through its capped stdout; the
+trusted wrapper expands it into precharged evidence storage. No unguarded model
+file writes or timestamps enter census/replay identity.
 
 ## Frozen accounting law
 

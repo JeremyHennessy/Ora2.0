@@ -1,8 +1,9 @@
 """COUPLE-01 finite possibility oracle. Never a natural-world controller."""
 import argparse
+import base64
 from collections import deque
 import json
-from pathlib import Path
+import zlib
 
 ARMS = ('network', 'inert', 'background', 'withdrawal', 'no-recycling')
 # phase, photons, fuelA, fuelB, rawA, rawB, wasteA, wasteB, componentA, componentB
@@ -160,6 +161,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     data = json.dumps(census(args.revision), sort_keys=True, separators=(',', ':')).encode()
     # The acceptance wrapper precharges this file; this module only emits stdout.
-    if args.output != 'stdout':
+    if args.output != 'compressed-stdout':
         raise ValueError('Guarded wrapper must capture stdout; direct writes prohibited')
-    print(data.decode())
+    print(base64.b64encode(zlib.compress(data)).decode())
