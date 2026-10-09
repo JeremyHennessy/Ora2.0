@@ -2,7 +2,7 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — finite launch verified; passive trace cost gate completed
+## Latest checkpoint — guarded evidence path verified; useful-action coupling next
 
 **Science:** KINETIC-01 closed negative(192 worlds,zero reconstruction endpoints).
 GRADIENT-01 closed negative(192 worlds,one paid natural renewal candidate world,
@@ -26,10 +26,19 @@ loses all state at clock241 of the256 horizon;224 horizon exhausts fuel before
 reconstruction. Short traces retain/rebuild paid state with new IDs and provenance.
 All analytical predictions match. [Receipt/full decision](TRACE-01-COST-RECEIPT.md).
 Operational gap:16MiB checked only raw panel; complete evidence exceeded that
-ceiling. [Preserved scope erratum](TRACE-01-LIMIT-SCOPE-ERRATUM.md); future runs
-need prospective aggregate raw/archive/restore caps before execution.
+ceiling. [Preserved scope erratum](TRACE-01-LIMIT-SCOPE-ERRATUM.md). Original claim
+remains failed; the separately registered guarded path below does not rewrite it.
 This is installed-component feasibility preparation, not natural useful organization,
 learning, reproduction or behavioral execution. No controller or world activated.
+
+**EVIDENCE-01:** accepted197b3c23 preserves393 old members, archives/restores394
+identical files and separately reinterprets all24 old traces, with791 case files
+within raw/archive/restore/failure and combined prewrite reservations. Seven native
+checks pass; oversized growth and forged accounting refuse. First copied-byte
+rehearsal failed final audit after unguarded interpreter-cache writes; preserved.
+Prospective no-bytecode wrapper passes after replay, same writer/limits. [Receipt](EVIDENCE-01-RECEIPT.md).
+Future experiments must use this trusted-writer path or a separately verified
+quota; no automatic upgrade of old code or OS/hostile-writer guarantee. No new panel.
 
 **Next primary science action:** separately freeze generic encounter-to-trace and
 resource-use coupling, complete sensing/delivery/read/write/movement/interaction
