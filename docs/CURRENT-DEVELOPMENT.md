@@ -2,7 +2,41 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest science checkpoint — DISSOCIATE-01 full-cost breakup feasibility
+## Latest science checkpoint — CAPACITY-01 affordable recycled reconstruction
+
+Frozen dcc0bc8c, executed d2de1bb0: 2,688 authored feasibility conditions,
+126,288 panel requests plus 5,040 fully paid supplied-manufacture requests;
+zero natural worlds. 45 Windows checks passed; separate semantic manufacture,
+ledger, provenance and exact raw/summary/audit replay passed. Rehashed forgery
+rejects; 137 historical/shared inputs unchanged; 17 sealed files restored on D:.
+[Receipt](CAPACITY-01-RECEIPT.md).
+
+At unchanged prices, candidate and supplied arms each achieve 16 capture-paid
+recycled releases and eight actual rebuilt-target captures after external work
+closes. Qualifying payer/target sizes: 5/2, 6/2, 6/3. Four-component payers and
+length-four targets fail. Irreversible, inert-cut, product-ghost, association-off
+and food-withdrawn controls produce zero primary endpoint. External control's
+32 reused releases are subsidized. Supplied fresh-material bypasses remain
+separate. Full payer manufacture, cut, activation, bond, release/endowment,
+capture, waste and heat costs are included, with finite total energy 589.
+
+This demonstrates an affordable programmed pathway under authored arrangement
+and encounters, not autonomous realization, self-maintenance or inheritance.
+Candidate founders still receive initial external formation work; food matching
+and selected scheduling remain assistance. No runtime law installed.
+
+**Next science priority:** separately freeze an unscreened generic-cut panel,
+without founder/target selection or favorable bit/encounter ordering, against
+the preserved irreversible and matched inert/supplied/external/withdrawal controls.
+Measure capture-paid recycled reconstruction with object/component provenance;
+preserve negative outcomes rather than tuning this successful authored path.
+Repeatable productive realization must precede descendant functional inheritance.
+AI-Research main fef0a523 / Pass 29 unchanged; founder/resupply caveats incorporated,
+no unproven literature mechanism installed. Engineering priorities remain hardened
+filesystem/network/process isolation and physical durability/full-host recovery.
+Observer remains paused; no continuous world or publication activated.
+
+## Preserved science checkpoint — DISSOCIATE-01 full-cost breakup feasibility
 
 Frozen9537f1b, executed81f4b64c:1,344 authored feasibility conditions/58,272
 requests, zero natural worlds. Generic cut costs actual n+1 work, dissipates all
