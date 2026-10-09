@@ -2,7 +2,36 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — ISOLATION-02 confined actual-world continuity
+## Latest checkpoint — ISOLATION-03 confined actual resource recovery
+
+Frozen 700600b5 plus prospective execution erratum; accepted 302066f4. Two trial
+blocks / 22 native launches / 16 finite engineering histories. Six real CPU,
+committed-memory and wall stops, six exact fresh-process confined resumes and
+six completing matched controls under unchanged caps. All 33 full states and
+32 events match references; identity, resources, provenance/ancestry, RNG/noise
+and durable journal prefixes retained. Independent replay, read-only recorded
+observation and rehashed state-forgery rejection pass. 17 Windows checks pass
+with one expected platform skip; 277 shared files unchanged; 696 accepted files
+restored on D:. Initial clock-only pressure/cleanup-race failure preserved with
+369 restored files; narrowly fixed CPU instrumentation and signaled-handle
+termination verification, without relaxing limits. [Receipt](ISOLATION-03-RECEIPT.md).
+
+**Next engineering priority:** separately precommit software-storage faults
+inside confinement, then profile/filesystem-permission restoration across a
+new launch identity. Earlier ordinary storage checks do not prove this composition.
+Physical power-loss/full-host recovery and production security assessment remain
+open before a separately authorized supervised persistent pilot. No unattended
+world, memory-peak bound, hostile-escape proof or complete filesystem/network
+isolation claim. Existing world law, UI and scientific histories preserved.
+
+**Science:** RECYCLE-01 negative realization remains preserved. Next distinct
+generic local resource/reaction coupling candidate needs full formation/activation/
+release/endowment costs and independent prospective controls; no favorable tuning
+of frozen negative cuts. No new autonomous origin, self-maintenance, functional
+inheritance or evolution. AI-Research main fef0a523 / Pass 29 unchanged; transmission,
+benefit, resupply and founder assistance remain separate. Observer remains paused.
+
+## Preserved checkpoint — ISOLATION-02 confined actual-world continuity
 
 Frozen a56f8cc1, executed 14521c83. Two trials / 28 launch cases / 12 existing
 seed-1 finite engineering world histories: ordinary/confined references, eight
