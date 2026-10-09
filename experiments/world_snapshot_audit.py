@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 LIMITS = {'manifest.json': 1024**2, 'checkpoint.json': 1024**2,
           'frames.jsonl': 16*1024**2, 'writer.lock': 1, 'metadata.json': 65536}
 FILES = (*heartbeat.FILES, 'experiments/world_snapshot.py', 'experiments/world_snapshot_audit.py',
-         'experiments/world_storage.py', 'experiments/world_storage_audit.py', 'docs/STORAGE-01-CONTRACT.md')
+         'experiments/world_storage.py', 'experiments/world_storage_audit.py', 'docs/STORAGE-01-CONTRACT.md',
+         'docs/STORAGE-01-DIAGNOSTIC.md')
 
 
 def sources():

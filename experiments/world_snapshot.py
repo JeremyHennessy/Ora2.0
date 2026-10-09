@@ -14,12 +14,17 @@ def pack(world, archive, revision):
     world, archive = Path(world), Path(archive)
     if archive.exists():
         raise FileExistsError('Snapshot archive must be new')
+    # Windows denies reading the held byte through a second file descriptor.
+    with (world/'writer.lock').open('rb') as stream:
+        initializer = stream.read(2)
+    if initializer != b'L':
+        raise ValueError('Lock initializer')
     with writer_lock(world):
         evidence = audit.heartbeat.inspect(world, revision)
-        names = ['manifest.json', 'frames.jsonl', 'writer.lock']
+        names = ['manifest.json', 'frames.jsonl']
         if (world/'checkpoint.json').exists():
             names.append('checkpoint.json')
-        blobs = {}
+        blobs = {'writer.lock': initializer}
         for name in names:
             with (world/name).open('rb') as stream:
                 blobs[name] = stream.read(audit.LIMITS[name]+1)
@@ -33,7 +38,7 @@ def pack(world, archive, revision):
                         last_frame_sha256=evidence['frames'][-1]['frame_sha256'],
                         state_sha256=evidence['report']['verified_state_sha256'], files=audit.describe(blobs))
         audit.compare_capture(metadata, audit.heartbeat.inspect(world, revision))
-        if any((world/name).read_bytes() != value for name, value in blobs.items()):
+        if any((world/name).read_bytes() != blobs[name] for name in names):
             raise ValueError('Source changed during cooperative snapshot')
         payload = dict(blobs, **{'metadata.json': (audit.heartbeat.canonical(metadata)+'\n').encode()})
         with archive.open('xb') as stream:
