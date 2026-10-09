@@ -50,7 +50,9 @@ same-source rerun passes. Existing UI/playback preserved; no service or publicat
 Next trusted actual-launcher birth-time binding and observer end-to-end validation,
 including active-display expiry; existing receipts remain recorded. Observer work
 stays paused unless its authorized owning chat resumes. AI-Research main
-fef0a523 / Pass 29 unchanged; no unproven paper mechanism installed into production.
+d6e68cff / Pass 29: latest verified navigation errata adds no scientific result;
+Pass 29's benefit/transmission/external-supply distinctions remain. No unproven
+paper mechanism installed into production.
 
 ## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
