@@ -209,14 +209,16 @@ and controls retained. Prior laws, failed gates and samples unchanged.
 
 ## RATCHET-01/02 — end-of-day useful-work assessment
 
+Substage numbering follows the six sprint objectives in the opening table.
+
 | Substage | Demonstrated / controlled only | Failed or unproven | Evidence needed |
 | --- | --- | --- | --- |
 |3.1 energy capture|Installed finite chemical-to-work coupling, exact reversible ledger|No natural self-built capture; work surplus0/64|Founder-free coupling with positive full-cost useful output|
-|3.2 locally funded construction|Paid supplied startup6; candidate pays scheduled replacement7 in51/64|Final work0–9<initial16, primary fails|Retained useful output after ALL formation/renewal/transport costs|
-|3.3 recycling|Labelled fuel↔waste and structural atoms reused under fresh ancestry|Reverse chemistry/atom reuse is not functional recycling|Recycled material causally restores useful function under matched nulls|
-|3.4 self-maintenance|Controlled replacement funded; all256 dynamics independently audited|No endogenous repair; whole-cost surplus0/64, both nulls0,P1|Repeated blind damage and spontaneous paid useful reconstruction|
-|3.5 autonomous origin|Prior raw-start studies preserved; RATCHET contains supplied apparatus|Zero founder-free RATCHET worlds; no autonomous origin|Generic raw environment naturally assembles productive coupling|
-|3.6 continued function/inheritance|Finite fuel/no replenishment; full ID/provenance records|No subsidy-withdrawal confirmation, heredity, adaptation or reproduction|Independent persistent useful function and separately controlled functional inheritance|
+|3.2 local construction and recycling|Paid supplied startup6; labelled fuel↔waste and structural atoms reused under fresh ancestry|Final work0–9<initial16; atom reuse is not useful functional recycling|Retained useful output after ALL formation/renewal/transport costs and causal recycled-material reconstruction|
+|3.3 maintenance after damage|Controlled replacement funded51/64; all256 dynamics independently audited|No endogenous repair; whole-cost surplus0/64, both nulls0,P1|Repeated blind damage and spontaneous paid useful reconstruction|
+|3.4 founder-free organization|Prior raw-start studies preserved; RATCHET contains supplied apparatus|Zero founder-free RATCHET worlds; no autonomous origin|Generic raw environment naturally assembles productive coupling|
+|3.5 activity after assistance withdrawal|Finite fuel/no replenishment; supplied interventions fully accounted|No researcher-assistance withdrawal test; finite stocks are not autonomous support|Withdraw researcher-specific scaffold while retaining matched natural resources and accounting for all buffers|
+|3.6 reconstruction and early inheritance|Full new-object identity and component provenance records|No endogenous functional reconstruction, heredity, adaptation or reproduction|Independently useful reconstruction then causal functional inheritance tests|
 
 Stop RATCHET's tested law/horizon. Feasibility29210 states/107861 edges and
 28160 exact rate checks passes; kinetics256 worlds/1048576 attempts fails.
