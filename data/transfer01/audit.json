@@ -1,0 +1,7119 @@
+{
+  "advantage_groups": 0,
+  "autonomous_self_maintenance": false,
+  "cases": 5376,
+  "classification": "NO WHOLE-SYSTEM RESOURCE ADVANTAGE: stop this claim",
+  "edges": 521808,
+  "gate_pass": false,
+  "minima": [
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        }
+      },
+      "types": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 0,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 1,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "damage": 2,
+      "minimum": {
+        "background": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "candidate": {
+          "partial": 1,
+          "transfer-partial": 1,
+          "transfer-whole": 4,
+          "whole": 3
+        },
+        "no-transfer": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        },
+        "shuffled": {
+          "partial": 3,
+          "transfer-partial": null,
+          "transfer-whole": null,
+          "whole": 3
+        }
+      },
+      "types": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "natural_worlds": 0,
+  "required_groups": 96,
+  "source_revision": "c7b65a37d19a29d1ef55433db1507149e3a2283b",
+  "states": 184872,
+  "verified": true
+}

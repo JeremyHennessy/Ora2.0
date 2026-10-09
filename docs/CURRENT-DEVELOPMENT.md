@@ -2,7 +2,38 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — activated chains produce; independent opportunity gate fails
+## Latest checkpoint — whole-system resource transfer advantage ruled out
+
+**Exact source/evidence:** TRANSFER-01 c7b65a37d19a29d1ef55433db1507149e3a2283b,
+prospective9edf684 protocol.5376 complete accounting cases/184872 independently
+enumerated states/521808 reaction choices. Whole original structure restores at
+minimum3 photons in all192 type/damage groups in ALL four arms; transfer-used
+whole restoration needs4 where available.0/192 resource-advantage groups, required96.
+[Receipt](TRANSFER-01-RECEIPT.md),[decision](../data/transfer01/audit.json).
+
+**Decision:** close this whole-cost advantage claim before natural dynamics.
+One-unit partial repair sacrifices a donor; replacing it costs3 more. This is
+controlled fully priced possibility only,0 natural worlds. Every primary null
+can attain the whole endpoint. Candidate144 partial gains vs no-transfer, but
+shuffled144/background192; no whole cost gain. Kinetic/ecological effects untested.
+16 local checks, exact authored record replay,3 forged-witness refusals,423-file
+independent C: restore and all5376 cases re-audited from restored source. Prior
+LIGATE evidence and all approved shared files preserved. No silent physics change.
+
+**Next highest-value science:** capture/transform usable environmental resources
+to renew useful organization, rather than relocating donor loss. Precommit a
+distinct mechanism and functional endpoint attainable in ALL primary nulls; price
+formation, startup, flux, waste, stored energy and donor replacement. Feasibility
+first, then disjoint unscreened opportunity gate before confirmatory damage/use.
+Do not tune or rerun closed laws or supply successful founders. Stage3 incomplete.
+
+**Current activity:** no science writer/world active. Acceptance requires current
+exact-head CI/Git evidence. AI-Researchce044ee/Pass38 remains independent/unchanged;
+observer approved and publication paused, records not live telemetry. Physical
+durability/lost-work/cadence/full-host recovery/production isolation and separate
+pilot permission remain engineering gates. No unrelated runtime/UI expansion.
+
+## Historical checkpoint — activated chains produce; independent opportunity gate fails
 
 **Exact source/evidence:** LIGATE-01 ced7158552bee53bc840fceed08d2afac02cf77d,
 prospective80efa3f protocol.128 unscreened worlds/262144 independently interpreted

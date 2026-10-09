@@ -155,3 +155,19 @@ must be achievable in nulls.682-file off-drive restore reaudits all128 worlds;
 failure is preserved and recovered without a science rerun. No autonomous
 self-maintenance, reproduction, inheritance or adaptive intelligence demonstrated.
 [Receipt](LIGATE-01-RECEIPT.md). Next CURRENT gate supersedes older suggestions.
+
+
+## TRANSFER-01 subsequent accounting gate — do not move damage and call it repair
+
+Exactc7b65a3,5376 cases/184872 states/521808 choices, no natural worlds.
+Priced concerted bond-energy transfer permits controlled partial repair at1 unit
+in144/192 candidate groups, but donor replacement makes transfer-used whole
+restoration4 units versus direct3 in every primary arm/group. All primary nulls
+can pass the same whole endpoint;0/192 candidate cost-advantage groups. Reject
+this shortcut claim before a natural panel. This adds controlled-only3.2/3.3/3.6
+accounting evidence and a donor-depletion falsifier; no natural3.1/3.4/3.5 or
+Stage3 acceptance. Fully supplied/oracle-scheduled startup is not autonomous
+origin; kinetics untested.16 local checks, every independent graph/witness audit,
+3 forgeries refused,423-file off-drive restore reaudits all5376 cases.
+[Receipt](TRANSFER-01-RECEIPT.md). Next CURRENT resource-transformation gate
+supersedes older suggestions; no retuning, observer or persistent activation.
