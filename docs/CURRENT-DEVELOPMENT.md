@@ -2,7 +2,45 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — ISOLATION-03 confined actual resource recovery
+## Latest checkpoint — ISOLATION-04 integrated recovery across launch identities
+
+User priorities updated: first integrated persistent-world foundations, then a
+genuinely different full-cost scientific mechanism, then validated observer
+readiness without UI redesign. These tracks remain independent.
+
+Frozen ef8fedcc; executed b5d31040. Two trial blocks / 40 native launches /
+16 finite engineering histories: six resource stops at tick 5 followed by six
+software I/O faults at tick 8 in the SAME world. Two partial-journal resumes
+reject unchanged; four direct continuations match. Twelve permission probes
+reject without world mutation. Six restorations under new AppContainer SIDs
+after original profile deletion match all 33 full states / 32 events, including
+identity, resources, ancestry/provenance, RNG/noise and valid raw history prefix.
+Eight profiles cleaned. Independent byte reconstruction/replay, read-only recorded
+observations and two forgery rejections pass. 19 Windows checks pass / two expected
+skips; 284 shared files unchanged; 1,188 sealed files restored on D:.
+[Receipt and remaining pilot gates](ISOLATION-04-RECEIPT.md).
+
+**Engineering:** registered resource/software-storage/new-identity composition
+is verified. Remaining: actual physical durability and acceptable lost-work policy,
+full-host restoration rehearsal, production isolation scope, validated live-state /
+process telemetry and a finite supervised pilot contract with separate approval.
+No unattended world, service, public access, memory-peak or hostile-escape claim.
+
+**Science:** preserve all recent negative results, especially RECYCLE-01. Stop
+varying uniform cuts toward positive outcomes. Compare a distinct finite-fuel,
+local catalytic-reaction chemistry: spontaneous precursor association and generic
+catalytic rate changes, with all formation/regeneration/decay costs explicit,
+no supplied successful template and precommitted fresh controls. Structural
+reaction possibility and accounting feasibility do not demonstrate realized
+self-maintenance, reproduction, functional inheritance or evolution.
+
+**Observer:** preserve UI/playback; prepare a source-bound read-only telemetry
+contract joining verified world state with actual process identity and advancement.
+Recorded fixtures remain labelled recorded. Observer work stays paused unless its
+authorized owning chat resumes; no publication duplicated here. AI-Research main
+fef0a523 / Pass 29 unchanged; no unproven paper mechanism installed into production.
+
+## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
 Frozen 700600b5 plus prospective execution erratum; accepted 302066f4. Two trial
 blocks / 22 native launches / 16 finite engineering histories. Six real CPU,
