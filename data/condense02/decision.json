@@ -1,0 +1,8775 @@
+{
+  "attempts": 262144,
+  "autonomous_self_maintenance": false,
+  "comparisons": [
+    {
+      "losses": 0,
+      "null": "affinity-ghost",
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "losses": 0,
+      "null": "catalysis-ghost",
+      "p": 1.0,
+      "wins": 0
+    }
+  ],
+  "decision": "PRIMARY FAIL: close tested law/1024 horizon",
+  "founder_free": true,
+  "primary_pass": false,
+  "records": [
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 881,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79000,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 881,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 27,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79000,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79000,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79000,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 898,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79001,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 898,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 22,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79001,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 898,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79001,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79001,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 49
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79002,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 49
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79002,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 49
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79002,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 49
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79002,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 525,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79003,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 525,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79003,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 525,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79003,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79003,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 761,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79004,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 761,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79004,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79004,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79004,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79005,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79005,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 13,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79005,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79005,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 8,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 523,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79006,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79006,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79006,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 60,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79006,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79007,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 17,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79007,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79007,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 7,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 0,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79007,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79008,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79008,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79008,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79008,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79009,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79009,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79009,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79009,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 83,
+          "reverse": 79
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79010,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 83,
+          "reverse": 79
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79010,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 83,
+          "reverse": 79
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79010,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 83,
+          "reverse": 79
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79010,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79011,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79011,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79011,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79011,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79012,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 7
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79012,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79012,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79012,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79013,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79013,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79013,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79013,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 895,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79014,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 895,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79014,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 895,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79014,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79014,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79015,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79015,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79015,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 1,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79015,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 76,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79016,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 76,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79016,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 76,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79016,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 76,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79016,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 5,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 65,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 631,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 29,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79017,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 5,
+          "reverse": 2
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 65,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79017,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 65,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79017,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 65,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79017,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79018,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79018,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79018,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79018,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79019,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79019,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 6,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79019,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 5,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79019,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79020,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79020,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79020,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79020,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 55
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 728,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79021,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 55
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 728,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79021,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 55
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 728,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79021,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 55
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79021,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 469,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 29,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79022,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 868,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79022,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 868,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 27,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79022,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79022,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79023,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79023,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79023,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 2,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79023,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 834,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79024,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 834,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79024,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79024,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79024,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 5,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 390,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 25,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79025,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 5,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 390,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79025,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 390,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79025,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79025,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79026,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79026,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79026,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79026,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 72,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 702,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79027,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 72,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 702,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79027,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 72,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 702,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79027,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 72,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79027,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79028,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79028,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79028,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79028,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 81,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 862,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 25,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79029,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 81,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 862,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79029,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 81,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 862,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 25,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79029,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 81,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79029,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 53
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79030,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 9,
+          "reverse": 9
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 53
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79030,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 53
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 955,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79030,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 62,
+          "reverse": 53
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79030,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 22,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79031,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79031,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 22,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79031,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 3,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79031,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79032,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79032,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79032,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 66,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79032,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 733,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79033,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 981,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79033,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 981,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79033,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79033,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 15,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79034,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 14,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79034,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 15,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79034,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 5,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79034,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 77
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79035,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 77
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79035,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 77
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79035,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 7,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 77
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79035,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 3,
+      "heat": 11,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79036,
+      "used_object0": null,
+      "work": 1
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 3,
+      "heat": 11,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79036,
+      "used_object0": null,
+      "work": 1
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 3,
+      "heat": 11,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79036,
+      "used_object0": null,
+      "work": 1
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79036,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79037,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": -1,
+      "rebuilt_route": null,
+      "seed": 79037,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79037,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 75
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 5,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79037,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 1004,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79038,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 1004,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 22,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79038,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 15,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79038,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 63
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 5,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79038,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 51
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79039,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 51
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79039,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 51
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79039,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 51
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 4,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79039,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79040,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 873,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79040,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79040,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 6,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79040,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79041,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79041,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79041,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 70,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79041,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79042,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 8,
+          "reverse": 8
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 17,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79042,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 18,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79042,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 3,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79042,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 68
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 731,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79043,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 68
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 731,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79043,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 68
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 731,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79043,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 55,
+          "reverse": 68
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79043,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79044,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 1
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 20,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79044,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79044,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79044,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 60
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79045,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 60
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79045,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 60
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79045,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 56,
+          "reverse": 60
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79045,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 52,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 963,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79046,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 52,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 963,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79046,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 52,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79046,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 52,
+          "reverse": 71
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79046,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79047,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79047,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79047,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 62
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 5,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79047,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 813,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79048,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 813,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79048,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 813,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79048,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 74
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79048,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 76
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 762,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79049,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 76
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 762,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 22,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79049,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 76
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79049,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 64,
+          "reverse": 76
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79049,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79050,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 879,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79050,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79050,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 67,
+          "reverse": 61
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79050,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 52
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 986,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79051,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 52
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 986,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79051,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 52
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 986,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79051,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 68,
+          "reverse": 52
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79051,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 15,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79052,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79052,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 15,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79052,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 61,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 4,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79052,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 996,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79053,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 996,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79053,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 996,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 3,
+      "rebuilt_route": null,
+      "seed": 79053,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 58,
+          "reverse": 70
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79053,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 6,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 514,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 27,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79054,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79054,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 24,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79054,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 66
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79054,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 54,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79055,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 54,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79055,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 54,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 16,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79055,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 54,
+          "reverse": 57
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 6,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79055,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 606,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79056,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 3,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 606,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79056,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 0,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79056,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 59
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79056,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 0
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 3
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 14,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79057,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79057,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 2,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 2,
+      "heat": 14,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79057,
+      "used_object0": null,
+      "work": 2
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 73,
+          "reverse": 69
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79057,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79058,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79058,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79058,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 71,
+          "reverse": 58
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79058,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 4
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79059,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 6
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": true,
+      "first_depletion": 914,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 29,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79059,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 5
+        },
+        "2": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 722,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79059,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 59,
+          "reverse": 73
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79059,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 796,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79060,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 796,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79060,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 6
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 796,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 28,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79060,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 56
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79060,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79061,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79061,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 7
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 23,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 2,
+      "rebuilt_route": null,
+      "seed": 79061,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 4,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 63,
+          "reverse": 64
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 8,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79061,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 720,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79062,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 720,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79062,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 4,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 4
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": 720,
+      "fresh_object_continuity": false,
+      "fuel": 0,
+      "heat": 26,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 1,
+      "rebuilt_route": null,
+      "seed": 79062,
+      "used_object0": null,
+      "work": 4
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 2,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "3": {
+          "forward": 74,
+          "reverse": 67
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79062,
+      "used_object0": null,
+      "work": 0
+    },
+    {
+      "arm": "candidate",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 57,
+          "reverse": 65
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79063,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "affinity-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 3
+        },
+        "2": {
+          "forward": 5,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 57,
+          "reverse": 65
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 21,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79063,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "catalysis-ghost",
+      "counts": {
+        "0": {
+          "forward": 3,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "2": {
+          "forward": 7,
+          "reverse": 5
+        },
+        "3": {
+          "forward": 57,
+          "reverse": 65
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 1,
+      "heat": 19,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79063,
+      "used_object0": null,
+      "work": 3
+    },
+    {
+      "arm": "passive",
+      "counts": {
+        "0": {
+          "forward": 0,
+          "reverse": 0
+        },
+        "1": {
+          "forward": 3,
+          "reverse": 2
+        },
+        "2": {
+          "forward": 1,
+          "reverse": 1
+        },
+        "3": {
+          "forward": 57,
+          "reverse": 65
+        }
+      },
+      "endpoint": false,
+      "exposed": false,
+      "first_depletion": null,
+      "fresh_object_continuity": false,
+      "fuel": 4,
+      "heat": 6,
+      "physical_endpoint": false,
+      "position": 7,
+      "post_loss_net_work": 0,
+      "rebuilt_route": null,
+      "seed": 79063,
+      "used_object0": null,
+      "work": 0
+    }
+  ],
+  "source_revision": "250f9f579851529f7957a388a2bb30e9cd2d3986",
+  "success": {
+    "affinity-ghost": 0,
+    "candidate": 0,
+    "catalysis-ghost": 0,
+    "passive": 0
+  },
+  "thermodynamic_efficiency_advantage": false,
+  "totals": {
+    "affinity-ghost": {
+      "depleted": 25,
+      "exposed": 7,
+      "fuel_paid_rebuilt_uses": 0,
+      "post_loss_work": 67,
+      "thermal_rebuilt_uses": 0,
+      "work_max": 4,
+      "work_min": 1
+    },
+    "candidate": {
+      "depleted": 25,
+      "exposed": 12,
+      "fuel_paid_rebuilt_uses": 0,
+      "post_loss_work": 65,
+      "thermal_rebuilt_uses": 0,
+      "work_max": 4,
+      "work_min": 1
+    },
+    "catalysis-ghost": {
+      "depleted": 17,
+      "exposed": 10,
+      "fuel_paid_rebuilt_uses": 0,
+      "post_loss_work": 59,
+      "thermal_rebuilt_uses": 0,
+      "work_max": 4,
+      "work_min": 1
+    },
+    "passive": {
+      "depleted": 0,
+      "exposed": 0,
+      "fuel_paid_rebuilt_uses": 0,
+      "post_loss_work": 0,
+      "thermal_rebuilt_uses": 0,
+      "work_max": 0,
+      "work_min": 0
+    }
+  },
+  "verified": true,
+  "worlds": 256
+}

@@ -1,0 +1,57 @@
+{
+  "autonomous_self_maintenance": false,
+  "decision": "RAW-START POSSIBILITY AND THERMODYNAMIC GATE PASS; unscreened dynamics untested",
+  "invalid_forward_only": {
+    "energy_ledger_balanced": true,
+    "explanation": "Forward-only barrier decrease creates extra kinetic drive without a priced source",
+    "refused": true,
+    "unaccounted_ratio_multiplier": 8
+  },
+  "kinetic_advantage_tested": false,
+  "natural_worlds": 0,
+  "physical_gate_pass": true,
+  "records": [
+    {
+      "arm": "candidate",
+      "edges": 15828,
+      "endpoint_states": 48,
+      "minimum_net_fuel": 3,
+      "physical_edges": 15732,
+      "rate_signatures": 41,
+      "state_sha256": "b3db615588afcaf6921c5f7330e2a2d9ca9296785418adababc77f58d589890b",
+      "states": 1440
+    },
+    {
+      "arm": "affinity-ghost",
+      "edges": 15828,
+      "endpoint_states": 48,
+      "minimum_net_fuel": 3,
+      "physical_edges": 15732,
+      "rate_signatures": 36,
+      "state_sha256": "b3db615588afcaf6921c5f7330e2a2d9ca9296785418adababc77f58d589890b",
+      "states": 1440
+    },
+    {
+      "arm": "catalysis-ghost",
+      "edges": 15828,
+      "endpoint_states": 48,
+      "minimum_net_fuel": 3,
+      "physical_edges": 15732,
+      "rate_signatures": 33,
+      "state_sha256": "b3db615588afcaf6921c5f7330e2a2d9ca9296785418adababc77f58d589890b",
+      "states": 1440
+    },
+    {
+      "arm": "passive",
+      "edges": 876,
+      "endpoint_states": 0,
+      "minimum_net_fuel": null,
+      "physical_edges": 876,
+      "rate_signatures": 5,
+      "state_sha256": "d7f7c8692b6030c195f6cc71a249128ebc2fc3a28544216bcc5f53254527b7bb",
+      "states": 96
+    }
+  ],
+  "source_revision": "943ea32f2ad7f88321cf3e7e0b7cab130182db80",
+  "verified": true
+}

@@ -1,0 +1,10 @@
+{
+  "additional_prewrite_cap": 73400320,
+  "auditor_changed": false,
+  "correction": "Only replay command import corrected; complete panel/source kept byte-identical",
+  "physics_changed": false,
+  "preserved_failure": "replay wrapper ImportError: ARMS belongs to condense_gate, not condense_dynamics",
+  "primary_rerun": false,
+  "prior_reserved": 11705056,
+  "registered_combined_cap": 209715200
+}

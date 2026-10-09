@@ -230,3 +230,25 @@ or free initial structure. Full Stage3 acceptance remains unsupported.
 Candidate aggregate work-edge output2389 minus reverse input2495 is NET minus106.
 Initial work10 can pay the replacement7; funded replacement is not evidence of
 newly produced work. Neither positive net work nor autonomous repair is accepted.
+
+
+## CONDENSE-01/02 — raw-start affinity and useful-work opportunity
+
+Substage numbers follow the six sprint objectives in the opening table.
+3.1: installed F6+raw→active2+work1+heat3 makes useful output1–4 in all fueled
+arms, basal ghosts included; work per net fuel is fixed, no efficiency benefit.
+3.2: fully priced spontaneous activation/binding/release and labelled matter
+reuse are possible; complete physical graph/minimum fuel matches both ghosts.
+3.3: one fixed loss, actual candidate exposure12/64;0/64 whole functional recovery,
+same in both primary ghosts. Tiny substrate/opportunity limits inference; no rescue.
+3.4: all eight raw geometry assignments/64 independent blocks, no active founder;
+raw-start chemical behavior is not self-maintaining organism origin or phase separation.
+3.5: no researcher-support withdrawal or finite-buffer-depletion confirmation.
+3.6: fresh objects/bond/fuel ancestry audited; no repeated functional reconstruction,
+functional inheritance, adaptation or reproduction. Stage3 remains incomplete.
+
+256 worlds/262144 attempts fully interpreted. PrimaryP1 closes law/1024 horizon.
+Invalid forward-only catalysis has factor8 unpriced drive despite energy balance;
+valid reversible law avoids that shortcut. Preserved wrapper ImportError corrected
+only in postchecks; original panel/source unchanged and never rerun. Next is a
+source-grounded reference reaction/diffusion reproduction, not tuning this toy.

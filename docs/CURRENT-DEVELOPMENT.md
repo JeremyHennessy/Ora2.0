@@ -2,7 +2,41 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — reversible useful-work test fails whole-cost surplus
+## Latest checkpoint — raw affinity assembly fails renewed-work opportunity
+
+**Exact sources:** CONDENSE-01 physical943ea32f2ad7f88321cf3e7e0b7cab130182db80;
+CONDENSE-02 kinetics250f9f579851529f7957a388a2bb30e9cd2d3986.
+Prospective44d4e37/c4dd773.4416 complete states/48360 edges;256 raw-start
+worlds/262144 audited attempts. **Primary FAIL:** candidate0/64, both primary
+ghosts0/64, pairedP1. Candidate meaningful loss exposure12/64. [Receipt](CONDENSE-01-02-RECEIPT.md),
+[all-world evidence](../data/condense02/decision.json).
+
+**Actual advance/limit:** reversible affinity/construction/resource coupling starts
+without an active founder. Binding energy comes from already paid material,
+both reaction directions obey the physical rate ledger; forward-only catalysis
+would add unpriced drive and is refused. All primary arms have the SAME reachable
+graph/minimum fuel3. Fueled arms produce installed useful work1–4, but none
+rebuilds the registered functioning assembly after fixed loss. Sparse exposure
+limits the inference. Work=4-F rules out a work-per-fuel advantage by construction.
+No macroscopic phase separation, autonomous origin/self-maintenance or heredity.
+
+**Next decision:** stop this microscopic law/horizon. Reproduce a primary
+thermodynamically derived active-droplet reaction/diffusion reference before new
+finite-reservoir/raw-start extensions. First inspect original methods/equations,
+supplied resources/geometry, numerical convergence and full budgets; freeze a
+discriminating reproduction protocol. Do not enlarge/tune this failed toy for
+success. No reference implementation or new natural panel is yet registered.
+
+**Verification/activity:**24 focused local checks,4 exact replays,6 total forgery
+refusals,481/751-file independent C: restoration and complete restored-source
+audits. Failed replay-wrapper import preserved; corrected only postchecks, no
+primary rerun/source change. Historical negatives and approved observer unchanged.
+CI/local integration accepted only in closing receipt. No active world; AI-Research
+09f4f33/Pass39 unchanged, observer publication paused. Physical durability,
+lost-work/cadence/full-host restore/production isolation and separate supervised
+pilot authorization remain open. Stage3 incomplete.
+
+## Historical checkpoint — reversible useful-work test fails whole-cost surplus
 
 **Exact sources:** RATCHET-01 feasibility4319db0288a893ce167b00e0c0b3b04628589bfe;
 RATCHET-02 dynamics5db0b4cb8f63dcd89b27d68e7de5a1ef033c580e.
