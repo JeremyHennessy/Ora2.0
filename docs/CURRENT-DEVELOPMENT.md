@@ -31,7 +31,9 @@ current law. Fresh natural realization and later descendant reconstruction need
 their own protocols, independence and failures, after feasibility is established.
 
 RESOURCE-02 engineering composition is separately verified and merged through
-PR33/`8e1537eb`; record exact main CI before manual local integration. Its12 full
+PR33/`8e1537eb`. REACTIVATE-01 merged through PR34/`3b589549`; exact merged-main
+CI run37866907682 passed302 attempted tests (292 passed/10 platform skips).
+The completed review advances the next startup feasibility question below. Its12 full
 state continuations do not establish biological autonomy or physical power-loss
 safety. Retain the user's startup→engineering foundations→real-state observer→
 evolution priorities and all backup/storage/isolation gates below. Human-authorized
@@ -54,13 +56,13 @@ hardened isolation.
 User priority order now governs both tracks:
 
 1. **Science — startup first.** Separate REACTIVATE-01 protocol cf26e1c/source
-   22fc9f67 has completed source-pinned local acceptance pending its separate
-   integration:1792 authored cases/8064 events,18 relevant regression tests,
+   22fc9f67 completed source-pinned local acceptance and merged through PR34:
+   1792 authored cases/8064 events,18 relevant regression tests,
    exact raw/summary/audit replay. Existing empty-ready reactivation can be paid;
    16 length-4 founder recipes fund the second activation entirely from captured
    work. This uses supplied organization, compatible stocks and timing. Partial
    recharge is unavailable and no founder-free productive organization is shown.
-   Integrate that evidence, then register distinct generic-startup/renewal physics
+   Register distinct generic-startup/renewal physics
    against current negative baselines before new execution. Do not retune old laws.
 2. **Engineering — foundations.** Resource/recovery composition is verified at
    its registered durable boundary. Next independently scoped gates are off-drive
