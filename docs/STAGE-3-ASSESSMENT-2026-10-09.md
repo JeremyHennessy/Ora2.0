@@ -86,3 +86,28 @@ restore, production isolation scope and separate supervised-pilot authorization
 remain open. No continuously running world, learning or life follows from these
 engineering receipts. This sprint does not mark any autonomous-maintenance gate
 or Stage3 as complete.
+
+
+## CARRIER-01 update — natural carrier dynamics, underexposed renewal
+
+Exact8400e177 source,192 unscreened worlds/393216 audited transitions;
+[receipt](CARRIER-01-RECEIPT.md).3.1: candidate210 captures/4 causal catalytic
+charges, but none funded useful cross-recipe construction; inert matches29
+manufactures.3.2:29 founder-free new identified components,0 candidate recycling;
+3 supplied-control recoveries remain assisted. Fully paid authored recovery and
+return funding are controlled possibilities only.3.3:0 renewal/0 useful damage
+exposure, so hypothesis unresolved under these laws, not decisive rejection.
+3.4:no productive organization; unscreened raw genesis is preserved.3.5:9
+manufactures after natural-photon removal use finite stored carriers; inert9
+too, not autonomy after depletion or withdrawal of researcher rescue.3.6:no
+functional reconstruction, reproduction, inheritance or adaptation.
+
+All thermal motion depleted before blind damage; many stored photons/carriers
+remained unused. Post-hoc encounter diagnosis motivates a distinct fully priced
+aggregation/retention law with passive-retention and independent-component
+nulls, not retuning resources, contact rates or favorable starting geometry.
+17 scoped local checks,24-world replay,3 forgery refusals,672-file independent
+off-drive restore and all192 restored-source audits pass. Final wrapper's
+empty-first-world ancestry-fixture failure preserved; no science rerun.
+Every acceptance gate in the table remains outstanding for autonomous
+self-maintenance. Stage3 is not complete; engineering continuity is separate.

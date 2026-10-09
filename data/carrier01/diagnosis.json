@@ -1,0 +1,5129 @@
+{
+  "new_worlds": 0,
+  "per_world": [
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 39,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "raw_atoms_separated": 253,
+        "same_atom": 11
+      },
+      "heat": 137,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73000,
+      "zero_thermal": 382
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 39,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "raw_atoms_separated": 253,
+        "same_atom": 11
+      },
+      "heat": 137,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73000,
+      "zero_thermal": 382
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 39,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "raw_atoms_separated": 253,
+        "same_atom": 11
+      },
+      "heat": 137,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73000,
+      "zero_thermal": 382
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 39,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "raw_atoms_separated": 253,
+        "same_atom": 11
+      },
+      "heat": 137,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73000,
+      "zero_thermal": 382
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 39,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "raw_atoms_separated": 253,
+        "same_atom": 11
+      },
+      "heat": 137,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73000,
+      "zero_thermal": 382
+    },
+    {
+      "active": 2,
+      "arm": "supplied",
+      "assisted_objects": 5,
+      "before_damage": {
+        "active": 2,
+        "photons": 484,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 13,
+        "eligible": 2,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 304,
+        "not_both_raw": 160,
+        "raw_atoms_separated": 117,
+        "same_atom": 11
+      },
+      "heat": 160,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 460,
+      "seed": 73000,
+      "zero_thermal": 343
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 29,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 336,
+        "raw_atoms_separated": 281,
+        "same_atom": 23
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73001,
+      "zero_thermal": 365
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 29,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 336,
+        "raw_atoms_separated": 281,
+        "same_atom": 23
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73001,
+      "zero_thermal": 365
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 29,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 336,
+        "raw_atoms_separated": 281,
+        "same_atom": 23
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73001,
+      "zero_thermal": 365
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 29,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 336,
+        "raw_atoms_separated": 281,
+        "same_atom": 23
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73001,
+      "zero_thermal": 365
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 29,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 336,
+        "raw_atoms_separated": 281,
+        "same_atom": 23
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73001,
+      "zero_thermal": 365
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 13,
+        "eligible": 1,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 336,
+        "not_both_raw": 195,
+        "raw_atoms_separated": 103,
+        "same_atom": 23
+      },
+      "heat": 154,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73001,
+      "zero_thermal": 323
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 31,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 74,
+        "raw_atoms_separated": 230,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73002,
+      "zero_thermal": 345
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 31,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 74,
+        "raw_atoms_separated": 230,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73002,
+      "zero_thermal": 345
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 31,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 74,
+        "raw_atoms_separated": 230,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73002,
+      "zero_thermal": 345
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 31,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 74,
+        "raw_atoms_separated": 230,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73002,
+      "zero_thermal": 345
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 31,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 74,
+        "raw_atoms_separated": 230,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73002,
+      "zero_thermal": 345
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 476,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 15,
+        "eligible": 1,
+        "manufacture_draws_excluding_interventions": 353,
+        "not_both_raw": 231,
+        "raw_atoms_separated": 92,
+        "same_atom": 14
+      },
+      "heat": 154,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73002,
+      "zero_thermal": 310
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 36,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 31,
+        "raw_atoms_separated": 241,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73003,
+      "zero_thermal": 405
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 36,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 31,
+        "raw_atoms_separated": 241,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73003,
+      "zero_thermal": 405
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 36,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 31,
+        "raw_atoms_separated": 241,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73003,
+      "zero_thermal": 405
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 36,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 31,
+        "raw_atoms_separated": 241,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73003,
+      "zero_thermal": 405
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 36,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 31,
+        "raw_atoms_separated": 241,
+        "same_atom": 14
+      },
+      "heat": 140,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73003,
+      "zero_thermal": 405
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 2,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 17,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 328,
+        "not_both_raw": 188,
+        "raw_atoms_separated": 102,
+        "same_atom": 14
+      },
+      "heat": 153,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73003,
+      "zero_thermal": 350
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 3,
+        "raw_atoms_separated": 255,
+        "same_atom": 16
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73004,
+      "zero_thermal": 404
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 3,
+        "raw_atoms_separated": 255,
+        "same_atom": 16
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73004,
+      "zero_thermal": 404
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 3,
+        "raw_atoms_separated": 255,
+        "same_atom": 16
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73004,
+      "zero_thermal": 404
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 3,
+        "raw_atoms_separated": 255,
+        "same_atom": 16
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73004,
+      "zero_thermal": 404
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 3,
+        "raw_atoms_separated": 255,
+        "same_atom": 16
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73004,
+      "zero_thermal": 404
+    },
+    {
+      "active": 2,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 16,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 307,
+        "not_both_raw": 167,
+        "raw_atoms_separated": 106,
+        "same_atom": 16
+      },
+      "heat": 148,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73004,
+      "zero_thermal": 354
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "raw_atoms_separated": 281,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73005,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "raw_atoms_separated": 281,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73005,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "raw_atoms_separated": 281,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73005,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "raw_atoms_separated": 281,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73005,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "raw_atoms_separated": 281,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73005,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 335,
+        "not_both_raw": 172,
+        "raw_atoms_separated": 122,
+        "same_atom": 15
+      },
+      "heat": 151,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73005,
+      "zero_thermal": 312
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 3,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 73,
+        "raw_atoms_separated": 226,
+        "same_atom": 13
+      },
+      "heat": 147,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73006,
+      "zero_thermal": 385
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 3,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 73,
+        "raw_atoms_separated": 226,
+        "same_atom": 13
+      },
+      "heat": 147,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73006,
+      "zero_thermal": 385
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 3,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 73,
+        "raw_atoms_separated": 226,
+        "same_atom": 13
+      },
+      "heat": 147,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73006,
+      "zero_thermal": 385
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 3,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 73,
+        "raw_atoms_separated": 226,
+        "same_atom": 13
+      },
+      "heat": 147,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73006,
+      "zero_thermal": 385
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 3,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 73,
+        "raw_atoms_separated": 226,
+        "same_atom": 13
+      },
+      "heat": 147,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73006,
+      "zero_thermal": 385
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 5,
+      "before_damage": {
+        "active": 3,
+        "photons": 476,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 18,
+        "eligible": 3,
+        "manufacture_draws_excluding_interventions": 341,
+        "not_both_raw": 235,
+        "raw_atoms_separated": 72,
+        "same_atom": 13
+      },
+      "heat": 162,
+      "natural_manufacture": 3,
+      "productive_objects": 0,
+      "removed": 456,
+      "seed": 73006,
+      "zero_thermal": 357
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 2,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 43,
+        "raw_atoms_separated": 255,
+        "same_atom": 10
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73007,
+      "zero_thermal": 368
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 2,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 43,
+        "raw_atoms_separated": 255,
+        "same_atom": 10
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73007,
+      "zero_thermal": 368
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 2,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 43,
+        "raw_atoms_separated": 255,
+        "same_atom": 10
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73007,
+      "zero_thermal": 368
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 2,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 43,
+        "raw_atoms_separated": 255,
+        "same_atom": 10
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73007,
+      "zero_thermal": 368
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 2,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 43,
+        "raw_atoms_separated": 255,
+        "same_atom": 10
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73007,
+      "zero_thermal": 368
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 476,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 17,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 179,
+        "raw_atoms_separated": 136,
+        "same_atom": 10
+      },
+      "heat": 153,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 460,
+      "seed": 73007,
+      "zero_thermal": 318
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 22,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 316,
+        "raw_atoms_separated": 275,
+        "same_atom": 14
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73008,
+      "zero_thermal": 326
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 22,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 316,
+        "raw_atoms_separated": 275,
+        "same_atom": 14
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73008,
+      "zero_thermal": 326
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 22,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 316,
+        "raw_atoms_separated": 275,
+        "same_atom": 14
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73008,
+      "zero_thermal": 326
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 22,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 316,
+        "raw_atoms_separated": 275,
+        "same_atom": 14
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73008,
+      "zero_thermal": 326
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 22,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 316,
+        "raw_atoms_separated": 275,
+        "same_atom": 14
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73008,
+      "zero_thermal": 326
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 10,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 316,
+        "not_both_raw": 182,
+        "raw_atoms_separated": 109,
+        "same_atom": 14
+      },
+      "heat": 149,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73008,
+      "zero_thermal": 265
+    },
+    {
+      "active": 2,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 4,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 44,
+        "raw_atoms_separated": 233,
+        "same_atom": 17
+      },
+      "heat": 146,
+      "natural_manufacture": 4,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73009,
+      "zero_thermal": 364
+    },
+    {
+      "active": 2,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 4,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 44,
+        "raw_atoms_separated": 233,
+        "same_atom": 17
+      },
+      "heat": 146,
+      "natural_manufacture": 4,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73009,
+      "zero_thermal": 364
+    },
+    {
+      "active": 2,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 4,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 44,
+        "raw_atoms_separated": 233,
+        "same_atom": 17
+      },
+      "heat": 146,
+      "natural_manufacture": 4,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73009,
+      "zero_thermal": 364
+    },
+    {
+      "active": 2,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 4,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 44,
+        "raw_atoms_separated": 233,
+        "same_atom": 17
+      },
+      "heat": 146,
+      "natural_manufacture": 4,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73009,
+      "zero_thermal": 364
+    },
+    {
+      "active": 2,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 25,
+        "eligible": 4,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 44,
+        "raw_atoms_separated": 233,
+        "same_atom": 17
+      },
+      "heat": 146,
+      "natural_manufacture": 4,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73009,
+      "zero_thermal": 364
+    },
+    {
+      "active": 2,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 11,
+        "manufacture_draws_excluding_interventions": 324,
+        "not_both_raw": 181,
+        "raw_atoms_separated": 115,
+        "same_atom": 17
+      },
+      "heat": 149,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73009,
+      "zero_thermal": 317
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 2,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 45,
+        "raw_atoms_separated": 250,
+        "same_atom": 14
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73010,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 2,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 45,
+        "raw_atoms_separated": 250,
+        "same_atom": 14
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73010,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 2,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 45,
+        "raw_atoms_separated": 250,
+        "same_atom": 14
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73010,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 2,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 45,
+        "raw_atoms_separated": 250,
+        "same_atom": 14
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73010,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 2,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 45,
+        "raw_atoms_separated": 250,
+        "same_atom": 14
+      },
+      "heat": 141,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73010,
+      "zero_thermal": 394
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 476,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 344,
+        "not_both_raw": 164,
+        "raw_atoms_separated": 147,
+        "same_atom": 14
+      },
+      "heat": 154,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 464,
+      "seed": 73010,
+      "zero_thermal": 341
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 50,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 383,
+        "raw_atoms_separated": 314,
+        "same_atom": 14
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73011,
+      "zero_thermal": 390
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 50,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 383,
+        "raw_atoms_separated": 314,
+        "same_atom": 14
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73011,
+      "zero_thermal": 390
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 50,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 383,
+        "raw_atoms_separated": 314,
+        "same_atom": 14
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73011,
+      "zero_thermal": 390
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 50,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 383,
+        "raw_atoms_separated": 314,
+        "same_atom": 14
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73011,
+      "zero_thermal": 390
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 50,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 383,
+        "raw_atoms_separated": 314,
+        "same_atom": 14
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73011,
+      "zero_thermal": 390
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 13,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 383,
+        "not_both_raw": 210,
+        "raw_atoms_separated": 144,
+        "same_atom": 14
+      },
+      "heat": 150,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73011,
+      "zero_thermal": 346
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 45,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 291,
+        "same_atom": 22
+      },
+      "heat": 136,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73012,
+      "zero_thermal": 380
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 45,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 291,
+        "same_atom": 22
+      },
+      "heat": 136,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73012,
+      "zero_thermal": 380
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 45,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 291,
+        "same_atom": 22
+      },
+      "heat": 136,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73012,
+      "zero_thermal": 380
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 45,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 291,
+        "same_atom": 22
+      },
+      "heat": 136,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73012,
+      "zero_thermal": 380
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 45,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 291,
+        "same_atom": 22
+      },
+      "heat": 136,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73012,
+      "zero_thermal": 380
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 21,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 364,
+        "not_both_raw": 201,
+        "raw_atoms_separated": 118,
+        "same_atom": 22
+      },
+      "heat": 151,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 464,
+      "seed": 73012,
+      "zero_thermal": 352
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 40,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 30,
+        "raw_atoms_separated": 276,
+        "same_atom": 6
+      },
+      "heat": 140,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73013,
+      "zero_thermal": 400
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 40,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 30,
+        "raw_atoms_separated": 276,
+        "same_atom": 6
+      },
+      "heat": 140,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73013,
+      "zero_thermal": 400
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 40,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 30,
+        "raw_atoms_separated": 276,
+        "same_atom": 6
+      },
+      "heat": 140,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73013,
+      "zero_thermal": 400
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 40,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 30,
+        "raw_atoms_separated": 276,
+        "same_atom": 6
+      },
+      "heat": 140,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73013,
+      "zero_thermal": 400
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 40,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 30,
+        "raw_atoms_separated": 276,
+        "same_atom": 6
+      },
+      "heat": 140,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73013,
+      "zero_thermal": 400
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 476,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 21,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 355,
+        "not_both_raw": 195,
+        "raw_atoms_separated": 132,
+        "same_atom": 6
+      },
+      "heat": 152,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 460,
+      "seed": 73013,
+      "zero_thermal": 350
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 13,
+        "raw_atoms_separated": 245,
+        "same_atom": 16
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73014,
+      "zero_thermal": 419
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 13,
+        "raw_atoms_separated": 245,
+        "same_atom": 16
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73014,
+      "zero_thermal": 419
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 13,
+        "raw_atoms_separated": 245,
+        "same_atom": 16
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73014,
+      "zero_thermal": 419
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 13,
+        "raw_atoms_separated": 245,
+        "same_atom": 16
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73014,
+      "zero_thermal": 419
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 30,
+        "eligible": 1,
+        "local_carrier_empty": 6,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 13,
+        "raw_atoms_separated": 245,
+        "same_atom": 16
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73014,
+      "zero_thermal": 419
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 17,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 311,
+        "not_both_raw": 170,
+        "raw_atoms_separated": 106,
+        "same_atom": 16
+      },
+      "heat": 148,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73014,
+      "zero_thermal": 367
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 37,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 357,
+        "raw_atoms_separated": 298,
+        "same_atom": 17
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73015,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 37,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 357,
+        "raw_atoms_separated": 298,
+        "same_atom": 17
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73015,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 37,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 357,
+        "raw_atoms_separated": 298,
+        "same_atom": 17
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73015,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 37,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 357,
+        "raw_atoms_separated": 298,
+        "same_atom": 17
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73015,
+      "zero_thermal": 394
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 37,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 357,
+        "raw_atoms_separated": 298,
+        "same_atom": 17
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73015,
+      "zero_thermal": 394
+    },
+    {
+      "active": 3,
+      "arm": "supplied",
+      "assisted_objects": 5,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 14,
+        "eligible": 1,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 357,
+        "not_both_raw": 193,
+        "raw_atoms_separated": 131,
+        "same_atom": 17
+      },
+      "heat": 149,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73015,
+      "zero_thermal": 346
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 512,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 38,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 304,
+        "same_atom": 18
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73016,
+      "zero_thermal": 362
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 512,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 38,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 304,
+        "same_atom": 18
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73016,
+      "zero_thermal": 362
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 512,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 38,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 304,
+        "same_atom": 18
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73016,
+      "zero_thermal": 362
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 512,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 38,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 304,
+        "same_atom": 18
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73016,
+      "zero_thermal": 362
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 512,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 38,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 364,
+        "raw_atoms_separated": 304,
+        "same_atom": 18
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73016,
+      "zero_thermal": 362
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 14,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 364,
+        "not_both_raw": 193,
+        "raw_atoms_separated": 138,
+        "same_atom": 18
+      },
+      "heat": 148,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73016,
+      "zero_thermal": 323
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 41,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 282,
+        "same_atom": 7
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73017,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 41,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 282,
+        "same_atom": 7
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73017,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 41,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 282,
+        "same_atom": 7
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73017,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 41,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 282,
+        "same_atom": 7
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73017,
+      "zero_thermal": 358
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 41,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 282,
+        "same_atom": 7
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73017,
+      "zero_thermal": 358
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 2,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "not_both_raw": 188,
+        "raw_atoms_separated": 111,
+        "same_atom": 7
+      },
+      "heat": 150,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73017,
+      "zero_thermal": 314
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 272,
+        "same_atom": 11
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73018,
+      "zero_thermal": 340
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 272,
+        "same_atom": 11
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73018,
+      "zero_thermal": 340
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 272,
+        "same_atom": 11
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73018,
+      "zero_thermal": 340
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 272,
+        "same_atom": 11
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73018,
+      "zero_thermal": 340
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 23,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 272,
+        "same_atom": 11
+      },
+      "heat": 134,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73018,
+      "zero_thermal": 340
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 480,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 14,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "not_both_raw": 159,
+        "raw_atoms_separated": 125,
+        "same_atom": 11
+      },
+      "heat": 149,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73018,
+      "zero_thermal": 300
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 275,
+        "same_atom": 16
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73019,
+      "zero_thermal": 405
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 275,
+        "same_atom": 16
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73019,
+      "zero_thermal": 405
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 275,
+        "same_atom": 16
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73019,
+      "zero_thermal": 405
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 275,
+        "same_atom": 16
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73019,
+      "zero_thermal": 405
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "raw_atoms_separated": 275,
+        "same_atom": 16
+      },
+      "heat": 132,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73019,
+      "zero_thermal": 405
+    },
+    {
+      "active": 3,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 484,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 7,
+        "eligible": 1,
+        "manufacture_draws_excluding_interventions": 310,
+        "not_both_raw": 174,
+        "raw_atoms_separated": 112,
+        "same_atom": 16
+      },
+      "heat": 149,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 476,
+      "seed": 73019,
+      "zero_thermal": 332
+    },
+    {
+      "active": 2,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 77,
+        "raw_atoms_separated": 222,
+        "same_atom": 10
+      },
+      "heat": 139,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73020,
+      "zero_thermal": 411
+    },
+    {
+      "active": 2,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 77,
+        "raw_atoms_separated": 222,
+        "same_atom": 10
+      },
+      "heat": 139,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73020,
+      "zero_thermal": 411
+    },
+    {
+      "active": 2,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 77,
+        "raw_atoms_separated": 222,
+        "same_atom": 10
+      },
+      "heat": 139,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73020,
+      "zero_thermal": 411
+    },
+    {
+      "active": 2,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 77,
+        "raw_atoms_separated": 222,
+        "same_atom": 10
+      },
+      "heat": 139,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73020,
+      "zero_thermal": 411
+    },
+    {
+      "active": 2,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 77,
+        "raw_atoms_separated": 222,
+        "same_atom": 10
+      },
+      "heat": 139,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73020,
+      "zero_thermal": 411
+    },
+    {
+      "active": 3,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 5,
+        "photons": 480,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 8,
+        "eligible": 2,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 343,
+        "not_both_raw": 249,
+        "raw_atoms_separated": 72,
+        "same_atom": 10
+      },
+      "heat": 153,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73020,
+      "zero_thermal": 349
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 32,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 337,
+        "raw_atoms_separated": 281,
+        "same_atom": 20
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73021,
+      "zero_thermal": 355
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 32,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 337,
+        "raw_atoms_separated": 281,
+        "same_atom": 20
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73021,
+      "zero_thermal": 355
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 32,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 337,
+        "raw_atoms_separated": 281,
+        "same_atom": 20
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73021,
+      "zero_thermal": 355
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 32,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 337,
+        "raw_atoms_separated": 281,
+        "same_atom": 20
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73021,
+      "zero_thermal": 355
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 32,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 337,
+        "raw_atoms_separated": 281,
+        "same_atom": 20
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73021,
+      "zero_thermal": 355
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 9,
+        "manufacture_draws_excluding_interventions": 337,
+        "not_both_raw": 184,
+        "raw_atoms_separated": 124,
+        "same_atom": 20
+      },
+      "heat": 150,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73021,
+      "zero_thermal": 304
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 32,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 19,
+        "raw_atoms_separated": 287,
+        "same_atom": 13
+      },
+      "heat": 137,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73022,
+      "zero_thermal": 379
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 32,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 19,
+        "raw_atoms_separated": 287,
+        "same_atom": 13
+      },
+      "heat": 137,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73022,
+      "zero_thermal": 379
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 32,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 19,
+        "raw_atoms_separated": 287,
+        "same_atom": 13
+      },
+      "heat": 137,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73022,
+      "zero_thermal": 379
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 32,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 19,
+        "raw_atoms_separated": 287,
+        "same_atom": 13
+      },
+      "heat": 137,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73022,
+      "zero_thermal": 379
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 32,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 19,
+        "raw_atoms_separated": 287,
+        "same_atom": 13
+      },
+      "heat": 137,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73022,
+      "zero_thermal": 379
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 484,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 18,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 354,
+        "not_both_raw": 189,
+        "raw_atoms_separated": 133,
+        "same_atom": 13
+      },
+      "heat": 150,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73022,
+      "zero_thermal": 331
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 319,
+        "raw_atoms_separated": 270,
+        "same_atom": 16
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73023,
+      "zero_thermal": 397
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 319,
+        "raw_atoms_separated": 270,
+        "same_atom": 16
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73023,
+      "zero_thermal": 397
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 319,
+        "raw_atoms_separated": 270,
+        "same_atom": 16
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73023,
+      "zero_thermal": 397
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 319,
+        "raw_atoms_separated": 270,
+        "same_atom": 16
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73023,
+      "zero_thermal": 397
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 28,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 319,
+        "raw_atoms_separated": 270,
+        "same_atom": 16
+      },
+      "heat": 133,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73023,
+      "zero_thermal": 397
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 2,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 17,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 319,
+        "not_both_raw": 174,
+        "raw_atoms_separated": 110,
+        "same_atom": 16
+      },
+      "heat": 149,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73023,
+      "zero_thermal": 324
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 278,
+        "same_atom": 15
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73024,
+      "zero_thermal": 344
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 278,
+        "same_atom": 15
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73024,
+      "zero_thermal": 344
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 278,
+        "same_atom": 15
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73024,
+      "zero_thermal": 344
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 278,
+        "same_atom": 15
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73024,
+      "zero_thermal": 344
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 7,
+      "counts": {
+        "carrier_separated": 36,
+        "local_carrier_empty": 5,
+        "manufacture_draws_excluding_interventions": 334,
+        "raw_atoms_separated": 278,
+        "same_atom": 15
+      },
+      "heat": 135,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73024,
+      "zero_thermal": 344
+    },
+    {
+      "active": 3,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 480,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 10,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 334,
+        "not_both_raw": 203,
+        "raw_atoms_separated": 103,
+        "same_atom": 15
+      },
+      "heat": 153,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 460,
+      "seed": 73024,
+      "zero_thermal": 284
+    },
+    {
+      "active": 0,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 43,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 363,
+        "raw_atoms_separated": 305,
+        "same_atom": 12
+      },
+      "heat": 131,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73025,
+      "zero_thermal": 374
+    },
+    {
+      "active": 0,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 43,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 363,
+        "raw_atoms_separated": 305,
+        "same_atom": 12
+      },
+      "heat": 131,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73025,
+      "zero_thermal": 374
+    },
+    {
+      "active": 0,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 43,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 363,
+        "raw_atoms_separated": 305,
+        "same_atom": 12
+      },
+      "heat": 131,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73025,
+      "zero_thermal": 374
+    },
+    {
+      "active": 0,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 43,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 363,
+        "raw_atoms_separated": 305,
+        "same_atom": 12
+      },
+      "heat": 131,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73025,
+      "zero_thermal": 374
+    },
+    {
+      "active": 0,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 43,
+        "local_carrier_empty": 3,
+        "manufacture_draws_excluding_interventions": 363,
+        "raw_atoms_separated": 305,
+        "same_atom": 12
+      },
+      "heat": 131,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73025,
+      "zero_thermal": 374
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 2,
+        "photons": 484,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 12,
+        "manufacture_draws_excluding_interventions": 363,
+        "not_both_raw": 203,
+        "raw_atoms_separated": 136,
+        "same_atom": 12
+      },
+      "heat": 147,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73025,
+      "zero_thermal": 318
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 34,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 10,
+        "raw_atoms_separated": 296,
+        "same_atom": 9
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73026,
+      "zero_thermal": 387
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 34,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 10,
+        "raw_atoms_separated": 296,
+        "same_atom": 9
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73026,
+      "zero_thermal": 387
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 34,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 10,
+        "raw_atoms_separated": 296,
+        "same_atom": 9
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73026,
+      "zero_thermal": 387
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 34,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 10,
+        "raw_atoms_separated": 296,
+        "same_atom": 9
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73026,
+      "zero_thermal": 387
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 34,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 10,
+        "raw_atoms_separated": 296,
+        "same_atom": 9
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73026,
+      "zero_thermal": 387
+    },
+    {
+      "active": 2,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 3,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 14,
+        "eligible": 2,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 352,
+        "not_both_raw": 224,
+        "raw_atoms_separated": 102,
+        "same_atom": 9
+      },
+      "heat": 155,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73026,
+      "zero_thermal": 339
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 7,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 40,
+        "raw_atoms_separated": 247,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73027,
+      "zero_thermal": 353
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 2,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 7,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 40,
+        "raw_atoms_separated": 247,
+        "same_atom": 15
+      },
+      "heat": 133,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73027,
+      "zero_thermal": 353
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 7,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 40,
+        "raw_atoms_separated": 247,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73027,
+      "zero_thermal": 353
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 3,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 7,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 40,
+        "raw_atoms_separated": 247,
+        "same_atom": 15
+      },
+      "heat": 134,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 496,
+      "seed": 73027,
+      "zero_thermal": 353
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 508,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 2,
+      "counts": {
+        "carrier_separated": 29,
+        "eligible": 1,
+        "local_carrier_empty": 7,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 40,
+        "raw_atoms_separated": 247,
+        "same_atom": 15
+      },
+      "heat": 133,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 500,
+      "seed": 73027,
+      "zero_thermal": 353
+    },
+    {
+      "active": 1,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 492,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 2,
+      "counts": {
+        "carrier_separated": 13,
+        "eligible": 1,
+        "local_carrier_empty": 1,
+        "manufacture_draws_excluding_interventions": 339,
+        "not_both_raw": 180,
+        "raw_atoms_separated": 129,
+        "same_atom": 15
+      },
+      "heat": 149,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 484,
+      "seed": 73027,
+      "zero_thermal": 310
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 21,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 29,
+        "raw_atoms_separated": 278,
+        "same_atom": 18
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73028,
+      "zero_thermal": 365
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 21,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 29,
+        "raw_atoms_separated": 278,
+        "same_atom": 18
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73028,
+      "zero_thermal": 365
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 21,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 29,
+        "raw_atoms_separated": 278,
+        "same_atom": 18
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73028,
+      "zero_thermal": 365
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 5,
+      "counts": {
+        "carrier_separated": 21,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 29,
+        "raw_atoms_separated": 278,
+        "same_atom": 18
+      },
+      "heat": 136,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 488,
+      "seed": 73028,
+      "zero_thermal": 365
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 1,
+        "photons": 504,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 21,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 29,
+        "raw_atoms_separated": 278,
+        "same_atom": 18
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73028,
+      "zero_thermal": 365
+    },
+    {
+      "active": 2,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 488,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 10,
+        "manufacture_draws_excluding_interventions": 351,
+        "not_both_raw": 189,
+        "raw_atoms_separated": 134,
+        "same_atom": 18
+      },
+      "heat": 146,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 480,
+      "seed": 73028,
+      "zero_thermal": 294
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 10,
+      "counts": {
+        "carrier_separated": 44,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 22,
+        "raw_atoms_separated": 269,
+        "same_atom": 9
+      },
+      "heat": 141,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73029,
+      "zero_thermal": 399
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 10,
+      "counts": {
+        "carrier_separated": 44,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 22,
+        "raw_atoms_separated": 269,
+        "same_atom": 9
+      },
+      "heat": 141,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73029,
+      "zero_thermal": 399
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 10,
+      "counts": {
+        "carrier_separated": 44,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 22,
+        "raw_atoms_separated": 269,
+        "same_atom": 9
+      },
+      "heat": 141,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73029,
+      "zero_thermal": 399
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 10,
+      "counts": {
+        "carrier_separated": 44,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 22,
+        "raw_atoms_separated": 269,
+        "same_atom": 9
+      },
+      "heat": 141,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73029,
+      "zero_thermal": 399
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 10,
+      "counts": {
+        "carrier_separated": 44,
+        "eligible": 1,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 22,
+        "raw_atoms_separated": 269,
+        "same_atom": 9
+      },
+      "heat": 141,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73029,
+      "zero_thermal": 399
+    },
+    {
+      "active": 0,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 484,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 11,
+      "counts": {
+        "carrier_separated": 16,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 349,
+        "not_both_raw": 178,
+        "raw_atoms_separated": 144,
+        "same_atom": 9
+      },
+      "heat": 155,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 452,
+      "seed": 73029,
+      "zero_thermal": 350
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 26,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 49,
+        "raw_atoms_separated": 248,
+        "same_atom": 11
+      },
+      "heat": 144,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73030,
+      "zero_thermal": 381
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 26,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 49,
+        "raw_atoms_separated": 248,
+        "same_atom": 11
+      },
+      "heat": 143,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73030,
+      "zero_thermal": 381
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 26,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 49,
+        "raw_atoms_separated": 248,
+        "same_atom": 11
+      },
+      "heat": 144,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73030,
+      "zero_thermal": 381
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 26,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 49,
+        "raw_atoms_separated": 248,
+        "same_atom": 11
+      },
+      "heat": 144,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 468,
+      "seed": 73030,
+      "zero_thermal": 381
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 496,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 8,
+      "counts": {
+        "carrier_separated": 26,
+        "eligible": 2,
+        "local_carrier_empty": 4,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 49,
+        "raw_atoms_separated": 248,
+        "same_atom": 11
+      },
+      "heat": 143,
+      "natural_manufacture": 2,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73030,
+      "zero_thermal": 381
+    },
+    {
+      "active": 4,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 480,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 9,
+      "counts": {
+        "carrier_separated": 9,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 340,
+        "not_both_raw": 196,
+        "raw_atoms_separated": 121,
+        "same_atom": 11
+      },
+      "heat": 153,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 456,
+      "seed": 73030,
+      "zero_thermal": 341
+    },
+    {
+      "active": 1,
+      "arm": "candidate",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 33,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 2,
+        "raw_atoms_separated": 296,
+        "same_atom": 12
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73031,
+      "zero_thermal": 330
+    },
+    {
+      "active": 1,
+      "arm": "inert",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 33,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 2,
+        "raw_atoms_separated": 296,
+        "same_atom": 12
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73031,
+      "zero_thermal": 330
+    },
+    {
+      "active": 1,
+      "arm": "no-recycle",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 33,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 2,
+        "raw_atoms_separated": 296,
+        "same_atom": 12
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73031,
+      "zero_thermal": 330
+    },
+    {
+      "active": 1,
+      "arm": "private",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 33,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 2,
+        "raw_atoms_separated": 296,
+        "same_atom": 12
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73031,
+      "zero_thermal": 330
+    },
+    {
+      "active": 1,
+      "arm": "shuffled",
+      "assisted_objects": 0,
+      "before_damage": {
+        "active": 0,
+        "photons": 500,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 4,
+      "counts": {
+        "carrier_separated": 33,
+        "eligible": 1,
+        "local_carrier_empty": 2,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 2,
+        "raw_atoms_separated": 296,
+        "same_atom": 12
+      },
+      "heat": 135,
+      "natural_manufacture": 1,
+      "productive_objects": 0,
+      "removed": 492,
+      "seed": 73031,
+      "zero_thermal": 330
+    },
+    {
+      "active": 3,
+      "arm": "supplied",
+      "assisted_objects": 4,
+      "before_damage": {
+        "active": 4,
+        "photons": 480,
+        "productive": 0,
+        "thermal": 0
+      },
+      "charged_remaining": 6,
+      "counts": {
+        "carrier_separated": 10,
+        "manufacture_draws_excluding_interventions": 346,
+        "not_both_raw": 175,
+        "raw_atoms_separated": 149,
+        "same_atom": 12
+      },
+      "heat": 147,
+      "natural_manufacture": 0,
+      "productive_objects": 0,
+      "removed": 472,
+      "seed": 73031,
+      "zero_thermal": 282
+    }
+  ],
+  "post_hoc": true,
+  "scope": "First-failed pre-action manufacture prerequisite; steps512/1536 excluded, not a modified endpoint or experimental causal effect",
+  "totals": {
+    "candidate": {
+      "active": 16,
+      "assisted_objects": 0,
+      "carrier_separated": 1039,
+      "charged_remaining": 181,
+      "eligible": 29,
+      "heat": 4377,
+      "local_carrier_empty": 113,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 29,
+      "not_both_raw": 604,
+      "pre_damage_alive": 2,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 8614,
+      "removed": 15544,
+      "same_atom": 448
+    },
+    "inert": {
+      "active": 16,
+      "assisted_objects": 0,
+      "carrier_separated": 1039,
+      "charged_remaining": 178,
+      "eligible": 29,
+      "heat": 4374,
+      "local_carrier_empty": 113,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 29,
+      "not_both_raw": 604,
+      "pre_damage_alive": 2,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 8614,
+      "removed": 15556,
+      "same_atom": 448
+    },
+    "no-recycle": {
+      "active": 16,
+      "assisted_objects": 0,
+      "carrier_separated": 1039,
+      "charged_remaining": 181,
+      "eligible": 29,
+      "heat": 4377,
+      "local_carrier_empty": 113,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 29,
+      "not_both_raw": 604,
+      "pre_damage_alive": 2,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 8614,
+      "removed": 15544,
+      "same_atom": 448
+    },
+    "private": {
+      "active": 16,
+      "assisted_objects": 0,
+      "carrier_separated": 1039,
+      "charged_remaining": 181,
+      "eligible": 29,
+      "heat": 4377,
+      "local_carrier_empty": 113,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 29,
+      "not_both_raw": 604,
+      "pre_damage_alive": 2,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 8614,
+      "removed": 15544,
+      "same_atom": 448
+    },
+    "shuffled": {
+      "active": 16,
+      "assisted_objects": 0,
+      "carrier_separated": 1039,
+      "charged_remaining": 178,
+      "eligible": 29,
+      "heat": 4374,
+      "local_carrier_empty": 113,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 29,
+      "not_both_raw": 604,
+      "pre_damage_alive": 2,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 8614,
+      "removed": 15556,
+      "same_atom": 448
+    },
+    "supplied": {
+      "active": 43,
+      "assisted_objects": 131,
+      "carrier_separated": 461,
+      "charged_remaining": 195,
+      "eligible": 17,
+      "heat": 4840,
+      "local_carrier_empty": 45,
+      "manufacture_draws_excluding_interventions": 10847,
+      "natural_manufacture": 17,
+      "not_both_raw": 6081,
+      "pre_damage_alive": 107,
+      "pre_damage_productive": 0,
+      "productive_objects": 0,
+      "raw_atoms_separated": 3795,
+      "removed": 15012,
+      "same_atom": 448
+    }
+  },
+  "worlds": 192
+}
