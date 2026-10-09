@@ -103,3 +103,22 @@ transmission, population reproduction or learned recognition. Untemplated
 exact-stock renewal also works, so genotype matching under supplied sequences
 cannot by itself demonstrate functional inheritance or template necessity.
 No new intake silently changes the frozen ENERGY-02 law or old experiments.
+
+## CONTACT-01 checkpoint — supplied stocks and conditional success
+
+Research main `50bfa5b0` and exact successful CI `37858186418` remain unchanged;
+branches, open PRs and recent workflows rechecked. No new merged scientific
+finding, independent reproduction or stronger source recertification. Pass25
+PR5 remains provisional and AI-Research is untouched.
+
+The merged Pass26 distinctions between sorting, investigator-mediated entry,
+refeeding and unconditional descendant outcomes inform CONTACT-01 prospectively.
+Its complete distinct-word/control cross includes all failed contacts and absent
+children. Supplied matching raw multiset, initial founder/work and finite food
+remain explicit subsidies. Only already matching orders give producer-coupled
+functional matches under stable compatible conditions; untemplated reordered
+material can preserve terminal food affinity without sequence inheritance.
+Loss challenges a path with no scheduled renewal; founder removal is an exogenous
+ablation of a law with no generic startup reaction. Neither is a biological-origin
+refutation or independent naturally evolved lineage experiment. No literature
+finding changes the frozen original protocol/count addendum or historical data.
