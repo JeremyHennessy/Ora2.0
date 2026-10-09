@@ -7,3 +7,5 @@
 .explanation{margin-bottom:14px}.explanation h2{font-size:18px;margin-bottom:8px}.explanation p,.simple-guide p,.stage-story{font-size:14px!important;line-height:1.7!important;color:#c1d7e2!important;max-width:850px}
 .explanation details,.word-guide,.technical{margin-top:12px;border-top:1px solid #294552;padding-top:10px}.explanation summary,.word-guide summary,.technical summary{cursor:pointer;color:#86dfd0;font-size:13px;min-height:34px;padding:5px 0}.word-guide dl{font-size:13px;grid-template-columns:minmax(110px,1fr) 2fr}.word-guide dd{color:#c1d7e2}
 .inspector-only #inspect{max-height:none}.roadmap small{float:none;display:block;margin-top:5px}.roadmap .technical{margin-top:8px}
+.freshness{padding:10px 32px;color:#a9c6d2;background:#10252c;border-bottom:1px solid #294552;font-size:11px;overflow-wrap:anywhere}
+@media(max-width:760px){.freshness{padding:10px 16px}}

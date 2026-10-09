@@ -4,7 +4,37 @@ const isPages=location.hostname.endsWith('.github.io');
 if(isPages)document.querySelector('.navfoot').innerHTML='<span class="dot"></span> Published recording<br><small>Read-only scientific evidence</small>';
 const sections=['Universe','Experiments','Structures','Energy & Materials','Lineage','Timeline','Research / Evidence','Progress','System Status'];
 const slug=s=>s.toLowerCase().replace(/[^a-z]+/g,'-').replace(/-$/,'');
-let recording, states, index=32, selected='o26', section='universe', timer=null, zoom=1, pan={x:0,y:0};
+let recording, states, index=32, selected='o26', section='universe', timer=null, zoom=1, pan={x:0,y:0}, recordingHash=null, checkingUpdate=false;
+const releaseVersion=document.querySelector('meta[name="ora-release"]')?.content;
+function freshness(message){let node=$('freshness');if(!node){node=document.createElement('div');node.id='freshness';node.className='freshness';node.setAttribute('role','status');document.querySelector('header').after(node);}node.textContent=message;}
+async function checkPublishedUpdate(){
+  if(checkingUpdate||!recording||document.hidden)return;
+  checkingUpdate=true;
+  try{
+    const stamp=Date.now(), options={cache:'no-store',signal:AbortSignal.timeout(15000)};
+    const response=await fetch('integrity.json?check='+stamp,options);if(!response.ok)throw Error('Published integrity file unavailable');
+    const integrity=await response.json();
+    if(integrity.sha256!==recordingHash){
+      const dataResponse=await fetch('recording.json?check='+stamp,options);if(!dataResponse.ok)throw Error('Published recording unavailable');
+      const candidate=await Ora.validate(await dataResponse.arrayBuffer(),integrity), nextStates=Ora.snapshots(candidate);
+      stop();recording=candidate;states=nextStates;recordingHash=integrity.sha256;index=states.length-1;
+      if(!terminal().history[selected])selected=Object.keys(terminal().history)[0];
+      render();
+    }
+    if(releaseVersion){
+      const pageResponse=await fetch('index.html?check='+stamp,options);if(!pageResponse.ok)throw Error('Published release unavailable');
+      const page=new DOMParser().parseFromString(await pageResponse.text(),'text/html'), nextVersion=page.querySelector('meta[name="ora-release"]')?.content;
+      if(!/^[a-f0-9]{64}$/.test(nextVersion||''))throw Error('Published version could not be checked');
+      if(nextVersion!==releaseVersion){stop();const nextURL=new URL(location.href);nextURL.searchParams.set('release',nextVersion);location.replace(nextURL.href);return;}
+    }
+    const published=document.querySelector('meta[name="ora-published-at"]')?.content;
+    freshness(`Published copy checked ${new Date().toLocaleTimeString()} · checks every minute while open · replay: ${recording.experiment_id}${published?' · published '+new Date(published).toLocaleString():''} · no live feed`);
+  }catch(e){freshness('Update check failed · showing the last verified recording · '+e.message);}
+  finally{checkingUpdate=false;}
+}
+setInterval(checkPublishedUpdate,60000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkPublishedUpdate();});
+window.addEventListener('online',checkPublishedUpdate);
 const current=()=>states[index], world=()=>current().state.world, terminal=()=>states.at(-1).state.world;
 const tokenCount=w=>w.bank.length+Object.values(w.objects).reduce((n,o)=>n+o.tokens.length,0);
 const eventLabel=f=>`event ${f.event.tick} · ${f.event.result.outcome}`;
@@ -78,6 +108,7 @@ function renderDetails(){
   if(section==='system-status'){const id=recording.manifest.identity;html=`<h2>Evidence identity & read-only boundary</h2><dl><dt>Experiment</dt><dd>${recording.experiment_id}</dd><dt>World</dt><dd>${esc(id.world_id)}</dd><dt>Reported terminal state</dt><dd>Stopped at tick 32</dd><dt>Process health</dt><dd>Unverified</dd><dt>Semantic validation</dt><dd>Frozen independent Python auditor at export</dd><dt>Browser validation</dt><dd>SHA-256, identity, sequence, events, conservation</dd><dt>Scientific outcome</dt><dd>Admission screen failed (separate pilot)</dd></dl><pre>Source revision: ${id.source_revision}\nRun: ${id.run_id}\nJournal SHA-256: ${recording.source_journal_sha256}\nTerminal state SHA-256: ${recording.audit.verified_state_sha256}</pre><p>The local loopback server exposes only this static observer and its exported recording. UI controls change the playback cursor and schematic view only. There are no mutation endpoints, simulation workers, experiment-launch controls, keys, or automatic updates.</p><p>The integrity manifest detects changed bytes relative to this local export. It is not a cryptographic signature or a defense against an actor replacing both bundle and manifest.</p>`;}
   if(['universe','experiments','research-evidence'].includes(section))html+=`<h3>Latest integrated research · ENERGY-01</h3><p>Source-pinned main receipt 2648b11: 4,192 authored cases / 22,624 events establish paid-capture feasibility under the installed law. The failed-encounter advantage disappears under cost matching; local storage capacity is below the unchanged copy debit. Zero natural worlds were run. This mechanism has no copying or reconstruction action, so it does not demonstrate reproduction or emergence.</p><p><a href="https://github.com/JeremyHennessy/Ora2.0/blob/2648b11829d991c2130ea31bdf1737182c1e077c/docs/ENERGY-01-RECEIPT.md" target="_blank" rel="noreferrer">ENERGY-01 result and limitations</a>. Next documented question: paid activated precursors and incremental reaction-energy coupling. This viewer continues to show the older, immutable HEARTBEAT-04 reference, not ENERGY-01 activity.</p>`;
   if(isPages)html=html.replace('The local loopback server exposes only this static observer and its exported recording.','GitHub Pages serves a fixed observer release and its published recording.');
+  if(section==='system-status')html=html.replace('keys, or automatic updates.','keys, or experiment execution. The viewer checks published versions every minute while open. Scheduled maintenance checks for verified research and recordings hourly; publication can be delayed by host availability, permissions, validation, or unsupported formats. A successful publication check does not establish that the latest local experiment has been exported.');
   if(section==='experiments')html=`<h2>Available recorded experiment</h2><p>One independently audited reference is published. Select its universe to inspect the existing record; this does not execute an experiment.</p><dl><dt>Experiment</dt><dd>${esc(recording.experiment_id)}</dd><dt>World</dt><dd>${esc(recording.manifest.identity.world_id)}</dd><dt>Recorded states</dt><dd>${states.length}</dd><dt>Recorded events</dt><dd>${states.filter(f=>f.event).length}</dd><dt>Scope</dt><dd>HEARTBEAT-04 bounded engineering continuity reference, development seed 1</dd></dl><p><a href="#universe">Open recorded universe →</a></p><p>${sourceLink('HEARTBEAT-04-RECEIPT.md','Engineering continuity evidence')}</p><p>No additional experiments or live autonomous feed are available in this release.</p>`;
   if(section==='lineage')html=`<h2>Consumed-parent ancestry</h2><p>These recorded links trace materials consumed during assembly. They do not establish reproduction or inherited function. Select a structure to inspect its material roots and entire interaction history.</p><div class="lineage-list">${Object.entries(w.history).filter(([,o])=>o.parents.length).map(([id,o])=>`<div class="historyitem"><div class="chips">${links(o.parents)} <span>→</span> ${links([id])}</div><p>Assembly event ${o.born_tick} · ${w.objects[id]?'Present':'Retired'}</p></div>`).join('')||'<p>No assemblies recorded at this tick.</p>'}</div>`;
   if(section==='research-evidence')html=energy02Summary()+`<details class="technical"><summary>Earlier experiments and technical evidence</summary>${html.replace('Latest integrated research · ENERGY-01','Earlier research · ENERGY-01')}</details>`;
@@ -114,4 +145,11 @@ function play(){if(timer){stop();return;}if(index===states.length-1)setTick(0);$
 $('play').onclick=play;$('speed').onchange=()=>{if(timer){stop();play();}};
 $('zoomin').onclick=()=>{zoom=Math.min(3,zoom*1.2);renderAtlas();};$('zoomout').onclick=()=>{zoom=Math.max(.5,zoom/1.2);renderAtlas();};$('reset').onclick=()=>{zoom=1;pan={x:0,y:0};renderAtlas();};$('overlay').onchange=renderAtlas;
 $('collapse').onclick=()=>{const hidden=!$('inspect').hidden;$('inspect').hidden=hidden;$('collapse').setAttribute('aria-expanded',String(!hidden));};
-(async()=>{try{const responses=await Promise.all([fetch('recording.json'),fetch('integrity.json')]);if(responses.some(r=>!r.ok))throw Error('Local recording unavailable');const [raw,integrity]=await Promise.all([responses[0].arrayBuffer(),responses[1].json()]);recording=await Ora.validate(raw,integrity);states=Ora.snapshots(recording);index=states.length-1;$('world').textContent=recording.manifest.identity.world_id+' / seed 1 / bounded reference';$('verification').textContent='✓ Integrity & accounting checked';$('content').hidden=false;$('markers').innerHTML=states.filter(f=>f.event&&['ligated','decayed','captured','reclaimed','copied'].includes(f.event.result.outcome)).map(f=>`<button data-tick="${f.state.simulation_tick}">${f.event.tick} · ${f.event.result.outcome}</button>`).join('');render();}catch(e){$('error').hidden=false;$('error').textContent='No verified recording displayed. '+e.message;$('verification').textContent='Validation failed';}})();
+(async()=>{try{
+  const responses=await Promise.all([fetch('recording.json',{cache:'no-store'}),fetch('integrity.json',{cache:'no-store'})]);
+  if(responses.some(r=>!r.ok))throw Error('Published recording unavailable');
+  const [raw,integrity]=await Promise.all([responses[0].arrayBuffer(),responses[1].json()]);
+  recording=await Ora.validate(raw,integrity);recordingHash=integrity.sha256;states=Ora.snapshots(recording);index=states.length-1;
+  $('world').textContent=recording.manifest.identity.world_id+' / seed 1 / bounded reference';$('verification').textContent='✓ Integrity & accounting checked';$('content').hidden=false;
+  $('markers').innerHTML=states.filter(f=>f.event&&['ligated','decayed','captured','reclaimed','copied'].includes(f.event.result.outcome)).map(f=>`<button data-tick="${f.state.simulation_tick}">${f.event.tick} · ${f.event.result.outcome}</button>`).join('');render();checkPublishedUpdate();
+}catch(e){$('error').hidden=false;$('error').textContent='No verified recording displayed. '+e.message;$('verification').textContent='Validation failed';}})();
