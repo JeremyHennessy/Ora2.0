@@ -14,6 +14,14 @@ the exact binding intact. Record path, denial, original/final hashes and operato
 origin separately. Continue using the parent-captured suspended PID/birth in memory,
 never a child-supplied replacement. Six new launches/fresh SIDs with the same fixed
 world/liveness/expiry/resource limits; no changes to frozen world physics or outcome
-criteria. Total first plus hardened execution12 launches, both retained. This is
+criteria. First plus initial hardened execution12 launches, both retained. This is
 engineering defect correction, not scientific rate/founder/horizon tuning. Freeze
 the exact hardened implementation before native execution.
+
+Initial hardening88fcbb1d completed all six native cases and denied every Python
+overwrite, with all binding bytes unchanged. Its audit refused the receipt because
+Python's file I/O PermissionError omitted winerror (null). Preserve that failed audit.
+Before the accepted hardening block, capture the independent native CreateFileW
+GENERIC_WRITE/OPEN_EXISTING error as well as Python errno; require native error5,
+never relax the denial criterion. Six new fixed cases bring total native launches18.
+This is measurement repair, not changed world physics or favorable outcome tuning.

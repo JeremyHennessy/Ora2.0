@@ -1,5 +1,7 @@
 """LAUNCH-01 fixed finite child; scheduling holds do not alter world physics."""
 import json
+import ctypes as c
+from ctypes import wintypes as w
 from pathlib import Path
 import sys
 import time
@@ -15,7 +17,14 @@ def main(workspace):
     binding=Path(request['binding_path']).absolute()
     if binding.parent!=workspace.absolute().parent/'operator-bindings':raise ValueError('Fixed parent-only fixture binding')
     try:binding.write_text('forged-child-binding',encoding='utf-8')
-    except PermissionError as error:write(workspace/'binding-probe.json',dict(denied=True,error='PermissionError',winerror=error.winerror,path=str(binding)))
+    except PermissionError as error:
+        kernel=c.WinDLL('kernel32',use_last_error=True)
+        kernel.CreateFileW.argtypes=[w.LPCWSTR,w.DWORD,w.DWORD,c.c_void_p,w.DWORD,w.DWORD,w.HANDLE];kernel.CreateFileW.restype=w.HANDLE
+        kernel.CloseHandle.argtypes=[w.HANDLE];kernel.CloseHandle.restype=w.BOOL
+        handle=kernel.CreateFileW(str(binding),0x40000000,0,None,3,0x80,None);native_error=c.get_last_error()
+        if handle!=c.c_void_p(-1).value:
+            kernel.CloseHandle(handle);raise RuntimeError('Native child can open launch authority for writing')
+        write(workspace/'binding-probe.json',dict(denied=True,error='PermissionError',python_errno=error.errno,python_winerror=error.winerror,winerror=native_error,path=str(binding)))
     else:write(workspace/'binding-probe.json',dict(denied=False,path=str(binding)));raise RuntimeError('Child can overwrite launch authority')
     ticks=(5,6,7) if request['resume'] else (1,2,5);original=world.next_state
     def advance(old):

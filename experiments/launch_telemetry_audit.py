@@ -26,7 +26,7 @@ def audit(folder,source,revision):
         for limits in (row['job_before'],row['job_after']):require(limits['configured_memory_bytes']==128*1024**2 and limits['configured_processes']==1 and limits['configured_cpu_ticks']==50000000 and limits['flags'] & (0x4|0x8|0x200|0x2000)==(0x4|0x8|0x200|0x2000),'Actual resource caps')
         launch=folder/f"{row['trial']}-{row['case']}-launch";require(json.loads((launch/'launch-binding.json').read_bytes())==binding,'Recorded operator birth binding')
         protected=folder/'operator-bindings'/f"{row['package_sid']}.json";require(row['binding_before_sha256']==row['binding_after_sha256']==hashlib.sha256(protected.read_bytes()).hexdigest() and json.loads(protected.read_bytes())==binding,'Protected operator binding unchanged')
-        probe=json.loads((launch/'binding-probe.json').read_bytes());require(probe['denied'] and probe['error']=='PermissionError' and probe['winerror']==5 and probe['path']==row['binding_path'],'Native child binding overwrite refused')
+        probe=json.loads((launch/'binding-probe.json').read_bytes());require(probe['denied'] and probe['error']=='PermissionError' and probe['python_errno']==13 and probe['winerror']==5 and probe['path']==row['binding_path'],'Native child binding overwrite refused')
         origins=json.loads((launch/'origins.json').read_bytes());runtime=str((folder/'runtime').resolve()).lower()
         # Root paths may relocate during backup restoration; validate original origin suffixes.
         original_runtime=Path(origins['executable']).parent
