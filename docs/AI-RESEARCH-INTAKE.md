@@ -98,3 +98,23 @@ AI-Research main `63914404809d799923832f83b0b2dc0ae6cb8bc3` passed offline valid
 **Observed bounded result:** [CLOSURE-02](CLOSURE-02-RESULTS.md) measured 70/157 core recoveries with newly produced functioning shell versus 50/157 with inert shell, 71/157 with ghost W synthesis while remaining original M had its programmed transport effect, and 148/157 when new M formation was disabled. Archive hashes of all 960 treatments and 57,600 steps match a separate read-only audit; no mass-accounting discrepancy occurred. The added M synthesis is not beneficial under this fixed model, despite its programmed diffusion reduction. **This is evidence about a toy simulator rule, not life or an emergent new mechanism.**
 
 **Decision:** preserve all raw data and negative outcomes, cease tuning the spatial M synthesis scheme as if it were an organism, and independently design a process-organization comparator with no preinstalled individual or host repair endpoint. RUNTIME-01's successful *Codex-reported Windows* bounded process-restart test is recorded [separately](RUNTIME-01-WINDOWS-ACCEPTANCE-2026-10-08.md); it does **not** verify this CLOSURE-02 world's restart semantics or any permanent organism. Neither AI-Research nor the user's local D: contents was modified by this GitHub experiment.
+
+## 2026-10-09 — Pass39 intake after the TRANSFER freeze
+
+AI-Research main09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948, merged PR25,
+main validation37977207230 success. Reviewed its source-critical handoff
+`docs/artificial-life/132-pass39-prefrontal-causality-versus-metacognitive-report.md`
+and `data/alife/pass39-prefrontal-metacognition-evidence.json`; this is inspection
+of published repository material, not independent paper/data replication.
+The review distinguishes objective performance, confidence/report calibration,
+intervention effects and unobserved phenomenal experience. It reports no new
+simulator, artificial-life experiment, controller or reproduced scientific result.
+
+**Prospective measurement consequence:** any future ADAPTATION-01 test must
+measure useful action on unseen changes independently of prediction accuracy
+and confidence. A reporting/calibration change cannot substitute for adaptation,
+and none is evidence of consciousness. This changes the future measurement
+boundary, not TRANSFER's already frozen accounting, controls or negative result.
+No new physics installation or controller execution follows from this intake.
+AI-Research/local laboratory configuration, legacy AgentTest and observer remain
+independent and unchanged. [Current accepted science](TRANSFER-01-RECEIPT.md).
