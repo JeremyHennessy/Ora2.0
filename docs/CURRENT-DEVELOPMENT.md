@@ -49,10 +49,23 @@ or claims active. Forged reported state rejects; private packaging failure retai
 same-source rerun passes. Existing UI/playback preserved; no service or publication.
 Next trusted actual-launcher birth-time binding and observer end-to-end validation,
 including active-display expiry; existing receipts remain recorded. Observer work
-stays paused unless its authorized owning chat resumes. AI-Research main
-d6e68cff / Pass 29: latest verified navigation errata adds no scientific result;
-Pass 29's benefit/transmission/external-supply distinctions remain. No unproven
-paper mechanism installed into production.
+stays paused unless its authorized owning chat resumes.
+
+**Latest research intake:** AI-Research a9268623 / Pass 30, including the preceding
+navigation errata; exact resulting main CI passed. Read the complete
+[cooperation/productivity versus reproductive-closure review](https://github.com/JeremyHennessy/AI-Research/blob/a92686234f890f15e1fe1a56a31d2e7adb8e4276/docs/artificial-life/123-pass30-cooperation-productivity-vs-reproductive-closure.md)
+and its structured evidence ledger. This is processed literature, not a new Ora
+experiment or independent reproduction. Cooperation/output under supplied spatial
+conditions or manual transfers does not establish autonomous partner co-inheritance;
+specialization can increase dependence without demonstrating joint reproduction.
+Retain Pass 29's benefit/transmission/external-supply distinctions. KINETIC-01's
+frozen reconstruction endpoint remains an earlier gate, not reproduction: report
+locality/regeneration/withdrawal controls and extinct/inactive worlds as registered.
+Do not amend frozen protocols or add transport, packaging, sorting or supplied
+founders to obtain success. Any later descendant/co-transmission experiment needs
+its own prospective contract and withdrawal controls. No reviewed mechanism
+installed into production; the verified engineering and current science priorities
+are unchanged by this research-only intake.
 
 ## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
