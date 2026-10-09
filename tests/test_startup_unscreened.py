@@ -25,7 +25,7 @@ class UnscreenedTests(unittest.TestCase):
         self.assertEqual(len(product['debits']),7)
         self.assertFalse(product['fully_capture_funded'])
         self.assertEqual(product['parents'],['C3'])
-        self.assertEqual(s['history']['C0']['atoms'],['M0'])
+        self.assertEqual(s['history']['C1']['atoms'],['M0'])
 
     def test_ghost_price_and_irreversible_waste_conservation(self):
         states=[]
