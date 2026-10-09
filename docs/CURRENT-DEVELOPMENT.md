@@ -2,7 +2,42 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — Stage3 photochemical comparison closed negative
+## Latest checkpoint — construction accounting feasible; coupling benefit rejected
+
+**Exact source/evidence:** COUPLE-01 f32e005a8da3618f3da99c18e79e7e270ecc49d9,
+prospective64bae8c protocol. All1040 exhaustive accounting cases independently
+re-enumerated:576459 projected states/1707540 edges,46 atom/object witnesses.
+Network43/208 feasible, background80/208, withdrawal41/208, inert/no-recycling0.
+New component manufacture and complete material recovery are controlled-only
+possibilities under an authored scheduler; zero natural worlds.
+[Receipt](COUPLE-01-RECEIPT.md),[decision](../data/couple01/decision.json).
+
+**Scientific decision:** reciprocal cooperation is unnecessary (independent
+diagonal networks work), and background contains every network inventory edge.
+It requires24 photons versus network minimum27. Stop this law as a route to an
+organization-specific reachability benefit; no selected witness founder or
+efficiency/cost retuning. Five new checks/12 adjacent checks, exact replay,
+three independent forgery refusals,1125-file independent C:/ora restore pass.
+Preserved tuple-format fixture and private diagnostic-launch failures are explicit.
+No self-maintenance, functional reconstruction, reproduction or Stage3 completion.
+
+**Next highest-value science:** identify a genuinely discriminating physical
+tradeoff in local material exchange and useful resource transformation, with
+independent-component, interaction-shuffled and paid passive-background nulls.
+Reject a law at its feasibility/control gate if its claimed organizational
+advantage is impossible by construction. Freeze unselected dynamics only after
+that gate; do not keep running catalytic-efficiency toy variants toward success.
+Adaptive useful-action design remains separate and inactive.
+
+**Current activity:** no science writer/world active after acceptance. Prior
+REDOX/RECYCLE/KINETIC/GRADIENT negative decisions stay closed. Existing observer
+and all historical datasets preserved; no runtime or UI expansion this sprint.
+Runtime gates remain physical durability, acceptable lost-work, full-host restore,
+production isolation and separate supervised-pilot activation authorization.
+AI-Research main1a7d572d/Pass36 and both repositories' branches/PRs/CI rechecked;
+no newer main or open PR at synchronization. No unreviewed fetched code executed.
+
+## Historical checkpoint — Stage3 photochemical comparison closed negative
 
 **Current source/evidence:** REDOX-01 executed frozen
 f466d7f76ed40c6b6c91da7b33c7254c5593250b after prospective e3a766f6/cb5b116f

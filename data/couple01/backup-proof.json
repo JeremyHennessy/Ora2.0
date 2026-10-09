@@ -1,0 +1,21 @@
+{
+  "all_sealed_bytes_identical": true,
+  "archive_sha256": "98eb81f78a21df467dfe0b4cec2cbe1fcfd764873bf937ffed7ee31a8b43b826",
+  "autonomous_self_maintenance": false,
+  "continuous": false,
+  "copier_metadata_erratum": "previous_files_unchanged accidentally serialized as an array of ones; scalar count independently verified here, backup left immutable",
+  "edges": 1707540,
+  "independently_reenumerated_cases": 1040,
+  "natural_worlds": 0,
+  "object_witnesses": 46,
+  "physical_disks": [
+    0,
+    1
+  ],
+  "preserved_initial_fixture_failure": true,
+  "previous_files_unchanged": 245,
+  "restored_files": 1125,
+  "source_revision": "f32e005a8da3618f3da99c18e79e7e270ecc49d9",
+  "states": 576459,
+  "verified": true
+}

@@ -1,0 +1,20 @@
+{
+  "all_network_inventory_edges_matched_by_background": true,
+  "edges": 219616,
+  "feasible_network_topologies": 15,
+  "feasible_of_208": {
+    "background": 80,
+    "inert": 0,
+    "network": 43,
+    "no-recycling": 0,
+    "withdrawal": 41
+  },
+  "minimum_background_energy": 24,
+  "minimum_network_energy": 27,
+  "organization_specific_reachability_benefit": false,
+  "reciprocal_necessary": false,
+  "scope": "Post-hoc structural dominance diagnosis of the frozen accounting law; no fresh worlds.",
+  "source_revision": "f32e005a8da3618f3da99c18e79e7e270ecc49d9",
+  "states": 92231,
+  "stop": "Do not run a natural-dynamics panel to claim organization-specific advantage under this law."
+}
