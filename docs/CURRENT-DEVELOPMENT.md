@@ -2,7 +2,40 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — aggregate recovery realized; self-maintenance underexposed
+## Latest checkpoint — activated chains produce; independent opportunity gate fails
+
+**Exact source/evidence:** LIGATE-01 ced7158552bee53bc840fceed08d2afac02cf77d,
+prospective80efa3f protocol.128 unscreened worlds/262144 independently interpreted
+transitions; candidate635 paid ligations,231 catalyst-caused cross-sequence
+ligations,142 reuse events. Candidate8/32 opportunity worlds, shuffled8/32;
+required16 and pairedP=.63671875 fail. [Receipt](LIGATE-01-RECEIPT.md),
+[decision](../data/ligate01/decision.json).
+
+**Decision:** stop exact law/horizon without tuning. Variable-length founder-free
+productive reactions are realized installed chemistry, not self-maintenance.
+Inert/constitutive provenance endpoints are structurally impossible; their zero
+must not support superiority. Future primary controls need attainable functional
+endpoints.18 later candidate ligations consume stored activation after photon
+removal, not post-assistance autonomy. Well-mixed transport remains an idealization.
+17 local focused checks; first4 exact replay;3 forgery refusals;682-file C:/ora
+restore and all128 restored-source audits. Wrapper output-field failure preserved;
+receipt recovery repeats no primary science. Prior CARRIER/AGGREGATE immutable.
+
+**Next highest-value science:** distinct resource transformation with competing
+pathways and a null-attainable functional organizational endpoint. First full
+accounting/generic startup/causal feasibility, then prospectively disjoint unscreened
+opportunity samples before confirmatory useful-loss/reconstruction. No favorable
+founders, additional fuel, selected mixing or rate/cost/horizon tuning of this law.
+No damage test is justified by this failed opportunity gate. Keep Stage3 focus.
+
+**Current activity:** science complete; no science writer/world active. Publication
+acceptance requires exact-head CI and current Git evidence. Stage3 incomplete.
+AI-Researchce044ee/Pass38 unchanged (a branch named
+Pass39 exists, not a verified main intake). Observer approved and publication
+paused; saved records are not live. Runtime physical durability/lost-work/cadence,
+full-host recovery/production isolation and separate pilot permission still open.
+
+## Historical checkpoint — aggregate recovery realized; self-maintenance underexposed
 
 **Exact source/evidence:** AGGREGATE-01
 a852333cf976999727a6ef40d0ea3907391d5ce8, prospective579e9cb protocol.

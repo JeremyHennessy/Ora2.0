@@ -136,3 +136,22 @@ unchanged;23 scoped checks/24-world replay/3 forgery refusals/675-file off-drive
 restore and all192 restored-source interpretations pass. Historical CONTACT
 protocol exact blob restored after a pre-execution draft name collision;
 published history changes no frozen studies. Stage3 remains incomplete.
+
+
+## LIGATE-01 subsequent assessment — productive chains, failed opportunity gate
+
+Exactced7158,128 unscreened worlds/262144 audited transitions. Different activated
+feedstock/condensation/cleavage chemistry yields635 paid candidate ligations,
+231 catalyst-caused cross-sequence products,142 cleavage-material reuse events.
+This advances realized installed3.1/3.2 reactions and founder-free3.4 reaction
+possibility under explicitly idealized mixing. It does not accept any substage.
+3.3 damage maintenance and3.6 functional reconstruction/inheritance are untested;
+3.5's18 post-fuel-removal ligations spend stored activation, not sustained autonomy.
+Candidate8/32 opportunities below16, shuffled8/32,P=.63671875. Stop exact law.
+Inert/constitutive provenance endpoint is impossible by definition, so their0
+cannot establish organization superiority; future functional primary endpoints
+must be achievable in nulls.682-file off-drive restore reaudits all128 worlds;
+17 local checks, first4 exact replay,3 forgery refusals. Original wrapper parser
+failure is preserved and recovered without a science rerun. No autonomous
+self-maintenance, reproduction, inheritance or adaptive intelligence demonstrated.
+[Receipt](LIGATE-01-RECEIPT.md). Next CURRENT gate supersedes older suggestions.

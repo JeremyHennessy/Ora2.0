@@ -1,0 +1,15 @@
+{
+  "archive_bytes": 24656227,
+  "archive_sha256": "fb9e3807d8ec6235d52b5310e5ba95e083ae6a9956e265bb23066a8f1a65ff04",
+  "physical_disks": [
+    0,
+    1
+  ],
+  "physical_power_loss_tested": false,
+  "previous_files_unchanged": 269,
+  "restored_files": 682,
+  "source_revision": "ced7158552bee53bc840fceed08d2afac02cf77d",
+  "transitions": 262144,
+  "verified": true,
+  "worlds_reaudited": 128
+}
