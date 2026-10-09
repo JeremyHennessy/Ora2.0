@@ -2,7 +2,64 @@
 
 **Updated 2026-10-08. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Current checkpoint — RESOURCE-02 and ordered next priorities
+
+RESOURCE-02 contract fbc830e/addendum2afea78, executed source d49f768c:
+**297 Windows tests passed /1 platform skip**, complete298-test inventory in
+three bounded processes. Independent acceptance verified12 pressure/control
+histories, all12 exact33-state continuations, original identity/journal prefixes,
+and12 OS descendant exits. [Receipt](RESOURCE-02-RECEIPT.md) preserves the initial
+fixture errors, original-source diagnostics and300-second unpartitioned regression
+timeout.398 files restored on D:,74 historical/shared hashes unchanged. Existing
+resource supervisor, HEARTBEAT-04 law/state/recovery and observer are unchanged.
+This closes the tested composition gate; it does not establish power-loss,
+arbitrary partial-write recovery, backup independence, memory-peak bounds or
+hardened isolation.
+
+User priority order now governs both tracks:
+
+1. **Science — startup first.** Separate REACTIVATE-01 protocol cf26e1c/source
+   22fc9f67 has completed source-pinned local acceptance pending its separate
+   integration:1792 authored cases/8064 events,18 relevant regression tests,
+   exact raw/summary/audit replay. Existing empty-ready reactivation can be paid;
+   16 length-4 founder recipes fund the second activation entirely from captured
+   work. This uses supplied organization, compatible stocks and timing. Partial
+   recharge is unavailable and no founder-free productive organization is shown.
+   Integrate that evidence, then register distinct generic-startup/renewal physics
+   against current negative baselines before new execution. Do not retune old laws.
+2. **Engineering — foundations.** Resource/recovery composition is verified at
+   its registered durable boundary. Next independently scoped gates are off-drive
+   backup/restore, storage faults and restricted filesystem/network execution.
+   Keep anomalous memory peaks and exact CPU-ceiling limits explicit. A supervised
+   persistent pilot needs those gates and separate authorization.
+3. **Observer — real state.** Preserve the existing app. Extend validated adapters
+   and source-pinned receipt summaries only from independently audited evidence.
+   Show actual steps/components/resources/failures with recorded playback clearly
+   identified. A running-status frame is not OS process-health evidence.
+4. **Evolution — conditional.** After repeatable productive organization, separately
+   measure descendants reconstructing useful functions, inheritance, within-life
+   adaptation, ecological usefulness and survival after assistance withdrawal.
+   These are scientific tests, not presentation features or engine-installed rewards.
+
+AI-Research now includes restored Pass25 viaPR10 (oldPR5 closed unmerged),
+Passes27/28 and unified synthesis at bfbd53c7. Intake was read prospectively;
+transmission, fitness, packaging and supplied scaffold remain independent gates.
+EERC is an unverified alternative, not an architecture mandate. Original research,
+EERC versions and Ora histories are unchanged.
+
+The human authorized hourly reviewed bounded development in this chat. It
+reassesses results and continues routinely authorized steps; fetched commits still
+require explicit source review/pinning before local execution. No unattended
+continuous Ora world, externally accessible runtime, self-hosted runner or paid/API
+service is enabled. The observer has its separate human-authorized publication
+schedule. Its latest CONTACT-01 summary is published; recording remains the
+unchanged HEARTBEAT-04 reference. Preserve shared local main464f13b and all local
+observer commits when manually integrating verified merges. Earlier checkpoints
+below retain their original context and do not override this section.
+
 ## Latest science gate — CONTACT-01 contact order and activation loss
+
+<!-- Historical CONTACT-01 science detail follows the newer RESOURCE-02 checkpoint. -->
 
 Prospective protocol `9044025`, arithmetic-only addendum `0b5bcb2`, executed
 source `8a727eb6`, existing Windows Python 3.12.10: **292 tests passed / 1 platform
