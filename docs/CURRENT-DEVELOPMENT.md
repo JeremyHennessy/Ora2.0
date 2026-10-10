@@ -2,7 +2,38 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — intermediate converter stopped at accounting admission
+## Latest checkpoint — complete spatial law fails profitable renewal
+
+**Exact source:** LOCAL-01 cb2b08c94475bfb96333817f448cd4a4037c7e42;
+prospective b708324. [Receipt](LOCAL-01-RECEIPT.md), [decision](../data/local01/decision.json).
+Each arm19926 complete physical states/173300 reversible edges; three controlled
+paid-renewal certificates.96 unscreened raw-start worlds/393216 attempts:
+candidate0/32, independent0/32, shuffled0/32; both pairedP1/Holm fail.
+Candidate functioning loss1/32 against registered24/32: **UNDEREXPOSED**.
+
+**Actual advance/limit:** one complete spatial conversion/paid-construction/
+renewal toy ledger, fair attainable controls, finite resources, no active founder
+or work grant, ancestry and full independent dynamics audit. Candidate1 first
+renewal versus6/7 controls; whole-store total87 but conservative fresh bond-linked
+surplus-221. Background/thermal work and refunded capital are separate. Supplied
+chemistry/affinity/load and ideal diffusion are installed assumptions, not life.
+No profitable maintenance, autonomous origin, withdrawal or inheritance accepted.
+
+**Next decision:** close exact law without tuning. Register a genuinely different
+direct environmental-reaction/component-renewal coupling against this store-mediated
+negative baseline. Require full reversible stoichiometry, dissipation/transport
+prices and attainable independent/shuffled controls before admission. Do not lower
+activation costs, add resources, change damage timing or reopen frozen samples.
+No successor law admitted; Stage3 incomplete.
+
+**Verification/activity:**23 focused checks,9 exact replays,3 tampering refusals,
+545-file C: restoration and complete restored-source graph/panel audits. Historical
+seals/observer unchanged; CI/private integration/full-history close in laboratory
+receipt. AI-Research09f4f33/Pass39 unchanged, observer paused, no active world.
+Physical durability/full-host/lost-work/production isolation and separately approved
+supervised-pilot gates remain open.
+
+## Historical checkpoint — intermediate converter stopped at accounting admission
 
 **Exact source:** CHANNEL-01 2c5cef0e1ef27624ab32b0d7da9bbfede2b953b0;
 prospective5364b43. [Receipt](CHANNEL-01-RECEIPT.md), [decision](../data/channel01/decision.json).
