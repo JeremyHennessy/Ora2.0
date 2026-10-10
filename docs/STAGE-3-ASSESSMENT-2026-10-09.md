@@ -6,6 +6,14 @@ EXPERIMENT-PLAN's separately named Stage3 remains historical; its gates have not
 been silently renamed or declared complete. Installed chemistry, authored
 possibility, rare natural reactions and repeatable organization are distinct.
 
+October10 BUFFER-01 strengthens controlled3.1–3.3 only:60 installed virtual
+certificates repay full startup/maintenance/contact replacement and deliver fresh
+rebuilt-contact load work;128 cases/640 ledgers independently match and replay.
+Eight conditional numerical comparisons do not pass admission because balanced
+and loop controls lack the combined profitable endpoint within the frozen panel.
+No accepted3.4–3.6 capability, natural origin or self-maintenance is added.
+[Accounting, failed-control opportunities and preserved encoding failure](BUFFER-01-RECEIPT.md).
+
 | Sprint substage | Demonstrated in unscreened worlds | Controlled-only capabilities | Failed hypotheses | Remaining obstacle | Evidence required for acceptance |
 | --- | --- | --- | --- | --- | --- |
 | 3.1 Energy capture and productive use | GRADIENT paid capture/transport; REDOX candidate1844 captures/168 causal catalytic uses without functional founders | ENERGY-01 supplied complementary capture; priced ghosts and endowment fixtures | ENERGY-01 selective advantage disappears under price matching; RECYCLE capture-funded productive startup absent | Captured potential can remain inaccessible or unproductive; installed capture is not autonomous organizational benefit | Repeatable useful activity funded by natural resources, beating resource-matched inert/background controls with causal structure ablation |

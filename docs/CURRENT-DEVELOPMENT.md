@@ -4,6 +4,18 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+BUFFER-01 advances controlled conversion/repair feasibility but does not admit
+worlds. Frozen exact source dcebc7f:128 cases/640 ledgers independently match and
+replay. Sixty installed connected certificates repay startup and produce fresh
+load work through a paid replacement contact. Eight conditional comparisons
+beat the independent envelope and rewired loop, but balanced/loop controls have
+zero combined profitable-endpoint opportunities in the registered panel:
+comparative admission is denied. Preserve all failures and the first decimal
+serialization failure; lossless representation was prospectively frozen before
+rerun without changing law/costs/tapes/horizon. [Receipt](BUFFER-01-RECEIPT.md).
+No natural worlds, Stage3 completion or adaptive controller is added. Stop this
+panel; require accessible paid formation and viable simple controls next.
+
 BUDGET-SNAPSHOT-01 closes a saved-ledger self-charge defect without rewriting
 historical evidence or frozen experiment drivers. New `Budget.write_snapshot`
 precharges its final JSON extent. The large saved ledger independently verifies;

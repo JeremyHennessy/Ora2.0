@@ -1,0 +1,35 @@
+{
+  "all_arms_fundable_cases": 36,
+  "arm_ledgers": 640,
+  "candidate_fresh_rebuilt_output_cases": 60,
+  "candidate_positive_whole_cases": 64,
+  "cases": 128,
+  "decision": "NOT ADMITTED: incomplete comparator opportunity",
+  "deterministic_replay": true,
+  "early_cutoff_upper_rejections": 64,
+  "failed_by_arm": {
+    "balanced": 64,
+    "connected": 32,
+    "loop": 68,
+    "single0": 64,
+    "single1": 64
+  },
+  "independent_exact_match": true,
+  "limitations": "Declared virtual prices and installed converter/store/load/cutoff/constructor; natural formation and primitive costs/rates remain unknown, not zero.",
+  "natural_admission": false,
+  "natural_worlds": 0,
+  "positive_complete_rebuilt_by_arm": {
+    "balanced": 0,
+    "connected": 60,
+    "loop": 0,
+    "single0": 18,
+    "single1": 18
+  },
+  "qualifying_cases": 8,
+  "raw_sha256": {
+    "independent.json.gz": "e1b1992333b907195f9c369ab1cea3743af2f7c9e22052e88d89ac5cdfe44ca7",
+    "producer.json.gz": "e1b1992333b907195f9c369ab1cea3743af2f7c9e22052e88d89ac5cdfe44ca7",
+    "replay.json.gz": "e1b1992333b907195f9c369ab1cea3743af2f7c9e22052e88d89ac5cdfe44ca7"
+  },
+  "source_revision": "dcebc7f573c88fb44bdc0e514c4c2bbc665c7e54"
+}
