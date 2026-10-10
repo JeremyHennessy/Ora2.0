@@ -1,0 +1,54 @@
+{
+  "all_fields_equal": true,
+  "exact_worlds": [
+    [
+      86000,
+      "candidate"
+    ],
+    [
+      86000,
+      "independent"
+    ],
+    [
+      86000,
+      "shuffled"
+    ],
+    [
+      86000,
+      "bulk-diagnostic"
+    ],
+    [
+      86015,
+      "candidate"
+    ],
+    [
+      86015,
+      "independent"
+    ],
+    [
+      86015,
+      "shuffled"
+    ],
+    [
+      86015,
+      "bulk-diagnostic"
+    ],
+    [
+      86031,
+      "candidate"
+    ],
+    [
+      86031,
+      "independent"
+    ],
+    [
+      86031,
+      "shuffled"
+    ],
+    [
+      86031,
+      "bulk-diagnostic"
+    ]
+  ],
+  "source_revision": "30722dc32aefacf1c6ee8c08764add5a8be19703"
+}

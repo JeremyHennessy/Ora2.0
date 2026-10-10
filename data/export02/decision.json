@@ -1,0 +1,97 @@
+{
+  "arms": {
+    "bulk-diagnostic": {
+      "actual_paid_losses": 21,
+      "all_reverse_output": 288,
+      "bound_attempts": 82347,
+      "exposed": 21,
+      "first_rebuild_fresh_uses": 1,
+      "first_rebuilds": 20,
+      "fresh_gross_work": 176,
+      "fuel_exhausted": 25,
+      "linked_surplus": -608,
+      "other_gross_work": 306,
+      "phase_untouched_tokens": 24,
+      "retained_first_rebuilds": 0,
+      "stored_work": 152,
+      "success": 0
+    },
+    "candidate": {
+      "actual_paid_losses": 23,
+      "all_reverse_output": 164,
+      "bound_attempts": 87997,
+      "exposed": 23,
+      "first_rebuild_fresh_uses": 2,
+      "first_rebuilds": 23,
+      "fresh_gross_work": 166,
+      "fuel_exhausted": 24,
+      "linked_surplus": -526,
+      "other_gross_work": 178,
+      "phase_untouched_tokens": 31,
+      "retained_first_rebuilds": 0,
+      "stored_work": 134,
+      "success": 0
+    },
+    "independent": {
+      "actual_paid_losses": 3,
+      "all_reverse_output": 66,
+      "bound_attempts": 49021,
+      "exposed": 3,
+      "first_rebuild_fresh_uses": 0,
+      "first_rebuilds": 3,
+      "fresh_gross_work": 56,
+      "fuel_exhausted": 29,
+      "linked_surplus": -178,
+      "other_gross_work": 74,
+      "phase_untouched_tokens": 0,
+      "retained_first_rebuilds": 0,
+      "stored_work": 58,
+      "success": 0
+    },
+    "shuffled": {
+      "actual_paid_losses": 1,
+      "all_reverse_output": 12,
+      "bound_attempts": 25717,
+      "exposed": 1,
+      "first_rebuild_fresh_uses": 0,
+      "first_rebuilds": 0,
+      "fresh_gross_work": 10,
+      "fuel_exhausted": 29,
+      "linked_surplus": -26,
+      "other_gross_work": 16,
+      "phase_untouched_tokens": 0,
+      "retained_first_rebuilds": 0,
+      "stored_work": 12,
+      "success": 0
+    }
+  },
+  "attempts": 524288,
+  "classification": "UNDEREXPOSED",
+  "diagnostic_worlds": 32,
+  "export_causal_advantage_demonstrated": false,
+  "next_decision": "Close exact law/endowment/horizon without tuning; inspect paid loss and retention bottlenecks before registering a genuinely different mechanism.",
+  "paired": [
+    {
+      "control": "independent",
+      "holm_pass": false,
+      "losses": 0,
+      "p": 1,
+      "wins": 0
+    },
+    {
+      "control": "shuffled",
+      "holm_pass": false,
+      "losses": 0,
+      "p": 1,
+      "wins": 0
+    }
+  ],
+  "primary_pass": false,
+  "primary_worlds": 96,
+  "raw_start_worlds": 128,
+  "reserved_samples_executed": false,
+  "schema": "export01-panel-decision",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "30722dc32aefacf1c6ee8c08764add5a8be19703",
+  "verified": true
+}

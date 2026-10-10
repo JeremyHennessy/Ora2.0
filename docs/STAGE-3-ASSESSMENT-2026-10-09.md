@@ -332,3 +332,26 @@ Invalid forward-only catalysis has factor8 unpriced drive despite energy balance
 valid reversible law avoids that shortcut. Preserved wrapper ImportError corrected
 only in postchecks; original panel/source unchanged and never rerun. Next is a
 source-grounded reference reaction/diffusion reproduction, not tuning this toy.
+
+
+## October10 portable-output and reconstruction follow-up
+
+EXPORT-01/02: complete finite reversible material-output law,28454 states per
+arm, followed by128 unscreened raw-start worlds/524288 attempts. All arms0/32,
+pairedP1; candidate23 paid losses/23 first rebuilds, TWO fresh first-rebuild
+work uses, none retained at horizon. No positive post-loss linked surplus in
+any arm; candidate stored134 versus linked-526. UNDEREXPOSED23<24, not universal
+impossibility. Bulk diagnostic has greater contact access; no causal retention
+advantage claimed. Authored net-positive certificate2 remains controlled-only.
+
+3.1 gains observed conversion into finite labelled portable mechanical loads;
+3.2 gains paid raw-component reconstruction, fully accounted with provenance;
+3.3 gains two partial fresh functional reconstructions but no profitable sustained
+maintenance.3.4 retains raw-start status with installed toy container/chemistry,
+not autonomous origin.3.5 has no researcher-support withdrawal test or maintenance
+after resource depletion.3.6 lacks repeatable useful retained reconstruction or
+inheritance; old programmed heredity remains controlled-only. Stage3 incomplete.
+Next admission must link local paid material maintenance to useful conversion,
+not merely improve output retention or tune this failed law. Require full costs,
+attainable controls and independent reproduction before acceptance.
+[Exact ledger, controls, negative results and evidence](EXPORT-01-02-RECEIPT.md).

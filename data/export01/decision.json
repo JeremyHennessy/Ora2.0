@@ -1,0 +1,71 @@
+{
+  "admission_passed": true,
+  "all_four_controlled_endpoints_pass": true,
+  "all_four_full_censuses_independently_equal": true,
+  "controlled_score": {
+    "endpoint": true,
+    "final_heat": 53,
+    "formation_damage_bill": 14,
+    "fresh_gross_work": 16,
+    "linked_surplus": 2,
+    "post_bill": 8,
+    "post_fresh_work": 10,
+    "post_linked_surplus": 2,
+    "post_store_gain": 8,
+    "predamage_heat": 25,
+    "whole_stored_work": 14
+  },
+  "export_kinetic_advantage_demonstrated": false,
+  "graphs": [
+    {
+      "arm": "candidate",
+      "complete_reverse_and_balance_checks": true,
+      "directed_channels": 230914,
+      "labelled_proposals": 771274,
+      "maximum_stored_work_with_heat_protected": 20,
+      "state_sha256": "9676b83c006cfb405051becb211cf0566b991a21f20792858804c65b8e6a2a9f",
+      "states": 28454
+    },
+    {
+      "arm": "independent",
+      "complete_reverse_and_balance_checks": true,
+      "directed_channels": 230914,
+      "labelled_proposals": 771274,
+      "maximum_stored_work_with_heat_protected": 20,
+      "state_sha256": "9676b83c006cfb405051becb211cf0566b991a21f20792858804c65b8e6a2a9f",
+      "states": 28454
+    },
+    {
+      "arm": "shuffled",
+      "complete_reverse_and_balance_checks": true,
+      "directed_channels": 230914,
+      "labelled_proposals": 771274,
+      "maximum_stored_work_with_heat_protected": 20,
+      "state_sha256": "9676b83c006cfb405051becb211cf0566b991a21f20792858804c65b8e6a2a9f",
+      "states": 28454
+    },
+    {
+      "arm": "bulk-diagnostic",
+      "complete_reverse_and_balance_checks": true,
+      "directed_channels": 239562,
+      "labelled_proposals": 799380,
+      "maximum_stored_work_with_heat_protected": 20,
+      "state_sha256": "9676b83c006cfb405051becb211cf0566b991a21f20792858804c65b8e6a2a9f",
+      "states": 28454
+    }
+  ],
+  "natural_worlds": 0,
+  "next_decision": "Freeze reviewed dynamics and independent full-history interpreter before the unscreened registered panel.",
+  "resource_yoked_repair_state": [
+    6,
+    0,
+    0,
+    8,
+    0,
+    0,
+    2
+  ],
+  "schema": "export01-decision",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "df0f06b34b6b7ef548cb2ab07f1ca0dc8a4d9cce"
+}

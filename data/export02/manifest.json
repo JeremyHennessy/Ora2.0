@@ -1,0 +1,10 @@
+{
+  "natural_worlds": 128,
+  "physical_arms": 4,
+  "protocol_revision": "b80f6573fff54c947127b67b4b3efd813e64fcc6",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "scope": "Registered unscreened raw-start panel; reserved samples untouched",
+  "source_revision": "30722dc32aefacf1c6ee8c08764add5a8be19703",
+  "total_reservation": 209715200
+}

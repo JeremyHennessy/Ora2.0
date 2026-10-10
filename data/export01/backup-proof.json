@@ -1,0 +1,14 @@
+{
+  "all_four_censuses_reaudited": true,
+  "archive_bytes": 2889988,
+  "archive_sha256": "8e00cf98552df6c4fbb910d007315add922c05bb571646db441b2be610acde52",
+  "physical_disks": [
+    0,
+    1
+  ],
+  "physical_power_loss_tested": false,
+  "previous_files_unchanged": 325,
+  "restored_files": 582,
+  "source_revision": "df0f06b34b6b7ef548cb2ab07f1ca0dc8a4d9cce",
+  "verified": true
+}
