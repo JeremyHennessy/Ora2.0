@@ -1,0 +1,33 @@
+{
+  "schema": "mineral01-source-facts",
+  "checked_date": "2026-10-10",
+  "scope": "Selected primary main Methods; no claim of exhaustive supplementary or later-literature absence",
+  "ni": {
+    "url": "https://www.nature.com/articles/s42004-021-00475-5",
+    "doi": "10.1038/s42004-021-00475-5",
+    "reported": "Prepared sulfides were electrochemically conditioned under continuous CO2 flow. Constant electrode potential was imposed for seven days; potentials referenced to Ag/AgCl and converted to SHE. Prepared material promoted thioester production and was sensitive to air oxidation.",
+    "flow_ml_per_min": 20,
+    "electrolysis_days": 7,
+    "prior_flow_minutes_minimum": 60,
+    "sulfide_mg": 400,
+    "reference_shift_volts": "0.198",
+    "unknown_for_ora": ["complete finite-source exergy and preparation price", "terminal-voltage/current work integral", "usable-load coupling and output work", "endogenous damage/reconstruction kinetics and costs", "cost-matched independent and complete shuffle controls"],
+    "inference": "Molecular stoichiometry below is a conditional accounting cartoon; isolated Ni and NiO recovery are not source-observed working-catalyst reconstruction. Product presence does not price autonomous useful repair."
+  },
+  "fe": {
+    "url": "https://www.nature.com/articles/s41467-024-54062-y",
+    "doi": "10.1038/s41467-024-54062-y",
+    "correction_url": "https://www.nature.com/articles/s41467-024-55040-0",
+    "correction_scope": "Author affiliation correction, 2024-12-06",
+    "reported": "Prepared supported FeS catalysts promoted H2-dependent CO2 conversion to methanol in a flow reactor. Methods use light and temperature control, catalyst10 mg, CO2/H2 volume ratio1:3 and total feed20 mL/min. Catalyst preparation includes precipitation, washing and drying.",
+    "flow_ml_per_min": 20,
+    "co2_volume_parts": 1,
+    "h2_volume_parts": 3,
+    "catalyst_mg": 10,
+    "unknown_for_ora": ["complete finite-source exergy and preparation price", "heater/optical/flow work integral", "usable-load coupling and output work", "endogenous damage/reconstruction kinetics and costs", "cost-matched independent and complete shuffle controls"],
+    "inference": "Methanol atom balance and input ceilings do not establish recoverable work, autonomous catalyst renewal or organizational benefit. One-hour feed arithmetic is our illustration, not the study's registered duration."
+  },
+  "research_repository": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "natural_worlds": 0,
+  "physical_mechanism_installed": false
+}
