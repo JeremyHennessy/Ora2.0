@@ -2,6 +2,12 @@
 from fractions import Fraction as F
 from itertools import product
 
+def ratio(value):
+    size=max(value.numerator.bit_length(),value.denominator.bit_length())
+    if size<=14000:return str(value)
+    if size>262144:raise ValueError('Registered integer representation bound')
+    return dict(numerator_hex=hex(value.numerator),denominator_hex=hex(value.denominator))
+
 
 def evaluate(p,d,m,b,a):
     sites=[int(a[-1])] if a.startswith('single') else [0,1]
@@ -50,13 +56,13 @@ def evaluate(p,d,m,b,a):
     assert stock+discard+live==10
     assert drawn==thermal+service+construction+delivered+remaining
     assert 0<=drawn<=72
-    return dict(fundable=failed is None,failure=failed,capital=str(C),allowance=str(A),returned=str(A-C),
-        source=str(drawn),source_remaining=str(72-drawn),conversion_overflow_heat=str(thermal),upkeep=str(service),repair=str(construction),
-        output=str(delivered),bank=str(remaining),bank_at_damage=None if damage_bank is None else str(damage_bank),post_output=str(late),
-        whole=str(delivered+remaining-C),post=None if damage_bank is None else str(late+remaining-damage_bank),
-        fresh_capture=str(renewed_in),fresh_output=str(renewed),repair_tick=replacement,raw=stock,live=live,scrap=discard,
-        contacts=sorted(s for s in active if active[s]),rebuilt_contact=d if replacement is not None else None,unpaid_upkeep=str(debt),
-        provenance=[[str(cell[i]) for i in range(3)] for cell in contents],whole_upper=str(F(21,2)-C),cutoff_upper_reject=m>=F(1,8))
+    return dict(fundable=failed is None,failure=failed,capital=ratio(C),allowance=ratio(A),returned=ratio(A-C),
+        source=ratio(drawn),source_remaining=ratio(72-drawn),conversion_overflow_heat=ratio(thermal),upkeep=ratio(service),repair=ratio(construction),
+        output=ratio(delivered),bank=ratio(remaining),bank_at_damage=None if damage_bank is None else ratio(damage_bank),post_output=ratio(late),
+        whole=ratio(delivered+remaining-C),post=None if damage_bank is None else ratio(late+remaining-damage_bank),
+        fresh_capture=ratio(renewed_in),fresh_output=ratio(renewed),repair_tick=replacement,raw=stock,live=live,scrap=discard,
+        contacts=sorted(s for s in active if active[s]),rebuilt_contact=d if replacement is not None else None,unpaid_upkeep=ratio(debt),
+        provenance=[[ratio(cell[i]) for i in range(3)] for cell in contents],whole_upper=ratio(F(21,2)-C),cutoff_upper_reject=m>=F(1,8))
 
 
 def panel():
@@ -64,3 +70,4 @@ def panel():
     for p,d,m,b in product(range(16),range(2),(F(1,32),F(1,8)),(F(1,2),F(1))):
         answer.append(dict(pattern=p,damage=d,m=str(m),bus=str(b),arms={a:evaluate(p,d,m,b,a) for a in ('connected','balanced','single0','single1','loop')}))
     return answer
+

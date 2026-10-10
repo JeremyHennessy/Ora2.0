@@ -108,3 +108,20 @@ until a separate, fully priced accessible primitive/formation law is registered
 and audited; this protocol does not authorize a successful founder or world panel.
 If no complete comparative certificate passes, stop BUFFER-01 under this law:
 do not lower costs, alter cutoff/tapes/damage or extend its horizon.
+
+## Prospective evidence-format clarification after representation diagnosis
+
+Frozen source5863c2b failed decimal serialization before a complete result was
+saved. A representation-only bounded probe completed all128 cases and measured
+maximum integer size149,806 bits;84 string conversions exceeded14,000 bits.
+The diagnostic's placeholders are not scientific ledgers or outcomes.
+
+Before the complete rerun, encode exact ratios above14,000 bits as separate
+signed numerator/positive denominator hexadecimal strings, bounded to262,144
+bits each. Ordinary smaller ratios retain their original strings. Use canonical
+JSON with deterministic gzip; maximum compressed artifact4 MiB, inflated JSON
+16 MiB, unchanged process/storage/time limits. Preserve every full numerator
+and denominator and independently recover the exact rational. Decimal guards
+remain enabled. This changes only evidence representation, not arithmetic,
+law, prices, tape, horizon, controls or acceptance criteria. Preserve the failed
+run and diagnostic; no favorable case filtering is permitted.

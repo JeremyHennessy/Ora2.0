@@ -4,6 +4,12 @@ from itertools import product
 
 ARMS=('connected','balanced','single0','single1','loop')
 
+def ratio(value):
+    size=max(value.numerator.bit_length(),value.denominator.bit_length())
+    if size<=14000:return str(value)
+    if size>262144:raise ValueError('Registered integer representation bound')
+    return dict(numerator_hex=hex(value.numerator),denominator_hex=hex(value.denominator))
+
 
 def certificate(pattern,damage,m,bus,arm):
     collectors={0,1} if arm not in ('single0','single1') else {int(arm[-1])}
@@ -52,13 +58,13 @@ def certificate(pattern,damage,m,bus,arm):
     assert raw+live+scrap==10
     assert allowance+used==allowance-capital+capital+heat+upkeep+repair+output+energy()
     assert used<=72 and all(0<=sum(bank)<=cap for bank,cap in zip(banks,capacities))
-    return dict(fundable=failure is None,failure=failure,capital=str(capital),allowance=str(allowance),returned=str(allowance-capital),
-        source=str(used),source_remaining=str(72-used),conversion_overflow_heat=str(heat),upkeep=str(upkeep),repair=str(repair),
-        output=str(output),bank=str(energy()),bank_at_damage=None if before_damage is None else str(before_damage),post_output=str(post_output),
-        whole=str(output+energy()-capital),post=None if before_damage is None else str(post_output+energy()-before_damage),
-        fresh_capture=str(fresh_capture),fresh_output=str(fresh_output),repair_tick=repair_tick,raw=raw,live=live,scrap=scrap,
-        contacts=sorted(contacts),rebuilt_contact=damage if rebuilt else None,unpaid_upkeep=str(unpaid),
-        provenance=[[str(x) for x in bank] for bank in banks],whole_upper=str(Q(17,2)+2-capital),
+    return dict(fundable=failure is None,failure=failure,capital=ratio(capital),allowance=ratio(allowance),returned=ratio(allowance-capital),
+        source=ratio(used),source_remaining=ratio(72-used),conversion_overflow_heat=ratio(heat),upkeep=ratio(upkeep),repair=ratio(repair),
+        output=ratio(output),bank=ratio(energy()),bank_at_damage=None if before_damage is None else ratio(before_damage),post_output=ratio(post_output),
+        whole=ratio(output+energy()-capital),post=None if before_damage is None else ratio(post_output+energy()-before_damage),
+        fresh_capture=ratio(fresh_capture),fresh_output=ratio(fresh_output),repair_tick=repair_tick,raw=raw,live=live,scrap=scrap,
+        contacts=sorted(contacts),rebuilt_contact=damage if rebuilt else None,unpaid_upkeep=ratio(unpaid),
+        provenance=[[ratio(x) for x in bank] for bank in banks],whole_upper=ratio(Q(17,2)+2-capital),
         cutoff_upper_reject=m>=Q(1,8))
 
 
@@ -84,3 +90,4 @@ def decision(rows):
         early_cutoff_upper_rejections=upper,natural_worlds=0,natural_admission=False,
         decision='CONDITIONAL PREPARED FEASIBILITY ONLY' if qualifying else 'REJECT UNDER FROZEN LAW',
         limitations='Installed collectors, stores, cutoff, load and constructor; natural primitive/formation costs and rates remain uncalibrated')
+
