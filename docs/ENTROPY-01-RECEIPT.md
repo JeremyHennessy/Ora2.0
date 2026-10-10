@@ -26,6 +26,13 @@ costs and endpoints. Complete physical graph440 states/1956 directed channels,
 Read-only current-body functionality flags are history measurements; do not
 assign physical detailed balance to their irreversible record transitions.
 
+The protocol's "inverted/shuffled" label denotes the single fixed inversion.
+No complete uniform permutation ensemble was evaluated. It would be inadequate
+as the sole shuffled control for a positive organizational claim; such a claim
+would require a prospectively complete shuffle comparator. Admission here stops
+on candidate opportunity alone, without asserting a causal advantage or failure
+relative to a complete shuffled ensemble. No historical protocol is amended.
+
 Every arm can follow a controlled repair ending W3, source heat15, bound2:
 eleven net work transfers minus formation6 and loss2 leaves whole3/post1.
 One reverse passive transfer explicitly restores a concentration opportunity;
