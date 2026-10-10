@@ -4,6 +4,17 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+TRANSMISSION-01 rejects a distinct ideal mechanical matching candidate before
+worlds. Frozen c664bb9:32 cases/128 exact ledgers match independent interpretation
+and replay; three checks pass. All controls have positive whole/post accounting
+bounds somewhere, but the same-ratio lever strictly dominates the fixed gear
+on every case:2*F+24*m whole and12*m post advantage. These are accounting bounds,
+not assembly/repair trajectories. [Receipt](TRANSMISSION-01-RECEIPT.md).
+Stop this law without changing prices or handicapping the lever. The next
+candidate needs a causal benefit unavailable to the matched stationary simple
+alternative and accessible full-cost essential-role fabrication/renewal.
+Preserve the first runner source-copy failure and concurrent PR98 progress review.
+
 RENEWAL-SCOPE-01 closes the next high-information source question before worlds:
 all128 BUFFER cases/640 ledgers and both frozen interpreters cover contact
 replacement only. Five other apparatus roles (seven of nine candidate material
