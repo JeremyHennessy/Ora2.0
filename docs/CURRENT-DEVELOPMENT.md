@@ -87,6 +87,15 @@ session it reinforces per-case whole-system endpoints rather than pooling
 separate positive capabilities into a maintenance claim. Earlier Pass47 review
 remains dated evidence; research code and local checkout remain untouched.
 
+Further concurrent review found Pass49 main
+e3eb5e3d8609d7ddab8bd1c10e036dc4fc4198a1, validation38080602766 successful.
+Its research-only handoff distinguishes new function, context-dependent benefit,
+trait loss and operator-maintained continuity. For Ora this reinforces testing
+retained useful performance and costs after support changes, rather than
+inferring maintenance from one positive output assay. It supplies no reproduced
+Ora result and does not change frozen RECTIFY or CONDUCTION protocols. Research
+code and data were not executed; the independent working checkout is preserved.
+
 ## Latest alternative audit: stationary prepared components outperform the moving tether
 
 STATIONARY-01 [prospective comparator](STATIONARY-01-COMPARATOR.md), frozen
