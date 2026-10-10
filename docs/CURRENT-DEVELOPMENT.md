@@ -22,6 +22,11 @@ endpoints; two independent converters outperform bridge post-damage work in
 all381 complete cases. Reject before worlds. Preserve the first audit failure;
 do not change prices/horizon or discard failed controls.
 [Scientific receipt](RECTIFY-01-RECEIPT.md). No Stage3 acceptance.
+The separate [analytic stop audit](RECTIFY-01-DOMINANCE.md) matches all384
+bridge/two-independent pairs: exact positive post-damage advantage is15*d/4+6*m
+for shared live-site damage, or3*d+4*m+9/4+c+2*b for bridge-only site damage.
+It rules out rescuing this registered post endpoint by construction-price or
+startup-duration changes; conditional schedule fundability remains explicit.
 
 TELEMETRY-BOUNDS-01 reproduces an unbounded checksum read before evidence
 validation; bounded streaming, enumeration and aggregate checks repair it.
