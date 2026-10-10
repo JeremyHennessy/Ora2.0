@@ -7,7 +7,7 @@ WINDOW and every earlier law, dataset and endpoint remain frozen.
 ## Distinct hypothesis and limits
 
 Instead of a globally accessible abstract work store, an output reaction charges
-a finite labelled acceptor molecule. Unbiased diffusion can move it out of
+a finite labelled portable load object. Unbiased diffusion can move it out of
 contact with the converter. Discharge is still possible after renewed contact.
 This is a new material/locality mechanism, not a lower reverse rate, delayed
 fuel subsidy, retimed damage, or larger fuel/thermal endowment. Its chemistry
@@ -21,10 +21,18 @@ are the proposed natural start. This does not demonstrate a self-built container
 Two labelled raw atoms occupy two degenerate sites. They may form one dimer
 only when co-located. Raw/A/B/C potentials are 0/1/4/3. Ten labelled chemical
 tokens are F (energy6) or P (energy0). Initially all are F. Ten additional
-labelled acceptors have energy0 uncharged or2 charged, and an explicit site.
+labelled acceptors have an ideal mechanical work coordinate0 unloaded or2
+loaded, and an explicit site. Here "charged" means loaded mechanical potential,
+not merely chemical energy presumed convertible to useful work. Conversion
+couples directly to that coordinate; the exact reverse consumes that work.
 They are finite output material, with no initially charged capital. Heat starts
 at8. Total material22, total energy68, no abstract initial work store, no refill.
-The useful output is energy held in charged acceptors, not heat or conformation.
+The useful output is mechanical potential held in these finite portable load
+coordinates, not heat or converter conformation. The loads are supplied
+measurement apparatus, never credited as organism construction. Their ten
+objects and zero initial stored work are included in the endowment. Claims
+about fabrication of real portable loads require separately priced geometry
+and material physics; this toy does not admit those empirical claims.
 
 All the following reactions have their exact reverse:
 
