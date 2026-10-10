@@ -1,0 +1,47 @@
+{
+  "admission_passed": false,
+  "classification": "NOT_ADMITTED_MISSING_CALIBRATION",
+  "conditional_accounting_cases": 7670,
+  "fe_cases": 65,
+  "fe_maximum_products": 4,
+  "flow": {
+    "fe_illustrative_hour_co2_litres": "3/10",
+    "fe_illustrative_hour_h2_litres": "9/10",
+    "fe_illustrative_hour_total_litres": "6/5",
+    "moles_inferred": false,
+    "ni_minimum_litres": "1014/5"
+  },
+  "missing_calibration": {
+    "fe": [
+      "complete finite-source exergy and preparation price",
+      "heater/optical/flow work integral",
+      "usable-load coupling and output work",
+      "endogenous damage/reconstruction kinetics and costs",
+      "cost-matched independent and complete shuffle controls"
+    ],
+    "ni": [
+      "complete finite-source exergy and preparation price",
+      "terminal-voltage/current work integral",
+      "usable-load coupling and output work",
+      "endogenous damage/reconstruction kinetics and costs",
+      "cost-matched independent and complete shuffle controls"
+    ]
+  },
+  "natural_worlds": 0,
+  "ni_cases": 7605,
+  "ni_maximum_post_products": 3,
+  "ni_maximum_total_products": 4,
+  "ni_paired_use_possible_cases": 375,
+  "self_maintenance_demonstrated": false,
+  "source_papers_reproduced": false,
+  "source_revision": "ad7909548754ac89fa59c5edfbc9eac4495d6cfd",
+  "verified": true,
+  "work": {
+    "fe_terminal_work_J": null,
+    "full_repair_cost_J": null,
+    "ni_terminal_work_J": null,
+    "reference_potential_alone_sufficient": false,
+    "temperature_alone_sufficient": false,
+    "usable_output_J": null
+  }
+}
