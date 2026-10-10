@@ -355,3 +355,24 @@ Next admission must link local paid material maintenance to useful conversion,
 not merely improve output retention or tune this failed law. Require full costs,
 attainable controls and independent reproduction before acceptance.
 [Exact ledger, controls, negative results and evidence](EXPORT-01-02-RECEIPT.md).
+
+## Work-funded maintenance follow-up, October10
+
+MAINTAIN-01/02 installs a distinct reversible three-component catalytic network
+whose activation actually consumes captured work. All64 connection patterns are
+included without selection. Both11508/11512-state parity components and every
+catalytic context are independently checked; all controls share a fully paid
+repair certificate (whole6/post1), controlled-only. In192 unscreened raw-start
+worlds every arm0/64; candidate19 paid losses/14 first replacements/4 retained,
+but no first replacement in any arm captures fresh fuel. Candidate exposure0/64,
+UNDEREXPOSED. All paid-loss worlds have exhausted untouched fuel opportunities
+by damage time. Actual final candidate work185 is not profit: conservative
+whole-327/post-328. Ten candidate worlds have all three active before loss,
+without the required pre-loss functional identity evidence. 3.1/3.2 installed
+conversion and work-paid renewal are exercised; 3.3/3.4 repeatable autonomous
+maintenance and useful founder-free organization remain unaccepted. There is
+no external assistance to withdraw and no 3.5 depletion survival claim; 3.6
+retained replacement without useful fresh output is not functional inheritance.
+Close exact law without tuning. Require a prospective post-startup opportunity
+gate and a genuinely distinct finite energy-flow mechanism before new samples.
+[Exact sources, controls, costs and preservation](MAINTAIN-01-02-RECEIPT.md).

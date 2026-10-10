@@ -1,0 +1,87 @@
+{
+  "attempts": 786432,
+  "classification": "UNDEREXPOSED",
+  "comparisons": [
+    {
+      "candidate_only": 0,
+      "control": "independent",
+      "control_only": 0,
+      "holm_p": 1,
+      "p": 1.0
+    },
+    {
+      "candidate_only": 0,
+      "control": "annealed",
+      "control_only": 0,
+      "holm_p": 1,
+      "p": 1.0
+    }
+  ],
+  "full_independent_history_audit": true,
+  "next_decision": "Close this exact law; preserve negative result, no tuning.",
+  "primary_pass": false,
+  "reserved_samples_executed": false,
+  "schema": "maintain02-decision",
+  "self_maintenance_accepted": false,
+  "source_revision": "264bacf388ea22d7a7391430f807b2b1212d0729",
+  "summary": {
+    "annealed": {
+      "activation_net": 333,
+      "exposed": 0,
+      "final_work": 171,
+      "first_rebuild": 16,
+      "first_rebuild_fresh_work": 0,
+      "first_rebuild_retained": 4,
+      "fresh": 678,
+      "fuel_exhausted": 49,
+      "gross": 1184,
+      "loss_cost": 46,
+      "other": 506,
+      "paid_loss": 23,
+      "positive_post_surplus": 4,
+      "post_surplus": -307,
+      "reverse": 634,
+      "success": 0,
+      "whole_surplus": -335
+    },
+    "candidate": {
+      "activation_net": 327,
+      "exposed": 0,
+      "final_work": 185,
+      "first_rebuild": 14,
+      "first_rebuild_fresh_work": 0,
+      "first_rebuild_retained": 4,
+      "fresh": 680,
+      "fuel_exhausted": 49,
+      "gross": 1192,
+      "loss_cost": 38,
+      "other": 512,
+      "paid_loss": 19,
+      "positive_post_surplus": 3,
+      "post_surplus": -328,
+      "reverse": 642,
+      "success": 0,
+      "whole_surplus": -327
+    },
+    "independent": {
+      "activation_net": 324,
+      "exposed": 1,
+      "final_work": 182,
+      "first_rebuild": 10,
+      "first_rebuild_fresh_work": 0,
+      "first_rebuild_retained": 5,
+      "fresh": 664,
+      "fuel_exhausted": 52,
+      "gross": 1138,
+      "loss_cost": 36,
+      "other": 474,
+      "paid_loss": 18,
+      "positive_post_surplus": 6,
+      "post_surplus": -304,
+      "reverse": 596,
+      "success": 0,
+      "whole_surplus": -292
+    }
+  },
+  "worlds": 192
+}
