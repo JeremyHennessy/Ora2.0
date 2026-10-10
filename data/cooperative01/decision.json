@@ -1,0 +1,354 @@
+{
+  "admission_passed": false,
+  "admitted_bindings": [],
+  "cases": [
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.011870913038386622,
+          "exposed_probability": 1.2739925988538707e-05,
+          "feasible_exposed_probability": 1.2739925988538566e-05,
+          "fuel_depletion_probability": 0.9366631024905663,
+          "mass": 1.000000000000039
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.08865769078709414,
+          "exposed_probability": 0.00012195421541577058,
+          "feasible_exposed_probability": 0.0001219542154157328,
+          "fuel_depletion_probability": 0.9257622712978824,
+          "mass": 0.9999999999999908
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.22002706745094056,
+          "exposed_probability": 0.00019535070076617957,
+          "feasible_exposed_probability": 0.00019535070076616553,
+          "fuel_depletion_probability": 0.8963523462685788,
+          "mass": 1.000000000000036
+        }
+      ],
+      "binding": 0,
+      "full_shuffle_feasible_exposure": 0.00010404531337735205,
+      "graphs": [
+        {
+          "directed_channels": 1050,
+          "excluded_energy_admissible_states": 7,
+          "labelled_proposals": 3252,
+          "maximum_work": 30,
+          "state_sha256": "28dec067ad9f30fc6f53d1109aec11fb050d77de40c9878182808aa260618d52",
+          "states": 228
+        },
+        {
+          "directed_channels": 1020,
+          "excluded_energy_admissible_states": 9,
+          "labelled_proposals": 3156,
+          "maximum_work": 29,
+          "state_sha256": "0164a4bddd0192e5547d4ae0f4bc5f59091425c86285e79df35ec59ad5074538",
+          "states": 221
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.018142581673533893,
+          "exposed_probability": 2.878893023455401e-05,
+          "feasible_exposed_probability": 2.878893023455401e-05,
+          "fuel_depletion_probability": 0.9368866031992165,
+          "mass": 1.0000000000000406
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.13940918238184605,
+          "exposed_probability": 0.0003396755993204962,
+          "feasible_exposed_probability": 0.00033967559932049525,
+          "fuel_depletion_probability": 0.9278781282772052,
+          "mass": 0.9999999999999787
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.34450205869653117,
+          "exposed_probability": 0.0005915266169801341,
+          "feasible_exposed_probability": 0.0005915266169801339,
+          "fuel_depletion_probability": 0.9049921872645416,
+          "mass": 1.0000000000000233
+        }
+      ],
+      "binding": 1,
+      "full_shuffle_feasible_exposure": 0.0003101577736073439,
+      "graphs": [
+        {
+          "directed_channels": 1050,
+          "excluded_energy_admissible_states": 7,
+          "labelled_proposals": 3252,
+          "maximum_work": 30,
+          "state_sha256": "28dec067ad9f30fc6f53d1109aec11fb050d77de40c9878182808aa260618d52",
+          "states": 228
+        },
+        {
+          "directed_channels": 1046,
+          "excluded_energy_admissible_states": 5,
+          "labelled_proposals": 3236,
+          "maximum_work": 31,
+          "state_sha256": "0c331fd37b795ed029f2e69dd42639b7a2322d3fb3b58101cacf9d59e8fd7f6a",
+          "states": 230
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.024477263543684402,
+          "exposed_probability": 5.209331458179385e-05,
+          "feasible_exposed_probability": 5.209331458179385e-05,
+          "fuel_depletion_probability": 0.9371130014563225,
+          "mass": 1.000000000000035
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.1929465185732216,
+          "exposed_probability": 0.000730583859108529,
+          "feasible_exposed_probability": 0.0007305838591085266,
+          "fuel_depletion_probability": 0.9301054839361863,
+          "mass": 0.9999999999999832
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.47621650535484195,
+          "exposed_probability": 0.0014085562103803287,
+          "feasible_exposed_probability": 0.0014085562103803282,
+          "fuel_depletion_probability": 0.9138724828639061,
+          "mass": 1.000000000000031
+        }
+      ],
+      "binding": 2,
+      "full_shuffle_feasible_exposure": 0.000730324762481061,
+      "graphs": [
+        {
+          "directed_channels": 1076,
+          "excluded_energy_admissible_states": 3,
+          "labelled_proposals": 3332,
+          "maximum_work": 32,
+          "state_sha256": "7576467b1cbf266e2df453cbbb929ea6fe9b25cca23406fca0bc4ba93609f810",
+          "states": 237
+        },
+        {
+          "directed_channels": 1046,
+          "excluded_energy_admissible_states": 5,
+          "labelled_proposals": 3236,
+          "maximum_work": 31,
+          "state_sha256": "0c331fd37b795ed029f2e69dd42639b7a2322d3fb3b58101cacf9d59e8fd7f6a",
+          "states": 230
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.029492985556657827,
+          "exposed_probability": 7.6003136943775e-05,
+          "feasible_exposed_probability": 7.6003136943775e-05,
+          "fuel_depletion_probability": 0.937291403975459,
+          "mass": 1.000000000000036
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.23665976850621867,
+          "exposed_probability": 0.0011935736855546012,
+          "feasible_exposed_probability": 0.0011935736855546012,
+          "fuel_depletion_probability": 0.9319073265777189,
+          "mass": 1.0000000000000007
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.5843174555220825,
+          "exposed_probability": 0.002490353803991384,
+          "feasible_exposed_probability": 0.002490353803991384,
+          "fuel_depletion_probability": 0.9210029938521819,
+          "mass": 0.9999999999999956
+        }
+      ],
+      "binding": 3,
+      "full_shuffle_feasible_exposure": 0.0012831784704675797,
+      "graphs": [
+        {
+          "directed_channels": 1076,
+          "excluded_energy_admissible_states": 3,
+          "labelled_proposals": 3332,
+          "maximum_work": 32,
+          "state_sha256": "7576467b1cbf266e2df453cbbb929ea6fe9b25cca23406fca0bc4ba93609f810",
+          "states": 237
+        },
+        {
+          "directed_channels": 1068,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3300,
+          "maximum_work": 31,
+          "state_sha256": "32d563c2a7a333a245d7ef13d0ed806b3d8e5c3f1a0a9121f2e917ae7b3310cf",
+          "states": 238
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.03277549290061449,
+          "exposed_probability": 9.436777506009529e-05,
+          "feasible_exposed_probability": 9.436777506009529e-05,
+          "fuel_depletion_probability": 0.9374074380469241,
+          "mass": 1.0000000000000375
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.26579489409270574,
+          "exposed_probability": 0.0015793185648028563,
+          "feasible_exposed_probability": 0.0015793185648028563,
+          "fuel_depletion_probability": 0.9330974998958661,
+          "mass": 0.9999999999999941
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.6566679046401691,
+          "exposed_probability": 0.003454761182885024,
+          "feasible_exposed_probability": 0.003454761182885024,
+          "fuel_depletion_probability": 0.9257057956498284,
+          "mass": 1.0000000000000302
+        }
+      ],
+      "binding": 4,
+      "full_shuffle_feasible_exposure": 0.0017745644789725597,
+      "graphs": [
+        {
+          "directed_channels": 1094,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3380,
+          "maximum_work": 32,
+          "state_sha256": "9b98416dea3106214ab22f1a9eb5b458db36f396cd82742bcbc264c57256508c",
+          "states": 243
+        },
+        {
+          "directed_channels": 1068,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3300,
+          "maximum_work": 31,
+          "state_sha256": "32d563c2a7a333a245d7ef13d0ed806b3d8e5c3f1a0a9121f2e917ae7b3310cf",
+          "states": 238
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.03467591571577339,
+          "exposed_probability": 0.00010599610613092754,
+          "feasible_exposed_probability": 0.00010599610613092754,
+          "fuel_depletion_probability": 0.9374743120548975,
+          "mass": 1.0000000000000417
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.28283080531187993,
+          "exposed_probability": 0.001834182832147146,
+          "feasible_exposed_probability": 0.001834182832147146,
+          "fuel_depletion_probability": 0.9337892068453602,
+          "mass": 0.9999999999999719
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.6990825100535987,
+          "exposed_probability": 0.004115624267725901,
+          "feasible_exposed_probability": 0.004115624267725901,
+          "fuel_depletion_probability": 0.9284389372482422,
+          "mass": 1.000000000000009
+        }
+      ],
+      "binding": 5,
+      "full_shuffle_feasible_exposure": 0.0021108101869284144,
+      "graphs": [
+        {
+          "directed_channels": 1094,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3380,
+          "maximum_work": 32,
+          "state_sha256": "9b98416dea3106214ab22f1a9eb5b458db36f396cd82742bcbc264c57256508c",
+          "states": 243
+        },
+        {
+          "directed_channels": 1084,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3340,
+          "maximum_work": 31,
+          "state_sha256": "49726293115fbff337c1abf28c3cad051e5de0897e582d3eb76bc998db514d99",
+          "states": 243
+        }
+      ]
+    },
+    {
+      "admission_passed": false,
+      "arms": [
+        {
+          "arm": "candidate",
+          "bound_probability": 0.035701813508038124,
+          "exposed_probability": 0.00011257800116361363,
+          "feasible_exposed_probability": 0.00011257800116361363,
+          "fuel_depletion_probability": 0.937510314513884,
+          "mass": 1.0000000000000375
+        },
+        {
+          "arm": "independent",
+          "bound_probability": 0.29207473276638823,
+          "exposed_probability": 0.0019815937242863013,
+          "feasible_exposed_probability": 0.0019815937242863013,
+          "fuel_depletion_probability": 0.9341632247503184,
+          "mass": 0.9999999999999785
+        },
+        {
+          "arm": "inverse",
+          "bound_probability": 0.7221304171907665,
+          "exposed_probability": 0.0045051170884657585,
+          "feasible_exposed_probability": 0.0045051170884657585,
+          "fuel_depletion_probability": 0.9299170964615633,
+          "mass": 1.0000000000000269
+        }
+      ],
+      "binding": 6,
+      "full_shuffle_feasible_exposure": 0.002308847544814686,
+      "graphs": [
+        {
+          "directed_channels": 1110,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3420,
+          "maximum_work": 32,
+          "state_sha256": "d7da89f7ad6d161f017192ebd7f7d93223e9187a0678869efdbc6b7cf7130ff2",
+          "states": 248
+        },
+        {
+          "directed_channels": 1084,
+          "excluded_energy_admissible_states": 2,
+          "labelled_proposals": 3340,
+          "maximum_work": 31,
+          "state_sha256": "49726293115fbff337c1abf28c3cad051e5de0897e582d3eb76bc998db514d99",
+          "states": 243
+        }
+      ]
+    }
+  ],
+  "classification": "NOT_ADMITTED_OPPORTUNITY",
+  "natural_worlds": 0,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "a286539bb9c01477381016d33da5257a0b714017",
+  "verified": true
+}

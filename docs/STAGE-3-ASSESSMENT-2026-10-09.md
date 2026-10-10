@@ -393,3 +393,22 @@ controlled statistical possibility only, 3.3–3.6 remain unaccepted. This exact
 law is closed before a low-information panel; the independent startup gate
 prevents using rare authored repair paths as evidence of natural maintenance.
 [Sources, controls, full costs and evidence](ENTROPY-01-RECEIPT.md).
+
+## Cooperative stability and energy-access follow-up, October10
+
+COOPERATIVE-01 tests a distinct binding potential across the full0..6 catalogue.
+Independent complete finite-time calculations predict bound retention increasing
+1.1871%→3.5702%, but feasible useful repair exposure0.001274%→0.011258%, all
+below75%; approximately94% fuel depleted. Entire catalogue closed before sampled
+worlds. Full shuffle includes candidate and inverse; no favorable-null selection.
+Construction/loss/replacement bill11 exceeds four single-use conversions' work8;
+regeneration is necessary for any positive whole work and included in the law.
+Binding heat and supplied material capital do not constitute free usable output.
+3.1/3.2 gain independently audited opportunity/cost constraints, not a new
+observed capability.3.3/3.4 useful retained maintenance/founder-free organization
+remain unaccepted;3.5 has no assistance-withdrawal survival;3.6 has no functional
+inheritance. First census-assumption failure preserved, correction frozen before
+propagation.46 checks, exact replay/forgery refusals/C: restore audit pass.
+Next require a genuinely distinct priced conversion route with adequate accessible
+usable yield, not stronger bonds or more fuel in this closed model.
+[Exact sources, complete controls, accounting and evidence](COOPERATIVE-01-RECEIPT.md).

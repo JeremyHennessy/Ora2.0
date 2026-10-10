@@ -2,7 +2,44 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — finite mixing source rejected before sampled worlds
+## Latest checkpoint — cooperative stability does not fund useful maintenance
+
+**Exact source:**COOPERATIVE-01a286539bb9c01477381016d33da5257a0b714017;
+protocol1742ab9c30067e6ee033801e3eb470ac7fde4c15, census clarification before
+producer propagation. [Protocol](COOPERATIVE-01-PROTOCOL.md),
+[receipt](COOPERATIVE-01-RECEIPT.md), [decision](../data/cooperative01/decision.json).
+
+**Verified:** entire binding-potential catalogue0..6, fourteen reachable graph
+components, all21 complete2048-attempt startup distributions and every exposed
+resource-yoked paid-loss phase independently agree. Stable-bound probability
+increases1.1871%→3.5702%, but feasible useful exposure only0.001274%→0.011258%
+versus registered75%; candidate fuel depletion93.67%→93.75%. Independent and
+full two-member shuffle retain all opportunities; candidate falls below both.
+NOT ADMITTED across entire catalogue. No sampled worlds or chosen setting.
+
+**Scientific implication:** frozen work ledger gives W_final=2*net_capture-11
+after one loss and a rebuilt pair. Four single-use captures supply8<11, so
+positive whole work requires regeneration, independently of bond stabilization.
+Supplied material capital is explicitly retained/debited. Stability alone does
+not create accessible usable yield. This is a finite toy prediction, not
+observed maintenance, universal impossibility or empirically priced chemistry.
+
+**Next decision:** close exact catalogue without price/fuel/time tuning. Before
+another population study identify a genuinely distinct, independently priced
+conversion route with accessible useful yield above complete construction/repair
+costs, then assess joint startup retention and source access with equivalent
+reachable nulls/full shuffle. Unknown apparatus prices remain NOT ADMITTED.
+Stage3 incomplete; no successor or new controller admitted.
+
+**Verification/activity:**46 focused checks, independent full census/propagation,
+exact replay, three forged records refused and633-file independent C: restoration
+with full source reaudit. Initial census-assumption failure preserved and repaired
+before propagation. CI/manual observer-preserving integration recorded locally.
+AI-Research09f4f33/Pass39 unchanged; Pass40 contains no new accepted work.
+Observer paused; no live world. Durability/full-host/lost-work, production
+isolation and separate supervised-pilot authorization remain unresolved.
+
+## Historical checkpoint — finite mixing source rejected before sampled worlds
 
 **Exact source:** ENTROPY-01 admission32e2bc08622eecebf1e8f83f51c74afe29009bfd;
 prospective protocol d492c8fad6e6ebc63d6c3ab5aa02610d793bef52.

@@ -1,0 +1,14 @@
+{
+  "all_distributions_and_phases_reaudited": true,
+  "archive_bytes": 3643182,
+  "archive_sha256": "f8acec9c5b465965c2ea84f7dc60b9450064e8b8a69ddbf139d2acd1060e23e7",
+  "physical_disks": [
+    0,
+    1
+  ],
+  "physical_power_loss_tested": false,
+  "previous_files_unchanged": 341,
+  "restored_files": 633,
+  "source_revision": "a286539bb9c01477381016d33da5257a0b714017",
+  "verified": true
+}
