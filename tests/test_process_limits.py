@@ -37,6 +37,21 @@ class ConfigTests(unittest.TestCase):
 
 @unittest.skipUnless(os.name == 'nt', 'Windows Job Object fixtures require Windows')
 class WindowsCapsTests(unittest.TestCase):
+    def test_bootstrap_does_not_write_to_restored_source(self):
+        with tempfile.TemporaryDirectory(dir=os.environ.get('ORA_TEST_TEMP')) as temporary:
+            root = Path(temporary); package = root / 'experiments'; package.mkdir()
+            (package / '__init__.py').write_bytes(b'')
+            (package / 'process_limits.py').write_bytes(Path(resource.__file__).read_bytes())
+            before = {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()}
+            # Remove environment workarounds: the launcher must enforce its own read-only import.
+            with patch.dict(os.environ):
+                os.environ.pop('PYTHONDONTWRITEBYTECODE', None)
+                os.environ.pop('PYTHONPYCACHEPREFIX', None)
+                result = resource.run([PYTHON, '-B', '-c', "print('read-only-child')"], cwd=root)
+            self.assertEqual(result['exit_code'], 0)
+            self.assertIn('read-only-child', result['output'])
+            self.assertEqual(before, {p.relative_to(root): p.read_bytes() for p in root.rglob('*') if p.is_file()})
+
     def invoke(self, kind, **overrides):
         result = resource.run([PYTHON, str(FIXTURE), kind], resource.Limits(**overrides))
         self.assertEqual(result['usage']['configured_memory_bytes'], result['limits']['memory_bytes'])
