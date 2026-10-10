@@ -1,4 +1,4 @@
-# THERMAL-01/02 — finite thermal work and paid renewal
+# THERMAL-01/02 â€” finite thermal work and paid renewal
 
 Prospective protocols43ef18b/8312eff; exact feasibility8e163801a29294eda1a3694bda77e4666d2c49a2,
 dynamics9902f8f20eed47d9d3aae5e95ec777ee22fa49d1. October9 local execution.
@@ -20,7 +20,7 @@ controls also have possible endpoints; no reachability/max-yield advantage.
 High-cost independent paths are rare one-bath fluctuations, not mean work engines.
 [Complete feasibility decision](../data/thermal01/decision.json).
 
-## Fresh unscreened dynamics — primary FAIL
+## Fresh unscreened dynamics â€” primary FAIL
 
 All3 feasible costs,64 paired blocks/3 arms:576 worlds,1179648 attempted transitions.
 2048 attempts each, seeds83000..83063, no retries, selected cost or horizon extension.

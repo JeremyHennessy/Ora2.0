@@ -2,7 +2,7 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — finite thermal converter fails profitable renewal
+## Latest checkpoint â€” finite thermal converter fails profitable renewal
 
 **Exact source:** feasibility8e163801a29294eda1a3694bda77e4666d2c49a2;
 dynamics9902f8f20eed47d9d3aae5e95ec777ee22fa49d1. Prospective43ef18b/8312eff.
