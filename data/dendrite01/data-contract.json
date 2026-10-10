@@ -1,0 +1,22 @@
+{
+  "schema": "dendrite01-source-admission-v1",
+  "registered_utc": "2026-10-10T14:43:16Z",
+  "registration_scope": "Before data download/inspection; literature and file inventory already reviewed. No prospective natural-world claim.",
+  "question": "Does the published dataset permit construction-energy integration and a fully accounted useful-output-after-damage experiment?",
+  "article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8617192/",
+  "dataset_api": "https://api.figshare.com/v2/articles/16814710",
+  "version": 1,
+  "allowed_file_id": 31090411,
+  "allowed_file_name": "dataset.csv",
+  "expected_file_bytes": 2608639,
+  "file_byte_ceiling": 4194304,
+  "metadata_byte_ceiling": 262144,
+  "excluded": ["video.mp4", "code execution", "new simulation", "parameter fitting", "seed screening"],
+  "required_for_energy_integration": ["time-resolved voltage and current from the same growth run", "units and sampling semantics", "complete growth interval", "signed source-return convention"],
+  "admission_requires": ["finite source and chemical inventory", "formation/release/repair and preparation accounting", "explicit independently usable load", "blind damage and fresh reconstruction provenance", "physically attainable resource-matched independent and shuffled controls", "positive post-damage and whole-life surplus after all maintenance costs"],
+  "missing_value_policy": "unknown, never zero or a favorable fitted value",
+  "stop": "If required measurements are absent, preserve the source and identify the missing measurement. Do not replace transient construction energy with DC conductivity, capacitance, projected area or voltage alone.",
+  "interpretation": "Unknown cost is not physical impossibility. Published powered growth is not Ora reproduction, autonomous origin, self-maintenance or learning.",
+  "bounds": {"network_timeout_seconds": 30, "raw_bytes": 8388608, "failure_bytes": 1048576, "combined_bytes": 9437184, "free_disk_floor_bytes": 5368709120},
+  "verified_budget_source": "70ee57a98144e67d3607b73227d3c0859701a0e8"
+}

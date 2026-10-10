@@ -1,0 +1,51 @@
+{
+  "base_ora": "f839bdf2f5d18c655e2a529e1304ef91d648756f",
+  "classification": "NOT_ADMITTED_MISSING_GROWTH_ENERGY_AND_REPAIR_LOAD_ACCOUNTING",
+  "dataset": {
+    "bytes": 2608639,
+    "columns": 60,
+    "doi": "10.6084/m9.figshare.16814710.v1",
+    "file_id": 31090411,
+    "md5": "aafa210eee5ddfa4f44a48cf656623c1",
+    "measured_current_sections": [
+      "Figure_2a_-_Cyclic_Voltammograms_(raw_data,_as_displayed)",
+      "Figure_6e_-_DC_Electrical_Measurements_(raw_data)",
+      "Figure_S1_-_DC_Electrical_Measurements_(raw_data_as_displayed)"
+    ],
+    "rows": 9485,
+    "section_count": 17,
+    "sha256": "3a6dac6f58120cf5c05469952846da6718f72ddaac8cbc049d5cbec1070129fc",
+    "time_with_current_sections": [
+      {
+        "measured": false,
+        "simulated": true,
+        "title": "Figure_5b_-_Values_from_Circuits'_Compact_Modelling_(as_displayed)"
+      }
+    ]
+  },
+  "failures_preserved": [
+    "Initial acquisition verified source MD5 and SHA256, then UTF-8 preview refused non-UTF-8 byte; original data and wrapper retained. Lossless byte-view inventory succeeded without redownload or rewriting source."
+  ],
+  "finding": "No identified same-run growth voltage/current/time measurement in the downloaded CSV. Compact-circuit simulated current is not measured growth input.",
+  "independent_check": "CSV section locations and row count independently reproduced by byte-line scanner; this is schema verification, not independent experimental reproduction.",
+  "natural_worlds": 0,
+  "next_decision": "Require a finite converter/reconstruction law with explicit usable output and fully determined prices before fresh sampling. Leave this source-based candidate uncalibrated; do not fit favorable missing costs.",
+  "physics_installed": false,
+  "rejected_inferences": [
+    "Conductance or projected area implies useful-work surplus",
+    "Applied voltage alone determines electrical energy",
+    "DC characterizations or simulated RC current equal complete measured growth energy",
+    "Power-source withdrawal without reserve accounting proves autonomy"
+  ],
+  "research": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "reviewed_utc": "2026-10-10T14:45:30.515537+00:00",
+  "schema": "dendrite01-source-review-v1",
+  "source_scope": "Main articles and complete numerical CSV inspected; supplementary PDF/video not inspected. No claim missing measurements exist nowhere.",
+  "unknowns": [
+    "Complete finite electrical-source and chemical preparation cost",
+    "Useful external-load output after blind damage",
+    "Fresh material reconstruction and repair cost",
+    "Equivalent attainable independent/full-shuffle controls",
+    "Actual withdrawal behavior and retained capacitive/chemical reserves"
+  ]
+}

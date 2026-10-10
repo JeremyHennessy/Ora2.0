@@ -27,6 +27,24 @@ durability, full-host recovery and production isolation before a separately
 approved supervised pilot. This panel imposes no loss policy and starts no pilot.
 Science remains the primary next decision below; Stage3 acceptance unchanged.
 
+## Latest scientific admission: powered conductive growth lacks a repair-surplus ledger
+
+DENDRITE-01 [source review](DENDRITE-01-SOURCE-REVIEW.md) and
+[decision](../data/dendrite01/source-review.json). A genuinely different
+field/geometry-coupled mechanism was screened using complete checksum-verified
+public numerical data.17 sections independently located; the time/current
+series is simulated, not measured construction input. No law installed, energy
+yield inferred or world sampled. This is source admission, not experimental
+self-maintenance evidence; physical impossibility was not proved.
+
+**Next scientific decision:** specify a finite converter/reconstruction law with
+determined source, formation/release/repair and usable-load accounting plus
+attainable independent/full-shuffle controls before fresh sampling. Do not tune
+closed negative panels or replace missing prices with favorable values.
+DENDRITE and AMPHIPHILE remain uncalibrated; avoid repeatedly retrieving unchanged
+sources. Preserve their evidence while selecting the next admitted mechanism.
+Science remains primary; Stage3 incomplete and pilot/observer boundaries unchanged.
+
 ## Latest admission: component feedback can recycle heads, not complete material
 
 AMPHIPHILE-01 exact source af15def9c6a8db207416fd9367e9e2c489d6ae36;
