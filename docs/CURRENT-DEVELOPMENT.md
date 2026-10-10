@@ -4,7 +4,7 @@
 
 ## Latest admission: component feedback can recycle heads, not complete material
 
-AMPHIPHILE-01 exact source d78efac3a2827336ad128dd00d9b828492b60ef9;
+AMPHIPHILE-01 exact source af15def9c6a8db207416fd9367e9e2c489d6ae36;
 protocol5bf754e3c4d9c986db85fb3829ad750577e8d0cf.
 [Protocol](AMPHIPHILE-01-PROTOCOL.md), [receipt](AMPHIPHILE-01-RECEIPT.md),
 [decision](../data/amphiphile01/decision.json).
@@ -18,7 +18,7 @@ reused, tail not recycled. This conditional abstraction supports material
 replacement from finite fresh feed; it does not establish kinetic advantage,
 usable-work surplus, autonomous catalyst renewal or founder-free organization.
 
-52 focused tests, exact replay,3 forgery rejections and651-file C: restored
+52 focused tests, exact replay,3 forgery rejections and657-file C: restored
 source audit passed. MATERIAL_FEASIBLE_KINETICS_AND_WORK_UNCALIBRATED; no
 world law installed or sampled. All primary arrangements retain the same
 reaction opportunities; stoichiometry alone cannot decide their relative rates.

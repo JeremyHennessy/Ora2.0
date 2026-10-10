@@ -1,14 +1,14 @@
 {
   "all_distributions_and_phases_reaudited": true,
-  "archive_bytes": 3079636,
-  "archive_sha256": "c0103199a0b456c417544c9a8287ff494874cd94f82324db4c0e82638880852d",
+  "archive_bytes": 3239079,
+  "archive_sha256": "1afbc6595028f5acc43db3fa2e74c83e8f8fcd216f9649c8637af20f3b203faa",
   "physical_disks": [
     0,
     1
   ],
   "physical_power_loss_tested": false,
-  "previous_files_unchanged": 349,
-  "restored_files": 651,
-  "source_revision": "d78efac3a2827336ad128dd00d9b828492b60ef9",
+  "previous_files_unchanged": 351,
+  "restored_files": 657,
+  "source_revision": "af15def9c6a8db207416fd9367e9e2c489d6ae36",
   "verified": true
 }

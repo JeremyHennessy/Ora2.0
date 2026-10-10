@@ -1,7 +1,7 @@
 # AMPHIPHILE-01: finite component-feedback receipt
 
 Protocol5bf754e3c4d9c986db85fb3829ad750577e8d0cf, executed source
- d78efac3a2827336ad128dd00d9b828492b60ef9. No registered inventory changed.
+ af15def9c6a8db207416fd9367e9e2c489d6ae36. No registered inventory changed.
 
 225 complete initial T,B,F inventories were enumerated; independent named-species
 queue matched all6,248 states/9,999 channels and every endpoint row.114 cases
@@ -32,16 +32,29 @@ no fresh-world samples, no rescue/tuning, no net-work score or Stage3 acceptance
 exact replay and restored-source audit exited0; wrong source, invented work
 and free tail-regeneration forgeries each exited2. No bounded-run failures.
 
-D:/OraLab/runs/amphiphile01-admission-20261010 retains exact source archive,
+D:/OraLab/runs/amphiphile01-admission-v2-20261010 retains exact source archive,
 raw graph, exits, replay, seals and preservation guards. Independent backup:
-C:/ora/amphiphile01-20261010/complete.zip SHA256
-c0103199a0b456c417544c9a8287ff494874cd94f82324db4c0e82638880852d;
-3,079,636 bytes; physical C0/D1,651 restored files,349 prior files unchanged.
-Full independent interpreter reran from restored source. Storage18,240,847
-actual/19,213,307 reserved bytes under100MiB.512MiB allocation is not measured
+C:/ora/amphiphile01-v2-20261010/complete.zip SHA256
+1afbc6595028f5acc43db3fa2e74c83e8f8fcd216f9649c8637af20f3b203faa;
+3,239,079 bytes; physical C0/D1,657 restored files,351 prior files unchanged.
+Full independent interpreter reran from restored source. Storage24,925,825
+actual/25,897,557 reserved bytes under100MiB.512MiB allocation is not measured
 peak;300-second/CPU and4-process bounds, operator lock,5GiB floor. No physical
 power-loss/full-host/isolation claim.
 
 Next: calibrated aggregate-mediated access, complete source/load and preparation
 costs, finite feed and waste, blind loss with fresh object identity and matched
 independent/full-shuffle opportunities. Existing runtime/observer unchanged.
+
+## Evidence-export correction retained
+
+Initial pinned source d78efac3a2827336ad128dd00d9b828492b60ef9 in
+D:/OraLab/runs/amphiphile01-admission-20261010 passed its case audit but
+exported summaries rather than all state ledgers. Review detected the gap before
+merge. Corrected source af15def9c6a8db207416fd9367e9e2c489d6ae36 exports all
+6,248 reachable ledger states. Identical frozen inventory/rules/endpoints were
+rerun in a separate v2 root; all decision fields except source pin match exactly.
+Initial source, records, backup and sealed bytes preserved; no population rescore
+or price tuning. This was an evidence completeness defect, not chemical evidence
+or a successful self-maintenance run. Full restored-source audit compares every
+exported ledger as well as every case summary.
