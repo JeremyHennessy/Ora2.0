@@ -4,6 +4,24 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+DENDRITE-SUPPLEMENT-01 checks the missing construction-energy source record.
+Indexed supplementary text describes characterization, morphology and stability;
+it does not establish a complete paid formation/repair budget. Four bounded
+acquisitions fail (HTML or DNS); local PDF/two-parser/visual verification remains
+incomplete. Preserve every failure and the indexed-only scope. No law, assumed
+prices, seeds or worlds are added. [Receipt](DENDRITE-SUPPLEMENT-01-RECEIPT.md).
+Stop retrieval retries. Next science needs a distinct complete computational law
+with raw-accessible construction and causal renewal of all essential roles,
+positive full-cost whole/post surplus and attainable profitable simpler controls.
+Stage3 and runtime activation gates remain unchanged.
+
+Research intake refreshed: independent AI-Research main is now
+df02fa7b326ef031c392e29049eb30ad184a5aa9 (Pass50 and two formation reviews,
+PR36); exact-main workflow38096000175 succeeds. These are literature reviews,
+not Ora demonstrations or implementation instructions. Their supplied-apparatus
+and missing-cost boundaries reinforce the existing all-role renewal gate.
+Keep the research repository independent and Ora's scope entirely computational.
+
 FORMATION-CLOSURE-01 verifies the raw-start dependency preflight before another
 mechanism or natural-world panel. Frozen47ee1ce:all512 three-role catalogues x8
 starting masks (4096 cases) match independent subset graphs and exact replay;
