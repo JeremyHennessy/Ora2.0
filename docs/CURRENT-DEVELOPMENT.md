@@ -2,6 +2,19 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest transport opportunity: retained alignment has a finite cost ceiling
+
+RETENTION-01 [frozen exact-kernel experiment](RETENTION-01-OPPORTUNITY.md):48
+prepared-apparatus cases,36 positive versus best free starting geometry and12 ties.
+First-resource and zero-mobility controls tie; absolute/relative rational audits
+and replay agree. This changed interaction retains alignment across arrivals,
+without a capture-rate boost. Extra work0..7.6042 declared units is only an
+additional-cost ceiling. Targeted delivery/tether/expiry are installed; full
+formation/upkeep/repair prices, physical calibration and reconstruction remain
+unknown. No natural worlds or complete mechanism admission. Next price/calibrate
+this interaction and challenge it against stronger unorganized alternatives;
+do not choose favourable rates or call prepared transport self-maintenance.
+
 ## Latest scientific feasibility: unchanged relay joining is dominated
 
 RELAY-01 [frozen feasibility and audit](RELAY-01-FEASIBILITY.md) checks360 fixed
@@ -43,11 +56,11 @@ provenance, withdrawal/reserves and falsifiers before sampling. Only admit a
 natural-world panel after feasibility and control opportunity are established.
 No supplied successful founder, favorable-seed screening or tuning closed laws.
 DENDRITE/AMPHIPHILE remain uncalibrated; no new scientific mechanism accepted.
-AI-Research remains independent. Current accepted Pass42/main
-341a24a80c41f7d936718acb171a00ccbec1924d has successful exact-main
-workflow38068678979. Read-only intake distinguishes partial constructor renewal
-from whole machinery/template renewal; literature is not an Ora reproduction.
-Local research checkout and all earlier negative evidence are preserved.
+AI-Research remains independent. Latest accepted Pass44/main
+48e94b5895d8dc8fdba522dc25712f0407293d88 has successful exact-main
+workflow38070367603. Pass43/44 intake distinguishes nascent ribosome/tRNA/genome
+modules from complete machinery replacement and unassisted continuity. Literature
+is not an Ora reproduction; the old local research checkout remains preserved.
 
 
 In parallel, CADENCE-01 [contract](CADENCE-01-CONTRACT.md) / [receipt](CADENCE-01-RECEIPT.md)

@@ -1,0 +1,31 @@
+{
+  "all_case_mean_budget": 2.0002798173039484,
+  "cases": 48,
+  "classification": "CONDITIONAL_TRANSPORT_OPPORTUNITY_FULL_COST_RENEWAL_UNVERIFIED",
+  "damage_or_renewal_executed": false,
+  "deterministic_replay": true,
+  "exact_absolute_relative_audit": true,
+  "extra_work_budget_max": 7.604205971703579,
+  "extra_work_budget_min": 0.0,
+  "first_packet_parity": true,
+  "full_cost_profit_verified": false,
+  "mechanism_admitted": false,
+  "natural_worlds": 0,
+  "negative_vs_best_free": 0,
+  "next": "Calibrate actual interaction and full costs; require two paid virgin reconstruction episodes and attainable controls before any natural-world panel.",
+  "physical_calibration": false,
+  "positive_vs_best_free": 36,
+  "prepared_apparatus": true,
+  "resource_units_per_case": 8,
+  "scope": "Finite16-slot expiry per packet, eight packets. Extra budget is a declared dimensionless ceiling, not a measured price or surplus. All48 cases preserved, no rate selection. No-deadline zero-loss eventual capture is unity and removes yield advantage.",
+  "source_exergy_per_case": 48,
+  "source_revision": "14f433a6a1973e49d9bed3b63e56f3aed6a22504",
+  "ties_vs_best_free": 12,
+  "unknown_costs": [
+    "active component production",
+    "binding construction/retention/upkeep/release",
+    "virgin replacement and repair",
+    "source preparation and useful-load implementation"
+  ],
+  "zero_mobility_parity": true
+}
