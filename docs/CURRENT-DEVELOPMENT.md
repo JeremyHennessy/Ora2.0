@@ -2,7 +2,49 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — captured work pays replacement, but no useful maintenance
+## Latest checkpoint — finite mixing source rejected before sampled worlds
+
+**Exact source:** ENTROPY-01 admission32e2bc08622eecebf1e8f83f51c74afe29009bfd;
+prospective protocol d492c8fad6e6ebc63d6c3ab5aa02610d793bef52.
+[Protocol](ENTROPY-01-PROTOCOL.md), [receipt](ENTROPY-01-RECEIPT.md),
+[independent decision](../data/entropy01/decision.json). No fresh worlds.
+
+**Distinct law:** particle redistribution couples a finite heat source to
+mechanical work; all passive/work reverses, complete W3 construction and W2
+loss remain. Installed equal-volume compartments/coupling, initially maximal
+concentration bias, raw structural atom. This is a declared statistical toy,
+not priced empirical membrane physics or autonomous environmental origin.
+
+**Verified calculation:** complete440-state graph/1956 directed channels;
+all three arms satisfy labelled thermal detailed balance and share a controlled
+fully paid reconstruction path (whole3/post1, finite source heat drawdown5).
+The full unconditional2048-attempt startup distribution and every resource-yoked
+loss phase independently agree. Feasible useful exposure: candidate2.215951%,
+independent3.222840%, inverted3.154438%, with numerical guard1e-6. Candidate
+misses registered75% opportunity threshold: NOT ADMITTED. No sampled panel,
+noise blocks, price changes, horizon extension or seed rescue. A positive
+controlled certificate is insufficient for admission. This is predicted
+opportunity under the law, not an observed world frequency or universal
+impossibility. No mixing-time or equilibrium-limit inference.
+
+**Next decision:** close exact ENTROPY law. Before another sampled study,
+assess the joint thermodynamic stability of useful assembled components and
+the accessibility of finite environmental energy after startup. Capture alone
+and paid turnover have repeatedly failed to supply retained useful organization.
+Require a genuinely distinct, fully priced formation/maintenance mechanism,
+post-startup opportunity calculation and resource-yoked repair controls before
+samples. Do not change this candidate's costs, initial concentration or times.
+Stage3 remains incomplete; no successor mechanism admitted or new controller.
+
+**Verification/activity:**43 focused checks, two independent full probability
+propagations/phase censuses, exact replay, three forgery refusals and620-file
+C: restoration/full source reaudit. CI and observer-preserving manual integration
+recorded in local closure. AI-Research09f4f33/Pass39 unchanged, Pass40 branch
+has no new accepted source. Observer paused; no active world. Physical durability,
+full-host/lost-work, production isolation and separate supervised-pilot gates
+remain unresolved. Existing engineering and UI baselines stay intact.
+
+## Historical checkpoint — captured work pays replacement, but no useful maintenance
 
 **Exact source:** MAINTAIN-01 admission494724a7cd4e56455f1116c556d908e4cd209fd7;
 MAINTAIN-02 dynamics264bacf388ea22d7a7391430f807b2b1212d0729, frozen before samples.

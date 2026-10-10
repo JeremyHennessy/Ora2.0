@@ -1,0 +1,10 @@
+{
+  "natural_worlds": 0,
+  "physical_arms": 3,
+  "protocol_revision": "d492c8fad6e6ebc63d6c3ab5aa02610d793bef52",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "scope": "Admission only; no dynamics or fresh seed screening",
+  "source_revision": "32e2bc08622eecebf1e8f83f51c74afe29009bfd",
+  "total_reservation": 104857600
+}

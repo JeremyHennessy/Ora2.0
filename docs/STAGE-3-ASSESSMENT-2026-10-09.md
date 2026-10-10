@@ -376,3 +376,20 @@ retained replacement without useful fresh output is not functional inheritance.
 Close exact law without tuning. Require a prospective post-startup opportunity
 gate and a genuinely distinct finite energy-flow mechanism before new samples.
 [Exact sources, controls, costs and preservation](MAINTAIN-01-02-RECEIPT.md).
+
+## Finite mixing-source admission follow-up, October10
+
+ENTROPY-01 changes the resource law to particle redistribution coupled to a
+finite heat-to-work channel, with all reverses and unchanged W3/W2 formation/
+destruction costs. Complete440-state reachability and an authored whole3/post1
+path pass independent accounting. Before any fresh worlds, two independent
+unconditional2048-attempt probability propagations and resource-yoked repair
+censuses predict feasible damage-ready exposure2.215951% candidate versus
+3.222840% independent and3.154438% inverted, numerical guard1e-6. Candidate
+misses75%: NOT ADMITTED for opportunity. No sampled worlds or reserved seeds.
+Even initially maximal concentration bias does not establish natural origin;
+installed compartments/coupling are not an empirical apparatus. 3.1/3.2 gain
+controlled statistical possibility only, 3.3–3.6 remain unaccepted. This exact
+law is closed before a low-information panel; the independent startup gate
+prevents using rare authored repair paths as evidence of natural maintenance.
+[Sources, controls, full costs and evidence](ENTROPY-01-RECEIPT.md).

@@ -1,0 +1,45 @@
+{
+  "admission_passed": false,
+  "classification": "NOT_ADMITTED_OPPORTUNITY",
+  "controlled_score": {
+    "final_bound_potential": 2,
+    "final_work": 3,
+    "formation": 6,
+    "loss": 2,
+    "net_transfers": 11,
+    "post_gain": 1,
+    "source_heat_drawdown": 5,
+    "whole_surplus": 3
+  },
+  "full_unconditional_distribution_independently_equal": true,
+  "graph": {
+    "directed_channels": 1956,
+    "labelled_proposals": 12540,
+    "maximum_work": 20,
+    "state_sha256": "a8507ed72b180de21eede819020e4d64b02066584c160861c884f6193506bfb1",
+    "states": 440
+  },
+  "natural_worlds": 0,
+  "next_decision": "Close exact toy law; do not execute fresh sampled worlds or tune time/endowment/costs.",
+  "numerical_guard": 1e-06,
+  "schema": "entropy01-decision",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "32e2bc08622eecebf1e8f83f51c74afe29009bfd",
+  "startup": [
+    {
+      "arm": "candidate",
+      "exposed_probability": 0.02215951261247691,
+      "feasible_exposed_probability": 0.02215951180067267
+    },
+    {
+      "arm": "independent",
+      "exposed_probability": 0.03222841195534429,
+      "feasible_exposed_probability": 0.032228402400618285
+    },
+    {
+      "arm": "inverted",
+      "exposed_probability": 0.03154438304612476,
+      "feasible_exposed_probability": 0.031544376275308025
+    }
+  ]
+}
