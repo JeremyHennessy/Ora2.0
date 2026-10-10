@@ -1,0 +1,11 @@
+{
+  "attempts": 393216,
+  "focused_checks": 30,
+  "forgeries": 3,
+  "mechanism_admitted": true,
+  "primary_pass": false,
+  "raw_start_worlds": 96,
+  "self_maintenance_demonstrated": false,
+  "shared_files_unchanged": 545,
+  "verified": true
+}

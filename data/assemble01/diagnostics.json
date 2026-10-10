@@ -1,0 +1,45 @@
+{
+  "arms": {
+    "candidate": {
+      "first_rebuilt_retained": 1,
+      "formation_damage_net_cost": 431,
+      "fresh_gross": 112,
+      "fresh_net_after_all_reverse_loads": 10,
+      "fresh_work_through_first_rebuilt_worlds": 0,
+      "fuel_regeneration_events": 125,
+      "post_damage_fresh_gross": 0,
+      "post_positive_linked_worlds": 2,
+      "post_positive_store_worlds": 3,
+      "reverse_load_transfers": 51,
+      "whole_positive_linked_worlds": 2
+    },
+    "independent": {
+      "first_rebuilt_retained": 0,
+      "formation_damage_net_cost": 166,
+      "fresh_gross": 28,
+      "fresh_net_after_all_reverse_loads": -12,
+      "fresh_work_through_first_rebuilt_worlds": 0,
+      "fuel_regeneration_events": 128,
+      "post_damage_fresh_gross": 0,
+      "post_positive_linked_worlds": 0,
+      "post_positive_store_worlds": 1,
+      "reverse_load_transfers": 20,
+      "whole_positive_linked_worlds": 5
+    },
+    "shuffled": {
+      "first_rebuilt_retained": 0,
+      "formation_damage_net_cost": 62,
+      "fresh_gross": 6,
+      "fresh_net_after_all_reverse_loads": -12,
+      "fresh_work_through_first_rebuilt_worlds": 0,
+      "fuel_regeneration_events": 153,
+      "post_damage_fresh_gross": 0,
+      "post_positive_linked_worlds": 0,
+      "post_positive_store_worlds": 0,
+      "reverse_load_transfers": 9,
+      "whole_positive_linked_worlds": 3
+    }
+  },
+  "scope": "Read-only diagnostics of independently audited frozen records; no rescoring, inferential test or new worlds",
+  "source_revision": "da7f2afc6b43025845aa78a6846af9ec769a4075"
+}

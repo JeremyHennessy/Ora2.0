@@ -1,8 +1,40 @@
 # Current development plan and handoff
 
-**Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
+**Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — exact equilibrium diagnosis changes next mechanism gate
+## Latest checkpoint — fuel-driven assembly improves turnover, not maintenance
+
+**Exact source:** ASSEMBLE-01 da7f2afc6b43025845aa78a6846af9ec769a4075;
+prospective cc30c7b. [Receipt](ASSEMBLE-01-RECEIPT.md),
+[decision](../data/assemble01/decision.json). Complete three-arm 2066-state /
+11468-edge graphs and full-cost controlled certificates pass.96 raw-start
+worlds /393216 attempts: all arms0/32 useful-renewal success, pairedP1.
+Candidate23/32 functioning losses,21 first repairs, ZERO fresh work after
+damage; registered24/32 exposure gate misses: **UNDEREXPOSED**. No rerun/tuning.
+
+**Actual advance/limit:** a complete paid fuel-mediated assembly/release cycle
+creates much more observed working turnover than its controls, but formation
+bills exceed conservative linked output: candidate whole work-store total71,
+linked surplus-421. First repair is not restored useful function. Installed
+three-state load chemistry and two-site toy geometry are not discovered life.
+All earlier negative laws/seeds and LOCAL equilibrium diagnosis preserved.
+
+**Next decision:** close this exact law/resources/horizon. Admit a distinct
+spatial resource-capture/retention mechanism linking ongoing accessible finite
+fuel to useful output AND paid local renewal, with attainable throughput-matched
+nulls. Prove fresh post-loss output is feasible before new samples. No mere
+assembly-rate/price/fuel/timing adjustment; no successor admitted. Stage3
+self-maintenance, inheritance and autonomous origin remain unverified.
+
+**Verification/activity:**30 focused checks, all96 independent full cursor/
+state/ancestry audits,9 exact replays,3 forgery refusals;567-file C: restoration
+with complete graph/panel reaudits. CI/private integration/full-history closure
+in laboratory evidence. AI-Research09f4f33/Pass39 unchanged; no new verified
+physical law supplied by the research intake. Observer paused, no active world.
+Physical durability/full-host/lost-work and production-isolation/separately
+approved supervised-pilot gates remain open; no peripheral expansion this run.
+
+## Historical checkpoint — exact equilibrium diagnosis changes mechanism gate
 
 **Exact source:** EQUILIBRIUM-01 f86988791986454c86be86dda7d2c6ac8cef2160;
 prospective32d3d67; unchanged LOCAL lawcb2b08c94475bfb96333817f448cd4a4037c7e42.

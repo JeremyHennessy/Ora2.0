@@ -67,6 +67,21 @@ explicitly paid fuel-driven transient organization, not another symmetric barrie
 adjustment or relabelled COUPLE/FUEL/CONDENSE law. No new candidate admitted.
 [Exact probabilities, conserved parity and limitations](EQUILIBRIUM-01-RECEIPT.md).
 
+## October10 fuel-driven assembly follow-up
+
+ASSEMBLE-01 adds complete paid raw-start converter assembly/turnover, preserving
+all earlier results.96 worlds, all primary0/32 and pairedP1; candidate23 actual
+functioning losses and21 paid first reconstructions but ZERO post-damage fresh
+load output. Whole store71 versus fresh linked surplus-421: repair counts and
+greater working occupancy do not establish self-maintenance. Exposure gate24/32
+missed, so UNDEREXPOSED as frozen.3.1/3.2 gain audited finite conversion and new
+paid assembly;3.3/3.4 lack productive functional renewal,3.5 lacks post-support
+or post-depletion maintenance,3.6 lacks inheritance. Controlled profitable
+certificate3 is possibility only. Close law without parameter tuning; next
+distinct spatial capture/retention admission must test fresh post-loss access
+and full bills against an attainable throughput-matched null.
+[Exact evidence and limits](ASSEMBLE-01-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter
