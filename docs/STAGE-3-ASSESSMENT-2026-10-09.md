@@ -15,6 +15,19 @@ possibility, rare natural reactions and repeatable organization are distinct.
 | 3.5 Activity after assistance withdrawal | REDOX withdrawal has276 later formations/88 causal uses from stored paid potential | Supplied founders/genesis and external-work arms; runtime continuation is engineering only | No post-buffer-depletion maintenance demonstrated; withdrawing natural energy makes fresh-funded REDOX endpoint unavailable by design | Environmental energy supply differs from reproductive/startup rescue; retained buffers mask ongoing dependency | Withdraw researcher-specific support while retaining matched natural resource opportunities; account for buffers until depletion and test continued resource use/renewal |
 | 3.6 Reconstruction and early inheritance | GRADIENT one rare natural renewal; REDOX background and mixed arms one rare functional replacement each, zero exact-state restoration | AL02 programmed copying/functional heredity and AL03 conditional population maintenance; ENERGY-02 supplied template production | Repeatable functional reconstruction absent in KINETIC/GRADIENT/REDOX candidate; RECYCLE negative | Atom-pair reuse, environmental reacquisition, copying and descendant reconstruction are different mechanisms | Independently reproduced useful reconstruction first; then unselected descendants reconstruct function with causal ancestry, transmission/selection-withdrawal controls and no rescue |
 
+## October 10 electrical-work admission
+
+CONDUCTION-01 tests a distinct prepared electrical network with useful work
+separate from resistive heat, paid construction, maintenance and unit replacement.
+972 exact cases, independent interpreter and replay agree. 324 scheduled repair
+certificates are fundable, 648 fail upkeep. No segmented organizational advantage
+over simpler continuous cables: whole-life difference minus twice contact price,
+post-damage difference zero. Positive surplus certificates are controlled-only
+possibilities (152 segmented,172 continuous), with supplied apparatus and planned
+patches. Reject this law before natural worlds. No new accepted autonomous
+capability in 3.1–3.6; no founder-free, withdrawal or inheritance panel executed.
+[Full decision, limits and evidence](CONDUCTION-01-RECEIPT.md).
+
 ## Thermal net-work follow-up
 
 THERMAL-01/02 adds a distinct controlled finite two-reservoir converter and paid

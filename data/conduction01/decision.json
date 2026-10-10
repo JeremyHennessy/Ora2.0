@@ -1,0 +1,23 @@
+{
+  "arm_ledgers": 1944,
+  "cases": 972,
+  "decision": "Reject segmented candidate under the registered law; no natural-world panel admitted.",
+  "deterministic_replay": true,
+  "fundable_cases": 324,
+  "independent_exact_match": true,
+  "limitations": "Prepared source, work port, components and scheduled patch are supplied feasibility conditions; no autonomous formation, repair or self-maintenance demonstrated.",
+  "natural_worlds": 0,
+  "positive_whole_net": {
+    "continuous": 172,
+    "segmented": 152
+  },
+  "raw_sha256": {
+    "independent.json": "375b54f9868d42bb50ec7b1f0483b8b5676036ebee319f361e9488845cd98aee",
+    "producer.json": "375b54f9868d42bb50ec7b1f0483b8b5676036ebee319f361e9488845cd98aee",
+    "replay.json": "375b54f9868d42bb50ec7b1f0483b8b5676036ebee319f361e9488845cd98aee"
+  },
+  "segmented_post_advantages": 0,
+  "segmented_whole_advantages": 0,
+  "source_revision": "d486586309c205da13f41837acc08e4ffac28f3f",
+  "unfundable_cases": 648
+}
