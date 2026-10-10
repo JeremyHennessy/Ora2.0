@@ -4,6 +4,14 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+RUNTIME-WRITE-01 closes a concrete checkpoint/journal acknowledgement defect.
+Pinned358c56f reproduces two short-write failures; minimal7ad5263 checks exact
+write counts before authoritative promotion/acknowledgement. Eighteen recovery
+tests pass; separate byte-level before/after workers verify preserved checkpoint,
+retained/rejected partial tail and absent false receipt. [Receipt](RUNTIME-WRITE-01-RECEIPT.md).
+AL01 scientific transitions and old source-bound evidence remain unchanged.
+Physical/full-host/confinement gates remain open; no pilot or observer publication.
+
 SHELTER-01 tests a distinct shared-protection mechanism before worlds. Frozen
 075836a:16 cases/80 exact prepared bounds match separate geometry/accounting
 and replay; three checks pass. Every comparator has positive funded whole/post
