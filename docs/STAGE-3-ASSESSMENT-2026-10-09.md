@@ -421,3 +421,14 @@ not simulated natural organization, measured work or autonomous repair. Source
 main Methods leave complete drive/preparation/useful-load/reconstruction prices
 unestablished for Ora. NOT_ADMITTED_MISSING_CALIBRATION; zero worlds.
 No substage acceptance changes. [Receipt](MINERAL-01-RECEIPT.md).
+
+## Component-feedback accounting - October10
+
+AMPHIPHILE-01 audits225 finite inventories,6,248 states/9,999 channels.114
+inventories permit new component formation after a marked paid breakdown.
+The formal full cycle regenerates polar heads but consumes tail thiol and
+peroxide into tail-disulfide/water waste. New environmental feed can fund
+replacement; this is neither full recycling nor a disproof of self-maintenance.
+No source-derived kinetics, fair kinetic comparison, useful-work surplus or
+autonomous catalyst renewal demonstrated. No world law installed or population
+executed; no substage acceptance changes. [Receipt](AMPHIPHILE-01-RECEIPT.md).
