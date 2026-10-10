@@ -2,7 +2,24 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Current session: AI-only runtime and observer reliability
+## Current session: both AI-only science and engineering reliability
+
+The latest human instruction resumes both tracks within the computational
+universe. CONDUCTION-01 frozen source d486586 adds a distinct electrical-work
+accounting admission, not a change to existing scientific laws. All 972 cases
+agree between separate interpreters and replay; three regression tests pass.
+324 prepared repair certificates are fundable, 648 fail first upkeep. Segmented
+paths never beat the attainable continuous-cable comparator on either endpoint;
+152 versus 172 positive whole-life surpluses are controlled possibilities only.
+Reject this candidate before worlds. No Stage3 acceptance is added.
+[Decision and exact evidence](CONDUCTION-01-RECEIPT.md).
+
+Next science: complete priced conversion/construction/repair with a causal
+advantage over attainable simpler alternatives before natural-world dynamics.
+Next engineering: the proposed zero-acknowledged-loss/eight-step backup policy
+has finite evidence; full-host and physical durability remain open, requiring
+their actual evidence and separate pilot approval. [Acceptance boundary](RUNTIME-ACCEPTANCE-2026-10-10.md).
+Preserve observer publication pause, approved UI and all historical experiments.
 
 BOOTSTRAP-CACHE-01 closes the incidental launcher write exposed by the prior
 restore audit. Pre-fix source bb8c54a reproduces unwanted bytecode files despite
@@ -17,9 +34,8 @@ tested by CADENCE-01; do not rerun closed science panels or equate backup readba
 with physical power-loss durability. Full-host recovery and production isolation
 evidence still require their separate gates. No persistent world is activated.
 
-The user has scoped this session to software engineering on the artificial
-universe. Preserve scientific laws, frozen experiments and historical outcomes;
-do not implement new scientific mechanisms. TELEMETRY-CACHE-01 reproduces a
+The earlier engineering-only session preserved scientific laws, frozen
+experiments and historical outcomes. TELEMETRY-CACHE-01 reproduces a
 cached-sample defect on the existing finite HEARTBEAT-04 fixture: lowering a
 cached tick while retaining a valid frame hash falsely reports activity.
 The adapter now binds the cached tick, PRNG cursor and state hash to that exact
@@ -45,6 +61,15 @@ Repository review found AI-Research main at
 workflow 38074821021. Passes 45–47 are independent literature reviews, not Ora
 simulation evidence or instructions to implement their subject matter. Research
 code was not executed and its local working checkout was not integrated.
+
+Concurrent recheck found AI-Research Pass48 main
+4a1569c3e59e94bd8e29b0bda506814e24de1aa5, exact-head workflow
+38078468336 successful. The research-only handoff distinguishes pooled
+accessibility, individual functional continuity and externally selected repair;
+it supplies no reproduced Ora result or implementation authorization. For this
+session it reinforces per-case whole-system endpoints rather than pooling
+separate positive capabilities into a maintenance claim. Earlier Pass47 review
+remains dated evidence; research code and local checkout remain untouched.
 
 ## Latest alternative audit: stationary prepared components outperform the moving tether
 
