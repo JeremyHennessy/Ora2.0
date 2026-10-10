@@ -34,7 +34,13 @@ def certificate(c,b,m,h,n,d,damage,k):
     assert bank+broken[0][1]-broken[0][3]>=0
     bank+=WD-CD
     price=Q(c+2*b) if damaged else Q(0)
-    assert bank>=price
+    if bank<price:
+        # Preserve the failed certificate; no post-repair cycle is executed.
+        used=n*S+SD;heat=n*H+HD;maintenance=n*C+CD
+        assert allowance+used==allowance-initial+initial+heat+maintenance+bank
+        return dict(fundable=False,failure='patch',capital=initial,allowance=allowance,returned=allowance-initial,
+            source=str(used),source_remaining=str(72*(n+3)-used),heat=str(heat),upkeep=str(maintenance),patch='0',reserve=str(bank),
+            whole=None,post=None,live=units-1,raw=4-units,spare=1,scrap=1)
     bank-=price
     assert bank+normal[0][1]-normal[0][3]>=0
     used=(n+2)*S+SD;heat=(n+2)*H+HD;maintenance=(n+2)*C+CD

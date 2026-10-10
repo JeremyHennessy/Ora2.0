@@ -18,3 +18,9 @@ class RectifyTests(unittest.TestCase):
     def test_failed_upkeep_is_not_reported_as_positive_surplus(self):
         a=producer.arm(1,0,F(100),1,2,F(1,4),0,0)
         self.assertFalse(a['fundable']);self.assertIsNone(a['whole']);self.assertIsNone(a['post'])
+
+    def test_unfundable_independent_patch_remains_in_the_panel(self):
+        args=(2,1,F(1,8),1,2,F(1,2),0,1)
+        a=producer.arm(*args);self.assertEqual(a,auditor.certificate(*args))
+        self.assertFalse(a['fundable']);self.assertEqual(a['failure'],'patch')
+        self.assertEqual(a['reserve'],'15/4');self.assertEqual(a['live'],0);self.assertEqual(a['spare'],1)
