@@ -17,8 +17,14 @@ The pre-fix regression source is 6d38536; repair source is eca0ef1. Durable loca
 receipts are under `D:/OraLab/runs/telemetry-cache01-*-20261010`. The first combined
 regression batch reached its 120-second wall limit during the final recovery test;
 its incomplete result and interrupted temporary files are preserved. Smaller
-bounded batches and a separate native-process/journal audit must pass before
-integration. This repair does not close physical durability, full-host restore,
+bounded batches passed 25 tests with one platform-specific skip (26 attempted).
+A separate native-process/journal audit rejected all 12 corrupt caches, validated
+two genuine advancing observations, rejected same-frame activity, recognized
+stopped state and confirmed observation did not mutate world files. Each complete
+receipt archive was restored and checksum-verified locally. The interrupted
+batch's storage-denominator audit failed on leftover temporary files; that failure
+is preserved and is not represented as a completed storage audit.
+This repair does not close physical durability, full-host restore,
 production isolation or separately authorized pilot activation gates.
 
 Repository review found AI-Research main at
