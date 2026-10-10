@@ -2,6 +2,37 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Current session: AI-only runtime and observer reliability
+
+The user has scoped this session to software engineering on the artificial
+universe. Preserve scientific laws, frozen experiments and historical outcomes;
+do not implement new scientific mechanisms. TELEMETRY-CACHE-01 reproduces a
+cached-sample defect on the existing finite HEARTBEAT-04 fixture: lowering a
+cached tick while retaining a valid frame hash falsely reports activity.
+The adapter now binds the cached tick, PRNG cursor and state hash to that exact
+replayed journal frame, rejecting corrupt caches as `history_mismatch` while
+retaining validation of the current world. No observer UI changes or publication.
+
+The pre-fix regression source is 6d38536; repair source is eca0ef1. Durable local
+receipts are under `D:/OraLab/runs/telemetry-cache01-*-20261010`. The first combined
+regression batch reached its 120-second wall limit during the final recovery test;
+its incomplete result and interrupted temporary files are preserved. Smaller
+bounded batches passed 25 tests with one platform-specific skip (26 attempted).
+A separate native-process/journal audit rejected all 12 corrupt caches, validated
+two genuine advancing observations, rejected same-frame activity, recognized
+stopped state and confirmed observation did not mutate world files. Each complete
+receipt archive was restored and checksum-verified locally. The interrupted
+batch's storage-denominator audit failed on leftover temporary files; that failure
+is preserved and is not represented as a completed storage audit.
+This repair does not close physical durability, full-host restore,
+production isolation or separately authorized pilot activation gates.
+
+Repository review found AI-Research main at
+6ae34300020b27a55cbc704dc255bfea4e77a090 (Pass 47), with successful exact-head
+workflow 38074821021. Passes 45–47 are independent literature reviews, not Ora
+simulation evidence or instructions to implement their subject matter. Research
+code was not executed and its local working checkout was not integrated.
+
 ## Latest alternative audit: stationary prepared components outperform the moving tether
 
 STATIONARY-01 [prospective comparator](STATIONARY-01-COMPARATOR.md), frozen
