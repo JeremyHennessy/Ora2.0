@@ -1,0 +1,20 @@
+{
+  "autonomous_maintenance": false,
+  "cases": 360,
+  "classification": "NO_NET_WORK_ADVANTAGE_UNDER_UNCHANGED_RELAY_CHANNELS",
+  "controller_activated": false,
+  "deterministic_replay": true,
+  "exposed_cases": 216,
+  "independent_positive": 200,
+  "independent_transaction_audit": true,
+  "joined_advantage": 0,
+  "joined_positive": 174,
+  "natural_worlds": 0,
+  "physical_calibration": false,
+  "shuffle_is_discriminating": false,
+  "source_revision": "c9bea078d4a4d6022b9480fb106e7e3476a5ca89",
+  "stop": "No natural panel of unchanged-channel joining. A distinct paid physical interaction and nonisomorphic attainable controls are required.",
+  "symbolic_post_difference": "-b",
+  "symbolic_whole_difference": "-2b",
+  "zero_join_cost_ties": 54
+}

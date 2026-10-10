@@ -1,0 +1,5 @@
+{
+  "registration": "After original360-case feasibility run, before v2 material-explicit audit; original evidence preserved at D:/OraLab/runs/relay01-20261010. No costs, grid or endpoints changed.",
+  "scaffold_inventory": "Both arms receive2 virgin zero-potential scaffold precursors in addition to3 component precursors. Joined arm consumes1 for initial association and1 for reconstruction; damage leaves the first scaffold as unusable scrap. Independent arm retains both unused. Virgin replacement, assembled scaffold and scrap are separately conserved. No recycling credit.",
+  "scope": "Original symbolic work dominance remains valid independent of material feasibility. Initial audit did not explicitly track scaffold material, so it was insufficient as a complete material certificate. V2 closes only this bookkeeping omission, not physical calibration or spontaneous execution. Underexposed n=0/1 cases never meet endpoint. Unfundable conditional bounds are not executable certificates."
+}

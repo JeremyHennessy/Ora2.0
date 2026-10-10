@@ -2,6 +2,19 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest scientific feasibility: unchanged relay joining is dominated
+
+RELAY-01 [frozen feasibility and audit](RELAY-01-FEASIBILITY.md) checks360 fixed
+accounting cases,216 with pre/post-damage conversion opportunities. An independent
+transaction/potential/material ledger and replay agree: joining provides0 net-work
+advantages over attainable independent components; free joining only ties.
+Symbolic differences are minus2 association costs whole-life and minus1 after damage.
+Ideal planner certificates are installed possibilities, not spontaneous behaviour.
+Original scaffold-ledger omission retained; prospectively frozen v2 tracks virgin
+scaffold use/scrap and reproduces the same work result. No natural worlds.
+Stop this unchanged-channel law. Next require an explicitly paid interaction
+that changes transport/retention/conversion and a nonisomorphic attainable null.
+
 ## Latest scientific admission: photocatalytic feedback requires an installed parent
 
 PHOTO-FEEDBACK-01 [source/accounting decision](PHOTO-FEEDBACK-01-ADMISSION.md).
@@ -30,13 +43,12 @@ provenance, withdrawal/reserves and falsifiers before sampling. Only admit a
 natural-world panel after feasibility and control opportunity are established.
 No supplied successful founder, favorable-seed screening or tuning closed laws.
 DENDRITE/AMPHIPHILE remain uncalibrated; no new scientific mechanism accepted.
-AI-Research was at Pass39 when this cycle began. Final remote recheck found
-concurrently merged Pass40/41 at main59cbd90b5e0210dfd6cb03d5d1015d8d2e327fad;
-exact-main workflow38067293522 passed. Local research checkout is preserved.
-Intake separates catalytic function/encapsulation and encoded membrane scission
-from full machinery renewal/lineage closure; no new Ora mechanism admitted.
-Next source admission must price photon/cofactor preparation, fresh replacement
-and usable-load coupling and retain function-disabled/independent-component controls.
+AI-Research remains independent. Current accepted Pass42/main
+341a24a80c41f7d936718acb171a00ccbec1924d has successful exact-main
+workflow38068678979. Read-only intake distinguishes partial constructor renewal
+from whole machinery/template renewal; literature is not an Ora reproduction.
+Local research checkout and all earlier negative evidence are preserved.
+
 
 In parallel, CADENCE-01 [contract](CADENCE-01-CONTRACT.md) / [receipt](CADENCE-01-RECEIPT.md)
 chooses a proposed zero-acknowledged-transition loss budget: acknowledge only
