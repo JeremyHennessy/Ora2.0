@@ -1,0 +1,19 @@
+{
+  "all_arms_fundable_cases": 381,
+  "arm_ledgers": 1536,
+  "bridge_positive_whole_cases": 80,
+  "cases": 384,
+  "decision": "REJECT shared bridge under the frozen law: zero qualifying cases; no natural-world admission.",
+  "preserved_raw_decision": "D:/OraLab/runs/rectify01-accounting-v2-20261010/raw/decision.json",
+  "deterministic_replay": true,
+  "independent_exact_match": true,
+  "limitations": "Declared abstract primitive prices, installed directional elements/stores/constructor capability and scheduled paid patches; no autonomous formation, repair or self-maintenance.",
+  "natural_worlds": 0,
+  "qualifying_bridge_advantage_cases": 0,
+  "raw_sha256": {
+    "independent.json": "13d8985a0a434c734891504a5f73fd400e2cc9ecc556aa7c785f4b4d7da0a9e4",
+    "producer.json": "13d8985a0a434c734891504a5f73fd400e2cc9ecc556aa7c785f4b4d7da0a9e4",
+    "replay.json": "13d8985a0a434c734891504a5f73fd400e2cc9ecc556aa7c785f4b4d7da0a9e4"
+  },
+  "source_revision": "33439b60ab28c1fdf6becfe82abe164aa1a74b68"
+}

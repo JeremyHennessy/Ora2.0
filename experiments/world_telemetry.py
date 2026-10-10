@@ -5,6 +5,7 @@ from datetime import datetime,timezone
 import hashlib
 import os
 from pathlib import Path
+import stat
 from experiments import heartbeat_template_audit as replay
 
 
@@ -30,8 +31,41 @@ def process_sample(pid):
     finally: kernel.CloseHandle(handle)
 
 
+HASH_ENTRIES=16
+HASH_JOURNAL_BYTES=16*1024*1024
+HASH_FILE_BYTES=4*1024*1024
+HASH_TOTAL_BYTES=32*1024*1024
+HASH_BLOCK_BYTES=64*1024
+
+
 def hashes(folder):
-    return {p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in Path(folder).iterdir() if p.is_file() and p.name!='writer.lock'}
+    files=[];declared=0
+    for index,p in enumerate(Path(folder).iterdir(),1):
+        if index>HASH_ENTRIES:raise ValueError('Bounded telemetry entry count')
+        if p.name=='writer.lock':continue
+        info=p.lstat()
+        if stat.S_ISLNK(info.st_mode) or getattr(info,'st_file_attributes',0)&0x400:
+            raise ValueError('Telemetry link/reparse refused')
+        if stat.S_ISDIR(info.st_mode):continue
+        if not stat.S_ISREG(info.st_mode):raise ValueError('Regular telemetry files required')
+        limit=HASH_JOURNAL_BYTES if p.name=='frames.jsonl' else HASH_FILE_BYTES
+        declared+=info.st_size
+        if info.st_size>limit or declared>HASH_TOTAL_BYTES:
+            raise ValueError('Bounded telemetry evidence size')
+        files.append((p,limit))
+    result={};total=0
+    for p,limit in files:
+        digest=hashlib.sha256();size=0
+        with p.open('rb') as stream:
+            while True:
+                block=stream.read(min(HASH_BLOCK_BYTES,limit-size+1,HASH_TOTAL_BYTES-total+1))
+                if not block:break
+                size+=len(block);total+=len(block)
+                if size>limit or total>HASH_TOTAL_BYTES:
+                    raise ValueError('Telemetry grew beyond read bound')
+                digest.update(block)
+        result[p.name]=digest.hexdigest()
+    return result
 
 
 def sample(folder,revision,binding=None,previous=None,current=None):

@@ -4,6 +4,22 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+RECTIFY-01 tests a distinct directional conversion primitive rather than more
+segmentation. Frozen law bce80bc, corrected separate auditor33439b6:384 cases,
+1,536 ledgers exactly match and replay;381 cases fund all alternatives, three
+retain independent patch failures. Zero bridge successes on both registered
+endpoints; two independent converters outperform bridge post-damage work in
+all381 complete cases. Reject before worlds. Preserve the first audit failure;
+do not change prices/horizon or discard failed controls.
+[Scientific receipt](RECTIFY-01-RECEIPT.md). No Stage3 acceptance.
+
+TELEMETRY-BOUNDS-01 reproduces an unbounded checksum read before evidence
+validation; bounded streaming, enumeration and aggregate checks repair it.
+Eight fixture/bounds tests pass; actual oversized-file refusal and native
+state/identity/cache/read-only audit independently pass. Corrected audit-v2
+preserves an earlier size-report variable collision. Approved UI is unchanged.
+[Engineering receipt](TELEMETRY-BOUNDS-01-RECEIPT.md).
+
 The latest human instruction resumes both tracks within the computational
 universe. CONDUCTION-01 frozen source d486586 adds a distinct electrical-work
 accounting admission, not a change to existing scientific laws. All 972 cases
@@ -70,6 +86,15 @@ it supplies no reproduced Ora result or implementation authorization. For this
 session it reinforces per-case whole-system endpoints rather than pooling
 separate positive capabilities into a maintenance claim. Earlier Pass47 review
 remains dated evidence; research code and local checkout remain untouched.
+
+Further concurrent review found Pass49 main
+e3eb5e3d8609d7ddab8bd1c10e036dc4fc4198a1, validation38080602766 successful.
+Its research-only handoff distinguishes new function, context-dependent benefit,
+trait loss and operator-maintained continuity. For Ora this reinforces testing
+retained useful performance and costs after support changes, rather than
+inferring maintenance from one positive output assay. It supplies no reproduced
+Ora result and does not change frozen RECTIFY or CONDUCTION protocols. Research
+code and data were not executed; the independent working checkout is preserved.
 
 ## Latest alternative audit: stationary prepared components outperform the moving tether
 
