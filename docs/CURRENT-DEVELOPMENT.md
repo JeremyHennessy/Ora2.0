@@ -4,6 +4,16 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+BUDGET-SNAPSHOT-01 closes a saved-ledger self-charge defect without rewriting
+historical evidence or frozen experiment drivers. New `Budget.write_snapshot`
+precharges its final JSON extent. The large saved ledger independently verifies;
+two corrupted-denominator controls are rejected. Seventeen scoped checks pass,
+one platform guard is skipped. Prior stale snapshots and their explicit
+reconciliation remain preserved. [Receipt](BUDGET-SNAPSHOT-01-RECEIPT.md).
+New laboratory writers must use self-accounting snapshots after their final write.
+Science remains gated on a complete paid reconstruction advantage over attainable
+independent/stationary alternatives; do not reopen rejected bridge/cable panels.
+
 RECTIFY-01 tests a distinct directional conversion primitive rather than more
 segmentation. Frozen law bce80bc, corrected separate auditor33439b6:384 cases,
 1,536 ledgers exactly match and replay;381 cases fund all alternatives, three
