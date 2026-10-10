@@ -6,7 +6,7 @@ NAMES=('T','B','L','A','Z','F','Q')
 COMPOSITION={'T':(1,0,1,1,0),'B':(0,2,2,0,0),'L':(0,1,1,1,0),'A':(1,1,2,0,0),'Z':(2,0,2,0,0),'F':(0,0,0,2,2),'Q':(0,0,0,2,1)}
 RULES=(({'T':1,'B':1},{'A':1,'L':1}),({'A':1,'T':1},{'Z':1,'L':1}),({'L':2,'F':1},{'B':1,'Q':2}))
 def total(m):return tuple(sum(m.get(k,0)*v[i] for k,v in COMPOSITION.items()) for i in range(5))
-def enumerate_case(t,b,f):
+def enumerate_case(t,b,f,full=False):
     first=(t,b,0,0,0,f,0,0,0);q=deque([first]);seen={first};count=0;accepted=[];origin=total(dict(zip(NAMES,first)))
     while q:
         s=q.popleft();m=dict(zip(NAMES,s));assert total(m)==origin
@@ -24,10 +24,12 @@ def enumerate_case(t,b,f):
             for phase,after in possibilities:
                 nxt=tuple(dest[k] for k in NAMES)+(phase,after);count+=1
                 if nxt not in seen:seen.add(nxt);q.append(nxt)
-    return [t,b,f,len(seen),count,bool(accepted),max((s[3]+s[4] for s in accepted),default=0),max((s[8] for s in accepted),default=0),min((f-s[5] for s in accepted),default=None),min((t-s[0] for s in accepted),default=None)]
+    row=[t,b,f,len(seen),count,bool(accepted),max((s[3]+s[4] for s in accepted),default=0),max((s[8] for s in accepted),default=0),min((f-s[5] for s in accepted),default=None),min((t-s[0] for s in accepted),default=None)]
+    return (row,[list(s) for s in sorted(seen)]) if full else row
 def audit(r,revision):
     assert r['schema']=='amphiphile01-accounting' and r['source_revision']==revision
-    rows=[enumerate_case(t,b,f) for t in range(9) for b in range(5) for f in range(5)];assert r['rows']==rows
+    cases=[enumerate_case(t,b,f,True) for t in range(9) for b in range(5) for f in range(5)];rows=[x[0] for x in cases]
+    assert r['rows']==rows and r['complete_state_ledgers']==[x[1] for x in cases]
     assert r['primary_arrangements']==['aggregate','independent','complete_label_shuffle'] and r['same_stoichiometric_opportunities'] is True
     assert r['natural_worlds']==0 and r['physical_law_installed'] is False
     assert r['net_cycle']==dict(consumed=dict(tail_thiol=2,peroxide=1),produced=dict(tail_disulfide=1,water=2),head_change=0)
