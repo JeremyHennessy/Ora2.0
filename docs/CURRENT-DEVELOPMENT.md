@@ -2,7 +2,41 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — raw affinity assembly fails renewed-work opportunity
+## Latest checkpoint � finite thermal converter fails profitable renewal
+
+**Exact source:** feasibility8e163801a29294eda1a3694bda77e4666d2c49a2;
+dynamics9902f8f20eed47d9d3aae5e95ec777ee22fa49d1. Prospective43ef18b/8312eff.
+[THERMAL receipt](THERMAL-01-02-RECEIPT.md), [decision](../data/thermal02/decision.json).
+313000 complete physical states/644780 reversible edges reject costs6..12 before
+dynamics. All feasible prices3,4,5 sampled:576 controlled worlds/1179648 attempts.
+**Primary FAIL:** candidate0/64 and BOTH controls0/64 at every price; all six
+paired P1/Holm fail. Candidate28 damage exposures/21 paid first rebuilds/20
+fresh post-rebuild functions, but ZERO positive post-damage surplus. Candidate
+net load283, whole-life store surplus-495; initial capital can fund replacement.
+All96 working-shuffle aliases exactly match candidate. No hot-zero worlds.
+
+**Actual advance/limit:** distinct finite heat-to-work law, symmetric reverse
+rates, priced spontaneous construction/release, material/ancestry and independent
+full trajectory audit. Authored favorable paths can pay full startup/renewal at
+all3 prices. Realized paid reconstruction does not establish profitable renewal.
+Installed contact/constructor architecture remains supplied even with raw atoms:
+no autonomous origin/self-maintenance, inheritance or Stage3 completion.
+
+**Next decision:** close this law/prices/horizon without tuning. Compare genuinely
+distinct spatial conversion/assembly mechanisms whose functional contacts can
+form and renew locally; freeze complete costs, attainable independent/shuffled
+opportunities and whole/post-damage net-work bounds before fresh dynamics.
+No successor law yet admitted. Do not repeat closed polymer/thermal candidates.
+
+**Verification/activity:**19 focused kinetic checks,9 exact complete replays,
+3 kinetic/3 feasibility forgery refusals; independent C:512/1092-file restoration
+and full restored-source audits. Historical evidence/observer unchanged. CI and
+private reviewed integration accepted only in closing receipt. No active world;
+AI-Research09f4f33/Pass39 unchanged, observer publication paused. Engineering
+physical durability/lost-work/cadence/full-host restore/production isolation and
+separate supervised-pilot authorization remain open.
+
+## Historical checkpoint — raw affinity assembly fails renewed-work opportunity
 
 **Exact sources:** CONDENSE-01 physical943ea32f2ad7f88321cf3e7e0b7cab130182db80;
 CONDENSE-02 kinetics250f9f579851529f7957a388a2bb30e9cd2d3986.

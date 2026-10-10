@@ -15,6 +15,20 @@ possibility, rare natural reactions and repeatable organization are distinct.
 | 3.5 Activity after assistance withdrawal | REDOX withdrawal has276 later formations/88 causal uses from stored paid potential | Supplied founders/genesis and external-work arms; runtime continuation is engineering only | No post-buffer-depletion maintenance demonstrated; withdrawing natural energy makes fresh-funded REDOX endpoint unavailable by design | Environmental energy supply differs from reproductive/startup rescue; retained buffers mask ongoing dependency | Withdraw researcher-specific support while retaining matched natural resource opportunities; account for buffers until depletion and test continued resource use/renewal |
 | 3.6 Reconstruction and early inheritance | GRADIENT one rare natural renewal; REDOX background and mixed arms one rare functional replacement each, zero exact-state restoration | AL02 programmed copying/functional heredity and AL03 conditional population maintenance; ENERGY-02 supplied template production | Repeatable functional reconstruction absent in KINETIC/GRADIENT/REDOX candidate; RECYCLE negative | Atom-pair reuse, environmental reacquisition, copying and descendant reconstruction are different mechanisms | Independently reproduced useful reconstruction first; then unselected descendants reconstruct function with causal ancestry, transmission/selection-withdrawal controls and no rescue |
 
+## Thermal net-work follow-up
+
+THERMAL-01/02 adds a distinct controlled finite two-reservoir converter and paid
+renewal law:313000 states/644780 reversible edges, then576 unscreened controlled
+worlds. Costs6..12 rejected early; all feasible3..5 tested. Every primary arm0/64
+at every price, all six paired P1. Candidate21 first rebuilds/20 fresh work uses
+after28 losses, zero positive post-damage surplus. Initial reserves can pay repair;
+283 net load transfers versus total whole-life store surplus-495 cannot be
+called net self-maintenance. All96 working-shuffle aliases exactly match candidate.
+No natural-world claim: raw atoms coexist with installed contacts/constructor.
+3.1/3.2 controlled conversion/paid renewal possibilities are stronger;3.3–3.6
+acceptance remains absent. Close tested law/prices/horizon, not tune toward success.
+[Exact source, all controls and preservation](THERMAL-01-02-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter

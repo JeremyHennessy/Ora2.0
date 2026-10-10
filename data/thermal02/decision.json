@@ -1,0 +1,193 @@
+{
+  "attempts": 1179648,
+  "comparisons": [
+    {
+      "control": "independent",
+      "cost": 3,
+      "holm_reject": false,
+      "holm_threshold": 0.008333333333333333,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "control": "shuffled",
+      "cost": 3,
+      "holm_reject": false,
+      "holm_threshold": 0.01,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "control": "independent",
+      "cost": 4,
+      "holm_reject": false,
+      "holm_threshold": 0.0125,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "control": "shuffled",
+      "cost": 4,
+      "holm_reject": false,
+      "holm_threshold": 0.016666666666666666,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "control": "independent",
+      "cost": 5,
+      "holm_reject": false,
+      "holm_threshold": 0.025,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    },
+    {
+      "control": "shuffled",
+      "cost": 5,
+      "holm_reject": false,
+      "holm_threshold": 0.05,
+      "losses": 0,
+      "p": 1.0,
+      "wins": 0
+    }
+  ],
+  "natural_worlds": 0,
+  "next": "Close tested law/costs/horizon; choose distinct natural-organization law",
+  "primary_pass": false,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "9902f8f20eed47d9d3aae5e95ec777ee22fa49d1",
+  "spontaneous_organization": false,
+  "summary": {
+    "3": {
+      "candidate": {
+        "continuous_rebuilt": 1,
+        "exposed": 8,
+        "fresh_function": 7,
+        "hot_depleted": 0,
+        "net_work_sum": 84,
+        "post_surplus_positive": 0,
+        "rebuilt": 8,
+        "successes": 0,
+        "whole_surplus_positive": 20,
+        "whole_surplus_sum": -71,
+        "worlds": 64
+      },
+      "independent": {
+        "continuous_rebuilt": 0,
+        "exposed": 0,
+        "fresh_function": 0,
+        "hot_depleted": 0,
+        "net_work_sum": -140,
+        "post_surplus_positive": 0,
+        "rebuilt": 0,
+        "successes": 0,
+        "whole_surplus_positive": 3,
+        "whole_surplus_sum": -257,
+        "worlds": 64
+      },
+      "shuffled": {
+        "continuous_rebuilt": 1,
+        "exposed": 3,
+        "fresh_function": 2,
+        "hot_depleted": 0,
+        "net_work_sum": -79,
+        "post_surplus_positive": 0,
+        "rebuilt": 3,
+        "successes": 0,
+        "whole_surplus_positive": 10,
+        "whole_surplus_sum": -199,
+        "worlds": 64
+      }
+    },
+    "4": {
+      "candidate": {
+        "continuous_rebuilt": 2,
+        "exposed": 11,
+        "fresh_function": 8,
+        "hot_depleted": 0,
+        "net_work_sum": 103,
+        "post_surplus_positive": 0,
+        "rebuilt": 8,
+        "successes": 0,
+        "whole_surplus_positive": 4,
+        "whole_surplus_sum": -176,
+        "worlds": 64
+      },
+      "independent": {
+        "continuous_rebuilt": 0,
+        "exposed": 0,
+        "fresh_function": 0,
+        "hot_depleted": 0,
+        "net_work_sum": -179,
+        "post_surplus_positive": 0,
+        "rebuilt": 0,
+        "successes": 0,
+        "whole_surplus_positive": 1,
+        "whole_surplus_sum": -399,
+        "worlds": 64
+      },
+      "shuffled": {
+        "continuous_rebuilt": 1,
+        "exposed": 5,
+        "fresh_function": 4,
+        "hot_depleted": 0,
+        "net_work_sum": -97,
+        "post_surplus_positive": 0,
+        "rebuilt": 4,
+        "successes": 0,
+        "whole_surplus_positive": 3,
+        "whole_surplus_sum": -334,
+        "worlds": 64
+      }
+    },
+    "5": {
+      "candidate": {
+        "continuous_rebuilt": 2,
+        "exposed": 9,
+        "fresh_function": 5,
+        "hot_depleted": 0,
+        "net_work_sum": 96,
+        "post_surplus_positive": 0,
+        "rebuilt": 5,
+        "successes": 0,
+        "whole_surplus_positive": 1,
+        "whole_surplus_sum": -248,
+        "worlds": 64
+      },
+      "independent": {
+        "continuous_rebuilt": 0,
+        "exposed": 0,
+        "fresh_function": 0,
+        "hot_depleted": 0,
+        "net_work_sum": -200,
+        "post_surplus_positive": 0,
+        "rebuilt": 0,
+        "successes": 0,
+        "whole_surplus_positive": 0,
+        "whole_surplus_sum": -500,
+        "worlds": 64
+      },
+      "shuffled": {
+        "continuous_rebuilt": 1,
+        "exposed": 4,
+        "fresh_function": 3,
+        "hot_depleted": 0,
+        "net_work_sum": -123,
+        "post_surplus_positive": 0,
+        "rebuilt": 3,
+        "successes": 0,
+        "whole_surplus_positive": 1,
+        "whole_surplus_sum": -442,
+        "worlds": 64
+      }
+    }
+  },
+  "verified": true,
+  "working_aliases": 96,
+  "worlds": 576
+}

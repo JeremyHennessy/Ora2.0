@@ -1,0 +1,50 @@
+{
+  "candidate_refused_costs": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "controlled_cases": 40,
+  "fair_primary_control_endpoints": true,
+  "feasibility_gate_pass": true,
+  "high_cost_independent_witnesses": "Rare one-bath thermal fluctuations: nonzero paths, not mean single-bath work production",
+  "natural_worlds": 0,
+  "next": "Separately freeze controlled kinetics for all three feasible costs; natural assembly and calibrated full costs remain separate gates",
+  "physical_edges": 644780,
+  "physical_states": 313000,
+  "possible_costs": {
+    "candidate": [
+      3,
+      4,
+      5
+    ],
+    "independent": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "shuffled-reversed": [],
+    "shuffled-working": [
+      3,
+      4,
+      5
+    ]
+  },
+  "reachability_or_maximum_yield_advantage": false,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "8e163801a29294eda1a3694bda77e4666d2c49a2",
+  "spontaneous_organization": false,
+  "verified": true,
+  "whole_and_post_damage_surplus_possible": true
+}
