@@ -1,0 +1,20 @@
+{
+  "additional_thermal_output_per_token": 2,
+  "conservation_ceiling_per_token": 6,
+  "controlled_certificates": 48,
+  "exact_mean_benefit_demonstrated": false,
+  "fresh_fuel_output_per_token": 2,
+  "full_assembly_transport_renewal_costs_known": false,
+  "initial_heat_capital_preserved": true,
+  "local_edges": 37248,
+  "local_states": 19602,
+  "mechanism_admitted": false,
+  "natural_worlds": 0,
+  "next": "Choose a separately registered complete conversion/assembly law; account for every reversible output path and complete renewal costs before sampling",
+  "primary_pass": false,
+  "proposed_gross_output_ceiling_falsified": true,
+  "reason": "Reverse intermediate decay creates a paid thermal-to-work route; 2N is not a bound on total usable work. Full organizational costs are also absent. Stop prototype before natural dynamics.",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "2c5cef0e1ef27624ab32b0d7da9bbfede2b953b0",
+  "verified": true
+}

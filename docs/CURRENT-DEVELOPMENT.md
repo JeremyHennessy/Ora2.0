@@ -2,7 +2,38 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — finite thermal converter fails profitable renewal
+## Latest checkpoint — intermediate converter stopped at accounting admission
+
+**Exact source:** CHANNEL-01 2c5cef0e1ef27624ab32b0d7da9bbfede2b953b0;
+prospective5364b43. [Receipt](CHANNEL-01-RECEIPT.md), [decision](../data/channel01/decision.json).
+48 controlled certificates/19602 LOCAL unit states/37248 reversible edges;
+ZERO natural worlds. A proposed unstable-intermediate converter's gross-output
+bound2N fails: reverse decay plus work conversion produces4N while final heat
+8+2N preserves initial8. Energy6N+8 and labelled tokens are conserved; additional
+output has thermal-reactivation provenance. Rare permitted paths do not show
+mean benefit. Full assembly/transport/repair costs are unknown. **NOT ADMITTED.**
+
+**Actual advance/limit:** a concrete accounting counterexample prevents invalid
+resource/yield and cost claims before expensive simulations. It does not reject
+channeling in general or demonstrate natural organization/self-maintenance.
+The6N conservation ceiling is loose, not a full-cost or reachable endpoint proof.
+No supplied contact fixture is reported as an emerging converter.
+
+**Next decision:** close this incomplete prototype; choose a separately registered
+complete spatial conversion/assembly law with paid local renewal and attainable
+independent/shuffled nulls. Derive bounds using every reversible output pathway,
+retain output ancestry and distinguish mean throughput from rare possibility.
+Do not suppress a physical reverse, invent unknown prices or tune old samples.
+No successor law/natural panel admitted yet; Stage3 incomplete.
+
+**Verification/activity:**18 focused checks,48 complete replays,3 tampering
+refusals and531-file C:restoration with full independent local-grid/certificate
+audit. Historical seals and observer unchanged. CI/manual integration/full-history
+acceptance in closing laboratory receipt. AI-Research09f4f33/Pass39 unchanged;
+observer paused, no active world. Physical durability/full-host/lost-work and
+production-isolation/separate supervised-pilot authorization gates remain open.
+
+## Historical checkpoint — finite thermal converter fails profitable renewal
 
 **Exact source:** feasibility8e163801a29294eda1a3694bda77e4666d2c49a2;
 dynamics9902f8f20eed47d9d3aae5e95ec777ee22fa49d1. Prospective43ef18b/8312eff.
