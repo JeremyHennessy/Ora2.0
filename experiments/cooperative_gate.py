@@ -56,7 +56,8 @@ def graph(B,parity):
             if t not in seen:seen.add(t);queue.append(t)
         assert len(seen)<2000 and edges<20000
     states=sorted(seen)
-    return states,dict(states=len(states),directed_channels=edges,labelled_proposals=proposals,state_sha256=hashlib.sha256(coded(states)).hexdigest(),maximum_work=max(s[4] for s in states))
+    valid=sum(1 for x in (0,1) for y in (0,1) for b in (0,1) if not b or x*y for f in range(5) for w in range(39) if (w+3*(x+y))%2==parity and heat((x,y,b,f,w),B)>=0)
+    return states,dict(states=len(states),excluded_energy_admissible_states=valid-len(states),directed_channels=edges,labelled_proposals=proposals,state_sha256=hashlib.sha256(coded(states)).hexdigest(),maximum_work=max(s[4] for s in states))
 def flag(s,a,old):
     if a[0] in ('atom0','atom1','bond'):return 0
     return int(old or s[2] and a==('capture',1))

@@ -47,8 +47,15 @@ def census(B,p):
                     assert probability(s,k,d,B,arm)*math.comb(4,s[3])*2**thermal(s,B)==probability(t,k,-d,B,arm)*math.comb(4,t[3])*2**thermal(t,B)
                 edges+=1;labelled+=n
                 if t not in seen:seen.add(t);stack.append(t)
-    assert sorted(seen)==allstates
-    return allstates,dict(states=len(seen),directed_channels=edges,labelled_proposals=labelled,state_sha256=hashlib.sha256(encode(allstates)).hexdigest(),maximum_work=max(s[4] for s in seen))
+    assert seen.issubset(set(allstates))
+    excluded=set(allstates)-seen
+    for s in excluded:
+        for k in KINDS:
+            for d in (-1,1):
+                out=apply(s,k,d,B)
+                assert out is None or out[0] in excluded
+    reachable=sorted(seen)
+    return reachable,dict(states=len(seen),excluded_energy_admissible_states=len(excluded),directed_channels=edges,labelled_proposals=labelled,state_sha256=hashlib.sha256(encode(reachable)).hexdigest(),maximum_work=max(s[4] for s in seen))
 def destruction(s,B):
     if s[2]!=1 or s[4]<2:return None
     target=(0,s[1],0,s[3],s[4]-2)

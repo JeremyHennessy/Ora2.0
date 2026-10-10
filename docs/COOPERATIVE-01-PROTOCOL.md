@@ -91,3 +91,14 @@ accounting forgery refusal. Run under operator lock, 300-second process/time
 bounds, 512-MiB allocation cap, evidence quota and disk floor. Preserve exact
 source, raw distributions, failures, checksums and separate-drive readback audit.
 No reserved samples or old experiments are executed or altered.
+
+### Pre-propagation implementation clarification
+
+The first authored census check at dbff440 failed before producer propagation:
+the auditor incorrectly assumed every nonnegative-energy state with the right
+parity belonged to the reachable component. A preserved bounded diagnostic
+found disconnected fuel-depleted high-work states. Enumerate the registered
+reachable components, report excluded energy-admissible states, and verify no
+edge connects excluded and reachable sets. Require every actually exposed loss
+state to belong to the audited post-loss component. This repairs interpretation
+of reachability only; no law, price, endowment, horizon, sample or gate changes.
