@@ -412,3 +412,12 @@ propagation.46 checks, exact replay/forgery refusals/C: restore audit pass.
 Next require a genuinely distinct priced conversion route with adequate accessible
 usable yield, not stronger bonds or more fuel in this closed model.
 [Exact sources, complete controls, accounting and evidence](COOPERATIVE-01-RECEIPT.md).
+
+## Mineral source admission — October10
+
+MINERAL-01 independently audits 7,670 conditional stoichiometric cases and
+finds 375 nickel pre/post-use paths. These are authored material possibilities,
+not simulated natural organization, measured work or autonomous repair. Source
+main Methods leave complete drive/preparation/useful-load/reconstruction prices
+unestablished for Ora. NOT_ADMITTED_MISSING_CALIBRATION; zero worlds.
+No substage acceptance changes. [Receipt](MINERAL-01-RECEIPT.md).
