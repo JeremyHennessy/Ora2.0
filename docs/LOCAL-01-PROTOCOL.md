@@ -52,8 +52,17 @@ If costs, endpoint or reverse accounting fail, stop before any dynamics.
 
 ## Fresh bounded panel and falsifiers
 
+Pre-execution implementation clarification: a token's first F->I transition is
+the only fresh origin. Recycled F and subsequent heat-funded I are not fresh.
+All reverse bond-linked work payments debit the linked-work ledger, irrespective
+of their activation source. The graph is physical reachability without operator
+history; the three separately interpreted certificates include paid damage.
+Alphabet length68,393216 panel attempts; the initial draft's stray draw-count
+phrase is corrected before execution. One 20MiB externally reserved empty output
+file holds the panel; no inherited production data are overwritten.
+
 32 unscreened seeds84000..84031, three arms,96 raw-start worlds. 4096 attempts
-each,384 total draws? No: each attempt consumes three draws: action index,
+each,393216 attempts total. Each attempt consumes three draws: action index,
 32-bit acceptance,32-bit recorded noise, including rejected moves. Alphabet:
 60 labelled chemical actions (token, capture/decay/work, -/+),4 activation
 actions(atom,-/+),2 bond actions(-/+),2 hop actions(atom):68 slots, fixed order.
