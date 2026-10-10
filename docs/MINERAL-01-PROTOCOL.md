@@ -67,7 +67,7 @@ Only elementary dimensional identities are used, not empirically chosen prices.
 ## Stop and verification
 
 Freeze exact interpreter commit before execution. Audit atom/charge conservation,
-all766? No shorthand:7605 N cases plus65 F cases =7670 total accounting cases.
+7605 N cases plus65 F cases =7670 total accounting cases.
 Require independent enumeration to match every algebraic result, exact replay,
 and refusal of forged source, omitted activation/repair charge, or invented work.
 Meaningful authored checks cover lost sulfur/thiol, free catalyst preparation,
