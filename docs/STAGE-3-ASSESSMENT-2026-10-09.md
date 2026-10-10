@@ -413,7 +413,7 @@ Next require a genuinely distinct priced conversion route with adequate accessib
 usable yield, not stronger bonds or more fuel in this closed model.
 [Exact sources, complete controls, accounting and evidence](COOPERATIVE-01-RECEIPT.md).
 
-## Mineral source admission — October10
+## Mineral source admission - October10
 
 MINERAL-01 independently audits 7,670 conditional stoichiometric cases and
 finds 375 nickel pre/post-use paths. These are authored material possibilities,
