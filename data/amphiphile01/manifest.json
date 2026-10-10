@@ -1,0 +1,10 @@
+{
+  "conditional_cases": 225,
+  "natural_worlds": 0,
+  "protocol_revision": "5bf754e3c4d9c986db85fb3829ad750577e8d0cf",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "scope": "Admission only; no dynamics or fresh seed screening",
+  "source_revision": "d78efac3a2827336ad128dd00d9b828492b60ef9",
+  "total_reservation": 104857600
+}

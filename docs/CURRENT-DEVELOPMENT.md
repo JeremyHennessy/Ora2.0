@@ -2,7 +2,37 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest admission: mineral conversion remains uncalibrated
+## Latest admission: component feedback can recycle heads, not complete material
+
+AMPHIPHILE-01 exact source d78efac3a2827336ad128dd00d9b828492b60ef9;
+protocol5bf754e3c4d9c986db85fb3829ad750577e8d0cf.
+[Protocol](AMPHIPHILE-01-PROTOCOL.md), [receipt](AMPHIPHILE-01-RECEIPT.md),
+[decision](../data/amphiphile01/decision.json).
+
+Distinct source-based component-production coupling, not another unconnected
+converter.225 complete finite inventories; independent6,248 states/9,999 channels
+agree.114 inventories permit a newly formed component after one paid breakdown.
+Minimal stocks T,B,F=(3,1,1) or(3,2,0). A full precursor-regeneration cycle consumes
+2 tail thiols and1 peroxide to give1 tail-disulfide waste and2 waters: head
+reused, tail not recycled. This conditional abstraction supports material
+replacement from finite fresh feed; it does not establish kinetic advantage,
+usable-work surplus, autonomous catalyst renewal or founder-free organization.
+
+52 focused tests, exact replay,3 forgery rejections and651-file C: restored
+source audit passed. MATERIAL_FEASIBLE_KINETICS_AND_WORK_UNCALIBRATED; no
+world law installed or sampled. All primary arrangements retain the same
+reaction opportunities; stoichiometry alone cannot decide their relative rates.
+
+**Next decision:** establish rate/access and complete exergy/load accounting for
+aggregate-mediated production versus matched unassembled/full-shuffle controls.
+Treat supplied DMAP, prepared feed, mixing and source replenishment explicitly.
+Test fresh component production after damage; do not mistake head regeneration
+for full recycling or material counts for profitable work. If complete costs
+remain unavailable, preserve this candidate as uncalibrated rather than add a
+favorable yield. Stage3 incomplete; observer and persistent-pilot gates unchanged.
+AI-Research main09f4f33/Pass39 unchanged; no accepted Pass40.
+
+## Historical admission: mineral conversion remains uncalibrated
 
 MINERAL-01 exact source ad7909548754ac89fa59c5edfbc9eac4495d6cfd;
 protocol 4f196c83b2baed4cfeceafdc206885dc679c6638.
