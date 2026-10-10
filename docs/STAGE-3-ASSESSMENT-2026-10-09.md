@@ -29,6 +29,18 @@ No natural-world claim: raw atoms coexist with installed contacts/constructor.
 acceptance remains absent. Close tested law/prices/horizon, not tune toward success.
 [Exact source, all controls and preservation](THERMAL-01-02-RECEIPT.md).
 
+## Intermediate-channel admission follow-up
+
+CHANNEL-01 source2c5cef0e1ef27624ab32b0d7da9bbfede2b953b0 verifies48 controlled
+counterexamples: proposed gross-output bound2N is invalid once reverse decay
+permits thermal reactivation; gross4N retains initial heat capital. The loose
+6N conservation ceiling does not establish full costs or natural performance.
+Formation/transport/renewal remain unknown, so the prototype is NOT ADMITTED
+before world dynamics. This improves prospective accounting and output ancestry
+for3.1/3.2 but adds no accepted capability in3.3–3.6. No organism or spatial
+substrate is installed; channeling in general is not disproved.
+[Exact unit-grid scope and evidence](CHANNEL-01-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter
