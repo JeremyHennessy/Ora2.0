@@ -71,7 +71,13 @@ def sample(folder,revision,binding=None,previous=None,current=None):
         if previous is None: return result
         if not previous.get('validated') or previous.get('mode')!='live' or previous.get('binding')!=binding or previous.get('identity')!=identity:
             return result
-        if previous.get('frame_sha256') not in {f['frame_sha256'] for f in evidence['frames']} or previous['simulation_tick']>result['simulation_tick']:
+        prior_frame=next((f for f in evidence['frames'] if f['frame_sha256']==previous.get('frame_sha256')),None)
+        if (prior_frame is None
+                or type(previous.get('simulation_tick')) is not int
+                or type(previous.get('noise_cursor')) is not int
+                or previous['simulation_tick']!=prior_frame['state']['simulation_tick']
+                or previous['noise_cursor']!=prior_frame['state']['noise_cursor']
+                or previous.get('state_sha256')!=prior_frame['state_sha256']):
             result['status']='history_mismatch'; return result
         if result['simulation_tick']>previous['simulation_tick']:
             result.update(status='active',active=True)
