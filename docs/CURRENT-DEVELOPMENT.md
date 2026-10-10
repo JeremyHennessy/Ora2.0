@@ -2,7 +2,41 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — phase opportunity and output reversals constrain successor
+## Latest checkpoint — portable output and partial reconstruction do not repay maintenance
+
+**Exact source:** EXPORT-01 admission df0f06b34b6b7ef548cb2ab07f1ca0dc8a4d9cce;
+EXPORT-02 dynamics30722dc32aefacf1c6ee8c08764add5a8be19703, prospectively frozen.
+[Receipt](EXPORT-01-02-RECEIPT.md), [full panel decision](../data/export02/decision.json).
+Distinct finite material/locality law: output in labelled portable mechanical
+loads diffuses away; every reverse remains possible. Installed toy apparatus,
+not empirical chemistry or a discovered transducer. Four28454-state census
+and all-cost whole/post-loss certificate pass (linked2), controlled-only.
+
+**Actual advance/limit:**128 unscreened raw-start worlds/524288 attempts.
+All arms0/32 primary successes, pairedP1. Candidate23 paid losses/23 first
+rebuilds; TWO first rebuilds convert fresh fuel afterward, but none retained
+at horizon and no arm has positive post-loss linked surplus. Candidate stored
+work134 versus linked-526. Exposure23 misses24: UNDEREXPOSED. Partial functional
+reconstruction is observed; profitable self-maintenance is not. Bulk contact
+is diagnostic, not a matched causal export control. Reserved samples untouched.
+
+**Next decision:** close exact law/endowment/horizon, preserve all negatives.
+Admit a genuinely different fully paid local material-maintenance cycle linking
+resource conversion to persistence or replacement of useful components. Require
+whole/post-loss all-cost feasibility, attainable ecological controls plus separate
+resource-yoked repair opportunities before fresh samples. Do not just slow
+breakup, lower costs, add resources, tune damage/horizon or supply a working founder.
+Capture/output retention alone is insufficient; Stage3 remains incomplete.
+
+**Verification/activity:**37 focused checks, all128 independent full histories,
+12 exact replays, three forgery refusals,598-file C: restore/full panel reaudit;
+admission additionally independently verifies complete physical graphs and
+582-file restore. CI/manual private integration/full-history closure in lab
+receipt. AI-Research09f4f33/Pass39 unchanged; observer pause/no active world.
+Physical durability/full-host/lost-work, production isolation and separately
+approved supervised-pilot gates remain open. No UI or runtime expansion.
+
+## Historical checkpoint — phase opportunity and output reversals constrain successor
 
 **Exact source:** WINDOW-01 audit832b1b9aca8220c7dbb71e6a64b40f1a637a81e2;
 prospective e77f142; immutable ASSEMBLE law/records da7f2af.
