@@ -1,0 +1,58 @@
+{
+  "arms": {
+    "candidate": {
+      "bound_attempts": 85385,
+      "exposed": 23,
+      "fuel_exhausted": 25,
+      "functional_surplus": -421,
+      "net_work": 71,
+      "other_gross_work": 84,
+      "paid_renewals": 21,
+      "success": 0
+    },
+    "independent": {
+      "bound_attempts": 43759,
+      "exposed": 3,
+      "fuel_exhausted": 29,
+      "functional_surplus": -178,
+      "net_work": 16,
+      "other_gross_work": 32,
+      "paid_renewals": 4,
+      "success": 0
+    },
+    "shuffled": {
+      "bound_attempts": 29188,
+      "exposed": 1,
+      "fuel_exhausted": 28,
+      "functional_surplus": -74,
+      "net_work": 5,
+      "other_gross_work": 18,
+      "paid_renewals": 1,
+      "success": 0
+    }
+  },
+  "attempts": 393216,
+  "classification": "UNDEREXPOSED",
+  "mode": "panel",
+  "paired": [
+    {
+      "control": "independent",
+      "holm_pass": false,
+      "losses": 0,
+      "p": 1,
+      "wins": 0
+    },
+    {
+      "control": "shuffled",
+      "holm_pass": false,
+      "losses": 0,
+      "p": 1,
+      "wins": 0
+    }
+  ],
+  "primary_pass": false,
+  "raw_start_worlds": 96,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "da7f2afc6b43025845aa78a6846af9ec769a4075",
+  "verified": true
+}
