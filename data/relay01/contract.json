@@ -1,0 +1,15 @@
+{
+  "id": "RELAY-01",
+  "scope": "Prospective necessary-feasibility test of an explicitly installed ideal two-stage energy relay. Not calibrated chemistry, dynamics, autonomous origin or maintenance.",
+  "law": "U catalyses F->I plus2 work units; V catalyses I->Z plus4. F,I,Z have potentials6,4,0. Common diffusible I and both reactions are accessible to separate components. Joining U,V changes neither reactions nor yields. All arms use the same primitive inventory, finite startup work and virgin replacement precursor.",
+  "costs": "Fabricating each component costs c>=0 work and one precursor; joining costs b>=0 and one scaffold precursor. Damage destroys one U or V and its association after the first completed F. Replacement uses a virgin precursor and costs c; rejoining costs b. Terminal upkeep costs2m>=0. Components/scaffolds have zero recoverable work credit. Startup endowment2c+b is matched and explicitly deducted from final usable work; do not debit it twice.",
+  "hypothesis": "A joined relay with unchanged resource conversion opportunities cannot have greater optimal whole-life or post-damage net work than separate components when joining/rejoining costs are nonnegative.",
+  "controls": ["independent U,V: same two reactions, resources, load, precursor inventory and damage", "role-label permutation diagnostic: isomorphic, not a disruptive shuffle control", "conversion-disabled bookkeeping bound: no environmental capture; cannot pass positive net work"],
+  "endpoint": "Necessary feasibility only: positive whole-life and fresh post-damage net work, paid virgin component replacement, and at least one completed resource conversion before and after damage. Constructive certificates use an ideal external planner; cannot count as spontaneous behaviour.",
+  "grid": {"resource_units": [0,1,2,3,4], "c": [1,2,3], "m": [0,1,2], "b": [0,1,2,3], "damaged_role": ["U","V"]},
+  "grid_scope": "All360 fixed cases are diagnostics of a symbolic nonnegative-cost dominance result, not selected physical prices or statistical seed samples. No probability, kinetic superiority or physical impossibility inference.",
+  "falsifier": "An admissible joined certificate exceeds the matched independent ceiling under this exact unchanged-channel law. Stop and investigate any conservation, cost, reconstruction or independent-audit disagreement.",
+  "stop": "If dominance holds, do not run a natural-world panel of this law. A successor must specify a physical interaction that changes measured rates/retention/accessible conversion and price that interaction; retain an attainable independent comparator. Do not invent favourable parameters.",
+  "bounds": {"wall_seconds":120,"cpu_seconds":60,"memory_bytes":536870912,"processes":4,"raw_bytes":4194304,"archive_bytes":4194304,"restore_bytes":8388608,"failure_bytes":1048576,"total_bytes":17825792,"free_disk_floor_bytes":5368709120},
+  "prior_source": "Ora public3e11269130887264bd57287137f6d61ec97d2f0e; negative laws unchanged; AI-Research341a24a80c41f7d936718acb171a00ccbec1924d Pass42 intake only"
+}
