@@ -4,6 +4,18 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+FORMATION-CLOSURE-01 verifies the raw-start dependency preflight before another
+mechanism or natural-world panel. Frozen47ee1ce:all512 three-role catalogues x8
+starting masks (4096 cases) match independent subset graphs and exact replay;
+25 permit all-role raw-start closure,487 fail even the relaxed structural bound.
+Supplied working roles unlock1568 diagnostic cases. Three scoped checks pass;
+complete C-restored census matches. [Receipt](FORMATION-CLOSURE-01-RECEIPT.md).
+These are necessary conditions only: formation prices, useful work, finite
+material, damage dynamics and profitable simpler controls remain unmodeled.
+No mechanism is admitted and Stage3 statuses are unchanged. Next science must
+specify a complete paid law with raw-accessible formation and causal renewal of
+construction capability; do not supply a founder or tune closed negatives.
+
 RUNTIME-WRITE-01 closes a concrete checkpoint/journal acknowledgement defect.
 Pinned358c56f reproduces two short-write failures; minimal7ad5263 checks exact
 write counts before authoritative promotion/acknowledgement. Eighteen recovery
