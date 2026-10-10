@@ -2,7 +2,37 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — fuel-driven assembly improves turnover, not maintenance
+## Latest checkpoint — phase opportunity and output reversals constrain successor
+
+**Exact source:** WINDOW-01 audit832b1b9aca8220c7dbb71e6a64b40f1a637a81e2;
+prospective e77f142; immutable ASSEMBLE law/records da7f2af.
+[Receipt](WINDOW-01-RECEIPT.md), [decision](../data/window01/decision.json).
+ZERO new worlds. Revalidated all96 original records; endpoints remain0/32
+all arms and UNDEREXPOSED. No old samples, physics or credit rules changed.
+
+**Actual advance/limit:** candidate17 actual losses still had untouched fuel,
+seven fresh post-loss charges formed; six reversed before useful load, one
+remained stored. Candidate post-load38/reverse38 gives net0 before destruction.
+Both controls exhausted every virgin token by damage: their fresh rebuilt-output
+opportunity was absent. Seven candidate first reconstructions moved regenerated
+resource energy; this is narrower than profitable fresh work. One authored
+regenerated-fuel post-loss certificate is controlled possibility, not success.
+
+**Next decision:** keep ASSEMBLE closed. Admit a distinct finite capture/retention
+law addressing BOTH post-loss accessible exergy AND useful conversion against
+backflow, with every reverse fully priced. Require primary nulls with matched
+phase-accessible resource/provenance opportunities and full-cost post-loss
+feasibility before samples. No old price/rate/resource/damage/horizon adjustment
+or relaxed historical credit rule. No successor admitted; Stage3 incomplete.
+
+**Verification/activity:**32 focused checks, exact phase replay, three forgery
+refusals,578-file C: restoration/full original-panel and phase reaudit. CI,
+manual private integration and full-history closure in laboratory receipt.
+AI-Research09f4f33/Pass39 unchanged; observer pause retained, no active world.
+Physical durability/full-host/lost-work, production isolation and separately
+approved supervised-pilot gates remain open. No peripheral features added.
+
+## Historical checkpoint — fuel-driven assembly improves turnover, not maintenance
 
 **Exact source:** ASSEMBLE-01 da7f2afc6b43025845aa78a6846af9ec769a4075;
 prospective cc30c7b. [Receipt](ASSEMBLE-01-RECEIPT.md),

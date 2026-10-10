@@ -1,0 +1,11 @@
+{
+  "law_revision": "da7f2afc6b43025845aa78a6846af9ec769a4075",
+  "natural_worlds": 0,
+  "new_physics": false,
+  "physical_arms": 3,
+  "protocol_revision": "e77f142",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "source_revision": "832b1b9aca8220c7dbb71e6a64b40f1a637a81e2",
+  "total_reservation": 104857600
+}

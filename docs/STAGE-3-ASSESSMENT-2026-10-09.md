@@ -82,6 +82,19 @@ distinct spatial capture/retention admission must test fresh post-loss access
 and full bills against an attainable throughput-matched null.
 [Exact evidence and limits](ASSEMBLE-01-RECEIPT.md).
 
+## October10 phase-opportunity diagnosis
+
+WINDOW-01 revalidates all96 ASSEMBLE worlds without rescoring or new physics.
+Both controls lack untouched fuel after loss; candidate17 losses retain some,
+yet six of seven fresh charges reverse before output and one stays stored.
+Candidate post-load38/reverse38 gives net0 before destruction. Seven first
+reconstructions move regenerated energy, not profitable fresh maintenance.
+This clarifies3.1–3.3's resource/output limitations and strengthens next null
+admission: match phase-accessible exergy/provenance as well as initial budgets.
+One all-cost regenerated-fuel certificate is controlled-only.3.4–3.6 remain
+unaccepted; do not erase negatives or relax original fresh-credit definitions.
+[Exact conditional-resource scope](WINDOW-01-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter
