@@ -2,7 +2,31 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — cooperative stability does not fund useful maintenance
+## Latest admission: mineral conversion remains uncalibrated
+
+MINERAL-01 exact source ad7909548754ac89fa59c5edfbc9eac4495d6cfd;
+protocol 4f196c83b2baed4cfeceafdc206885dc679c6638.
+[Protocol](MINERAL-01-PROTOCOL.md), [receipt](MINERAL-01-RECEIPT.md),
+[decision](../data/mineral01/decision.json).
+
+Independent complete material/charge enumeration matched 7,670 cases, including
+375 nickel conditional pre/post-use paths. These authored stoichiometric paths
+are not physical kinetics, measured useful work, or natural self-maintenance.
+NOT_ADMITTED_MISSING_CALIBRATION: scoped main Methods do not establish full
+finite-source/preparation/drive/useful-load/reconstruction prices and matched
+controls needed for Ora. Papers were not reproduced or refuted. Zero worlds;
+no installed mechanism or supplied founder.49 focused checks passed, exact
+replay matched,3 forgeries refused,641 C-restored files source reaudited.
+
+**Next decision:** find actual activated-product coupling to useful component
+manufacture and catalyst renewal. Establish complete source/drive/repair prices
+and equivalent independent/full-shuffle opportunities before installing or
+scoring a world law. Product counts and reference potential cannot substitute
+for useful net work. Do not reopen or tune closed toy samples. Stage3 incomplete.
+AI-Research Pass39 remains accepted; observer pause and persistent-pilot safety
+gates remain. This admission audit is preparation, not a new life finding.
+
+## Historical checkpoint — cooperative stability does not fund useful maintenance
 
 **Exact source:**COOPERATIVE-01a286539bb9c01477381016d33da5257a0b714017;
 protocol1742ab9c30067e6ee033801e3eb470ac7fde4c15, census clarification before
