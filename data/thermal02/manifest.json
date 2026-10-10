@@ -1,0 +1,10 @@
+{
+  "attempts": 1179648,
+  "founder_free": false,
+  "protocol_revision": "8312eff",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "source_revision": "9902f8f20eed47d9d3aae5e95ec777ee22fa49d1",
+  "total_reservation": 209715200,
+  "worlds": 576
+}
