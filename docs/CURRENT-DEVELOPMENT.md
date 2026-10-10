@@ -4,6 +4,19 @@
 
 ## Current session: AI-only runtime and observer reliability
 
+BOOTSTRAP-CACHE-01 closes the incidental launcher write exposed by the prior
+restore audit. Pre-fix source bb8c54a reproduces unwanted bytecode files despite
+a child `-B`; repair a8eaacd makes the trusted bootstrap itself use `-B`.
+Eleven native/configuration tests pass, one platform-specific test is skipped.
+A separate native audit without environment workarounds confirms the two source
+files remain byte-identical and no cache files are created. CPU, memory, process,
+timeout, output and child-cleanup controls retain their tested behavior.
+Receipts: `D:/OraLab/runs/bootstrap-cache01-*-20261010`; no simulation executed.
+The zero-acknowledged-loss/eight-step backup policy remains proposed and already
+tested by CADENCE-01; do not rerun closed science panels or equate backup readback
+with physical power-loss durability. Full-host recovery and production isolation
+evidence still require their separate gates. No persistent world is activated.
+
 The user has scoped this session to software engineering on the artificial
 universe. Preserve scientific laws, frozen experiments and historical outcomes;
 do not implement new scientific mechanisms. TELEMETRY-CACHE-01 reproduces a

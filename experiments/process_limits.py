@@ -169,7 +169,7 @@ def run(command, limits=Limits(), cwd=None):
         # The known stdlib bootstrap uses the existing base interpreter directly.
         # Windows venv redirectors consume additional job process slots.
         bootstrap_python = getattr(sys, '_base_executable', sys.executable)
-        bootstrap = [bootstrap_python, '-m', 'experiments.process_limits', '--bootstrap', json.dumps(list(command))]
+        bootstrap = [bootstrap_python, '-B', '-m', 'experiments.process_limits', '--bootstrap', json.dumps(list(command))]
         process = subprocess.Popen(bootstrap, cwd=cwd or Path(__file__).resolve().parents[1],
                                    stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
                                    close_fds=True, shell=False)
