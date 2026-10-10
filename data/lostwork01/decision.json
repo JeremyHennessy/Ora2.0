@@ -1,0 +1,53 @@
+{
+  "acceptable_loss_policy_defined": false,
+  "complete_states_compared_per_restore": 33,
+  "decisions": [
+    {
+      "measurement": {
+        "acceptable_loss_policy_defined": false,
+        "acknowledged_tick": 13,
+        "missing_acknowledged_transitions": 6,
+        "physically_durable": false,
+        "recomputation_reverses_external_effects": false,
+        "recovered_tick": 7,
+        "run_id": "70c25a2b8ec5c76b8e5f81d5de05ef98573928e13517a441087ee3e8493900f5",
+        "schema": "lost-work01-v1",
+        "source_revision": "70ee57a98144e67d3607b73227d3c0859701a0e8",
+        "world_id": "lost-work01-fixture"
+      },
+      "missing_ticks": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "verified": true
+    },
+    {
+      "measurement": {
+        "acceptable_loss_policy_defined": false,
+        "acknowledged_tick": 13,
+        "missing_acknowledged_transitions": 0,
+        "physically_durable": false,
+        "recomputation_reverses_external_effects": false,
+        "recovered_tick": 13,
+        "run_id": "70c25a2b8ec5c76b8e5f81d5de05ef98573928e13517a441087ee3e8493900f5",
+        "schema": "lost-work01-v1",
+        "source_revision": "70ee57a98144e67d3607b73227d3c0859701a0e8",
+        "world_id": "lost-work01-fixture"
+      },
+      "missing_ticks": [],
+      "verified": true
+    }
+  ],
+  "new_process_restores": 2,
+  "new_security_identity_tested": false,
+  "physical_durability": false,
+  "raw_prefix_preserved": true,
+  "scientific_progress": false,
+  "shared_files_unchanged": 646,
+  "source_revision": "70ee57a98144e67d3607b73227d3c0859701a0e8",
+  "verified": true
+}

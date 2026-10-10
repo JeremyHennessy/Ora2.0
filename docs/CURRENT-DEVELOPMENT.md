@@ -2,6 +2,31 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Engineering measurement: acknowledged rollback and exact recomputation
+
+LOST-WORK-01 source70ee57a98144e67d3607b73227d3c0859701a0e8;
+[contract](LOST-WORK-01-CONTRACT.md), [receipt](LOST-WORK-01-RECEIPT.md),
+[decision](../data/lostwork01/decision.json). One bounded seed1 fixture actually
+reached and independently acknowledged tick13. Tick7 and tick13 backups lose
+respectively6 and0 acknowledged transitions on restore. Both new-process
+continuations match all33 complete states through tick32; raw prefixes retained.
+A counterfactual tick32 reference is not an acknowledgement or proof of25 lost
+ticks. Recomputing states does not reverse already observed external effects.
+
+13 relevant Windows checks passed; independent rollback audits and full-state
+replay passed; false future acknowledgement and false zero-loss CLI records
+refused. Different-world restoration refused in authored tests. Initial wrapper
+source mismatch preserved; v2 uses source-isolated child replay without changing
+law/protocol/endpoints. C0/D1 backup readback restores695 files and reruns both
+audits;355 older backup files unchanged. No new security SID or physical
+power-loss/full-host test; this is an application recovery measurement.
+
+**Remaining engineering decision:** choose an explicit acceptable acknowledged
+rollback budget and measured backup/checkpoint cadence; verify actual physical
+durability, full-host recovery and production isolation before a separately
+approved supervised pilot. This panel imposes no loss policy and starts no pilot.
+Science remains the primary next decision below; Stage3 acceptance unchanged.
+
 ## Latest admission: component feedback can recycle heads, not complete material
 
 AMPHIPHILE-01 exact source af15def9c6a8db207416fd9367e9e2c489d6ae36;
