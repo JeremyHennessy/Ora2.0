@@ -2,7 +2,52 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — portable output and partial reconstruction do not repay maintenance
+## Latest checkpoint — captured work pays replacement, but no useful maintenance
+
+**Exact source:** MAINTAIN-01 admission494724a7cd4e56455f1116c556d908e4cd209fd7;
+MAINTAIN-02 dynamics264bacf388ea22d7a7391430f807b2b1212d0729, frozen before samples.
+[Protocol](MAINTAIN-01-02-PROTOCOL.md), [receipt](MAINTAIN-01-02-RECEIPT.md),
+[complete decision](../data/maintain02/decision.json).
+Distinct generic work-funded maintenance: three raw component types, every one
+of64 unselected catalytic connection patterns, all reverse reactions, explicit
+work-paid activation/replacement and finite fuel/heat. Installed ideal well-mixed
+coupling apparatus; no empirical transport or organism claim.
+
+**Controlled-only:** both11508/11512-state parity components independently
+enumerated; all64 catalogue contexts/reverses agree. All arms can reach an
+authored fully paid repair: final work6, whole surplus6, post-loss surplus1.
+This proves an opportunity under supplied scheduling, not natural maintenance.
+
+**Actual evidence:**192 raw-start worlds/786432 attempts, all three arms0/64,
+pairedP1. Candidate19 paid losses,14 first replacements,4 retained; ZERO fresh
+capture through any first replacement in any arm. Candidate exposure0/64:
+UNDEREXPOSED, close exact law/endowment/horizon. Candidate final work185 versus
+conservative whole surplus-327/post-328. All paid-loss worlds in ALL arms have
+zero untouched fuel tokens at damage: fresh reconstruction endpoint unavailable
+then, from equal initial resources and a shared zero-fresh-token limit at paid
+loss. Other phase-end resources and states differ. Do not infer catalyst
+inefficacy under adequate exposure or profitable self-maintenance. Reserved
+samples87100..87163 untouched. Ten candidate worlds had all three active at
+loss; that alone is not qualifying useful organization.
+
+**Next decision:** preserve this negative, no price/rate/resource/seed/damage
+or horizon tuning. Before another dynamics panel, establish a genuinely distinct
+resource-conversion mechanism with a finite environmental energy flow and a
+resource-yoked post-loss feasibility test. Admission must include the opportunity
+left after startup, not just an authored whole-life path. Separate reusable
+material/thermal cycling from fresh environmental energy and total reservoir
+exergy; define useful work conservatively. No successor is yet admitted.
+Stage3 remains incomplete; adaptation stays a separate design track.
+
+**Verification/activity:**40 focused checks; independent192 full histories,
+9 exact replays,3 forged payments/ancestry/draws rejected;613-file C: restore
+and full source/panel reaudit. Admission38 checks,601-file restore. CI and
+manual private integration recorded separately in the local closure receipt.
+AI-Research09f4f33/Pass39 unchanged, Pass40 branch no new accepted content;
+no research code executed. Observer paused, no active world. Physical durability,
+full-host/lost-work and production isolation/pilot authorization gates stay open.
+
+## Historical checkpoint — portable output and partial reconstruction do not repay maintenance
 
 **Exact source:** EXPORT-01 admission df0f06b34b6b7ef548cb2ab07f1ca0dc8a4d9cce;
 EXPORT-02 dynamics30722dc32aefacf1c6ee8c08764add5a8be19703, prospectively frozen.

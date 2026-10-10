@@ -1,0 +1,52 @@
+{
+  "admission_passed": true,
+  "catalogues": 64,
+  "controlled_score": {
+    "activation": 12,
+    "actual_final_work": 6,
+    "final_heat": 56,
+    "gross": 20,
+    "loss": 2,
+    "post_surplus": 1,
+    "post_work_gain": 1,
+    "whole_surplus": 6
+  },
+  "graphs": [
+    {
+      "directed_channels": 129762,
+      "labelled_proposals": 243810,
+      "maximum_work": 66,
+      "parity": 0,
+      "start": [
+        4,
+        3,
+        3,
+        0,
+        0
+      ],
+      "state_sha256": "67898d5a217c701e9281750cb4ff3a90174d03667b5667bdaf7d29ef6b63c2bd",
+      "states": 11508
+    },
+    {
+      "directed_channels": 129774,
+      "labelled_proposals": 243822,
+      "maximum_work": 67,
+      "parity": 1,
+      "start": [
+        1,
+        1,
+        1,
+        6,
+        3
+      ],
+      "state_sha256": "f934693133aef9f4b9f2871fca9fec70a4930f2053a10ecc7b3329c9ae675280",
+      "states": 11512
+    }
+  ],
+  "independent_complete_reachability": true,
+  "natural_worlds": 0,
+  "next_decision": "Freeze reviewed dynamics and independent interpreter, then execute unscreened registered panel.",
+  "schema": "maintain01-decision",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "494724a7cd4e56455f1116c556d908e4cd209fd7"
+}

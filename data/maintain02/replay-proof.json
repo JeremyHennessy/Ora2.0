@@ -1,0 +1,42 @@
+{
+  "all_fields_equal": true,
+  "exact_worlds": [
+    [
+      87000,
+      "candidate"
+    ],
+    [
+      87000,
+      "independent"
+    ],
+    [
+      87000,
+      "annealed"
+    ],
+    [
+      87031,
+      "candidate"
+    ],
+    [
+      87031,
+      "independent"
+    ],
+    [
+      87031,
+      "annealed"
+    ],
+    [
+      87063,
+      "candidate"
+    ],
+    [
+      87063,
+      "independent"
+    ],
+    [
+      87063,
+      "annealed"
+    ]
+  ],
+  "source_revision": "264bacf388ea22d7a7391430f807b2b1212d0729"
+}
