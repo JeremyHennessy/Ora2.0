@@ -1,0 +1,7 @@
+{
+  "scope": "Registered after Supplementary Table2 was read, before new calculation/execution. A structural audit, not a fresh simulation or blinded prediction.",
+  "source_pages": [123,124,125],
+  "published_model_origin_gate": "Reactions10–21 create assembled hexamers only with an assembled hexamer reactant. Reactions1–9 create bound trimers,22–23 supply monomers,24 removes species. Test the exact all-assembled-zero invariant independently; no numerical ODE integration.",
+  "stop": "If every assembled production channel requires an assembled reactant and inflow supplies no assembled replicator, decline founder-free panels of this exact published model. This does not prove real nucleation or complete loss recovery physically impossible.",
+  "complete_work_admission": "Still require priced useful load and full renewal/source costs; a catalytic rate advantage is not an energy surplus. No free cofactor, arbitrary photon yield, repair law or successful founder added."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "photo-feedback01-source-accounting-v1",
+  "registration_scope": "After public abstract, supplement contents and selected captions/model introduction were inspected; before download and fresh arithmetic. Not a prospective natural-world protocol.",
+  "source": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41929-025-01409-3/MediaObjects/41929_2025_1409_MOESM1_ESM.pdf",
+  "question": "Can the published photocatalytic feedback law support a complete usable-output/repair ledger, and does supplied-cofactor flow confound claimed renewal?",
+  "fixed_inputs_from_caption_page107": {"reactor_uL":500,"building_block_mM":2,"building_block_feed_uL_h":8,"cofactor_uM":40,"cofactor_feed_uL_h":8,"outflow_uL_h":16,"seed_mM":0.2},
+  "calculations": ["flow residence time", "material input rates", "initial seed and steady cofactor inventory", "conditional nonrenewing cofactor washout half-life"],
+  "independent_check": "Separate decimal/fraction arithmetic; no producer imports. Check units and mass-flow balance against original visual caption.",
+  "admission_requires": ["full preparation/source/maintenance/repair/release costs", "explicit independently usable output", "cofactor renewal or priced external provision", "founder-free entry and unscreened damage/reconstruction", "attainable resource-matched independent and shuffled controls"],
+  "unknown_policy": "Unknown work price is not zero and not an impossibility proof. Conditional washout is not measured withdrawal behavior.",
+  "excluded": ["fetched code execution", "kinetic fitting", "new world", "seed screening", "paper redistribution to GitHub", "model code acquisition"],
+  "bounds": {"download_timeout_seconds":30,"PDF_bytes":67108864,"raw_bytes":75497472,"archive_bytes":67108864,"restore_bytes":75497472,"failure_bytes":1048576,"total_bytes":219152384,"wall_seconds":120,"free_disk_floor_bytes":5368709120}
+}
