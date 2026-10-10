@@ -1,5 +1,6 @@
 """Trusted single-writer prewrite storage accounting; not an OS disk quota."""
 import io
+import json
 import os
 from pathlib import Path
 import stat
@@ -62,6 +63,23 @@ class Budget:
         return GuardedStream(self,key,path,stream)
 
     def snapshot(self):return dict(schema='evidence-budget-v1',limits=self.limits,total_limit=self.total,reserved=self.used,total_reserved=sum(self.used.values()),files=self.files)
+
+    def write_snapshot(self,phase,name='budget.json'):
+        """Save the current ledger, including its own precharged final extent.
+
+        Call after all other writes. Later writes require a new snapshot path.
+        A capacity refusal retains the empty file and any successful charges;
+        it never writes an undercharged or partially calculated JSON receipt.
+        """
+        with self.create(phase,name) as stream:
+            while True:
+                data=json.dumps(self.snapshot(),sort_keys=True,separators=(',',':')).encode('utf-8')
+                if len(data)<=self.files[stream.key]:
+                    stream.write(data)
+                    return stream.path
+                # Only nondecreasing integer digit widths change the next JSON.
+                # Growth is finite: the registered phase/combined caps bound it.
+                self._charge(stream.key,len(data))
 
 
 class GuardedStream:
