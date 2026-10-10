@@ -55,6 +55,18 @@ Close exact law/resources/horizon; next distinct direct resource/renewal couplin
 needs its own full-cost admission, not a parameter adjustment.
 [Exact controls, provenance and limitations](LOCAL-01-RECEIPT.md).
 
+## Exact equilibrium diagnosis
+
+EQUILIBRIUM-01 changes no physical law or frozen world. Each full connected
+19926-state/173300-edge graph has identical stationary distributions in all arms:
+bound occupancy~4.545%, exact net work0 despite gross turnover. This constrains
+rate-only equilibrium proposals; it is not a finite-time bound or rescored damage
+test.3.1/3.2 gain exact turnover-versus-net-work accounting, while3.3–3.6 still
+have no accepted self-maintenance/inheritance capability. A successor needs
+explicitly paid fuel-driven transient organization, not another symmetric barrier
+adjustment or relabelled COUPLE/FUEL/CONDENSE law. No new candidate admitted.
+[Exact probabilities, conserved parity and limitations](EQUILIBRIUM-01-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter

@@ -2,7 +2,38 @@
 
 **Updated 2026-10-09. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest checkpoint — complete spatial law fails profitable renewal
+## Latest checkpoint — exact equilibrium diagnosis changes next mechanism gate
+
+**Exact source:** EQUILIBRIUM-01 f86988791986454c86be86dda7d2c6ac8cef2160;
+prospective32d3d67; unchanged LOCAL lawcb2b08c94475bfb96333817f448cd4a4037c7e42.
+[Receipt](EQUILIBRIUM-01-RECEIPT.md), [decision](../data/equilibrium01/decision.json).
+Three complete connected physical graphs, each19926 states/173300 edges.
+Exact stationary distributions identical in all arms: bound probability~4.545%,
+expected~1.455/32 bound opportunities under stationary sampling; net work flow
+exactly0 in each arm despite gross turnover. ZERO new worlds, no physics changed.
+
+**Actual advance/limit:** independently derived mechanism limitation prevents
+more symmetric-barrier tuning. It does NOT bound finite-time damage exposure,
+prove mixing or rule out fuel-driven transient maintenance. Conserved W+active
+parity requires reachable-component normalization; energy compatibility alone
+is insufficient. LOCAL's96-world negative/UNDEREXPOSED outcome remains frozen.
+Stationary binding/turnover is not functional maintenance or autonomous origin.
+
+**Next decision:** require a genuinely different paid fuel-driven formation/
+turnover cycle with useful finite-resource transient organization. Direct coupling
+alone is already in COUPLE/FUEL/CONDENSE, not a novelty claim. Freeze all reverses,
+costs, useful-work ledgers and fair attainable controls; verify meaningful loss
+opportunities before fresh samples. Do not alter LOCAL rates, costs, resources,
+damage or horizon; no successor admitted. Stage3 incomplete.
+
+**Verification/activity:**26 focused checks,complete three-arm census replay,
+3 forgery refusals,554-file independent C: restoration/full population-flow audit.
+Original LOCAL/older seals and observer unchanged. CI/private integration/full-
+history acceptance in laboratory closure. AI-Research09f4f33/Pass39 unchanged;
+observer paused, no active world. Physical durability/full-host/lost-work and
+production-isolation/separately approved supervised-pilot gates remain open.
+
+## Historical checkpoint — complete spatial law fails profitable renewal
 
 **Exact source:** LOCAL-01 cb2b08c94475bfb96333817f448cd4a4037c7e42;
 prospective b708324. [Receipt](LOCAL-01-RECEIPT.md), [decision](../data/local01/decision.json).
