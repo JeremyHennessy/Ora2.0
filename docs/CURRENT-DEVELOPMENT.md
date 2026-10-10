@@ -2,7 +2,22 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
-## Latest transport opportunity: retained alignment has a finite cost ceiling
+## Latest alternative audit: stationary prepared components outperform the moving tether
+
+STATIONARY-01 [prospective comparator](STATIONARY-01-COMPARATOR.md), frozen
+source a889a16e375652c6c5c466982980777e276335fa: all48 cases preserved,
+36 stationary gross-output gains,12 ties,0 losses. Exact independent backward/
+forward interpreters and replay agree; the original RETENTION moving arm is
+reproduced exactly. Common clock, intermediate diffusion, resource supply,
+capture/decay and expiry are matched; component mobility intentionally differs.
+Both arms are prepared co-located apparatus, not founder-free or unorganized arms.
+Anchoring/tether/full construction and virgin repair costs remain unknown.
+Do not progress a moving-tether panel from superiority over moving-free controls
+alone. Next require a fully priced energy/construction/replacement/load mechanism
+and attainable simple alternatives before natural-world sampling. No damage or
+renewal experiment was executed and no autonomous maintenance is accepted.
+
+## Preserved transport opportunity: retained alignment beats specified moving-free controls
 
 RETENTION-01 [frozen exact-kernel experiment](RETENTION-01-OPPORTUNITY.md):48
 prepared-apparatus cases,36 positive versus best free starting geometry and12 ties.
@@ -11,9 +26,10 @@ and replay agree. This changed interaction retains alignment across arrivals,
 without a capture-rate boost. Extra work0..7.6042 declared units is only an
 additional-cost ceiling. Targeted delivery/tether/expiry are installed; full
 formation/upkeep/repair prices, physical calibration and reconstruction remain
-unknown. No natural worlds or complete mechanism admission. Next price/calibrate
-this interaction and challenge it against stronger unorganized alternatives;
-do not choose favourable rates or call prepared transport self-maintenance.
+unknown. No natural worlds or complete mechanism admission. STATIONARY-01 now
+shows a simpler prepared alternative exceeds its gross output in36 cases and
+ties in12. Its prices are unknown too; neither result establishes full-cost
+superiority or prepared transport as self-maintenance.
 
 ## Latest scientific feasibility: unchanged relay joining is dominated
 

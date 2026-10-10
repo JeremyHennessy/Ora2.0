@@ -1,0 +1,22 @@
+{
+  "cases": 48,
+  "classification": "PREPARED_STATIONARY_ALTERNATIVE_FULL_COSTS_UNKNOWN",
+  "damage_or_renewal_executed": false,
+  "deterministic_replay": true,
+  "exact_independent_audit": true,
+  "extra_gross_work_max": 5.11868303458431,
+  "extra_gross_work_mean": 1.0911657308287486,
+  "extra_gross_work_min": 0.0,
+  "full_cost_profit_verified": false,
+  "mechanism_admitted": false,
+  "natural_worlds": 0,
+  "next": "Do not admit a tether panel from advantage over moving free components alone. Require a complete physically priced renewal/load mechanism and stronger alternative comparison before natural worlds.",
+  "original_tether_reproduced": true,
+  "physical_calibration": false,
+  "resource_energy_ledgers": 96,
+  "scope": "Prepared co-located stationary apparatus compared with moving tether; component mobility intentionally differs, common clock/delivery/diffusion/reaction/expiry matched. Anchor and tether prices unknown, not zero; not an unorganized founder-free comparator.",
+  "source_revision": "a889a16e375652c6c5c466982980777e276335fa",
+  "stationary_better": 36,
+  "stationary_worse": 0,
+  "ties": 12
+}
