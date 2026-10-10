@@ -1,4 +1,5 @@
 import hashlib
+import io
 import os
 from pathlib import Path
 from types import SimpleNamespace
@@ -29,3 +30,18 @@ class BoundsTests(unittest.TestCase):
             expected={name:hashlib.sha256(data).hexdigest() for name,data in before.items() if name!='writer.lock'}
             self.assertEqual(reader.hashes(path),expected)
             self.assertEqual(before,{p.name:p.read_bytes() for p in path.iterdir()})
+
+    def test_aggregate_and_entry_bounds_refuse_before_reading(self):
+        with tempfile.TemporaryDirectory(dir=os.environ.get('ORA_TEST_TEMP')) as folder:
+            path=Path(folder)
+            for i in range(3):(path/str(i)).write_bytes(b'123')
+            with patch.object(reader,'HASH_TOTAL_BYTES',8),patch.object(Path,'open',side_effect=AssertionError('Preflight bypass')):
+                with self.assertRaises(ValueError):reader.hashes(path)
+            with patch.object(reader,'HASH_ENTRIES',2),patch.object(Path,'open',side_effect=AssertionError('Preflight bypass')):
+                with self.assertRaises(ValueError):reader.hashes(path)
+
+    def test_growth_during_streaming_is_bounded(self):
+        with tempfile.TemporaryDirectory(dir=os.environ.get('ORA_TEST_TEMP')) as folder:
+            path=Path(folder)/'note.txt';path.write_bytes(b'x')
+            with patch.object(reader,'HASH_FILE_BYTES',3),patch.object(Path,'open',return_value=io.BytesIO(b'1234')):
+                with self.assertRaises(ValueError):reader.hashes(folder)
