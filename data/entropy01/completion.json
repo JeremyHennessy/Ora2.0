@@ -1,0 +1,10 @@
+{
+  "admission_passed": false,
+  "focused_checks": 43,
+  "forgeries": 3,
+  "natural_worlds": 0,
+  "old_endpoints_changed": false,
+  "self_maintenance_demonstrated": false,
+  "shared_files_unchanged": 605,
+  "verified": true
+}
