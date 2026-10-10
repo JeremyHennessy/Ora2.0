@@ -1,0 +1,27 @@
+{
+  "bound_probability": [
+    52185473293968189404,
+    1148080412467300462153
+  ],
+  "bound_probability_decimal": 0.04545454545454544,
+  "edges_per_arm": 173300,
+  "finite_time_exposure_bound": false,
+  "identical_stationary_distributions": true,
+  "natural_worlds": 0,
+  "new_mechanism_admitted": false,
+  "old_endpoints_changed": false,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "f86988791986454c86be86dda7d2c6ac8cef2160",
+  "states_per_arm": 19926,
+  "stationary_expected_bound_in_32": [
+    1669935145406982060928,
+    1148080412467300462153
+  ],
+  "stationary_expected_bound_in_32_decimal": 1.4545454545454541,
+  "stationary_net_work_per_attempt": [
+    0,
+    1
+  ],
+  "unchanged_law": true,
+  "verified": true
+}
