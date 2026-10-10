@@ -1,0 +1,80 @@
+{
+  "new_worlds": 0,
+  "old_endpoints_changed": false,
+  "original_panel_revalidated": true,
+  "original_source": "da7f2afc6b43025845aa78a6846af9ec769a4075",
+  "self_maintenance_demonstrated": false,
+  "source_revision": "832b1b9aca8220c7dbb71e6a64b40f1a637a81e2",
+  "summary": {
+    "candidate": {
+      "actual_losses": 23,
+      "charge_outcomes": {
+        "destruction_or_release": 0,
+        "fresh_load": 0,
+        "retained_without_output": 1,
+        "reverse_drive": 6
+      },
+      "controlled_regenerated_certificates": 1,
+      "first_consumption_routes": {
+        "assemble": 15,
+        "drive": 7,
+        "waste": 6
+      },
+      "first_rebuilt_load_worlds": 7,
+      "fresh_post_loss_charges": 7,
+      "observed_post_load_gross": 38,
+      "observed_post_reverse_load": 38,
+      "phase_untouched_total": 35,
+      "worlds": 32,
+      "worlds_with_untouched": 20,
+      "zero_fresh_opportunity_losses": 6
+    },
+    "independent": {
+      "actual_losses": 4,
+      "charge_outcomes": {
+        "destruction_or_release": 0,
+        "fresh_load": 0,
+        "retained_without_output": 0,
+        "reverse_drive": 0
+      },
+      "controlled_regenerated_certificates": 0,
+      "first_consumption_routes": {
+        "assemble": 0,
+        "drive": 0,
+        "waste": 0
+      },
+      "first_rebuilt_load_worlds": 1,
+      "fresh_post_loss_charges": 0,
+      "observed_post_load_gross": 2,
+      "observed_post_reverse_load": 0,
+      "phase_untouched_total": 0,
+      "worlds": 32,
+      "worlds_with_untouched": 0,
+      "zero_fresh_opportunity_losses": 4
+    },
+    "shuffled": {
+      "actual_losses": 1,
+      "charge_outcomes": {
+        "destruction_or_release": 0,
+        "fresh_load": 0,
+        "retained_without_output": 0,
+        "reverse_drive": 0
+      },
+      "controlled_regenerated_certificates": 0,
+      "first_consumption_routes": {
+        "assemble": 0,
+        "drive": 0,
+        "waste": 0
+      },
+      "first_rebuilt_load_worlds": 0,
+      "fresh_post_loss_charges": 0,
+      "observed_post_load_gross": 0,
+      "observed_post_reverse_load": 0,
+      "phase_untouched_total": 0,
+      "worlds": 32,
+      "worlds_with_untouched": 0,
+      "zero_fresh_opportunity_losses": 1
+    }
+  },
+  "verified": true
+}
