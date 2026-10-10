@@ -8,7 +8,7 @@ from experiments.maintain_audit import successor,thermal,encoded
 
 def interpret(record,revision):
     assert record['schema']=='maintain02-world' and record['source_revision']==revision
-    seed=record['seed'];mask=seed-87000 if seed>=87000 else 21;arm=record['arm']
+    seed=record['seed'];mask=seed-87100 if seed>=87100 else (seed-87000 if seed>=87000 else 21);arm=record['arm']
     assert record['catalogue']==mask and 0<=mask<64 and arm in ('candidate','independent','annealed')
     assert (record['attempts'],record['loss_step'])==(4096,2048) or seed in (0,1)
     randoms=random.Random(seed);digest=hashlib.sha256();state=(4,3,3,0,0)

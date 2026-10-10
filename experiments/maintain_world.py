@@ -10,7 +10,7 @@ ARMS=('candidate','independent','annealed')
 
 def world(seed,arm,revision,attempts=4096,loss_step=2048):
     assert arm in ARMS
-    mask=seed-87000 if seed>=87000 else 21
+    mask=seed-87100 if seed>=87100 else (seed-87000 if seed>=87000 else 21)
     assert 0<=mask<64
     rng=random.Random(seed);draws=hashlib.sha256();s=START
     atoms=[0,1,2];fuels=list(range(3,13));fuel=[True]*10;touched=[False]*10
