@@ -4,6 +4,17 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+RENEWAL-SCOPE-01 closes the next high-information source question before worlds:
+all128 BUFFER cases/640 ledgers and both frozen interpreters cover contact
+replacement only. Five other apparatus roles (seven of nine candidate material
+units) are outside registered damage, so their renewal is NOT MEASURED, not a
+fabricated negative trial. Preserve60 productive prepared certificates and the
+original admission denial. [Coverage receipt](RENEWAL-SCOPE-01-RECEIPT.md).
+Next candidate must declare constitutive fabrication physics versus supplied
+machinery, full-cost raw-to-functional transitions and causal renewal of every
+essential apparatus role before a large panel; universe rules are not objects
+required to reproduce. Preserve the first runner bootstrap-path failure.
+
 BUFFER-01 advances controlled conversion/repair feasibility but does not admit
 worlds. Frozen exact source dcebc7f:128 cases/640 ledgers independently match and
 replay. Sixty installed connected certificates repay startup and produce fresh

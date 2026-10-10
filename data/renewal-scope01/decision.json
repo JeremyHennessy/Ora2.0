@@ -1,0 +1,55 @@
+{
+  "candidate_material_units": 9,
+  "cases": 128,
+  "complete_apparatus_renewal_measured": false,
+  "data_sha256": "e1b1992333b907195f9c369ab1cea3743af2f7c9e22052e88d89ac5cdfe44ca7",
+  "gate_lines": [
+    {
+      "line": 37,
+      "text": "if damage in contacts:contacts.remove(damage);scrap=1"
+    },
+    {
+      "line": 53,
+      "text": "withdraw(Q(3,4));repair+=Q(3,4);raw-=1;contacts.add(damage);rebuilt=True;repair_tick=tick"
+    },
+    {
+      "line": 66,
+      "text": "contacts=sorted(contacts),rebuilt_contact=damage if rebuilt else None,unpaid_upkeep=ratio(unpaid),"
+    }
+  ],
+  "independent_lines": [
+    {
+      "line": 36,
+      "text": "if d in active:active[d]=False;discard=1"
+    },
+    {
+      "line": 51,
+      "text": "construction+=F(3,4);debit(F(3,4));stock-=1;active[d]=True;replacement=t"
+    },
+    {
+      "line": 64,
+      "text": "contacts=sorted(s for s in active if active[s]),rebuilt_contact=d if replacement is not None else None,unpaid_upkeep=ratio(debt),"
+    }
+  ],
+  "ledgers": 640,
+  "natural_worlds": 0,
+  "outside_registered_damage_units": 7,
+  "recorded_contact_replacements": 264,
+  "registered_damage_labels": [
+    0,
+    1
+  ],
+  "replacement_roles": [
+    "contact"
+  ],
+  "scope": "Source and receipt coverage only; absent damage interventions are not failed experiments",
+  "synthetic_out_of_scope_rejected": true,
+  "unmeasured_roles": [
+    "collector",
+    "capacity",
+    "constructor",
+    "load",
+    "bus"
+  ],
+  "verified": true
+}
