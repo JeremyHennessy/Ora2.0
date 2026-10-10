@@ -24,7 +24,8 @@ capture through any first replacement in any arm. Candidate exposure0/64:
 UNDEREXPOSED, close exact law/endowment/horizon. Candidate final work185 versus
 conservative whole surplus-327/post-328. All paid-loss worlds in ALL arms have
 zero untouched fuel tokens at damage: fresh reconstruction endpoint unavailable
-then, despite equal initial and phase-end opportunities. Do not infer catalyst
+then, from equal initial resources and a shared zero-fresh-token limit at paid
+loss. Other phase-end resources and states differ. Do not infer catalyst
 inefficacy under adequate exposure or profitable self-maintenance. Reserved
 samples87100..87163 untouched. Ten candidate worlds had all three active at
 loss; that alone is not qualifying useful organization.
