@@ -1,0 +1,27 @@
+{
+  "backup_sha256": "efdcceb8d66370ff5052c1ac64531f2b4a2913260a42bd838b45884f20ea75c3",
+  "complete_states": [
+    {
+      "cadence": 4,
+      "observed_tick": 27,
+      "states": 33
+    },
+    {
+      "cadence": 8,
+      "observed_tick": 31,
+      "states": 33
+    }
+  ],
+  "full_host_restore": false,
+  "independent_policy": {
+    "losses": [
+      3,
+      7
+    ],
+    "verified": true
+  },
+  "physical_power_loss_test": false,
+  "restored_files": 796,
+  "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+  "verified": true
+}
