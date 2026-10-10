@@ -143,13 +143,20 @@ def fsync_directory(path: Path) -> None:
         pass
 
 
+def write_exact(handle, raw: bytes) -> None:
+    """Never acknowledge or promote a partial successful authoritative write."""
+    count = handle.write(raw)
+    if type(count) is not int or count != len(raw):
+        raise OSError("Incomplete authoritative write")
+
+
 def atomic_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".tmp-" + uuid.uuid4().hex)
     raw = (canonical(payload) + "\n").encode("utf-8")
     try:
         with temporary.open("xb") as handle:
-            handle.write(raw)
+            write_exact(handle, raw)
             handle.flush()
             os.fsync(handle.fileno())
         os.replace(temporary, path)
@@ -404,7 +411,7 @@ def record_step(
     }
     entry = wrapped(body)
     with (folder / "journal.jsonl").open("ab") as handle:
-        handle.write((canonical(entry) + "\n").encode("utf-8"))
+        write_exact(handle, (canonical(entry) + "\n").encode("utf-8"))
         handle.flush()
         os.fsync(handle.fileno())
     return entry["sha256"]
