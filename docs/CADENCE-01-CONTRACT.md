@@ -59,7 +59,7 @@ is backed by successful independent-drive readback/replay, both recovery losses
 match registration, terminal full states agree, and all controls reject false
 records. Report observed timing ranges without statistical/generalization claims.
 The initially preferred proposed cadence is eight transitions, reducing backup
-overhead while limiting unacknowledged work to seven between checkpoints; do
+overhead while limiting unacknowledged work to seven between acknowledged backups; do
 not adopt it if the panel fails. Wall-time loss remains unbounded by this test.
 
 Physical durability, controller-cache behavior, abrupt power loss, full-host
