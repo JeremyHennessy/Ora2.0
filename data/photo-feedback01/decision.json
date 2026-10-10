@@ -25,7 +25,7 @@
     "washout_half_life_hours": 21.66084939249829
   },
   "classification": "NOT_ADMITTED_FOUNDER_FREE_ENTRY_OMITTED_AND_WORK_LEDGER_INCOMPLETE",
-  "conditional_washout": "Perfectly mixed nonrenewing conserved cofactor with unchanged outflow; not an observed withdrawal experiment",
+  "conditional_washout": "Perfectly mixed nonrenewing conserved cofactor at fixed500uL volume: replace ThT feed with cofactor-free carrier while retaining total flow/outflow. Not observed withdrawal behavior.",
   "independent_arithmetic_agreed": true,
   "natural_worlds": 0,
   "published_model_executed": false,
@@ -46,5 +46,6 @@
     "independently usable load output",
     "fresh full-cost repair after blind damage",
     "resource-matched independent/full-shuffle load controls"
-  ]
+  ],
+  "interpretation_clarification": "Post-calculation explicit fixed-volume carrier replacement; arithmetic and original raw decision/contracts preserved unchanged."
 }

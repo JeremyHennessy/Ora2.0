@@ -23,7 +23,8 @@ Separate float arithmetic and Decimal/Fraction arithmetic agree on31.25h residen
 16nmol/h building-block input,0.32nmol/h ThT input and100nmol initial seeded
 building-block equivalents (not100nmol distinct fibres). With perfect mixing,
 conserved ThT and no additional sinks,20uM/10nmol is the conditional steady stock;
-after stopping ThT feed while retaining outflow, its conditional washout half-life
+after replacing ThT feed with cofactor-free carrier at the same flow/volume, its
+conditional washout half-life
 is21.66085h. This is an analytical assumption, not an observed withdrawal result,
 and excludes degradation/adsorption/renewal. The supplied cofactor is not free.
 
