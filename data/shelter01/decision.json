@@ -1,0 +1,21 @@
+{
+  "autonomous_self_maintenance": false,
+  "cases": 16,
+  "decision": "STOP registered all-cost-case shelter gate; no worlds",
+  "failed_comparison_case_indices": [
+    5,
+    7
+  ],
+  "ledgers": 80,
+  "natural_worlds": 0,
+  "positive_funded_bound_by_arm": {
+    "compact": 16,
+    "independent": 16,
+    "individual": 16,
+    "shared": 16,
+    "shuffle": 16
+  },
+  "registered_gate_pass": false,
+  "scope": "Conditional prepared upper bounds; full-shuffle expectation is not a sampled trajectory",
+  "shared_strict_advantage_cases": 14
+}
