@@ -20,9 +20,10 @@ regenerated-fuel post-loss certificate is controlled possibility, not success.
 
 **Next decision:** keep ASSEMBLE closed. Admit a distinct finite capture/retention
 law addressing BOTH post-loss accessible exergy AND useful conversion against
-backflow, with every reverse fully priced. Require primary nulls with matched
-phase-accessible resource/provenance opportunities and full-cost post-loss
-feasibility before samples. No old price/rate/resource/damage/horizon adjustment
+backflow, with every reverse fully priced. Require phase-accessible resource/
+provenance audits and an additional resource-yoked repair comparator; preserve
+initially matched ecological arms when retention is the causal question. Require
+full-cost post-loss feasibility before samples. No old price/rate/resource/damage/horizon adjustment
 or relaxed historical credit rule. No successor admitted; Stage3 incomplete.
 
 **Verification/activity:**32 focused checks, exact phase replay, three forgery

@@ -29,6 +29,11 @@ loss, because their virgin flags were all false and old charge was destroyed.
 Equal initial resources/barrier inventories did not give equal phase-conditioned
 fresh opportunity. This does not erase the negative result or retroactively
 replenish controls; it changes the next prospective comparator admission gate.
+Depletion is itself an outcome of the tested kinetics, not proof of unequal
+initial funding. Do not force endogenous outcomes equal or control away genuine
+resource-preservation benefits. Retain initially matched ecological arms; add a
+separately registered resource-yoked repair comparison when the claim is about
+conversion/reconstruction beyond differences in resource allocation.
 
 The candidate's aggregate post-loss load38 minus reverse load38 is zero BEFORE
 23 destruction debits. This is not a statement that every individual world had
@@ -73,8 +78,10 @@ and guarded manual private integration/full-history closure retained locally.
 Keep ASSEMBLE closed. A distinct finite resource-capture/retention mechanism
 must address BOTH continuing accessible exergy after blind loss AND productive
 coupling against reversal, without suppressing physical reverses for free.
-Match primary controls' phase-accessible resources/provenance and output
-opportunities, rather than only initial inventories or barrier sums. First
+Audit controls' phase-accessible resources/provenance and output opportunities;
+separate resource-preservation effects from repair-specific effects with an
+additional prospectively resource-yoked comparison, retaining ecological arms.
+First
 derive full-cost feasible post-loss work and maintenance paths; then freeze
 unscreened tests. Do not manufacture success by retiming damage, extending the
 old horizon, lowering prices, adding fuel or changing old fresh-credit rules.
