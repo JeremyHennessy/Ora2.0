@@ -24,7 +24,7 @@ New laboratory writers should use this API rather than guessing metadata sizes.
 
 ## Verification and preserved failures
 
-Pre-fix source `cebf5a4de` (resolve the full revision from the run contract) adds
+Pre-fix source `cebf5a4f061c64a38f42226eb458956be44d67b5` adds
 regressions without the repair. A finite 400-file fixture reproduces a saved-ledger
 audit failure while its live ledger passes. The first sandboxed run additionally
 blocked the existing native hard-link test; the native rerun passes that check and
