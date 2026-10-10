@@ -53,3 +53,12 @@ https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41467
 All measurement questions, rejection rules, page/file/process/storage limits
 remain unchanged. Preserve the first run; this changes transport, not evidence
 interpretation or a scientific law. No CAPTCHA solving or access-control bypass.
+
+The v2 `/full/` path returned3038 bytes of HTML and is preserved. The actual
+publisher download link is `/original/`, as exposed by the web reader. Its
+indexed extraction exposes7 pages and6 supplementary figure captions; that is
+not an independently hashed local PDF or visual verification. Register one
+fresh v3 byte-acquisition attempt at the actual original link before using
+local parsers/renders. Same host/filename and all limits apply; no challenge is
+solved and no cookies are reused. If access still fails, retain the indexed-text
+scope and mark local byte/visual verification incomplete instead of retrying.
