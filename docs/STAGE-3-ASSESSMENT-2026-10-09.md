@@ -17,6 +17,16 @@ possibility, rare natural reactions and repeatable organization are distinct.
 
 ## October 10 electrical-work admission
 
+RECTIFY-01 extends the distinct-mechanism comparison to directional conversion,
+with paid store setup/maintenance and damage replacement.384 cases,1,536 ledgers,
+exact independent calculations/replay;381 cases fund all alternatives, three
+retain single-converter patch failures. Bridge80 positive full-life certificates,
+zero primary acceptance; balanced independent converters beat bridge net work
+after damage in every complete case. Prepared apparatus and scheduled repair
+remain controlled-only possibilities for3.1–3.3. No additional autonomous
+capability in3.4–3.6 and no natural worlds. Reject the tested bridge law before
+topology/world sampling. [Frozen evidence and audit failure](RECTIFY-01-RECEIPT.md).
+
 CONDUCTION-01 tests a distinct prepared electrical network with useful work
 separate from resistive heat, paid construction, maintenance and unit replacement.
 972 exact cases, independent interpreter and replay agree. 324 scheduled repair

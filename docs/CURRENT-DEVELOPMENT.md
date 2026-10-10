@@ -4,6 +4,22 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+RECTIFY-01 tests a distinct directional conversion primitive rather than more
+segmentation. Frozen law bce80bc, corrected separate auditor33439b6:384 cases,
+1,536 ledgers exactly match and replay;381 cases fund all alternatives, three
+retain independent patch failures. Zero bridge successes on both registered
+endpoints; two independent converters outperform bridge post-damage work in
+all381 complete cases. Reject before worlds. Preserve the first audit failure;
+do not change prices/horizon or discard failed controls.
+[Scientific receipt](RECTIFY-01-RECEIPT.md). No Stage3 acceptance.
+
+TELEMETRY-BOUNDS-01 reproduces an unbounded checksum read before evidence
+validation; bounded streaming, enumeration and aggregate checks repair it.
+Eight fixture/bounds tests pass; actual oversized-file refusal and native
+state/identity/cache/read-only audit independently pass. Corrected audit-v2
+preserves an earlier size-report variable collision. Approved UI is unchanged.
+[Engineering receipt](TELEMETRY-BOUNDS-01-RECEIPT.md).
+
 The latest human instruction resumes both tracks within the computational
 universe. CONDUCTION-01 frozen source d486586 adds a distinct electrical-work
 accounting admission, not a change to existing scientific laws. All 972 cases
