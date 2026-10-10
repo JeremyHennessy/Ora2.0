@@ -32,3 +32,14 @@ class BufferTests(unittest.TestCase):
         self.assertEqual(value(producer.ratio(exact)),exact)
         self.assertEqual(value(independent.ratio(exact)),exact)
         self.assertEqual(sys.get_int_max_str_digits(),before)
+
+    def test_apparent_advantage_cannot_bypass_control_opportunity_gate(self):
+        import copy
+        c=dict(fundable=True,whole='4',post='3',fresh_output='1',cutoff_upper_reject=False)
+        control=dict(fundable=True,whole='2',post='1',fresh_output='1')
+        row=dict(arms={a:copy.deepcopy(c if a=='connected' else control) for a in producer.ARMS})
+        self.assertEqual(producer.decision([row])['decision'],'CONDITIONAL PREPARED FEASIBILITY ONLY')
+        row['arms']['loop']['whole']='-1'
+        result=producer.decision([row])
+        self.assertEqual(result['qualifying_cases'],1)
+        self.assertIn('NOT ADMITTED',result['decision'])

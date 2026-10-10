@@ -76,9 +76,13 @@ def panel():
 def decision(rows):
     number=lambda v: Q(int(v['numerator_hex'],16),int(v['denominator_hex'],16)) if isinstance(v,dict) else Q(v)
     complete=qualifying=positive=restored=0;failures={a:0 for a in ARMS};upper=0
+    opportunities={a:0 for a in ARMS}
     for row in rows:
         arms=row['arms'];c=arms['connected'];upper+=int(c['cutoff_upper_reject'])
-        for a in ARMS:failures[a]+=int(not arms[a]['fundable'])
+        for a in ARMS:
+            v=arms[a];failures[a]+=int(not v['fundable'])
+            opportunities[a]+=int(v['fundable'] and number(v['whole'])>0 and v['post'] is not None
+                and number(v['post'])>0 and number(v['fresh_output'])>0)
         positive+=int(c['fundable'] and number(c['whole'])>0 and c['post'] is not None and number(c['post'])>0)
         restored+=int(number(c['fresh_output'])>0)
         if not all(a['fundable'] for a in arms.values()):continue
@@ -88,6 +92,8 @@ def decision(rows):
             and all(number(c['whole'])>number(a['whole']) and number(c['post'])>number(a['post']) for a in controls))
     return dict(cases=len(rows),arm_ledgers=len(rows)*5,complete_cases=complete,qualifying_cases=qualifying,
         positive_candidate_cases=positive,fresh_rebuilt_output_cases=restored,failed_by_arm=failures,
+        full_endpoint_by_arm=opportunities,
         early_cutoff_upper_rejections=upper,natural_worlds=0,natural_admission=False,
-        decision='CONDITIONAL PREPARED FEASIBILITY ONLY' if qualifying else 'REJECT UNDER FROZEN LAW',
+        decision=('NOT ADMITTED: incomplete comparator opportunity' if any(opportunities[a]==0 for a in ARMS[1:])
+            else ('CONDITIONAL PREPARED FEASIBILITY ONLY' if qualifying else 'REJECT UNDER FROZEN LAW')),
         limitations='Installed collectors, stores, cutoff, load and constructor; natural primitive/formation costs and rates remain uncalibrated')
