@@ -41,6 +41,20 @@ for3.1/3.2 but adds no accepted capability in3.3–3.6. No organism or spatial
 substrate is installed; channeling in general is not disproved.
 [Exact unit-grid scope and evidence](CHANNEL-01-RECEIPT.md).
 
+## Complete spatial paid-renewal follow-up
+
+LOCAL-01 completes a costed local conversion/construction/renewal toy law rather
+than another incomplete admission prototype. Three equal attainable physical
+graphs and authored paid-repair paths pass;96 raw-start worlds all primary0/32.
+Candidate loss1/32 is underexposed, both pairedP1. One candidate paid first renewal
+does not repay its post-damage costs; whole usable-store87 contrasts with registered
+fresh linked surplus-221.3.1/3.2 gain independently audited raw-start paid chemistry;
+3.3/3.4 still lack profitable functional renewal,3.5 has no assistance-withdrawal
+test,3.6 no inherited organization. Installed toy physics is not autonomous origin.
+Close exact law/resources/horizon; next distinct direct resource/renewal coupling
+needs its own full-cost admission, not a parameter adjustment.
+[Exact controls, provenance and limitations](LOCAL-01-RECEIPT.md).
+
 ## Strongest evidence and limits
 
 REDOX-01 is a new, distinct photochemical state-cycle comparison, not a parameter

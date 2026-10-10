@@ -1,0 +1,35 @@
+{
+  "controlled_certificates": 3,
+  "graphs": [
+    {
+      "arm": "candidate",
+      "edges": 173300,
+      "protected_heat_work_ceiling": 60,
+      "rate_signatures": 638,
+      "state_sha256": "db62f63a382e909ab39820bed5cff43fa436f1642a7c9e3886f62ea71f64b8d6",
+      "states": 19926
+    },
+    {
+      "arm": "independent",
+      "edges": 173300,
+      "protected_heat_work_ceiling": 60,
+      "rate_signatures": 528,
+      "state_sha256": "db62f63a382e909ab39820bed5cff43fa436f1642a7c9e3886f62ea71f64b8d6",
+      "states": 19926
+    },
+    {
+      "arm": "shuffled",
+      "edges": 173300,
+      "protected_heat_work_ceiling": 60,
+      "rate_signatures": 638,
+      "state_sha256": "db62f63a382e909ab39820bed5cff43fa436f1642a7c9e3886f62ea71f64b8d6",
+      "states": 19926
+    }
+  ],
+  "mechanism_admitted": true,
+  "mode": "gate",
+  "natural_worlds": 0,
+  "self_maintenance_demonstrated": false,
+  "source_revision": "cb2b08c94475bfb96333817f448cd4a4037c7e42",
+  "verified": true
+}

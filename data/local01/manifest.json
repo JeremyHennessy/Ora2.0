@@ -1,0 +1,11 @@
+{
+  "controlled_cases": 3,
+  "kinetic_contexts": 6,
+  "protocol_revision": "b708324",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "raw_start_worlds": 96,
+  "research_revision": "09f4f33f5e7e76bd47d8d7278dd1ab6d38b96948",
+  "resource_tokens": 10,
+  "source_revision": "cb2b08c94475bfb96333817f448cd4a4037c7e42",
+  "total_reservation": 209715200
+}
