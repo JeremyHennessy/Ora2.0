@@ -1,0 +1,9 @@
+{
+  "cases": 32,
+  "ledgers": 128,
+  "lever_strictly_dominates": 32,
+  "minimum_post_difference": "3/16",
+  "minimum_whole_difference": "5/8",
+  "scope": "Declared ideal law and positive uniform costs; not a universal gearing impossibility",
+  "verified": true
+}

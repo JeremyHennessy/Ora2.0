@@ -1,0 +1,16 @@
+{
+  "assembly_dynamics": false,
+  "autonomous_self_maintenance": false,
+  "cases": 32,
+  "decision": "REJECT fixed-ratio ideal gear train: attainable equal-ratio lever bounds strictly dominate",
+  "gear_advantages": 0,
+  "ledgers": 128,
+  "natural_worlds": 0,
+  "positive_bound_by_arm": {
+    "direct": 24,
+    "gear": 32,
+    "lever": 32,
+    "shuffle": 16
+  },
+  "scope": "Necessary accounting bounds only; fabrication accessibility and rates remain unmeasured"
+}
