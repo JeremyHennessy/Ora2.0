@@ -1,0 +1,167 @@
+{
+  "chosen_acknowledged_loss_budget": 0,
+  "full_host_restore": false,
+  "new_security_identity": false,
+  "physical_disks": [
+    0,
+    1
+  ],
+  "physical_power_loss_test": false,
+  "pilot_activated": false,
+  "preferred_proposed_cadence": 8,
+  "records": [
+    {
+      "acknowledged_loss": 0,
+      "acknowledged_tick": 24,
+      "acknowledgements": [
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick4.zip",
+          "archive_sha256": "43deef549418866f0580dae06c7ab9adbc5f34191f2d9b6153f74ae2184c772e",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.3279999999795109,
+          "issued_utc": "2026-10-10T16:16:13.867966+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 4,
+          "worker_seconds": 0.6719999999913853,
+          "world_id": "cadence01-4"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick8.zip",
+          "archive_sha256": "f38309ab4758c0ce33cd890ebd52669294726af8bdea60e68ce5163781d86705",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.34400000001187436,
+          "issued_utc": "2026-10-10T16:16:14.982023+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 8,
+          "worker_seconds": 0.6410000000032596,
+          "world_id": "cadence01-4"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick12.zip",
+          "archive_sha256": "552728aeda17a1bb0d5f0ca0ff4c50b7ae7f563e51876e188f57bf93f4481032",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.34400000001187436,
+          "issued_utc": "2026-10-10T16:16:16.032845+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 12,
+          "worker_seconds": 0.5779999999795109,
+          "world_id": "cadence01-4"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick16.zip",
+          "archive_sha256": "43c240f6b1ed8c716cd3ab879959c8f2f4fbbc80676b7a792195d8e92eb6afec",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.34299999999348074,
+          "issued_utc": "2026-10-10T16:16:17.202241+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 16,
+          "worker_seconds": 0.6870000000053551,
+          "world_id": "cadence01-4"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick20.zip",
+          "archive_sha256": "3e9b24b09eef99bc14c1059cbf5d39cfd09ec067e8d329272c5f2ff33fec9d91",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.40700000000651926,
+          "issued_utc": "2026-10-10T16:16:18.393770+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 20,
+          "worker_seconds": 0.6570000000065193,
+          "world_id": "cadence01-4"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c4-tick24.zip",
+          "archive_sha256": "f53acd533369fb1c91dade2f7df4386320b4ef5ebe6455252107db716adc8dc6",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.375,
+          "issued_utc": "2026-10-10T16:16:19.500763+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "e390fd3279b46a91929200fcd933c0153390ad5445e500ae057779a3867249f1",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 24,
+          "worker_seconds": 0.5460000000020955,
+          "world_id": "cadence01-4"
+        }
+      ],
+      "cadence": 4,
+      "complete_states_equal": 33,
+      "observed_tick": 27,
+      "raw_prefix_preserved": true,
+      "unacknowledged_loss": 3
+    },
+    {
+      "acknowledged_loss": 0,
+      "acknowledged_tick": 24,
+      "acknowledgements": [
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c8-tick8.zip",
+          "archive_sha256": "9fd88dd4852e5ef900af04bd3866f4e5ca671017fab58db7ceccd44a00336e59",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.32800000000861473,
+          "issued_utc": "2026-10-10T16:16:24.762862+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "51d3d73960a2f853fac2a3e1029f4c1b4572dd2ff26e1d06f977138bed34424b",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 8,
+          "worker_seconds": 0.9070000000065193,
+          "world_id": "cadence01-8"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c8-tick16.zip",
+          "archive_sha256": "d9e621728cbc8948b3a2791e1e2661590778a579c1654db73bac103644b1588b",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.35999999998603016,
+          "issued_utc": "2026-10-10T16:16:26.276409+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "51d3d73960a2f853fac2a3e1029f4c1b4572dd2ff26e1d06f977138bed34424b",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 16,
+          "worker_seconds": 1.0,
+          "world_id": "cadence01-8"
+        },
+        {
+          "archive": "C:\\ora\\cadence01-20261010\\c8-tick24.zip",
+          "archive_sha256": "781e88d02affc400bfc55abe0025e7b6abbe9f8388526d65d21348f864b40e63",
+          "audit_exit": 0,
+          "backup_readback_audit_seconds": 0.3590000000258442,
+          "issued_utc": "2026-10-10T16:16:27.667213+00:00",
+          "physically_durable": false,
+          "readback_exit": 0,
+          "run_id": "51d3d73960a2f853fac2a3e1029f4c1b4572dd2ff26e1d06f977138bed34424b",
+          "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+          "tick": 24,
+          "worker_seconds": 0.8589999999967404,
+          "world_id": "cadence01-8"
+        }
+      ],
+      "cadence": 8,
+      "complete_states_equal": 33,
+      "observed_tick": 31,
+      "raw_prefix_preserved": true,
+      "unacknowledged_loss": 7
+    }
+  ],
+  "schema": "cadence01-v1",
+  "scientific_progress": false,
+  "source_revision": "cfd405bef30547e4306bdf1575b50959304d1638",
+  "verified": true,
+  "wall_time_loss_bound_established": false
+}

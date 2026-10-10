@@ -2,6 +2,34 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Next cycle: profitable reconstruction before natural-world sampling
+
+The current user priority is a complete energy-producing and repair mechanism.
+Require independently usable output exceeding all formation, maintenance,
+replacement, release and endowment costs, both whole-life and post-damage.
+First reject any law whose conservative output ceiling cannot exceed its full
+cost floor; unknown prices do not count as zero. Account finite environmental
+exergy without demanding output exceed the source energy itself.
+
+Compare organized structures with attainable resource-matched independent
+components and full-shuffle controls. Equal useful performance does not establish
+an advantage from organization. Freeze opportunity, costs, damage, reconstruction
+provenance, withdrawal/reserves and falsifiers before sampling. Only admit a
+natural-world panel after feasibility and control opportunity are established.
+No supplied successful founder, favorable-seed screening or tuning closed laws.
+DENDRITE/AMPHIPHILE remain uncalibrated; no new scientific mechanism accepted.
+AI-Research remains independent at accepted Pass39/main09f4f33; current CI passed.
+
+In parallel, CADENCE-01 [contract](CADENCE-01-CONTRACT.md) / [receipt](CADENCE-01-RECEIPT.md)
+chooses a proposed zero-acknowledged-transition loss budget: acknowledge only
+independent-drive readback/replayed backups. Nine acknowledgements verified;
+4/8-step backup batches lose0 acknowledged and3/7 unacknowledged transitions;
+fresh-process continuation matches all33 complete states. Complete C: readback
+and separate restored-source audit passed. Proposed eight-step cadence is a
+small-fixture procedure, not a wall-time guarantee or pilot approval. Physical
+power-loss/cache durability, full-host restoration and production confinement
+remain acceptance gates; no persistent world or observer publication activated.
+
 ## Engineering measurement: acknowledged rollback and exact recomputation
 
 LOST-WORK-01 source70ee57a98144e67d3607b73227d3c0859701a0e8;
@@ -21,10 +49,10 @@ law/protocol/endpoints. C0/D1 backup readback restores695 files and reruns both
 audits;355 older backup files unchanged. No new security SID or physical
 power-loss/full-host test; this is an application recovery measurement.
 
-**Remaining engineering decision:** choose an explicit acceptable acknowledged
-rollback budget and measured backup/checkpoint cadence; verify actual physical
-durability, full-host recovery and production isolation before a separately
-approved supervised pilot. This panel imposes no loss policy and starts no pilot.
+**Subsequent policy decision:** CADENCE-01 above now selects the proposed loss
+budget and measures stopped-world backup cadence. Physical durability, full-host
+recovery and production isolation remain before a separately approved supervised
+pilot. LOST-WORK-01 itself imposed no loss policy and started no pilot.
 Science remains the primary next decision below; Stage3 acceptance unchanged.
 
 ## Latest scientific admission: powered conductive growth lacks a repair-surplus ledger
