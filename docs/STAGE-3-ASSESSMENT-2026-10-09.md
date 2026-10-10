@@ -25,7 +25,7 @@ after28 losses, zero positive post-damage surplus. Initial reserves can pay repa
 283 net load transfers versus total whole-life store surplus-495 cannot be
 called net self-maintenance. All96 working-shuffle aliases exactly match candidate.
 No natural-world claim: raw atoms coexist with installed contacts/constructor.
-3.1/3.2 controlled conversion/paid renewal possibilities are stronger;3.3–3.6
+3.1/3.2 controlled conversion/paid renewal possibilities are stronger;3.3â€“3.6
 acceptance remains absent. Close tested law/prices/horizon, not tune toward success.
 [Exact source, all controls and preservation](THERMAL-01-02-RECEIPT.md).
 
