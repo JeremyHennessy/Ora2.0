@@ -1,0 +1,10 @@
+{
+  "cases": 16,
+  "compact_comparison_nonpositive_whole": 2,
+  "exact_shuffle_armor_hit_probability": "8/15",
+  "ledgers": 80,
+  "minimum_post_advantage": "24",
+  "minimum_whole_advantage": "-16",
+  "scope": "Bounds and ensemble expectations, not material identities or observed recovery",
+  "verified": true
+}

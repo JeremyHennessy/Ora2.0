@@ -4,6 +4,17 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+SHELTER-01 tests a distinct shared-protection mechanism before worlds. Frozen
+075836a:16 cases/80 exact prepared bounds match separate geometry/accounting
+and replay; three checks pass. Every comparator has positive funded whole/post
+bounds in every case. Shelter beats all controls in14 cases, but compact bare
+converters beat whole-life shelter output in two cases; the registered all-case
+gate fails. Preserve conditional opportunities and both failures; no cost/horizon
+tuning or natural-world admission. [Receipt](SHELTER-01-RECEIPT.md).
+Supplied geometry, instantaneous replacement and ensemble expectations are not
+autonomous self-maintenance. Next science needs accessible full-cost formation,
+conversion and renewal with causal advantage over viable simple alternatives.
+
 TRANSMISSION-01 rejects a distinct ideal mechanical matching candidate before
 worlds. Frozen c664bb9:32 cases/128 exact ledgers match independent interpretation
 and replay; three checks pass. All controls have positive whole/post accounting
