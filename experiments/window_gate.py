@@ -7,11 +7,11 @@ ARMS=('candidate','independent','shuffled')
 def packed(v):return json.dumps(v,sort_keys=True,separators=(',',':')).encode()
 
 def measure(r):
-    virgin=set(range(10));phase=r['states'][0][:4]
+    virgin=set(range(10));phase=r['states'][0][:4];tokens=[0]*10
     for e in r['events']:
         if e['step']>=2048:break
         phase=e['after'];k,j,d=e['action']
-        if k in ('assemble','drive','waste'):virgin.discard(j)
+        if k in ('assemble','drive','waste'):virgin.discard(j);tokens[j]=int(d==1)
     available=sorted(virgin);loss=next((e for e in r['events'] if e['action'][0]=='damage'),None)
     allvirgin=set(available);fates=[];charges=[];pending=None;loads=reverse=firstuse=0
     for e in r['events']:
@@ -39,7 +39,8 @@ def measure(r):
     certificate=None
     if loss is not None and not available and phase[0]>=2:
         s=tuple(loss['after']);states=[list(s)+[heat(s)]]
-        actions=[('passive',0,1)]+[a for j in (0,1) for a in [('drive',j,1),('relax',0,1),('load',0,1)]]
+        fuel_ids=[j for j,x in enumerate(tokens) if x==0][:2];assert len(fuel_ids)==2
+        actions=[('passive',0,1)]+[a for j in fuel_ids for a in [('drive',j,1),('relax',0,1),('load',0,1)]]
         for action in actions:
             nxt,rate=transition(s,action,r['arm']);assert rate>0;s=nxt;states.append(list(s)+[heat(s)])
         assert s[3]-loss['before'][3]==3 and heat(s)>=heat(loss['before'])

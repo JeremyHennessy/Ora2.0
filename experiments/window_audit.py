@@ -7,11 +7,13 @@ NAMES=('candidate','independent','shuffled')
 def encoded(x):return json.dumps(x,sort_keys=True,separators=(',',':')).encode()
 
 def inspect(record):
-    first={};phase=record['states'][0][:4]
+    first={};phase=record['states'][0][:4];tokens=[0]*10
     for e in record['events']:
         k,j,d=e['action']
         if k in ('assemble','drive','waste') and j not in first:first[j]=e
-        if e['step']<2048:phase=e['after']
+        if e['step']<2048:
+            phase=e['after']
+            if k in ('assemble','drive','waste'):tokens[j]=1 if d==1 else 0
     virgin=sorted(j for j in range(10) if j not in first or first[j]['step']>=2048)
     destruction=[e for e in record['events'] if e['action'][0]=='damage'];assert len(destruction)<=1
     loss=bool(destruction);charge=None;ends=[];fates=[];gross=returns=rebuiltgross=0
@@ -38,7 +40,9 @@ def inspect(record):
     certificate=None
     if loss and not virgin and phase[0]>=2:
         damage=destruction[0];v=tuple(damage['after']);states=[list(v)+[thermal(v)]]
-        actions=[['passive',0,1],['drive',0,1],['relax',0,1],['load',0,1],['drive',1,1],['relax',0,1],['load',0,1]]
+        fuel_ids=sorted(j for j in range(10) if tokens[j]==0);assert len(fuel_ids)==phase[0]
+        actions=[['passive',0,1]]
+        for j in fuel_ids[:2]:actions.extend([['drive',j,1],['relax',0,1],['load',0,1]])
         for action in actions:
             v,rate=interpret(v,action,record['arm']);assert rate>0;states.append(list(v)+[thermal(v)])
         assert v[3]==damage['before'][3]+3 and thermal(v)>=thermal(damage['before'])
