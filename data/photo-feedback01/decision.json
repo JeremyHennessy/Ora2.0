@@ -1,0 +1,50 @@
+{
+  "calculations": {
+    "ThT_nmol_h": 0.32,
+    "assembled_birth_channels": 12,
+    "assembled_birth_rates_at_zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "building_block_nmol_h": 16,
+    "conditional_ThT_inventory_nmol": 10.0,
+    "conditional_ThT_uM": 20.0,
+    "founder_free_birth_possible_under_published_model": false,
+    "residence_hours": 31.25,
+    "seed_building_block_nmol": 100.0,
+    "washout_half_life_hours": 21.66084939249829
+  },
+  "classification": "NOT_ADMITTED_FOUNDER_FREE_ENTRY_OMITTED_AND_WORK_LEDGER_INCOMPLETE",
+  "conditional_washout": "Perfectly mixed nonrenewing conserved cofactor with unchanged outflow; not an observed withdrawal experiment",
+  "independent_arithmetic_agreed": true,
+  "natural_worlds": 0,
+  "published_model_executed": false,
+  "source_pages": [
+    97,
+    100,
+    107,
+    123,
+    124,
+    125
+  ],
+  "source_sha256": "7679626d2e8814c44b7c14453e565034a9242ddbae85347f00672b4f3e807dd5",
+  "stop_decision": "Do not run founder-free worlds from this seed-dependent reduced model or infer work surplus from oxidation/replication rates. New physically costed nucleation, source and output law would be a distinct prospective candidate.",
+  "structural_scope": "Published reduced ODE only; no assertion physical nucleation impossible",
+  "unknowns": [
+    "complete light and source preparation prices",
+    "cofactor synthesis/maintenance/replacement",
+    "independently usable load output",
+    "fresh full-cost repair after blind damage",
+    "resource-matched independent/full-shuffle load controls"
+  ]
+}

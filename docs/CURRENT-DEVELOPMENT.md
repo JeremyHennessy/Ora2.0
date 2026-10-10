@@ -2,6 +2,18 @@
 
 **Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
+## Latest scientific admission: photocatalytic feedback requires an installed parent
+
+PHOTO-FEEDBACK-01 [source/accounting decision](PHOTO-FEEDBACK-01-ADMISSION.md).
+Original supplement checked: all12 assembled-production channels require an
+assembled parent; nucleation omitted. Exact zero-founder face cannot produce
+an assembled replicator under this reduced model. Independent flow arithmetic
+agrees; cofactor feed/seed capital explicit. No author model or world executed.
+Full useful-load/repair prices remain unknown. Decline a founder-free panel of
+this model; physical nucleation or real catalytic feedback is not disproved.
+Next: a complete costed entry/conversion/replacement/load law with attainable
+independent, shuffle and function-disabled controls. No favorable missing prices.
+
 ## Next cycle: profitable reconstruction before natural-world sampling
 
 The current user priority is a complete energy-producing and repair mechanism.
@@ -18,7 +30,13 @@ provenance, withdrawal/reserves and falsifiers before sampling. Only admit a
 natural-world panel after feasibility and control opportunity are established.
 No supplied successful founder, favorable-seed screening or tuning closed laws.
 DENDRITE/AMPHIPHILE remain uncalibrated; no new scientific mechanism accepted.
-AI-Research remains independent at accepted Pass39/main09f4f33; current CI passed.
+AI-Research was at Pass39 when this cycle began. Final remote recheck found
+concurrently merged Pass40/41 at main59cbd90b5e0210dfd6cb03d5d1015d8d2e327fad;
+exact-main workflow38067293522 passed. Local research checkout is preserved.
+Intake separates catalytic function/encapsulation and encoded membrane scission
+from full machinery renewal/lineage closure; no new Ora mechanism admitted.
+Next source admission must price photon/cofactor preparation, fresh replacement
+and usable-load coupling and retain function-disabled/independent-component controls.
 
 In parallel, CADENCE-01 [contract](CADENCE-01-CONTRACT.md) / [receipt](CADENCE-01-RECEIPT.md)
 chooses a proposed zero-acknowledged-transition loss budget: acknowledge only
