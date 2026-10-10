@@ -74,20 +74,20 @@ def panel():
 
 
 def decision(rows):
+    number=lambda v: Q(int(v['numerator_hex'],16),int(v['denominator_hex'],16)) if isinstance(v,dict) else Q(v)
     complete=qualifying=positive=restored=0;failures={a:0 for a in ARMS};upper=0
     for row in rows:
         arms=row['arms'];c=arms['connected'];upper+=int(c['cutoff_upper_reject'])
         for a in ARMS:failures[a]+=int(not arms[a]['fundable'])
-        positive+=int(c['fundable'] and Q(c['whole'])>0 and c['post'] is not None and Q(c['post'])>0)
-        restored+=int(Q(c['fresh_output'])>0)
+        positive+=int(c['fundable'] and number(c['whole'])>0 and c['post'] is not None and number(c['post'])>0)
+        restored+=int(number(c['fresh_output'])>0)
         if not all(a['fundable'] for a in arms.values()):continue
         complete+=1
         controls=[arms[a] for a in ARMS if a!='connected']
-        qualifying+=int(Q(c['whole'])>0 and Q(c['post'])>0 and Q(c['fresh_output'])>0
-            and all(Q(c['whole'])>Q(a['whole']) and Q(c['post'])>Q(a['post']) for a in controls))
+        qualifying+=int(number(c['whole'])>0 and number(c['post'])>0 and number(c['fresh_output'])>0
+            and all(number(c['whole'])>number(a['whole']) and number(c['post'])>number(a['post']) for a in controls))
     return dict(cases=len(rows),arm_ledgers=len(rows)*5,complete_cases=complete,qualifying_cases=qualifying,
         positive_candidate_cases=positive,fresh_rebuilt_output_cases=restored,failed_by_arm=failures,
         early_cutoff_upper_rejections=upper,natural_worlds=0,natural_admission=False,
         decision='CONDITIONAL PREPARED FEASIBILITY ONLY' if qualifying else 'REJECT UNDER FROZEN LAW',
         limitations='Installed collectors, stores, cutoff, load and constructor; natural primitive/formation costs and rates remain uncalibrated')
-

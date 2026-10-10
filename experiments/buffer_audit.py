@@ -70,4 +70,3 @@ def panel():
     for p,d,m,b in product(range(16),range(2),(F(1,32),F(1,8)),(F(1,2),F(1))):
         answer.append(dict(pattern=p,damage=d,m=str(m),bus=str(b),arms={a:evaluate(p,d,m,b,a) for a in ('connected','balanced','single0','single1','loop')}))
     return answer
-
