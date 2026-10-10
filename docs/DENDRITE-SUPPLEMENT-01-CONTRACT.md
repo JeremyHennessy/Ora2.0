@@ -40,3 +40,16 @@ MiB,145MiB total under trusted prewrite accounting; source retrieval and renderi
 are bounded and sequential. Preserve checksums, exits, prior-failure records,
 independent text/schema interpretation, archive restoration and C:/ora readback.
 No physical durability/full-host or self-maintenance claim follows.
+
+## Prospective transport clarification after failed acquisition
+
+The original two-request run is preserved at D:/OraLab/runs/dendrite-supplement01-
+20261010:PMC returned5581 bytes of HTML, not PDF; the older static-content host
+failed DNS resolution. Neither supplement text nor figures were inspected.
+The current publisher article's Supplementary Information link instead uses
+media.springernature.com. Before acquiring that content, allow a fresh v2 run
+with ONE request to its exact same41467_2021_27274_MOESM1_ESM.pdf:
+https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41467-021-27274-9/MediaObjects/41467_2021_27274_MOESM1_ESM.pdf
+All measurement questions, rejection rules, page/file/process/storage limits
+remain unchanged. Preserve the first run; this changes transport, not evidence
+interpretation or a scientific law. No CAPTCHA solving or access-control bypass.
