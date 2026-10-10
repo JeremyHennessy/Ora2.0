@@ -1,5 +1,6 @@
 import copy
 import io
+import json
 import os
 import tempfile
 from pathlib import Path
@@ -79,6 +80,45 @@ class EvidenceBudgetTests(unittest.TestCase):
             self.assertEqual(b.snapshot(),before)
         self.assertEqual((self.root/'raw/alias').read_bytes(),b'x')
         with self.assertRaises(ValueError):audit(self.root,b.snapshot(),{'raw':10},10)
+
+    def large_inventory(self,b):
+        # Finite filesystem fixture whose receipt crosses the former 64 KiB guess.
+        for i in range(400):
+            with b.create('raw',str(i).zfill(4)+'x'*160) as f:f.write(b'x')
+
+    def test_old_snapshot_pattern_has_valid_live_but_invalid_saved_ledger(self):
+        limits={'raw':1024,'failure':262144};b=Budget(self.root,limits,263168)
+        self.large_inventory(b)
+        with b.create('failure','budget.json',65536) as f:
+            f.write(json.dumps(b.snapshot()).encode())
+        saved=json.loads((self.root/'failure/budget.json').read_bytes())
+        self.assertGreater((self.root/'failure/budget.json').stat().st_size,65536)
+        audit(self.root,b.snapshot(),limits,263168)
+        with self.assertRaisesRegex(ValueError,'Physical bytes exceed'):
+            audit(self.root,saved,limits,263168)
+
+    def test_saved_snapshot_accounts_for_itself_and_refuses_overwrite(self):
+        limits={'raw':1024,'failure':262144};b=Budget(self.root,limits,263168)
+        self.large_inventory(b)
+        path=b.write_snapshot('failure','budget.json')
+        saved=json.loads(path.read_bytes())
+        self.assertGreater(path.stat().st_size,65536)
+        self.assertEqual(saved,b.snapshot())
+        audit(self.root,saved,limits,263168)
+        before=path.read_bytes()
+        with self.assertRaises(QuotaError):b.write_snapshot('failure','budget.json')
+        self.assertEqual(path.read_bytes(),before)
+
+    def test_snapshot_capacity_refusal_precedes_content_write(self):
+        for limits,total in [({'raw':10,'failure':10},1000),
+                             ({'raw':10,'failure':1000},10)]:
+            with self.subTest(limits=limits,total=total):
+                root=self.root/str(total);self.root.mkdir(exist_ok=True)
+                b=Budget(root,limits,total)
+                with b.create('raw','a') as f:f.write(b'x')
+                with self.assertRaises(QuotaError):b.write_snapshot('failure','budget.json')
+                self.assertEqual((root/'failure/budget.json').read_bytes(),b'')
+                audit(root,b.snapshot(),limits,total)
 
 
 if __name__=='__main__':unittest.main()
