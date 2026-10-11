@@ -5,7 +5,7 @@ from experiments.photofactory_audit import audit
 
 
 class PhotofactoryTests(unittest.TestCase):
-    def test_complete_renewal_and_dominance(self):
+    def test_controlled_direct_reconstruction_and_stationary_dominance(self):
         result=audit(experiment())
         self.assertEqual(result['decision'],'REJECT_BEFORE_NATURAL_WORLDS')
         self.assertEqual(result['results']['candidate']['formed_devices'],15)
