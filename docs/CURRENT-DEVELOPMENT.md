@@ -88,6 +88,9 @@ coatings, anchors and assembled functional geometry still require paid renewal.
 The inspected formation study supplies immobile preassembled colloids. A
 [reduced reciprocal gradient design](FREE-CAPILLARY-TRANSFER-01-GRADIENT-DESIGN.md)
 addresses only conservative derivatives, not a complete converter or work.
+[Verified algebra receipt](FREE-CAPILLARY-TRANSFER-01-GRADIENT-RECEIPT.md):
+three states/23 derivatives, six focused tests and independent restored replay
+pass. Work/comparator remain unmeasured; no candidate admission or Stage3 credit.
 First remaining blocker: finite thermodynamic/dynamic closure (U/S/temperature,
 moving fluid/solid, diffusion/waste, load and all-role construction/renewal).
 No actual whole/fresh profitable simpler route. Specify the complete closure
