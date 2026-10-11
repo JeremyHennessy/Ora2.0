@@ -4,6 +4,17 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+REPAIR-POOL-01 checks a distinct energy-sharing direction against optimal
+pre-loss local repair reserves, retaining all unused control work. Frozen8064f45:
+all1728 exact cases match74244 independently enumerated allocations and replay;
+three scoped checks pass.1064 pooled cases are underfunded,506 funded frontiers
+are nonpositive,158 are conditionally positive. No opportunity permits extra
+apparatus bill K>=2 within this range. [Receipt](REPAIR-POOL-01-RECEIPT.md).
+Unknown common and apparatus costs, raw formation and all-role renewal keep
+admission false. Next decision needs an actual complete law satisfying the strict
+cost frontier and profitable independent/stationary/full-shuffle controls;
+do not select the158 cases for worlds or claim repaired organization.
+
 DENDRITE-SUPPLEMENT-01 checks the missing construction-energy source record.
 Indexed supplementary text describes characterization, morphology and stability;
 it does not establish a complete paid formation/repair budget. Four bounded
