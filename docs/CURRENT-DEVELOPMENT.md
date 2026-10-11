@@ -89,7 +89,7 @@ counter forgery; strict audit repair passes eight focused tests without changing
 law or decisions. [Decision and all evidence](COLLISION-BRIDGE-01-RECEIPT.md).
 This exact candidate is CLOSED; no natural-world panel or self-maintenance claim.
 Next select a genuinely different complete mechanism. Stage3 remains unchanged.
-Latest independently reviewed research main cb66aa8 (PR41), numbered passes1â€“50,
+Latest independently reviewed research main cb66aa8 (PR41), numbered passes1–50,
 adds its separate science-first research plan; no literature result is an Ora
 prototype. Earlier proposal-retirement statements below retain their dates.
 
@@ -108,7 +108,7 @@ proposal after the complete source/load/all-role law remained unspecified.
 The reversible association prerequisite is preserved; its zero exported work is
 not a complete-candidate result. Whole-life work, post-loss work and comparator
 profit remain UNKNOWN. Latest independent AI-Research intake is PR38 at
-4570b77, numbered passes 1â€“50; supplied-apparatus source reviews do not close the
+4570b77, numbered passes 1–50; supplied-apparatus source reviews do not close the
 missing bill. No new law, sample, biological mechanism or Stage3 advance.
 No replacement primary mechanism is yet selected: completing that selection
 and a full paid prototype remains unfinished substantive work. Do not repeat
@@ -420,7 +420,7 @@ production isolation or separately authorized pilot activation gates.
 
 Repository review found AI-Research main at
 6ae34300020b27a55cbc704dc255bfea4e77a090 (Pass 47), with successful exact-head
-workflow 38074821021. Passes 45â€“47 are independent literature reviews, not Ora
+workflow 38074821021. Passes 45–47 are independent literature reviews, not Ora
 simulation evidence or instructions to implement their subject matter. Research
 code was not executed and its local working checkout was not integrated.
 
@@ -626,7 +626,7 @@ for useful net work. Do not reopen or tune closed toy samples. Stage3 incomplete
 AI-Research Pass39 remains accepted; observer pause and persistent-pilot safety
 gates remain. This admission audit is preparation, not a new life finding.
 
-## Historical checkpoint â€” cooperative stability does not fund useful maintenance
+## Historical checkpoint — cooperative stability does not fund useful maintenance
 
 **Exact source:**COOPERATIVE-01a286539bb9c01477381016d33da5257a0b714017;
 protocol1742ab9c30067e6ee033801e3eb470ac7fde4c15, census clarification before
@@ -636,8 +636,8 @@ producer propagation. [Protocol](COOPERATIVE-01-PROTOCOL.md),
 **Verified:** entire binding-potential catalogue0..6, fourteen reachable graph
 components, all21 complete2048-attempt startup distributions and every exposed
 resource-yoked paid-loss phase independently agree. Stable-bound probability
-increases1.1871%â†’3.5702%, but feasible useful exposure only0.001274%â†’0.011258%
-versus registered75%; candidate fuel depletion93.67%â†’93.75%. Independent and
+increases1.1871%→3.5702%, but feasible useful exposure only0.001274%→0.011258%
+versus registered75%; candidate fuel depletion93.67%→93.75%. Independent and
 full two-member shuffle retain all opportunities; candidate falls below both.
 NOT ADMITTED across entire catalogue. No sampled worlds or chosen setting.
 
@@ -663,7 +663,7 @@ AI-Research09f4f33/Pass39 unchanged; Pass40 contains no new accepted work.
 Observer paused; no live world. Durability/full-host/lost-work, production
 isolation and separate supervised-pilot authorization remain unresolved.
 
-## Historical checkpoint â€” finite mixing source rejected before sampled worlds
+## Historical checkpoint — finite mixing source rejected before sampled worlds
 
 **Exact source:** ENTROPY-01 admission32e2bc08622eecebf1e8f83f51c74afe29009bfd;
 prospective protocol d492c8fad6e6ebc63d6c3ab5aa02610d793bef52.
@@ -705,7 +705,7 @@ has no new accepted source. Observer paused; no active world. Physical durabilit
 full-host/lost-work, production isolation and separate supervised-pilot gates
 remain unresolved. Existing engineering and UI baselines stay intact.
 
-## Historical checkpoint â€” captured work pays replacement, but no useful maintenance
+## Historical checkpoint — captured work pays replacement, but no useful maintenance
 
 **Exact source:** MAINTAIN-01 admission494724a7cd4e56455f1116c556d908e4cd209fd7;
 MAINTAIN-02 dynamics264bacf388ea22d7a7391430f807b2b1212d0729, frozen before samples.
@@ -750,7 +750,7 @@ AI-Research09f4f33/Pass39 unchanged, Pass40 branch no new accepted content;
 no research code executed. Observer paused, no active world. Physical durability,
 full-host/lost-work and production isolation/pilot authorization gates stay open.
 
-## Historical checkpoint â€” portable output and partial reconstruction do not repay maintenance
+## Historical checkpoint — portable output and partial reconstruction do not repay maintenance
 
 **Exact source:** EXPORT-01 admission df0f06b34b6b7ef548cb2ab07f1ca0dc8a4d9cce;
 EXPORT-02 dynamics30722dc32aefacf1c6ee8c08764add5a8be19703, prospectively frozen.
@@ -784,7 +784,7 @@ receipt. AI-Research09f4f33/Pass39 unchanged; observer pause/no active world.
 Physical durability/full-host/lost-work, production isolation and separately
 approved supervised-pilot gates remain open. No UI or runtime expansion.
 
-## Historical checkpoint â€” phase opportunity and output reversals constrain successor
+## Historical checkpoint — phase opportunity and output reversals constrain successor
 
 **Exact source:** WINDOW-01 audit832b1b9aca8220c7dbb71e6a64b40f1a637a81e2;
 prospective e77f142; immutable ASSEMBLE law/records da7f2af.
@@ -815,7 +815,7 @@ AI-Research09f4f33/Pass39 unchanged; observer pause retained, no active world.
 Physical durability/full-host/lost-work, production isolation and separately
 approved supervised-pilot gates remain open. No peripheral features added.
 
-## Historical checkpoint â€” fuel-driven assembly improves turnover, not maintenance
+## Historical checkpoint — fuel-driven assembly improves turnover, not maintenance
 
 **Exact source:** ASSEMBLE-01 da7f2afc6b43025845aa78a6846af9ec769a4075;
 prospective cc30c7b. [Receipt](ASSEMBLE-01-RECEIPT.md),
@@ -847,7 +847,7 @@ physical law supplied by the research intake. Observer paused, no active world.
 Physical durability/full-host/lost-work and production-isolation/separately
 approved supervised-pilot gates remain open; no peripheral expansion this run.
 
-## Historical checkpoint â€” exact equilibrium diagnosis changes mechanism gate
+## Historical checkpoint — exact equilibrium diagnosis changes mechanism gate
 
 **Exact source:** EQUILIBRIUM-01 f86988791986454c86be86dda7d2c6ac8cef2160;
 prospective32d3d67; unchanged LOCAL lawcb2b08c94475bfb96333817f448cd4a4037c7e42.
@@ -878,7 +878,7 @@ history acceptance in laboratory closure. AI-Research09f4f33/Pass39 unchanged;
 observer paused, no active world. Physical durability/full-host/lost-work and
 production-isolation/separately approved supervised-pilot gates remain open.
 
-## Historical checkpoint â€” complete spatial law fails profitable renewal
+## Historical checkpoint — complete spatial law fails profitable renewal
 
 **Exact source:** LOCAL-01 cb2b08c94475bfb96333817f448cd4a4037c7e42;
 prospective b708324. [Receipt](LOCAL-01-RECEIPT.md), [decision](../data/local01/decision.json).
@@ -909,7 +909,7 @@ receipt. AI-Research09f4f33/Pass39 unchanged, observer paused, no active world.
 Physical durability/full-host/lost-work/production isolation and separately approved
 supervised-pilot gates remain open.
 
-## Historical checkpoint â€” intermediate converter stopped at accounting admission
+## Historical checkpoint — intermediate converter stopped at accounting admission
 
 **Exact source:** CHANNEL-01 2c5cef0e1ef27624ab32b0d7da9bbfede2b953b0;
 prospective5364b43. [Receipt](CHANNEL-01-RECEIPT.md), [decision](../data/channel01/decision.json).
@@ -940,7 +940,7 @@ acceptance in closing laboratory receipt. AI-Research09f4f33/Pass39 unchanged;
 observer paused, no active world. Physical durability/full-host/lost-work and
 production-isolation/separate supervised-pilot authorization gates remain open.
 
-## Historical checkpoint â€” finite thermal converter fails profitable renewal
+## Historical checkpoint — finite thermal converter fails profitable renewal
 
 **Exact source:** feasibility8e163801a29294eda1a3694bda77e4666d2c49a2;
 dynamics9902f8f20eed47d9d3aae5e95ec777ee22fa49d1. Prospective43ef18b/8312eff.
@@ -974,7 +974,7 @@ AI-Research09f4f33/Pass39 unchanged, observer publication paused. Engineering
 physical durability/lost-work/cadence/full-host restore/production isolation and
 separate supervised-pilot authorization remain open.
 
-## Historical checkpoint â€” raw affinity assembly fails renewed-work opportunity
+## Historical checkpoint — raw affinity assembly fails renewed-work opportunity
 
 **Exact sources:** CONDENSE-01 physical943ea32f2ad7f88321cf3e7e0b7cab130182db80;
 CONDENSE-02 kinetics250f9f579851529f7957a388a2bb30e9cd2d3986.
@@ -987,12 +987,12 @@ ghosts0/64, pairedP1. Candidate meaningful loss exposure12/64. [Receipt](CONDENS
 without an active founder. Binding energy comes from already paid material,
 both reaction directions obey the physical rate ledger; forward-only catalysis
 would add unpriced drive and is refused. All primary arms have the SAME reachable
-graph/minimum fuel3. Fueled arms produce installed useful work1â€“4, but none
+graph/minimum fuel3. Fueled arms produce installed useful work1–4, but none
 rebuilds the registered functioning assembly after fixed loss. Sparse exposure
 limits the inference. Work=4-F rules out a work-per-fuel advantage by construction.
 No macroscopic phase separation, autonomous origin/self-maintenance or heredity.
 
-**Next decision â€” user-prioritized net work after repair:** stop the CONDENSE
+**Next decision — user-prioritized net work after repair:** stop the CONDENSE
 microscopic law/horizon. [NET-WORK-01 contract](NET-WORK-01-CONTRACT.md) freezes
 admission requirements: an explicit usable load, finite resource/exergy accounting,
 paid reconstruction, positive post-damage AND whole-life surplus, and independent/
@@ -1021,7 +1021,7 @@ CI/local integration accepted only in closing receipt. No active world; AI-Resea
 lost-work/cadence/full-host restore/production isolation and separate supervised
 pilot authorization remain open. Stage3 incomplete.
 
-## Historical checkpoint â€” reversible useful-work test fails whole-cost surplus
+## Historical checkpoint — reversible useful-work test fails whole-cost surplus
 
 **Exact sources:** RATCHET-01 feasibility4319db0288a893ce167b00e0c0b3b04628589bfe;
 RATCHET-02 dynamics5db0b4cb8f63dcd89b27d68e7de5a1ef033c580e.
@@ -1035,7 +1035,7 @@ fuel synthesis, paid startup6 and whole replacement7, complete material/object
 ancestry, useful mechanical output and initial thermal-capital protection.
 Possibility exists in candidate and BOTH primary nulls; no impossible null is
 used to claim superiority. Candidate funds supplied replacement51/64 but ends
-with work0â€“9 versus initial16: no whole-cost surplus. This is installed apparatus
+with work0–9 versus initial16: no whole-cost surplus. This is installed apparatus
 and scheduled replacement, not spontaneous organization or self-repair.
 Initial work reserve can pay replacement; candidate aggregate mechanical transfer
 is minus106, so funded replacement is not newly produced work funding repair.
@@ -1056,7 +1056,7 @@ AI-Research09f4f33/Pass39 unchanged; observer publication paused. Physical
 durability/lost-work/cadence/full-host restore/production isolation and separate
 supervised-pilot authorization remain engineering gates.
 
-## Historical checkpoint â€” joint nutrient chemistry tested under two blind losses
+## Historical checkpoint — joint nutrient chemistry tested under two blind losses
 
 **Exact source:** COFACTOR-01 4f32b201a9181881167e523997f55fe3213e258d,
 prospective08453bc protocol.192 founder-free worlds/1572864 independently
@@ -1090,7 +1090,7 @@ AI-Research09f4f33/Pass39 unchanged; no unverified branch imported. Observer
 publication paused; physical durability/lost-work/cadence/full-host restore/
 production isolation and separate supervised-pilot authorization remain open.
 
-## Historical checkpoint â€” chemical fuel gives opportunities; comparative gate saturated
+## Historical checkpoint — chemical fuel gives opportunities; comparative gate saturated
 
 **Exact source:** FUEL-01 fa41e009a93cbb429400b41574453af8650dfd2a,
 prospectivea76454f protocol.128 founder-free worlds/524288 independently audited
@@ -1125,7 +1125,7 @@ preserved the observer. No active world; Observer publication
 paused. Physical durability/lost-work/cadence/full-host restore/production isolation
 and separately authorized supervised pilot remain engineering gates.
 
-## Historical checkpoint â€” whole-system resource transfer advantage ruled out
+## Historical checkpoint — whole-system resource transfer advantage ruled out
 
 **Exact source/evidence:** TRANSFER-01 c7b65a37d19a29d1ef55433db1507149e3a2283b,
 prospective9edf684 protocol.5376 complete accounting cases/184872 independently
@@ -1163,7 +1163,7 @@ records not live telemetry. Physical
 durability/lost-work/cadence/full-host recovery/production isolation and separate
 pilot permission remain engineering gates. No unrelated runtime/UI expansion.
 
-## Historical checkpoint â€” activated chains produce; independent opportunity gate fails
+## Historical checkpoint — activated chains produce; independent opportunity gate fails
 
 **Exact source/evidence:** LIGATE-01 ced7158552bee53bc840fceed08d2afac02cf77d,
 prospective80efa3f protocol.128 unscreened worlds/262144 independently interpreted
@@ -1196,7 +1196,7 @@ Pass39 exists, not a verified main intake). Observer approved and publication
 paused; saved records are not live. Runtime physical durability/lost-work/cadence,
 full-host recovery/production isolation and separate pilot permission still open.
 
-## Historical checkpoint â€” aggregate recovery realized; self-maintenance underexposed
+## Historical checkpoint — aggregate recovery realized; self-maintenance underexposed
 
 **Exact source/evidence:** AGGREGATE-01
 a852333cf976999727a6ef40d0ea3907391d5ce8, prospective579e9cb protocol.
@@ -1232,7 +1232,7 @@ unmodified. Observer stays approved and publication paused; saved receipts
 are not live telemetry. Runtime gates remain physical durability, lost-work/
 cadence, full-host recovery, production isolation and separate pilot permission.
 
-## Historical checkpoint â€” carrier dynamics underexposed; stop without tuning
+## Historical checkpoint — carrier dynamics underexposed; stop without tuning
 
 **Exact source/evidence:** CARRIER-01
 8400e177649a0be6022081bab3807f8dd9e43320; prospective498216a protocol and991e070
@@ -1267,7 +1267,7 @@ remain independent. Observer publication stays paused; recorded receipts are
 not live telemetry. Runtime gates still physical durability, lost-work/cadence,
 full-host restore, production isolation and separate pilot activation permission.
 
-## Historical checkpoint â€” construction accounting feasible; coupling benefit rejected
+## Historical checkpoint — construction accounting feasible; coupling benefit rejected
 
 **Exact source/evidence:** COUPLE-01 f32e005a8da3618f3da99c18e79e7e270ecc49d9,
 prospective64bae8c protocol. All1040 exhaustive accounting cases independently
@@ -1302,7 +1302,7 @@ production isolation and separate supervised-pilot activation authorization.
 AI-Research main1a7d572d/Pass36 and both repositories' branches/PRs/CI rechecked;
 no newer main or open PR at synchronization. No unreviewed fetched code executed.
 
-## Historical checkpoint â€” Stage3 photochemical comparison closed negative
+## Historical checkpoint — Stage3 photochemical comparison closed negative
 
 **Current source/evidence:** REDOX-01 executed frozen
 f466d7f76ed40c6b6c91da7b33c7254c5593250b after prospective e3a766f6/cb5b116f
@@ -1316,7 +1316,7 @@ horizon. [Decision/receipt](REDOX-01-RECEIPT.md);
 All1073 sealed evidence files and192 recorded worlds also pass independent
 C:/ora backup/readback; previous backups preserved. [Proof](../data/redox01/backup-proof.json).
 
-**Stage3 sprint assessment:** [substages3.1â€“3.6](STAGE-3-ASSESSMENT-2026-10-09.md)
+**Stage3 sprint assessment:** [substages3.1–3.6](STAGE-3-ASSESSMENT-2026-10-09.md)
 map to the user's October9 six objectives. No autonomous self-maintenance or
 Stage3 completion; no manufactured new feedstock pairs, reproduction, inheritance
 or learning demonstrated. RECYCLE288-world negative, KINETIC192-world negative
@@ -1358,9 +1358,9 @@ phase growth and compartment growth are not reproductive closure. Pass35 supplie
 genome replication and abiotic offspring remain separate achievements. This intake
 changes interpretation/comparators, not frozen old studies or an installed mechanism.
 
-## Historical checkpoint â€” integrated recovery, distinct chemistry precommit and telemetry readiness
+## Historical checkpoint — integrated recovery, distinct chemistry precommit and telemetry readiness
 
-**Current scientific decision â€” KINETIC-01 negative:** executed c819079b after
+**Current scientific decision — KINETIC-01 negative:** executed c819079b after
 prospective draw clarification. All192 unscreened worlds/six arms/1,572,864 attempts
 and separate causal replays completed. Zero reconstruction endpoints in every arm;
 candidate/inert32 ties, exact paired P=1. Candidate catalysis30/32 worlds, so the
@@ -1475,7 +1475,7 @@ its own prospective contract and withdrawal controls. No reviewed mechanism
 installed into production; the verified engineering and current science priorities
 are unchanged by this research-only intake.
 
-**Targeted update:** AI-Research79e27cc3 / Pass31â€“32 reviewed for the imminent
+**Targeted update:** AI-Research79e27cc3 / Pass31–32 reviewed for the imminent
 withdrawal interpretation. Clonal propagules, phenotype persistence after removal
 of an inducer, and survival during investigator-managed transfers do not establish
 unassisted daughter establishment. This affects KINETIC-01 reporting: finite photon
@@ -1484,7 +1484,7 @@ ecological closure. Frozen samples/law unchanged; no new literature mechanism
 installed. [Pass31](https://github.com/JeremyHennessy/AI-Research/blob/79e27cc312e34fe4198746a8dc8887883c9a3603/docs/artificial-life/124-pass31-clonal-propagules-and-selection-withdrawal.md),
 [Pass32](https://github.com/JeremyHennessy/AI-Research/blob/79e27cc312e34fe4198746a8dc8887883c9a3603/docs/artificial-life/125-pass32-trigger-withdrawal-vs-life-cycle-autonomy.md).
 
-## Preserved checkpoint â€” ISOLATION-03 confined actual resource recovery
+## Preserved checkpoint — ISOLATION-03 confined actual resource recovery
 
 Frozen 700600b5 plus prospective execution erratum; accepted 302066f4. Two trial
 blocks / 22 native launches / 16 finite engineering histories. Six real CPU,
@@ -1513,7 +1513,7 @@ of frozen negative cuts. No new autonomous origin, self-maintenance, functional
 inheritance or evolution. AI-Research main fef0a523 / Pass 29 unchanged; transmission,
 benefit, resupply and founder assistance remain separate. Observer remains paused.
 
-## Preserved checkpoint â€” ISOLATION-02 confined actual-world continuity
+## Preserved checkpoint — ISOLATION-02 confined actual-world continuity
 
 Frozen a56f8cc1, executed 14521c83. Two trials / 28 launch cases / 12 existing
 seed-1 finite engineering world histories: ordinary/confined references, eight
@@ -1545,7 +1545,7 @@ No self-maintenance, autonomous origin, functional inheritance or evolution newl
 demonstrated. AI-Research main fef0a523 / Pass 29 unchanged; benefit, transmission,
 resupply and founder assistance remain separate. Observer remains paused.
 
-## Preserved checkpoint â€” ISOLATION-01 disposable Windows capability gate
+## Preserved checkpoint — ISOLATION-01 disposable Windows capability gate
 
 Frozen e74b345f; accepted execution 22dd90d6. Two trial blocks / ten cases:
 two ordinary controls, two AppContainer workers and six fail-closed setup cases.
@@ -1576,7 +1576,7 @@ is preserved. Future science requires a distinct full-cost local resource/reacti
 coupling candidate rather than tuning frozen negative cuts. AI-Research main
 fef0a523 / Pass 29 unchanged; no unproven mechanism installed. Observer stays paused.
 
-## Preserved checkpoint â€” RECYCLE-01 negative unscreened realization; state fixture
+## Preserved checkpoint — RECYCLE-01 negative unscreened realization; state fixture
 
 Frozen c559749a, executed 6180ff8e: 32 fresh seed blocks / nine paired controls,
 288 finite worlds / 73,728 events plus 576 fully paid supplied-manufacture events.
@@ -1613,7 +1613,7 @@ without a working payer remains unresolved; repeatable productive realization
 must precede descendant functional inheritance. AI-Research main fef0a523 / Pass 29
 unchanged; no unproven research mechanism installed. Observer remains paused.
 
-## Preserved science checkpoint â€” CAPACITY-01 affordable recycled reconstruction
+## Preserved science checkpoint — CAPACITY-01 affordable recycled reconstruction
 
 Frozen dcc0bc8c, executed d2de1bb0: 2,688 authored feasibility conditions,
 126,288 panel requests plus 5,040 fully paid supplied-manufacture requests;
@@ -1647,7 +1647,7 @@ no unproven literature mechanism installed. Engineering priorities remain harden
 filesystem/network/process isolation and physical durability/full-host recovery.
 Observer remains paused; no continuous world or publication activated.
 
-## Preserved science checkpoint â€” DISSOCIATE-01 full-cost breakup feasibility
+## Preserved science checkpoint — DISSOCIATE-01 full-cost breakup feasibility
 
 Frozen9537f1b, executed81f4b64c:1,344 authored feasibility conditions/58,272
 requests, zero natural worlds. Generic cut costs actual n+1 work, dissipates all
@@ -1675,7 +1675,7 @@ autonomous origin or world-runtime mechanism installed. Engineering isolation an
 physical durability remain open. AI-Research mainfef0a523/Pass29 unchanged; newer
 66ad85de navigation errata reviewed without adopting scientific mechanisms.
 
-## Preserved science checkpoint â€” RENEWAL-01 paid opportunity diagnosis
+## Preserved science checkpoint — RENEWAL-01 paid opportunity diagnosis
 
 Frozen9fc5ec9, executede503f70e:32 fresh seed blocks/seven paired controls,
 224 worlds/57,344 events with unchanged STARTUP-02 physics and full finite ledger.
@@ -1703,7 +1703,7 @@ Engineering next remains hardened isolation and physical durability. AI-Research
 fef0a523/Pass29 unchanged; no unproven literature mechanism installed. Source-bound
 historical worlds and paused observer remain preserved; no continuous world active.
 
-## Preserved science checkpoint â€” STARTUP-02 unscreened opportunities
+## Preserved science checkpoint — STARTUP-02 unscreened opportunities
 
 Protocol512c116, executed421b6da1:224 finite worlds/57,344 events in32 unscreened
 seed blocks across seven paired controls. No supplied channels, target length,
@@ -1735,7 +1735,7 @@ Resource-funded renewal, functional inheritance and ecology remain independent
 gates. AI-Researchfef0a523/Pass29 remains unchanged; no unproven research mechanism
 installed. Engineering next remains isolation and physical durability below.
 
-## Preserved science checkpoint â€” STARTUP-01 generic feasibility
+## Preserved science checkpoint — STARTUP-01 generic feasibility
 
 Protocol b390d7f, executed77bf4d7e:3,024 authored cases/133,920 events, independent
 conservation/provenance audit and exact raw/summary/audit replay.28 Windows focused
@@ -1762,7 +1762,7 @@ independent samples, full resource accounting and matched nulls. No retuning thi
 frozen assay, consuming old reserved samples, or installing its reactions in the
 world runtime. A positive paid path is not evidence of autonomous origin.
 
-## Latest engineering checkpoint â€” STORAGE-02
+## Latest engineering checkpoint — STORAGE-02
 
 Protocol87737ab, accepted source7a137e14:33 Windows tests passed in three bounded
 groups. Two fresh16-case I/O panels each independently verified13 direct
@@ -1788,7 +1788,7 @@ Science next remains the separately precommitted unscreened startup/opportunity
 study above, removing supplied ordering and target-channel assistance. AI-Research
 mainfef0a523/Pass29 remains unchanged with passing CI; no research mechanism added.
 
-## Completed engineering checkpoint â€” BACKUP-01
+## Completed engineering checkpoint — BACKUP-01
 
 Contract `b4206fc`: verified a manual backup on a physically separate local disk.
 40 sealed evidence archives, both repositories' complete reachable histories and
@@ -1820,7 +1820,7 @@ resupply remain distinct scientific questions. No new Ora mechanism was installe
 The initial backup captures research main `bfbd53c7`; newer evidence must retain
 its own explicit backup cutoff. Preserve earlier intake as historical context.
 
-## Completed engineering checkpoint â€” STORAGE-01
+## Completed engineering checkpoint — STORAGE-01
 
 Contract f26919e, final executed sourcec9a3fb49: verified create-new finite-world
 snapshots and restoration, preserving complete identity/history/PRNG/provenance.
@@ -1842,7 +1842,7 @@ No persistent pilot or unattended world is authorized by these results. On the
 science track, retain the separate generic-startup accounting question below;
 review new research prospectively, not as an installed mechanism.
 
-## Preserved earlier science checkpoint â€” REACTIVATE-01 existing-law renewal
+## Preserved earlier science checkpoint — REACTIVATE-01 existing-law renewal
 
 Protocol `cf26e1c`, executed source `22fc9f67`: **1,792 authored cases /8,064
 events**, 18 relevant science regressions passed. Independent conservation,
@@ -1875,11 +1875,11 @@ PR33/`8e1537eb`. REACTIVATE-01 merged through PR34/`3b589549`; exact merged-main
 CI run37866907682 passed302 attempted tests (292 passed/10 platform skips).
 The completed review advances the next startup feasibility question below. Its12 full
 state continuations do not establish biological autonomy or physical power-loss
-safety. Retain the user's startupâ†’engineering foundationsâ†’real-state observerâ†’
+safety. Retain the user's startup→engineering foundations→real-state observer→
 evolution priorities and all backup/storage/isolation gates below. Human-authorized
 bounded scheduling is active; continuous unattended Ora operation remains gated.
 
-## Earlier engineering checkpoint â€” RESOURCE-02 and ordered next priorities
+## Earlier engineering checkpoint — RESOURCE-02 and ordered next priorities
 
 RESOURCE-02 contract fbc830e/addendum2afea78, executed source d49f768c:
 **297 Windows tests passed /1 platform skip**, complete298-test inventory in
@@ -1896,7 +1896,7 @@ hardened isolation.
 Earlier four-track priorities below remain context; the current ordering and
 completed STORAGE-01 gate are recorded above:
 
-1. **Science â€” startup first.** Separate REACTIVATE-01 protocol cf26e1c/source
+1. **Science — startup first.** Separate REACTIVATE-01 protocol cf26e1c/source
    22fc9f67 completed source-pinned local acceptance and merged through PR34:
    1792 authored cases/8064 events,18 relevant regression tests,
    exact raw/summary/audit replay. Existing empty-ready reactivation can be paid;
@@ -1905,16 +1905,16 @@ completed STORAGE-01 gate are recorded above:
    recharge is unavailable and no founder-free productive organization is shown.
    Register distinct generic-startup/renewal physics
    against current negative baselines before new execution. Do not retune old laws.
-2. **Engineering â€” foundations.** Resource/recovery composition is verified at
+2. **Engineering — foundations.** Resource/recovery composition is verified at
    its registered durable boundary. Next independently scoped gates are off-drive
    backup/restore, storage faults and restricted filesystem/network execution.
    Keep anomalous memory peaks and exact CPU-ceiling limits explicit. A supervised
    persistent pilot needs those gates and separate authorization.
-3. **Observer â€” real state.** Preserve the existing app. Extend validated adapters
+3. **Observer — real state.** Preserve the existing app. Extend validated adapters
    and source-pinned receipt summaries only from independently audited evidence.
    Show actual steps/components/resources/failures with recorded playback clearly
    identified. A running-status frame is not OS process-health evidence.
-4. **Evolution â€” conditional.** After repeatable productive organization, separately
+4. **Evolution — conditional.** After repeatable productive organization, separately
    measure descendants reconstructing useful functions, inheritance, within-life
    adaptation, ecological usefulness and survival after assistance withdrawal.
    These are scientific tests, not presentation features or engine-installed rewards.
@@ -1935,7 +1935,7 @@ unchanged HEARTBEAT-04 reference. Preserve shared local main464f13b and all loca
 observer commits when manually integrating verified merges. Earlier checkpoints
 below retain their original context and do not override this section.
 
-## Latest science gate â€” CONTACT-01 contact order and activation loss
+## Latest science gate — CONTACT-01 contact order and activation loss
 
 <!-- Historical CONTACT-01 science detail follows the newer RESOURCE-02 checkpoint. -->
 
@@ -1944,7 +1944,7 @@ source `8a727eb6`, existing Windows Python 3.12.10: **292 tests passed / 1 platf
 guard skipped**, 293 attempted. [Receipt](CONTACT-01-RECEIPT.md) records the
 complete 12,288-case / 510,976-event authored cross and independent semantic
 accounting. The initial scope-count failure and original source are preserved:
-the unchanged four modes Ã— five binary factors equal 128, not 64, per recipe.
+the unchanged four modes × five binary factors equal 128, not 64, per recipe.
 Exact raw/summary/audit replay and read-only audits passed; 69 historical/shared
 inputs unchanged, 17-file same-D archive restoration passed.
 Zero fresh natural worlds or reserved samples. ENERGY-02 stays immutable.
@@ -1952,7 +1952,7 @@ Zero fresh natural worlds or reserved samples. ENERGY-02 stays immutable.
 **Scientific result:** combined paid-failure/mixed-food/loss challenge gives
 0 matching producer-funded functional children / 96 distinct input recipes.
 With stable potential, wholly compatible supplies and paid failed contacts,
-length 4 coupled construction works in 16/70 word casesâ€”all 16 already matching
+length 4 coupled construction works in 16/70 word cases—all 16 already matching
 orders, none of 54 reordered words. Untemplated construction gives 70 children,
 40 actual captures and 16 functional full-sequence matches. Length 2/3 producer
 cases fail. Mixed food blocks producer construction even with free failures;
@@ -1989,7 +1989,7 @@ or scientific verification. Preserve that chat's source branch, Pages artifacts,
 data and shared local main `1e00fd4` during science integration. Actual iPhone
 Safari remains unverified. Current priorities here supersede dated sections below.
 
-## Earlier science gate â€” ENERGY-02 precursor coupling
+## Earlier science gate — ENERGY-02 precursor coupling
 
 Prospective protocol 536cc114, executed source 7da1b691, Windows Python 3.12.10:
 **284 tests passed /1 platform guard skipped**,285 attempted. The separate
@@ -2041,7 +2041,7 @@ world. Pages UI, future read-only feed and simulated execution remain separate.
 Earlier sections retain dated history. The science and engineering priorities
 immediately above govern the next work; do not resume their completed proposals.
 
-## Earlier engineering verification and observer coordination â€” RESOURCE-01
+## Earlier engineering verification and observer coordination — RESOURCE-01
 
 Prospective contract `1f51448`, diagnostic addendum `e6fc005`, executed source
 `cdaff83f`, Windows Python3.12.10: **278 tests passed / 1 platform guard skipped**
@@ -2080,7 +2080,7 @@ Existing receipt dashboard/tools/launchers stayed unchanged. AI-Research remains
 Earlier sections preserve their historical priorities; the current two-track
 priorities immediately above govern development.
 
-## Earlier science and observer verification â€” ENERGY-01 and OBSERVER-01
+## Earlier science and observer verification — ENERGY-01 and OBSERVER-01
 
 Precommit `9fe789ea`, executed `6a68c21b`, existing Windows Python 3.12.10:
 **268 tests passed**. [Energy receipt](ENERGY-01-RECEIPT.md): 4,192 authored
@@ -2143,7 +2143,7 @@ before integration and retain concurrent work.
 All sections below preserve earlier outcomes and their historical next-step
 statements. The priorities immediately above govern current development.
 
-## Earlier verified work â€” TEMPLATE-02 negative and HEARTBEAT-04 continuity
+## Earlier verified work — TEMPLATE-02 negative and HEARTBEAT-04 continuity
 
 Science precommit `db620bf9`, executed `876f0bfa`, Windows Python 3.12.10:
 **252 tests passed**; [receipt](TEMPLATE-02-RECEIPT.md). After 2,176 authored
@@ -2206,7 +2206,7 @@ statistical gaps remain open. Read current remote heads again before integration
 The following sections preserve earlier decisions and context. Their former
 next-step statements are historical; the priorities immediately above govern.
 
-## Earlier verified work â€” TEMPLATE-01 feasibility and HEARTBEAT-03 continuity
+## Earlier verified work — TEMPLATE-01 feasibility and HEARTBEAT-03 continuity
 
 Precommit `04ad26e`; source-pinned acceptance `2159d4de`, Windows Python 3.12.10:
 **246 tests passed**. [Science receipt](TEMPLATE-01-RECEIPT.md): 392 authored cases,
@@ -2249,7 +2249,7 @@ does not prove quality assessment. Arrival-order, plausible alternative componen
 and source-linked unconditional outcomes inform future controls. Source readings
 remain unreplicated; historical access/count/legend/statistical gaps remain open.
 
-## Earlier science gate â€” TURNOVER-01 opportunity pilot closed
+## Earlier science gate — TURNOVER-01 opportunity pilot closed
 
 [Frozen protocol](TURNOVER-01-PROTOCOL.md) `1d783f3` and
 [receipt](TURNOVER-01-RECEIPT.md): executed `d07cbdf4`, fresh seeds 112..127,
@@ -2295,7 +2295,7 @@ or claim population continuity. HEARTBEAT-02 counter acceptance remains separate
 Off-D backup, actual power-loss/storage-fault recovery and hardened runtime
 isolation remain open; no unattended/external service or automatic activation.
 
-## Latest engineering gate â€” HEARTBEAT-02 finite continuity completed
+## Latest engineering gate — HEARTBEAT-02 finite continuity completed
 
 [Precommitted contract](HEARTBEAT-02-CONTRACT.md)1a14b7b and
 [receipt](HEARTBEAT-02-RECEIPT.md): executed1b3d57b8 on existing Windows
@@ -2335,7 +2335,7 @@ Physical power-loss/storage-failure, independent off-D backup and hardened runti
 isolation remain open. No service, automatic resume or unattended/external runtime
 activation; those require independent gates and separate authorization.
 
-## Earlier engineering gate â€” HEARTBEAT-01 finite fixture completed
+## Earlier engineering gate — HEARTBEAT-01 finite fixture completed
 
 [Precommitted contract](HEARTBEAT-01-CONTRACT.md)bedd4457 and
 [acceptance receipt](HEARTBEAT-01-RECEIPT.md): executed6eaa8547 after preserving
@@ -2362,7 +2362,7 @@ stationary cycle as a claimed organism. AI-Research mainf2839a5c remained
 unchanged at final checkpoints; published claims and EERC-S remain unreplicated
 research. Both prior desktop clones and frozen data/source remain preserved.
 
-## Latest science result â€” CONSTRUCTOR-01 opportunity pilot closed
+## Latest science result — CONSTRUCTOR-01 opportunity pilot closed
 
 [Frozen protocol](CONSTRUCTOR-01-OPPORTUNITY-PROTOCOL.md)27ffc04f and
 [receipt](CONSTRUCTOR-01-OPPORTUNITY-RECEIPT.md): executed5770dc57, fresh96..111,
@@ -2393,7 +2393,7 @@ No unattended activation. Off-D backup, physical power loss and hardened
 isolation remain open. Ora base2a0be5b9/CI37832589215 and AI-Research
 f2839a5c/Pass16 were reviewed; no newer main/open-PR work at intake.
 
-## Earlier completed gate â€” CONSTRUCTOR-01 component-history measurement
+## Earlier completed gate — CONSTRUCTOR-01 component-history measurement
 
 [Precommitted measurement contract](CONSTRUCTOR-01-MEASUREMENT-CONTRACT.md)
 cacc867a and [acceptance receipt](CONSTRUCTOR-01-MEASUREMENT-RECEIPT.md):
@@ -2423,7 +2423,7 @@ and inactive. RUNTIME-01 remains reported AL01 acceptance, not new-schema
 restart evidence. Off-D backup, actual power loss and hardened isolation are
 open. Earlier gates below retain history and do not override this next step.
 
-## Earlier completed gate â€” CONSTRUCTOR-01 static design
+## Earlier completed gate — CONSTRUCTOR-01 static design
 
 [Precommitted design](CONSTRUCTOR-01-DESIGN-CONTRACT.md) ca19666 and
 [acceptance receipt](CONSTRUCTOR-01-DESIGN-RECEIPT.md): execution82348bb6,
@@ -2459,19 +2459,19 @@ not new constructor restart evidence. Off-D backup, physical power loss and
 hardened isolation remain open. Historical next-action paragraphs below are
 retained dated context; this latest completed gate controls Track A's next step.
 
-## 2026-10-08 coordinated priorities â€” science plus bounded runtime engineering
+## 2026-10-08 coordinated priorities — science plus bounded runtime engineering
 
 **Documentation checkpoint, not an activation or experiment run.** This is an addendum to the **single** current plan, not a second roadmap. It incorporates [AI-Research Pass 15](https://github.com/JeremyHennessy/AI-Research/blob/8f736fd2333a80e32f722faa09f9fb218acf62aa/docs/artificial-life/78-pass15-research-handoff.md), the [research-to-Ora evidence crosswalk](https://github.com/JeremyHennessy/AI-Research/blob/main/docs/artificial-life/ora2-evidence-to-roadmap-2026-10-08.md), and INTERFACE-01 merged on Ora2.0 main at `0c712e07722a13dc8c06f7d5a935b3bec01a05e6` ([PR #19](https://github.com/JeremyHennessy/Ora2.0/pull/19); [passing CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/37827762930)). The parallel research Pass 16 branch on AI-Research is still **in progress** at this planning snapshot; do not silently treat its provisional reviews or new hypothesis as a finalized experimental result. Recheck both main heads and receipts before acting.
 
 **Observed science baseline:** INTERFACE-01 used 16 independent initializations, two paired budgets and five correlated arms (160 receipts, **not** 160 independent evolving worlds). Under funded active conditions it recorded 109 constructed carriers and 136 installed nutrient conversions, with zero conversion in funded paid-ghost arms; all arms depleted their work bank by the frozen 64-tick endpoint. Fixed rules and retrospective external-source yokes reproduced the installed effect. The local Windows 195-test/archive acceptance was **reported**, not independently inspected here. No autonomously produced constructor, productive closure, living organism, continuously running world, learned controller, lineage inheritance or self-sustaining maintenance has been demonstrated.
 
-### Track A â€” leading scientific hypothesis (current next study remains unchanged)
+### Track A — leading scientific hypothesis (current next study remains unchanged)
 
 1. **Constructor/production-network design gate.** Before another simulation, preregister a finite material/work-conserving law in which *the system pays to produce a constructor that is causally required for interface assembly*, and the producer's own dependencies are independently logged. Register an unscreened generator, actual natural opportunity denominators, targeted constructor knockout, paid matched impairment, external constructor/source, fixed/ghost and low-exposure controls. Do not retune INTERFACE-01 or revive the prior sparse CLOSURE-03 repair assay.
 2. **Within-life history versus across-generation evolution (later independent gates).** Pass 15 EERC-L v5 proposes separating changes to a continuing entity after distinct randomized histories at identical current genotype/environment from inherited changes in *which latent transitions are accessible*. Test both against passive relaxation, fixed filters/integrators, preinstalled switching, genotype sorting, full accounted cost and unexpected resource reversals. This is a question, not an imported memory/learning module.
 3. **Functional descendants and open-ended ecology (conditional later gates).** Require independently viable daughter/granddaughter organizations that reproduce *a causally useful collective function*, with no privileged automatic group copy; only then assess transfer, ecological novelty and plateau/extinction. Do not score consciousness or a single artificial-life grade from uptime, population or attractive renderings.
 
-### Track B â€” parallel persistent-world engineering **planning**, not runtime authorization
+### Track B — parallel persistent-world engineering **planning**, not runtime authorization
 
 Engineering continuity should not wait for a scientific verdict, but the runtime must not be used to make an unproven substrate appear alive.
 
@@ -2527,9 +2527,9 @@ denominators as later gates. The new paper reviews were not independently
 reproduced or fully re-audited here. No EERC implementation is imported;
 CLOSURE-03 remains the narrower restoration-measurement program.
 
-Latest inspected AI-Research main at the final intake checkpoint: `599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1` (advanced from `be7230b78881633bffd7f9885f244b1bd7a5c472` during review), descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39â€“42, then the new Pass-10 transition synthesis (document 47) and its source/independence matrix. AI-Research remains separate and research-only.
+Latest inspected AI-Research main at the final intake checkpoint: `599e4f1b763a6dc3f3573e87c82ca06f3e8c69f1` (advanced from `be7230b78881633bffd7f9885f244b1bd7a5c472` during review), descendant of supplied `54f6dd300737d734b9f9ef51ac31e3f42f696ed5`. Supplied validation #37807465199 was independently confirmed successful at the supplied SHA. Reviewed artificial-life documents 39–42, then the new Pass-10 transition synthesis (document 47) and its source/independence matrix. AI-Research remains separate and research-only.
 
-Direct primary-method check: [Mathis et al., AlChemy v2, 23 August 2024](https://arxiv.org/html/2408.12137v2), especially sections 4.2â€“5.2 and 6. The study reports that stable aggregate diversity can hide changes in expression membership, higher-order combinations often fail, and initialization/standardization changes outcomes. Its formal CRN construction is not a demonstration that random worlds find a viable metabolism. This is published/manuscript evidence **reported by those authors**, not reproduced by Ora2.0.
+Direct primary-method check: [Mathis et al., AlChemy v2, 23 August 2024](https://arxiv.org/html/2408.12137v2), especially sections 4.2–5.2 and 6. The study reports that stable aggregate diversity can hide changes in expression membership, higher-order combinations often fail, and initialization/standardization changes outcomes. Its formal CRN construction is not a demonstration that random worlds find a viable metabolism. This is published/manuscript evidence **reported by those authors**, not reproduced by Ora2.0.
 
 Design implications:
 - Count restoration of specific causal functions and their producers, not diversity/persistence alone.
