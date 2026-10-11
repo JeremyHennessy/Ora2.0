@@ -126,6 +126,17 @@ class Job:
     def terminate(self):
         checked(self.k.TerminateJobObject(self.handle, 124))
 
+    def pids(self):
+        """Read owned live identities before closing the kill-on-close job."""
+        class ProcessList(ctypes.Structure):
+            _fields_ = [('assigned', wt.DWORD), ('listed', wt.DWORD),
+                        ('ids', ctypes.c_size_t * 64)]
+        value = ProcessList()
+        checked(self.k.QueryInformationJobObject(self.handle, 3, ctypes.byref(value), ctypes.sizeof(value), None))
+        if value.listed > 64 or value.assigned > 64:
+            raise RuntimeError('Job process list exceeds configured maximum')
+        return list(value.ids[:value.listed])
+
     def close(self):
         if self.handle:
             checked(self.k.CloseHandle(self.handle))
@@ -196,7 +207,10 @@ def run(command, limits=Limits(), cwd=None):
             except subprocess.TimeoutExpired:
                 pass
         usage = job.usage()
+        owned_pids = sorted(set(job.pids() + [process.pid]))
         job.close()  # Kill residual descendants on normal exits too.
+        if not all(process_exited(pid) for pid in owned_pids):
+            raise RuntimeError('Owned process still active after whole-job closure')
         reader.join(timeout=5)
         if reader.is_alive():
             raise RuntimeError('Output pipe stayed open after whole-job closure')
@@ -204,6 +218,7 @@ def run(command, limits=Limits(), cwd=None):
                     bootstrap_python=bootstrap_python,
                     limits=vars(limits), exit_code=process.returncode, timed_out=timed_out,
                     supervisor_cpu_stop=supervisor_cpu_stop,
+                    owned_pids_before_close=owned_pids, post_close_processes_exited=True,
                     elapsed_seconds=time.monotonic()-started, usage=usage,
                     output=kept.decode('utf-8', errors='replace'),
                     output_bytes=counts['bytes'], retained_bytes=len(kept),
