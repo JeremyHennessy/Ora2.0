@@ -53,4 +53,13 @@ class CohesionTests(unittest.TestCase):
         with self.assertRaises(ValueError):model.simulate((0,1),128)
         with self.assertRaises(ValueError):model.simulate((1,2),256,'cohesion_disabled')
 
+    def test_pair_work_and_independent_ode_use_consistent_derivative(self):
+        x=[-.71317832938944,0.,.4170521124421,5.,7.,9.]
+        summed=[0.]*6
+        for (a,b),f in audit._contact_forces(x).items():
+            summed[a]+=f;summed[b]-=f
+        acceleration=audit._physics(x,[0.]*6)[0]
+        self.assertEqual([summed[i]/model.MASS[i] for i in range(6)],acceleration)
+        self.assertEqual(audit._contact_forces(x,True),{})
+
 if __name__ == '__main__': unittest.main()

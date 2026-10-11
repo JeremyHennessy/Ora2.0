@@ -37,6 +37,18 @@ def _physics(position, velocity, disabled=False):
     kinetic = sum(masses[i]*velocity[i]**2/2 for i in range(6))
     return accelerations, potential, kinetic
 
+def _contact_forces(position, disabled=False):
+    if disabled: return {}
+    result = {}
+    for a in range(6):
+        for b in range(a+1,6):
+            r = position[a]-position[b]
+            if abs(r)<1:
+                # Use the identical analytic derivative evaluation as _physics;
+                # float exponentiation can round differently from multiplication.
+                result[a,b] = -4*r*(1-r*r)
+    return result
+
 def _rk4(layout, resolution, disabled=False):
     locations = (-1.1,0.,4.4,5.5)
     state = [locations[layout[0]],locations[layout[1]],-4.,-12.,-20.,1.1,0.,0.,.25,.25,.25,0.]
@@ -114,8 +126,7 @@ def _replay_metadata(row):
                             clusters.remove(right)
         return sorted(tuple(sorted(g)) for g in clusters),tuple(edges)
     def contacts():
-        return {} if disabled else {(a,b):-4*(x[a]-x[b])*(1-(x[a]-x[b])**2)
-                for a in range(6) for b in range(a+1,6) if abs(x[a]-x[b]) < 1}
+        return _contact_forces(x,disabled)
     for step in range(96*scale+1):
         time = step/scale
         if time in (32,64):
