@@ -112,6 +112,11 @@ No actor, controller or scientific sample is introduced; this is not learning
 evidence or progress toward self-maintenance. Next substantive science remains
 the complete source-to-useful-work prototype and viable paid simpler comparison.
 
+[ADAPTATION counterfactual opportunity and selection boundary](ADAPTATION-01-DESIGN.md#counterfactual-opportunity-and-selection-boundary-design-only)
+clarifies common exogenous opportunities versus earned outcomes, own-arm past
+memory, unconditional paired founder denominators and reserved holdouts.
+Design only: no policy, controller, new sample or paid substrate is installed.
+
 MODE-CONVERTER-01 is CLOSED NEGATIVE, not a reopening of
 COLLISION-BRIDGE-01. [Frozen decision card and law](MODE-CONVERTER-01-PROTOCOL.md).
 Its distinct capability is finite internal compression/release, charged from
