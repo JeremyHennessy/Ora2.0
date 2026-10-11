@@ -1,6 +1,6 @@
 # Ora 2.0 complete seven stage progress review
 
-Next prospective comparison: [INHERITANCE-01](../DIGITAL-INHERITANCE-01-PROTOCOL.md), unchanged VM law;128 unscreened generation histories, then24 fresh candidate/ancestor/ordinary-mobile assays if a copied MOVE-containing candidate exists. No new result is claimed by registering this protocol. PR133 closes the interpreter continuation-identity gap on all original12 histories without changing their findings; external host crash recovery remains unverified.
+Completed [INHERITANCE-01 comparison](../DIGITAL-INHERITANCE-01-RECEIPT.md):128 generation+24 fresh histories. Selected copied mutant acquired64 food/48 remote but0 offspring; ordinary mobile control64 food/12–14 offspring. Paid mutation produced a new acquisition phenotype, but selected reproductive-inheritance gate fails. All histories extinct, independently interpreted and replayed. No sustained evolution/learning or historical stage rescore. Next: prospectively register a distinct COPY-preserving movement mechanism using new fresh seeds; never substitute it into the closed negative. PR133 closes original checkpoint-identity forgery gap; external host crash recovery still unverified.
 
 ## October11 user-approved direction and current frontier
 
