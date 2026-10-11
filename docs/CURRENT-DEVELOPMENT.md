@@ -4,6 +4,16 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+ASSOCIATION-CHANNEL-01 is the next isolated implementation prerequisite for
+COHERENT-CONTACT-01: an explicit finite third constituent and a time-symmetric
+binding/excitation transfer. [Prospective contract](ASSOCIATION-CHANNEL-01-CONTRACT.md).
+Freeze and verify its prepared-contact forward/reverse fixture before making any
+result claim. This kernel has no source-to-load converter, spatial formation path
+or useful-work output; all complete-system surplus and comparator profit remain
+UNKNOWN. It does not admit the primary candidate or change Stage 3. A paid
+separation/decoupling route and retained load remain necessary; no invisible
+recipient reset, one-way latch or world panel is authorized.
+
 CONTACT-ADMISSION-01 stops the incomplete AUTONOMOUS-CONTACT-01 proposal as
 the primary implementation path. The reviewed fabrication fixture has no motor;
 charge transport does not move apparatus, and the kinetic diffusion rule carries
