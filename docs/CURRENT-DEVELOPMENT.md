@@ -4,6 +4,20 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+COHERENT-CLOSURE-01 retires the incomplete COHERENT-CONTACT-01 implementation
+proposal after the complete source/load/all-role law remained unspecified.
+[Scoped decision and exact evidence](COHERENT-CLOSURE-01-DECISION.md).
+The reversible association prerequisite is preserved; its zero exported work is
+not a complete-candidate result. Whole-life work, post-loss work and comparator
+profit remain UNKNOWN. Latest independent AI-Research intake is PR38 at
+4570b77, numbered passes 1–50; supplied-apparatus source reviews do not close the
+missing bill. No new law, sample, biological mechanism or Stage3 advance.
+No replacement primary mechanism is yet selected: completing that selection
+and a full paid prototype remains unfinished substantive work. Do not repeat
+the retired mechanical proposal, isolated binding runs, broad literature scans
+or general engineering audits. The historical cards below retain their dates
+and evidence but no longer authorize extending this incomplete architecture.
+
 ADAPTATION-CONTROLS-01 clarifies the separate design track's causal controls:
 whole-record order shuffling retains cue/action/outcome associations, so it cannot
 by itself rule out order-insensitive learning. Register association disruption
