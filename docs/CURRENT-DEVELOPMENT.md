@@ -1,5 +1,16 @@
 # Current development plan and handoff
 
+DIGITAL-ORDINARY-ADMISSION-10 PROSPECTIVE configuration-only software preflight: [protocol](DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md). Reuse exact unchanged09/07 VM and independent interpreters; openly supplied eight-triple two-acquisition cadence with matched selector tax versus paid original six-triple actual ordinary machinery and copying-disabled witness. Six software histories25890/91,0 primary mutation worlds; no learning/repair/stage claim. Full formation42/copy60(no rejection)/division32/startup12/cap64/release16/descendant ledger frozen; admitted fixed six/eight-triple domain avoids32-triple formation/release incompatibility without editing oldlaw. Generic paid birth/descendant/fresh endpoint must pass both ordinary routes in each seed, refuse copying-disabled; preserve failures, source-pinned independent interpretation and restored-byte replay. Single next decision: actual descendant viability and fresh function, not mean-only margin; no mutation panel until closure.
+
+| Active dependency card | Prospective decision |
+|---|---|
+| Question/capability | Can disclosed acquisition-before-copy ordinary control fund complete paid births and fresh descendant function? Fixed cadence is supplied infrastructure, not discovery. |
+| Smallest decisive test | Two software seeds25890/91×three configurations,512/extinction, all outcomes. |
+| Exact candidate/comparator | Eight-triple faithful09 matched-tax cadence; original six-triple faithful07 actual paid machinery; disabled-copy impossibility. Same finite external stock, disclosed apparatus differences. No mutation advantage test. |
+| Complete bill | Formation42;24 nursery words; firstCOPY11/later7 plus rejected draws; whole COPY60 without rejections; division32 after base/startup12/cap64/release16. Ordinary07 formation34/copy24/division30; unused09 draws are comparison tax. |
+| Gate/falsifier | Each ordinary seed: birth, descendant birth, fresh and descendant fresh>=1; disabled0birth. Any absence stops admission; no gate/cost/sample tuning. |
+| Current evidence/next | Conditional first-founder arithmetic only; actual transient rejected-draw/scheduler/descendant exposure unknown. Implement frozen software preflight, independently replay, then decide. Learning independent; no primary mutation panel or stage advance. |
+
 ## Current priority and prospective admission — October 11
 
 Apply [digital experiment admission](DIGITAL-EXPERIMENT-ADMISSION.md) as the
