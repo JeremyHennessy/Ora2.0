@@ -47,3 +47,12 @@ advantage is measured for this proposal. Next block must implement a complete
 transition and actual profitable route, or reject with its exact unresolved
 term; no further equivalent potential/capacity ceilings or broad paper pass.
 No controller, LLM, AgentTest change, natural world or observer activation.
+
+## Concrete proposal decision,2026-10-11
+
+REJECTED BEFORE WORLDS. Supplied finite C,G,C loop resolves reversible return
+but matches actual stationary F gross output on all64 tapes (nine operations
+vs three). Every physical fabrication/actuation/renewal price remains UNKNOWN;
+no positive paid net or complete apparatus claim. [Exact scoped receipt](CORRELATED-CONVERSION-01-RECEIPT.md).
+Do not reopen by hiding packet access or inventing prices. Next sole distinct
+proposal [ANGULAR-TRANSFER-01](ANGULAR-TRANSFER-01-DECISION-CARD.md).
