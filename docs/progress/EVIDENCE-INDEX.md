@@ -1,5 +1,19 @@
 # Ora 2.0 evidence index
 
+October11 executed digital baseline: [DIGITAL-ECOSYSTEM-01 receipt](../DIGITAL-ECOSYSTEM-01-RECEIPT.md). Twelve bounded audited worlds: mutation11 births/3 descendant births; faithful12/4; disabled copying0. All extinct,48 remote food units remain per world. Executed ancestry, finite ledgers and checkpoint/archive replay pass. This is a supplied-ancestor capability check, not evolution, learning, repair or persistent-world acceptance; historical categories/statuses remain unchanged. Next dependency: prospectively freeze remote-resource functional-inheritance comparison.
+
+## October11 prospective digital-world scope
+
+[DIGITAL-ECOSYSTEM-01 contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md) supplies exact
+VM,ancestor,budget,scheduler,variation,interaction,checkpoint and12-world protocol.
+It is a design/source registration,not an observed capability. The
+[single current plan](../CURRENT-DEVELOPMENT.md) owns execution priorities;
+[prospective category criteria](SUBCATEGORY-STATUS.md) keep all37 approved names.
+The human's strategic correction is preserved locally under
+`D:/OraLab/reports/digital-ecosystem01-user-authority.json` with verified source
+chat/turn. No historical physical result below is rescored or combined into a
+digital organism. New actual source/receipt links must be added only after audit.
+
 October 10, 2026. Every status links to an original receipt/design defining exact source, protocol, hashes, denominator and limitations. Design-only evidence supports an open question, not capability acceptance. Local raw payloads referenced by original public receipts remain local.
 
 ## Category crosswalk

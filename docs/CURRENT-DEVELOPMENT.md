@@ -4,6 +4,40 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+### User-approved strategic correction — October11,2026
+
+Primary objective: DIGITAL-ECOSYSTEM-01, a bounded interconnected computational
+world, not origin-of-physical-life construction. [Complete prospective VM/world contract and supplied-versus-emergent inventory](DIGITAL-ECOSYSTEM-01-CONTRACT.md).
+The user explicitly redirects effort to digital organisms, evolutionary dynamics,
+within-life learning and emergent intelligence. Supply the VM and a minimal
+reproductive ancestor honestly; neither is an emergent achievement. Hardware
+manufacture and mechanical profitability are no longer mandatory gates for
+digital evolution/learning. Keep all physical protocols and results unchanged.
+The seven approved stages/subcategories remain, with prospective digital criteria
+and overlapping Stages3–6; no capability becomes verified by changing strategy.
+
+Completed first experiment: froze the integer VM, local writable program/state/memory,
+finite food/material/execution budgets, common environment and fair scheduler,
+executed offspring writes, variation, communication, deaths and checkpoint rules;
+then independently audited12 bounded population histories at seeds24000..24003
+under mutation,faithful inheritance and disabled-copy conditions. Reserved seeds
+24004..24011 remain untouched. AL01/AL02/AL03 are reviewed precedents; their laws
+are not modified. No hidden teacher, target genome, novelty reward or rescue.
+
+Current evidence for this NEW world: [12 bounded audited histories](DIGITAL-ECOSYSTEM-01-RECEIPT.md). Mutation-enabled arms produced11 births/3 descendant births; faithful copies12/4; disabled copying0. All worlds became extinct after consuming16 local food units, leaving48 remote. Four focused checks, independent event interpretation, tick64 checkpoint continuation and restored exact-byte replay passed. No advantage or Stage5/6/7 acceptance is inferred. The supplied ancestor, mutation,
+copy and memory primitives are enabling infrastructure, not proof of independent
+strategy, evolution or learning. First deliverables: frozen contract; runnable
+bounded replayable birth/death/resource histories; then claim-specific functional
+inheritance/evolution and unseen-challenge learning comparisons with appropriate
+fixed,memory-disabled,own-history-disrupted and inheritance-disabled controls.
+Meaningful digital damage requires actual loss/restoration of useful function
+caused by the organism; host checkpoint restart is only engineering recovery.
+One next dependency: freeze a same-law functional-inheritance assay of access to
+initially remote resources with nonvariation/inheritance-disabled controls, before
+any new seeds. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
+change. Physical/off-host/full-host durability and production isolation remain
+explicit; not all are gates for a safely bounded data-only VM experiment.
+
 COHESION-01 is CLOSED at the authored admission gate.
 [Frozen common-force decision card](COHESION-01-PROTOCOL.md) and
 [verified result, all controls and preserved interpreter failure](COHESION-01-RECEIPT.md).
@@ -103,7 +137,7 @@ full-paper access failures are explicit. All costs and work remain UNKNOWN/null.
 No more force-only helpers or abstract-only cards are justified without the
 complete joint law. The inspected source and access failures remain preserved.
 
-The one primary candidate is PACKET-BUFFER-01, an explicitly authored DIGITAL
+The previous scoped candidate PACKET-BUFFER-01 is PARKED, an authored DIGITAL
 substrate. [Prospective transition ledger and staged decision card](PACKET-BUFFER-01-PROTOCOL.md).
 Question: does paid storage preserve burst fuel better than the best attainable
 stationary route? A second paid converter with an output slot is mandatory in
@@ -126,7 +160,9 @@ Four focused tests and restored byte replay pass; no natural worlds. Candidate
 whole/fresh, comparator fresh and damage exposure remain UNKNOWN/null. Next is
 the common timing/expiration and paid-assistance withdrawal law, including the
 two-converter output-buffer comparator; no expensive repair panel before function.
-Science owns this staged block; unrelated engineering/research remains deferred.
+Its unexecuted burst draft is archived locally. It is not a mandatory gate for
+the new digital ecosystem. Science owns DIGITAL-ECOSYSTEM-01; unrelated physical
+mechanism surveys and broad engineering/research remain deferred.
 No controller or persistent world is activated and evidence stages do not advance.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
