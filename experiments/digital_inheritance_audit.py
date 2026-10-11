@@ -117,26 +117,28 @@ def audit_world(row):
     return dict(seed=row['seed'],mode=row['mode'],births=births,deaths=deaths,max_population=maximum,mutations=sum(v['write']['mutated'] for v in row['events'] if 'write' in v),descendant_births=sum(v['actor']!=0 for v in row['events'] if 'birth' in v),ticks=row['ticks'],remote_food=sum(e.get('food',-1)>=16 for e in row['events']),food=sum('food' in e for e in row['events']),copy_writes=sum('write' in e for e in row['events']),heat=heat)
 
 def audit_panel(generation,assays):
-    assert len(generation)==128
-    assert [(r['seed'],r['mode']) for r in generation]==[(s,m) for s in range(24100,24164) for m in ('mutating','faithful')]
     records=[];programs=set()
-    for r in generation:
+    expected_generation=[(s,m) for s in range(24100,24164) for m in ('mutating','faithful')]
+    for index,r in enumerate(generation):
+        assert index<128 and (r['seed'],r['mode'])==expected_generation[index]
         assert r['label']=='generation' and r['genesis_program']==[1,2,4,5,6,12]
         record=audit_world(r);assert not r['final']['entities'] and r['ticks']<=1536
         records.append(record)
         if r['mode']=='mutating':
             programs.update(tuple(g[0] for g in e['birth']['child']['code']) for e in r['events'] if 'birth' in e)
+    assert len(records)==128
     eligible=sorted(p for p in programs if 3 in p);candidate=list(eligible[0]) if eligible else None
     groups={m:dict(worlds=64,births=sum(r['births'] for r in records if r['mode']==m),deaths=sum(r['deaths'] for r in records if r['mode']==m),remote_food=sum(r['remote_food'] for r in records if r['mode']==m),descendant_births=sum(r['descendant_births'] for r in records if r['mode']==m),mutations=sum(r['mutations'] for r in records if r['mode']==m)) for m in ('mutating','faithful')}
     if candidate is None:
-        assert not assays
+        assert not list(assays)
         return dict(verified=True,classification='NO_MOVEMENT_CAPABLE_CANDIDATE',candidate=None,groups=groups,programs=[list(p) for p in sorted(programs)],assays=[],functional_inheritance=False,evolution=False,learning=False)
     expected=[(s,label,m,p) for s in range(24200,24204) for label,p in (('candidate',candidate),('ancestor',[1,2,4,5,6,12]),('fixed_mobile',[1,2,4,5,6,3])) for m in ('faithful','copy_disabled')]
-    assert [(r['seed'],r['label'],r['mode'],r['genesis_program']) for r in assays]==expected
     out=[]
-    for r in assays:
+    for index,r in enumerate(assays):
+        assert index<24 and (r['seed'],r['label'],r['mode'],r['genesis_program'])==expected[index]
         x=audit_world(r);assert not r['final']['entities'] and r['ticks']<=1536
         x['label']=r['label'];out.append(x)
+    assert len(out)==24
     assert all(r['births']==0 for r in out if r['mode']=='copy_disabled')
     simple=[r for r in out if r['label']=='fixed_mobile' and r['mode']=='faithful']
     comparator_ready=all(r['remote_food']>=4 and r['descendant_births']>=1 for r in simple)
@@ -147,5 +149,10 @@ def audit_panel(generation,assays):
     return dict(verified=True,classification=classification,candidate=candidate,groups=groups,programs=[list(p) for p in sorted(programs)],assays=out,functional_inheritance=False,provisional_gate=passed,evolution=False,learning=False,reserved_replication_required=passed)
 
 if __name__=='__main__':
-    generation=json.load(open(sys.argv[1],encoding='utf-8'));assays=json.load(open(sys.argv[2],encoding='utf-8'))
+    def read_batches(manifest):
+        names=json.load(open(manifest,encoding='utf-8'));assert len(names)<=40
+        for name in names:
+            rows=json.load(open(name,encoding='utf-8'));assert len(rows)<=4
+            yield from rows
+    generation=read_batches(sys.argv[1]);assays=read_batches(sys.argv[2])
     print(json.dumps(audit_panel(generation,assays),sort_keys=True))
