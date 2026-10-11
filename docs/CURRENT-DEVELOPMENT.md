@@ -72,31 +72,28 @@ forgery refusals and restored exact replay pass. Physical prices UNKNOWN/null.
 No natural worlds, self-maintenance, adaptation or Stage3 advance. Preserve
 the frozen history without tuning heat capacity, feed, damage or conductance.
 No active experiment or admitted candidate.
-Primary missing-law proposal FREE-CAPILLARY-TRANSFER-01 is selected, NOT ADMITTED.
-[Compact question, necessary capability, exact missing term and measurement](FREE-CAPILLARY-TRANSFER-01-DECISION-CARD.md).
-The inspected fixed-substrate capillary jump supplies its indispensable boundary;
-reject that complete-candidate interpretation before implementation. The distinct
-free-body version first needs raw-to-active surface formation AND fresh causal
-renewal, then a coupled moving-interface/load law. Neither is specified by the
-inspected source. No net work or profitable simpler comparator has been measured.
-Unknown preparation, upkeep, repair and load costs remain null, not0. Next
-decision: resolve the named surface transition with a functional fresh-material
-assay and complete constructor bill; otherwise reject and choose a different
-mechanism. No supplied-wall run, capillary ceiling or tuning of closed histories.
-Targeted clarification: intrinsic raw wetting may be constitutive physics;
-coatings, anchors and assembled functional geometry still require paid renewal.
-The inspected formation study supplies immobile preassembled colloids. A
-[reduced reciprocal gradient design](FREE-CAPILLARY-TRANSFER-01-GRADIENT-DESIGN.md)
-addresses only conservative derivatives, not a complete converter or work.
-[Verified algebra receipt](FREE-CAPILLARY-TRANSFER-01-GRADIENT-RECEIPT.md):
-three states/23 derivatives, six focused tests and independent restored replay
-pass. Work/comparator remain unmeasured; no candidate admission or Stage3 credit.
-First remaining blocker: finite thermodynamic/dynamic closure (U/S/temperature,
-moving fluid/solid, diffusion/waste, load and all-role construction/renewal).
-No actual whole/fresh profitable simpler route. Specify the complete closure
-or reject the free-body proposal; no further derivative-only study substitutes
-for the next complete science prototype. Science owns this decision;
-unrelated engineering/research audits stay deferred.
+FREE-CAPILLARY-TRANSFER-01 is REJECTED BEFORE COMPLETE PROTOTYPE.
+[Admission closure and preserved missing laws](FREE-CAPILLARY-TRANSFER-01-DECISION-CARD.md#admission-closure-2026-10-11).
+The inspected cohort does not supply finite U/S/temperature, coupled moving
+fluid/solid/waste/load and all-role raw construction/renewal together.
+[Verified reduced algebra](FREE-CAPILLARY-TRANSFER-01-GRADIENT-RECEIPT.md)
+remains supporting evidence only: no capillary dynamics, work or renewal test.
+No physical impossibility or adequately exposed renewal negative is claimed.
+Intrinsic raw wetting can be constitutive physics; assembled geometry and
+coatings still require paid formation/renewal. Do not retune or extend this
+proposal with another derivative-only check or supplied-apparatus simulation.
+The one primary admission question is INDUCTIVE-PATH-01, NOT ADMITTED.
+[Question, distinctive capability, exact missing term and concrete assay](INDUCTIVE-PATH-01-DECISION-CARD.md).
+Changing magnetic flux through newly formed conducting paths could transfer
+finite source energy without source/load collision. First missing term is
+Phi_path: paid raw contact graph formation plus the same identified material's
+terminal resistance/thermal law and fresh-path assay after essential loss.
+Source, load and all-role renewal closure and an actually profitable same-feed
+simpler path remain required. No finished coil, free support, source reset,
+one-way switch or fabricated price. Work/comparator remain null/unmeasured.
+Next decision: specify the joint path law and complete closure or reject it;
+no intermediate helper/ceiling run. Science owns this decision; unrelated
+engineering/research audits stay deferred. No experiment currently active.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation

@@ -114,3 +114,19 @@ measured load work. An actually profitable same-feed simpler route remains
 unimplemented. All physical prices and whole/fresh useful work remain null.
 Next decision: supply that complete closure or reject this free-body proposal;
 do not substitute another gradient, supplied-apparatus run or ceiling study.
+
+## Admission closure, 2026-10-11
+
+**REJECTED BEFORE COMPLETE PROTOTYPE.** The inspected cohort does not specify
+finite U/S/temperature, moving-fluid/solid diffusion and waste, load coupling
+and all-role raw construction/renewal together. No actual whole/fresh profitable
+simpler route exists in our evidence. These are missing laws, not numbers that
+the verified free-energy gradient can measure. Choosing them for favorable
+performance would manufacture a converter and its accounting.
+
+Preserve the gradient result as supporting algebra only. No capillary dynamics,
+world, damage test or measured work; renewal is UNTESTED, not a demonstrated
+failure. This rejection is scoped to the present proposal/cohort, not physical
+impossibility. No retuning or further derivative-only implementation. Reopening
+requires a documented genuinely different mechanism and new prospective law.
+The next primary admission question is [INDUCTIVE-PATH-01](INDUCTIVE-PATH-01-DECISION-CARD.md).
