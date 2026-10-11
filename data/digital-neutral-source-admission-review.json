@@ -1,0 +1,59 @@
+{
+  "verified": true,
+  "kind": "STATIC_ADMISSION_PLACEMENT_DECISION_NOT_EXPERIMENT",
+  "basis_source": "9ae3876dbafdadab4340055f683a1854f8122b15",
+  "review_base": "5d3aa02b2ba6a199d4ad99d4d7b99e23cff9b953",
+  "source_bank_sha256": "f2c04821100f4bc4e045b4c488b6d6d88f58ad94685dfdd9791c11260fcd5fb6",
+  "source_unselected": true,
+  "all256_preserved": true,
+  "new_vm_steps": 0,
+  "new_world_histories": 0,
+  "new_compiler_probes": 0,
+  "formation_energy": 112,
+  "formation_material": 112,
+  "constructor_remaining": 16,
+  "boundary_release_required": 16,
+  "cold_boot_instructions": 5,
+  "cold_paid_outcomes": "one success and one failure, both orientations, by exact unchanged warm law",
+  "cold_energy_after_boot": 27,
+  "first_loop_instructions": [
+    11,
+    12
+  ],
+  "first_post_boot_action_ticks": [
+    16,
+    17
+  ],
+  "energy_after_first_action_before_yield": [
+    15,
+    16
+  ],
+  "recurring_action_gaps": [
+    12,
+    13
+  ],
+  "cold_miss_bound": "At least two post-boot ACTs reachable without further intake:27 minus first11..12 minus next12..13 leaves2..4. A third missed action is unaffordable. This bound is not a paid survival result.",
+  "durable_channels": {
+    "memory0": "initial supplied0; then previous sampled F, not necessarily previous distinct outcome",
+    "memory1": "previous selected port",
+    "feedback": "last real attempt; retained over no-packet ACT",
+    "registers": "transient older/current/previous-port branch state",
+    "pc": "branch phase/cadence",
+    "code": "fixed compiled circuit, no selfwrite",
+    "inbox": "unused"
+  },
+  "placement_decision": "REJECT_AUTOMATIC_PAID_PANEL_ADMISSION_FOR_CURRENT_PLACEMENTS",
+  "release07_reason": "For a qualified stable noiseless home attempt, current F and previous port identify target exactly: target=P XOR(1-F). Older bit supplies no necessary extra target information then; this does not rule out learning elsewhere or prove outcome dominance at known boundary/no-packet events.",
+  "contingency15_reason": "Frozen ordinary configuration failed admission; preserve its stop condition. Do not silently reopen it with the bank or altered fixed references. Clocked16 also closed failed; no serial clock redesign.",
+  "single_next_dependency": "Before another panel, specify and prospectively justify the exact accessible experience record and unseen contingency for a neutral source with full phase-by-phase finite-stock viability and attainable controls. Distinguish repeated latch samples from independent personal outcomes, and cover every used durable channel in memory/own-history interventions. Reuse stable VM; do not change costs or install a selected learner.",
+  "paid_viability": null,
+  "whole_work": null,
+  "fresh_work": null,
+  "damage": null,
+  "births": null,
+  "deaths": null,
+  "learning": false,
+  "evolution": false,
+  "stage_credit": false,
+  "reserved_executed": false
+}
