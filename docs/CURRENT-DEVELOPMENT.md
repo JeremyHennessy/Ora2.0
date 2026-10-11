@@ -19,6 +19,11 @@ whole-system admission is claimed. Next mechanism needs a necessary paid
 capability whose benefit cannot be matched by simpler direct formation, then
 complete all-role and profitable-control gates. Stage3 and activation statuses
 remain unchanged; do not retune this candidate or replace historical results.
+Post-run160-row prerequisite audit further finds F-assisted formation can reach
+only missing S/L: C/H/F must already occupy their unique positions. Their
+rebuilds used paid direct formation, not fabricator self-renewal. The receipt
+corrects the frozen contract's overly broad target-permission wording without
+changing source, outcomes or admission.
 
 REPAIR-POOL-01 checks a distinct energy-sharing direction against optimal
 pre-loss local repair reserves, retaining all unused control work. Frozen8064f45:

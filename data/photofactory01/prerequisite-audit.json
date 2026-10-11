@@ -1,0 +1,802 @@
+[
+  {
+    "mask": 0,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 0,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 0,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 0,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 0,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 1,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 1,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 1,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 1,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 1,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 2,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 2,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 2,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 2,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 2,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 3,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 3,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 3,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 3,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 3,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 4,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 4,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 4,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 4,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 4,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 5,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 5,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 5,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 5,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 5,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 6,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 6,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 6,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 6,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 6,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 7,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 7,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 7,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 7,
+    "reachable": true,
+    "target": "S"
+  },
+  {
+    "mask": 7,
+    "reachable": true,
+    "target": "L"
+  },
+  {
+    "mask": 8,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 8,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 8,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 8,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 8,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 9,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 9,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 9,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 9,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 9,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 10,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 10,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 10,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 10,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 10,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 11,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 11,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 11,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 11,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 11,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 12,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 12,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 12,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 12,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 12,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 13,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 13,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 13,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 13,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 13,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 14,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 14,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 14,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 14,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 14,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 15,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 15,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 15,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 15,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 15,
+    "reachable": true,
+    "target": "L"
+  },
+  {
+    "mask": 16,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 16,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 16,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 16,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 16,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 17,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 17,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 17,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 17,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 17,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 18,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 18,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 18,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 18,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 18,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 19,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 19,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 19,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 19,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 19,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 20,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 20,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 20,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 20,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 20,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 21,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 21,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 21,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 21,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 21,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 22,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 22,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 22,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 22,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 22,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 23,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 23,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 23,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 23,
+    "reachable": true,
+    "target": "S"
+  },
+  {
+    "mask": 23,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 24,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 24,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 24,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 24,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 24,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 25,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 25,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 25,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 25,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 25,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 26,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 26,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 26,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 26,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 26,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 27,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 27,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 27,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 27,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 27,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 28,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 28,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 28,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 28,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 28,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 29,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 29,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 29,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 29,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 29,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 30,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 30,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 30,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 30,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 30,
+    "reachable": false,
+    "target": "L"
+  },
+  {
+    "mask": 31,
+    "reachable": false,
+    "target": "C"
+  },
+  {
+    "mask": 31,
+    "reachable": false,
+    "target": "H"
+  },
+  {
+    "mask": 31,
+    "reachable": false,
+    "target": "F"
+  },
+  {
+    "mask": 31,
+    "reachable": false,
+    "target": "S"
+  },
+  {
+    "mask": 31,
+    "reachable": false,
+    "target": "L"
+  }
+]
