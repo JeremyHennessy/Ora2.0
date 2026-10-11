@@ -1,0 +1,4460 @@
+{
+  "all_outcomes": [
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 1,
+      "feedback_reads": 41,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 717,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 50,
+      "memory_writes": 8,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 19,
+      "pre_food": 13,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "witness",
+      "seed": 25690,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 230,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 8,
+      "feedback_reads": 21,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 337,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 7,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 13,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "disconnected",
+      "seed": 25690,
+      "self_writes": 0,
+      "successful_food": 13,
+      "ticks": 127,
+      "unused_food": 51,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 30,
+      "feedback_reads": 0,
+      "formation_cost": 28,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 696,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 21,
+      "pre_food": 11,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "alternating",
+      "seed": 25690,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 249,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 16,
+      "feedback_reads": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 373,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 16,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "fixed0",
+      "seed": 25690,
+      "self_writes": 0,
+      "successful_food": 16,
+      "ticks": 111,
+      "unused_food": 48,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 4,
+      "feedback_reads": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 37,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 0,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "fixed1",
+      "seed": 25690,
+      "self_writes": 0,
+      "successful_food": 0,
+      "ticks": 12,
+      "unused_food": 64,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 2,
+      "feedback_reads": 42,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 717,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 52,
+      "memory_writes": 9,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 21,
+      "pre_food": 11,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "witness",
+      "seed": 25691,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 238,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 2,
+      "feedback_reads": 2,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 61,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 1,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 0,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "disconnected",
+      "seed": 25691,
+      "self_writes": 0,
+      "successful_food": 0,
+      "ticks": 12,
+      "unused_food": 64,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 33,
+      "feedback_reads": 0,
+      "formation_cost": 28,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 696,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 22,
+      "pre_food": 10,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "alternating",
+      "seed": 25691,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 258,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 4,
+      "feedback_reads": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 37,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 0,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "fixed0",
+      "seed": 25691,
+      "self_writes": 0,
+      "successful_food": 0,
+      "ticks": 12,
+      "unused_food": 64,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 16,
+      "feedback_reads": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 373,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "software",
+      "post_food": 0,
+      "pre_food": 16,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "fixed1",
+      "seed": 25691,
+      "self_writes": 0,
+      "successful_food": 16,
+      "ticks": 111,
+      "unused_food": 48,
+      "verified": true
+    },
+    {
+      "births": 1,
+      "change_exposed": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 4,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 126,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "mutating",
+      "mutations": 2,
+      "paid_copy_words": 24,
+      "phase": "primary",
+      "post_food": 0,
+      "pre_food": 4,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25600,
+      "self_writes": 0,
+      "successful_food": 4,
+      "ticks": 50,
+      "unused_food": 60,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 34,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 4,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 153,
+      "phase": "primary",
+      "post_food": 25,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25600,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 355,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 30,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "primary",
+      "post_food": 25,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25600,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 371,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 1,
+      "change_exposed": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 7,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 126,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "mutating",
+      "mutations": 4,
+      "paid_copy_words": 21,
+      "phase": "primary",
+      "post_food": 0,
+      "pre_food": 4,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25601,
+      "self_writes": 0,
+      "successful_food": 4,
+      "ticks": 53,
+      "unused_food": 60,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 32,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 168,
+      "phase": "primary",
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25601,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 340,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 33,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "primary",
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25601,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 386,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 3,
+      "change_exposed": 0,
+      "deaths": 4,
+      "descendant_births": 2,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 13,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 302,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "mutating",
+      "mutations": 4,
+      "paid_copy_words": 63,
+      "phase": "primary",
+      "post_food": 5,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25602,
+      "self_writes": 0,
+      "successful_food": 12,
+      "ticks": 135,
+      "unused_food": 52,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 34,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 4,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 153,
+      "phase": "primary",
+      "post_food": 25,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25602,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 355,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 30,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "primary",
+      "post_food": 25,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25602,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 371,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 1,
+      "change_exposed": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 11,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 126,
+      "learning": false,
+      "live_at_change": false,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "mutating",
+      "mutations": 2,
+      "paid_copy_words": 18,
+      "phase": "primary",
+      "post_food": 0,
+      "pre_food": 4,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25603,
+      "self_writes": 0,
+      "successful_food": 4,
+      "ticks": 56,
+      "unused_food": 60,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 32,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 2,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "paid_copy_words": 168,
+      "phase": "primary",
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25603,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 340,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 33,
+      "feedback_reads": 0,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_at_change": true,
+      "live_energy": 0,
+      "live_final": 0,
+      "maximum_population": 1,
+      "memory_reads": 0,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "phase": "primary",
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25603,
+      "self_writes": 0,
+      "successful_food": 32,
+      "ticks": 386,
+      "unused_food": 32,
+      "verified": true
+    }
+  ],
+  "archive_sha256": "924a750ecb9277413350a3f61ad4049b70467cb43b47d0b385262f2799a4444c",
+  "byte_replay": true,
+  "byte_replay_batches": 22,
+  "controller_activated": false,
+  "damage": null,
+  "evolution": false,
+  "fresh_work": null,
+  "histories": 22,
+  "learning": false,
+  "maximum_tick": 386,
+  "paid_exposure_gate": true,
+  "persistent_world": false,
+  "primary_readiness_gate": true,
+  "primary_worlds": 12,
+  "processes": 67,
+  "prospective": "1ed0759f15f4ead7ee2cb17ef9aecdc081200838",
+  "repair": false,
+  "reserved_executed": false,
+  "seals": {
+    "archive/source.zip": "924a750ecb9277413350a3f61ad4049b70467cb43b47d0b385262f2799a4444c",
+    "failure/budget.json": "a7f7fd6ea3440f7d3510db8f93d732c3ead35d8fe36f8682765fc9ffdba99172",
+    "raw/decision.json": "1de453376246152b0d62285ebacdde2990ca3ad33b82dad967197b8c241d7004",
+    "raw/fixtures-output.txt": "0715d6629ee8068e61174820b9301921f3e8b8c864ca9be660612d19158b0012",
+    "raw/fixtures-process.json": "8a2c21b3c10cd8bf460e1bea8f42a294af1c2fe98470f93b10a7091c8a1c08e9",
+    "raw/metrics.json": "2a721b3a6bf2fa308fa10a3c5c6a22ed6b3c14c0320294af844383f124880241",
+    "raw/pin.json": "6c8e4e8b3c3dfa88cff4a930183e7a4c4f523fbe7e819ec30147207de959f4d2",
+    "raw/primary-25600-ancestor-copy_disabled-audit-output.txt": "980a6a068c2af66092fc45f8f340fd977d8342a3fbade9b59eef4b97fbc28976",
+    "raw/primary-25600-ancestor-copy_disabled-audit-process.json": "5f19999028e78fac1a043ab638814685a088a8b0ab9c189d0c3c26b4e17633bf",
+    "raw/primary-25600-ancestor-copy_disabled-output.txt": "ae6b59f4cc3700b6b5af0825660ef1c20ccc38b15f7c20a4eee9306c9a28f2ec",
+    "raw/primary-25600-ancestor-copy_disabled-process.json": "6ee14551969db41d2aeeee73399e9b7acc48338db90659c5c0f1b3da6646732a",
+    "raw/primary-25600-ancestor-copy_disabled-restored-output.txt": "ae6b59f4cc3700b6b5af0825660ef1c20ccc38b15f7c20a4eee9306c9a28f2ec",
+    "raw/primary-25600-ancestor-copy_disabled-restored-process.json": "ec92d0c23500afef789b31c2d8b8aee326a436777e57e0e9061cb71de9954252",
+    "raw/primary-25600-ancestor-copy_disabled-row.json": "3c1a1e80a0d081ca3dd2b0caaad2e2e0b1069704dd151c169bd4dcf673e1d196",
+    "raw/primary-25600-ancestor-faithful-audit-output.txt": "a09f79f885a37050c2645cec86902a23162673c7c88f1e3afbef35c4b729bb49",
+    "raw/primary-25600-ancestor-faithful-audit-process.json": "bcfea8e395b2bb5bd8bfd645f34e7f7d4b8dd3cbca05216d5ea33e0f2c32f7e8",
+    "raw/primary-25600-ancestor-faithful-output.txt": "234d95eb8608a92088c8e005cd71486839ea625548c1a54ff4ba395522915048",
+    "raw/primary-25600-ancestor-faithful-process.json": "7560f889557e6ddef68e648b4a70d0cd3f61058369934eaf576ba22164972f12",
+    "raw/primary-25600-ancestor-faithful-restored-output.txt": "234d95eb8608a92088c8e005cd71486839ea625548c1a54ff4ba395522915048",
+    "raw/primary-25600-ancestor-faithful-restored-process.json": "881f8afaf8aaecf34075a80222f533e37897068658bf37247e0fd24e6061ae10",
+    "raw/primary-25600-ancestor-faithful-row.json": "31d4da6b01107ff086379e450a6ccfb63139bf37a2a53eb00a101a915004944d",
+    "raw/primary-25600-ancestor-mutating-audit-output.txt": "c6ebadcd9e00e102ed68a89d4a4352c28dfe73ad014b24cdc51a7a22e4e9b67f",
+    "raw/primary-25600-ancestor-mutating-audit-process.json": "43ead34f951b4b7afb45fadd99392a11096f9a454d2560f343a2b53934fd54a7",
+    "raw/primary-25600-ancestor-mutating-output.txt": "1349be1a3f9411b0b0544e93da4d1cf279ca107ea5886bf210b270265b624cc9",
+    "raw/primary-25600-ancestor-mutating-process.json": "f5dda5b008e2c7bbddb80f00bbdf55762133a50c6068d808716cd883834138f5",
+    "raw/primary-25600-ancestor-mutating-restored-output.txt": "1349be1a3f9411b0b0544e93da4d1cf279ca107ea5886bf210b270265b624cc9",
+    "raw/primary-25600-ancestor-mutating-restored-process.json": "291ff9a4f78fcad11de2330814b1ce77236908f15423ee6fd6afcc15c9e8ac4c",
+    "raw/primary-25600-ancestor-mutating-row.json": "b92a1ef825c26acce879cad50dab48e49cb0973e42e4b4b2d134c9b7680b7140",
+    "raw/primary-25601-ancestor-copy_disabled-audit-output.txt": "9daaf213fa24e059c1c5e004dc03cfcadfc9096d672fe6398e235aa3c581df1a",
+    "raw/primary-25601-ancestor-copy_disabled-audit-process.json": "1d87b37f89f70c00621cc7e17578b3f0dee4bf2ea462500c5adea26e1df5c118",
+    "raw/primary-25601-ancestor-copy_disabled-output.txt": "b4b1c615971967336634abb848b932af34144d87c4723305f51bfa1fb2bb3822",
+    "raw/primary-25601-ancestor-copy_disabled-process.json": "6e92ff478803dd04873eefddc2ad6c77415b6cfe2f8a30b2fc5de2c21d881644",
+    "raw/primary-25601-ancestor-copy_disabled-restored-output.txt": "b4b1c615971967336634abb848b932af34144d87c4723305f51bfa1fb2bb3822",
+    "raw/primary-25601-ancestor-copy_disabled-restored-process.json": "5ea25118e94f88d6d837ea304ca52980382c16ddda74db6390603b81d86f3a1f",
+    "raw/primary-25601-ancestor-copy_disabled-row.json": "e73bc50beda46f0b7e1b9b551e2528274ccf59273009a8a8640bf91a3526fe64",
+    "raw/primary-25601-ancestor-faithful-audit-output.txt": "9c19857d7ee121563191db8c55dccbdc3eccb554d93ba21c470dc8487b4c1c05",
+    "raw/primary-25601-ancestor-faithful-audit-process.json": "1c36e795b6f98cdee09eecfb1b7e66b56343da6e95a47883ca475f0189d6e232",
+    "raw/primary-25601-ancestor-faithful-output.txt": "a43d11e706eeed8e40b40ea2be82a810694baa70c6a0d866a3d17351eaa51467",
+    "raw/primary-25601-ancestor-faithful-process.json": "b85a722421801100c8fd438a770c18c4f5f47b4e5f4fa9a1ee06beac80cb70e7",
+    "raw/primary-25601-ancestor-faithful-restored-output.txt": "a43d11e706eeed8e40b40ea2be82a810694baa70c6a0d866a3d17351eaa51467",
+    "raw/primary-25601-ancestor-faithful-restored-process.json": "c000bfc1602c16935bad3383b490b4d7fc5e8f63ce135f07fb000ee83feee48f",
+    "raw/primary-25601-ancestor-faithful-row.json": "9a628b6f0d036ca75d0bbea18d673c81480d784d7a4cc944259bfb123c0e764f",
+    "raw/primary-25601-ancestor-mutating-audit-output.txt": "8c1b8f5d43dcc2817e79fba396726580ffbd1ca37a6e88e7b9bc27445d6c7cff",
+    "raw/primary-25601-ancestor-mutating-audit-process.json": "1fb732df5d8b44a44876f3bb9d7d62ed9be24b22fbeb1e59d9425b6d2be383d6",
+    "raw/primary-25601-ancestor-mutating-output.txt": "b979b96da8b4e9b530c49317227bd1978f9c2c468c661cf3fcaac74f5164b151",
+    "raw/primary-25601-ancestor-mutating-process.json": "7350fff5f86e0fc070317b0fcc9c4faf7017bbf281cbb8496726e2764617e8a9",
+    "raw/primary-25601-ancestor-mutating-restored-output.txt": "b979b96da8b4e9b530c49317227bd1978f9c2c468c661cf3fcaac74f5164b151",
+    "raw/primary-25601-ancestor-mutating-restored-process.json": "27656510cf434ef8842f20d171aec1bc9c5cc0e4c12f78dd084d30f17af21762",
+    "raw/primary-25601-ancestor-mutating-row.json": "d0cbf093f1b89335c51f5dcb9f82c294b5fe96e2f01f22e777816510be2153f7",
+    "raw/primary-25602-ancestor-copy_disabled-audit-output.txt": "1f348f5313cbee212180db6054edac4f344a240271fd50cd83189117597989b0",
+    "raw/primary-25602-ancestor-copy_disabled-audit-process.json": "cd7315274b25492e6256fc04735177d95b661152096eb3d97976bcbe0c574a01",
+    "raw/primary-25602-ancestor-copy_disabled-output.txt": "e90026445ba2ba2a56ed909219a3f4d13723e2e0e3eb331de757af1dcfbde2ea",
+    "raw/primary-25602-ancestor-copy_disabled-process.json": "ef4ab382ff7319b569fc4180465163bdc6657de507ca58c114cf5fbf22ae22ea",
+    "raw/primary-25602-ancestor-copy_disabled-restored-output.txt": "e90026445ba2ba2a56ed909219a3f4d13723e2e0e3eb331de757af1dcfbde2ea",
+    "raw/primary-25602-ancestor-copy_disabled-restored-process.json": "15f4699749fe947c7323933c36d7b619b44c2b1392402cf9063875e422c007fa",
+    "raw/primary-25602-ancestor-copy_disabled-row.json": "a2084ecf47eb554b502b417feeb6c163dfb4ee63179b9237ddf6ec585dce8466",
+    "raw/primary-25602-ancestor-faithful-audit-output.txt": "fa09799ad9da9f9c1407be91c35cfbe1a58225b2b24661a0f17360941a7d189c",
+    "raw/primary-25602-ancestor-faithful-audit-process.json": "b168fba3e19fb2b215bcfbfc2c7b3ebbd0414811bb65a4fc3b18e446130e174f",
+    "raw/primary-25602-ancestor-faithful-output.txt": "c91a625b58e4025eb0d1a1689bb036a90d2ec2a42484934165b63feb09512e72",
+    "raw/primary-25602-ancestor-faithful-process.json": "ec45d3c9f9b705831453d0f461d4f3d648a8c1899c242028f0fda968b09c841a",
+    "raw/primary-25602-ancestor-faithful-restored-output.txt": "c91a625b58e4025eb0d1a1689bb036a90d2ec2a42484934165b63feb09512e72",
+    "raw/primary-25602-ancestor-faithful-restored-process.json": "216a8266dd5380232f3ffe6a7b78397b7ee38c4075bbdf367db576cd5d0d66b5",
+    "raw/primary-25602-ancestor-faithful-row.json": "719a4ae3072ba07694851ec840e1da1b55b2bc78b1c3434d51abd3a617c14bb9",
+    "raw/primary-25602-ancestor-mutating-audit-output.txt": "f45a6b651417d67bbfd7aeb80b3246fcfeb25d2da7d0d38ef60b399dc5e291e1",
+    "raw/primary-25602-ancestor-mutating-audit-process.json": "8819cc9ec73f5115f15ef39f95d4c68bdd774e3c70bec1e9f6e70b076d48a493",
+    "raw/primary-25602-ancestor-mutating-output.txt": "4773ea7dff90737369f1be9c719878a62ad21bdab7973c6bf20865b0c66e0a86",
+    "raw/primary-25602-ancestor-mutating-process.json": "804cac7576bf69ab5d19553ac2687d926a854a61452ecc6b50bb962cddf8eca2",
+    "raw/primary-25602-ancestor-mutating-restored-output.txt": "4773ea7dff90737369f1be9c719878a62ad21bdab7973c6bf20865b0c66e0a86",
+    "raw/primary-25602-ancestor-mutating-restored-process.json": "463e02ec3ccf94383eaaf0d48c648564ce2e9f60eeaf03957bedfc274d99fdd2",
+    "raw/primary-25602-ancestor-mutating-row.json": "56bbecf246a0995681d2490ab0dac94e156e9b126d892e58bbf96600dbb99063",
+    "raw/primary-25603-ancestor-copy_disabled-audit-output.txt": "1bbfa3bed117352a99d36eda2ba7c94ea8abd71680aaee9617616f6b65ef4f41",
+    "raw/primary-25603-ancestor-copy_disabled-audit-process.json": "438b8c5a0b04f5fee47281c944fa36fc08e03d113ed391163ff915fe824fbb1f",
+    "raw/primary-25603-ancestor-copy_disabled-output.txt": "182bbd675e9133916720518ed7dbdf4c12c811e5c9c37920eaba241ec7e19422",
+    "raw/primary-25603-ancestor-copy_disabled-process.json": "5a3e078dece60242dbbef1c9fbf7869ef1034ca16e6c4247798d38b276f28ae7",
+    "raw/primary-25603-ancestor-copy_disabled-restored-output.txt": "182bbd675e9133916720518ed7dbdf4c12c811e5c9c37920eaba241ec7e19422",
+    "raw/primary-25603-ancestor-copy_disabled-restored-process.json": "9f98a14c2706a5f64d0286b3bb800e97aab148ee15e5d58ff692fddd01cfe80c",
+    "raw/primary-25603-ancestor-copy_disabled-row.json": "5e321b16236355ddbe15621c37dc7323817197f52f28f1b087dbd507df07c90b",
+    "raw/primary-25603-ancestor-faithful-audit-output.txt": "fea767f63ce16d9f872b15dc231b107c2dec64dfc8d2076a66b51529ee785273",
+    "raw/primary-25603-ancestor-faithful-audit-process.json": "3d1fd1fa0d9a4eaa4c9ed622185f0751a68be3547971b008897417297913436e",
+    "raw/primary-25603-ancestor-faithful-output.txt": "14502139b33963b3660f165346e5bc13fc4f89b9881ae4ab9cbcc1f1958af432",
+    "raw/primary-25603-ancestor-faithful-process.json": "05653e3093d63678e31afe6d382a777830832de62903e81df19b8a4c83f5433c",
+    "raw/primary-25603-ancestor-faithful-restored-output.txt": "14502139b33963b3660f165346e5bc13fc4f89b9881ae4ab9cbcc1f1958af432",
+    "raw/primary-25603-ancestor-faithful-restored-process.json": "a0e4d9ebe90379e92959d87c0ee407df9ee62c760bdcc6f5ade2de12660e79b3",
+    "raw/primary-25603-ancestor-faithful-row.json": "bd875a288689b7c0e122c3032988ca1c32399fb6c04dab9641c1eeeea7cc04f3",
+    "raw/primary-25603-ancestor-mutating-audit-output.txt": "feaab919d713cfe7a032c0902f35a227b5ef032f3503c9b88a064c00962bfc5f",
+    "raw/primary-25603-ancestor-mutating-audit-process.json": "d0ad35b6a2af9df04790eefe81c2b4bd52957f54dbc3d118675d943d0756038a",
+    "raw/primary-25603-ancestor-mutating-output.txt": "4252df0acfbf95ac83245544895b2fb3adb5e357c8c8fba7207a340c9d04bf42",
+    "raw/primary-25603-ancestor-mutating-process.json": "12a22ba8783683d2e7fbc07e0c516a814915f7e8fde0e993432e347e4d2e8995",
+    "raw/primary-25603-ancestor-mutating-restored-output.txt": "4252df0acfbf95ac83245544895b2fb3adb5e357c8c8fba7207a340c9d04bf42",
+    "raw/primary-25603-ancestor-mutating-restored-process.json": "5418cef327c958648c2d879fad3fdac99cef475495db2993048236e50bb1bc63",
+    "raw/primary-25603-ancestor-mutating-row.json": "65e4898a64cbf40a9c767aa7888c1973b587b7b2741d65354e8678c197cb1f68",
+    "raw/runner.py": "cca8e83f5a5b7f1f4979ddf33ea4250f7c72ff7931a9992d9ba2a8b0146a5882",
+    "raw/software-25690-alternating-faithful-audit-output.txt": "421139718e62e5b3b90b04afe7f8cc7cbcaec8a3e520c70caa8d9581072f2998",
+    "raw/software-25690-alternating-faithful-audit-process.json": "fcf051ba377d14a3147507030a711434dd602e0ad9d05f60878c8aa2a27cd645",
+    "raw/software-25690-alternating-faithful-output.txt": "86bc6e4cd38cabb2b9efedff1922a9ed94557b1d244c25e6c61ee8f3e4655132",
+    "raw/software-25690-alternating-faithful-process.json": "cb0446e283d0023d60c853e1083df21a0d82a41bafe0b8ef4a38498536e71dfb",
+    "raw/software-25690-alternating-faithful-restored-output.txt": "86bc6e4cd38cabb2b9efedff1922a9ed94557b1d244c25e6c61ee8f3e4655132",
+    "raw/software-25690-alternating-faithful-restored-process.json": "c292fa5828df97efe741f2b7d8a350f8765463efc6d8dc5b70a27382561c57cf",
+    "raw/software-25690-alternating-faithful-row.json": "47ae1f821421ccfd7ded5665e63568d9f62f850494b0fc124ecbf8ebd0222189",
+    "raw/software-25690-disconnected-faithful-audit-output.txt": "8574b63be0db9f74d73ac6b0a72fd4154c3462be96276cf3c4162fe9da9d52d7",
+    "raw/software-25690-disconnected-faithful-audit-process.json": "e582023f9d56398a32d50e1398d254e062c6ff465dca3fa1f087747a7d13052e",
+    "raw/software-25690-disconnected-faithful-output.txt": "e67edce60f6e8b232a13fea7651645c0fffdaa3a026798734ddfcd2a1d9358a4",
+    "raw/software-25690-disconnected-faithful-process.json": "9b1b6dd9376d65e38208792af727f6bf95fa2232ae48fa4d04d5c3ba3724d91d",
+    "raw/software-25690-disconnected-faithful-restored-output.txt": "e67edce60f6e8b232a13fea7651645c0fffdaa3a026798734ddfcd2a1d9358a4",
+    "raw/software-25690-disconnected-faithful-restored-process.json": "0dadd2db59309824cb80e9b509199df9415246d1eb5fb6277b05fa858afb1abe",
+    "raw/software-25690-disconnected-faithful-row.json": "072e8ff47400e33c1452dca85034f06e11a2516f67d46829ce51d9b01731e3e1",
+    "raw/software-25690-fixed0-faithful-audit-output.txt": "6ab6a1c0ae34f16754f77e8e7b5626a30d496ab63ada658eeacec9444217aaa3",
+    "raw/software-25690-fixed0-faithful-audit-process.json": "e4fbd22d088a695c1a32635f9a28afbc71eaca710e2e67fc195d85ec7b506cfc",
+    "raw/software-25690-fixed0-faithful-output.txt": "3357dadb691a46a3c9e9c447ae13eb7d38e745ca34fd91d60f13fcc0edb92920",
+    "raw/software-25690-fixed0-faithful-process.json": "f6bcba0d5554a767da7c0f471d9bcff0f3b3d3293b323b737143d6c9cd275247",
+    "raw/software-25690-fixed0-faithful-restored-output.txt": "3357dadb691a46a3c9e9c447ae13eb7d38e745ca34fd91d60f13fcc0edb92920",
+    "raw/software-25690-fixed0-faithful-restored-process.json": "afe31df836101d4bcb3932e38764201c579af2ec7c3522901c71da6d4731c7aa",
+    "raw/software-25690-fixed0-faithful-row.json": "cc2f05adad96641cf4c54a93dc130a47bd5359fb114bf5b0959ddb36eceb1e8f",
+    "raw/software-25690-fixed1-faithful-audit-output.txt": "4bace43e873b998f92c2cd7b0aca5254099a8beeafb7bb98071afc9e8b3f4959",
+    "raw/software-25690-fixed1-faithful-audit-process.json": "827c4e7af51fdef6df3b952cfaf7a6c49094f2681b75e72a35c1633805d3f8ff",
+    "raw/software-25690-fixed1-faithful-output.txt": "6d438a7788b3b8031f66d81cb12cf74ababc797cf09828a8b105291bc2d69426",
+    "raw/software-25690-fixed1-faithful-process.json": "f885d56b112a524794d50910a1f6f48aa1afa6c9fb3aadc6fac7956a057f0715",
+    "raw/software-25690-fixed1-faithful-restored-output.txt": "6d438a7788b3b8031f66d81cb12cf74ababc797cf09828a8b105291bc2d69426",
+    "raw/software-25690-fixed1-faithful-restored-process.json": "d44d14b2f1ffeab1b393988645170615f2f52fe37f508e847f37b2f37be06f64",
+    "raw/software-25690-fixed1-faithful-row.json": "9e0879824d05ec1cf6af847a47f906c5d19ef3a6087df31b44a323ed27c324da",
+    "raw/software-25690-witness-faithful-audit-output.txt": "ac46b0a7ad4ba942a0f52e46b30670115ddf8bb0307046f9a674098b1b69e215",
+    "raw/software-25690-witness-faithful-audit-process.json": "15eee1ddc6c820a22cf79da29eb7cd45975ac81866ef69665ef887febf7fe929",
+    "raw/software-25690-witness-faithful-output.txt": "b7168877299cbb2ecd29170ab28c54205ea08bd17f5ad17589c11ded5583b5f7",
+    "raw/software-25690-witness-faithful-process.json": "8f6e152fd91d6a58e836f7612f740cab7a8b3c8c0bf47c71a5ac54fe8bea2594",
+    "raw/software-25690-witness-faithful-restored-output.txt": "b7168877299cbb2ecd29170ab28c54205ea08bd17f5ad17589c11ded5583b5f7",
+    "raw/software-25690-witness-faithful-restored-process.json": "8e7d39b8a63d96d4bc0ff0969c7550ef0307b8372e5201ad7e8d63803325e9d9",
+    "raw/software-25690-witness-faithful-row.json": "0ae6e91eaf2fe9e4a60f2fee182dce695e1c7be2676afef8489aba4e129cca9a",
+    "raw/software-25691-alternating-faithful-audit-output.txt": "e1e262cf96aa15c89cbe3ea165940c46c3a3a2c422b94c3c7f6a63d63cb4e5e4",
+    "raw/software-25691-alternating-faithful-audit-process.json": "23fc49469218266215856bfa760229c93b5b3ac938fc31e3fd844a5ffac525bf",
+    "raw/software-25691-alternating-faithful-output.txt": "df5593cfc55b9042e068ed7c55f7c8ea52db004abca170ef391696ad3a6c85d1",
+    "raw/software-25691-alternating-faithful-process.json": "eac443099bc13414fc821b63701b69ab60fb61d898b5e55eedbf92aca4c18c61",
+    "raw/software-25691-alternating-faithful-restored-output.txt": "df5593cfc55b9042e068ed7c55f7c8ea52db004abca170ef391696ad3a6c85d1",
+    "raw/software-25691-alternating-faithful-restored-process.json": "123c41ba91dcc8df45cd0b92d193dc72f997d15892520714ac20d74418ed1f2f",
+    "raw/software-25691-alternating-faithful-row.json": "7fa02749be180ae5de97afa904fe6cbd56cce43b5b80e477818e29be4f87b40c",
+    "raw/software-25691-disconnected-faithful-audit-output.txt": "f7fb1940b633cef0b14103fdadbb12e0e07137fe7a2d84c41b8595dcc0cd2aba",
+    "raw/software-25691-disconnected-faithful-audit-process.json": "989e7f73841cc372a83eee08e4be242c0d146942ca2ab1927b7a99b0b6b78a82",
+    "raw/software-25691-disconnected-faithful-output.txt": "93c4c8004d2b37d979d0e501781281257499bea264428fa638eb38b2252e7438",
+    "raw/software-25691-disconnected-faithful-process.json": "d6ca6c4e9e5810b3ce61e3740760d94a947d23452bb00841dc3b6668360439a3",
+    "raw/software-25691-disconnected-faithful-restored-output.txt": "93c4c8004d2b37d979d0e501781281257499bea264428fa638eb38b2252e7438",
+    "raw/software-25691-disconnected-faithful-restored-process.json": "33a5fd7648159ccd617c09132e673e01d8f159151fb67327024749cee3a4dd09",
+    "raw/software-25691-disconnected-faithful-row.json": "89c7b1aa3518295015001b1face72f9803ff5d8949c4b2535d5627bb1185913d",
+    "raw/software-25691-fixed0-faithful-audit-output.txt": "1e5d09be068941dc4b3c0af7befd52ba575abac94feccfef5dab6e965d84e771",
+    "raw/software-25691-fixed0-faithful-audit-process.json": "dd5b896346be672f06681e8273ded86ec21888ed69204be2a449213f0f1c527d",
+    "raw/software-25691-fixed0-faithful-output.txt": "cc641210bae1a8535b26013e1f561b835e6aeaa8e3e4159858aec65c5a8572e1",
+    "raw/software-25691-fixed0-faithful-process.json": "dcb3eebb405c05411b9922253e2d578d89e0df45b460869f80447ea3559d4162",
+    "raw/software-25691-fixed0-faithful-restored-output.txt": "cc641210bae1a8535b26013e1f561b835e6aeaa8e3e4159858aec65c5a8572e1",
+    "raw/software-25691-fixed0-faithful-restored-process.json": "3180baed60a9842dc21215a2e3394c92125769e77f22a006d633fdb1163f419f",
+    "raw/software-25691-fixed0-faithful-row.json": "7b203c79ae309a679519fa2d580ab41dba71cbb3a1e36defe8e951b6371e7b37",
+    "raw/software-25691-fixed1-faithful-audit-output.txt": "6819f94c8276340756796fbc95534dfc477636122cc43bcabfb9ec3fe63b4d03",
+    "raw/software-25691-fixed1-faithful-audit-process.json": "5c9c8b0ac309d09e02acd0d975c9205aac2f91dabbc059cea36393d96c78fbbd",
+    "raw/software-25691-fixed1-faithful-output.txt": "4eb7ad355bedbd951b366dd7b96d5897a928e9c0398e0ff7650ae60ac7600919",
+    "raw/software-25691-fixed1-faithful-process.json": "221616493a4b02ea64f763816bf485c5c16870cd9f3dd20bcbf7c4b917ae4cea",
+    "raw/software-25691-fixed1-faithful-restored-output.txt": "4eb7ad355bedbd951b366dd7b96d5897a928e9c0398e0ff7650ae60ac7600919",
+    "raw/software-25691-fixed1-faithful-restored-process.json": "34d28cd74d7ea805576e6ec8af98ce90998cd0c19816bd3736ec058e6ea9a70e",
+    "raw/software-25691-fixed1-faithful-row.json": "c930b727658b426410581ac539764f0f03f2a5ab3242409c4e0af72c886d4d03",
+    "raw/software-25691-witness-faithful-audit-output.txt": "e09deda43359667d91a4b3f99922f9e238abc2887f1ed1a4e442e1bad4105818",
+    "raw/software-25691-witness-faithful-audit-process.json": "fbb457dbffc285de49a9e39d9f9cf6cb222c4907dd1ddfc48a8ab3a7824baed2",
+    "raw/software-25691-witness-faithful-output.txt": "83b170056da6fd88af4230ab1a885089108557ac5f2108bf0db5368f60bcd1f8",
+    "raw/software-25691-witness-faithful-process.json": "3b6298d73374b98da3db04d6b69fd59e69b4bb1825214df56d5db12ce0544b9e",
+    "raw/software-25691-witness-faithful-restored-output.txt": "83b170056da6fd88af4230ab1a885089108557ac5f2108bf0db5368f60bcd1f8",
+    "raw/software-25691-witness-faithful-restored-process.json": "cca04d2ce4cad410273cf9071e70707caf73a59c8783dc61202c608deb1878e1",
+    "raw/software-25691-witness-faithful-row.json": "0554e51ad9617612753cad4da815d8f15a272278fbc2715c7c223d3da8d2922d",
+    "raw/source-seals.json": "308d6541afab93d4d8ac5935f495f2decc7e5aad3584b19b4d384d74d8fdb215",
+    "raw/source/docs/CURRENT-DEVELOPMENT.md": "aca7bc8f478965faee03e86936dbd555e25425bf4d6db1728cb50c2788796285",
+    "raw/source/docs/DIGITAL-OPPORTUNITY-06-PROTOCOL.md": "e397ce769f3d83b63a1fe3e611294eea408b18dc21edf5dbb4e3cfa3b6ea7e70",
+    "raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+    "raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+    "raw/source/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "raw/source/experiments/evidence_budget_audit.py": "b756ecea19c839499aa1cf581e545ee88382eed472bcc88d1902b5fba0c212c8",
+    "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw/source/tests/test_digital_release07.py": "d559d8b49e305509d434070afa93f031d279d7bc4585142184cdef43f543f408",
+    "restore/docs/CURRENT-DEVELOPMENT.md": "aca7bc8f478965faee03e86936dbd555e25425bf4d6db1728cb50c2788796285",
+    "restore/docs/DIGITAL-OPPORTUNITY-06-PROTOCOL.md": "e397ce769f3d83b63a1fe3e611294eea408b18dc21edf5dbb4e3cfa3b6ea7e70",
+    "restore/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+    "restore/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+    "restore/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "restore/experiments/evidence_budget_audit.py": "b756ecea19c839499aa1cf581e545ee88382eed472bcc88d1902b5fba0c212c8",
+    "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore/tests/test_digital_release07.py": "d559d8b49e305509d434070afa93f031d279d7bc4585142184cdef43f543f408"
+  },
+  "software_histories": 10,
+  "source": "181d40c99d264da97990858a44f64dc8b759d027",
+  "source_restored": true,
+  "storage": {
+    "files": 181,
+    "limits": {
+      "archive": 67108864,
+      "failure": 16777216,
+      "raw": 134217728,
+      "restore": 67108864
+    },
+    "logical_bytes": 8088383,
+    "reserved_by_phase": {
+      "archive": 92238,
+      "failure": 10726,
+      "raw": 7716409,
+      "restore": 269010
+    },
+    "reserved_bytes": 8088383,
+    "sha256": {
+      "archive/source.zip": "924a750ecb9277413350a3f61ad4049b70467cb43b47d0b385262f2799a4444c",
+      "failure/budget.json": "a7f7fd6ea3440f7d3510db8f93d732c3ead35d8fe36f8682765fc9ffdba99172",
+      "raw/decision.json": "1de453376246152b0d62285ebacdde2990ca3ad33b82dad967197b8c241d7004",
+      "raw/fixtures-output.txt": "0715d6629ee8068e61174820b9301921f3e8b8c864ca9be660612d19158b0012",
+      "raw/fixtures-process.json": "8a2c21b3c10cd8bf460e1bea8f42a294af1c2fe98470f93b10a7091c8a1c08e9",
+      "raw/metrics.json": "2a721b3a6bf2fa308fa10a3c5c6a22ed6b3c14c0320294af844383f124880241",
+      "raw/pin.json": "6c8e4e8b3c3dfa88cff4a930183e7a4c4f523fbe7e819ec30147207de959f4d2",
+      "raw/primary-25600-ancestor-copy_disabled-audit-output.txt": "980a6a068c2af66092fc45f8f340fd977d8342a3fbade9b59eef4b97fbc28976",
+      "raw/primary-25600-ancestor-copy_disabled-audit-process.json": "5f19999028e78fac1a043ab638814685a088a8b0ab9c189d0c3c26b4e17633bf",
+      "raw/primary-25600-ancestor-copy_disabled-output.txt": "ae6b59f4cc3700b6b5af0825660ef1c20ccc38b15f7c20a4eee9306c9a28f2ec",
+      "raw/primary-25600-ancestor-copy_disabled-process.json": "6ee14551969db41d2aeeee73399e9b7acc48338db90659c5c0f1b3da6646732a",
+      "raw/primary-25600-ancestor-copy_disabled-restored-output.txt": "ae6b59f4cc3700b6b5af0825660ef1c20ccc38b15f7c20a4eee9306c9a28f2ec",
+      "raw/primary-25600-ancestor-copy_disabled-restored-process.json": "ec92d0c23500afef789b31c2d8b8aee326a436777e57e0e9061cb71de9954252",
+      "raw/primary-25600-ancestor-copy_disabled-row.json": "3c1a1e80a0d081ca3dd2b0caaad2e2e0b1069704dd151c169bd4dcf673e1d196",
+      "raw/primary-25600-ancestor-faithful-audit-output.txt": "a09f79f885a37050c2645cec86902a23162673c7c88f1e3afbef35c4b729bb49",
+      "raw/primary-25600-ancestor-faithful-audit-process.json": "bcfea8e395b2bb5bd8bfd645f34e7f7d4b8dd3cbca05216d5ea33e0f2c32f7e8",
+      "raw/primary-25600-ancestor-faithful-output.txt": "234d95eb8608a92088c8e005cd71486839ea625548c1a54ff4ba395522915048",
+      "raw/primary-25600-ancestor-faithful-process.json": "7560f889557e6ddef68e648b4a70d0cd3f61058369934eaf576ba22164972f12",
+      "raw/primary-25600-ancestor-faithful-restored-output.txt": "234d95eb8608a92088c8e005cd71486839ea625548c1a54ff4ba395522915048",
+      "raw/primary-25600-ancestor-faithful-restored-process.json": "881f8afaf8aaecf34075a80222f533e37897068658bf37247e0fd24e6061ae10",
+      "raw/primary-25600-ancestor-faithful-row.json": "31d4da6b01107ff086379e450a6ccfb63139bf37a2a53eb00a101a915004944d",
+      "raw/primary-25600-ancestor-mutating-audit-output.txt": "c6ebadcd9e00e102ed68a89d4a4352c28dfe73ad014b24cdc51a7a22e4e9b67f",
+      "raw/primary-25600-ancestor-mutating-audit-process.json": "43ead34f951b4b7afb45fadd99392a11096f9a454d2560f343a2b53934fd54a7",
+      "raw/primary-25600-ancestor-mutating-output.txt": "1349be1a3f9411b0b0544e93da4d1cf279ca107ea5886bf210b270265b624cc9",
+      "raw/primary-25600-ancestor-mutating-process.json": "f5dda5b008e2c7bbddb80f00bbdf55762133a50c6068d808716cd883834138f5",
+      "raw/primary-25600-ancestor-mutating-restored-output.txt": "1349be1a3f9411b0b0544e93da4d1cf279ca107ea5886bf210b270265b624cc9",
+      "raw/primary-25600-ancestor-mutating-restored-process.json": "291ff9a4f78fcad11de2330814b1ce77236908f15423ee6fd6afcc15c9e8ac4c",
+      "raw/primary-25600-ancestor-mutating-row.json": "b92a1ef825c26acce879cad50dab48e49cb0973e42e4b4b2d134c9b7680b7140",
+      "raw/primary-25601-ancestor-copy_disabled-audit-output.txt": "9daaf213fa24e059c1c5e004dc03cfcadfc9096d672fe6398e235aa3c581df1a",
+      "raw/primary-25601-ancestor-copy_disabled-audit-process.json": "1d87b37f89f70c00621cc7e17578b3f0dee4bf2ea462500c5adea26e1df5c118",
+      "raw/primary-25601-ancestor-copy_disabled-output.txt": "b4b1c615971967336634abb848b932af34144d87c4723305f51bfa1fb2bb3822",
+      "raw/primary-25601-ancestor-copy_disabled-process.json": "6e92ff478803dd04873eefddc2ad6c77415b6cfe2f8a30b2fc5de2c21d881644",
+      "raw/primary-25601-ancestor-copy_disabled-restored-output.txt": "b4b1c615971967336634abb848b932af34144d87c4723305f51bfa1fb2bb3822",
+      "raw/primary-25601-ancestor-copy_disabled-restored-process.json": "5ea25118e94f88d6d837ea304ca52980382c16ddda74db6390603b81d86f3a1f",
+      "raw/primary-25601-ancestor-copy_disabled-row.json": "e73bc50beda46f0b7e1b9b551e2528274ccf59273009a8a8640bf91a3526fe64",
+      "raw/primary-25601-ancestor-faithful-audit-output.txt": "9c19857d7ee121563191db8c55dccbdc3eccb554d93ba21c470dc8487b4c1c05",
+      "raw/primary-25601-ancestor-faithful-audit-process.json": "1c36e795b6f98cdee09eecfb1b7e66b56343da6e95a47883ca475f0189d6e232",
+      "raw/primary-25601-ancestor-faithful-output.txt": "a43d11e706eeed8e40b40ea2be82a810694baa70c6a0d866a3d17351eaa51467",
+      "raw/primary-25601-ancestor-faithful-process.json": "b85a722421801100c8fd438a770c18c4f5f47b4e5f4fa9a1ee06beac80cb70e7",
+      "raw/primary-25601-ancestor-faithful-restored-output.txt": "a43d11e706eeed8e40b40ea2be82a810694baa70c6a0d866a3d17351eaa51467",
+      "raw/primary-25601-ancestor-faithful-restored-process.json": "c000bfc1602c16935bad3383b490b4d7fc5e8f63ce135f07fb000ee83feee48f",
+      "raw/primary-25601-ancestor-faithful-row.json": "9a628b6f0d036ca75d0bbea18d673c81480d784d7a4cc944259bfb123c0e764f",
+      "raw/primary-25601-ancestor-mutating-audit-output.txt": "8c1b8f5d43dcc2817e79fba396726580ffbd1ca37a6e88e7b9bc27445d6c7cff",
+      "raw/primary-25601-ancestor-mutating-audit-process.json": "1fb732df5d8b44a44876f3bb9d7d62ed9be24b22fbeb1e59d9425b6d2be383d6",
+      "raw/primary-25601-ancestor-mutating-output.txt": "b979b96da8b4e9b530c49317227bd1978f9c2c468c661cf3fcaac74f5164b151",
+      "raw/primary-25601-ancestor-mutating-process.json": "7350fff5f86e0fc070317b0fcc9c4faf7017bbf281cbb8496726e2764617e8a9",
+      "raw/primary-25601-ancestor-mutating-restored-output.txt": "b979b96da8b4e9b530c49317227bd1978f9c2c468c661cf3fcaac74f5164b151",
+      "raw/primary-25601-ancestor-mutating-restored-process.json": "27656510cf434ef8842f20d171aec1bc9c5cc0e4c12f78dd084d30f17af21762",
+      "raw/primary-25601-ancestor-mutating-row.json": "d0cbf093f1b89335c51f5dcb9f82c294b5fe96e2f01f22e777816510be2153f7",
+      "raw/primary-25602-ancestor-copy_disabled-audit-output.txt": "1f348f5313cbee212180db6054edac4f344a240271fd50cd83189117597989b0",
+      "raw/primary-25602-ancestor-copy_disabled-audit-process.json": "cd7315274b25492e6256fc04735177d95b661152096eb3d97976bcbe0c574a01",
+      "raw/primary-25602-ancestor-copy_disabled-output.txt": "e90026445ba2ba2a56ed909219a3f4d13723e2e0e3eb331de757af1dcfbde2ea",
+      "raw/primary-25602-ancestor-copy_disabled-process.json": "ef4ab382ff7319b569fc4180465163bdc6657de507ca58c114cf5fbf22ae22ea",
+      "raw/primary-25602-ancestor-copy_disabled-restored-output.txt": "e90026445ba2ba2a56ed909219a3f4d13723e2e0e3eb331de757af1dcfbde2ea",
+      "raw/primary-25602-ancestor-copy_disabled-restored-process.json": "15f4699749fe947c7323933c36d7b619b44c2b1392402cf9063875e422c007fa",
+      "raw/primary-25602-ancestor-copy_disabled-row.json": "a2084ecf47eb554b502b417feeb6c163dfb4ee63179b9237ddf6ec585dce8466",
+      "raw/primary-25602-ancestor-faithful-audit-output.txt": "fa09799ad9da9f9c1407be91c35cfbe1a58225b2b24661a0f17360941a7d189c",
+      "raw/primary-25602-ancestor-faithful-audit-process.json": "b168fba3e19fb2b215bcfbfc2c7b3ebbd0414811bb65a4fc3b18e446130e174f",
+      "raw/primary-25602-ancestor-faithful-output.txt": "c91a625b58e4025eb0d1a1689bb036a90d2ec2a42484934165b63feb09512e72",
+      "raw/primary-25602-ancestor-faithful-process.json": "ec45d3c9f9b705831453d0f461d4f3d648a8c1899c242028f0fda968b09c841a",
+      "raw/primary-25602-ancestor-faithful-restored-output.txt": "c91a625b58e4025eb0d1a1689bb036a90d2ec2a42484934165b63feb09512e72",
+      "raw/primary-25602-ancestor-faithful-restored-process.json": "216a8266dd5380232f3ffe6a7b78397b7ee38c4075bbdf367db576cd5d0d66b5",
+      "raw/primary-25602-ancestor-faithful-row.json": "719a4ae3072ba07694851ec840e1da1b55b2bc78b1c3434d51abd3a617c14bb9",
+      "raw/primary-25602-ancestor-mutating-audit-output.txt": "f45a6b651417d67bbfd7aeb80b3246fcfeb25d2da7d0d38ef60b399dc5e291e1",
+      "raw/primary-25602-ancestor-mutating-audit-process.json": "8819cc9ec73f5115f15ef39f95d4c68bdd774e3c70bec1e9f6e70b076d48a493",
+      "raw/primary-25602-ancestor-mutating-output.txt": "4773ea7dff90737369f1be9c719878a62ad21bdab7973c6bf20865b0c66e0a86",
+      "raw/primary-25602-ancestor-mutating-process.json": "804cac7576bf69ab5d19553ac2687d926a854a61452ecc6b50bb962cddf8eca2",
+      "raw/primary-25602-ancestor-mutating-restored-output.txt": "4773ea7dff90737369f1be9c719878a62ad21bdab7973c6bf20865b0c66e0a86",
+      "raw/primary-25602-ancestor-mutating-restored-process.json": "463e02ec3ccf94383eaaf0d48c648564ce2e9f60eeaf03957bedfc274d99fdd2",
+      "raw/primary-25602-ancestor-mutating-row.json": "56bbecf246a0995681d2490ab0dac94e156e9b126d892e58bbf96600dbb99063",
+      "raw/primary-25603-ancestor-copy_disabled-audit-output.txt": "1bbfa3bed117352a99d36eda2ba7c94ea8abd71680aaee9617616f6b65ef4f41",
+      "raw/primary-25603-ancestor-copy_disabled-audit-process.json": "438b8c5a0b04f5fee47281c944fa36fc08e03d113ed391163ff915fe824fbb1f",
+      "raw/primary-25603-ancestor-copy_disabled-output.txt": "182bbd675e9133916720518ed7dbdf4c12c811e5c9c37920eaba241ec7e19422",
+      "raw/primary-25603-ancestor-copy_disabled-process.json": "5a3e078dece60242dbbef1c9fbf7869ef1034ca16e6c4247798d38b276f28ae7",
+      "raw/primary-25603-ancestor-copy_disabled-restored-output.txt": "182bbd675e9133916720518ed7dbdf4c12c811e5c9c37920eaba241ec7e19422",
+      "raw/primary-25603-ancestor-copy_disabled-restored-process.json": "9f98a14c2706a5f64d0286b3bb800e97aab148ee15e5d58ff692fddd01cfe80c",
+      "raw/primary-25603-ancestor-copy_disabled-row.json": "5e321b16236355ddbe15621c37dc7323817197f52f28f1b087dbd507df07c90b",
+      "raw/primary-25603-ancestor-faithful-audit-output.txt": "fea767f63ce16d9f872b15dc231b107c2dec64dfc8d2076a66b51529ee785273",
+      "raw/primary-25603-ancestor-faithful-audit-process.json": "3d1fd1fa0d9a4eaa4c9ed622185f0751a68be3547971b008897417297913436e",
+      "raw/primary-25603-ancestor-faithful-output.txt": "14502139b33963b3660f165346e5bc13fc4f89b9881ae4ab9cbcc1f1958af432",
+      "raw/primary-25603-ancestor-faithful-process.json": "05653e3093d63678e31afe6d382a777830832de62903e81df19b8a4c83f5433c",
+      "raw/primary-25603-ancestor-faithful-restored-output.txt": "14502139b33963b3660f165346e5bc13fc4f89b9881ae4ab9cbcc1f1958af432",
+      "raw/primary-25603-ancestor-faithful-restored-process.json": "a0e4d9ebe90379e92959d87c0ee407df9ee62c760bdcc6f5ade2de12660e79b3",
+      "raw/primary-25603-ancestor-faithful-row.json": "bd875a288689b7c0e122c3032988ca1c32399fb6c04dab9641c1eeeea7cc04f3",
+      "raw/primary-25603-ancestor-mutating-audit-output.txt": "feaab919d713cfe7a032c0902f35a227b5ef032f3503c9b88a064c00962bfc5f",
+      "raw/primary-25603-ancestor-mutating-audit-process.json": "d0ad35b6a2af9df04790eefe81c2b4bd52957f54dbc3d118675d943d0756038a",
+      "raw/primary-25603-ancestor-mutating-output.txt": "4252df0acfbf95ac83245544895b2fb3adb5e357c8c8fba7207a340c9d04bf42",
+      "raw/primary-25603-ancestor-mutating-process.json": "12a22ba8783683d2e7fbc07e0c516a814915f7e8fde0e993432e347e4d2e8995",
+      "raw/primary-25603-ancestor-mutating-restored-output.txt": "4252df0acfbf95ac83245544895b2fb3adb5e357c8c8fba7207a340c9d04bf42",
+      "raw/primary-25603-ancestor-mutating-restored-process.json": "5418cef327c958648c2d879fad3fdac99cef475495db2993048236e50bb1bc63",
+      "raw/primary-25603-ancestor-mutating-row.json": "65e4898a64cbf40a9c767aa7888c1973b587b7b2741d65354e8678c197cb1f68",
+      "raw/runner.py": "cca8e83f5a5b7f1f4979ddf33ea4250f7c72ff7931a9992d9ba2a8b0146a5882",
+      "raw/software-25690-alternating-faithful-audit-output.txt": "421139718e62e5b3b90b04afe7f8cc7cbcaec8a3e520c70caa8d9581072f2998",
+      "raw/software-25690-alternating-faithful-audit-process.json": "fcf051ba377d14a3147507030a711434dd602e0ad9d05f60878c8aa2a27cd645",
+      "raw/software-25690-alternating-faithful-output.txt": "86bc6e4cd38cabb2b9efedff1922a9ed94557b1d244c25e6c61ee8f3e4655132",
+      "raw/software-25690-alternating-faithful-process.json": "cb0446e283d0023d60c853e1083df21a0d82a41bafe0b8ef4a38498536e71dfb",
+      "raw/software-25690-alternating-faithful-restored-output.txt": "86bc6e4cd38cabb2b9efedff1922a9ed94557b1d244c25e6c61ee8f3e4655132",
+      "raw/software-25690-alternating-faithful-restored-process.json": "c292fa5828df97efe741f2b7d8a350f8765463efc6d8dc5b70a27382561c57cf",
+      "raw/software-25690-alternating-faithful-row.json": "47ae1f821421ccfd7ded5665e63568d9f62f850494b0fc124ecbf8ebd0222189",
+      "raw/software-25690-disconnected-faithful-audit-output.txt": "8574b63be0db9f74d73ac6b0a72fd4154c3462be96276cf3c4162fe9da9d52d7",
+      "raw/software-25690-disconnected-faithful-audit-process.json": "e582023f9d56398a32d50e1398d254e062c6ff465dca3fa1f087747a7d13052e",
+      "raw/software-25690-disconnected-faithful-output.txt": "e67edce60f6e8b232a13fea7651645c0fffdaa3a026798734ddfcd2a1d9358a4",
+      "raw/software-25690-disconnected-faithful-process.json": "9b1b6dd9376d65e38208792af727f6bf95fa2232ae48fa4d04d5c3ba3724d91d",
+      "raw/software-25690-disconnected-faithful-restored-output.txt": "e67edce60f6e8b232a13fea7651645c0fffdaa3a026798734ddfcd2a1d9358a4",
+      "raw/software-25690-disconnected-faithful-restored-process.json": "0dadd2db59309824cb80e9b509199df9415246d1eb5fb6277b05fa858afb1abe",
+      "raw/software-25690-disconnected-faithful-row.json": "072e8ff47400e33c1452dca85034f06e11a2516f67d46829ce51d9b01731e3e1",
+      "raw/software-25690-fixed0-faithful-audit-output.txt": "6ab6a1c0ae34f16754f77e8e7b5626a30d496ab63ada658eeacec9444217aaa3",
+      "raw/software-25690-fixed0-faithful-audit-process.json": "e4fbd22d088a695c1a32635f9a28afbc71eaca710e2e67fc195d85ec7b506cfc",
+      "raw/software-25690-fixed0-faithful-output.txt": "3357dadb691a46a3c9e9c447ae13eb7d38e745ca34fd91d60f13fcc0edb92920",
+      "raw/software-25690-fixed0-faithful-process.json": "f6bcba0d5554a767da7c0f471d9bcff0f3b3d3293b323b737143d6c9cd275247",
+      "raw/software-25690-fixed0-faithful-restored-output.txt": "3357dadb691a46a3c9e9c447ae13eb7d38e745ca34fd91d60f13fcc0edb92920",
+      "raw/software-25690-fixed0-faithful-restored-process.json": "afe31df836101d4bcb3932e38764201c579af2ec7c3522901c71da6d4731c7aa",
+      "raw/software-25690-fixed0-faithful-row.json": "cc2f05adad96641cf4c54a93dc130a47bd5359fb114bf5b0959ddb36eceb1e8f",
+      "raw/software-25690-fixed1-faithful-audit-output.txt": "4bace43e873b998f92c2cd7b0aca5254099a8beeafb7bb98071afc9e8b3f4959",
+      "raw/software-25690-fixed1-faithful-audit-process.json": "827c4e7af51fdef6df3b952cfaf7a6c49094f2681b75e72a35c1633805d3f8ff",
+      "raw/software-25690-fixed1-faithful-output.txt": "6d438a7788b3b8031f66d81cb12cf74ababc797cf09828a8b105291bc2d69426",
+      "raw/software-25690-fixed1-faithful-process.json": "f885d56b112a524794d50910a1f6f48aa1afa6c9fb3aadc6fac7956a057f0715",
+      "raw/software-25690-fixed1-faithful-restored-output.txt": "6d438a7788b3b8031f66d81cb12cf74ababc797cf09828a8b105291bc2d69426",
+      "raw/software-25690-fixed1-faithful-restored-process.json": "d44d14b2f1ffeab1b393988645170615f2f52fe37f508e847f37b2f37be06f64",
+      "raw/software-25690-fixed1-faithful-row.json": "9e0879824d05ec1cf6af847a47f906c5d19ef3a6087df31b44a323ed27c324da",
+      "raw/software-25690-witness-faithful-audit-output.txt": "ac46b0a7ad4ba942a0f52e46b30670115ddf8bb0307046f9a674098b1b69e215",
+      "raw/software-25690-witness-faithful-audit-process.json": "15eee1ddc6c820a22cf79da29eb7cd45975ac81866ef69665ef887febf7fe929",
+      "raw/software-25690-witness-faithful-output.txt": "b7168877299cbb2ecd29170ab28c54205ea08bd17f5ad17589c11ded5583b5f7",
+      "raw/software-25690-witness-faithful-process.json": "8f6e152fd91d6a58e836f7612f740cab7a8b3c8c0bf47c71a5ac54fe8bea2594",
+      "raw/software-25690-witness-faithful-restored-output.txt": "b7168877299cbb2ecd29170ab28c54205ea08bd17f5ad17589c11ded5583b5f7",
+      "raw/software-25690-witness-faithful-restored-process.json": "8e7d39b8a63d96d4bc0ff0969c7550ef0307b8372e5201ad7e8d63803325e9d9",
+      "raw/software-25690-witness-faithful-row.json": "0ae6e91eaf2fe9e4a60f2fee182dce695e1c7be2676afef8489aba4e129cca9a",
+      "raw/software-25691-alternating-faithful-audit-output.txt": "e1e262cf96aa15c89cbe3ea165940c46c3a3a2c422b94c3c7f6a63d63cb4e5e4",
+      "raw/software-25691-alternating-faithful-audit-process.json": "23fc49469218266215856bfa760229c93b5b3ac938fc31e3fd844a5ffac525bf",
+      "raw/software-25691-alternating-faithful-output.txt": "df5593cfc55b9042e068ed7c55f7c8ea52db004abca170ef391696ad3a6c85d1",
+      "raw/software-25691-alternating-faithful-process.json": "eac443099bc13414fc821b63701b69ab60fb61d898b5e55eedbf92aca4c18c61",
+      "raw/software-25691-alternating-faithful-restored-output.txt": "df5593cfc55b9042e068ed7c55f7c8ea52db004abca170ef391696ad3a6c85d1",
+      "raw/software-25691-alternating-faithful-restored-process.json": "123c41ba91dcc8df45cd0b92d193dc72f997d15892520714ac20d74418ed1f2f",
+      "raw/software-25691-alternating-faithful-row.json": "7fa02749be180ae5de97afa904fe6cbd56cce43b5b80e477818e29be4f87b40c",
+      "raw/software-25691-disconnected-faithful-audit-output.txt": "f7fb1940b633cef0b14103fdadbb12e0e07137fe7a2d84c41b8595dcc0cd2aba",
+      "raw/software-25691-disconnected-faithful-audit-process.json": "989e7f73841cc372a83eee08e4be242c0d146942ca2ab1927b7a99b0b6b78a82",
+      "raw/software-25691-disconnected-faithful-output.txt": "93c4c8004d2b37d979d0e501781281257499bea264428fa638eb38b2252e7438",
+      "raw/software-25691-disconnected-faithful-process.json": "d6ca6c4e9e5810b3ce61e3740760d94a947d23452bb00841dc3b6668360439a3",
+      "raw/software-25691-disconnected-faithful-restored-output.txt": "93c4c8004d2b37d979d0e501781281257499bea264428fa638eb38b2252e7438",
+      "raw/software-25691-disconnected-faithful-restored-process.json": "33a5fd7648159ccd617c09132e673e01d8f159151fb67327024749cee3a4dd09",
+      "raw/software-25691-disconnected-faithful-row.json": "89c7b1aa3518295015001b1face72f9803ff5d8949c4b2535d5627bb1185913d",
+      "raw/software-25691-fixed0-faithful-audit-output.txt": "1e5d09be068941dc4b3c0af7befd52ba575abac94feccfef5dab6e965d84e771",
+      "raw/software-25691-fixed0-faithful-audit-process.json": "dd5b896346be672f06681e8273ded86ec21888ed69204be2a449213f0f1c527d",
+      "raw/software-25691-fixed0-faithful-output.txt": "cc641210bae1a8535b26013e1f561b835e6aeaa8e3e4159858aec65c5a8572e1",
+      "raw/software-25691-fixed0-faithful-process.json": "dcb3eebb405c05411b9922253e2d578d89e0df45b460869f80447ea3559d4162",
+      "raw/software-25691-fixed0-faithful-restored-output.txt": "cc641210bae1a8535b26013e1f561b835e6aeaa8e3e4159858aec65c5a8572e1",
+      "raw/software-25691-fixed0-faithful-restored-process.json": "3180baed60a9842dc21215a2e3394c92125769e77f22a006d633fdb1163f419f",
+      "raw/software-25691-fixed0-faithful-row.json": "7b203c79ae309a679519fa2d580ab41dba71cbb3a1e36defe8e951b6371e7b37",
+      "raw/software-25691-fixed1-faithful-audit-output.txt": "6819f94c8276340756796fbc95534dfc477636122cc43bcabfb9ec3fe63b4d03",
+      "raw/software-25691-fixed1-faithful-audit-process.json": "5c9c8b0ac309d09e02acd0d975c9205aac2f91dabbc059cea36393d96c78fbbd",
+      "raw/software-25691-fixed1-faithful-output.txt": "4eb7ad355bedbd951b366dd7b96d5897a928e9c0398e0ff7650ae60ac7600919",
+      "raw/software-25691-fixed1-faithful-process.json": "221616493a4b02ea64f763816bf485c5c16870cd9f3dd20bcbf7c4b917ae4cea",
+      "raw/software-25691-fixed1-faithful-restored-output.txt": "4eb7ad355bedbd951b366dd7b96d5897a928e9c0398e0ff7650ae60ac7600919",
+      "raw/software-25691-fixed1-faithful-restored-process.json": "34d28cd74d7ea805576e6ec8af98ce90998cd0c19816bd3736ec058e6ea9a70e",
+      "raw/software-25691-fixed1-faithful-row.json": "c930b727658b426410581ac539764f0f03f2a5ab3242409c4e0af72c886d4d03",
+      "raw/software-25691-witness-faithful-audit-output.txt": "e09deda43359667d91a4b3f99922f9e238abc2887f1ed1a4e442e1bad4105818",
+      "raw/software-25691-witness-faithful-audit-process.json": "fbb457dbffc285de49a9e39d9f9cf6cb222c4907dd1ddfc48a8ab3a7824baed2",
+      "raw/software-25691-witness-faithful-output.txt": "83b170056da6fd88af4230ab1a885089108557ac5f2108bf0db5368f60bcd1f8",
+      "raw/software-25691-witness-faithful-process.json": "3b6298d73374b98da3db04d6b69fd59e69b4bb1825214df56d5db12ce0544b9e",
+      "raw/software-25691-witness-faithful-restored-output.txt": "83b170056da6fd88af4230ab1a885089108557ac5f2108bf0db5368f60bcd1f8",
+      "raw/software-25691-witness-faithful-restored-process.json": "cca04d2ce4cad410273cf9071e70707caf73a59c8783dc61202c608deb1878e1",
+      "raw/software-25691-witness-faithful-row.json": "0554e51ad9617612753cad4da815d8f15a272278fbc2715c7c223d3da8d2922d",
+      "raw/source-seals.json": "308d6541afab93d4d8ac5935f495f2decc7e5aad3584b19b4d384d74d8fdb215",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "aca7bc8f478965faee03e86936dbd555e25425bf4d6db1728cb50c2788796285",
+      "raw/source/docs/DIGITAL-OPPORTUNITY-06-PROTOCOL.md": "e397ce769f3d83b63a1fe3e611294eea408b18dc21edf5dbb4e3cfa3b6ea7e70",
+      "raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/source/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+      "raw/source/experiments/evidence_budget_audit.py": "b756ecea19c839499aa1cf581e545ee88382eed472bcc88d1902b5fba0c212c8",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_release07.py": "d559d8b49e305509d434070afa93f031d279d7bc4585142184cdef43f543f408",
+      "restore/docs/CURRENT-DEVELOPMENT.md": "aca7bc8f478965faee03e86936dbd555e25425bf4d6db1728cb50c2788796285",
+      "restore/docs/DIGITAL-OPPORTUNITY-06-PROTOCOL.md": "e397ce769f3d83b63a1fe3e611294eea408b18dc21edf5dbb4e3cfa3b6ea7e70",
+      "restore/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "restore/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "restore/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+      "restore/experiments/evidence_budget_audit.py": "b756ecea19c839499aa1cf581e545ee88382eed472bcc88d1902b5fba0c212c8",
+      "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "restore/tests/test_digital_release07.py": "d559d8b49e305509d434070afa93f031d279d7bc4585142184cdef43f543f408"
+    },
+    "total_limit": 285212672
+  },
+  "totals": {
+    "primary-ancestor-copy_disabled": {
+      "births": 0,
+      "deaths": 4,
+      "descendant_births": 0,
+      "feedback_reads": 0,
+      "fresh_packets": 64,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 102,
+      "pre_food": 26,
+      "successful_food": 128
+    },
+    "primary-ancestor-faithful": {
+      "births": 32,
+      "deaths": 36,
+      "descendant_births": 28,
+      "feedback_reads": 0,
+      "fresh_packets": 64,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 0,
+      "paid_copy_words": 642,
+      "post_food": 102,
+      "pre_food": 26,
+      "successful_food": 128
+    },
+    "primary-ancestor-mutating": {
+      "births": 6,
+      "deaths": 10,
+      "descendant_births": 2,
+      "feedback_reads": 0,
+      "fresh_packets": 0,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 12,
+      "paid_copy_words": 126,
+      "post_food": 5,
+      "pre_food": 19,
+      "successful_food": 24
+    },
+    "software-alternating-faithful": {
+      "births": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "feedback_reads": 0,
+      "fresh_packets": 32,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 43,
+      "pre_food": 21,
+      "successful_food": 64
+    },
+    "software-disconnected-faithful": {
+      "births": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "feedback_reads": 23,
+      "fresh_packets": 0,
+      "live_final": 0,
+      "memory_writes": 8,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 0,
+      "pre_food": 13,
+      "successful_food": 13
+    },
+    "software-fixed0-faithful": {
+      "births": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "feedback_reads": 0,
+      "fresh_packets": 0,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 0,
+      "pre_food": 16,
+      "successful_food": 16
+    },
+    "software-fixed1-faithful": {
+      "births": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "feedback_reads": 0,
+      "fresh_packets": 0,
+      "live_final": 0,
+      "memory_writes": 0,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 0,
+      "pre_food": 16,
+      "successful_food": 16
+    },
+    "software-witness-faithful": {
+      "births": 0,
+      "deaths": 2,
+      "descendant_births": 0,
+      "feedback_reads": 83,
+      "fresh_packets": 32,
+      "live_final": 0,
+      "memory_writes": 17,
+      "mutations": 0,
+      "paid_copy_words": 0,
+      "post_food": 40,
+      "pre_food": 24,
+      "successful_food": 64
+    }
+  },
+  "verified": true,
+  "whole_work": null
+}
