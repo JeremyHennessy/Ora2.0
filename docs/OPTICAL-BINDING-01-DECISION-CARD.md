@@ -100,3 +100,13 @@ before a prototype. No optical-force helper, another resource ceiling, broad
 literature pass or supplied-apparatus world. Evidence stages remain unchanged.
 ADAPTATION remains a separate design track; no controller, LLM, AgentTest,
 observer or persistent-world activation.
+
+Documentary verification: frozen 45baa20d4ea6ca25295277619708edf7f8f012b1;
+`D:/OraLab/runs/optical-binding01-admission-20261011/independent-audit.json`.
+Seven sealed records passed separate archive restoration, byte/hash, null-work,
+same-law/input control and plan/closure/card consistency checks. All 850 shared
+tracked files unchanged. Accounted storage 751421 bytes under 8MiB, 2MiB per
+phase and 5GiB free floor. Archive SHA256
+6eb50087d59e95dff16ab0f8d9cfcc1e3f0dbac94ac1570de9e4ed7e45ef5df0;
+auditor SHA256 b12b1e899298dcd69b8f1bb5f6d55e2c58e66d0323b706c39beffd895fec6490.
+This verifies documentary integrity, not an independently reproduced converter.
