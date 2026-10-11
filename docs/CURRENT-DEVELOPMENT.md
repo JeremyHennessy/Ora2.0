@@ -94,6 +94,7 @@ one-way switch or fabricated price. Work/comparator remain null/unmeasured.
 Next decision: specify the joint path law and complete closure or reject it;
 no intermediate helper/ceiling run. Science owns this decision; unrelated
 engineering/research audits stay deferred. No experiment currently active.
+[Preserved admission decision and independent documentary audit](INDUCTIVE-PATH-01-ADMISSION-RECEIPT.md).
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
