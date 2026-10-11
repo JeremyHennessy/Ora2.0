@@ -59,6 +59,33 @@ charged twice. The unit mode energy and stable empty constraint are declared
 digital interactions, not measured apparatus prices. No thermal equilibrium,
 detailed balance, hardware efficiency or autonomous-life claim is made.
 
+## Functional-role attribution clarification
+
+A new generic carrier DID form after damage: object:6, materials a0+s0,
+bond2, at t69.067559. It has the installed carrier morphology and a charged
+mode, but never contacted the load afterward and delivered0 load work.
+The frozen repair endpoint required both original a0/a1 materials; its empty
+`rebuilt` list therefore does not prove that no carrier was formed. All six
+histories were independently re-read for ANY post-loss new carrier, without
+changing the original endpoint or executing another world.
+[Complete role-attribution ledger](../data/mode-converter01/role-scope.json).
+
+Thus formation of a replacement-shaped object occurred; restoration of useful
+load service did not. Its lack of subsequent load contacts is an exposure
+limitation for that particular replacement, not an adequately exposed trial of
+its conversion ability. Whole-life/post margins and profitable direct dominance
+independently reject the complete tested fixture. Do not turn this into a general
+impossibility claim about new carriers, retune the closed law, or retroactively
+change the registered endpoint. For future distinct mechanisms, admit every
+role-equivalent replacement composition from accessible raw materials when its
+function and paid ancestry are verified; original-material identity alone is
+not the definition of functional renewal.
+
+This is interpretation of existing immutable data. Bounded reader/restored reader
+agree byte-for-byte; source seals remain unchanged. Preserve its first failed
+launch (missing native-supervisor package) separately from the corrected reader.
+Local accepted receipt: D:/OraLab/runs/mode-role-scope01-v2-20261011/raw/proof.json.
+
 ## Preserved failures and verification
 
 The initial frozen check stopped on producer/interpreter disagreement at contact6.
