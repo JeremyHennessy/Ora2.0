@@ -1,17 +1,17 @@
 # Current development plan and handoff
 
-DIGITAL-VARIATION-11 REGISTERED, NOT EXECUTED: [prospective protocol](DIGITAL-VARIATION-11-PROTOCOL.md). One neutral single-point-copy candidate in ADMISSION10's supplied eight-triple configuration under unchanged09/07 laws, complete paid copying/draw/selector/division/startup/cap/release bills. Seeds25900..25907 across single/per-word/matched faithful/actual-cost ordinary, at most32 primary histories; all16 ordinary controls first, stop before mutation if any ordinary endpoint fails. Every lineage/death retained, material-certified executed MOVE inheritance plus remote acquisition/reproduction required; diversity alone earns no credit. Reserves25908..25915 untouched. Same finite1420energy/512material, bounded exclusive lock/native caps/replay/separate audit. No new learning/evolution/repair/stage evidence; whole/fresh mechanical work and damage null. Next decision: independently verify complete ordinary readiness and execute the frozen unconditional comparison only if admitted.
+DIGITAL-VARIATION-11 CLOSED NEGATIVE: [protocol](DIGITAL-VARIATION-11-PROTOCOL.md), [all32-history receipt](DIGITAL-VARIATION-11-RECEIPT.md), source`70136fea7866fe2bd38a13fa4611d5b178980095`. All16 ordinary controls admitted before mutation; single256food/128fresh/23births/6descendant/31deaths versus matched faithful256/128/24/8/32 and actual-cost ordinary256/128/64/56/72; per-word256/128/24/8/32. Single23 novel-born genomes but0 remote/qualified inherited behavior; practical advantage and preferred operator FAIL. All extinct by355; full1420energy/512material conserved, zero feedback/memory operations. Two checks/97 nativezeroexits/32 full independent and restored-byte histories/separate audit; root aggregation missing-summary-key failure preserved and corrected from actual events, no raw/law/gate changes. No reserves/learning/evolution/repair/stage credit; whole/fresh work/damage null. Single next dependency: exact paid within-life experience/action/memory candidate source admission and unseen fixed/memory/own-history controls; reproduction not prerequisite, no installed learner or closed-panel resampling.
 
 DIGITAL-ORDINARY-ADMISSION-10 CLOSED ordinary lifecycle prerequisite: [protocol](DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md), [all six-history receipt](DIGITAL-ORDINARY-ADMISSION-10-RECEIPT.md), source`e48b556b070699aca7342b297a4a66b9bfcb4c6d`. Unchanged09/07 laws, supplied eight-triple matched cadence64food/32fresh/6births/2descendant births/8deaths versus actual-cost ordinary64/32/16/14/18; copying-disabled0births. Same generic paid ordinary/descendant/fresh evaluator accepts both configurations in each software25890/91 and rejects impossible controls. All extinct by355; finite1420energy/512material conserved, full copy/draw/state/division/startup/cap/release bills independently reconstructed. Two checks/19 nativezeroexits/six restored-byte histories/separate audit; initial adapternative1 and incorrect cross-law derived bill summary preserved and corrected without raw/law/gate change. Zero primary mutation worlds; reserves untouched, no discovery/learning/evolution/repair/stage credit. Single next dependency: register neutral variation with admitted supplied cadence, matched operator and actual-cost ordinary controls; include every natural lineage/death, no target/winner installation. Learning remains independent.
 
-| Active candidate decision card | Prospective decision |
+| Closed candidate decision card | Prospective decision |
 |---|---|
 | Question/distinctive capability | Can neutral paid copied variation naturally generate and transmit remote acquisition plus reproduction absent from the supplied stationary ancestor? |
 | Smallest decisive test | Seeds25900..25907×four arms, at most32 histories,512/extinction; all16 ordinary controls first; all natural entities/deaths retained. |
 | Exact candidate/comparators | Eight-triple09 single; same founder per-word and faithful matched machinery; original six-triple07 actual-cost ordinary. No selected winner, target, learner or researcher repair. |
 | Complete bill | Formation42; full24-word nursery60 without rejected draws, firstCOPY11/later7 plus rejection1; division32 after base1/startup12/cap64/release16. Actual ordinary formation34/copy24/division30; unused sampler tax is not minimum reproduction cost. |
 | Gates/falsifiers | Each ordinary history has birth/descendant birth/fresh/descendant fresh>=1 before candidate admission. Each single has paid birth; qualified novel-parent copied-executed MOVE/remote/reproductive transmission in>=2seeds; single weakly dominates both ordinary controls food/descendant births every seed, strict>=2seeds. Per-word reported without screening. |
-| Current evidence/next | ADMISSION10 supplied ordinary readiness only; new panel NOT EXECUTED. Freeze exact source, pass focused measurement/ancestry checks, then admit or stop on fresh ordinary controls. Reserves untouched; no learning/evolution/repair/stage advance. |
+| Current evidence/next | All32 histories independently verified. Ordinary and candidate-formation readiness PASS;0 useful-transmission seeds, practical and operator benefit FAIL. Candidate closed negative; reserves untouched. Next exact paid within-life candidate/experience-path admission with unseen causal controls; no reproduction prerequisite or stage advance. |
 
 ## Current priority and prospective admission — October 11
 
@@ -22,8 +22,10 @@ this planning reconciliation; all frozen laws, receipts and reserves stay intact
 
 The reproduction/mutation admission rule remains **ordinary-route viability
 first**. ADMISSION10 resolves the supplied ordinary prerequisite in two software
-orientations; the next claim-specific variation protocol must recheck readiness
-for its registered candidate/comparator configurations. Use this admitted
+orientations; VARIATION11 rechecked all16 controls and closed the first complete
+neutral-variation comparison negative. The current next dependency is the
+separate paid within-life candidate/experience path below, not another mutation
+panel or world version. Use this admitted
 acquisition-before-copy configuration within the reviewed substrate before
 introducing another world law. Record the full paid
 path: founder and every code/state role, larger-program formation and complete
