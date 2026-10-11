@@ -4,6 +4,15 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+ADAPTATION-CONTROLS-01 clarifies the separate design track's causal controls:
+whole-record order shuffling retains cue/action/outcome associations, so it cannot
+by itself rule out order-insensitive learning. Register association disruption
+separately, preserving identical incoming resources and immutable world events;
+cost actual internal memory interventions. [Design](ADAPTATION-01-DESIGN.md).
+No controller, policy, law, actor or experiment is activated; all cost and unseen
+action endpoints remain unmeasured. COHERENT-CONTACT-01 remains the primary
+science question below, with its complete source/load/renewal law unresolved.
+
 ASSOCIATION-CHANNEL-01 implements and verifies one isolated prerequisite of
 COHERENT-CONTACT-01 at e715bfb: a finite third constituent receives binding energy
 and returns it on the exact reverse path. [Contract](ASSOCIATION-CHANNEL-01-CONTRACT.md)
