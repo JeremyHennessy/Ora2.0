@@ -42,6 +42,8 @@ def history(seed,route):
     return dict(version=VERSION,seed=seed,mode='faithful',route=route,genesis_program=PROGRAMS[route],checkpoint=checkpoint,final=final,hash=h(final),ancestor_supplied=True,checkpoint_replay=True,learning_demonstrated=False)
 
 if __name__=='__main__':
-    import json,sys
+    import base64,json,sys,zlib
     seed=int(sys.argv[1]);assert seed in (25190,25191)
-    print(json.dumps([history(seed,sys.argv[2])],sort_keys=True,separators=(',',':')))
+    # Lossless receipt transport under the unchanged 1 MiB native stdout cap.
+    raw=json.dumps([history(seed,sys.argv[2])],sort_keys=True,separators=(',',':')).encode()
+    print(base64.b64encode(zlib.compress(raw)).decode('ascii'))

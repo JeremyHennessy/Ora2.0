@@ -63,6 +63,8 @@ not organism failure; never tune either fixture or the frozen gates after execut
 Native128MiB/5CPU seconds/10wall seconds/3 processes/output1MiB. Existing exclusive
 operator lock, disk floor5GiB, evidence128MiB/32MiB each raw/archive/restore/failure.
 Preserve native errors, timeouts and failed evidence. No persistent activation.
+Lossless zlib/base64 transport keeps native stdout within1MiB; decoded complete
+JSON receipts remain subject to the evidence ledger. This changes transport only.
 
 If admitted, next freeze a descendant-sourcing protocol using an honestly supplied
 ordinary reproductive genome with paid space; the successful measurement witness
