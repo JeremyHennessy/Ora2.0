@@ -61,3 +61,12 @@ resistance helper, circuit ceiling or another broad literature pass. Historical
 capillary and all other closed mechanisms remain closed. Evidence stages and
 ADAPTATION design-only scope are unchanged. No controller, legacy AgentTest,
 observer or persistent-world activation.
+
+Documentary verification receipt: frozen source19d5d75e05885efebbdc9a9c30d718496d0564ed,
+`D:/OraLab/runs/inductive-constructor01-20261011/independent-audit.json`.
+Seven sealed records passed separate byte/hash, archive restoration, null-work,
+decision-scope and plan/card consistency checks;849 shared tracked files unchanged.
+Accounted storage741983 bytes under8MiB, with2MiB per phase and5GiB free floor.
+Archive SHA256ad6a9031fe6f800791579063440a244f1ca0061d4b5c8f805cd79d1ca8713761;
+auditor SHA256fc6f6caa44fa4ffbbf5907f6efc04580e0730f46292d1ae102438d8fbdf6e312.
+This audits documentary integrity, not independent physical reproduction.
