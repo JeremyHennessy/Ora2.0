@@ -1,0 +1,26 @@
+# DIGITAL-EXPERIENCE-12 paid cold-start admission: failed
+
+[Frozen protocol](DIGITAL-EXPERIENCE-12-PROTOCOL.md); [all16 outcomes, actual personal experiences and complete bills](../data/digital-experience12-results.json). Source `45b3beb9729041d062c4283ffa77d6d6bf3ceba3`. Exact unchanged Release07 VM/interpreter; all four FEEDBACK08 structural fixtures and ancestor/alternating/fixed0/fixed1 in both software orientations. Zero primary learning worlds; fixtures directly installed as disclosed software measurement assistance, never introduced as discovered organisms. **Both-orientation paid personal-experience gate FAILS.**
+
+| Fixture |26090 food/fresh/births/deaths/ticks|26091 food/fresh/births/deaths/ticks|Actual-experience endpoint26090/26091|
+|---|---|---|---|
+|feedback6|32/16/6/7/255|0/0/0/1/9|pass/fail|
+|feedback9|32/16/0/1/251|0/0/0/1/12|pass/fail|
+|feedback12|32/16/0/1/251|0/0/0/1/9|pass/fail|
+|feedback15|32/16/6/7/281|0/0/0/1/9|pass/fail|
+|ordinary ancestor|32/16/8/9/355|32/16/8/9/340|fail/fail: no feedback reads|
+|alternating|32/16/0/1/249|32/16/0/1/258|fail/fail: no feedback reads|
+|fixed0|16/0/0/1/111|0/0/0/1/12|fail/fail: no feedback reads|
+|fixed1|0/0/0/1/12|16/0/0/1/111|fail/fail: no feedback reads|
+
+Same actor endpoint: actual success and failure outcomes,>=4 own-feedback-read intervals between actual acquisitions,>=4 post64 attempts and>=1 post64 success. Every feedback fixture passes26090 with personally obtained experience, but all fail26091: initially port0 is wrong; FEEDBACK maps failure0 back to register0/port0; all actual attempts remain port0 against target1, no food obtained, deaths at9/12/9/9 before reversal64. This is a cold-start exploration/experience-admission failure, not failed learning, reproduction impossibility or missing general ISA. Two fixtures lack COPY/DIVIDE yet pass actual experience26090, directly showing the software endpoint does not require reproduction. Raw action/feedback sequences and each conjunction are retained. No feedback fixture is promoted as an organism candidate; fixed references also refused by own-feedback-read condition. No causal action-quality advantage or unseen/history/memory-null experiment conducted, no primary candidate admitted.
+
+All16 extinct by355. Every1420energy/512material ledger conserved and all material returned. Formation34 for six-triple fixtures/ancestor,28 alternating,25 fixed; every instruction1, copying3extra per triple, division18heat+12startuptransfer, exogenous release16 when64 reached, all cap/refusal/waste/unused stock/incomplete nurseries recorded. Early failures do not pay unreachable release; unused constructor/food remain in the final finite ledger. No paid assistance beyond disclosed founder formation and boundary release; no rescue, free apparatus, cost reduction, policy installation into a primary population or controller activation. Memory reads/writes zero; feedback latch/register are the tested paid channels, not a learned general memory.
+
+Two focused endpoint/feedback-forgery checks,49 capped native zero exits,16 full independent histories/checkpoint continuations and16 archived-source restored identical-byte replays pass. Separate root interpreter reconstructs per-actor intervals and full formation/copy/division/startup/release/cap/HALT/live-energy bills; no runtime/integrity defect, timeout or truncation. Source archive SHA `ea48904d15ce11ef188ba36a9d386952c6dcfbeb48f6f63d494fcdf24e398f7a`. Old laws/receipts/results/reserves unchanged; no source/price/entry/gate/sample tuning. Primary26000..26007 and reserves26008..26015 UNEXECUTED. Whole/fresh mechanical work/damage null. No Stage6/7, discovery, learning, evolution, repair or consciousness acceptance.
+
+| Transition demonstrated | Whole/fresh work | Damage/fresh exposure | Source/receipt | Decision | Single next dependency |
+|---|---|---|---|---|---|
+| Disclosed fixtures obtain/use actual feedback at full cost in26090, cold-start wrong-port trap in26091 |null/null|damage null; feedback26090 fresh16 each,26091 fresh0|`45b3beb9729041d062c4283ffa77d6d6bf3ceba3` / all16 data|Paid source admission fails both-orientation gate; no primary learning panel|Paid failure-triggered alternative action from a performance-blind source; no successful fixture repair/reinstallation or old-sample tuning|
+
+Exact missing capability: paid cold-start exploration after the first wrong-port failure. All four disclosed feedback fixtures map failed feedback0 to ACTport0, never obtain food in orientation26091 and die by12, so no primary learning/null panel is admitted. Prospectively specify a performance-blind neutral source mechanism supporting failure-triggered alternative action under the same finite paid ISA, with full formation/control/memory/opportunity bills and fresh samples; do not install a repaired successful fixture or tune this closed bank. Then admit actual own-experience opportunities before unseen fixed/memory/own-history controls. No reproduction prerequisite or new world law justified. Observer paused; no persistent world/service, learner/controller, observer/UI, legacy, LLM or API activation. Physical durability, off-host/full-host restore and production confinement remain future pilot limitations.
