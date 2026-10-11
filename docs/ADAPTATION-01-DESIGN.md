@@ -171,6 +171,58 @@ seconds, four process slots, a 5 GiB disk floor, exclusive operator lock and
 `32ceb6b4f7d1150f8eaf3a41145cbc91121f6e3b69285660588865f2efcaf6ee`.
 Same-drive restore is not independent-host or physical-durability evidence.
 
+## Counterfactual opportunity and selection boundary (design only)
+
+October 11, 2026. This resolves a design ambiguity, not a new actor, policy,
+experiment, challenge sample or demonstrated learning result.
+
+Pair arms on the same **exogenous opportunities**, not forced identical realized
+outcomes. A frozen environmental tape may declare finite resource arrivals,
+hazard changes and challenge randomness. Each arm has its own equally endowed
+world copy and material ledger. Its actions determine encounters, consumption
+and delayed consequences under the same installed law. Different actions can
+therefore produce different future sensory records and useful returns. Copying
+the candidate's successful outcome stream into a control would supply feedback
+that the control did not earn and invalidate the useful-action comparison.
+Keep a mapping between corresponding exogenous resource identities for audit;
+do not transfer consumed material, work or outcome knowledge between arms.
+
+At a registered memory intervention, preserve that arm's already realized
+world chronology and actual past outcomes. Apply only its own eligible observed
+history to its retained state. Donor references must never cross actor/arm
+boundaries. Provenance labels, hidden maps and future consequences stay evaluator
+only. The earlier rule that memory editing does not change the real outcome
+means an existing observation cannot be rewritten; it does not force all future
+outcomes to match after changed actions. A common exogenous tape is not a teacher
+or a prerecorded action-contingent success tape. Meter editing and all subsequent
+actions separately, including arm-dependent costs and waste.
+
+The primary independent unit is the prospectively paired, unscreened founder
+and challenge allocation, not a time step, encounter or surviving actor.
+Freeze the unseen challenge generator and reserve its independent random stream
+before fitting/selecting any candidate or fixed-reactive design. Development
+may use separate training opportunities only, with search/selection costs and
+chosen designs declared before holdout access. The actor receives no phase
+labels; held-out change definitions are evaluator-only. Do not select a reactive
+baseline after seeing holdouts or give it fewer lawful resource opportunities.
+
+Report unconditional paired net useful returns over every allocated unit,
+including depleted, immobile and dead actors; do not discard their realized
+costs or condition the primary result on survival. Post-depletion actions cannot
+be imagined or refunded. Record survival and action/memory exposure separately.
+Repeated encounters are nested observations, not additional independent founders.
+Useful action means audited retained/exported work after its full bill, not an
+evaluator reward. Any terminal salvage valuation must be defined by the same
+law before sampling, not invented for successful survivors.
+
+Within-life change requires traces from the same identified actor without
+reproduction, replacement, researcher rescue or population selection. A paired
+holdout advantage over all required controls is distinct from improved training
+prediction, surviving an easier realized path or selecting a better initial
+design. Adequacy, effect threshold and paired statistic remain to be frozen only
+after a complete paid substrate exists. This clarification supplies none of its
+missing physical memory/action prices and authorizes no helper execution.
+
 ## Freeze gate and stop decisions
 
 Before executing this design, specify the exact physical law, resource stocks,
