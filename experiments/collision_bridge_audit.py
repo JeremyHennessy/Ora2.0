@@ -16,6 +16,17 @@ def unique(pairs):
     return d
 
 
+def exact(a, b):
+    """JSON equality without Python's boolean/integer coercion."""
+    if type(a) is not type(b):
+        return False
+    if type(a) is dict:
+        return set(a) == set(b) and all(exact(a[n], b[n]) for n in a)
+    if type(a) is list:
+        return len(a) == len(b) and all(exact(x, y) for x, y in zip(a, b))
+    return a == b
+
+
 def m(p):
     return sum(4 if n == 'load' else 1 for n in p[1])
 
@@ -56,7 +67,7 @@ def audit_record(record, arm):
     loss_bonds = None
     unused = None
     initial = view(t, h, c, serial, bond, first, parts)
-    if record['initial'] != initial or type(record['events']) is not list:
+    if not exact(record['initial'], initial) or type(record['events']) is not list:
         raise ValueError('Source or raw initial state substituted')
     for observed in record['events']:
         if finished:
@@ -147,7 +158,7 @@ def audit_record(record, arm):
             newborn=newborn, formation_debit=str(c-old_c), heat_delta=str(h-old_h),
             load_work=str(load_after-load_before), before=before,
             after=view(t, h, c, serial, bond, first, parts))
-        if expected != observed:
+        if not exact(expected, observed):
             raise ValueError('Event, ancestry, transport or transfer mismatch')
     if not finished or not lost:
         raise ValueError('Incomplete history')
@@ -158,7 +169,7 @@ def audit_record(record, arm):
         loss_bonds=loss_bonds, unused_sources_at_loss=unused, rebuilt_objects=rebuilt,
         rebuilt_load_work=str(rebuilt_work),
         success=bool(loss_bonds and rebuilt and rebuilt_work > 0 and whole > 0 and post > 0 and unused))
-    if score != record['score'] or type(record['score'].get('success')) is not bool:
+    if not exact(score, record['score']) or type(record['score'].get('success')) is not bool:
         raise ValueError('False endpoint')
     return dict(arm=arm, collisions=collisions, heat=str(h), score=score)
 
@@ -173,7 +184,7 @@ def audit(receipt):
     rows = [audit_record(r, a) for r, a in zip(receipt['records'], ARMS)]
     scores = {r['arm']: r['score'] for r in rows}
     p, alias = receipt['records'][0], receipt['records'][3]
-    if {k: v for k, v in p.items() if k != 'arm'} != {k: v for k, v in alias.items() if k != 'arm'}:
+    if not exact({k: v for k, v in p.items() if k != 'arm'}, {k: v for k, v in alias.items() if k != 'arm'}):
         raise ValueError('Identity shuffle differs')
     candidate, direct, shuffle = (scores[n] for n in ('candidate', 'direct', 'shuffle_exchange'))
     profitable = all(Q(direct[n]) > 0 for n in ('whole_margin', 'post_margin'))

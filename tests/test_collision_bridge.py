@@ -59,6 +59,13 @@ class CollisionBridgeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             json.loads('{"work":0,"work":1}', object_pairs_hook=unique)
 
+    def test_boolean_counter_substitution_is_refused(self):
+        f = fixtures()
+        f['records'][0]['initial']['next_object'] = False
+        f['records'][0]['events'][0]['before']['next_object'] = False
+        with self.assertRaises(ValueError):
+            audit(f)
+
 
 if __name__ == '__main__':
     unittest.main()
