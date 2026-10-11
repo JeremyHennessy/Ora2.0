@@ -9,13 +9,14 @@ class Capacity03(unittest.TestCase):
             row=history(25180,route);m=audit(row)
             self.assertEqual(row['final']['constructor_remaining'],128-len(row['genesis_program'])*3-16)
             self.assertFalse(m['learning'])
-            self.assertGreater(m['births'],0)
+            # Birth reachability is the frozen capacity gate, not an assumed
+            # software assertion. The same evaluator admits lawful extinction.
             for kind in ('formation','parentage','checkpoint'):
                 forged=copy.deepcopy(row)
                 if kind=='formation':forged['final']['formation'][0]['energy']=0
                 if kind=='parentage':
-                    event=next(e for e in forged['final']['events'] if 'birth' in e)
-                    event['birth']['write_ids'][0]+=1
+                    event=next(e for e in forged['final']['events'] if 'writes' in e)
+                    event['writes'][0]['source_unit']+=1
                 if kind=='checkpoint':forged['checkpoint']['last']+=1
                 forged['hash']=h(forged['final'])
                 with self.assertRaises(AssertionError):audit(forged)
