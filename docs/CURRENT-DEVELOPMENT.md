@@ -4,6 +4,38 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+RUNTIME-JSON-01 closes an evidenced recovery integrity defect: eight conflicting
+duplicate-name records previously passed last-value parsing and hashes. Frozen
+b089071 rejects ambiguity recursively; twenty focused recovery/short-write checks
+pass, with independent raw-pair/checksum interpretation and archived-source
+restore checks. Preserve the combined-suite timeout, five orphaned temporary
+files and its incomplete ledger, plus the corrected audit-wrapper API failure.
+[Receipt](RUNTIME-JSON-01-RECEIPT.md). No laws, results or observer UI changed.
+Engineering returns to its gated backlog after required publication checks;
+do not replace the next science prototype with a fresh general runtime audit.
+
+Primary candidate decision card (AI-only; not admitted):
+- Question: can a paid finite memoryful converter turn the identical correlated
+  digital feed into more retained useful work than an attainable paid stationary
+  full-block implementation, including reconstruction after functional loss?
+- Distinctive capability to test: reuse finite predictive state across arrivals;
+  its possible lower apparatus cost is a hypothesis, not a measured advantage.
+- Smallest decisive test: explicit finite transition histories for candidate and
+  stationary converter, before worlds, with the same incoming resource and paid
+  history-shuffle/function-disabled controls. Compare actual work, not ceilings.
+- Missing terms: transition-level conversion/reset/transport work and raw
+  formation/release/upkeep of every role. Resolve by specifying every energy and
+  material transfer in the implementable digital law and independently replaying
+  the ledger; reviewed entropy bounds cannot supply these prices. No apparatus
+  cost, attainable efficiency or control profit has yet been measured.
+- Gates: positive complete whole-life and fresh post-loss surplus; causal renewal
+  of every role, including construction; profitable accessible simpler controls;
+  advantage survives full-cost accounting and independent interpretation.
+- Decision: implementation remains gated on a complete transition/cost law.
+  If that cannot be specified without arbitrary favorable prices or supplied
+  machinery, record the exact missing term and select a genuinely different
+  mechanism. Do not run another equivalent capacity census or a natural panel.
+
 CORRELATION-CAPACITY-01 tests a distinct digital information-resource direction
 before apparatus or worlds. Frozen dba378a:30 capacity rows independently match
 21760 exactly weighted words and replay. Six rows have zero input-only ceiling;
