@@ -1,5 +1,5 @@
 """DIGITAL-RELEASE-07: prospective paid local hidden-port affordances."""
-import hashlib,json
+import base64,hashlib,json,zlib
 
 VERSION='DIGITAL-RELEASE-07-v1'
 PROGRAMS={'witness':[[4,1,1],[2,0,0],[6,0,0],[1,0,0],[8,0,7],[7,0,1],[18,0,0],[2,0,0],[5,0,1],[3,0,0],[7,0,1]],
@@ -157,4 +157,5 @@ if __name__=='__main__':
     route=sys.argv[2];assert route in PROGRAMS
     mode=sys.argv[3] if len(sys.argv)>3 else 'faithful'
     assert (seed>=25690 and route!='ancestor' and mode=='faithful') or (seed<25604 and route=='ancestor')
-    print(json.dumps([history(seed,route,mode)],sort_keys=True,separators=(',',':')))
+    raw=json.dumps([history(seed,route,mode)],sort_keys=True,separators=(',',':')).encode()
+    print(base64.b64encode(zlib.compress(raw)).decode('ascii'))
