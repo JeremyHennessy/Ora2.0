@@ -4,11 +4,25 @@
 
 ## Current session: both AI-only science and engineering reliability
 
-Primary science remains UNSELECTED: no complete new mechanism is admitted.
-The field-aggregation sketch repeats mass-transfer capability; renaming an
-autonomous conditional/contact converter would repeat the archived missing-law
-dependency. Do not implement either as a new candidate without a genuinely
-different complete causal mechanism. No new worlds or measured surplus.
+COHESION-01 is CLOSED at the authored admission gate.
+[Frozen common-force decision card](COHESION-01-PROTOCOL.md) and
+[verified result, all controls and preserved interpreter failure](COHESION-01-RECEIPT.md).
+Six raw geometries/two resolutions and total-ablation diagnostics completed;
+no natural worlds. Candidate retained load0.000300133, but charged positive
+intervention4.09102655 gives whole net-4.09072642 and fresh post about5e-9.
+None of the five actual simpler layouts has positive whole/post nets; matched
+profitable comparison is invalid. At both candidate losses no bound component
+was present, so functional renewal is UNDEREXPOSED, not adequately falsified.
+Independent ODE/metadata interpretation, four forgery refusals, eight focused
+tests and restored byte replay pass. No self-maintenance or Stage3 advance.
+Do not retune this closed prototype or reopen impact/mode/thermal/catalytic laws.
+Next sole primary proposal: CHARGE-SCREEN-01, NOT ADMITTED.
+[Compact decision card and exact unresolved construction/renewal term](CHARGE-SCREEN-01-DECISION-CARD.md).
+Its new capability is charge-conserving reflection/polarization, with an
+analytic accessible bare-reflector reference and mandatory actual profitable
+whole-life simpler comparison. Implement the complete raw-start microscopic
+prototype and paid all-role loss/renewal history before any natural worlds.
+No charge switching, unpriced clamp, founder or controller may supply success.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
