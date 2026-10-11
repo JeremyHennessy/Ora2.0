@@ -16,9 +16,12 @@ class SingleCopy09(unittest.TestCase):
         self.assertEqual(signatures[0],signatures[1]);self.assertEqual(signatures[0],signatures[2])
         for modulus in (18,31,558):self.assertEqual(draw(25789,['fixture'],modulus),sample(25789,['fixture'],modulus))
 
-    def test_complete_reproduction_certificates_and_tamper_refusal(self):
+    def test_frozen_ordinary_unavailability_and_tamper_refusal(self):
         faithful=history(25789,'ancestor','faithful');f=audit(faithful)
-        self.assertGreater(f['births'],0)
+        # Preserve the failed positive witness; this regression is NOT an
+        # admission pass. The frozen primary panel must remain unexecuted.
+        self.assertEqual(f['births'],0);self.assertEqual(f['ticks'],16)
+        self.assertEqual(f['successful_food'],1);self.assertEqual(f['paid_copy_words'],6)
         single=history(25789,'ancestor','single');s=audit(single)
         self.assertGreater(s['paid_copy_words'],0);self.assertTrue(all(n==1 for n in s['offspring_errors']))
         self.assertEqual(audit(history(25789,'ancestor','copy_disabled'))['births'],0)
