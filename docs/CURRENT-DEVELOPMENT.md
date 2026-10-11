@@ -27,7 +27,10 @@ bound births or functioning apparatus loss; repeated renewal UNDEREXPOSED,
 not adequately falsified. Independent metadata/RK4, four forgery refusals,
 eight focused tests and restored byte replay pass. No worlds or Stage3 advance.
 Do not tune closed conservative samples, damage timing or incoming feed.
-Next sole primary proposal: DISSIPATIVE-CAPTURE-01, NOT ADMITTED/unimplemented.
+Next sole primary candidate: DISSIPATIVE-CAPTURE-01, NOT ADMITTED. Exact
+finite capture-to-heat/capacity law and independent interpreter are ready to freeze.
+[Prospective24-record protocol](DISSIPATIVE-CAPTURE-01-PROTOCOL.md) and
+[run receipt](DISSIPATIVE-CAPTURE-01-RECEIPT.md). No measurements accepted yet.
 [Compact decision card and exact missing heat-channel term](DISSIPATIVE-CAPTURE-01-DECISION-CARD.md).
 Specify a finite common encounter-to-heat/capacity/disposal law and complete
 raw formation/renewal history against the paid bare route, or reject before
