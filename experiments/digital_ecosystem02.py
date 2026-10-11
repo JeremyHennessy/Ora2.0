@@ -114,7 +114,7 @@ class World:
         assert type(state['tick']) is int and 0<=state['tick']<=4096
         world=cls(state['seed'],state['mode'])
         while world.tick<state['tick']:assert world.step()
-        assert world.snapshot()==state
+        assert h(world.snapshot())==h(state)
         return world
 
     def run(self,horizon):

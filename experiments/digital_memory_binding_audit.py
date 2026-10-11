@@ -1,6 +1,6 @@
 """Independent bytecode interpreter; imports only the unchanged task auditor."""
 import hashlib, json
-from experiments.digital_memory_task_audit import audit as task_audit
+from experiments.digital_memory_task_audit import audit as task_audit, strict_types
 
 
 def h(value):
@@ -8,6 +8,7 @@ def h(value):
 
 
 def audit(row):
+    strict_types(row)
     assert row['version'] == 'DIGITAL-MEMORY-BINDING-01'
     program = row['program']
     assert isinstance(program,list) and 1 <= len(program) <= 32
