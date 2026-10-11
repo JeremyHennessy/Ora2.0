@@ -1,0 +1,1753 @@
+{
+  "admission_pass": true,
+  "archive_sha256": "ab15a64a6d039f307b8c36b4dd7ea45190897cb8298dbbd0c336569a0a8329a8",
+  "bill_correction": "Actual ordinary07 copy costs3 per emitted triple (writes count), division heat16state+2release=18; initial cross-law summary incorrectly used09event/heat shape. Raw histories/independent transition interpretations/readiness unchanged; initial audit retained.",
+  "byte_replay": true,
+  "classification": "SUPPLIED_ORDINARY_FULL_LIFECYCLE_SOFTWARE_ADMISSION_PASSED",
+  "complete_bills": [
+    {
+      "cap_overflow_energy": 58,
+      "configuration": "matched_double",
+      "constructor_remaining": 70,
+      "copy_extra_energy": 250,
+      "descendant_fresh": 10,
+      "division_heat": 60,
+      "final_heat": 710,
+      "formation_energy": 42,
+      "fresh_packets": 16,
+      "instructions": 284,
+      "material_formed": 42,
+      "material_returned": 512,
+      "paid_random_draws": 125,
+      "release_energy": 16,
+      "seed": 25890,
+      "selector_store_energy": 14,
+      "startup_transferred": 36,
+      "unused_food_energy": 640
+    },
+    {
+      "cap_overflow_energy": 367,
+      "configuration": "disabled_double",
+      "constructor_remaining": 70,
+      "copy_extra_energy": 0,
+      "descendant_fresh": 0,
+      "division_heat": 0,
+      "final_heat": 710,
+      "formation_energy": 42,
+      "fresh_packets": 16,
+      "instructions": 285,
+      "material_formed": 42,
+      "material_returned": 512,
+      "paid_random_draws": 0,
+      "release_energy": 16,
+      "seed": 25890,
+      "selector_store_energy": 0,
+      "startup_transferred": 0,
+      "unused_food_energy": 640
+    },
+    {
+      "cap_overflow_energy": 0,
+      "configuration": "actual_ordinary",
+      "constructor_remaining": 78,
+      "copy_extra_energy": 153,
+      "descendant_fresh": 16,
+      "division_heat": 144,
+      "final_heat": 702,
+      "formation_energy": 34,
+      "fresh_packets": 16,
+      "instructions": 355,
+      "material_formed": 34,
+      "material_returned": 512,
+      "paid_random_draws": 0,
+      "release_energy": 16,
+      "seed": 25890,
+      "selector_store_energy": 0,
+      "startup_transferred": 96,
+      "unused_food_energy": 640
+    },
+    {
+      "cap_overflow_energy": 22,
+      "configuration": "matched_double",
+      "constructor_remaining": 70,
+      "copy_extra_energy": 268,
+      "descendant_fresh": 10,
+      "division_heat": 60,
+      "final_heat": 710,
+      "formation_energy": 42,
+      "fresh_packets": 16,
+      "instructions": 302,
+      "material_formed": 42,
+      "material_returned": 512,
+      "paid_random_draws": 134,
+      "release_energy": 16,
+      "seed": 25891,
+      "selector_store_energy": 14,
+      "startup_transferred": 36,
+      "unused_food_energy": 640
+    },
+    {
+      "cap_overflow_energy": 369,
+      "configuration": "disabled_double",
+      "constructor_remaining": 70,
+      "copy_extra_energy": 0,
+      "descendant_fresh": 0,
+      "division_heat": 0,
+      "final_heat": 710,
+      "formation_energy": 42,
+      "fresh_packets": 16,
+      "instructions": 283,
+      "material_formed": 42,
+      "material_returned": 512,
+      "paid_random_draws": 0,
+      "release_energy": 16,
+      "seed": 25891,
+      "selector_store_energy": 0,
+      "startup_transferred": 0,
+      "unused_food_energy": 640
+    },
+    {
+      "cap_overflow_energy": 0,
+      "configuration": "actual_ordinary",
+      "constructor_remaining": 78,
+      "copy_extra_energy": 168,
+      "descendant_fresh": 16,
+      "division_heat": 144,
+      "final_heat": 702,
+      "formation_energy": 34,
+      "fresh_packets": 16,
+      "instructions": 340,
+      "material_formed": 34,
+      "material_returned": 512,
+      "paid_random_draws": 0,
+      "release_energy": 16,
+      "seed": 25891,
+      "selector_store_energy": 0,
+      "startup_transferred": 96,
+      "unused_food_energy": 640
+    }
+  ],
+  "controller_activated": false,
+  "correction_storage": {
+    "files": 94,
+    "limits": {
+      "failure": 8388608,
+      "raw": 33554432
+    },
+    "logical_bytes": 4854649,
+    "reserved_by_phase": {
+      "failure": 6811,
+      "raw": 4847838
+    },
+    "reserved_bytes": 4854649,
+    "sha256": {
+      "failure/budget.json": "573e25d03d022368031f7328107a0e06c013141866e70c3f3c3821ed30380eed",
+      "raw/charged-original/archive/source.zip": "ab15a64a6d039f307b8c36b4dd7ea45190897cb8298dbbd0c336569a0a8329a8",
+      "raw/charged-original/failure/budget.json": "054fa4e6fcb4a87cb2123cbe7f70ec834acc7d71521404657eb77a97ea08d9c6",
+      "raw/charged-original/raw/25890-actual_ordinary-audit-output.txt": "0a2a7dbd8fa428a156435c4896cf00d15d78a8cc0508e5d7687b631e3f84f197",
+      "raw/charged-original/raw/25890-actual_ordinary-audit-process.json": "f15f35164ee6c473429656d1307248155c1e7828ee28e0254de35efe9814f3a3",
+      "raw/charged-original/raw/25890-actual_ordinary-output.txt": "1cf54e9bd65584a88c5cfa046c3eb23d30ae493dfe2d992ec7adaea9165d5c56",
+      "raw/charged-original/raw/25890-actual_ordinary-process.json": "744e928b15c6b5889420f812ce6af24707fa2074d5dfa0688ff11be7914eb98a",
+      "raw/charged-original/raw/25890-actual_ordinary-restored-output.txt": "1cf54e9bd65584a88c5cfa046c3eb23d30ae493dfe2d992ec7adaea9165d5c56",
+      "raw/charged-original/raw/25890-actual_ordinary-restored-process.json": "26f87de29988219778d3d57b5c7548799d9d90eb316f0b0ba49b9f6986b86030",
+      "raw/charged-original/raw/25890-actual_ordinary-row.json": "349deca6a05fc3840fbed9f3a0e9e652f9d5a0d590c31a21a71d772b4dcf975f",
+      "raw/charged-original/raw/25890-disabled_double-audit-output.txt": "9b24d8668c917341d74329e659a69d14a853a772b67438a4b0e025cde6edb452",
+      "raw/charged-original/raw/25890-disabled_double-audit-process.json": "3a37a83341b5cd1dee503ad5d08592398931336a313d563fc04202defb612b2a",
+      "raw/charged-original/raw/25890-disabled_double-output.txt": "bd1337fcf0a702e685416a0dd6e14da807067152e1e2c1a019f49a31a41bc396",
+      "raw/charged-original/raw/25890-disabled_double-process.json": "28f9993e6d4be61bbc8de50fffd06744ebdadbebb34e3d9afa9ae8beaafdd1e6",
+      "raw/charged-original/raw/25890-disabled_double-restored-output.txt": "bd1337fcf0a702e685416a0dd6e14da807067152e1e2c1a019f49a31a41bc396",
+      "raw/charged-original/raw/25890-disabled_double-restored-process.json": "d9ff92477a9c30f998c80e870cc9a3bf17cb9b168383604731049a8dec9dde9b",
+      "raw/charged-original/raw/25890-disabled_double-row.json": "646e362f172042d7c49b4729e07f915eb0563cb2382a25f648b65dfd96194e6e",
+      "raw/charged-original/raw/25890-matched_double-audit-output.txt": "c25b65d570329487dabd4d4b24b18d67c6a7b3e71fb1869f5505eca9d05362c3",
+      "raw/charged-original/raw/25890-matched_double-audit-process.json": "827808bbd27a096a3f97255cd11568c0bccfcf9401b6467da100bd4c5414c69e",
+      "raw/charged-original/raw/25890-matched_double-output.txt": "11b0a726128f1775b8bf49e7ec0335d6f32725ce5c6f0d8d9e8285e9eda0767e",
+      "raw/charged-original/raw/25890-matched_double-process.json": "b2bebd303b758e08aa8dbf156ff7901264b356febdcf4e39569a8e753b385e99",
+      "raw/charged-original/raw/25890-matched_double-restored-output.txt": "11b0a726128f1775b8bf49e7ec0335d6f32725ce5c6f0d8d9e8285e9eda0767e",
+      "raw/charged-original/raw/25890-matched_double-restored-process.json": "068f48bbe40400e9f314b67cf4c001232bd30314fda64cf47bb942fb3b07c634",
+      "raw/charged-original/raw/25890-matched_double-row.json": "6f40d893a8a4499197b71f3f250485e78b706da05ab41dd4985b19100ecbde13",
+      "raw/charged-original/raw/25891-actual_ordinary-audit-output.txt": "09b823783d44575dfa2bb0bcc78f2d604b5ef0270eb0b7959815830405041d66",
+      "raw/charged-original/raw/25891-actual_ordinary-audit-process.json": "f48e774352606f74e2fe2f0452c9534d7e50ff449b45804a868b6a16e77cea75",
+      "raw/charged-original/raw/25891-actual_ordinary-output.txt": "d5a422786aad485aa93a7ba3978f9ebb3e0081803adc6ea5421db39ad0cf4f88",
+      "raw/charged-original/raw/25891-actual_ordinary-process.json": "d57dc4769a8fdbd5934e4dae3047ffee7209fb20f066567599d7cb9dee9dcc32",
+      "raw/charged-original/raw/25891-actual_ordinary-restored-output.txt": "d5a422786aad485aa93a7ba3978f9ebb3e0081803adc6ea5421db39ad0cf4f88",
+      "raw/charged-original/raw/25891-actual_ordinary-restored-process.json": "cb6e0996406bb1bcfabc6ac2b8c35c9f842066077e379753c5c8262507b23f57",
+      "raw/charged-original/raw/25891-actual_ordinary-row.json": "7ff10f13c7c047ef601c660ae87122c521bcbfc8c1c0c92370b0f9609bbe4506",
+      "raw/charged-original/raw/25891-disabled_double-audit-output.txt": "1b2a58becf4c2f3fd109bcd8452f042eb4ada61484ea480123cd756978442834",
+      "raw/charged-original/raw/25891-disabled_double-audit-process.json": "4ccf3f006339e26687c7e18a86a5a727087546902f5b7539f3f08e65052c7d57",
+      "raw/charged-original/raw/25891-disabled_double-output.txt": "3d886e8f380d4ca1bf6efc3831d74ce9f43881fbbc15ef3a8916fd435d088446",
+      "raw/charged-original/raw/25891-disabled_double-process.json": "9e724554eebc1d722d18f1c30e426c23ca8de66752394a59922202cfe973a394",
+      "raw/charged-original/raw/25891-disabled_double-restored-output.txt": "3d886e8f380d4ca1bf6efc3831d74ce9f43881fbbc15ef3a8916fd435d088446",
+      "raw/charged-original/raw/25891-disabled_double-restored-process.json": "18f031961569f2460c80b9d8d3e32cbaafbe4c0ba956e9f759f3eb75ca88cebc",
+      "raw/charged-original/raw/25891-disabled_double-row.json": "6d9dbf5e5b469ae57fa53c9d5eb44f3041ed0777db1669bf300f5ec9a6457cce",
+      "raw/charged-original/raw/25891-matched_double-audit-output.txt": "aefde30af5b35d33a46282dd978d780b317c51079009f3c5c35ed63340942253",
+      "raw/charged-original/raw/25891-matched_double-audit-process.json": "3e143e484d82825aeb2a67ac2de7af0e288737917f4c71c9d50c2b4b667be51d",
+      "raw/charged-original/raw/25891-matched_double-output.txt": "27e5329b056642ed9fc3b2faa1b1f1082bd407142ff313cd803733ec6129c617",
+      "raw/charged-original/raw/25891-matched_double-process.json": "42fc75c281876b1cdb566ad24b91b52cde83b0778d1555431da04e6ece85169d",
+      "raw/charged-original/raw/25891-matched_double-restored-output.txt": "27e5329b056642ed9fc3b2faa1b1f1082bd407142ff313cd803733ec6129c617",
+      "raw/charged-original/raw/25891-matched_double-restored-process.json": "ba05c6900278786fd1c5d9550d50f9a5cbad8772f073b32782f1dab838687d33",
+      "raw/charged-original/raw/25891-matched_double-row.json": "410e8b686dbe35f38d04c91eedcb0fc47c07cbc3d4f0b0d7d019848cb218dd50",
+      "raw/charged-original/raw/decision.json": "47f0bd7c772983f6131f903d62950d961dbfa7bd3298769439c7df14d27c31ff",
+      "raw/charged-original/raw/fixtures-output.txt": "8bae647b97d7e7e65b40ee2a844be75752489627802ac67551d1f474b082cb23",
+      "raw/charged-original/raw/fixtures-process.json": "1076a845aa8408c239ad5629dd977acdb552686657bd041d76114f42325d5f8c",
+      "raw/charged-original/raw/metrics.json": "91ef48f742181a6fa1168b73da446e41877e4f21c69964d84d3210d8940d202e",
+      "raw/charged-original/raw/pin.json": "d1119108c0d28bd5a76a59eb0b282ffeedbbbeb949200471d31aa80bce58b9de",
+      "raw/charged-original/raw/preserved-failure/failure/budget.json": "8a1d939239d119478cb64681315691aa5e8e01f8460b13b83dd06c999690e630",
+      "raw/charged-original/raw/preserved-failure/failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+      "raw/charged-original/raw/preserved-failure/raw/fixtures-output.txt": "dd9796c9499e2be47c27fe39585fb57a8ad35cd8777e10962b44eac5ad887ecf",
+      "raw/charged-original/raw/preserved-failure/raw/fixtures-process.json": "fcbc8f20f5ac2171dd9f8c937bb86abb0343dae7ed697437f71199fd78cad9dc",
+      "raw/charged-original/raw/preserved-failure/raw/pin.json": "e290c136af6707a8462086c2215a8fc15f0864d9296d1af6e8d26dc4f63169ce",
+      "raw/charged-original/raw/preserved-failure/raw/runner.py": "8987a1b9416bb1bb8af4a1ad1f9da4afeba1d5814dcb6bc5e5060215b1e76c47",
+      "raw/charged-original/raw/preserved-failure/raw/source/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/charged-original/raw/preserved-failure/raw/source/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_ordinary_admission10_audit.py": "ea22c9f630bde082e3689e22cfb8596674c2d34c4432b7b07b62ac64cabcb6b3",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/charged-original/raw/preserved-failure/raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/charged-original/raw/preserved-failure/raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/charged-original/raw/preserved-failure/raw/source/tests/test_digital_ordinary_admission10.py": "71f613f4ea55ce638fba78c08885ba05af951768c4d7d4f92132ae513a36d5b7",
+      "raw/charged-original/raw/runner.py": "1953d0586ae8201c09fc53541b9aee956c868f796865d8aff0330ddf05065ad6",
+      "raw/charged-original/raw/source-seals.json": "2c3a4117c4ca72a5acf298708f7247f373d53bc51120951d4b2bc4fcb206f636",
+      "raw/charged-original/raw/source/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/charged-original/raw/source/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/charged-original/raw/source/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/charged-original/raw/source/experiments/digital_ordinary_admission10_audit.py": "77be8458bd712ebcfd1368e95af8681638f5b7051fb902b984ed8116eee741ed",
+      "raw/charged-original/raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/charged-original/raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/charged-original/raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/charged-original/raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/charged-original/raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/charged-original/raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/charged-original/raw/source/tests/test_digital_ordinary_admission10.py": "5e70d19002f3ecd114bc0eb43d97747fd8bc0153b98a41e5661f913607412008",
+      "raw/charged-original/restore/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/charged-original/restore/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/charged-original/restore/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/charged-original/restore/experiments/digital_ordinary_admission10_audit.py": "77be8458bd712ebcfd1368e95af8681638f5b7051fb902b984ed8116eee741ed",
+      "raw/charged-original/restore/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/charged-original/restore/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/charged-original/restore/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/charged-original/restore/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/charged-original/restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/charged-original/restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/charged-original/restore/tests/test_digital_ordinary_admission10.py": "5e70d19002f3ecd114bc0eb43d97747fd8bc0153b98a41e5661f913607412008",
+      "raw/correction.json": "251c84ed9fe214595086a528748be230b8c7c1ae21993b676042a1b00a455841",
+      "raw/initial-auditor.py": "1cfad181933088629230662b8c716081da67a84d532cd785a1f97bfd71778ca2",
+      "raw/initial-derived-audit.json": "d23abf8f1fe4957b7382c0f03107c6e05072271608aaec13cb51a92b9c758e44"
+    },
+    "total_limit": 41943040
+  },
+  "damage": null,
+  "evolution": false,
+  "failed_storage": {
+    "files": 17,
+    "limits": {
+      "archive": 16777216,
+      "failure": 16777216,
+      "raw": 67108864,
+      "restore": 67108864
+    },
+    "logical_bytes": 307935,
+    "reserved_by_phase": {
+      "archive": 0,
+      "failure": 1037,
+      "raw": 306898,
+      "restore": 0
+    },
+    "reserved_bytes": 307935,
+    "sha256": {
+      "failure/budget.json": "8a1d939239d119478cb64681315691aa5e8e01f8460b13b83dd06c999690e630",
+      "failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+      "raw/fixtures-output.txt": "dd9796c9499e2be47c27fe39585fb57a8ad35cd8777e10962b44eac5ad887ecf",
+      "raw/fixtures-process.json": "fcbc8f20f5ac2171dd9f8c937bb86abb0343dae7ed697437f71199fd78cad9dc",
+      "raw/pin.json": "e290c136af6707a8462086c2215a8fc15f0864d9296d1af6e8d26dc4f63169ce",
+      "raw/runner.py": "8987a1b9416bb1bb8af4a1ad1f9da4afeba1d5814dcb6bc5e5060215b1e76c47",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/source/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/source/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/source/experiments/digital_ordinary_admission10_audit.py": "ea22c9f630bde082e3689e22cfb8596674c2d34c4432b7b07b62ac64cabcb6b3",
+      "raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_ordinary_admission10.py": "71f613f4ea55ce638fba78c08885ba05af951768c4d7d4f92132ae513a36d5b7"
+    },
+    "total_limit": 167772160
+  },
+  "failure_reason": "Comparator summary adapter missing fresh_packets; repaired from independently verified actual events, no law/price/gate change",
+  "focused_tests": 2,
+  "fresh_work": null,
+  "impossible_witness": true,
+  "learning": false,
+  "metrics": [
+    {
+      "births": 3,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "configuration": "matched_double",
+      "deaths": 4,
+      "descendant_births": 1,
+      "descendant_food": 14,
+      "descendant_fresh": 10,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 31,
+      "feedback_reads": 0,
+      "first_birth_tick": 56,
+      "formation_cost": 42,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 710,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 4,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "offspring_errors": [
+        0,
+        0,
+        0
+      ],
+      "ordinary_endpoint": true,
+      "paid_copy_words": 111,
+      "paid_sampling_draws": 125,
+      "post_food": 22,
+      "pre_food": 10,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "admission10_double",
+      "seed": 25890,
+      "selector_store_energy": 14,
+      "successful_food": 32,
+      "ticks": 284,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "configuration": "disabled_double",
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_food": 0,
+      "descendant_fresh": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 32,
+      "feedback_reads": 0,
+      "first_birth_tick": null,
+      "formation_cost": 42,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 710,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 1,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "offspring_errors": [],
+      "ordinary_endpoint": false,
+      "paid_copy_words": 0,
+      "paid_sampling_draws": 0,
+      "post_food": 23,
+      "pre_food": 9,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "admission10_double",
+      "seed": 25890,
+      "selector_store_energy": 0,
+      "successful_food": 32,
+      "ticks": 285,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "configuration": "actual_ordinary",
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_food": 28,
+      "descendant_fresh": 16,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 34,
+      "first_birth_tick": 35,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 4,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "ordinary_endpoint": true,
+      "paid_copy_words": 153,
+      "paid_sampling_draws": 0,
+      "post_food": 25,
+      "pre_food": 7,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25890,
+      "selector_store_energy": 0,
+      "successful_food": 32,
+      "ticks": 355,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 3,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "configuration": "matched_double",
+      "deaths": 4,
+      "descendant_births": 1,
+      "descendant_food": 15,
+      "descendant_fresh": 10,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 33,
+      "feedback_reads": 0,
+      "first_birth_tick": 56,
+      "formation_cost": 42,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 710,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 4,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "offspring_errors": [
+        0,
+        0,
+        0
+      ],
+      "ordinary_endpoint": true,
+      "paid_copy_words": 120,
+      "paid_sampling_draws": 134,
+      "post_food": 23,
+      "pre_food": 9,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "admission10_double",
+      "seed": 25891,
+      "selector_store_energy": 14,
+      "successful_food": 32,
+      "ticks": 302,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "configuration": "disabled_double",
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_food": 0,
+      "descendant_fresh": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 31,
+      "feedback_reads": 0,
+      "first_birth_tick": null,
+      "formation_cost": 42,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 710,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 1,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "offspring_errors": [],
+      "ordinary_endpoint": false,
+      "paid_copy_words": 0,
+      "paid_sampling_draws": 0,
+      "post_food": 23,
+      "pre_food": 9,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "admission10_double",
+      "seed": 25891,
+      "selector_store_energy": 0,
+      "successful_food": 32,
+      "ticks": 283,
+      "unused_food": 32,
+      "verified": true
+    },
+    {
+      "births": 8,
+      "change_exposed": 0,
+      "configuration": "actual_ordinary",
+      "deaths": 9,
+      "descendant_births": 7,
+      "descendant_food": 28,
+      "descendant_fresh": 16,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 32,
+      "first_birth_tick": 40,
+      "formation_cost": 34,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 702,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 2,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "ordinary_endpoint": true,
+      "paid_copy_words": 168,
+      "paid_sampling_draws": 0,
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25891,
+      "selector_store_energy": 0,
+      "successful_food": 32,
+      "ticks": 340,
+      "unused_food": 32,
+      "verified": true
+    }
+  ],
+  "mutation_comparison": false,
+  "native_zero_exits": 19,
+  "next_dependency": "Register one claim-specific neutral-variation comparison using the admitted supplied cadence, complete paid matched operator and actual-cost ordinary control; include every natural lineage/death, common exogenous stock, no target/winner installation. Learning remains separately admissible only with actual personally informative paid opportunities and causal unseen controls.",
+  "old_laws_unchanged": true,
+  "ordinary_readiness": true,
+  "persistent_world": false,
+  "preserved_native_failure": 1,
+  "primary_worlds": 0,
+  "prospective_source": "2f709917db7968540659062f17af741a6b592cce",
+  "repair": false,
+  "reserves_executed": false,
+  "software_histories": 6,
+  "source": "e48b556b070699aca7342b297a4a66b9bfcb4c6d",
+  "source_restored": true,
+  "stage_advance": false,
+  "storage": {
+    "files": 90,
+    "limits": {
+      "archive": 16777216,
+      "failure": 16777216,
+      "raw": 67108864,
+      "restore": 67108864
+    },
+    "logical_bytes": 4800536,
+    "reserved_by_phase": {
+      "archive": 102849,
+      "failure": 4873,
+      "raw": 4393447,
+      "restore": 299367
+    },
+    "reserved_bytes": 4800536,
+    "sha256": {
+      "archive/source.zip": "ab15a64a6d039f307b8c36b4dd7ea45190897cb8298dbbd0c336569a0a8329a8",
+      "failure/budget.json": "054fa4e6fcb4a87cb2123cbe7f70ec834acc7d71521404657eb77a97ea08d9c6",
+      "raw/25890-actual_ordinary-audit-output.txt": "0a2a7dbd8fa428a156435c4896cf00d15d78a8cc0508e5d7687b631e3f84f197",
+      "raw/25890-actual_ordinary-audit-process.json": "f15f35164ee6c473429656d1307248155c1e7828ee28e0254de35efe9814f3a3",
+      "raw/25890-actual_ordinary-output.txt": "1cf54e9bd65584a88c5cfa046c3eb23d30ae493dfe2d992ec7adaea9165d5c56",
+      "raw/25890-actual_ordinary-process.json": "744e928b15c6b5889420f812ce6af24707fa2074d5dfa0688ff11be7914eb98a",
+      "raw/25890-actual_ordinary-restored-output.txt": "1cf54e9bd65584a88c5cfa046c3eb23d30ae493dfe2d992ec7adaea9165d5c56",
+      "raw/25890-actual_ordinary-restored-process.json": "26f87de29988219778d3d57b5c7548799d9d90eb316f0b0ba49b9f6986b86030",
+      "raw/25890-actual_ordinary-row.json": "349deca6a05fc3840fbed9f3a0e9e652f9d5a0d590c31a21a71d772b4dcf975f",
+      "raw/25890-disabled_double-audit-output.txt": "9b24d8668c917341d74329e659a69d14a853a772b67438a4b0e025cde6edb452",
+      "raw/25890-disabled_double-audit-process.json": "3a37a83341b5cd1dee503ad5d08592398931336a313d563fc04202defb612b2a",
+      "raw/25890-disabled_double-output.txt": "bd1337fcf0a702e685416a0dd6e14da807067152e1e2c1a019f49a31a41bc396",
+      "raw/25890-disabled_double-process.json": "28f9993e6d4be61bbc8de50fffd06744ebdadbebb34e3d9afa9ae8beaafdd1e6",
+      "raw/25890-disabled_double-restored-output.txt": "bd1337fcf0a702e685416a0dd6e14da807067152e1e2c1a019f49a31a41bc396",
+      "raw/25890-disabled_double-restored-process.json": "d9ff92477a9c30f998c80e870cc9a3bf17cb9b168383604731049a8dec9dde9b",
+      "raw/25890-disabled_double-row.json": "646e362f172042d7c49b4729e07f915eb0563cb2382a25f648b65dfd96194e6e",
+      "raw/25890-matched_double-audit-output.txt": "c25b65d570329487dabd4d4b24b18d67c6a7b3e71fb1869f5505eca9d05362c3",
+      "raw/25890-matched_double-audit-process.json": "827808bbd27a096a3f97255cd11568c0bccfcf9401b6467da100bd4c5414c69e",
+      "raw/25890-matched_double-output.txt": "11b0a726128f1775b8bf49e7ec0335d6f32725ce5c6f0d8d9e8285e9eda0767e",
+      "raw/25890-matched_double-process.json": "b2bebd303b758e08aa8dbf156ff7901264b356febdcf4e39569a8e753b385e99",
+      "raw/25890-matched_double-restored-output.txt": "11b0a726128f1775b8bf49e7ec0335d6f32725ce5c6f0d8d9e8285e9eda0767e",
+      "raw/25890-matched_double-restored-process.json": "068f48bbe40400e9f314b67cf4c001232bd30314fda64cf47bb942fb3b07c634",
+      "raw/25890-matched_double-row.json": "6f40d893a8a4499197b71f3f250485e78b706da05ab41dd4985b19100ecbde13",
+      "raw/25891-actual_ordinary-audit-output.txt": "09b823783d44575dfa2bb0bcc78f2d604b5ef0270eb0b7959815830405041d66",
+      "raw/25891-actual_ordinary-audit-process.json": "f48e774352606f74e2fe2f0452c9534d7e50ff449b45804a868b6a16e77cea75",
+      "raw/25891-actual_ordinary-output.txt": "d5a422786aad485aa93a7ba3978f9ebb3e0081803adc6ea5421db39ad0cf4f88",
+      "raw/25891-actual_ordinary-process.json": "d57dc4769a8fdbd5934e4dae3047ffee7209fb20f066567599d7cb9dee9dcc32",
+      "raw/25891-actual_ordinary-restored-output.txt": "d5a422786aad485aa93a7ba3978f9ebb3e0081803adc6ea5421db39ad0cf4f88",
+      "raw/25891-actual_ordinary-restored-process.json": "cb6e0996406bb1bcfabc6ac2b8c35c9f842066077e379753c5c8262507b23f57",
+      "raw/25891-actual_ordinary-row.json": "7ff10f13c7c047ef601c660ae87122c521bcbfc8c1c0c92370b0f9609bbe4506",
+      "raw/25891-disabled_double-audit-output.txt": "1b2a58becf4c2f3fd109bcd8452f042eb4ada61484ea480123cd756978442834",
+      "raw/25891-disabled_double-audit-process.json": "4ccf3f006339e26687c7e18a86a5a727087546902f5b7539f3f08e65052c7d57",
+      "raw/25891-disabled_double-output.txt": "3d886e8f380d4ca1bf6efc3831d74ce9f43881fbbc15ef3a8916fd435d088446",
+      "raw/25891-disabled_double-process.json": "9e724554eebc1d722d18f1c30e426c23ca8de66752394a59922202cfe973a394",
+      "raw/25891-disabled_double-restored-output.txt": "3d886e8f380d4ca1bf6efc3831d74ce9f43881fbbc15ef3a8916fd435d088446",
+      "raw/25891-disabled_double-restored-process.json": "18f031961569f2460c80b9d8d3e32cbaafbe4c0ba956e9f759f3eb75ca88cebc",
+      "raw/25891-disabled_double-row.json": "6d9dbf5e5b469ae57fa53c9d5eb44f3041ed0777db1669bf300f5ec9a6457cce",
+      "raw/25891-matched_double-audit-output.txt": "aefde30af5b35d33a46282dd978d780b317c51079009f3c5c35ed63340942253",
+      "raw/25891-matched_double-audit-process.json": "3e143e484d82825aeb2a67ac2de7af0e288737917f4c71c9d50c2b4b667be51d",
+      "raw/25891-matched_double-output.txt": "27e5329b056642ed9fc3b2faa1b1f1082bd407142ff313cd803733ec6129c617",
+      "raw/25891-matched_double-process.json": "42fc75c281876b1cdb566ad24b91b52cde83b0778d1555431da04e6ece85169d",
+      "raw/25891-matched_double-restored-output.txt": "27e5329b056642ed9fc3b2faa1b1f1082bd407142ff313cd803733ec6129c617",
+      "raw/25891-matched_double-restored-process.json": "ba05c6900278786fd1c5d9550d50f9a5cbad8772f073b32782f1dab838687d33",
+      "raw/25891-matched_double-row.json": "410e8b686dbe35f38d04c91eedcb0fc47c07cbc3d4f0b0d7d019848cb218dd50",
+      "raw/decision.json": "47f0bd7c772983f6131f903d62950d961dbfa7bd3298769439c7df14d27c31ff",
+      "raw/fixtures-output.txt": "8bae647b97d7e7e65b40ee2a844be75752489627802ac67551d1f474b082cb23",
+      "raw/fixtures-process.json": "1076a845aa8408c239ad5629dd977acdb552686657bd041d76114f42325d5f8c",
+      "raw/metrics.json": "91ef48f742181a6fa1168b73da446e41877e4f21c69964d84d3210d8940d202e",
+      "raw/pin.json": "d1119108c0d28bd5a76a59eb0b282ffeedbbbeb949200471d31aa80bce58b9de",
+      "raw/preserved-failure/failure/budget.json": "8a1d939239d119478cb64681315691aa5e8e01f8460b13b83dd06c999690e630",
+      "raw/preserved-failure/failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+      "raw/preserved-failure/raw/fixtures-output.txt": "dd9796c9499e2be47c27fe39585fb57a8ad35cd8777e10962b44eac5ad887ecf",
+      "raw/preserved-failure/raw/fixtures-process.json": "fcbc8f20f5ac2171dd9f8c937bb86abb0343dae7ed697437f71199fd78cad9dc",
+      "raw/preserved-failure/raw/pin.json": "e290c136af6707a8462086c2215a8fc15f0864d9296d1af6e8d26dc4f63169ce",
+      "raw/preserved-failure/raw/runner.py": "8987a1b9416bb1bb8af4a1ad1f9da4afeba1d5814dcb6bc5e5060215b1e76c47",
+      "raw/preserved-failure/raw/source/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/preserved-failure/raw/source/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/preserved-failure/raw/source/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/preserved-failure/raw/source/experiments/digital_ordinary_admission10_audit.py": "ea22c9f630bde082e3689e22cfb8596674c2d34c4432b7b07b62ac64cabcb6b3",
+      "raw/preserved-failure/raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/preserved-failure/raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/preserved-failure/raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/preserved-failure/raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/preserved-failure/raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/preserved-failure/raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/preserved-failure/raw/source/tests/test_digital_ordinary_admission10.py": "71f613f4ea55ce638fba78c08885ba05af951768c4d7d4f92132ae513a36d5b7",
+      "raw/runner.py": "1953d0586ae8201c09fc53541b9aee956c868f796865d8aff0330ddf05065ad6",
+      "raw/source-seals.json": "2c3a4117c4ca72a5acf298708f7247f373d53bc51120951d4b2bc4fcb206f636",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "raw/source/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "raw/source/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "raw/source/experiments/digital_ordinary_admission10_audit.py": "77be8458bd712ebcfd1368e95af8681638f5b7051fb902b984ed8116eee741ed",
+      "raw/source/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "raw/source/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_ordinary_admission10.py": "5e70d19002f3ecd114bc0eb43d97747fd8bc0153b98a41e5661f913607412008",
+      "restore/docs/CURRENT-DEVELOPMENT.md": "ca3d5adb816b18639e5793d5333241eaacfe053ad9a50a58fed7eac257246fea",
+      "restore/docs/DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md": "8eb66dd37604f32db14f78c75ebfdc909032fb15cef60ab5180c411e4cf664fa",
+      "restore/experiments/digital_ordinary_admission10.py": "943cb4e099d62f51f54c1805642859b85d047503d9fc0b8b84f3b1aad9b4ed04",
+      "restore/experiments/digital_ordinary_admission10_audit.py": "77be8458bd712ebcfd1368e95af8681638f5b7051fb902b984ed8116eee741ed",
+      "restore/experiments/digital_release07.py": "0b0e5b11826b77792d0a340fcd9f8d20957fdc6276a2b9715e169a431d9cc05f",
+      "restore/experiments/digital_release07_audit.py": "0f687327a90ad528774a788ace25bcab00297b6aa7660a4f0caf8e87907968a0",
+      "restore/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "restore/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "restore/tests/test_digital_ordinary_admission10.py": "5e70d19002f3ecd114bc0eb43d97747fd8bc0153b98a41e5661f913607412008"
+    },
+    "total_limit": 167772160
+  },
+  "supersedes_derived_bill_only": "independent-audit.json",
+  "verified": true,
+  "whole_work": null
+}
