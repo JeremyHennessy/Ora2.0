@@ -223,6 +223,17 @@ design. Adequacy, effect threshold and paired statistic remain to be frozen only
 after a complete paid substrate exists. This clarification supplies none of its
 missing physical memory/action prices and authorizes no helper execution.
 
+Documentary audit: frozen 28efeda34500cb183514a189c455e834fe055edc;
+`D:/OraLab/runs/adaptation-counterfactual01-20261011/independent-audit.json`.
+Eight sealed records passed separate hash/archive restoration, design-scope,
+null-work and plan consistency checks; all 851 shared tracked files unchanged.
+The contemporaneous failed public optical-paper retrieval is preserved, not
+treated as methods evidence. Accounted storage 773455 bytes under 8MiB, with
+2MiB per phase and 5GiB free floor. Archive SHA256
+bd99a274ac307a40f41d566a5ede806a6f208abb7f70867d3c123f91bde72ad4;
+auditor SHA256 dbeab20c4fbb5b96ea096f8aa99db584e3c2def23f16a95e33db62c6d8d017e7.
+This is documentary verification, not a controller or learning result.
+
 ## Freeze gate and stop decisions
 
 Before executing this design, specify the exact physical law, resource stocks,
