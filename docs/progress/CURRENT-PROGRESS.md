@@ -1,5 +1,8 @@
 # Ora 2.0 complete seven stage progress review
 
+Prospective October11 registration only: [INHERITANCE-02](../DIGITAL-INHERITANCE-02-PROTOCOL.md), COPY-preserving pre-division movement with new primary24400..24407/reserved24408..24415 seeds. Paid descendant remote acquisition, viable ordinary control and independent ancestry are required. No fresh result, sustained evolution, learning, repair or stage promotion yet; INHERITANCE-01 remains closed negative. The canonical current plan owns the next action.
+
+
 Completed [INHERITANCE-01 comparison](../DIGITAL-INHERITANCE-01-RECEIPT.md):128 generation+24 fresh histories. Selected copied mutant acquired64 food/48 remote but0 offspring; ordinary mobile control64 food/12–14 offspring. Paid mutation produced a new acquisition phenotype, but selected reproductive-inheritance gate fails. All histories extinct, independently interpreted and replayed. No sustained evolution/learning or historical stage rescore. Next: prospectively register a distinct COPY-preserving movement mechanism using new fresh seeds; never substitute it into the closed negative. PR133 closes original checkpoint-identity forgery gap; external host crash recovery still unverified.
 
 ## October11 user-approved direction and current frontier
