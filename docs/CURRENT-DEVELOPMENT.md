@@ -16,7 +16,10 @@ was present, so functional renewal is UNDEREXPOSED, not adequately falsified.
 Independent ODE/metadata interpretation, four forgery refusals, eight focused
 tests and restored byte replay pass. No self-maintenance or Stage3 advance.
 Do not retune this closed prototype or reopen impact/mode/thermal/catalytic laws.
-Next sole primary proposal: CHARGE-SCREEN-01, NOT ADMITTED.
+Next sole primary candidate: CHARGE-SCREEN-01, NOT ADMITTED; exact authored
+prototype, independent interpreter and accounting are now ready to freeze.
+[Prospective22-record protocol](CHARGE-SCREEN-01-PROTOCOL.md) and
+[run receipt](CHARGE-SCREEN-01-RECEIPT.md). No measurements accepted yet.
 [Compact decision card and exact unresolved construction/renewal term](CHARGE-SCREEN-01-DECISION-CARD.md).
 Its new capability is charge-conserving reflection/polarization, with an
 analytic accessible bare-reflector reference and mandatory actual profitable
