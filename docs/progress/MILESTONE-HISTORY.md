@@ -1,5 +1,18 @@
 # Ora 2.0 milestone history
 
+## October11 approved strategic correction (not a capability milestone)
+
+The user directs primary effort toward artificial digital organisms,evolution,
+within-life learning and emergent intelligence, rather than requiring physical
+origin-of-life construction. [Prospective contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md)
+and [single current plan](../CURRENT-DEVELOPMENT.md). A minimal supplied ancestor
+and VM are permitted enabling infrastructure. No new scientific capability or
+status is accepted by this change. All historical milestones and negative
+physical results below retain their original laws,dates and interpretations.
+The scoped [PACKET-BUFFER ordinary +19 result](../PACKET-BUFFER-01-RECEIPT.md)
+remains controlled digital resource evidence; its unexecuted burst draft is
+preserved locally, not a mandatory gate before evolution/intelligence.
+
 Initial consolidated edition, October 10, 2026. Original receipts and negative results are preserved. Future editions should append dated changes rather than erase history. First means earliest supported occurrence found, not universal priority.
 
 Dates are receipt dates or execution windows; no within-day priority is inferred. Source/protocol identities and full hashes are in original receipts. First means earliest supported occurrence located in the review.

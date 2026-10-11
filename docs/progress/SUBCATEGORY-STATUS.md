@@ -1,5 +1,53 @@
 # Ora 2.0 complete subcategory status
 
+## October11 prospective digital criteria; historical statuses retained
+
+The37 approved names/statuses below remain dated historical assessments. A new
+strategy supplies no capability evidence. For future DIGITAL-ECOSYSTEM-01 claims,
+the following criteria supersede physical-construction requirements; all new-world
+outcomes are NOT ASSESSED until its frozen run and audit. Full semantics and
+controls: [world contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md).
+
+| Category | Prospective digital acceptance |
+|---|---|
+|1.1|Runnable bounded world,exact source/config and seeded replay.|
+|1.2|Explicit data-only instruction,program,memory and material ownership.|
+|1.3|Finite food/execution/storage budgets and conserved resource histories.|
+|1.4|Lawful sensing/actions/interactions with independently checked semantics.|
+|1.5|Validate digital accounting/model; physical calibration only for physical claims.|
+|2.1|Immutable birth/death/action/resource/experience history.|
+|2.2|Exact new-schema program,memory,nursery,ancestry and scheduler restore.|
+|2.3|Interrupted bounded continuation matches acknowledged prefix.|
+|2.4|New evidence backed up/read back; independent-host protection separately qualified.|
+|2.5|Data-only VM plus relevant host process/disk limits and confinement.|
+|2.6|Finite reliability evidence; persistent/physical power-loss guarantees separate.|
+|3.1|Acquire/use computational resources through lawful entity actions.|
+|3.2|Construct useful local program/state structures with execution/storage costs.|
+|3.3|Reclaim material-like cells and reconstruct useful digital components.|
+|3.4|Internal damage destroys qualified function; organism-caused restoration improves useful outcomes.|
+|3.5|Functioning organization without a supplied reproductive ancestor; separate claim,not universal gate.|
+|3.6|Useful functioning without per-entity researcher policy,repair,selection or rescue.|
+|4.1|Separately authorized supervised persistent pilot after applicable gates.|
+|4.2|Bounded continuous state/history and qualified checkpoints; duration qualified.|
+|4.3|Actual shared-resource competition and lawful communication/interaction.|
+|4.4|Measured changing populations/ecological relationships versus interaction diagnostics.|
+|4.5|Meaningful reproducible ecological dynamics,not uptime alone.|
+|5.1|Executed parent writes/division and descendants themselves reproduce; founder supplied status explicit.|
+|5.2|Useful inherited function in independent descendant assays.|
+|5.3|Variation linked to actual inherited writes; installed mutation mechanism separate.|
+|5.4|Differential useful reproductive success against no-variation/inheritance-disabled controls.|
+|5.5|Sustained functional change across independent generations; diversity alone insufficient.|
+|6.1|Lawful sensing and useful environmental response; supplied reactive behavior identified.|
+|6.2|Observable local experience-memory writes with measured costs; capacity alone insufficient.|
+|6.3|Same actor improves actions because of experience versus fixed/memory/history controls.|
+|6.4|Causal within-life improvement on reserved unseen environmental changes.|
+|6.5|Transfer beyond trained contingencies,not selection or preinstalled policy.|
+|7.1|Flexible new problem solving relative to ancestor and fixed baselines.|
+|7.2|Useful transfer across distinct situations with causal evidence.|
+|7.3|Increasing coordination caused by interactions rather than supplied scripts.|
+|7.4|Measured new functional discoveries beyond finite authored benchmarks; runtime alone insufficient.|
+|7.5|Intelligence and consciousness assessed separately; no consciousness inference.|
+
 October 10, 2026; all 37 approved categories.
 
 VERIFIED = evidence meets the stated scoped criterion; PARTIAL = some required capabilities; CONTROLLED ONLY = supplied conditions or fixtures; EXPERIMENTAL = open investigation without acceptance; NOT DEMONSTRATED = required evidence absent; BLOCKED = specific unmet dependency; NOT ASSESSED = insufficient evidence to determine status.

@@ -1,5 +1,22 @@
 # Ora 2.0 complete seven stage progress review
 
+## October11 user-approved direction and current frontier
+
+Ora's primary objective is now a bounded digital ecosystem with local programs,
+state,memory,resource competition,executed reproduction and inherited variation.
+The [single current plan](../CURRENT-DEVELOPMENT.md) and
+[prospective world contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md) govern next work.
+The VM and minimal reproductive ancestor are supplied infrastructure, not emergent
+achievements. Mechanical profitability and hardware manufacture are no longer
+mandatory gates for digital evolution or learning. The previous physical findings
+remain valid only within their original frozen scope; none is rescored here.
+No new digital repair,evolution,learning,intelligence or persistent-world result
+is verified by this change. Next: VM/evaluator fixtures,12 frozen bounded
+population histories with independent replay,then claim-specific comparisons.
+Observer remains paused; persistent activation still requires separate approval.
+The October10 report below is retained as a dated historical assessment; its
+physical next-priority wording is superseded by this prospective correction.
+
 Reviewed October 10, 2026. Reporting categories preserve original experiment gates.
 
 ## A. Executive summary
