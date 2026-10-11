@@ -54,3 +54,15 @@ First implementation must be the complete paid history and comparator, or a
 justified rejection naming an unresolvable transition. Do not substitute another
 general audit or upper-bound study. No controller/LLM/legacy AgentTest change,
 observer reactivation, persistent world, calendar promise or stage advance.
+
+## Frozen history decision,2026-10-11
+
+CLOSED AT ADMISSION. [Complete implemented law](ANGULAR-TRANSFER-01-PROTOCOL.md)
+and [independently audited ten-record result](ANGULAR-TRANSFER-01-RECEIPT.md).
+Candidate whole+.141965799, bare+.307333970, single+.286214934; ALL fresh
+post64 nets0. No comparator profitable on both metrics;0 raw bound births,
+no candidate body hit at either loss, renewal UNDEREXPOSED. Physical prices
+UNKNOWN; no formation, self-maintenance or world admission. No retuning.
+Next selection must specify an actually accessible raw construction/renewal
+transition and a whole/fresh profitable same-feed simpler history. This card
+records rejection of the concrete prototype, not universal impossibility.
