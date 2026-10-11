@@ -25,6 +25,9 @@ def audit(record):
         metrics=matched_audit(row)
     metrics['configuration']=name
     events=row['final']['events']
+    fresh=sum(bool(e.get('attempt',{}).get('success')) and 16<=e['attempt']['packet']<32 for e in events if 'attempt' in e)
+    if 'fresh_packets' in metrics:assert metrics['fresh_packets']==fresh
+    else:metrics['fresh_packets']=fresh
     metrics['first_birth_tick']=next((e['tick'] for e in events if 'birth' in e),None)
     metrics['paid_sampling_draws']=sum(len(e.get('sampling',[])) for e in events)
     metrics['selector_store_energy']=sum(e.get('selector_store_energy',0) for e in events)

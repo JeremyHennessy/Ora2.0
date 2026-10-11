@@ -11,6 +11,7 @@ class OrdinaryAdmission10(unittest.TestCase):
         self.assertTrue(endpoint(positive));self.assertFalse(endpoint(impossible));self.assertTrue(endpoint(simpler))
         self.assertEqual(impossible['births'],0)
         self.assertEqual(positive['formation_cost'],42);self.assertEqual(simpler['formation_cost'],34)
+        self.assertGreater(simpler['fresh_packets'],0);self.assertGreater(simpler['descendant_fresh'],0)
 
     def test_rehashed_ancestry_and_configuration_forgery_refused(self):
         row=history(25890,'matched_double');bad=copy.deepcopy(row)
