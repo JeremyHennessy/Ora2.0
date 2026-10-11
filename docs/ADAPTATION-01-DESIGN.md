@@ -49,6 +49,14 @@ Prediction diagnostics, action usefulness, within-life improvement, selection an
 inheritance remain separate outcomes. No selection or reproduction occurs in this
 first causal test; descendants would need a later independent contract.
 
+The independently audited [finite correlation preflight](CORRELATION-CAPACITY-01-RECEIPT.md)
+finds that full incoming-input permutation changes resource capacity in18/30
+rows despite equal single-symbol marginals. Freeze the identical incoming
+environmental source across causal arms. Shuffle retained history only; price
+that intervention and memory reset. Input corruption and dynamical phase
+self-correction do not count as reconstruction of apparatus or useful learning.
+Information ceilings are not measured action quality or attained energy output.
+
 ## Freeze gate and stop decisions
 
 Before executing this design, specify the exact physical law, resource stocks,
