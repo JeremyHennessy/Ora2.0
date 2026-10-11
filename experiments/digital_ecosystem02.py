@@ -86,7 +86,7 @@ class World:
             if len(e['nursery'])==len(e['code']) and e['energy']>=30 and len(self.free)>=16 and len(self.entities)<32:
                 child=self.next_id;self.next_id+=1;units=self.free[:16];del self.free[:16]
                 daughter=self.body(child,actor,e['generation']+1,[[w['value'],w['unit']] for w in e['nursery']],units,e['pos'])
-                event['birth']=dict(child=clone(daughter),write_ids=[w['write_id'] for w in e['nursery']],state_formation=[dict(unit=u,value=0,energy=1) for u in units],release_energy=2,startup_energy=12)
+                event['birth']=dict(child=clone(daughter),write_ids=[w['write_id'] for w in e['nursery']],state_formation=[dict(unit=u,value=e['pos'] if i==14 else 0,energy=1) for i,u in enumerate(units)],release_energy=2,startup_energy=12)
                 self.entities[child]=daughter;e['energy']-=30;self.heat+=18;e['nursery']=[];self.births+=1
             else:event['outcome']='division_refused'
         elif opcode==13:e['pos']=(e['pos']+(1 if reg[a%2]%2 else -1))%4

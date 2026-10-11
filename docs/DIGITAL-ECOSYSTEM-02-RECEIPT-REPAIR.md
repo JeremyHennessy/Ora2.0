@@ -1,0 +1,9 @@
+# Nonzero birth-position receipt repair
+
+Post-panel source review found an integrity defect: a child's position was correctly inherited from its parent, but every paid state initialization was recorded with value0, including the position cell. The frozen law explicitly places the child at its parent's position. The receipt's zero/empty shorthand must not override that position rule. State-role order is memory0..7,registers8..9,PC10,cue11,feedback12,inbox13,position14,nursery cursor15; position formation must record the actual inherited coordinate and its energy1.
+
+The scoped repair changes only that logged value in producer and independent interpreter. It does not change birth behavior, costs, scheduler, mutation, gates, seeds or resources. Original source and all12 raw histories remain immutable. Every original birth occurred at position0, so the old receipts remain correct for those actual histories. Independently interpret all original rows with the repaired evaluator and compare prior metrics; do not rerun/tune worlds or consume reserves.
+
+Meaningful software regression fixture24791 pays a researcher position-cell intervention from existing body energy before ordinary faithful reproduction at position3, then checks the actual child coordinate, paid position initialization and full16-cell bill. This fixture intervention is disclosed measurement assistance, not organism movement/repair/discovery, not a primary population history, and never installed in any organism run. Existing generic endpoint continues to refuse forged formation/parentage/balances/checkpoints. Freeze/pin the exact repair revision before these focused capped checks and retain all process/source/archive evidence separately.
+
+This resolves a receipt dependency for future lawful mobile births. No Stage3/5/6/7 capability or learning exposure changes.

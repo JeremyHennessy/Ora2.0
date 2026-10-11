@@ -29,4 +29,16 @@ class Ecosystem02(unittest.TestCase):
             with self.assertRaises(AssertionError):World.restore(forged)
         with self.assertRaises(AssertionError):World(True)
 
+    def test_nonzero_birth_position_is_a_paid_state_value(self):
+        world=World(24791,'faithful')
+        # Authored software fixture intervention only, never a population history:
+        # pay one external position-cell write from existing body energy.
+        parent=world.entities[0];parent['pos']=3;parent['energy']-=1;world.heat+=1
+        world.check()
+        while not world.births:self.assertTrue(world.step())
+        birth=world.events[-1]['birth'];child=birth['child']
+        self.assertEqual(child['pos'],3)
+        self.assertEqual(birth['state_formation'][14],dict(unit=child['state_units'][14],value=3,energy=1))
+        self.assertEqual(sum(cell['energy'] for cell in birth['state_formation']),16)
+
 if __name__=='__main__':unittest.main()

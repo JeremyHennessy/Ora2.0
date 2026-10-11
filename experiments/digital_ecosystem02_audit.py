@@ -81,7 +81,7 @@ def audit(row):
                 units=sorted(set(range(512))-occupied)[:16];occupied.update(units)
                 assert all(certificates[w['write_id']]==(actor,w) for w in e['nursery'])
                 child=body(next_id,actor,e['generation']+1,[[w['value'],w['unit']] for w in e['nursery']],units,e['pos'])
-                event['birth']=dict(child=clone(child),write_ids=[w['write_id'] for w in e['nursery']],state_formation=[dict(unit=u,value=0,energy=1) for u in units],release_energy=2,startup_energy=12)
+                event['birth']=dict(child=clone(child),write_ids=[w['write_id'] for w in e['nursery']],state_formation=[dict(unit=u,value=e['pos'] if i==14 else 0,energy=1) for i,u in enumerate(units)],release_energy=2,startup_energy=12)
                 org[next_id]=child;next_id+=1;births+=1;desc_births+=int(e['generation']>0)
                 e['energy']-=30;heat+=18;e['nursery']=[]
             else:event['outcome']='division_refused'
