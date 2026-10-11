@@ -1,5 +1,43 @@
 # Current development plan and handoff
 
+## Current priority and prospective admission — October 11
+
+Apply [digital experiment admission](DIGITAL-EXPERIMENT-ADMISSION.md) as the
+current operating rule. The historical next-step statements below retain their
+dates and do not override this priority. No stage or capability is advanced by
+this planning reconciliation; all frozen laws, receipts and reserves stay intact.
+
+The next reproduction/mutation block is **admission and ordinary-route viability
+first**. Resolve the existing acquisition-before-copy dependency within a suitable
+reviewed substrate before introducing another world law. Record the full paid
+path: founder and every code/state role, larger-program formation and complete
+nursery copying, successful/failed acquisition and control flow, first-selector
+storage and accepted/rejected draws, division/startup/parent retention, refusals,
+cap overflow, scheduler timing, released-resource exposure and descendant
+acquisition/reproduction. A positive average cycle balance alone is insufficient.
+Verify actual births and fresh useful function with the generic evaluator and
+independent interpretation before admitting a population comparison. A different
+supplied cadence is ordinary infrastructure, not an organism-discovered strategy.
+
+SINGLECOPY09's ordinary gate remains **FAILED; 0/32 primary worlds executed**.
+Its matched unused faithful sampler charges are comparison overhead, not minimum
+digital reproduction costs. Include an attainable simpler route with its actual
+paid machinery and shared finite endowment. A changed program/control/cost model
+needs justified prospective registration and fresh provenance; no historical
+price reduction, sample tuning, gate change or rescoring is permitted.
+
+**Within-life learning is an independent track**, not gated on reproduction or
+variation. Its next deliverable is an exact paid observable/action/memory substrate
+and candidate source with personally informative experience, repeated action
+opportunities, fixed-reactive/memory-disabled/own-history-disrupted controls and
+reserved unseen conditions. Do not install a successful learner or treat a
+feedback-responsive fixture as discovery. Freeze claim-specific controls before
+the corresponding test; no controller activation is authorized.
+
+Only an explicit missing affordance justifies another constitutive law. The
+15-minute development and 3-hour audit cadence, observer pause and existing
+bounded-run locks/limits remain. No live world or new scientific result is claimed.
+
 DIGITAL-SINGLECOPY-09 CLOSED failed ordinary software admission: [protocol](DIGITAL-SINGLECOPY-09-PROTOCOL.md), [receipt](DIGITAL-SINGLECOPY-09-RECEIPT.md), frozen source`42d071a38a8937ce632423732a139febd961576f`. Paid18-state-role selector/charged rejection sampling, unchanged ordinary6-triple ancestor; formation36/COPYfirst11,later7/division32. Fixture25789 faithful and single each1 food/0 fresh/6 of18 copiedwords/0 births/1 death at16; copying-disabled32food/16fresh/0birth dies386. Original ordinary-positive gate FAILED;0/32 primary worlds, reserves untouched, no cost/gate/sample/ancestor changes. Cycle11 energy versus alternating mean10; ordinary supply-control funding is exact blocker. Negative expectation correction preserves initialnative1, frozenlaw unchanged;2 negative/matchedbill checks/10 nativezeroexits/3 restored-byte histories/full independent interpreter/separate audit. No learning/evolution/repair/stage result. Single next dependency: prospectively derive and test a different supplied ordinary acquisition-before-copy cadence under unchanged full costs; no learner/winner installation, cheapened prices, replay/tuning closed samples or unready mutation panel.
 
 DIGITAL-FEEDBACK-08 CLOSED structural dependency: [protocol](DIGITAL-FEEDBACK-08-PROTOCOL.md), [receipt](DIGITAL-FEEDBACK-08-RECEIPT.md), source`d4f92b96150523a8f52a498ba8afaa3ac6f12f60`. All558 one-word variants/2232 counterfactual probes independently reproduced:4 feedback-dependent next-action variants,2 retaining COPY/DIVIDE opcodes. No actual resources/viability/reproduction measured; zero organism worlds, null whole/fresh work/damage, no learning/evolution/stage credit. Prepared witnesses only; none installed. Existing ISA reachability barrier absent. AL compatibility review complete. Initial omitted-launcher export failure preserved, corrected packaging only;2 checks/4 nativezeroexits/source archive restored-byte replay. Next implement one prospective unbiased single-point-copy operator with explicit paid selector/state overhead and full-cost naturally generated descendant comparison versus ordinary faithful/per-word controls; no target genome, closed-sample tuning or ISA expansion justified by this result.
