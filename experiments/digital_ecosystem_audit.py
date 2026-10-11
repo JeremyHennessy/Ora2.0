@@ -5,7 +5,24 @@ import sys
 
 def h(x):return hashlib.sha256(json.dumps(x,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
+def strict_types(value, field=None):
+    """The registered VM uses integer quantities; bool is not an integer receipt."""
+    flags=('mutated','ancestor_supplied','learning_demonstrated','checkpoint_replay','persistent_world','controller_activated')
+    if field in flags:
+        assert type(value) is bool
+    elif type(value) is bool:
+        raise AssertionError('Boolean substituted for VM receipt quantity')
+    elif isinstance(value,dict):
+        for key,item in value.items():strict_types(item,key)
+    elif isinstance(value,(list,tuple)):
+        for item in value:strict_types(item)
+    elif value is not None:
+        assert type(value) in (int,str)
+
 def audit_world(row):
+    strict_types(row)
+    assert row['ancestor_supplied'] is True and row['learning_demonstrated'] is False
+    assert row['checkpoint_replay'] is True
     # Reference representation deliberately uses an owned-material set and
     # registered write certificates, rather than the producer's allocator.
     food={i:[i//16,int(h([row['seed'],'food',i])[:8],16)%2] for i in range(64)}
@@ -15,6 +32,7 @@ def audit_world(row):
         assert event['tick']==seq+1
         ids=sorted(org);actor=next((i for i in ids if i>last),ids[0]);last=actor
         e=org[actor];op=e['code'][e['pc']][0]
+        outcome='executed'
         assert (event['actor'],event['op'],event['pc'],event['r0'],event['r1'],event['energy_before'])==(actor,op,e['pc'],e['r0'],e['r1'],e['energy'])
         e['energy']-=1;heat+=1;e['pc']=(e['pc']+1)%6
         neighbors=[org[i] for i in ids if i!=actor and org[i]['pos']==e['pos']]
@@ -37,7 +55,9 @@ def audit_world(row):
                 assert w==dict(source=source,destination=unit,index=e['read'],opcode=value,event_id=seq,mutated=value!=source[0])
                 occupied.add(unit);e['nursery'].append([value,unit,e['read'],seq]);e['read']+=1;e['energy']-=1;heat+=1
                 writes[seq]=(actor,value,unit)
-            else:assert 'write' not in event
+            else:
+                assert 'write' not in event
+                outcome='copy_refused'
         elif op==5:
             if e['read']<6:e['pc']=0
         elif op==6:
@@ -49,7 +69,9 @@ def audit_world(row):
                 expected=dict(id=next_id,parent=actor,generation=e['generation']+1,code=[[g[0],g[1]] for g in e['nursery']],mem=[0]*8,mem_units=units,energy=12,pos=e['pos'],pc=0,r0=0,r1=0,read=0,nursery=[],inbox=None)
                 assert child==expected;org[next_id]=json.loads(json.dumps(expected));next_id+=1
                 occupied.update(units);e['energy']-=22;heat+=10;e['nursery']=[];e['read']=0;births+=1
-            else:assert 'birth' not in event
+            else:
+                assert 'birth' not in event
+                outcome='division_refused'
         elif op==7:e['mem'][e['r0']%8]=e['r1']%16
         elif op==8:e['r0']=e['mem'][e['r1']%8]
         elif op==9:
@@ -68,7 +90,9 @@ def audit_world(row):
         elif op==14:
             if neighbors and e['energy']>=1 and neighbors[0]['energy']<64:
                 assert event['transfer']==neighbors[0]['id'];e['energy']-=1;neighbors[0]['energy']+=1
-        elif op==15:heat+=e['energy'];e['energy']=0
+        elif op==15:
+            heat+=e['energy'];e['energy']=0;outcome='halt'
+        assert event['outcome']==outcome
         if e['energy']==0:
             units=[g[1] for g in e['code']]+e['mem_units']+[g[1] for g in e['nursery']]
             assert event['death']==units;occupied.difference_update(units);del org[actor];deaths+=1
@@ -81,11 +105,18 @@ def audit_world(row):
     assert {int(k):v for k,v in final['food'].items()}==food and final['heat']==heat
     assert final['free']==sorted(set(range(512))-occupied)
     assert (row['births'],row['deaths'],row['maximum_population'],row['ticks'])==(births,deaths,maximum,len(row['events']))
-    assert row['state_hash']==h(final) and row['checkpoint_replay']
+    # Reconstruct every continuation field, not just resource totals. A hash
+    # supplied alongside a forged snapshot cannot certify scheduler/RNG identity.
+    expected_final=dict(seed=row['seed'],mode=row['mode'],tick=len(row['events']),last=last,next_id=next_id,
+                        food=food,free=sorted(set(range(512))-occupied),heat=heat,writes=len(writes),entities=org,
+                        events=row['events'],births=births,deaths=deaths,max_population=maximum)
+    assert h(final)==h(expected_final)
+    assert row['state_hash']==h(expected_final)
     return dict(seed=row['seed'],mode=row['mode'],births=births,deaths=deaths,max_population=maximum,mutations=sum(v['write']['mutated'] for v in row['events'] if 'write' in v),descendant_births=sum(v['actor']!=0 for v in row['events'] if 'birth' in v),ticks=row['ticks'])
 
 def audit(data):
-    assert data['schema']=='digital-ecosystem01-v1' and not data['persistent_world'] and not data['controller_activated']
+    strict_types(data)
+    assert data['schema']=='digital-ecosystem01-v1' and data['persistent_world'] is False and data['controller_activated'] is False
     assert [(r['seed'],r['mode']) for r in data['rows']]==[(s,m) for s in range(24000,24004) for m in ('mutating','faithful','copy_disabled')]
     records=[audit_world(r) for r in data['rows']]
     assert all(r['births']==0 for r in records if r['mode']=='copy_disabled')
