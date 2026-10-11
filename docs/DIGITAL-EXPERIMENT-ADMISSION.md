@@ -89,3 +89,17 @@ Evidence available at approval: [feedback08 receipt](DIGITAL-FEEDBACK-08-RECEIPT
 [release07 receipt](DIGITAL-RELEASE-07-RECEIPT.md), and SINGLECOPY09 PR149's frozen
 failure receipt (pending publication at this document's source pin). No new
 scientific capability is accepted by this guidance.
+
+## Later approved exploration separation — October 11
+
+Supply a disclosed ordinary fixed exploration baseline that tries alternatives
+without changing its strategy from experience. Do not require spontaneous basic
+exploration discovery or reproduction as universal learning admission gates.
+[Exploration13](DIGITAL-EXPLORATION-13-PROTOCOL.md) registers its full-cost fresh
+software admission, not learned benefit. Preserve Experience12's failed source
+admission and every closed law/sample/reserve. A neutral candidate must improve
+useful actions beyond the supplied baseline on unseen contingencies with fixed,
+memory-disabled and own-history controls covering ALL used durable channels.
+Current unknowns are executable neutral source, unseen contingency and valid
+channel-complete causal intervention, not a mandate for a new world version.
+No installed successful learner, stage advance or activation follows planning.
