@@ -4,6 +4,19 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+ASSOCIATION-CHANNEL-01 implements and verifies one isolated prerequisite of
+COHERENT-CONTACT-01 at e715bfb: a finite third constituent receives binding energy
+and returns it on the exact reverse path. [Contract](ASSOCIATION-CHANNEL-01-CONTRACT.md)
+and [receipt](ASSOCIATION-CHANNEL-01-RECEIPT.md). Five prepared-contact events,
+independent interpretation and archived-source replay pass. At unchanged contact
+the next transition undoes binding: zero exported work and no retained assembly.
+This is no source-to-load converter or raw-accessible spatial formation path;
+whole-life surplus, post-damage surplus and comparator profit remain UNKNOWN.
+Stage 3 is unchanged and the primary candidate stays unadmitted. Next specify
+paid separation/decoupling and reverse encounter together with a finite source,
+retained load and all-role renewal; implement the complete history or reject
+before worlds. No invisible recipient reset, one-way latch or census.
+
 CONTACT-ADMISSION-01 stops the incomplete AUTONOMOUS-CONTACT-01 proposal as
 the primary implementation path. The reviewed fabrication fixture has no motor;
 charge transport does not move apparatus, and the kinetic diffusion rule carries
