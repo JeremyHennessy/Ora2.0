@@ -83,7 +83,20 @@ Unknown preparation, upkeep, repair and load costs remain null, not0. Next
 decision: resolve the named surface transition with a functional fresh-material
 assay and complete constructor bill; otherwise reject and choose a different
 mechanism. No supplied-wall run, capillary ceiling or tuning of closed histories.
-Science owns this decision; unrelated engineering/research audits stay deferred.
+Targeted clarification: intrinsic raw wetting may be constitutive physics;
+coatings, anchors and assembled functional geometry still require paid renewal.
+The inspected formation study supplies immobile preassembled colloids. A
+[reduced reciprocal gradient design](FREE-CAPILLARY-TRANSFER-01-GRADIENT-DESIGN.md)
+addresses only conservative derivatives, not a complete converter or work.
+[Verified algebra receipt](FREE-CAPILLARY-TRANSFER-01-GRADIENT-RECEIPT.md):
+three states/23 derivatives, six focused tests and independent restored replay
+pass. Work/comparator remain unmeasured; no candidate admission or Stage3 credit.
+First remaining blocker: finite thermodynamic/dynamic closure (U/S/temperature,
+moving fluid/solid, diffusion/waste, load and all-role construction/renewal).
+No actual whole/fresh profitable simpler route. Specify the complete closure
+or reject the free-body proposal; no further derivative-only study substitutes
+for the next complete science prototype. Science owns this decision;
+unrelated engineering/research audits stay deferred.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
