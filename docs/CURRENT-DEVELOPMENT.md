@@ -32,9 +32,8 @@ inheritance/evolution and unseen-challenge learning comparisons with appropriate
 fixed,memory-disabled,own-history-disrupted and inheritance-disabled controls.
 Meaningful digital damage requires actual loss/restoration of useful function
 caused by the organism; host checkpoint restart is only engineering recovery.
-One next dependency: freeze a same-law functional-inheritance assay of access to
-initially remote resources with nonvariation/inheritance-disabled controls, before
-any new seeds. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
+Next prospective block: [INHERITANCE-01 protocol](DIGITAL-INHERITANCE-01-PROTOCOL.md), unchanged VM law. Generate128 unconditional populations at new seeds24100..24163, mutating versus faithful; select one actually born MOVE-containing program lexicographically, without performance screening. If available, compare24 fresh complete finite histories at24200..24203 against ancestor and disclosed ordinary mobile copier, with disabled-copy controls. All prior reserved samples and new24204..24211 replication remain unopened. Same endpoint must first certify the mobile software witness and reject forged genesis/ancestry. Missing candidate stops this frozen panel. No learning or sustained evolution claim.
+Checkpoint-integrity repair PR133 is merged5181b9d, independently checked against all12 unchanged original histories and rehashed continuation-field forgeries. Exact PR/main CI649 tests,13 skipped passed. Separate closing readback: `D:/OraLab/runs/digital-checkpoint-fix-closing-20261011/final-audit.json`. External host crash recovery remains unverified. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
 change. Physical/off-host/full-host durability and production isolation remain
 explicit; not all are gates for a safely bounded data-only VM experiment.
 

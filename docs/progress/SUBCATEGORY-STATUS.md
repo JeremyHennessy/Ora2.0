@@ -1,5 +1,7 @@
 # Ora 2.0 complete subcategory status
 
+Next prospective comparison: [INHERITANCE-01](../DIGITAL-INHERITANCE-01-PROTOCOL.md), unchanged VM law;128 unscreened generation histories, then24 fresh candidate/ancestor/ordinary-mobile assays if a copied MOVE-containing candidate exists. No new result is claimed by registering this protocol. PR133 closes the interpreter continuation-identity gap on all original12 histories without changing their findings; external host crash recovery remains unverified.
+
 October11 executed digital baseline: [DIGITAL-ECOSYSTEM-01 receipt](../DIGITAL-ECOSYSTEM-01-RECEIPT.md). Twelve bounded audited worlds: mutation11 births/3 descendant births; faithful12/4; disabled copying0. All extinct,48 remote food units remain per world. Executed ancestry, finite ledgers and checkpoint/archive replay pass. This is a supplied-ancestor capability check, not evolution, learning, repair or persistent-world acceptance; historical categories/statuses remain unchanged. Next dependency: prospectively freeze remote-resource functional-inheritance comparison.
 
 ## October11 prospective digital criteria; historical statuses retained
