@@ -58,6 +58,9 @@ class WindowsCapsTests(unittest.TestCase):
         self.assertEqual(result['usage']['configured_processes'], result['limits']['processes'])
         self.assertLessEqual(result['retained_bytes'], resource.OUTPUT_LIMIT)
         self.assertFalse(result['isolation_verified'])
+        self.assertTrue(result['post_close_processes_exited'])
+        self.assertTrue(result['owned_pids_before_close'])
+        self.assertTrue(all(resource.process_exited(pid) for pid in result['owned_pids_before_close']))
         return result
 
     def test_finite_success(self):
