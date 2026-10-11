@@ -4,6 +4,23 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+CONVERTER-CLOSURE-01 resolves the imminent source question: the specific
+correlation-ratchet architecture reviewed in full HTML uses driven advancement
+and switching, without a complete driver construction/renewal bill. Stop it as
+the primary whole-system candidate; this is an admission rejection, not a
+negative simulation or a falsification of correlation-powered conversion.
+[Decision and exact gaps](CONVERTER-CLOSURE-01-DECISION.md). No work or actual
+control profit was measured. Earlier capacity and closed fuel-law evidence stay
+unchanged. No further census or natural panel is justified by this architecture.
+Next primary proposal is AUTONOMOUS-CONTACT-01: model reversible paid contact
+progression and return inside the apparatus, against an actual paid stationary
+block converter on identical feed. Its named missing item is a consistent
+contact/return transition law linked to raw-accessible all-role formation and
+renewal. Resolve that explicit transition/ancestry ledger or reject the proposal;
+do not substitute a transition matrix, installed driver or invented price.
+This is design only, with UNKNOWN costs and no admitted complete mechanism.
+Stage3 stays unchanged; ADAPTATION remains separate and unactivated.
+
 RUNTIME-JSON-01 closes an evidenced recovery integrity defect: eight conflicting
 duplicate-name records previously passed last-value parsing and hashes. Frozen
 b089071 rejects ambiguity recursively; twenty focused recovery/short-write checks
@@ -14,7 +31,7 @@ files and its incomplete ledger, plus the corrected audit-wrapper API failure.
 Engineering returns to its gated backlog after required publication checks;
 do not replace the next science prototype with a fresh general runtime audit.
 
-Primary candidate decision card (AI-only; not admitted):
+Historical correlation candidate decision card (superseded by the scoped stop above):
 - Question: can a paid finite memoryful converter turn the identical correlated
   digital feed into more retained useful work than an attainable paid stationary
   full-block implementation, including reconstruction after functional loss?
