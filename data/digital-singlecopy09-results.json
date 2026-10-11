@@ -1,0 +1,645 @@
+{
+  "archive_sha256": "bbe785c79362e76638d134694130157ba9c72e018b3c92e49c0c9870c4b3ad95",
+  "byte_replay": true,
+  "classification": "ORDINARY_POSITIVE_FIXTURE_FAILED_FULL_COST_ROUTE_UNAVAILABLE",
+  "controller_activated": false,
+  "damage": null,
+  "diagnostic_storage": {
+    "files": 23,
+    "limits": {
+      "failure": 16777216,
+      "raw": 50331648
+    },
+    "logical_bytes": 487650,
+    "reserved_by_phase": {
+      "failure": 1017,
+      "raw": 486633
+    },
+    "reserved_bytes": 487650,
+    "sha256": {
+      "failure/budget.json": "4ffd95db95326dba07e59a8d7e297f9d0ed91dec05f7ccba963d9b4ced2b5e34",
+      "raw/copy_disabled-audit-output.txt": "67dbb7ac3f46e53f1d3d8cae2036de9eb2d88bfb0af273b63749f8d69b85140d",
+      "raw/copy_disabled-audit-process.json": "dacecd8d5e89ab610566dc46b8963dc20bb6f069b9b35ca45827b2a3c39358e4",
+      "raw/copy_disabled-output.txt": "6898dea7954e06d5c0081d940a37d503c091c209f808792446ff79f195eaf456",
+      "raw/copy_disabled-process.json": "97ae1bd61f586acc0cc92d754cc700594ceac5d36df8270a9a02a77ab2c644e7",
+      "raw/copy_disabled-row.json": "d3b79d2248a68e91c8993f23969ecaf7228e049353168c609401afc84be70ae9",
+      "raw/diagnoser.py": "080fe44c989ee0edd02a7ffa4a4fc12c8c8c37bf997b42c2f38f78f7a6f9bbe5",
+      "raw/diagnosis.json": "dfc2b0ecf4d0d1b087ad5dc59396c8c75861fd97b4f92da54d5e7b97585c47ec",
+      "raw/faithful-audit-output.txt": "74a63d045932cf15eb7ed148cb2122fb51fb66ed0a06105f792e4a548c288912",
+      "raw/faithful-audit-process.json": "74b6c238ac244b9103c6ceabe98b46e583facde8fa11a920c17299091d21fc71",
+      "raw/faithful-output.txt": "eea7e709646ab520c08eda6250d4bb64b8dca20f510c5f9e1f6ed1729f5ca333",
+      "raw/faithful-process.json": "2df6b7dad6dd5e603e123931d83f6a4705e6503c8b8162572becc5b7550b671f",
+      "raw/faithful-row.json": "0c24735e64dd2f5df0642e1ce320eb8d30038fb99e08948cc5dc702ad51021bf",
+      "raw/pin.json": "96a57510f4fc86ecc91bdf7fd8e9ccc902ca640de9b31b00a59c07825d127836",
+      "raw/single-audit-output.txt": "0504dc2f5c139dfd9e276fa60c9bedd9901662350fba69d7bf44af06cedea261",
+      "raw/single-audit-process.json": "6ef083bf31cc1802c1e3f9cc8c5f70124cc7bdb1a8c02f4a751855ff3dc92cee",
+      "raw/single-output.txt": "c7a23e483b4f8f002378813961000e36b51f53823254d4dad6f5bfd5cc335887",
+      "raw/single-process.json": "d2eee3e379651d220333ffe9832686ebfd181f4c513be774183faed01dfc7ba4",
+      "raw/single-row.json": "34009fd5835c48eea538eb27010f8b022f3f903fafd9d14121f1bca0309714a1",
+      "raw/source/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a"
+    },
+    "total_limit": 67108864
+  },
+  "evolution": false,
+  "exact_blocker": "SuccessfulCOPY costs7/base included, first11; fixed single-acquisition-per-copy alternating cycle costs11 versus average10 intake before caps; fixture dies with incomplete6/18-word nursery, never reaches division32. No completed single-error birth or mutation/learning comparison admitted.",
+  "failed_storage": {
+    "files": 13,
+    "limits": {
+      "archive": 67108864,
+      "failure": 16777216,
+      "raw": 268435456,
+      "restore": 67108864
+    },
+    "logical_bytes": 281379,
+    "reserved_by_phase": {
+      "archive": 0,
+      "failure": 781,
+      "raw": 280598,
+      "restore": 0
+    },
+    "reserved_bytes": 281379,
+    "sha256": {
+      "failure/budget.json": "fb9ff4f5a66bdda7c971143e9d7b75c8ca357c8e6f8bcbc05f46c80f2dc2f5b2",
+      "failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+      "raw/fixtures-output.txt": "d4b5db45faf4a953f5f024c941061b9816ac84ad0a1154b38153a27531fe5836",
+      "raw/fixtures-process.json": "9667d770f985c6aa200189ec1c3c8cb182bb1b072b9e1d6e22d4a09ce885329e",
+      "raw/pin.json": "7f69c2e3666e271ddefa4c16e44a47cbc1b04e05787e040463875bbb87b8dcd7",
+      "raw/runner.py": "ec60f543257685f55d85224672c396382e05172a1362f0730540a708fc692f3a",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "11b4f7644a0817ef640e66978192297312682b47c09ba2dfc46439a00e5c4147",
+      "raw/source/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_singlecopy09.py": "fa72b9784fbe9ad7ce9705c9853e943254c4280da49399e89178c494cfcbde73"
+    },
+    "total_limit": 419430400
+  },
+  "focused_negative_regressions": 2,
+  "fresh_work": null,
+  "full_law_unchanged": true,
+  "learning": false,
+  "metrics": [
+    {
+      "births": 0,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 2,
+      "feedback_reads": 0,
+      "formation_cost": 36,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 68,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 1,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "faithful",
+      "mutations": 0,
+      "offspring_errors": [],
+      "paid_copy_words": 6,
+      "post_food": 0,
+      "pre_food": 1,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25789,
+      "successful_food": 1,
+      "ticks": 16,
+      "unused_food": 63,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 2,
+      "feedback_reads": 0,
+      "formation_cost": 36,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 0,
+      "heat": 68,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 1,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "single",
+      "mutations": 0,
+      "offspring_errors": [],
+      "paid_copy_words": 6,
+      "post_food": 0,
+      "pre_food": 1,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25789,
+      "successful_food": 1,
+      "ticks": 16,
+      "unused_food": 63,
+      "verified": true
+    },
+    {
+      "births": 0,
+      "born_feedback_readers": [],
+      "change_exposed": 0,
+      "deaths": 1,
+      "descendant_births": 0,
+      "descendant_remote_food": 0,
+      "evolution": false,
+      "failed_food": 33,
+      "feedback_reads": 0,
+      "formation_cost": 36,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "free_material": 512,
+      "fresh_packets": 16,
+      "heat": 704,
+      "learning": false,
+      "live_energy": 0,
+      "maximum_population": 1,
+      "memory_writes": 0,
+      "messages": 0,
+      "mode": "copy_disabled",
+      "mutations": 0,
+      "offspring_errors": [],
+      "paid_copy_words": 0,
+      "post_food": 26,
+      "pre_food": 6,
+      "remote_food": 0,
+      "repair": false,
+      "repeated_hidden_port_actors": 0,
+      "route": "ancestor",
+      "seed": 25789,
+      "successful_food": 32,
+      "ticks": 386,
+      "unused_food": 32,
+      "verified": true
+    }
+  ],
+  "native_zero_exits": 10,
+  "ordinary_fixture_gate": false,
+  "persistent_world": false,
+  "preserved_native_failure": 1,
+  "primary_worlds": 0,
+  "regression_source": "4701b03fdd472e70534615252d1c4c245da4d4b8",
+  "repair": false,
+  "reserves_executed": false,
+  "software_histories": 3,
+  "source": "42d071a38a8937ce632423732a139febd961576f",
+  "source_restored": true,
+  "storage": {
+    "files": 59,
+    "limits": {
+      "archive": 8388608,
+      "failure": 8388608,
+      "raw": 33554432,
+      "restore": 16777216
+    },
+    "logical_bytes": 946048,
+    "reserved_by_phase": {
+      "archive": 16363,
+      "failure": 4480,
+      "raw": 881172,
+      "restore": 44033
+    },
+    "reserved_bytes": 946048,
+    "sha256": {
+      "archive/source.zip": "bbe785c79362e76638d134694130157ba9c72e018b3c92e49c0c9870c4b3ad95",
+      "failure/budget.json": "67aed0bfb56cf327362609713f4c2363a9e1b4af20027d90ec01a5f9f2ce97d6",
+      "raw/copy_disabled-restored-output.txt": "6898dea7954e06d5c0081d940a37d503c091c209f808792446ff79f195eaf456",
+      "raw/copy_disabled-restored-process.json": "e2886645a9cdd42e89ed26bad7c073eec5c10cf747ce7c0584a0c28d36093ab1",
+      "raw/faithful-restored-output.txt": "eea7e709646ab520c08eda6250d4bb64b8dca20f510c5f9e1f6ed1729f5ca333",
+      "raw/faithful-restored-process.json": "0ef2b8e82e5c86403b425a971674918ffe8b5500b8bb8992873d9ce6aa15426f",
+      "raw/negative-regressions-output.txt": "a6216e48204d97ae961242bbf7e1e49c543ae1596baf9af53a99127345582960",
+      "raw/negative-regressions-process.json": "a30f7d1c6531ffa5d8594d2fc368434e6e51fcab4c1dd5ba4cfd8a54008fd531",
+      "raw/pin.json": "c2da11d3757086dbbf6f6ce293fb5d47ac4f2f55cbb0295a489a9bd27d792c87",
+      "raw/preserved/digital-singlecopy09-20261011/failure/budget.json": "fb9ff4f5a66bdda7c971143e9d7b75c8ca357c8e6f8bcbc05f46c80f2dc2f5b2",
+      "raw/preserved/digital-singlecopy09-20261011/failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+      "raw/preserved/digital-singlecopy09-20261011/raw/fixtures-output.txt": "d4b5db45faf4a953f5f024c941061b9816ac84ad0a1154b38153a27531fe5836",
+      "raw/preserved/digital-singlecopy09-20261011/raw/fixtures-process.json": "9667d770f985c6aa200189ec1c3c8cb182bb1b072b9e1d6e22d4a09ce885329e",
+      "raw/preserved/digital-singlecopy09-20261011/raw/pin.json": "7f69c2e3666e271ddefa4c16e44a47cbc1b04e05787e040463875bbb87b8dcd7",
+      "raw/preserved/digital-singlecopy09-20261011/raw/runner.py": "ec60f543257685f55d85224672c396382e05172a1362f0730540a708fc692f3a",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/docs/CURRENT-DEVELOPMENT.md": "11b4f7644a0817ef640e66978192297312682b47c09ba2dfc46439a00e5c4147",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/preserved/digital-singlecopy09-20261011/raw/source/tests/test_digital_singlecopy09.py": "fa72b9784fbe9ad7ce9705c9853e943254c4280da49399e89178c494cfcbde73",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/failure/budget.json": "4ffd95db95326dba07e59a8d7e297f9d0ed91dec05f7ccba963d9b4ced2b5e34",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/copy_disabled-audit-output.txt": "67dbb7ac3f46e53f1d3d8cae2036de9eb2d88bfb0af273b63749f8d69b85140d",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/copy_disabled-audit-process.json": "dacecd8d5e89ab610566dc46b8963dc20bb6f069b9b35ca45827b2a3c39358e4",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/copy_disabled-output.txt": "6898dea7954e06d5c0081d940a37d503c091c209f808792446ff79f195eaf456",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/copy_disabled-process.json": "97ae1bd61f586acc0cc92d754cc700594ceac5d36df8270a9a02a77ab2c644e7",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/copy_disabled-row.json": "d3b79d2248a68e91c8993f23969ecaf7228e049353168c609401afc84be70ae9",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/diagnoser.py": "080fe44c989ee0edd02a7ffa4a4fc12c8c8c37bf997b42c2f38f78f7a6f9bbe5",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/diagnosis.json": "dfc2b0ecf4d0d1b087ad5dc59396c8c75861fd97b4f92da54d5e7b97585c47ec",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/faithful-audit-output.txt": "74a63d045932cf15eb7ed148cb2122fb51fb66ed0a06105f792e4a548c288912",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/faithful-audit-process.json": "74b6c238ac244b9103c6ceabe98b46e583facde8fa11a920c17299091d21fc71",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/faithful-output.txt": "eea7e709646ab520c08eda6250d4bb64b8dca20f510c5f9e1f6ed1729f5ca333",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/faithful-process.json": "2df6b7dad6dd5e603e123931d83f6a4705e6503c8b8162572becc5b7550b671f",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/faithful-row.json": "0c24735e64dd2f5df0642e1ce320eb8d30038fb99e08948cc5dc702ad51021bf",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/pin.json": "96a57510f4fc86ecc91bdf7fd8e9ccc902ca640de9b31b00a59c07825d127836",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/single-audit-output.txt": "0504dc2f5c139dfd9e276fa60c9bedd9901662350fba69d7bf44af06cedea261",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/single-audit-process.json": "6ef083bf31cc1802c1e3f9cc8c5f70124cc7bdb1a8c02f4a751855ff3dc92cee",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/single-output.txt": "c7a23e483b4f8f002378813961000e36b51f53823254d4dad6f5bfd5cc335887",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/single-process.json": "d2eee3e379651d220333ffe9832686ebfd181f4c513be774183faed01dfc7ba4",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/single-row.json": "34009fd5835c48eea538eb27010f8b022f3f903fafd9d14121f1bca0309714a1",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/source/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/preserved/digital-singlecopy09-diagnostic-20261011/raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/regression-source/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "raw/regression-source/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "raw/regression-source/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "raw/regression-source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/regression-source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/regression-source/tests/test_digital_singlecopy09.py": "0a0845f13290c8cf6244e863138067c5cc9f2a827246191d748b725e9cf14187",
+      "raw/single-restored-output.txt": "c7a23e483b4f8f002378813961000e36b51f53823254d4dad6f5bfd5cc335887",
+      "raw/single-restored-process.json": "3b7df874023411ac4e35d75b861ba6c362f0335d5dbc2da5af7e414eced8bd63",
+      "raw/source-seals.json": "9445695f80c7ca1138d8a97498c409f88416e62e77c5ceac3413d339a5a19a75",
+      "raw/verifier.py": "e8171c68580292dcba0332909792c6424c04065feeb0407edfa53602425eda4d",
+      "restore/docs/DIGITAL-SINGLECOPY-09-PROTOCOL.md": "39190bbc831f2549b130f7e106c091d2eaf0c0a5eb384392f8e51442a09517fe",
+      "restore/experiments/digital_singlecopy09.py": "2326f07754998cd8858fa05ce8e91d4004fa10943b936b587e813ecd7dcea6c3",
+      "restore/experiments/digital_singlecopy09_audit.py": "9cdf8fb40274ad17e8c1c71b868cf1ec2da184740adea962a5fe221e436d390a",
+      "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a"
+    },
+    "total_limit": 67108864
+  },
+  "verified": true,
+  "whole_work": null
+}
