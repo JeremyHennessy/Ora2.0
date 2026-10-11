@@ -4,6 +4,27 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+MODE-CONVERTER-01 is CLOSED NEGATIVE, not a reopening of
+COLLISION-BRIDGE-01. [Frozen decision card and law](MODE-CONVERTER-01-PROTOCOL.md).
+Its distinct capability is finite internal compression/release, charged from
+relative kinetic energy and returned through generic impacts. Constitutive raw
+formation creates the entire one-role carrier. No supplied constructor, memory,
+driver or yield bonus. Six authored histories compare the ordinary same-feed
+direct route, two function diagnostics and the exhaustive two-site shuffle.
+Meaningful t64 full bond/mode destruction must be followed by fresh opportunity,
+new complete apparatus identities and positive load work through them. All
+formation, recompression, heat, load work and residual source energy are recorded.
+Six clarified frozen histories completed: candidate work1.384749 minus
+formation4.517049/recompression1 gives whole margin-4.132300 and post margin
+-1.118938. Direct work3.2768 gives positive whole/post margins0.7168/1.9968.
+Two bonds were destroyed; s2 was fresh, but new apparatus and rebuilt work are
+absent. Seven focused tests, independent interpretation, conservation and restored
+byte replay pass. Preserve the original/diagnostic/contact-clarification failures:
+coincident coordinate/velocity roundoff was diagnosed and prospectively refrozen,
+without changing costs, feed or gates. [All results and failures](MODE-CONVERTER-01-RECEIPT.md).
+No natural panel; Stage3 unchanged. Next choose a genuinely different complete
+capability, not another impact-storage extension. ADAPTATION remains design only.
+
 COLLISION-BRIDGE-01 completes a **controlled digital-law prototype and rejection**.
 [Prospective protocol and decision card](COLLISION-BRIDGE-01-PROTOCOL.md).
 Question: can paid raw association create a collisional transfer body whose
