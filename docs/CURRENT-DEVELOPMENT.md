@@ -1,6 +1,6 @@
 # Current development plan and handoff
 
-DIGITAL-ORDINARY-ADMISSION-10 PROSPECTIVE configuration-only software preflight: [protocol](DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md). Reuse exact unchanged09/07 VM and independent interpreters; openly supplied eight-triple two-acquisition cadence with matched selector tax versus paid original six-triple actual ordinary machinery and copying-disabled witness. Six software histories25890/91,0 primary mutation worlds; no learning/repair/stage claim. Full formation42/copy60(no rejection)/division32/startup12/cap64/release16/descendant ledger frozen; admitted fixed six/eight-triple domain avoids32-triple formation/release incompatibility without editing oldlaw. Generic paid birth/descendant/fresh endpoint must pass both ordinary routes in each seed, refuse copying-disabled; preserve failures, source-pinned independent interpretation and restored-byte replay. Single next decision: actual descendant viability and fresh function, not mean-only margin; no mutation panel until closure.
+DIGITAL-ORDINARY-ADMISSION-10 CLOSED ordinary lifecycle prerequisite: [protocol](DIGITAL-ORDINARY-ADMISSION-10-PROTOCOL.md), [all six-history receipt](DIGITAL-ORDINARY-ADMISSION-10-RECEIPT.md), source`e48b556b070699aca7342b297a4a66b9bfcb4c6d`. Unchanged09/07 laws, supplied eight-triple matched cadence64food/32fresh/6births/2descendant births/8deaths versus actual-cost ordinary64/32/16/14/18; copying-disabled0births. Same generic paid ordinary/descendant/fresh evaluator accepts both configurations in each software25890/91 and rejects impossible controls. All extinct by355; finite1420energy/512material conserved, full copy/draw/state/division/startup/cap/release bills independently reconstructed. Two checks/19 nativezeroexits/six restored-byte histories/separate audit; initial adapternative1 and incorrect cross-law derived bill summary preserved and corrected without raw/law/gate change. Zero primary mutation worlds; reserves untouched, no discovery/learning/evolution/repair/stage credit. Single next dependency: register neutral variation with admitted supplied cadence, matched operator and actual-cost ordinary controls; include every natural lineage/death, no target/winner installation. Learning remains independent.
 
 | Active dependency card | Prospective decision |
 |---|---|
@@ -9,7 +9,7 @@ DIGITAL-ORDINARY-ADMISSION-10 PROSPECTIVE configuration-only software preflight:
 | Exact candidate/comparator | Eight-triple faithful09 matched-tax cadence; original six-triple faithful07 actual paid machinery; disabled-copy impossibility. Same finite external stock, disclosed apparatus differences. No mutation advantage test. |
 | Complete bill | Formation42;24 nursery words; firstCOPY11/later7 plus rejected draws; whole COPY60 without rejections; division32 after base/startup12/cap64/release16. Ordinary07 formation34/copy24/division30; unused09 draws are comparison tax. |
 | Gate/falsifier | Each ordinary seed: birth, descendant birth, fresh and descendant fresh>=1; disabled0birth. Any absence stops admission; no gate/cost/sample tuning. |
-| Current evidence/next | Conditional first-founder arithmetic only; actual transient rejected-draw/scheduler/descendant exposure unknown. Implement frozen software preflight, independently replay, then decide. Learning independent; no primary mutation panel or stage advance. |
+| Current evidence/next | Full-cost ordinary readiness PASSED across six software histories; matched6births/2descendant versus actual-cost ordinary16/14, all extinct. Register one neutral-variation comparison with fresh prospective samples and both paid comparator scopes; no winner installation. Learning independent; no mutation/evolution/stage acceptance. |
 
 ## Current priority and prospective admission — October 11
 
@@ -18,8 +18,10 @@ current operating rule. The historical next-step statements below retain their
 dates and do not override this priority. No stage or capability is advanced by
 this planning reconciliation; all frozen laws, receipts and reserves stay intact.
 
-The next reproduction/mutation block is **admission and ordinary-route viability
-first**. Resolve the existing acquisition-before-copy dependency within a suitable
+The reproduction/mutation admission rule remains **ordinary-route viability
+first**. ADMISSION10 resolves the supplied ordinary prerequisite in two software
+orientations; the next claim-specific variation protocol must recheck readiness
+for its registered candidate/comparator configurations. Resolve the existing acquisition-before-copy dependency within a suitable
 reviewed substrate before introducing another world law. Record the full paid
 path: founder and every code/state role, larger-program formation and complete
 nursery copying, successful/failed acquisition and control flow, first-selector
