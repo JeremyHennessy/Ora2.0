@@ -6,7 +6,10 @@ def witness(orientation,mode,stationary=None):
     # Authored software trace generator ONLY. Never installed in an organism.
     t=Task(orientation,mode)
     for _ in range(64):
-        cue=t.step('sense');remember=t.step('read',0)
+        cue=t.step('sense')
+        if cue is None:break
+        remember=t.step('read',0)
+        if remember is None:break
         action=cue^(remember%2) if stationary is None else stationary[cue]
         success=t.step('act',action)
         estimate=(remember%2)^int(success==0)
@@ -23,8 +26,13 @@ class MemoryTaskTests(unittest.TestCase):
             self.assertFalse(result['organism_learning'])
             for stationary in ((0,0),(0,1),(1,0),(1,1)):
                 fixed=audit(witness(orientation,'normal',stationary))
-                self.assertEqual((fixed['hits'],fixed['instructions']),(32,256))
-            self.assertEqual(audit(witness(orientation,'memory_disabled'))['hits'],32)
+                # Preserve failed admission, do not assert dead controls completed.
+                self.assertLessEqual(fixed['hits'],32)
+                if stationary in ((0,0),(1,1)):
+                    self.assertEqual((fixed['hits'],fixed['instructions']),(32,256))
+            disabled=audit(witness(orientation,'memory_disabled'))
+            self.assertLess(disabled['instructions'],256)
+            self.assertLessEqual(disabled['hits'],32)
 
     def test_impossible_ancestry_and_energy_refused_even_rehashed(self):
         good=witness(1,'normal')

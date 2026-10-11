@@ -51,3 +51,11 @@ Correct terminal rule: after opportunity64, SENSE/ACT are refused; READ/WRITE
 remain legal until the256-operation cap or zero-energy death. The final WRITE
 is charged and independently checked. Same witnesses/gates, separate resumed
 evidence root. No organism samples, results or reserved challenges were opened.
+
+Second source b351c62e40402c717b51e2cd89137401b068b709 at
+D:/OraLab/runs/digital-memory-task01-resumed-20261011 failed before full trace
+export: the software witness attempted to index a missing cue after a fixed
+route's finite-energy death. Preserve nativeexit1. Stop trace generation at
+lawful death/refusal, retaining the denominator and failed admission gate.
+The original all-controls64-actions/32-hits gate is not lowered. Recording dead
+controls is a measurement fix, not a new allocation or successful population.
