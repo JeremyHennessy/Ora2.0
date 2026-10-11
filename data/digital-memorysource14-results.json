@@ -1,0 +1,96 @@
+{
+  "archive_sha256": "439ff949c66e36e8813cdd276a60d72047690a76d8f8c7ceee3ed5d92c034ff0",
+  "byte_replay": true,
+  "classification": "EXHAUSTIVE_NEUTRAL_COMPILER_VERIFIED_NOT_PAID_ADMISSION",
+  "constructor_remaining": 16,
+  "cost_distribution": {
+    "11": 1152,
+    "12": 896
+  },
+  "damage": null,
+  "focused_tests": 2,
+  "formation_energy": 112,
+  "formation_material": 112,
+  "fresh_work": null,
+  "input_dependent_tables": [
+    240,
+    240,
+    240
+  ],
+  "learning": false,
+  "native_zero_exits": 4,
+  "next_dependency": "Specify the informative unseen contingency and opportunity-aware channel-complete causal controls before paying to install this bank in worlds. Compare actual formation112/cycle12-13 against ordinary exploration and viable fixed-reactive routes; no learning panel, selected winner or new law admitted by compiler proof alone.",
+  "ordinary_advantage": null,
+  "paid_viability": null,
+  "prepared_first_loop_cost": [
+    11,
+    12
+  ],
+  "programs": 256,
+  "recurring_cycle_cost": [
+    12,
+    13
+  ],
+  "release_energy": 16,
+  "reserves_executed": false,
+  "software_only": true,
+  "source": "97cd0d60b03321dd0931b68546a5530204d3b1ee",
+  "source_bank_screened": false,
+  "source_restored": true,
+  "stage_credit": false,
+  "storage": {
+    "files": 30,
+    "limits": {
+      "archive": 4194304,
+      "failure": 12582912,
+      "raw": 25165824,
+      "restore": 25165824
+    },
+    "logical_bytes": 3078910,
+    "reserved_by_phase": {
+      "archive": 89948,
+      "failure": 1389,
+      "raw": 2724224,
+      "restore": 263349
+    },
+    "reserved_bytes": 3078910,
+    "sha256": {
+      "archive/source.zip": "439ff949c66e36e8813cdd276a60d72047690a76d8f8c7ceee3ed5d92c034ff0",
+      "failure/budget.json": "38a2eba63efdf5ceec021ac0ec405a56dd74e71393ae9b10979f1e7e6b532f3c",
+      "raw/audit-output.txt": "bbdc92b74cb879ede8f9c61a6ea6cd019da6b498bde7700d895c4ffcdfb30bee",
+      "raw/audit-process.json": "c740760137c1fe496e56d1bd6b5ceba3dff5dd298e320406d4aa2c4c1121d7d9",
+      "raw/bank-output.txt": "d5792b5e10fd0de24dfaca97fec181e450b8ed04d3357f8be5c0e6ff245a7009",
+      "raw/bank-process.json": "01d7c6630c51b29295d3e76e4b320599b38fa7d05d027db89495ca4809c5c127",
+      "raw/bank-restored-output.txt": "d5792b5e10fd0de24dfaca97fec181e450b8ed04d3357f8be5c0e6ff245a7009",
+      "raw/bank-restored-process.json": "7a6cfa9cf4a6be76e955ff96726fa4c01f57006cdf1c19d499e6b453f5f45551",
+      "raw/bank.json": "f2c04821100f4bc4e045b4c488b6d6d88f58ad94685dfdd9791c11260fcd5fb6",
+      "raw/decision.json": "40e3364f102778d1b74b1e3b3764efd5043fd75c1334566e00697e5f8da2172d",
+      "raw/fixtures-output.txt": "4c47a094bbf65fa435888735f14375b01fceffc81cf3375f6c750cec7efac3fc",
+      "raw/fixtures-process.json": "21a842104e25e29ffba5556f903158cf3afc4e4324952c47de79dca724abdeff",
+      "raw/metrics.json": "4db4a3fb3406082574e0163c405c21a828a2a670f0637fad6cb10f95cce0feac",
+      "raw/pin.json": "441104444dfda2140887ae5c6c787c85f95f0baf197f912904fa41241609ac06",
+      "raw/runner.py": "8339fe926580881e3ff30aa25829a977f057ea7a765b11d2df42979162d68e97",
+      "raw/source-seals.json": "d4b9e731f7b3c39abbcf7e42db6280e0cb476a22a53203cecd5cf109b0dfe507",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "d5e03466c14003fe687d0cc71ad3ac1ff9a353a7f5c4fca38ae5c19e283d5276",
+      "raw/source/docs/DIGITAL-MEMORYSOURCE-14-PROTOCOL.md": "9240af897a6cdfdc4b2a3d852558e9559cc6485666bb97bd661f02ca57ec342e",
+      "raw/source/experiments/digital_memorysource14.py": "fcd1671e68eab69be2b37a6242843eb8f8e0acf6e7191c5bad9a0c54ef3b3e5c",
+      "raw/source/experiments/digital_memorysource14_audit.py": "a69aa623ef63b3b077624dc8972c546a59332b47a7ee2fd530048a9b88cc6987",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_memorysource14.py": "0547c68d8104bce45a2850c517f3a53a11418614e6b8c2c4ca0d0c07fa25b226",
+      "restore/docs/CURRENT-DEVELOPMENT.md": "d5e03466c14003fe687d0cc71ad3ac1ff9a353a7f5c4fca38ae5c19e283d5276",
+      "restore/docs/DIGITAL-MEMORYSOURCE-14-PROTOCOL.md": "9240af897a6cdfdc4b2a3d852558e9559cc6485666bb97bd661f02ca57ec342e",
+      "restore/experiments/digital_memorysource14.py": "fcd1671e68eab69be2b37a6242843eb8f8e0acf6e7191c5bad9a0c54ef3b3e5c",
+      "restore/experiments/digital_memorysource14_audit.py": "a69aa623ef63b3b077624dc8972c546a59332b47a7ee2fd530048a9b88cc6987",
+      "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "restore/tests/test_digital_memorysource14.py": "0547c68d8104bce45a2850c517f3a53a11418614e6b8c2c4ca0d0c07fa25b226"
+    },
+    "total_limit": 67108864
+  },
+  "truth_probes": 2048,
+  "unique_programs": 256,
+  "verified": true,
+  "whole_work": null,
+  "world_histories": 0
+}
