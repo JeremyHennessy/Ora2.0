@@ -132,4 +132,5 @@ def history(seed,mode):
 if __name__=='__main__':
     import sys
     seed=int(sys.argv[1]);assert 24800<=seed<24804
-    print(json.dumps([history(seed,m) for m in MODES],sort_keys=True,separators=(',',':')))
+    mode=sys.argv[2];assert mode in MODES
+    print(json.dumps([history(seed,mode)],sort_keys=True,separators=(',',':')))
