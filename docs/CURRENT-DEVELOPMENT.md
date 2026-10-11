@@ -57,12 +57,24 @@ Zero raw bound births and no functioning candidate hit at either fixed loss;
 renewal UNDEREXPOSED. Paid spin/potential/impulse/signed-work accounts reconcile;
 eight focused tests, separate polar-gradient/RK4, four forgeries and restored
 byte replay pass. Physical prices UNKNOWN; no worlds, self-maintenance or Stage3 advance.
-No active experiment or admitted candidate. Next substantive decision: select a
-genuinely different complete raw formation/conversion/renewal mechanism with
-an actual phase-profitable same-feed simpler route BEFORE further execution.
-Do not retune angular feed, geometry, inertia, loss timing or closed scalar laws;
-transient scattering is not apparatus construction. Unknown prices never0.
-Science owns the next substantive block; general runtime audits stay deferred.
+FINITE-HEAT-TRANSPORT-01 is CLOSED AT ADMISSION.
+[Compact candidate decision card](FINITE-HEAT-TRANSPORT-01-DECISION-CARD.md),
+[frozen complete14-record law](FINITE-HEAT-TRANSPORT-01-PROTOCOL.md) and
+[measured work, heat transport and independent audit](FINITE-HEAT-TRANSPORT-01-RECEIPT.md).
+Candidate whole-1.301714227/fresh about-4.6e-7; bare whole+.320001159/fresh0;
+negative singleton whole-.679200040/fresh+.153060378. No simpler control
+profitable on BOTH metrics; no superiority or whole/fresh causal advantage.
+Four raw bound births, no functioning apparatus lost: renewal UNDEREXPOSED.
+Virgin feed after64 was available; fresh useful candidate surplus absent.
+Local heat redistributes, but neutral carrier heat is negligible/zero.
+Eight focused tests, separate common-temperature/RK4 interpretation, four
+forgery refusals and restored exact replay pass. Physical prices UNKNOWN/null.
+No natural worlds, self-maintenance, adaptation or Stage3 advance. Preserve
+the frozen history without tuning heat capacity, feed, damage or conductance.
+No active experiment or admitted candidate. Next substantive decision: select
+a genuinely different complete raw formation/conversion/renewal mechanism and
+an actual whole/fresh profitable same-resource simpler route before execution.
+Science owns this decision; unrelated engineering/research audits stay deferred.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
