@@ -1,0 +1,133 @@
+{
+  "archive_sha256": "913c9458e2fcc0f5dc3fd6187d2c78d8840f9aef8cc6d112a43af990f55b5261",
+  "byte_replay": true,
+  "controller_activated": false,
+  "damage": null,
+  "dependent_variants": [
+    {
+      "address": 6,
+      "retains_copy_divide": true,
+      "value": 1
+    },
+    {
+      "address": 9,
+      "retains_copy_divide": false,
+      "value": 1
+    },
+    {
+      "address": 12,
+      "retains_copy_divide": false,
+      "value": 1
+    },
+    {
+      "address": 15,
+      "retains_copy_divide": true,
+      "value": 1
+    }
+  ],
+  "dependent_with_copy_divide": 2,
+  "evolution": false,
+  "failed_attempt": {
+    "exit_code": 1,
+    "frozen_design_changed": false,
+    "path": "D:\\OraLab\\runs\\digital-feedback08-20261011",
+    "reason": "Source export omitted process-limit bootstrap; no test/probe executed",
+    "storage": {
+      "files": 12,
+      "limits": {
+        "archive": 4194304,
+        "failure": 4194304,
+        "raw": 8388608,
+        "restore": 8388608
+      },
+      "logical_bytes": 241629,
+      "reserved_by_phase": {
+        "archive": 0,
+        "failure": 713,
+        "raw": 240916,
+        "restore": 0
+      },
+      "reserved_bytes": 241629,
+      "sha256": {
+        "failure/budget.json": "708b6714b30386f7669f07f9e0de067ba312912b5648573a7f7194df43d10ec1",
+        "failure/failure.json": "9913e0f696920e34255aaab7d6719ffd4bf535dcf99d87195aa50ff8b5096f03",
+        "raw/fixtures-output.txt": "9bf5add0e3b245c81cd3ae6cdfc8be1fdf0c9bf8c166260a661755b82de12c63",
+        "raw/fixtures-process.json": "009562b394d3acd6566dba3f14ec48ef90246d78c8154b4b05aba4bf3b9b170a",
+        "raw/pin.json": "c35c402dd66beefd56ae01977171e050b6e6a05f395dbc17133b44c59dcc10e8",
+        "raw/runner.py": "0e2a08d46abc9ca2e937ea6ebe21c43b3c89ae2f6e7a7f991494ac800fbdd0a0",
+        "raw/source/docs/CURRENT-DEVELOPMENT.md": "d7fa7db4f2f21233d975a82e691ac74cae8992c2dba68f3b7b6589942edb0cf6",
+        "raw/source/docs/DIGITAL-FEEDBACK-08-PROTOCOL.md": "162284ca139b39a2415c94e9c72506504a5e05d3c0a39ade95d3227a3f6b7919",
+        "raw/source/experiments/digital_feedback08.py": "3354028e139aa176732c0d26597d7424375f9573f86cd1e67d82a42ba5371bab",
+        "raw/source/experiments/digital_feedback08_audit.py": "f63c87541034fa25c3179186723126beedec4f8b9a374f574184576706f30513",
+        "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "raw/source/tests/test_digital_feedback08.py": "3e318919854b61f75c48ceebb200eb45f1da1c3f22cc22c1c89bcbc1d5a903a6"
+      },
+      "total_limit": 25165824
+    }
+  },
+  "focused_tests": 2,
+  "fresh_work": null,
+  "learning": false,
+  "native_zero_exits": 4,
+  "organism_worlds": 0,
+  "persistent_world": false,
+  "probes": 2232,
+  "reserves_executed": false,
+  "resources": null,
+  "source": "d4f92b96150523a8f52a498ba8afaa3ac6f12f60",
+  "source_restored": true,
+  "storage": {
+    "files": 29,
+    "limits": {
+      "archive": 4194304,
+      "failure": 4194304,
+      "raw": 8388608,
+      "restore": 8388608
+    },
+    "logical_bytes": 1170446,
+    "reserved_by_phase": {
+      "archive": 84897,
+      "failure": 1393,
+      "raw": 835776,
+      "restore": 248380
+    },
+    "reserved_bytes": 1170446,
+    "sha256": {
+      "archive/source.zip": "913c9458e2fcc0f5dc3fd6187d2c78d8840f9aef8cc6d112a43af990f55b5261",
+      "failure/budget.json": "8cd6e9aa513d22a66484d8ece4422ba345d7e6ac91f5e81b37cf04d01d4005df",
+      "raw/all-probes.json": "9f3056fcbc2a2f34108285a83bf3eeaea4dcf1d569367d5cad2e6c6d686c4c48",
+      "raw/decision.json": "94594f2e303eefd312ea59c9d1e065d252f11b94f1c997371129516687797f10",
+      "raw/fixtures-output.txt": "320d89f312ab2b8d91c83aafbee824e08ce7795e0713e3e4a55153160a61a8d6",
+      "raw/fixtures-process.json": "36a75ebeba82ff6691f4be70f0fd405a424a2bdf5ffabf685a7dd5776d4c3e34",
+      "raw/independent-interpreter-output.txt": "420c152d6b30aea0f6e0f9425399cd0a05ff88c9140172db76cf41739c29ea19",
+      "raw/independent-interpreter-process.json": "346a9481ab197010d930616b48aad4cef92c4379628b17f0e730f168e03d91c3",
+      "raw/pin.json": "c35c402dd66beefd56ae01977171e050b6e6a05f395dbc17133b44c59dcc10e8",
+      "raw/preflight-output.txt": "9f3056fcbc2a2f34108285a83bf3eeaea4dcf1d569367d5cad2e6c6d686c4c48",
+      "raw/preflight-process.json": "3230a37610a8cc1b4e87f87ee08264f7fe1da1962a79ab008a8271512ffe26b8",
+      "raw/restored-preflight-output.txt": "9f3056fcbc2a2f34108285a83bf3eeaea4dcf1d569367d5cad2e6c6d686c4c48",
+      "raw/restored-preflight-process.json": "74add273f271040b25e9c079a3134d193e4c18f8ab01b0c2c23d21a485947c98",
+      "raw/runner.py": "9df45701326f49d0516a8a819db72fbfaf3ff216d6f5d142b1fe40d78ffa9561",
+      "raw/source-seals.json": "17129a4ecdbffd2a7e1b1ecb82467cf952fe4238fedcfa98738bfec47cddba9e",
+      "raw/source/docs/CURRENT-DEVELOPMENT.md": "d7fa7db4f2f21233d975a82e691ac74cae8992c2dba68f3b7b6589942edb0cf6",
+      "raw/source/docs/DIGITAL-FEEDBACK-08-PROTOCOL.md": "162284ca139b39a2415c94e9c72506504a5e05d3c0a39ade95d3227a3f6b7919",
+      "raw/source/experiments/digital_feedback08.py": "3354028e139aa176732c0d26597d7424375f9573f86cd1e67d82a42ba5371bab",
+      "raw/source/experiments/digital_feedback08_audit.py": "f63c87541034fa25c3179186723126beedec4f8b9a374f574184576706f30513",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw/source/tests/test_digital_feedback08.py": "3e318919854b61f75c48ceebb200eb45f1da1c3f22cc22c1c89bcbc1d5a903a6",
+      "restore/docs/CURRENT-DEVELOPMENT.md": "d7fa7db4f2f21233d975a82e691ac74cae8992c2dba68f3b7b6589942edb0cf6",
+      "restore/docs/DIGITAL-FEEDBACK-08-PROTOCOL.md": "162284ca139b39a2415c94e9c72506504a5e05d3c0a39ade95d3227a3f6b7919",
+      "restore/experiments/digital_feedback08.py": "3354028e139aa176732c0d26597d7424375f9573f86cd1e67d82a42ba5371bab",
+      "restore/experiments/digital_feedback08_audit.py": "f63c87541034fa25c3179186723126beedec4f8b9a374f574184576706f30513",
+      "restore/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "restore/tests/test_digital_feedback08.py": "3e318919854b61f75c48ceebb200eb45f1da1c3f22cc22c1c89bcbc1d5a903a6"
+    },
+    "total_limit": 25165824
+  },
+  "structural_only": true,
+  "variants": 558,
+  "verified": true,
+  "viability": null,
+  "whole_work": null
+}
