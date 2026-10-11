@@ -4,6 +4,21 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+CORRELATION-CAPACITY-01 tests a distinct digital information-resource direction
+before apparatus or worlds. Frozen dba378a:30 capacity rows independently match
+21760 exactly weighted words and replay. Six rows have zero input-only ceiling;
+24 positive ceilings are not work. A stationary full-block comparator has the
+same information ceiling in all30; input shuffling changes the resource in18.
+[Receipt](CORRELATION-CAPACITY-01-RECEIPT.md). Do not subtract upper bounds to
+claim dominance or use input shuffle as an equal-resource causal control.
+Formation, memory/reset, transport, conversion, upkeep, release and all-role
+renewal costs are UNKNOWN; no engine, actual profitable control, controller or
+world is admitted. Source phase self-correction is not apparatus reconstruction.
+Next decision requires a complete paid memoryful converter and paid stationary
+implementation, actual efficiencies and causal raw-to-functional renewal.
+ADAPTATION remains design only with an identical incoming resource across arms;
+full-host/physical/confinement/pilot gates and all Stage3 statuses stay open.
+
 PHOTOFACTORY-01 advances beyond prepared bounds to complete source-to-work
 digital histories with paid raw formation, all-role renewal, finite material,
 energy ancestry, upkeep, release and two complete losses. Frozen2cdd783:
