@@ -16,13 +16,22 @@ was present, so functional renewal is UNDEREXPOSED, not adequately falsified.
 Independent ODE/metadata interpretation, four forgery refusals, eight focused
 tests and restored byte replay pass. No self-maintenance or Stage3 advance.
 Do not retune this closed prototype or reopen impact/mode/thermal/catalytic laws.
-Next sole primary proposal: CHARGE-SCREEN-01, NOT ADMITTED.
-[Compact decision card and exact unresolved construction/renewal term](CHARGE-SCREEN-01-DECISION-CARD.md).
-Its new capability is charge-conserving reflection/polarization, with an
-analytic accessible bare-reflector reference and mandatory actual profitable
-whole-life simpler comparison. Implement the complete raw-start microscopic
-prototype and paid all-role loss/renewal history before any natural worlds.
-No charge switching, unpriced clamp, founder or controller may supply success.
+CHARGE-SCREEN-01 is CLOSED NEGATIVE AT ADMISSION.
+[Frozen22-record protocol](CHARGE-SCREEN-01-PROTOCOL.md) and
+[all ordinary controls, independent reference and decision](CHARGE-SCREEN-01-RECEIPT.md).
+Candidate whole net-0.719944647 and fresh post about-4e-7 are dominated by
+actual profitable bare reflector whole+0.819200700/fresh post+0.499200161.
+Two additional alternatives pass both profitability gates. This is a complete
+measured comparison, not a ceiling or inaccessible comparator. No candidate
+bound births or functioning apparatus loss; repeated renewal UNDEREXPOSED,
+not adequately falsified. Independent metadata/RK4, four forgery refusals,
+eight focused tests and restored byte replay pass. No worlds or Stage3 advance.
+Do not tune closed conservative samples, damage timing or incoming feed.
+Next sole primary proposal: DISSIPATIVE-CAPTURE-01, NOT ADMITTED/unimplemented.
+[Compact decision card and exact missing heat-channel term](DISSIPATIVE-CAPTURE-01-DECISION-CARD.md).
+Specify a finite common encounter-to-heat/capacity/disposal law and complete
+raw formation/renewal history against the paid bare route, or reject before
+execution. No unpriced bath, clamp, constructor, founder or controller.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
