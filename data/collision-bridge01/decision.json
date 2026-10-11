@@ -1,0 +1,108 @@
+{
+  "admitted": false,
+  "candidate_advantage": false,
+  "direct_profitable": true,
+  "natural_worlds": 0,
+  "records": [
+    {
+      "arm": "candidate",
+      "collisions": 14,
+      "heat": "195/49",
+      "score": {
+        "loss_bonds": 3,
+        "post_formation": "0",
+        "post_load": "96/49",
+        "post_margin": "96/49",
+        "rebuilt_load_work": "0",
+        "rebuilt_objects": [],
+        "retained_load": "128/49",
+        "success": false,
+        "unused_sources_at_loss": [
+          "s2"
+        ],
+        "whole_formation": "195/49",
+        "whole_margin": "-67/49"
+      }
+    },
+    {
+      "arm": "direct",
+      "collisions": 6,
+      "heat": "64/25",
+      "score": {
+        "loss_bonds": 1,
+        "post_formation": "0",
+        "post_load": "1248/625",
+        "post_margin": "1248/625",
+        "rebuilt_load_work": "0",
+        "rebuilt_objects": [],
+        "retained_load": "2048/625",
+        "success": false,
+        "unused_sources_at_loss": [
+          "s2"
+        ],
+        "whole_formation": "64/25",
+        "whole_margin": "448/625"
+      }
+    },
+    {
+      "arm": "assembly_disabled",
+      "collisions": 26,
+      "heat": "0",
+      "score": {
+        "loss_bonds": 0,
+        "post_formation": "0",
+        "post_load": "1387008/390625",
+        "post_margin": "1387008/390625",
+        "rebuilt_load_work": "0",
+        "rebuilt_objects": [],
+        "retained_load": "1992008/390625",
+        "success": false,
+        "unused_sources_at_loss": [],
+        "whole_formation": "0",
+        "whole_margin": "1992008/390625"
+      }
+    },
+    {
+      "arm": "shuffle_identity",
+      "collisions": 14,
+      "heat": "195/49",
+      "score": {
+        "loss_bonds": 3,
+        "post_formation": "0",
+        "post_load": "96/49",
+        "post_margin": "96/49",
+        "rebuilt_load_work": "0",
+        "rebuilt_objects": [],
+        "retained_load": "128/49",
+        "success": false,
+        "unused_sources_at_loss": [
+          "s2"
+        ],
+        "whole_formation": "195/49",
+        "whole_margin": "-67/49"
+      }
+    },
+    {
+      "arm": "shuffle_exchange",
+      "collisions": 20,
+      "heat": "2641/675",
+      "score": {
+        "loss_bonds": 2,
+        "post_formation": "0",
+        "post_load": "276448/140625",
+        "post_margin": "276448/140625",
+        "rebuilt_load_work": "0",
+        "rebuilt_objects": [],
+        "retained_load": "41472/15625",
+        "success": false,
+        "unused_sources_at_loss": [
+          "s2"
+        ],
+        "whole_formation": "2641/675",
+        "whole_margin": "-530881/421875"
+      }
+    }
+  ],
+  "scope": "Exact authored digital-law feasibility, not life or emergence",
+  "verified": true
+}

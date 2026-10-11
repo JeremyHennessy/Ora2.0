@@ -4,7 +4,7 @@
 
 ## Current session: both AI-only science and engineering reliability
 
-COLLISION-BRIDGE-01 is the one new primary **controlled digital-law prototype**.
+COLLISION-BRIDGE-01 completes a **controlled digital-law prototype and rejection**.
 [Prospective protocol and decision card](COLLISION-BRIDGE-01-PROTOCOL.md).
 Question: can paid raw association create a collisional transfer body whose
 actual retained load work repays formation and full bond loss, outperforming a
@@ -13,12 +13,16 @@ Costs follow common mass, velocity and stored-bond rules; no arm gets a yield
 bonus. Constitutive association forms the whole single-role apparatus; no
 supplied constructor, actuator, memory or work latch is installed. All reflected
 sources remain in the world. Initial geometry/momenta are authored fixtures.
-Five exact histories include direct, assembly-disabled and the complete two-site
-velocity shuffle; these are not independent natural-world samples. Freeze the
-producer, separate interpreter and protocol before execution. Stop before worlds
-if repair, positive whole/post margins, profitable simpler control or advantage
-fails. Current evidence: IMPLEMENTED, NOT YET EXECUTED; useful work and comparator
-profit UNKNOWN, admission denied pending verification. Stage3 remains unchanged.
+Five frozen exact histories include direct, assembly-disabled and the complete
+two-site velocity shuffle. Candidate retained work128/49 and construction195/49
+give whole-life margin-67/49; direct work2048/625 gives positive margin448/625
+and better post-loss margin. Three candidate bonds were destroyed at fixed t128;
+s2 remained unused then, but no complete bridge rebuilt afterward. Independent
+interpretation and archived replay agree. Preserve the original accepted boolean
+counter forgery; strict audit repair passes eight focused tests without changing
+law or decisions. [Decision and all evidence](COLLISION-BRIDGE-01-RECEIPT.md).
+This exact candidate is CLOSED; no natural-world panel or self-maintenance claim.
+Next select a genuinely different complete mechanism. Stage3 remains unchanged.
 Latest independently reviewed research main cb66aa8 (PR41), numbered passes1–50,
 adds its separate science-first research plan; no literature result is an Ora
 prototype. Earlier proposal-retirement statements below retain their dates.
