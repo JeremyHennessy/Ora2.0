@@ -118,7 +118,14 @@ then establish raw function and meaningful functional damage/fresh exposure.
 Only then freeze complete repeated-loss histories, same-resource causal controls
 and reserved replication. Absent function/exposure means STOP, not failed renewal.
 Count role-equivalent replacement compositions, not only original material IDs.
-No candidate measurements, fresh net or damage exposure yet; all are UNKNOWN/null.
+The controlled ordinary route is now independently replayed:42 retained work,
+23 paid formation/access/commands, whole margin+19. Exhausted C loses its fourth
+product; all losses remain counted. All16 frozen source sizes are preserved,
+including negatives1..9 and positives10..16. [Exact receipt and preserved recorder failures](PACKET-BUFFER-01-RECEIPT.md).
+Four focused tests and restored byte replay pass; no natural worlds. Candidate
+whole/fresh, comparator fresh and damage exposure remain UNKNOWN/null. Next is
+the common timing/expiration and paid-assistance withdrawal law, including the
+two-converter output-buffer comparator; no expensive repair panel before function.
 Science owns this staged block; unrelated engineering/research remains deferred.
 No controller or persistent world is activated and evidence stages do not advance.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
