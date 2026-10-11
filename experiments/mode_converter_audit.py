@@ -46,7 +46,12 @@ def audit_record(record,arm):
     for observed in record['events']:
         if finished:raise ValueError('Event after horizon')
         ps=order(ps);before=view(t,h,c,r,serial,bond,first,ps)
-        options=[((b[2]-a[2])/(a[3]-b[3]),i) for i,(a,b) in enumerate(zip(ps,ps[1:])) if a[3]>b[3]]
+        options=[]
+        for i,(a,b) in enumerate(zip(ps,ps[1:])):
+            if a[3]-b[3]>EPS:
+                separation=b[2]-a[2]
+                if separation < -EPS:raise ValueError('Backward position')
+                options.append((D(0) if abs(separation)<=EPS else separation/(a[3]-b[3]),i))
         boundary=D(192 if lost else 64)
         if options:
             least=min(q for q,i in options);dt,i=next((max(q,D(0)),i) for q,i in options if abs(q-least)<=EPS)

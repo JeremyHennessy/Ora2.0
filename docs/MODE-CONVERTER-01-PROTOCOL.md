@@ -99,7 +99,8 @@ nor a source-only bound pair establish apparatus renewal.
 Finish t192, cap512 contacts/history. Earliest adjacent approaching contact,
 left-to-right simultaneous incoming contacts. Coordinates within1e-60 form a
 contact group, ordered by increasing outgoing velocity; velocities within1e-60
-tie by material order a0,a1,s0,s1,s2,load. This prevents a separating pair at one
+are treated as equal for contact selection and tie by material order
+a0,a1,s0,s1,s2,load. A gap within1e-60 has zero contact delay. This prevents a separating pair at one
 contact from being reclassified as an approaching pair by decimal roundoff.
 Damage precedes an
 exact t64 contact; horizon precedes an exact t192 contact. Keep all reflected
@@ -157,3 +158,8 @@ horizon and scientific acceptance criteria are unchanged. This is an explicit
 contact-law clarification, not a claim that the original simulation passed or
 that merely changing an interpreter validates its output. Both implementations
 and a separating-contact regression must agree under the clarified contract.
+The first clarified check bb3c11f also stopped: an approximately zero relative
+velocity generated a negative delay after dividing roundoff coordinates by
+roundoff speed. Preserve mode-converter01-v2-20261011. Apply the same already
+declared1e-60 position/velocity equivalence in encounter selection before a new
+refreeze/run; neither tolerance nor physical transfer/endpoint is adjusted.

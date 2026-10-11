@@ -36,7 +36,10 @@ class World:
     def contact(self):
         self.order(); pairs=[]
         for i,(a,b) in enumerate(zip(self.parts,self.parts[1:])):
-            if a['v']>b['v']:pairs.append(((b['x']-a['x'])/(a['v']-b['v']),i))
+            if a['v']-b['v']>EPS:
+                gap=b['x']-a['x']
+                if gap < -EPS:raise RuntimeError('Backward position')
+                pairs.append((D(0) if abs(gap)<=EPS else gap/(a['v']-b['v']),i))
         if not pairs:return None,None
         first=min(t for t,i in pairs)
         return next((max(t,D(0)),i) for t,i in pairs if abs(t-first)<=EPS)

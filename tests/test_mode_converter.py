@@ -7,6 +7,8 @@ class ModeConverterTests(unittest.TestCase):
         w=World('candidate');w.parts=w.parts[:2]
         w.parts[0].update(x=D('1e-79'),v=D(1));w.parts[1].update(x=D(0),v=D(-1))
         self.assertEqual(w.contact(),(None,None))
+        w.parts[0]['v']=D('1e-79');w.parts[1]['v']=D('-1e-79')
+        self.assertEqual(w.contact(),(None,None))
     def test_complete_independent_interpretation(self):self.assertTrue(audit(fixtures())['verified'])
     def test_mode_is_paid_and_can_return_energy(self):
         events=World('candidate').run()['events']
