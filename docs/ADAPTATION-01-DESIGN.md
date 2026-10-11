@@ -153,6 +153,24 @@ prices or proof of equal cost. Every plan and audit keeps
 claims are refused. Raw memory construction, state read/write/reset, intervention
 cost, useful action and unseen-challenge performance remain unmeasured.
 
+The reviewed helper source `e50341f89f4812230c54792fc189448ac7abcd72`
+passed nine focused tests. All 32 authored plans (16 fixed software seeds, two
+intervention kinds) passed separate interpretation and restored byte replay.
+Whole-record order preserved associations in all 16 examples; outcome-only
+permutation changed them in 13 and preserved them in 3. Preserve all outcomes;
+this is an illustration of partial disruption, not a scientific effect estimate.
+No worlds, actors, holdouts, memory edits, useful work or learning were measured.
+
+Immutable local evidence: `D:/OraLab/runs/adaptation-reference-plan01-20261011`.
+Seventeen raw seals, exact source, native process exits, tests, plans, interpreter,
+archive and restored replay are preserved. Every child exited zero without
+timeout or output truncation. Limits were 128 MiB allocation, 15 CPU/30 wall
+seconds, four process slots, a 5 GiB disk floor, exclusive operator lock and
+13 MiB combined prewrite evidence quota. Independent quota audit measured
+945,428 logical bytes. Archive SHA256:
+`32ceb6b4f7d1150f8eaf3a41145cbc91121f6e3b69285660588865f2efcaf6ee`.
+Same-drive restore is not independent-host or physical-durability evidence.
+
 ## Freeze gate and stop decisions
 
 Before executing this design, specify the exact physical law, resource stocks,
