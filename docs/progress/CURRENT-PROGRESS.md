@@ -1,5 +1,7 @@
 # Ora 2.0 complete seven stage progress review
 
+Completed [INHERITANCE-01 comparison](../DIGITAL-INHERITANCE-01-RECEIPT.md):128 generation+24 fresh histories. Selected copied mutant acquired64 food/48 remote but0 offspring; ordinary mobile control64 food/12–14 offspring. Paid mutation produced a new acquisition phenotype, but selected reproductive-inheritance gate fails. All histories extinct, independently interpreted and replayed. No sustained evolution/learning or historical stage rescore. Next: prospectively register a distinct COPY-preserving movement mechanism using new fresh seeds; never substitute it into the closed negative. PR133 closes original checkpoint-identity forgery gap; external host crash recovery still unverified.
+
 ## October11 user-approved direction and current frontier
 
 Ora's primary objective is now a bounded digital ecosystem with local programs,

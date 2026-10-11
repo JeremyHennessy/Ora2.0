@@ -1,0 +1,1227 @@
+{
+  "decision": {
+    "assays": [
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24200,
+        "ticks": 334
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24200,
+        "ticks": 334
+      },
+      {
+        "births": 3,
+        "copy_writes": 34,
+        "deaths": 4,
+        "descendant_births": 1,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24200,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24200,
+        "ticks": 126
+      },
+      {
+        "births": 13,
+        "copy_writes": 131,
+        "deaths": 14,
+        "descendant_births": 9,
+        "food": 64,
+        "heat": 1292,
+        "label": "fixed_mobile",
+        "max_population": 10,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24200,
+        "ticks": 611
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "fixed_mobile",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24200,
+        "ticks": 126
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24201,
+        "ticks": 342
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24201,
+        "ticks": 342
+      },
+      {
+        "births": 3,
+        "copy_writes": 34,
+        "deaths": 4,
+        "descendant_births": 1,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24201,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24201,
+        "ticks": 126
+      },
+      {
+        "births": 13,
+        "copy_writes": 127,
+        "deaths": 14,
+        "descendant_births": 9,
+        "food": 64,
+        "heat": 1292,
+        "label": "fixed_mobile",
+        "max_population": 13,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24201,
+        "ticks": 568
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "fixed_mobile",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24201,
+        "ticks": 126
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24202,
+        "ticks": 382
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24202,
+        "ticks": 382
+      },
+      {
+        "births": 3,
+        "copy_writes": 34,
+        "deaths": 4,
+        "descendant_births": 1,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24202,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24202,
+        "ticks": 126
+      },
+      {
+        "births": 14,
+        "copy_writes": 134,
+        "deaths": 15,
+        "descendant_births": 9,
+        "food": 64,
+        "heat": 1292,
+        "label": "fixed_mobile",
+        "max_population": 9,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24202,
+        "ticks": 627
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "fixed_mobile",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24202,
+        "ticks": 126
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24203,
+        "ticks": 342
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 64,
+        "heat": 1292,
+        "label": "candidate",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24203,
+        "ticks": 342
+      },
+      {
+        "births": 3,
+        "copy_writes": 34,
+        "deaths": 4,
+        "descendant_births": 1,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24203,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "ancestor",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24203,
+        "ticks": 126
+      },
+      {
+        "births": 12,
+        "copy_writes": 126,
+        "deaths": 13,
+        "descendant_births": 9,
+        "food": 64,
+        "heat": 1292,
+        "label": "fixed_mobile",
+        "max_population": 8,
+        "mode": "faithful",
+        "mutations": 0,
+        "remote_food": 48,
+        "seed": 24203,
+        "ticks": 589
+      },
+      {
+        "births": 0,
+        "copy_writes": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "food": 16,
+        "heat": 332,
+        "label": "fixed_mobile",
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "remote_food": 0,
+        "seed": 24203,
+        "ticks": 126
+      }
+    ],
+    "candidate": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      12
+    ],
+    "candidate_origins": [
+      {
+        "child": 2,
+        "parent": 1,
+        "program": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          12
+        ],
+        "seed": 24142,
+        "tick": 74,
+        "write_events": [
+          29,
+          37,
+          45,
+          53,
+          61,
+          69
+        ]
+      },
+      {
+        "child": 1,
+        "parent": 0,
+        "program": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          12
+        ],
+        "seed": 24157,
+        "tick": 25,
+        "write_events": [
+          2,
+          6,
+          10,
+          14,
+          18,
+          22
+        ]
+      }
+    ],
+    "classification": "NONFUNCTIONAL_INHERITED_MOVEMENT",
+    "evolution": false,
+    "functional_inheritance": false,
+    "groups": {
+      "faithful": {
+        "births": 192,
+        "deaths": 256,
+        "descendant_births": 64,
+        "mutations": 0,
+        "remote_food": 0,
+        "worlds": 64
+      },
+      "mutating": {
+        "births": 210,
+        "deaths": 274,
+        "descendant_births": 74,
+        "mutations": 160,
+        "remote_food": 192,
+        "worlds": 64
+      }
+    },
+    "learning": false,
+    "programs": [
+      [
+        0,
+        2,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        1,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        0,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        1,
+        5,
+        6,
+        1
+      ],
+      [
+        1,
+        2,
+        1,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        3,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        1,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        2,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        3,
+        5,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        3,
+        6,
+        2
+      ],
+      [
+        1,
+        2,
+        4,
+        3,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        3,
+        6,
+        14
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        0,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        4,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        5,
+        11
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        0
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        1
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        4
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        9
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        6,
+        15
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        8,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        11,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        13,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        5,
+        14,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        6,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        9,
+        6,
+        4
+      ],
+      [
+        1,
+        2,
+        4,
+        10,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        13,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        4,
+        15,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        8,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        9,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        12,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        14,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        2,
+        14,
+        5,
+        7,
+        12
+      ],
+      [
+        1,
+        2,
+        15,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        1,
+        3,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        4,
+        4,
+        3,
+        6,
+        12
+      ],
+      [
+        1,
+        5,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        7,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        8,
+        4,
+        2,
+        6,
+        12
+      ],
+      [
+        1,
+        9,
+        4,
+        13,
+        6,
+        12
+      ],
+      [
+        1,
+        11,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        12,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        1,
+        14,
+        4,
+        3,
+        6,
+        12
+      ],
+      [
+        4,
+        2,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        7,
+        2,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        8,
+        1,
+        4,
+        4,
+        6,
+        12
+      ],
+      [
+        8,
+        2,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        9,
+        1,
+        4,
+        5,
+        6,
+        12
+      ],
+      [
+        9,
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      [
+        12,
+        2,
+        4,
+        3,
+        6,
+        12
+      ],
+      [
+        12,
+        2,
+        4,
+        12,
+        6,
+        12
+      ],
+      [
+        15,
+        2,
+        4,
+        5,
+        6,
+        12
+      ]
+    ],
+    "provisional_gate": false,
+    "reserved_replication_required": false,
+    "verified": true
+  },
+  "assay_totals": {
+    "candidate": {
+      "worlds": 4,
+      "food": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "remote_food": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "births": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "descendant_births": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "copy_writes": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "instructions": [
+        334,
+        342,
+        382,
+        342
+      ],
+      "heat": [
+        1292,
+        1292,
+        1292,
+        1292
+      ]
+    },
+    "ancestor": {
+      "worlds": 4,
+      "food": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "remote_food": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "births": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "descendant_births": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "copy_writes": [
+        34,
+        34,
+        34,
+        34
+      ],
+      "instructions": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "heat": [
+        332,
+        332,
+        332,
+        332
+      ]
+    },
+    "fixed_mobile": {
+      "worlds": 4,
+      "food": [
+        64,
+        64,
+        64,
+        64
+      ],
+      "remote_food": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "births": [
+        13,
+        13,
+        14,
+        12
+      ],
+      "descendant_births": [
+        9,
+        9,
+        9,
+        9
+      ],
+      "copy_writes": [
+        131,
+        127,
+        134,
+        126
+      ],
+      "instructions": [
+        611,
+        568,
+        627,
+        589
+      ],
+      "heat": [
+        1292,
+        1292,
+        1292,
+        1292
+      ]
+    }
+  },
+  "source": "bbff257ecdf9f042e5543ea6ed8f51c5062f7186",
+  "raw_root": "D:\\OraLab\\runs\\digital-inheritance01-20261011",
+  "audit_sha256": "b950a71a39b3b19a416a42edd4ca7549b662cd02972cad60ff5c125211f57791",
+  "archive_sha256": "5f259833ad7be1c2610f723989925097d20ec578551b1a814ac336385f5edb72",
+  "all_raw_seals": {
+    "archive/source.zip": "5f259833ad7be1c2610f723989925097d20ec578551b1a814ac336385f5edb72",
+    "failure/budget.json": "0366ce59d66496cab69f0bb03162faab409289d0de9972a5b0f71c59cedb0c63",
+    "raw/assay-0-cases.json": "f5f040c609e4fd276c3102b602a72fac60e0368b14a354797db6a65e5709ea70",
+    "raw/assay-0-process.json": "51dd22db715532da7dcd62b42ff34311f38895e5e4e073dbc2acd8fa8f5e49ef",
+    "raw/assay-0.json": "e59691f82cbd7ddc9c10ea284ee7b190b9d6f3a2242d718a27e52dfa70a1fa1b",
+    "raw/assay-1-cases.json": "96e4232fbd0fda75c5a823447416fe485696dd24ec93ec8d064e99fe850733a9",
+    "raw/assay-1-process.json": "1ce993d6e4190b0d261e585a394e4d90378249cb7e8097bb16b566d7e6810d69",
+    "raw/assay-1.json": "59cd903c0e73995a3f6512863b37b8d72a524059eb0ac3109e13e5ba39228835",
+    "raw/assay-2-cases.json": "56c9a89981ea10652c40fff76311fbd359d931637fce751e59f436f556cf84dc",
+    "raw/assay-2-process.json": "3ae19f009919898ac7e4e13737fcf68a6033940308dc4a0190bf60ffa7951a0d",
+    "raw/assay-2.json": "53479d31ae80df4c621e87fff8d0fc883154d47027c3ddd7e27e53dd62b857d3",
+    "raw/assay-3-cases.json": "8ababfeceb3d62b4dbb1c4a946ea7cd762b14c9fbfa3c656f0925c4e6551dc44",
+    "raw/assay-3-process.json": "5212c92bfad62c92490d98ad5488eda4730f0dc3c10a4f2fe72a92ae90fba72f",
+    "raw/assay-3.json": "a3cad39589c590cfbaa9411b075c8b9fa45eddc411b9dadb552e28d53786b8ee",
+    "raw/assay-4-cases.json": "d615dcb58e533a1977ccc4e8a8b4b34943f530cb17ead01e0c748f92222ad534",
+    "raw/assay-4-process.json": "1698b8398379f5e18d6f447f1dc8e487eaab12626cc5a97536f2e4db371a8296",
+    "raw/assay-4.json": "b122caadb37b480531564f4a472512f094bb8e567bb564edaca78f307f805187",
+    "raw/assay-5-cases.json": "ee832d97a32ab49285e7961c47c54793f9e55363919795ab02d789ca19cfc962",
+    "raw/assay-5-process.json": "6f19c36798131e2d7a39111b6c32395a594b02e8c1aaabc4af81325e6f60b209",
+    "raw/assay-5.json": "0e07ddb01226516f164cafee6220f10c13475c6c9cde97abdb1b62ddcf820651",
+    "raw/assay-manifest.json": "5fc172db0bafa95eb87974b52cd1ae091f7ca8b8e729e6bc07a8b23022baf41e",
+    "raw/decision.json": "3147dcb7f3352122193c4d054e0446d233b8ddd0f00518dc2f3406954e4fff82",
+    "raw/focused-tests-process.json": "111b71016926223d932316b782b6b8ce5c4503323673ed3483acd5fc3cf9d236",
+    "raw/focused-tests.txt": "ccabc52c5cb4bb5755d7844740ba4b102d36060b4e9e9701767a71eb03214546",
+    "raw/generation-0-cases.json": "01b96d9d41d94e087563fe9e9c8a7ca615bc773a0cb1109e09a856e9c7463840",
+    "raw/generation-0-process.json": "2c95566802d64186393c2bbf77f5295b31eb76527ede11060a290fa8dcab7df1",
+    "raw/generation-0.json": "dc29e577aecbd000a283f085c4c4a21e985562fdbc1a7506b6160a92df259054",
+    "raw/generation-1-cases.json": "bffa78c1bcdab53a4a89c300ac3bac06e30116b05ecfc7a9fd982e9cb6d78238",
+    "raw/generation-1-process.json": "37456924737724127b0c265b5ed8a22f513c4158ae4d8c6d6893d47ed66c4212",
+    "raw/generation-1.json": "06f6d9a032646f69e0bdccd1c5418440859af0e245950d75c576c98e4ef505a6",
+    "raw/generation-10-cases.json": "c2d1465dbbdfa9e7262340dea6225b3be2dde2e5ea0e892d93c5a020e37c751a",
+    "raw/generation-10-process.json": "c00d7c36e24fa490bd09dc66334e549ccc6cd3e3c61aaf848f4ca4c40e0afc30",
+    "raw/generation-10.json": "b57487779e065ba0898272988a952a5cbd2710deb013dc19f1c679d1c05a80a1",
+    "raw/generation-11-cases.json": "3d565c8ec0df9415a912a7d221fd8d70dcb63aa146a370f5ab93afeda9e32e8f",
+    "raw/generation-11-process.json": "43fbc68ba811d64de51b43512d01f806a26d3f22cd849e31ad83bea4c8e71fae",
+    "raw/generation-11.json": "4082a9bde5f69275c1feb356b7f843280e2373a465218c9f5544f4e9b753de2a",
+    "raw/generation-12-cases.json": "3dfe8c79a996e2153c9e98fba8594deec017e206a65ed96f4cfcb9fe542ad0be",
+    "raw/generation-12-process.json": "68d47ac4354c79ea811299b4f76eb35f567c37b6c81fe3622b603bf1541a7e4e",
+    "raw/generation-12.json": "dce08a07cc2f888f7584eb38fbfe6654926adbaf6ae66e1106f63bc47d9e6abf",
+    "raw/generation-13-cases.json": "fb248027ed96ec65e7538620d1d57322bc10ec0e57153faddc964c9e8e92fcd8",
+    "raw/generation-13-process.json": "8e3593434245fc4d77c7a757ca618057de0c486b015d7c31e0b201c6c3382832",
+    "raw/generation-13.json": "4943cf98fde5049b9c84e480f715e425cff4fabd32de9357d74adbd69e4cd30c",
+    "raw/generation-14-cases.json": "8883b780008831b8b9a507c3367110a92f12fe471b34900b7267d2743c992a8f",
+    "raw/generation-14-process.json": "98407f5df336d0fecb22d6d7041cc7e68655e3af2b73462f3cc1940ac110ce6a",
+    "raw/generation-14.json": "6f446edb3a1edc00c9daa5d7a5cb381f2f1235bdb8f022796d575bb77b7ddd21",
+    "raw/generation-15-cases.json": "61a1581bec911500e93a7275facb52bcd03973286a9605a58269a46c7820ca76",
+    "raw/generation-15-process.json": "3ce7f4132a2523a6969e311ca8ac1d415990e05fa4e623afb0953c62e18a8f10",
+    "raw/generation-15.json": "8a3e178210036ce0714b3ccff8f0be5f406327a4e35bb37ce4b117cc6407910a",
+    "raw/generation-16-cases.json": "51a423fcfa4b05f176cdb3e904a453601d1d175ece35e8784358ea6f85d91b91",
+    "raw/generation-16-process.json": "934f0583e519fd11a7289c32defa4585d692b47bfc81a4461c2c06893020868d",
+    "raw/generation-16.json": "ce5bda6af27619335dfa2c6da237c67d9bf9cc8d7e59644f9760dbc70bd808ff",
+    "raw/generation-17-cases.json": "de1dd1b2ff0d7bf4a9144d0b5215cebbcfd0d77935d10bd981be2d642c732595",
+    "raw/generation-17-process.json": "397af78022f1887f1bf02f49e90e7bc1fbd00962259d4edeb30e16fa17391e0a",
+    "raw/generation-17.json": "4bda2e600ff7a9963f1090f37929eead4ee99038f1c12e86f4b195db71b8e982",
+    "raw/generation-18-cases.json": "6a1ce20600eca468299d81282581979361476ccf69d1b74f4cbfe7b1f2a6fab0",
+    "raw/generation-18-process.json": "7d37e686779652650eb39779be60c3251904885cb94084f7f56e087ad0d06308",
+    "raw/generation-18.json": "8f078aca2b3fa2e0bb2c0b688a4874c18f8076336bef855bc93f57df0e8c7c09",
+    "raw/generation-19-cases.json": "3970e1c99f318f2a2c0dd61c2e76ca92c64bf7b01d9fcfd969018ab0f8ac80aa",
+    "raw/generation-19-process.json": "bde1e5d9739196fa97de5c8332ee31bccd379a4652d00a3637bb511ad47b54b7",
+    "raw/generation-19.json": "f39554ba0cc4c64ee04684f5701c60569a24c5bd961a987cebfea397d584c0be",
+    "raw/generation-2-cases.json": "7bbba85e4a45b513f5c8104b6774af1b057b3a1bb09ae857bbfe81bd6cfe63b0",
+    "raw/generation-2-process.json": "70a3813fc1e5f163ca8dde897756a3a04521520949904e1a1d734d9a5f78a184",
+    "raw/generation-2.json": "6d967fa58ce5de760ab47ecc70f729a2a9c079f9104fbe46e2c42928fd069ebf",
+    "raw/generation-20-cases.json": "4207ab6901fc8b17a125708d74bc103db7da2b520039e884ff34d48bf4215c62",
+    "raw/generation-20-process.json": "b2b40a96e4ef932da074ddb3794992c18854539657f85af666cf9333c6101992",
+    "raw/generation-20.json": "f9c518eb51b7e1db9d816ec1361336fd52952ad9e3f468f4ad2f71a58cfdd500",
+    "raw/generation-21-cases.json": "bb036fc74fc0c4596350699ac55a800482e772d4c3a4394e78263f85ee2a0210",
+    "raw/generation-21-process.json": "d98388e1639a843ba56b9b0f9af33b1ecd08ac3fb4da7ea75d0e3be091676c23",
+    "raw/generation-21.json": "e2de753db036ba41baac919472c5698f44a400c1ccdc078c21bd5c0aa7ac1102",
+    "raw/generation-22-cases.json": "2a5285ae237babd570d727005db4ea61ff49a82ab10056491589e521d23a01f4",
+    "raw/generation-22-process.json": "6040f8350d6e5700fbdb131ccf80400351ea0b145cd5fb76c08f0f5c5dde52f8",
+    "raw/generation-22.json": "937545b4a6e0874cb5fd117adf583590cba4353e37294149ea57724c4746f08f",
+    "raw/generation-23-cases.json": "a400fcc6e0a9a185542429ccf420bb46288a5da6abe1eff59121e0fd7112f682",
+    "raw/generation-23-process.json": "99aeec071097678283b6d4d4b0ef004bf661fda3306541b12552d4c9f8982190",
+    "raw/generation-23.json": "39510d40094223b2f534ffc57504ee37ae01cc29b3100a67ddbce87d7ec7a287",
+    "raw/generation-24-cases.json": "2dae4fdf1586d22a56a0a65362a5a6443c726b3495bdf9711f1e32bda8767064",
+    "raw/generation-24-process.json": "a37bc818509ae7c41a4185a3c7dbf58222ab91500946f2bb159d9a8c80963ea4",
+    "raw/generation-24.json": "d51128bd3e3238f9a21d91ce17bf5df509d9db45dd684e0bd648c727b73d2751",
+    "raw/generation-25-cases.json": "e9e7ccd3ee6652c14cfdade0f5f7fe177d77058fdce279f76245e8e41910d5ae",
+    "raw/generation-25-process.json": "636085d4ddca1ab7a7c9c5856b97abed5dd01785eb377b91380e55d3eae3e21c",
+    "raw/generation-25.json": "b3a63025aed31c2bcd46264c9a4fa33f0427ce36197f60c5c6cac28e102226c8",
+    "raw/generation-26-cases.json": "e0d8a15659cfb56e1dd45761b66d65565bb5539de61749b2e22d0b6c0efd814f",
+    "raw/generation-26-process.json": "21fd8510e911459c3703b232643c5c4c6d57d99f09ac6bbc38d7c3c5d0ed0f72",
+    "raw/generation-26.json": "e793d26fc45730b4d3e96adb01b06cd18bd52a55d1e5ce53c7e5d52625b02e91",
+    "raw/generation-27-cases.json": "4b304698d407fd9a0ff77d375e0bbc490263811e74218a5c67265532dc859e25",
+    "raw/generation-27-process.json": "ef17301c4940a7c2b0c25346be220dc7fd7784209f154c0232d20a0571abe0cd",
+    "raw/generation-27.json": "8b4061ab7a66ebe1df4b4241c119124c4c2555ec361ec17b8b4b283d3cc04c63",
+    "raw/generation-28-cases.json": "24b8e664ab21a680adbe291d0137867d1eab1d5d9492bfdeac57648d439044a1",
+    "raw/generation-28-process.json": "bd3d5f9ec0eb9d75ee7f4c441ad745b809e7175d5b32f9a413560957046b6b9a",
+    "raw/generation-28.json": "aeab62d3c5221d01a46ebdc1916ea9f05f6df903282e8e38f8fc272fe5d1eda6",
+    "raw/generation-29-cases.json": "543921ff48ef5ab0d564d30ae6d49621bced0d6b290e90baab7df50c028bc94b",
+    "raw/generation-29-process.json": "57af3643cc614c8ada381c8694254ff6b6c962a782cbb23756a490e301cd08f9",
+    "raw/generation-29.json": "b2559134b946d23528f4111e91e4cbfc280bb7a9fbac88fedb9c7aff44d21708",
+    "raw/generation-3-cases.json": "771fd5055f06bce6ac2141290ba86e10e4cd677062b51efb72816c825baebec9",
+    "raw/generation-3-process.json": "e9e7315e680309dfaf927388f8181fe62a20bf7620cbb38e6d6527e682b997c4",
+    "raw/generation-3.json": "b0dc5b02a95c46b12a2dd1c9e1d00a5774502e398024bf676ac45390ea42e989",
+    "raw/generation-30-cases.json": "b24d99ca32c60acc5b08f0d99602facda6e8910c8d874d17a65494d40c06944a",
+    "raw/generation-30-process.json": "c824a16ce3e12ba23b0ffcc36d413a1225e99ba145ea85f14fc5d61ea0a92226",
+    "raw/generation-30.json": "204e3a1dcaaae9cc26fc0ac8b68265a78184c813fef0039fefd16033e629f2ab",
+    "raw/generation-31-cases.json": "13a15b5ba117989f7b6cffffcb391a66b566c8af740efaf5dfd092bb96320286",
+    "raw/generation-31-process.json": "547b53526218b0d26ab94dad7d5e673b35e62af3db4a51b5fce90392e9ccb329",
+    "raw/generation-31.json": "460521492c16d6e4a2744f42a5aa345288c96b5e87c0142d8f9327cc57e542a7",
+    "raw/generation-4-cases.json": "2ce7ecd442013b6fde497d124e50329dec2244190e9e56f2ce632c2748210881",
+    "raw/generation-4-process.json": "ccbe29272b1bedbcd65102b473ad88dcaa2cb822bcc96eccf450021e44facec4",
+    "raw/generation-4.json": "73fa769650e69aa2aec2a86da8345ecac72533a40ce22afa31957d1949e955ac",
+    "raw/generation-5-cases.json": "6ee6345b7aa4a5e4b85f4e1f182aac1686f69fb4e51c762711807af36a142e36",
+    "raw/generation-5-process.json": "5b7de996fbec50df8e8fd64b2a698cbeb6c395fd35576a5bb6b4f05f073608b1",
+    "raw/generation-5.json": "c9c56b4caaef3430eebfcb7cf17840fbd6b825eaf216a0c5dcdf6005e9f2283e",
+    "raw/generation-6-cases.json": "61eefd55a0155a9bda447022a7cd9cdd345c74b06428b757f346c5850c2d34a0",
+    "raw/generation-6-process.json": "2d0abe0aef71fa54d298825df32d5c554026e7386b778c256b5af02d4f0cf397",
+    "raw/generation-6.json": "879262afdfc7167e7f1c4e2f896505046d4c9f2f04f8389371b4a851c4c2244b",
+    "raw/generation-7-cases.json": "e75f7e9f8bdd3afc23150666d244015da16db61deb2b8711cee2e5b4da6fa88b",
+    "raw/generation-7-process.json": "d504bf769dff18559e1baebe37b510ad40e3fe30fabbdaf69fd21db76bf4a580",
+    "raw/generation-7.json": "2c8ff074e914f28ed31d9dc8d65b401cd912d97fc9a4a2cfc922930c796080da",
+    "raw/generation-8-cases.json": "eb92a7caef8ab42cc22a26b53fd31806bcdc393455bceba81688d9dfc46cd70a",
+    "raw/generation-8-process.json": "bf2bbb3a32399ceb5e97acdfb1ddf4c88eb81a335c26f7416f1053f1f1ea9d18",
+    "raw/generation-8.json": "c234f8393b64f835e38a8606183baf228a55b5317aa3973c9eb0d0b10632bfbd",
+    "raw/generation-9-cases.json": "e6d7da95f791b2b9d7f09098afe3632fac205f78c407fadd7a04c461802eb79d",
+    "raw/generation-9-process.json": "382a4b2e56cb64107af73875448627413a7a09c0b459fd7635a92eae45a4bf16",
+    "raw/generation-9.json": "990fcf356023f093c6c2bdb170ac14cd79f357a950342fd2c93d77fd6b98d9f2",
+    "raw/generation-manifest.json": "cd1594fc054bddb1b8af0bbb79141f747f7dc59ee1c6f8bd40fedc794e0db128",
+    "raw/independent-interpreter-process.json": "b063e6eb199512b5de039958595f3b5e4fd186a95e762b50346e372e8074b539",
+    "raw/pin.json": "8ae2648f0c2195168be908d1eab5de43ed9d35b6205b7f750f6ee7da509cf8cc",
+    "raw/replay-assay-0-process.json": "8b13e92f8265ff340ff138093406acfcc707a85e63d8e33407398e3eab70c7be",
+    "raw/replay-assay-1-process.json": "9a200f5b225687a00874ea533a4582eee72659f36de37dbbede2f28e43a902e5",
+    "raw/replay-assay-2-process.json": "54f9a7cc31cd6d24a80678fa5e07cae00e048855157969bdf4aa88c2d2c8454d",
+    "raw/replay-assay-3-process.json": "b0e84a5dfb551445acc78f68a84373341a197531acdaccf5dc0d444c9de040d5",
+    "raw/replay-assay-4-process.json": "7efe1c959c53ec7f5ea61bd7402077d7c618e8a8ddad3b42ac0914403ea23445",
+    "raw/replay-assay-5-process.json": "0db2cf70b4c6e893c9091a5f2ada31357f9f9db75ab0f614f51bc40b06b9a147",
+    "raw/replay-generation-0-process.json": "d804910077e2dd507e8876344f2a29bd6081d44ac27136474b049f3f76993d2c",
+    "raw/replay-generation-1-process.json": "86029dc760f355e190203ea72e2b27cf91878cd6e3ca25a4d472582bdc9557ed",
+    "raw/replay-generation-10-process.json": "bb8737cb345ef94e8040b3e667c404927b2faf21350e2ab1318b13de9f8e5122",
+    "raw/replay-generation-11-process.json": "42cc51a06e4a6c28ac90b09eed63dc7322f2c366122d46ab0bd544a5412af382",
+    "raw/replay-generation-12-process.json": "5e0250503452eaa32ab1ddcc4db207bc41b3c591b92fda560f93b3e65916e147",
+    "raw/replay-generation-13-process.json": "f79562d82e59cd16bb90a5adbae12c4f0c46eb570bc1a16e8ccfea60de73aceb",
+    "raw/replay-generation-14-process.json": "91429f75a34ed5d901bae36ca5ed925aa24fe45da8fb6f097b56b2ab3789517a",
+    "raw/replay-generation-15-process.json": "fd0485feeac66fce0f7d0d963f05fcf80d6619009c4b51f1b4b1cd04727406b3",
+    "raw/replay-generation-16-process.json": "c9c3f2cdd697dbd2d83ee9a8e3d25aae661edc3cc645edfdf56bb14f6328191d",
+    "raw/replay-generation-17-process.json": "2f656e1591a6dd7c85fb96550bb514ebaf218d168b9cf5e41c656da878d368c8",
+    "raw/replay-generation-18-process.json": "0493a779a6862d153205c7c2a3545dc184dc6c817fd95dd639b0aa0f179ebc42",
+    "raw/replay-generation-19-process.json": "d7ec492f47a9859a787f0a7095c649a25478dcdf160e89e7a3fe5631a4e6a38c",
+    "raw/replay-generation-2-process.json": "577abcf5f095fff681ee6e00b9d07091d13349318d03c0753ac665228f0ca990",
+    "raw/replay-generation-20-process.json": "b8aa3c875352f9de60fb12a1a750e053254404177bd8933ca292f1c6a0921e30",
+    "raw/replay-generation-21-process.json": "6a4e22c5d746c741e8d0fd0620acbc9d6c343f2012723653561f4433f53a5746",
+    "raw/replay-generation-22-process.json": "52c7dfafd8dc3fbf22699ca1b89b70ee4cb490f48433a74ddb09cf2ab3eb2883",
+    "raw/replay-generation-23-process.json": "399a41caecfabdf17c15bdee1e56bcdc5a008ed8bbd3495d291e2f17d212010d",
+    "raw/replay-generation-24-process.json": "36087d33c326dfeae88c3edf2601620249303487db9dcffa91810bff0031c1fc",
+    "raw/replay-generation-25-process.json": "82f26280f044a7ed2d295a303632192b1d96c0e1fa3ced3ecffaed2bc4b02181",
+    "raw/replay-generation-26-process.json": "981821cafe88afe90f4809899c209140d01bfd887c13eb00f08ce999b7bf94d9",
+    "raw/replay-generation-27-process.json": "35301596e13feafb3e10be6b65be3381c34c2bddc1a007688305d8a09b42e5d6",
+    "raw/replay-generation-28-process.json": "435340bfe1ab3db8c85afab1c128056f71fa48837d2f4b9486c3a29de46dc80a",
+    "raw/replay-generation-29-process.json": "d68e4e5153f48a26bbd726bbc7a872526794414e4320b56186f638fc1c881c6c",
+    "raw/replay-generation-3-process.json": "8c5e333c61303eea879fd3b37201e19f18f725b7325b5ca7dca9eae95f8992f7",
+    "raw/replay-generation-30-process.json": "befe5ed03d284598c1d316b78b403bf5c4d95be97741baa5c1c6167199d5cff9",
+    "raw/replay-generation-31-process.json": "5611761734e0fb7db57aa3eb59f53b1184b67552937fbb72591def0e1b806e7e",
+    "raw/replay-generation-4-process.json": "1d00fadb929fed63e92e49b971fbbaa78b66eeac8c5d946c23248a77b90903b6",
+    "raw/replay-generation-5-process.json": "a7ff24dd98c9929b5dbad0ffec20f3152340bb43e0a01665c6835f0063f57129",
+    "raw/replay-generation-6-process.json": "84ffa47a132d73791ae403b66f88661bd8c2c465e33e0c0f29f18ce29bb06de4",
+    "raw/replay-generation-7-process.json": "52c740c833706b0c656fb038778d86747b937b5f636f946fcd9d1b060589616b",
+    "raw/replay-generation-8-process.json": "876ef2c5abada2e6bcc83dc48be15c2cad393c693a2cd8a1e5730dad936fc3ef",
+    "raw/replay-generation-9-process.json": "6bf75bf4bf58dcc072cd2957f1b7bae72480a92dc7ec9b72305e39575e9655d3",
+    "raw/replay-proof.json": "4686f902b776be71941d2caa6812babdf78b13862432ee714afbbf00249cca30",
+    "raw/runner.py": "0a0581eb41bbe29ac6a0dfdbbef59aafcfe801ca3485bd6ad3e75597b21bad6e",
+    "raw/selection.json": "5190253219ab62b50047be72f80424b663ff671c8dac58d4b0f3d994c65cef34",
+    "raw/source-seals.json": "e93e7f557ed167e5a3284bf9fa4ce5961c9b73e5846f438c15b3c7ba820106b5",
+    "raw/source/docs/CURRENT-DEVELOPMENT.md": "3dfb17e6298f2e4e239de1db5bb4dcb272eae1d10873d14ef2811d89b4350942",
+    "raw/source/docs/DIGITAL-INHERITANCE-01-PROTOCOL.md": "7126c4b58f7824753f6abd71442cf2d7c908a7c99bf7df4bd725650a9393c5d3",
+    "raw/source/experiments/digital_ecosystem.py": "ac0b03d7744d62d53ab0ddd6b1f507ec5d63cf60e2bd734d532f65e470c01a8a",
+    "raw/source/experiments/digital_inheritance.py": "aad7b51d004fb0ec3fe5c3ada80a723337296241fb189c5e8469cdd288714a0f",
+    "raw/source/experiments/digital_inheritance_audit.py": "03c5f7b231191e7c2b86700bcfed6f6a4b0a04f2e4a359aa2e91548b9aa6402f",
+    "raw/source/experiments/process_limits.py": "edbd4c57d33310fcba1859c787644cb2bff8c9e1a191ab0d741af78790d34090",
+    "raw/source/tests/test_digital_inheritance.py": "8e862c4c39dd70d536b8da05cffad5f8e9569990ec0f841e40353c7ca136fcb8",
+    "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "restore/docs/CURRENT-DEVELOPMENT.md": "3dfb17e6298f2e4e239de1db5bb4dcb272eae1d10873d14ef2811d89b4350942",
+    "restore/docs/DIGITAL-INHERITANCE-01-PROTOCOL.md": "7126c4b58f7824753f6abd71442cf2d7c908a7c99bf7df4bd725650a9393c5d3",
+    "restore/experiments/digital_ecosystem.py": "ac0b03d7744d62d53ab0ddd6b1f507ec5d63cf60e2bd734d532f65e470c01a8a",
+    "restore/experiments/digital_inheritance.py": "aad7b51d004fb0ec3fe5c3ada80a723337296241fb189c5e8469cdd288714a0f",
+    "restore/experiments/digital_inheritance_audit.py": "03c5f7b231191e7c2b86700bcfed6f6a4b0a04f2e4a359aa2e91548b9aa6402f",
+    "restore/experiments/process_limits.py": "edbd4c57d33310fcba1859c787644cb2bff8c9e1a191ab0d741af78790d34090",
+    "restore/tests/test_digital_inheritance.py": "8e862c4c39dd70d536b8da05cffad5f8e9569990ec0f841e40353c7ca136fcb8",
+    "restore/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

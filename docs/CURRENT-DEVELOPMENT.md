@@ -32,9 +32,9 @@ inheritance/evolution and unseen-challenge learning comparisons with appropriate
 fixed,memory-disabled,own-history-disrupted and inheritance-disabled controls.
 Meaningful digital damage requires actual loss/restoration of useful function
 caused by the organism; host checkpoint restart is only engineering recovery.
-One next dependency: freeze a same-law functional-inheritance assay of access to
-initially remote resources with nonvariation/inheritance-disabled controls, before
-any new seeds. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
+INHERITANCE-01 is CLOSED at its selected reproductive-inheritance gate. [Prospective protocol](DIGITAL-INHERITANCE-01-PROTOCOL.md), [all152 independently interpreted/replayed histories and exact failure](DIGITAL-INHERITANCE-01-RECEIPT.md). Mutation-enabled generation populations:210 births/274 deaths versus faithful192/256. The performance-blind selected copied mutant `[1,2,3,5,6,12]` acquired64 food/48 remote in all4 fresh seeds but produced0 copies/births. Ordinary mobile control acquired64 and produced12–14 births/9 descendant births. MOVE replaced COPY: useful acquisition works, reproductive inheritance fails. No candidate switch, composite fitness claim, learning or sustained evolution acceptance. All finite worlds became extinct; all costs/ancestry conserved. Two focused fixtures,78 native exits, independent continuation interpretation and38 restored byte-replay batches passed. Reserved24204..24211 and24004..24011 untouched.
+One next dependency: prospectively register COPY-preserving pre-division mobility as a distinct mechanism, using actually copied `[1,2,4,3,6,12]` source programs and NEW independent fresh seeds/ordinary controls. Existing observations are hypothesis generation only; no retuning this selected negative or replacing its outcomes.
+Checkpoint-integrity repair PR133 is merged5181b9d, independently checked against all12 unchanged original histories and rehashed continuation-field forgeries. Exact PR/main CI649 tests,13 skipped passed. Separate closing readback: `D:/OraLab/runs/digital-checkpoint-fix-closing-20261011/final-audit.json`. External host crash recovery remains unverified. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
 change. Physical/off-host/full-host durability and production isolation remain
 explicit; not all are gates for a safely bounded data-only VM experiment.
 
