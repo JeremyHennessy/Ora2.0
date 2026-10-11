@@ -1,0 +1,1417 @@
+{
+  "verified": true,
+  "source": "2a8c3cbef522d93549a8b8b75cfaf6ff1d62a29e",
+  "classification": "ORDINARY_OPPORTUNITY_ADMISSION_FAILED_TASK_PARKED",
+  "software_histories": 8,
+  "primary_worlds": 0,
+  "ordinary_exploration_admission": false,
+  "metrics": [
+    {
+      "pre_food": 13,
+      "post_food": 16,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "verified": true,
+      "seed": 26390,
+      "route": "witness",
+      "mode": "faithful",
+      "ticks": 327,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 29,
+      "failed_food": 0,
+      "unused_food": 32,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 717,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 16,
+      "ordinary_admitted": true
+    },
+    {
+      "pre_food": 11,
+      "post_food": 6,
+      "formation_cost": 28,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "verified": true,
+      "seed": 26390,
+      "route": "alternating",
+      "mode": "faithful",
+      "ticks": 240,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 17,
+      "failed_food": 18,
+      "unused_food": 34,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 656,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 14,
+      "ordinary_admitted": false
+    },
+    {
+      "pre_food": 16,
+      "post_food": 16,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "verified": true,
+      "seed": 26390,
+      "route": "fixed0",
+      "mode": "faithful",
+      "ticks": 324,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 32,
+      "failed_food": 0,
+      "unused_food": 32,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 693,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 16,
+      "ordinary_admitted": true
+    },
+    {
+      "pre_food": 0,
+      "post_food": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "verified": true,
+      "seed": 26390,
+      "route": "fixed1",
+      "mode": "faithful",
+      "ticks": 12,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 0,
+      "failed_food": 4,
+      "unused_food": 64,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 37,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 0,
+      "ordinary_admitted": false
+    },
+    {
+      "pre_food": 11,
+      "post_food": 16,
+      "formation_cost": 49,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "verified": true,
+      "seed": 26391,
+      "route": "witness",
+      "mode": "faithful",
+      "ticks": 325,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 27,
+      "failed_food": 1,
+      "unused_food": 32,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 717,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 16,
+      "ordinary_admitted": true
+    },
+    {
+      "pre_food": 10,
+      "post_food": 5,
+      "formation_cost": 28,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "verified": true,
+      "seed": 26391,
+      "route": "alternating",
+      "mode": "faithful",
+      "ticks": 201,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 15,
+      "failed_food": 17,
+      "unused_food": 37,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 596,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 11,
+      "ordinary_admitted": false
+    },
+    {
+      "pre_food": 0,
+      "post_food": 0,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ],
+        [
+          "ACT",
+          0,
+          0
+        ]
+      ],
+      "verified": true,
+      "seed": 26391,
+      "route": "fixed0",
+      "mode": "faithful",
+      "ticks": 12,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 0,
+      "failed_food": 4,
+      "unused_food": 64,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 37,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 0,
+      "ordinary_admitted": false
+    },
+    {
+      "pre_food": 16,
+      "post_food": 16,
+      "formation_cost": 25,
+      "founder_action_signature": [
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ],
+        [
+          "ACT",
+          0,
+          1
+        ]
+      ],
+      "verified": true,
+      "seed": 26391,
+      "route": "fixed1",
+      "mode": "faithful",
+      "ticks": 324,
+      "births": 0,
+      "descendant_births": 0,
+      "deaths": 1,
+      "successful_food": 32,
+      "failed_food": 0,
+      "unused_food": 32,
+      "paid_copy_words": 0,
+      "mutations": 0,
+      "maximum_population": 1,
+      "heat": 693,
+      "live_energy": 0,
+      "free_material": 512,
+      "messages": 0,
+      "change_exposed": 0,
+      "remote_food": 0,
+      "descendant_remote_food": 0,
+      "repeated_hidden_port_actors": 0,
+      "learning": false,
+      "evolution": false,
+      "repair": false,
+      "fresh_attempts": 16,
+      "ordinary_admitted": true
+    }
+  ],
+  "complete_bills": [
+    {
+      "seed": 26390,
+      "route": "witness",
+      "formation": 49,
+      "instructions": 327,
+      "release": 16,
+      "cap_waste": 265,
+      "expired_energy": 60,
+      "failed_fresh_energy": 0,
+      "heat": 717,
+      "constructor": 63,
+      "unused_food_energy": 640,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 0,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26390,
+      "route": "alternating",
+      "formation": 28,
+      "instructions": 240,
+      "release": 16,
+      "cap_waste": 112,
+      "expired_energy": 100,
+      "failed_fresh_energy": 160,
+      "heat": 656,
+      "constructor": 84,
+      "unused_food_energy": 680,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 0,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26390,
+      "route": "fixed0",
+      "formation": 25,
+      "instructions": 324,
+      "release": 16,
+      "cap_waste": 328,
+      "expired_energy": 0,
+      "failed_fresh_energy": 0,
+      "heat": 693,
+      "constructor": 87,
+      "unused_food_energy": 640,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 0,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26390,
+      "route": "fixed1",
+      "formation": 25,
+      "instructions": 12,
+      "release": 0,
+      "cap_waste": 0,
+      "expired_energy": 0,
+      "failed_fresh_energy": 0,
+      "heat": 37,
+      "constructor": 103,
+      "unused_food_energy": 1280,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 0,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26391,
+      "route": "witness",
+      "formation": 49,
+      "instructions": 325,
+      "release": 16,
+      "cap_waste": 227,
+      "expired_energy": 100,
+      "failed_fresh_energy": 0,
+      "heat": 717,
+      "constructor": 63,
+      "unused_food_energy": 640,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 1,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26391,
+      "route": "alternating",
+      "formation": 28,
+      "instructions": 201,
+      "release": 16,
+      "cap_waste": 111,
+      "expired_energy": 120,
+      "failed_fresh_energy": 120,
+      "heat": 596,
+      "constructor": 84,
+      "unused_food_energy": 740,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 1,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26391,
+      "route": "fixed0",
+      "formation": 25,
+      "instructions": 12,
+      "release": 0,
+      "cap_waste": 0,
+      "expired_energy": 0,
+      "failed_fresh_energy": 0,
+      "heat": 37,
+      "constructor": 103,
+      "unused_food_energy": 1280,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 1,
+      "realized_noise_packets": []
+    },
+    {
+      "seed": 26391,
+      "route": "fixed1",
+      "formation": 25,
+      "instructions": 324,
+      "release": 16,
+      "cap_waste": 328,
+      "expired_energy": 0,
+      "failed_fresh_energy": 0,
+      "heat": 693,
+      "constructor": 87,
+      "unused_food_energy": 640,
+      "live_energy": 0,
+      "free_material": 512,
+      "latent_orientation": 1,
+      "realized_noise_packets": []
+    }
+  ],
+  "focused_tests": 2,
+  "native_zero_exits": 25,
+  "full_independent_histories": 8,
+  "source_restored": true,
+  "byte_replay": true,
+  "archive_sha256": "3b93f2ab0733d9d8bbaf647d491e087aba36cbbb5bf1b9d7a186bfa390ce2e45",
+  "old_law_unchanged": true,
+  "learning": false,
+  "evolution": false,
+  "repair": false,
+  "stage_advance": false,
+  "reserved_executed": false,
+  "whole_work": null,
+  "fresh_work": null,
+  "damage": null,
+  "persistent_world": false,
+  "next_dependency": "Resolve personally informative opportunity timing and baseline survival before any bank/learning panel. Task15 configuration is parked: no seed/slot/noise/price/horizon tuning or resampling; no primary or reserve execution. Existing compiler remains available, not admitted."
+}
