@@ -21,8 +21,9 @@ this planning reconciliation; all frozen laws, receipts and reserves stay intact
 The reproduction/mutation admission rule remains **ordinary-route viability
 first**. ADMISSION10 resolves the supplied ordinary prerequisite in two software
 orientations; the next claim-specific variation protocol must recheck readiness
-for its registered candidate/comparator configurations. Resolve the existing acquisition-before-copy dependency within a suitable
-reviewed substrate before introducing another world law. Record the full paid
+for its registered candidate/comparator configurations. Use this admitted
+acquisition-before-copy configuration within the reviewed substrate before
+introducing another world law. Record the full paid
 path: founder and every code/state role, larger-program formation and complete
 nursery copying, successful/failed acquisition and control flow, first-selector
 storage and accepted/rejected draws, division/startup/parent retention, refusals,
