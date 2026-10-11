@@ -89,3 +89,28 @@ useful-work, self-maintenance or Stage3 evidence. Do not tune closed histories.
 If the required formation/renewal evidence cannot be supplied, reject this
 proposal and select a genuinely different complete mechanism, rather than
 running an unpriced capillary energy ceiling or supplied-boundary simulation.
+
+## Targeted clarification and derivative dependency, 2026-10-11
+
+The preceding surface admission wording was too broad: intrinsic wetting can
+be declared constitutive raw-material physics. It need not require a separate
+coating constructor. Finished coatings, anchors and assembled geometry still
+require paid formation and causal renewal of every essential apparatus role.
+This correction does not admit a supplied substrate or erase apparatus costs.
+
+Cheng & Wang, DOI[10.1021/la2044152](https://doi.org/10.1021/la2044152),
+[primary manuscript](https://arxiv.org/pdf/1111.3942), methods pp2–4 were inspected
+selectively. That study uses preassembled immobile colloids and isothermal
+phase separation; it does not demonstrate our moving converter or renewal.
+This is a partial methods assessment, not physical reproduction.
+
+[Prospective reduced gradient design](FREE-CAPILLARY-TRANSFER-01-GRADIENT-DESIGN.md)
+specifies only conservative derivatives, with material recoil included.
+It is neither the full published model nor a converter. The first remaining
+complete-law blocker is finite thermodynamic/dynamic closure: specify U, S,
+temperature, moving fluid/solid momenta, diffusion and waste, load coupling,
+raw bridge construction and all-role renewal. A free-energy decrease is not
+measured load work. An actually profitable same-feed simpler route remains
+unimplemented. All physical prices and whole/fresh useful work remain null.
+Next decision: supply that complete closure or reject this free-body proposal;
+do not substitute another gradient, supplied-apparatus run or ceiling study.
