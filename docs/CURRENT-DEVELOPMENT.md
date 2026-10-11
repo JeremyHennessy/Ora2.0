@@ -71,9 +71,18 @@ Eight focused tests, separate common-temperature/RK4 interpretation, four
 forgery refusals and restored exact replay pass. Physical prices UNKNOWN/null.
 No natural worlds, self-maintenance, adaptation or Stage3 advance. Preserve
 the frozen history without tuning heat capacity, feed, damage or conductance.
-No active experiment or admitted candidate. Next substantive decision: select
-a genuinely different complete raw formation/conversion/renewal mechanism and
-an actual whole/fresh profitable same-resource simpler route before execution.
+No active experiment or admitted candidate.
+Primary missing-law proposal FREE-CAPILLARY-TRANSFER-01 is selected, NOT ADMITTED.
+[Compact question, necessary capability, exact missing term and measurement](FREE-CAPILLARY-TRANSFER-01-DECISION-CARD.md).
+The inspected fixed-substrate capillary jump supplies its indispensable boundary;
+reject that complete-candidate interpretation before implementation. The distinct
+free-body version first needs raw-to-active surface formation AND fresh causal
+renewal, then a coupled moving-interface/load law. Neither is specified by the
+inspected source. No net work or profitable simpler comparator has been measured.
+Unknown preparation, upkeep, repair and load costs remain null, not0. Next
+decision: resolve the named surface transition with a functional fresh-material
+assay and complete constructor bill; otherwise reject and choose a different
+mechanism. No supplied-wall run, capillary ceiling or tuning of closed histories.
 Science owns this decision; unrelated engineering/research audits stay deferred.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
