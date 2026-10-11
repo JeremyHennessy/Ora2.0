@@ -3,7 +3,20 @@ import hashlib,json
 
 def h(value):return hashlib.sha256(json.dumps(value,sort_keys=True,separators=(',',':')).encode()).hexdigest()
 
+def strict_types(value,key=None):
+    """Reject numeric lookalikes before Python equality compares receipts."""
+    if key=='alive':
+        assert type(value) is bool
+    elif isinstance(value,dict):
+        assert all(type(k) is str for k in value)
+        for k,v in value.items():strict_types(v,k)
+    elif isinstance(value,list):
+        for v in value:strict_types(v)
+    else:
+        assert value is None or type(value) in (int,str)
+
 def audit(row):
+    strict_types(row)
     orientation=row['orientation'];mode=row['mode'];assert type(orientation) is int and orientation in (0,1)
     assert mode in ('normal','memory_disabled') and row['flip']==32
     energy=12;heat=0;memory=[0]*8;food=list(range(64));index=0;alive=True;hits=0
