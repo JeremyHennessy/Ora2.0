@@ -4,6 +4,25 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+COLLISION-BRIDGE-01 is the one new primary **controlled digital-law prototype**.
+[Prospective protocol and decision card](COLLISION-BRIDGE-01-PROTOCOL.md).
+Question: can paid raw association create a collisional transfer body whose
+actual retained load work repays formation and full bond loss, outperforming a
+profitable direct stationary-load path on identical finite source particles?
+Costs follow common mass, velocity and stored-bond rules; no arm gets a yield
+bonus. Constitutive association forms the whole single-role apparatus; no
+supplied constructor, actuator, memory or work latch is installed. All reflected
+sources remain in the world. Initial geometry/momenta are authored fixtures.
+Five exact histories include direct, assembly-disabled and the complete two-site
+velocity shuffle; these are not independent natural-world samples. Freeze the
+producer, separate interpreter and protocol before execution. Stop before worlds
+if repair, positive whole/post margins, profitable simpler control or advantage
+fails. Current evidence: IMPLEMENTED, NOT YET EXECUTED; useful work and comparator
+profit UNKNOWN, admission denied pending verification. Stage3 remains unchanged.
+Latest independently reviewed research main cb66aa8 (PR41), numbered passes1–50,
+adds its separate science-first research plan; no literature result is an Ora
+prototype. Earlier proposal-retirement statements below retain their dates.
+
 The [code reachability audit](CODE-REACHABILITY-AUDIT.md) separates accounting,
 contract conformance and scientific success. Before any new panel, verify every
 essential-role formation guard and a prepared positive witness with the same
