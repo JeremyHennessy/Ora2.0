@@ -1,4 +1,9 @@
-# CHARGE-SCREEN-01: next primary proposal, not admitted
+# CHARGE-SCREEN-01: original proposal, now closed at admission
+
+**Current status:** the exact authored prototype is CLOSED NEGATIVE; actual
+profitable bare/control comparisons passed, candidate advantage failed and
+renewal remained underexposed. [Verified receipt](CHARGE-SCREEN-01-RECEIPT.md).
+The following preserves the original pre-execution proposal and unknowns.
 
 October11,2026, selected AFTER COHESION-01's admission rejection. No execution,
 new source samples, successful founder, controller or scientific claim here.
