@@ -12,10 +12,14 @@ class Route02(unittest.TestCase):
     def test_paid_mobile_history_and_birth_null_same_evaluator(self):
         for mode in ('faithful','copy_disabled'):
             row=history(24891,'mobile',mode);metrics=audit(row)
-            self.assertGreater(metrics['remote_food'],0)
             if mode=='copy_disabled':self.assertEqual(metrics['births'],0)
             # This is a software witness, not a scientific gate or seed screen.
-            if mode=='faithful':self.assertGreater(metrics['births'],0)
+            if mode=='faithful':
+                self.assertGreater(metrics['births'],0)
+                self.assertGreater(metrics['remote_food'],0)
+            else:
+                # JCOPY lawfully loops before MOVE when copying is unavailable.
+                self.assertEqual(metrics['remote_food'],0)
             self.assertEqual(row['final']['constructor_remaining'],94)
 
     def test_impossible_ancestry_formation_and_genesis_refused(self):
