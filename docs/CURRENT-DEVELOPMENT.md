@@ -4,6 +4,15 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+The [code reachability audit](CODE-REACHABILITY-AUDIT.md) separates accounting,
+contract conformance and scientific success. Before any new panel, verify every
+essential-role formation guard and a prepared positive witness with the same
+world endpoint evaluator, plus resource opportunity at damage. Existing
+PHOTOFACTORY C/H/F cannot be fabricated through its F route; ASSOCIATION has no
+load/retention channel; MAINTAIN first-use output is unavailable after all tokens
+are touched. Preserve frozen laws and outcomes; missing model capabilities need
+a new prospective model. Three-hour code reviews cover changes only.
+
 COHERENT-CLOSURE-01 retires the incomplete COHERENT-CONTACT-01 implementation
 proposal after the complete source/load/all-role law remained unspecified.
 [Scoped decision and exact evidence](COHERENT-CLOSURE-01-DECISION.md).
@@ -24,8 +33,8 @@ by itself rule out order-insensitive learning. Register association disruption
 separately, preserving identical incoming resources and immutable world events;
 cost actual internal memory interventions. [Design](ADAPTATION-01-DESIGN.md).
 No controller, policy, law, actor or experiment is activated; all cost and unseen
-action endpoints remain unmeasured. COHERENT-CONTACT-01 remains the primary
-science question below, with its complete source/load/renewal law unresolved.
+action endpoints remain unmeasured. COHERENT-CONTACT-01 is retired as a primary
+proposal; a different complete source/load/renewal candidate remains to be selected.
 
 ASSOCIATION-CHANNEL-01 implements and verifies one isolated prerequisite of
 COHERENT-CONTACT-01 at e715bfb: a finite third constituent receives binding energy
