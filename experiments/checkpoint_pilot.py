@@ -202,9 +202,19 @@ def wrapped(body: dict) -> dict:
     return {"body": body, "sha256": digest(body)}
 
 
+def unique_object(pairs: list[tuple[str, object]]) -> dict:
+    """Reject ambiguous keys at every nesting level before checking digests."""
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise IntegrityError("Duplicate authoritative JSON key")
+        result[key] = value
+    return result
+
+
 def read_wrapped(path: Path, label: str) -> dict:
     try:
-        data = json.loads(path.read_bytes())
+        data = json.loads(path.read_bytes(), object_pairs_hook=unique_object)
     except (OSError, UnicodeError, ValueError) as exc:
         raise IntegrityError(f"{label} missing or invalid JSON") from exc
     if not isinstance(data, dict) or set(data) != {"body", "sha256"}:
@@ -228,7 +238,7 @@ def read_journal(path: Path, identity_hash: str) -> list[dict]:
     previous_hash = ZERO_HASH
     for index, raw_line in enumerate(lines, start=1):
         try:
-            row = json.loads(raw_line)
+            row = json.loads(raw_line, object_pairs_hook=unique_object)
         except (UnicodeError, ValueError) as exc:
             raise IntegrityError(f"Invalid journal JSON at step {index}") from exc
         if not isinstance(row, dict) or set(row) != {"body", "sha256"}:
