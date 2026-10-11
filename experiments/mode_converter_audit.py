@@ -93,7 +93,7 @@ def audit_record(record,arm):
         if sorted(n for z in ps for n in z[1])!=sorted(NAMES) or abs(sum(m(z)*z[3] for z in ps)-6)>EPS or abs(sum(k(z)+z[5] for z in ps)+h-7)>EPS or h < -EPS:raise ValueError('Conservation')
         load_after=next(k(z) for z in ps if z[1]==('load',))
         expected=dict(kind=kind,dt=str(dt),channel=channel,parents=parents,newborn=newborn,mode_bond=mode_bond,formation_debit=str(c-old_c),compression_debit=str(r-old_r),heat_delta=str(h-old_h),load_work=str(load_after-load_before),before=before,after=view(t,h,c,r,serial,bond,first,ps))
-        if not equal(expected,observed):raise ValueError('Event, ancestry or energy mismatch')
+        if not equal(expected,observed):raise ValueError(json.dumps(dict(arm=arm,contact=contacts,expected=expected,observed=observed),sort_keys=True))
     if not finished or not lost:raise ValueError('Incomplete history')
     load=next(k(z) for z in ps if z[1]==('load',));whole=load-c-r;post=load-loss_k-(c+r-loss_c)
     score=dict(load=str(load),formation=str(c),compression=str(r),whole_margin=str(whole),post_margin=str(post),post_load=str(load-loss_k),loss_bonds=loss_bonds,unused=unused,rebuilt=rebuilt,rebuilt_work=str(work),success=bool(loss_bonds and unused and rebuilt and work>0 and whole>0 and post>0))
