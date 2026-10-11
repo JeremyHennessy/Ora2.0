@@ -48,12 +48,20 @@ no paid-profit comparator or complete apparatus measured. This is a specific
 necessity/implementation rejection, not an adequate self-maintenance negative.
 Six focused tests, exact independent finite-state interpretation, four forgery
 refusals and restored byte replay pass;0 worlds and no Stage3/adaptation advance.
-Next sole proposal ANGULAR-TRANSFER-01, NOT ADMITTED/unimplemented.
-[Compact complete bill, distinct orientational capability and exact missing paid history](ANGULAR-TRANSFER-01-DECISION-CARD.md).
-Derive common finite force/torque and implement one raw-built directional
-coupler history with an actual profitable same-feed bare/single-body route,
-or reject before worlds. No paid torque driver, installed rotor, free clamp,
-invented price, spin/repair capital omission or tuning of closed scalar laws.
+ANGULAR-TRANSFER-01 is CLOSED AT ADMISSION.
+[Frozen raw force/torque history](ANGULAR-TRANSFER-01-PROTOCOL.md) and
+[ten measured records, actual simpler controls and independent audit](ANGULAR-TRANSFER-01-RECEIPT.md).
+Candidate whole+.141965799/fresh0, bare+.307333970/fresh0, single+.286214934/fresh0.
+No simpler control profitable on BOTH metrics; comparison invalid, no advantage.
+Zero raw bound births and no functioning candidate hit at either fixed loss;
+renewal UNDEREXPOSED. Paid spin/potential/impulse/signed-work accounts reconcile;
+eight focused tests, separate polar-gradient/RK4, four forgeries and restored
+byte replay pass. Physical prices UNKNOWN; no worlds, self-maintenance or Stage3 advance.
+No active experiment or admitted candidate. Next substantive decision: select a
+genuinely different complete raw formation/conversion/renewal mechanism with
+an actual phase-profitable same-feed simpler route BEFORE further execution.
+Do not retune angular feed, geometry, inertia, loss timing or closed scalar laws;
+transient scattering is not apparatus construction. Unknown prices never0.
 Science owns the next substantive block; general runtime audits stay deferred.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
