@@ -1,8 +1,21 @@
 # Current development plan and handoff
 
-**Updated 2026-10-10. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
+**Updated 2026-10-11. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
 ## Current session: both AI-only science and engineering reliability
+
+Primary science remains UNSELECTED: no complete new mechanism is admitted.
+The field-aggregation sketch repeats mass-transfer capability; renaming an
+autonomous conditional/contact converter would repeat the archived missing-law
+dependency. Do not implement either as a new candidate without a genuinely
+different complete causal mechanism. No new worlds or measured surplus.
+The small parallel ADAPTATION design now has a pure, past-only reference-permutation
+planner and independent interpreter. It preserves world chronology, distinguishes
+whole-record order from outcome association, and refuses paid-cost/activation
+claims. [Exact semantics and remaining costs](ADAPTATION-01-DESIGN.md#executable-reference-plan-semantics-design-only).
+No actor, controller or scientific sample is introduced; this is not learning
+evidence or progress toward self-maintenance. Next substantive science remains
+the complete source-to-useful-work prototype and viable paid simpler comparison.
 
 MODE-CONVERTER-01 is CLOSED NEGATIVE, not a reopening of
 COLLISION-BRIDGE-01. [Frozen decision card and law](MODE-CONVERTER-01-PROTOCOL.md).
@@ -17,8 +30,8 @@ formation, recompression, heat, load work and residual source energy are recorde
 Six clarified frozen histories completed: candidate work1.384749 minus
 formation4.517049/recompression1 gives whole margin-4.132300 and post margin
 -1.118938. Direct work3.2768 gives positive whole/post margins0.7168/1.9968.
-Two bonds were destroyed; s2 was fresh, but new apparatus and rebuilt work are
-absent. Seven focused tests, independent interpretation, conservation and restored
+Two bonds were destroyed; s2 was fresh, but registered a0/a1 reconstruction and
+rebuilt work are absent. Seven focused tests, independent interpretation, conservation and restored
 byte replay pass. Preserve the original/diagnostic/contact-clarification failures:
 coincident coordinate/velocity roundoff was diagnosed and prospectively refrozen,
 without changing costs, feed or gates. [All results and failures](MODE-CONVERTER-01-RECEIPT.md).
