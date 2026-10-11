@@ -4,11 +4,18 @@
 
 ## Current session: both AI-only science and engineering reliability
 
-Primary science remains UNSELECTED: no complete new mechanism is admitted.
-The field-aggregation sketch repeats mass-transfer capability; renaming an
-autonomous conditional/contact converter would repeat the archived missing-law
-dependency. Do not implement either as a new candidate without a genuinely
-different complete causal mechanism. No new worlds or measured surplus.
+Primary science: COHESION-01 is the sole PROTOTYPE candidate, not admitted.
+[Prospective decision card, common Hamiltonian and complete bill](COHESION-01-PROTOCOL.md).
+Its proposed capability is continuous contraction powered by finite cohesive
+potential, with raw construction and repeated complete coupling loss. Six
+ordinary geometries retain identical incoming packets and initial capital;
+all five simpler alternatives and the complete occupancy shuffle are measured.
+An independent integrator and every-step metadata reconstruction must verify
+the authored histories before interpreting net work or renewal. No new worlds
+or measured surplus yet. Reject failed controls, unexposed renewal, numerical
+failure or absent advantage without tuning this frozen prototype.
+The earlier field-aggregation sketch and renamed autonomous-contact proposals
+remain unselected; no prior impact, mode, thermal or catalytic law is reopened.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
