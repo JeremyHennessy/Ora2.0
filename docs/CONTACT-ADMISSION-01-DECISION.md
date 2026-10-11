@@ -46,6 +46,34 @@ response to a finite oscillatory source, rather than sequential tape advance,
 prediction or a supplied one-way clock. It is not an admitted mechanism, a
 biological implementation, a successful founder or an activated controller.
 
+### Resolved construction constraint: a pair-only conservative shortcut fails
+
+This is a mathematical preflight for a precisely defined restricted model,
+not a simulation or a claim about all possible formation physics. Let the
+relative energy of two separated raw constituents be
+`E_rel = K_rel + U(r)`, with `U(infinity)=0` and `K_rel>=0`. Define the required
+stable functional pair as a state with `E_rel<0`. If their relative dynamics
+are conservative and isolated, `E_rel` is constant. An incoming raw pair
+therefore cannot reach that defined bound state. Passing through a low-potential
+region temporarily is not stable formation: the lost potential becomes relative
+kinetic energy rather than leaving the pair.
+
+For target relative energy `-B`, where `B>0`, an incoming pair at relative energy
+`E_in>=0` must transfer `E_in+B` to another represented degree of freedom, absent
+other paid work transfers. This relation fixes a required ledger transfer, not
+its rate or the numerical value of B. A finite third constituent/heat recipient,
+an emitted-energy channel, or explicit source work extraction could provide it.
+Its energy, material/state ancestry, available capacity and reverse channel must
+be represented. External extraction is assistance until its apparatus is formed
+and renewed; an unexplained damping term cannot count as that apparatus.
+
+Consequently, reject a two-body conservative or permanently installed-spring
+shortcut as this candidate's raw-formation implementation. The next explicit
+missing item is a raw-accessible association/energy-release channel with a finite
+recipient and an executable reverse path. This prerequisite does not establish
+functional source-to-load conversion, a profitable control or all-role renewal.
+No B, rate, efficient capture probability, price or favorable sample is assigned.
+
 **Question.** Can a structure formed and reformed from raw constituents deliver
 more retained mechanical work from the same finite oscillatory source than
 attainable simpler, profitable converters, after its entire construction and
@@ -81,8 +109,9 @@ load latch or scheduling support must be identified and paid within its proper
 source/environment/apparatus boundary. Calling it a field or substrate is not
 evidence that it is constitutive physics. Unknown terms remain UNKNOWN.
 
-**Named missing law and concrete resolution.** A constituent-level conservative
-formation/coupling/load law is absent. First specify raw, bound and released
+**Named missing law and concrete resolution.** A constituent-level
+formation/coupling/load law with the finite association-energy recipient above
+is absent. First specify raw, bound and released
 states and a single energy function covering source, material, all apparatus
 and the work reservoir. Derive each force/transition debit from energy changes;
 include both directions and finite heat/waste storage. Show an accessible

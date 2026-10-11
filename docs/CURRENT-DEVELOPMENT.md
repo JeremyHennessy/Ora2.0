@@ -13,7 +13,11 @@ COHERENT-CONTACT-01 is now the one primary design question: raw-formed coupled
 mechanical conversion versus actually paid independent and best accessible
 passive/stationary alternatives on the identical finite source. Its named missing
 term is a constituent formation/coupling/load energy law, including a retained
-work reservoir and causal renewal of every role. Resolve one complete raw-to-work
+work reservoir and causal renewal of every role. A restricted pair-only
+conservative construction cannot turn nonnegative incoming relative energy into
+a negative-energy bound pair: the finite association-energy recipient and its
+reverse channel must be explicit. No numerical binding price or rate is inferred.
+Resolve one complete raw-to-work
 and fresh post-loss history or reject; no sweep, census, invented prices or worlds.
 STATIONARY-PAIR-01 remains an unimplemented alternative sketch. No actual work,
 comparator profit or Stage3 advance is claimed. ADAPTATION stays design only.
