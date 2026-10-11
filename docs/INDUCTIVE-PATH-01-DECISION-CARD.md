@@ -99,3 +99,17 @@ source/support/output roles and same-material resistance/inductance state law.
 No source-derived complete law or profitable comparator is available for local
 execution. Specify that joint law and fresh complete-path assay or reject the
 free-path proposal. Do not implement its supplied-terminal approximation.
+
+## Admission closure, 2026-10-11
+
+**REJECTED BEFORE COMPLETE PROTOTYPE.** The reviewed electromechanical account
+and supplied-electrode constructor do not jointly specify Phi_closed_path,
+finite field/source/support/output formation and fresh all-role renewal. Work,
+physical costs and profitable comparator remain null/UNKNOWN. The concrete
+joint finite-source assay and source-access failures are preserved above and
+in the constructor decision; no supplied-coil or supplied-terminal substitute
+will be executed. This is a proposal rejection at admission, not an induction
+impossibility or adequately exposed renewal negative. No dynamics or worlds.
+Do not reopen with a contact-resistance helper, new prices or a force ceiling.
+The distinct next primary question is [optical binding and finite radiative
+momentum conversion](OPTICAL-BINDING-01-DECISION-CARD.md), also NOT ADMITTED.

@@ -82,26 +82,28 @@ No physical impossibility or adequately exposed renewal negative is claimed.
 Intrinsic raw wetting can be constitutive physics; assembled geometry and
 coatings still require paid formation/renewal. Do not retune or extend this
 proposal with another derivative-only check or supplied-apparatus simulation.
-The one primary admission question is INDUCTIVE-PATH-01, NOT ADMITTED.
-[Question, distinctive capability, exact missing term and concrete assay](INDUCTIVE-PATH-01-DECISION-CARD.md).
-Changing magnetic flux through newly formed conducting paths could transfer
-finite source energy without source/load collision. First missing term is
-Phi_path: paid raw contact graph formation plus the same identified material's
-terminal resistance/thermal law and fresh-path assay after essential loss.
-Source, load and all-role renewal closure and an actually profitable same-feed
-simpler path remain required. No finished coil, free support, source reset,
-one-way switch or fabricated price. Work/comparator remain null/unmeasured.
-Next decision: specify the joint path law and complete closure or reject it;
-no intermediate helper/ceiling run. Science owns this decision; unrelated
-engineering/research audits stay deferred. No experiment currently active.
-[Preserved admission decision and independent documentary audit](INDUCTIVE-PATH-01-ADMISSION-RECEIPT.md).
-[Targeted constructor assessment](INDUCTIVE-PATH-01-CONSTRUCTOR-DECISION.md)
-finds real component contact formation/repair in a supplied-electrode powered
-installation, not a complete freely moving inductive converter. That concrete
-constructor route is rejected. First remaining joint term is Phi_closed_path:
-new loop identity, state-dependent resistance/inductance and finite field,
-source, support and output formation/renewal. No complete law or profitable
-comparison; work and costs remain null/UNKNOWN. No supplied-terminal run.
+INDUCTIVE-PATH-01 is REJECTED BEFORE COMPLETE PROTOTYPE.
+[Admission closure and exact missing joint law](INDUCTIVE-PATH-01-DECISION-CARD.md#admission-closure-2026-10-11).
+The reviewed electromechanical and supplied-electrode accounts do not provide
+Phi_closed_path with finite field/source/support/output construction and fresh
+all-role renewal. [Component evidence, access failures and documentary audit](INDUCTIVE-PATH-01-CONSTRUCTOR-DECISION.md)
+remain preserved. No dynamics, work or profitable comparator was measured;
+no physical impossibility or adequately exposed renewal negative is claimed.
+Do not run a supplied-terminal substitute or retune this closed proposal.
+The one primary admission question is OPTICAL-BINDING-01, NOT ADMITTED.
+[Compact question, exact candidate/comparator, full bill, joint assay and gates](OPTICAL-BINDING-01-DECISION-CARD.md).
+Distinct capability: geometry-dependent collective scattering and radiative
+momentum transfer, rather than current paths or photon-to-device recipes.
+First missing term is Phi_radiative: finite field depletion/escaping radiation,
+same-material polarization/thermal response, recoil, formation and retained
+load together, plus complete fresh renewal of every essential role. A concrete
+joint finite-pulse scattering/recoil/load assay is specified; no force helper
+or constant-intensity trap is admitted. Primary support is abstract-only E1;
+full-paper access failures are explicit. All costs and work remain UNKNOWN/null.
+Specify/measure the complete law and actual profitable same-feed independent
+scatterers, then implement; otherwise reject before a prototype. Science owns
+this decision; engineering and broad literature/observer work remain deferred.
+No experiment is active and evidence stages do not advance.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
