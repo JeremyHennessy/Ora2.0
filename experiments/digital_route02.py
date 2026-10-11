@@ -24,7 +24,7 @@ class World(BaseWorld):
         assert len(routes)==1
         world=cls(state['seed'],state['mode'],routes[0])
         while world.tick<state['tick']:assert world.step()
-        assert world.snapshot()==state
+        assert h(world.snapshot())==h(state)
         return world
 
 def history(seed,route,mode):
