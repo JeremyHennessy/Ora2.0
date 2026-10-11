@@ -38,7 +38,9 @@ Neither fixed loss destroyed a functioning apparatus; renewal UNDEREXPOSED
 despite virgin feed after both losses. Eight focused tests, exact metadata,
 independent heat/fourth-order flow, four forgery refusals and restored replay
 pass. Zero worlds, no self-maintenance or Stage3 advance. Do not tune this law.
-Next sole proposal CORRELATED-CONVERSION-01, NOT ADMITTED/unimplemented.
+Next sole proposal CORRELATED-CONVERSION-01, NOT ADMITTED. A concrete supplied
+reversible-gate transition/return preflight is ready to freeze; no raw apparatus
+or paid net measurement is specified. [Prospective stop test](CORRELATED-CONVERSION-01-PREFLIGHT-PROTOCOL.md).
 [Compact question, complete bill and exact missing cyclic transition](CORRELATED-CONVERSION-01-DECISION-CARD.md).
 Specify raw-built paid cyclic resource/memory/work/return coupling and an
 actual profitable stationary comparator, or reject before worlds. No invented
