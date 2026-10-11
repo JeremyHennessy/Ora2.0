@@ -1,5 +1,8 @@
 # Current development plan and handoff
 
+DIGITAL-ROUTE-02 ACTIVE prospective ordinary-route feasibility: [frozen protocol](DIGITAL-ROUTE-02-PROTOCOL.md). Same ecosystem02 transition law, finite1420 energy/material512, paid34-cell founder assembly, disclosed mobile versus stationary reproductive founders and disabled-copy birth diagnostic. Fresh unscreened24900..24903, reserved24904..24907 untouched;1536 horizon, checkpoint64, independent full-history interpretation and restored byte replay. Separate gates: ordinary remote acquisition plus descendant reproduction; actual tick512 changed-resource exposure. No installed learner, new evolutionary result, repair or stage acceptance. Previous closed histories unchanged. Single next decision: measure these gates before admitting a learning comparison.
+
+
 **Updated 2026-10-11. This is the single current action plan.** Historical roadmaps and unexecuted proposals retain their dates; they do not override this file. The primary user-authorized development workspace is the Work/Codex Ora2.0 conversation. Ordinary bounded research, fixes, tests, PRs and verified merges are authorized; desktop execution and unattended-operation restrictions remain separate.
 
 ## Current session: both AI-only science and engineering reliability
