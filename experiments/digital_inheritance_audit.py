@@ -117,7 +117,7 @@ def audit_world(row):
     return dict(seed=row['seed'],mode=row['mode'],births=births,deaths=deaths,max_population=maximum,mutations=sum(v['write']['mutated'] for v in row['events'] if 'write' in v),descendant_births=sum(v['actor']!=0 for v in row['events'] if 'birth' in v),ticks=row['ticks'],remote_food=sum(e.get('food',-1)>=16 for e in row['events']),food=sum('food' in e for e in row['events']),copy_writes=sum('write' in e for e in row['events']),heat=heat)
 
 def audit_panel(generation,assays):
-    records=[];programs=set()
+    records=[];programs=set();origins=[]
     expected_generation=[(s,m) for s in range(24100,24164) for m in ('mutating','faithful')]
     for index,r in enumerate(generation):
         assert index<128 and (r['seed'],r['mode'])==expected_generation[index]
@@ -126,6 +126,7 @@ def audit_panel(generation,assays):
         records.append(record)
         if r['mode']=='mutating':
             programs.update(tuple(g[0] for g in e['birth']['child']['code']) for e in r['events'] if 'birth' in e)
+            origins.extend(dict(seed=r['seed'],tick=e['tick'],parent=e['actor'],child=e['birth']['child']['id'],program=[g[0] for g in e['birth']['child']['code']],write_events=e['birth']['write_events']) for e in r['events'] if 'birth' in e)
     assert len(records)==128
     eligible=sorted(p for p in programs if 3 in p);candidate=list(eligible[0]) if eligible else None
     groups={m:dict(worlds=64,births=sum(r['births'] for r in records if r['mode']==m),deaths=sum(r['deaths'] for r in records if r['mode']==m),remote_food=sum(r['remote_food'] for r in records if r['mode']==m),descendant_births=sum(r['descendant_births'] for r in records if r['mode']==m),mutations=sum(r['mutations'] for r in records if r['mode']==m)) for m in ('mutating','faithful')}
@@ -146,7 +147,7 @@ def audit_panel(generation,assays):
     ancestors=[r for r in out if r['label']=='ancestor' and r['mode']=='faithful']
     passed=comparator_ready and all(c['remote_food']>=4 and c['descendant_births']>=1 and c['remote_food']>a['remote_food'] for c,a in zip(candidates,ancestors))
     classification='PROVISIONAL_FUNCTIONAL_INHERITANCE' if passed else ('NONFUNCTIONAL_INHERITED_MOVEMENT' if comparator_ready else 'COMPARATOR_NOT_READY')
-    return dict(verified=True,classification=classification,candidate=candidate,groups=groups,programs=[list(p) for p in sorted(programs)],assays=out,functional_inheritance=False,provisional_gate=passed,evolution=False,learning=False,reserved_replication_required=passed)
+    return dict(verified=True,classification=classification,candidate=candidate,candidate_origins=[o for o in origins if o['program']==candidate],groups=groups,programs=[list(p) for p in sorted(programs)],assays=out,functional_inheritance=False,provisional_gate=passed,evolution=False,learning=False,reserved_replication_required=passed)
 
 if __name__=='__main__':
     def read_batches(manifest):
