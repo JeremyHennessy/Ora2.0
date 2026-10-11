@@ -36,6 +36,17 @@ complete contact graph's invariance. Ordering cannot change this law's behavior.
 
 ## Decision and limits
 
+Post-run prerequisite review evaluates all32 presence masks x5 target roles
+([160-row truth table](../data/photofactory01/prerequisite-audit.json)).
+Only four combinations permit fabricator formation, targeting S or L. C,H,F
+must already occupy their unique same-engine positions to enable fabrication,
+so the fabricator cannot create a missing C,H or F. The prospective contract's
+"ANY missing role, including F" reaction permission does not make those targets
+reachable under its other prerequisites. Preserve that frozen specification
+and its results; this is a scope correction, not a retuned law. Their observed
+renewal used paid constitutive direct formation. No fabricator self-renewal or
+whole-system causal construction closure through F was demonstrated.
+
 **Reject before natural worlds.** All arms have positive device payback, but the
 stationary simple system beats the candidate whole-life by28 and in both fresh
 post-loss epochs by10. Disabling F improves payback by6 without reducing work.
