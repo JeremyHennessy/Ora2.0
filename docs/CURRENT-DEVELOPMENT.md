@@ -4,6 +4,24 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+CONTACT-ADMISSION-01 stops the incomplete AUTONOMOUS-CONTACT-01 proposal as
+the primary implementation path. The reviewed fabrication fixture has no motor;
+charge transport does not move apparatus, and the kinetic diffusion rule carries
+no movement debit. This is an admission rejection, not a negative simulation.
+[Decision, exact source branches and next candidate card](CONTACT-ADMISSION-01-DECISION.md).
+COHERENT-CONTACT-01 is now the one primary design question: raw-formed coupled
+mechanical conversion versus actually paid independent and best accessible
+passive/stationary alternatives on the identical finite source. Its named missing
+term is a constituent formation/coupling/load energy law, including a retained
+work reservoir and causal renewal of every role. A restricted pair-only
+conservative construction cannot turn nonnegative incoming relative energy into
+a negative-energy bound pair: the finite association-energy recipient and its
+reverse channel must be explicit. No numerical binding price or rate is inferred.
+Resolve one complete raw-to-work
+and fresh post-loss history or reject; no sweep, census, invented prices or worlds.
+STATIONARY-PAIR-01 remains an unimplemented alternative sketch. No actual work,
+comparator profit or Stage3 advance is claimed. ADAPTATION stays design only.
+
 CONVERTER-CLOSURE-01 resolves the imminent source question: the specific
 correlation-ratchet architecture reviewed in full HTML uses driven advancement
 and switching, without a complete driver construction/renewal bill. Stop it as
@@ -12,7 +30,7 @@ negative simulation or a falsification of correlation-powered conversion.
 [Decision and exact gaps](CONVERTER-CLOSURE-01-DECISION.md). No work or actual
 control profit was measured. Earlier capacity and closed fuel-law evidence stay
 unchanged. No further census or natural panel is justified by this architecture.
-Next primary proposal is AUTONOMOUS-CONTACT-01: model reversible paid contact
+Historical proposal (superseded above) was AUTONOMOUS-CONTACT-01: model reversible paid contact
 progression and return inside the apparatus, against an actual paid stationary
 block converter on identical feed. Its named missing item is a consistent
 contact/return transition law linked to raw-accessible all-role formation and
