@@ -9,8 +9,9 @@ def audit(row):
     energy=12;heat=0;memory=[0]*8;food=list(range(64));index=0;alive=True;hits=0
     assert len(row['events'])<=256
     for tick,event in enumerate(row['events']):
-        assert alive and index<64 and event['tick']==tick
+        assert alive and event['tick']==tick
         op=event['op'];arg=event['arg'];assert op in ('sense','read','write','act')
+        assert index<64 or op in ('read','write')
         energy-=1;heat+=1;out=None;packet=None
         if op=='sense':assert arg is None;out=index%2
         elif op=='read':

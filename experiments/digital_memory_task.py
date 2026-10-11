@@ -17,7 +17,7 @@ class Task:
         if op=='write':assert isinstance(arg,list) and len(arg)==2 and all(type(x) is int for x in arg) and 0<=arg[0]<8 and 0<=arg[1]<16
         if op=='act':assert type(arg) is int and arg in (0,1)
         if op=='sense':assert arg is None
-        if not self.alive or len(self.events)>=256 or self.index>=64:return None
+        if not self.alive or len(self.events)>=256 or (self.index>=64 and op in ('sense','act')):return None
         self.energy-=1;self.heat+=1;self.cost+=1
         out=None;food=None
         if op=='sense':out=self.index%2

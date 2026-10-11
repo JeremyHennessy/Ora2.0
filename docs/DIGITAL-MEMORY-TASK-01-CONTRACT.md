@@ -42,3 +42,12 @@ source/config hashes, native exits/failures and independent counts retained.
 Evidence raw/archive/restore/failure each<=8MiB,total32MiB; disk floor5GiB+32MiB.
 No world service, controller, OpenAI API, legacy/observer change or persistent
 activation. Scripted fixtures count as zero ecosystem worlds.
+
+Before admission: initial source98a5ee8f0e8cf784c0e0bb9e967daab9abfa91e3
+failed its positive fixture because it stopped at the final ACT, omitting the
+declared charged WRITE (255 versus256 operations). Preserve initial nativeexit1
+and source/output/quota at D:/OraLab/runs/digital-memory-task01-20261011.
+Correct terminal rule: after opportunity64, SENSE/ACT are refused; READ/WRITE
+remain legal until the256-operation cap or zero-energy death. The final WRITE
+is charged and independently checked. Same witnesses/gates, separate resumed
+evidence root. No organism samples, results or reserved challenges were opened.

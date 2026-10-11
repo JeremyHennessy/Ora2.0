@@ -19,6 +19,7 @@ class MemoryTaskTests(unittest.TestCase):
             result=audit(witness(orientation,'normal'))
             self.assertEqual(result['hits'],63-orientation)
             self.assertEqual((result['instructions'],result['actions']),(256,64))
+            self.assertEqual(witness(orientation,'normal')['events'][-1]['op'],'write')
             self.assertFalse(result['organism_learning'])
             for stationary in ((0,0),(0,1),(1,0),(1,1)):
                 fixed=audit(witness(orientation,'normal',stationary))
