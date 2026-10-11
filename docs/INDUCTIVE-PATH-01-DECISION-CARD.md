@@ -87,3 +87,15 @@ are required; mere current, heat, shape recovery or a positive energy ceiling
 does not pass. Work, costs and comparator result are null, not0. The next
 decision is joint-path specification/assay or rejection; no intermediate
 terminal-gradient helper or resource census. No Stage3 or later-stage credit.
+
+## Targeted constructor decision, 2026-10-11
+
+[Primary formation/repair assessment and preserved access failures](INDUCTIVE-PATH-01-CONSTRUCTOR-DECISION.md)
+rejects the supplied-electrode route as a complete inductive implementation.
+Contact formation/repair is component evidence within its powered installation;
+it is not freely moving closed-path construction or all-role renewal.
+First remaining joint term is Phi_closed_path, including the finite field/
+source/support/output roles and same-material resistance/inductance state law.
+No source-derived complete law or profitable comparator is available for local
+execution. Specify that joint law and fresh complete-path assay or reject the
+free-path proposal. Do not implement its supplied-terminal approximation.

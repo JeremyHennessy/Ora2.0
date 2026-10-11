@@ -95,6 +95,13 @@ Next decision: specify the joint path law and complete closure or reject it;
 no intermediate helper/ceiling run. Science owns this decision; unrelated
 engineering/research audits stay deferred. No experiment currently active.
 [Preserved admission decision and independent documentary audit](INDUCTIVE-PATH-01-ADMISSION-RECEIPT.md).
+[Targeted constructor assessment](INDUCTIVE-PATH-01-CONSTRUCTOR-DECISION.md)
+finds real component contact formation/repair in a supplied-electrode powered
+installation, not a complete freely moving inductive converter. That concrete
+constructor route is rejected. First remaining joint term is Phi_closed_path:
+new loop identity, state-dependent resistance/inductance and finite field,
+source, support and output formation/renewal. No complete law or profitable
+comparison; work and costs remain null/UNKNOWN. No supplied-terminal run.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
