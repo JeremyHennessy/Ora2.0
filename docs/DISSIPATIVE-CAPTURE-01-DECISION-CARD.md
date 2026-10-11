@@ -51,3 +51,14 @@ and actual profitable bare comparator are verified. Dissipative capture work,
 all-role formation/renewal and advantage are UNMEASURED. Next action is specify
 and implement the complete finite capture/heat law or reject with its exact
 missing transition. This card changes no closed protocol, sample or gate.
+
+## Measured decision, 2026-10-11
+
+CLOSED AT ADMISSION:24 complete authored records, raw binding achieved, but
+whole net-1.111872883/fresh+0.102903610; no comparator profitable on both
+metrics, no capture or shuffle advantage, meaningful repeated losses absent.
+Renewal UNDEREXPOSED. [Exact costs, all cases and audits](DISSIPATIVE-CAPTURE-01-RECEIPT.md).
+The missing heat law above was prospectively resolved and measured with finite
+retained stores, not a bath/reset. Historical proposal wording above is dated.
+No retune or natural-world admission. Next genuinely different converter
+[decision card](CORRELATED-CONVERSION-01-DECISION-CARD.md).

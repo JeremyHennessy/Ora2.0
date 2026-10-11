@@ -27,14 +27,23 @@ bound births or functioning apparatus loss; repeated renewal UNDEREXPOSED,
 not adequately falsified. Independent metadata/RK4, four forgery refusals,
 eight focused tests and restored byte replay pass. No worlds or Stage3 advance.
 Do not tune closed conservative samples, damage timing or incoming feed.
-Next sole primary candidate: DISSIPATIVE-CAPTURE-01, NOT ADMITTED. Exact
-finite capture-to-heat/capacity law and independent interpreter are ready to freeze.
-[Prospective24-record protocol](DISSIPATIVE-CAPTURE-01-PROTOCOL.md) and
-[run receipt](DISSIPATIVE-CAPTURE-01-RECEIPT.md). No measurements accepted yet.
-[Compact decision card and exact missing heat-channel term](DISSIPATIVE-CAPTURE-01-DECISION-CARD.md).
-Specify a finite common encounter-to-heat/capacity/disposal law and complete
-raw formation/renewal history against the paid bare route, or reject before
-execution. No unpriced bath, clamp, constructor, founder or controller.
+DISSIPATIVE-CAPTURE-01 is CLOSED AT ADMISSION.
+[Frozen24-record complete law](DISSIPATIVE-CAPTURE-01-PROTOCOL.md) and
+[all measured cases, retained heat, independent audit and costs](DISSIPATIVE-CAPTURE-01-RECEIPT.md).
+Finite capture DID form raw bound structures, including a0/a1/load; no free
+heat sink or identity reset. Candidate whole net-1.111872883/fresh+0.102903610;
+none of eight actual alternatives is profitable on BOTH metrics. Bare whole
++0.320000539/fresh0: required simpler comparison invalid, no superiority claim.
+Neither fixed loss destroyed a functioning apparatus; renewal UNDEREXPOSED
+despite virgin feed after both losses. Eight focused tests, exact metadata,
+independent heat/fourth-order flow, four forgery refusals and restored replay
+pass. Zero worlds, no self-maintenance or Stage3 advance. Do not tune this law.
+Next sole proposal CORRELATED-CONVERSION-01, NOT ADMITTED/unimplemented.
+[Compact question, complete bill and exact missing cyclic transition](CORRELATED-CONVERSION-01-DECISION-CARD.md).
+Specify raw-built paid cyclic resource/memory/work/return coupling and an
+actual profitable stationary comparator, or reject before worlds. No invented
+price, supplied memory/controller/constructor, changed-feed shuffle or free
+erasure. Science owns the next substantive block; no general runtime audit.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
