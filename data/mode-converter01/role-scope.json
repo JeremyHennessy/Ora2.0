@@ -1,0 +1,74 @@
+{
+  "new_worlds": 0,
+  "registered_endpoint_changed": false,
+  "rows": [
+    {
+      "arm": "candidate",
+      "new_generic_carriers": {
+        "object:6": {
+          "bond": 2,
+          "materials": [
+            "a0",
+            "s0"
+          ],
+          "time": "69.067559194554185805749066080414645384794312176431693391059860551935973070729617"
+        }
+      },
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    },
+    {
+      "arm": "direct",
+      "new_generic_carriers": {},
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    },
+    {
+      "arm": "mode_disabled",
+      "new_generic_carriers": {},
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    },
+    {
+      "arm": "formation_disabled",
+      "new_generic_carriers": {},
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    },
+    {
+      "arm": "shuffle_identity",
+      "new_generic_carriers": {
+        "object:6": {
+          "bond": 2,
+          "materials": [
+            "a0",
+            "s0"
+          ],
+          "time": "69.067559194554185805749066080414645384794312176431693391059860551935973070729617"
+        }
+      },
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    },
+    {
+      "arm": "shuffle_exchange",
+      "new_generic_carriers": {},
+      "post_newcarrier_load_contacts": [],
+      "post_newcarrier_load_work": "0",
+      "registered_rebuilt_work": "0",
+      "registered_same_material_rebuilt": []
+    }
+  ],
+  "scope": "Generic carrier formation is distinct from same-material repair and useful load delivery",
+  "verified": true
+}

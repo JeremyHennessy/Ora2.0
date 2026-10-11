@@ -25,6 +25,15 @@ without changing costs, feed or gates. [All results and failures](MODE-CONVERTER
 No natural panel; Stage3 unchanged. Next choose a genuinely different complete
 capability, not another impact-storage extension. ADAPTATION remains design only.
 
+Role-attribution clarification: a0+s0 DID form a new generic mode carrier after
+loss, but it had no subsequent load contact and delivered0 useful work. The
+frozen a0/a1 repair endpoint is narrower than functional-role replacement; keep
+it unchanged. Do not claim no carrier formed or adequately exposed replacement
+conversion. All six immutable histories were independently re-read; no new world
+or success rescore. [Attribution and limits](MODE-CONVERTER-01-RECEIPT.md#functional-role-attribution-clarification).
+For the next distinct mechanism, count all paid, function-verified role-equivalent
+replacement compositions, rather than requiring the original material IDs.
+
 COLLISION-BRIDGE-01 completes a **controlled digital-law prototype and rejection**.
 [Prospective protocol and decision card](COLLISION-BRIDGE-01-PROTOCOL.md).
 Question: can paid raw association create a collisional transfer body whose
