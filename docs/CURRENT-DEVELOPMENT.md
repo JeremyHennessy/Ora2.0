@@ -38,12 +38,23 @@ Neither fixed loss destroyed a functioning apparatus; renewal UNDEREXPOSED
 despite virgin feed after both losses. Eight focused tests, exact metadata,
 independent heat/fourth-order flow, four forgery refusals and restored replay
 pass. Zero worlds, no self-maintenance or Stage3 advance. Do not tune this law.
-Next sole proposal CORRELATED-CONVERSION-01, NOT ADMITTED/unimplemented.
-[Compact question, complete bill and exact missing cyclic transition](CORRELATED-CONVERSION-01-DECISION-CARD.md).
-Specify raw-built paid cyclic resource/memory/work/return coupling and an
-actual profitable stationary comparator, or reject before worlds. No invented
-price, supplied memory/controller/constructor, changed-feed shuffle or free
-erasure. Science owns the next substantive block; no general runtime audit.
+CORRELATED-CONVERSION-01 concrete simultaneous-pair gate proposal is REJECTED
+BEFORE WORLDS. [Frozen return/transition preflight](CORRELATED-CONVERSION-01-PREFLIGHT-PROTOCOL.md)
+and [all256 supplied-gate records/64 tapes, independent decision and costs](CORRELATED-CONVERSION-01-RECEIPT.md).
+Reversible source/memory/load return works, but candidate C,G,C matches actual
+stationary F gross output on EVERY tape, nine gate operations vs three.
+Fabrication/actuation/renewal costs UNKNOWN, not0; whole-life/fresh net are null,
+no paid-profit comparator or complete apparatus measured. This is a specific
+necessity/implementation rejection, not an adequate self-maintenance negative.
+Six focused tests, exact independent finite-state interpretation, four forgery
+refusals and restored byte replay pass;0 worlds and no Stage3/adaptation advance.
+Next sole proposal ANGULAR-TRANSFER-01, NOT ADMITTED/unimplemented.
+[Compact complete bill, distinct orientational capability and exact missing paid history](ANGULAR-TRANSFER-01-DECISION-CARD.md).
+Derive common finite force/torque and implement one raw-built directional
+coupler history with an actual profitable same-feed bare/single-body route,
+or reject before worlds. No paid torque driver, installed rotor, free clamp,
+invented price, spin/repair capital omission or tuning of closed scalar laws.
+Science owns the next substantive block; general runtime audits stay deferred.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
