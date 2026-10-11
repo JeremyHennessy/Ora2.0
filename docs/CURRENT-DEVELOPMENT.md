@@ -90,7 +90,7 @@ all-role renewal. [Component evidence, access failures and documentary audit](IN
 remain preserved. No dynamics, work or profitable comparator was measured;
 no physical impossibility or adequately exposed renewal negative is claimed.
 Do not run a supplied-terminal substitute or retune this closed proposal.
-The one primary admission question is OPTICAL-BINDING-01, NOT ADMITTED.
+OPTICAL-BINDING-01 is PARKED, NOT ADMITTED.
 [Compact question, exact candidate/comparator, full bill, joint assay and gates](OPTICAL-BINDING-01-DECISION-CARD.md).
 Distinct capability: geometry-dependent collective scattering and radiative
 momentum transfer, rather than current paths or photon-to-device recipes.
@@ -100,10 +100,34 @@ load together, plus complete fresh renewal of every essential role. A concrete
 joint finite-pulse scattering/recoil/load assay is specified; no force helper
 or constant-intensity trap is admitted. Primary support is abstract-only E1;
 full-paper access failures are explicit. All costs and work remain UNKNOWN/null.
-Specify/measure the complete law and actual profitable same-feed independent
-scatterers, then implement; otherwise reject before a prototype. Science owns
-this decision; engineering and broad literature/observer work remain deferred.
-No experiment is active and evidence stages do not advance.
+No more force-only helpers or abstract-only cards are justified without the
+complete joint law. The inspected source and access failures remain preserved.
+
+The one primary candidate is PACKET-BUFFER-01, an explicitly authored DIGITAL
+substrate. [Prospective transition ledger and staged decision card](PACKET-BUFFER-01-PROTOCOL.md).
+Question: does paid storage preserve burst fuel better than the best attainable
+stationary route? A second paid converter with an output slot is mandatory in
+that comparator; input shuffling must not change incoming resources. Integer
+material/energy conservation, finite source/capital, formation, use, release,
+resource access, waste and supplied command costs are specified. Physical
+calibration remains a separate UNKNOWN, never a digital-result claim.
+First independently interpret all transitions and positive/impossible witnesses
+through the same endpoint; actually measure ordinary retained work before any
+repair panel. Next specify common timing/expiration and paid assistance withdrawal,
+then establish raw function and meaningful functional damage/fresh exposure.
+Only then freeze complete repeated-loss histories, same-resource causal controls
+and reserved replication. Absent function/exposure means STOP, not failed renewal.
+Count role-equivalent replacement compositions, not only original material IDs.
+The controlled ordinary route is now independently replayed:42 retained work,
+23 paid formation/access/commands, whole margin+19. Exhausted C loses its fourth
+product; all losses remain counted. All16 frozen source sizes are preserved,
+including negatives1..9 and positives10..16. [Exact receipt and preserved recorder failures](PACKET-BUFFER-01-RECEIPT.md).
+Four focused tests and restored byte replay pass; no natural worlds. Candidate
+whole/fresh, comparator fresh and damage exposure remain UNKNOWN/null. Next is
+the common timing/expiration and paid-assistance withdrawal law, including the
+two-converter output-buffer comparator; no expensive repair panel before function.
+Science owns this staged block; unrelated engineering/research remains deferred.
+No controller or persistent world is activated and evidence stages do not advance.
 The small parallel ADAPTATION design now has a pure, past-only reference-permutation
 planner and independent interpreter. It preserves world chronology, distinguishes
 whole-record order from outcome association, and refuses paid-cost/activation
