@@ -22,7 +22,7 @@ def endpoint(bank):
     try:
         assert len(bank)==256 and [r['table'] for r in bank]==list(range(256))
         for r in bank:
-            table=r['table'];assert len(r['probes'])==8
+            table=r['table'];assert type(table) is int and len(r['probes'])==8
             assert [p['inputs'] for p in r['probes']]==[[o,f,p] for o in (0,1) for f in (0,1) for p in (0,1)]
             for p in r['probes']:
                 o,f,last=p['inputs'];assert p['port']==(table>>(4*o+2*f+last))&1
@@ -30,6 +30,14 @@ def endpoint(bank):
     except (AssertionError,KeyError,TypeError):return False
 
 def audit(record):
+    def typed(value,key=None):
+        if isinstance(value,dict):
+            for k,v in value.items():assert type(k) is str;typed(v,k)
+        elif isinstance(value,list):
+            for v in value:typed(v)
+        elif key=='software_only':assert type(value) is bool
+        else:assert type(value) in (int,str)
+    typed(record)
     assert record['contract']=='DIGITAL-MEMORYSOURCE-14-v1' and record['software_only'] is True and record['world_histories']==0
     assert endpoint(record['bank']);costs=[];hashes=set();dependence=[0,0,0]
     for row in record['bank']:
