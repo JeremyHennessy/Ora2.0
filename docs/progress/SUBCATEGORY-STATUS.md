@@ -1,11 +1,17 @@
 # Ora 2.0 complete subcategory status
 
+October11 executed digital baseline: [DIGITAL-ECOSYSTEM-01 receipt](../DIGITAL-ECOSYSTEM-01-RECEIPT.md). Twelve bounded audited worlds: mutation11 births/3 descendant births; faithful12/4; disabled copying0. All extinct,48 remote food units remain per world. Executed ancestry, finite ledgers and checkpoint/archive replay pass. This is a supplied-ancestor capability check, not evolution, learning, repair or persistent-world acceptance; historical categories/statuses remain unchanged. Next dependency: prospectively freeze remote-resource functional-inheritance comparison.
+
 ## October11 prospective digital criteria; historical statuses retained
 
 The37 approved names/statuses below remain dated historical assessments. A new
 strategy supplies no capability evidence. For future DIGITAL-ECOSYSTEM-01 claims,
 the following criteria supersede physical-construction requirements; all new-world
-outcomes are NOT ASSESSED until its frozen run and audit. Full semantics and
+outcomes now have a first bounded receipt: execution/resource accounting and
+checkpoint replay verified within this law; supplied-ancestor reproduction and
+inherited variation CONTROLLED ONLY; functional evolution, repair, learning and
+persistent operation NOT DEMONSTRATED. These scoped observations do not overwrite
+the historical tables. Full semantics and
 controls: [world contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md).
 
 | Category | Prospective digital acceptance |

@@ -1,0 +1,200 @@
+{
+  "decision": {
+    "ancestor_supplied": true,
+    "evolution_demonstrated": false,
+    "learning_demonstrated": false,
+    "persistent_world": false,
+    "records": [
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "mutating",
+        "mutations": 3,
+        "seed": 24000,
+        "ticks": 150
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "seed": 24000,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "seed": 24000,
+        "ticks": 126
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "mutating",
+        "mutations": 1,
+        "seed": 24001,
+        "ticks": 150
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "seed": 24001,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "seed": 24001,
+        "ticks": 126
+      },
+      {
+        "births": 2,
+        "deaths": 3,
+        "descendant_births": 0,
+        "max_population": 2,
+        "mode": "mutating",
+        "mutations": 4,
+        "seed": 24002,
+        "ticks": 113
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "seed": 24002,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "seed": 24002,
+        "ticks": 126
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "mutating",
+        "mutations": 2,
+        "seed": 24003,
+        "ticks": 150
+      },
+      {
+        "births": 3,
+        "deaths": 4,
+        "descendant_births": 1,
+        "max_population": 4,
+        "mode": "faithful",
+        "mutations": 0,
+        "seed": 24003,
+        "ticks": 150
+      },
+      {
+        "births": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "max_population": 1,
+        "mode": "copy_disabled",
+        "mutations": 0,
+        "seed": 24003,
+        "ticks": 126
+      }
+    ],
+    "repair_demonstrated": false,
+    "verified": true,
+    "worlds": 12
+  },
+  "groups": {
+    "mutating": {
+      "worlds": 4,
+      "births": 11,
+      "deaths": 15,
+      "descendant_births": 3,
+      "mutations": 10,
+      "all_extinct": true,
+      "remaining_food": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "maximum_population": [
+        4,
+        4,
+        2,
+        4
+      ]
+    },
+    "faithful": {
+      "worlds": 4,
+      "births": 12,
+      "deaths": 16,
+      "descendant_births": 4,
+      "mutations": 0,
+      "all_extinct": true,
+      "remaining_food": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "maximum_population": [
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    "copy_disabled": {
+      "worlds": 4,
+      "births": 0,
+      "deaths": 4,
+      "descendant_births": 0,
+      "mutations": 0,
+      "all_extinct": true,
+      "remaining_food": [
+        48,
+        48,
+        48,
+        48
+      ],
+      "maximum_population": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "source": "1cd4103082cd322a70b25436ab88d823c0fd7bf7",
+  "raw_sha256": "5d524d8c052976c733021763330d50c01de407b2df6431aedfd22e360d53b590",
+  "archive_sha256": "9758f250cd797c7f63c00f847223794cee4739197b5dc8f153ae44b11cc1f22f",
+  "raw_root": "D:\\OraLab\\runs\\digital-ecosystem01-20261011",
+  "audit_sha256": "ac9b8ef5056e0fccad330d8affde3c4dd83da0eba90a3a8038c9d4dc4ea2cb66"
+}

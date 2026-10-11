@@ -1,5 +1,7 @@
 # Ora 2.0 evidence index
 
+October11 executed digital baseline: [DIGITAL-ECOSYSTEM-01 receipt](../DIGITAL-ECOSYSTEM-01-RECEIPT.md). Twelve bounded audited worlds: mutation11 births/3 descendant births; faithful12/4; disabled copying0. All extinct,48 remote food units remain per world. Executed ancestry, finite ledgers and checkpoint/archive replay pass. This is a supplied-ancestor capability check, not evolution, learning, repair or persistent-world acceptance; historical categories/statuses remain unchanged. Next dependency: prospectively freeze remote-resource functional-inheritance comparison.
+
 ## October11 prospective digital-world scope
 
 [DIGITAL-ECOSYSTEM-01 contract](../DIGITAL-ECOSYSTEM-01-CONTRACT.md) supplies exact

@@ -16,15 +16,15 @@ digital evolution/learning. Keep all physical protocols and results unchanged.
 The seven approved stages/subcategories remain, with prospective digital criteria
 and overlapping Stages3–6; no capability becomes verified by changing strategy.
 
-One next experiment: freeze the integer VM, local writable program/state/memory,
+Completed first experiment: froze the integer VM, local writable program/state/memory,
 finite food/material/execution budgets, common environment and fair scheduler,
 executed offspring writes, variation, communication, deaths and checkpoint rules;
-then independently audit12 bounded population histories at seeds24000..24003
+then independently audited12 bounded population histories at seeds24000..24003
 under mutation,faithful inheritance and disabled-copy conditions. Reserved seeds
 24004..24011 remain untouched. AL01/AL02/AL03 are reviewed precedents; their laws
 are not modified. No hidden teacher, target genome, novelty reward or rescue.
 
-Current evidence for this NEW world: no run yet. The supplied ancestor, mutation,
+Current evidence for this NEW world: [12 bounded audited histories](DIGITAL-ECOSYSTEM-01-RECEIPT.md). Mutation-enabled arms produced11 births/3 descendant births; faithful copies12/4; disabled copying0. All worlds became extinct after consuming16 local food units, leaving48 remote. Four focused checks, independent event interpretation, tick64 checkpoint continuation and restored exact-byte replay passed. No advantage or Stage5/6/7 acceptance is inferred. The supplied ancestor, mutation,
 copy and memory primitives are enabling infrastructure, not proof of independent
 strategy, evolution or learning. First deliverables: frozen contract; runnable
 bounded replayable birth/death/resource histories; then claim-specific functional
@@ -32,8 +32,9 @@ inheritance/evolution and unseen-challenge learning comparisons with appropriate
 fixed,memory-disabled,own-history-disrupted and inheritance-disabled controls.
 Meaningful digital damage requires actual loss/restoration of useful function
 caused by the organism; host checkpoint restart is only engineering recovery.
-One next dependency: verify VM evaluator/ancestry and checkpoint semantics before
-the frozen12-world run. No persistent activation, observer/legacy/controller/API
+One next dependency: freeze a same-law functional-inheritance assay of access to
+initially remote resources with nonvariation/inheritance-disabled controls, before
+any new seeds. The current12-world law/results are closed and must not be tuned. No persistent activation, observer/legacy/controller/API
 change. Physical/off-host/full-host durability and production isolation remain
 explicit; not all are gates for a safely bounded data-only VM experiment.
 
