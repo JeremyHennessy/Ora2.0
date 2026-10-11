@@ -109,6 +109,68 @@ the candidate must also beat fixed reaction and disabled memory under complete
 costs, with adequate observed-memory exposure. Prediction, useful action,
 within-life adaptation, selection and inheritance remain distinct endpoints.
 
+## Executable reference-plan semantics (design only)
+
+`experiments/adaptation_shuffle_plan.py` produces a bounded permutation **plan**,
+not a controller, actor-input adapter or memory edit. The separate
+`adaptation_shuffle_audit.py` interpreter checks plans without importing the
+producer. The authored test source is the four explanatory records above;
+there are no actors, new world outcomes, reserved challenges or learning results.
+
+Evaluator records have exact fields `id`, `event_step`, `observed_step`, `cue`,
+`action`, `outcome`. `observed_step=None` means unobserved. Only records actually
+observed strictly before the cutoff are eligible; sort by observation time and
+immutable identity, then retain the newest bounded window. Equal-cutoff
+observations are excluded. Source chronology and identities stay unchanged.
+Reject duplicate identities, nonchronological events, observations preceding
+events, extra phase/teacher fields and boolean integer forgeries.
+
+Freeze the seed independently **before viewing outcomes** in a future protocol.
+The planner cannot prove that a human supplied it prospectively. A SHA256 counter
+stream, domain `ora-adaptation-reference-plan-v1` followed by a zero byte, uses
+eight-byte big-endian seed/counter values. The first eight digest bytes supply
+unsigned draws. Reject draws at or above the largest multiple of the current
+range at most 2**64, then use descending Fisher-Yates. Identity permutations and
+fixed points remain included. Never search for a better disruption. Sixteen
+fixed software-test seeds test determinism; they are not scientific samples.
+
+For `order`, donor references move entire retained records. For `association`,
+each slot keeps its own cue/action references and receives only the donor's
+observed outcome reference. The interpreter reports whether the realized
+cue/action/outcome multiset actually changed and how many fixed points remain.
+Empty and singleton windows cannot establish disruption. Changing unobserved or
+future payloads must not change eligible references or donor order. The full-world
+digest changes if those payloads change: it is evaluator provenance, **not an
+actor input**.
+
+Plans contain evaluator identities, source digest and seed. A future physical
+memory implementation must keep these outside the actor-facing interface and
+expose only realizable retained sensory state. This helper does not implement
+that boundary or authorize applying a plan. Planned reference read/write counts
+are bookkeeping; they omit substrate-specific operations and are **not** physical
+prices or proof of equal cost. Every plan and audit keeps
+`physical_cost=UNKNOWN` and `design_only=True`; forged paid-cost or activation
+claims are refused. Raw memory construction, state read/write/reset, intervention
+cost, useful action and unseen-challenge performance remain unmeasured.
+
+The reviewed helper source `e50341f89f4812230c54792fc189448ac7abcd72`
+passed nine focused tests. All 32 authored plans (16 fixed software seeds, two
+intervention kinds) passed separate interpretation and restored byte replay.
+Whole-record order preserved associations in all 16 examples; outcome-only
+permutation changed them in 13 and preserved them in 3. Preserve all outcomes;
+this is an illustration of partial disruption, not a scientific effect estimate.
+No worlds, actors, holdouts, memory edits, useful work or learning were measured.
+
+Immutable local evidence: `D:/OraLab/runs/adaptation-reference-plan01-20261011`.
+Seventeen raw seals, exact source, native process exits, tests, plans, interpreter,
+archive and restored replay are preserved. Every child exited zero without
+timeout or output truncation. Limits were 128 MiB allocation, 15 CPU/30 wall
+seconds, four process slots, a 5 GiB disk floor, exclusive operator lock and
+13 MiB combined prewrite evidence quota. Independent quota audit measured
+945,428 logical bytes. Archive SHA256:
+`32ceb6b4f7d1150f8eaf3a41145cbc91121f6e3b69285660588865f2efcaf6ee`.
+Same-drive restore is not independent-host or physical-durability evidence.
+
 ## Freeze gate and stop decisions
 
 Before executing this design, specify the exact physical law, resource stocks,
