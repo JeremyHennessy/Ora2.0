@@ -3,6 +3,10 @@ from decimal import Decimal as D
 from experiments.mode_converter import fixtures,World
 from experiments.mode_converter_audit import audit,unique
 class ModeConverterTests(unittest.TestCase):
+    def test_separating_colocated_particles_do_not_recollide(self):
+        w=World('candidate');w.parts=w.parts[:2]
+        w.parts[0].update(x=D('1e-79'),v=D(1));w.parts[1].update(x=D(0),v=D(-1))
+        self.assertEqual(w.contact(),(None,None))
     def test_complete_independent_interpretation(self):self.assertTrue(audit(fixtures())['verified'])
     def test_mode_is_paid_and_can_return_energy(self):
         events=World('candidate').run()['events']

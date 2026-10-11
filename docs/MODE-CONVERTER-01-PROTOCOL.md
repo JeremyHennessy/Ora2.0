@@ -97,7 +97,11 @@ first-contact times and fresh unused feed at damage. Neither later raw impacts
 nor a source-only bound pair establish apparatus renewal.
 
 Finish t192, cap512 contacts/history. Earliest adjacent approaching contact,
-left-to-right ties then material order a0,a1,s0,s1,s2,load. Damage precedes an
+left-to-right simultaneous incoming contacts. Coordinates within1e-60 form a
+contact group, ordered by increasing outgoing velocity; velocities within1e-60
+tie by material order a0,a1,s0,s1,s2,load. This prevents a separating pair at one
+contact from being reclassified as an approaching pair by decimal roundoff.
+Damage precedes an
 exact t64 contact; horizon precedes an exact t192 contact. Keep all reflected
 particles. No hidden drive timing, output reset or discarded waste.
 
@@ -138,3 +142,18 @@ total13MiB. No lab writer overlap, observer/AgentTest changes or activation.
 Unscreened worlds require a separate prospective damage/exposure/seed/holdout
 protocol and a complete positive witness with viable controls. Independent
 replication precedes accepting self-maintenance; hardware claims remain gated.
+
+## Prospective v2 contact clarification after preserved implementation failure
+
+Initial freeze2c01b83 and diagnosticc805d85 stopped during independent checks,
+before any accepted endpoint or natural-world run. Contact6 had identical
+physical state to1e-55 but different list order from1e-79 coordinate roundoff.
+Ordering coincident points by material identity can falsely turn separating
+particles into an approaching pair. The original and diagnostic failed checks
+remain immutable under D:/OraLab/runs/mode-converter01[-diagnostic]-20261011.
+The contact-group/outgoing-velocity rule above is prospectively refrozen before
+the corrected run. Formation, mode transfers, prices, feed, geometry, damage,
+horizon and scientific acceptance criteria are unchanged. This is an explicit
+contact-law clarification, not a claim that the original simulation passed or
+that merely changing an interpreter validates its output. Both implementations
+and a separating-contact regression must agree under the clarified contract.

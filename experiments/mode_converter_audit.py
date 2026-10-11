@@ -23,7 +23,15 @@ def equal(a,b):
     return a==b
 def m(p):return D(sum(4 if n=='load' else 1 for n in p[1]))
 def k(p):return m(p)*p[3]**2/2
-def order(ps):return sorted(ps,key=lambda p:(p[2],min(NAMES.index(n) for n in p[1])))
+def order(ps):
+    remaining=sorted(ps,key=lambda p:p[2]);result=[]
+    while remaining:
+        count=next((i for i,p in enumerate(remaining) if p[2]-remaining[0][2]>EPS),len(remaining))
+        at_contact=sorted(remaining[:count],key=lambda p:p[3]);remaining=remaining[count:]
+        while at_contact:
+            end=next((i for i,p in enumerate(at_contact) if p[3]-at_contact[0][3]>EPS),len(at_contact))
+            result+=sorted(at_contact[:end],key=lambda p:min(NAMES.index(n) for n in p[1]));at_contact=at_contact[end:]
+    return result
 def view(t,h,c,r,serial,bond,first,ps):
     return dict(time=str(t),heat=str(h),formation=str(c),compression=str(r),next_object=serial,next_bond=bond,first={n:str(first[n]) for n in sorted(first)},parts=[dict(id=p[0],members=list(p[1]),x=str(p[2]),v=str(p[3]),bond=p[4],mode=p[5]) for p in order(ps)])
 def audit_record(record,arm):

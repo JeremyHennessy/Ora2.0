@@ -18,7 +18,15 @@ class World:
         if arm=='direct':entries[:2]=[('a0',-1000,1),('a1',-1100,-1)]
         if arm=='shuffle_exchange':entries[:2]=[('a0',-1,-1),('a1',1,1)]
         self.parts=[dict(id='raw:'+n,members=[n],x=D(x),v=D(v),bond=None,mode=0) for n,x,v in entries]
-    def order(self):self.parts.sort(key=lambda p:(p['x'],min(RANK[n] for n in p['members'])))
+    def order(self):
+        pending=sorted(self.parts,key=lambda p:p['x']);ordered=[]
+        while pending:
+            x=pending[0]['x'];group=[p for p in pending if p['x']-x<=EPS];pending=pending[len(group):]
+            velocities=sorted(group,key=lambda p:p['v'])
+            while velocities:
+                v=velocities[0]['v'];tie=[p for p in velocities if p['v']-v<=EPS];velocities=velocities[len(tie):]
+                ordered.extend(sorted(tie,key=lambda p:min(RANK[n] for n in p['members'])))
+        self.parts=ordered
     def load(self):return kinetic(next(p for p in self.parts if p['members']==['load']))
     def snapshot(self):
         self.order()
