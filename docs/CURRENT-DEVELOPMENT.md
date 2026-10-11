@@ -4,6 +4,22 @@
 
 ## Current session: both AI-only science and engineering reliability
 
+PHOTOFACTORY-01 advances beyond prepared bounds to complete source-to-work
+digital histories with paid raw formation, all-role renewal, finite material,
+energy ancestry, upkeep, release and two complete losses. Frozen2cdd783:
+candidate15 new devices,410 useful work,324 device payback; stationary direct
+formation yields352 and beats both fresh post-loss epochs114vs104. Disabling
+the retained fabricator improves payback to330. All120 full position shuffles
+are exactly equivalent. Independent event interpretation, corruption checks,
+exact replay and off-drive restored audit pass. [Receipt](PHOTOFACTORY-01-RECEIPT.md).
+Reject this law before worlds: carrier fabrication costs four source photons
+versus three for accessible direct formation. Controlled authored scheduling
+remains external assistance with UNKNOWN cost; no autonomous trajectory or
+whole-system admission is claimed. Next mechanism needs a necessary paid
+capability whose benefit cannot be matched by simpler direct formation, then
+complete all-role and profitable-control gates. Stage3 and activation statuses
+remain unchanged; do not retune this candidate or replace historical results.
+
 REPAIR-POOL-01 checks a distinct energy-sharing direction against optimal
 pre-loss local repair reserves, retaining all unused control work. Frozen8064f45:
 all1728 exact cases match74244 independently enumerated allocations and replay;
