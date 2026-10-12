@@ -1,0 +1,164 @@
+{
+  "proof": {
+    "verified": true,
+    "source": "11455c2d0600b76d87b7397cefc1d86780d35c12",
+    "prepared_tests": 23,
+    "calls": 2,
+    "world_calls": 0,
+    "storage": {
+      "files": 46,
+      "logical_bytes": 11900760,
+      "reserved_bytes": 11900760,
+      "reserved_by_phase": {
+        "raw": 3472624,
+        "archive": 4955379,
+        "restore": 3470419,
+        "failure": 2338
+      },
+      "sha256": {
+        "archive/evidence.zip": "33830643ea0363df6a830239a954dd114d23a3725b3da9f663180a8c83eba739",
+        "archive/software.zip": "aefab32ea2ab4a4e83379c738545585417855df956e31bc3eea874b2bb7ece0c",
+        "failure/budget.json": "4540cf78c60870ec49993821717922abf8703eb80421a1522037432825bca40e",
+        "raw/controller.py": "3614a6bdbb8b860675278d2b6a0d2d3f57970e61f28fc466f4932523df48a024",
+        "raw/raw-native.json": "b8d6b6a442e5bb37fc26577e150fb3a1354e6b127020991d5c4c0271a00302de",
+        "raw/raw-stdout.txt": "baf22bc5a0cfdf8759c57c3068dbbae7db1bf04150429d02e902b2f96cf4f034",
+        "raw/registration.json": "f6a10de19b32191c619492ce64d83d41341b42e51ef95a7f1a4e0158e7f07222",
+        "raw/restore-native.json": "255178f4d81dd659228822e83af8c58689079f5285a3e71e09768fbc334c6fb3",
+        "raw/restore-stdout.txt": "166e6f721f4a6d98f110b5e66cec312ea5a914174f364d74b360ecfa0adfcd0d",
+        "raw/result.json": "f6e391188a4a85717c4dca458906847cc119667947e42975bb7f2e41d82bc531",
+        "raw/seals.json": "bdf0eb04354117785df01489edd9f054cc8d399d4ee930ff154de71c66dbeb91",
+        "restore/controller.py": "3614a6bdbb8b860675278d2b6a0d2d3f57970e61f28fc466f4932523df48a024",
+        "restore/raw-native.json": "b8d6b6a442e5bb37fc26577e150fb3a1354e6b127020991d5c4c0271a00302de",
+        "restore/raw-stdout.txt": "baf22bc5a0cfdf8759c57c3068dbbae7db1bf04150429d02e902b2f96cf4f034",
+        "restore/registration.json": "f6a10de19b32191c619492ce64d83d41341b42e51ef95a7f1a4e0158e7f07222",
+        "restore/restore-native.json": "255178f4d81dd659228822e83af8c58689079f5285a3e71e09768fbc334c6fb3",
+        "restore/restore-stdout.txt": "166e6f721f4a6d98f110b5e66cec312ea5a914174f364d74b360ecfa0adfcd0d",
+        "restore/result.json": "f6e391188a4a85717c4dca458906847cc119667947e42975bb7f2e41d82bc531",
+        "raw/source/docs/DIGITAL-TRANSFER-57-PROTOCOL.md": "a413aa74a65dd0803e0499c40e8f55c9c44876cbe8bd593d80a7db8dc5163845",
+        "raw/source/docs/DIGITAL-TRANSFER-57-SOFTWARE-PROTOCOL.md": "921a04fce0ee829d6bcb66c19bd0a538ff3b07196c9cff536f72e5f2f03480fc",
+        "raw/source/docs/DIGITAL-TRANSFER-57-SOURCE.json": "eced073890df5c6bb2040880efaba18a9a3f398852754f9f134126faf64ec56c",
+        "raw/source/experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+        "raw/source/experiments/digital_informative_exposure23_interpret.py": "49ad03424d24c8a6a8523156545ebe77207e3ff062cb416bcaea6d3a0df6506d",
+        "raw/source/experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+        "raw/source/experiments/digital_transfer57.py": "400d14a6e7bdba7b5ea2a92b49f3574cf982a272317b1470fad74dc8437c33b6",
+        "raw/source/experiments/digital_transfer57_source.py": "767abbd2ccb73f08b295f6d9da7e48f7510e0b1137779a9dcf599091ddc858a8",
+        "raw/source/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+        "raw/source/experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e",
+        "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+        "raw/source/experiments/__init__.py": "aba73293015e4872bcb7cf6eeb9ae34d49cc7012fa4773ce168a65c18bf628d5",
+        "raw/source/tests/test_digital_transfer57.py": "d969fca035991388ab7d8d93031100625ec331a036f04b04e3d9187509b3c56b",
+        "raw/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "restore/source/docs/DIGITAL-TRANSFER-57-PROTOCOL.md": "a413aa74a65dd0803e0499c40e8f55c9c44876cbe8bd593d80a7db8dc5163845",
+        "restore/source/docs/DIGITAL-TRANSFER-57-SOFTWARE-PROTOCOL.md": "921a04fce0ee829d6bcb66c19bd0a538ff3b07196c9cff536f72e5f2f03480fc",
+        "restore/source/docs/DIGITAL-TRANSFER-57-SOURCE.json": "eced073890df5c6bb2040880efaba18a9a3f398852754f9f134126faf64ec56c",
+        "restore/source/experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+        "restore/source/experiments/digital_informative_exposure23_interpret.py": "49ad03424d24c8a6a8523156545ebe77207e3ff062cb416bcaea6d3a0df6506d",
+        "restore/source/experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+        "restore/source/experiments/digital_transfer57.py": "400d14a6e7bdba7b5ea2a92b49f3574cf982a272317b1470fad74dc8437c33b6",
+        "restore/source/experiments/digital_transfer57_source.py": "767abbd2ccb73f08b295f6d9da7e48f7510e0b1137779a9dcf599091ddc858a8",
+        "restore/source/experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+        "restore/source/experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e",
+        "restore/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+        "restore/source/experiments/__init__.py": "aba73293015e4872bcb7cf6eeb9ae34d49cc7012fa4773ce168a65c18bf628d5",
+        "restore/source/tests/test_digital_transfer57.py": "d969fca035991388ab7d8d93031100625ec331a036f04b04e3d9187509b3c56b",
+        "restore/source/tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "limits": {
+        "raw": 8388608,
+        "archive": 8388608,
+        "restore": 8388608,
+        "failure": 8388608
+      },
+      "total_limit": 33554432
+    },
+    "stage_credit": false
+  },
+  "native": {
+    "raw": {
+      "bootstrap_python": "D:\\OraLab\\tools\\Python312\\python.exe",
+      "command": [
+        "D:\\OraLab\\tools\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_digital_transfer57",
+        "-v"
+      ],
+      "elapsed_seconds": 0.7970000000204891,
+      "exit_code": 0,
+      "isolation_verified": false,
+      "limits": {
+        "cpu_seconds": 5,
+        "memory_bytes": 134217728,
+        "processes": 3,
+        "wall_seconds": 10
+      },
+      "output_bytes": 3446,
+      "output_truncated": false,
+      "owned_pids_before_close": [
+        6268
+      ],
+      "platform": "Windows",
+      "post_close_processes_exited": true,
+      "retained_bytes": 3446,
+      "schema": "resource01-result-v1",
+      "supervisor_cpu_stop": false,
+      "timed_out": false,
+      "usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 50000000,
+        "configured_memory_bytes": 134217728,
+        "configured_processes": 3,
+        "flags": 8716,
+        "started_processes": 2,
+        "user_cpu_seconds": 0.671875,
+        "windows_reported_peak_job_memory_bytes": 35377152
+      }
+    },
+    "restore": {
+      "bootstrap_python": "D:\\OraLab\\tools\\Python312\\python.exe",
+      "command": [
+        "D:\\OraLab\\tools\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_digital_transfer57",
+        "-v"
+      ],
+      "elapsed_seconds": 0.7660000000032596,
+      "exit_code": 0,
+      "isolation_verified": false,
+      "limits": {
+        "cpu_seconds": 5,
+        "memory_bytes": 134217728,
+        "processes": 3,
+        "wall_seconds": 10
+      },
+      "output_bytes": 3446,
+      "output_truncated": false,
+      "owned_pids_before_close": [
+        52572
+      ],
+      "platform": "Windows",
+      "post_close_processes_exited": true,
+      "retained_bytes": 3446,
+      "schema": "resource01-result-v1",
+      "supervisor_cpu_stop": false,
+      "timed_out": false,
+      "usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 50000000,
+        "configured_memory_bytes": 134217728,
+        "configured_processes": 3,
+        "flags": 8716,
+        "started_processes": 2,
+        "user_cpu_seconds": 0.578125,
+        "windows_reported_peak_job_memory_bytes": 35057664
+      }
+    }
+  },
+  "prepared_outputs": {
+    "raw": "test_ambiguous_registry_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_ambiguous_registry_refused) ... ok\ntest_arithmetic_mismatch_rejected (tests.test_digital_transfer57.Transfer57PreparedTests.test_arithmetic_mismatch_rejected) ... ok\ntest_cap_loss_and_empty_act (tests.test_digital_transfer57.Transfer57PreparedTests.test_cap_loss_and_empty_act) ... ok\ntest_child_startup_or_generation_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_child_startup_or_generation_refused) ... ok\ntest_complete_four_pair_gate (tests.test_digital_transfer57.Transfer57PreparedTests.test_complete_four_pair_gate) ... ok\ntest_existing_identical_program_uses_unique_route (tests.test_digital_transfer57.Transfer57PreparedTests.test_existing_identical_program_uses_unique_route) ... ok\ntest_failed_ordinary_reference_refuses_panel (tests.test_digital_transfer57.Transfer57PreparedTests.test_failed_ordinary_reference_refuses_panel) ... ok\ntest_frozen_manifest_and_all_eight_sources (tests.test_digital_transfer57.Transfer57PreparedTests.test_frozen_manifest_and_all_eight_sources) ... ok\ntest_manifest_tamper_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_manifest_tamper_refused) ... ok\ntest_missing_or_duplicate_history_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_missing_or_duplicate_history_refused) ... ok\ntest_non_enrolled_source_and_boolean_identity_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_non_enrolled_source_and_boolean_identity_refused) ... ok\ntest_noop_selfwrite_excludes_stable_site1 (tests.test_digital_transfer57.Transfer57PreparedTests.test_noop_selfwrite_excludes_stable_site1) ... ok\ntest_one_failed_pair_excludes_source (tests.test_digital_transfer57.Transfer57PreparedTests.test_one_failed_pair_excludes_source) ... ok\ntest_ordinary_whole_lifecycle_gate (tests.test_digital_transfer57.Transfer57PreparedTests.test_ordinary_whole_lifecycle_gate) ... ok\ntest_paid_child_zero_actions_and_parent_terminal (tests.test_digital_transfer57.Transfer57PreparedTests.test_paid_child_zero_actions_and_parent_terminal) ... ok\ntest_registry_cleanup_after_mock_failure (tests.test_digital_transfer57.Transfer57PreparedTests.test_registry_cleanup_after_mock_failure) ... ok\ntest_reserve_seed_refused_before_producer (tests.test_digital_transfer57.Transfer57PreparedTests.test_reserve_seed_refused_before_producer) ... ok\ntest_reserved_or_boolean_count_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_reserved_or_boolean_count_refused) ... ok\ntest_terminal_halt_and_dead_denominator (tests.test_digital_transfer57.Transfer57PreparedTests.test_terminal_halt_and_dead_denominator) ... ok\ntest_total_food_without_site1_benefit_excluded (tests.test_digital_transfer57.Transfer57PreparedTests.test_total_food_without_site1_benefit_excluded) ... ok\ntest_unpaid_or_duplicate_birth_certificate_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_unpaid_or_duplicate_birth_certificate_refused) ... ok\ntest_withheld_is_shared_baseline (tests.test_digital_transfer57.Transfer57PreparedTests.test_withheld_is_shared_baseline) ... ok\ntest_wrong_genesis_and_source_rejected_before_audit (tests.test_digital_transfer57.Transfer57PreparedTests.test_wrong_genesis_and_source_rejected_before_audit) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.526s\n\nOK\n",
+    "restore": "test_ambiguous_registry_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_ambiguous_registry_refused) ... ok\ntest_arithmetic_mismatch_rejected (tests.test_digital_transfer57.Transfer57PreparedTests.test_arithmetic_mismatch_rejected) ... ok\ntest_cap_loss_and_empty_act (tests.test_digital_transfer57.Transfer57PreparedTests.test_cap_loss_and_empty_act) ... ok\ntest_child_startup_or_generation_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_child_startup_or_generation_refused) ... ok\ntest_complete_four_pair_gate (tests.test_digital_transfer57.Transfer57PreparedTests.test_complete_four_pair_gate) ... ok\ntest_existing_identical_program_uses_unique_route (tests.test_digital_transfer57.Transfer57PreparedTests.test_existing_identical_program_uses_unique_route) ... ok\ntest_failed_ordinary_reference_refuses_panel (tests.test_digital_transfer57.Transfer57PreparedTests.test_failed_ordinary_reference_refuses_panel) ... ok\ntest_frozen_manifest_and_all_eight_sources (tests.test_digital_transfer57.Transfer57PreparedTests.test_frozen_manifest_and_all_eight_sources) ... ok\ntest_manifest_tamper_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_manifest_tamper_refused) ... ok\ntest_missing_or_duplicate_history_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_missing_or_duplicate_history_refused) ... ok\ntest_non_enrolled_source_and_boolean_identity_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_non_enrolled_source_and_boolean_identity_refused) ... ok\ntest_noop_selfwrite_excludes_stable_site1 (tests.test_digital_transfer57.Transfer57PreparedTests.test_noop_selfwrite_excludes_stable_site1) ... ok\ntest_one_failed_pair_excludes_source (tests.test_digital_transfer57.Transfer57PreparedTests.test_one_failed_pair_excludes_source) ... ok\ntest_ordinary_whole_lifecycle_gate (tests.test_digital_transfer57.Transfer57PreparedTests.test_ordinary_whole_lifecycle_gate) ... ok\ntest_paid_child_zero_actions_and_parent_terminal (tests.test_digital_transfer57.Transfer57PreparedTests.test_paid_child_zero_actions_and_parent_terminal) ... ok\ntest_registry_cleanup_after_mock_failure (tests.test_digital_transfer57.Transfer57PreparedTests.test_registry_cleanup_after_mock_failure) ... ok\ntest_reserve_seed_refused_before_producer (tests.test_digital_transfer57.Transfer57PreparedTests.test_reserve_seed_refused_before_producer) ... ok\ntest_reserved_or_boolean_count_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_reserved_or_boolean_count_refused) ... ok\ntest_terminal_halt_and_dead_denominator (tests.test_digital_transfer57.Transfer57PreparedTests.test_terminal_halt_and_dead_denominator) ... ok\ntest_total_food_without_site1_benefit_excluded (tests.test_digital_transfer57.Transfer57PreparedTests.test_total_food_without_site1_benefit_excluded) ... ok\ntest_unpaid_or_duplicate_birth_certificate_refused (tests.test_digital_transfer57.Transfer57PreparedTests.test_unpaid_or_duplicate_birth_certificate_refused) ... ok\ntest_withheld_is_shared_baseline (tests.test_digital_transfer57.Transfer57PreparedTests.test_withheld_is_shared_baseline) ... ok\ntest_wrong_genesis_and_source_rejected_before_audit (tests.test_digital_transfer57.Transfer57PreparedTests.test_wrong_genesis_and_source_rejected_before_audit) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.517s\n\nOK\n"
+  }
+}
