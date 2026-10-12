@@ -1,29 +1,29 @@
 # Whole Source37 unseen comparison receipt
 
-October12, 2026. Executed source `64487b1889be8722588a61b78925285fd7f73f98`.
+October 12, 2026. Executed source `64487b1889be8722588a61b78925285fd7f73f98`.
 [Execution registration](DIGITAL-HISTORY-39-EXECUTION.md), frozen
 [criteria](DIGITAL-HISTORY-39-PROTOCOL.md), [all results](../data/digital-history39-results.json).
 
-All112 unselected externally supplied Source37 genotypes and11 authored references
-ran across38200..38207, four common exogenous pairs/both orientations/all3 arms:
-2688 candidate plus264 reference histories. Source root/parent/intermediate/three word
+All 112 unselected externally supplied Source37 genotypes and 11 authored references
+ran across38200..38207, four common exogenous pairs/both orientations/all 3 arms:
+2688 candidate plus 264 reference histories. Source root/parent/intermediate/three word
 edits and full programs/hashes/ancestry remain in raw archives and complete public metrics. Variants are external developer assistance,
 not naturally born descendants, evolution or installed successful learners.
 Supplied fixed exploration, VM/environment laws, control machinery and feedback
 contingencies are enabling infrastructure, not organism discoveries.
 
-Baseline admission passed BEFORE candidate execution: all48 affine3/alternating
+Baseline admission passed BEFORE candidate execution: all 48 affine3/alternating
 ordinary completions,168 no-feedback physical preimages invariant across controls
 after each native digest's full independent proof. Entity budgets/law/targets and
 source family unchanged; reserved38300..38307 remain UNOPENED.
 
-| Candidate arm (896 histories each) | Complete32local | Deaths | Food | Fresh food |
+| Candidate arm (896 histories each) | Complete32 local | Deaths | Food | Fresh food |
 |---|---:|---:|---:|---:|
 | Intact | 423 | 869 | 15647 | 6887 |
 | Retained-disabled | 446 | 877 | 15849 | 7149 |
 | Own-disrupted | 465 | 828 | 17316 | 7638 |
 
-All896 candidate comparison cells retained: 0 qualified cells,
+All 896 candidate comparison cells retained: 0 qualified cells,
 0/112 genotypes meet all eight cells; 521
 cells have incomplete candidate/control task exposure, 580
 lack required personally delivered before-completion opportunity, and
@@ -39,7 +39,7 @@ Actual original histories: 671220 instructions/120514 ACT/
 103274 real attempts, 52883 food/23355 fresh,
 0 births/2797 deaths/155 stopped survivors,
 1432 complete/1520 null endpoint bills. External controls made
-1777 PC/3929 memory rewrites and22795
+1777 PC/3929 memory rewrites and 22795
 unrelated substitutions; these are researcher interventions, not repair. Full
 entity energy conserved: 4191840 = 4061 live+
 1283103 heat+183776 unused constructor+
@@ -48,7 +48,7 @@ No natural mutation/copy/division/messages/movement/selfwrite/organism repair.
 
 Every full VM/control/event/state hash, checkpoint/genesis continuation,
 before-completion backward origin, ancestry and resource bill independently
-reconstructed. Frozen33 cell predicate / History39 whole-census adapter and independent34 comparison predicates agree in all896
+reconstructed. Frozen History33 cell predicate / History39 whole-census adapter and independent History34 comparison predicates agree in all 896
 cells; separate outer literal reasons reconstructed from actual events.1154 capped
 native-zero calls/36 prepared tests original and restored/source-restored identical
 World bytes/18,944 MiB prewrite ledger pass. Replay is engineering recovery/evidence,
