@@ -48,6 +48,7 @@ def interpret(envelope,summary):
 def compare(rows,manifest):
     """Only accepts all144 independent-referee summaries, not raw producer claims."""
     source_bank(manifest)
+    origins={identity:choice('retained',identity,manifest)[1] for identity in ROSTER}
     assert len(rows)==144;seen={};references={};retained={key:{} for key in ROSTER}
     for row in rows:
         s=row['summary'];assert s['verified'] is True and s['source_manifest_hash']==SOURCE_HASH and s['mode']=='faithful' and s['formation_cost']==43
@@ -59,7 +60,7 @@ def compare(rows,manifest):
         else:
             assert s['arm']=='retained';source=s['source'];identity=(source['seed'],source['child'])
             assert all(type(v) is int for v in identity) and identity in ROSTER
-            assert source==choice('retained',identity,manifest)[1]
+            assert source==origins[identity]
             key=(identity,seed);retained[identity][seed]=s
         assert key not in seen;seen[key]=s
     assert set(references)==set(SEEDS) and all(set(v)==set(SEEDS) for v in retained.values())

@@ -2,6 +2,7 @@ import copy,json,unittest
 from pathlib import Path
 from unittest.mock import patch
 from experiments import digital_replication58 as t
+from experiments.digital_informative_exposure23_interpret import body
 
 
 class Replication58PreparedTests(unittest.TestCase):
@@ -104,7 +105,7 @@ class Replication58PreparedTests(unittest.TestCase):
             with self.assertRaises(AssertionError):t.compare(rows,self.manifest)
 
     def state(self):
-        return t.body(0,None,0,[[v,i] for i,v in enumerate(sum(t.PROGRAM,[]))],list(range(27,43)),0)
+        return body(0,None,0,[[v,i] for i,v in enumerate(sum(t.PROGRAM,[]))],list(range(27,43)),0)
 
     def test_terminal_halt_and_dead_denominator(self):
         state=self.state();event=dict(tick=1,actor=0,decoded=[17,0,0],before=t.h(state),death=[])
@@ -148,7 +149,7 @@ class Replication58PreparedTests(unittest.TestCase):
                     value,unit=state['code'][index];writes.append(dict(write_id=index,index=index,tick=tick,unit=43+index,value=value,source_unit=unit,source_value=value,mutated=False))
                 nursery.extend(writes);state['nursery']=copy.deepcopy(nursery);ids.extend(w['write_id'] for w in writes);event['writes']=writes
             event['after']=copy.deepcopy(state);events.append(event)
-        child=t.body(1,0,1,[[w['value'],w['unit']] for w in nursery],list(range(70,86)),0)
+        child=body(1,0,1,[[w['value'],w['unit']] for w in nursery],list(range(70,86)),0)
         events.append(dict(tick=15,actor=0,decoded=[12,0,0],before=t.h(state),death=[],birth=dict(child=child,startup_energy=12,write_ids=ids)))
         return events
 
