@@ -1,0 +1,18 @@
+# Ordinary reproduction51 receipt
+
+October12,2026. [Protocol](DIGITAL-REPRODUCTION-51-PROTOCOL.md) source 521f8c6bf6b0e84314e3a54cd31e9a4b89343a78. [Complete four-row summary](../data/digital-reproduction51-results.json). Same Exposure23 law, existing supplied fixed ancestor and unchanged generic512-or-extinction interpreter; one paired exogenous context/two orientations, no independent replication claim.
+
+| Context/mode | Instructions | Food | Births | Descendant-caused paid births after own acquisition | Deaths | Paid copy words | Cap loss | Greatest generation |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+|51000/faithful|355|32|8|7|9|153|0|5|
+|51000/copy_disabled|371|32|0|0|1|0|281|0|
+|51001/faithful|340|32|8|7|9|168|0|8|
+|51001/copy_disabled|386|32|0|0|1|0|266|0|
+
+All four histories are extinct by355/371/340/386 steps respectively, not persistent ecosystems. Faithful founder first births35/40 retain9/4 parent energy and12 child energy as prospectively derived. Faithful descendants acquire28 packets per orientation and cause7 further paid births per orientation, with literal paid-copy parentage and independent whole-event VM reconstruction. Identical supplied function is inherited; its invention is not observed. Copy-disabled causes0 births/0 paid writes while acquiring the same32 home packets per context. No remote acquisition, mutations, learned update, repair or researcher rescue. Finite food competition/scheduler/resource timing and all refusals/deaths are retained. Resource function/reproduction is authored fixed machinery, not independent learning or adaptive selection.
+
+Total4 unique histories,16 births,14 descendant-caused births,20 deaths,128 acquired packets and321 paid copied words. Every endpoint has512 free material,0 live energy,702 heat+78 unused constructor+640 inaccessible remote food energy=1420 conserved. The same-home control loses281/266 energy at cap versus0 in faithful histories; this difference is a real consequence of removing copying, so copy-disabled is an impossibility diagnostic, not a resource-matched fitness/learning comparator. No sustained evolution inference.
+
+Nine prepared gate checks at original/restored source and five rehashed altered-receipt ancestry/startup/founder refusals at each location pass;12 child native-zero calls plus1 outer native-zero with caps/PID closure. Four restored-source histories reproduce bytes exactly; they are engineering replays, not additional independent scientific histories. Outer384MiB/70CPU/240wall/4slots, child128MiB/5CPU/10wall/3slots; explicit64MiB and8MiB prewrite ledgers. Initial exported test workspace omitted the native bootstrap module: child1/outer1 failed before any World, charged raw failures retained. Fresh v2 adds the reviewed bootstrap export; source/seeds/laws/gates remain unchanged. Original failure roots are never overwritten.
+
+Admission passes only for this supplied ordinary reproductive route in two cold orientations under this finite law. No new scientific stage acceptance, evolution, learning, consciousness or persistent-world activation. Next dependency: prospectively design and register independently replicated claim-specific variation/useful-inheritance comparisons with justified finite opportunities/generations and no-variation/inheritance controls. Do not infer adaptive selection from mutation diversity or loss. Learning-capacity information/opportunity/resource feasibility remains a separate parallel design question. Reserves and all closed receipts unchanged; observer paused and approved UI preserved. Same-host replay/restoration is engineering custody, not off-host/full-host recovery or production confinement for a future persistent pilot.
