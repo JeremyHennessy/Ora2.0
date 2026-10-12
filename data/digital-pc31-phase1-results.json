@@ -1,0 +1,150 @@
+{
+  "verified": true,
+  "source": "1271474ba8d19e265c6d37c18d936f9337fd7f90",
+  "classification": "PC_HISTORY_OPERATOR_PREPARED_FIXTURES_ONLY",
+  "phase": 1,
+  "overall_status": "IN_PROGRESS",
+  "independent": {
+    "verified": true,
+    "prepared_fixture_count": 18,
+    "prepared_instruction_transitions": 576,
+    "pc_rewrites": 6,
+    "memory_rewrites": 5,
+    "unrelated_substitutions": 26,
+    "no_feedback_physical_invariance": true,
+    "latest_latch_preserved": true,
+    "world_histories": 0,
+    "candidate_viability": false,
+    "learning": false,
+    "stage_credit": false
+  },
+  "fixture_roster": [
+    {
+      "role": "branch",
+      "mode": "intact",
+      "initial_latch": 0,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "branch",
+      "mode": "intact",
+      "initial_latch": 1,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "branch",
+      "mode": "retained_disabled",
+      "initial_latch": 0,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "branch",
+      "mode": "retained_disabled",
+      "initial_latch": 1,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "branch",
+      "mode": "own_disrupted",
+      "initial_latch": 0,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "branch",
+      "mode": "own_disrupted",
+      "initial_latch": 1,
+      "program_sha256": "28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e"
+    },
+    {
+      "role": "memory",
+      "mode": "intact",
+      "initial_latch": 0,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "memory",
+      "mode": "intact",
+      "initial_latch": 1,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "memory",
+      "mode": "retained_disabled",
+      "initial_latch": 0,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "memory",
+      "mode": "retained_disabled",
+      "initial_latch": 1,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "memory",
+      "mode": "own_disrupted",
+      "initial_latch": 0,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "memory",
+      "mode": "own_disrupted",
+      "initial_latch": 1,
+      "program_sha256": "409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "intact",
+      "initial_latch": 0,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "intact",
+      "initial_latch": 1,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "retained_disabled",
+      "initial_latch": 0,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "retained_disabled",
+      "initial_latch": 1,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "own_disrupted",
+      "initial_latch": 0,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    },
+    {
+      "role": "no_feedback",
+      "mode": "own_disrupted",
+      "initial_latch": 1,
+      "program_sha256": "eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332"
+    }
+  ],
+  "prepared_panel_sha256": "d5b718816c24f20538ad3e266d5e28ad0b0470d0ecb07f21834f262e9ece8a3a",
+  "fixtures": 7,
+  "native_zero_exits": 4,
+  "world_histories": 0,
+  "actions": 0,
+  "births": 0,
+  "deaths": 0,
+  "candidate_genomes_executed": 0,
+  "all_source30_unrun": true,
+  "archive_sha256": "9a0223427220a4fa0d756d14890381590814d54ea252f3c25cb630dbb0979ba1",
+  "source_restored": true,
+  "byte_replay": true,
+  "old_branch30_unchanged": true,
+  "full_world_control_admission": false,
+  "learning": false,
+  "evolution": false,
+  "repair": false,
+  "stage_credit": false,
+  "next_dependency": "Continue Controls31 phase2: prospectively register full independently reconstructed conditional World/checkpoint and paid-scope admission before any Source30 genome World or personal-opportunity testing."
+}
