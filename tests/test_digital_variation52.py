@@ -1,4 +1,4 @@
-import copy,unittest
+import unittest
 from experiments.digital_variation52 import census,words,PROGRAM
 
 class LineageFixtures(unittest.TestCase):
@@ -27,6 +27,9 @@ class LineageFixtures(unittest.TestCase):
         self.assertEqual(census(e,PROGRAM)['inherited_remote_function_witnesses'],0)
     def test_child_self_write_disclosed(self):
         e=self.events();e[3]['self_write']=dict(old=1,value=2)
+        self.assertEqual(census(e,PROGRAM)['inherited_remote_function_witnesses'],0)
+    def test_even_noop_self_write_is_outside_registered_stable_assay(self):
+        e=self.events();e[3]['self_write']=dict(old=1,value=1)
         self.assertEqual(census(e,PROGRAM)['inherited_remote_function_witnesses'],0)
     def test_parent_later_food_not_retroactive(self):
         p=self.code();e=[self.birth(1,0,1,1,p),self.birth(2,1,2,2,p),self.food(3,1,p),self.food(4,2,p)]

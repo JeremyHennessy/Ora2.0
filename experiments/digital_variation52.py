@@ -18,7 +18,7 @@ def census(events,program):
         assert type(ev['tick']) is int and ev['tick']>previous;previous=ev['tick']
         actor=ev['actor'];assert type(actor) is int and actor in actors
         person=actors[actor]
-        if 'self_write' in ev and ev['self_write']['old']!=ev['self_write']['value']:person['changed']=True
+        if 'self_write' in ev:person['changed']=True
         if 'after' in ev:person['current']=h(words(ev['after']['code']))
         for write in ev.get('writes',[]):
             assert type(write['mutated']) is bool
