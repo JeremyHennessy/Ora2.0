@@ -4,6 +4,15 @@ from pathlib import Path
 import stat
 
 
+def file_sha256(path):
+    """Hash evidence with a fixed buffer, including multi-gigabyte archives."""
+    digest=hashlib.sha256()
+    with path.open('rb') as stream:
+        for block in iter(lambda:stream.read(1024*1024),b''):
+            digest.update(block)
+    return digest.hexdigest()
+
+
 def audit(root,receipt,limits,total):
     root=Path(root);files=receipt['files'];used={p:0 for p in limits};seen={};actual=0
     if receipt['schema']!='evidence-budget-v1' or receipt['limits']!=limits or receipt['total_limit']!=total:raise ValueError('Registered capacities')
@@ -16,7 +25,7 @@ def audit(root,receipt,limits,total):
         if phase not in limits or name not in files:raise ValueError('Complete filesystem denominator')
         cap=files[name]
         if type(cap) is not int or cap<info.st_size:raise ValueError('Physical bytes exceed precharged extent')
-        used[phase]+=cap;actual+=info.st_size;seen[name]=hashlib.sha256(path.read_bytes()).hexdigest()
+        used[phase]+=cap;actual+=info.st_size;seen[name]=file_sha256(path)
     if set(seen)!=set(files) or used!=receipt['reserved'] or sum(used.values())!=receipt['total_reserved']:raise ValueError('Independent complete reservation totals')
     if any(used[p]>limits[p] for p in used) or sum(used.values())>total:raise ValueError('Registered phase/combined cap')
     return dict(files=len(seen),logical_bytes=actual,reserved_bytes=sum(used.values()),reserved_by_phase=used,sha256=seen,limits=limits,total_limit=total)
