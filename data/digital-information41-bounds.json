@@ -1,0 +1,53 @@
+{
+  "source": "a39dba9a76921be5730affee28ec69e7ad77d6aa",
+  "candidate_policies_created": 0,
+  "classification": "abstract_necessary_bounds_only",
+  "contract": "DIGITAL-INFORMATION-41-v1",
+  "earliest_fresh_completion": 79,
+  "energy_gap_cases": 4160,
+  "fixed_genotype_state_ceiling": 28587302322176,
+  "formation_sizes": 32,
+  "learning": false,
+  "minimum_thirteen_triple_work": 134,
+  "organism_actions": 0,
+  "predictive_gain_verified": false,
+  "probability_model_verified": false,
+  "reachable_capacity_verified": false,
+  "real_attempt_truth_table": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "reviewed_source_sha256": {
+    "experiments/digital_branch_source30.py": "4725fc0788218bc6f358a0562126fa4ad81fe76dc50c40b498cc260afb10583c",
+    "experiments/digital_history33_endpoint.py": "565bf23d91bdf71c0db4c698b0b9d6b40a5bf17e97dfb2e8ec27a48a9ef475d9",
+    "experiments/digital_history39_world.py": "acb4b7979be799a3697a198d382a627990289c4591a0cb6460cb3c056c4e3361",
+    "experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+    "experiments/digital_neutral_catalogue25.py": "d51de15ac3dbc2d8469954b556ea40d858530a00b0fc3859a13f5a2b111e6d5a",
+    "experiments/digital_pc_controls31.py": "34499e9790ab346f32e6a051272b133ca0e0282836ac7ae6bafc6e5f901abb53",
+    "experiments/digital_source32_admission.py": "1bf3e32f8a03d5809e9d9d024391455841ad6a70bfd625bf3fa73e522eaf5050",
+    "experiments/digital_source37_coverage.py": "63e8d9907c5ec52bdefaca5abc61a9e51e306c7ce24888d44556a81d108f3de5"
+  },
+  "seeds_queried": [],
+  "stage_credit": false,
+  "strict_comparison_cases": 71840,
+  "viability_verified": false,
+  "world_histories": 0
+}
