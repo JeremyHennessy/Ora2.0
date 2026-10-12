@@ -1,0 +1,5413 @@
+{
+  "verified": true,
+  "source": "99b4e7a83c635ced7395ac188b0b3535d395498b",
+  "classification": "PERFORMANCE_BLIND_EXTERNAL_BRANCH_SOURCE_ONLY",
+  "manifest": {
+    "actions": 0,
+    "births": 0,
+    "candidate_count": 56,
+    "candidates": [
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 0,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "e61a161636f04b7ea15448020d92e93826979687d6d645d17a05698d12949f0e",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 1,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "7f1e9fe8f025950f613d486d5f2d01e4e6a000fdd83f380a2c41eff8e271c1af",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 2,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "6aa3db7f09415a82a769ac2fc80c76db3ec0523bb562c8a129cebdf7e9da62f1",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 3,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "81a159b3dc24b3c44dbab431f6e5c7bc13e8b2539b666bcd9fe52cbc76689157",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 4,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "93c6dab3ecb6170620d43f8b2f9bf0da32141f64b832f3798f61af4ad460f811",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 5,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "770775bf7b0b4d689168ac269393066db1245fbe538e1eb6bb477b8ba56964a6",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 6,
+        "catalogue25_intermediate_id": 1,
+        "external_mutations": [
+          {
+            "flat_address": 15,
+            "new": 1,
+            "old": 2
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 5,
+        "intermediate_program_sha256": "919af220157ac3321b0aae805967c4d6af3c04b1ff8acd1c52281c01b8bb1fc8",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "aa8ee82469c13644340f7067c4ad51a89bc5c950421292f4b3e60d62a6513e1b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 7,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "e421ce758ea4cce902119b221bfcc76f91dc4ea76a7a3698970c1747af82bc80",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 8,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "e7c9e31c85cf36c1ccc0c77f688eb7f80ac95bda1b6ef7e29a5368212fe34c1f",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 9,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "0028031d2e471ab4d4250f222332b79e4b3a4e62e4dbc308b6db6d44272693a6",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 10,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "f5ce7d1eaa70de1f9536e6bdc02e2d56d9be47e91a83d1fc00e1fd452d968aa1",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 11,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "b8babe9a506932ece44bbb55f6c1612fed77335a91635d05733407b1a9cdc0e6",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 12,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "c3b38546785285b7cdad1a3b0cb85983f80c24113efcbc00d469218e0982a471",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 13,
+        "catalogue25_intermediate_id": 94,
+        "external_mutations": [
+          {
+            "flat_address": 18,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 6,
+        "intermediate_program_sha256": "b08cfd6885464f6242a52d2f70e3843fb811cc4f27cefa32a72586ef82f888ad",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "d86a6a44c98c0ed19c0003cce8842b1cbe9bcc164321830d4a5f8a2463ab8f62",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 14,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "322f7d7c957ec6796eb1b9e0b6a14f408be028c5268f8930a8881a9e1a5a31c2",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 15,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "11f6527d40398748b5cac67811c5eb588b3fc289b8631dc54499272913201aa0",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 16,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "7039009cc6e7fdcbd1c90e99c4c859db8cba174d1142e542d004d372610ef4fc",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 17,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "853ff9db1fa5651f093beb0759ffa22911f8243493048a8bc38834e466db0fb2",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 18,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "13734b3a5b7da75e02374b86046c3bdfb078afb1a34461674e9e75ceed163f1b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 19,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "092d4e83092e068d6d8cc2c2afc1a1a88105c7494932a5b4374357fbef2d8944",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 20,
+        "catalogue25_intermediate_id": 187,
+        "external_mutations": [
+          {
+            "flat_address": 21,
+            "new": 1,
+            "old": 18
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 7,
+        "intermediate_program_sha256": "ec98bbda0f99c5d1c8537308b6eeadd9875b0ec6b3f4a84d3395f3081927a0ba",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "99481e8a51a18a2ffe028d6158ad8f1ebee4828b478acadfae66c1d4e7c5763e",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 21,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "3de55d518da3ed5b7ea1979cdd9520bd301880ae04a27efaab209c4fa8175c16",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 22,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "f29c714f19472a4cd1463f7bb96047902359abc04a037d8854eed402644c35c4",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 23,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "4b8c05a9ad8e1a0b8fa4fcf399eb458244f8fa66b27cdced62b3e02565f5ea57",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 24,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "853a752dd602c7f918a94b6b2f91672467f8b3c925749ca61fc483dfd1f1f5fa",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 25,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "c3f131f45002270fcd6fa0439520d25efd1c18d9c71892cc592f14dc6411b13c",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 26,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "2b05a55aa017b5246611454acb2c3ee6f394dc9976fa4674172a0030ad278f25",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 27,
+        "catalogue25_intermediate_id": 280,
+        "external_mutations": [
+          {
+            "flat_address": 24,
+            "new": 1,
+            "old": 4
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 8,
+        "intermediate_program_sha256": "91bebd981ae3b0edda87b7f8bb15f44799b64748b00165f6946d6bc59af4b860",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "e3712555ec67449ef1dca60618fa0e222176f39240d04e037f9afad75b5aa9fe",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 28,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "9992cad01782b27ad7ec86a7d671872859a7a7879bc91ef6558c4675559dcd10",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 29,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "71a1fe87d3dd8c0218dfd4aa8b4eebf8168d78e073ad1a245a17f6d8ed9efa8c",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 30,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "8e2c3b16f274a9bce2ba4701a5518c869c3d0fc673aad54a6730fefee6ece4d1",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 31,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "b7f1f5553efce7a05c5fac20833c64784b3d4587255e41336c407d43d789ea4b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 32,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "873c84ffac3f7cc77c406e7133d7a86f35aeed29c364fee780d84ebab0d09c73",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 33,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "c80824122619def78da5c9f5b69c267df9596db72313852aa12e09d1e5182b78",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 34,
+        "catalogue25_intermediate_id": 373,
+        "external_mutations": [
+          {
+            "flat_address": 27,
+            "new": 1,
+            "old": 5
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 9,
+        "intermediate_program_sha256": "e21717d5bb51b9addb79082d10c2d3bcff5b3d7e465e6e2666acca48fd0eba61",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "09abeabf8605953115cc1d54ecdd4586dd1239b1924c564e4815eeb43c4d27f7",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 35,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "f10e648e469b47768e557f04b119eb65711b6763b16502e59ca8133165fe144e",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 36,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "1f21ae67e53bfe92bf904c356893a070f0818e73f01896034a1ec5edaa35028b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 37,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "5a5d5f954dedab7430d9f483b1deccd4a02334627bf69652289b930e1d3583df",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 38,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "9b5f87b0eb03d9a1f8907822b4aad47c5ed9722faea3ca7b21fb37c618e8c444",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 39,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "4788dc2e4f1d7d19ec3785f9323184c37adfc933c7f1ccbca236daaf794f8832",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 40,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "5937c54316e99a872b523c2c383968300a220e55aea6423a2bdb76beb3cf5773",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 41,
+        "catalogue25_intermediate_id": 466,
+        "external_mutations": [
+          {
+            "flat_address": 30,
+            "new": 1,
+            "old": 3
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 10,
+        "intermediate_program_sha256": "e58ae1f62553e88a30f8d55cee74209054dd443fe402eba1effde8f1e14f22cc",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "569b06518996e554569340292476865e2f31c7856e0b721cfd729774a2df4d2b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 42,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "d049f2fbb56853a414fe3d0fabcbe65665b2ab446e8be3e66cced21d4d56270b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 43,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "75c698467cc5391a5d4dbf13172a19898ad94e084ecd01797949d836887a6925",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 44,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "bed5c81c2edd1938ebed90576a4bc2f4482f896cd6c0ada0a5e859903075bc69",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 45,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "ca0453c550a89b81863f399d6923b8e828e1311c21d88388609105624a069fc3",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 46,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "d59a2529b683da18374827efcb64061340781a446204c7cba3452cf3d13ec989",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 47,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            7,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "567b222c0fda991e05fdad6c34a17ab16ff842cb5ebe502612b65a0933b3e94b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 12,
+        "branch_target": 5,
+        "candidate_id": 48,
+        "catalogue25_intermediate_id": 559,
+        "external_mutations": [
+          {
+            "flat_address": 33,
+            "new": 1,
+            "old": 6
+          },
+          {
+            "flat_address": 36,
+            "new": 8,
+            "old": 7
+          }
+        ],
+        "feedback_slot": 11,
+        "intermediate_program_sha256": "7ee2c90df315f8d3643c65aace3c0ba918260490844c96af66143a2ae42dabf6",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "39be8479dda714c6f1cf174e8c7614afa2929bbd87f76829931dc50e1d8a39c6",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 5,
+        "branch_target": 1,
+        "candidate_id": 49,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 15,
+            "new": 8,
+            "old": 2
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "f1d2e5548824343d49ab1bf56b7f295d0aea25c7286051ac1dfc856fc480b54c",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 6,
+        "branch_target": 0,
+        "candidate_id": 50,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 18,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "25a2424c72c9a898ffa00d770ac461e22510c167d50e8d62f04fa547d63b75c0",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 7,
+        "branch_target": 0,
+        "candidate_id": 51,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 21,
+            "new": 8,
+            "old": 18
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "9dcab39158ecda835b66e7404656d451510d51f6c8ede418a17fe9a465012795",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 8,
+        "branch_target": 1,
+        "candidate_id": 52,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 24,
+            "new": 8,
+            "old": 4
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            8,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "48a40ee4766a5510f8ec0905242db9575c611eb0dd44aab35cbaf324393a4144",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 9,
+        "branch_target": 1,
+        "candidate_id": 53,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 27,
+            "new": 8,
+            "old": 5
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            8,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "5357520b08e063458ce3fdaa2895daea68cb5c5ea6db91710ef24c6000ade49b",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 1,
+        "branch_slot": 10,
+        "branch_target": 0,
+        "candidate_id": 54,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 30,
+            "new": 8,
+            "old": 3
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            8,
+            1,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "f47ab78c772040a4c7458b0a52d44e513ada61172c875392ffedb125b9cd68df",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      },
+      {
+        "birth": false,
+        "branch_register": 0,
+        "branch_slot": 11,
+        "branch_target": 0,
+        "candidate_id": 55,
+        "catalogue25_intermediate_id": 652,
+        "external_mutations": [
+          {
+            "flat_address": 36,
+            "new": 1,
+            "old": 7
+          },
+          {
+            "flat_address": 33,
+            "new": 8,
+            "old": 6
+          }
+        ],
+        "feedback_slot": 12,
+        "intermediate_program_sha256": "f600537b174471b4f00b2e278941c01fc0644601385727a5cdcb89756e97298e",
+        "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "primary_admitted": false,
+        "program": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            18,
+            0,
+            0
+          ],
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            5,
+            0,
+            1
+          ],
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5
+          ]
+        ],
+        "program_sha256": "4517c8f4ba7c41dd2b11b291f879bd83e3fbae0412ea55340b8518de0a49c738",
+        "source": "external exhaustive ordered FEEDBACK/JZ opcode substitution pair; operands unchanged; no fitness query",
+        "viability_tested": false
+      }
+    ],
+    "contract": "DIGITAL-BRANCH-SOURCE-30-v1",
+    "deaths": 0,
+    "evolution": false,
+    "formation_cost": 55,
+    "initial_constructor_remaining": 73,
+    "initial_free_material": 457,
+    "learning": false,
+    "order": "feedback opcode slot5..12 ascending, branch opcode slot5..12 ascending excluding same slot",
+    "parent_program": [
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        0
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        5
+      ]
+    ],
+    "parent_sha256": "e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+    "performance_selection": false,
+    "preserved_prefix_triples": 5,
+    "program_triples": 13,
+    "required_next_dependency": "PC-inclusive lawful history controls, broadened independent VM/paid endpoint scope, and actual cold/personal-opportunity admission before any new source World or primary",
+    "seeds_executed": [],
+    "source25_denominator": 744,
+    "source25_replaced": false,
+    "stage_credit": false,
+    "startup_endowment": 12,
+    "state_units": 16,
+    "structural_bias": "exactly one feedback and one conditional branch; all original operands retained; chosen before outcomes, not uniform over all genomes",
+    "world_histories": 0
+  },
+  "independent": {
+    "verified": true,
+    "candidate_count": 56,
+    "unique_programs": 56,
+    "intermediate_catalogue25_ids": [
+      1,
+      94,
+      187,
+      280,
+      373,
+      466,
+      559,
+      652
+    ],
+    "branch_target_counts": {
+      "0": 28,
+      "1": 21,
+      "5": 7
+    },
+    "branch_register_counts": {
+      "0": 42,
+      "1": 14
+    },
+    "cold_prefix_preserved": true,
+    "formation_cost": 55,
+    "world_histories": 0,
+    "viability_tested": false,
+    "primary_admitted": false,
+    "learning": false,
+    "stage_credit": false
+  },
+  "fixtures": 5,
+  "native_zero_exits": 4,
+  "world_histories": 0,
+  "actions": 0,
+  "births": 0,
+  "deaths": 0,
+  "all_candidates_unrun": true,
+  "source25_denominator": 744,
+  "source25_unchanged": true,
+  "archive_sha256": "efd42033bed574d46cc481ca69f0b1c025b3a7babd25b6f68216c3d7d8863197",
+  "source_restored": true,
+  "byte_replay": true,
+  "old_paid29_unchanged": true,
+  "learning": false,
+  "evolution": false,
+  "repair": false,
+  "stage_credit": false,
+  "next_dependency": "PC-inclusive lawful history controls, broadened independent VM/paid endpoint scope, and actual cold/personal-opportunity admission before any new source World or primary"
+}
