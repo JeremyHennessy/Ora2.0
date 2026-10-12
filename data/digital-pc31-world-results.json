@@ -1,0 +1,6746 @@
+{
+  "verified": true,
+  "source": "5c7e0bfbced10412d1940ef1473e99c6f8661842",
+  "classification": "PAID_CONDITIONAL_OPERATOR_ADMISSION_ONLY",
+  "full_world_control_admission": true,
+  "metrics": [
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [
+          0,
+          1
+        ],
+        "cap_loss_to_completion": 368,
+        "completed": true,
+        "completion_tick": 220,
+        "death_tick": 284,
+        "distinct_available_post_own_origins": 27,
+        "formation_cost": 37,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": 257,
+        "post_own_samples_delivered": true,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 284
+      },
+      "role": "branch",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 6,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 512,
+        "heat": 705,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 26,
+        "pre_food": 6,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 284,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [
+          0
+        ],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 123,
+        "distinct_available_post_own_origins": 12,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": true,
+        "startup_endowment": 12,
+        "successful_food": 12,
+        "terminal_instructions": 123
+      },
+      "role": "memory",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 12,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 299,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 12,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31100,
+        "successful_food": 12,
+        "ticks": 123,
+        "unused_food": 52,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 127,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 11,
+        "terminal_instructions": 127
+      },
+      "role": "no_feedback",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 10,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 285,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 11,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31100,
+        "successful_food": 11,
+        "ticks": 127,
+        "unused_food": 53,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [
+          0
+        ],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 118,
+        "distinct_available_post_own_origins": 11,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": true,
+        "startup_endowment": 12,
+        "successful_food": 6,
+        "terminal_instructions": 118
+      },
+      "role": "branch",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 17,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 185,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 6,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31100,
+        "successful_food": 6,
+        "ticks": 118,
+        "unused_food": 58,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [
+          0
+        ],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 123,
+        "distinct_available_post_own_origins": 12,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": true,
+        "startup_endowment": 12,
+        "successful_food": 12,
+        "terminal_instructions": 123
+      },
+      "role": "memory",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 12,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 299,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 12,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31100,
+        "successful_food": 12,
+        "ticks": 123,
+        "unused_food": 52,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 127,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 11,
+        "terminal_instructions": 127
+      },
+      "role": "no_feedback",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 10,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 285,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 11,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31100,
+        "successful_food": 11,
+        "ticks": 127,
+        "unused_food": 53,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 120,
+        "completed": true,
+        "completion_tick": 468,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 523,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 28,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 457,
+        "heat": 703,
+        "learning": false,
+        "live_energy": 20,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 27,
+        "pre_food": 5,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [
+          0,
+          1
+        ],
+        "cap_loss_to_completion": 292,
+        "completed": true,
+        "completion_tick": 296,
+        "death_tick": 360,
+        "distinct_available_post_own_origins": 42,
+        "formation_cost": 37,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": 333,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 360
+      },
+      "role": "branch",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 22,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ]
+        ],
+        "free_material": 512,
+        "heat": 705,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 24,
+        "pre_food": 8,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31100,
+        "successful_food": 32,
+        "ticks": 360,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [
+          0
+        ],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 123,
+        "distinct_available_post_own_origins": 12,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 12,
+        "terminal_instructions": 123
+      },
+      "role": "memory",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 12,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 299,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 12,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31100,
+        "successful_food": 12,
+        "ticks": 123,
+        "unused_food": 52,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 127,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 11,
+        "terminal_instructions": 127
+      },
+      "role": "no_feedback",
+      "seed": 31100,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 10,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 285,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 11,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31100,
+        "successful_food": 11,
+        "ticks": 127,
+        "unused_food": 53,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "branch",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "memory",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 43,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "intact",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "no_feedback",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "branch",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "memory",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 43,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "retained_disabled",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "no_feedback",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "affine3",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-e175bbd74020f86990ac5daa9ad6fc9b895011ad3b59825057fbe4708d871b06",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": 96,
+        "completed": true,
+        "completion_tick": 492,
+        "death_tick": null,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 55,
+        "fresh_attempted": 16,
+        "fresh_successes": 16,
+        "horizon_survival": true,
+        "learning": false,
+        "paid_work_to_completion": 547,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 32,
+        "terminal_instructions": 512
+      },
+      "role": "conditional_clock",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 0,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 31,
+        "formation_cost": 55,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            1
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 457,
+        "heat": 679,
+        "learning": false,
+        "live_energy": 44,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 28,
+        "pre_food": 4,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-37997b5257b5d39df495c821bfb64885436bb37efacf2459d4125608bb47f95f",
+        "seed": 31101,
+        "successful_food": 32,
+        "ticks": 512,
+        "unused_food": 32,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "branch",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-28b38bb1b0e6be019d2521ac2405ed290c541669e12b94e986cef48b4a5dff4e",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 31,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "memory",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 31,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 43,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-409ea0ed3334ee2b0c67336489764f0929f582e2c8a1435005b5d59c91942db2",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    },
+    {
+      "control": "own_disrupted",
+      "endpoint": {
+        "available_post_outcomes": [],
+        "cap_loss_to_completion": null,
+        "completed": false,
+        "completion_tick": null,
+        "death_tick": 12,
+        "distinct_available_post_own_origins": 0,
+        "formation_cost": 37,
+        "fresh_attempted": 0,
+        "fresh_successes": 0,
+        "horizon_survival": false,
+        "learning": false,
+        "paid_work_to_completion": null,
+        "post_own_samples_delivered": false,
+        "startup_endowment": 12,
+        "successful_food": 0,
+        "terminal_instructions": 12
+      },
+      "role": "no_feedback",
+      "seed": 31101,
+      "vm": {
+        "births": 0,
+        "change_exposed": 0,
+        "deaths": 1,
+        "descendant_births": 0,
+        "descendant_remote_food": 0,
+        "evolution": false,
+        "failed_food": 2,
+        "formation_cost": 37,
+        "founder_action_signature": [
+          [
+            "ACT",
+            0,
+            0
+          ],
+          [
+            "ACT",
+            0,
+            0
+          ]
+        ],
+        "free_material": 512,
+        "heat": 49,
+        "learning": false,
+        "live_energy": 0,
+        "maximum_population": 1,
+        "messages": 0,
+        "mode": "faithful",
+        "mutations": 0,
+        "paid_copy_words": 0,
+        "post_food": 0,
+        "pre_food": 0,
+        "remote_food": 0,
+        "repair": false,
+        "repeated_hidden_port_actors": 0,
+        "route": "genome-eb2ec3a1780915db691d15e57c5b5ccab3672c27d876aa3134c2b0e243ac7332",
+        "seed": 31101,
+        "successful_food": 0,
+        "ticks": 12,
+        "unused_food": 64,
+        "verified": true
+      }
+    }
+  ],
+  "summary": {
+    "world_histories": 30,
+    "instructions": 7764,
+    "actions": 1071,
+    "real_attempts": 1006,
+    "empty_actions": 65,
+    "successful_food": 523,
+    "fresh_packets": 224,
+    "births": 0,
+    "deaths": 18,
+    "finite_survivors": 12,
+    "completed_endpoints": 14,
+    "failed_endpoints": 16,
+    "pc_rewrites": 6,
+    "memory_rewrites": 12,
+    "unrelated_substitutions": 97,
+    "own_read_events": 199,
+    "resource_boundaries_reached": 21,
+    "unused_food": 1397,
+    "total_energy": 42600,
+    "live_energy": 384,
+    "heat": 12062,
+    "constructor_remaining": 2214,
+    "total_material": 15360,
+    "ordinary_conditional_clocks_complete_and_survive": 12,
+    "no_feedback_histories_invariant": 18
+  },
+  "fixtures": 7,
+  "native_zero_exits": 19,
+  "seeds_executed": [
+    31100,
+    31101
+  ],
+  "all_source30_unrun": true,
+  "candidate_genomes_executed": 0,
+  "archive_sha256": "7cde5cc8c9ee7414a44322a0a772374a2300a3d0df6cba1b2bf79688e40941b5",
+  "source_restored": true,
+  "byte_replay": true,
+  "old_pc31_phase1_unchanged": true,
+  "learning": false,
+  "evolution": false,
+  "repair": false,
+  "stage_credit": false,
+  "next_dependency": "Prospective neutral all56 Source30 cold/personal-opportunity admission and matched fixed/reactive controls; no fresh learning primary yet."
+}
