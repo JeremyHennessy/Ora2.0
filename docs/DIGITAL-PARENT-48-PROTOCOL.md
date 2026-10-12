@@ -1,0 +1,9 @@
+# Nested parent process admission protocol
+
+October12,2026. Registered before launch in D:/OraLab/reports/digital-parent48-registration.json. Existing process-limits, evidence-ledger and streaming-auditor source pinned at public063304791f509889028603e5b623ce4b4c01d7fd; separately authored harmless probe and orchestrator pinned by SHA256. This registration does not admit original inventory parsing, original raw-seal auditing or closed-history diagnosis.
+
+Four sequential capped outer launches: normal/refusal from original and restored source. Outer384MiB/15CPU seconds/20wall seconds/1MiB output; normal4processes and refusal3. Nested child128MiB/5CPU/10wall/3processes. Each level includes its known bootstrap and worker, so the combined normal tree needs4slots. Frozen total100wall/60outerCPU ceiling; the outer job includes nested CPU/memory/process use. Evidence64MiB(raw24/archive8/restore24/failure8), fresh single-writer root; no extra writable fixture files.
+
+Normal child must exit0 and emit only the known marker. Refusal child must exit nonzero with Windows quota1816 and no marker; outer probe validates that anticipated refusal and exits0. Native cap readback and post-close exits must agree at both levels. Original/restored semantic output must match; PID/timing/usage values are preserved separately, never required to be identical. Preserve all unexpected failures and stop. No unregistered reruns or enlarged caps.
+
+Zero World, organism trace query, resource actions, births/deaths, new ancestry/policy or reserves. No performance-selected organism or learning witness. This checks supplied engineering launch mechanics only. Inventory memory reachability remains unverified. Native isolation/off-host/full-host recovery/production confinement remain separate; observer stays paused.
