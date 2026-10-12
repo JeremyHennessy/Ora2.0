@@ -82,7 +82,7 @@ def scan(events, program=PROGRAM, mode='mutating'):
 def diagnose(row):
     assert row['seed'] in SEEDS and row['mode'] in MODES
     checked=interpret(row); result=scan(row['final']['events'],row['genesis_program'],row['mode'])
-    for key, old in [('births','births'),('deaths','deaths'),('food','food'),('remote_food','remote_food'),('paid_words','paid_copy_words'),('mutated_words','mutations')]:
+    for key, old in [('births','births'),('deaths','deaths'),('food','successful_food'),('remote_food','remote_food'),('paid_words','paid_copy_words'),('mutated_words','mutations')]:
         assert result['counts'].get(key,0)==checked['checked'][old]
     return dict(seed=row['seed'],mode=row['mode'],diagnosis=result,stage_credit=False,
                 new_world_histories=0,causal_genotype_assay=False)

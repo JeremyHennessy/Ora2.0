@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 from copy import deepcopy
-from experiments.digital_function53 import scan,founder
+from experiments.digital_function53 import scan,founder,diagnose
 
 
 class FunctionFixtures(unittest.TestCase):
@@ -35,3 +36,9 @@ class FunctionFixtures(unittest.TestCase):
         p,e=self.event(10);e['writes']=[dict(write_id=0,mutated=True,index=0,value=13)];c=scan([e],p)['counts'];self.assertEqual(c['mutations_not_reaching_birth'],1);self.assertNotIn('mutations_reaching_birth',c)
     def test_refusals_may_overlap(self):
         p,e=self.event(12);e['outcome']='division_refused';c=scan([e],p)['counts'];self.assertEqual(c['division_energy_refusals'],1);self.assertEqual(c['division_incomplete_refusals'],1)
+    def test_established_referee_food_schema(self):
+        p,e=self.event(attempt=dict(position=0,success=1))
+        row=dict(seed=52000,mode='faithful',genesis_program=p,final=dict(events=[e]))
+        checked=dict(births=0,deaths=0,successful_food=1,remote_food=0,paid_copy_words=0,mutations=0)
+        with patch('experiments.digital_function53.interpret',return_value=dict(checked=checked)):
+            self.assertEqual(diagnose(row)['diagnosis']['counts']['food'],1)
