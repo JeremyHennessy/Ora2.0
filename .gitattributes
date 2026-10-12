@@ -1,0 +1,2 @@
+# Preserve the frozen manifest byte identity across Windows checkouts.
+data/digital-neutral-tail42-manifest.json -text
