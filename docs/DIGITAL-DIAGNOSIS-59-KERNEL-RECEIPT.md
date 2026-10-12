@@ -1,0 +1,7 @@
+# Diagnosis59 prepared provenance kernel receipt
+
+October12,2026. [Scope and limits](DIGITAL-DIAGNOSIS-59-KERNEL-PROTOCOL.md), [machine result](DIGITAL-DIAGNOSIS-59-KERNEL-RESULTS.json). Two separately implemented normalized-view scans return byte-identical conservative feedback-origin ledgers over24 prepared cases at exported/restored source; four v3 native-zero calls, strict caps/PID closure and full source/archive/restoration checks passed. The v2 collector refusal is retained; its native24 assertions passed, but that collection was not accepted.
+
+This is supplied analytical software. ZERO new organisms/resources/actions/births/deaths/changes or closed trace queries. No measured organism-developed capability, causal inheritance, selection, learning, repair, intelligence, consciousness or new stage acceptance. Whole Diagnosis59 remains UNADMITTED: the full raw projection/transmission/opportunity/identity/referee gates and whole-contract fixtures are unfinished. These additional24 provenance cases do not satisfy those remaining fixtures. No reserved samples opened; observer remains paused and private observer history/UI/schedules/ownership restrictions unchanged.
+
+Next dependency: finish the independently checked whole-history projection/transmission/opportunity and admission software before exact finite read-only execution registration. Within-life control design proceeds separately from reproduction.
