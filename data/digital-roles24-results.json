@@ -1,0 +1,2853 @@
+{
+  "accepted": 1,
+  "byte_replay": true,
+  "classification": "PROSPECTIVE_ROLE_PREDICATES_ONLY",
+  "focused_tests": 5,
+  "historical_rescores": 0,
+  "learning": false,
+  "native_zero_exits": 5,
+  "new_world_histories": 0,
+  "next_dependency": "Register performance-blind candidates with complete provenance and candidate-specific paid budget, genuine unseen context coverage, and full opportunity/resource-matched fixed/reactive/memory-disabled/own-history controls in the unchanged Exposure23 law; no installed successful learner or automatic candidate admission from fixed baseline.",
+  "old_exposure23_unchanged": true,
+  "prepared_records": [
+    {
+      "actual": true,
+      "expected": true,
+      "name": "reactive_positive_without_cold_failure",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "empty_reset_is_not_personal_failure",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": null,
+            "tick": 66
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 99
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 67,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 99,
+            "tick": 100,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "repeated_latch_not_sixteen_distinct_post_attempts",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 99,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 100,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 101,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 102,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 103,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 104,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 105,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 106,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 107,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 108,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 109,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 110,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 111,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 112,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 113,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 114,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "other_actor_history",
+      "record": {
+        "actions": [
+          {
+            "actor": 1,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "boolean_attempt_identity",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": true,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "mismatched_feedback_value",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 66,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "no_personal_failure_read",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "fifteen_fresh_packets",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "missing_survival",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": false,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 65,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "actual": false,
+      "expected": false,
+      "name": "future_attempt_as_past_history",
+      "record": {
+        "actions": [
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 0,
+              "success": 0
+            },
+            "tick": 65
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 16,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 67
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 17,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 69
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 18,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 71
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 19,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 73
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 20,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 75
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 21,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 77
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 22,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 79
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 23,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 81
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 24,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 83
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 25,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 85
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 26,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 87
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 27,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 89
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 28,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 91
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 29,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 93
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 30,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 95
+          },
+          {
+            "actor": 0,
+            "attempt": {
+              "packet": 31,
+              "port": 1,
+              "success": 1
+            },
+            "tick": 97
+          }
+        ],
+        "alive_through_change": true,
+        "reads": [
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 66,
+            "value": 0
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 67,
+            "tick": 68,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 69,
+            "tick": 70,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 71,
+            "tick": 72,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 73,
+            "tick": 74,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 75,
+            "tick": 76,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 77,
+            "tick": 78,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 79,
+            "tick": 80,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 81,
+            "tick": 82,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 83,
+            "tick": 84,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 85,
+            "tick": 86,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 87,
+            "tick": 88,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 89,
+            "tick": 90,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 91,
+            "tick": 92,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 93,
+            "tick": 94,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 95,
+            "tick": 96,
+            "value": 1
+          },
+          {
+            "actor": 0,
+            "origin": "own_actual_attempt",
+            "source_tick": 97,
+            "tick": 98,
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "refused": 9,
+  "seeds_executed": [],
+  "source": "bc7357f62667ca83ebf42e625f6aef0537e6d111",
+  "source_restored": true,
+  "stage_credit": false,
+  "verified": true,
+  "archive_sha256": "a817100d491a296f7758810700070980e8e05adee5e0902bc9085f50d500606c",
+  "old_law_and_criteria_unchanged": true,
+  "old_exposure23_refusal_unchanged": true,
+  "new_actions": 0,
+  "new_births": 0,
+  "new_deaths": 0,
+  "whole_work": null,
+  "fresh_work": null,
+  "damage": null,
+  "organism_developed_behavior": null,
+  "external_aggregation_failure_preserved": "D:/OraLab/reports/digital-roles24-audit-aggregation-failure.json"
+}
