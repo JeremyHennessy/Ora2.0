@@ -1,0 +1,29 @@
+# Function56 closed-history diagnosis — October12
+
+[Prospective protocol](DIGITAL-FUNCTION-56-PROTOCOL.md), [all64 input identities/363 actor ledgers/299 paid edges/13 diagnostic actors](DIGITAL-FUNCTION-56-RESULTS.json), [immutable Mobile55 primary receipt](DIGITAL-MOBILE-55-RECEIPT.md).
+
+This is read-only reanalysis of all64 closed Mobile55 histories, both arms/all16 contexts. Zero new World calls, organisms, actions, resources, births, deaths, mutations, interventions, horizon extensions or reserve access. The new scanner does not import the producer. The supplied VM, fixed NON-learning ancestor, paid copying/variation/resource laws and all primary outcomes remain unchanged. No outcome-selected candidate insertion or researcher repair.
+
+|Exclusive classification of all299 paid edges|Count|
+|---|---:|
+|No qualifying parent site1 function before birth|289|
+|Changed child program after qualifying parent function|9|
+|Unstable parent at division after qualifying function|0|
+|Eligible exact-copy child without later qualifying function|1|
+|Registered exact functional transmission association|0|
+
+The13 qualifying naturally born actors have10 paid children from6 parents;7 qualifying actors have no child in the frozen histories. All10 births occur after the parent's first qualifying function. All actors, including dead and zero-action children, remain in the denominator. These figures refine the scope of the negative; they do not identify a successful genome to insert.
+
+The one exact-copy edge is seed55000 parent3→child6 at tick482. The child has10 scheduled instructions,3 ACTs,1 MOVE,1 total food acquisition,1 site1 ACT attempt (unsuccessful),3 scheduled instructions at site1 with food present,3 paid copied words,0 births, endpoint energy19/alive. Its one division refusal at498 has BOTH incomplete nursery and insufficient energy (23 after base charge); material374/population3 do not bind. The finite cutoff leaves it alive. This does not prove further function, inherited advantage, or general impossibility. Do not extend the closed history.
+
+Among the nine changed-program children, two themselves meet the existing stable nonancestor site1 observation: seed55002 parent1→child4, born490,5 scheduled instructions/1 site1 acquisition at504; seed55012 parent1→child4, born445,12 instructions/1 site1 acquisition at452. Their programs differ from their parents, so they are correctly excluded from Mobile55's frozen exact-program association gate. Functional continuity with a changed genome is a descriptive observation; its causal inheritance/benefit and selection remain untested. The zero exact-copy result must not be paraphrased as no descendant ever acquired the parent's resource. No historical criterion or stage is rescored.
+
+The13 qualifying actors have117 actual division attempts:10 births/107 refusals.104 refusals have incomplete nurseries,41 insufficient energy after the base charge,0 insufficient material,0 full population. Conditions overlap and do not identify one isolated causal bottleneck. Remaining scheduled instructions after first function range1–145;12 actors remain alive and one died. No further time or adjusted prices are granted.
+
+Every one of363 actor ledgers balances startup12 +20 per successful food +received transfers −base instructions −paid copied words −30 per birth −sent transfers −cap overflow −HALT dissipation against actual finite energy. Raw event joins independently reconstruct packet availability, empty/paid ACTs, site positions, nursery completion and every division gate after the full generic VM referee. Each available-food scheduled instruction is an observed opportunity only, not hypothetical successful action. All299 chronological categories agree with the prior ancestry/parent-before-birth/child-later records. Source-restored outputs are byte-identical for every identity.
+
+Engineering verification:8 prepared synthetic join/bookkeeping cases at both source locations;130 capped native-zero calls; outer elapsed65.328seconds/user CPU43.984375seconds/peak74,612,736bytes,262 started processes/zero active before closure. Child128MiB/5CPU/10wall/3slots/native1MiB stdout (normal diagnostic serialization256KiB); outer384MiB/700CPU/1500wall/4slots, flags8716/native readback/PID closure.682files/232,553,634logical evidence bytes within512MiB; source ZIP restored before interpretation, full raw ZIP/restoration/seals/prewrite-ledger audited; controller separately capped8MiB. Exact source/input hashes are in the immutable lab registration. No software/native failure in this diagnosis.
+
+Decision: complete descriptive diagnosis accepted; original Mobile55 registered transmission association remains0/16 context groups. New scientific stage acceptance, isolated genome causality, useful inherited benefit, selection, sustained evolution, within-life learning, repair, intelligence and consciousness remain unverified. Engineering restoration is not organism repair; production confinement and off-host/full-host recovery remain unverified.
+
+Single next dependency: prospectively derive costs, source ancestry and opportunity/generation admission for a same-substrate, complete-denominator inheritance-disabled comparison. Source every candidate through a neutral rule defined before any new outcome, retain changed-program functional continuity separately from exact copying, and require enough actual child resource/action opportunities after ordinary paid viability. Register claim-specific controls and falsifiers before new runs; no winner insertion, new world version, retrospective price lowering or reserve opening. Within-life learning feasibility remains separate from reproduction. Observer paused; schedules, private observer history/UI, AI-Research ownership and activation restrictions unchanged.
