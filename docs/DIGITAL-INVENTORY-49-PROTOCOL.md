@@ -1,0 +1,11 @@
+# Actual inventory and original input-seal admission protocol
+
+October12,2026. Registered before launch in D:/OraLab/reports/digital-inventory49-registration.json, preserved in [complete result](../data/digital-inventory49-results.json). Source35103a59cf3ba091135cf4e650839031d75409e0 and separately authored probe/orchestrator pinned by SHA256. The entire canonical published History44 inventory is the input; no outcome-selected subset or reserved sample.
+
+Two sequential original/restored parent calls, each384MiB/120CPU seconds/180wall/4processes/1MiB output. Each parent includes its nested harmless marker128MiB/5CPU/10wall/3processes. Frozen total380wall/240outerCPU ceiling, with nested usage included in parent limits. Evidence96MiB(raw40/archive16/restore32/failure8), single-writer fresh root. Readback and post-close exits required at both levels.
+
+Stream hashes for every file in the entire original run ledger. Verify independent reservation/link/physical-byte/accounting checks and compare each original seal with its preserved closing-receipt copy. Stream the100MB full-VM proof hash, compare its original closing seal, and do not parse/reexecute that proof. Pin closing receipt, original ledger and full proof before/after. Compare canonical published bytes with their original publication seal.
+
+Inside the capped parent parse all6408 metrics and all256 ancestry entries. Require the exact candidate/reference/context/control identity denominator, no duplicates/missing samples, candidate sample-ID joins and valid input-hash fields; require all816 original batch file names and hashes. These are inventory and byte checks, not recomputed scientific outcomes or raw-row identity interpretation. Within-batch raw-row hashes/roles/ancestry must still be validated against canonical metrics before later diagnostic use.
+
+Archive/restore exact source and canonical bytes, rerun the same check and require identical semantic seals. Preserve native timing/memory/PID records separately. Failure stops with original outputs; no enlarged cap, rescore, new source/law, reserve opening or organism repair. Zero World or organism trace interpretation; no stage credit. Supplied engineering only; observer paused and production/isolation/full-host/off-host recovery limitations remain.
