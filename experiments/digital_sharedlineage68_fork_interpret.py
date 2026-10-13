@@ -4,7 +4,7 @@ No producer import. Partial fixture checks do not qualify a full continuation.
 """
 import hashlib,json
 from experiments import digital_sharedlineage68_interpret as natural_full
-from experiments.digital_sharedlineage68_transition import (VERSION,ROLES,GENERATIONS,actor_record,slots_from_audited,transition,validate_provenance)
+from experiments.digital_sharedlineage68_transition import (VERSION,ROLES,GENERATIONS,actor_record,slots_from_audited,validate_provenance)
 
 ANCESTOR_WORDS=[4,1,1,6,0,0,5,0,1,6,0,0,10,0,0,12,0,0,13,1,0,13,1,0,7,0,1]
 
@@ -22,6 +22,67 @@ def types(x,key=None):
 def body(identity,parent,generation,code,units,pos):
     return dict(id=identity,parent=parent,generation=generation,code=code,state_units=units,
                 memory=[0]*8,registers=[0,0],pc=0,cue=0,feedback=0,inbox=None,pos=pos,energy=12,nursery=[])
+
+def transition(state,slot,natural_hash,role,provenance):
+    """Literal referee boundary, independently derived from the frozen law.
+
+    No producer transition/validation helper is called. Full prefix replay must
+    precede this check; partial prepared states remain software witnesses only.
+    """
+    types(state);types(slot)
+    assert type(provenance) is dict and set(provenance)=={'source_sha256','configuration_sha256'}
+    for digest in [natural_hash,*provenance.values()]:
+        assert type(digest) is str and len(digest)==64 and set(digest)<=set('0123456789abcdef')
+    assert role in ('sham','ancestor_value_control')
+    for key,minimum in [('target',1),('parent',0),('generation',1),('tick',1)]:
+        assert type(slot[key]) is int and slot[key]>=minimum
+    assert slot['generation'] in (1,2) and slot['tick']<=4096
+    assert type(state['tick']) is int and state['tick']==slot['tick']
+    assert (state['mode'],state['fuel_mode'],state['inheritance_mode'])==('mutating','renewed','parent_copy')
+    # Canonical identities are derived here rather than trusting the shared accessor.
+    def lookup(mapping,identity):
+        assert type(mapping) is dict
+        normalized={}
+        for key,value in mapping.items():
+            assert type(key) in (int,str)
+            if type(key) is str:
+                assert key.isascii() and key.isdecimal() and str(int(key))==key
+            number=int(key);assert number>=0 and number not in normalized
+            normalized[number]=value
+        assert identity in normalized
+        return normalized[identity]
+    daughter=lookup(state['entities'],slot['target'])
+    own_turns=lookup(state['turns'],slot['target']);assert type(own_turns) is int and own_turns==0
+    assert h({k:v for k,v in state.items() if k!='events'})==slot['post_step_hash']
+    assert daughter['code']==slot['born_code'] and len(daughter['code'])==27 and len(daughter['state_units'])==16
+    assert daughter==body(slot['target'],slot['parent'],slot['generation'],daughter['code'],daughter['state_units'],daughter['pos'])
+    words=slot['certificates'];assert type(words) is list and len(words)==27
+    write_ids=set()
+    for index,word in enumerate(words):
+        for key in ('write_id','index','actor','tick','source_unit','unit','source_value','effective_source_value','value','mutation_draw'):
+            assert type(word[key]) is int and word[key]>=0
+        assert word['write_id'] not in write_ids;write_ids.add(word['write_id'])
+        assert word['index']==index and word['actor']==slot['parent'] and 0<word['tick']<slot['tick']
+        assert word['effective_source']=='parent_copy' and word['effective_source_value']==word['source_value']
+        assert word['source_value']<32 and word['value']<32
+        draw=int(h([state['seed'],'mutation',word['write_id']])[:16],16)
+        expected=word['source_value']
+        if draw%100<8:expected=(expected+1+(draw//100)%31)%32
+        assert word['mutation_draw']==draw and word['value']==expected
+        assert type(word['mutated']) is bool and word['mutated']==(expected!=word['source_value'])
+        assert daughter['code'][index]==[expected,word['unit']]
+    # A deep copy plus explicit value writes preserves every other world field.
+    after=clone(state);edited=lookup(after['entities'],slot['target'])
+    mask=[i for i,cell in enumerate(daughter['code']) if cell[0]!=ANCESTOR_WORDS[i]]
+    if role=='ancestor_value_control':
+        for i in range(27):edited['code'][i][0]=ANCESTOR_WORDS[i]
+    record=dict(version='DIGITAL-SHARED-LINEAGE-68-NEWBORN-v1',role=role,
+        provenance=clone(provenance),natural_history_hash=natural_hash,target=slot['target'],
+        parent=slot['parent'],generation=slot['generation'],tick=slot['tick'],before_hash=h(state),
+        after_hash=h(after),code_value_mask=mask,before_code=clone(daughter['code']),
+        after_code=clone(edited['code']),certificates=clone(words),
+        assistance='DECLARED_COUNTERFACTUAL_NOT_NATURAL_REPAIR')
+    return after,record
 
 def audit_history(row,binding=None,natural_hash=None,observations=None):
     types(row)
