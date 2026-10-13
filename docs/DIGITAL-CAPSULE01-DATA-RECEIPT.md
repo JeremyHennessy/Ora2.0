@@ -86,3 +86,68 @@ seven native roles, endpoint512/cuts64,256, child512MiB/60CPU/120wall/3slots,
 outer768MiB/600CPU/1200wall/4slots, evidence128MiB+controller8MiB and free1GiB.
 No qualified loader equivalence, durability, loss policy, endurance or activation
 yet. Parallel69 history/admission and independent learning dependencies unchanged.
+
+## Finite exact-state save/stop/load/resume verified October13UTC
+
+Executed source `a0f06af409285adba1cdb213181fed2f0f92e616` only after exact-head
+CI38444053720 passed1324attempted/1311passed/13skipped. Whole prospective
+source/configuration/file-grant registration:
+`D:/OraLab/reports/capsule01-finite-v1-registration.json`.
+Seven native roles and outer controller exited normally with empty owned process
+trees. All role/raw/request/native/manifest files were precharged before children;
+source/configuration checked before/after each role. Child512MiB/60CPU/120wall/3slots;
+outer768MiB/600CPU/1200wall/4slots;raw/archive/restore/failure32MiB each and controller8MiB.
+Actual retained lab evidence96files/23459192logical bytes/71232186reserved bytes,
+including complete archive and byte-exact restoration. No cap/horizon/cut/role
+change or failed-run retry. Operator lock released; no continuing world.
+
+Independent raw/native/archive interpretation:
+`D:/OraLab/reports/capsule01-finite-interpretation-v1.json`.
+Raw histories: `D:/OraLab/runs/capsule01-finite-v1-20261013`.
+The three finite histories comprise one uninterrupted512 reference and the two
+independent cut/resume histories;3genesis constructors plus2fresh hydration objects,
+1536ordinary executed instructions total. They are engineering repetitions of one
+software condition, not independent scientific seeds. Literal referee certified
+512+64+256=832prefix instructions separately; prepared forgery checks also performed
+disclosed partial replay diagnostic work. No prefix replay hidden in hydration.
+
+Both fresh readers loaded exact cut64/256 state with constructor,step and legacy
+restore traps active THROUGH loading:ZEROgenesis constructor orprefix-step calls.
+Loaded state and every final event/physical value matched the independently audited
+uninterrupted512 reference, including source/code/state/memory/PC/latches/inbox,
+scheduler/turns/packet/mutation cursors, ownership, resources and complete ancestry.
+Cut64 capsule220274bytes/observed load0.017569seconds;cut256 capsule789595bytes/
+observed load0.0617784seconds. These single measurements do not establish guaranteed
+latency or constant-time load: retained history decoding/hashing still grows with
+saved bytes. Complete journal retained; no compression/retention optimization.
+
+Reference ordinary census:512instructions,6paidbirths,0deaths,70successful food
+acquisitions,61failed attempts,192paid COPYwords,0mutations,7maximum/living actors.
+128tokens offered/112admitted/16rejected,106unused tokens,217live energy,
+1254heat and69constructor reserve. Exact energy accounting:
+217+1254+69+20*106=1420+20*112=3660. Material ownership and all paid birth/COPY/
+startup instructions independently replayed. All behavior comes from the openly
+supplied fixed Mobile54 reproductive/exploration ancestor under unchanged68 laws;
+no organism-developed policy, repair, evolutionary selection or learning evidenced.
+
+Fifteen forged capsule histories were refused by the independent referee even
+with producer-boundary/loader helpers corrupted. Eight unsafe-read witnesses
+(symlink/reparse/hardlink/short extent across both readers) refused before open,
+using disclosed prepared lstat/open traps. Actual normal recording identity/extent/
+hash/flush checks passed; OS symlink privilege/adversarial confinement was not tested.
+
+Decision: FINITE EXACT STATE SAVE/STOP/LOAD/RESUME VERIFIED, engineering only.
+No new scientific stage acceptance and no persistent/observer activation. This
+512-step normal-stop qualification does not establish crash durability, prior-complete
+commit/loss policy, process-birth stale ownership, off-drive/full-host restore,
+endurance, history retention limits or production confinement. Existing closed
+physical/63/64/65/66/68 laws/results/samples/reserves remain unchanged.
+
+Single next engineering dependency: prospectively freeze a separate finite partial-
+commit/crash recovery and accepted-loss fixture, with process-birth ownership and
+the last COMPLETE capsule retained; do not extend this closed512 panel. Parallel69
+science still needs independent paid birth-prefix/child-source histories and fresh
+ALL16ordinary admission; learning needs affordable older-personal-history versus
+latest-reactive/actual-channel controls. Reproduction/evolution/learning are not
+prerequisites for this engineering work. Endurance/pilot gates and separate explicit
+activation approval remain; observer paused, private UI/AI ownership/cadences intact.
