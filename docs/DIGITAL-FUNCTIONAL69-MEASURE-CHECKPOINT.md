@@ -54,3 +54,52 @@ Parallel crash/loss/process-birth and longer-ecology horizon/referee/schedule/
 budget work remains prospective. Capsule01 qualifies finite normal-stop512/cuts
 64,256 only. Private observer history/UI and AI-Research ownership stay preserved;
 observer paused, cadence unchanged, no persistent world/service/pilot/API activation.
+
+## Original/restored reader-source measurement qualification
+
+Executed reader candidate `dd62aabf26c45f0adb1822a03086cb3f89c4677b` only after
+exact-head CI38455930716 passed 1356 attempted / 1343 passed / 13 skipped.
+Prospective V1 failed before its first replay: the source export omitted the
+reviewed process-limit bootstrap module. Zero readers completed. Native exit1,
+partial precharged files, failure/source/archive/restoration remain preserved:
+`D:/OraLab/runs/functional69-measure-software-v1-20261013`. It is not a pass.
+
+Fresh V2 includes the exact reviewed bootstrap at both reader exports. It keeps
+all original limits, roles, old inputs, costs and criteria. Registration:
+`D:/OraLab/reports/functional69-measure-software-v2-registration.json`.
+ALL24 readers (ALL12 old software roles at each reader-source export) and the
+outer controller exited0 with empty owned process trees. Every proof4 MiB/native
+1 MiB/request256 KiB was precharged before the first child. Child768 MiB/90 CPU
+seconds/180 wall seconds/3 slots; outer1536 MiB/1800 CPU seconds/3600 wall seconds/
+4 slots. Raw/archive/restore128 MiB each, failure16 MiB and controller8 MiB.
+Every source image is byte-matched and every measured proof pair is byte-identical.
+The original twelve raw histories, their provenance, prices and results are
+unchanged. All source, raw, native, failed V1 and V2 archive restoration verified.
+
+Independent read-only interpretation:
+`D:/OraLab/reports/functional69-measure-interpretation-v1.json`.
+Evidence: `D:/OraLab/runs/functional69-measure-software-v2-20261013`.
+Four pair comparisons and two family comparisons retain the complete software
+denominator. Relative to control, seed1 parent loses3 births/32 food and has no
+actual paid child: child NULL remains. Seed2 parent has equal births/+9 food and
+different shared ACT/MOVE actions. Its actual child has equal births/food, no
+shared-action differences, and0 own births. Neither family meets the functional
+contribution predicate (0/2 SOFTWARE cases). No genome is selected or enrolled.
+This is measured evaluator reachability, not primary/unseen scientific replication
+or useful parent-to-child reproduction, evolution, learning or stage acceptance.
+
+Zero new World constructors, new contexts or newly generated organism outcomes.
+Literal replay rechecks the old software seeds1/2; it recomputes their already
+registered resource/copy hashes rather than querying a fresh bank. The supplied
+fixed ancestor, VM/resource/mutation and declared free code-value controls remain
+assistance. Prepared positive witnesses do not become organism achievements.
+
+Scope is READER measurement equivalence at original/restored source exports;
+this is not producer execution at BOTH exports or whole69 assay qualification.
+Next: source-restored producer/control and complete69 membership/ALL16 ordinary
+gate/scientific-runner qualification before any treatment. All70000/70200 science
+and70100/70300 reserves unopened. The V1 bootstrap defect was corrected before
+replay, not by altering any failed organism, law, horizon, price or outcome.
+Parallel crash/loss/process-birth and long-ecology horizon/referee/schedule/budgets
+remain prospective; learning affordability is independent. Observer remains
+paused; private history/UI/research ownership/cadences intact; no activation.
