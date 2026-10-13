@@ -1,0 +1,164 @@
+{
+  "version": "DIGITAL-FUNCTIONAL-INHERITANCE-69-v1",
+  "status": "DESIGN_FROZEN_EXECUTION_UNADMITTED",
+  "reviewed_base": "0cf691ac51796e312361a9904cb793280d319198",
+  "reviewed_base_input_sha256": {
+    "experiments/digital_sharedlineage68_population.py": "c0f5b40818be9e2a34573b3fd3b592acb2229bd8187501400de2718aac881232",
+    "experiments/digital_sharedlineage68_interpret.py": "0ccc567b3fd8413f81466cf7605eb6bcfe3ef4c9e570c03a059443475f68f848",
+    "experiments/digital_sharedlineage68_transition.py": "0291ea782a052314bb4fab8ea5b9688762b067061d52ffa01e680f2f8c27f392",
+    "experiments/digital_sharedlineage68_world.py": "ddd1f27624633bebb27771d050c2a25cb5d4f49bce421f3f1c6361175de7e74f",
+    "experiments/digital_sharedlineage68_fork_interpret.py": "4b9c784715fceec1d4e2ee6fc37cbd2a4795cafa520e0b5a353ccb26452f401b",
+    "experiments/digital_sharedlineage68_observe.py": "3516dabdeee61c8d3c6e5d58520c30dda5df8e4cc380165c220532e2f8c52ec4",
+    "experiments/digital_sharedlineage68_admission.py": "1b5f9c2d1c59d8dbab47be2ae38fde677aae0da22f7788ef723a657feb2643e6",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "experiments/heartbeat_checkpoint.py": "661772105d23db0b75e05766a7cdbfb1b12b61bbe755e556b4d693433f3c8755",
+    "experiments/heartbeat_checkpoint_audit.py": "1e9056af59afb4cf7408c87dc181be38657ee99032f35ce9a4fd0a80f8617b86",
+    "experiments/integrated_recovery_worker.py": "e64033ce50c5ce4ce724344ee7fbfe79bbac3de1f000659e2c6579452eee6f7f",
+    "experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e",
+    "experiments/evidence_write_grant68.py": "7e89c92887f678ef531f987882d90f59986d410efab6585a2b4c71bccd7b39f0",
+    "docs/DIGITAL-EXPERIMENT-ADMISSION.md": "2f0f0128d4ae06241a7171856c5cdb4b9c8f30c31c07246e921281cdcd99fda3",
+    "docs/DIGITAL-SHARED-LINEAGE-68-PROTOCOL.md": "c84c6530ecdd11b318a9153ab603899ce8788784fc7f57fc7ae7e04cb4b01d98"
+  },
+  "contract_sha256": "906d99a947c12ff02d7ba3b1994b7bcce8c1f488fbead2f530df3b7a37365c5f",
+  "natural_vm_version": "DIGITAL-SHARED-LINEAGE-68-v1",
+  "same_vm_resources_costs_mutation": true,
+  "mutation_probability_threshold": {
+    "modulus": 100,
+    "less_than": 8,
+    "different_word_jump_modulus": 31
+  },
+  "primary": [
+    70000,
+    70001,
+    70002,
+    70003
+  ],
+  "unseen": [
+    70200,
+    70201,
+    70202,
+    70203
+  ],
+  "reserved_primary": [
+    70100,
+    70101,
+    70102,
+    70103
+  ],
+  "reserved_unseen": [
+    70300,
+    70301,
+    70302,
+    70303
+  ],
+  "software_seeds": [
+    1,
+    2
+  ],
+  "source_selection": "FIRST_PAID_GENERATION1_BIRTH_THEN_THAT_PARENTS_FIRST_PAID_CHILD_NO_REDRAW",
+  "families": 8,
+  "slots": 16,
+  "population_roles": [
+    "faithful_parent_copy",
+    "mutating_parent_copy",
+    "mutating_ancestor_copy"
+  ],
+  "parent_roles": [
+    "sham",
+    "ancestor_value_control"
+  ],
+  "child_roles": [
+    "sham",
+    "inherited_source_control_preserving_child_draws"
+  ],
+  "original_population_roles": 24,
+  "original_continuation_roles": 32,
+  "restored_engineering_roles": 56,
+  "max_native_children": 226,
+  "ordinary": {
+    "references": 16,
+    "treatment_worlds_before_admission": 0,
+    "all_gates": true,
+    "source_restored_equal": true,
+    "native_call_at_gate": 34,
+    "minimum_births": 12,
+    "minimum_generation": 3,
+    "minimum_post_founder_instructions": 128,
+    "paid_personal_chain": true,
+    "post_founder_personal_birth": true,
+    "post_founder_renewed_food": true,
+    "living_descendant": true
+  },
+  "horizon": 4096,
+  "own_instruction_expiry": 256,
+  "material_units": 512,
+  "population_cap": 32,
+  "child_limits": {
+    "memory_mib": 768,
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "process_slots": 3,
+    "native_mib": 1
+  },
+  "outer_limits": {
+    "memory_mib": 1536,
+    "cpu_seconds": 14400,
+    "wall_seconds": 21600,
+    "process_slots": 4
+  },
+  "evidence_limits": {
+    "raw_record_mib": 64,
+    "proof_record_mib": 8,
+    "cohort_mib": 16,
+    "total_mib": 40960,
+    "controller_mib": 8,
+    "min_free_gib": 96
+  },
+  "functional_gate": [
+    "PARENT_COMPLETE_CHANGED_USEFUL_SHARED_ORDINAL_STRATEGY",
+    "ACTUAL_PAID_TEMPORAL_PARENT_COPY_CHILD_BIRTH",
+    "CHILD_COMPLETE_NONEMPTY_SOURCE_MASK_USEFUL_SHARED_ORDINAL_STRATEGY",
+    "CHILD_PERSONAL_FOOD_AND_PAID_OWN_BIRTH",
+    "FULL_INDEPENDENT_HISTORY_CUSTODY_REPLAY"
+  ],
+  "replicated_gate": "AT_LEAST_ONE_PRIMARY_AND_ONE_UNSEEN_INDEPENDENT_CONTEXT",
+  "exact_genotype_identity_required": false,
+  "scientific_stage_credit": false,
+  "sustained_selection_evolution_accepted": false,
+  "learning_accepted": false,
+  "efficient_persistence": {
+    "contract": "DIGITAL-EXACT-PERSISTENCE-QUALIFICATION-01",
+    "status": "DESIGN_FROZEN_QUALIFICATION_UNADMITTED",
+    "software_seed": 1,
+    "endpoint": 512,
+    "cuts": [
+      64,
+      256
+    ],
+    "native_roles_max": 7,
+    "finite_histories_max": 3,
+    "child_limits": {
+      "memory_mib": 512,
+      "cpu_seconds": 60,
+      "wall_seconds": 120,
+      "process_slots": 3
+    },
+    "outer_limits": {
+      "memory_mib": 768,
+      "cpu_seconds": 600,
+      "wall_seconds": 1200,
+      "process_slots": 4
+    },
+    "evidence_mib": 128,
+    "controller_mib": 8,
+    "min_free_gib": 1,
+    "evolution_learning_success_prerequisite": false,
+    "activation_authorized": false
+  },
+  "no_new_world": true,
+  "no_seed_hash_query": true,
+  "no_selected_genome": true,
+  "observer_activated": false
+}
