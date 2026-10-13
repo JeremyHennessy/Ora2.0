@@ -197,4 +197,3 @@ def history(seed,route='ancestor',mode='faithful',fuel_mode='renewed',inheritanc
     checkpoint=world.snapshot();resumed=World.restore(checkpoint)
     final=world.run(4096);assert final==resumed.run(4096)
     return dict(version=VERSION,seed=seed,mode=mode,inheritance_mode=inheritance_mode,fuel_mode=fuel_mode,route=route,genesis_program=PROGRAMS[route],checkpoint=checkpoint,final=final,hash=h(final),ancestor_supplied=True,checkpoint_replay=True,learning_demonstrated=False)
-
