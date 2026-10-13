@@ -1,0 +1,53 @@
+"""Prospective69 admission predicates; prepared receipts are not paid evidence.
+
+The pinned parent must authenticate complete raw/proof histories and durable
+receipt custody. These pure helpers never confer authority on invented summaries.
+"""
+from experiments.digital_functional69_referee import ANCESTOR_WORDS,h
+from experiments.digital_functional69_transition import validate_provenance
+PRIMARY=tuple(range(70000,70004));UNSEEN=tuple(range(70200,70204));SEEDS=PRIMARY+UNSEEN
+
+
+def ordinary_gate(summary,software=False):
+    assert type(software) is bool
+    assert summary['verified'] is True and type(summary['seed']) is int
+    assert summary['seed'] in ((1,2) if software else SEEDS)
+    assert summary['mode']=='faithful' and summary['inheritance_mode']=='parent_copy'
+    assert summary['route']=='ancestor' and summary['formation_cost']==43
+    assert summary['genesis_program_hash']==h(ANCESTOR_WORDS) and summary['fuel_mode']=='renewed'
+    t=summary['turnover']
+    for value in (summary['births'],t['post_founder_instructions'],t['maximum_generation'],
+                  t['post_founder_paid_personal_births'],t['post_founder_renewed_food'],t['living_descendants']):
+        assert type(value) is int and value>=0
+    assert t['founder_expiry_tick'] is None or (type(t['founder_expiry_tick']) is int and 1<=t['founder_expiry_tick']<=4096)
+    assert type(t['paid_personal_chains']) is list
+    # Same frozen64/68 paid lifecycle predicate; only69 membership differs.
+    return (t['founder_expiry_tick'] is not None and t['post_founder_instructions']>=128
+            and summary['births']>=12 and t['maximum_generation']>=3
+            and t['post_founder_paid_personal_births']>0 and t['post_founder_renewed_food']>0
+            and bool(t['paid_personal_chains']) and t['living_descendants']>=1)
+
+
+def ordinary_admission(original,restored):
+    assert type(original) is list and type(restored) is list
+    assert len(original)==len(restored)==8
+    all_gates=[];copies=[]
+    for export in (original,restored):
+        seen={}
+        for summary in export:
+            assert summary['seed'] not in seen;seen[summary['seed']]=summary
+            all_gates.append(ordinary_gate(summary))
+        assert set(seen)==set(SEEDS);copies.append(seen)
+    # Evaluate ALL16 before aggregation; equality does not prove raw custody.
+    assert copies[0]==copies[1]
+    return all(all_gates)
+
+
+def require_durable_admission(receipt,expected_source,expected_configuration):
+    validate_provenance(dict(source_sha256=expected_source,configuration_sha256=expected_configuration))
+    assert type(receipt) is dict and receipt['source_sha256']==expected_source
+    assert receipt['configuration_sha256']==expected_configuration
+    assert type(receipt['references']) is int and receipt['references']==16
+    assert type(receipt['treatment_worlds']) is int and receipt['treatment_worlds']==0
+    assert receipt['original_restored_equal'] is True and receipt['all_paid_gates'] is True
+    return True
