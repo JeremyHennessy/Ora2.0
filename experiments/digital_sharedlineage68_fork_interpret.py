@@ -23,7 +23,7 @@ def body(identity,parent,generation,code,units,pos):
     return dict(id=identity,parent=parent,generation=generation,code=code,state_units=units,
                 memory=[0]*8,registers=[0,0],pc=0,cue=0,feedback=0,inbox=None,pos=pos,energy=12,nursery=[])
 
-def audit_history(row,binding=None,natural_hash=None):
+def audit_history(row,binding=None,natural_hash=None,observations=None):
     types(row)
     assert set(row)=={'version','seed','mode','fuel_mode','route','genesis_program','inheritance_mode','checkpoint','final','hash','ancestor_supplied','checkpoint_replay','learning_demonstrated'}
     assert row['version']=='DIGITAL-SHARED-LINEAGE-68-v1'
@@ -73,6 +73,7 @@ def audit_history(row,binding=None,natural_hash=None):
         event=dict(tick=tick,actor=actor,decoded=[opcode,a,b],before=h(e),outcome='executed')
         if offers is not None:event['input']=offers
         if release:event['release']=release
+        if observations is not None:observations.before(snapshot(False),event['decoded'])
         e['energy']-=1;heat+=1;e['pc']=(e['pc']+1)%n;r=e['registers']
         neighbors=[org[i] for i in ids if i!=actor and org[i]['pos']==e['pos']]
         local=sorted(i for i in food if food[i][0]==e['pos'] and (not 16<=i<32 or tick>=64))
@@ -155,6 +156,7 @@ def audit_history(row,binding=None,natural_hash=None):
         owned=[v[1] for o in org.values() for v in o['code']]+[u for o in org.values() for u in o['state_units']]+[w['unit'] for o in org.values() for w in o['nursery']]
         assert len(owned)==len(set(owned)) and set(owned)==occupied
         event['state_hash']=h(snapshot(False));assert observed==event;events.append(clone(event))
+        if observations is not None:observations.after(snapshot(False),event,clone(e))
         if binding is not None and tick==binding['slot']['tick']:
             slot=binding['slot']
             assert 'birth' in event and event['birth']['child']['id']==slot['target']
@@ -162,6 +164,7 @@ def audit_history(row,binding=None,natural_hash=None):
             after,record=transition(snapshot(),slot,natural_hash,binding['role'],binding['provenance'])
             assert binding['record']==record
             org[slot['target']]['code']=actor_record(after['entities'],slot['target'])['code']
+            if observations is not None:observations.intervention(after,slot['target'])
         if tick==min(64,row['final']['tick']):assert row['checkpoint']==snapshot()
     final=snapshot();assert row['final']==final and row['hash']==h(final)
     assert tick==4096 or not org
@@ -206,7 +209,8 @@ def audit(row,expected_provenance):
     slot = slots_from_audited(natural, summary)[row['generation']]
     if slot is None:
         assert branch is None and row['transition'] is None
-        return dict(verified=True, slot=None, target=None, null=True,
+        return dict(verified=True, seed=natural['seed'],generation=row['generation'],role=row['role'],
+                    provenance=clone(expected_provenance),natural_history_hash=natural['hash'],branch_hash=None,slot=None, target=None, null=True,
                     selection=False, learning=False, stage_credit=False)
     assert type(branch) is dict
     for key in ('version', 'seed', 'mode','inheritance_mode', 'fuel_mode', 'route', 'genesis_program',
@@ -214,12 +218,16 @@ def audit(row,expected_provenance):
         assert branch[key] == natural[key]
     assert branch['final']['events'][:slot['tick']] == natural['final']['events'][:slot['tick']]
     binding = dict(slot=slot, role=row['role'], record=row['transition'],provenance=expected_provenance)
-    measured = audit_history(branch, binding, natural['hash'])
+    from experiments.digital_sharedlineage68_observe import Observation
+    observation=Observation()
+    measured = audit_history(branch, binding, natural['hash'],observation)
+    projected=observation.finish(branch['final'],measured)
     if row['role'] == 'sham' or not row['transition']['code_value_mask']:
         assert branch == natural
     target = target_endpoint(branch['final'], slot)
-    return dict(verified=True, slot=slot, null=False, summary=measured,
-        target=target, selection=False, learning=False, stage_credit=False)
+    return dict(verified=True, seed=natural['seed'],generation=row['generation'],role=row['role'],
+        provenance=clone(expected_provenance),natural_history_hash=natural['hash'],branch_hash=branch['hash'],slot=slot, null=False, summary=measured,
+        target=target, projection=projected, selection=False, learning=False, stage_credit=False)
 
 
 def target_endpoint(final, slot):
