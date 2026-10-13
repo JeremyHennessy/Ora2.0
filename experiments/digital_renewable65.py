@@ -117,6 +117,22 @@ def audit_row(row):
                 stage_credit=False)
 
 
+def _actor_record(actors,identity):
+    """Resolve numeric identity across in-memory and canonical JSON map keys."""
+    assert type(actors) is dict and type(identity) is int and identity>=0
+    normalized={}
+    for key,record in actors.items():
+        if type(key) is int:
+            assert key>=0;number=key
+        else:
+            assert type(key) is str and key.isdecimal() and str(int(key))==key
+            number=int(key)
+        assert number not in normalized and type(record) is dict
+        normalized[number]=record
+    assert identity in normalized
+    return normalized[identity]
+
+
 def cohort(proofs):
     """Complete original-role contrast; engineering replays are kept outside."""
     assert type(proofs) is list and len(proofs)==32
@@ -145,7 +161,7 @@ def cohort(proofs):
                 orientations.append(dict(seed=seed,primary_difference=dp,food_difference=df,living_difference=dl,
                                          underexposed=mutated['projection']['underexposed']))
                 slot=mutated['projection']['neutral_source_slot']
-                fate=None if slot is None else mutated['projection']['actors'][slot['child']]
+                fate=None if slot is None else _actor_record(mutated['projection']['actors'],slot['child'])
                 slots.append(dict(seed=seed,slot=slot,fate=fate,history_hash=mutated['history_hash']))
             contexts.append(dict(context=first//2,orientations=orientations,primary_difference=primary_delta,
                                  food_difference=food_delta,living_difference=live_delta,

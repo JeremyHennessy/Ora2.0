@@ -1,5 +1,5 @@
 """Authored partial tables/joins only; no World or hidden-context query."""
-import copy,types,sys,unittest
+import copy,types,sys,unittest,json
 from unittest.mock import patch
 from experiments import digital_renewable65 as m
 from experiments import digital_renewable65_runner as runner
@@ -49,6 +49,20 @@ class Prepared(unittest.TestCase):
         self.assertTrue(result['operator_advantage']);self.assertEqual(len(result['neutral_source_slots']),16)
         self.assertTrue(all(s['slot'] is None for s in result['neutral_source_slots']))
         self.assertFalse(result['selection']);self.assertFalse(result['stage_credit'])
+
+    def test_non_null_source_fate_survives_json_transport(self):
+        rows=[proof(s,a) for s in m.SEEDS for a in ('faithful','mutating')]
+        for p in rows:
+            if p['summary']['mode']=='mutating':
+                p['projection']['neutral_source_slot']={'child':1}
+                p['projection']['actors']={1:dict(generation=1,censored=False,death_cause='zero_energy')}
+        direct=m.cohort(rows);transported=m.cohort(json.loads(json.dumps(rows)))
+        self.assertEqual(direct,transported);self.assertEqual(len(transported['neutral_source_slots']),16)
+        self.assertTrue(all(s['fate']['death_cause']=='zero_energy' for s in transported['neutral_source_slots']))
+
+    def test_source_fate_alias_and_missing_identity_refused(self):
+        for actors in [{1:{},'1':{}},{'01':{}},{'2':{}},{True:{}}]:
+            with self.subTest(actors=actors),self.assertRaises(AssertionError):m._actor_record(actors,1)
 
     def test_unseen_failure_not_rescued_by_primary(self):
         rows=[proof(s,a) for s in m.SEEDS for a in ('faithful','mutating')]
