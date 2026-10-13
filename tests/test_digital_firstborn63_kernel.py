@@ -125,6 +125,13 @@ class PreparedKernel(unittest.TestCase):
         e,_=action(child(),71,17);got=self.check_window([birth(),e],71,True)
         self.assertTrue(got['complete']);self.assertFalse(got['alive']);self.assertEqual((got['G'],got['halt_heat']),(-12,11))
 
+    def test_no_fabricated_postdeath_channels(self):
+        e,_=action(child(),71,17);got=self.check_window([birth(),e],71,True)
+        record=got['records'][0]
+        self.assertEqual(record['before'],k.digest(child()))
+        self.assertEqual(record['program_before'],k.digest([0]*27))
+        self.assertTrue(all(record[n] is None for n in ('state','program','memory','registers','pc','inbox')))
+
     def test_child_death_parent_continues(self):
         e,_=action(child(),71,17);got=self.check_window([birth(),e],512)
         self.assertTrue(got['complete']);self.assertFalse(got['alive'])

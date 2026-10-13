@@ -123,7 +123,13 @@ def firstborn_window(events,final_tick,extinct):
             state['energy']=0;alive=False
         else:
             assert event['after']['energy']==energy;state=clone(event['after'])
-        records.append(dict(tick=tick,program=digest([v[0] for v in state['code']]),state=digest(state),memory=digest(state['memory']),registers=digest(state['registers']),pc=state['pc'],inbox=state['inbox'],alive=alive))
+        # A death event has no live 'after' body. Do not fabricate a post-step
+        # PC/register/memory/code state from the pre-step body with energy zero.
+        records.append(dict(tick=tick,before=event['before'],program_before=digest([v[0] for v in old['code']]),
+                            program=digest([v[0] for v in state['code']]) if alive else None,
+                            state=digest(state) if alive else None,memory=digest(state['memory']) if alive else None,
+                            registers=digest(state['registers']) if alive else None,pc=state['pc'] if alive else None,
+                            inbox=state['inbox'] if alive else None,alive=alive))
     if extinct and final_tick<b+8:assert not alive
     G=state['energy']-12-incoming+outgoing
     assert G==20*sum(food)-cap-steps-copy-halt
