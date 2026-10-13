@@ -1,0 +1,22 @@
+# LearningCapacity60 closed-history paid-cost diagnosis
+
+October12,2026. [Closed comparison](DIGITAL-LEARNING-CAPACITY-60-COMPARISON-RECEIPT.md), [complete112-row ledger](DIGITAL-LEARNING-CAPACITY-60-COST-RESULTS.json), [execution](DIGITAL-LEARNING-CAPACITY-60-COST-EXECUTION.md). Retrospective accounting only. All seven policies remain developer-authored apparatus/controls, with no neutral candidate or organism-developed strategy. The precommitted all-pair usefulness comparison remains FAILED: intact beats fixed exploration in only2/4 primary and2/4 unseen pairs. No rescoring, causal learning acceptance or stage credit.
+
+For all eight intact/fixed-exploration orientation pairs, both arms have92 combined formation cost and126 combined instructions before tick64. Both acquire all16 early home packets in each orientation before64. From tick64 through each independently reconstructed twelfth released-food endpoint, intact saves18 failed real ACTs and12 CONSTs per pair, with equal successful ACT counts and zero empty-ACT difference. The remaining feedback/control-flow bill explains the reversal exactly:
+
+| Group/seeds | Saved ACT/CONST | Added IF/JUMP/NOP/READ/XOR | Net intact minus fixed bill |
+| --- | ---: | --- | ---: |
+| Primary60000/1,60002/3 |30|9/3/6/7/3 =28|-2|
+| Primary60004/5,60006/7 |30|13/5/6/11/7 =42|+12|
+| Unseen60200/1,60202/3 |30|11/4/6/9/5 =35|+5|
+| Unseen60204/5,60206/7 |30|9/3/6/7/3 =28|-2|
+
+Unequal founder formation or unequal cold instruction totals do not explain these endpoint bill differences. This does not remove possible cold-state, resource-timing, policy or environmental effects and is not a causal history intervention. Cap losses remain the separate unchanged original measurement. Each pair retains its original orientation, endpoint and result; no pooling converts a failure into acceptance.
+
+All112 closed histories are included, including incomplete endpoints/deaths and constants. Two independently implemented accounting ledgers agree on endpoint, full opcode counts, before64 counts, endpoint counts and after63-to-endpoint counts. The endpoint is reconstructed from the twelfth successful released home packet, then joined to the sealed original comparison. Original and restored diagnostic source outputs agree for every history. READ origin/new-information statistics in the machine ledger cover the FULL LIFETIME; they must not be treated as endpoint-only costs. The endpoint-specific READ instruction counts are separate. Full history-channel causality remains UNKNOWN.
+
+226 capped native-zero diagnostic calls: two prepared mini-tables at each source location plus112 histories at each source location. These calls do not instantiate World, rerun a scientific history or open a reserved sample. New actions/resources/births/deaths/mutations/repairs and new scientific histories are all ZERO. Old112 histories retain18062 instructions,8086 ACTs,2868 food acquisitions,112 deaths and zero births/copy/variation/selfwrite; ancestry remains researcher-founded, and every policy is supplied. Existing hashes, experiences, assistance and failed comparisons remain sealed in original evidence.
+
+The first diagnostic export omitted the process-launcher package and failed before executing its first prepared interpretation. That native exit1/bootstrap error, empty completion list, original source and budget snapshot are preserved. A fresh v2 registration adds only the unchanged pinned process launcher and empty package initializer. The pure accounting/worker, criteria and closed histories are unchanged; no scientific fixture was repaired. Successful v2 seals/archive/restoration/storage and controller audits verify; same-host recovery only, not production confinement or offhost/fullhost restore.
+
+Next single dependency: review a prospectively registered neutral/performance-blind candidate source and its paid ordinary opportunity admission on the existing stable substrate, informed by this full-panel diagnosis. No outcome-selected insertion, expanded random roster, new law/price/horizon or repaired closed apparatus is authorized by this receipt. Freeze source mechanism/complete ancestry and claim-specific opportunity/history controls before a new assay. Inheritance causal design remains parallel; FullDiagnosis59 pending/Transmission61 descriptive. Observer remains paused; schedules/ownership/UI/activation restrictions unchanged.
