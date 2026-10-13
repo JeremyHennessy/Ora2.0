@@ -1,0 +1,214 @@
+{
+  "version": "DIGITAL-SHARED-LINEAGE-68-v1",
+  "status": "DESIGN_FROZEN_EXECUTION_UNADMITTED",
+  "date_utc": "2026-10-13",
+  "base_public_head": "4f1ba2fccbd508a9f962df6c22592c885d96bf4f",
+  "law": "UNCHANGED_DIGITAL_RENEWABLE_ECOLOGY_64",
+  "primary": [
+    69000,
+    69001,
+    69002,
+    69003
+  ],
+  "unseen": [
+    69200,
+    69201,
+    69202,
+    69203
+  ],
+  "reserved": [
+    69100,
+    69101,
+    69102,
+    69103,
+    69300,
+    69301,
+    69302,
+    69303
+  ],
+  "ancestor": "UNCHANGED_MOBILE54_27_WORD_NON_LEARNING",
+  "global_horizon": 4096,
+  "own_turn_limit": 256,
+  "mutation_threshold_per_100": 8,
+  "material_units": 512,
+  "code_words": 27,
+  "state_words": 16,
+  "costs": {
+    "formation": 43,
+    "startup": 12,
+    "energy_cap": 64,
+    "packet": 20,
+    "instruction": 1,
+    "copy_extra_per_three": 3,
+    "division_debit": 30,
+    "minimum_reproductive_heat": 55,
+    "minimum_parent_debit": 67
+  },
+  "population_roles": [
+    {
+      "mode": "faithful",
+      "inheritance_mode": "parent_copy"
+    },
+    {
+      "mode": "mutating",
+      "inheritance_mode": "parent_copy"
+    },
+    {
+      "mode": "mutating",
+      "inheritance_mode": "ancestor_copy"
+    }
+  ],
+  "inheritance_control": "SAME_PAID_COPY_ACTUAL_PARENT_CERTIFICATE_EFFECTIVE_ANCESTOR_WORD_SAME_MUTATION_DRAW",
+  "ordinary": {
+    "references": 8,
+    "both_exports": true,
+    "same_64_paid_turnover_predicates": true,
+    "durable_zero_treatment_admission_at_max_call": 34,
+    "all_failures_retained": true
+  },
+  "slots": {
+    "generations": [
+      1,
+      2
+    ],
+    "rule": "FIRST_PAID_BIRTH_INTO_EACH_GENERATION_PER_NATURAL_WORLD",
+    "count": 16,
+    "missing": "NULL_NO_REDRAW",
+    "unchanged": "RETAIN_REAL_NO_OP"
+  },
+  "continuation_roles": [
+    "sham",
+    "ancestor_value_control"
+  ],
+  "fork_point": "COMPLETE_POST_BIRTH_STEP_AFTER_PARENT_TURN_INCREMENT_AND_EXPIRATION",
+  "allowed_difference": "ONLY_NEUTRAL_SELECTED_NEWBORN_27_CODE_VALUES",
+  "future_copy_in_both_branches": "MUTATING_PARENT_COPY",
+  "slot_benefit": "COMPLETE_BOTH_LIFETIMES_CHANGED_PROGRAM_AND_ONE_ENDPOINT_IMPROVES_NEITHER_WORSENS",
+  "strategy_difference": "PERSONAL_ACT_MOVE_VECTOR_DIFF_AT_SHARED_ACTION_ORDINAL_NOT_LENGTH_OR_HASH_ONLY",
+  "functional_transmission": "TWO_SUCCESSIVE_PAID_NATURAL_EXACT_PROGRAM_TRANSMISSIONS_WITH_CHILD_AND_GRANDCHILD_PERSONAL_FOOD_AND_PAID_BIRTH",
+  "representation": "ALL_GENERATION_PARENTS_EXACT_BORN_PROGRAM_BINARY_TRAIT_W_GT_P_AND_C_GT_P",
+  "competition": "FULL_AUDITED_MATERIAL_COPY_DIV_REFUSAL_OTHER_ELIGIBILITY_TRUE_MULTIPLE_UNIT_OWNERS",
+  "population_benefit": "ALL_FOUR_CONTEXT_PAIRS_PARENT_POSTFOUNDER_PERSONAL_BIRTHS_GT_RESET_AND_RENEWED_FOOD_GE_RESET_WITH_ACTUAL_OPPORTUNITY",
+  "beyond_ancestor": "ADDITIONAL_ALL_FOUR_CONTEXT_PAIRS_PARENT_BIRTHS_GT_FAITHFUL_AND_FOOD_GE_FAITHFUL",
+  "replicated_candidate": "ALL_SCOPED_SLOT_FLAGS_AT_LEAST_ONE_PRIMARY_CONTEXT_AND_ONE_UNSEEN_CONTEXT_COMPLETE_DENOMINATOR",
+  "denominator": {
+    "population_originals": 24,
+    "continuation_originals_max": 32,
+    "originals_max": 56,
+    "restored_roles_max": 56,
+    "native_children_max": 226
+  },
+  "software": {
+    "prepared_cases": 24,
+    "case_names": [
+      "mode_domain",
+      "word_domain",
+      "parent_effective_source",
+      "reset_effective_source",
+      "draw_and_value",
+      "cold_startup_units",
+      "paid_endpoint_gate",
+      "all_eight_references_exports",
+      "durable_zero_treatment_refusal",
+      "chronological_neutral_slots",
+      "null_noop_retention",
+      "temporal_selfwrite_certificates",
+      "complete_parent_expiration",
+      "clock_scheduler_tamper",
+      "material_unit_tamper",
+      "energy_tamper",
+      "second_intervention",
+      "source_configuration_provenance",
+      "canonical_identity",
+      "full_before_partial",
+      "sham_equality",
+      "raw_restored_identity",
+      "bounded_write_grant_refusals",
+      "censored_endpoints_representation_scope"
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "population_roles": 6,
+    "generation1_continuations": 4,
+    "original_roles": 10,
+    "restored_roles": 10,
+    "native_children_max": 42
+  },
+  "limits": {
+    "child": {
+      "memory_mib": 768,
+      "cpu_seconds": 90,
+      "wall_seconds": 180,
+      "process_slots": 3,
+      "native_output_mib": 1,
+      "decoded_raw_mib": 64,
+      "proof_mib": 8,
+      "cohort_mib": 16
+    },
+    "software_outer": {
+      "memory_mib": 1536,
+      "cpu_seconds": 3600,
+      "wall_seconds": 5400,
+      "process_slots": 4
+    },
+    "scientific_outer": {
+      "memory_mib": 1536,
+      "cpu_seconds": 14400,
+      "wall_seconds": 21600,
+      "process_slots": 4
+    },
+    "software_evidence_mib": {
+      "raw": 4096,
+      "archive": 4096,
+      "restore": 4096,
+      "failure": 1024,
+      "total": 13312
+    },
+    "scientific_evidence_mib": {
+      "raw": 12288,
+      "archive": 12288,
+      "restore": 12288,
+      "failure": 4096,
+      "total": 40960
+    },
+    "controller_mib": {
+      "raw": 6,
+      "failure": 2,
+      "total": 8
+    },
+    "minimum_free_gib": {
+      "software": 32,
+      "scientific": 96
+    }
+  },
+  "transport": "REGISTERED_CHILD_OWNED_PREWRITE_BUDGETED_CANONICAL_FILE_NATIVE_MANIFEST_ONLY_PARENT_PATH_HASH_BUDGET_CHECK",
+  "transport_write_grant": "PARENT_PRECREATED_FRESH_EMPTY_PLAIN_FILE_WHOLE_EXTENT_PRECHARGED_SINGLE_CHILD_FORWARD_ONLY_NO_PAYLOAD_OVERWRITE",
+  "no_pooled_or_subset_rescue": true,
+  "no_automatic_retry": true,
+  "null_not_numeric_zero": true,
+  "source_policy": "NO_OUTCOME_SELECTED_GENOME_INSERTION_OR_PROMOTION",
+  "new_worlds_at_design": 0,
+  "software_qualified": false,
+  "scientific_execution_admitted": false,
+  "scientific_acceptance": false,
+  "sustained_evolution": false,
+  "learning": false,
+  "consciousness": false,
+  "stage_credit": false,
+  "observer_paused": true,
+  "persistent_activation": false,
+  "protocol_sha256": "c84c6530ecdd11b318a9153ab603899ce8788784fc7f57fc7ae7e04cb4b01d98",
+  "protocol_digest_scope": "COMMITTED_GIT_LF_BYTES",
+  "reviewed_base_input_sha256": {
+    "experiments/digital_renewable64.py": "34072f5f627b14a6ffefa8085c4ab8377443b333ffdc18a3709a6c7443fcfcea",
+    "experiments/digital_renewable64_interpret.py": "908062fb77d08ceea1170cc33eb40ac923ed887c91ab31c6e43558d7cbf2ab25",
+    "experiments/digital_renewable65.py": "0a7e7a51145e1ffec5f9060e98aa65396dadc6cd578556fdecd45d80899be217",
+    "experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e",
+    "docs/DIGITAL-RENEWABLE-ECOLOGY-64-PROTOCOL.md": "685e50057289d7469a6c97918074c872eec04026d8424b4a20e65c3a09f84dfe",
+    "docs/DIGITAL-EXPERIMENT-ADMISSION.md": "2f0f0128d4ae06241a7171856c5cdb4b9c8f30c31c07246e921281cdcd99fda3"
+  }
+}
