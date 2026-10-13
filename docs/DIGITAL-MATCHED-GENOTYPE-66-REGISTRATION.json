@@ -16,7 +16,7 @@
     "docs/DIGITAL-RENEWABLE65-PRIMARY-RECEIPT.md": "18b72d486238b6f93eb6ec2cf230e287be9380b0a28d3e002c2d6bf9822fa8f6",
     "docs/DIGITAL-RENEWABLE65-PRIMARY-RESULTS.json": "2cea7e5d89340ed96d7cc5c8ed26eef76b0e5411a5c2b539ca3a186817a26825"
   },
-  "protocol_sha256": "186e3f52a4803abd9e92b1a2ffd2f415ade051f0b7aa924c731e7899a68e9fb7",
+  "protocol_sha256": "ceb2e770d4ce94a5fcdc1b97362e96f96c29398ea242e5e659baa0d8729fee71",
   "law": "DIGITAL-RENEWABLE-ECOLOGY-64-v1",
   "law_changed": false,
   "neutral_source_records": [
@@ -2971,5 +2971,17 @@
   "selection_isolated": false,
   "causal_inheritance_isolated": false,
   "learning": false,
-  "stage_credit": false
+  "stage_credit": false,
+  "protocol_sha256_scope": "exact committed Git blob UTF-8/LF, not Windows working-file bytes",
+  "prior_crlf_protocol_sha256": "186e3f52a4803abd9e92b1a2ffd2f415ade051f0b7aa924c731e7899a68e9fb7",
+  "metadata_correction": {
+    "original_pr": 235,
+    "original_source": "3628352b2ed386a9849488f8cdc8aa02a8062da3",
+    "original_public_merge": "2b51e141577f9bf105e2b3fa2a9695614d17909a",
+    "original_failed_static_exit": 1,
+    "world_calls": 0,
+    "law_changed": false,
+    "source_slots_changed": false,
+    "endpoints_changed": false
+  }
 }
