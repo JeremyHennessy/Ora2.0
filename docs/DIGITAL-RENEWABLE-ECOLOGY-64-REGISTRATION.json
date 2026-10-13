@@ -1,0 +1,192 @@
+{
+  "contract": "DIGITAL-RENEWABLE-ECOLOGY-64-v1",
+  "status": "DESIGN_FROZEN_SOFTWARE_AND_ORDINARY_UNADMITTED",
+  "registered_utc": "2026-10-13T03:40:28.474850+00:00",
+  "reviewed_base": "397e1e61efebb6829d07a27896d6c9a65ea151b9",
+  "reviewed_source_sha256": {
+    "experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+    "experiments/digital_informative_exposure23_interpret.py": "49ad03424d24c8a6a8523156545ebe77207e3ff062cb416bcaea6d3a0df6506d",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e"
+  },
+  "protocol_sha256": "685e50057289d7469a6c97918074c872eec04026d8424b4a20e65c3a09f84dfe",
+  "supplied_ancestor": [
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      1
+    ],
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      10,
+      0,
+      0
+    ],
+    [
+      12,
+      0,
+      0
+    ],
+    [
+      13,
+      1,
+      0
+    ],
+    [
+      13,
+      1,
+      0
+    ],
+    [
+      7,
+      0,
+      1
+    ]
+  ],
+  "supplied_program_sha256": "bfb9a05f87eaa20339bd23e29a8851047e72c3c4c71af1a226f41ed2af3f8917",
+  "assistance": [
+    "VM and fixed exploration/reproductive ancestor",
+    "exogenous initial/renewed fuel and target law",
+    "uniform finite execution-budget expiration",
+    "installed copy variation/environment accounting/replay"
+  ],
+  "local_memory_words": 8,
+  "registers": 2,
+  "paid_state_words": 16,
+  "program_words": 27,
+  "material_units": 512,
+  "formation_energy": 43,
+  "founder_startup": 12,
+  "constructor_initial": 128,
+  "constructor_after_formation": 85,
+  "constructor_after_release64": 69,
+  "energy_initial": 1420,
+  "energy_cap": 64,
+  "base_cost": 1,
+  "copy_word_cost": 1,
+  "division": {
+    "state_energy": 16,
+    "release_heat": 2,
+    "startup_transfer": 12,
+    "after_base_energy_required": 30
+  },
+  "fuel": {
+    "initial_tokens": 64,
+    "token_energy": 20,
+    "input_modes": [
+      "renewed",
+      "no_inflow"
+    ],
+    "interval": 64,
+    "first_tick": 64,
+    "last_tick": 4096,
+    "offers_per_site": 4,
+    "site_cap": 32,
+    "sites": 4,
+    "offered_epochs_max": 64,
+    "offered_new_tokens_max": 1024,
+    "total_internal_energy_max": 21900,
+    "new_target_change_tick": 2048,
+    "offered_ids_advance_on_rejection": true,
+    "no_admitted_outflow": true
+  },
+  "lifetime": {
+    "own_instructions": 256,
+    "uniform": true,
+    "organism_accessible": false,
+    "inherited": false,
+    "metadata_not_free_local_storage": true,
+    "expiration_remaining_energy_to_heat": true
+  },
+  "scheduler": "unchanged sorted-live-id successor/wrap",
+  "world_horizon": 4096,
+  "population_cap": 32,
+  "ordinary_body_material_cap": 11,
+  "maximum_births": 409,
+  "maximum_paid_writes": 12288,
+  "ordinary_seeds": [
+    65000,
+    65001,
+    65002,
+    65003
+  ],
+  "reserved_seeds": [
+    65100,
+    65101,
+    65102,
+    65103
+  ],
+  "input_modes": [
+    "renewed",
+    "no_inflow"
+  ],
+  "ordinary_copy_mode": "faithful",
+  "ordinary_history_roles": 8,
+  "engineering_replays": 8,
+  "generator_world_trajectories": 32,
+  "maximum_native_calls": 34,
+  "required_ordinary": {
+    "all_renewed_cells": true,
+    "founder_execution_expiration": true,
+    "post_founder_global_instructions_min": 128,
+    "total_paid_births_min": 12,
+    "maximum_generation_min": 3,
+    "paid_personal_food_chain_generations": [
+      1,
+      2,
+      3
+    ],
+    "paid_descendant_birth_after_founder_death": true,
+    "renewed_food_after_founder_death": true,
+    "endpoint_living_descendant_min": 1,
+    "no_inflow_integrity_required": true
+  },
+  "child": {
+    "memory_mib": 256,
+    "cpu_seconds": 30,
+    "wall_seconds": 60,
+    "process_slots": 3,
+    "native_output_mib": 1,
+    "decoded_row_mib": 64
+  },
+  "outer": {
+    "memory_mib": 512,
+    "cpu_seconds": 1200,
+    "wall_seconds": 2400,
+    "process_slots": 4
+  },
+  "evidence_mib": 8192,
+  "phase_mib": {
+    "raw": 2560,
+    "archive": 2560,
+    "restore": 2560,
+    "failure": 512
+  },
+  "controller_mib": 8,
+  "free_gib": 24,
+  "source_execution_supplement_required": true,
+  "world_calls": 0,
+  "new_seed_context_queries": 0,
+  "ordinary_admitted": false,
+  "selection": false,
+  "evolution": false,
+  "learning": false,
+  "stage_credit": false,
+  "old_laws_and_results_unchanged": true
+}
