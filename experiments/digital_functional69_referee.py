@@ -320,6 +320,60 @@ def audit_history(row,binding=None,natural_hash=None,observations=None):
                 repeated_hidden_port_actors=len({ev['actor'] for ev in events if 'attempt' in ev and ev['attempt']['position']!=0 and ev['attempt']['target']==1 and sum('attempt' in prior and prior['actor']==ev['actor'] and prior['attempt']['position']==ev['attempt']['position'] for prior in events[:ev['tick']-1])>=1}),
                 learning=False,evolution=False,repair=False)
 
+class PersonalTrace:
+    """Passive measurements from literal replay, never organism-visible inputs.
+
+    Counts empty ACTs and terminal MOVEs too. A direct prepared callback sequence
+    is not ancestry proof; audit() supplies the authenticated replay and binding.
+    """
+    def __init__(self,slot):
+        self.target=slot['target'];self.birth_tick=slot['tick'];self.pre=None
+        self.turns=self.births=self.food=self.empty_act=self.failed_act=0
+        self.food_energy=self.cap_loss=0;self.signatures=[]
+        self.death_tick=self.death_cause=self.startup_hash=None;self.interventions=0
+
+    def before(self,state,decoded):
+        assert self.pre is None
+        actor=state['last'];body=clone(actor_record(state['entities'],actor))
+        self.pre=(state['tick'],actor,body,list(decoded))
+
+    def after(self,state,event,terminal):
+        assert self.pre is not None
+        tick,actor,body,decoded=self.pre;self.pre=None
+        assert event['tick']==tick and event['actor']==actor and event['decoded']==decoded
+        assert event['before']==h(body)
+        if actor!=self.target or tick<=self.birth_tick:return
+        assert self.death_tick is None and self.interventions==1
+        self.turns+=1;self.births+=int('birth' in event)
+        opcode,a,b=decoded
+        if opcode==6:
+            self.signatures.append(['ACT',body['pos'],body['registers'][a%2]%2])
+            if 'attempt' not in event:self.empty_act+=1
+            elif event['attempt']['success']:
+                self.food+=1;gain=terminal['energy']-(body['energy']-1)
+                assert 0<=gain<=20
+                self.food_energy+=gain;self.cap_loss+=20-gain
+            else:self.failed_act+=1
+        if opcode==13:self.signatures.append(['MOVE',terminal['pos']])
+        if 'death' in event or 'expiry' in event:
+            self.death_tick=tick
+            self.death_cause=('execution_budget' if 'expiry' in event else
+                'halt' if event['outcome']=='halt' else 'zero_energy')
+
+    def intervention(self,state,target):
+        assert target==self.target and state['tick']==self.birth_tick
+        assert self.turns==0 and self.interventions==0
+        self.interventions=1;self.startup_hash=h(actor_record(state['entities'],target))
+
+    def finish(self,final):
+        assert self.pre is None and self.interventions==1
+        assert self.turns==actor_record(final['turns'],self.target)
+        return dict(turns=self.turns,births=self.births,food=self.food,
+            death_tick=self.death_tick,death_cause=self.death_cause,censored=self.death_tick is None,
+            signatures=clone(self.signatures),empty_act=self.empty_act,failed_act=self.failed_act,
+            food_energy=self.food_energy,cap_loss_energy=self.cap_loss,startup_hash=self.startup_hash)
+
+
 def audit(row,expected_provenance):
     """Full natural audit before neutral selection or edited continuation replay."""
     assert type(row) is dict and set(row) == {
@@ -339,20 +393,23 @@ def audit(row,expected_provenance):
         assert branch is None and row['transition'] is None
         return dict(verified=True, seed=natural['seed'],slot_kind=row['slot_kind'],role=row['role'],
                     provenance=clone(expected_provenance),natural_history_hash=natural['hash'],branch_hash=None,slot=None, target=None, null=True,
-                    selection=False, learning=False, stage_credit=False)
+                    transition_mask=None,selection=False, learning=False, stage_credit=False)
     assert type(branch) is dict
     for key in ('version', 'seed', 'mode','inheritance_mode', 'fuel_mode', 'route', 'genesis_program',
                 'ancestor_supplied', 'checkpoint_replay', 'learning_demonstrated'):
         assert branch[key] == natural[key]
     assert branch['final']['events'][:slot['tick']] == natural['final']['events'][:slot['tick']]
     binding = dict(slot=slot, role=row['role'], record=row['transition'],provenance=expected_provenance)
-    measured = audit_history(branch, binding, natural['hash'])
+    trace=PersonalTrace(slot)
+    measured = audit_history(branch, binding, natural['hash'],trace)
     if row['role'] == 'sham' or not row['transition']['code_value_mask']:
         assert branch == natural
-    target = target_endpoint(branch['final'], slot)
+    target = trace.finish(branch['final'])
+    previous=target_endpoint(branch['final'],slot)
+    assert all(target[k]==value for k,value in previous.items())
     return dict(verified=True, seed=natural['seed'],slot_kind=row['slot_kind'],role=row['role'],
         provenance=clone(expected_provenance),natural_history_hash=natural['hash'],branch_hash=branch['hash'],slot=slot, null=False, summary=measured,
-        target=target, selection=False, learning=False, stage_credit=False)
+        target=target,transition_mask=clone(row['transition']['code_value_mask']),selection=False, learning=False, stage_credit=False)
 
 
 def target_endpoint(final, slot):
