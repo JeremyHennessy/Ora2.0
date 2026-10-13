@@ -87,7 +87,7 @@ def main():
         row=read(request['input'],64*1024**2)
         if kind=='population_ref':
             assert (row['seed'],row['mode'],row['inheritance_mode'])==(request['seed'],request['mode'],request['inheritance_mode'])
-            value=dict(verified=True,summary=referee.audit_history(row),provenance=provenance,stage_credit=False)
+            value=dict(verified=True,summary=referee.audit_history(row),natural_history_hash=row['hash'],provenance=provenance,stage_credit=False)
         else:
             assert (row['natural']['seed'],row['slot_kind'],row['role'])==(request['seed'],request['slot_kind'],request['fork_role'])
             value=referee.audit(row,provenance)
