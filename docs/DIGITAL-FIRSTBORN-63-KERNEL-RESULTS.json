@@ -1,0 +1,83 @@
+{
+  "verified": true,
+  "source": "60c3f057204756fed488de204253c8b799017b4e",
+  "decision": {
+    "full_software_admission": false,
+    "identities": [
+      "prepared63.PreparedKernel.test_allowed_birth_genotype_only",
+      "prepared63.PreparedKernel.test_before_hash_and_energy_refusals",
+      "prepared63.PreparedKernel.test_birthless_and_asymmetric",
+      "prepared63.PreparedKernel.test_cap_loss",
+      "prepared63.PreparedKernel.test_child_death_parent_continues",
+      "prepared63.PreparedKernel.test_copy_identity_and_source_not_masked",
+      "prepared63.PreparedKernel.test_copy_paid_after_birth",
+      "prepared63.PreparedKernel.test_copy_values_only",
+      "prepared63.PreparedKernel.test_cutoff_global_and_late_censor",
+      "prepared63.PreparedKernel.test_dying_parent_recovery",
+      "prepared63.PreparedKernel.test_faithful_nonexact_refused",
+      "prepared63.PreparedKernel.test_full_extinction_after_window_is_not_window_death",
+      "prepared63.PreparedKernel.test_halt_absorbing",
+      "prepared63.PreparedKernel.test_inbox_interaction_not_discarded",
+      "prepared63.PreparedKernel.test_incoming_and_outgoing_removed",
+      "prepared63.PreparedKernel.test_invalid_numeric_boundaries",
+      "prepared63.PreparedKernel.test_later_steps_do_not_change_endpoint",
+      "prepared63.PreparedKernel.test_nonpermitted_birth_fields_refused",
+      "prepared63.PreparedKernel.test_paid_fields_refused",
+      "prepared63.PreparedKernel.test_parent_genome_not_masked",
+      "prepared63.PreparedKernel.test_real_failed_empty_and_food",
+      "prepared63.PreparedKernel.test_second_birth_refused",
+      "prepared63.PreparedKernel.test_unchanged_birth",
+      "prepared63.PreparedKernel.test_unrelated_keys_remain"
+    ],
+    "projection_kernel_only": true,
+    "scientific_seed_queries": 0,
+    "stage_credit": false,
+    "tests": 24,
+    "verified": true,
+    "world_calls": 0
+  },
+  "storage": {
+    "files": 21,
+    "logical_bytes": 129719,
+    "reserved_bytes": 129719,
+    "reserved_by_phase": {
+      "raw": 48598,
+      "archive": 40424,
+      "restore": 39572,
+      "failure": 1125
+    },
+    "sha256": {
+      "archive/source.zip": "8cc528bc19bc3e1fa0afae025515b120afe5cabf9840808d555b86d1417f8e2d",
+      "failure/budget.json": "fe8c94b85b3eefbf3ea854b161bec3dedebebca7732c0eaf8e549b496bb4df66",
+      "raw/decision.json": "9fcf601e4fcf5abd26a7559c25077203404d52fc29c33df7583095bec0de976b",
+      "raw/original-native.json": "4bfa805682141198388f55a964c717ebc6aa1bfc81562615d906e843b95f41c6",
+      "raw/original-stdout.txt": "c29e676d49d602805403af9749185cce2b468ba62b045c2b818fb95513dde586",
+      "raw/registration.json": "ee4eb5f073c0815c731361da1ed2e79f3b5cd7ccf7ce389eece17adf7fe4ade2",
+      "raw/restored-native.json": "000084f52f618c6126f8bca7724010c9063283bb14c306dd87d49ef3ecda61eb",
+      "raw/restored-stdout.txt": "c29e676d49d602805403af9749185cce2b468ba62b045c2b818fb95513dde586",
+      "raw/source-seals.json": "691035cf3d5bb5c838773047a5695c9f78ea2cc65e081df0041cb7357daf2c16",
+      "raw/source/worker.py": "2a2e87ab369f3ac2ef427f72b93f4a1d2978095644933993b618483153a07bae",
+      "raw/source/experiments/digital_firstborn63_kernel.py": "fb8b3bcc7b8218d44fdd6ba2c1b7e208a527977b2803fa876cd79f1e60d3c992",
+      "raw/source/experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+      "raw/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "raw/source/experiments/__init__.py": "aba73293015e4872bcb7cf6eeb9ae34d49cc7012fa4773ce168a65c18bf628d5",
+      "raw/source/tests/test_digital_firstborn63_kernel.py": "f3d625da25ed6a8f68ae31496c57e106add81a98a5815ef85ebbc878653edaa5",
+      "restore/source/worker.py": "2a2e87ab369f3ac2ef427f72b93f4a1d2978095644933993b618483153a07bae",
+      "restore/source/experiments/digital_firstborn63_kernel.py": "fb8b3bcc7b8218d44fdd6ba2c1b7e208a527977b2803fa876cd79f1e60d3c992",
+      "restore/source/experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+      "restore/source/experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+      "restore/source/experiments/__init__.py": "aba73293015e4872bcb7cf6eeb9ae34d49cc7012fa4773ce168a65c18bf628d5",
+      "restore/source/tests/test_digital_firstborn63_kernel.py": "f3d625da25ed6a8f68ae31496c57e106add81a98a5815ef85ebbc878653edaa5"
+    },
+    "limits": {
+      "raw": 10485760,
+      "archive": 8388608,
+      "restore": 10485760,
+      "failure": 4194304
+    },
+    "total_limit": 33554432
+  },
+  "native_calls": 2,
+  "world_calls": 0,
+  "stage_credit": false
+}
