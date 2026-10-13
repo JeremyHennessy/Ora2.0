@@ -66,3 +66,57 @@ learning affordability remains independent. Capsule01 only qualifies finite
 normal-stop512/cuts64,256 engineering. Observer pause, private observer history/UI,
 AI-Research ownership and existing development/audit cadences are preserved.
 No persistent world, unattended service, pilot, observer, API or paid activation.
+
+## One-source complete software history qualification
+
+Executed candidate `b293b9e4fc865171b286ed97ed79c50810ea77b4` only after exact
+PR-head CI38450389039 passed 1346 attempted / 1333 passed / 13 skipped. A fresh
+prospective registration froze twelve roles, software seeds1/2, unchanged4096
+global / 256-own-turn laws and all limits before any World:
+`D:/OraLab/reports/functional69-history-software-v1-registration.json`.
+All raw64 MiB/proof8 MiB/manifest1 MiB/native1 MiB/request256 KiB files were
+precharged before the first child. Child768 MiB/90 CPU seconds/180 wall seconds/
+3 slots; outer1536 MiB/1800 CPU seconds/3600 wall seconds/4 slots; raw/archive/
+restore1024 MiB each, failure32 MiB and controller8 MiB; minimum12 GiB free disk.
+All twelve native roles and outer exited0 with empty owned process trees;
+source/configuration/file identities were checked throughout. Complete source,
+raw, proof, native, NULL and sealed partial records were archived and restored
+byte-for-byte. No retry, limit change, replacement slot or horizon extension.
+
+Independent read-only interpretation:
+`D:/OraLab/reports/functional69-history-software-interpretation-v1.json`.
+Raw evidence: `D:/OraLab/runs/functional69-history-software-v1-20261013`.
+Four original natural software populations and six extant controlled continuations
+were each paired with a deterministic genesis-restored continuation. Twenty
+constructors executed81920 ordinary instructions including those engineering
+restores. Two NULL roles are retained because seed1's selected first-generation
+parent made no actual paid child; an unrelated generation-two newborn was never
+substituted. Seed2's actual first paid child exercised the inherited-source
+control with a nonempty value mask. Six forged binding records were refused with
+World construction and producer authorities trapped during referee replay;
+three nonempty controls were refused by the unchanged ordinary natural referee.
+Every sham/noop exactly reproduced the natural row. All final physical ledgers,
+material partitions, raw extents/hashes and complete paid ancestry were checked.
+
+The FOUR original natural populations alone recorded16384 instructions,93 paid
+births,69 deaths,2075 successful food actions,3495 paid COPY words and157 changed
+COPY words. These totals include faithful and mutating software conditions; they
+are not one world or a scientific comparison. Supplied fixed Mobile54 ancestry,
+VM/resource law/mutation and free declared code-value controls remain authored
+assistance. Genesis restore is engineering replay, not efficient hydration.
+
+Scope: complete natural/parent/actual-child controlled-history compatibility at
+ONE source export under software seeds1/2. This is not whole Functional69 assay
+qualification, scientific ALL16 admission, selection or learning. Seed2's child
+acquired2 personal food packets but made0 own births and died after37 own
+instructions in both sham and control. It is not a useful inherited-reproduction
+witness. Seed1 child remains NULL. These software observations never enroll a
+genome, rescore historical68, or establish a general impossibility.
+
+Next dependency: complete source-restored export qualification, actual endpoint
+strategy/control measurements and the69 membership/ALL16 ordinary gates/frozen
+scientific runner before any scientific treatment. All70000/70200 banks and
+70100/70300 reserves remain unopened. Scientific/stage acceptance is false.
+Parallel crash/accepted-loss/process-birth and longer-ecology horizon/referee/
+schedule/budgets remain prospective; learning affordability is independent.
+Observer remains paused; no persistent/unattended world, service, pilot or API.
