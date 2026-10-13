@@ -81,10 +81,33 @@ class Prepared(unittest.TestCase):
 
     def test_endpoint_dead_zero_and_censor_retained(self):
         for fate in (dict(turns=3,births=0,food=0,censored=False,death_cause='zero_energy'),dict(turns=200,births=2,food=19,censored=True,death_cause=None)):
-            with patch.object(m.projection,'_project_audited',return_value=dict(actors={'0':fate})):
+            with patch.object(m.genotype_projection,'_project_audited',return_value=dict(actors={'0':fate})):
                 r=m.project_audited({},dict(verified=True,formation_cost=43))
             self.assertEqual((r['primary_endpoint'],r['secondary_endpoint']),(fate['births'],fate['food']))
             self.assertEqual(r['founder']['censored'],fate['censored'])
+
+    def test_changed_genesis_tracks_actual_words_and_birth_hash(self):
+        words=[18,0,0,17,0,0]+[18,0,0]*7
+        row=dict(mode='faithful',genesis_program=[words[i:i+3] for i in range(0,27,3)],final=dict(
+            food={},events=[dict(actor=0,tick=0,decoded=[18,0,0],outcome='nop',after=dict(
+                energy=11,code=[[v,i] for i,v in enumerate(words)])),
+                dict(actor=0,tick=1,decoded=[17,0,0],outcome='halt',death=True)]))
+        summary=dict(verified=True,formation_cost=43,genesis_program_hash=m.full.h(words),
+                     ticks=2,births=0,deaths=1,successful_food=0,turns={'0':2},turnover=dict(
+                     founder_expiry_tick=None,maximum_generation=0))
+        result=m.project_audited(row,summary);founder=result['founder']
+        self.assertEqual(founder['program_at_birth_hash'],m.full.h(words))
+        self.assertEqual(founder['program_at_end_hash'],m.full.h(words))
+        self.assertEqual((founder['turns'],founder['death_cause']),(2,'halt'))
+        self.assertEqual((result['primary_endpoint'],result['secondary_endpoint']),(0,0))
+        # The former ancestor-only ledger cannot follow the first changed NOP.
+        with self.assertRaises(AssertionError):m.projection._project_audited(row,summary)
+
+    def test_changed_genesis_hash_mismatch_refused_before_events(self):
+        words=[18,0,0]*9
+        row=dict(genesis_program=[words[i:i+3] for i in range(0,27,3)])
+        with self.assertRaises(AssertionError):
+            m.genotype_projection._project_audited(row,dict(verified=True,genesis_program_hash=m.full.h(m.ANCESTOR)))
 
     def test_whole_ordinary_checks_every_reference(self):
         roles=[proof(seed) for seed in m.SEEDS];roles[0]['summary']['births']=11

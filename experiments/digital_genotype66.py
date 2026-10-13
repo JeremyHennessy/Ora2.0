@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from experiments import digital_renewable64_interpret as full
 from experiments import digital_renewable65 as projection
+from experiments import digital_genotype66_projection as genotype_projection
 
 PRIMARY=tuple(range(67000,67004));UNSEEN=tuple(range(67200,67204));SEEDS=PRIMARY+UNSEEN
 SOURCE_SEEDS=tuple(range(66000,66008))+tuple(range(66200,66208))
@@ -58,7 +59,7 @@ def generate(seed,source_seed=None):
 def project_audited(row,summary):
     """Generic software fixture support; caller must provide successful full audit."""
     assert summary['verified'] is True and summary['formation_cost']==43
-    p=projection._project_audited(row,summary)
+    p=genotype_projection._project_audited(row,summary)
     founder=projection._actor_record(p['actors'],0)
     assert founder['turns']<=256
     return dict(founder=founder,primary_endpoint=founder['births'],secondary_endpoint=founder['food'],
