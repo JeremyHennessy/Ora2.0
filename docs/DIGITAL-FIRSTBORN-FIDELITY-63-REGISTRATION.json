@@ -1,0 +1,496 @@
+{
+  "contract": "DIGITAL-FIRSTBORN-FIDELITY-63-v1",
+  "status": "DESIGN_FROZEN_SOFTWARE_AND_ORDINARY_UNADMITTED",
+  "reviewed_base": "4db07058f28e3bfea66ef25c798c6db04eff7a4f",
+  "source_manifest_hash": "ee718c93d4ebdfb569f535c23febb626490cf99e533e7a08ab7c290261450cd3",
+  "roster": [
+    {
+      "seed": 55020,
+      "child": 1,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          21,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "e4f150ee0649586c2858946431eba32873d0bd4e717b6e7750ed29896a36716f",
+      "source_row_hash": "81d4510585e54081092f6d9f72eb4fea634606a183bda0bdd9bdc67fd27fd81c"
+    },
+    {
+      "seed": 55020,
+      "child": 4,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          21,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          5
+        ],
+        [
+          7,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "e580edf5dd450d3ab7b12253fa4d1ce027a4c8ec170066f6f7188ba1e073ad8b",
+      "source_row_hash": "81d4510585e54081092f6d9f72eb4fea634606a183bda0bdd9bdc67fd27fd81c"
+    },
+    {
+      "seed": 55025,
+      "child": 5,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          1,
+          1
+        ],
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          3
+        ]
+      ],
+      "program_hash": "ce45408e6b4e36486ae132878b70b26d12b1dfc983507298ca816047d4f7e247",
+      "source_row_hash": "729f5f2c0d46eb2fa52fd4e8a47ffd61e970ec8ca06645af6862a4da76e835bc"
+    },
+    {
+      "seed": 55009,
+      "child": 3,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          29,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          4
+        ]
+      ],
+      "program_hash": "1afc82088fcbf590ef341400e697ec72795b11772504708f28d3ede958aef4ff",
+      "source_row_hash": "3889f28d72378efac0423bbf52313900cbdf31799e4600ee720008de9adab389"
+    },
+    {
+      "seed": 55000,
+      "child": 2,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          23,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "1c2544312e3547757eb2450001b5aa63bee3dfc5159bf1fcd98567fe65f64f50",
+      "source_row_hash": "e631d5b6652e52778f65b4c2758ec67755cd73b47a0c2974bb41b0f8a5fd4c97"
+    },
+    {
+      "seed": 55018,
+      "child": 1,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          6,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "c9470556665fda6164eec313505b5b93f2211d938d6c12fbee483ff568993cc5",
+      "source_row_hash": "3924c9627d0681e76efaf78f98b49557c37fe8ff9a8d849c9b4fbf7b2fb6d89a"
+    },
+    {
+      "seed": 55029,
+      "child": 2,
+      "program": [
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          0,
+          4
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          24,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "038642a8bfb9796faa500b27be36a96c9a02b6586eb062e9ac7cf4ca603fe764",
+      "source_row_hash": "de1b792d7296726f1ea18b3b908bed7f58acaa402c0733a257b26d117b2daa8a"
+    },
+    {
+      "seed": 55008,
+      "child": 4,
+      "program": [
+        [
+          4,
+          1,
+          25
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          25
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          13,
+          1,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ]
+      ],
+      "program_hash": "4a3ee4dde5c227a7fc7027d3aa0749de31f6f2412b76b547302c6002fd9cd0aa",
+      "source_row_hash": "242e7501703c563829b9673a9d78bbe6fc559919b1fb6d907dcb0f9374e0b003"
+    }
+  ],
+  "source_mechanism_pre_outcome": true,
+  "current_reuse_after_known_outcomes": true,
+  "primary": [
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007
+  ],
+  "unseen": [
+    64200,
+    64201,
+    64202,
+    64203,
+    64204,
+    64205,
+    64206,
+    64207
+  ],
+  "reserved": [
+    64100,
+    64101,
+    64102,
+    64103,
+    64104,
+    64105,
+    64106,
+    64107,
+    64300,
+    64301,
+    64302,
+    64303,
+    64304,
+    64305,
+    64306,
+    64307
+  ],
+  "modes": [
+    "faithful",
+    "mutating"
+  ],
+  "horizon": 512,
+  "window_global_instructions": 8,
+  "unique_worlds_if_admitted": 288,
+  "engineering_replays_if_admitted": 288,
+  "max_native_calls_if_admitted": 1154,
+  "max_native_calls_ordinary_refusal": 130,
+  "world_calls_this_block": 0,
+  "scientific_seed_queries_this_block": 0,
+  "stage_credit": false,
+  "reviewed_git_blob_sha256": {
+    "experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065",
+    "experiments/digital_informative_exposure23_interpret.py": "49ad03424d24c8a6a8523156545ebe77207e3ff062cb416bcaea6d3a0df6506d",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "experiments/digital_transfer57.py": "400d14a6e7bdba7b5ea2a92b49f3574cf982a272317b1470fad74dc8437c33b6",
+    "experiments/digital_transfer57_source.py": "767abbd2ccb73f08b295f6d9da7e48f7510e0b1137779a9dcf599091ddc858a8",
+    "experiments/digital_pc_controls31.py": "34499e9790ab346f32e6a051272b133ca0e0282836ac7ae6bafc6e5f901abb53",
+    "experiments/digital_history44_world.py": "793342f185c2bd3f4696bce58f1f55008169e30a7e2bc73f9086963c38578535",
+    "data/digital-neutral-tail42-manifest.json": "b257e45c1fa59903b9460b6e46efc392fea02c80f2095e3be13917f6da0cf5ba"
+  },
+  "next_dependency": "prepared independent paired-prefix/evaluator fixtures and canonical source export; ordinary lifecycle admission follows"
+}
