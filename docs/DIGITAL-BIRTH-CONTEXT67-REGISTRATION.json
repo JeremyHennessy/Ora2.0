@@ -1,0 +1,184 @@
+{
+  "version": "DIGITAL-BIRTH-CONTEXT-67-v1",
+  "status": "DESIGN_FROZEN_EXECUTION_UNADMITTED",
+  "date_utc": "2026-10-13",
+  "base_public_head": "d6709ca4ebe37ecfefe1170ec8043bbf810421fd",
+  "law": "DIGITAL-RENEWABLE-ECOLOGY-64-v1",
+  "ancestor": "UNCHANGED_MOBILE54_27_WORD_NON_LEARNING",
+  "primary": [
+    68000,
+    68001,
+    68002,
+    68003
+  ],
+  "unseen": [
+    68200,
+    68201,
+    68202,
+    68203
+  ],
+  "reserved": [
+    68100,
+    68101,
+    68102,
+    68103,
+    68300,
+    68301,
+    68302,
+    68303
+  ],
+  "neutral_slot": {
+    "generations": [
+      1,
+      2,
+      3
+    ],
+    "rule": "FIRST_PAID_BIRTH_INTO_EACH_GENERATION_IN_EACH_NATURAL_MUTATING_WORLD",
+    "slots": 24,
+    "missing": "NULL_NO_REDRAW",
+    "unchanged": "RETAIN_NO_OP"
+  },
+  "branches": [
+    "sham",
+    "remove_copy_mutations"
+  ],
+  "alternative": "TEMPORALLY_COPIED_SOURCE_VALUES_FROM_EXACT_27_PAID_CERTIFICATES",
+  "fork_point": "COMPLETE_POST_BIRTH_STEP_AFTER_PARENT_TURN_INCREMENT_AND_EXPIRATION",
+  "allowed_difference": "ONLY_SELECTED_NEWBORN_CODE_VALUES",
+  "organism_assistance": "DECLARED_COUNTERFACTUAL_ONLY_NEVER_NATURAL_REPAIR_OR_PROMOTED_LINEAGE",
+  "global_horizon": 4096,
+  "own_turn_limit": 256,
+  "code_words": 27,
+  "state_words": 16,
+  "costs": {
+    "formation": 43,
+    "startup": 12,
+    "energy_cap": 64,
+    "packet_energy": 20,
+    "base_instruction": 1,
+    "copy_extra_per_three_words": 3,
+    "division_debit": 30,
+    "division_heat": 18,
+    "min_reproductive_heat": 55,
+    "min_parent_debit": 67
+  },
+  "ordinary": {
+    "roles": 8,
+    "both_exports": true,
+    "gate": "UNCHANGED64_PAID_TURNOVER_PREDICATES_WITH_SEPARATE67_MEMBERSHIP",
+    "all_before_mutating": true,
+    "durable_zero_treatment_admission_at_max_call": 34,
+    "on_any_failure": "CLOSE_WHOLE_LEAVE_ALL_TREATMENTS_UNOPENED"
+  },
+  "denominator": {
+    "natural_mutating_originals": 8,
+    "faithful_originals": 8,
+    "fork_originals_max": 48,
+    "total_originals_max": 64,
+    "engineering_replays_max": 64,
+    "native_children_max": 258,
+    "raw_physical_trajectories_max": 256,
+    "dependent_forks_not_independent_seeds": true,
+    "natural_paid_births_max": 3272
+  },
+  "endpoints": [
+    "TARGET_OWN_PAID_BIRTHS",
+    "TARGET_PERSONAL_SUCCESSFUL_FOOD"
+  ],
+  "adequacy": "ALL24_SLOTS_EXIST_AND_BOTH_BRANCH_TARGETS_DEAD_OR_EXPIRED_BEFORE_GLOBAL_CENSOR",
+  "null_not_numeric_zero": true,
+  "censored_differences": "DESCRIPTIVE_ONLY_NOT_WHOLE_LIFETIME_FLAGS",
+  "loss_gate": "ADEQUATE_AND_EVERY_FOUR_CONTEXT_SUM_REMOVAL_MINUS_SHAM_BIRTHS_POSITIVE_AND_FOOD_NONNEGATIVE_AND_HAS_NONEMPTY_MASK",
+  "gain_gate": "ADEQUATE_AND_EVERY_FOUR_CONTEXT_SUM_REMOVAL_MINUS_SHAM_BIRTHS_NEGATIVE_AND_FOOD_NONPOSITIVE_AND_HAS_NONEMPTY_MASK",
+  "no_pooled_or_subset_rescue": true,
+  "census_trait": "HAMMING_DISTANCE_BORN_CODE_TO_SUPPLIED_ANCESTOR_OBSERVER_ONLY",
+  "decomposition": "C-P=(W-P)+(C-W);W_AND_C_UNDEFINED_IF_ZERO_OFFSPRING",
+  "software": {
+    "prepared_cases_each_export": 20,
+    "nonscientific_fixture_seeds": [
+      1,
+      2
+    ],
+    "modes": [
+      "faithful",
+      "mutating"
+    ],
+    "generations": [
+      1
+    ],
+    "originals_max": 12,
+    "engineering_replays_max": 12,
+    "native_children_max": 50,
+    "primary_unseen_reserved_queries": 0
+  },
+  "limits": {
+    "child": {
+      "memory_mib": 512,
+      "cpu_seconds": 45,
+      "wall_seconds": 90,
+      "process_slots": 3,
+      "native_output_mib": 1,
+      "decoded_history_mib": 64,
+      "decoded_proof_mib": 4
+    },
+    "software_outer": {
+      "memory_mib": 512,
+      "cpu_seconds": 3600,
+      "wall_seconds": 5400,
+      "process_slots": 4
+    },
+    "scientific_outer": {
+      "memory_mib": 512,
+      "cpu_seconds": 9000,
+      "wall_seconds": 14400,
+      "process_slots": 4
+    },
+    "software_evidence_mib": {
+      "raw": 4096,
+      "archive": 4096,
+      "restore": 4096,
+      "failure": 1024,
+      "total": 13312
+    },
+    "scientific_evidence_mib": {
+      "raw": 12288,
+      "archive": 12288,
+      "restore": 12288,
+      "failure": 4096,
+      "total": 40960
+    },
+    "controller_mib": {
+      "raw": 6,
+      "failure": 2,
+      "total": 8
+    },
+    "cohort_mib": 16,
+    "software_free_gib": 32,
+    "scientific_free_gib": 96,
+    "on_capacity": "STOP_RETAIN_PARTIALS_NO_AUTOMATIC_RETRY"
+  },
+  "source_registration": "SEPARATE_EXACT_IMPLEMENTED_SOURCE_TOOL_TRANSITIVE_EXPORT_PINS_REQUIRED_BEFORE_EACH_EXECUTION",
+  "full_natural_referee": "UNCHANGED64_REQUIRED_FIRST",
+  "branch_referee": "NEW_INDEPENDENT_SINGLE_TRANSITION_SCHEMA_NO_PRODUCER_IMPORT_OLD64_STILL_REFUSES_EDITED_ROWS",
+  "scientific_acceptance": false,
+  "selection": false,
+  "evolution": false,
+  "learning": false,
+  "stage_credit": false,
+  "new_worlds_at_design": 0,
+  "observer_paused": true,
+  "persistent_activation": false,
+  "protocol_sha256": "4baae1fe2f288a2198335f873fb22a3300b55f86f5cd0ccb1ceac3f91af940ad",
+  "protocol_digest_scope": "COMMITTED_GIT_LF_BYTES",
+  "reviewed_base_input_sha256": {
+    "experiments/digital_renewable64.py": "34072f5f627b14a6ffefa8085c4ab8377443b333ffdc18a3709a6c7443fcfcea",
+    "experiments/digital_renewable64_interpret.py": "908062fb77d08ceea1170cc33eb40ac923ed887c91ab31c6e43558d7cbf2ab25",
+    "experiments/digital_renewable65.py": "0a7e7a51145e1ffec5f9060e98aa65396dadc6cd578556fdecd45d80899be217",
+    "experiments/digital_genotype66_projection.py": "4eedb7b3971e218c33f6b50fe10319b236e0c3cbee0278b69a9af732472c6196",
+    "experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
+    "experiments/evidence_budget.py": "e1db04b8bb9939501cb34275c032e6ca88bdd24b06966c30638aaf8f403cdb44",
+    "experiments/evidence_budget_audit.py": "e878c7a88a84d4ed6fdbb10282ef919bdaa74e304b65245182ce7693fec4911e",
+    "docs/DIGITAL-RENEWABLE-ECOLOGY-64-PROTOCOL.md": "685e50057289d7469a6c97918074c872eec04026d8424b4a20e65c3a09f84dfe",
+    "docs/DIGITAL-EXPERIMENT-ADMISSION.md": "2f0f0128d4ae06241a7171856c5cdb4b9c8f30c31c07246e921281cdcd99fda3"
+  }
+}
