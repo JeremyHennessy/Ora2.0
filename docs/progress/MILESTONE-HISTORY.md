@@ -1,3 +1,15 @@
+# Current intelligence-first result - Cognitive76 CLOSED NEGATIVE
+
+All336 paid references and768 blind candidate/control histories completed with independent full physics/source replay/exact archives:0/16 qualifying learners. Candidate totals212499 instructions,35201 attempts,24576 acquisitions,0 deaths/births/mutations,313367 paid charges. Source539d2a4 exactCI38635733514 passed before science; final receipt publication/CI remains pending at this checkpoint.
+
+Real diagnostic progress:16/16 complete every context and receive adequate personal information;9/16 have better first decisions and paid scores than BOTH model controls. Every founder fails the cheaper fixed-response score gate in both banks. No criterion waived, winner inserted, new stage/intelligence acceptance or general impossibility claim. Supplied scaffold/grammar versus acquired models remain explicit. All closed laws/rosters/costs/horizons/reserves and failed admissions/analysis retained.
+
+Single next dependency: separately qualify the prospectively authored paid-learning benchmark, and derive a finite one-shot resource-opportunity comparison with unchanged VM prices. Shared instruction shortcuts must also benefit fixed controls; lost resource value should make learned first choices consequential, and absence must remain distinct from wrong feedback. Any implementation/new contexts need fresh prospective registration/review/exact-head CI; do not repair or expand the closed bank. Useful learning remains primary; then evolve actual inherited learning capacity. Pilot/reproduction is supporting, not prerequisite.
+
+Evidence: docs/DIGITAL-COGNITIVE76-CLOSED-RECEIPT.md; D:/OraLab/reports/cognitive76-whole-panel-v3.json, cognitive76-independent-interpretation-v1.json, cognitive76-memory-diagnosis-v1.json and cognitive76-interpretation-custody-v2.json. Separately approved benchmark contract: cognitive76-supplied-learning-benchmark-v1-20261014.md. Research PR50-52 and preserved Observer update support decisions, not capability claims. No duplicate writer/schedule, API/legacy/persistent activation or private observer publication.
+
+Historical checkpoints below retain their original scope and superseded next actions.
+
 # Cognitive76 current admission checkpoint - October14
 
 Useful own-experience learning remains primary, then evolution of learning capacity. The coherent supplied scaffold/blind update atoms and frozen new contexts remain unchanged; no candidate bank has executed and no new learning result is accepted.
