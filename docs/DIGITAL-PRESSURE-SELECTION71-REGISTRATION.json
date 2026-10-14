@@ -1,0 +1,136 @@
+{
+  "version": "DIGITAL-PRESSURE-SELECTION-71-v1",
+  "status": "DESIGN_FROZEN_EXECUTION_UNADMITTED",
+  "reviewed_base": "444ed959ecfb6702b67fa58599cafd13d0d70a00",
+  "reviewed_input_sha256": {
+    "experiments/digital_sharedlineage68_population.py": "c0f5b40818be9e2a34573b3fd3b592acb2229bd8187501400de2718aac881232",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "experiments/digital_functional69_contract.py": "3552474bc860c80f42a1ec8dafaef5b597a2f8945f2f1fdbe26bfb442c89ba8f",
+    "experiments/digital_functional69_family.py": "583aff1c98baaf9a3fd5e2d64b5fa8caf421ac09199b460e22ee74f7f7fa0f81",
+    "experiments/digital_functional69_transition.py": "932e495f36bf136c6a3e3a7a5eb95a1c3c323b099f934c6fa8ebc82d9350901d",
+    "experiments/digital_functional69_referee.py": "859e0b1fe6ba681d34e9fed98f370b843101d9b4b33669718f49edb4cfcc325d",
+    "experiments/digital_functional69_world.py": "4802b3e2db3df5673476ce7b398b39dc6cc7d4360755ac1bfca472ecc9a03405",
+    "experiments/digital_functional69_measure.py": "b31e8b2a7f764bd4789efc94a88def3d55f552769fdfe3e72ae204cd48affe93",
+    "experiments/digital_functional70_admission.py": "d9741e7a7239d85d4dd494ab9b500d03c90c2a21f1b1bcffd0bd625cff77fdd7",
+    "experiments/digital_functional70_runplan.py": "8b8ff2264a169c2472e5a0a227055dee47c664355b84019b1d77744f1d2dc18f",
+    "docs/DIGITAL-EXPERIMENT-ADMISSION.md": "62bb1d461f87ac5b17a69e202a14c6ff2959956359f611684fed81362027301b",
+    "docs/DIGITAL-FUNCTIONAL70-SCIENTIFIC-RESULTS.md": "6e1b050c06a0dbd21f8960541b8d7d2671e5f29b1b991faa3968d76dca8217a8",
+    "docs/DIGITAL-FUNCTIONAL70-OLDER-HISTORY-INFORMATION.md": "cf701ca870f051db6d2fa22fd16ac8c92f611271284d5b29fbc5e7995dbc6caa"
+  },
+  "contract_sha256": "6aabe5e4a71f510b16f1d09de0f7c49ddc34fa46b711d1b458e9972d404e9b4b",
+  "primary": [
+    74000,
+    74001,
+    74002,
+    74003
+  ],
+  "unseen": [
+    74200,
+    74201,
+    74202,
+    74203
+  ],
+  "reserved_primary": [
+    74100,
+    74101,
+    74102,
+    74103
+  ],
+  "reserved_unseen": [
+    74300,
+    74301,
+    74302,
+    74303
+  ],
+  "natural_vm_base": "DIGITAL-SHARED-LINEAGE-68-v1",
+  "prospective_doses": [
+    1,
+    8
+  ],
+  "mutation_modulus": 100,
+  "word_jump_modulus": 31,
+  "genome": "UNCHANGED_SUPPLIED_MOBILE54_FIXED_NONLEARNING",
+  "source_selection": "FIRST_PAID_GENERATION2_ROOT_THEN_ITS_FIRST_ACTUAL_PAID_CHILD_NO_REDRAW",
+  "horizons": {
+    "global_instructions": 4096,
+    "own_instructions": 256
+  },
+  "ordinary": {
+    "references": 16,
+    "treatment_worlds_before_admission": 0,
+    "all_gates": true,
+    "source_restored_equal": true,
+    "native_call_at_gate": 34,
+    "minimum_births": 12,
+    "minimum_generation": 3,
+    "minimum_post_founder_instructions": 128,
+    "paid_personal_chain": true,
+    "post_founder_personal_birth": true,
+    "post_founder_renewed_food": true,
+    "living_descendant": true
+  },
+  "additional_ordinary": {
+    "min_births_generation3": 2,
+    "min_births_generation4": 2,
+    "actual_neutral_g2_g3_g4_paid_chain": true
+  },
+  "originals": {
+    "populations": 40,
+    "families": 16,
+    "slots": 32,
+    "continuations": 64,
+    "roles": 104
+  },
+  "restored_roles": 104,
+  "max_native_children": 418,
+  "source_copy_raw_proof_pairs": 416,
+  "selection": {
+    "early_generation": 3,
+    "late_generation": 4,
+    "min_world_births_per_cohort_both_roles": 2,
+    "min_natural_lineage_late_births": 2,
+    "root_source_control": "ANCESTOR_VALUES_AT_THE_SAME_GENERATION2_BIRTH_BEFORE_OWN_TURN0",
+    "require_useful_parent_actual_child": true,
+    "positive_natural_share_growth": true,
+    "strictly_greater_than_control_share_growth": true,
+    "strictly_more_natural_root_descendant_births_g3_g4": true,
+    "undefined_zero_denominator": "UNQUALIFIED_NOT_ZERO",
+    "exact_rational": true
+  },
+  "dose_replication": "AT_LEAST_ONE_PRIMARY_AND_ONE_UNSEEN_CASE_AT_SAME_DOSE_NO_POOLING",
+  "pressure_alleviation": "STRICTLY_MORE_USEFUL_FAMILIES_AT_DOSE1_AND_PARENT_COPY_BIRTH_FOOD_PARETO_VS_DOSE8_IN_EACH_BANK",
+  "child_limits": {
+    "memory_mib": 768,
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "process_slots": 3,
+    "native_mib": 1
+  },
+  "outer_limits": {
+    "memory_mib": 1536,
+    "cpu_seconds": 14400,
+    "wall_seconds": 21600,
+    "process_slots": 4
+  },
+  "evidence_limits": {
+    "raw_record_mib": 64,
+    "proof_record_mib": 8,
+    "cohort_mib": 16,
+    "total_mib": 81920,
+    "controller_mib": 8,
+    "min_free_gib": 192,
+    "phases_mib": {
+      "raw": 24576,
+      "archive": 24576,
+      "restore": 24576,
+      "failure": 8192
+    },
+    "precharged_role_record_mib": 14976
+  },
+  "scientific_stage_credit": false,
+  "execution_admitted": false,
+  "source_implementation_qualified": false,
+  "referee_qualified": false,
+  "prepared_witnesses_authority": false,
+  "seed_outcome_queries": 0
+}
