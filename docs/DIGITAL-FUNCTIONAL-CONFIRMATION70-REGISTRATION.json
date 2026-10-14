@@ -1,0 +1,137 @@
+{
+  "natural_vm_version": "DIGITAL-SHARED-LINEAGE-68-v1",
+  "mutation_probability_threshold": {
+    "modulus": 100,
+    "less_than": 8,
+    "different_word_jump_modulus": 31
+  },
+  "source_selection": "FIRST_PAID_GENERATION1_BIRTH_THEN_THAT_PARENTS_FIRST_PAID_CHILD_NO_REDRAW",
+  "families": 8,
+  "slots": 16,
+  "population_roles": [
+    "faithful_parent_copy",
+    "mutating_parent_copy",
+    "mutating_ancestor_copy"
+  ],
+  "parent_roles": [
+    "sham",
+    "ancestor_value_control"
+  ],
+  "child_roles": [
+    "sham",
+    "inherited_source_control_preserving_child_draws"
+  ],
+  "original_population_roles": 24,
+  "original_continuation_roles": 32,
+  "restored_engineering_roles": 56,
+  "max_native_children": 226,
+  "ordinary": {
+    "references": 16,
+    "treatment_worlds_before_admission": 0,
+    "all_gates": true,
+    "source_restored_equal": true,
+    "native_call_at_gate": 34,
+    "minimum_births": 12,
+    "minimum_generation": 3,
+    "minimum_post_founder_instructions": 128,
+    "paid_personal_chain": true,
+    "post_founder_personal_birth": true,
+    "post_founder_renewed_food": true,
+    "living_descendant": true
+  },
+  "horizon": 4096,
+  "own_instruction_expiry": 256,
+  "material_units": 512,
+  "population_cap": 32,
+  "child_limits": {
+    "memory_mib": 768,
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "process_slots": 3,
+    "native_mib": 1
+  },
+  "outer_limits": {
+    "memory_mib": 1536,
+    "cpu_seconds": 14400,
+    "wall_seconds": 21600,
+    "process_slots": 4
+  },
+  "evidence_limits": {
+    "raw_record_mib": 64,
+    "proof_record_mib": 8,
+    "cohort_mib": 16,
+    "total_mib": 40960,
+    "controller_mib": 8,
+    "min_free_gib": 96
+  },
+  "functional_gate": [
+    "PARENT_COMPLETE_CHANGED_USEFUL_SHARED_ORDINAL_STRATEGY",
+    "ACTUAL_PAID_TEMPORAL_PARENT_COPY_CHILD_BIRTH",
+    "CHILD_COMPLETE_NONEMPTY_SOURCE_MASK_USEFUL_SHARED_ORDINAL_STRATEGY",
+    "CHILD_PERSONAL_FOOD_AND_PAID_OWN_BIRTH",
+    "FULL_INDEPENDENT_HISTORY_CUSTODY_REPLAY"
+  ],
+  "replicated_gate": "AT_LEAST_ONE_PRIMARY_AND_ONE_UNSEEN_INDEPENDENT_CONTEXT",
+  "exact_genotype_identity_required": false,
+  "version": "DIGITAL-FUNCTIONAL-CONFIRMATION-70-v1",
+  "status": "DESIGN_FROZEN_EXECUTION_UNADMITTED",
+  "reviewed_base": "9986e97ffe8b6b33cca36030d39d5d2aa7c9e7e4",
+  "reviewed_input_sha256": {
+    "experiments/digital_functional69_admission.py": "531977892052ee89f11e3d82a823a6b48a227f0335c2350de5c9a9c0663cb50e",
+    "experiments/digital_functional69_cohort.py": "4ba543092ece545531726c50df17311269197c6ca6cc7bd28def43c4d082d492",
+    "experiments/digital_functional69_contract.py": "3552474bc860c80f42a1ec8dafaef5b597a2f8945f2f1fdbe26bfb442c89ba8f",
+    "experiments/digital_functional69_family.py": "583aff1c98baaf9a3fd5e2d64b5fa8caf421ac09199b460e22ee74f7f7fa0f81",
+    "experiments/digital_functional69_measure.py": "b31e8b2a7f764bd4789efc94a88def3d55f552769fdfe3e72ae204cd48affe93",
+    "experiments/digital_functional69_referee.py": "859e0b1fe6ba681d34e9fed98f370b843101d9b4b33669718f49edb4cfcc325d",
+    "experiments/digital_functional69_runplan.py": "247803640420d33604fa8aa18e23786233a410295dee3b25cba3d69541f4cf49",
+    "experiments/digital_functional69_scientific_child.py": "8a4c5353493bf7fa4903ea35e0b02600c88eab2fd8141597772fcc9459f08c86",
+    "experiments/digital_functional69_transition.py": "932e495f36bf136c6a3e3a7a5eb95a1c3c323b099f934c6fa8ebc82d9350901d",
+    "experiments/digital_functional69_world.py": "4802b3e2db3df5673476ce7b398b39dc6cc7d4360755ac1bfca472ecc9a03405",
+    "experiments/digital_sharedlineage68_population.py": "c0f5b40818be9e2a34573b3fd3b592acb2229bd8187501400de2718aac881232",
+    "experiments/digital_sharedlineage68_interpret.py": "0ccc567b3fd8413f81466cf7605eb6bcfe3ef4c9e570c03a059443475f68f848",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "docs/DIGITAL-EXPERIMENT-ADMISSION.md": "62bb1d461f87ac5b17a69e202a14c6ff2959956359f611684fed81362027301b",
+    "docs/DIGITAL-FUNCTIONAL-INHERITANCE-69-PROTOCOL.md": "906d99a947c12ff02d7ba3b1994b7bcce8c1f488fbead2f530df3b7a37365c5f",
+    "docs/DIGITAL-FUNCTIONAL69-SCIENTIFIC-RESULTS.md": "4319156e8267307ac0ca582bad5d4c149cf46f5eb33a211aa617feba6c0ed4fd"
+  },
+  "contract_sha256": "21184c1360bd529eb863559dd1632f5b0e0d0ee6fcf5fe9f43384e164899c4a4",
+  "primary": [
+    71000,
+    71001,
+    71002,
+    71003
+  ],
+  "unseen": [
+    71200,
+    71201,
+    71202,
+    71203
+  ],
+  "reserved_primary": [
+    71100,
+    71101,
+    71102,
+    71103
+  ],
+  "reserved_unseen": [
+    71300,
+    71301,
+    71302,
+    71303
+  ],
+  "software_seeds": [
+    1,
+    2
+  ],
+  "same_vm_resources_costs_mutation": true,
+  "unchanged_ancestor": true,
+  "closed69_results_pooled": false,
+  "no_selected_genome": true,
+  "scientific_stage_credit": false,
+  "learning_accepted": false,
+  "sustained_selection_evolution_accepted": false,
+  "observer_activated": false,
+  "execution_admitted": false,
+  "no_new_world": true,
+  "no_seed_hash_query": true
+}
