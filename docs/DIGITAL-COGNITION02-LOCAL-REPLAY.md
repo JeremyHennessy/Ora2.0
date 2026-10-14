@@ -35,7 +35,9 @@ reproductive VM, emergent invention of learning, evolution or consciousness.
 ## Finite local custody
 
 Replay registration preceded execution. Exclusive lab lock; three native calls:
-original generator, independent referee, restored-source generator. Each child
+original generator, independent referee, second-source-export generator. The
+second export was a byte-identical copy of the pinned Git blobs; archive/readback
+restoration occurred after both runs, not before the second generation. Each child
 256MiB/30CPU/60wall/3process slots; parent512MiB/120CPU/180wall/4slots;
 200MiB evidence plus8MiB controller. Parent-precharged16MiB data and1MiB proof
 grants, source/config/file identity checks, native exits and full archive/exact
