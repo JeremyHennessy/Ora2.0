@@ -1,3 +1,13 @@
+# Closed supplied benchmark continuation - October14,23:30UTC
+
+All48 separately AUTHOR-SUPPLIED benchmark histories completed with literal physics/source-restored replay/exact archive. Aggregate intact paid scores1416 vs484/688 primary and1416 vs484/575 unseen; common older-return first choices61/66 vs36/66 and39/66, then66/72 vs38/72 and32/72.0 deaths/births/mutations; all48 collect32 packets.14/16 intact actors revise blank models, all32 changes follow own negative feedback. Supplied rule/scaffold versus acquired associations remain explicit; no invented/evolved architecture claim.
+
+Frozen stricter pre-run interpretation remains FALSE: it demanded a revision in every context, while two all-zero-response contexts need none. Preserve this additional constraint and the original contract's distinction; no retrospective passing verdict, gate waiver, primary-bank repair or new stage acceptance. The positive measured aggregate contrasts are reported separately. Primary Cognitive76 remains0/16 qualifying learners against fixed comparators.
+
+Next: prospectively derive minimal one-shot resource decision law, unchanged VM prices/full ledger/equal opportunity-aware fixed controls/absence distinct from wrong feedback. No new law/context open. Benchmark receipt publication/CI pending; source471063ed exactCI38646529608 passed before science, full48 calls/proofs/archives verified. Useful learning then evolution remains primary; no reproduction/pilot prerequisite or activation.
+
+Evidence: docs/DIGITAL-COGNITIVE76-SUPPLIED-BENCHMARK-RECEIPT.md; D:/OraLab/reports/cognitive76-paid-benchmark-v1.json and cognitive76-benchmark-independent-interpretation-v1.json. Earlier checkpoints retained with original status.
+
 # Current intelligence-first result - Cognitive76 CLOSED NEGATIVE
 
 All336 paid references and768 blind candidate/control histories completed with independent full physics/source replay/exact archives:0/16 qualifying learners. Candidate totals212499 instructions,35201 attempts,24576 acquisitions,0 deaths/births/mutations,313367 paid charges. Source539d2a4 exactCI38635733514 passed before science; final receipt publication/CI remains pending at this checkpoint.
