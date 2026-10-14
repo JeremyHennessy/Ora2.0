@@ -4,6 +4,7 @@ import copy
 import json
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 from experiments import digital_sharedlineage68_population as old
 from experiments import digital_pressure71_population as new
 from experiments import digital_pressure71_natural_referee as referee
@@ -61,7 +62,11 @@ class Pressure71CopyBoundaryTests(unittest.TestCase):
     def test_dose8_all_physical_operations_match_frozen68(self):
         for seed in (1, 2):
             for mode, inheritance in (('faithful', 'parent_copy'), ('mutating', 'parent_copy'), ('mutating', 'ancestor_copy')):
-                a = old.World(seed, mode, inheritance_mode=inheritance)
+                # The full-suite guard also pollutes the old class's allocator
+                # slot. Keep its frozen initialization/operations exact while
+                # allocating directly after the guard has been restored.
+                a = object.__new__(old.World)
+                old.World.__init__(a, seed, mode, inheritance_mode=inheritance)
                 b = new.World(seed, mode, inheritance_mode=inheritance, dose=8)
                 for _ in range(512):
                     active_a, active_b = a.step(), b.step()
@@ -115,6 +120,16 @@ class Pressure71CopyBoundaryTests(unittest.TestCase):
             world._dose = 8
         with self.assertRaises(AttributeError):
             world.dose = 8
+
+    def test_base_allocation_guard_restoration_keeps_adapter_constructible(self):
+        # Reproduce the earlier capsule loader guard in full-suite order.
+        # Nothing is constructed while the guard is active; old code is intact.
+        with patch.object(old.World, '__new__', side_effect=AssertionError('World forbidden')):
+            pass
+        world = new.World(1, dose=1)
+        self.assertEqual(world.dose, 1)
+        self.assertEqual(world.tick, 0)
+        world.check()
 
     def test_serialized_checkpoint_continuation_exact(self):
         for dose in (1, 8):

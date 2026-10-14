@@ -36,7 +36,7 @@ efficient hydration/persistence/interruption qualification.
 
 ## Bounded software evidence and preserved failures
 
-15 focused checks passed independently at original and restored source exports.
+16 focused checks passed independently at original and restored source exports.
 The12 original software histories have6144 recorded instructions,68 paid births,
 10 deaths,798 successful acquisitions,2286 copied words and48 changed words.
 These are SOFTWARE apparatus histories from the supplied fixed NON-learning
@@ -66,9 +66,21 @@ Independent read-only custody/AST/census interpretation authenticated source
 exports,native/grant bindings,all12 history hashes,energy/packet/birth/death/copy
 counts,byte equality and archive restoration. No producer/VM/referee was imported
 or rerun by that interpreter. Authoritative local receipts under D:/OraLab/reports:
-pressure71-copy-boundary-v2.json and pressure71-copy-independent-v1.json,with
+pressure71-copy-boundary-v4.json and pressure71-copy-independent-v3.json,with
 their registration/controller audits and archived run roots. No scientific
 stage is accepted by these source/software checks.
+
+The first PR-head CI failed before the new test class could run:an earlier
+capsule test restored a mocked BaseWorld __new__ and left Python's inherited
+allocation slot unusable. A minimal stdlib reproducer confirmed the TypeError
+without a VM. The adapter now explicitly allocates its own object;its frozen
+initialization and all VM operation semantics remain unchanged. A scoped
+guard-restoration regression exercises that full-suite interaction. The frozen
+baseline in the physical comparison is allocated directly and initialized/stepped
+by its unchanged methods,so its polluted test-time allocator cannot mask the
+comparison. No frozen source is edited. The first CI failure and the intervening
+v3 fixture failure on the old baseline allocator are preserved. Fresh v4 source
+exports pass16 checks with identical original/restored history/proof bytes.
 
 ## Next single primary dependency
 

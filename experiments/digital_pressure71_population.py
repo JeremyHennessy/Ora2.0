@@ -25,6 +25,11 @@ def copy_result(seed, write_id, parent_value, index, mode, inheritance_mode, dos
 
 
 class World(BaseWorld):
+    def __new__(cls, *args, **kwargs):
+        # Keep allocation independent of an inherited __new__ guard's restored
+        # Python slot. Initialization below still pays/checks the frozen laws.
+        return object.__new__(cls)
+
     def __init__(self, seed, mode='faithful', route='ancestor', fuel_mode='renewed',
                  inheritance_mode='parent_copy', *, dose=8):
         self._dose = dose
