@@ -39,6 +39,13 @@ def main():
             step_calls+=1;return step(self)
         kernel.World.__init__,kernel.World.step=counted_init,counted_step
         try:value=candidate.history(request['seed'])
+        except BaseException as error:
+            # Ordinary failures retain attempted calls; hard termination may
+            # still leave counters and partial state unknown.
+            print(boundary.canonical(dict(engineering_failure=True,error=repr(error),
+                world_constructors=constructors,step_calls=step_calls,
+                partial_state_unavailable=True,stage_credit=False)).decode('ascii'),flush=True)
+            raise
         finally:kernel.World.__init__,kernel.World.step=init,step
         assert constructors==2 and value['horizon']==8192 and value['software_only'] is True
     else:

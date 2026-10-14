@@ -1,5 +1,22 @@
 # DIGITAL-FINITE-LONGITUDINAL-ECOLOGY-01 engineering v1
 
+October14 implementation correction: the first registered engineering attempt
+closed failed at inherited `World.run(8192)` before its first complete raw record;
+both prepared source children passed. Its source/native/grants/partial-empty files
+were retained and restored. Failed-child construction/step counts were not
+receipted and remain unknown, not zero. No complete8192 history or science claim.
+
+The corrected NEW adapter has an explicit bounded step loop and a prospective
+subclass input method. The latter exactly preserves64-interval injection, packet
+IDs/draws, caps/rejections and energy20, changing only its global upper boundary
+from4096 to8192. Both original and checkpoint64-replayed instances must be this
+subclass. Historical run/input/restore guards remain untouched; restore beyond
+4096 remains unqualified. Prepared parity covers4096/4160/8192 and rejection8256,
+both restored/original inflow, and a trap forbidding the historical run method.
+A fresh source/config registration is required; original failure is never retried
+or relabeled as success. Ordinary future failures report attempted call counters;
+partial state and hard-termination counters may remain unavailable.
+
 Prospective October14,2026. This is a separately versioned finite engineering
 probe of the supplied faithful ancestor, not a scientific evolution/learning
 panel or persistent activation. Closed68/69/70/71 laws/results/samples/reserves
