@@ -1,0 +1,2041 @@
+{
+  "interpretation": {
+    "verified": true,
+    "updater_supplied": true,
+    "benchmark_passed": false,
+    "native_endogenous_learning": false,
+    "evolved_architecture": false,
+    "stage_credit": false,
+    "banks": {
+      "primary": {
+        "scores": {
+          "intact": 1416,
+          "model_disabled": 484,
+          "history_misbound": 688
+        },
+        "common_returns": 66,
+        "common_successes": {
+          "intact": 61,
+          "model_disabled": 36,
+          "history_misbound": 39
+        },
+        "criteria": {
+          "paid_complete": true,
+          "personal_exposure": true,
+          "own_negative_changes": false,
+          "common_returns": true,
+          "each_context_common": true,
+          "paid_score": true,
+          "first_choice": true
+        },
+        "passed": false
+      },
+      "unseen": {
+        "scores": {
+          "intact": 1416,
+          "model_disabled": 484,
+          "history_misbound": 575
+        },
+        "common_returns": 72,
+        "common_successes": {
+          "intact": 66,
+          "model_disabled": 38,
+          "history_misbound": 32
+        },
+        "criteria": {
+          "paid_complete": true,
+          "personal_exposure": true,
+          "own_negative_changes": false,
+          "common_returns": true,
+          "each_context_common": true,
+          "paid_score": true,
+          "first_choice": true
+        },
+        "passed": false
+      }
+    },
+    "cells": [
+      {
+        "seed": 77400,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77400,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77400,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77400,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          }
+        },
+        "common": 12,
+        "older": 12,
+        "common_successes": {
+          "intact": 12,
+          "model_disabled": 12,
+          "history_misbound": 12
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77401,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 153,
+            "post63_penalties": 8,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 159,
+            "seed": 77401,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 216,
+            "total_paid_cost": 312,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 25,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 230,
+            "post63_penalties": 40,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 50,
+            "seed": 77401,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 293,
+            "total_paid_cost": 433,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 230,
+            "post63_penalties": 52,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 38,
+            "seed": 77401,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 293,
+            "total_paid_cost": 433,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 4,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 12,
+        "older": 12,
+        "common_successes": {
+          "intact": 10,
+          "model_disabled": 12,
+          "history_misbound": 6
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77402,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 132,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 184,
+            "seed": 77402,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 195,
+            "total_paid_cost": 279,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77402,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 64,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 21,
+            "seed": 77402,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 6,
+        "older": 6,
+        "common_successes": {
+          "intact": 6,
+          "model_disabled": 3,
+          "history_misbound": 0
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77403,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 146,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 170,
+            "seed": 77403,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 209,
+            "total_paid_cost": 301,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 284,
+            "post63_penalties": 72,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77403,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 347,
+            "total_paid_cost": 519,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 24,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 181,
+            "post63_penalties": 20,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 119,
+            "seed": 77403,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 244,
+            "total_paid_cost": 356,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 3,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 6,
+        "older": 6,
+        "common_successes": {
+          "intact": 5,
+          "model_disabled": 3,
+          "history_misbound": 6
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77404,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 132,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 184,
+            "seed": 77404,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 195,
+            "total_paid_cost": 279,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77404,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 214,
+            "post63_penalties": 52,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 54,
+            "seed": 77404,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 277,
+            "total_paid_cost": 409,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 7,
+        "older": 7,
+        "common_successes": {
+          "intact": 6,
+          "model_disabled": 3,
+          "history_misbound": 0
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77405,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 146,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 170,
+            "seed": 77405,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 209,
+            "total_paid_cost": 301,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 284,
+            "post63_penalties": 72,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77405,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 347,
+            "total_paid_cost": 519,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 24,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 181,
+            "post63_penalties": 20,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 119,
+            "seed": 77405,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 244,
+            "total_paid_cost": 356,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 3,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 7,
+        "older": 7,
+        "common_successes": {
+          "intact": 7,
+          "model_disabled": 3,
+          "history_misbound": 7
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77406,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 139,
+            "post63_penalties": 8,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 173,
+            "seed": 77406,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 202,
+            "total_paid_cost": 290,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 64,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 21,
+            "seed": 77406,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77406,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 2,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 8,
+        "older": 8,
+        "common_successes": {
+          "intact": 7,
+          "model_disabled": 0,
+          "history_misbound": 4
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77407,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 139,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 181,
+            "seed": 77407,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 202,
+            "total_paid_cost": 290,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 340,
+            "post63_penalties": 104,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77407,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 403,
+            "total_paid_cost": 607,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 25,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 52,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 33,
+            "seed": 77407,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 2,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 8,
+        "older": 8,
+        "common_successes": {
+          "intact": 8,
+          "model_disabled": 0,
+          "history_misbound": 4
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77600,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77600,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77600,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 125,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 195,
+            "seed": 77600,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 188,
+            "total_paid_cost": 268,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          }
+        },
+        "common": 10,
+        "older": 10,
+        "common_successes": {
+          "intact": 10,
+          "model_disabled": 10,
+          "history_misbound": 10
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77601,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 153,
+            "post63_penalties": 8,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 159,
+            "seed": 77601,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 216,
+            "total_paid_cost": 312,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 25,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 230,
+            "post63_penalties": 40,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 50,
+            "seed": 77601,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 293,
+            "total_paid_cost": 433,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 25,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 52,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 33,
+            "seed": 77601,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 4,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 10,
+        "older": 10,
+        "common_successes": {
+          "intact": 8,
+          "model_disabled": 10,
+          "history_misbound": 5
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77602,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 132,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 184,
+            "seed": 77602,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 195,
+            "total_paid_cost": 279,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77602,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 221,
+            "post63_penalties": 56,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 43,
+            "seed": 77602,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 284,
+            "total_paid_cost": 420,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 9,
+        "older": 9,
+        "common_successes": {
+          "intact": 8,
+          "model_disabled": 4,
+          "history_misbound": 0
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77603,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 146,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 170,
+            "seed": 77603,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 209,
+            "total_paid_cost": 301,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 284,
+            "post63_penalties": 72,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77603,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 347,
+            "total_paid_cost": 519,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 25,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 284,
+            "post63_penalties": 76,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77603,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 347,
+            "total_paid_cost": 519,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 3,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 9,
+        "older": 9,
+        "common_successes": {
+          "intact": 9,
+          "model_disabled": 4,
+          "history_misbound": 0
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77604,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 132,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 184,
+            "seed": 77604,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 195,
+            "total_paid_cost": 279,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77604,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 64,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 21,
+            "seed": 77604,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 11,
+        "older": 11,
+        "common_successes": {
+          "intact": 10,
+          "model_disabled": 5,
+          "history_misbound": 0
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77605,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 146,
+            "post63_penalties": 4,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 170,
+            "seed": 77605,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 209,
+            "total_paid_cost": 301,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 284,
+            "post63_penalties": 72,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77605,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 347,
+            "total_paid_cost": 519,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 24,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 174,
+            "post63_penalties": 16,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 130,
+            "seed": 77605,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 237,
+            "total_paid_cost": 345,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 3,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 11,
+        "older": 11,
+        "common_successes": {
+          "intact": 10,
+          "model_disabled": 5,
+          "history_misbound": 11
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77606,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 20,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 139,
+            "post63_penalties": 8,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 173,
+            "seed": 77606,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 202,
+            "total_paid_cost": 290,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 235,
+            "post63_penalties": 64,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 21,
+            "seed": 77606,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 298,
+            "total_paid_cost": 442,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 21,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 179,
+            "post63_penalties": 32,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 109,
+            "seed": 77606,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 242,
+            "total_paid_cost": 354,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 2,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 6,
+        "older": 6,
+        "common_successes": {
+          "intact": 5,
+          "model_disabled": 0,
+          "history_misbound": 3
+        },
+        "missing_control_opportunities": 0
+      },
+      {
+        "seed": 77607,
+        "summaries": {
+          "intact": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "intact",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 23,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 139,
+            "post63_penalties": 0,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 181,
+            "seed": 77607,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 202,
+            "total_paid_cost": 290,
+            "verified": true
+          },
+          "model_disabled": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "model_disabled",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 26,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 340,
+            "post63_penalties": 104,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 0,
+            "seed": 77607,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 403,
+            "total_paid_cost": 607,
+            "verified": true
+          },
+          "history_misbound": {
+            "births": 0,
+            "completed": true,
+            "control_mode": "history_misbound",
+            "deaths": 0,
+            "distinct_personal_post64_reads": 24,
+            "energy": 64,
+            "formation_cost": 76,
+            "heat": 680,
+            "learning": false,
+            "mutation": 0,
+            "post63_instructions": 228,
+            "post63_penalties": 48,
+            "read_contexts": [
+              0,
+              1
+            ],
+            "read_outcomes": [
+              0,
+              1
+            ],
+            "released_successes": 16,
+            "route": "supplied_learning_benchmark",
+            "score": 44,
+            "seed": 77607,
+            "software_prepared": false,
+            "stage_credit": false,
+            "successes": 32,
+            "ticks": 291,
+            "total_paid_cost": 431,
+            "verified": true
+          }
+        },
+        "changes": {
+          "intact": {
+            "own_negative_changes": 2,
+            "other_changes": 0
+          },
+          "model_disabled": {
+            "own_negative_changes": 0,
+            "other_changes": 0
+          },
+          "history_misbound": {
+            "own_negative_changes": 1,
+            "other_changes": 0
+          }
+        },
+        "common": 6,
+        "older": 6,
+        "common_successes": {
+          "intact": 6,
+          "model_disabled": 0,
+          "history_misbound": 3
+        },
+        "missing_control_opportunities": 0
+      }
+    ],
+    "total": {
+      "histories": 48,
+      "instructions": 12221,
+      "attempts": 2047,
+      "acquisitions": 1536,
+      "deaths": 0,
+      "births": 0,
+      "mutations": 0,
+      "paid_charges": 17913
+    },
+    "scope": "Blank acquired models under explicitly author-supplied updater; benchmark feasibility only, primary criteria unchanged"
+  },
+  "execution": {
+    "verified": true,
+    "native_calls": 48,
+    "genesis": 96,
+    "steps": 24442,
+    "original_histories": 48,
+    "archive_readback": true,
+    "updater_supplied": true,
+    "learning_claim": false,
+    "error": null
+  },
+  "archive_sha256": "1052c39f54b2704c0976777f3527125aa0720d22302a7b7c0efa0f5fa593c9ea"
+}

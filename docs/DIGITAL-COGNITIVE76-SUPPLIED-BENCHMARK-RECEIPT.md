@@ -1,0 +1,22 @@
+# Separately supplied benchmark - closed finite evidence
+
+The disclosed generic error updater and zero initial acquired models were run at the original paid VM prices. This is supplied learning machinery; it was never inserted into the closed blind source bank or credited as discovered/evolved architecture. Exact source471063ed3ab1be2af710351cec4dbd6c7a829a27 CI38646529608 passed before execution.
+
+All48 original histories (16 paired contexts x3 acquired-model controls) completed;48 native calls included original producer, producer-free full literal physics referee and exact source-restored replay.96 total geneses/24442 replay-inclusive instructions; original totals12221 instructions,2047 resource attempts,1536 acquisitions,17913 paid charges,0 deaths/births/mutations. All original histories acquired32 packets. Native/source/config/grant checks and complete archive/readback passed. Archive SHA1052c39f54b2704c0976777f3527125aa0720d22302a7b7c0efa0f5fa593c9ea.
+
+| Bank | Intact / disabled / misbound paid score | Common older-return first-correct choices | Common returns |
+|---|---|---|---|
+| Primary |1416 /484 /688|61 /36 /39|66|
+| Unseen instances |1416 /484 /575|66 /38 /32|72|
+
+These are positive aggregate paid-score and first-choice differences over BOTH actual model-channel controls in both banks. Every context has a common older return and personally sourced feedback. Fourteen of16 intact actors revise models;32 observed value changes follow personally sourced negative feedback,0 changes lack that origin. Two all-zero-response contexts need no revision and exhibit none. The updater/scaffold/formation/exploration are researcher supplied; acquired associations depend on actual experiences. Unseen instances belong to the existing binary task family, not flexible transfer to a new task.
+
+All-cost cap-loss accounting: intact5984, model-disabled3632 and history-misbound4343 energy units were dissipated at the actor cap. These losses are retained, not removed from paid scores. Each actor paid76 formation and ordinary instruction/penalty costs, with16 units of disclosed exogenous release cost; full literal conservation was verified.
+
+The stricter pre-run interpretation explicitly required at least one model revision in EVERY context, in addition to attribution of every change. Its frozen verdict remains FALSE solely on that requirement. The originally frozen benchmark contract asks for attributable changes but does not explicitly require a revision in an error-free context. Preserve both documents and this discrepancy: no criterion is waived, no retrospective passing verdict substituted, no cohort rerun or repair, and no new stage capability accepted. Report the directly verified aggregate causal contrasts separately from the stricter decision. The blind Cognitive76 primary still has0/16 qualifying learners and all fixed-comparator failures.
+
+Custody qualification v1 stopped before science when a unit fixture attempted Git inside a fully occupied process budget. Native/failure/archive evidence retained. v2 removed that irrelevant subprocess, held all process limits fixed, and passed three focused custody checks plus real early/late native-failure retention. Five unchanged prepared boundary checks were reused by exact source hashes, not rerun. Three-role whole-output precharge was verified before48 scientific histories. No reserved seed, price/horizon change, selected winner, actor repair, API/Observer/legacy edit or persistent activation.
+
+Local evidence: D:/OraLab/reports/cognitive76-paid-benchmark-v1.json; cognitive76-benchmark-independent-interpretation-v1.json; cognitive76-benchmark-interpretation-prospective-v1.json; cognitive76-benchmark-interpretation-custody-v1.json; cognitive76-benchmark-custody-v1.json and v2.json. Full raw/native/proof/source-archive evidence in D:/OraLab/runs/cognitive76-paid-benchmark-v1-20261014 and separate bounded interpretation archive. Final receipt-head CI/publication remains pending at this checkpoint.
+
+Single next scientific dependency: prospectively derive a minimal one-shot-resource decision law with full accounting, unchanged VM prices, equal opportunity-aware fixed controls and absence distinguished from wrong feedback. Repeated cheap retries currently collect every packet; learned first choices should have real resource consequences. No fresh law/context has opened. Useful learning remains primary, then evolution of inherited cognitive capacity; reproduction/pilot are supporting engineering.
