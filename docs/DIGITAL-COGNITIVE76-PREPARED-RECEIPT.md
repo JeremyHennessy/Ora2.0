@@ -1,3 +1,15 @@
+# Cognitive76 current admission checkpoint - October14
+
+Useful own-experience learning remains primary, then evolution of learning capacity. The coherent supplied scaffold/blind update atoms and frozen new contexts remain unchanged; no candidate bank has executed and no new learning result is accepted.
+
+Source448f2dd passed exactCI38633527960. The first whole attempt stopped at an inherited six-versus-seven reference counter (native receipt7 geneses/678 instructions retained). A scoped retained-receipt regression corrected it. The second attempt completed32 full reference batches with literal proofs/source replay, then refused a native pre-close active-process count1 despite exit0. Both failed attempts, partials, counters and complete exact archives remain preserved; no rescoring or scientific admission follows.
+
+A confirmed native exit-accounting delay is addressed by observing job accounting for at most100ms WITHIN the original wall deadline, only while all enumerated processes are already exited. Genuine live descendants remain active and go to whole-job closure; no admission predicate is weakened.21 prepared checks pass both source exports, including three accounting regressions. Ten actual normal Windows exits report observed zero; a genuine orphan retains active classification and is killed. This is a blocking engineering fix, not organism learning.
+
+Single next dependency: review/exact updated source-head CI and fresh finite controller qualification, then all336 paid references and only if admitted all768 frozen candidate/control histories. Budgets, laws, costs, roster, controls, horizons and reserves are unchanged. Reproduction/pilot are not prerequisites. Observer recorded/read-only UI and AI-Research ownership remain separate; no activation or duplicate schedule.
+
+Historical current-state checkpoints below are preserved with their original dates and scope.
+
 # Cognitive76 prepared qualification
 
 The coherent controller, opcode21 four-bit NOT, blind two-atom source, model-channel controls and independent literal physics verifier pass 18 scoped checks in both physical source exports. Source archive contents read back exactly. These checks use invented NON-learning seeds95076/95077 only: no registered World, scientific target, candidate performance or learned strategy.
