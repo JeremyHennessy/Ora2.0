@@ -24,6 +24,17 @@ every seed. Across ALL arms:16981 successful acquisitions and91212 charged
 action units; zero births or mutations. The complete original arm-level results
 remain in DIGITAL-COGNITION02-RECEIPT.md, including all failed/dead controls.
 
+An independent read-only resource summary separates successful choices from
+energy actually retained. Quick memory averages231.6875 successful choices,
+768 charged work units and768 collected energy per actor; memory-disabled
+averages126.8125 choices,768 work and763.5 collected energy. Latest-response
+averages108.6875 choices,768 work and762.1875 collected energy. The energy cap
+dissipates much of the additional offered reward. This is a large paid decision
+accuracy/reversal-recovery advantage, not a proportional increase in retained
+energy or evidence of selection for learning. A future evolutionary test must
+measure actual reproductive fitness consequences; do not lower old prices or
+retroactively remove this cap.
+
 The learning update, eight context weights, exploration and action-selection
 rule are researcher supplied. Only site preferences are acquired from personal
 feedback. The bound2 hypothesis was designed after seeing Cognition01's bound12
