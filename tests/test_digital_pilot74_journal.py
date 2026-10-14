@@ -1,11 +1,12 @@
 """Invented host journal fixtures only; no executed ancestry or World import."""
-import ast,json,tempfile,unittest
+import ast,json,os,tempfile,unittest
 from pathlib import Path
 from experiments import digital_pilot74_journal as j
 
 class PilotJournal(unittest.TestCase):
+    ROOT=Path('D:/OraLab/tmp') if os.name=='nt' else Path(tempfile.gettempdir())
     def setUp(self):
-        root=Path('D:/OraLab/tmp');root.mkdir(exist_ok=True)
+        root=self.ROOT;root.mkdir(exist_ok=True)
         self.temp=tempfile.TemporaryDirectory(prefix='pilot74-journal-prepared-',dir=root)
         self.directory=Path(self.temp.name);self.identity={'fixture':'AUTHOR-SUPPLIED'}
         assert self.directory.resolve().is_relative_to(root.resolve())
@@ -15,7 +16,7 @@ class PilotJournal(unittest.TestCase):
         j.write(self.directory/'capsule-1.json',self.raw['8192'],4096)
         j.write(self.directory/'head.json',j.enc(j.head(self.raw['8192'],self.audits['8192'],1)),4096)
     def tearDown(self):
-        assert self.directory.resolve().is_relative_to(Path('D:/OraLab/tmp').resolve());self.temp.cleanup()
+        assert self.directory.resolve().is_relative_to(self.ROOT.resolve());self.temp.cleanup()
     def to_middle(self):
         self.assertTrue(j.commit(self.directory,self.raw['9216'],self.audits['9216'],'normal',2,self.audits))
     def test_normal_two_interval_commit_and_terminal_authority(self):
