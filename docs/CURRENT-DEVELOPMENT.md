@@ -1,3 +1,41 @@
+# Current intelligence-first result - Cognitive76 CLOSED NEGATIVE
+
+All336 paid references and768 blind candidate/control histories completed with independent full physics/source replay/exact archives:0/16 qualifying learners. Candidate totals212499 instructions,35201 attempts,24576 acquisitions,0 deaths/births/mutations,313367 paid charges. Source539d2a4 exactCI38635733514 passed before science; final receipt publication/CI remains pending at this checkpoint.
+
+Real diagnostic progress:16/16 complete every context and receive adequate personal information;9/16 have better first decisions and paid scores than BOTH model controls. Every founder fails the cheaper fixed-response score gate in both banks. No criterion waived, winner inserted, new stage/intelligence acceptance or general impossibility claim. Supplied scaffold/grammar versus acquired models remain explicit. All closed laws/rosters/costs/horizons/reserves and failed admissions/analysis retained.
+
+Single next dependency: separately qualify the prospectively authored paid-learning benchmark, and derive a finite one-shot resource-opportunity comparison with unchanged VM prices. Shared instruction shortcuts must also benefit fixed controls; lost resource value should make learned first choices consequential, and absence must remain distinct from wrong feedback. Any implementation/new contexts need fresh prospective registration/review/exact-head CI; do not repair or expand the closed bank. Useful learning remains primary; then evolve actual inherited learning capacity. Pilot/reproduction is supporting, not prerequisite.
+
+Evidence: docs/DIGITAL-COGNITIVE76-CLOSED-RECEIPT.md; D:/OraLab/reports/cognitive76-whole-panel-v3.json, cognitive76-independent-interpretation-v1.json, cognitive76-memory-diagnosis-v1.json and cognitive76-interpretation-custody-v2.json. Separately approved benchmark contract: cognitive76-supplied-learning-benchmark-v1-20261014.md. Research PR50-52 and preserved Observer update support decisions, not capability claims. No duplicate writer/schedule, API/legacy/persistent activation or private observer publication.
+
+Historical checkpoints below retain their original scope and superseded next actions.
+
+# Cognitive76 current admission checkpoint - October14
+
+Useful own-experience learning remains primary, then evolution of learning capacity. The coherent supplied scaffold/blind update atoms and frozen new contexts remain unchanged; no candidate bank has executed and no new learning result is accepted.
+
+Source448f2dd passed exactCI38633527960. The first whole attempt stopped at an inherited six-versus-seven reference counter (native receipt7 geneses/678 instructions retained). A scoped retained-receipt regression corrected it. The second attempt completed32 full reference batches with literal proofs/source replay, then refused a native pre-close active-process count1 despite exit0. Both failed attempts, partials, counters and complete exact archives remain preserved; no rescoring or scientific admission follows.
+
+A confirmed native exit-accounting delay is addressed by observing job accounting for at most100ms WITHIN the original wall deadline, only while all enumerated processes are already exited. Genuine live descendants remain active and go to whole-job closure; no admission predicate is weakened.21 prepared checks pass both source exports, including three accounting regressions. Ten actual normal Windows exits report observed zero; a genuine orphan retains active classification and is killed. This is a blocking engineering fix, not organism learning.
+
+Single next dependency: review/exact updated source-head CI and fresh finite controller qualification, then all336 paid references and only if admitted all768 frozen candidate/control histories. Budgets, laws, costs, roster, controls, horizons and reserves are unchanged. Reproduction/pilot are not prerequisites. Observer recorded/read-only UI and AI-Research ownership remain separate; no activation or duplicate schedule.
+
+Historical current-state checkpoints below are preserved with their original dates and scope.
+
+# Current intelligence-first development � October14
+
+Useful learning from an organism's own experience is the primary scientific objective; evolution of learning capacity follows. Reproduction, pilot durability and longer survival are supporting work.
+
+Verified closed results: Experience75 completed288 paid references and768 blind candidate/control histories, with0/16 qualifying learners. Its code, costs, outcomes and reserves remain closed. Cognition02 demonstrates useful own-feedback learning under a supplied architecture in a separate standalone assay; it is not endogenous or evolved VM learning.
+
+Current intervention: [Cognitive76 prospective interface](DIGITAL-COGNITIVE76-PROTOCOL.md) supplies coherent sensing/prediction/memory dataflow and fixed exploration, with blank acquired models and performance-blind update atoms. General four-bit NOT preserves context at one ordinary instruction cost. [18 prepared checks](DIGITAL-COGNITIVE76-PREPARED-RECEIPT.md) pass both exact source exports; invented non-learning paid cycles end energy37 or26 from23. These are software/cost checks, not organism-acquired knowledge. No scientific contexts opened; whole512-step reference affordability remains unqualified.
+
+Single next dependency: reviewed exact-head CI and finite whole-run custody admission, then336 full ordinary references and, only if admitted, all768 frozen candidate/control histories. Own-model-disabled and history-misbound controls preserve immediate truthful feedback and fixed fallback; unseen contexts are enrolled prospectively. No resampling, installed winning updater, closed-bank repair or stage credit. All six current plan/progress documents carry this same priority. Historical physical/digital results below retain their original meanings.
+
+One bounded laboratory writer under the existing exclusive lock; Observer stays recorded/read-only and its automation paused. AI-Research stays separately owned. No APIs, unattended world/service or legacy changes. Existing15-minute development and3-hour audit schedules retained.
+
+## Historical checkpoints (superseded next actions, preserved evidence)
+
 CAPSULE03 EXCEPTION RESTORATION PREPARED — October14 Halifax. [Endpoint admission](DIGITAL-CAPSULE03-NATIVE-ADMISSION.md) now passes21 pinned software checks including a mocked generation failure that preserves native partial-count disclosure and restores the exact historical classmethod descriptor.0 genesis calls/VM steps,2 invented-state hydrations;not natural ancestry or real recovery. Previous20/15 checks and initial parser-exception mismatch are retained. Next:whole-worker/native BOTH-export reachability and exact updated PR-head CI before any actual capsule assay. No stage/activation change.
 
 CAPSULE03 ENDPOINT ADMISSION — October14 Halifax. [Finite role/grant supplement](DIGITAL-CAPSULE03-NATIVE-ADMISSION.md): source-bound generator/auditor/resume adapter authored;20 pinned prepared checks pass with0 genesis/VM steps and2 invented-state object hydrations. Distinct generation files,role caps,input-before-read,audit seed/dose/cut/scope and descriptor restoration enforced. Proposed22-child/four-genesis/eight-hydration assay retains frozen cuts7168/8192,36864 maximum ordinary instructions and precharges385.03125MiB within existing ceilings. Timings excluded from functional byte-parity records. Native BOTH-export/whole-worker qualification and exact-head publication are next;natural capsules/continuation remain UNQUALIFIED. No stage/persistent/crash/learning/evolution claim. Prior15-check checkpoint and all historical results below preserved.

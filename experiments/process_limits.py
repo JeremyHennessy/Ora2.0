@@ -158,6 +158,26 @@ def process_exited(pid, timeout_ms=2000):
         checked(k.CloseHandle(handle))
 
 
+def settled_usage(job, limits, started):
+    """Observe delayed exit accounting, never excuse a live descendant.
+
+    A signalled process handle can precede the job's active-count update.
+    Allow at most100ms within the original wall deadline for that update;
+    genuine live descendants still go directly to whole-job closure.
+    """
+    deadline = min(started + limits.wall_seconds, time.monotonic() + 0.1)
+    while True:
+        usage = job.usage()
+        if usage['active_before_close'] == 0:
+            return usage
+        if not all(process_exited(pid, timeout_ms=0) for pid in job.pids()):
+            return usage
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            return usage
+        time.sleep(min(0.01, remaining))
+
+
 def run(command, limits=Limits(), cwd=None):
     limits.validate()
     if not isinstance(command, (list, tuple)) or not command or any(not isinstance(s, str) or not s or '\x00' in s for s in command):
@@ -206,7 +226,7 @@ def run(command, limits=Limits(), cwd=None):
                 process.wait(timeout=min(0.01, remaining))
             except subprocess.TimeoutExpired:
                 pass
-        usage = job.usage()
+        usage = settled_usage(job, limits, started)
         owned_pids = sorted(set(job.pids() + [process.pid]))
         job.close()  # Kill residual descendants on normal exits too.
         if not all(process_exited(pid) for pid in owned_pids):
