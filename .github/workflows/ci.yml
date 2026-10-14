@@ -8,7 +8,9 @@ permissions:
 jobs:
   tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # The expanded replay suite exceeded the old five-minute job envelope.
+    # This bounds CI only; registered experiment horizons/caps are unchanged.
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
