@@ -1,3 +1,5 @@
+CI ENVELOPE UPDATE: PR264 first-head CI cancelled at the existing five-minute job limit without a final suite verdict. Log/native failure preserved; a fresh head gives CI a finite ten-minute envelope. Experiment laws/horizons/resource caps are unchanged. Publication remains pending exact corrected-head CI.
+
 # Pressure71 census and disclosed child-source software checkpoint
 
 October14 UTC. The new all-population census counts every paid generation3/4
