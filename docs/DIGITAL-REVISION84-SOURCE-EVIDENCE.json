@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_ONLY_PREPARED_NOT_SCIENTIFIC_ADMISSION",
+  "checks_per_export": 7,
+  "native_calls": 2,
+  "scientific_worlds": 0,
+  "scientific_targets": 0,
+  "software_worlds": 0,
+  "software_targets": 0,
+  "source_archive_exact_readback": true,
+  "evidence_archive_exact_readback": true,
+  "archive_sha256": "bd9a5b0f68c4cb1df0cd2fddfb3cafc857189b21658a0620914eed11b2562b5f",
+  "failed_v1_archive": "8b0faeef7951fb860354c14bc065b469cfaa2e309919b7682d49376ebea4c0d5",
+  "failed_v1_status": "CLOSED_FAILED_TEST_GUARD_INTEGRATION",
+  "source_hashes": {
+    "digital_revision84_source.py": "e2c0ed8c746e4adc6b1df38212e18c31be4f88457ee07d582f532137fb2ba9db",
+    "digital_revision84_world.py": "2697c60321ad784f80a9a3c3e67d20546a1202e3fd1b3e7f1817a9541afbd13c",
+    "digital_revision84_referee.py": "7b09da71945b01e7b2b5973249048967d1a9db5737c093b4816260f10a50921b",
+    "test_digital_revision84_source.py": "389a0fb5140e094625286067edb8dd0e133cb8108281592faa9b9924f4eb0f90"
+  },
+  "contract": "DIGITAL-REVISION84-CONTRACT.md",
+  "scope": "Supplied architecture/acquired unknown labels; source-only has no scientific stage credit"
+}
