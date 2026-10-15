@@ -1,3 +1,11 @@
+# MEMORY80 software interface - no scientific admission
+
+Prospective heritable-memory law/source implemented, eleven focused checks passed both exact source exports/archive readback. Capacity2/4/8 is actual copied DNA with capacity+8 paid blank state; stable leases and paid bounded variation share ordinary VM prices. Source architecture, reproductive ancestor and sampler are supplied apparatus, not evolved competence. No registered scientific Worlds/targets or stage credit.
+
+Archived invented reference:1024 dispatches,98 attempts,71 acquisitions,3 paid births through generation2,1 retained energy death,0 mutations. All children blank/paid and later acquire food. Parent1 died after reproduction at a previously unlearned cue; cold-start arithmetic does NOT guarantee post-birth parent survival. Producer-free birth endpoint/source-restored parity is NOT full independent population physics. No old source/price/threshold repair or rescue.
+
+Single next dependency: producer-free literal MEMORY80 population referee and qualification against pinned contract/complete retained fixtures, then prospective claim-specific learning controls and actual inheritance/selection roster. No primary panel admitted; no scientific seeds/reserves opened. Learning can be tested with max population1 independently of reproductive/selection gates. PR277/278 fully verified and all historical failures unchanged. See docs/DIGITAL-MEMORY80-PREPARED.md and reports/memory80-prepared-owner-handoff-20261014.md. Existing one writer/finite native-evidence limits/Observer pause/private history/API/legacy/persistent restrictions and15-minute/3-hour cadence remain.
+
 # Cognitive-capacity source interface - qualified source only
 
 LateHistory78 PR277 publication fully verified: finalCI38666022988 and exact mergec8dca2aa mainCI38666706783 SUCCESS. Closed scientific acceptance remains FALSE on primary paid1096 versus reactive1101; all causal memory findings/older controls/negative evidence immutable.
