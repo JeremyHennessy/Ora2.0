@@ -114,4 +114,6 @@ class Strategy88(unittest.TestCase):
   self.assertIn('registers=[0,0]',engine.decode())
   child=(ROOT/'experiments/digital_strategy88_child.py').read_text(encoding='utf-8')
   self.assertLess(child.index('kind=plan.scope(request)'),child.index("if kind=='accept':value=accept(request)"))
+  worker=(ROOT/'lab/strategy88_pure_worker_v1.py').read_text(encoding='utf-8')
+  self.assertLess(worker.index('sys.path.insert(0,str(Path(__file__).resolve().parents[1]))'),worker.index('from experiments import'))
 if __name__=='__main__':unittest.main()

@@ -1,6 +1,7 @@
 """Exact-export NON-PHYSICS source/custody checks; no World imports permitted."""
 import hashlib,importlib.util,json,sys,unittest
 from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from experiments import digital_credited_fallback87v2_primary_boundary as boundary
 def main():
  root=Path.cwd();request=json.loads(Path(sys.argv[1]).read_bytes());pins=request['source_files']
