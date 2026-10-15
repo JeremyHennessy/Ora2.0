@@ -74,3 +74,8 @@ forgery qualifications by hash. Fresh primary contexts remain blocked until ever
 gate; source/fixture/software checks confer no scientific or whole-stage credit.
 Actual retained surplus is separate from nominal successful-choice yield; no
 fitness, inherited selection, general intelligence or whole-stage claim.
+
+
+## Closed full-cohort result
+
+See [closed interpretation](DIGITAL-REVISION84-CLOSED.md). All288 originals/full replay/physics verified; registered acceptance FALSE for every supplied capacity. Scoped q8 acquired revisions are retained separately from failed paid superiority.
