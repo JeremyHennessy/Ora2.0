@@ -1,0 +1,873 @@
+{
+  "closed": true,
+  "technical_verification": true,
+  "registered_mechanistic_paid_choice": false,
+  "finite_cohort_net_energy_value": false,
+  "all9": [
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -666,
+          "N_oracle_gain": -3461,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 11,
+            "misbound": -10,
+            "model": -6,
+            "route": 5
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -393,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -560,
+              "N_oracle_gain": -3068,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 8,
+          "origin_contexts": 4
+        },
+        "unseen": {
+          "E_oracle_gain": -473,
+          "N_oracle_gain": -3165,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 7,
+            "misbound": 9,
+            "model": 4,
+            "route": 2
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -393,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -367,
+              "N_oracle_gain": -2772,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 18,
+          "origin_contexts": 5
+        }
+      },
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "joint_sign": {
+        "losses": 7,
+        "p": "2477/4096",
+        "passes": false,
+        "ties": 2,
+        "wins": 7
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -678,
+          "N_oracle_gain": -3429,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 10,
+            "misbound": -7,
+            "model": -7,
+            "route": 4
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -430,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -572,
+              "N_oracle_gain": -2999,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 8,
+          "origin_contexts": 3
+        },
+        "unseen": {
+          "E_oracle_gain": -487,
+          "N_oracle_gain": -3184,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 7,
+            "misbound": 5,
+            "model": 2,
+            "route": 5
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -430,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -381,
+              "N_oracle_gain": -2754,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 15,
+          "origin_contexts": 3
+        }
+      },
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "joint_sign": {
+        "losses": 7,
+        "p": "2477/4096",
+        "passes": false,
+        "ties": 2,
+        "wins": 7
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -722,
+          "N_oracle_gain": -3459,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": -2,
+            "misbound": -7,
+            "model": -7,
+            "route": 6
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -424,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -616,
+              "N_oracle_gain": -3035,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 8,
+          "origin_contexts": 3
+        },
+        "unseen": {
+          "E_oracle_gain": -448,
+          "N_oracle_gain": -3137,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 28,
+            "misbound": 12,
+            "model": 6,
+            "route": 7
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -106,
+              "N_oracle_gain": -424,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -342,
+              "N_oracle_gain": -2713,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 17,
+          "origin_contexts": 5
+        }
+      },
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "joint_sign": {
+        "losses": 6,
+        "p": "1619/4096",
+        "passes": false,
+        "ties": 2,
+        "wins": 8
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -784,
+          "N_oracle_gain": -3602,
+          "all_intact_complete": false,
+          "common": 84,
+          "deltas": {
+            "joint": 13,
+            "misbound": 1,
+            "model": -3,
+            "route": 2
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -397,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -674,
+              "N_oracle_gain": -3205,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 9,
+          "origin_contexts": 4
+        },
+        "unseen": {
+          "E_oracle_gain": -567,
+          "N_oracle_gain": -3310,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 2,
+            "misbound": -4,
+            "model": -2,
+            "route": 3
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -397,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -457,
+              "N_oracle_gain": -2913,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 16,
+          "origin_contexts": 5
+        }
+      },
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "joint_sign": {
+        "losses": 7,
+        "p": "1651/2048",
+        "passes": false,
+        "ties": 4,
+        "wins": 5
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -753,
+          "N_oracle_gain": -3556,
+          "all_intact_complete": false,
+          "common": 89,
+          "deltas": {
+            "joint": 13,
+            "misbound": 2,
+            "model": -2,
+            "route": -2
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -434,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -643,
+              "N_oracle_gain": -3122,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 9,
+          "origin_contexts": 4
+        },
+        "unseen": {
+          "E_oracle_gain": -546,
+          "N_oracle_gain": -3262,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 5,
+            "misbound": -8,
+            "model": 0,
+            "route": 10
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -434,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -436,
+              "N_oracle_gain": -2828,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 17,
+          "origin_contexts": 4
+        }
+      },
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "joint_sign": {
+        "losses": 8,
+        "p": "7099/8192",
+        "passes": false,
+        "ties": 3,
+        "wins": 5
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -795,
+          "N_oracle_gain": -3562,
+          "all_intact_complete": false,
+          "common": 85,
+          "deltas": {
+            "joint": 6,
+            "misbound": 3,
+            "model": -2,
+            "route": 1
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -428,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -685,
+              "N_oracle_gain": -3134,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 9,
+          "origin_contexts": 4
+        },
+        "unseen": {
+          "E_oracle_gain": -567,
+          "N_oracle_gain": -3385,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 21,
+            "misbound": -9,
+            "model": -2,
+            "route": 8
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -110,
+              "N_oracle_gain": -428,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -457,
+              "N_oracle_gain": -2957,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 15,
+          "origin_contexts": 4
+        }
+      },
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "joint_sign": {
+        "losses": 5,
+        "p": "793/2048",
+        "passes": false,
+        "ties": 4,
+        "wins": 7
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -504,
+          "N_oracle_gain": -1237,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 29,
+            "misbound": 20,
+            "model": 12,
+            "route": 12
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -405,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -386,
+              "N_oracle_gain": -832,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 25,
+          "origin_contexts": 6
+        },
+        "unseen": {
+          "E_oracle_gain": -495,
+          "N_oracle_gain": -1310,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 10,
+            "misbound": 5,
+            "model": 6,
+            "route": 6
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -405,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -377,
+              "N_oracle_gain": -905,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 23,
+          "origin_contexts": 5
+        }
+      },
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "joint_sign": {
+        "losses": 4,
+        "p": "281/1024",
+        "passes": false,
+        "ties": 5,
+        "wins": 7
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -504,
+          "N_oracle_gain": -1149,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 29,
+            "misbound": 20,
+            "model": 12,
+            "route": 12
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -442,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -386,
+              "N_oracle_gain": -707,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 25,
+          "origin_contexts": 6
+        },
+        "unseen": {
+          "E_oracle_gain": -496,
+          "N_oracle_gain": -1268,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 11,
+            "misbound": 5,
+            "model": 6,
+            "route": 8
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -442,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -378,
+              "N_oracle_gain": -826,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 24,
+          "origin_contexts": 6
+        }
+      },
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "joint_sign": {
+        "losses": 4,
+        "p": "281/1024",
+        "passes": false,
+        "ties": 5,
+        "wins": 7
+      }
+    },
+    {
+      "arithmetic_finite_cohort_net_energy": false,
+      "arithmetic_mechanistic_paid_choice": false,
+      "banks": {
+        "primary": {
+          "E_oracle_gain": -504,
+          "N_oracle_gain": -1273,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 17,
+            "misbound": 20,
+            "model": 12,
+            "route": 12
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -436,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -386,
+              "N_oracle_gain": -837,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 25,
+          "origin_contexts": 6
+        },
+        "unseen": {
+          "E_oracle_gain": -496,
+          "N_oracle_gain": -1390,
+          "all_intact_complete": true,
+          "common": 96,
+          "deltas": {
+            "joint": 29,
+            "misbound": 5,
+            "model": 6,
+            "route": 8
+          },
+          "generation_strata": {
+            "constant": {
+              "E_oracle_gain": -118,
+              "N_oracle_gain": -436,
+              "contexts": 2
+            },
+            "independent_labels": {
+              "E_oracle_gain": -378,
+              "N_oracle_gain": -954,
+              "contexts": 6
+            }
+          },
+          "mechanism_gates": false,
+          "older_uses": 24,
+          "origin_contexts": 6
+        }
+      },
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "joint_sign": {
+        "losses": 3,
+        "p": "189/4096",
+        "passes": false,
+        "ties": 3,
+        "wins": 10
+      }
+    }
+  ],
+  "original_only_totals": {
+    "E": -2475,
+    "N": 291912,
+    "O": 67317,
+    "admitted": 41293,
+    "cap_heat": 281427,
+    "captured": 395073,
+    "completed60": 793,
+    "constructor_remaining": 47712,
+    "cpu": 269516,
+    "death_heat": 0,
+    "deaths": 23,
+    "failed_packet_heat": 291280,
+    "fees": 12960,
+    "food": 45128,
+    "formation": 56832,
+    "heat": 970255,
+    "histories": 816,
+    "living": 158709,
+    "offered": 58976,
+    "penalty": 58240,
+    "rejected": 17683,
+    "served": 48389,
+    "successes": 33825
+  },
+  "by_group": {
+    "fallback_misbound": {
+      "E": -823,
+      "N": 51770,
+      "O": 12377,
+      "admitted": 7575,
+      "cap_heat": 50289,
+      "captured": 72891,
+      "completed60": 143,
+      "constructor_remaining": 7536,
+      "cpu": 50674,
+      "death_heat": 0,
+      "deaths": 1,
+      "failed_packet_heat": 49200,
+      "fees": 2304,
+      "food": 8172,
+      "formation": 10896,
+      "heat": 173203,
+      "histories": 144,
+      "living": 28505,
+      "offered": 11120,
+      "penalty": 9840,
+      "rejected": 3545,
+      "served": 8619,
+      "successes": 6159
+    },
+    "history_disabled": {
+      "E": -2363,
+      "N": 49380,
+      "O": 10837,
+      "admitted": 7775,
+      "cap_heat": 49439,
+      "captured": 70841,
+      "completed60": 141,
+      "constructor_remaining": 7536,
+      "cpu": 49655,
+      "death_heat": 0,
+      "deaths": 3,
+      "failed_packet_heat": 51760,
+      "fees": 2304,
+      "food": 8389,
+      "formation": 10896,
+      "heat": 174403,
+      "histories": 144,
+      "living": 26965,
+      "offered": 11312,
+      "penalty": 10349,
+      "rejected": 3537,
+      "served": 8602,
+      "successes": 6014
+    },
+    "intact": {
+      "E": -63,
+      "N": 54668,
+      "O": 13137,
+      "admitted": 7537,
+      "cap_heat": 52427,
+      "captured": 72773,
+      "completed60": 141,
+      "constructor_remaining": 7536,
+      "cpu": 50275,
+      "death_heat": 0,
+      "deaths": 3,
+      "failed_packet_heat": 46820,
+      "fees": 2304,
+      "food": 8152,
+      "formation": 10896,
+      "heat": 172083,
+      "histories": 144,
+      "living": 29265,
+      "offered": 11040,
+      "penalty": 9361,
+      "rejected": 3503,
+      "served": 8601,
+      "successes": 6260
+    },
+    "model_erased": {
+      "E": -909,
+      "N": 53791,
+      "O": 12291,
+      "admitted": 7535,
+      "cap_heat": 52396,
+      "captured": 72104,
+      "completed60": 141,
+      "constructor_remaining": 7536,
+      "cpu": 50312,
+      "death_heat": 0,
+      "deaths": 3,
+      "failed_packet_heat": 47520,
+      "fees": 2304,
+      "food": 8150,
+      "formation": 10896,
+      "heat": 172929,
+      "histories": 144,
+      "living": 28419,
+      "offered": 11040,
+      "penalty": 9501,
+      "rejected": 3505,
+      "served": 8601,
+      "successes": 6225
+    },
+    "model_misbound": {
+      "E": -998,
+      "N": 53135,
+      "O": 12202,
+      "admitted": 7530,
+      "cap_heat": 51829,
+      "captured": 72191,
+      "completed60": 142,
+      "constructor_remaining": 7536,
+      "cpu": 50364,
+      "death_heat": 0,
+      "deaths": 2,
+      "failed_packet_heat": 48140,
+      "fees": 2304,
+      "food": 8138,
+      "formation": 10896,
+      "heat": 173158,
+      "histories": 144,
+      "living": 28330,
+      "offered": 11040,
+      "penalty": 9625,
+      "rejected": 3510,
+      "served": 8608,
+      "successes": 6201
+    },
+    "references": {
+      "E": 2681,
+      "N": 29168,
+      "O": 6473,
+      "admitted": 3341,
+      "cap_heat": 25047,
+      "captured": 34273,
+      "completed60": 85,
+      "constructor_remaining": 10032,
+      "cpu": 18236,
+      "death_heat": 0,
+      "deaths": 11,
+      "failed_packet_heat": 47840,
+      "fees": 1440,
+      "food": 4127,
+      "formation": 2352,
+      "heat": 104479,
+      "histories": 96,
+      "living": 17225,
+      "offered": 3424,
+      "penalty": 9564,
+      "rejected": 83,
+      "served": 5358,
+      "successes": 2966
+    }
+  },
+  "revisions_by_descriptor": {
+    "[2, 'fallback0']": 159,
+    "[2, 'model']": 161,
+    "[2, 'fallback1']": 154,
+    "[4, 'fallback0']": 156,
+    "[4, 'model']": 161,
+    "[4, 'fallback1']": 156,
+    "[8, 'fallback0']": 71,
+    "[8, 'model']": 71,
+    "[8, 'fallback1']": 69
+  },
+  "all_late_older_correct_by_descriptor_channel": {
+    "[2, 'fallback0']:semantic": 45,
+    "[2, 'model']:semantic": 43,
+    "[4, 'fallback0']:semantic": 44,
+    "[4, 'model']:semantic": 44,
+    "[8, 'fallback0']:semantic": 40,
+    "[8, 'model']:semantic": 40,
+    "[2, 'fallback0']:model": 5,
+    "[2, 'model']:model": 4,
+    "[2, 'fallback1']:semantic": 19,
+    "[2, 'fallback1']:model": 6,
+    "[4, 'fallback1']:semantic": 20,
+    "[8, 'fallback0']:model": 32,
+    "[8, 'model']:model": 33,
+    "[8, 'fallback1']:semantic": 16,
+    "[8, 'fallback1']:model": 33,
+    "[4, 'fallback0']:model": 5,
+    "[4, 'model']:model": 6,
+    "[4, 'fallback1']:model": 4
+  },
+  "all_late_origins_scope": "Descriptive; registered older-use gates use only actual common ACTIVE support and observed mixed contexts",
+  "logical_originals": 816,
+  "replay_inclusive_geneses": 1632,
+  "native_roles": 309,
+  "source_head": "a3a9f4de44eefd23c8d4d43947319e2dd8c8f703",
+  "source_ci": 38795406701,
+  "archive_sha256": "bb4a2e58a9f9bec93c2ec1fb1958f58cec3fe88631a4707a8fefc6d1c07b2f3f",
+  "census_archive_sha256": "17939ca442a1f81879d818e67d26d0d5cf86437131846c9a6b993f8eaa715add",
+  "census_scope": "Independent metric-table accounting and all-nine arithmetic; not an additional raw-physics referee or independent origin rederivation",
+  "child_peak": 66015232,
+  "parent_peak": 125812736,
+  "parent_cpu": 322.921875,
+  "parent_wall": 472.5,
+  "all_jobs_exited": true,
+  "lock_absent": true,
+  "science_scope": "Supplied capacities/updater/arbitration; personally acquired state and descriptive older uses do not establish the failed registered superiority; no evolved architecture, inherited selection or stage credit",
+  "next_dependency": "Read-only all-roster model/fallback credit, error and actual path-cost diagnosis before any new source/task/cohort proposal",
+  "stage_credit": false
+}

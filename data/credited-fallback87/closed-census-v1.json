@@ -1,0 +1,8249 @@
+{
+  "verified": true,
+  "native_calls": 1,
+  "new_worlds": 0,
+  "target_queries": 0,
+  "summary": {
+    "all9": [
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -666,
+            "N_oracle_gain": -3461,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 11,
+            "mechanism_gates": false,
+            "older_uses": 8,
+            "origin_contexts": 4
+          },
+          "unseen": {
+            "E_oracle_gain": -473,
+            "N_oracle_gain": -3165,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 7,
+            "mechanism_gates": false,
+            "older_uses": 18,
+            "origin_contexts": 5
+          }
+        },
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "joint_sign": {
+          "losses": 7,
+          "p": "2477/4096",
+          "passes": false,
+          "ties": 2,
+          "wins": 7
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -678,
+            "N_oracle_gain": -3429,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 10,
+            "mechanism_gates": false,
+            "older_uses": 8,
+            "origin_contexts": 3
+          },
+          "unseen": {
+            "E_oracle_gain": -487,
+            "N_oracle_gain": -3184,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 7,
+            "mechanism_gates": false,
+            "older_uses": 15,
+            "origin_contexts": 3
+          }
+        },
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "joint_sign": {
+          "losses": 7,
+          "p": "2477/4096",
+          "passes": false,
+          "ties": 2,
+          "wins": 7
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -722,
+            "N_oracle_gain": -3459,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": -2,
+            "mechanism_gates": false,
+            "older_uses": 8,
+            "origin_contexts": 3
+          },
+          "unseen": {
+            "E_oracle_gain": -448,
+            "N_oracle_gain": -3137,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 28,
+            "mechanism_gates": false,
+            "older_uses": 17,
+            "origin_contexts": 5
+          }
+        },
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "joint_sign": {
+          "losses": 6,
+          "p": "1619/4096",
+          "passes": false,
+          "ties": 2,
+          "wins": 8
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -784,
+            "N_oracle_gain": -3602,
+            "all_intact_complete": false,
+            "common": 84,
+            "joint_gain": 13,
+            "mechanism_gates": false,
+            "older_uses": 9,
+            "origin_contexts": 4
+          },
+          "unseen": {
+            "E_oracle_gain": -567,
+            "N_oracle_gain": -3310,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 2,
+            "mechanism_gates": false,
+            "older_uses": 16,
+            "origin_contexts": 5
+          }
+        },
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "joint_sign": {
+          "losses": 7,
+          "p": "1651/2048",
+          "passes": false,
+          "ties": 4,
+          "wins": 5
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -753,
+            "N_oracle_gain": -3556,
+            "all_intact_complete": false,
+            "common": 89,
+            "joint_gain": 13,
+            "mechanism_gates": false,
+            "older_uses": 9,
+            "origin_contexts": 4
+          },
+          "unseen": {
+            "E_oracle_gain": -546,
+            "N_oracle_gain": -3262,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 5,
+            "mechanism_gates": false,
+            "older_uses": 17,
+            "origin_contexts": 4
+          }
+        },
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "joint_sign": {
+          "losses": 8,
+          "p": "7099/8192",
+          "passes": false,
+          "ties": 3,
+          "wins": 5
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -795,
+            "N_oracle_gain": -3562,
+            "all_intact_complete": false,
+            "common": 85,
+            "joint_gain": 6,
+            "mechanism_gates": false,
+            "older_uses": 9,
+            "origin_contexts": 4
+          },
+          "unseen": {
+            "E_oracle_gain": -567,
+            "N_oracle_gain": -3385,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 21,
+            "mechanism_gates": false,
+            "older_uses": 15,
+            "origin_contexts": 4
+          }
+        },
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "joint_sign": {
+          "losses": 5,
+          "p": "793/2048",
+          "passes": false,
+          "ties": 4,
+          "wins": 7
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -504,
+            "N_oracle_gain": -1237,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 29,
+            "mechanism_gates": false,
+            "older_uses": 25,
+            "origin_contexts": 6
+          },
+          "unseen": {
+            "E_oracle_gain": -495,
+            "N_oracle_gain": -1310,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 10,
+            "mechanism_gates": false,
+            "older_uses": 23,
+            "origin_contexts": 5
+          }
+        },
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "joint_sign": {
+          "losses": 4,
+          "p": "281/1024",
+          "passes": false,
+          "ties": 5,
+          "wins": 7
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -504,
+            "N_oracle_gain": -1149,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 29,
+            "mechanism_gates": false,
+            "older_uses": 25,
+            "origin_contexts": 6
+          },
+          "unseen": {
+            "E_oracle_gain": -496,
+            "N_oracle_gain": -1268,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 11,
+            "mechanism_gates": false,
+            "older_uses": 24,
+            "origin_contexts": 6
+          }
+        },
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "joint_sign": {
+          "losses": 4,
+          "p": "281/1024",
+          "passes": false,
+          "ties": 5,
+          "wins": 7
+        },
+        "mechanistic": false,
+        "net_energy": false
+      },
+      {
+        "banks": {
+          "primary": {
+            "E_oracle_gain": -504,
+            "N_oracle_gain": -1273,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 17,
+            "mechanism_gates": false,
+            "older_uses": 25,
+            "origin_contexts": 6
+          },
+          "unseen": {
+            "E_oracle_gain": -496,
+            "N_oracle_gain": -1390,
+            "all_intact_complete": true,
+            "common": 96,
+            "joint_gain": 29,
+            "mechanism_gates": false,
+            "older_uses": 24,
+            "origin_contexts": 6
+          }
+        },
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "joint_sign": {
+          "losses": 3,
+          "p": "189/4096",
+          "passes": false,
+          "ties": 3,
+          "wins": 10
+        },
+        "mechanistic": false,
+        "net_energy": false
+      }
+    ],
+    "all_energy_false": true,
+    "all_mechanistic_false": true,
+    "by_group": {
+      "fallback_misbound": {
+        "E": -823,
+        "N": 51770,
+        "O": 12377,
+        "admitted": 7575,
+        "cap_heat": 50289,
+        "captured": 72891,
+        "completed60": 143,
+        "constructor_remaining": 7536,
+        "cpu": 50674,
+        "death_heat": 0,
+        "deaths": 1,
+        "failed_packet_heat": 49200,
+        "fees": 2304,
+        "food": 8172,
+        "formation": 10896,
+        "heat": 173203,
+        "histories": 144,
+        "living": 28505,
+        "offered": 11120,
+        "penalty": 9840,
+        "rejected": 3545,
+        "served": 8619,
+        "successes": 6159
+      },
+      "history_disabled": {
+        "E": -2363,
+        "N": 49380,
+        "O": 10837,
+        "admitted": 7775,
+        "cap_heat": 49439,
+        "captured": 70841,
+        "completed60": 141,
+        "constructor_remaining": 7536,
+        "cpu": 49655,
+        "death_heat": 0,
+        "deaths": 3,
+        "failed_packet_heat": 51760,
+        "fees": 2304,
+        "food": 8389,
+        "formation": 10896,
+        "heat": 174403,
+        "histories": 144,
+        "living": 26965,
+        "offered": 11312,
+        "penalty": 10349,
+        "rejected": 3537,
+        "served": 8602,
+        "successes": 6014
+      },
+      "intact": {
+        "E": -63,
+        "N": 54668,
+        "O": 13137,
+        "admitted": 7537,
+        "cap_heat": 52427,
+        "captured": 72773,
+        "completed60": 141,
+        "constructor_remaining": 7536,
+        "cpu": 50275,
+        "death_heat": 0,
+        "deaths": 3,
+        "failed_packet_heat": 46820,
+        "fees": 2304,
+        "food": 8152,
+        "formation": 10896,
+        "heat": 172083,
+        "histories": 144,
+        "living": 29265,
+        "offered": 11040,
+        "penalty": 9361,
+        "rejected": 3503,
+        "served": 8601,
+        "successes": 6260
+      },
+      "model_erased": {
+        "E": -909,
+        "N": 53791,
+        "O": 12291,
+        "admitted": 7535,
+        "cap_heat": 52396,
+        "captured": 72104,
+        "completed60": 141,
+        "constructor_remaining": 7536,
+        "cpu": 50312,
+        "death_heat": 0,
+        "deaths": 3,
+        "failed_packet_heat": 47520,
+        "fees": 2304,
+        "food": 8150,
+        "formation": 10896,
+        "heat": 172929,
+        "histories": 144,
+        "living": 28419,
+        "offered": 11040,
+        "penalty": 9501,
+        "rejected": 3505,
+        "served": 8601,
+        "successes": 6225
+      },
+      "model_misbound": {
+        "E": -998,
+        "N": 53135,
+        "O": 12202,
+        "admitted": 7530,
+        "cap_heat": 51829,
+        "captured": 72191,
+        "completed60": 142,
+        "constructor_remaining": 7536,
+        "cpu": 50364,
+        "death_heat": 0,
+        "deaths": 2,
+        "failed_packet_heat": 48140,
+        "fees": 2304,
+        "food": 8138,
+        "formation": 10896,
+        "heat": 173158,
+        "histories": 144,
+        "living": 28330,
+        "offered": 11040,
+        "penalty": 9625,
+        "rejected": 3510,
+        "served": 8608,
+        "successes": 6201
+      },
+      "references": {
+        "E": 2681,
+        "N": 29168,
+        "O": 6473,
+        "admitted": 3341,
+        "cap_heat": 25047,
+        "captured": 34273,
+        "completed60": 85,
+        "constructor_remaining": 10032,
+        "cpu": 18236,
+        "death_heat": 0,
+        "deaths": 11,
+        "failed_packet_heat": 47840,
+        "fees": 1440,
+        "food": 4127,
+        "formation": 2352,
+        "heat": 104479,
+        "histories": 96,
+        "living": 17225,
+        "offered": 3424,
+        "penalty": 9564,
+        "rejected": 83,
+        "served": 5358,
+        "successes": 2966
+      }
+    },
+    "intact_completion": [
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009700
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009701
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009702
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009703
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009704
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009705
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 39,
+        "deaths": 1,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 52,
+        "deaths": 1,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 48,
+        "deaths": 1,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009706
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009707
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009900
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009901
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009902
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009903
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009904
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009905
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009906
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "seed": 1009907
+      },
+      {
+        "completed": 60,
+        "deaths": 0,
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "seed": 1009907
+      }
+    ],
+    "new_worlds": 0,
+    "observed_maps": [
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009700
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009701
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009702
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "5": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "5": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "5": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009703
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1
+          },
+          {
+            "0": 0,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "3": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "3": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009704
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "4": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009705
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {}
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {}
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "1": 1,
+            "4": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {}
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1
+          }
+        ],
+        "seed": 1009706
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1,
+            "3": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009707
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009900
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1
+          },
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {}
+        ],
+        "seed": 1009901
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0
+          }
+        ],
+        "seed": 1009902
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "3": 1,
+            "5": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "5": 0,
+            "6": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "5": 0,
+            "6": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "3": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "2": 1,
+            "6": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "6": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009903
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "3": 0,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0,
+            "6": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0,
+            "6": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0,
+            "6": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 0,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 0,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 1,
+            "6": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "5": 0
+          }
+        ],
+        "seed": 1009904
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 1
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 1,
+            "6": 0,
+            "7": 1
+          },
+          {
+            "0": 0,
+            "1": 1,
+            "2": 0,
+            "3": 1,
+            "4": 1,
+            "5": 0,
+            "7": 1
+          }
+        ],
+        "seed": 1009905
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "4": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "4": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "4": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "3": 0,
+            "4": 0,
+            "7": 0
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {},
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 1,
+            "1": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 1
+          }
+        ],
+        "seed": 1009906
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "2": 1,
+            "4": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          2,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "5": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          2,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "5": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "2": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          4,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          4,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "1": 1,
+            "2": 1,
+            "4": 0,
+            "5": 0,
+            "6": 0
+          },
+          {
+            "0": 0,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback0"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          8,
+          "model"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      },
+      {
+        "descriptor": [
+          8,
+          "fallback1"
+        ],
+        "observed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "5": 0,
+            "6": 1,
+            "7": 0
+          }
+        ],
+        "personally_sensed_maps": [
+          {
+            "0": 0,
+            "1": 1,
+            "2": 1,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          {
+            "0": 0,
+            "1": 0,
+            "2": 1,
+            "3": 0,
+            "4": 1,
+            "6": 1
+          }
+        ],
+        "seed": 1009907
+      }
+    ],
+    "original_histories": 816,
+    "scope": "Independent metric-table accounting and all-nine arithmetic; not an additional raw-physics referee or independent origin rederivation",
+    "stage_credit": false,
+    "target_queries": 0,
+    "totals": {
+      "E": -2475,
+      "N": 291912,
+      "O": 67317,
+      "admitted": 41293,
+      "cap_heat": 281427,
+      "captured": 395073,
+      "completed60": 793,
+      "constructor_remaining": 47712,
+      "cpu": 269516,
+      "death_heat": 0,
+      "deaths": 23,
+      "failed_packet_heat": 291280,
+      "fees": 12960,
+      "food": 45128,
+      "formation": 56832,
+      "heat": 970255,
+      "histories": 816,
+      "living": 158709,
+      "offered": 58976,
+      "penalty": 58240,
+      "rejected": 17683,
+      "served": 48389,
+      "successes": 33825
+    },
+    "verified": true
+  },
+  "error": null,
+  "archive_error": null,
+  "archive_sha256": "17939ca442a1f81879d818e67d26d0d5cf86437131846c9a6b993f8eaa715add",
+  "source_sha256": "ff277c484eceebf83078abfae949ce61e2c2ff12527b52ce10448f11e50309a0"
+}

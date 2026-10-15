@@ -1,0 +1,5 @@
+# Fallback87v2 closed-data census v1
+
+One read-only bounded native role after the complete309-role primary. No World/target/producer/referee/metric/acceptance imports. Reproduce all816 metric-table N/O/E and heat/resource identities and all nine frozen paired signs/bank criteria from all16 complete bound metric files and the separately authored final acceptance. This is not a new raw-physics referee or independent personal-origin rederivation. Preserve deaths, all capacities/entries and constant/independent-label contexts. No new threshold, selection or rescoring.
+
+Inputs are exact archived primary files, hash/canonical/extent bound, at most8MiB each; release one full batch before next read. Raw64/archive64/restore64/failure8=200MiB, child512MiB/60CPU/90wall/3process,1native/0Worlds-targets. Precharge source/input/request/native/output extents before the read; full source/native/failed evidence and exact archive restoration. Stop on cap/integrity failure; no larger retry. Existing exclusive operator lock and immutable closed primary.
