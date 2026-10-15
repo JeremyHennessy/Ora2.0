@@ -1,0 +1,27 @@
+{
+  "verified": true,
+  "scope": "AST/finite arithmetic ONLY; no physical replay or target query",
+  "worlds": 0,
+  "targets": 0,
+  "original_contract_sha256": "4928a6390e88cd7368efc863eb2b39184e8da002124a2f96a9915d7526deec54",
+  "fixed_constant_cpu": 181,
+  "fixed_constant_served": 60,
+  "fixed_constant_nominal": 997,
+  "act33_tick": 99,
+  "reference_packet_availability_symbolically_checked": true,
+  "candidate_minimum_complete_loop_cpu": 4,
+  "candidate_nominal_upper": {
+    "2": 886,
+    "4": 884,
+    "8": 880
+  },
+  "forced_constant_losses": 4,
+  "maximum_sign_wins": 12,
+  "minimum_possible_all16_p": "2517/65536",
+  "required_p": "1/900",
+  "registered_v1_acceptance_structurally_impossible": true,
+  "fee_specification_mismatch": "Frozen v1 prose says fee16 each64 ticks; unchanged engine charges fee16 at tick64 ONLY",
+  "actual_fee_condition": "self.tick == 64",
+  "source_or_price_repair": false,
+  "source_only_qualification_not_paid_specification_proof": true
+}
