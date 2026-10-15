@@ -1,3 +1,13 @@
+# Closed OneShot77 own-experience comparison - October14
+
+All144 original histories/full literal physics/source-restored replay/archive passed;48 native calls,288 replay-inclusive geneses/31142 instructions. Original totals15571 instructions,3410 attempts,2065 acquisitions,33002 paid charges,64 deaths,0 births/mutations. All16 intact organisms survive32 decisions, make48 own-negative-feedback model changes, and improve from0/16 initial reversal choices to96/96 late choices in BOTH banks. Paid score1096 beats every fixed comparator (best951 primary/808 unseen); late choices beat best63/96 and52/96. Supplied general updater/blank models versus acquired knowledge are explicit.
+
+Registered full acceptance remains FALSE: common older-history comparison opportunities8/6 fail the required24; every other gate passes. No criterion waived, stage completion accepted, horizon enlarged, actor repaired, winning source inserted or reserve opened. Model-disabled/misbound controls die11/16 each;6/16 and10/16 fail to reach reversal, so cold lesions prevent adequate later shared choices. This finite negative is a comparison coverage limit, not general impossibility.
+
+Single next scientific dependency: fresh prospectively registered matched late-history lesions, retaining the same supplied programme/prices and independently earned warm experience; derive common cap160 to retain157 acquired energy for12 worst-case paid errors costing156. No copied warm outcomes, refill/teacher or retrospective cap64 change. New law/control/source/fresh contexts/limits must freeze/qualify before science; no reproduction/pilot prerequisite. Receipt-head publication pending; original source828db1a1 exactCI38655880207 passed before science. PR275 fully merged8af60e8e, exact final/main CI successful, private history preserved.
+
+Evidence: docs/DIGITAL-ONESHOT77-CLOSED-RECEIPT.md; D:/OraLab/reports/oneshot77-whole-panel-v1.json and oneshot77-independent-interpretation-v1.json. Earlier checkpoints remain historical.
+
 # Closed supplied benchmark continuation - October14,23:30UTC
 
 All48 separately AUTHOR-SUPPLIED benchmark histories completed with literal physics/source-restored replay/exact archive. Aggregate intact paid scores1416 vs484/688 primary and1416 vs484/575 unseen; common older-return first choices61/66 vs36/66 and39/66, then66/72 vs38/72 and32/72.0 deaths/births/mutations; all48 collect32 packets.14/16 intact actors revise blank models, all32 changes follow own negative feedback. Supplied rule/scaffold versus acquired associations remain explicit; no invented/evolved architecture claim.
