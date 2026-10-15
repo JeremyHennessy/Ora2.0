@@ -1,3 +1,11 @@
+# Closed LateHistory78 own-experience causal comparison - October14 Halifax
+
+144 histories/full literal and source-restored physics/archive verified;48 calls/288 geneses/38464 replay instructions. All48 cognitive actors survive32 decisions; intact learns48 cue-label revisions from own feedback and reaches192/192 late correct choices after0/32 immediate reversal choices. Active older common opportunities47/48 now satisfy24; erasure and informative misbinding causally reduce decisions. Supplied architecture versus acquired unknown knowledge remains explicit.
+
+Full acceptance FALSE only on primary paid advantage: intact1096 versus cheaper reactive1101; unseen1096 versus989 passes. Six-instruction model versus four-instruction reactive cost causes equal-map deficit382, offset by unequal-map gain377, leaving-5. No frozen gate waived; all laws/costs/horizons/contexts/reserves/deaths/failures are closed. No evolved/invented intelligence or full-stage acceptance is claimed.
+
+Single next dependency: derive a prospectively registered heritable general cognitive-capacity/source interface for computationally efficient prediction/memory/action selection, blank newborn knowledge, performance-blind parameters, full ancestry and actual paid selection. No new random bank, learner-only shortcut, inherited target labels, old rerun/repair, reproduction/pilot gate or unattended activation. Exact science head215836b CI38665060902 passed before contexts; receipt publication pending. Evidence: docs/DIGITAL-LATEHISTORY78-CLOSED-RECEIPT.md and DIGITAL-LATEHISTORY78-EVIDENCE.json. Historical records follow unchanged.
+
 # LateHistory78 - prospective comparison prepared, no scientific outcome
 
 Useful own-experience decisions remain primary. OneShot77 stays closed FALSE solely on inadequate common older-history opportunities; every historical law/result/reserve is preserved. LATEHISTORY78 freezes a fresh comparison with independently earned first20 experiences, model-channel lesions before the next LOAD, common cap160 funded by actual acquisitions, unchanged prices/startup32/formation52 and six whole-life fixed baselines. Equal-label binding invariance is reported in a prespecified stratum, never removed from the roster.
