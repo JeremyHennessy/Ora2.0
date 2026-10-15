@@ -1,0 +1,27 @@
+{
+  "archive_exact": true,
+  "archive_sha256": "50106f6c034f527befd9dc2250a81fbf189374b526e313e53b9493dcd815b7f2",
+  "native_calls": 8,
+  "new_worlds": 0,
+  "old_interface_tests_reused_by_hash": 6,
+  "original_primary_remains_closed_incomplete": true,
+  "preworld_refusals": [
+    "cached-role",
+    "configuration",
+    "source",
+    "seal"
+  ],
+  "remaining_execution_admitted": false,
+  "source_ci_before_remaining_science_required": true,
+  "source_files": {
+    "experiments/digital_inheritance83_remaining_cache.py": "de70d6057ae26e1ce3d56e05b2ff1c8196c8ef4862309402a4e9d1d67b7550af",
+    "experiments/digital_inheritance83_remaining_child.py": "1a7c8ab315e5b6d768d35bde2d8d861732ca8ee77854979795c157681ef917a5",
+    "tests/test_digital_inheritance83_remaining_controller.py": "5e63dba127ff79a84c5ce2181632a210784cbdfdfdc3b6dfe355e5b0f748d64e"
+  },
+  "successful_remaining_role_count": 209,
+  "target_queries": 0,
+  "tests_per_export": 4,
+  "total_remaining_native_roles": 213,
+  "verified": true,
+  "whole_remaining_controller_qualified": true
+}
