@@ -1,0 +1,72 @@
+{
+  "archive_exact": true,
+  "archive_sha256": "6c6bef3b4e8fefb169868f1f41b7186a7aefc9e9d1093a61ce19e985751d8cf1",
+  "independent_interpretation": "Stdlib-only closed original record rollup; no producer/referee/source/acceptance import or new World",
+  "native_calls": 7,
+  "original_cases": 2,
+  "preworld_refusals": 4,
+  "receipt_sha256": "e1d20e6cdb58efed6e8ad34ad6386fa41a3ac9da9ca85e38b24d58d9e6e688e7",
+  "restored_cases": 2,
+  "rows": [
+    {
+      "acquisitions": 1,
+      "admitted": 10,
+      "attempts": 13,
+      "births": 0,
+      "captured": 20,
+      "constructor_remaining": 64,
+      "deaths": 1,
+      "descriptor": [
+        8,
+        0,
+        "constant"
+      ],
+      "dna_writes": 0,
+      "failed_packet_heat": 240,
+      "formation": 64,
+      "heat": 452,
+      "history_sha256": "75f71252145182d3302e9689dd97b0920d098db2d4e81a7a5ae4ff206fee3ffb",
+      "instructions": 84,
+      "last_opcode": 20,
+      "offered": 16,
+      "penalties": 48,
+      "rejected": 6,
+      "remaining_food": 61,
+      "world_fees": 16
+    },
+    {
+      "acquisitions": 1,
+      "admitted": 10,
+      "attempts": 13,
+      "births": 0,
+      "captured": 20,
+      "constructor_remaining": 64,
+      "deaths": 1,
+      "descriptor": [
+        8,
+        0,
+        "model"
+      ],
+      "dna_writes": 0,
+      "failed_packet_heat": 240,
+      "formation": 64,
+      "heat": 452,
+      "history_sha256": "829dcdba4cee850477cc4291b0b897461372f1c806441f0161eda96ad82d1a03",
+      "instructions": 84,
+      "last_opcode": 1,
+      "offered": 16,
+      "penalties": 48,
+      "rejected": 6,
+      "remaining_food": 61,
+      "world_fees": 16
+    }
+  ],
+  "scientific_targets": 0,
+  "scientific_worlds": 0,
+  "scope": "Two deliberately diagnostic q8/constant0 cases only; other10 descriptors unexecuted, not a blind learning/fitness/evolution negative",
+  "software_geneses": 4,
+  "source_ci_before_world": 38742494712,
+  "source_head": "ea704da08248f314e2a9dc8e95a1beec89bf34f0",
+  "stage_credit": false,
+  "status": "CLOSED_SOFTWARE_COLD_LIMITATION_CONFIRMED_NOT_SCIENTIFIC_ACCEPTANCE"
+}
