@@ -1,0 +1,4757 @@
+{
+  "verified": true,
+  "source_head": "4f7c42a2d0828d18c81a43e1ae5899d7c3b87807",
+  "scientific_worlds": 0,
+  "scientific_targets": 0,
+  "completed_software_geneses": 102,
+  "incomplete_genesis_attempts_not_inferred": false,
+  "native_calls": 22,
+  "negative_requests_rejected": 4,
+  "summary": {
+    "intact": {
+      "evidence_inputs": {
+        "extent": 3007460,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-intact-generate.json",
+        "sha256": "f30812d090041c65bc2586b373649a85559dd6f2206505ca72f03118ff699228"
+      },
+      "group": "intact",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 23,
+          "acts": 60,
+          "births": 0,
+          "captured": 460,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 371,
+          "penalties": 148,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "89dc571b6be102d1fbf420d064a9024081d5a01ea7fbe5285c44df8372254f86",
+            "heat": 1348,
+            "living_energy": 53,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 371,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 17,
+          "acts": 51,
+          "births": 0,
+          "captured": 340,
+          "completed": 50,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 3,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 19,
+              "projected_entry": 6
+            },
+            "tick": 302
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 318,
+          "penalties": 134,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "597fc69a8cd3105e9d36d5a2e7324ce9ae2743b771540e2af069aa69569df26d",
+            "heat": 1221,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 318,
+            "verified": true
+          },
+          "served": 51,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 37,
+          "births": 0,
+          "captured": 220,
+          "completed": 36,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 228,
+          "penalties": 104,
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f510e96f5e5524dc51d958b566d430d5087359af1b0237120fdc8f7b8874217e",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "served": 37,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 19,
+          "acts": 56,
+          "births": 0,
+          "captured": 380,
+          "completed": 55,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 346,
+          "penalties": 146,
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "fc039a2b8d548c5775bc0d3a20cb28127d81d0997cec9ec01cc3284f716cb06d",
+            "heat": 1323,
+            "living_energy": 0,
+            "offered": 80,
+            "rejected": 29,
+            "scientific_worlds": 0,
+            "ticks": 346,
+            "verified": true
+          },
+          "served": 56,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 4,
+          "acts": 20,
+          "births": 0,
+          "captured": 80,
+          "completed": 19,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 128,
+          "penalties": 64,
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "faed892d2e6b2cb0092fb63cf20c745abf2a613a9d1b47bfa22be0dc86422bb1",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "served": 20,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 3,
+          "acts": 18,
+          "births": 0,
+          "captured": 60,
+          "completed": 17,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 112,
+          "penalties": 60,
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "64d71b2bb18463bd30432f9a46502b0b370f16dd2650df111df53ce712a66924",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "served": 18,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 40,
+          "acts": 60,
+          "births": 0,
+          "captured": 454,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 290
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 369,
+          "penalties": 80,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "0b13014cd7cada25cb7eec02f2014239a4a67ff21abca9fd7a94b131ae62374c",
+            "heat": 1290,
+            "living_energy": 117,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 369,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 41,
+          "acts": 60,
+          "births": 0,
+          "captured": 453,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 293
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 372,
+          "penalties": 76,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "c38b570c575154a1c9b1d5bb38db28b8dc0ae40a30138e7ba5e400f1cca108de",
+            "heat": 1290,
+            "living_energy": 117,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 372,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 40,
+          "acts": 60,
+          "births": 0,
+          "captured": 455,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 291
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 370,
+          "penalties": 80,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "e1e867a1a44e860d6c5c69fd1b791acadbb4922554ce121c78bc92bd225b777c",
+            "heat": 1290,
+            "living_energy": 117,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 370,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    },
+    "model_erased": {
+      "evidence_inputs": {
+        "extent": 2881291,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_erased-generate.json",
+        "sha256": "7b83d4fee214055d55d2cbcaf23153c8e9edd619e8c3982828126189287b3133"
+      },
+      "group": "model_erased",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 17,
+          "acts": 51,
+          "births": 0,
+          "captured": 340,
+          "completed": 50,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 316,
+          "penalties": 136,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "8809512cad02f30c352946dd9b48ef5ff27314a0e3488812cfea7cf60fe63903",
+            "heat": 1221,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 316,
+            "verified": true
+          },
+          "served": 51,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 16,
+          "acts": 49,
+          "births": 0,
+          "captured": 320,
+          "completed": 48,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 3,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 19,
+              "projected_entry": 6
+            },
+            "tick": 302
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 304,
+          "penalties": 128,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f9724966f7581f2fa057f2bce31abf8de5cf1c8cb65d1b21574b225b42ef30f8",
+            "heat": 1181,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 304,
+            "verified": true
+          },
+          "served": 49,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 37,
+          "births": 0,
+          "captured": 220,
+          "completed": 36,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 228,
+          "penalties": 104,
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f510e96f5e5524dc51d958b566d430d5087359af1b0237120fdc8f7b8874217e",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "served": 37,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 17,
+          "acts": 51,
+          "births": 0,
+          "captured": 340,
+          "completed": 50,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 316,
+          "penalties": 136,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "0b4b121cb9907928835e25d9ad6368b713f0528b6422469f2a939f787b4b1f07",
+            "heat": 1223,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 316,
+            "verified": true
+          },
+          "served": 51,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 4,
+          "acts": 20,
+          "births": 0,
+          "captured": 80,
+          "completed": 19,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 128,
+          "penalties": 64,
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "faed892d2e6b2cb0092fb63cf20c745abf2a613a9d1b47bfa22be0dc86422bb1",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "served": 20,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 3,
+          "acts": 18,
+          "births": 0,
+          "captured": 60,
+          "completed": 17,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 112,
+          "penalties": 60,
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "64d71b2bb18463bd30432f9a46502b0b370f16dd2650df111df53ce712a66924",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "served": 18,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 41,
+          "acts": 60,
+          "births": 0,
+          "captured": 474,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 290
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 365,
+          "penalties": 76,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "d2c410dd8aa753439116b3af004df0ac96b7c1b772f2d4918ee29847a34e7031",
+            "heat": 1262,
+            "living_energy": 145,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 365,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 42,
+          "acts": 60,
+          "births": 0,
+          "captured": 473,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 293
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 368,
+          "penalties": 72,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "48baed94a03c8ec5f0a724d408a1b636384b4ba8a87fc6c806ac689fcf727f21",
+            "heat": 1262,
+            "living_energy": 145,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 368,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 41,
+          "acts": 60,
+          "births": 0,
+          "captured": 475,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 291
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 366,
+          "penalties": 76,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "f17f25759dfaa4f51649bdafe43f4d9d4702fa8232948f677fffd9394ed0011f",
+            "heat": 1262,
+            "living_energy": 145,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 366,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    },
+    "model_misbound": {
+      "evidence_inputs": {
+        "extent": 2952007,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_misbound-generate.json",
+        "sha256": "c4fd0cbc3215522621be1e7455dd484a1fafa82b5d6c1dac079b6d63e1f0d4c2"
+      },
+      "group": "model_misbound",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 17,
+          "acts": 51,
+          "births": 0,
+          "captured": 340,
+          "completed": 50,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 316,
+          "penalties": 136,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "8809512cad02f30c352946dd9b48ef5ff27314a0e3488812cfea7cf60fe63903",
+            "heat": 1221,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 316,
+            "verified": true
+          },
+          "served": 51,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 17,
+          "acts": 51,
+          "births": 0,
+          "captured": 340,
+          "completed": 50,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 3,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 19,
+              "projected_entry": 6
+            },
+            "tick": 302
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 318,
+          "penalties": 134,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "597fc69a8cd3105e9d36d5a2e7324ce9ae2743b771540e2af069aa69569df26d",
+            "heat": 1221,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 318,
+            "verified": true
+          },
+          "served": 51,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 37,
+          "births": 0,
+          "captured": 220,
+          "completed": 36,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 228,
+          "penalties": 104,
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f510e96f5e5524dc51d958b566d430d5087359af1b0237120fdc8f7b8874217e",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "served": 37,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 22,
+          "acts": 60,
+          "births": 0,
+          "captured": 440,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 375,
+          "penalties": 152,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "bf7ef45813e23a8bc962418198cf4823fff427ae1a77ee4f8945c6c62831d0b8",
+            "heat": 1378,
+            "living_energy": 25,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 375,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 4,
+          "acts": 20,
+          "births": 0,
+          "captured": 80,
+          "completed": 19,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 128,
+          "penalties": 64,
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "faed892d2e6b2cb0092fb63cf20c745abf2a613a9d1b47bfa22be0dc86422bb1",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "served": 20,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 3,
+          "acts": 18,
+          "births": 0,
+          "captured": 60,
+          "completed": 17,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 112,
+          "penalties": 60,
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "64d71b2bb18463bd30432f9a46502b0b370f16dd2650df111df53ce712a66924",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "served": 18,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 51,
+          "acts": 60,
+          "births": 0,
+          "captured": 506,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 290
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 361,
+          "penalties": 36,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "db315b081817fa78ffb3cf9c62acbaba7ce2921f0ba056dd0154abf3469d6a4b",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 361,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 52,
+          "acts": 60,
+          "births": 0,
+          "captured": 505,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 293
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 364,
+          "penalties": 32,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "8a61f26b88d07b0fbce95b441fce6b52d35c8c3ed17b033cee9efcc0d9664be1",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 364,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 51,
+          "acts": 60,
+          "births": 0,
+          "captured": 507,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 291
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 362,
+          "penalties": 36,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "2e69806f1ef30d3ab2a300d56a87682b3e8c190ed9f4c0ac6101363a07ddc0b6",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 362,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    },
+    "fallback_misbound": {
+      "evidence_inputs": {
+        "extent": 3059027,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-fallback_misbound-generate.json",
+        "sha256": "0a061475b9b0606abbe1b9f5ecc286d1c44854a24dee6bdb8e4786484ee09a8f"
+      },
+      "group": "fallback_misbound",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 26,
+          "acts": 60,
+          "births": 0,
+          "captured": 520,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 369,
+          "penalties": 136,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "22c9e7ac7bf8463e5d404fc2e6b889e6395567626c7003a802ea1880ae264f53",
+            "heat": 1274,
+            "living_energy": 127,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 369,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 23,
+          "acts": 60,
+          "births": 0,
+          "captured": 460,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 3,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 19,
+              "projected_entry": 6
+            },
+            "tick": 302
+          },
+          "deaths": 0,
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 372,
+          "penalties": 148,
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "cd748c3aba4c1e36dcb96c319c763e6a03c8d1301fd95d4d57cd5e0513f4bee9",
+            "heat": 1349,
+            "living_energy": 52,
+            "offered": 80,
+            "rejected": 29,
+            "scientific_worlds": 0,
+            "ticks": 372,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 37,
+          "births": 0,
+          "captured": 220,
+          "completed": 36,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 228,
+          "penalties": 104,
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f510e96f5e5524dc51d958b566d430d5087359af1b0237120fdc8f7b8874217e",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "served": 37,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 24,
+          "acts": 60,
+          "births": 0,
+          "captured": 480,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 369,
+          "penalties": 144,
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "522381db7364d62f1748e854664e4f73e4b6b22be8904dc565a9f5fa8cd9c853",
+            "heat": 1324,
+            "living_energy": 79,
+            "offered": 80,
+            "rejected": 29,
+            "scientific_worlds": 0,
+            "ticks": 369,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 4,
+          "acts": 20,
+          "births": 0,
+          "captured": 80,
+          "completed": 19,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 128,
+          "penalties": 64,
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "faed892d2e6b2cb0092fb63cf20c745abf2a613a9d1b47bfa22be0dc86422bb1",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "served": 20,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 3,
+          "acts": 18,
+          "births": 0,
+          "captured": 60,
+          "completed": 17,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 112,
+          "penalties": 60,
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "64d71b2bb18463bd30432f9a46502b0b370f16dd2650df111df53ce712a66924",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "served": 18,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 46,
+          "acts": 60,
+          "births": 0,
+          "captured": 524,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 290
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 359,
+          "penalties": 56,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "e43f75f94e267aeb3cff315186909d886e1866f79f3a64ca78048edd3a21a29b",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 359,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 47,
+          "acts": 60,
+          "births": 0,
+          "captured": 523,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 293
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 362,
+          "penalties": 52,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "e845bfd6be6393728483d64225a94f5143103eddb668c24aa556349de7bd523f",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 362,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 46,
+          "acts": 60,
+          "births": 0,
+          "captured": 525,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 291
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 360,
+          "penalties": 56,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "b98ca3855df769797b0e9295200be17a46c1ac3d1b40a5cd658285bb238f6870",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 360,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    },
+    "history_disabled": {
+      "evidence_inputs": {
+        "extent": 2928390,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-history_disabled-generate.json",
+        "sha256": "18efd7fe1f22484ccb351756811a7aa4017e09b9a2ec8ce646e8f71d471e0d5b"
+      },
+      "group": "history_disabled",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 23,
+          "acts": 60,
+          "births": 0,
+          "captured": 460,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 1
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 351,
+          "penalties": 148,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "4cd1e6de3e6d49e08ef9681262e7432be834e036ac25b27b1a82dc19202dcd9f",
+            "heat": 1328,
+            "living_energy": 73,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 351,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 16,
+          "acts": 49,
+          "births": 0,
+          "captured": 320,
+          "completed": 48,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 3,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 19,
+              "projected_entry": 6
+            },
+            "tick": 302
+          },
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 304,
+          "penalties": 128,
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f9724966f7581f2fa057f2bce31abf8de5cf1c8cb65d1b21574b225b42ef30f8",
+            "heat": 1181,
+            "living_energy": 0,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 304,
+            "verified": true
+          },
+          "served": 49,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 37,
+          "births": 0,
+          "captured": 220,
+          "completed": 36,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 228,
+          "penalties": 104,
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "f510e96f5e5524dc51d958b566d430d5087359af1b0237120fdc8f7b8874217e",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "served": 37,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 23,
+          "acts": 60,
+          "births": 0,
+          "captured": 460,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 31,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 1
+            },
+            "tick": 298
+          },
+          "deaths": 0,
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 351,
+          "penalties": 148,
+          "proof": {
+            "admitted": 53,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "cc237b6596b540be63f5b25ae5c0a6badb9a9c090f75f281bad9225a2540164e",
+            "heat": 1330,
+            "living_energy": 73,
+            "offered": 80,
+            "rejected": 27,
+            "scientific_worlds": 0,
+            "ticks": 351,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 4,
+          "acts": 20,
+          "births": 0,
+          "captured": 80,
+          "completed": 19,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 128,
+          "penalties": 64,
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "faed892d2e6b2cb0092fb63cf20c745abf2a613a9d1b47bfa22be0dc86422bb1",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "served": 20,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 3,
+          "acts": 18,
+          "births": 0,
+          "captured": 60,
+          "completed": 17,
+          "control_applicable": true,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "late_served": [],
+          "never_active": 1,
+          "paid_cpu": 112,
+          "penalties": 60,
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "64d71b2bb18463bd30432f9a46502b0b370f16dd2650df111df53ce712a66924",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "served": 18,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 45,
+          "acts": 60,
+          "births": 0,
+          "captured": 512,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 1
+            },
+            "tick": 290
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 343,
+          "penalties": 60,
+          "proof": {
+            "admitted": 55,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "a5ff17a77a64fd9bacadb09b85ed88bbb1cde580cffce3cc4ad0710aefaa3579",
+            "heat": 1186,
+            "living_energy": 221,
+            "offered": 80,
+            "rejected": 25,
+            "scientific_worlds": 0,
+            "ticks": 343,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 46,
+          "acts": 60,
+          "births": 0,
+          "captured": 536,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 6
+            },
+            "tick": 293
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 382,
+          "penalties": 56,
+          "proof": {
+            "admitted": 52,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "bb1da3ce8dd10312f71bf43809875f176b42dee14c60f13cff9ac14f99c0a178",
+            "heat": 1197,
+            "living_energy": 210,
+            "offered": 80,
+            "rejected": 28,
+            "scientific_worlds": 0,
+            "ticks": 382,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 45,
+          "acts": 60,
+          "births": 0,
+          "captured": 505,
+          "completed": 60,
+          "control_applicable": true,
+          "cut": {
+            "earned_energy": 221,
+            "entry": {
+              "active": 1,
+              "actual_entry": 6,
+              "completed": 48,
+              "previous_pc": 11,
+              "projected_entry": 16
+            },
+            "tick": 291
+          },
+          "deaths": 0,
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 344,
+          "penalties": 60,
+          "proof": {
+            "admitted": 55,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "582eaf888b1ce41d1564193695d750b8168e657e56117396303522789099fac0",
+            "heat": 1194,
+            "living_energy": 213,
+            "offered": 80,
+            "rejected": 25,
+            "scientific_worlds": 0,
+            "ticks": 344,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    },
+    "references": {
+      "evidence_inputs": {
+        "extent": 916012,
+        "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-references-generate.json",
+        "sha256": "58ff1071f7c6b27334635d02b26fe88508a20a6bb73306b6f311b62c331c2681"
+      },
+      "group": "references",
+      "producer_imported": false,
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "seed": 2100382,
+      "software_only": true,
+      "stage_credit": false,
+      "summaries": [
+        {
+          "absence": 0,
+          "acquisitions": 30,
+          "acts": 60,
+          "births": 0,
+          "captured": 412,
+          "completed": 60,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 0,
+          "descriptor": "fixed0",
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 181,
+          "penalties": 120,
+          "proof": {
+            "admitted": 32,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "996a29dea52b7c80367a3c4758be515be67dadc1cad6e574b50bdd31f2949fe7",
+            "heat": 1127,
+            "living_energy": 223,
+            "offered": 32,
+            "rejected": 0,
+            "scientific_worlds": 0,
+            "ticks": 181,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 30,
+          "acts": 60,
+          "births": 0,
+          "captured": 405,
+          "completed": 60,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 0,
+          "descriptor": "fixed1",
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 181,
+          "penalties": 120,
+          "proof": {
+            "admitted": 32,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "52714358c61b6ea2fc4b9ce36590f4b31c7355708fea5f13dac7cd7396453b11",
+            "heat": 1134,
+            "living_energy": 216,
+            "offered": 32,
+            "rejected": 0,
+            "scientific_worlds": 0,
+            "ticks": 181,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 28,
+          "acts": 60,
+          "births": 0,
+          "captured": 392,
+          "completed": 60,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 0,
+          "descriptor": "cue_identity",
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 181,
+          "penalties": 128,
+          "proof": {
+            "admitted": 32,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "ccbdab37c9aec022d2f2ceea421b47f7615efc59bfe9a31dcdd70a6121eac30c",
+            "heat": 1155,
+            "living_energy": 195,
+            "offered": 32,
+            "rejected": 0,
+            "scientific_worlds": 0,
+            "ticks": 181,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 32,
+          "acts": 60,
+          "births": 0,
+          "captured": 464,
+          "completed": 60,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 0,
+          "descriptor": "cue_inverse",
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 241,
+          "penalties": 112,
+          "proof": {
+            "admitted": 47,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "447baefe5124852c70146a0cecb6dcd7af25c00ec14b9c4dcdd06b79101ec84c",
+            "heat": 1130,
+            "living_energy": 223,
+            "offered": 48,
+            "rejected": 1,
+            "scientific_worlds": 0,
+            "ticks": 241,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 28,
+          "acts": 60,
+          "births": 0,
+          "captured": 392,
+          "completed": 60,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 0,
+          "descriptor": "fixed_alternation",
+          "late_served": [
+            {
+              "cue": 0,
+              "packet": 48,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 49,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 50,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 51,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 4,
+              "packet": 52,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 5,
+              "packet": 53,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 6,
+              "packet": 54,
+              "port": 0,
+              "success": 1,
+              "target": 0
+            },
+            {
+              "cue": 7,
+              "packet": 55,
+              "port": 1,
+              "success": 1,
+              "target": 1
+            },
+            {
+              "cue": 0,
+              "packet": 56,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 1,
+              "packet": 57,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            },
+            {
+              "cue": 2,
+              "packet": 58,
+              "port": 0,
+              "success": 0,
+              "target": 1
+            },
+            {
+              "cue": 3,
+              "packet": 59,
+              "port": 1,
+              "success": 0,
+              "target": 0
+            }
+          ],
+          "never_active": 0,
+          "paid_cpu": 182,
+          "penalties": 128,
+          "proof": {
+            "admitted": 32,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "7a8b292a70b9f54631781e9ddaafd308eb2dac1f226c6b45f8ded4e1550b9d1d",
+            "heat": 1159,
+            "living_energy": 194,
+            "offered": 32,
+            "rejected": 0,
+            "scientific_worlds": 0,
+            "ticks": 182,
+            "verified": true
+          },
+          "served": 60,
+          "writes": 0
+        },
+        {
+          "absence": 0,
+          "acquisitions": 11,
+          "acts": 43,
+          "births": 0,
+          "captured": 220,
+          "completed": 42,
+          "control_applicable": false,
+          "cut": null,
+          "deaths": 1,
+          "descriptor": "latest_reactive",
+          "late_served": [],
+          "never_active": 0,
+          "paid_cpu": 204,
+          "penalties": 128,
+          "proof": {
+            "admitted": 40,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "eb11406b8cd2fd4d1b9ba3d53110fae037c761f2f3efb15cf81860115c5abe5b",
+            "heat": 1019,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 8,
+            "scientific_worlds": 0,
+            "ticks": 204,
+            "verified": true
+          },
+          "served": 43,
+          "writes": 0
+        }
+      ],
+      "verified": true,
+      "version": "CREDITED-FALLBACK87v2-PAID-SOFTWARE-v1"
+    }
+  },
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "55cc2d00ec75000ce05b3c41b80b34a433841c8cfde7b6afb256e85f6de7d71c",
+  "completed_roles": {
+    "original:2100382:intact:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-intact-generate.json",
+      "extent": 3007460,
+      "sha256": "f30812d090041c65bc2586b373649a85559dd6f2206505ca72f03118ff699228"
+    },
+    "original:2100382:intact:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-intact-audit.json",
+      "extent": 8732,
+      "sha256": "c4867e310ad66cfcb74868466239c86684ed21b6420a81eb341d6027c3f8d2da"
+    },
+    "restored:2100382:intact:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-intact-generate.json",
+      "extent": 3007460,
+      "sha256": "f30812d090041c65bc2586b373649a85559dd6f2206505ca72f03118ff699228"
+    },
+    "original:2100382:model_erased:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_erased-generate.json",
+      "extent": 2881291,
+      "sha256": "7b83d4fee214055d55d2cbcaf23153c8e9edd619e8c3982828126189287b3133"
+    },
+    "original:2100382:model_erased:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_erased-audit.json",
+      "extent": 7879,
+      "sha256": "bb4e059ccd259e4b532c2b9f3be621131272277058a35ce4e4c4bf99c541e01f"
+    },
+    "restored:2100382:model_erased:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-model_erased-generate.json",
+      "extent": 2881291,
+      "sha256": "7b83d4fee214055d55d2cbcaf23153c8e9edd619e8c3982828126189287b3133"
+    },
+    "original:2100382:model_misbound:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_misbound-generate.json",
+      "extent": 2952007,
+      "sha256": "c4fd0cbc3215522621be1e7455dd484a1fafa82b5d6c1dac079b6d63e1f0d4c2"
+    },
+    "original:2100382:model_misbound:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-model_misbound-audit.json",
+      "extent": 8478,
+      "sha256": "34e20e0999f1ef52f6467d264697b1ecd19e82d6197c70fc940a5c7caa9e7096"
+    },
+    "restored:2100382:model_misbound:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-model_misbound-generate.json",
+      "extent": 2952007,
+      "sha256": "c4fd0cbc3215522621be1e7455dd484a1fafa82b5d6c1dac079b6d63e1f0d4c2"
+    },
+    "original:2100382:fallback_misbound:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-fallback_misbound-generate.json",
+      "extent": 3059027,
+      "sha256": "0a061475b9b0606abbe1b9f5ecc286d1c44854a24dee6bdb8e4786484ee09a8f"
+    },
+    "original:2100382:fallback_misbound:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-fallback_misbound-audit.json",
+      "extent": 9459,
+      "sha256": "3a308fd201a2e6f47fce855ed6c52017f111ac01b24ee44058b6bd1db376af13"
+    },
+    "restored:2100382:fallback_misbound:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-fallback_misbound-generate.json",
+      "extent": 3059027,
+      "sha256": "0a061475b9b0606abbe1b9f5ecc286d1c44854a24dee6bdb8e4786484ee09a8f"
+    },
+    "original:2100382:history_disabled:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-history_disabled-generate.json",
+      "extent": 2928390,
+      "sha256": "18efd7fe1f22484ccb351756811a7aa4017e09b9a2ec8ce646e8f71d471e0d5b"
+    },
+    "original:2100382:history_disabled:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-history_disabled-audit.json",
+      "extent": 8862,
+      "sha256": "cf869e8afce89fec9d8e29a80e1573b233b3dc1c997aebbb7de1628dc20dae4c"
+    },
+    "restored:2100382:history_disabled:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-history_disabled-generate.json",
+      "extent": 2928390,
+      "sha256": "18efd7fe1f22484ccb351756811a7aa4017e09b9a2ec8ce646e8f71d471e0d5b"
+    },
+    "original:2100382:references:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-references-generate.json",
+      "extent": 916012,
+      "sha256": "58ff1071f7c6b27334635d02b26fe88508a20a6bb73306b6f311b62c331c2681"
+    },
+    "original:2100382:references:audit": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\original-2100382-references-audit.json",
+      "extent": 6640,
+      "sha256": "51cd598c838bfb8c2a92013fd1ef995aadf124c4f00dbc58fa099abb403a4dfd"
+    },
+    "restored:2100382:references:generate": {
+      "path": "D:\\OraLab\\runs\\credited-fallback87v2-paid-software-v1-20261015\\raw\\data\\restored-2100382-references-generate.json",
+      "extent": 916012,
+      "sha256": "58ff1071f7c6b27334635d02b26fe88508a20a6bb73306b6f311b62c331c2681"
+    }
+  },
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_paid_plan.py": "5c0aa5e46e8b548ec8308ea9d2eaaf6e77dccb5648af3419b098511aeba2efd8",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_credited_fallback87v2_paid.py": "9f017645c6f66f6619ad4132cb460a63865b6d45ca2dee09d4a7f52e2b9bea75",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_paid_child.py": "95b3173ca9145789e06efd3aab600c43299c79a35f4036b47ac87caaa2e33525",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_controls.py": "d0ddd7ee9a03166a15ee115f9f20f5bb6d11bd08b0f899eb5af30015be9dda16",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-CREDITED-FALLBACK87-V2-PAID-INTEGRATION.md": "3d05e6115327d4cff5a36e34ebaf350eab1e8ff67639b4c6aef54eac42c8148b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_source.py": "234a6bc0d94c5d71f5aaaed37ed23a9259ba66533d181f44b4a5e1be727ef804",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_referee.py": "31a45efb4dbfe1fcb20123932d38e1933c72a1a3d76d1a974ecdfc040f2c09e5",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_latehistory78_source.py": "d1ea7e7a59aa5550712167b2f5056e6403ae48e573e0deabf0d95da10c7f6029",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-CREDITED-FALLBACK87-V2-PAID-CUSTODY-QUALIFICATION.md": "3ec782d88cb3df3546d694be2258631ae8a8fe7a737a1adf708f0d91b5acb709",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_source.py": "1ce12b34931894c322ff71e14ceb7a2297d637ac0e5ef5fd1350e6c14d1204ed",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_source.py": "e2c0ed8c746e4adc6b1df38212e18c31be4f88457ee07d582f532137fb2ba9db",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_control_referee.py": "9d04a45d9492c9caecfb7e73bd1ac708118044571afde1f4c4cdba3a06784c82",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\data\\credited-fallback86-controls\\active-size-fixture-v1.json": "15b9dc213409ff6c9f69b648d98e95fcb5ccc4c8aadc6b557fde7375a97eb7a3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_referee.py": "9da82afd0394721b11af205826775c86cf75c44f2b605c17bb86a23ed770c061",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\run_credited_fallback87v2_paid_v1.py": "3691c0462088e81bdfd13036c87d5b88322e58a2c42fa6413cbf6b6a2539147c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_world.py": "21fe7a7bccf5839cd68622d338bd3c12adf80653ae73f9a71488293cef93ccbd",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\tools\\credited_fallback87v2_paid_provenance_v1.py": "e5e930057d63021b00f94fcf897980a381e0b5124f1ee23d368e8b75d79b4304",
+    "D:\\OraLab\\reports\\credited-fallback87-paid-integration-contract-v2-20261015.md": "7393f1bbd8c06727b72da21068b048412d9fa71b3c6fad9ac62f6b022553409e",
+    "D:\\OraLab\\reports\\credited-fallback87v2-paid-custody-qualification-v1-20261015.md": "3ec782d88cb3df3546d694be2258631ae8a8fe7a737a1adf708f0d91b5acb709",
+    "D:\\OraLab\\reports\\credited-fallback87v2-paid-controller-prepared-v1.json": "fc49029198acfa61ef2ce96c44b6b0630281e4b9f6ab5eddb48dffacfc24b3b5",
+    "D:\\OraLab\\reports\\credited-fallback87-ci-portability-v1.json": "044e74b634c756164e3dae2a68113e8c34d1a8e611fc63778af338788fb59c9d",
+    "D:\\OraLab\\reports\\credited-fallback87-v2-binding-prepared-v2.json": "62415932144984b6da8a6e27cf7f1df1beedf970a3addd0abd33aca538e9ba43",
+    "D:\\OraLab\\reports\\credited-fallback87-source-prepared-v1.json": "ef5d45cccdb4ac29729ac9d2c2bc8dcc5e3ac30534060b89fc51299c33969e27",
+    "D:\\OraLab\\reports\\credited-fallback86-active-software-v1.json": "44ae1448d60c3b92cb5822d0dbbee12a50047e76922fbc171a3f2697398b3ead",
+    "D:\\OraLab\\reports\\credited-fallback87v2-paid-source-ci-4f7c42a2d082.json": "cfedb315a4665c1b66754ed71d4667201cdc2c3ad33f8511d3bab3ce6c3fe63c"
+  },
+  "stage_credit": false
+}
