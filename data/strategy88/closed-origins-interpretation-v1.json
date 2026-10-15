@@ -1,0 +1,78 @@
+{
+  "verified": true,
+  "new_worlds": 0,
+  "new_targets": 0,
+  "original_histories": 312,
+  "source_origin_histories": 192,
+  "qualified_uses_reproduced": 11076,
+  "qualified_selections_reproduced": 576,
+  "archive_sha256": "082e6817490c605db9136aee6b51d09c4ff5eb4b8e9ae07991e1fed8122efba2",
+  "encoding_proof_archive_sha256": "ec85447407c2ff6b44f6a46422070b6bbc5f37cf98fc6c17aba06f5fe11f84f2",
+  "prior2_losses": [
+    {
+      "seed": 1010103,
+      "observed_masks": [
+        255,
+        170
+      ],
+      "adaptive": 11,
+      "history_reset": 12,
+      "reset_delta": -1
+    },
+    {
+      "seed": 1010104,
+      "observed_masks": [
+        255,
+        170
+      ],
+      "adaptive": 11,
+      "history_reset": 12,
+      "reset_delta": -1
+    },
+    {
+      "seed": 1010304,
+      "observed_masks": [
+        0,
+        170
+      ],
+      "adaptive": 10,
+      "history_reset": 12,
+      "reset_delta": -2
+    },
+    {
+      "seed": 1010305,
+      "observed_masks": [
+        255,
+        170
+      ],
+      "adaptive": 11,
+      "history_reset": 12,
+      "reset_delta": -1
+    }
+  ],
+  "misbinding_pairs_tied": 48,
+  "misbinding_late_actions_same": 576,
+  "semantic_substitutions": 576,
+  "misbinding_is_not_history_erasure": true,
+  "conditional_encoding": "misbound_strategy[k]=(adaptive_strategy[k]+2*(k+1)) mod4. Paid feedback advances both by the same error bit;P=+2 commutes with advance. At even k cue parity0 makes P prediction-invariant;odd k uses identity.",
+  "interpretation": [
+    "All four prior2 losses occur when the later paid-observed map is cue parity170,matching its supplied default. Prior/reset gets12of12;adaptive revises earlier constant state and loses1,1,2,1 choices. This explains frozen8wins/4losses,p397/2048;it does not make learning generally harmful or permit resampling.",
+    "Every one of48adaptive/misbound pairs has the same12late chosen ports,not just equal totals. The permutation is a cue-sequence-dependent alternative encoding of retained strategy state. Clearing origin labels in bookkeeping does not erase physical history.",
+    "No implementation/specification mismatch confirmed:the frozen permutation was implemented faithfully. Preserve source/control/results;do not repair or rerun88.",
+    "All11076source use records/576selections and all312 paid paths/N/E/costs match qualified metrics. Unsensed constants have no observed cue labels. Full maps came from real paid SENSE+own port/feedback across retained records,not new target queries.",
+    "All-prior functional/strong-reference acceptance remains FALSE;allN/E superiority false. Three separately corrected component passes remain scoped;no selected prior,energy/fitness/evolved/general-intelligence/stage claim."
+  ],
+  "late_adaptive_origins": {
+    "primary": {
+      "precut_correct": 108,
+      "postcut_correct": 108,
+      "older_wrong": 9
+    },
+    "unseen": {
+      "precut_correct": 111,
+      "postcut_correct": 92,
+      "older_wrong": 9
+    }
+  },
+  "stage_credit": false
+}
