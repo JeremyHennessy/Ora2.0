@@ -1,0 +1,55 @@
+{
+  "archive_exact": true,
+  "archive_membership_files": [
+    183,
+    56
+  ],
+  "archive_sha256": "d860d6252457a9e924db50136723a744c6e6bc7cfd82fa9e28c230226d6287e8",
+  "cached_batch_hashes": [
+    {
+      "extent": 631907,
+      "seed": 1008900,
+      "sha256": "34ee68c18a4b44374275337d74fc23ed30873578ac4ec3f12c7c2a0faab46158"
+    },
+    {
+      "extent": 382745,
+      "seed": 1008901,
+      "sha256": "b6c3243baf947a29e13076f7354d7adef813fdc9f8cf3d040fae001fe435fae9"
+    },
+    {
+      "extent": 293775,
+      "seed": 1008902,
+      "sha256": "f228fc923dfbd4c789a95e902c92b85b832df4c2f7af011be8b3bafab7d778b0"
+    }
+  ],
+  "cached_cells_bound": 15,
+  "cached_literal_proofs": 15,
+  "cached_producer_replays": 15,
+  "future_native_roles_including_refusals": 213,
+  "interface_qualified": true,
+  "native_calls": 2,
+  "native_cpu_seconds": [
+    2.125,
+    2.0625
+  ],
+  "native_peak_bytes": [
+    59748352,
+    59695104
+  ],
+  "new_worlds": 0,
+  "original_primary_remains_closed_incomplete": true,
+  "remaining_controller_qualified": false,
+  "remaining_execution_admitted": false,
+  "scientific_acceptance": null,
+  "successful_future_roles": 209,
+  "target_queries": 0,
+  "tests_per_export": 6,
+  "v1_failed_schema_qualification": {
+    "archive_sha256": "5262090f65298dabf0b166c6b8252e067f1d2599607dd2477b1a506c781b2d89",
+    "native_calls": 1,
+    "new_worlds": 0,
+    "reason": "Report intentionally omits metric_batches; sealed outputs retain them",
+    "verified": false
+  },
+  "verified": true
+}
