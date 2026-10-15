@@ -1,0 +1,67 @@
+{
+  "software_only": true,
+  "scientific_worlds": 0,
+  "scientific_targets": 0,
+  "stage_credit": false,
+  "checks_original": 8,
+  "checks_boundaries": 3,
+  "reference": {
+    "verified": true,
+    "scientific_worlds": 0,
+    "native_calls": 3,
+    "archive_exact": true,
+    "archive_sha256": "5e5e30c6536e50cfebf3ea6e0d4de235e2456fc131f15a6f42ce101db567b6a0",
+    "full_population_referee": false,
+    "error": null,
+    "summary": {
+      "acquisitions": 71,
+      "admitted": 98,
+      "attempts": 98,
+      "births": 3,
+      "captured_energy": 1420,
+      "children": [
+        {
+          "blank": true,
+          "capacity": 8,
+          "child": 1,
+          "generation": 1,
+          "own_resource_viable": true,
+          "paid": true,
+          "parent": 0
+        },
+        {
+          "blank": true,
+          "capacity": 8,
+          "child": 2,
+          "generation": 1,
+          "own_resource_viable": true,
+          "paid": true,
+          "parent": 0
+        },
+        {
+          "blank": true,
+          "capacity": 8,
+          "child": 3,
+          "generation": 2,
+          "own_resource_viable": true,
+          "paid": true,
+          "parent": 1
+        }
+      ],
+      "constructor_remaining": 61,
+      "deaths": 1,
+      "genetic_changes": 0,
+      "heat": 2001,
+      "living_energy": 154,
+      "offered": 256,
+      "rejected": 158,
+      "remaining_packets": 64,
+      "sampler_draws": 9,
+      "scientific_worlds": 0,
+      "scope": "Producer-free paid-copy/blank-child/resource endpoint, NOT full population physics referee",
+      "software_only": true,
+      "ticks": 1024,
+      "verified": true
+    }
+  }
+}
