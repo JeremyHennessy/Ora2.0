@@ -1,0 +1,20 @@
+{
+  "abstract_feedback_paths_per_export": 72,
+  "archive_sha256": "2d6458deca4650bd3f31083ff38c868cc6ccda2223eebc472f128e5079d53d33",
+  "checks_per_export": 4,
+  "data_only_descriptors": 12,
+  "evidence_archive_exact": true,
+  "native_child_calls": 2,
+  "qualification_receipt_sha256": "31431da9cfa8c955b534e6fe28f3c1380f385b094d350f7a4b93c7a46909b551",
+  "source_archive_exact": true,
+  "source_exports": 2,
+  "source_files": {
+    "docs/DIGITAL-ARBITRATION85-SOURCE-CONTRACT.md": "dcbffca20cca7141ef5fdf9c84998415acd800b077e9b5a90ba797a8bda830b8",
+    "experiments/digital_arbitration85_source.py": "9a68279d6e6ef60ad76fa96b3158e1c1fd15d287a428f13ead4988e16865cfa4",
+    "tests/test_digital_arbitration85_source.py": "e8845aa31982568f9d2758dfead882c26511e92842a178a8182d8779a0849c58"
+  },
+  "stage_credit": false,
+  "status": "SOURCE_ONLY_QUALIFIED_NO_WORLD_ADMISSION",
+  "targets": 0,
+  "worlds": 0
+}
