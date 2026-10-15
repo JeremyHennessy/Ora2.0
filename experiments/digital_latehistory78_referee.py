@@ -1,0 +1,116 @@
+"""Independent literal single-entity VM/resource/control proof; no producer imports."""
+import hashlib,json
+OPS=(0,1,2,3,4,5,6,7,8,18,19,20,21)
+def enc(v):return json.dumps(v,sort_keys=True,separators=(',',':')).encode()
+def h(v):return hashlib.sha256(enc(v)).hexdigest()
+def clone(v):return json.loads(json.dumps(v))
+def move(program,s,feedback,zero,cue):
+    n=clone(s);op,a,b=program[s['pc']];n['pc']=(s['pc']+1)%len(program)
+    if op==0:n['r'][a%2]=cue
+    if op==1:n['r'][a%2]=0 if zero else s['feedback']
+    if op==2:n['r'][a%2]=s['m'][b%8]
+    if op==3:n['m'][a%8]=s['r'][b%2]
+    if op==4:n['r'][a%2]=b%16
+    if op==5:n['r'][a%2]=s['r'][a%2]^s['r'][b%2]
+    if op==6:n['feedback']=feedback
+    if op==7 or op==8 and s['r'][a%2]==0:n['pc']=b%len(program)
+    if op==19:n['r'][a%2]=s['m'][s['r'][b%2]%8]
+    if op==20:n['m'][s['r'][a%2]%8]=s['r'][b%2]
+    if op==21:n['r'][a%2]=s['r'][a%2]^15
+    return n
+def typed(v,key=None):
+    if key in ('ancestor_supplied','checkpoint_replay','learning_demonstrated'):assert type(v) is bool
+    elif type(v) is dict:
+        for k,x in v.items():typed(x,k)
+    elif type(v) is list:
+        for x in v:typed(x)
+    else:assert v is None or type(v) in (str,int)
+def local(e):return dict(r=e['registers'][:],m=e['memory'][:],pc=e['pc'],feedback=e['feedback'])
+def audit(row,expected_program,software=False):
+    typed(row)
+    assert set(row)=={'version','seed','mode','route','control_mode','genesis_program','checkpoint','final','hash','ancestor_supplied','checkpoint_replay','learning_demonstrated'}
+    assert row['version']=='DIGITAL-LATEHISTORY78-WORLD-v1' and row['mode']=='faithful'
+    assert type(software) is bool
+    seed=row['seed'];assert type(seed) is int and seed in (tuple(range(2010077,2010085)) if software else tuple(range(1008100,1008108))+tuple(range(1008300,1008308)))
+    control=row['control_mode'];assert control in ('intact','late_erasure','late_misbound')
+    program=row['genesis_program'];assert program==expected_program and len(program)==12
+    assert all(type(t) is list and len(t)==3 and t[0] in OPS and all(type(x) is int and 0<=x<32 for x in t) for t in program)
+    assert row['ancestor_supplied'] is True and row['checkpoint_replay'] is False and row['learning_demonstrated'] is False
+    values=sum(program,[]);bill=len(values)+16;assert bill==52
+    e=dict(id=0,parent=None,generation=0,code=[[v,i] for i,v in enumerate(values)],state_units=list(range(36,52)),memory=[0]*8,registers=[0,0],pc=0,cue=0,feedback=0,inbox=None,pos=0,energy=32,nursery=[])
+    food={i:[0 if i<32 else 1+(i-32)//16,int(h([seed,'food',i])[:8],16)%2] for i in range(64)}
+    for segment in (0,1):
+        food[16*segment][1]=seed%2;food[16*segment+1][1]=(seed%2)^1
+        order=sorted(range(2,16),key=lambda i:h([seed,'oneshot77-cue-order',segment,i]))
+        for rank,index in enumerate(order):food[segment*16+index][1]=int(rank>=7)
+    heat=52;constructor=44;tick=0;dead=False;events=[];reads=epoch=active=0;origin=None;shadow=local(e);penalties=0;successes=0;released_successes=0;distinct_reads=set();outcomes=set();contexts=set()
+    formation=[dict(unit=i,value=v,energy=1,assistance='supplied ancestor assembly') for i,v in enumerate(values+[0]*16)]
+    def snapshot(include_events=True):
+        result=dict(startup=dict(energy=32,assistance='supplied paid common endowment'),control_mode=control,seed=seed,mode='faithful',tick=tick,last=0 if tick else -1,next_id=1,writes=0,constructor_remaining=constructor,heat=heat,formation=formation,food=food,free=list(range(512)) if dead else list(range(52,512)),entities={} if dead else {0:e},births=0,deaths=int(dead),maximum=1)
+        if include_events:result['events']=events
+        return clone(result)
+    observed_events=row['final']['events'];assert type(observed_events) is list and 1<=len(observed_events)<=512
+    for observed in observed_events:
+        assert not dead and any(v[0]==0 for v in food.values())
+        tick+=1;before=local(e);op,a,b=program[e['pc']]
+        event=dict(tick=tick,actor=0,decoded=[op,a,b],before=h(e),outcome='executed')
+        if tick==64:
+            assert constructor>=16;constructor-=16;heat+=16
+            event['release']=dict(packets=list(range(16,32)),energy=16,assistance='supplied exogenous stock boundary')
+        available=sorted(p for p,v in food.items() if v[0]==0 and (p<16 or p>=32 or tick>=64));cue=food[available[0]][1] if available else 0
+        e['energy']-=1;heat+=1
+        actual_feedback=e['feedback']
+        if op==6:
+            actual_feedback=2;event['penalty']=0
+            if available:
+                packet=available[0];kind=food[packet][1];pair=(seed-(1008100 if seed<1008300 else 1008300))//2
+                target=((pair>>1)&1 if kind==0 else pair&1)^int(packet>=16)
+                if software:
+                    fixture=(seed-2010077)//2
+                    target=(((fixture>>1)&1) if kind==0 else fixture&1)^int(packet>=16)
+                actual_feedback=int(e['registers'][a%2]%2==target)
+                event['attempt']=dict(packet=packet,position=0,cue=kind,port=e['registers'][a%2]%2,target=target,success=actual_feedback)
+                del food[packet]
+                if actual_feedback:
+                    gain=min(20,160-e['energy']);e['energy']+=gain;heat+=20-gain;successes+=1;released_successes+=int(packet>=16)
+                    event['packet_outflow']=dict(packet=packet,energy=20,captured=gain,heat=20-gain)
+                else:
+                    heat+=20
+                    event['packet_outflow']=dict(packet=packet,energy=20,captured=0,heat=20)
+                    debit=min(4,e['energy']);e['energy']-=debit;heat+=debit;event['penalty']=debit
+            event['feedback']=actual_feedback
+        native=move(program,before,actual_feedback,False,cue)
+        e['registers']=native['r'];e['memory']=native['m'];e['pc']=native['pc'];e['feedback']=native['feedback']
+        if op==0:e['cue']=cue;event['cue']=cue;event['sensor_packet']=available[0] if available else None
+        result=clone(native);rewrites=[];sample=None
+        if op==1:
+            reads+=1
+            sample=dict(read_index=reads,own_source_tick=origin,original=native['r'][a%2],value=result['r'][a%2])
+            if origin is not None and origin>=64:
+                prior=events[origin-1]['attempt'];distinct_reads.add(origin);outcomes.add(prior['success']);contexts.add(prior['cue'])
+        onset=int(op==0 and bool(available) and available[0]==20 and not active)
+        if onset:active=1
+        if active and control=='late_erasure' and op in (0,20):result['m'][0:2]=[0,0]
+        elif active and control=='late_misbound':
+            if onset:result['m'][0:2]=native['m'][0:2][::-1]
+            elif op==20:
+                index=before['r'][a%2]%8;assert index in (0,1)
+                result['m'][index]=before['m'][index]
+                result['m'][index^1]=native['m'][index]
+        if result['m']!=native['m']:rewrites.append(dict(channel='m',original=clone(native['m']),value=clone(result['m'])))
+        if op==6:epoch+=1;origin=tick if 'attempt' in event else None
+        annotation=dict(mode=control,active=active,onset=onset,epoch=epoch,read_count=reads,rewrites=rewrites,personal_read=sample,latest_own_source_tick=origin)
+        e['registers']=result['r'];e['memory']=result['m'];e['pc']=result['pc'];e['feedback']=result['feedback'];event['control']=annotation
+        if e['energy']==0:
+            dead=True;event['death']=list(range(52))
+        else:event['after']=clone(e)
+        assert (0 if dead else e['energy'])+constructor+heat+20*len(food)==1408
+        assert [x[0] for x in e['code']]==values and e['pos']==0 and e['inbox'] is None and not e['nursery']
+        event['state_hash']=h(snapshot(False));assert observed==event;events.append(clone(event))
+        if tick==min(64,len(observed_events)):assert row['checkpoint']==snapshot()
+        if tick>=64:penalties+=event.get('penalty',0)
+    final=snapshot();assert row['final']==final and row['hash']==h(final)
+    completed=not any(v[0]==0 for v in food.values());assert tick==512 or dead or completed
+    assert row['checkpoint']['tick']==min(64,tick)
+    post_instructions=max(0,tick-63)
+    return dict(verified=True,software_prepared=software,seed=seed,route=row['route'],control_mode=control,ticks=tick,formation_cost=52,startup_cost=32,total_paid_cost=84+tick+sum(x.get('penalty',0) for x in events),completed=completed,deaths=int(dead),successes=successes,released_successes=released_successes,post63_instructions=post_instructions,post63_penalties=penalties,score=20*released_successes-post_instructions-penalties,distinct_personal_post64_reads=len(distinct_reads),read_outcomes=sorted(outcomes),read_contexts=sorted(contexts),heat=heat,energy=0 if dead else e['energy'],births=0,mutation=0,stage_credit=False,learning=False)

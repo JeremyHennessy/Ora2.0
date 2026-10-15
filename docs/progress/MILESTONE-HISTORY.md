@@ -1,3 +1,13 @@
+# LateHistory78 - prospective comparison prepared, no scientific outcome
+
+Useful own-experience decisions remain primary. OneShot77 stays closed FALSE solely on inadequate common older-history opportunities; every historical law/result/reserve is preserved. LATEHISTORY78 freezes a fresh comparison with independently earned first20 experiences, model-channel lesions before the next LOAD, common cap160 funded by actual acquisitions, unchanged prices/startup32/formation52 and six whole-life fixed baselines. Equal-label binding invariance is reported in a prespecified stratum, never removed from the roster.
+
+Prepared source/export/restoration qualification passed18 checks in both exact exports, including all four label maps/two orientations and actual cut energy157. The initial single-process fixture qualification hit its5-second CPU cap and remains failed evidence; split batches retained that child cap. ZERO registered scientific Worlds/targets/outcomes. No capability/stage acceptance from software qualification.
+
+Next dependency: exact source-head CI and finite custody/controller/separate interpreter qualification, then the complete frozen144 histories/48 native replay calls only if admitted. No reserve, copied warm state, refill, rescue, threshold/horizon change, API/legacy/Observer or persistent activation. Evolution of learning capacity follows useful causal learning; reproduction/pilot is not its prerequisite.
+
+Protocol: docs/DIGITAL-LATEHISTORY78-PROTOCOL.md. Prepared receipt: docs/DIGITAL-LATEHISTORY78-PREPARED.md. Historical checkpoints follow unchanged.
+
 # Closed OneShot77 own-experience comparison - October14
 
 All144 original histories/full literal physics/source-restored replay/archive passed;48 native calls,288 replay-inclusive geneses/31142 instructions. Original totals15571 instructions,3410 attempts,2065 acquisitions,33002 paid charges,64 deaths,0 births/mutations. All16 intact organisms survive32 decisions, make48 own-negative-feedback model changes, and improve from0/16 initial reversal choices to96/96 late choices in BOTH banks. Paid score1096 beats every fixed comparator (best951 primary/808 unseen); late choices beat best63/96 and52/96. Supplied general updater/blank models versus acquired knowledge are explicit.
