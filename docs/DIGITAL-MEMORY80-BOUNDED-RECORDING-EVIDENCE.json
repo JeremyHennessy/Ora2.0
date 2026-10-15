@@ -1,0 +1,98 @@
+{
+  "verified": true,
+  "new_worlds": 0,
+  "scientific_worlds": 0,
+  "native_calls": 2,
+  "archive_exact": true,
+  "archive_sha256": "d509ea884594c2f90220fdcbf3eab00a0ba8a6e779a36615e6b7e2c6cff7f3f8",
+  "error": null,
+  "summary": {
+    "custody_refusals": [
+      "consumed-grant",
+      "wrong-seal",
+      "prewrite-overflow"
+    ],
+    "helper_checks": 5,
+    "new_worlds": 0,
+    "overflow_retained_bytes": 65536,
+    "producer_imported": false,
+    "retained_byte_parities": [
+      {
+        "byte_parity": true,
+        "extent": 27636880,
+        "index": 0,
+        "sha256": "f1179498f9bbab932579f8ff5980d4fe83b68e4d8ed116e1fd0731fbb9932dc2"
+      },
+      {
+        "byte_parity": true,
+        "extent": 27636886,
+        "index": 1,
+        "sha256": "1b5e9b9eb557cf758b93ca681a45d482778b7ce332141f8b8cbc8404de596874"
+      },
+      {
+        "byte_parity": true,
+        "extent": 27636902,
+        "index": 2,
+        "sha256": "53e161a060f13a2ab6417eff7ec0fa77d878b06e8737ce323f4fc023531a100f"
+      },
+      {
+        "byte_parity": true,
+        "extent": 26863822,
+        "index": 3,
+        "sha256": "4ea03638e34e736922748fca748f0ff3d8db6da74748227fcc8c2f83c6e25076"
+      },
+      {
+        "byte_parity": true,
+        "extent": 27788237,
+        "index": 4,
+        "sha256": "317951e4cbf265df8d0a05477e60d667ffc4e195faea4f3b59e5327d5d20f926"
+      },
+      {
+        "byte_parity": true,
+        "extent": 26862043,
+        "index": 5,
+        "sha256": "2bfa36ecf18139c5ff8922506a541ce5dfc5b2d9b7e14e6e79c7323cb870530c"
+      }
+    ],
+    "scientific_worlds": 0,
+    "stage_credit": false,
+    "synthetic_transport_only": {
+      "extent": 55264441,
+      "new_worlds": 0,
+      "physics_claim": false,
+      "sha256": "e451e691df174e73368d135c6dfc0e739a1fc52ba514c3e92aa308e7fc1387f8"
+    },
+    "verified": true
+  },
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_memory80_recording.py": "29404b099aa7bdfa2fbcddc73900c5ac668518e04689e6c74f535908ced968b9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\tools\\memory80_terminal_recording_worker_v1.py": "36a80d33de6df1d950682372cca5252feac5a9d0969095e9205d4c10a66bcb25",
+    "D:\\OraLab\\tools\\qualify_memory80_terminal_recording_v1.py": "c24d89ca3e35138ede7bee9ab908d11ebe1d92f3ae7a4652e441f95c2a093d17",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\memory80-terminal-recording-qualification-v1-20261015.md": "7f6184836b7b237dddec6320967b05b131c1bde95b75ea8c0c6bcbc7489c0441",
+    "D:\\OraLab\\reports\\inheritance82-ordinary-failure-interpretation-v1.json": "d867be4d37239d8a20a22660756c63d341e480e9cf698495b7644a05f1d7547e",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-MEMORY80-BOUNDED-RECORDING.md": "15c6e6f90815bb7e9e09481e71a7825271469d93af64033ff5aff3faf23a898c",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100080-variation-generate.json": "f1179498f9bbab932579f8ff5980d4fe83b68e4d8ed116e1fd0731fbb9932dc2",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100080-no_variation-generate.json": "1b5e9b9eb557cf758b93ca681a45d482778b7ce332141f8b8cbc8404de596874",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100080-inheritance_disabled-generate.json": "53e161a060f13a2ab6417eff7ec0fa77d878b06e8737ce323f4fc023531a100f",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100081-variation-generate.json": "4ea03638e34e736922748fca748f0ff3d8db6da74748227fcc8c2f83c6e25076",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100081-no_variation-generate.json": "317951e4cbf265df8d0a05477e60d667ffc4e195faea4f3b59e5327d5d20f926",
+    "D:\\OraLab\\runs\\inheritance82-ordinary-v2-20261015\\raw\\data\\original-2100081-inheritance_disabled-generate.json": "2bfa36ecf18139c5ff8922506a541ce5dfc5b2d9b7e14e6e79c7323cb870530c"
+  }
+}
