@@ -1,3 +1,11 @@
+# Cognitive-capacity source interface - qualified source only
+
+LateHistory78 PR277 publication fully verified: finalCI38666022988 and exact mergec8dca2aa mainCI38666706783 SUCCESS. Closed scientific acceptance remains FALSE on primary paid1096 versus reactive1101; all causal memory findings/older controls/negative evidence immutable.
+
+Capacity79 source grammar frozen before code qualification:12 neutral family/layout descriptors, nine source-admissible under declared instruction/factory budgets, all refused variants retained. Four software checks pass both exact source exports/archive readback, zero scientific Worlds/targets. Ordinary shared unrolling leaves the two-instruction model/reactive gap: do NOT launch another bank merely on layout changes or hide optimized reactive controls. This source is supplied apparatus, no evolved/invented architecture or new stage acceptance.
+
+Single next scientific dependency: derive a performance-blind heritable cognitive graph/source grammar varying memory-use capacity and action selection under ordinary paid VM semantics, with blank newborn knowledge and actual full-copy/offspring fitness. Register all new laws/controls/ancestry/costs/falsifiers before contexts. No target policy/winner insertion/price discount/old rerun/new environment hunting positive. Source-only interface is not a registered science/evolution panel. See reports/capacity79-source-owner-handoff-20261014.md and docs/DIGITAL-CAPACITY79-SOURCE-PREPARED.md. Historical records follow unchanged.
+
 # Closed LateHistory78 own-experience causal comparison - October14 Halifax
 
 144 histories/full literal and source-restored physics/archive verified;48 calls/288 geneses/38464 replay instructions. All48 cognitive actors survive32 decisions; intact learns48 cue-label revisions from own feedback and reaches192/192 late correct choices after0/32 immediate reversal choices. Active older common opportunities47/48 now satisfy24; erasure and informative misbinding causally reduce decisions. Supplied architecture versus acquired unknown knowledge remains explicit.
