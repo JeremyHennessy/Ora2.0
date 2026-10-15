@@ -1,0 +1,1504 @@
+{
+  "passed": true,
+  "checks": 5,
+  "worlds": 0,
+  "targets": 0,
+  "paid_active_physics_qualified": false,
+  "source_archive_exact_readback": true,
+  "evidence_archive_sha256": "77d863358f15a5b69e3b54ba405700937699e990d92e48752354f0691c9f10b5",
+  "evidence_archive_exact_readback": true,
+  "results": [
+    {
+      "checks": 5,
+      "forgeries_refused": 11,
+      "never_active_dead_ledger_derivations": 32,
+      "paid_active_physics_qualified": false,
+      "retained_null_histories": 36,
+      "rows": [
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "c42a75eb882108a4edb07f376050f8ed2b580447347acbc504908c3e4f701e10",
+            "heat": 1000,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "f1619f71fb7f51588c5f4375c4ef32a351dfec3de6dfacde4507017cbf1b6e34",
+            "heat": 837,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "724eff0e9b5f4cb686d12d764252ecb05fab6ee132c6a4b8e9b7df1d448a786c",
+            "heat": 839,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "db3af4cfa237df48af6a59dcb32df8b393d09668472ead68d04154a987a2abf6",
+            "heat": 1002,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "db59875b9b46b2a3f7defe180ef138363895824cdadf295af2fbb9ca79898b03",
+            "heat": 839,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "92665db56ba09b42602e3b327014e952648a1f67da3b43dd8d43188061ea53b6",
+            "heat": 841,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "43224274a041c045565d90a5295e04a6d4460383d6f580ff91e3353dc82f252a",
+            "heat": 1006,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "08e2813b554a89c04551bb00a44dc1da1c36d4663eb247793cbda2da737e28f6",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "a32a84cfbb4d1cc7000972bc0014b93548d3038dc49a21314c0c7c16fe9abd61",
+            "heat": 845,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "0d4f9fa85106c706e0786db814e34009c96d6b82f32e0d40a10b7268de634c37",
+            "heat": 997,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "6836f2e67f7b1805c2d94f589c70aa61f99421309b5a84af2ded05f7cc89492c",
+            "heat": 981,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "c7cb70f2b0b4a2503fdccffc295103263a8d16d1ff495dbc1fa77f9f7cc817a0",
+            "heat": 1000,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "087deab862be2dae4e3706f931acb19e2a264890767061d8cd02c306eba2d0a3",
+            "heat": 999,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "6406aacff5452eb3cf7ebe1d5cb38272f1de462e7a68fc2177ddbfd94fb84f6a",
+            "heat": 983,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "5774a7a89988d9545c8b4ca15ad1d36f025ccda209e4923cf8c944905211d8ac",
+            "heat": 1002,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "92c54bab0df45801803d2ab14bd5348dae1e375cb61fb3b2020f5d51439667c1",
+            "heat": 1003,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "bab4f423b441af77130b6ee15a71033b8aea59e187c0ddbe7b5dc06c5d7a1e8a",
+            "heat": 987,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "eb84e244f0147054b403f728d9a9ecaeb007f8774cc0d05ae5a1a66729f7fcc9",
+            "heat": 1006,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "07eb1e7a112aa33b9b8d4cfe65d38a427135dac5f2e2ea6915ea8affa45558ee",
+            "heat": 969,
+            "living_energy": 52,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "f7c68ac734b2be7e8f4f42e527b707367b687209582b79a7efacf5e8c0973ba1",
+            "heat": 993,
+            "living_energy": 28,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "9af83680ad57ff20b9e746d4a26fb772f99698be8822f503c91578619a437abb",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "102506149f03a3769da42c72cabbdf7c81190aa80d5c6fd1b748d55719d2c9b7",
+            "heat": 971,
+            "living_energy": 52,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "ab65bf3b9d38eb8a386c0277db31916df5d72e08194ff5a40024feb658bec30b",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "cc145f0059b27a7caef1cb63006e7cf26135346a77907fe0ca06e7b90f31b582",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "b2d0aa7ec85eebb2ec5e81f9576847c240bce9c8a0857f0eb75ee15be561461d",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "115d3a3a49bbf783a1bac8d0b8ebb76e4b2b506cb9adf7b62bb3ee91a1b401bf",
+            "heat": 826,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "53c4f410ccb546e7e03b3f668368e58c7e82419f83524022a21a9e5773e9dcfa",
+            "heat": 828,
+            "living_energy": 219,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "e9bef0d487204d5cceab7a415403e883a5edcdcbc2d1d8b3f39fe9bdc9d46655",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "2871d7b33ace694cd22c8f2cec13427482cbe0fe2e34b25e09048b36dd620141",
+            "heat": 993,
+            "living_energy": 28,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "62936a9ea51b6d0850327b148d40679f0c33a0b971b486b3bf7cf18ca11beb81",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 21,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "71e0d1d49862fb10e711a808930578bc82523ca06463415a3947676151293a89",
+            "heat": 663,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 11,
+            "scientific_worlds": 0,
+            "ticks": 140,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 9,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "7a92e60e1a9f1c7817bce3ef9ec36925b5889afa7e4da9432d47bfba122ad47a",
+            "heat": 423,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 7,
+            "scientific_worlds": 0,
+            "ticks": 69,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 21,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "c5c91b2e71c14a03de221cafd1db78c2fb503d570f9e4deb55f389fe72a78965",
+            "heat": 663,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 11,
+            "scientific_worlds": 0,
+            "ticks": 140,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "59dc5c529d8569a6b18a3dcda466e9369fc68385797a1efa945e16d2e47b95c4",
+            "heat": 828,
+            "living_energy": 219,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "ae1df9137d23f08038002acd04b473e0e62ae2109a086b698c49f9d556bc9822",
+            "heat": 826,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "862c4fcde24531b8647b32d17119accc1b426b9b4c8a7325b82470c5a8fd1b29",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        }
+      ],
+      "stage_credit": false,
+      "targets": 0,
+      "verified": true,
+      "worlds": 0
+    },
+    {
+      "checks": 5,
+      "forgeries_refused": 11,
+      "never_active_dead_ledger_derivations": 32,
+      "paid_active_physics_qualified": false,
+      "retained_null_histories": 36,
+      "rows": [
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "c42a75eb882108a4edb07f376050f8ed2b580447347acbc504908c3e4f701e10",
+            "heat": 1000,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "f1619f71fb7f51588c5f4375c4ef32a351dfec3de6dfacde4507017cbf1b6e34",
+            "heat": 837,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "724eff0e9b5f4cb686d12d764252ecb05fab6ee132c6a4b8e9b7df1d448a786c",
+            "heat": 839,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "db3af4cfa237df48af6a59dcb32df8b393d09668472ead68d04154a987a2abf6",
+            "heat": 1002,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "db59875b9b46b2a3f7defe180ef138363895824cdadf295af2fbb9ca79898b03",
+            "heat": 839,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "92665db56ba09b42602e3b327014e952648a1f67da3b43dd8d43188061ea53b6",
+            "heat": 841,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "43224274a041c045565d90a5295e04a6d4460383d6f580ff91e3353dc82f252a",
+            "heat": 1006,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "08e2813b554a89c04551bb00a44dc1da1c36d4663eb247793cbda2da737e28f6",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 43,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "a32a84cfbb4d1cc7000972bc0014b93548d3038dc49a21314c0c7c16fe9abd61",
+            "heat": 845,
+            "living_energy": 222,
+            "offered": 64,
+            "rejected": 21,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100080
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "0d4f9fa85106c706e0786db814e34009c96d6b82f32e0d40a10b7268de634c37",
+            "heat": 997,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "6836f2e67f7b1805c2d94f589c70aa61f99421309b5a84af2ded05f7cc89492c",
+            "heat": 981,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "c7cb70f2b0b4a2503fdccffc295103263a8d16d1ff495dbc1fa77f9f7cc817a0",
+            "heat": 1000,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "087deab862be2dae4e3706f931acb19e2a264890767061d8cd02c306eba2d0a3",
+            "heat": 999,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "6406aacff5452eb3cf7ebe1d5cb38272f1de462e7a68fc2177ddbfd94fb84f6a",
+            "heat": 983,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "5774a7a89988d9545c8b4ca15ad1d36f025ccda209e4923cf8c944905211d8ac",
+            "heat": 1002,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "92c54bab0df45801803d2ab14bd5348dae1e375cb61fb3b2020f5d51439667c1",
+            "heat": 1003,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 50,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "bab4f423b441af77130b6ee15a71033b8aea59e187c0ddbe7b5dc06c5d7a1e8a",
+            "heat": 987,
+            "living_energy": 220,
+            "offered": 64,
+            "rejected": 14,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 51,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "eb84e244f0147054b403f728d9a9ecaeb007f8774cc0d05ae5a1a66729f7fcc9",
+            "heat": 1006,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 13,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100081
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "07eb1e7a112aa33b9b8d4cfe65d38a427135dac5f2e2ea6915ea8affa45558ee",
+            "heat": 969,
+            "living_energy": 52,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "f7c68ac734b2be7e8f4f42e527b707367b687209582b79a7efacf5e8c0973ba1",
+            "heat": 993,
+            "living_energy": 28,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "9af83680ad57ff20b9e746d4a26fb772f99698be8822f503c91578619a437abb",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "102506149f03a3769da42c72cabbdf7c81190aa80d5c6fd1b748d55719d2c9b7",
+            "heat": 971,
+            "living_energy": 52,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 20,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "ab65bf3b9d38eb8a386c0277db31916df5d72e08194ff5a40024feb658bec30b",
+            "heat": 603,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 12,
+            "scientific_worlds": 0,
+            "ticks": 128,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 10,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "cc145f0059b27a7caef1cb63006e7cf26135346a77907fe0ca06e7b90f31b582",
+            "heat": 563,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 6,
+            "scientific_worlds": 0,
+            "ticks": 112,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "b2d0aa7ec85eebb2ec5e81f9576847c240bce9c8a0857f0eb75ee15be561461d",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "115d3a3a49bbf783a1bac8d0b8ebb76e4b2b506cb9adf7b62bb3ee91a1b401bf",
+            "heat": 826,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "53c4f410ccb546e7e03b3f668368e58c7e82419f83524022a21a9e5773e9dcfa",
+            "heat": 828,
+            "living_energy": 219,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100082
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "e9bef0d487204d5cceab7a415403e883a5edcdcbc2d1d8b3f39fe9bdc9d46655",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            2,
+            "model"
+          ],
+          "proof": {
+            "admitted": 41,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "2871d7b33ace694cd22c8f2cec13427482cbe0fe2e34b25e09048b36dd620141",
+            "heat": 993,
+            "living_energy": 28,
+            "offered": 64,
+            "rejected": 23,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            2,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 31,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "62936a9ea51b6d0850327b148d40679f0c33a0b971b486b3bf7cf18ca11beb81",
+            "heat": 941,
+            "living_energy": 0,
+            "offered": 48,
+            "rejected": 17,
+            "scientific_worlds": 0,
+            "ticks": 228,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 21,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "71e0d1d49862fb10e711a808930578bc82523ca06463415a3947676151293a89",
+            "heat": 663,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 11,
+            "scientific_worlds": 0,
+            "ticks": 140,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "model"
+          ],
+          "proof": {
+            "admitted": 9,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "7a92e60e1a9f1c7817bce3ef9ec36925b5889afa7e4da9432d47bfba122ad47a",
+            "heat": 423,
+            "living_energy": 0,
+            "offered": 16,
+            "rejected": 7,
+            "scientific_worlds": 0,
+            "ticks": 69,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            4,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 21,
+            "births": 0,
+            "deaths": 1,
+            "final_state_sha256": "c5c91b2e71c14a03de221cafd1db78c2fb503d570f9e4deb55f389fe72a78965",
+            "heat": 663,
+            "living_energy": 0,
+            "offered": 32,
+            "rejected": 11,
+            "scientific_worlds": 0,
+            "ticks": 140,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback0"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "59dc5c529d8569a6b18a3dcda466e9369fc68385797a1efa945e16d2e47b95c4",
+            "heat": 828,
+            "living_energy": 219,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "model"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "ae1df9137d23f08038002acd04b473e0e62ae2109a086b698c49f9d556bc9822",
+            "heat": 826,
+            "living_energy": 221,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        },
+        {
+          "descriptor": [
+            8,
+            "fallback1"
+          ],
+          "proof": {
+            "admitted": 42,
+            "births": 0,
+            "deaths": 0,
+            "final_state_sha256": "862c4fcde24531b8647b32d17119accc1b426b9b4c8a7325b82470c5a8fd1b29",
+            "heat": 843,
+            "living_energy": 224,
+            "offered": 64,
+            "rejected": 22,
+            "scientific_worlds": 0,
+            "ticks": 256,
+            "verified": true
+          },
+          "seed": 2100083
+        }
+      ],
+      "stage_credit": false,
+      "targets": 0,
+      "verified": true,
+      "worlds": 0
+    }
+  ],
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_referee.py": "9da82afd0394721b11af205826775c86cf75c44f2b605c17bb86a23ed770c061",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_source.py": "1ce12b34931894c322ff71e14ceb7a2297d637ac0e5ef5fd1350e6c14d1204ed",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_controls.py": "d0ddd7ee9a03166a15ee115f9f20f5bb6d11bd08b0f899eb5af30015be9dda16",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback86_control_referee.py": "9d04a45d9492c9caecfb7e73bd1ac708118044571afde1f4c4cdba3a06784c82",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_credited_fallback86_controls.py": "40de3993002f4fd193d1f9dca49fd467cf5587318e0a6e8e9d42f6943fcfc03f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-CREDITED-FALLBACK86-ACTIVE-CONTROL-CONTRACT.md": "c3b0350cb61ad9ed5a9b8605a397f48f83ca5fff6faf2b026de01417c9fdc0bd",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-CREDITED-FALLBACK86-CONTROL-SOURCE-QUALIFICATION.md": "a7f847f2387552e936e1079319a857b197cede7adc227b49e2d87d45e08b8289",
+    "D:\\OraLab\\tools\\qualify_credited_fallback86_controls_v1.py": "54cbaa33656d9f378fb48a16e745aae30263fd9d4975c2bae6a90187c52683f9",
+    "D:\\OraLab\\tools\\credited_fallback86_control_prepared_worker_v1.py": "2aa222136c9cfef23e8d672b1bdf16ae0d3829e2c461465f56715169ed4f8562",
+    "D:\\OraLab\\reports\\credited-fallback86-paid-reference-v1.json": "b1647a41a5787d506ea419b2d46e9bc5dbb69ca586b6b0bbcacb57108df516e0",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\experience75_controller_core.py": "40b13c6ed7a4efcfcd65ade71a1e5b9fbe72fd78e1cb3d2fd7f3c3db113da4da",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\tools\\build_credited_fallback86_control_literal_v1.py": "916f89b754ae464c79613893daf36a17638b017c6caa65063633a63b6b9277b4",
+    "D:\\OraLab\\reports\\credited-fallback86-active-control-contract-v1-20261015.md": "c3b0350cb61ad9ed5a9b8605a397f48f83ca5fff6faf2b026de01417c9fdc0bd",
+    "D:\\OraLab\\reports\\credited-fallback86-control-source-qualification-v1-20261015.md": "a7f847f2387552e936e1079319a857b197cede7adc227b49e2d87d45e08b8289",
+    "D:\\OraLab\\runs\\credited-fallback86-paid-reference-v1-20261015\\raw\\data\\original-2100080-generate.json": "44a9588bf72163bee02d230dcf38f9063467adae8bef7a3871fced339b8da181",
+    "D:\\OraLab\\runs\\credited-fallback86-paid-reference-v1-20261015\\raw\\data\\original-2100081-generate.json": "c9eb2293379965fc18c4f36ac4943b3a14ec6f85bbb37f51e09a9a170ecff3f5",
+    "D:\\OraLab\\runs\\credited-fallback86-paid-reference-v1-20261015\\raw\\data\\original-2100082-generate.json": "4133b6eb98a7d3d4cc20b62833ed70650f11a7b2f0d2bc40fcb0e2908b7b9830",
+    "D:\\OraLab\\runs\\credited-fallback86-paid-reference-v1-20261015\\raw\\data\\original-2100083-generate.json": "dd0f5cf01d33fd3960a7976c298a1c13e704f9b3e3cf6730b4ad70f6d3476098"
+  },
+  "error": null
+}
