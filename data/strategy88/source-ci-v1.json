@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "conclusion": "success",
+  "source_head": "af8aed39d58a738769b2d0bd542f12fee33cb4ea",
+  "run_id": 38808298724,
+  "status": "completed",
+  "url": "https://github.com/JeremyHennessy/Ora2.0/actions/runs/38808298724",
+  "updated_at": "2026-10-15T21:20:42Z",
+  "scope": "Exact clean whole source before separate software/primary registration; no primary labels queried"
+}
