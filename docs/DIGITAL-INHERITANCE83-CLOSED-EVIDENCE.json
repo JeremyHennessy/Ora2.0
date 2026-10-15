@@ -1,0 +1,838 @@
+{
+  "actual_common_opportunities": {
+    "1008900": {
+      "admitted_by_arm": [
+        1489,
+        1490,
+        1489,
+        1489,
+        1489
+      ],
+      "common_admitted_packet_cue": 1450,
+      "common_offered_packet_cue": 4096,
+      "common_served_packet_cue_lineage": 1026,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "served_by_arm": [
+        1489,
+        1490,
+        1489,
+        1489,
+        1489
+      ]
+    },
+    "1008901": {
+      "admitted_by_arm": [
+        1494,
+        1493,
+        1493,
+        7,
+        26
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        16,
+        64
+      ],
+      "served_by_arm": [
+        1494,
+        1493,
+        1493,
+        9,
+        29
+      ]
+    },
+    "1008902": {
+      "admitted_by_arm": [
+        1201,
+        1201,
+        1201,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        3088,
+        3088,
+        3088,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1203,
+        1203,
+        1203,
+        29,
+        9
+      ]
+    },
+    "1008903": {
+      "admitted_by_arm": [
+        1536,
+        1538,
+        1536,
+        7,
+        26
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        16,
+        64
+      ],
+      "served_by_arm": [
+        1536,
+        1538,
+        1536,
+        9,
+        29
+      ]
+    },
+    "1008904": {
+      "admitted_by_arm": [
+        1436,
+        1493,
+        1397,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        3696,
+        3840,
+        3600,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1436,
+        1494,
+        1399,
+        29,
+        9
+      ]
+    },
+    "1008905": {
+      "admitted_by_arm": [
+        1537,
+        1537,
+        1537,
+        7,
+        26
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        16,
+        64
+      ],
+      "served_by_arm": [
+        1537,
+        1537,
+        1537,
+        9,
+        29
+      ]
+    },
+    "1008906": {
+      "admitted_by_arm": [
+        1312,
+        1312,
+        1312,
+        32,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 10,
+      "offered_by_arm": [
+        3376,
+        3376,
+        3376,
+        80,
+        16
+      ],
+      "served_by_arm": [
+        1315,
+        1315,
+        1315,
+        32,
+        10
+      ]
+    },
+    "1008907": {
+      "admitted_by_arm": [
+        1584,
+        1584,
+        1584,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1584,
+        1584,
+        1584,
+        29,
+        9
+      ]
+    },
+    "1009100": {
+      "admitted_by_arm": [
+        1489,
+        1490,
+        1489,
+        1489,
+        1489
+      ],
+      "common_admitted_packet_cue": 1455,
+      "common_offered_packet_cue": 4096,
+      "common_served_packet_cue_lineage": 1024,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        4096,
+        4096
+      ],
+      "served_by_arm": [
+        1489,
+        1490,
+        1489,
+        1489,
+        1489
+      ]
+    },
+    "1009101": {
+      "admitted_by_arm": [
+        1493,
+        1493,
+        1493,
+        7,
+        26
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        16,
+        64
+      ],
+      "served_by_arm": [
+        1493,
+        1493,
+        1493,
+        9,
+        29
+      ]
+    },
+    "1009102": {
+      "admitted_by_arm": [
+        1459,
+        1353,
+        1329,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        3776,
+        3504,
+        3440,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1460,
+        1357,
+        1331,
+        29,
+        9
+      ]
+    },
+    "1009103": {
+      "admitted_by_arm": [
+        1588,
+        1588,
+        1588,
+        1583,
+        710
+      ],
+      "common_admitted_packet_cue": 647,
+      "common_offered_packet_cue": 1824,
+      "common_served_packet_cue_lineage": 230,
+      "offered_by_arm": [
+        4096,
+        4096,
+        4096,
+        4096,
+        1824
+      ],
+      "served_by_arm": [
+        1588,
+        1588,
+        1588,
+        1584,
+        712
+      ]
+    },
+    "1009104": {
+      "admitted_by_arm": [
+        1366,
+        1366,
+        1366,
+        32,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 10,
+      "offered_by_arm": [
+        3520,
+        3520,
+        3520,
+        80,
+        16
+      ],
+      "served_by_arm": [
+        1372,
+        1372,
+        1372,
+        32,
+        10
+      ]
+    },
+    "1009105": {
+      "admitted_by_arm": [
+        1505,
+        1505,
+        1505,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        3872,
+        3872,
+        3872,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1506,
+        1506,
+        1506,
+        29,
+        9
+      ]
+    },
+    "1009106": {
+      "admitted_by_arm": [
+        1572,
+        1584,
+        1525,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        4096,
+        3952,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1572,
+        1584,
+        1529,
+        29,
+        9
+      ]
+    },
+    "1009107": {
+      "admitted_by_arm": [
+        1543,
+        1421,
+        843,
+        26,
+        7
+      ],
+      "common_admitted_packet_cue": 6,
+      "common_offered_packet_cue": 16,
+      "common_served_packet_cue_lineage": 9,
+      "offered_by_arm": [
+        4096,
+        3664,
+        2160,
+        64,
+        16
+      ],
+      "served_by_arm": [
+        1543,
+        1426,
+        843,
+        29,
+        9
+      ]
+    }
+  },
+  "architecture_supplied": true,
+  "banks": {
+    "primary": {
+      "changed_functional_children": 5,
+      "completed_uniform_proposals": 21,
+      "contrasts": {
+        "R_inheritance_disabled": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "R_no_variation": {
+          "denominator": 1,
+          "numerator": -2
+        },
+        "S_inheritance_disabled": {
+          "denominator": 5,
+          "numerator": -3
+        }
+      },
+      "criteria": {
+        "actual_model_diagnostics": true,
+        "changed_functional_children": true,
+        "positive_fitness_and_proposal_contrasts": false,
+        "proposals": true
+      },
+      "model_R_contrasts": {
+        "history_misbound": 42,
+        "model_disabled": 42
+      },
+      "proposal_counts": {
+        "2": 8,
+        "4": 8,
+        "8": 5
+      },
+      "retained_operating_surplus": {
+        "history_misbound": 207,
+        "inheritance_disabled": 3292,
+        "model_disabled": 207,
+        "no_variation": 3241,
+        "variation": 3183
+      }
+    },
+    "unseen": {
+      "changed_functional_children": 3,
+      "completed_uniform_proposals": 16,
+      "contrasts": {
+        "R_inheritance_disabled": {
+          "denominator": 1,
+          "numerator": 3
+        },
+        "R_no_variation": {
+          "denominator": 1,
+          "numerator": 3
+        },
+        "S_inheritance_disabled": {
+          "denominator": 4,
+          "numerator": 3
+        }
+      },
+      "criteria": {
+        "actual_model_diagnostics": true,
+        "changed_functional_children": true,
+        "positive_fitness_and_proposal_contrasts": true,
+        "proposals": true
+      },
+      "model_R_contrasts": {
+        "history_misbound": 41,
+        "model_disabled": 38
+      },
+      "proposal_counts": {
+        "2": 3,
+        "4": 10,
+        "8": 3
+      },
+      "retained_operating_surplus": {
+        "history_misbound": 205,
+        "inheritance_disabled": 1803,
+        "model_disabled": 419,
+        "no_variation": 2052,
+        "variation": 3668
+      }
+    }
+  },
+  "by_mode": {
+    "history_misbound": {
+      "R": 17,
+      "acquisitions": 3488,
+      "admitted": 3855,
+      "births": 32,
+      "captured": 48220,
+      "changed_functional": 2,
+      "changed_paid_headers": 2,
+      "deaths": 32,
+      "ended_before_expansion": 13,
+      "gate0_episodes": 7,
+      "heat": 78600,
+      "max_generation": 4,
+      "offered": 10416,
+      "paid_actor_cost": 47808,
+      "paid_dispatches": 41958,
+      "rejected": 6561,
+      "resource_attempts": 3889,
+      "retained_operating_surplus": 412,
+      "right_censored_children": 16,
+      "uniform_proposals": 7
+    },
+    "inheritance_disabled": {
+      "R": 96,
+      "acquisitions": 17409,
+      "admitted": 22687,
+      "births": 180,
+      "captured": 289398,
+      "changed_functional": 7,
+      "changed_paid_headers": 11,
+      "deaths": 142,
+      "ended_before_expansion": 0,
+      "gate0_episodes": 38,
+      "heat": 450277,
+      "max_generation": 5,
+      "offered": 59776,
+      "paid_actor_cost": 284303,
+      "paid_dispatches": 239303,
+      "rejected": 37089,
+      "resource_attempts": 22707,
+      "retained_operating_surplus": 5095,
+      "right_censored_children": 54,
+      "uniform_proposals": 38
+    },
+    "model_disabled": {
+      "R": 20,
+      "acquisitions": 4176,
+      "admitted": 4835,
+      "births": 32,
+      "captured": 60898,
+      "changed_functional": 2,
+      "changed_paid_headers": 2,
+      "deaths": 29,
+      "ended_before_expansion": 13,
+      "gate0_episodes": 7,
+      "heat": 97906,
+      "max_generation": 4,
+      "offered": 12960,
+      "paid_actor_cost": 60272,
+      "paid_dispatches": 52126,
+      "rejected": 8125,
+      "resource_attempts": 4865,
+      "retained_operating_surplus": 626,
+      "right_censored_children": 19,
+      "uniform_proposals": 7
+    },
+    "no_variation": {
+      "R": 99,
+      "acquisitions": 17880,
+      "admitted": 23448,
+      "births": 181,
+      "captured": 298939,
+      "changed_functional": 0,
+      "changed_paid_headers": 0,
+      "deaths": 140,
+      "ended_before_expansion": 0,
+      "gate0_episodes": 38,
+      "heat": 465339,
+      "max_generation": 5,
+      "offered": 61728,
+      "paid_actor_cost": 293646,
+      "paid_dispatches": 247105,
+      "rejected": 38280,
+      "resource_attempts": 23470,
+      "retained_operating_surplus": 5293,
+      "right_censored_children": 57,
+      "uniform_proposals": 38
+    },
+    "variation": {
+      "R": 100,
+      "acquisitions": 18306,
+      "admitted": 23604,
+      "births": 188,
+      "captured": 302968,
+      "changed_functional": 8,
+      "changed_paid_headers": 11,
+      "deaths": 136,
+      "ended_before_expansion": 0,
+      "gate0_episodes": 37,
+      "heat": 466721,
+      "max_generation": 5,
+      "offered": 62288,
+      "paid_actor_cost": 296117,
+      "paid_dispatches": 249281,
+      "rejected": 38684,
+      "resource_attempts": 23617,
+      "retained_operating_surplus": 6851,
+      "right_censored_children": 68,
+      "uniform_proposals": 37
+    }
+  },
+  "census_native_calls": 1,
+  "census_new_worlds": 0,
+  "classification": "CLOSED_NEGATIVE_REGISTERED_CAPACITY_SELECTION_CRITERIA",
+  "closed_census_archive_sha256": "f546177cb9dd1e0740fa126b5ed85950fa9110c20fe8940d83f55191ec8fb754",
+  "independent_seeds": 16,
+  "new_originals": 65,
+  "new_own_history_learning_attribution": false,
+  "old_primary_native_calls": 52,
+  "old_primary_remains_closed_incomplete": true,
+  "only_inherited_parameter": "copied memory-capacity header2/4/8",
+  "original_cells": 80,
+  "paired_sign_tests": {
+    "R_inheritance_disabled": {
+      "cohort": 16,
+      "losses": 1,
+      "nonzero": 3,
+      "p": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "passes": false,
+      "ties": 13,
+      "wins": 2
+    },
+    "R_no_variation": {
+      "cohort": 16,
+      "losses": 1,
+      "nonzero": 3,
+      "p": {
+        "denominator": 2,
+        "numerator": 1
+      },
+      "passes": false,
+      "ties": 13,
+      "wins": 2
+    },
+    "S_inheritance_disabled": {
+      "cohort": 16,
+      "losses": 1,
+      "nonzero": 2,
+      "p": {
+        "denominator": 4,
+        "numerator": 3
+      },
+      "passes": false,
+      "ties": 14,
+      "wins": 1
+    }
+  },
+  "remaining_archive_sha256": "9f84893b825d7b354bf0f357e2a246823bf12c227808ca5a374ae99d71807048",
+  "remaining_native_calls": 213,
+  "replay_inclusive_geneses": 160,
+  "reserves_opened": false,
+  "reused_originals": 15,
+  "scientific_acceptance": false,
+  "source": "6cea78f03136904a7605ce2488da4370069665ef",
+  "source_ci_before_science": 38715038786,
+  "totals": {
+    "R": 332,
+    "acquisitions": 61259,
+    "admitted": 78429,
+    "births": 613,
+    "captured": 1000423,
+    "changed_functional": 19,
+    "changed_paid_headers": 26,
+    "deaths": 479,
+    "ended_before_expansion": 26,
+    "gate0_episodes": 127,
+    "heat": 1558843,
+    "offered": 207168,
+    "paid_actor_cost": 982146,
+    "paid_dispatches": 829773,
+    "rejected": 128739,
+    "resource_attempts": 78548,
+    "retained_operating_surplus": 18277,
+    "right_censored_children": 214,
+    "uniform_proposals": 127
+  },
+  "variation_capacity": {
+    "history_misbound:q2": {
+      "births": 27,
+      "changed_headers": 0,
+      "deaths": 15,
+      "functional": 14,
+      "own_food": 27,
+      "paid_replacement": 17,
+      "post16": 20,
+      "right_censored": 12,
+      "served64": 14
+    },
+    "history_misbound:q4": {
+      "births": 3,
+      "changed_headers": 1,
+      "deaths": 1,
+      "functional": 2,
+      "own_food": 3,
+      "paid_replacement": 2,
+      "post16": 2,
+      "right_censored": 2,
+      "served64": 2
+    },
+    "history_misbound:q8": {
+      "births": 2,
+      "changed_headers": 1,
+      "deaths": 0,
+      "functional": 1,
+      "own_food": 2,
+      "paid_replacement": 1,
+      "post16": 1,
+      "right_censored": 2,
+      "served64": 1
+    },
+    "inheritance_disabled:q2": {
+      "births": 152,
+      "changed_headers": 1,
+      "deaths": 107,
+      "functional": 83,
+      "own_food": 152,
+      "paid_replacement": 90,
+      "post16": 136,
+      "right_censored": 45,
+      "served64": 97
+    },
+    "inheritance_disabled:q4": {
+      "births": 26,
+      "changed_headers": 9,
+      "deaths": 19,
+      "functional": 12,
+      "own_food": 26,
+      "paid_replacement": 13,
+      "post16": 22,
+      "right_censored": 7,
+      "served64": 14
+    },
+    "inheritance_disabled:q8": {
+      "births": 2,
+      "changed_headers": 1,
+      "deaths": 0,
+      "functional": 1,
+      "own_food": 2,
+      "paid_replacement": 1,
+      "post16": 1,
+      "right_censored": 2,
+      "served64": 1
+    },
+    "model_disabled:q2": {
+      "births": 27,
+      "changed_headers": 0,
+      "deaths": 12,
+      "functional": 17,
+      "own_food": 27,
+      "paid_replacement": 17,
+      "post16": 21,
+      "right_censored": 15,
+      "served64": 18
+    },
+    "model_disabled:q4": {
+      "births": 3,
+      "changed_headers": 1,
+      "deaths": 1,
+      "functional": 2,
+      "own_food": 3,
+      "paid_replacement": 2,
+      "post16": 2,
+      "right_censored": 2,
+      "served64": 2
+    },
+    "model_disabled:q8": {
+      "births": 2,
+      "changed_headers": 1,
+      "deaths": 0,
+      "functional": 1,
+      "own_food": 2,
+      "paid_replacement": 1,
+      "post16": 1,
+      "right_censored": 2,
+      "served64": 1
+    },
+    "no_variation:q2": {
+      "births": 181,
+      "changed_headers": 0,
+      "deaths": 124,
+      "functional": 99,
+      "own_food": 181,
+      "paid_replacement": 108,
+      "post16": 157,
+      "right_censored": 57,
+      "served64": 114
+    },
+    "variation:q2": {
+      "births": 152,
+      "changed_headers": 1,
+      "deaths": 105,
+      "functional": 82,
+      "own_food": 152,
+      "paid_replacement": 90,
+      "post16": 135,
+      "right_censored": 47,
+      "served64": 96
+    },
+    "variation:q4": {
+      "births": 33,
+      "changed_headers": 8,
+      "deaths": 15,
+      "functional": 17,
+      "own_food": 33,
+      "paid_replacement": 21,
+      "post16": 27,
+      "right_censored": 18,
+      "served64": 17
+    },
+    "variation:q8": {
+      "births": 3,
+      "changed_headers": 2,
+      "deaths": 0,
+      "functional": 1,
+      "own_food": 3,
+      "paid_replacement": 1,
+      "post16": 2,
+      "right_censored": 3,
+      "served64": 1
+    }
+  }
+}
