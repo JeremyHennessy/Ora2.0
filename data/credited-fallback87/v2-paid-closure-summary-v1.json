@@ -1,0 +1,1076 @@
+{
+  "scope": "Aggregation of all51 producer-free literal audit receipts; NOT separate raw interpretation or scientific acceptance",
+  "source_report_sha256": "4698051a40976edccf914558c6d894c7b0ea90a439c988c52233746734649a9c",
+  "archive": "55cc2d00ec75000ce05b3c41b80b34a433841c8cfde7b6afb256e85f6de7d71c",
+  "original_histories": 51,
+  "blank_replays": 51,
+  "software_geneses": 102,
+  "native_roles": 22,
+  "scientific_worlds": 0,
+  "scientific_targets": 0,
+  "stage_credit": false,
+  "totals": {
+    "paid_cpu": 14053,
+    "acts": 2447,
+    "served": 2447,
+    "absence": 0,
+    "acquisitions": 1223,
+    "captured": 17512,
+    "penalties": 4882,
+    "deaths": 24,
+    "births": 0,
+    "writes": 0,
+    "complete60": 27,
+    "heat": 54731,
+    "living_energy": 4289,
+    "offered": 2992,
+    "admitted": 2018,
+    "rejected": 974
+  },
+  "common_active_packet_cues": [
+    {
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "count": 3,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ]
+      ]
+    },
+    {
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "count": 1,
+      "packet_cues": [
+        [
+          48,
+          0
+        ]
+      ]
+    },
+    {
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "count": 3,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ]
+      ]
+    },
+    {
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    }
+  ],
+  "all_descriptors": [
+    {
+      "group": "intact",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "completed": 50,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      }
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "completed": 36,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "completed": 55,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "completed": 19,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "completed": 17,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      }
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      }
+    },
+    {
+      "group": "intact",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "completed": 50,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "completed": 48,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "completed": 36,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "completed": 50,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "completed": 19,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "completed": 17,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      }
+    },
+    {
+      "group": "model_erased",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "completed": 50,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "completed": 50,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "completed": 36,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "completed": 19,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "completed": 17,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      }
+    },
+    {
+      "group": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "completed": 36,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "completed": 19,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "completed": 17,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      }
+    },
+    {
+      "group": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "completed": 48,
+      "deaths": 1,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "completed": 36,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 298
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "completed": 19,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "completed": 17,
+      "deaths": 1,
+      "cut": null
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 290
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      }
+    },
+    {
+      "group": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "completed": 60,
+      "deaths": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 291
+      }
+    },
+    {
+      "group": "references",
+      "descriptor": "fixed0",
+      "completed": 60,
+      "deaths": 0,
+      "cut": null
+    },
+    {
+      "group": "references",
+      "descriptor": "fixed1",
+      "completed": 60,
+      "deaths": 0,
+      "cut": null
+    },
+    {
+      "group": "references",
+      "descriptor": "cue_identity",
+      "completed": 60,
+      "deaths": 0,
+      "cut": null
+    },
+    {
+      "group": "references",
+      "descriptor": "cue_inverse",
+      "completed": 60,
+      "deaths": 0,
+      "cut": null
+    },
+    {
+      "group": "references",
+      "descriptor": "fixed_alternation",
+      "completed": 60,
+      "deaths": 0,
+      "cut": null
+    },
+    {
+      "group": "references",
+      "descriptor": "latest_reactive",
+      "completed": 42,
+      "deaths": 1,
+      "cut": null
+    }
+  ]
+}
