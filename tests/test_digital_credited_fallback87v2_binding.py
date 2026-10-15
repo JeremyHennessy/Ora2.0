@@ -46,7 +46,12 @@ class BindingV2Tests(unittest.TestCase):
         self.assertEqual(source.RESERVED,old_source.RESERVED)
         self.assertEqual(source.manifest()['targets_queried'],0)
         contract=root.parent/'docs/DIGITAL-CREDITED-FALLBACK87-PROSPECTIVE-CONTRACT-V2.md'
-        self.assertEqual(hashlib.sha256(contract.read_bytes()).hexdigest(),source.CONTRACT_SHA256)
+        # CI checks both exact known exports; actual custody still pins the
+        # unmodified registered Windows contract and exact source archive.
+        self.assertEqual(source.CONTRACT_SHA256,'8342c880706e5254c045995e3ca79ba09dbb4d0cca0717008214359aceb7e154')
+        self.assertIn(hashlib.sha256(contract.read_bytes()).hexdigest(),{
+            source.CONTRACT_SHA256,
+            'f97b541a6b28edc11834e4b079368222298cee6afa4d99882ff652a0d54abbef'})
         for seed in source.PRIMARY+source.UNSEEN:
             source.admit(seed,source.ADMISSION)
             with self.assertRaises(AssertionError):source.admit(seed,old_source.ADMISSION)

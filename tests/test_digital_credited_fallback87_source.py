@@ -82,7 +82,11 @@ class Source87Tests(unittest.TestCase):
         root=Path(source.__file__).parent
         kernel=(root/'digital_memory80.py').read_bytes()
         import hashlib
-        self.assertEqual(hashlib.sha256(kernel).hexdigest(),'1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104')
+        # Exact qualified Windows bytes OR exact known Git LF blob, never
+        # normalize live source or accept an arbitrary transformed recording.
+        self.assertIn(hashlib.sha256(kernel).hexdigest(),{
+            '1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104',
+            'dc4b9ebfc6a38a12863df2a569e8f2d0722ed91e09ade14ca8693b08455bea64'})
         # Import and manifest create no cached map or acquired policy knowledge.
         self.assertFalse({'MAPS','LABELS','WINNER','TARGET_GENOME'}&set(source.__dict__))
         self.assertEqual(len(source.manifest()['descriptors']),9)
