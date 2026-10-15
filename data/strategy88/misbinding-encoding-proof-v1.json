@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "scope": "Conditional finite state-encoding proof on ALL48 retained pairs,not new physics or acceptance",
+  "common_late_pairs": 576,
+  "actual_semantic_entry_changes": 576,
+  "port_mismatches": 0,
+  "strategy_encoding_mismatches": 0,
+  "cue_parity_sequence_mismatches": 0,
+  "finite_transition_identity": true,
+  "relation": "misbound_strategy[k]=(adaptive_strategy[k]+2*(k+1)) mod4. Paid feedback advances both by the same error bit;P=+2 commutes with advance. At even k cue parity0 makes P prediction-invariant;odd k uses identity.",
+  "conclusion": "This intervention preserves acquired route history in an alternative time-dependent encoding on these retained packet sequences. Clearing origin annotations is not a physical history ablation. No correction/rerun of closed88 is admitted.",
+  "new_worlds": 0,
+  "new_targets": 0
+}

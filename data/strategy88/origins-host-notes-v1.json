@@ -1,0 +1,7 @@
+{
+  "scope": "Host-only data-only proof launch",
+  "first_failure": "PowerShell inline nested quoting produced SyntaxError before the proof body executed",
+  "correction": "Write and inspect an explicit Python file;no native failure/source/VM/price/threshold repair",
+  "new_worlds": 0,
+  "new_targets": 0
+}
