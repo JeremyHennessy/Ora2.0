@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": 1,
+  "reused_closed_originals": 51,
+  "worlds": 0,
+  "targets": 0,
+  "paid_physics_qualified": false,
+  "source_archive_exact_readback": true,
+  "evidence_archive_sha256": "6afa1196b6d1a86ab938f23103b8009b351a4c2aa9628a251d0c4472cb970180",
+  "evidence_archive_exact_readback": true,
+  "results": [
+    {
+      "checks": 1,
+      "execution_admission": false,
+      "metadata_only": true,
+      "reused_closed_originals": 51,
+      "reused_native_bindings": 18,
+      "reused_prior_groups": 6,
+      "targets": 0,
+      "verified": true,
+      "worlds": 0
+    },
+    {
+      "checks": 1,
+      "execution_admission": false,
+      "metadata_only": true,
+      "reused_closed_originals": 51,
+      "reused_native_bindings": 18,
+      "reused_prior_groups": 6,
+      "targets": 0,
+      "verified": true,
+      "worlds": 0
+    }
+  ],
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_metrics.py": "aba265e066c2349b6a2b7853d34cbdb6091ee2e8afa3a46271189602a0734304",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_metric_binding.py": "27f7a4f6511595bd4735258de8f109bbe80834891d1c387a654ebde5a40b6ea0",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_credited_fallback87v2_metrics.py": "f1a883a4d94ad38208fafbf468c97f24cb3b364ac5a21f4c8a795c4537652a6d",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-CREDITED-FALLBACK87-V2-ORIGIN-NAMESPACE.md": "c403c9fe64f02c96f94eaf5934bc4869c22e776e2e7275590387b4f374029d77",
+    "D:\\OraLab\\tools\\qualify_credited_fallback87v2_origin_namespace_v1.py": "a761753719d96e3cbeaa5b968fbe08c91a52ce5ea5441565ed774407a273baa0",
+    "D:\\OraLab\\tools\\credited_fallback87v2_origin_namespace_worker_v1.py": "a65ae5fd88995b8f04e50dfdd77e0420235af70ff3305c50a72061b9887502af",
+    "D:\\OraLab\\reports\\credited-fallback87v2-origin-prepared-v2.json": "fe1377a3794ade5fdfcbe8eb7315ac9dc44a12815604f317bbe5bcd5161b19a2",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\experience75_controller_core.py": "40b13c6ed7a4efcfcd65ade71a1e5b9fbe72fd78e1cb3d2fd7f3c3db113da4da",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\reports\\credited-fallback87v2-origin-namespace-qualification-v1-20261015.md": "c403c9fe64f02c96f94eaf5934bc4869c22e776e2e7275590387b4f374029d77"
+  },
+  "error": null
+}
