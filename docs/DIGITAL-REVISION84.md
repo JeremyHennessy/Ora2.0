@@ -1,9 +1,9 @@
 # Revision84: source prepared, not experimentally admitted
 
 The frozen prospective contract accompanies this source. No scientific World
-or fresh label has been opened. The independently scoped literal referee is
-implemented but NOT yet qualified against actual software histories. No result
-or scientific stage credit follows from these source-only checks.
+or fresh scientific label has been opened. All72 disclosed software histories
+have full literal physics and exact source-restored producer parity. No scientific
+result or stage credit follows from these authored reachability fixtures.
 
 The new question is within-life revision of unknown cue knowledge after a common
 public resource contingency changes. Learning81's static-map choice-positive /
@@ -37,9 +37,25 @@ all supplied descriptors/formations, reused instruction bodies, forbidden seed
 guards, data-only READ/STORE lenses, actual-packet namespace binding and literal
 dependency isolation. They are not physics or full controller admission.
 
-Next: scoped paid software fixtures/full producer-free literal and restored
-parity, forged-receipt/control boundary checks, separately authored complete
-acceptance and whole finite custody, then exact science source CI and prospective
-execution registration. Fresh primary contexts remain blocked until every gate.
+The12-native paid qualification retains20977 dispatches/3811 decisions/2741
+acquisitions/12 deaths original-only across all72 histories. All16 q8 cognitive
+actors (four software fixtures times four controls) finish60; each independently
+earns221 at the warm cut and each fixture supplies12 common active opportunities.
+Smaller-capacity/fixed deaths remain retained. Literal target/phase/cut/read/store/
+counter forgeries are refused. Source6734738/exact CI38727543695 succeeded before
+those software histories. These authored maps establish reachability only.
+
+Producer/referee/target-free per-seed metrics and final complete-denominator
+arithmetic are separately implemented. Five NON-PHYSICS origin/frozen-store/
+denominator/sign/dependency checks and all72 retained histories pass in both
+exact exports with byte-identical derivations, two native calls/zero new Worlds.
+The first restored-output-scope refusal and its exact archive are retained;
+the correction changes only the trusted path guard, no arithmetic or policy.
+
+Next: implement/review/qualify the full69-role primary custody/controller and
+its pre-World source/config/role/seal refusals, final source-head CI, and separate
+prospective execution registration. Reuse the qualified fixture/literal/metric
+corpus by exact source hash where compatible; do not repeat unchanged software
+histories. Fresh primary contexts remain blocked until every gate.
 Actual retained surplus is separate from nominal successful-choice yield; no
 fitness, inherited selection, general intelligence or whole-stage claim.

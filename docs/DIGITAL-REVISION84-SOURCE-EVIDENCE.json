@@ -18,5 +18,40 @@
     "test_digital_revision84_source.py": "389a0fb5140e094625286067edb8dd0e133cb8108281592faa9b9924f4eb0f90"
   },
   "contract": "DIGITAL-REVISION84-CONTRACT.md",
-  "scope": "Supplied architecture/acquired unknown labels; source-only has no scientific stage credit"
+  "scope": "Supplied architecture/acquired unknown labels; source-only has no scientific stage credit",
+  "paid_software": {
+    "verified": true,
+    "original_histories": 72,
+    "source_restored_histories": 72,
+    "native_calls": 12,
+    "dispatches_original_only": 20977,
+    "decisions_original_only": 3811,
+    "successes_original_only": 2741,
+    "deaths_original_only": 12,
+    "q8_all16_controls_finish60": true,
+    "q8_each_earned_cut_energy": 221,
+    "q8_common_active_each_fixture": 12,
+    "archive_sha256": "8f7b5da20706adacd2fe82f12e65e910a45b2eb3bae8ddc5761bfad37e7220c7",
+    "archive_exact": true,
+    "scientific_worlds": 0,
+    "scientific_targets": 0
+  },
+  "separate_interpretation": {
+    "verified": true,
+    "native_calls": 2,
+    "checks_each_export": 5,
+    "retained_histories": 72,
+    "new_worlds": 0,
+    "new_targets": 0,
+    "archive_sha256": "d8b0cd6cba0c94ecd5f0fae4b49194b41f7b104d70dd4ecae7f9d7709795399e",
+    "archive_exact": true,
+    "initial_failed_scope_guard_archive": "d1f83802e5a6794ec4ad33a9428c18f5f470010cd714c572dfb669fdf0b1686e",
+    "scientific_acceptance": null
+  },
+  "source_core_ci": {
+    "head": "6734738c05a96b92347ca05d46d87e50c48edb58",
+    "run_id": 38727543695,
+    "conclusion": "success",
+    "before_software_qualification": true
+  }
 }
