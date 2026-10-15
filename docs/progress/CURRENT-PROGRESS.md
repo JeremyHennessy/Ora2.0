@@ -1,3 +1,41 @@
+# Current: corrected FALLBACK87 v2 source/numeric interface; ZERO new Worlds
+
+October15. Intelligence-first: useful own-experience decisions, then inherited
+selection. Frozen87v1 CLOSED BEFORE RUN: four forced constant-policy losses make
+its45test acceptance impossible (bestp2517/65536>1/900); prose also misstated fee
+frequency. Engine/source/old receipts unchanged; correct release fee16 occurs
+ONCE at tick64. This is a pre-run design negative, not a failed learner.
+
+Separate frozenv2 keeps all9descriptors/all16unqueried contexts/allconstants/
+controls/references/prices/horizon/domain. Nine confirmatory joint-own-history
+tests use1/180; all-context nominal paid choice and actual formation-inclusive
+retained energy remain separate falsifiable finite-cohort gates. If energy
+fails, no memory-worth-cost claim. No winning capacity or favourable-label filter.
+Perfect/null/impossible numeric endpoints verified before physics work, not
+physical witnesses or science outcomes. V1sixsource checks reused; one new v2
+binding/numeric group passes both exact exports after a separately retained
+host-inventory failure/correction. ZERO new Worlds/fresh scientific labels.
+
+PR298 publication PENDING exact final-head and postmerge CI, not a pass. Next
+smallest scope is22-role SOFTWARE integration plus ordinary literal/reference
+and full custody qualification; then raw older-origin metrics/complete309-role
+primary custody/exact whole-sourceCI/separate registration before fresh science.
+No valid producer/control worker or primary registration exists. Numeric/source
+CI or admission string alone grants no execution. Do not run frozen87v1.
+
+PR297 active86 SOFTWARE CLOSED144original+144replay/52native/full literal/parity/
+exact archives,102complete42deaths32never-active; all48q8cases independently earn
+221 at cut and complete60,0scientific outcomes. PR297finalbb11200/CI38772289201,
+merge5b662522c6551401063e9c9f9bafd2a9c57d8679/mainCI38773094526SUCCESS verified.
+Source86 architecture/priors supplied, local acquired state distinct; no invented/
+evolved intelligence/whole-stage claim. Closed85cold/84FALSE/83NEGATIVE/81scoped
+nominal choiceTRUE but retainedFALSE480vs664/661 and all earlier laws/results/
+costs/reserves immutable; no closed rerun, waiver, refill/rescue or price discount.
+Single bounded writer/pinned sources/full evidence; no persistent activation,
+API/paid service or new schedule. Observer/private histories are not published.
+
+<!-- CREDITED-FALLBACK87-V2-PUBLIC-CURRENT-END -->
+
 # Current development — October15: active-control SOFTWARE closed
 
 This current checkpoint supersedes older next-action instructions below. Useful
