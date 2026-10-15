@@ -1,0 +1,128 @@
+{
+  "verified": true,
+  "whole_controller_admitted": true,
+  "native_calls": 8,
+  "new_worlds": 0,
+  "target_queries": 0,
+  "preworld_refusals": [
+    {
+      "kind": "role",
+      "refused_before_world": true
+    },
+    {
+      "kind": "configuration",
+      "refused_before_world": true
+    },
+    {
+      "kind": "source",
+      "refused_before_world": true
+    },
+    {
+      "kind": "seal",
+      "refused_before_world": true
+    }
+  ],
+  "interpretation_fixture_scope": "Invented numeric fixture only;257-role mock is not257native Worlds",
+  "source_core_reused_by_hash": true,
+  "summary": {
+    "detached_refusals": 20,
+    "new_worlds": 0,
+    "primary_admitted": false,
+    "retained_batches": [
+      {
+        "R": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "arms": 5,
+        "seed": 2140080
+      },
+      {
+        "R": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "arms": 5,
+        "seed": 2140081
+      },
+      {
+        "R": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "arms": 5,
+        "seed": 2140082
+      },
+      {
+        "R": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "arms": 5,
+        "seed": 2140083
+      }
+    ],
+    "target_queries": 0,
+    "tests": 7,
+    "verified": true,
+    "whole_orchestration": "257 MOCK roles, not native Worlds"
+  },
+  "archive_exact": true,
+  "archive_sha256": "8de9e330efd1765e441f2bb7ac5100a5d8231aeb62748b7560a28f5c1938a4fb",
+  "error": null,
+  "pins": {
+    "D:\\OraLab\\tools\\inheritance83_whole_qualification_worker_v1.py": "360acc21e271419bc5255aa38990883fd37ae180e9f20ed9f87b9a91fb21ecf4",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_acceptance.py": "2acbcca557603fff95e2c3355859a267cbd4de7a00ca048bdb066003bc09039c",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_endpoint.py": "2a082905e9db78a024a051a7e28457381a07994013581aafdae0ca5d715597fb",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_fitness.py": "daeb5321fa0fd81c06bf38e01f15b1c30227865bd8fb073e7194dfc10d5fd9e0",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_referee.py": "79d9b0008e44eff814b3e64d1720b49751c26e2179cfe2932918c870f3d63493",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_world.py": "b26df0477432719ca233e43c9728709eee0057284218243d4ef04754b0019977",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_memory80_endpoint.py": "5abff33b8d9818012bece84090d06a3bb0a94f09505620b324abbc353c76090e",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\runs\\inheritance83-acceptance-v1-20261015\\raw\\original\\tests\\test_digital_inheritance83_acceptance.py": "14875b09de989e15633362fbc4f4d7e3b29afe944de1d57b081458a46d9a11a8",
+    "D:\\OraLab\\tools\\inheritance83_primary_entry_v1.py": "2b138b493345396b639d90d20b9f4e1c320c9f80681a6adfa83e4c720d57f5e9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_inheritance83_custody.py": "6e10e99aede455da6fde9e3bdee322e870c5bc70e553b387f43d9450fd04d682",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_inheritance83_primary_child.py": "b5554d4e43a0c733d3c313ec5a529b43ddeba982364edfa66de505c489ad21a2",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_inheritance83_custody.py": "18fd24eddc04dd6938dff9b62040d0f377c932f5be7589a657bc41c4f79eb4c2",
+    "D:\\OraLab\\tools\\qualify_inheritance83_whole_controller_v1.py": "68c3376cc48081c0663e017b5c78aa74e020b6fe3303d1569b10422fd9b390cc",
+    "D:\\OraLab\\tools\\run_inheritance83_primary_v1.py": "8506c93043e3bba7b07329146524c034c9aeecbff96259279f1610223f857e1e",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\inheritance83-whole-controller-qualification-v1-20261015.md": "fac2128993a3fa5d04eaf4b941e289830a4c238461c3c88fb33554a088afedf6",
+    "D:\\OraLab\\reports\\inheritance83-prospective-contract-v1-20261015.md": "1b775f4c32fd97740f4a2741811dfc1748f21de7d3b70ee0de306bd1d6763133",
+    "D:\\OraLab\\reports\\inheritance83-interpretation-admission-addendum-v1-20261015.md": "bc67ab7b5d661e7b39c1955dbc7ae2eede3ab49b78783ec21fbbbe73fc768c64",
+    "D:\\OraLab\\reports\\inheritance83-prepared-v1.json": "b6bf94eef494ce2c85cd8deb26e3ae20db0701687a0beac55c4d098701fd72d8",
+    "D:\\OraLab\\reports\\inheritance83-fitness-v1.json": "618934f08cd1ba557328a23bed766cc95a1e0c6d443294718e2cf957ce6c217a",
+    "D:\\OraLab\\reports\\inheritance83-acceptance-v1.json": "b48932b86b5cb6b560fdfef5dc7f531da4e5f5efd93aa1853b07966b35560cc3",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\data\\original-fresh-2140080.json": "1f5e303c822d5f1b673742138ffce6a0a11693aebf9ed7645ccc1aba2bf96547",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\data\\original-fresh-2140081.json": "2cd4d39d7025dd8a6dea74393ea01c8feac070362b9cd091ed4308e1499ce6c2",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\data\\original-fresh-2140082.json": "80d6ee49abec5ccba3726aaf549b7d38d73bbff7ec8f0014ee84fcef510a4a42",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\data\\original-fresh-2140083.json": "b426b5a12472ee358eab9ff45baf0880e7a9d3d606398993fcb0b7ba7d0008dd"
+  }
+}
