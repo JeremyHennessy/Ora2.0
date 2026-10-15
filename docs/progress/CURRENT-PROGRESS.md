@@ -1,85 +1,101 @@
-# Fallback87v2 CLOSED NEGATIVE — all nine supplied settings
+# Fallback87v2 all-roster retained credit/path/cost diagnosis
 
-October15. All816 original histories and816 independently blank source-restored
-producer replays completed, with full literal physics/control-boundary reconstruction,
-source/config/input/grant/native/file binding and exact archive restoration.
-All309 native roles include four actual pre-World refusals FIRST. All jobs exited,
-operator lock released. No rerun, source/policy/price/criteria/cohort/horizon change
-or reserve use. Source a3a9f4de44eefd23c8d4d43947319e2dd8c8f703 exact CI38795406701
-SUCCESS preceded separate registration and every fresh World.
+October15. Read-only diagnosis of ALL816 CLOSED original histories; zero new
+Worlds, targets, labels, replays or reserve use. The registered negative result
+and all VM/source/prices/task/roster/horizon/criteria remain immutable. This is
+not a new assay, a policy repair or a new physics referee. Old full literal,
+producer-parity and source/config/grant/native custody proofs are reused by hash.
 
-Registered mechanistic paid-choice acceptance FALSE for ALL nine settings.
-Finite-cohort net-energy value FALSE for ALL nine; every bank's actual E loses
-to its specified six-template per-context oracle. All nine paired signs fail1/180.
-All supplied descriptors remain unconditional, including three intact q4 deaths.
-Intact q2/q8 each48/48 finish60; q4 45/48. All144 intact histories have
-141complete/3deaths; all816 originals have793complete/23deaths. Q8 all settings
-retain96/96 actual common active late packet-cue opportunities in each bank.
-Q8 older-personal-use counts25 primary and23/24 unseen across5–6 observed mixed
-contexts are retained as traced uses; failed confirmatory superiority is not
-rescored. Model-only/route-only/binding contrasts are reported diagnostics.
+The stdlib-only worker independently traces actual paid PC7 READ origins, updater
+reload/STORE and semantic-entry credit from all96 retained group bodies. It exactly
+reproduces every existing personal-origin record in all720 learner histories,
+retaining default/recent/older/aliased/wrong/correct/erased/misbound channels.
+All816 actual instruction paths and full versus unfinished loops are counted;
+actual completed costs are fallback5/4/5 and model6/9/6 for success/error/absence.
+No absence occurred in this cohort; deaths and unfinished loops remain counted.
+All144 per-context N/E oracle cost decompositions sum exactly to the separately
+authored frozen all-nine acceptance. N and E can use different reference oracles;
+their decompositions must not be mixed. Efficient references remain unpadded.
 
-| Capacity / supplied entry | N gain primary / unseen | E gain primary / unseen | Joint wins-losses-ties | Exact p |
-|---|---:|---:|---:|---:|
-| 2 / fallback0 | -3461 / -3165 | -666 / -473 | 7-7-2 | 2477/4096 |
-| 2 / model | -3429 / -3184 | -678 / -487 | 7-7-2 | 2477/4096 |
-| 2 / fallback1 | -3459 / -3137 | -722 / -448 | 8-6-2 | 1619/4096 |
-| 4 / fallback0 | -3602 / -3310 | -784 / -567 | 5-7-4 | 1651/2048 |
-| 4 / model | -3556 / -3262 | -753 / -546 | 5-8-3 | 7099/8192 |
-| 4 / fallback1 | -3562 / -3385 | -795 / -567 | 7-5-4 | 793/2048 |
-| 8 / fallback0 | -1237 / -1310 | -504 / -495 | 7-4-5 | 281/1024 |
-| 8 / model | -1149 / -1268 | -504 / -496 | 7-4-5 | 281/1024 |
-| 8 / fallback1 | -1273 / -1390 | -504 / -496 | 10-3-3 | 189/4096 |
+| Supplied setting | Extra correct vs N oracle P/U | Extra CPU P/U | Formation P/U | Penalty delta P/U | N delta P/U | E delta P/U |
+|---|---:|---:|---:|---:|---:|---:|
+| 2 / fallback0 | -75/-69 | 1262/1113 | 399/396 | 300/276 | -3461/-3165 | -666/-473 |
+| 2 / model | -71/-64 | 1326/1252 | 399/396 | 284/256 | -3429/-3184 | -678/-487 |
+| 2 / fallback1 | -73/-64 | 1308/1205 | 399/396 | 292/256 | -3459/-3137 | -722/-448 |
+| 4 / fallback0 | -89/-73 | 1135/1146 | 415/412 | 272/292 | -3602/-3310 | -784/-567 |
+| 4 / model | -78/-66 | 1297/1266 | 415/412 | 284/264 | -3556/-3262 | -753/-546 |
+| 4 / fallback1 | -81/-72 | 1250/1245 | 415/412 | 277/288 | -3562/-3385 | -795/-567 |
+| 8 / fallback0 | 19/11 | 1246/1130 | 447/444 | -76/-44 | -1237/-1310 | -504/-495 |
+| 8 / model | 26/18 | 1326/1256 | 447/444 | -104/-72 | -1149/-1268 | -504/-496 |
+| 8 / fallback1 | 20/12 | 1306/1234 | 447/444 | -80/-48 | -1273/-1390 | -504/-496 |
 
-N=20success−formation−CPU−actual penalty. O=captured−CPU−penalty.
-E=O−formation−actual ONE tick64fee. Whole-life costs and constant contexts are
-included. The six templates are specified efficient references, not an exhaustive
-optimal-policy search. Numeric-component execution_admission=false records that
-arithmetic alone cannot authorize execution; complete external custody is now
-verified independently of the negative numeric result.
+Positive penalty delta means greater penalty cost; negative means savings.
+N delta =20*extra correct −extra formation −extra CPU −extra penalty.
+E delta =extra captured −extra formation −extra CPU −extra penalty −extra fees.
+All51 roles/context and ALL nine supplied settings are retained, not selected.
 
-Original-only CPU269516,served48389,acquisitions33825,
-23deaths/0birth-mutation; captured395073,penalty58240,
-formation56832,fees12960,capheat281427,
-failedpacketheat291280,heat970255,O67317,E-2475.
-Intact O13137/E−63 and all-reference O6473/E2681 are different roster aggregates,
-not a paired superiority estimand; use the complete bank/descriptor oracle table.
-All aliases/deaths/absence/unchanged labels/cap loss and zero-use channels retained.
+All three q8 entries earn more correct choices than their nominal-score oracle
+in each bank (primary19/26/20; unseen11/18/12), but extra CPU and formation exceed
+those nominal rewards and penalty savings. Against the separate E oracle, their
+primary extra captured784/836/840 is outweighed by CPU1263/1343/1323 plusformation453
+minuspenalty savings428/456/432: each ends−504. Unseen E deficits495/496/496
+remain. Smaller capacities have their full alias/failure/cost records retained.
+No general compiler optimum or capacity winner is inferred.
 
-Primary exact archive bb4a2e58a9f9bec93c2ec1fb1958f58cec3fe88631a4707a8fefc6d1c07b2f3f.
-Separate stdlib-only closed census reproduces all816 metric-table physical/resource/
-N/O/E identities and all nine complete-denominator bank/sign criteria, importing
-no VM/source/target/referee/metric/acceptance. It is not an additional raw-physics
-referee or independent personal-origin rederivation. One bounded native read,
-zero new Worlds/targets; archive 17939ca442a1f81879d818e67d26d0d5cf86437131846c9a6b993f8eaa715add.
+The retained-energy endpoint has an additional conditional limit. For any
+complete living source with unchanged cap224/startup112/formation71+q and the
+one tick64 fee16, E<=224−112−(71+q)−16 =23/21/17 for q2/4/8. The observed efficient
+reference E oracle is69–73 in EACH of these16 contexts (bank totals577/581).
+Thus every such complete source is below the observed reference endpoint even
+if its final energy reaches cap. This is a posthoc bound using the actual closed
+reference outcomes, not a universal impossibility theorem or a reason to waive
+criteria/change prices/task/cap. Higher nominal reward/captured/cap heat cannot
+be relabelled as retained net energy. The earlier prospective cap bounds remain
+unchanged; no new target was queried to derive this comparison.
 
-Source qualification V1 failed solely after six successful pure tests because
-its runner expected seven; failed archive f898fe48ecd758c1f08aa513221cc688490641c8ed16668e7cb407176224573c
-retained, zero Worlds. Separately frozen V2 changes only expectedcount6 and gate
-provenance, passes six groups both exports, reuses four actual native refusal
-proofs by exact hashes, zero Worlds/targets. Archive 20697dcd9207c2cbe64cb02eccd4b4a8ad2aea6609d2422deec8f6fa62e103df.
-No failed receipt is relabelled successful.
+Channel credit is narrower than a general warm-memory claim. In q8 independent-
+label contexts, each entry's primary late correct older model uses19 include14
+pre-cut origins and5 acquired during late testing; unseen13/14/14 include7
+pre-cut and6/7/7 post-cut. Late correct older semantic uses6primary/10unseen
+ALL originate after the cut; no pre-cut semantic correct use appears in those
+independent-label strata for q8. Constants are separately retained (including
+pre-cut semantic successes). This is descriptive provenance; it does not amend
+the frozen >=2-served-gap older-use rule or establish control superiority.
+Semantic routes often use feedback earned on another cue; q8's model channel is
+nonaliased, while q2/q4 alias cases remain explicit. A different-cue origin is
+not automatically an implementation defect or a counterfactual error.
 
-The supplied21-triple generic updater/arbiter, all2/4/8 capacities and initial
-entries/default priors are apparatus; labels and semantic routing may be acquired.
-This comparison did not establish registered useful own-history superiority or
-net-energy value. It does not imply general impossibility or evolve an algorithm.
-No inherited selection/general intelligence/whole-stage/life claim.
+One child native read, one bounded parent; child CPU8.84375/peak133816320 bytes,
+parent CPU11.09375/peak161497088/wall19.219s; all jobs exited/lock released.
+New read-only caps: child512MiB60CPU90wall3proc,parent768MiB300CPU600wall4proc,
+raw384/archive400/restore400/failure16=1200MiB+8controller/free1208. These are
+closed read-only limits, not retry authority or production confinement proof.
+Exact all-input/source/native/evidence archive:
+e6371e58eb13592fc4de4d0380e76b504448dc82570cea41580944de79238e46.
+Full raw and first-exception retention guards passed; no failure, new World,
+scientific outcome, stage credit or old-source patch occurred.
 
-Next is read-only all-roster diagnosis of model/fallback credit, errors, personally
-informative older channels and actual path costs against efficient references.
-No next source, law, task, cohort or execution is frozen/admitted; do not expand
-a random bank or insert q8. No new World is required for that diagnosis. Preserve
-all closed86/85/84/83/82/81/older results and reserves1009800/1010000 plus older
-reserves. Birth/pilot is not a universal learning prerequisite.
+Next: review the smallest general credit/source and complete ordinary cost/claim
+feasibility question BEFORE any new source/task/cohort proposal. Any future
+retained-energy criterion needs a cap/formation/reference feasibility check
+before target queries; no endpoint substitution to turn this negative positive.
+No concrete new policy, source, task, seeds, law, metric, budget or admission is
+frozen. Preserve independent blank experience/current truthful feedback/actual
+model and semantic channels/older active common opportunities, all capacities,
+efficient fixed/reactive references/low-high information/unseen conditions and
+full unscreened failures. No teacher/refill/rescue/target genome/price discount,
+sampler gift/winner insertion/random bank expansion/new world overhaul. Birth/
+pilot is not a learning prerequisite; inherited selection remains unverified.
 
-PR301 publication pending exact FINAL-head CI/reviews/current-main recheck and
-postmerge exact main CI. Technical science closure does not imply publication
-verification while required CI is pending. Private Observer/history/UI never pushed;
-AI-Research separately owned. Existing15min development/3h audit/Observer pause
-unchanged; no duplicate schedules, services, paid APIs or outbound chat.
+PR301 closed science publication remains fully verified: final0a39a61/CI38797504259,
+mergec4e2a47aabced09455d1e8fd572e244c1b581cf3/exactmainCI38798322741 SUCCESS.
+New diagnosis publication is pending its own exact-head reviewed CI/current-main
+recheck/merge/postmerge CI; no verified publication claim while pending.
+Private Observer/history/UI NEVER PUSH; separately owned AI-Research untouched.
+Existing15minute development/3hour audit/Observer pause unchanged. All older
+closures/laws/costs/reserves preserved; no evolved/general-intelligence/stage claim.
 
-<!-- CREDITED-FALLBACK87V2-CLOSED-PUBLIC-CURRENT-END -->
+<!-- CREDITED-FALLBACK87V2-DIAGNOSIS-PUBLIC-CURRENT-END -->
 
 # Current development — October15: active-control SOFTWARE closed
 
