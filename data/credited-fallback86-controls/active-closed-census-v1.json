@@ -1,0 +1,8467 @@
+{
+  "scope": "All144 CLOSED original SOFTWARE histories; no intact60/fixed/unseen scientific comparison",
+  "worlds": 0,
+  "targets": 0,
+  "producer_imported": false,
+  "referee_imported": false,
+  "stage_credit": false,
+  "full_acceptance_or_learning_claim": false,
+  "closed_archive": "f858c3d7dab7f22398b613dd8e916ec7642b563bbc1a255b606d4eaed63ddc0e",
+  "inputs": [
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100080-model_erased-generate.json",
+      "extent": 3520812,
+      "sha256": "73a97b9fcc2f14f06691fac18df86c738493c7ea242001fe8f01c58a8658ac9f"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100080-model_misbound-generate.json",
+      "extent": 3520598,
+      "sha256": "712f5ea84ba8872a2bfdb1e16ac42bff1f43ff546607aa371aee3af7666ba803"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100080-fallback_misbound-generate.json",
+      "extent": 3556596,
+      "sha256": "a1eb566279bb03ab72a728e922b44a303be443d1780a9a8ff510d50fc44e841b"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100080-history_disabled-generate.json",
+      "extent": 3439207,
+      "sha256": "b1f660ed2a2425638695333a109a99dcb443c1a469412c7cafb191298b3b786c"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100081-model_erased-generate.json",
+      "extent": 3127215,
+      "sha256": "ceed88ad0fcd56241deab1d6db422d4599e59dacd028f1075b3d0c13484ed9f0"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100081-model_misbound-generate.json",
+      "extent": 3127217,
+      "sha256": "efa75430b74941d7ec5af3390b81b0eb965ce5ddb0b0b7cee253a8f5fd29fcf0"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100081-fallback_misbound-generate.json",
+      "extent": 3269202,
+      "sha256": "c8be3c0e8db5be7c070b343fb5884f04113a500e7051385625af6370778fa7b4"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100081-history_disabled-generate.json",
+      "extent": 3252732,
+      "sha256": "9580565378e85755cd34f47b32491b259d1f41a7c213c1e3db5c524a99881f12"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100082-model_erased-generate.json",
+      "extent": 2969892,
+      "sha256": "68cf53b2b6b8a82fd991084486df643e93aef999dad6c0722b05f085b0a570f6"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100082-model_misbound-generate.json",
+      "extent": 3015175,
+      "sha256": "07fe58e978f6c16900f3d5c5ce84ce89c6a9705b9f7a8b3c755eff23e43c120f"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100082-fallback_misbound-generate.json",
+      "extent": 2987832,
+      "sha256": "c56921e4171c2f3c0a7536619467c74e4dbf1986c1561089640e6f67686a3e70"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100082-history_disabled-generate.json",
+      "extent": 2962493,
+      "sha256": "f5c3da58e7ba8facd9a9c8d8ca79eac5ec7f48cbdfbc5247d1399bb1d20f045c"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100083-model_erased-generate.json",
+      "extent": 2547638,
+      "sha256": "b42fdd69cc6cb1516680e59d538e555b30ac5b564552994c732c502d0b15b81c"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100083-model_misbound-generate.json",
+      "extent": 2554191,
+      "sha256": "23b8287ef5657107727a2a0bce59a4f94c16dbc74ab450875ddcd78de16a47d5"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100083-fallback_misbound-generate.json",
+      "extent": 2535296,
+      "sha256": "d726774fa79aa2419a4b24edf3ff623049e68fce705e78f0fb6dfe8b13ee4593"
+    },
+    {
+      "path": "D:\\OraLab\\runs\\credited-fallback86-active-software-v1-20261015\\raw\\data\\original-2100083-history_disabled-generate.json",
+      "extent": 2513344,
+      "sha256": "c38c9fa4cd802081aa94728f21f7e32f5ce5519e440f9ba5940f28fc3885da00"
+    }
+  ],
+  "rows": [
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 311,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 424,
+      "penalty": 4,
+      "cap_heat": 756,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 11,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 11,
+      "active_entry_changes": 1
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 311,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 424,
+      "penalty": 4,
+      "cap_heat": 756,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 11,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 11,
+      "active_entry_changes": 1
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 311,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 424,
+      "penalty": 4,
+      "cap_heat": 756,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 11,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 11,
+      "active_entry_changes": 1
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 359,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 472,
+      "penalty": 4,
+      "cap_heat": 708,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 335,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 400,
+      "penalty": 52,
+      "cap_heat": 540,
+      "failed_packet_heat": 260,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1276,
+      "living_energy": 125,
+      "constructor_remaining": 55,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 335,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 400,
+      "penalty": 52,
+      "cap_heat": 540,
+      "failed_packet_heat": 260,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1278,
+      "living_energy": 125,
+      "constructor_remaining": 53,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 1,
+          "completed": 48,
+          "previous_pc": 5,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 470,
+      "penalty": 0,
+      "cap_heat": 730,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100080,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 335,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 400,
+      "penalty": 52,
+      "cap_heat": 540,
+      "failed_packet_heat": 260,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1282,
+      "living_energy": 125,
+      "constructor_remaining": 49,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 288
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 304,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 58,
+      "captured": 421,
+      "penalty": 8,
+      "cap_heat": 739,
+      "failed_packet_heat": 40,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 305,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 59,
+      "captured": 418,
+      "penalty": 4,
+      "cap_heat": 762,
+      "failed_packet_heat": 20,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 315,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 55,
+      "captured": 444,
+      "penalty": 20,
+      "cap_heat": 656,
+      "failed_packet_heat": 100,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 9,
+      "operating_surplus": 109,
+      "model_store_instructions": 2,
+      "active_model_reads": 11,
+      "active_entry_changes": 2
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 316,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 56,
+      "captured": 441,
+      "penalty": 16,
+      "cap_heat": 679,
+      "failed_packet_heat": 80,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 9,
+      "operating_surplus": 109,
+      "model_store_instructions": 2,
+      "active_model_reads": 11,
+      "active_entry_changes": 2
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 313,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 55,
+      "captured": 442,
+      "penalty": 20,
+      "cap_heat": 658,
+      "failed_packet_heat": 100,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 7,
+      "operating_surplus": 109,
+      "model_store_instructions": 2,
+      "active_model_reads": 11,
+      "active_entry_changes": 3
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 317,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 455,
+      "penalty": 36,
+      "cap_heat": 565,
+      "failed_packet_heat": 180,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1189,
+      "living_energy": 214,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 5,
+      "operating_surplus": 102,
+      "model_store_instructions": 4,
+      "active_model_reads": 11,
+      "active_entry_changes": 4
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 318,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 52,
+      "captured": 458,
+      "penalty": 32,
+      "cap_heat": 582,
+      "failed_packet_heat": 160,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1183,
+      "living_energy": 220,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 5,
+      "operating_surplus": 108,
+      "model_store_instructions": 4,
+      "active_model_reads": 11,
+      "active_entry_changes": 4
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 315,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 410,
+      "penalty": 36,
+      "cap_heat": 610,
+      "failed_packet_heat": 180,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1232,
+      "living_energy": 171,
+      "constructor_remaining": 53,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 3,
+      "operating_surplus": 59,
+      "model_store_instructions": 4,
+      "active_model_reads": 11,
+      "active_entry_changes": 5
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 321,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 48,
+      "captured": 395,
+      "penalty": 48,
+      "cap_heat": 565,
+      "failed_packet_heat": 240,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1269,
+      "living_energy": 138,
+      "constructor_remaining": 49,
+      "food": 64,
+      "offered": 80,
+      "admitted": 60,
+      "rejected": 20,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 2,
+      "operating_surplus": 26,
+      "model_store_instructions": 6,
+      "active_model_reads": 12,
+      "active_entry_changes": 5
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 320,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 48,
+      "captured": 378,
+      "penalty": 48,
+      "cap_heat": 582,
+      "failed_packet_heat": 240,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1285,
+      "living_energy": 122,
+      "constructor_remaining": 49,
+      "food": 64,
+      "offered": 80,
+      "admitted": 60,
+      "rejected": 20,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 1,
+      "operating_surplus": 10,
+      "model_store_instructions": 6,
+      "active_model_reads": 11,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100081,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 316,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 49,
+      "captured": 370,
+      "penalty": 44,
+      "cap_heat": 610,
+      "failed_packet_heat": 220,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1285,
+      "living_energy": 122,
+      "constructor_remaining": 49,
+      "food": 54,
+      "offered": 64,
+      "admitted": 50,
+      "rejected": 14,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 1,
+      "operating_surplus": 10,
+      "model_store_instructions": 5,
+      "active_model_reads": 11,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 292,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 46,
+      "captured": 361,
+      "penalty": 56,
+      "cap_heat": 559,
+      "failed_packet_heat": 280,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1276,
+      "living_energy": 125,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 353,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 358,
+      "penalty": 52,
+      "cap_heat": 582,
+      "failed_packet_heat": 260,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1336,
+      "living_energy": 65,
+      "constructor_remaining": 55,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 6
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -47,
+      "model_store_instructions": 13,
+      "active_model_reads": 24,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1180,
+      "living_energy": 221,
+      "constructor_remaining": 55,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 292,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 46,
+      "captured": 361,
+      "penalty": 56,
+      "cap_heat": 559,
+      "failed_packet_heat": 280,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1278,
+      "living_energy": 125,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 353,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 358,
+      "penalty": 52,
+      "cap_heat": 582,
+      "failed_packet_heat": 260,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1338,
+      "living_energy": 65,
+      "constructor_remaining": 53,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 6
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -47,
+      "model_store_instructions": 13,
+      "active_model_reads": 24,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1182,
+      "living_energy": 221,
+      "constructor_remaining": 53,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 292,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 46,
+      "captured": 361,
+      "penalty": 56,
+      "cap_heat": 559,
+      "failed_packet_heat": 280,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1282,
+      "living_energy": 125,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 1
+        },
+        "tick": 245
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": 13,
+      "model_store_instructions": 1,
+      "active_model_reads": 0,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 353,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 47,
+      "captured": 358,
+      "penalty": 52,
+      "cap_heat": 582,
+      "failed_packet_heat": 260,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1342,
+      "living_energy": 65,
+      "constructor_remaining": 49,
+      "food": 60,
+      "offered": 80,
+      "admitted": 56,
+      "rejected": 24,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 6
+        },
+        "tick": 246
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -47,
+      "model_store_instructions": 13,
+      "active_model_reads": 24,
+      "active_entry_changes": 12
+    },
+    {
+      "seed": 2100081,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 301,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 60,
+      "captured": 410,
+      "penalty": 0,
+      "cap_heat": 790,
+      "failed_packet_heat": 0,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 55,
+      "offered": 64,
+      "admitted": 51,
+      "rejected": 13,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 16,
+          "completed": 48,
+          "previous_pc": 20,
+          "projected_entry": 16
+        },
+        "tick": 242
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 0,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 345,
+      "decisions": 56,
+      "served": 56,
+      "absence": 0,
+      "acquisitions": 19,
+      "captured": 380,
+      "penalty": 147,
+      "cap_heat": 0,
+      "failed_packet_heat": 740,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1321,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 60,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 55,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 8,
+      "late_correct": 2,
+      "operating_surplus": -112,
+      "model_store_instructions": 18,
+      "active_model_reads": 7,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 318,
+      "decisions": 51,
+      "served": 51,
+      "absence": 0,
+      "acquisitions": 17,
+      "captured": 340,
+      "penalty": 134,
+      "cap_heat": 0,
+      "failed_packet_heat": 680,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1221,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 54,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 50,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 3,
+      "late_correct": 1,
+      "operating_surplus": -112,
+      "model_store_instructions": 17,
+      "active_model_reads": 3,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 345,
+      "decisions": 56,
+      "served": 56,
+      "absence": 0,
+      "acquisitions": 19,
+      "captured": 380,
+      "penalty": 147,
+      "cap_heat": 0,
+      "failed_packet_heat": 740,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1323,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 60,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 55,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 8,
+      "late_correct": 2,
+      "operating_surplus": -112,
+      "model_store_instructions": 18,
+      "active_model_reads": 7,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 128,
+      "decisions": 20,
+      "served": 20,
+      "absence": 0,
+      "acquisitions": 4,
+      "captured": 80,
+      "penalty": 64,
+      "cap_heat": 0,
+      "failed_packet_heat": 320,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 603,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 64,
+      "offered": 32,
+      "admitted": 20,
+      "rejected": 12,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 19,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 112,
+      "decisions": 18,
+      "served": 18,
+      "absence": 0,
+      "acquisitions": 3,
+      "captured": 60,
+      "penalty": 60,
+      "cap_heat": 0,
+      "failed_packet_heat": 300,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 563,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 16,
+      "admitted": 10,
+      "rejected": 6,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 17,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 7,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 367,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 42,
+      "captured": 480,
+      "penalty": 72,
+      "cap_heat": 360,
+      "failed_packet_heat": 360,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1254,
+      "living_energy": 153,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 3,
+      "operating_surplus": 41,
+      "model_store_instructions": 9,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 370,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 43,
+      "captured": 479,
+      "penalty": 68,
+      "cap_heat": 381,
+      "failed_packet_heat": 340,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1254,
+      "living_energy": 153,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 3,
+      "operating_surplus": 41,
+      "model_store_instructions": 9,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 42,
+      "captured": 481,
+      "penalty": 72,
+      "cap_heat": 359,
+      "failed_packet_heat": 360,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1254,
+      "living_energy": 153,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 3,
+      "operating_surplus": 41,
+      "model_store_instructions": 9,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 371,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 25,
+      "captured": 500,
+      "penalty": 140,
+      "cap_heat": 0,
+      "failed_packet_heat": 700,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1300,
+      "living_energy": 101,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 8,
+      "operating_surplus": -11,
+      "model_store_instructions": 17,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 372,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 21,
+      "captured": 420,
+      "penalty": 156,
+      "cap_heat": 0,
+      "failed_packet_heat": 780,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1399,
+      "living_energy": 4,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 4,
+      "operating_surplus": -108,
+      "model_store_instructions": 19,
+      "active_model_reads": 11,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 128,
+      "decisions": 20,
+      "served": 20,
+      "absence": 0,
+      "acquisitions": 4,
+      "captured": 80,
+      "penalty": 64,
+      "cap_heat": 0,
+      "failed_packet_heat": 320,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 603,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 64,
+      "offered": 32,
+      "admitted": 20,
+      "rejected": 12,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 19,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 112,
+      "decisions": 18,
+      "served": 18,
+      "absence": 0,
+      "acquisitions": 3,
+      "captured": 60,
+      "penalty": 60,
+      "cap_heat": 0,
+      "failed_packet_heat": 300,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 563,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 16,
+      "admitted": 10,
+      "rejected": 6,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 17,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 7,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 367,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 39,
+      "captured": 434,
+      "penalty": 84,
+      "cap_heat": 346,
+      "failed_packet_heat": 420,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 370,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 40,
+      "captured": 433,
+      "penalty": 80,
+      "cap_heat": 367,
+      "failed_packet_heat": 400,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 39,
+      "captured": 435,
+      "penalty": 84,
+      "cap_heat": 345,
+      "failed_packet_heat": 420,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 24,
+      "captured": 480,
+      "penalty": 144,
+      "cap_heat": 0,
+      "failed_packet_heat": 720,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1321,
+      "living_energy": 80,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 7,
+      "operating_surplus": -32,
+      "model_store_instructions": 18,
+      "active_model_reads": 7,
+      "active_entry_changes": 8
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 24,
+      "captured": 480,
+      "penalty": 144,
+      "cap_heat": 0,
+      "failed_packet_heat": 720,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1323,
+      "living_energy": 80,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 7,
+      "operating_surplus": -32,
+      "model_store_instructions": 18,
+      "active_model_reads": 7,
+      "active_entry_changes": 8
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 128,
+      "decisions": 20,
+      "served": 20,
+      "absence": 0,
+      "acquisitions": 4,
+      "captured": 80,
+      "penalty": 64,
+      "cap_heat": 0,
+      "failed_packet_heat": 320,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 603,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 64,
+      "offered": 32,
+      "admitted": 20,
+      "rejected": 12,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 19,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 112,
+      "decisions": 18,
+      "served": 18,
+      "absence": 0,
+      "acquisitions": 3,
+      "captured": 60,
+      "penalty": 60,
+      "cap_heat": 0,
+      "failed_packet_heat": 300,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 563,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 16,
+      "admitted": 10,
+      "rejected": 6,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 17,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 7,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 506,
+      "penalty": 36,
+      "cap_heat": 514,
+      "failed_packet_heat": 180,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 364,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 52,
+      "captured": 505,
+      "penalty": 32,
+      "cap_heat": 535,
+      "failed_packet_heat": 160,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 362,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 507,
+      "penalty": 36,
+      "cap_heat": 513,
+      "failed_packet_heat": 180,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 351,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 23,
+      "captured": 460,
+      "penalty": 148,
+      "cap_heat": 0,
+      "failed_packet_heat": 740,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1328,
+      "living_energy": 73,
+      "constructor_remaining": 55,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": -39,
+      "model_store_instructions": 15,
+      "active_model_reads": 0,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 334,
+      "decisions": 53,
+      "served": 53,
+      "absence": 0,
+      "acquisitions": 18,
+      "captured": 360,
+      "penalty": 138,
+      "cap_heat": 0,
+      "failed_packet_heat": 700,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1261,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 62,
+      "offered": 80,
+      "admitted": 51,
+      "rejected": 29,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 52,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 19,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 5,
+      "late_correct": 2,
+      "operating_surplus": -112,
+      "model_store_instructions": 18,
+      "active_model_reads": 7,
+      "active_entry_changes": 2
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 351,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 23,
+      "captured": 460,
+      "penalty": 148,
+      "cap_heat": 0,
+      "failed_packet_heat": 740,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 1330,
+      "living_energy": 73,
+      "constructor_remaining": 53,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 31,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 298
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": -39,
+      "model_store_instructions": 15,
+      "active_model_reads": 0,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 128,
+      "decisions": 20,
+      "served": 20,
+      "absence": 0,
+      "acquisitions": 4,
+      "captured": 80,
+      "penalty": 64,
+      "cap_heat": 0,
+      "failed_packet_heat": 320,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 603,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 64,
+      "offered": 32,
+      "admitted": 20,
+      "rejected": 12,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 19,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 112,
+      "decisions": 18,
+      "served": 18,
+      "absence": 0,
+      "acquisitions": 3,
+      "captured": 60,
+      "penalty": 60,
+      "cap_heat": 0,
+      "failed_packet_heat": 300,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 563,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 56,
+      "offered": 16,
+      "admitted": 10,
+      "rejected": 6,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 17,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 7,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 343,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 45,
+      "captured": 504,
+      "penalty": 60,
+      "cap_heat": 396,
+      "failed_packet_heat": 300,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1194,
+      "living_energy": 213,
+      "constructor_remaining": 49,
+      "food": 59,
+      "offered": 80,
+      "admitted": 55,
+      "rejected": 25,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 101,
+      "model_store_instructions": 4,
+      "active_model_reads": 0,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 382,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 46,
+      "captured": 534,
+      "penalty": 56,
+      "cap_heat": 386,
+      "failed_packet_heat": 280,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1199,
+      "living_energy": 208,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 96,
+      "model_store_instructions": 10,
+      "active_model_reads": 18,
+      "active_entry_changes": 5
+    },
+    {
+      "seed": 2100082,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 344,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 45,
+      "captured": 513,
+      "penalty": 60,
+      "cap_heat": 387,
+      "failed_packet_heat": 300,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 59,
+      "offered": 80,
+      "admitted": 55,
+      "rejected": 25,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 0,
+      "active_entry_changes": 7
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 4,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 69,
+      "decisions": 11,
+      "served": 11,
+      "absence": 0,
+      "acquisitions": 0,
+      "captured": 0,
+      "penalty": 43,
+      "cap_heat": 0,
+      "failed_packet_heat": 220,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 423,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 16,
+      "admitted": 9,
+      "rejected": 7,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 10,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 5,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 366,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 41,
+      "captured": 475,
+      "penalty": 76,
+      "cap_heat": 345,
+      "failed_packet_heat": 380,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1262,
+      "living_energy": 145,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 2,
+      "operating_surplus": 33,
+      "model_store_instructions": 9,
+      "active_model_reads": 11,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 42,
+      "captured": 473,
+      "penalty": 72,
+      "cap_heat": 367,
+      "failed_packet_heat": 360,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1262,
+      "living_energy": 145,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 2,
+      "operating_surplus": 33,
+      "model_store_instructions": 9,
+      "active_model_reads": 11,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_erased",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 365,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 41,
+      "captured": 474,
+      "penalty": 76,
+      "cap_heat": 346,
+      "failed_packet_heat": 380,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1262,
+      "living_energy": 145,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 2,
+      "operating_surplus": 33,
+      "model_store_instructions": 9,
+      "active_model_reads": 11,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 4,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 69,
+      "decisions": 11,
+      "served": 11,
+      "absence": 0,
+      "acquisitions": 0,
+      "captured": 0,
+      "penalty": 43,
+      "cap_heat": 0,
+      "failed_packet_heat": 220,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 423,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 16,
+      "admitted": 9,
+      "rejected": 7,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 10,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 5,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 368,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 39,
+      "captured": 435,
+      "penalty": 84,
+      "cap_heat": 345,
+      "failed_packet_heat": 420,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 370,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 40,
+      "captured": 433,
+      "penalty": 80,
+      "cap_heat": 367,
+      "failed_packet_heat": 400,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "model_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 367,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 39,
+      "captured": 434,
+      "penalty": 84,
+      "cap_heat": 346,
+      "failed_packet_heat": 420,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1312,
+      "living_energy": 95,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 0,
+      "operating_surplus": -17,
+      "model_store_instructions": 10,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 4,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 69,
+      "decisions": 11,
+      "served": 11,
+      "absence": 0,
+      "acquisitions": 0,
+      "captured": 0,
+      "penalty": 43,
+      "cap_heat": 0,
+      "failed_packet_heat": 220,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 423,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 16,
+      "admitted": 9,
+      "rejected": 7,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 10,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 5,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 362,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 507,
+      "penalty": 36,
+      "cap_heat": 513,
+      "failed_packet_heat": 180,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 364,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 52,
+      "captured": 505,
+      "penalty": 32,
+      "cap_heat": 535,
+      "failed_packet_heat": 160,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "fallback_misbound",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 361,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 51,
+      "captured": 506,
+      "penalty": 36,
+      "cap_heat": 514,
+      "failed_packet_heat": 180,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 57,
+      "offered": 80,
+      "admitted": 53,
+      "rejected": 27,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 12,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 12,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "instructions": 304,
+      "decisions": 49,
+      "served": 49,
+      "absence": 0,
+      "acquisitions": 16,
+      "captured": 320,
+      "penalty": 128,
+      "cap_heat": 0,
+      "failed_packet_heat": 660,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 1181,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 56,
+      "offered": 64,
+      "admitted": 41,
+      "rejected": 23,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 48,
+      "complete60": 0,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 3,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 4,
+          "projected_entry": 6
+        },
+        "tick": 302
+      },
+      "late_served": 1,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 16,
+      "active_model_reads": 1,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "instructions": 228,
+      "decisions": 37,
+      "served": 37,
+      "absence": 0,
+      "acquisitions": 11,
+      "captured": 220,
+      "penalty": 104,
+      "cap_heat": 0,
+      "failed_packet_heat": 520,
+      "formation": 73,
+      "world_fees": 16,
+      "heat": 941,
+      "living_energy": 0,
+      "constructor_remaining": 55,
+      "food": 58,
+      "offered": 48,
+      "admitted": 31,
+      "rejected": 17,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 36,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 12,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "instructions": 69,
+      "decisions": 11,
+      "served": 11,
+      "absence": 0,
+      "acquisitions": 0,
+      "captured": 0,
+      "penalty": 43,
+      "cap_heat": 0,
+      "failed_packet_heat": 220,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 423,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 16,
+      "admitted": 9,
+      "rejected": 7,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 10,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 5,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "instructions": 140,
+      "decisions": 23,
+      "served": 23,
+      "absence": 0,
+      "acquisitions": 5,
+      "captured": 100,
+      "penalty": 72,
+      "cap_heat": 0,
+      "failed_packet_heat": 360,
+      "formation": 75,
+      "world_fees": 16,
+      "heat": 663,
+      "living_energy": 0,
+      "constructor_remaining": 53,
+      "food": 62,
+      "offered": 32,
+      "admitted": 21,
+      "rejected": 11,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 1,
+      "completed": 22,
+      "complete60": 0,
+      "never_active": 1,
+      "cut": null,
+      "late_served": 0,
+      "late_correct": 0,
+      "operating_surplus": -112,
+      "model_store_instructions": 8,
+      "active_model_reads": 0,
+      "active_entry_changes": 0
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "instructions": 344,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 45,
+      "captured": 513,
+      "penalty": 60,
+      "cap_heat": 387,
+      "failed_packet_heat": 300,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1186,
+      "living_energy": 221,
+      "constructor_remaining": 49,
+      "food": 59,
+      "offered": 80,
+      "admitted": 55,
+      "rejected": 25,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 1
+        },
+        "tick": 291
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 109,
+      "model_store_instructions": 4,
+      "active_model_reads": 0,
+      "active_entry_changes": 7
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "instructions": 382,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 46,
+      "captured": 536,
+      "penalty": 56,
+      "cap_heat": 384,
+      "failed_packet_heat": 280,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1197,
+      "living_energy": 210,
+      "constructor_remaining": 49,
+      "food": 56,
+      "offered": 80,
+      "admitted": 52,
+      "rejected": 28,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 6
+        },
+        "tick": 293
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 98,
+      "model_store_instructions": 10,
+      "active_model_reads": 18,
+      "active_entry_changes": 6
+    },
+    {
+      "seed": 2100083,
+      "arm": "history_disabled",
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "instructions": 343,
+      "decisions": 60,
+      "served": 60,
+      "absence": 0,
+      "acquisitions": 45,
+      "captured": 504,
+      "penalty": 60,
+      "cap_heat": 396,
+      "failed_packet_heat": 300,
+      "formation": 79,
+      "world_fees": 16,
+      "heat": 1194,
+      "living_energy": 213,
+      "constructor_remaining": 49,
+      "food": 59,
+      "offered": 80,
+      "admitted": 55,
+      "rejected": 25,
+      "births": 0,
+      "mutations": 0,
+      "deaths": 0,
+      "completed": 60,
+      "complete60": 1,
+      "never_active": 0,
+      "cut": {
+        "earned_energy": 221,
+        "entry": {
+          "active": 1,
+          "actual_entry": 6,
+          "completed": 48,
+          "previous_pc": 11,
+          "projected_entry": 16
+        },
+        "tick": 290
+      },
+      "late_served": 12,
+      "late_correct": 6,
+      "operating_surplus": 101,
+      "model_store_instructions": 4,
+      "active_model_reads": 0,
+      "active_entry_changes": 6
+    }
+  ],
+  "totals": {
+    "instructions": 42524,
+    "decisions": 7454,
+    "served": 7454,
+    "absence": 0,
+    "acquisitions": 5671,
+    "captured": 52510,
+    "penalty": 7098,
+    "cap_heat": 60910,
+    "failed_packet_heat": 35660,
+    "formation": 10896,
+    "world_fees": 2304,
+    "heat": 159392,
+    "living_energy": 19016,
+    "constructor_remaining": 7536,
+    "food": 8230,
+    "offered": 9248,
+    "admitted": 6468,
+    "rejected": 2780,
+    "births": 0,
+    "mutations": 0,
+    "deaths": 42,
+    "completed": 7412,
+    "complete60": 102,
+    "never_active": 32,
+    "late_served": 1254,
+    "late_correct": 855,
+    "operating_surplus": 2888,
+    "model_store_instructions": 820,
+    "active_model_reads": 773,
+    "active_entry_changes": 215
+  },
+  "by_capacity": {
+    "2": {
+      "cases": 48,
+      "complete60": 27,
+      "deaths": 21,
+      "never_active": 12,
+      "minimum_earned_cut_energy": 3,
+      "common_active": 82
+    },
+    "4": {
+      "cases": 48,
+      "complete60": 27,
+      "deaths": 21,
+      "never_active": 20,
+      "minimum_earned_cut_energy": 31,
+      "common_active": 80
+    },
+    "8": {
+      "cases": 48,
+      "complete60": 48,
+      "deaths": 0,
+      "never_active": 0,
+      "minimum_earned_cut_energy": 221,
+      "common_active": 144
+    }
+  },
+  "all36_independently_earned_warm_prefixes_physically_equal_across_four_arms": true,
+  "common_active_opportunities": [
+    {
+      "seed": 2100080,
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100080,
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100081,
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "count": 8,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "count": 1,
+      "packet_cues": [
+        [
+          48,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "count": 8,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100082,
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        2,
+        "fallback0"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        2,
+        "model"
+      ],
+      "count": 1,
+      "packet_cues": [
+        [
+          48,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        2,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        4,
+        "fallback0"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        4,
+        "model"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        4,
+        "fallback1"
+      ],
+      "count": 0,
+      "packet_cues": []
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        8,
+        "fallback0"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        8,
+        "model"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    },
+    {
+      "seed": 2100083,
+      "descriptor": [
+        8,
+        "fallback1"
+      ],
+      "count": 12,
+      "packet_cues": [
+        [
+          48,
+          0
+        ],
+        [
+          49,
+          1
+        ],
+        [
+          50,
+          2
+        ],
+        [
+          51,
+          3
+        ],
+        [
+          52,
+          4
+        ],
+        [
+          53,
+          5
+        ],
+        [
+          54,
+          6
+        ],
+        [
+          55,
+          7
+        ],
+        [
+          56,
+          0
+        ],
+        [
+          57,
+          1
+        ],
+        [
+          58,
+          2
+        ],
+        [
+          59,
+          3
+        ]
+      ]
+    }
+  ]
+}
