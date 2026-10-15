@@ -1,64 +1,73 @@
-# Current: FALLBACK87v2 paid SOFTWARE integration CLOSED QUALIFIED
+# Current: FALLBACK87v2 raw origins/native bindings QUALIFIED; primary NOT admitted
 
-October15. Intelligence-first: useful own-experience choices, then actual
-inherited selection. All51 original SOFTWARE histories on authored2100382,
-all9neutral descriptors x5arms plus6efficient references, and51 independent blank
-exact source-restored replays completed22native roles. Four actual preWorld
-role/config/source/seal refusals ran FIRST. Full independent literal physics,
-phase/lease/entry/model READ/updater/reference finalJUMP completion, source-config-
-grant-native-file binding/byte parity/exact archives verified. ZERO scientific
-Worlds/targets or stage credit. Source4f7c42a2d0828d18c81a43e1ae5899d7c3b87807 exactCI38782781622 passed
-BEFORE separate registration/any valid World. All jobs exited/lock absent.
+October15. Intelligence-first: useful own-experience choices, then inherited
+selection. Stdlib-only metrics import no World/source/target/referee/acceptance.
+All51 CLOSED SOFTWARE originals are independently interpreted with18 original/
+literal/restored native receipt chains and649 source/request/native/body archive
+memberships. No old producer or literal rerun, ZERO new Worlds/targets. Actual
+PC7/12 READ origins, paid sensed error/updater/STORE/semantic entry, >=2 served
+ordinal origin gap, alias/bit/current-feedback exclusions and common ACTIVE
+support retained. All9capacity/entry sources and6efficient references/deaths stay.
+N/O/E and full formation/CPU/penalty/one-time release/cap/food/resource accounting
+are separate. This is metric SOFTWARE qualification, not fresh learning/energy
+advantage, inherited selection or whole-stage acceptance.
 
-All51 original denominators retained:27complete60,24energy deaths,14053paidCPU,
-2447served/1223acquisitions/0absence/0birth-mutation,17512captured/4882penalties.
-All15q8 arms reach60; lower-capacity failures/aliases/never-active cuts retained.
-Common active packet/cue support by entriesfallback0/model/fallback1: q2=3/1/0,
-q4=3/0/0,q8=12/12/12. This is SOFTWARE reachability on one authored map, NOT
-fresh useful learning, selected capacity or energetic superiority. Architecture,
-capacities/defaults/updater/arbiter are supplied; acquired state is distinct.
-Archive55cc2d00ec75000ce05b3c41b80b34a433841c8cfde7b6afb256e85f6de7d71c exact.
-Detailed source/native/physics report data/credited-fallback87/v2-paid-software-v1.json;
-small all51 audit-receipt aggregation v2-paid-closure-summary-v1.json is NOT a
-separate raw-physics interpreter. No closed controller rerun/repair/expanded cap,
-shortened warm/horizon/waiver/source promotion/refill/rescue/price discount.
+V1 qualification CLOSED FAILED on incomplete NON-PHYSICS fixture before any old
+corpus body read: missing error=None metadata caused KeyError. Five groups passed;
+raw source/native/failure archivead467f21dc6ebda52a60b4aad4d1b4e655cf9384388a8487a451f35f94739153 retained.
+V1 report's51/18 counts were planned, not qualified counts. V2 corrected ONLY that
+fixture, checked whole AST delta and reused five unchanged groups; one corrected
+group/all51 closed originals/18native chains pass both exact exports/2native.
+Archivecf0e9c10d95ad3537e73683d3f3168d8f9ed7354038795e62ede765edc187fe0 exact. No new World or cap/policy/law repair.
 
-Six new NON-PHYSICS custody checks both exact exports/2native/0Worlds-targets,
-full graph/precharge/failstop/lifetime/input/source archive qualification passed;
-archiveaf39249b3e02c01dcf89b26fe671baaf8f67874fbdd48d8acf4012db3ba31dfd.
-Old source/reader/controls/physics qualification reused by exact hash; old immutable
-test bytes and two later CI-only guards authenticated separately without source
-normalization. PR299 carries software closure; finalhead/postmerge CI must pass
-before a fully verified publication claim. Source CI is not future execution admission.
+Source-only namespace supplement fixes a future metadata mismatch before primary
+implementation: SOFTWARE counts use software_genesis_attempts; scientific bodies
+use scientific_genesis_attempts, both strict integers/full roster. One new mocked
+test/both exports/2native/0Worlds; exact metric/test AST comparison reuses all51
+previous numeric derivations without rereading them. Archive6afa1196b6d1a86ab938f23103b8009b351a4c2aa9628a251d0c4472cb970180.
+No arithmetic/VM/source programme/task/prices/criteria/cohort/reserve changes.
+The namespace fixture is NOT an actual primary producer or execution admission.
 
-NEXT: implement/review/qualify source-free raw personal model AND semantic-route
-origins/native receipt binding and WHOLE309-role primary custody. No such primary
-controller/registration exists; no primary1009700..7/unseen1009900..7 labels queried.
-Reserves1009800..7/1010000..7 forbidden. Frozen v2 laws/source/all9descriptors/
-independent blank48warm+12late/H1024/efficient unpadded minq2references unchanged.
-Nine joint-history common-late-correct signs<=1/180 acrossALL16, constants/ties/
-deaths/zeroopportunities retained; no filtering. Bothbank completion/common>=80/96/
-jointgain>=8/olderuses>=4 across>=3observedmixed contexts/nominalNoracle gain>=16
-remain mandatory. Actual formation-inclusive Eoracle gain>0BOTHbanks additionally
-required for netenergy value; energy FALSE if it fails, even if choice passes.
-No fresh science before full metrics/custody qualification/exactsourceCI/SEPARATE
-prospective registration. No supplied mechanism described as invented/evolved
-architecture; inherited selection still unverified. Birth/pilot not learning gate.
+NEXT: implement/review/qualify the WHOLE309-role primary controller/native worker
+and per-seed/final receipt bindings under the frozen87v2 contract. Reuse these
+exact metric/binder/source/literal/numeric components by qualified hash, with mixed
+old/new source scopes explicit. Source-only counts/mock roles never admit science.
+No primary controller/registration exists; no primary1009700..7/unseen1009900..7
+mask queried. Reserves1009800..7/1010000..7 forbidden. All16 x51=816 originals+
+816 independent blank source-restored replays if fully admitted,309native roles:
+96original+96literal+96replay+16perseed metrics+final+4actual preWorld refusalsFIRST.
+Full precharge/role/config/source/seal/foreign-SOFTWARE-reserve guards, input/native/
+source/file identity/canonical/extent/cleanup/full physics/parity/exact archives,
+exact NEW whole-sourceCI and SEPARATE registration required BEFORE fresh contexts.
+Child512MiB60CPU90wall3proc,parent768MiB2400CPU3600wall4proc;
+raw14336/archive15360/restore15360/failure1024MiB total46080+8/free46088 unchanged,
+not fit promises. Any failure stops separately incomplete; never larger retry,
+shorter horizon/waiver/partial selection or opening reserves. No new world overhaul.
 
-V1 scientific/paid contracts remain CLOSED BEFORE RUN/0Worlds-targets: forced
-constant losses made old required2517/65536>1/900 sign family impossible; fee16
-occurs ONLYtick64. Separate v2 was frozen before targets, same unqueried roster/
-LABELS-v1 domain/constants/ordinary prices. No old result rescoring or alpha rise.
-PR298 source/numeric publication fully verified. Active86/ordinary86/85cold/
-84fullFALSE/83selectionNEGATIVE/81scoped nominalchoiceTRUE but retainedFALSE
-480vs664/661 and all earlier laws/results/costs/reserves immutable. No old rerun,
-winning q8 insertion/new bank/world overhaul/teacher/target genome/sampler gift.
-One bounded writer/exclusive lock/full finite native/precharge/raw/native/failed/
-accounting/literal/parity/separate interpretation/exact source-evidence restoration.
-Observer/private history/UI/AI-Research ownership preserved; no private push,
-activation or outbound chat. Existing15minute development/3hour audit/Observerpause
-unchanged; no duplicate schedule. No general intelligence/whole-stage/life claims.
-<!-- CREDITED-FALLBACK87V2-PAID-PUBLIC-CURRENT-END -->
+All9supplied21-triple q2/4/8 x initialentry sources/five real older-history arms/
+six unpadded minimumq2references/ordinary VM costs/startup112/cap224/factory256/
+material512/48FULLwarm+12FULLlate/H1024/blank own experience remain frozen. Nine
+joint-history signs<=1/180 acrossALL16 with constants/ties/deaths/zeroopportunities;
+eachbank all8intactfinish60/common>=80/96/jointgain>=8/olderuses>=4across>=3observed
+mixed contexts/whole-life Noracle gain>=16 INCLUDING constants/deaths/costs.
+Netenergy additionally needs positive Eoracle BOTHbanks; FALSE if it fails even
+with nominal choice gain. No copiedwarm outcomes/teacher/refill/rescue/price
+discount/sampler gift/target genome/winning capacity or random-bank expansion.
+Architecture supplied, acquired model/routing state distinct; birth/pilot not a
+learning gate. No invented/evolved/general intelligence or whole-stage claim.
+
+Paid87v2 CLOSED102SOFTWAREgeneses/22native/51originals27finish60/24deaths;
+PR299 final678d49c/CI38784162298 merge3d385a5/mainCI38784946220 SUCCESS verified.
+Archive55cc2d00ec75000ce05b3c41b80b34a433841c8cfde7b6afb256e85f6de7d71c.
+V1 scientific/paid contracts CLOSED BEFORE RUN/0Worlds-targets/impossible oldsign
+2517/65536>1/900. V2 frozen before targets, same unqueried roster/LABELS-v1 domain
+and constants, no outcome rescoring. Prior86/85cold/84FALSE/83selectionNEGATIVE/
+81scoped nominalchoiceTRUE but retainedFALSE480vs664/661/all older laws/results/
+costs/reserves immutable. Never rerun closed controllers or promote q8.
+Private Observer/history/UI/AI-Research ownership preserved, no private push,
+activation/outbound chat or new schedules. Existing15minute/3hour audit/pause
+unchanged; full finite native/output budgets/exclusive one-writer lock required.
+<!-- CREDITED-FALLBACK87V2-ORIGIN-PUBLIC-CURRENT-END -->
 
 # Current development — October15: active-control SOFTWARE closed
 
