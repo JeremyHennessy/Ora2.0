@@ -1,0 +1,76 @@
+{
+  "software_only": true,
+  "scientific_worlds": 0,
+  "stage_credit": false,
+  "literal": {
+    "verified": true,
+    "scientific_worlds": 0,
+    "native_calls": 2,
+    "archive_exact": true,
+    "archive_sha256": "2400a6785382ced7d00a8df41764bc4339bb6122528a136e3c4170634b20d488",
+    "full_population_referee": true,
+    "error": null,
+    "summary": {
+      "admitted": 98,
+      "births": 3,
+      "deaths": 1,
+      "final_state_sha256": "34a1abd2a9f015825cf21311fc7928404d0f31abc256ccf1aa4d7783b92f1a34",
+      "forgery_rejections": [
+        "lease",
+        "target",
+        "copy_charge",
+        "sampler",
+        "inflow",
+        "blank_child",
+        "death",
+        "ancestry",
+        "material",
+        "truncation",
+        "scalar_type"
+      ],
+      "heat": 2001,
+      "living_energy": 154,
+      "offered": 256,
+      "producer_imported": false,
+      "rejected": 158,
+      "scientific_worlds": 0,
+      "scope": "Complete retained ordinary population trace; software only. Forced-stream and boundary corpus qualification remains separate.",
+      "ticks": 1024,
+      "verified": true
+    }
+  },
+  "prepared": {
+    "passed": true,
+    "checks": 6,
+    "scientific_worlds": 0,
+    "scientific_targets": 0,
+    "source_archive_exact_readback": true,
+    "results": [
+      {
+        "verified": true,
+        "checks": 6,
+        "scientific_worlds": 0,
+        "scientific_targets": 0,
+        "counts": {
+          "prepared_objects": 18,
+          "scientific_worlds": 0,
+          "refused_nonfixture": 0
+        },
+        "stage_credit": false
+      },
+      {
+        "verified": true,
+        "checks": 6,
+        "scientific_worlds": 0,
+        "scientific_targets": 0,
+        "counts": {
+          "prepared_objects": 18,
+          "scientific_worlds": 0,
+          "refused_nonfixture": 0
+        },
+        "stage_credit": false
+      }
+    ],
+    "error": null
+  }
+}
