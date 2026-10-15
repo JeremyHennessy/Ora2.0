@@ -1,0 +1,100 @@
+{
+  "scientific_worlds": 0,
+  "stage_credit": false,
+  "literal": {
+    "verified": true,
+    "scientific_worlds": 0,
+    "native_calls": 2,
+    "archive_exact": true,
+    "archive_sha256": "e3d9b3f0ab4cce372411b3cccb0ce6f059d00e44d903108481612217c2a2d1f0",
+    "full_population_referee": true,
+    "error": null,
+    "summary": {
+      "admitted": 98,
+      "births": 3,
+      "deaths": 1,
+      "final_state_sha256": "34a1abd2a9f015825cf21311fc7928404d0f31abc256ccf1aa4d7783b92f1a34",
+      "forgery_rejections": [
+        "lease",
+        "target",
+        "copy_charge",
+        "sampler",
+        "inflow",
+        "blank_child",
+        "death",
+        "ancestry",
+        "material",
+        "truncation",
+        "scalar_type"
+      ],
+      "heat": 2001,
+      "living_energy": 154,
+      "offered": 256,
+      "producer_imported": false,
+      "rejected": 158,
+      "scientific_worlds": 0,
+      "scope": "Complete retained ordinary population trace; software only. Forced-stream and boundary corpus qualification remains separate.",
+      "ticks": 1024,
+      "verified": true
+    }
+  },
+  "assisted": {
+    "verified": true,
+    "scientific_worlds": 0,
+    "native_calls": 2,
+    "archive_exact": true,
+    "archive_sha256": "fcc47cb6e04d8d01587b057c5a5d64512ad703562e60a8414f0aae637dbaf531",
+    "full_population_referee": true,
+    "error": null,
+    "summary": {
+      "checks": 5,
+      "counts": {
+        "prepared_objects": 5,
+        "scientific_worlds": 0
+      },
+      "scientific_targets": 0,
+      "scientific_worlds": 0,
+      "stage_credit": false,
+      "supplied_draws": true,
+      "verified": true,
+      "dispatches": 1820,
+      "fixtures": [
+        {
+          "assistance": "gate0-reject8",
+          "mode": "variation",
+          "ticks": 256,
+          "births": 0,
+          "deaths": 0
+        },
+        {
+          "assistance": "gate0-reject1-then8",
+          "mode": "inheritance_disabled",
+          "ticks": 512,
+          "births": 1,
+          "deaths": 0
+        },
+        {
+          "assistance": "gate0-reject1-then8",
+          "mode": "no_variation",
+          "ticks": 512,
+          "births": 1,
+          "deaths": 0
+        },
+        {
+          "assistance": "gate0-reject1-then8",
+          "mode": "variation",
+          "ticks": 512,
+          "births": 1,
+          "deaths": 0
+        },
+        {
+          "assistance": "gate7",
+          "mode": "no_variation",
+          "ticks": 28,
+          "births": 0,
+          "deaths": 1
+        }
+      ]
+    }
+  }
+}

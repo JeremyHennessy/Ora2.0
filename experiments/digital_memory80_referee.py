@@ -15,12 +15,15 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
 
 
-def audit(state, *, seed, mode, max_population, expansion_tick, program, horizon):
+def audit(state, *, seed, mode, max_population, expansion_tick, program, horizon,
+          software_assistance=None):
     assert type(seed) is int and seed in (2100080, 2100081, 2100082, 2100083)
     assert mode in ('variation', 'no_variation', 'inheritance_disabled')
     assert type(max_population) is int and max_population in (1, 8)
     assert type(expansion_tick) is int and expansion_tick in (0, 1536)
     assert type(horizon) is int and 0 <= horizon <= 16384
+    assert software_assistance is None or type(software_assistance) is str and software_assistance in (
+        'gate0-reject8','gate0-reject1-then8','gate7')
     assert type(program) is list and 1 <= len(program) <= 32
     assert all(type(t) is list and len(t) == 3 and t[0] in (0,1,2,3,4,5,6,7,8,10,12,18,19,20,21)
                and all(type(v) is int and 0 <= v < 32 for v in t) for t in program)
@@ -111,6 +114,12 @@ def audit(state, *, seed, mode, max_population, expansion_tick, program, horizon
             event['kind']='sampler_draw'; pending=e['pending'];stage=pending['stage'];pending['draws']+=1
             key=[seed,'capacity-sampler',e['lineage'],pending['session'],stage,pending['draws']]
             raw=int(digest(key)[:8],16)&(7 if stage=='gate' else 3)
+            # Named, prospectively registered software witnesses only. The
+            # default never trusts receipt-provided draws or host callbacks.
+            if software_assistance=='gate7': raw=7 if stage=='gate' else 3
+            elif software_assistance=='gate0-reject8': raw=0 if stage=='gate' else 3
+            elif software_assistance=='gate0-reject1-then8':
+                raw=0 if stage=='gate' else (3 if pending['allele_draws']==0 else 2)
             event['draw']=dict(stage=stage,value=raw,key=digest(key),ordinal=pending['draws'])
             allele=None;abort=False
             if stage=='gate':
@@ -194,7 +203,9 @@ def audit(state, *, seed, mode, max_population, expansion_tick, program, horizon
         assert event==receipt, 'Literal transition mismatch at dispatch '+str(s['tick'])
     assert s['tick']==horizon or not s['entities'], 'Premature trace truncation'
     assert dict(s,events=events)==state, 'Final population mismatch'
-    return dict(verified=True,scientific_worlds=0,ticks=s['tick'],births=s['births'],deaths=s['deaths'],
+    result=dict(verified=True,scientific_worlds=0,ticks=s['tick'],births=s['births'],deaths=s['deaths'],
                 offered=s['offered'],admitted=s['admitted'],rejected=s['rejected'],heat=s['heat'],
                 living_energy=sum(e['energy'] for e in s['entities'].values()),
                 final_state_sha256=digest(s))
+    if software_assistance is not None: result['software_assistance']=software_assistance
+    return result
