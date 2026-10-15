@@ -1,0 +1,468 @@
+{
+  "verified": true,
+  "native_calls": 2,
+  "new_worlds": 0,
+  "scientific_targets": 0,
+  "archive_exact": true,
+  "archive_sha256": "687059ba22b74194551a1899cee5a02cccbafd6ac92ad6cfcf0da628005d9553",
+  "error": null,
+  "summary": {
+    "all12_metrics": [
+      {
+        "R": 7,
+        "S_denominator": 2,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 2,
+        "births": 11,
+        "captured": 19022,
+        "changed_functional_children": [],
+        "deaths": 4,
+        "gate0_episodes": 2,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10758,
+          "copied_words": 651,
+          "cpu": 16384,
+          "death_dissipation": 869,
+          "failed_packets": 0,
+          "initial_formation": 61,
+          "state_formation": 110,
+          "world_release": 16,
+          "wrong_penalties": 0
+        },
+        "mode": "inheritance_disabled",
+        "paid_actor_cost": 18036,
+        "proposal_counts": {
+          "2": 1,
+          "4": 0,
+          "8": 1
+        },
+        "retained_operating_surplus": 986,
+        "seed": 2100080
+      },
+      {
+        "R": 7,
+        "S_denominator": 2,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 2,
+        "births": 11,
+        "captured": 19022,
+        "changed_functional_children": [],
+        "deaths": 4,
+        "gate0_episodes": 2,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10758,
+          "copied_words": 651,
+          "cpu": 16384,
+          "death_dissipation": 869,
+          "failed_packets": 0,
+          "initial_formation": 61,
+          "state_formation": 110,
+          "world_release": 16,
+          "wrong_penalties": 0
+        },
+        "mode": "no_variation",
+        "paid_actor_cost": 18036,
+        "proposal_counts": {
+          "2": 1,
+          "4": 0,
+          "8": 1
+        },
+        "retained_operating_surplus": 986,
+        "seed": 2100080
+      },
+      {
+        "R": 7,
+        "S_denominator": 2,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 2,
+        "births": 11,
+        "captured": 19022,
+        "changed_functional_children": [],
+        "deaths": 4,
+        "gate0_episodes": 2,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10758,
+          "copied_words": 651,
+          "cpu": 16384,
+          "death_dissipation": 869,
+          "failed_packets": 0,
+          "initial_formation": 61,
+          "state_formation": 110,
+          "world_release": 16,
+          "wrong_penalties": 0
+        },
+        "mode": "variation",
+        "paid_actor_cost": 18036,
+        "proposal_counts": {
+          "2": 1,
+          "4": 0,
+          "8": 1
+        },
+        "retained_operating_surplus": 986,
+        "seed": 2100080
+      },
+      {
+        "R": 7,
+        "S_denominator": 4,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 4,
+        "births": 11,
+        "captured": 18994,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 4,
+        "gate0_episodes": 4,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10366,
+          "copied_words": 654,
+          "cpu": 16384,
+          "death_dissipation": 865,
+          "failed_packets": 480,
+          "initial_formation": 61,
+          "state_formation": 116,
+          "world_release": 16,
+          "wrong_penalties": 96
+        },
+        "mode": "inheritance_disabled",
+        "paid_actor_cost": 18137,
+        "proposal_counts": {
+          "2": 1,
+          "4": 3,
+          "8": 0
+        },
+        "retained_operating_surplus": 857,
+        "seed": 2100081
+      },
+      {
+        "R": 7,
+        "S_denominator": 3,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 3,
+        "births": 11,
+        "captured": 19007,
+        "changed_functional_children": [],
+        "deaths": 4,
+        "gate0_episodes": 3,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10373,
+          "copied_words": 666,
+          "cpu": 16384,
+          "death_dissipation": 865,
+          "failed_packets": 480,
+          "initial_formation": 61,
+          "state_formation": 110,
+          "world_release": 16,
+          "wrong_penalties": 96
+        },
+        "mode": "no_variation",
+        "paid_actor_cost": 18143,
+        "proposal_counts": {
+          "2": 1,
+          "4": 2,
+          "8": 0
+        },
+        "retained_operating_surplus": 864,
+        "seed": 2100081
+      },
+      {
+        "R": 7,
+        "S_denominator": 4,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 4,
+        "births": 11,
+        "captured": 19010,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 4,
+        "gate0_episodes": 4,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 10290,
+          "copied_words": 657,
+          "cpu": 16384,
+          "death_dissipation": 875,
+          "failed_packets": 580,
+          "initial_formation": 61,
+          "state_formation": 116,
+          "world_release": 16,
+          "wrong_penalties": 116
+        },
+        "mode": "variation",
+        "paid_actor_cost": 18170,
+        "proposal_counts": {
+          "2": 1,
+          "4": 3,
+          "8": 0
+        },
+        "retained_operating_surplus": 840,
+        "seed": 2100081
+      },
+      {
+        "R": 4,
+        "S_denominator": 4,
+        "S_numerator": 3,
+        "accepted_uniform_proposals": 4,
+        "births": 8,
+        "captured": 8140,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 9,
+        "gate0_episodes": 4,
+        "heat": {
+          "birth_release": 16,
+          "cap_losses": 40,
+          "copied_words": 624,
+          "cpu": 6593,
+          "death_dissipation": 0,
+          "failed_packets": 4620,
+          "initial_formation": 61,
+          "state_formation": 98,
+          "world_release": 16,
+          "wrong_penalties": 921
+        },
+        "mode": "inheritance_disabled",
+        "paid_actor_cost": 8252,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 1
+        },
+        "retained_operating_surplus": -112,
+        "seed": 2100082
+      },
+      {
+        "R": 6,
+        "S_denominator": 4,
+        "S_numerator": 0,
+        "accepted_uniform_proposals": 4,
+        "births": 11,
+        "captured": 18101,
+        "changed_functional_children": [],
+        "deaths": 12,
+        "gate0_episodes": 4,
+        "heat": {
+          "birth_release": 22,
+          "cap_losses": 19,
+          "copied_words": 918,
+          "cpu": 14860,
+          "death_dissipation": 135,
+          "failed_packets": 10840,
+          "initial_formation": 61,
+          "state_formation": 110,
+          "world_release": 16,
+          "wrong_penalties": 2168
+        },
+        "mode": "no_variation",
+        "paid_actor_cost": 18213,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 1
+        },
+        "retained_operating_surplus": -112,
+        "seed": 2100082
+      },
+      {
+        "R": 6,
+        "S_denominator": 5,
+        "S_numerator": 3,
+        "accepted_uniform_proposals": 5,
+        "births": 16,
+        "captured": 20332,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 12,
+        "gate0_episodes": 5,
+        "heat": {
+          "birth_release": 32,
+          "cap_losses": 2688,
+          "copied_words": 1110,
+          "cpu": 16384,
+          "death_dissipation": 526,
+          "failed_packets": 8240,
+          "initial_formation": 61,
+          "state_formation": 214,
+          "world_release": 16,
+          "wrong_penalties": 1642
+        },
+        "mode": "variation",
+        "paid_actor_cost": 19908,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 2
+        },
+        "retained_operating_surplus": 424,
+        "seed": 2100082
+      },
+      {
+        "R": 3,
+        "S_denominator": 3,
+        "S_numerator": -3,
+        "accepted_uniform_proposals": 3,
+        "births": 7,
+        "captured": 7140,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 8,
+        "gate0_episodes": 3,
+        "heat": {
+          "birth_release": 14,
+          "cap_losses": 0,
+          "copied_words": 507,
+          "cpu": 5823,
+          "death_dissipation": 0,
+          "failed_packets": 4220,
+          "initial_formation": 61,
+          "state_formation": 74,
+          "world_release": 16,
+          "wrong_penalties": 834
+        },
+        "mode": "inheritance_disabled",
+        "paid_actor_cost": 7252,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 0
+        },
+        "retained_operating_surplus": -112,
+        "seed": 2100083
+      },
+      {
+        "R": 3,
+        "S_denominator": 3,
+        "S_numerator": -3,
+        "accepted_uniform_proposals": 3,
+        "births": 7,
+        "captured": 8640,
+        "changed_functional_children": [],
+        "deaths": 8,
+        "gate0_episodes": 3,
+        "heat": {
+          "birth_release": 14,
+          "cap_losses": 0,
+          "copied_words": 621,
+          "cpu": 7035,
+          "death_dissipation": 0,
+          "failed_packets": 5060,
+          "initial_formation": 61,
+          "state_formation": 70,
+          "world_release": 16,
+          "wrong_penalties": 1012
+        },
+        "mode": "no_variation",
+        "paid_actor_cost": 8752,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 0
+        },
+        "retained_operating_surplus": -112,
+        "seed": 2100083
+      },
+      {
+        "R": 4,
+        "S_denominator": 4,
+        "S_numerator": -3,
+        "accepted_uniform_proposals": 4,
+        "births": 10,
+        "captured": 14162,
+        "changed_functional_children": [
+          3
+        ],
+        "deaths": 11,
+        "gate0_episodes": 4,
+        "heat": {
+          "birth_release": 20,
+          "cap_losses": 18,
+          "copied_words": 762,
+          "cpu": 11665,
+          "death_dissipation": 16,
+          "failed_packets": 8560,
+          "initial_formation": 61,
+          "state_formation": 106,
+          "world_release": 16,
+          "wrong_penalties": 1705
+        },
+        "mode": "variation",
+        "paid_actor_cost": 14274,
+        "proposal_counts": {
+          "2": 2,
+          "4": 1,
+          "8": 1
+        },
+        "retained_operating_surplus": -112,
+        "seed": 2100083
+      }
+    ],
+    "binding_refusals": 12,
+    "new_worlds": 0,
+    "scientific_targets": 0,
+    "scope": "Closed software metrics/linkage/whole accounting only; no scientific selection inference",
+    "verified": true
+  },
+  "pins": {
+    "D:\\OraLab\\tools\\inheritance83_fitness_closed_worker_v1.py": "828bc87112dde5a8cc80aa2eabd5d597c8031a4125774b44ea0977ac97a157e0",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_endpoint.py": "2a082905e9db78a024a051a7e28457381a07994013581aafdae0ca5d715597fb",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_referee.py": "79d9b0008e44eff814b3e64d1720b49751c26e2179cfe2932918c870f3d63493",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_world.py": "b26df0477432719ca233e43c9728709eee0057284218243d4ef04754b0019977",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_memory80_endpoint.py": "5abff33b8d9818012bece84090d06a3bb0a94f09505620b324abbc353c76090e",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\original\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_inheritance83_fitness.py": "daeb5321fa0fd81c06bf38e01f15b1c30227865bd8fb073e7194dfc10d5fd9e0",
+    "D:\\OraLab\\tools\\qualify_inheritance83_fitness_v1.py": "3a29b315871cf191a7d744c9f51e320a956a4c107c37e41751a4e4ffc72c71d3",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\inheritance83-prospective-contract-v1-20261015.md": "1b775f4c32fd97740f4a2741811dfc1748f21de7d3b70ee0de306bd1d6763133",
+    "D:\\OraLab\\reports\\inheritance83-fitness-qualification-v1-20261015.md": "b73f63815785197119481f0742462608a00afaa4ea29af6af293ae55731e4800",
+    "D:\\OraLab\\reports\\inheritance83-prepared-v1.json": "b6bf94eef494ce2c85cd8deb26e3ae20db0701687a0beac55c4d098701fd72d8",
+    "D:\\OraLab\\reports\\inheritance82-remaining-v1.json": "6ce8b05cf6a8fd43f4081bf5cc6c12283a30e431512414e6d912bc448ed2cd07",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-inheritance_disabled-proof.json": "77aa53802171d14e550020f8ca87d44a371943a71c423d4a84614299aa96c981",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-inheritance_disabled-record.json": "53e161a060f13a2ab6417eff7ec0fa77d878b06e8737ce323f4fc023531a100f",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-no_variation-proof.json": "436fe705ce5a0bf879165359d538e1d462b48f9c425c0a4160cffb339b5cbfaa",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-no_variation-record.json": "1b5e9b9eb557cf758b93ca681a45d482778b7ce332141f8b8cbc8404de596874",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-variation-proof.json": "94c8981cdbf444e45847c6c6c3c98f0a9bd9b20c52067f64c54e5eb880ff12e8",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100080-variation-record.json": "f1179498f9bbab932579f8ff5980d4fe83b68e4d8ed116e1fd0731fbb9932dc2",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-inheritance_disabled-proof.json": "633234fd285d4f1334dca5fd02b443f87d1bc3631d1e415c82a0db8be5d554a7",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-inheritance_disabled-record.json": "2bfa36ecf18139c5ff8922506a541ce5dfc5b2d9b7e14e6e79c7323cb870530c",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-no_variation-proof.json": "e2f23cde59a273f0ac97949628d828c6bb57aa01e2f7c9c4c461670d595ba091",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-no_variation-record.json": "317951e4cbf265df8d0a05477e60d667ffc4e195faea4f3b59e5327d5d20f926",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-variation-proof.json": "7edb8a25f44d88aaca52e4b3dec59d3540c7ca526ea78656d3d75635979c6e38",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100081-variation-record.json": "4ea03638e34e736922748fca748f0ff3d8db6da74748227fcc8c2f83c6e25076",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-inheritance_disabled-proof.json": "069ad925a97f9204b7ea6d1de05bcccf10b4fb6c67549131b2669e2dbaecea95",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-inheritance_disabled-record.json": "cb12658e6c0cbcc5c29a1ec242007af58fbf65ee9ba4761aff24ee32232e2c68",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-no_variation-proof.json": "57335bb6a3646a7c6b53913d24e95953e451cb7e08030af8b237bdda4a50f689",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-no_variation-record.json": "9b9e43a7e1457ff3eac0b8e9428f424cd197ef8b7900dc85467959f8c4407332",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-variation-proof.json": "6438853601f452406131c8a20cbd00e776996913032ae6c0b256da3cff96efbe",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100082-variation-record.json": "04f420e651be63b3267578b321660113df84f0c0bd2326904cc08362968c18a9",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-inheritance_disabled-proof.json": "3af28a6d2c7d69430d96a4c01572aa01562e7d4bfcbdc791af34d7098c020604",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-inheritance_disabled-record.json": "1841422b30954c4a112da28a91e4aa564243ec46cfdd6ace22349be10f758c5a",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-no_variation-proof.json": "51b1e26b18a56081979e876689893dd5f9b9c101ea8cfef925ba8bc2f434975d",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-no_variation-record.json": "74b23f5246f2ebac30bf8dbe2257e3320745dbf239135cc2280c310962aa80d4",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-variation-proof.json": "4fd44df9035342af37dc354077761bf472d35dd882b901064a9175566a8bee7b",
+    "D:\\OraLab\\runs\\inheritance83-prepared-v1-20261015\\raw\\cached\\2100083-variation-record.json": "cc87fb9db2d219ccd5e04d7d7cfc1173294d57939df8c9535d0ac2ebc98ec866"
+  }
+}
