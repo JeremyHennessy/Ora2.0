@@ -65,12 +65,25 @@ def batch_metrics(seed, rows):
     """Consume one bound state/proof pair at a time; never hold five histories."""
     from experiments.digital_inheritance83_fitness import metrics
     values = []
-    for mode, pair in zip(MODES, rows, strict=True):
-        state, proof = pair
+    iterator = iter(rows)
+    for mode in MODES:
+        # zip caches its last result tuple while requesting the next input.
+        # Unpack directly and release before resuming the reader generator.
+        state, proof = next(iterator)
         assert state['seed'] == seed and state['mode'] == mode
-        values.append(metrics(state, proof))
-        del pair, state, proof
+        value = metrics(state, proof)
+        # JSON child IDs must sort as the strings the guarded receiver will read.
+        # Numeric endpoint values and the qualified metric producer stay intact.
+        value['post_expansion_served'] = {str(k): v for k, v in value['post_expansion_served'].items()}
+        values.append(value)
+        del state, proof
         gc.collect()
+    try:
+        next(iterator)
+    except StopIteration:
+        pass
+    else:
+        raise AssertionError('extra metric history')
     assert len(values) == 5
     return dict(seed=seed, metrics=values)
 

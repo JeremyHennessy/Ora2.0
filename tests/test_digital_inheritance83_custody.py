@@ -118,5 +118,43 @@ class Custody(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError,'configuration'):child.role_parts(req)
         self.assertEqual(before,'experiments.digital_inheritance83_world' in __import__('sys').modules)
 
+    def test_batch_releases_previous_payload_before_next_read(self):
+        import gc
+        import weakref
+        class Payload: pass
+        def inputs():
+            for mode in c.MODES:
+                state=dict(seed=0,mode=mode,payload=Payload())
+                reference=weakref.ref(state['payload'])
+                yield state,{}
+                del state
+                gc.collect()
+                assert reference() is None,'previous full history retained before next read'
+        def tiny_metric(state,proof):return dict(seed=state['seed'],mode=state['mode'],post_expansion_served={})
+        def retained_old_zip_pattern(rows):
+            values=[]
+            for mode,pair in zip(c.MODES,rows,strict=True):
+                state,proof=pair;values.append(tiny_metric(state,proof))
+                del pair,state,proof
+                gc.collect()
+            return values
+        with self.assertRaisesRegex(AssertionError,'previous full history retained'):
+            retained_old_zip_pattern(inputs())
+        with patch('experiments.digital_inheritance83_fitness.metrics',tiny_metric):
+            result=child.batch_metrics(0,inputs())
+            self.assertEqual([m['mode'] for m in result['metrics']],list(c.MODES))
+            with self.assertRaises(StopIteration):child.batch_metrics(0,iter([]))
+
+    def test_batch_child_key_table_has_guarded_canonical_round_trip(self):
+        old=dict(post_expansion_served={1:3,2:4,10:5,11:6})
+        raw=c.canonical(old)
+        self.assertNotEqual(raw,c.canonical(json.loads(raw)))
+        rows=[(dict(seed=0,mode=m),{}) for m in c.MODES]
+        with patch('experiments.digital_inheritance83_fitness.metrics',lambda s,p:copy.deepcopy(old)):
+            fixed=child.batch_metrics(0,iter(rows))
+        encoded=c.canonical(fixed)
+        self.assertEqual(encoded,c.canonical(json.loads(encoded)))
+        self.assertEqual(fixed['metrics'][0]['post_expansion_served'],{'1':3,'2':4,'10':5,'11':6})
+
 
 if __name__=='__main__':unittest.main()

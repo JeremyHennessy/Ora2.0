@@ -1,0 +1,65 @@
+{
+  "status": "CLOSED_INCOMPLETE_NATIVE_MEMORY_CAP",
+  "organism_negative": false,
+  "scientific_acceptance": null,
+  "source": "f6df6a7c455e45f6b29f62802e8ec252a89b7ffc",
+  "source_ci_before_science": 38702632553,
+  "native_calls": 52,
+  "original_cell_denominator": 80,
+  "completed_originals": 15,
+  "completed_producer_replays": 15,
+  "completed_literal_audits": 15,
+  "known_scientific_geneses": 30,
+  "failed_or_unknown_geneses": 0,
+  "unattempted_originals": 65,
+  "completed_metric_roles": 2,
+  "failed_metric_role": "original:1008902:metrics",
+  "unattempted_metric_roles": 13,
+  "final_acceptance_attempted": false,
+  "first_failure": "MemoryError while canonicalizing a subsequent recording inside batch_metrics/zip",
+  "cause_not_yet_qualified": "Suspected cached zip tuple retaining previous full record; isolate with object-lifetime regression",
+  "failed_native": {
+    "bootstrap_python": "D:\\OraLab\\tools\\Python312\\python.exe",
+    "command": [
+      "D:\\OraLab\\tools\\Python312\\python.exe",
+      "-B",
+      "worker.py",
+      "D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\request\\original-1008902-metrics.json"
+    ],
+    "elapsed_seconds": 3.187000000005355,
+    "exit_code": 1,
+    "isolation_verified": false,
+    "limits": {
+      "cpu_seconds": 60,
+      "memory_bytes": 536870912,
+      "processes": 3,
+      "wall_seconds": 90
+    },
+    "output": "Traceback (most recent call last):\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\worker.py\", line 4, in <module>\r\n    main()\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_primary_child.py\", line 123, in main\r\n    value = batch_metrics(seed, rows())\r\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_primary_child.py\", line 68, in batch_metrics\r\n    for mode, pair in zip(MODES, rows, strict=True):\r\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_primary_child.py\", line 119, in rows\r\n    row = checked_row(item['record'], seed, item['mode'])\r\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\experiments\\digital_inheritance83_primary_child.py\", line 57, in checked_row\r\n    row = read_spec(spec)\r\n          ^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\runs\\inheritance83-primary-v1-20261015\\raw\\original\\experiments\\digital_recording82_reader.py\", line 65, in read_spec\r\n    canonical=json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=True,allow_nan=False).encode('ascii')\r\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\tools\\Python312\\Lib\\json\\__init__.py\", line 238, in dumps\r\n    **kw).encode(obj)\r\n          ^^^^^^^^^^^\r\n  File \"D:\\OraLab\\tools\\Python312\\Lib\\json\\encoder.py\", line 200, in encode\r\n    chunks = self.iterencode(o, _one_shot=True)\r\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\OraLab\\tools\\Python312\\Lib\\json\\encoder.py\", line 258, in iterencode\r\n    return _iterencode(o, 0)\r\n           ^^^^^^^^^^^^^^^^^\r\nMemoryError\r\n",
+    "output_bytes": 1905,
+    "output_truncated": false,
+    "owned_pids_before_close": [
+      10536
+    ],
+    "platform": "Windows",
+    "post_close_processes_exited": true,
+    "retained_bytes": 1905,
+    "schema": "resource01-result-v1",
+    "supervisor_cpu_stop": false,
+    "timed_out": false,
+    "usage": {
+      "active_before_close": 0,
+      "configured_cpu_ticks": 600000000,
+      "configured_memory_bytes": 536870912,
+      "configured_processes": 3,
+      "flags": 8716,
+      "started_processes": 2,
+      "user_cpu_seconds": 2.890625,
+      "windows_reported_peak_job_memory_bytes": 542998528
+    }
+  },
+  "archive_exact": true,
+  "archive_sha256": "14d4f17b53d761aab0a4c34b18f3e992715fceb7c4cb98796d6536247c3d6793",
+  "primary_retry_authorized": false,
+  "new_source_scoped_continuation_registered": false
+}

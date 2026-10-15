@@ -1,3 +1,7 @@
+# Primary stopped incomplete; host-only fixes qualified on retained records
+
+The sourcef6df6a7 primary stopped at its frozen512MiB metric limit after15of80 original cells, not a scientific negative. See DIGITAL-INHERITANCE83-INCOMPLETE.md. Read-only lifetime/canonical-key repairs are qualified without new Worlds; no retry or continuation is admitted. Initial qualification below remains historical and does not override this stopped status.
+
 # Primary custody implemented and software qualified; no scientific execution
 
 The finite controller precharges every recording/proof/native/request slot before
