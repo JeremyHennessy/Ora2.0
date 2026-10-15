@@ -1,0 +1,26 @@
+{
+  "scope": "Read-only precharge review; missing exact future CI reserved1024bytes, NOT supplied/passed",
+  "source_ci_supplied": false,
+  "execution_admission": false,
+  "worlds": 0,
+  "targets": 0,
+  "roles": 52,
+  "source_exports_bytes": 359898,
+  "owners_bytes": 166473,
+  "cache_bytes": 8681179,
+  "phase_reserved_bytes": {
+    "raw": 2351005438,
+    "failure": 134217728,
+    "restore": 2485223166,
+    "archive": 2489417470
+  },
+  "total_reserved_bytes": 7459863802,
+  "annotated_bound": {
+    "nonphysics": true,
+    "paired_event_bytes": 3098,
+    "static_bound": 7899,
+    "recording_bound": 39387136,
+    "worlds": 0,
+    "targets": 0
+  }
+}

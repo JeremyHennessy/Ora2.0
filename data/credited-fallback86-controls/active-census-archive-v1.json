@@ -1,0 +1,109 @@
+{
+  "archive": "D:\\OraLab\\runs\\credited-fallback86-active-census-v1-20261015\\complete.zip",
+  "archive_sha256": "a27016aab3841365639bd920cc33dd4048a27d6374cea90f80979fa3c8921554",
+  "archive_exact": true,
+  "members": [
+    {
+      "member": "tools/interpret_credited_fallback86_active_closed_v1.py",
+      "extent": 6205,
+      "sha256": "ab42d1ee5b9c06e36c783b536ff5cbe4e4bcc76cc351644f9e44964fc4c0ceca"
+    },
+    {
+      "member": "reports/credited-fallback86-active-software-v1.json",
+      "extent": 407224,
+      "sha256": "44ae1448d60c3b92cb5822d0dbbee12a50047e76922fbc171a3f2697398b3ead"
+    },
+    {
+      "member": "reports/credited-fallback86-active-closed-census-v1.json",
+      "extent": 178524,
+      "sha256": "87c3548375e99ce9a7dc8169211e1daa79b79ae9bc6d7289c77e3ae8dcabd4ef"
+    },
+    {
+      "member": "reports/credited-fallback86-active-census-native-v1.json",
+      "extent": 2185,
+      "sha256": "3b5b10564570f42f93d1b8b22a225e86cdf19d94a67b76ecc96723231e72b9cb"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100080-model_erased-generate.json",
+      "extent": 3520812,
+      "sha256": "73a97b9fcc2f14f06691fac18df86c738493c7ea242001fe8f01c58a8658ac9f"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100080-model_misbound-generate.json",
+      "extent": 3520598,
+      "sha256": "712f5ea84ba8872a2bfdb1e16ac42bff1f43ff546607aa371aee3af7666ba803"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100080-fallback_misbound-generate.json",
+      "extent": 3556596,
+      "sha256": "a1eb566279bb03ab72a728e922b44a303be443d1780a9a8ff510d50fc44e841b"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100080-history_disabled-generate.json",
+      "extent": 3439207,
+      "sha256": "b1f660ed2a2425638695333a109a99dcb443c1a469412c7cafb191298b3b786c"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100081-model_erased-generate.json",
+      "extent": 3127215,
+      "sha256": "ceed88ad0fcd56241deab1d6db422d4599e59dacd028f1075b3d0c13484ed9f0"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100081-model_misbound-generate.json",
+      "extent": 3127217,
+      "sha256": "efa75430b74941d7ec5af3390b81b0eb965ce5ddb0b0b7cee253a8f5fd29fcf0"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100081-fallback_misbound-generate.json",
+      "extent": 3269202,
+      "sha256": "c8be3c0e8db5be7c070b343fb5884f04113a500e7051385625af6370778fa7b4"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100081-history_disabled-generate.json",
+      "extent": 3252732,
+      "sha256": "9580565378e85755cd34f47b32491b259d1f41a7c213c1e3db5c524a99881f12"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100082-model_erased-generate.json",
+      "extent": 2969892,
+      "sha256": "68cf53b2b6b8a82fd991084486df643e93aef999dad6c0722b05f085b0a570f6"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100082-model_misbound-generate.json",
+      "extent": 3015175,
+      "sha256": "07fe58e978f6c16900f3d5c5ce84ce89c6a9705b9f7a8b3c755eff23e43c120f"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100082-fallback_misbound-generate.json",
+      "extent": 2987832,
+      "sha256": "c56921e4171c2f3c0a7536619467c74e4dbf1986c1561089640e6f67686a3e70"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100082-history_disabled-generate.json",
+      "extent": 2962493,
+      "sha256": "f5c3da58e7ba8facd9a9c8d8ca79eac5ec7f48cbdfbc5247d1399bb1d20f045c"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100083-model_erased-generate.json",
+      "extent": 2547638,
+      "sha256": "b42fdd69cc6cb1516680e59d538e555b30ac5b564552994c732c502d0b15b81c"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100083-model_misbound-generate.json",
+      "extent": 2554191,
+      "sha256": "23b8287ef5657107727a2a0bce59a4f94c16dbc74ab450875ddcd78de16a47d5"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100083-fallback_misbound-generate.json",
+      "extent": 2535296,
+      "sha256": "d726774fa79aa2419a4b24edf3ff623049e68fce705e78f0fb6dfe8b13ee4593"
+    },
+    {
+      "member": "runs/credited-fallback86-active-software-v1-20261015/raw/data/original-2100083-history_disabled-generate.json",
+      "extent": 2513344,
+      "sha256": "c38c9fa4cd802081aa94728f21f7e32f5ce5519e440f9ba5940f28fc3885da00"
+    }
+  ],
+  "worlds": 0,
+  "targets": 0
+}

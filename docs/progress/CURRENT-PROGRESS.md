@@ -1,3 +1,38 @@
+# Current development — October15: active-control SOFTWARE closed
+
+This current checkpoint supersedes older next-action instructions below. Useful
+own-experience decisions remain the priority, followed by inherited selection.
+CREDITED-FALLBACK86 active SOFTWARE corpus is CLOSED:144original+144restored,
+52native roles/full literal/byte parity/exact archives.102finish60/42deaths/
+32never-active cuts. All48q8cases finish, independently earn221 at cut and have
+12common ACTIVE packet-cue opportunities per fixture/entry. Known authored
+software fixtures and supplied architecture do not establish unseen useful
+learning, fitness, selection or new stage acceptance. No fresh scientific cohort
+or targets opened. Source95db527 exactCI38768955070 passed BEFORE registered run.
+Closure publication is pending exact final-head and postmerge CI; pending is not
+a pass. See DIGITAL-CREDITED-FALLBACK86-ACTIVE-CLOSED.md and its data receipts.
+
+Single next scientific dependency after verified publication: freeze a narrow
+fresh within-life choice/computation-selection contract, with all9neutral source
+parameters, actual model/semantic history channels, independently earned blank
+warm histories/common ACTIVE older-origin opportunities, six efficient unpadded
+fixed/reactive references, low/highinfo/unseen/failure strata and full costs.
+No target query until complete contract/custody/source CI/separate registration.
+Preserve existing VM/prices; no winning-source insertion, refill/rescue, closed
+rerun, reserve use or new world/random bank hunting a positive.
+
+LEARNING81 stays CLOSED: scoped own-history nominal choice criteria TRUE both
+banks; actual retained superiority FALSE480vs664/661. INHERITANCE83 selection
+CLOSED NEGATIVE; REVISION84 full acceptance FALSE with scoped revision component;
+ARBITRATION85 cold limitation CLOSED; ordinary86 SOFTWARE36+36closed. All earlier
+laws/results/reserves remain immutable. Architecture is supplied, acquired state
+distinct; inherited/evolved intelligence and whole-stage acceptance unverified.
+Birth/pilot is not a universal within-life learning gate. One finite writer/full
+native bounds/evidence/replay; no persistent/unattended activation or legacy/UI
+change. Private Observer/history never published. Existing schedules unchanged.
+
+<!-- CREDITED-FALLBACK86-ACTIVE-PUBLIC-CURRENT-END -->
+
 # LEARNING81 CLOSED - scoped native own-experience choice learning verified
 
 All240 frozen original histories/480 replay-inclusive geneses completed,49 bounded native producer/literal/source-restored/interpretation calls;71957 original instructions,13397 resource decisions,8571 successes,51 deaths,0 births/mutations. All costs/failures/aliases retained, full physics/source-config/history binding/native caps/exact source and evidence archives verified. Separate streaming closed-data interpreter (no81 producer/referee/acceptance imports) independently reproduces every criterion and total in original/restored exports, with0 new Worlds/targets. Source4c8f9522e8e8163edcab60b940e3f2b9c3520ced exactCI38678759814 SUCCESS BEFORE science. Frozen protocol/roster/prices/horizon/reserves now immutable: DO NOT rerun, widen, repair or insert a winner.
