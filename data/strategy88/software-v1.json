@@ -1,0 +1,314 @@
+{
+  "verified": true,
+  "mode": "software",
+  "source_head": "af8aed39d58a738769b2d0bd542f12fee33cb4ea",
+  "native_calls": 14,
+  "completed_geneses": 104,
+  "logical_originals": 52,
+  "incomplete_genesis_attempts_not_inferred": false,
+  "new_scientific_geneses": 0,
+  "negative_requests_rejected": 4,
+  "pure_checks": [
+    {
+      "verified": true,
+      "checks": 6,
+      "worlds": 0,
+      "targets": 0,
+      "NONPHYSICS": true
+    },
+    {
+      "verified": true,
+      "checks": 6,
+      "worlds": 0,
+      "targets": 0,
+      "NONPHYSICS": true
+    }
+  ],
+  "software_admission": true,
+  "summary": {
+    "metric_specs": {
+      "2100488": {
+        "role": "original:2100488:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100488-metrics.json",
+          "extent": 253068,
+          "sha256": "a89769b24139b2c379d43159ea941792f7f8be78b07175ea88dec48cf8d7cb67"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\request\\original-2100488-metrics.json",
+          "extent": 7259,
+          "sha256": "09b000b870ed05bc5cacdebe96b141b7ec480ac1909f15e9c37b2601ea81d62a"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\native\\original-2100488-metrics.json",
+          "extent": 1526,
+          "sha256": "a1b9ad052d1528495764d94d19752eb1c5bed9a691a1cea8e72b31214386b560"
+        }
+      },
+      "2100489": {
+        "role": "original:2100489:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100489-metrics.json",
+          "extent": 250486,
+          "sha256": "7cc345df30a22d7dbed78838cc2150e63732bf9197a53496f3a06f37dd243ac7"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\request\\original-2100489-metrics.json",
+          "extent": 7259,
+          "sha256": "b70f8de8965e598b7e2a5fe058ae0500f77a12dc1465f6870c15cf0ff7b6ed5f"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\native\\original-2100489-metrics.json",
+          "extent": 1528,
+          "sha256": "6c4b4817606285f9982aec0e3359b0ace1bda69f76c76ccee232f63d1b200266"
+        }
+      }
+    },
+    "endpoints": [
+      {
+        "C": 399,
+        "E": 17,
+        "N": 777,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 2100488,
+        "whole_correct": 58
+      },
+      {
+        "C": 409,
+        "E": 17,
+        "N": 707,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 9,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 2100488,
+        "whole_correct": 55
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 12,
+        "seed": 2100488,
+        "whole_correct": 56
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 11,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 0,
+        "seed": 2100488,
+        "whole_correct": 57
+      },
+      {
+        "C": 455,
+        "E": 17,
+        "N": 661,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 9,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 790,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 0,
+        "seed": 2100489,
+        "whole_correct": 55
+      },
+      {
+        "C": 452,
+        "E": 17,
+        "N": 684,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 790,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 12,
+        "seed": 2100489,
+        "whole_correct": 56
+      },
+      {
+        "C": 451,
+        "E": 17,
+        "N": 705,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 11,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 790,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 6,
+        "seed": 2100489,
+        "whole_correct": 57
+      },
+      {
+        "C": 449,
+        "E": 17,
+        "N": 727,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 790,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 6,
+        "seed": 2100489,
+        "whole_correct": 58
+      }
+    ],
+    "arithmetic": null,
+    "software_admission": true
+  },
+  "completed_roles": {
+    "original:2100488:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100488-generate.json",
+      "extent": 7021395,
+      "sha256": "3212a2f16071c34670822d69cbb27baf83b930b5c1a66c40c7dde14f8f0076ee"
+    },
+    "original:2100488:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100488-audit.json",
+      "extent": 8212,
+      "sha256": "e970008d9da4f928f609939bc1edec03216c0288ed9d15018294453e89f67e7c"
+    },
+    "restored:2100488:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\restored-2100488-generate.json",
+      "extent": 7021395,
+      "sha256": "3212a2f16071c34670822d69cbb27baf83b930b5c1a66c40c7dde14f8f0076ee"
+    },
+    "original:2100488:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100488-metrics.json",
+      "extent": 253068,
+      "sha256": "a89769b24139b2c379d43159ea941792f7f8be78b07175ea88dec48cf8d7cb67"
+    },
+    "original:2100489:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100489-generate.json",
+      "extent": 7406098,
+      "sha256": "346f12081bb6f679787fe56bf141d73785e67503f39c49e2e26c4de081a92282"
+    },
+    "original:2100489:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100489-audit.json",
+      "extent": 8199,
+      "sha256": "a33d1c2646b70c9a98f8629aa90aca9e5b713d581c9f5b455cc616b083569bab"
+    },
+    "restored:2100489:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\restored-2100489-generate.json",
+      "extent": 7406098,
+      "sha256": "346f12081bb6f679787fe56bf141d73785e67503f39c49e2e26c4de081a92282"
+    },
+    "original:2100489:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-software-v1-20261015\\raw\\data\\original-2100489-metrics.json",
+      "extent": 250486,
+      "sha256": "7cc345df30a22d7dbed78838cc2150e63732bf9197a53496f3a06f37dd243ac7"
+    }
+  },
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_acceptance.py": "9090361bac121bc4c9503164d434766233c17ea61a9d59647d3f3814573dff90",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\data\\credited-fallback86-controls\\active-size-fixture-v1.json": "15b9dc213409ff6c9f69b648d98e95fcb5ccc4c8aadc6b557fde7375a97eb7a3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_referee.py": "dcdc1ea1e1afe54217891aa5ad6708ae54b569fe2e6d7d7370689a5ce3b25935",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_world.py": "8b4ca82eaa2948ded52564d2796685a5d9b77b166de7afff97084ea69b5710c9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_metrics.py": "9dfde778723d9979cb2bd4f809bd2e59713d6f215b094668a6f2121fd5f5a23f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_referee.py": "9da82afd0394721b11af205826775c86cf75c44f2b605c17bb86a23ed770c061",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_primary_boundary.py": "fc80c8df86f8604711f962476002129f90a64134789942769c7d2683f5cfece1",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_strategy88.py": "70d3fe4c13a83e01dd74260b9641026aa6f812bb805c3ea562060fdd16b9c27d",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_metric_binding.py": "27f7a4f6511595bd4735258de8f109bbe80834891d1c387a654ebde5a40b6ea0",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\run_strategy88_v1.py": "dfe74871a709568caabf4c23671aef24de5d8aac921049d31b677e2b3c6bde53",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-STRATEGY88-PROSPECTIVE-CONTRACT-V1.md": "2c702fb7e523109c3bc58605aa1f2703178a4585edc268471e1095227299e3d6",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_latehistory78_source.py": "d1ea7e7a59aa5550712167b2f5056e6403ae48e573e0deabf0d95da10c7f6029",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_source.py": "56a968d73b6accbdf42e27b8deec3eb614669c1eb482394a67ee67e1a19a37d9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_child.py": "3b55198649dc7d40e94d87febae4664a39c9ce8b52f83c43125299cd801d1752",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\strategy88_pure_worker_v1.py": "a0aa947cbbe20394ce1d902f1025eb74448f52005d840f265edd0a1b8a650c26",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_referee.py": "31a45efb4dbfe1fcb20123932d38e1933c72a1a3d76d1a974ecdfc040f2c09e5",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_source.py": "e2c0ed8c746e4adc6b1df38212e18c31be4f88457ee07d582f532137fb2ba9db",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_plan.py": "83c0bdaaebe54795ae13cdea18f4d1985e83a581bd85618d413ec84fc95939ea",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\strategy88-prospective-contract-v1-20261015.md": "2c702fb7e523109c3bc58605aa1f2703178a4585edc268471e1095227299e3d6",
+    "D:\\OraLab\\reports\\strategy88-source-ci-af8aed39d58a.json": "b247ed1759e0ca4deafc1c371fe2c09e373f226368109986f581c0e892a01944",
+    "D:\\OraLab\\reports\\intelligence-priority-action-20261015\\ACTION-HANDOFF.json": "3df55218fbdcbd37d1f42cc75fae6878c9130fbe2421c81dfaad82fb4c8f2e6c",
+    "D:\\OraLab\\reports\\credited-fallback87v2-primary-v1.json": "2ec2f7081a4fe85fc6d0338d1bd0ef39bab3bb8bba5c4bf576465786050d2655"
+  },
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "53ea7d7e67c3a35c2b06befd5c096fd3c42235612e57b2bae85887ce52635d86",
+  "stage_credit": false
+}

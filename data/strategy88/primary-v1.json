@@ -1,0 +1,1861 @@
+{
+  "verified": true,
+  "mode": "primary",
+  "source_head": "af8aed39d58a738769b2d0bd542f12fee33cb4ea",
+  "native_calls": 53,
+  "completed_geneses": 624,
+  "logical_originals": 312,
+  "incomplete_genesis_attempts_not_inferred": false,
+  "new_scientific_geneses": 624,
+  "negative_requests_rejected": 4,
+  "pure_checks": [],
+  "software_admission": null,
+  "summary": {
+    "metric_specs": {
+      "1010100": {
+        "role": "original:1010100:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010100-metrics.json",
+          "extent": 249202,
+          "sha256": "acc1a083dc4cfd1942b0e69e47b4f4b29ea0eda5e7f8d4a9b55795255ff0e63a"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010100-metrics.json",
+          "extent": 7329,
+          "sha256": "e7a97c1ea41988039cc6ec93706b21d792c74be0043923cceb6568c340a8f7a6"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010100-metrics.json",
+          "extent": 1527,
+          "sha256": "fa3f6c2b127df439c81e0c9d5d1a6d6120195cb9794057c90372aab86c37f090"
+        }
+      },
+      "1010101": {
+        "role": "original:1010101:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010101-metrics.json",
+          "extent": 250579,
+          "sha256": "19223d8d67f019f6e5c68716a0686ddd36df57518f66d929d7c4d920a1e9b755"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010101-metrics.json",
+          "extent": 7329,
+          "sha256": "cb1de3646bf9b9cd2528a9b36da259f0c835e957a8a95ea5726d0c7c7a21fbeb"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010101-metrics.json",
+          "extent": 1526,
+          "sha256": "50958cb76ac999e5cff3000f8f3e5df83345bda5d4aea1526aa3172e37638f06"
+        }
+      },
+      "1010102": {
+        "role": "original:1010102:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010102-metrics.json",
+          "extent": 252663,
+          "sha256": "c0c94e44def5109d29f29f2d445bc1327d9cd214d3d23bc9c28382ca506e5b9f"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010102-metrics.json",
+          "extent": 7329,
+          "sha256": "07272bede078be8962432c1a144dac19f5a3c22349de56710af17a0d35256a1d"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010102-metrics.json",
+          "extent": 1513,
+          "sha256": "d823e52d754c97637d70134de163b5498cb9d8482c53b34622d51c63d6198e04"
+        }
+      },
+      "1010103": {
+        "role": "original:1010103:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010103-metrics.json",
+          "extent": 253784,
+          "sha256": "ae76d6f94b0ab6c723131caea6c0fde5fd802ed7c5bfd5aedac23943095625d3"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010103-metrics.json",
+          "extent": 7329,
+          "sha256": "102fd9303763809b40bdcdb4b7357fb7f88048dd938ddff914f4cf6fc88ed419"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010103-metrics.json",
+          "extent": 1526,
+          "sha256": "ea429cdf691223a2b287efac157c50b4b0a569bf00d05ad905c729fb33cc07a2"
+        }
+      },
+      "1010104": {
+        "role": "original:1010104:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010104-metrics.json",
+          "extent": 253784,
+          "sha256": "c6a347526cc5f4c2e67a6c73fb1740cfe9599a0b5a2a430fc1b5b88ffe2e32ef"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010104-metrics.json",
+          "extent": 7329,
+          "sha256": "bb39c3d5fd1ed530360b6d1b08ae0b1289061070d553bdc569d069e356eeb380"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010104-metrics.json",
+          "extent": 1526,
+          "sha256": "18d239bb210d320c3269c901f68af733cfaef75f696347489606dc0cfddf18f5"
+        }
+      },
+      "1010105": {
+        "role": "original:1010105:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010105-metrics.json",
+          "extent": 246415,
+          "sha256": "cb6398b489e71b951a0d525df6d1e69f6805b0cf9e62da1d55ee82e5e7cb79ad"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010105-metrics.json",
+          "extent": 7329,
+          "sha256": "e570bee918b2bd2b1d9eda674985cfe015f8a008bb245cb687501ec9cd2e9d28"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010105-metrics.json",
+          "extent": 1527,
+          "sha256": "b62c395613a211b69d3b01f472bc18836acc16c64c764b9f9054398a01ee65cd"
+        }
+      },
+      "1010300": {
+        "role": "original:1010300:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010300-metrics.json",
+          "extent": 249202,
+          "sha256": "ac3be2ca4bd955e4ebde1df64220edaf842cfc7841715fdfd9f05101af10645c"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010300-metrics.json",
+          "extent": 7329,
+          "sha256": "54768d7fc0cfe4c250fb4956cc9d7c4d99e7be21abce9b0f730a715f8ba22541"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010300-metrics.json",
+          "extent": 1525,
+          "sha256": "760b0d9088e420d3172e442d638b2c16023e50b8feaca35c1c17792c90ff406b"
+        }
+      },
+      "1010301": {
+        "role": "original:1010301:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010301-metrics.json",
+          "extent": 250579,
+          "sha256": "80dd21b9cd041fde7c05ceb8ecd6e5bb79f1a006c0eb025ac647d6326ced1c3f"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010301-metrics.json",
+          "extent": 7329,
+          "sha256": "314c33e98316b1b18a8c029aeeaa305a85857824f84191bfa23a3584cb4c9c4c"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010301-metrics.json",
+          "extent": 1524,
+          "sha256": "2d8caad9e60c7785b6ebdd6f848b570ea3bd590cdd88bd4f65ff4d5315b48f65"
+        }
+      },
+      "1010302": {
+        "role": "original:1010302:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010302-metrics.json",
+          "extent": 246415,
+          "sha256": "6a826ff89cfa9ffbbabe2360b6a1750b151d06ea072dc401b6ca5b64a5614f5c"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010302-metrics.json",
+          "extent": 7329,
+          "sha256": "07fe25b19f2199cd3c5aa58880e1dee08bac24b3596ed11de1069742fc93605b"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010302-metrics.json",
+          "extent": 1526,
+          "sha256": "6bdc30b80c4fac979567f30d98c20cdadd7d7461d3ce3c399ea83ee6d845287d"
+        }
+      },
+      "1010303": {
+        "role": "original:1010303:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010303-metrics.json",
+          "extent": 253954,
+          "sha256": "98847f13e0dcbc1a2d588e93f9f94e33d88ae2a78033758090bda82ffe24cac0"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010303-metrics.json",
+          "extent": 7329,
+          "sha256": "89a0bede619b26978c6ad5b3b1bfd5f855ecd96b143e90ee83995d2b78bde41a"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010303-metrics.json",
+          "extent": 1525,
+          "sha256": "fe3e19928b432d8ae7dbc75227ba859bc0cee7600ff0c9a023c38da100a66bdd"
+        }
+      },
+      "1010304": {
+        "role": "original:1010304:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010304-metrics.json",
+          "extent": 253060,
+          "sha256": "b3f242f17f863da00b48eec9eff855b11e555d0812b1b751e2cf76e9c8423afb"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010304-metrics.json",
+          "extent": 7329,
+          "sha256": "35724fb5b30939d8f4ec5670d87832dff6dcc255fd8ac2ca618074c66b7a2244"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010304-metrics.json",
+          "extent": 1513,
+          "sha256": "f809f2fbe3c0ff0f36ed7b16c496bfd8cb518dd6220a0cbe603685909482d659"
+        }
+      },
+      "1010305": {
+        "role": "original:1010305:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010305-metrics.json",
+          "extent": 253784,
+          "sha256": "cb6a8f965bc2cf52ba993d7ac83ccdaba992519a4e0dd6575c34ec445b47acd8"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010305-metrics.json",
+          "extent": 7329,
+          "sha256": "6c9c5001ab8eda36e911d8de9184b42b0c763294ea1aa97863713903db77c5df"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010305-metrics.json",
+          "extent": 1511,
+          "sha256": "fdef24aadf51422971145b9456cdd033e3c5c353e9ec1cb3f00388a03174155a"
+        }
+      }
+    },
+    "endpoints": [
+      {
+        "C": 393,
+        "E": 17,
+        "N": 823,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 12,
+        "seed": 1010100,
+        "whole_correct": 60
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 0,
+        "seed": 1010100,
+        "whole_correct": 57
+      },
+      {
+        "C": 400,
+        "E": 17,
+        "N": 776,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 6,
+        "seed": 1010100,
+        "whole_correct": 58
+      },
+      {
+        "C": 397,
+        "E": 17,
+        "N": 799,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 6,
+        "seed": 1010100,
+        "whole_correct": 59
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 0,
+        "seed": 1010101,
+        "whole_correct": 59
+      },
+      {
+        "C": 393,
+        "E": 17,
+        "N": 823,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 12,
+        "seed": 1010101,
+        "whole_correct": 60
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 6,
+        "seed": 1010101,
+        "whole_correct": 57
+      },
+      {
+        "C": 401,
+        "E": 17,
+        "N": 775,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 6,
+        "seed": 1010101,
+        "whole_correct": 58
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 903,
+        "oracle_correct": 59,
+        "prior": 0,
+        "reset": 0,
+        "seed": 1010102,
+        "whole_correct": 59
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 9,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 903,
+        "oracle_correct": 59,
+        "prior": 1,
+        "reset": 12,
+        "seed": 1010102,
+        "whole_correct": 56
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 903,
+        "oracle_correct": 59,
+        "prior": 2,
+        "reset": 6,
+        "seed": 1010102,
+        "whole_correct": 57
+      },
+      {
+        "C": 400,
+        "E": 17,
+        "N": 776,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 11,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 903,
+        "oracle_correct": 59,
+        "prior": 3,
+        "reset": 6,
+        "seed": 1010102,
+        "whole_correct": 58
+      },
+      {
+        "C": 399,
+        "E": 17,
+        "N": 777,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 11,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010103,
+        "whole_correct": 58
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010103,
+        "whole_correct": 59
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 9,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 12,
+        "seed": 1010103,
+        "whole_correct": 56
+      },
+      {
+        "C": 404,
+        "E": 17,
+        "N": 752,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 0,
+        "seed": 1010103,
+        "whole_correct": 57
+      },
+      {
+        "C": 399,
+        "E": 17,
+        "N": 777,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 11,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010104,
+        "whole_correct": 58
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010104,
+        "whole_correct": 59
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 9,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 12,
+        "seed": 1010104,
+        "whole_correct": 56
+      },
+      {
+        "C": 404,
+        "E": 17,
+        "N": 752,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 0,
+        "seed": 1010104,
+        "whole_correct": 57
+      },
+      {
+        "C": 459,
+        "E": 17,
+        "N": 697,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010105,
+        "whole_correct": 57
+      },
+      {
+        "C": 456,
+        "E": 17,
+        "N": 720,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010105,
+        "whole_correct": 58
+      },
+      {
+        "C": 455,
+        "E": 17,
+        "N": 741,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 0,
+        "seed": 1010105,
+        "whole_correct": 59
+      },
+      {
+        "C": 453,
+        "E": 17,
+        "N": 763,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 12,
+        "seed": 1010105,
+        "whole_correct": 60
+      },
+      {
+        "C": 393,
+        "E": 17,
+        "N": 823,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 12,
+        "seed": 1010300,
+        "whole_correct": 60
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 0,
+        "seed": 1010300,
+        "whole_correct": 57
+      },
+      {
+        "C": 400,
+        "E": 17,
+        "N": 776,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 6,
+        "seed": 1010300,
+        "whole_correct": 58
+      },
+      {
+        "C": 397,
+        "E": 17,
+        "N": 799,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 6,
+        "seed": 1010300,
+        "whole_correct": 59
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 0,
+        "seed": 1010301,
+        "whole_correct": 59
+      },
+      {
+        "C": 393,
+        "E": 17,
+        "N": 823,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 12,
+        "seed": 1010301,
+        "whole_correct": 60
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 6,
+        "seed": 1010301,
+        "whole_correct": 57
+      },
+      {
+        "C": 401,
+        "E": 17,
+        "N": 775,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 0,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 997,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 6,
+        "seed": 1010301,
+        "whole_correct": 58
+      },
+      {
+        "C": 459,
+        "E": 17,
+        "N": 697,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 9,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010302,
+        "whole_correct": 57
+      },
+      {
+        "C": 456,
+        "E": 17,
+        "N": 720,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010302,
+        "whole_correct": 58
+      },
+      {
+        "C": 455,
+        "E": 17,
+        "N": 741,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 11,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 12,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 2,
+        "reset": 0,
+        "seed": 1010302,
+        "whole_correct": 59
+      },
+      {
+        "C": 453,
+        "E": 17,
+        "N": 763,
+        "common": 12,
+        "completed": 60,
+        "correct": 12,
+        "explore_correct": 45,
+        "misbound": 12,
+        "observed_mixed": 1,
+        "older_uses": 0,
+        "oracle_E": 73,
+        "oracle_N": 934,
+        "oracle_correct": 60,
+        "prior": 3,
+        "reset": 12,
+        "seed": 1010302,
+        "whole_correct": 60
+      },
+      {
+        "C": 411,
+        "E": 17,
+        "N": 745,
+        "common": 12,
+        "completed": 60,
+        "correct": 9,
+        "explore_correct": 39,
+        "misbound": 9,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010303,
+        "whole_correct": 57
+      },
+      {
+        "C": 421,
+        "E": 17,
+        "N": 675,
+        "common": 12,
+        "completed": 60,
+        "correct": 9,
+        "explore_correct": 9,
+        "misbound": 9,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010303,
+        "whole_correct": 54
+      },
+      {
+        "C": 418,
+        "E": 17,
+        "N": 698,
+        "common": 12,
+        "completed": 60,
+        "correct": 9,
+        "explore_correct": 39,
+        "misbound": 9,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 0,
+        "seed": 1010303,
+        "whole_correct": 55
+      },
+      {
+        "C": 415,
+        "E": 17,
+        "N": 721,
+        "common": 12,
+        "completed": 60,
+        "correct": 9,
+        "explore_correct": 11,
+        "misbound": 9,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 12,
+        "seed": 1010303,
+        "whole_correct": 56
+      },
+      {
+        "C": 399,
+        "E": 17,
+        "N": 777,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 7,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010304,
+        "whole_correct": 58
+      },
+      {
+        "C": 409,
+        "E": 17,
+        "N": 707,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 9,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010304,
+        "whole_correct": 55
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 45,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 12,
+        "seed": 1010304,
+        "whole_correct": 56
+      },
+      {
+        "C": 403,
+        "E": 17,
+        "N": 753,
+        "common": 12,
+        "completed": 60,
+        "correct": 10,
+        "explore_correct": 11,
+        "misbound": 10,
+        "observed_mixed": 1,
+        "older_uses": 8,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 0,
+        "seed": 1010304,
+        "whole_correct": 57
+      },
+      {
+        "C": 399,
+        "E": 17,
+        "N": 777,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 11,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 0,
+        "reset": 6,
+        "seed": 1010305,
+        "whole_correct": 58
+      },
+      {
+        "C": 396,
+        "E": 17,
+        "N": 800,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 1,
+        "reset": 6,
+        "seed": 1010305,
+        "whole_correct": 59
+      },
+      {
+        "C": 406,
+        "E": 17,
+        "N": 730,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 9,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 2,
+        "reset": 12,
+        "seed": 1010305,
+        "whole_correct": 56
+      },
+      {
+        "C": 404,
+        "E": 17,
+        "N": 752,
+        "common": 12,
+        "completed": 60,
+        "correct": 11,
+        "explore_correct": 39,
+        "misbound": 11,
+        "observed_mixed": 1,
+        "older_uses": 9,
+        "oracle_E": 73,
+        "oracle_N": 853,
+        "oracle_correct": 54,
+        "prior": 3,
+        "reset": 0,
+        "seed": 1010305,
+        "whole_correct": 57
+      }
+    ],
+    "arithmetic": {
+      "energy_population_claim": false,
+      "evidence_inputs": {
+        "1010100": {
+          "body": {
+            "extent": 249202,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010100-metrics.json",
+            "sha256": "acc1a083dc4cfd1942b0e69e47b4f4b29ea0eda5e7f8d4a9b55795255ff0e63a"
+          },
+          "native": {
+            "extent": 1527,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010100-metrics.json",
+            "sha256": "fa3f6c2b127df439c81e0c9d5d1a6d6120195cb9794057c90372aab86c37f090"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010100-metrics.json",
+            "sha256": "e7a97c1ea41988039cc6ec93706b21d792c74be0043923cceb6568c340a8f7a6"
+          },
+          "role": "original:1010100:metrics"
+        },
+        "1010101": {
+          "body": {
+            "extent": 250579,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010101-metrics.json",
+            "sha256": "19223d8d67f019f6e5c68716a0686ddd36df57518f66d929d7c4d920a1e9b755"
+          },
+          "native": {
+            "extent": 1526,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010101-metrics.json",
+            "sha256": "50958cb76ac999e5cff3000f8f3e5df83345bda5d4aea1526aa3172e37638f06"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010101-metrics.json",
+            "sha256": "cb1de3646bf9b9cd2528a9b36da259f0c835e957a8a95ea5726d0c7c7a21fbeb"
+          },
+          "role": "original:1010101:metrics"
+        },
+        "1010102": {
+          "body": {
+            "extent": 252663,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010102-metrics.json",
+            "sha256": "c0c94e44def5109d29f29f2d445bc1327d9cd214d3d23bc9c28382ca506e5b9f"
+          },
+          "native": {
+            "extent": 1513,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010102-metrics.json",
+            "sha256": "d823e52d754c97637d70134de163b5498cb9d8482c53b34622d51c63d6198e04"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010102-metrics.json",
+            "sha256": "07272bede078be8962432c1a144dac19f5a3c22349de56710af17a0d35256a1d"
+          },
+          "role": "original:1010102:metrics"
+        },
+        "1010103": {
+          "body": {
+            "extent": 253784,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010103-metrics.json",
+            "sha256": "ae76d6f94b0ab6c723131caea6c0fde5fd802ed7c5bfd5aedac23943095625d3"
+          },
+          "native": {
+            "extent": 1526,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010103-metrics.json",
+            "sha256": "ea429cdf691223a2b287efac157c50b4b0a569bf00d05ad905c729fb33cc07a2"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010103-metrics.json",
+            "sha256": "102fd9303763809b40bdcdb4b7357fb7f88048dd938ddff914f4cf6fc88ed419"
+          },
+          "role": "original:1010103:metrics"
+        },
+        "1010104": {
+          "body": {
+            "extent": 253784,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010104-metrics.json",
+            "sha256": "c6a347526cc5f4c2e67a6c73fb1740cfe9599a0b5a2a430fc1b5b88ffe2e32ef"
+          },
+          "native": {
+            "extent": 1526,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010104-metrics.json",
+            "sha256": "18d239bb210d320c3269c901f68af733cfaef75f696347489606dc0cfddf18f5"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010104-metrics.json",
+            "sha256": "bb39c3d5fd1ed530360b6d1b08ae0b1289061070d553bdc569d069e356eeb380"
+          },
+          "role": "original:1010104:metrics"
+        },
+        "1010105": {
+          "body": {
+            "extent": 246415,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010105-metrics.json",
+            "sha256": "cb6398b489e71b951a0d525df6d1e69f6805b0cf9e62da1d55ee82e5e7cb79ad"
+          },
+          "native": {
+            "extent": 1527,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010105-metrics.json",
+            "sha256": "b62c395613a211b69d3b01f472bc18836acc16c64c764b9f9054398a01ee65cd"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010105-metrics.json",
+            "sha256": "e570bee918b2bd2b1d9eda674985cfe015f8a008bb245cb687501ec9cd2e9d28"
+          },
+          "role": "original:1010105:metrics"
+        },
+        "1010300": {
+          "body": {
+            "extent": 249202,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010300-metrics.json",
+            "sha256": "ac3be2ca4bd955e4ebde1df64220edaf842cfc7841715fdfd9f05101af10645c"
+          },
+          "native": {
+            "extent": 1525,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010300-metrics.json",
+            "sha256": "760b0d9088e420d3172e442d638b2c16023e50b8feaca35c1c17792c90ff406b"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010300-metrics.json",
+            "sha256": "54768d7fc0cfe4c250fb4956cc9d7c4d99e7be21abce9b0f730a715f8ba22541"
+          },
+          "role": "original:1010300:metrics"
+        },
+        "1010301": {
+          "body": {
+            "extent": 250579,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010301-metrics.json",
+            "sha256": "80dd21b9cd041fde7c05ceb8ecd6e5bb79f1a006c0eb025ac647d6326ced1c3f"
+          },
+          "native": {
+            "extent": 1524,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010301-metrics.json",
+            "sha256": "2d8caad9e60c7785b6ebdd6f848b570ea3bd590cdd88bd4f65ff4d5315b48f65"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010301-metrics.json",
+            "sha256": "314c33e98316b1b18a8c029aeeaa305a85857824f84191bfa23a3584cb4c9c4c"
+          },
+          "role": "original:1010301:metrics"
+        },
+        "1010302": {
+          "body": {
+            "extent": 246415,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010302-metrics.json",
+            "sha256": "6a826ff89cfa9ffbbabe2360b6a1750b151d06ea072dc401b6ca5b64a5614f5c"
+          },
+          "native": {
+            "extent": 1526,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010302-metrics.json",
+            "sha256": "6bdc30b80c4fac979567f30d98c20cdadd7d7461d3ce3c399ea83ee6d845287d"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010302-metrics.json",
+            "sha256": "07fe25b19f2199cd3c5aa58880e1dee08bac24b3596ed11de1069742fc93605b"
+          },
+          "role": "original:1010302:metrics"
+        },
+        "1010303": {
+          "body": {
+            "extent": 253954,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010303-metrics.json",
+            "sha256": "98847f13e0dcbc1a2d588e93f9f94e33d88ae2a78033758090bda82ffe24cac0"
+          },
+          "native": {
+            "extent": 1525,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010303-metrics.json",
+            "sha256": "fe3e19928b432d8ae7dbc75227ba859bc0cee7600ff0c9a023c38da100a66bdd"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010303-metrics.json",
+            "sha256": "89a0bede619b26978c6ad5b3b1bfd5f855ecd96b143e90ee83995d2b78bde41a"
+          },
+          "role": "original:1010303:metrics"
+        },
+        "1010304": {
+          "body": {
+            "extent": 253060,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010304-metrics.json",
+            "sha256": "b3f242f17f863da00b48eec9eff855b11e555d0812b1b751e2cf76e9c8423afb"
+          },
+          "native": {
+            "extent": 1513,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010304-metrics.json",
+            "sha256": "f809f2fbe3c0ff0f36ed7b16c496bfd8cb518dd6220a0cbe603685909482d659"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010304-metrics.json",
+            "sha256": "35724fb5b30939d8f4ec5670d87832dff6dcc255fd8ac2ca618074c66b7a2244"
+          },
+          "role": "original:1010304:metrics"
+        },
+        "1010305": {
+          "body": {
+            "extent": 253784,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010305-metrics.json",
+            "sha256": "cb6a8f965bc2cf52ba993d7ac83ccdaba992519a4e0dd6575c34ec445b47acd8"
+          },
+          "native": {
+            "extent": 1511,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\native\\original-1010305-metrics.json",
+            "sha256": "fdef24aadf51422971145b9456cdd033e3c5c353e9ec1cb3f00388a03174155a"
+          },
+          "request": {
+            "extent": 7329,
+            "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\request\\original-1010305-metrics.json",
+            "sha256": "6c9c5001ab8eda36e911d8de9184b42b0c763294ea1aa97863713903db77c5df"
+          },
+          "role": "original:1010305:metrics"
+        }
+      },
+      "execution_admission": false,
+      "family_size": 4,
+      "logical_originals": 312,
+      "numeric_interface_only": true,
+      "priors": [
+        {
+          "banks": {
+            "primary": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -863,
+              "all_complete": true,
+              "charged_cost": 2442,
+              "common": 72,
+              "correct": 351,
+              "correct_per_paid_C": "117/814",
+              "explore_gain": 225,
+              "functional_gates": true,
+              "older_uses": 39,
+              "oracle_correct_gain": 4,
+              "origin_contexts": 4,
+              "reset_gain": 39
+            },
+            "unseen": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -868,
+              "all_complete": true,
+              "charged_cost": 2457,
+              "common": 72,
+              "correct": 349,
+              "correct_per_paid_C": "349/2457",
+              "explore_gain": 189,
+              "functional_gates": true,
+              "older_uses": 35,
+              "oracle_correct_gain": 7,
+              "origin_contexts": 4,
+              "reset_gain": 30
+            }
+          },
+          "finite_cohort_energy_gain": false,
+          "functional_selection": true,
+          "nominal_costed_value": false,
+          "paired_sign": {
+            "losses": 0,
+            "p": "1/1024",
+            "passes": true,
+            "ties": 2,
+            "wins": 10
+          },
+          "prior": 0,
+          "strong_reference_value": true
+        },
+        {
+          "banks": {
+            "primary": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -911,
+              "all_complete": true,
+              "charged_cost": 2450,
+              "common": 72,
+              "correct": 349,
+              "correct_per_paid_C": "349/2450",
+              "explore_gain": 163,
+              "functional_gates": true,
+              "older_uses": 39,
+              "oracle_correct_gain": 2,
+              "origin_contexts": 4,
+              "reset_gain": 27
+            },
+            "unseen": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -1009,
+              "all_complete": true,
+              "charged_cost": 2478,
+              "common": 72,
+              "correct": 343,
+              "correct_per_paid_C": "49/354",
+              "explore_gain": 187,
+              "functional_gates": true,
+              "older_uses": 36,
+              "oracle_correct_gain": 1,
+              "origin_contexts": 4,
+              "reset_gain": 30
+            }
+          },
+          "finite_cohort_energy_gain": false,
+          "functional_selection": true,
+          "nominal_costed_value": false,
+          "paired_sign": {
+            "losses": 1,
+            "p": "11/1024",
+            "passes": true,
+            "ties": 2,
+            "wins": 9
+          },
+          "prior": 1,
+          "strong_reference_value": true
+        },
+        {
+          "banks": {
+            "primary": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -1054,
+              "all_complete": true,
+              "charged_cost": 2473,
+              "common": 72,
+              "correct": 343,
+              "correct_per_paid_C": "343/2473",
+              "explore_gain": 221,
+              "functional_gates": true,
+              "older_uses": 39,
+              "oracle_correct_gain": -4,
+              "origin_contexts": 4,
+              "reset_gain": 27
+            },
+            "unseen": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -1059,
+              "all_complete": true,
+              "charged_cost": 2488,
+              "common": 72,
+              "correct": 341,
+              "correct_per_paid_C": "341/2488",
+              "explore_gain": 183,
+              "functional_gates": true,
+              "older_uses": 36,
+              "oracle_correct_gain": -1,
+              "origin_contexts": 4,
+              "reset_gain": 30
+            }
+          },
+          "finite_cohort_energy_gain": false,
+          "functional_selection": false,
+          "nominal_costed_value": false,
+          "paired_sign": {
+            "losses": 4,
+            "p": "397/2048",
+            "passes": false,
+            "ties": 0,
+            "wins": 8
+          },
+          "prior": 2,
+          "strong_reference_value": false
+        },
+        {
+          "banks": {
+            "primary": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -920,
+              "all_complete": true,
+              "charged_cost": 2459,
+              "common": 72,
+              "correct": 349,
+              "correct_per_paid_C": "349/2459",
+              "explore_gain": 159,
+              "functional_gates": true,
+              "older_uses": 27,
+              "oracle_correct_gain": 2,
+              "origin_contexts": 3,
+              "reset_gain": 39
+            },
+            "unseen": {
+              "E_oracle_gain": -336,
+              "N_oracle_gain": -924,
+              "all_complete": true,
+              "charged_cost": 2473,
+              "common": 72,
+              "correct": 347,
+              "correct_per_paid_C": "347/2473",
+              "explore_gain": 185,
+              "functional_gates": true,
+              "older_uses": 24,
+              "oracle_correct_gain": 5,
+              "origin_contexts": 3,
+              "reset_gain": 30
+            }
+          },
+          "finite_cohort_energy_gain": false,
+          "functional_selection": true,
+          "nominal_costed_value": false,
+          "paired_sign": {
+            "losses": 1,
+            "p": "11/1024",
+            "passes": true,
+            "ties": 2,
+            "wins": 9
+          },
+          "prior": 3,
+          "strong_reference_value": true
+        }
+      ],
+      "requires_external_full_literal_parity_native_source_grant_archive": true,
+      "robust_functional_selection": false,
+      "robust_strong_reference_value": false,
+      "scientific_geneses_if_complete": 624,
+      "stage_credit": false,
+      "threshold": "1/80"
+    },
+    "software_admission": null
+  },
+  "completed_roles": {
+    "original:1010100:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010100-generate.json",
+      "extent": 7024527,
+      "sha256": "a48f10b0e57deaf1aaf386dd35f6fd073d973d5b18d3ad09839c2eec1a84542e"
+    },
+    "original:1010100:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010100-audit.json",
+      "extent": 8212,
+      "sha256": "068949d314958cc0005148f3275cf3d7910ce2d756bada21cc5525f39c642665"
+    },
+    "restored:1010100:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010100-generate.json",
+      "extent": 7024527,
+      "sha256": "a48f10b0e57deaf1aaf386dd35f6fd073d973d5b18d3ad09839c2eec1a84542e"
+    },
+    "original:1010100:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010100-metrics.json",
+      "extent": 249202,
+      "sha256": "acc1a083dc4cfd1942b0e69e47b4f4b29ea0eda5e7f8d4a9b55795255ff0e63a"
+    },
+    "original:1010101:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010101-generate.json",
+      "extent": 7054453,
+      "sha256": "f4ee11b22abaf41376c005cc7af00fdf6dfc8d6978422257d08125471f36920e"
+    },
+    "original:1010101:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010101-audit.json",
+      "extent": 8211,
+      "sha256": "36e06ee6690ed11d31e7c1d697e2e22bf4ef2cc6fdc329d31af6dbf7ce1a9eb4"
+    },
+    "restored:1010101:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010101-generate.json",
+      "extent": 7054453,
+      "sha256": "f4ee11b22abaf41376c005cc7af00fdf6dfc8d6978422257d08125471f36920e"
+    },
+    "original:1010101:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010101-metrics.json",
+      "extent": 250579,
+      "sha256": "19223d8d67f019f6e5c68716a0686ddd36df57518f66d929d7c4d920a1e9b755"
+    },
+    "original:1010102:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010102-generate.json",
+      "extent": 7025290,
+      "sha256": "32a742b6c21dd828c5d5a4bbaea90b28f81ad6c586f5ca1e9a61cc5284c8fc73"
+    },
+    "original:1010102:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010102-audit.json",
+      "extent": 8212,
+      "sha256": "de2f9feac293d58f2e94366abaffcc263585189728721ae52fe5c2fd1b3cb426"
+    },
+    "restored:1010102:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010102-generate.json",
+      "extent": 7025290,
+      "sha256": "32a742b6c21dd828c5d5a4bbaea90b28f81ad6c586f5ca1e9a61cc5284c8fc73"
+    },
+    "original:1010102:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010102-metrics.json",
+      "extent": 252663,
+      "sha256": "c0c94e44def5109d29f29f2d445bc1327d9cd214d3d23bc9c28382ca506e5b9f"
+    },
+    "original:1010103:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010103-generate.json",
+      "extent": 7021316,
+      "sha256": "75bc19c8192114e4d136f6d20a039fc8b8b6668d997fcf25c6624cbc1c325631"
+    },
+    "original:1010103:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010103-audit.json",
+      "extent": 8212,
+      "sha256": "71b5ffc2aa706cb14ce3dcfc5800475377b77a1ccc188d1f5c4abb7cfa686df6"
+    },
+    "restored:1010103:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010103-generate.json",
+      "extent": 7021316,
+      "sha256": "75bc19c8192114e4d136f6d20a039fc8b8b6668d997fcf25c6624cbc1c325631"
+    },
+    "original:1010103:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010103-metrics.json",
+      "extent": 253784,
+      "sha256": "ae76d6f94b0ab6c723131caea6c0fde5fd802ed7c5bfd5aedac23943095625d3"
+    },
+    "original:1010104:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010104-generate.json",
+      "extent": 7021316,
+      "sha256": "264fb8887372663212afdd71b809be45ba6b64c3508703f245d8265cc17bb05e"
+    },
+    "original:1010104:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010104-audit.json",
+      "extent": 8212,
+      "sha256": "04fdc8181fb2c15b6ee74b8c669956df257f782628a73b45aeac0ed9a726f2f3"
+    },
+    "restored:1010104:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010104-generate.json",
+      "extent": 7021316,
+      "sha256": "264fb8887372663212afdd71b809be45ba6b64c3508703f245d8265cc17bb05e"
+    },
+    "original:1010104:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010104-metrics.json",
+      "extent": 253784,
+      "sha256": "c6a347526cc5f4c2e67a6c73fb1740cfe9599a0b5a2a430fc1b5b88ffe2e32ef"
+    },
+    "original:1010105:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010105-generate.json",
+      "extent": 7473804,
+      "sha256": "1492ba1120d6eac704485623070d87aa63d4d625f3d441cbac787749c00a8a0a"
+    },
+    "original:1010105:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010105-audit.json",
+      "extent": 8199,
+      "sha256": "67f3ee5e7121483424e423fb54a1f698bdea976f70f8fd6d3a97f1c39e97d3e7"
+    },
+    "restored:1010105:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010105-generate.json",
+      "extent": 7473804,
+      "sha256": "1492ba1120d6eac704485623070d87aa63d4d625f3d441cbac787749c00a8a0a"
+    },
+    "original:1010105:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010105-metrics.json",
+      "extent": 246415,
+      "sha256": "cb6398b489e71b951a0d525df6d1e69f6805b0cf9e62da1d55ee82e5e7cb79ad"
+    },
+    "original:1010300:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010300-generate.json",
+      "extent": 7024527,
+      "sha256": "1a290d5c2c160100e4cbbc0c01ad52f60dc8891c8ece243dab0300ae3f691983"
+    },
+    "original:1010300:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010300-audit.json",
+      "extent": 8212,
+      "sha256": "fb7b7f4debb60517689983f6a276af3ef28103404497e3d18d378aec1f36fb0f"
+    },
+    "restored:1010300:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010300-generate.json",
+      "extent": 7024527,
+      "sha256": "1a290d5c2c160100e4cbbc0c01ad52f60dc8891c8ece243dab0300ae3f691983"
+    },
+    "original:1010300:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010300-metrics.json",
+      "extent": 249202,
+      "sha256": "ac3be2ca4bd955e4ebde1df64220edaf842cfc7841715fdfd9f05101af10645c"
+    },
+    "original:1010301:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010301-generate.json",
+      "extent": 7054453,
+      "sha256": "78498b8f5ff79e098521c0a5936aa7be0878815323baf2a6f7aa40b3b5fd92f8"
+    },
+    "original:1010301:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010301-audit.json",
+      "extent": 8211,
+      "sha256": "292c52602065f1cc3984434f9698d83353e60065efb3fe7c2243fa3e4a5e4a37"
+    },
+    "restored:1010301:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010301-generate.json",
+      "extent": 7054453,
+      "sha256": "78498b8f5ff79e098521c0a5936aa7be0878815323baf2a6f7aa40b3b5fd92f8"
+    },
+    "original:1010301:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010301-metrics.json",
+      "extent": 250579,
+      "sha256": "80dd21b9cd041fde7c05ceb8ecd6e5bb79f1a006c0eb025ac647d6326ced1c3f"
+    },
+    "original:1010302:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010302-generate.json",
+      "extent": 7473804,
+      "sha256": "2fd5faef0980bf325c6684b10585aba1d6439b3e04f286d01e8cf3698a943684"
+    },
+    "original:1010302:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010302-audit.json",
+      "extent": 8199,
+      "sha256": "9db6f7604cce59b5ec74569fff4a128de0959cd8b598aaebf2d9bc38f9c76f84"
+    },
+    "restored:1010302:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010302-generate.json",
+      "extent": 7473804,
+      "sha256": "2fd5faef0980bf325c6684b10585aba1d6439b3e04f286d01e8cf3698a943684"
+    },
+    "original:1010302:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010302-metrics.json",
+      "extent": 246415,
+      "sha256": "6a826ff89cfa9ffbbabe2360b6a1750b151d06ea072dc401b6ca5b64a5614f5c"
+    },
+    "original:1010303:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010303-generate.json",
+      "extent": 7056955,
+      "sha256": "69970a1e9b6e50962e706858c5a61d5d248379a944eddabeb903a13106253b7a"
+    },
+    "original:1010303:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010303-audit.json",
+      "extent": 8212,
+      "sha256": "ac033e7154f2b21d6acecc25387e441b3004d027b894e33edbe37701539e8b68"
+    },
+    "restored:1010303:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010303-generate.json",
+      "extent": 7056955,
+      "sha256": "69970a1e9b6e50962e706858c5a61d5d248379a944eddabeb903a13106253b7a"
+    },
+    "original:1010303:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010303-metrics.json",
+      "extent": 253954,
+      "sha256": "98847f13e0dcbc1a2d588e93f9f94e33d88ae2a78033758090bda82ffe24cac0"
+    },
+    "original:1010304:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010304-generate.json",
+      "extent": 7021396,
+      "sha256": "8b0bc87b6be118fa57c5f777bc6c97e702772de2569470729191a949401d94e0"
+    },
+    "original:1010304:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010304-audit.json",
+      "extent": 8212,
+      "sha256": "bca358e74916013feb6fa0b2f6f92a28d27483166d6f53a425b78e8b7762850d"
+    },
+    "restored:1010304:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010304-generate.json",
+      "extent": 7021396,
+      "sha256": "8b0bc87b6be118fa57c5f777bc6c97e702772de2569470729191a949401d94e0"
+    },
+    "original:1010304:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010304-metrics.json",
+      "extent": 253060,
+      "sha256": "b3f242f17f863da00b48eec9eff855b11e555d0812b1b751e2cf76e9c8423afb"
+    },
+    "original:1010305:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010305-generate.json",
+      "extent": 7021316,
+      "sha256": "4cd122e09c93677d3d34586850e4e8308fc0c816859021cb77335856841df79f"
+    },
+    "original:1010305:audit": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010305-audit.json",
+      "extent": 8212,
+      "sha256": "2e61d414f90faa4ceda3c1abcd67afdfe8b124315342877874b8fc510de7c614"
+    },
+    "restored:1010305:generate": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\restored-1010305-generate.json",
+      "extent": 7021316,
+      "sha256": "4cd122e09c93677d3d34586850e4e8308fc0c816859021cb77335856841df79f"
+    },
+    "original:1010305:metrics": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-1010305-metrics.json",
+      "extent": 253784,
+      "sha256": "cb6a8f965bc2cf52ba993d7ac83ccdaba992519a4e0dd6575c34ec445b47acd8"
+    },
+    "original:all:accept": {
+      "path": "D:\\OraLab\\runs\\strategy88-primary-v1-20261015\\raw\\data\\original-all-accept.json",
+      "extent": 11280,
+      "sha256": "99e0b721e13187b3338ec20b2cd5bbb16f04c222fba4b942cfc09b4be04cd98a"
+    }
+  },
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_child.py": "3b55198649dc7d40e94d87febae4664a39c9ce8b52f83c43125299cd801d1752",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_plan.py": "83c0bdaaebe54795ae13cdea18f4d1985e83a581bd85618d413ec84fc95939ea",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_acceptance.py": "9090361bac121bc4c9503164d434766233c17ea61a9d59647d3f3814573dff90",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\strategy88_pure_worker_v1.py": "a0aa947cbbe20394ce1d902f1025eb74448f52005d840f265edd0a1b8a650c26",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\run_strategy88_v1.py": "dfe74871a709568caabf4c23671aef24de5d8aac921049d31b677e2b3c6bde53",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_source.py": "56a968d73b6accbdf42e27b8deec3eb614669c1eb482394a67ee67e1a19a37d9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-STRATEGY88-PROSPECTIVE-CONTRACT-V1.md": "2c702fb7e523109c3bc58605aa1f2703178a4585edc268471e1095227299e3d6",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_referee.py": "9da82afd0394721b11af205826775c86cf75c44f2b605c17bb86a23ed770c061",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_world.py": "8b4ca82eaa2948ded52564d2796685a5d9b77b166de7afff97084ea69b5710c9",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\data\\credited-fallback86-controls\\active-size-fixture-v1.json": "15b9dc213409ff6c9f69b648d98e95fcb5ccc4c8aadc6b557fde7375a97eb7a3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_referee.py": "dcdc1ea1e1afe54217891aa5ad6708ae54b569fe2e6d7d7370689a5ce3b25935",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_latehistory78_source.py": "d1ea7e7a59aa5550712167b2f5056e6403ae48e573e0deabf0d95da10c7f6029",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_metrics.py": "9dfde778723d9979cb2bd4f809bd2e59713d6f215b094668a6f2121fd5f5a23f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_source.py": "e2c0ed8c746e4adc6b1df38212e18c31be4f88457ee07d582f532137fb2ba9db",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_strategy88.py": "70d3fe4c13a83e01dd74260b9641026aa6f812bb805c3ea562060fdd16b9c27d",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_metric_binding.py": "27f7a4f6511595bd4735258de8f109bbe80834891d1c387a654ebde5a40b6ea0",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_primary_boundary.py": "fc80c8df86f8604711f962476002129f90a64134789942769c7d2683f5cfece1",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_referee.py": "31a45efb4dbfe1fcb20123932d38e1933c72a1a3d76d1a974ecdfc040f2c09e5",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\strategy88-prospective-contract-v1-20261015.md": "2c702fb7e523109c3bc58605aa1f2703178a4585edc268471e1095227299e3d6",
+    "D:\\OraLab\\reports\\strategy88-source-ci-af8aed39d58a.json": "b247ed1759e0ca4deafc1c371fe2c09e373f226368109986f581c0e892a01944",
+    "D:\\OraLab\\reports\\intelligence-priority-action-20261015\\ACTION-HANDOFF.json": "3df55218fbdcbd37d1f42cc75fae6878c9130fbe2421c81dfaad82fb4c8f2e6c",
+    "D:\\OraLab\\reports\\credited-fallback87v2-primary-v1.json": "2ec2f7081a4fe85fc6d0338d1bd0ef39bab3bb8bba5c4bf576465786050d2655",
+    "D:\\OraLab\\reports\\strategy88-software-v1.json": "1468a75081c6e298eef32b52c5393a0191661a64bbe6b5d8cd7a94b2ac5cd18e"
+  },
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "2df0ac695e3de015260c6d2d903fb2b2825ec4f376cc423dada20ac580226fe2",
+  "stage_credit": false
+}
