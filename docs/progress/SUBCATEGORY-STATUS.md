@@ -1,3 +1,13 @@
+# TEMPORAL89 SOFTWARE closed qualified; primary custody source prepared
+
+The separately registered SOFTWARE run completed31 actual native roles,50 originals and50 independent blank source-restored replays. Full independent literal task physics, delayed feedback, late controls, lease accounting, byte parity and exact archive restoration passed. Seven original deaths are retained;43finish60. This is SOFTWARE qualification, not scientific learning or stage evidence. Archive33e86589cad1afb29cd3531b1ef7a18c8bf4a22c3d18665f3660eb41a15ce706; exact source7add22dca38fd940f809a9226c6a7cce9d92c509/CI38830721506SUCCESS preceded registration and Worlds. Never rerun this closed corpus.
+
+Separate primary plan/child/controller and six custody groups now cover209 dependency roles plus4first refusals, all400 original slots, fail-stop at every role, source/native/input binding and complete precharge. Both exact native exports passed NON-PHYSICS mocks with0Worlds/targets. Graph mocks are not213actual calls. See DIGITAL-TEMPORAL89-PRIMARY-CUSTODY-CONTRACT-V1.md and data/temporal89/primary-custody-prepared-v1.json. Closed software files, task source, VM/prices, raw metrics and numeric acceptance remain unchanged.
+
+Primary1010500..7/unseen1010700..7 are unopened. Exact NEW clean source-head CI and separate prospective registration remain mandatory before any scientific producer. Reserves1010600..7/1010800..7 remain forbidden. All3capacities/fivearms/tenefficient references,48earnedwarm+12late/H1024/C1024 and all12signs<=1/240 are frozen. Report the full capacity vector, costs and failures without winner selection. Supplied apparatus and acquired labels remain distinct;no evolved/general intelligence or energy claim follows from custody. Private Observer/history/UI remains separate and never pushed.
+
+<!-- TEMPORAL89-PRIMARY-SOURCE-PUBLIC-CURRENT-END -->
+
 # TEMPORAL89 source and SOFTWARE custody draft — no paid execution yet
 
 The distinct prospective task asks whether own delayed feedback can revise an unknown earlier-cue association across distractors. Source, task adapter and independent literal are implemented, with source/target-free raw origins, separate complete-denominator arithmetic and a finite31-role SOFTWARE worker/controller. Source/CFG, new interface, metric and custody pure qualifications each passed two exact native exports;0task Worlds/0fresh scientific labels. Graph mocks are not actual31native roles or physics.
