@@ -1,0 +1,23 @@
+{
+  "scope": "NEW Context90 source/interface only; no old suite/Worlds",
+  "qualifications": {
+    "context90-packed-v2-prepared": {
+      "archive_sha256": "ed86b070d5d181c43d66a4717a1cfcec2ca39646e82791bcef1e875d03bb4c5c",
+      "native_calls": 2,
+      "worlds": 0
+    },
+    "context90-layout-v3-prepared": {
+      "archive_sha256": "1e36032149e1b8f6816555def5fa2d504f29be538b3326063a49b09b72d3885c",
+      "native_calls": 2,
+      "worlds": 0
+    }
+  },
+  "semantic_ast": {
+    "experiments/digital_context90_access_v2.py": "b268bc36cff971c6a8afb0075871f5b817acbccabe97aad8c920afe786357ffe",
+    "experiments/digital_context90_access_literal_v2.py": "515e9d532c2f4c305ae3d3267c29298b06fc0069574ea3e7b8db9884c8b360e4",
+    "experiments/digital_context90_source_v2.py": "f5800fe7a49f4399be4a87398c076506ab276125c9e97db7abe6deff0bfbc76c",
+    "experiments/digital_context90_source_v3.py": "e29f4b04ecd11030c2d31dba39d2ea29cc8e5c93ab26053fbcf4f1e43292ee9c",
+    "tests/test_context90_access_v2.py": "5a1a00e773dd4acc5416a15e52ed5e71fe29a2c5f395eedf83ec098c317736f7",
+    "tests/test_context90_layout_v3.py": "14b4974220c0ccd5a10d9058d369c3bd6bd1a5272dcc52fee38d42655514c471"
+  }
+}
