@@ -1,0 +1,2464 @@
+{
+  "verified": true,
+  "mode": "primary",
+  "source_head": "29e45b6378b375879549fb856ecdaaf8fcf69558",
+  "native_calls": 213,
+  "completed_geneses": 800,
+  "logical_originals": 400,
+  "observed_generator_counters": {
+    "original:1010500:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010500:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010500:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010500:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010500:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010500:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010500:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010500:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010501:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010501:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010501:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010501:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010501:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010501:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010501:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010501:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010502:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010502:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010502:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010502:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010502:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010502:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010502:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010502:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010503:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010503:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010503:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010503:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010503:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010503:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010503:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010503:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010504:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010504:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010504:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010504:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010504:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010504:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010504:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010504:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010505:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010505:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010505:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010505:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010505:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010505:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010505:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010505:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010506:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010506:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010506:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010506:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010506:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010506:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010506:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010506:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010507:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010507:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010507:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010507:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010507:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010507:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010507:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010507:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010700:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010700:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010700:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010700:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010700:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010700:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010700:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010700:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010701:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010701:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010701:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010701:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010701:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010701:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010701:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010701:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010702:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010702:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010702:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010702:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010702:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010702:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010702:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010702:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010703:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010703:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010703:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010703:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010703:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010703:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010703:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010703:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010704:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010704:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010704:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010704:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010704:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010704:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010704:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010704:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010705:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010705:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010705:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010705:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010705:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010705:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010705:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010705:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010706:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010706:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010706:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010706:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010706:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010706:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010706:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010706:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "original:1010707:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010707:q2:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010707:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010707:q4:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010707:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "restored:1010707:q8:generate": {
+      "genesis_attempts": 5,
+      "completed_constructors": 5
+    },
+    "original:1010707:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    },
+    "restored:1010707:references:generate": {
+      "genesis_attempts": 10,
+      "completed_constructors": 10
+    }
+  },
+  "incomplete_genesis_attempts_not_inferred": false,
+  "new_scientific_geneses": 800,
+  "negative_requests_rejected": 4,
+  "software_admission": null,
+  "summary": {
+    "metric_specs": {
+      "1010500": {
+        "role": "original:1010500:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-metrics.json",
+          "extent": 346299,
+          "sha256": "c3aee5701716d9028883f634c7d52da5bb9e236306e0c36252ee706473a21f74"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010500-metrics.json",
+          "extent": 14199,
+          "sha256": "5a17a39415395e75d39eb9211af59ab1ca0d2418ce9a2e87ac43616e1b7e767b"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010500-metrics.json",
+          "extent": 1533,
+          "sha256": "ad41a852de2e5d6f6727cf73403b4e8c8ec3c3a851eabe6fba8094f7d1b308b8"
+        }
+      },
+      "1010501": {
+        "role": "original:1010501:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-metrics.json",
+          "extent": 459838,
+          "sha256": "f38e2c42b4e8a25d1bf203c44f55ebe6348f945db518fc2026c3c2507373f6b5"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010501-metrics.json",
+          "extent": 14199,
+          "sha256": "9acdd17fc9c5eb6080215abd875f4bc9dbd7fa6da0dc136420d9fe7e1fc1f9e4"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010501-metrics.json",
+          "extent": 1522,
+          "sha256": "edccffea9e7d206ed49022c5acf8832ff58fe95d192ffa2fe5d0a97d6d17ba7a"
+        }
+      },
+      "1010502": {
+        "role": "original:1010502:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-metrics.json",
+          "extent": 399885,
+          "sha256": "b678eecdf213af9c9200e52489ec7a86e50b42a30a47d7b8099899d2378d6f08"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010502-metrics.json",
+          "extent": 14199,
+          "sha256": "1c230a3ab8b408888fa336795f7c541b824e4f4bc007f1c332a000b6c0b110ef"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010502-metrics.json",
+          "extent": 1535,
+          "sha256": "ae2e79c28aa9d0c11fc1b5f7dc56374ad08fc215536487470136e4719c3d6078"
+        }
+      },
+      "1010503": {
+        "role": "original:1010503:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-metrics.json",
+          "extent": 434792,
+          "sha256": "6650bcaa42968238a1e829f25ce70fb21db8a4528e5bb40b3b242fc7c9f62db2"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010503-metrics.json",
+          "extent": 14199,
+          "sha256": "6a3b8a6469cd1ffb2bc054691dd5aecb6b6f427ac6f0ace96f0b7850bf67d058"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010503-metrics.json",
+          "extent": 1534,
+          "sha256": "cfb4d64d63a0a04f63b305d05007139a8018588c52c04672b6672d72bcf22c7f"
+        }
+      },
+      "1010504": {
+        "role": "original:1010504:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-metrics.json",
+          "extent": 415930,
+          "sha256": "1d64db7ca1459f624f9dcbc837daf28b21c04d887afa0681250aa7afd22c700a"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010504-metrics.json",
+          "extent": 14199,
+          "sha256": "0bd5e1e3ae1a316f74e81130b26dff576a8e03175602074af9f8fb3b56dda6ee"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010504-metrics.json",
+          "extent": 1533,
+          "sha256": "7dd94d069f9678a360c01658608ba4a487c150fc3ffa822703845d30500c16a7"
+        }
+      },
+      "1010505": {
+        "role": "original:1010505:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-metrics.json",
+          "extent": 466356,
+          "sha256": "e1dedd8f1ac140a61a72f3d09212ede044cf4d6c37f773166a2f7a0993bd42a9"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010505-metrics.json",
+          "extent": 14199,
+          "sha256": "14fa0b64d0d3a3b90a609fabad6fb87ce5fd38cc74abe98b500cf3ded41fb15e"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010505-metrics.json",
+          "extent": 1534,
+          "sha256": "b05f943611ebb41a1a34bec8a8d2696362d2ca68fe2e8e0defcd917acbf12d92"
+        }
+      },
+      "1010506": {
+        "role": "original:1010506:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-metrics.json",
+          "extent": 447810,
+          "sha256": "875348aacdbf1da4783d3d71cda9db7a8d30cae50e2e48631f9b8c38fa9ea7e5"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010506-metrics.json",
+          "extent": 14199,
+          "sha256": "a6e85c3968eff2167dbf7f7a59f5adcabf936b10074f29e1867017abb8fa9237"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010506-metrics.json",
+          "extent": 1533,
+          "sha256": "32ced69f797a75416d1d14dda03f1c200f4c518b5d9cefdc499c090958a7fa7e"
+        }
+      },
+      "1010507": {
+        "role": "original:1010507:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-metrics.json",
+          "extent": 474646,
+          "sha256": "e791817750e271dda8790570a1f63b007dd9d3b00260e58f4204aedaae6e2f47"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010507-metrics.json",
+          "extent": 14199,
+          "sha256": "749095539bf6f4da33420f7aa42acd762175ecf4d5c201d329db5611d5c7c2b2"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010507-metrics.json",
+          "extent": 1534,
+          "sha256": "0868af7883714908d7203cb21f31198a460a980ebce10ec0e9156d8303f2880c"
+        }
+      },
+      "1010700": {
+        "role": "original:1010700:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-metrics.json",
+          "extent": 346345,
+          "sha256": "2e41a21f9fbdbaaaa8d9295e10f327fe802e7e3ae803553fe7f2dabb087626c7"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010700-metrics.json",
+          "extent": 14199,
+          "sha256": "6fcae3632f2b4338d22dede498c1d9c5f7e196eada0a83db5d61c2d3f0e4253c"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010700-metrics.json",
+          "extent": 1534,
+          "sha256": "68d62acd7a0d474e4830e1946ddc604da06d052d36c96dd8b5347688de71895c"
+        }
+      },
+      "1010701": {
+        "role": "original:1010701:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-metrics.json",
+          "extent": 459724,
+          "sha256": "4f5927d3d1d5b8f64997e96c1e3317948bd01f82f6113077898ad8799753caa2"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010701-metrics.json",
+          "extent": 14199,
+          "sha256": "2323015113413f06ac7bf762cc26f867c8a6ba70588ccbf07bc4f9dc2147f957"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010701-metrics.json",
+          "extent": 1535,
+          "sha256": "b96115ecb08d803f5a926b84941cd30aba98654946513bbc76c57e86338de4c9"
+        }
+      },
+      "1010702": {
+        "role": "original:1010702:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-metrics.json",
+          "extent": 389259,
+          "sha256": "5d8e5e9c4d94cfbf60f13ce66c3e269a6794af7dc3326bfe32368f2ca4e5dc46"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010702-metrics.json",
+          "extent": 14199,
+          "sha256": "1e042481de571d2c3dfcdf229881d8f954908896f1a38b7e94e1cb8d8f881bee"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010702-metrics.json",
+          "extent": 1535,
+          "sha256": "a65b09e3223bc1b77a8a734f6542a454f17f27474ca895ce0cc78ef3ebbe05fb"
+        }
+      },
+      "1010703": {
+        "role": "original:1010703:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-metrics.json",
+          "extent": 455265,
+          "sha256": "1b5a4b3b0f542989783b37e7588fd5dba573900b05692810829b40e3b9dd9f8d"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010703-metrics.json",
+          "extent": 14199,
+          "sha256": "b69ea0fcb2ff3d4814912d786f0ee76a1faac226ace1e039aab789ecb2cb7ded"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010703-metrics.json",
+          "extent": 1535,
+          "sha256": "5a35e6c3ad40b2892119bb6f45984898373fe32e036a9cafc9e01aa22104c785"
+        }
+      },
+      "1010704": {
+        "role": "original:1010704:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-metrics.json",
+          "extent": 472353,
+          "sha256": "7367d8194be9d3cf97e847ed89a4a47d439674285ce2521dbf9ac1cd02dbf76c"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010704-metrics.json",
+          "extent": 14199,
+          "sha256": "86b33500b429300fa58c7577d001b2cb657717511571c9ff09b7ee28c3de7f4b"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010704-metrics.json",
+          "extent": 1535,
+          "sha256": "4e2e63ddd18f7517227470e3bb95b50bdff6a11ae3ff7da8956cbb00f199610f"
+        }
+      },
+      "1010705": {
+        "role": "original:1010705:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-metrics.json",
+          "extent": 457870,
+          "sha256": "96f8f4ca27604857944ffcc00fc1d2eb7d76529c973c508a2811bea1b6ce9977"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010705-metrics.json",
+          "extent": 14199,
+          "sha256": "3b1ba16b4e8f74eeaf85c72141c479cad6e448fb2f7a3fe26533f74ab4deca19"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010705-metrics.json",
+          "extent": 1529,
+          "sha256": "34cc1b64f0fe62b28e20e3d961cbe8969602e9890052edfc454bf3a8848ed634"
+        }
+      },
+      "1010706": {
+        "role": "original:1010706:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-metrics.json",
+          "extent": 472447,
+          "sha256": "f4253abe2d2ec8766528f4dc4ae0ca5262e2beaafc31ba0b55095ba22a48ec68"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010706-metrics.json",
+          "extent": 14199,
+          "sha256": "9edbdd23b89aab31a95bd10963a0cb5cae5d5f148bc70ebda128740cb6be39a4"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010706-metrics.json",
+          "extent": 1534,
+          "sha256": "0fd96151778050b3e9f748e3a0204bfc55a0a5bed8cbd68fac1e0158679ee38f"
+        }
+      },
+      "1010707": {
+        "role": "original:1010707:metrics",
+        "body": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-metrics.json",
+          "extent": 474093,
+          "sha256": "67a14fe57097da8ca1e253e0bb9cec348b81aa147a49fcc04ecfaa9c04c488a8"
+        },
+        "request": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010707-metrics.json",
+          "extent": 14199,
+          "sha256": "7d4ab4fa0472b8a4d425f12bf53f01ef4c5e7985fb3ed4d23e8836bc7aa88eaf"
+        },
+        "native": {
+          "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010707-metrics.json",
+          "extent": 1534,
+          "sha256": "d7be7f3fd25a69e50dc45782f351a2bcec4a5c8d81e7bd4c1ce605acada93232"
+        }
+      }
+    },
+    "arithmetic": {
+      "all_contexts": 16,
+      "architecture_supplied": true,
+      "capacity_results": [
+        {
+          "banks": {
+            "primary": {
+              "common": 96,
+              "control_gains": {
+                "credit_erased": 2,
+                "model_disabled": 9,
+                "recall_disabled": 4,
+                "update_frozen": -1
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": false,
+                "changed_origin_use": false,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": false
+              },
+              "independent_contexts_with_uses": 2,
+              "older_changed_uses": 2,
+              "passes": false,
+              "whole_correct_oracle_gain": -22
+            },
+            "unseen": {
+              "common": 95,
+              "control_gains": {
+                "credit_erased": 7,
+                "model_disabled": 14,
+                "recall_disabled": 0,
+                "update_frozen": 10
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": false,
+                "changed_origin_use": false,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": false
+              },
+              "independent_contexts_with_uses": 2,
+              "older_changed_uses": 2,
+              "passes": false,
+              "whole_correct_oracle_gain": -19
+            }
+          },
+          "capacity": 2,
+          "causal_sign_family": false,
+          "functional_acceptance": false,
+          "signs": {
+            "credit_erased": {
+              "losses": 3,
+              "p": "1/2",
+              "passes": false,
+              "ties": 9,
+              "wins": 4
+            },
+            "model_disabled": {
+              "losses": 6,
+              "p": "1/2",
+              "passes": false,
+              "ties": 3,
+              "wins": 7
+            },
+            "recall_disabled": {
+              "losses": 4,
+              "p": "193/512",
+              "passes": false,
+              "ties": 6,
+              "wins": 6
+            },
+            "update_frozen": {
+              "losses": 7,
+              "p": "1651/2048",
+              "passes": false,
+              "ties": 4,
+              "wins": 5
+            }
+          }
+        },
+        {
+          "banks": {
+            "primary": {
+              "common": 96,
+              "control_gains": {
+                "credit_erased": 11,
+                "model_disabled": 18,
+                "recall_disabled": 12,
+                "update_frozen": 4
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": false,
+                "changed_origin_use": false,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": true
+              },
+              "independent_contexts_with_uses": 1,
+              "older_changed_uses": 2,
+              "passes": false,
+              "whole_correct_oracle_gain": 19
+            },
+            "unseen": {
+              "common": 96,
+              "control_gains": {
+                "credit_erased": 1,
+                "model_disabled": 11,
+                "recall_disabled": 4,
+                "update_frozen": 5
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": false,
+                "changed_origin_use": true,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": false
+              },
+              "independent_contexts_with_uses": 4,
+              "older_changed_uses": 8,
+              "passes": false,
+              "whole_correct_oracle_gain": 4
+            }
+          },
+          "capacity": 4,
+          "causal_sign_family": false,
+          "functional_acceptance": false,
+          "signs": {
+            "credit_erased": {
+              "losses": 2,
+              "p": "29/128",
+              "passes": false,
+              "ties": 9,
+              "wins": 5
+            },
+            "model_disabled": {
+              "losses": 4,
+              "p": "1093/8192",
+              "passes": false,
+              "ties": 3,
+              "wins": 9
+            },
+            "recall_disabled": {
+              "losses": 3,
+              "p": "93/256",
+              "passes": false,
+              "ties": 8,
+              "wins": 5
+            },
+            "update_frozen": {
+              "losses": 5,
+              "p": "319/512",
+              "passes": false,
+              "ties": 6,
+              "wins": 5
+            }
+          }
+        },
+        {
+          "banks": {
+            "primary": {
+              "common": 96,
+              "control_gains": {
+                "credit_erased": 10,
+                "model_disabled": 28,
+                "recall_disabled": 20,
+                "update_frozen": 8
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": true,
+                "changed_origin_use": true,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": true
+              },
+              "independent_contexts_with_uses": 3,
+              "older_changed_uses": 7,
+              "passes": true,
+              "whole_correct_oracle_gain": 65
+            },
+            "unseen": {
+              "common": 96,
+              "control_gains": {
+                "credit_erased": 17,
+                "model_disabled": 23,
+                "recall_disabled": 16,
+                "update_frozen": 18
+              },
+              "finished": 8,
+              "gates": {
+                "all_control_gains": true,
+                "changed_origin_use": true,
+                "common_opportunities": true,
+                "intact_complete": true,
+                "strong_reference": true
+              },
+              "independent_contexts_with_uses": 5,
+              "older_changed_uses": 15,
+              "passes": true,
+              "whole_correct_oracle_gain": 51
+            }
+          },
+          "capacity": 8,
+          "causal_sign_family": false,
+          "functional_acceptance": false,
+          "signs": {
+            "credit_erased": {
+              "losses": 0,
+              "p": "1/512",
+              "passes": true,
+              "ties": 7,
+              "wins": 9
+            },
+            "model_disabled": {
+              "losses": 3,
+              "p": "235/8192",
+              "passes": false,
+              "ties": 2,
+              "wins": 11
+            },
+            "recall_disabled": {
+              "losses": 1,
+              "p": "3/512",
+              "passes": false,
+              "ties": 5,
+              "wins": 10
+            },
+            "update_frozen": {
+              "losses": 0,
+              "p": "1/512",
+              "passes": true,
+              "ties": 7,
+              "wins": 9
+            }
+          }
+        }
+      ],
+      "confirmatory_tests": 12,
+      "evidence_inputs": {
+        "1010500": {
+          "body": {
+            "extent": 346299,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-metrics.json",
+            "sha256": "c3aee5701716d9028883f634c7d52da5bb9e236306e0c36252ee706473a21f74"
+          },
+          "native": {
+            "extent": 1533,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010500-metrics.json",
+            "sha256": "ad41a852de2e5d6f6727cf73403b4e8c8ec3c3a851eabe6fba8094f7d1b308b8"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010500-metrics.json",
+            "sha256": "5a17a39415395e75d39eb9211af59ab1ca0d2418ce9a2e87ac43616e1b7e767b"
+          },
+          "role": "original:1010500:metrics"
+        },
+        "1010501": {
+          "body": {
+            "extent": 459838,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-metrics.json",
+            "sha256": "f38e2c42b4e8a25d1bf203c44f55ebe6348f945db518fc2026c3c2507373f6b5"
+          },
+          "native": {
+            "extent": 1522,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010501-metrics.json",
+            "sha256": "edccffea9e7d206ed49022c5acf8832ff58fe95d192ffa2fe5d0a97d6d17ba7a"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010501-metrics.json",
+            "sha256": "9acdd17fc9c5eb6080215abd875f4bc9dbd7fa6da0dc136420d9fe7e1fc1f9e4"
+          },
+          "role": "original:1010501:metrics"
+        },
+        "1010502": {
+          "body": {
+            "extent": 399885,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-metrics.json",
+            "sha256": "b678eecdf213af9c9200e52489ec7a86e50b42a30a47d7b8099899d2378d6f08"
+          },
+          "native": {
+            "extent": 1535,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010502-metrics.json",
+            "sha256": "ae2e79c28aa9d0c11fc1b5f7dc56374ad08fc215536487470136e4719c3d6078"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010502-metrics.json",
+            "sha256": "1c230a3ab8b408888fa336795f7c541b824e4f4bc007f1c332a000b6c0b110ef"
+          },
+          "role": "original:1010502:metrics"
+        },
+        "1010503": {
+          "body": {
+            "extent": 434792,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-metrics.json",
+            "sha256": "6650bcaa42968238a1e829f25ce70fb21db8a4528e5bb40b3b242fc7c9f62db2"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010503-metrics.json",
+            "sha256": "cfb4d64d63a0a04f63b305d05007139a8018588c52c04672b6672d72bcf22c7f"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010503-metrics.json",
+            "sha256": "6a3b8a6469cd1ffb2bc054691dd5aecb6b6f427ac6f0ace96f0b7850bf67d058"
+          },
+          "role": "original:1010503:metrics"
+        },
+        "1010504": {
+          "body": {
+            "extent": 415930,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-metrics.json",
+            "sha256": "1d64db7ca1459f624f9dcbc837daf28b21c04d887afa0681250aa7afd22c700a"
+          },
+          "native": {
+            "extent": 1533,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010504-metrics.json",
+            "sha256": "7dd94d069f9678a360c01658608ba4a487c150fc3ffa822703845d30500c16a7"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010504-metrics.json",
+            "sha256": "0bd5e1e3ae1a316f74e81130b26dff576a8e03175602074af9f8fb3b56dda6ee"
+          },
+          "role": "original:1010504:metrics"
+        },
+        "1010505": {
+          "body": {
+            "extent": 466356,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-metrics.json",
+            "sha256": "e1dedd8f1ac140a61a72f3d09212ede044cf4d6c37f773166a2f7a0993bd42a9"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010505-metrics.json",
+            "sha256": "b05f943611ebb41a1a34bec8a8d2696362d2ca68fe2e8e0defcd917acbf12d92"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010505-metrics.json",
+            "sha256": "14fa0b64d0d3a3b90a609fabad6fb87ce5fd38cc74abe98b500cf3ded41fb15e"
+          },
+          "role": "original:1010505:metrics"
+        },
+        "1010506": {
+          "body": {
+            "extent": 447810,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-metrics.json",
+            "sha256": "875348aacdbf1da4783d3d71cda9db7a8d30cae50e2e48631f9b8c38fa9ea7e5"
+          },
+          "native": {
+            "extent": 1533,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010506-metrics.json",
+            "sha256": "32ced69f797a75416d1d14dda03f1c200f4c518b5d9cefdc499c090958a7fa7e"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010506-metrics.json",
+            "sha256": "a6e85c3968eff2167dbf7f7a59f5adcabf936b10074f29e1867017abb8fa9237"
+          },
+          "role": "original:1010506:metrics"
+        },
+        "1010507": {
+          "body": {
+            "extent": 474646,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-metrics.json",
+            "sha256": "e791817750e271dda8790570a1f63b007dd9d3b00260e58f4204aedaae6e2f47"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010507-metrics.json",
+            "sha256": "0868af7883714908d7203cb21f31198a460a980ebce10ec0e9156d8303f2880c"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010507-metrics.json",
+            "sha256": "749095539bf6f4da33420f7aa42acd762175ecf4d5c201d329db5611d5c7c2b2"
+          },
+          "role": "original:1010507:metrics"
+        },
+        "1010700": {
+          "body": {
+            "extent": 346345,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-metrics.json",
+            "sha256": "2e41a21f9fbdbaaaa8d9295e10f327fe802e7e3ae803553fe7f2dabb087626c7"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010700-metrics.json",
+            "sha256": "68d62acd7a0d474e4830e1946ddc604da06d052d36c96dd8b5347688de71895c"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010700-metrics.json",
+            "sha256": "6fcae3632f2b4338d22dede498c1d9c5f7e196eada0a83db5d61c2d3f0e4253c"
+          },
+          "role": "original:1010700:metrics"
+        },
+        "1010701": {
+          "body": {
+            "extent": 459724,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-metrics.json",
+            "sha256": "4f5927d3d1d5b8f64997e96c1e3317948bd01f82f6113077898ad8799753caa2"
+          },
+          "native": {
+            "extent": 1535,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010701-metrics.json",
+            "sha256": "b96115ecb08d803f5a926b84941cd30aba98654946513bbc76c57e86338de4c9"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010701-metrics.json",
+            "sha256": "2323015113413f06ac7bf762cc26f867c8a6ba70588ccbf07bc4f9dc2147f957"
+          },
+          "role": "original:1010701:metrics"
+        },
+        "1010702": {
+          "body": {
+            "extent": 389259,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-metrics.json",
+            "sha256": "5d8e5e9c4d94cfbf60f13ce66c3e269a6794af7dc3326bfe32368f2ca4e5dc46"
+          },
+          "native": {
+            "extent": 1535,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010702-metrics.json",
+            "sha256": "a65b09e3223bc1b77a8a734f6542a454f17f27474ca895ce0cc78ef3ebbe05fb"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010702-metrics.json",
+            "sha256": "1e042481de571d2c3dfcdf229881d8f954908896f1a38b7e94e1cb8d8f881bee"
+          },
+          "role": "original:1010702:metrics"
+        },
+        "1010703": {
+          "body": {
+            "extent": 455265,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-metrics.json",
+            "sha256": "1b5a4b3b0f542989783b37e7588fd5dba573900b05692810829b40e3b9dd9f8d"
+          },
+          "native": {
+            "extent": 1535,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010703-metrics.json",
+            "sha256": "5a35e6c3ad40b2892119bb6f45984898373fe32e036a9cafc9e01aa22104c785"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010703-metrics.json",
+            "sha256": "b69ea0fcb2ff3d4814912d786f0ee76a1faac226ace1e039aab789ecb2cb7ded"
+          },
+          "role": "original:1010703:metrics"
+        },
+        "1010704": {
+          "body": {
+            "extent": 472353,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-metrics.json",
+            "sha256": "7367d8194be9d3cf97e847ed89a4a47d439674285ce2521dbf9ac1cd02dbf76c"
+          },
+          "native": {
+            "extent": 1535,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010704-metrics.json",
+            "sha256": "4e2e63ddd18f7517227470e3bb95b50bdff6a11ae3ff7da8956cbb00f199610f"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010704-metrics.json",
+            "sha256": "86b33500b429300fa58c7577d001b2cb657717511571c9ff09b7ee28c3de7f4b"
+          },
+          "role": "original:1010704:metrics"
+        },
+        "1010705": {
+          "body": {
+            "extent": 457870,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-metrics.json",
+            "sha256": "96f8f4ca27604857944ffcc00fc1d2eb7d76529c973c508a2811bea1b6ce9977"
+          },
+          "native": {
+            "extent": 1529,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010705-metrics.json",
+            "sha256": "34cc1b64f0fe62b28e20e3d961cbe8969602e9890052edfc454bf3a8848ed634"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010705-metrics.json",
+            "sha256": "3b1ba16b4e8f74eeaf85c72141c479cad6e448fb2f7a3fe26533f74ab4deca19"
+          },
+          "role": "original:1010705:metrics"
+        },
+        "1010706": {
+          "body": {
+            "extent": 472447,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-metrics.json",
+            "sha256": "f4253abe2d2ec8766528f4dc4ae0ca5262e2beaafc31ba0b55095ba22a48ec68"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010706-metrics.json",
+            "sha256": "0fd96151778050b3e9f748e3a0204bfc55a0a5bed8cbd68fac1e0158679ee38f"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010706-metrics.json",
+            "sha256": "9edbdd23b89aab31a95bd10963a0cb5cae5d5f148bc70ebda128740cb6be39a4"
+          },
+          "role": "original:1010706:metrics"
+        },
+        "1010707": {
+          "body": {
+            "extent": 474093,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-metrics.json",
+            "sha256": "67a14fe57097da8ca1e253e0bb9cec348b81aa147a49fcc04ecfaa9c04c488a8"
+          },
+          "native": {
+            "extent": 1534,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\native\\original-1010707-metrics.json",
+            "sha256": "d7be7f3fd25a69e50dc45782f351a2bcec4a5c8d81e7bd4c1ce605acada93232"
+          },
+          "request": {
+            "extent": 14199,
+            "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\request\\original-1010707-metrics.json",
+            "sha256": "7d4ab4fa0472b8a4d425f12bf53f01ef4c5e7985fb3ed4d23e8836bc7aa88eaf"
+          },
+          "role": "original:1010707:metrics"
+        }
+      },
+      "evolved_architecture": false,
+      "execution_admission": false,
+      "retained_energy_superiority_registered": false,
+      "scope": "Frozen capacity-specific functional vector; external physics/custody mandatory",
+      "software_only": false,
+      "stage_credit": false,
+      "threshold": "1/240",
+      "verified": true,
+      "version": "TEMPORAL89-v1"
+    },
+    "software_admission": null
+  },
+  "completed_roles": {
+    "original:1010500:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q2-generate.json",
+      "extent": 2538936,
+      "sha256": "4bbcf52748cb76810f44404c9e8d3ad294646b8ddad88c0e8a494114d9746280"
+    },
+    "original:1010500:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q2-audit.json",
+      "extent": 1977,
+      "sha256": "e87c353c17544d35b285140dd8330d64e1d9e3ccc124a785a31ad9b6aef15675"
+    },
+    "restored:1010500:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010500-q2-generate.json",
+      "extent": 2538936,
+      "sha256": "4bbcf52748cb76810f44404c9e8d3ad294646b8ddad88c0e8a494114d9746280"
+    },
+    "original:1010500:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q4-generate.json",
+      "extent": 2563016,
+      "sha256": "024ec1cb43dac4cb797ea00a17722e741fbb7e61247a2edc3f88d4dc27540554"
+    },
+    "original:1010500:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q4-audit.json",
+      "extent": 1977,
+      "sha256": "d36b05a5ca404d9d89f0374d11a6c09bb7b37ca3c42d5d2048005e90264434f3"
+    },
+    "restored:1010500:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010500-q4-generate.json",
+      "extent": 2563016,
+      "sha256": "024ec1cb43dac4cb797ea00a17722e741fbb7e61247a2edc3f88d4dc27540554"
+    },
+    "original:1010500:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q8-generate.json",
+      "extent": 2611176,
+      "sha256": "7214de49944ffc44ec1d5303c07aff4cafff2d2456eb654499e3f71a7a3b6ddd"
+    },
+    "original:1010500:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-q8-audit.json",
+      "extent": 1977,
+      "sha256": "99792eb021dc3097f11565270592b291a0d623d7d291f5647fbacb39a2616868"
+    },
+    "restored:1010500:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010500-q8-generate.json",
+      "extent": 2611176,
+      "sha256": "7214de49944ffc44ec1d5303c07aff4cafff2d2456eb654499e3f71a7a3b6ddd"
+    },
+    "original:1010500:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-references-generate.json",
+      "extent": 3169320,
+      "sha256": "ee22e231ff92228256a1b1e10771e2eba8d5a3ab2bc663310f7da34afdddc534"
+    },
+    "original:1010500:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-references-audit.json",
+      "extent": 3473,
+      "sha256": "8e2a66ab3600b06f17756a192cfeb2dcf4382849b858ab9da98ea4825f9ef985"
+    },
+    "restored:1010500:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010500-references-generate.json",
+      "extent": 3169320,
+      "sha256": "ee22e231ff92228256a1b1e10771e2eba8d5a3ab2bc663310f7da34afdddc534"
+    },
+    "original:1010500:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010500-metrics.json",
+      "extent": 346299,
+      "sha256": "c3aee5701716d9028883f634c7d52da5bb9e236306e0c36252ee706473a21f74"
+    },
+    "original:1010501:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q2-generate.json",
+      "extent": 2612533,
+      "sha256": "a4853262cf883c4067ee66423e76976b715b702dac328de6edb04555e6c1b0b7"
+    },
+    "original:1010501:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q2-audit.json",
+      "extent": 1976,
+      "sha256": "649fd98be830ec2a32251baf86abbd8e49c8bed0e963dae25fddc6e983ff6bc8"
+    },
+    "restored:1010501:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010501-q2-generate.json",
+      "extent": 2612533,
+      "sha256": "a4853262cf883c4067ee66423e76976b715b702dac328de6edb04555e6c1b0b7"
+    },
+    "original:1010501:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q4-generate.json",
+      "extent": 2672129,
+      "sha256": "00c079e8e34729041a9f275980b9700b619352c97be51f67c7918b378c7346e0"
+    },
+    "original:1010501:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q4-audit.json",
+      "extent": 1976,
+      "sha256": "acdb1867a0ce34066b7ebb4dad600bb6e5606d6a8e54e0c0b7cdba328495f6da"
+    },
+    "restored:1010501:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010501-q4-generate.json",
+      "extent": 2672129,
+      "sha256": "00c079e8e34729041a9f275980b9700b619352c97be51f67c7918b378c7346e0"
+    },
+    "original:1010501:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q8-generate.json",
+      "extent": 2792434,
+      "sha256": "1e030114d916f3727bbdcbe5711ffd7b04f30b86844c69df8b9931b02191c05e"
+    },
+    "original:1010501:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-q8-audit.json",
+      "extent": 1976,
+      "sha256": "5a3e533f394384245a9bb2967ca3a49bed17f7cb38fef14cbc891fca013cd7dd"
+    },
+    "restored:1010501:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010501-q8-generate.json",
+      "extent": 2792434,
+      "sha256": "1e030114d916f3727bbdcbe5711ffd7b04f30b86844c69df8b9931b02191c05e"
+    },
+    "original:1010501:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-references-generate.json",
+      "extent": 3169297,
+      "sha256": "6bc795b722dfe95c787ac09248d6e9c0fbfd634e104d096f95917c640fd1a3f0"
+    },
+    "original:1010501:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-references-audit.json",
+      "extent": 3473,
+      "sha256": "69db9279a3dadebd81531f2fb7b657824497f49223739cf584551059e475b644"
+    },
+    "restored:1010501:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010501-references-generate.json",
+      "extent": 3169297,
+      "sha256": "6bc795b722dfe95c787ac09248d6e9c0fbfd634e104d096f95917c640fd1a3f0"
+    },
+    "original:1010501:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010501-metrics.json",
+      "extent": 459838,
+      "sha256": "f38e2c42b4e8a25d1bf203c44f55ebe6348f945db518fc2026c3c2507373f6b5"
+    },
+    "original:1010502:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q2-generate.json",
+      "extent": 2779735,
+      "sha256": "71b21562dcb51dca6234aad9dd58c05e075e5c56cc0569a57ded8d8a93afcd8f"
+    },
+    "original:1010502:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q2-audit.json",
+      "extent": 1977,
+      "sha256": "667732db067a7ee8dde8a1009654d4ab0775798fcef44277ce77c51b303f25f0"
+    },
+    "restored:1010502:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010502-q2-generate.json",
+      "extent": 2779735,
+      "sha256": "71b21562dcb51dca6234aad9dd58c05e075e5c56cc0569a57ded8d8a93afcd8f"
+    },
+    "original:1010502:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q4-generate.json",
+      "extent": 2794816,
+      "sha256": "b7044d24dc045e322b641e0a2fddedcddb8f28f4ddba589ad957e9bf68a6fab5"
+    },
+    "original:1010502:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q4-audit.json",
+      "extent": 1977,
+      "sha256": "216043b1ab80d89816ddcc1c29eb83a84e598938f057115fdc755eae93b13958"
+    },
+    "restored:1010502:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010502-q4-generate.json",
+      "extent": 2794816,
+      "sha256": "b7044d24dc045e322b641e0a2fddedcddb8f28f4ddba589ad957e9bf68a6fab5"
+    },
+    "original:1010502:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q8-generate.json",
+      "extent": 2667984,
+      "sha256": "6477b9ec8d06c2367e0fb6d2249479c3b47e3aaee13636cf6c0318811e9e3e46"
+    },
+    "original:1010502:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-q8-audit.json",
+      "extent": 1977,
+      "sha256": "bd9e4de961e5c48bee2c5ba15cc3267f11554edb330eaeb496f5e334d3f8b592"
+    },
+    "restored:1010502:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010502-q8-generate.json",
+      "extent": 2667984,
+      "sha256": "6477b9ec8d06c2367e0fb6d2249479c3b47e3aaee13636cf6c0318811e9e3e46"
+    },
+    "original:1010502:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-references-generate.json",
+      "extent": 2999892,
+      "sha256": "f2a4bb717cbda2f9ed7198287062de8c14573e1ca48e6754a170d1cdf74bacd6"
+    },
+    "original:1010502:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-references-audit.json",
+      "extent": 3469,
+      "sha256": "20d7f1786c31758184829499346ae8fda8735c9bfc78fb1d01acb10d17bd355c"
+    },
+    "restored:1010502:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010502-references-generate.json",
+      "extent": 2999892,
+      "sha256": "f2a4bb717cbda2f9ed7198287062de8c14573e1ca48e6754a170d1cdf74bacd6"
+    },
+    "original:1010502:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010502-metrics.json",
+      "extent": 399885,
+      "sha256": "b678eecdf213af9c9200e52489ec7a86e50b42a30a47d7b8099899d2378d6f08"
+    },
+    "original:1010503:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q2-generate.json",
+      "extent": 2899316,
+      "sha256": "d53828d26e7ba23b4381a79620c04b18acec24eb58e8b26de2711f03c55a911f"
+    },
+    "original:1010503:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q2-audit.json",
+      "extent": 1977,
+      "sha256": "55e7848f566d526a5c3f2877b4fe5cc7298f4b007c1d122df4f91acbcb74ba59"
+    },
+    "restored:1010503:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010503-q2-generate.json",
+      "extent": 2899316,
+      "sha256": "d53828d26e7ba23b4381a79620c04b18acec24eb58e8b26de2711f03c55a911f"
+    },
+    "original:1010503:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q4-generate.json",
+      "extent": 2814396,
+      "sha256": "452fda96ea5fd8714fa7a3e0f4fca4008615a30f726b585eb43afef5415f10aa"
+    },
+    "original:1010503:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q4-audit.json",
+      "extent": 1977,
+      "sha256": "638898d63c1208c9a88bedeea23922c419a43c431efbdac314b4971652a8934d"
+    },
+    "restored:1010503:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010503-q4-generate.json",
+      "extent": 2814396,
+      "sha256": "452fda96ea5fd8714fa7a3e0f4fca4008615a30f726b585eb43afef5415f10aa"
+    },
+    "original:1010503:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q8-generate.json",
+      "extent": 2741182,
+      "sha256": "83469332c8c0f9013ea7ea25b3b67fa4c28d94c4bb16f7fa27dc96a89b2c6053"
+    },
+    "original:1010503:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-q8-audit.json",
+      "extent": 1977,
+      "sha256": "b034f28d78ea9269e4a38bb926fc560a54e617c0b92ad05d7046242e8cdc41f7"
+    },
+    "restored:1010503:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010503-q8-generate.json",
+      "extent": 2741182,
+      "sha256": "83469332c8c0f9013ea7ea25b3b67fa4c28d94c4bb16f7fa27dc96a89b2c6053"
+    },
+    "original:1010503:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-references-generate.json",
+      "extent": 3276782,
+      "sha256": "da7c36bbe0044fe603efa2d0e6a8d2ec8a5349033b04e6ef92f7c1e9a3100c43"
+    },
+    "original:1010503:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-references-audit.json",
+      "extent": 3474,
+      "sha256": "9f143a9bf2fe069ef40da63b24f13a22f31e81cb0823a68a3da979491b60a8c1"
+    },
+    "restored:1010503:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010503-references-generate.json",
+      "extent": 3276782,
+      "sha256": "da7c36bbe0044fe603efa2d0e6a8d2ec8a5349033b04e6ef92f7c1e9a3100c43"
+    },
+    "original:1010503:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010503-metrics.json",
+      "extent": 434792,
+      "sha256": "6650bcaa42968238a1e829f25ce70fb21db8a4528e5bb40b3b242fc7c9f62db2"
+    },
+    "original:1010504:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q2-generate.json",
+      "extent": 2891226,
+      "sha256": "31cec1d9728a09314ff420399d05f11803abab29a8937c95f2ce1065a8167457"
+    },
+    "original:1010504:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q2-audit.json",
+      "extent": 1977,
+      "sha256": "323685e9249df75f0da4473c60e0ec1b233bb3c539a223e90f28cb5ee8582365"
+    },
+    "restored:1010504:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010504-q2-generate.json",
+      "extent": 2891226,
+      "sha256": "31cec1d9728a09314ff420399d05f11803abab29a8937c95f2ce1065a8167457"
+    },
+    "original:1010504:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q4-generate.json",
+      "extent": 2701221,
+      "sha256": "344449d5d1624c15713b60dd41e1d624af8ccb6e98858f1b312dd422612e74a1"
+    },
+    "original:1010504:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q4-audit.json",
+      "extent": 1977,
+      "sha256": "f7101a7cd76e8286bef448da8d3dea835d935ded5f5e88204b65a1ce88a883d6"
+    },
+    "restored:1010504:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010504-q4-generate.json",
+      "extent": 2701221,
+      "sha256": "344449d5d1624c15713b60dd41e1d624af8ccb6e98858f1b312dd422612e74a1"
+    },
+    "original:1010504:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q8-generate.json",
+      "extent": 2758766,
+      "sha256": "51f8d82fcda4ab56ac9a914808c200ae916124726261f0b7bcd14a3df03df8a7"
+    },
+    "original:1010504:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-q8-audit.json",
+      "extent": 1977,
+      "sha256": "3ffd6b1f82a83adf239c83c0d896d79908b7eab7d21b25c7d948ff75ae999d74"
+    },
+    "restored:1010504:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010504-q8-generate.json",
+      "extent": 2758766,
+      "sha256": "51f8d82fcda4ab56ac9a914808c200ae916124726261f0b7bcd14a3df03df8a7"
+    },
+    "original:1010504:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-references-generate.json",
+      "extent": 3131375,
+      "sha256": "8585e8ed27337cc190a273ae4607bd7469637fcbdfd328d9db1f61b9e82679dd"
+    },
+    "original:1010504:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-references-audit.json",
+      "extent": 3472,
+      "sha256": "91fc13195a779e90e3c8fbdfe4de6e86b363655dcce6b6e34010eb2dc8bdcedb"
+    },
+    "restored:1010504:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010504-references-generate.json",
+      "extent": 3131375,
+      "sha256": "8585e8ed27337cc190a273ae4607bd7469637fcbdfd328d9db1f61b9e82679dd"
+    },
+    "original:1010504:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010504-metrics.json",
+      "extent": 415930,
+      "sha256": "1d64db7ca1459f624f9dcbc837daf28b21c04d887afa0681250aa7afd22c700a"
+    },
+    "original:1010505:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q2-generate.json",
+      "extent": 2945875,
+      "sha256": "53e9172f8aa62a254626dc1b45a2a934a6d4923be89a105f7fc7bdccdbb67592"
+    },
+    "original:1010505:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q2-audit.json",
+      "extent": 1977,
+      "sha256": "1546e47ae1ae909a323132c5bd8fd7f44368a5ac8c8c6ad98ab880448dfb197d"
+    },
+    "restored:1010505:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010505-q2-generate.json",
+      "extent": 2945875,
+      "sha256": "53e9172f8aa62a254626dc1b45a2a934a6d4923be89a105f7fc7bdccdbb67592"
+    },
+    "original:1010505:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q4-generate.json",
+      "extent": 2803975,
+      "sha256": "7a9db999486c15f3e6609f09039565a0e6b1b74cf8a6729c326d7e2f1a0aa64a"
+    },
+    "original:1010505:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q4-audit.json",
+      "extent": 1977,
+      "sha256": "ddff0d6da36920bdbc07e09c0cd9f86a426246ba45efabbe2fa2b85c6b652551"
+    },
+    "restored:1010505:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010505-q4-generate.json",
+      "extent": 2803975,
+      "sha256": "7a9db999486c15f3e6609f09039565a0e6b1b74cf8a6729c326d7e2f1a0aa64a"
+    },
+    "original:1010505:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q8-generate.json",
+      "extent": 2728816,
+      "sha256": "f40612213f5f28a437be6a4da2f018264358e866842e71bf4470e3dbf6d99e38"
+    },
+    "original:1010505:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-q8-audit.json",
+      "extent": 1977,
+      "sha256": "7506aec3af1a87a7415aeaaa92b337287a599c5f2f46e1fb3347942bd41da82b"
+    },
+    "restored:1010505:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010505-q8-generate.json",
+      "extent": 2728816,
+      "sha256": "f40612213f5f28a437be6a4da2f018264358e866842e71bf4470e3dbf6d99e38"
+    },
+    "original:1010505:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-references-generate.json",
+      "extent": 3494782,
+      "sha256": "a7a572fecc39f88f4c758bd23889bcbed0c0e1a33eb202d47f878a498906a760"
+    },
+    "original:1010505:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-references-audit.json",
+      "extent": 3479,
+      "sha256": "23215dbf152aacd52f11fd7161c7838ac35ab2c1dfe4169549bf84dbb074ff01"
+    },
+    "restored:1010505:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010505-references-generate.json",
+      "extent": 3494782,
+      "sha256": "a7a572fecc39f88f4c758bd23889bcbed0c0e1a33eb202d47f878a498906a760"
+    },
+    "original:1010505:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010505-metrics.json",
+      "extent": 466356,
+      "sha256": "e1dedd8f1ac140a61a72f3d09212ede044cf4d6c37f773166a2f7a0993bd42a9"
+    },
+    "original:1010506:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q2-generate.json",
+      "extent": 2862401,
+      "sha256": "98098eee8c2deb0ca11e38a6751957cf268c53ff602475a8ccb0eccb351176f3"
+    },
+    "original:1010506:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q2-audit.json",
+      "extent": 1977,
+      "sha256": "f51d3d8a235127bc18bfcff3a1f7d93f8963fae27e319d2dc6a02670b12db89f"
+    },
+    "restored:1010506:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010506-q2-generate.json",
+      "extent": 2862401,
+      "sha256": "98098eee8c2deb0ca11e38a6751957cf268c53ff602475a8ccb0eccb351176f3"
+    },
+    "original:1010506:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q4-generate.json",
+      "extent": 2876276,
+      "sha256": "9f49779841feb599af2c4102409f0001b33627869f7ee073e487103d344489a6"
+    },
+    "original:1010506:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q4-audit.json",
+      "extent": 1977,
+      "sha256": "7caca7b3e1ccc3dff6b93a540d765a80854843279ca65afaf2e557c89869774f"
+    },
+    "restored:1010506:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010506-q4-generate.json",
+      "extent": 2876276,
+      "sha256": "9f49779841feb599af2c4102409f0001b33627869f7ee073e487103d344489a6"
+    },
+    "original:1010506:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q8-generate.json",
+      "extent": 2692968,
+      "sha256": "fc5be4e834aa81f0595ea88897dfe397ca20f54018bf2a71c8f17c3dc889a6bf"
+    },
+    "original:1010506:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-q8-audit.json",
+      "extent": 1977,
+      "sha256": "c019d078e2b4324d07b446d2a842ce1216243dfdf605c8a11e6dbef704917012"
+    },
+    "restored:1010506:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010506-q8-generate.json",
+      "extent": 2692968,
+      "sha256": "fc5be4e834aa81f0595ea88897dfe397ca20f54018bf2a71c8f17c3dc889a6bf"
+    },
+    "original:1010506:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-references-generate.json",
+      "extent": 3273324,
+      "sha256": "9232ee9c065991339eab8cb5ebb9c240bf69e61c9c1df2e7e17d1a3e4aa2774e"
+    },
+    "original:1010506:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-references-audit.json",
+      "extent": 3473,
+      "sha256": "b5fd45515897184db26583545ea1b1400fff7d10cf39720a17b5db6255966f0e"
+    },
+    "restored:1010506:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010506-references-generate.json",
+      "extent": 3273324,
+      "sha256": "9232ee9c065991339eab8cb5ebb9c240bf69e61c9c1df2e7e17d1a3e4aa2774e"
+    },
+    "original:1010506:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010506-metrics.json",
+      "extent": 447810,
+      "sha256": "875348aacdbf1da4783d3d71cda9db7a8d30cae50e2e48631f9b8c38fa9ea7e5"
+    },
+    "original:1010507:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q2-generate.json",
+      "extent": 2838011,
+      "sha256": "3dcece423626bf8196c85d3d7298986cc2148611d03d89aa6ac1383b25d5e37c"
+    },
+    "original:1010507:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q2-audit.json",
+      "extent": 1976,
+      "sha256": "7c0955da6747fb850d4c49f243020049f8b0bd5876605d1d3e14fcbed5837c5c"
+    },
+    "restored:1010507:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010507-q2-generate.json",
+      "extent": 2838011,
+      "sha256": "3dcece423626bf8196c85d3d7298986cc2148611d03d89aa6ac1383b25d5e37c"
+    },
+    "original:1010507:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q4-generate.json",
+      "extent": 2831435,
+      "sha256": "70e9e6a7079f323a1d1206fa7c8f23df7265e8a00c4e34a66a08ecbc330c7b38"
+    },
+    "original:1010507:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q4-audit.json",
+      "extent": 1976,
+      "sha256": "89b16e63ce59bfe7af0474137e5427451ac235ff2fe35b4a53c3d2963cc579fc"
+    },
+    "restored:1010507:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010507-q4-generate.json",
+      "extent": 2831435,
+      "sha256": "70e9e6a7079f323a1d1206fa7c8f23df7265e8a00c4e34a66a08ecbc330c7b38"
+    },
+    "original:1010507:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q8-generate.json",
+      "extent": 2831111,
+      "sha256": "b47620a142b3e15b04541e20a7d5098db22880b3e49c745439759026c2d82b9a"
+    },
+    "original:1010507:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-q8-audit.json",
+      "extent": 1977,
+      "sha256": "1f6e1fe85eed5656befae3deb5db852a92d22d3c78f6edc3e35555a0fc9de321"
+    },
+    "restored:1010507:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010507-q8-generate.json",
+      "extent": 2831111,
+      "sha256": "b47620a142b3e15b04541e20a7d5098db22880b3e49c745439759026c2d82b9a"
+    },
+    "original:1010507:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-references-generate.json",
+      "extent": 3211424,
+      "sha256": "265ef98ff0817d8a210e9b3cb0b50dd3916f6431b7da3c5b403201f6a5b606f5"
+    },
+    "original:1010507:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-references-audit.json",
+      "extent": 3471,
+      "sha256": "ed67a80a93976cf84ada7e7c3076df4f08a8da6a8f2019c28e6184086aeb2c75"
+    },
+    "restored:1010507:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010507-references-generate.json",
+      "extent": 3211424,
+      "sha256": "265ef98ff0817d8a210e9b3cb0b50dd3916f6431b7da3c5b403201f6a5b606f5"
+    },
+    "original:1010507:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010507-metrics.json",
+      "extent": 474646,
+      "sha256": "e791817750e271dda8790570a1f63b007dd9d3b00260e58f4204aedaae6e2f47"
+    },
+    "original:1010700:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q2-generate.json",
+      "extent": 2538936,
+      "sha256": "f3ceecde7c245de4b46de638e00463d29ec81b306ac3e5f5e09249f9f4a9fb4b"
+    },
+    "original:1010700:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q2-audit.json",
+      "extent": 1977,
+      "sha256": "6cd75672a25f76aa27d3f07e4a21c92e983fd8dc0f02dc1266048623eabdc54e"
+    },
+    "restored:1010700:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010700-q2-generate.json",
+      "extent": 2538936,
+      "sha256": "f3ceecde7c245de4b46de638e00463d29ec81b306ac3e5f5e09249f9f4a9fb4b"
+    },
+    "original:1010700:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q4-generate.json",
+      "extent": 2563016,
+      "sha256": "ecf91e12470ccc48206c74182354b7b2bf3d8b3a0556922c71928087eba24f08"
+    },
+    "original:1010700:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q4-audit.json",
+      "extent": 1977,
+      "sha256": "437fa51650ce06a332296f2949cec6a9b01c538c0d4f43df9511ea9da8ae2054"
+    },
+    "restored:1010700:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010700-q4-generate.json",
+      "extent": 2563016,
+      "sha256": "ecf91e12470ccc48206c74182354b7b2bf3d8b3a0556922c71928087eba24f08"
+    },
+    "original:1010700:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q8-generate.json",
+      "extent": 2611176,
+      "sha256": "ea95981209d727a2d6bb44202eed5ec8341ad3f5949b7d42a2604c1df6b71e26"
+    },
+    "original:1010700:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-q8-audit.json",
+      "extent": 1977,
+      "sha256": "64e97553f7f6871b5300f93a3aa23fb096d76678c4cea5a8b5bcb47dda8a88de"
+    },
+    "restored:1010700:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010700-q8-generate.json",
+      "extent": 2611176,
+      "sha256": "ea95981209d727a2d6bb44202eed5ec8341ad3f5949b7d42a2604c1df6b71e26"
+    },
+    "original:1010700:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-references-generate.json",
+      "extent": 3168898,
+      "sha256": "189cb572589d19aacf0d7212694546b2b0c13795c368e98959fe14fd601d717d"
+    },
+    "original:1010700:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-references-audit.json",
+      "extent": 3473,
+      "sha256": "10ce444d2c10f592b36445095ca64291a7f36e341eb9a915ba45708a1a4a6916"
+    },
+    "restored:1010700:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010700-references-generate.json",
+      "extent": 3168898,
+      "sha256": "189cb572589d19aacf0d7212694546b2b0c13795c368e98959fe14fd601d717d"
+    },
+    "original:1010700:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010700-metrics.json",
+      "extent": 346345,
+      "sha256": "2e41a21f9fbdbaaaa8d9295e10f327fe802e7e3ae803553fe7f2dabb087626c7"
+    },
+    "original:1010701:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q2-generate.json",
+      "extent": 2612598,
+      "sha256": "2b9078cfb1a13525fc833ddb6812a2d7a6d2e746cdcbe0e225366c9b2c76fa33"
+    },
+    "original:1010701:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q2-audit.json",
+      "extent": 1976,
+      "sha256": "b98f054e134a4abf405f713c636ec7983499740eddaf6776161ac93cc39717e2"
+    },
+    "restored:1010701:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010701-q2-generate.json",
+      "extent": 2612598,
+      "sha256": "2b9078cfb1a13525fc833ddb6812a2d7a6d2e746cdcbe0e225366c9b2c76fa33"
+    },
+    "original:1010701:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q4-generate.json",
+      "extent": 2672049,
+      "sha256": "261f91205c013a886c9e80dd061fbd57c37c0edeaadc51ef1c06b99b4c3e89a2"
+    },
+    "original:1010701:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q4-audit.json",
+      "extent": 1976,
+      "sha256": "a5d9322a5be054436dacf3e879dd25882a0eab4df5805ce90f64ce927184fee8"
+    },
+    "restored:1010701:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010701-q4-generate.json",
+      "extent": 2672049,
+      "sha256": "261f91205c013a886c9e80dd061fbd57c37c0edeaadc51ef1c06b99b4c3e89a2"
+    },
+    "original:1010701:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q8-generate.json",
+      "extent": 2792469,
+      "sha256": "f2f6595d6f2333aa66a2b7d73a9974a46fd0dc592c9a67166fa8ce7e9a2dbb33"
+    },
+    "original:1010701:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-q8-audit.json",
+      "extent": 1976,
+      "sha256": "2a4b364a5a20f5d33abc5c0195e784246cdcb09f60f6161f02df4560f1796378"
+    },
+    "restored:1010701:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010701-q8-generate.json",
+      "extent": 2792469,
+      "sha256": "f2f6595d6f2333aa66a2b7d73a9974a46fd0dc592c9a67166fa8ce7e9a2dbb33"
+    },
+    "original:1010701:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-references-generate.json",
+      "extent": 3169470,
+      "sha256": "6e96932b7f868d7bee5fb7640db17616e79eb625d57e0548a7217be786113264"
+    },
+    "original:1010701:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-references-audit.json",
+      "extent": 3473,
+      "sha256": "ae9c5cf0e971972d175a17e1814ca4fcadd74a0a6e7837545e57e68142a02114"
+    },
+    "restored:1010701:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010701-references-generate.json",
+      "extent": 3169470,
+      "sha256": "6e96932b7f868d7bee5fb7640db17616e79eb625d57e0548a7217be786113264"
+    },
+    "original:1010701:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010701-metrics.json",
+      "extent": 459724,
+      "sha256": "4f5927d3d1d5b8f64997e96c1e3317948bd01f82f6113077898ad8799753caa2"
+    },
+    "original:1010702:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q2-generate.json",
+      "extent": 2722848,
+      "sha256": "85fcdbab8638f259055ab8a3edee6b0f909148078178835f3f8fe165cff6d13d"
+    },
+    "original:1010702:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q2-audit.json",
+      "extent": 1977,
+      "sha256": "134d4d1cf13b50f0d541ba632057763a3d58d581a94b0d76f856b3b62642cfc8"
+    },
+    "restored:1010702:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010702-q2-generate.json",
+      "extent": 2722848,
+      "sha256": "85fcdbab8638f259055ab8a3edee6b0f909148078178835f3f8fe165cff6d13d"
+    },
+    "original:1010702:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q4-generate.json",
+      "extent": 2744719,
+      "sha256": "cf34cb8dd331992338e9514714a04bd8b8c7176db737fb12dd4a4e408e0ad321"
+    },
+    "original:1010702:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q4-audit.json",
+      "extent": 1977,
+      "sha256": "22c292678332c34ed9d6c24c4d170eeef2faf8cf80c22b16062054ec53b5a96f"
+    },
+    "restored:1010702:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010702-q4-generate.json",
+      "extent": 2744719,
+      "sha256": "cf34cb8dd331992338e9514714a04bd8b8c7176db737fb12dd4a4e408e0ad321"
+    },
+    "original:1010702:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q8-generate.json",
+      "extent": 2683021,
+      "sha256": "2c0e0253987cd37b2d6e98358768693d7e9a9c95e3cd6d02d082f804db1bdb1f"
+    },
+    "original:1010702:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-q8-audit.json",
+      "extent": 1977,
+      "sha256": "e7b49879166f87d25ef074e601971fd1da7045937b90394e256fa00bb28aad25"
+    },
+    "restored:1010702:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010702-q8-generate.json",
+      "extent": 2683021,
+      "sha256": "2c0e0253987cd37b2d6e98358768693d7e9a9c95e3cd6d02d082f804db1bdb1f"
+    },
+    "original:1010702:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-references-generate.json",
+      "extent": 3098529,
+      "sha256": "349f4e6d9f17f2ef5856073b89df0def44909eb54168e2cc9880488782270adc"
+    },
+    "original:1010702:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-references-audit.json",
+      "extent": 3469,
+      "sha256": "e4779bf358a96bb03b735ba0dd3e986faeac0c130f599286c017e357a644e04f"
+    },
+    "restored:1010702:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010702-references-generate.json",
+      "extent": 3098529,
+      "sha256": "349f4e6d9f17f2ef5856073b89df0def44909eb54168e2cc9880488782270adc"
+    },
+    "original:1010702:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010702-metrics.json",
+      "extent": 389259,
+      "sha256": "5d8e5e9c4d94cfbf60f13ce66c3e269a6794af7dc3326bfe32368f2ca4e5dc46"
+    },
+    "original:1010703:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q2-generate.json",
+      "extent": 2854675,
+      "sha256": "31519d2dffd916d354bb3cc0d34b787dbadcd280f638fbfa7171d65bbafce109"
+    },
+    "original:1010703:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q2-audit.json",
+      "extent": 1977,
+      "sha256": "c814da2999d6f906e84a83bf400aca056b7045357b19320e566010ce83eaaac3"
+    },
+    "restored:1010703:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010703-q2-generate.json",
+      "extent": 2854675,
+      "sha256": "31519d2dffd916d354bb3cc0d34b787dbadcd280f638fbfa7171d65bbafce109"
+    },
+    "original:1010703:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q4-generate.json",
+      "extent": 2856560,
+      "sha256": "be1a7c64712111f850075e73be1fae1627bb6487a4e3345a0b825e99c40af35b"
+    },
+    "original:1010703:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q4-audit.json",
+      "extent": 1977,
+      "sha256": "54bf285be8c4ce53eb0542a89d1aa9e872d9c5c3a55723e0c19d4a4051640fbc"
+    },
+    "restored:1010703:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010703-q4-generate.json",
+      "extent": 2856560,
+      "sha256": "be1a7c64712111f850075e73be1fae1627bb6487a4e3345a0b825e99c40af35b"
+    },
+    "original:1010703:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q8-generate.json",
+      "extent": 2759474,
+      "sha256": "ce323c803b51a41451fb36c5d36b324b7600acbbc9004495b7c7b60ee69d65c0"
+    },
+    "original:1010703:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-q8-audit.json",
+      "extent": 1977,
+      "sha256": "150218562a8f6aa637a0547f19f5c4965e776060a0fbbe60dd0952c7768b4bb9"
+    },
+    "restored:1010703:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010703-q8-generate.json",
+      "extent": 2759474,
+      "sha256": "ce323c803b51a41451fb36c5d36b324b7600acbbc9004495b7c7b60ee69d65c0"
+    },
+    "original:1010703:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-references-generate.json",
+      "extent": 3278965,
+      "sha256": "14f70c2dea39ee0229fe7425c0e74c745f8f770c8aed847e9cbaf1106db28cc3"
+    },
+    "original:1010703:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-references-audit.json",
+      "extent": 3474,
+      "sha256": "2bfd0c79d7bc394009eac59160b8aabc8b0fd9cb29e869a3ea0cc2cb0920c620"
+    },
+    "restored:1010703:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010703-references-generate.json",
+      "extent": 3278965,
+      "sha256": "14f70c2dea39ee0229fe7425c0e74c745f8f770c8aed847e9cbaf1106db28cc3"
+    },
+    "original:1010703:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010703-metrics.json",
+      "extent": 455265,
+      "sha256": "1b5a4b3b0f542989783b37e7588fd5dba573900b05692810829b40e3b9dd9f8d"
+    },
+    "original:1010704:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q2-generate.json",
+      "extent": 2931501,
+      "sha256": "8226a95dabf51c93bd2e1e4ebf6deb487dcf09f5cb1aa95a3536912e4dece032"
+    },
+    "original:1010704:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q2-audit.json",
+      "extent": 1974,
+      "sha256": "27068993d7f60bc1acaafbc4cdb935f85b46b7c227c5d1d457deb03de5325827"
+    },
+    "restored:1010704:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010704-q2-generate.json",
+      "extent": 2931501,
+      "sha256": "8226a95dabf51c93bd2e1e4ebf6deb487dcf09f5cb1aa95a3536912e4dece032"
+    },
+    "original:1010704:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q4-generate.json",
+      "extent": 2847948,
+      "sha256": "5cb90a9d6805f3bd1051d3b2be8ac1a39ebcb70a0a9cf1ccd18385591b3c38ee"
+    },
+    "original:1010704:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q4-audit.json",
+      "extent": 1976,
+      "sha256": "d58b8cd285b637835f17cc8a1c613000c3a734f785d4c90eb1c1bbceb733bfb6"
+    },
+    "restored:1010704:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010704-q4-generate.json",
+      "extent": 2847948,
+      "sha256": "5cb90a9d6805f3bd1051d3b2be8ac1a39ebcb70a0a9cf1ccd18385591b3c38ee"
+    },
+    "original:1010704:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q8-generate.json",
+      "extent": 2779470,
+      "sha256": "de39a29c01498964bb16ff279996f0f77c3add2c65d2a9ee3c4d43487e4d7d05"
+    },
+    "original:1010704:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-q8-audit.json",
+      "extent": 1976,
+      "sha256": "bf1d7783528591600622864002bb1791032d78b7b23a6db14d7e218ec8cabb07"
+    },
+    "restored:1010704:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010704-q8-generate.json",
+      "extent": 2779470,
+      "sha256": "de39a29c01498964bb16ff279996f0f77c3add2c65d2a9ee3c4d43487e4d7d05"
+    },
+    "original:1010704:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-references-generate.json",
+      "extent": 3413318,
+      "sha256": "b258d20702a4d69ac8e91d8cc1d4a3a9ba9e3f5cf5e74488458292270b1803bb"
+    },
+    "original:1010704:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-references-audit.json",
+      "extent": 3476,
+      "sha256": "d084e8e6d0ecb30a47374bc909c4cf2573cfc26c6717b581eea7cbab99da9453"
+    },
+    "restored:1010704:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010704-references-generate.json",
+      "extent": 3413318,
+      "sha256": "b258d20702a4d69ac8e91d8cc1d4a3a9ba9e3f5cf5e74488458292270b1803bb"
+    },
+    "original:1010704:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010704-metrics.json",
+      "extent": 472353,
+      "sha256": "7367d8194be9d3cf97e847ed89a4a47d439674285ce2521dbf9ac1cd02dbf76c"
+    },
+    "original:1010705:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q2-generate.json",
+      "extent": 2782534,
+      "sha256": "f3705e756f6b78ed78be56a5ff66bcacb317a0605565bc80529176b23589a4ce"
+    },
+    "original:1010705:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q2-audit.json",
+      "extent": 1977,
+      "sha256": "cad5848f364fbebb11b76ea682d2d174ecfb9662e7b77c56717ccd5062f846e7"
+    },
+    "restored:1010705:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010705-q2-generate.json",
+      "extent": 2782534,
+      "sha256": "f3705e756f6b78ed78be56a5ff66bcacb317a0605565bc80529176b23589a4ce"
+    },
+    "original:1010705:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q4-generate.json",
+      "extent": 2719882,
+      "sha256": "8c232f1139aad7cdc423862dca60a116490443902eb865b29340aef3ea7541aa"
+    },
+    "original:1010705:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q4-audit.json",
+      "extent": 1976,
+      "sha256": "69808cb3a8444d31250a88746e3191aa7f1c5d7a0976092ddce7fdc28c2fe5a1"
+    },
+    "restored:1010705:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010705-q4-generate.json",
+      "extent": 2719882,
+      "sha256": "8c232f1139aad7cdc423862dca60a116490443902eb865b29340aef3ea7541aa"
+    },
+    "original:1010705:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q8-generate.json",
+      "extent": 2807252,
+      "sha256": "5b3f4ecffed68bae6b86ba8a659d608ad2db46cbebd1780c603a7c0f2f8cabc4"
+    },
+    "original:1010705:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-q8-audit.json",
+      "extent": 1976,
+      "sha256": "01cf2f7a0c8230e5a344f7c092fda4fa3c6b4d5c6480016bd49f0210106d975c"
+    },
+    "restored:1010705:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010705-q8-generate.json",
+      "extent": 2807252,
+      "sha256": "5b3f4ecffed68bae6b86ba8a659d608ad2db46cbebd1780c603a7c0f2f8cabc4"
+    },
+    "original:1010705:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-references-generate.json",
+      "extent": 3480317,
+      "sha256": "2f6d63a8bbbe5fb5a51414c05fb0e7c1710e50e42e1aca151daeeec7906de59b"
+    },
+    "original:1010705:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-references-audit.json",
+      "extent": 3476,
+      "sha256": "c19d698bb2140b5dff74f00e737a7b04d796dab78e91d64810da3cc80d89900a"
+    },
+    "restored:1010705:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010705-references-generate.json",
+      "extent": 3480317,
+      "sha256": "2f6d63a8bbbe5fb5a51414c05fb0e7c1710e50e42e1aca151daeeec7906de59b"
+    },
+    "original:1010705:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010705-metrics.json",
+      "extent": 457870,
+      "sha256": "96f8f4ca27604857944ffcc00fc1d2eb7d76529c973c508a2811bea1b6ce9977"
+    },
+    "original:1010706:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q2-generate.json",
+      "extent": 2898556,
+      "sha256": "562153f476ee76161465de3f2e4cf1a971a3a0d6b4ef15e7a5792470d8ec055b"
+    },
+    "original:1010706:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q2-audit.json",
+      "extent": 1976,
+      "sha256": "711dd1d998f54f7862dc78de643cd12016d69a4ff0f426c88faf6a0aefa652d7"
+    },
+    "restored:1010706:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010706-q2-generate.json",
+      "extent": 2898556,
+      "sha256": "562153f476ee76161465de3f2e4cf1a971a3a0d6b4ef15e7a5792470d8ec055b"
+    },
+    "original:1010706:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q4-generate.json",
+      "extent": 2803510,
+      "sha256": "71574b42c9802a4e41462881f7774c4e3ce72c804741dc04ad460a7446d6c914"
+    },
+    "original:1010706:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q4-audit.json",
+      "extent": 1977,
+      "sha256": "169c3a822ec2bb5364e1be1ff982ae4b56ec03d8c1e9b2a0f3d55cc92f81526d"
+    },
+    "restored:1010706:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010706-q4-generate.json",
+      "extent": 2803510,
+      "sha256": "71574b42c9802a4e41462881f7774c4e3ce72c804741dc04ad460a7446d6c914"
+    },
+    "original:1010706:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q8-generate.json",
+      "extent": 2791702,
+      "sha256": "239fb3d89bde92de9d203f71dc392eb9aaf4de83e7c73edde13f8b2eb7cf2dec"
+    },
+    "original:1010706:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-q8-audit.json",
+      "extent": 1977,
+      "sha256": "c44329a333d3e9d77fb4a05ca123bf4c20da268cc046436da8cbb0059b79f873"
+    },
+    "restored:1010706:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010706-q8-generate.json",
+      "extent": 2791702,
+      "sha256": "239fb3d89bde92de9d203f71dc392eb9aaf4de83e7c73edde13f8b2eb7cf2dec"
+    },
+    "original:1010706:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-references-generate.json",
+      "extent": 3271677,
+      "sha256": "a8bfdf12bbe0fe7053905cb5bf1950550b0e15d0bc730cb54f19ee1e2ce26310"
+    },
+    "original:1010706:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-references-audit.json",
+      "extent": 3474,
+      "sha256": "873aa13e05941a725477dd9cc63dd7e649da126274dee8b06cfc63c49f5bcbae"
+    },
+    "restored:1010706:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010706-references-generate.json",
+      "extent": 3271677,
+      "sha256": "a8bfdf12bbe0fe7053905cb5bf1950550b0e15d0bc730cb54f19ee1e2ce26310"
+    },
+    "original:1010706:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010706-metrics.json",
+      "extent": 472447,
+      "sha256": "f4253abe2d2ec8766528f4dc4ae0ca5262e2beaafc31ba0b55095ba22a48ec68"
+    },
+    "original:1010707:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q2-generate.json",
+      "extent": 2969508,
+      "sha256": "4bc12e856afc43f74f7ec3a4bc406b51c70141f00c30bd53aa65c3030de2fa04"
+    },
+    "original:1010707:q2:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q2-audit.json",
+      "extent": 1974,
+      "sha256": "8d940929f344290d616a77ecf36f7981d2db82732929c8cf5771065711faedf0"
+    },
+    "restored:1010707:q2:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010707-q2-generate.json",
+      "extent": 2969508,
+      "sha256": "4bc12e856afc43f74f7ec3a4bc406b51c70141f00c30bd53aa65c3030de2fa04"
+    },
+    "original:1010707:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q4-generate.json",
+      "extent": 2953632,
+      "sha256": "146ef410bb5e7cfa0bfbec36b7b38cd608c6218ef46dd627ed996863bfb43b88"
+    },
+    "original:1010707:q4:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q4-audit.json",
+      "extent": 1977,
+      "sha256": "1d02ace764e47785806713a0d6cc5d01a8a9f151b836b3b53d9394dc76d3aa8e"
+    },
+    "restored:1010707:q4:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010707-q4-generate.json",
+      "extent": 2953632,
+      "sha256": "146ef410bb5e7cfa0bfbec36b7b38cd608c6218ef46dd627ed996863bfb43b88"
+    },
+    "original:1010707:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q8-generate.json",
+      "extent": 2792972,
+      "sha256": "4cfd94b35ac3cf14af70758e64de6357fb6df9780c6d27d769f0158e4dc3fe40"
+    },
+    "original:1010707:q8:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-q8-audit.json",
+      "extent": 1975,
+      "sha256": "022d6d7bda6500e7c720d22c28a112e3f26c205fdfc965188821ecd181cc58ef"
+    },
+    "restored:1010707:q8:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010707-q8-generate.json",
+      "extent": 2792972,
+      "sha256": "4cfd94b35ac3cf14af70758e64de6357fb6df9780c6d27d769f0158e4dc3fe40"
+    },
+    "original:1010707:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-references-generate.json",
+      "extent": 3491917,
+      "sha256": "2cd831c559df5f52df761b1f0d52ca75f9fe8a6f675b476918bc767150c57d6f"
+    },
+    "original:1010707:references:audit": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-references-audit.json",
+      "extent": 3478,
+      "sha256": "9ca9cc9b8f3fa0a29496bbfb1043ad129465e9b598f6b5b3090338e5eb16d04b"
+    },
+    "restored:1010707:references:generate": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\restored-1010707-references-generate.json",
+      "extent": 3491917,
+      "sha256": "2cd831c559df5f52df761b1f0d52ca75f9fe8a6f675b476918bc767150c57d6f"
+    },
+    "original:1010707:metrics": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-1010707-metrics.json",
+      "extent": 474093,
+      "sha256": "67a14fe57097da8ca1e253e0bb9cec348b81aa147a49fcc04ecfaa9c04c488a8"
+    },
+    "original:all:accept": {
+      "path": "D:\\OraLab\\runs\\temporal89-primary-v1-20261015\\raw\\data\\original-all-accept.json",
+      "extent": 14334,
+      "sha256": "0612d3566d79a0dee2a3321f378e1d733bce9e855331674724a27b027bf7e7c9"
+    }
+  },
+  "pins": {
+    "D:\\OraLab\\src\\Ora2.0-recording82\\docs\\DIGITAL-TEMPORAL89-PROSPECTIVE-CONTRACT-V1.md": "3095e9f662466fb5cefed1605599041e1c6ca31e247abd119caf05613e6620c1",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_controls.py": "42eaa1cea3ff9c2d8511a16e39f297798fe966eae6be77cf930db80d1c8c0ede",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_referee.py": "afe8f697ff6a23edc373720de0f0112b2b6b7700da10a2c4726f27a68a592b76",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_acceptance.py": "350822769b47be82885297f8d08617c30db40b3ea0ffccbdbd1d537f05d9235f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_primary_boundary.py": "fc80c8df86f8604711f962476002129f90a64134789942769c7d2683f5cfece1",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80_recording.py": "ccff4112b185eeca41413f3a97cd7bb037dc9c5becc7f2c14b73c58e033125f7",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_plan.py": "75ccd08c5d564e369738668934bb418174b1f4eceee6130819c87b5ebb84202f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\temporal89_primary_custody_pure_worker_v1.py": "14b143a8e8ad4184db2224389ad982e9c7c8f1270a706e9eeec1b6b7bd8a5ea8",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_temporal89_custody.py": "f698a9c4029a124a56359348684f249683f17b3fd892038d4c5631d8edda4257",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\run_temporal89_software_v1.py": "917abb72af66fc8363bbf47f817a370c8839f3fe1426fc30fb56bd4b72c04873",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\tests\\test_digital_temporal89_primary_custody.py": "5860b8530711b4faf64a3bfbdd5a1b4aefe240d425c5691793ecfa7c61f6fc61",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_referee.py": "707d73a0d0968a788d2e93cbfe6f432e598163e571357b96306029b5f5bc5348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_strategy88_child.py": "3b55198649dc7d40e94d87febae4664a39c9ce8b52f83c43125299cd801d1752",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_world.py": "d84ced240e3f0ab0d6f0b5efdadd749ed736108e2681094a4f2d2674e0498259",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\temporal89_custody_pure_worker_v1.py": "8705c06f51af70f9afec9af9f0526b1c6ee26e7a7d4108aef01864d928529b1f",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_source.py": "d0cc13c9bba93e244d9259378044deb8448617d668447148a460d4a5b7a35e93",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_metrics.py": "77fe553170f9dc4333c4543a5004335b995c73ee33968f3a33d4505df0b92c1a",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_child.py": "64caf7fd2bcf011c99fd50690cfe9207498e6fc77b055b82c0b03ac8a09eca11",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_world.py": "be811663649868a33c0c23176cb64dffa583ba7315ca22a3b3c6f26ff85b8c3c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_memory80.py": "1826b33893321d1a7a603ccef690e13b92ed16f26d6e6c093f14a45ca367e104",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_primary_child.py": "969e4f06f7161616897d6cfdb7f5c1024f97bd1fa2a6f3438f32033deaaa34a5",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\lab\\run_temporal89_primary_v1.py": "5c8a2c1021ad14a0b2a1c239339fd4cea82e81603df3a8ca7f286557b3657715",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_child.py": "2742354a8010eae17d3edaf36c642580edf2b545ab269969fee934f9b268e36b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_credited_fallback87v2_metric_binding.py": "27f7a4f6511595bd4735258de8f109bbe80834891d1c387a654ebde5a40b6ea0",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_cognitive76_history.py": "60d13df780601170f77942ffcd15300155a6b621f7feeb15298f52695098c5b3",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_primary_plan.py": "29f1cd808ab5c953267b94f390fbd258a8066df283f3a6b88a74caf2b1aee259",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_capsule01_custody.py": "c5b61d499203174f8a07dc488b883d6310fd65e23b7baac6b0ccefbf4345de45",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_recording82_reader.py": "33e85b27ffca89f2c4531fcb85683b8b614f7d58a734792fb7bf8b0ad1573348",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_programme.py": "c8d9bdcaa1ea5f30485af8bb689d29fc9bf780c0a32e5824ea689218e9ede2f5",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_source.py": "301c2560e1ae6691bb8497cb97912ed95d35d34a89ccf92c9ab8ed23e8865771",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_experience75_source.py": "3506926ad98f84c74283c9d1dff5c541ca4042a6613266f09c08f1cb800086ce",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\temporal89-prospective-contract-v1-20261015.md": "3095e9f662466fb5cefed1605599041e1c6ca31e247abd119caf05613e6620c1",
+    "D:\\OraLab\\reports\\temporal89-primary-source-ci-29e45b6378b3.json": "6cce2e030ea142bfde5ce714508f60099e1f778aa93885de83a812eadcf9fef2",
+    "D:\\OraLab\\reports\\temporal-credit-next-step-20261015\\ACTION-AND-FEASIBILITY.json": "081904140a86a70799f0444be2024ee4820d75470b155b8d75a09f61659d6072",
+    "D:\\OraLab\\reports\\temporal89-source-prepared-v1.json": "88633a456f24fef146cb0cc6a234baacacc472ee0369fec23655e8dad196c506",
+    "D:\\OraLab\\reports\\temporal89-interface-prepared-v1.json": "ca9e7df91e4a59acc0a554e4d7b6357bdf29ac7d391c2230ef242622ea7ccec5",
+    "D:\\OraLab\\reports\\temporal89-metric-prepared-v1.json": "762983e68f47d675c4f8b2f64ef3b95ffed98e15fcb9c8d29b4e222ab51acbc2",
+    "D:\\OraLab\\reports\\temporal89-custody-prepared-v1.json": "f7e5c00ffdda29bbd20b0050e539d7a462f11809601e6714da5376af5367f043",
+    "D:\\OraLab\\reports\\temporal89-software-v1.json": "3c2d45240d6493ddca7853ded046fd6f2802e18aa4885f7c3f70eb3341f3c554",
+    "D:\\OraLab\\reports\\temporal89-primary-custody-prepared-v1.json": "04c96ec5189ba09376903e99d945b83711b078c80bf979232f4ac5eeed342730"
+  },
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "cf374adf97323e4fdb9808b89e57108045273515652fbee749703f0f3535c8ce",
+  "stage_credit": false
+}

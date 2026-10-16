@@ -1,0 +1,416 @@
+{
+  "verified": true,
+  "values": [
+    {
+      "actual_adapter_and_independent_literal_unqualified": true,
+      "all_cue_distractor_cases": 1536,
+      "capacities": {
+        "2": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 966,
+          "formation": 49,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        },
+        "4": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 968,
+          "formation": 51,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        },
+        "8": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 972,
+          "formation": 55,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        }
+      },
+      "efficient_references": {
+        "alternation0": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 34,
+          "startup_CPU": 2,
+          "triples": 8
+        },
+        "alternation1": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 34,
+          "startup_CPU": 2,
+          "triples": 8
+        },
+        "current_distractor": {
+          "CPU_absence": 5,
+          "CPU_error": 5,
+          "CPU_success": 5,
+          "formation": 28,
+          "startup_CPU": 1,
+          "triples": 6
+        },
+        "current_inverse": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "fixed0": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "fixed1": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "latest0": {
+          "CPU_absence": 7,
+          "CPU_error": 8,
+          "CPU_success": 7,
+          "formation": 43,
+          "startup_CPU": 2,
+          "triples": 11
+        },
+        "latest1": {
+          "CPU_absence": 7,
+          "CPU_error": 8,
+          "CPU_success": 7,
+          "formation": 43,
+          "startup_CPU": 2,
+          "triples": 11
+        },
+        "retained_cue": {
+          "CPU_absence": 5,
+          "CPU_error": 5,
+          "CPU_success": 5,
+          "formation": 28,
+          "startup_CPU": 1,
+          "triples": 6
+        },
+        "retained_inverse": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        }
+      },
+      "invented_second_pass_associations": 2048,
+      "scope": "SOURCE-ONLY AST/CFG/abstract dataflow,not installed task or paid physics",
+      "stage_credit": false,
+      "supplied_architecture": true,
+      "targets": 0,
+      "typed_abstract_control_witnesses": {
+        "credit_erased": {
+          "cells_after_first": [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "intact": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 1
+        },
+        "model_disabled": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "recall_disabled": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "update_frozen": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        }
+      },
+      "verified": true,
+      "worlds": 0
+    },
+    {
+      "actual_adapter_and_independent_literal_unqualified": true,
+      "all_cue_distractor_cases": 1536,
+      "capacities": {
+        "2": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 966,
+          "formation": 49,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        },
+        "4": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 968,
+          "formation": 51,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        },
+        "8": {
+          "CPU_absence": 8,
+          "CPU_error": 11,
+          "CPU_success": 8,
+          "conditional60_loop_C_max": 972,
+          "formation": 55,
+          "header_CPU": 1,
+          "physical_viability_proven": false
+        }
+      },
+      "efficient_references": {
+        "alternation0": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 34,
+          "startup_CPU": 2,
+          "triples": 8
+        },
+        "alternation1": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 34,
+          "startup_CPU": 2,
+          "triples": 8
+        },
+        "current_distractor": {
+          "CPU_absence": 5,
+          "CPU_error": 5,
+          "CPU_success": 5,
+          "formation": 28,
+          "startup_CPU": 1,
+          "triples": 6
+        },
+        "current_inverse": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "fixed0": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "fixed1": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        },
+        "latest0": {
+          "CPU_absence": 7,
+          "CPU_error": 8,
+          "CPU_success": 7,
+          "formation": 43,
+          "startup_CPU": 2,
+          "triples": 11
+        },
+        "latest1": {
+          "CPU_absence": 7,
+          "CPU_error": 8,
+          "CPU_success": 7,
+          "formation": 43,
+          "startup_CPU": 2,
+          "triples": 11
+        },
+        "retained_cue": {
+          "CPU_absence": 5,
+          "CPU_error": 5,
+          "CPU_success": 5,
+          "formation": 28,
+          "startup_CPU": 1,
+          "triples": 6
+        },
+        "retained_inverse": {
+          "CPU_absence": 6,
+          "CPU_error": 6,
+          "CPU_success": 6,
+          "formation": 31,
+          "startup_CPU": 1,
+          "triples": 7
+        }
+      },
+      "invented_second_pass_associations": 2048,
+      "scope": "SOURCE-ONLY AST/CFG/abstract dataflow,not installed task or paid physics",
+      "stage_credit": false,
+      "supplied_architecture": true,
+      "targets": 0,
+      "typed_abstract_control_witnesses": {
+        "credit_erased": {
+          "cells_after_first": [
+            15,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "intact": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 1
+        },
+        "model_disabled": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "recall_disabled": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        },
+        "update_frozen": {
+          "cells_after_first": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_port": 0,
+          "second_port": 0
+        }
+      },
+      "verified": true,
+      "worlds": 0
+    }
+  ],
+  "pins": {
+    "D:\\OraLab\\tools\\temporal89_source_qualifier_v1.py": "85356f9872e0f39accd2f272b69f3a21c767f066bb6751c5abaad1387fefd5b8",
+    "D:\\OraLab\\tools\\temporal89_source_v1.py": "c8d9bdcaa1ea5f30485af8bb689d29fc9bf780c0a32e5824ea689218e9ede2f5",
+    "D:\\OraLab\\tools\\run_temporal89_source_prepared_v1.py": "2efe7997b77ccb56beab0624fe95e05eb783355001a3fa6b93a90330cda6e4f0",
+    "D:\\OraLab\\reports\\temporal89-task-source-contract-v1-20261015.md": "13b3f74017eb7ffc678b4c1f24ed39b9a9821b1909f8f00aba03507e273b0eff",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\strategy88-origins-publication-v1.json": "4eea99df03f3a33d25cec04a59a37e106328a412ef9ccbe75cc3f5eadb5bbe74",
+    "D:\\OraLab\\reports\\strategy88-primary-v1.json": "d400eb5b7057fc9a88b375422f9ab83934ae08dc4e473447b30993ee7f35001b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725"
+  },
+  "native_calls": 2,
+  "new_worlds": 0,
+  "new_targets": 0,
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "e5467ac26ea867719a0c9a341606e1148cac063231387aa90ae0964f752f8a46",
+  "stage_credit": false
+}

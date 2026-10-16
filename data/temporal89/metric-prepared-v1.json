@@ -1,0 +1,91 @@
+{
+  "verified": true,
+  "values": [
+    {
+      "erased_credit_uses": 0,
+      "exact_role_count": 25,
+      "external_physics_native_source_config_grant_binding_still_mandatory": true,
+      "gap_two_uses": 1,
+      "groups": 6,
+      "hidden_target_metadata_ignored": true,
+      "malformed_receipts_refused": 9,
+      "own_delayed_revision_origins": 1,
+      "scope": "NON-PHYSICS raw origin/arithmetic fixtures,not scientific outcomes",
+      "sign_tails_independently_enumerated": 153,
+      "source_target_free": true,
+      "stage_credit": false,
+      "synthetic_complete400_role_slots": true,
+      "synthetic_null_vector": [
+        false,
+        false,
+        false
+      ],
+      "synthetic_perfect_vector": [
+        true,
+        true,
+        true
+      ],
+      "targets": 0,
+      "unfinished_ACT_retained": true,
+      "verified": true,
+      "worlds": 0
+    },
+    {
+      "erased_credit_uses": 0,
+      "exact_role_count": 25,
+      "external_physics_native_source_config_grant_binding_still_mandatory": true,
+      "gap_two_uses": 1,
+      "groups": 6,
+      "hidden_target_metadata_ignored": true,
+      "malformed_receipts_refused": 9,
+      "own_delayed_revision_origins": 1,
+      "scope": "NON-PHYSICS raw origin/arithmetic fixtures,not scientific outcomes",
+      "sign_tails_independently_enumerated": 153,
+      "source_target_free": true,
+      "stage_credit": false,
+      "synthetic_complete400_role_slots": true,
+      "synthetic_null_vector": [
+        false,
+        false,
+        false
+      ],
+      "synthetic_perfect_vector": [
+        true,
+        true,
+        true
+      ],
+      "targets": 0,
+      "unfinished_ACT_retained": true,
+      "verified": true,
+      "worlds": 0
+    }
+  ],
+  "pins": {
+    "D:\\OraLab\\tools\\temporal89_metric_qualifier_v1.py": "f98876f89bd28a6985924a5f0a279eec8a9dd82bf3f1adba216b20da0e59e674",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_metrics.py": "77fe553170f9dc4333c4543a5004335b995c73ee33968f3a33d4505df0b92c1a",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_temporal89_acceptance.py": "350822769b47be82885297f8d08617c30db40b3ea0ffccbdbd1d537f05d9235f",
+    "D:\\OraLab\\tools\\run_temporal89_metric_prepared_v1.py": "308f4a83a986a328570ed81be34882064fa98bfc48041aaab3006816e6fe08fd",
+    "D:\\OraLab\\reports\\temporal89-metric-qualification-contract-v1-20261015.md": "0251ea37dbc26044fc9ea1f1bea9824c86ee710e212f74119cbf252e35dc385b",
+    "D:\\OraLab\\tools\\oralab.py": "6617cc5a70a974d8bde78fca6c3c5b7292b6c4d926179f96c20473e1ae908982",
+    "D:\\OraLab\\tools\\cognitive76_controller_core_v2.py": "f8999ab15cb8b5afd1e63421bff3ca3b25fae6f9d40c9b7f6eaaf2724f7afdb1",
+    "D:\\OraLab\\reports\\strategy88-origins-publication-v1.json": "4eea99df03f3a33d25cec04a59a37e106328a412ef9ccbe75cc3f5eadb5bbe74",
+    "D:\\OraLab\\reports\\strategy88-primary-v1.json": "d400eb5b7057fc9a88b375422f9ab83934ae08dc4e473447b30993ee7f35001b",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget.py": "e573cdff4679d900931ef0b769570c0b5c579a7c06053d84d097031a9ca45918",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_budget_audit.py": "aefe497c089073de64f39188538f325a95b1378fbf385386cd5ab266b50bfa6c",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\digital_revision84_custody.py": "9298a033624e09478ba7c4acaf7a9dc55241dc027d4bd05e85cfd4d094455296",
+    "D:\\OraLab\\src\\Ora2.0-recording82\\experiments\\evidence_write_grant68.py": "a8cfb87672d5c3d0540ff1f545518ce9fd171918979a8010b93842ec17f2b725",
+    "D:\\OraLab\\reports\\temporal89-prospective-contract-v1-20261015.md": "3095e9f662466fb5cefed1605599041e1c6ca31e247abd119caf05613e6620c1",
+    "D:\\OraLab\\reports\\temporal89-source-prepared-v1.json": "88633a456f24fef146cb0cc6a234baacacc472ee0369fec23655e8dad196c506",
+    "D:\\OraLab\\reports\\temporal89-interface-prepared-v1.json": "ca9e7df91e4a59acc0a554e4d7b6357bdf29ac7d391c2230ef242622ea7ccec5"
+  },
+  "native_calls": 2,
+  "new_worlds": 0,
+  "new_targets": 0,
+  "error": null,
+  "archive_error": null,
+  "archive_exact": true,
+  "archive_sha256": "65aaf1cc6f2483f8c5c5e31d74116ec88d85aa3e9aa0a04919eee15ec4bd8c56",
+  "stage_credit": false
+}

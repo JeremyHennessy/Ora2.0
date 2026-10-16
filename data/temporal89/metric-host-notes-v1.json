@@ -1,0 +1,8 @@
+{
+  "scope": "Host-only source assembly before metric registration/import/native use",
+  "error": "IndentationError: unexpected indent at metric line89 AST check",
+  "correction": "Restored correct_binding under applied-STORE block before all new module imports/registration/native tests",
+  "new_worlds": 0,
+  "failed_native_qualifications": 0,
+  "policy_price_law_criteria_changes": false
+}
