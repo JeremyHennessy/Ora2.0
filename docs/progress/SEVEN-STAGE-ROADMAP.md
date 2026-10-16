@@ -1,3 +1,11 @@
+# TEMPORAL89 source and SOFTWARE custody draft — no paid execution yet
+
+The distinct prospective task asks whether own delayed feedback can revise an unknown earlier-cue association across distractors. Source, task adapter and independent literal are implemented, with source/target-free raw origins, separate complete-denominator arithmetic and a finite31-role SOFTWARE worker/controller. Source/CFG, new interface, metric and custody pure qualifications each passed two exact native exports;0task Worlds/0fresh scientific labels. Graph mocks are not actual31native roles or physics.
+
+See DIGITAL-TEMPORAL89-PROSPECTIVE-CONTRACT-V1.md and DIGITAL-TEMPORAL89-SOURCE-PREPARED-V1.md. The scientific roster and numeric gates were frozen before targets. All neutralq2/4/8,blank acquired state,fivearms andtenefficient references remain unconditional. No energy/learning/evolution/stage claim from source or synthetic fixtures. Exact NEW whole-source CI and SEPARATE SOFTWARE registration are still required before valid roles. Primary implementation/admission remains separate and unopened. Four actual refusals precede software producers. No closed experiment is rerun or rescored;private Observer/history is separate and never pushed.
+
+<!-- TEMPORAL89-SOURCE-DRAFT-PUBLIC-CURRENT-END -->
+
 # STRATEGY88 retained-origin diagnosis COMPLETE; no new Worlds
 
 Intelligence-first: useful own-experience choices,then actual inherited selection. FIRST read reports/strategy88-origins-owner-handoff-20261015.md,actual docs/CURRENT-DEVELOPMENT.md,reports/strategy88-closed-origins-v1.json,reports/strategy88-closed-origins-interpretation-v1.json and reports/strategy88-misbinding-encoding-proof-v1.json.
