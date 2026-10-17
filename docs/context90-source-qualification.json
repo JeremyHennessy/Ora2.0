@@ -1,5 +1,5 @@
 {
-  "scope": "Context90 new source/interface/custody only; no old suite or physical Worlds",
+  "scope": "Context90 retained source semantics plus NEW crossed pure components only; no runtime/entropy/World admission",
   "qualifications": {
     "context90-packed-v2-prepared": {
       "archive_sha256": "ed86b070d5d181c43d66a4717a1cfcec2ca39646e82791bcef1e875d03bb4c5c",
@@ -20,6 +20,12 @@
       "archive_sha256": "01f995ef5a1d370198985aaffdfe3991e4bb530a6c83ca3f1b976d06ce14aeea",
       "native_calls": 2,
       "worlds": 0
+    },
+    "context90-crossed-pure-prepared-v1": {
+      "archive_sha256": "cf660dffee5933619e85d4b982e2dc49ed2a0d5e1206d8a9d44de02df3bde63a",
+      "native_calls": 2,
+      "worlds": 0,
+      "new_groups": 7
     }
   },
   "semantic_ast": {
@@ -37,6 +43,10 @@
     "experiments/digital_context90_world_v2.py": "dfdabcd5ebb1f531280fffbb5da768a616e832f0d0d1b94e0b144a8757cd64ab",
     "lab/run_context90_software_v1.py": "a67b86750bb5044f650e458ba295c450e47a351b91cc1b7474942cb1555ecab5",
     "tests/test_context90_custody_v1.py": "79de9603eda6f9b9c86ff54b863280e2e7b6fb362cee332d70a38506df906f1b",
-    "tests/test_context90_physical_interface_v1.py": "57894df40a2352bb0ff5db958930eaf0da90d4d90d71124c241c203b91181c1f"
+    "tests/test_context90_physical_interface_v1.py": "57894df40a2352bb0ff5db958930eaf0da90d4d90d71124c241c203b91181c1f",
+    "experiments/digital_context90_crossed_programme_v1.py": "faf13b1f8e24c2feb4b1a54d52d9f1d6ebda1462c6326882264b7949800cc868",
+    "experiments/digital_context90_crossed_registry_v1.py": "ea9e9fb3f10df0547d5ebabfc19f31cc61ddaff095dc6a5cc4bd23bcee5b98b7",
+    "experiments/digital_context90_crossed_metrics_v1.py": "43359d6453c073410be03f069839bdbd93ae6de707a953d13cf653e363c996aa",
+    "tests/test_context90_crossed_pure_v1.py": "17a5185987ad6e35403f0d46dbaef1d18f940bdd072aceef0510ce6fe2ffad35"
   }
 }
