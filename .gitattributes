@@ -1,2 +1,5 @@
 # Preserve the frozen manifest byte identity across Windows checkouts.
 data/digital-neutral-tail42-manifest.json -text
+
+# Frozen crossed contract must retain the original raw SHA across platforms.
+docs/CONTEXT90-CROSSED-CONTRACT-v1.md -text
