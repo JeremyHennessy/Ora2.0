@@ -1,5 +1,5 @@
 {
-  "scope": "Context90 retained/pure semantics and new crossed runtime interface only; actual Worlds/controller/custody remain unqualified",
+  "scope": "Crossed complete runtime-source structure qualified; actual new SOFTWARE physics still unexecuted and PRIMARY refused",
   "qualifications": {
     "context90-packed-v2-prepared": {
       "archive_sha256": "ed86b070d5d181c43d66a4717a1cfcec2ca39646e82791bcef1e875d03bb4c5c",
@@ -33,6 +33,12 @@
       "worlds": 0,
       "new_groups": 7,
       "failed_v1_archive": "40efe9f6b5cc173997f203e920daf16c1351cedea0316003813ad7dcade0e770"
+    },
+    "context90-crossed-custody-prepared-v1": {
+      "archive_sha256": "6e009bf6ab686caf704c03065cecfaf06641ee5ac0ca0fac3a09521c64426fbd",
+      "native_calls": 2,
+      "worlds": 0,
+      "new_groups": 7
     }
   },
   "semantic_ast": {
@@ -59,6 +65,9 @@
     "experiments/digital_context90_crossed_world_v1.py": "0fff0af5eb85468998d273288f6c4e2acbc343dc2dbb6385487dd52258c636e7",
     "experiments/digital_context90_crossed_referee_v1.py": "2e40a3e9dcdc8a7913efc0a453acb67cef96b573786776507c14b650183e932b",
     "experiments/digital_context90_crossed_child_v1.py": "07d0284ec93fa2b1a08ab991b7a8faa33a24ba463567b3b1f5268acf157df3ca",
-    "tests/test_context90_crossed_interface_v1.py": "ae4a1edf480165e277f7f08a824b9262725472bd96576ef07f58256005df469b"
+    "tests/test_context90_crossed_interface_v1.py": "ae4a1edf480165e277f7f08a824b9262725472bd96576ef07f58256005df469b",
+    "experiments/digital_context90_crossed_plan_v1.py": "9cad12657f8fda963dce7820396f81446e8f97a4d752015c29b551f921d8fe36",
+    "lab/run_context90_crossed_v1.py": "7f24dc77ebcfbb5e6710817fad9c82e3d66a44e0361b1b5809aa77b6e1e4661f",
+    "tests/test_context90_crossed_custody_v1.py": "122f41c5b8ee9be69ff1525f1e8e0ce45c986ebf0d1932bbf12077042a9e2d8d"
   }
 }
