@@ -16,5 +16,5 @@ jobs:
           python-version: '3.12'
       - name: Bind source to retained narrow qualification
         run: python -B lab/check_context90_qualified_sources.py
-      - name: Check only the new crossed qualification binding
-        run: python -B -m unittest discover -s tests -p test_context90_crossed_binding_v1.py -v
+      - name: Check only the new crossed interface qualification binding
+        run: python -B -m unittest discover -s tests -p test_context90_crossed_interface_binding_v1.py -v

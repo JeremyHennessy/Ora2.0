@@ -1,0 +1,9 @@
+# Crossed runtime implementation: interface-qualified, no World admission
+
+Implemented a distinct strict resource gate/112-trial task runtime, native child with source/config/role/grant validation before its sole entropy call site or World import, and a producer-free full physics/task literal with independently decoded tuples, own-feedback field origins, paid-completion Q/R, N/O/E and complete prefix certificates. Original primitive operation bodies/prices are statically bound unchanged; no new actor channel or warm copying. Actual controller/custody integration remains unfinished.
+
+Seven NEW interface groups passed two exact exports and byte-identical output/archive restoration. They use AST extraction and synthetic metadata/proof events, not World imports/constructors/steps, OS entropy or real science draws. They verify own-origin credit/full completion/same-value-write invalidation, admission/guard ordering, old-op AST identity and event/proof extent derivations. This does not qualify actual new112-trial physics, runtime/source custody or SOFTWARE/PRIMARY execution.
+
+First v1 attempt failed during Python parsing of an emitted test-harness string before any test ran; full failed native/source archive retained. A separately frozen and registered v2 repaired only that test string with identical production files/groups/limits. Both failed and successful archive IDs are in the qualification manifest. Neither attempt created Worlds or targets. The new CI attests source bindings without rerunning retained groups or old suites.
+
+Next: finite native controller/dependency/prefix-custody integration and narrow new source-only checks, then exact whole-runtime CI and separate new SOFTWARE registration. PRIMARY remains refused until full SOFTWARE closure and separate PRIMARY registration. Frozen contract and all old sources/results/reserves/private Observer/history remain immutable. No source-only success is a scientific learning or stage claim.

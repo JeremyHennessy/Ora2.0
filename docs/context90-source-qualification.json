@@ -1,5 +1,5 @@
 {
-  "scope": "Context90 retained source semantics plus NEW crossed pure components only; no runtime/entropy/World admission",
+  "scope": "Context90 retained/pure semantics and new crossed runtime interface only; actual Worlds/controller/custody remain unqualified",
   "qualifications": {
     "context90-packed-v2-prepared": {
       "archive_sha256": "ed86b070d5d181c43d66a4717a1cfcec2ca39646e82791bcef1e875d03bb4c5c",
@@ -26,6 +26,13 @@
       "native_calls": 2,
       "worlds": 0,
       "new_groups": 7
+    },
+    "context90-crossed-interface-prepared-v2": {
+      "archive_sha256": "02600c89aa962f90a1e9f6c0b049793105dd58525ff436d39e6e4fb0ff5e97f7",
+      "native_calls": 2,
+      "worlds": 0,
+      "new_groups": 7,
+      "failed_v1_archive": "40efe9f6b5cc173997f203e920daf16c1351cedea0316003813ad7dcade0e770"
     }
   },
   "semantic_ast": {
@@ -47,6 +54,11 @@
     "experiments/digital_context90_crossed_programme_v1.py": "faf13b1f8e24c2feb4b1a54d52d9f1d6ebda1462c6326882264b7949800cc868",
     "experiments/digital_context90_crossed_registry_v1.py": "ea9e9fb3f10df0547d5ebabfc19f31cc61ddaff095dc6a5cc4bd23bcee5b98b7",
     "experiments/digital_context90_crossed_metrics_v1.py": "43359d6453c073410be03f069839bdbd93ae6de707a953d13cf653e363c996aa",
-    "tests/test_context90_crossed_pure_v1.py": "17a5185987ad6e35403f0d46dbaef1d18f940bdd072aceef0510ce6fe2ffad35"
+    "tests/test_context90_crossed_pure_v1.py": "17a5185987ad6e35403f0d46dbaef1d18f940bdd072aceef0510ce6fe2ffad35",
+    "experiments/digital_context90_crossed_engine_v1.py": "7fbb3c23b9a4a8e5bd0a114ce9165b43a423756ce9bb8facd7b2bc605bf952ca",
+    "experiments/digital_context90_crossed_world_v1.py": "0fff0af5eb85468998d273288f6c4e2acbc343dc2dbb6385487dd52258c636e7",
+    "experiments/digital_context90_crossed_referee_v1.py": "2e40a3e9dcdc8a7913efc0a453acb67cef96b573786776507c14b650183e932b",
+    "experiments/digital_context90_crossed_child_v1.py": "07d0284ec93fa2b1a08ab991b7a8faa33a24ba463567b3b1f5268acf157df3ca",
+    "tests/test_context90_crossed_interface_v1.py": "ae4a1edf480165e277f7f08a824b9262725472bd96576ef07f58256005df469b"
   }
 }
