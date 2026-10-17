@@ -16,5 +16,5 @@ jobs:
           python-version: '3.12'
       - name: Bind source to retained narrow qualification
         run: python -B lab/check_context90_qualified_sources.py
-      - name: Check only the new compact layout
-        run: python -B -m unittest discover -s tests -p test_context90_layout_v3.py -v
+      - name: Check only the new custody graph
+        run: python -B -m unittest discover -s tests -p test_context90_custody_v1.py -v

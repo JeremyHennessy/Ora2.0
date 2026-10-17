@@ -1,5 +1,5 @@
 {
-  "scope": "NEW Context90 source/interface only; no old suite/Worlds",
+  "scope": "Context90 new source/interface/custody only; no old suite or physical Worlds",
   "qualifications": {
     "context90-packed-v2-prepared": {
       "archive_sha256": "ed86b070d5d181c43d66a4717a1cfcec2ca39646e82791bcef1e875d03bb4c5c",
@@ -10,6 +10,16 @@
       "archive_sha256": "1e36032149e1b8f6816555def5fa2d504f29be538b3326063a49b09b72d3885c",
       "native_calls": 2,
       "worlds": 0
+    },
+    "context90-physical-interface-prepared-v1": {
+      "archive_sha256": "aee8b92dd06ba89201840a34ffc8e2c41ef437af7699c1942b4e6e13a73282d8",
+      "native_calls": 2,
+      "worlds": 0
+    },
+    "context90-custody-prepared-v1": {
+      "archive_sha256": "01f995ef5a1d370198985aaffdfe3991e4bb530a6c83ca3f1b976d06ce14aeea",
+      "native_calls": 2,
+      "worlds": 0
     }
   },
   "semantic_ast": {
@@ -18,6 +28,15 @@
     "experiments/digital_context90_source_v2.py": "f5800fe7a49f4399be4a87398c076506ab276125c9e97db7abe6deff0bfbc76c",
     "experiments/digital_context90_source_v3.py": "e29f4b04ecd11030c2d31dba39d2ea29cc8e5c93ab26053fbcf4f1e43292ee9c",
     "tests/test_context90_access_v2.py": "5a1a00e773dd4acc5416a15e52ed5e71fe29a2c5f395eedf83ec098c317736f7",
-    "tests/test_context90_layout_v3.py": "14b4974220c0ccd5a10d9058d369c3bd6bd1a5272dcc52fee38d42655514c471"
+    "tests/test_context90_layout_v3.py": "14b4974220c0ccd5a10d9058d369c3bd6bd1a5272dcc52fee38d42655514c471",
+    "experiments/digital_context90_child_v1.py": "493b6e1207981ab3b4a34e35903ca737d249ed7d930ce343a96d6376fcba0448",
+    "experiments/digital_context90_plan_v1.py": "360532e2ba6309e492ea82c1ccd1ca02b372ba3de3f70b025bfed0ca32d142ed",
+    "experiments/digital_context90_task_source_v1.py": "b4713284b77359e86ecdb796de5ef9e657c6a0bd7037cff7540f90e970aea3c0",
+    "experiments/digital_context90_engine_v2.py": "ed2f16fd4a3365a91f61e425b8b8db907e5afd10aa67b77dfad9dda24286fcf7",
+    "experiments/digital_context90_referee_v2.py": "11aef6e782f3c5a198efdda4afab59206266ade86a8984ac3ceb7d9340f25084",
+    "experiments/digital_context90_world_v2.py": "dfdabcd5ebb1f531280fffbb5da768a616e832f0d0d1b94e0b144a8757cd64ab",
+    "lab/run_context90_software_v1.py": "a67b86750bb5044f650e458ba295c450e47a351b91cc1b7474942cb1555ecab5",
+    "tests/test_context90_custody_v1.py": "79de9603eda6f9b9c86ff54b863280e2e7b6fb362cee332d70a38506df906f1b",
+    "tests/test_context90_physical_interface_v1.py": "57894df40a2352bb0ff5db958930eaf0da90d4d90d71124c241c203b91181c1f"
   }
 }
