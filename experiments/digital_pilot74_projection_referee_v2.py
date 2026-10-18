@@ -235,11 +235,15 @@ def external(raw,authority,cap):
     return result
 
 class ProjectionCollector:
-    def __init__(self,initial,identity,capsule_sha,audit_sha,mode):
+    def __init__(self,initial,identity,capsule_sha,audit_sha,mode,boundary_state_sha256=None):
         self.initial=initial;self.identity=clone(identity);self.capsule_sha=capsule_sha;self.audit_sha=audit_sha;self.mode=mode
         self.past=[];self.files={};self.chunks=[];self.pending=[];self.checkpoints={}
+        self.boundary_expected=boundary_state_sha256;self.boundary_actual={}
     def observe(self,before,event,snapshot):
         tick=event['tick']
+        if self.boundary_expected is not None and tick in self.boundary_expected:
+            full=snapshot();actual=h(full);assert actual==self.boundary_expected[tick],'Full literal boundary state mismatch'
+            self.boundary_actual[tick]=actual;del full
         if 'birth' in event and tick<=8192:
             child=event['birth']['child'];self.past.append(dict(tick=tick,parent=event['actor'],child=child['id'],generation=child['generation']))
         if tick<8192:return
@@ -276,7 +280,7 @@ class ProjectionCollector:
         raw=public_bytes(manifest);assert len(raw)<=16384;name='manifest.'+format(seq,'06d')+'.json';self.files[name]=raw
         return public_descriptor(name,raw)
 
-def verify_projection(initial_raw,initial_audit_raw,terminal_raw,terminal_audit_raw,provided,*,source_identity,identity,initial_authority,terminal_authority,mode='recorded'):
+def verify_projection(initial_raw,initial_audit_raw,terminal_raw,terminal_audit_raw,provided,*,source_identity,identity,initial_authority,terminal_authority,mode='recorded',boundary_state_sha256=None):
     """Full independent literal+projection work, ONLY in a separately admitted role."""
     assert mode in ('fixture','recorded') and type(provided) is dict and 3<=len(provided)<=19
     assert set(identity)=={'run_id','world_id','source_revision','source_manifest_sha256','configuration_sha256'}
@@ -294,9 +298,12 @@ def verify_projection(initial_raw,initial_audit_raw,terminal_raw,terminal_audit_
         assert type(proof['tick']) is int and proof['tick']==cap['state']['tick'] and type(proof['audit_prefix_instructions']) is int and proof['audit_prefix_instructions']==proof['tick']
     assert type(first['state']['tick']) is int and first['state']['tick']==8192
     assert final['state']['events'][:8192]==first['state']['events']
-    collector=ProjectionCollector(first['state'],identity,public_hash(initial_raw),public_hash(initial_audit_raw),mode)
+    if boundary_state_sha256 is not None:
+        assert type(boundary_state_sha256) is dict and set(boundary_state_sha256)=={8192,9216,10240} and final['state']['tick']==10240
+        assert boundary_state_sha256[8192]==first['state_sha256'] and boundary_state_sha256[10240]==final['state_sha256']
+    collector=ProjectionCollector(first['state'],identity,public_hash(initial_raw),public_hash(initial_audit_raw),mode,boundary_state_sha256)
     proof=verify_capsule(terminal_raw,source_identity,public_hash(terminal_raw),len(terminal_raw),collector)
     manifest=collector.finish(proof['tick']);assert set(provided)==set(collector.files)
     for name,expected in collector.files.items():assert type(provided[name]) is bytes and provided[name]==expected,'Independent full projection bytes mismatch: '+name
     assert len(collector.checkpoints)==(1 if proof['tick']==8192 else 2 if proof['tick']==9216 else 3)
-    return dict(schema='DIGITAL-PILOT74-INDEPENDENT-PROJECTION-v2',verified=True,identity=clone(identity),manifest=manifest,files={k:public_descriptor(k,v) for k,v in collector.files.items()},literal_capsule_sha256=proof['capsule_sha256'],literal_audit_prefix_instructions=proof['audit_prefix_instructions'],initial_capsule_sha256=public_hash(initial_raw),initial_literal_audit_sha256=public_hash(initial_audit_raw),terminal_literal_audit_sha256=public_hash(terminal_audit_raw),projection_checkpoints=collector.checkpoints,producer_imported=False,worlds_constructed=0,vm_steps=0,publication_accepted=False,live_attachment=False,stage_credit=False)
+    return dict(schema='DIGITAL-PILOT74-INDEPENDENT-PROJECTION-v2',verified=True,identity=clone(identity),manifest=manifest,files={k:public_descriptor(k,v) for k,v in collector.files.items()},literal_capsule_sha256=proof['capsule_sha256'],literal_audit_prefix_instructions=proof['audit_prefix_instructions'],initial_capsule_sha256=public_hash(initial_raw),initial_literal_audit_sha256=public_hash(initial_audit_raw),terminal_literal_audit_sha256=public_hash(terminal_audit_raw),projection_checkpoints=collector.checkpoints,full_state_checkpoints=collector.boundary_actual,producer_imported=False,worlds_constructed=0,vm_steps=0,publication_accepted=False,live_attachment=False,stage_credit=False)
