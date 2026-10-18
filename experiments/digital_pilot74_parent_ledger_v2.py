@@ -95,7 +95,21 @@ def retain_native(slots,name,native):
     target=slot if len(raw)<=slot['limit'] else slots['failure/native-first-failure.json']
     spec=write_empty(target,raw)
     # Available retained bytes are never mislabeled complete if the cap lost any.
-    complete=native['output_truncated'] is False
+    complete=native['output_truncated'] is False and native['stdout_capture']['capture_complete'] is True
     assert complete,'Native output loss: retained available prefix/result; evidence incomplete'
+    assert native['stdout_limit_exceeded'] is False,'Output acceptance ceiling exceeded; complete raw overflow retained, stop'
     assert target is slot,'Oversize native result retained in failure phase; stop, no retry'
     return spec
+
+
+def capture_grant(slots,root,source_sha,config_sha,role,command,operator_lock):
+    """Seal raw stdout+first-failure overflow for ONE registered native command."""
+    physical.checksum(source_sha);physical.checksum(config_sha)
+    root=Path(root);assert root.is_absolute() and root.resolve().is_relative_to(Path('D:/OraLab/runs').resolve())
+    assert type(role) is str and role.isascii() and role and all(p not in ('','.','..') for p in role.split('/')) and '\\' not in role and ':' not in role
+    assert type(command) is list and command and all(type(v) is str and v and '\x00' not in v for v in command)
+    raw=slots['raw/stdout/'+role+'.bin'];overflow=slots['failure/native-first-output.bin']
+    for slot in (raw,overflow):
+        info=physical.plain(Path(slot['path']));assert info.st_size==0 and (info.st_dev,info.st_ino)==(slot['device'],slot['inode'])
+    grant=dict(version='PILOT74-NATIVE-CAPTURE-GRANT-v2',root=str(root),source_sha256=source_sha,configuration_sha256=config_sha,role=role,command_sha256=digest(encode(command)),operator_lock=operator_lock,raw=raw,overflow=overflow)
+    return dict(grant=grant,seal=digest(encode(grant)))

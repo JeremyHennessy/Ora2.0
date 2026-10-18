@@ -85,9 +85,9 @@ def check_process(value,authority,identity,sequence):
     assert value['identity']==identity and type(value['sequence']) is int and value['sequence']==sequence and value['operator'] is None
     assert type(value['reason']) is str and 1<=len(value['reason'])<=512 and value['reason'].isascii()
     if value['observed_at'] is not None:timestamp(value['observed_at'])
-    assert type(authority) is dict and set(authority)=={'kind','native','observation','command'}
+    assert type(authority) is dict and set(authority)=={'kind','native','observation','command','stdout'}
     if authority['kind']=='unknown':
-        assert authority['native'] is authority['observation'] is authority['command'] is None
+        assert authority['native'] is authority['observation'] is authority['command'] is authority['stdout'] is None
         assert value['process_status']=='unknown' and value['producer'] is None;return
     assert authority['kind']=='stopped' and value['process_status']=='stopped' and value['observed_at'] is not None
     process_id(value['producer']);n=parse(external(authority['native'],MIB),MIB);o=parse(external(authority['observation'],16384),16384)
@@ -95,6 +95,11 @@ def check_process(value,authority,identity,sequence):
     assert type(n['exit_code']) is int and n['exit_code'] in (0,78) and n['post_close_processes_exited'] is True and type(n['usage']['active_before_close']) is int and n['usage']['active_before_close']==0
     assert n['timed_out'] is False and n['output_truncated'] is False and value['producer']['pid'] in n['owned_pids_before_close']
     assert type(n['owned_pids_before_close']) is list and all(type(p) is int and p>0 for p in n['owned_pids_before_close'])
+    capture=n['stdout_capture'];assert capture['schema']=='PILOT74-NATIVE-CAPTURE-v2' and capture['capture_complete'] is True and capture['eof'] is True and capture['errors']==[]
+    assert n['stdout_limit_exceeded'] is False and capture['stdout_limit_exceeded'] is False and n['inline_output_complete'] is True
+    assert capture['raw']==authority['stdout'] and capture['overflow']['extent']==0
+    assert type(capture['received_bytes']) is int and type(capture['retained_bytes']) is int and capture['received_bytes']==capture['retained_bytes']==capture['raw']['extent']
+    external(authority['stdout'],MIB)
     owner=o['owner'];assert owner['actual_self_query'] is True and type(owner['pid']) is int and type(owner['creation_filetime']) is int
     assert value['producer']==dict(pid=owner['pid'],creation_filetime_decimal=str(owner['creation_filetime']))
     observed=n['observed_job_processes'];assert type(observed) is list and len(observed)<=64

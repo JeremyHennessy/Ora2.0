@@ -40,17 +40,19 @@ def plan():
     value=retained.plan()
     assert value['files'][-1]==dict(name='metadata-reserve',limit=8*MIB)
     value=dict(version='PILOT74-FINITE-LEAF-INVENTORY-v2',roles=value['roles'],files=value['files'][:-1]+metadata())
+    value['files'] += [dict(name='stdout/'+r['name']+'.bin',limit=MIB) for r in value['roles']]
     limits={r['name']:r['limit'] for r in value['files']}
     assert len(limits)==len(value['files']) and sum(limits.values())<=retained.RAW_CAP
     # First failure's already-written data/partial files stay in raw slots. Do
     # not duplicate capsule bodies into this separately precharged phase.
-    failure=[dict(name='native-first-failure.json',limit=32*MIB),
+    failure=[dict(name='native-first-failure.json',limit=8*MIB),
+             dict(name='native-first-output.bin',limit=24*MIB),
              dict(name='first-exception.json',limit=64*KIB),
              dict(name='partial-inventory.json',limit=512*KIB)]
     # A fixed ZIP_STORED archive avoids compression-expansion assumptions. The
     # parent must bound each actual ASCII path to240 bytes and disallow comments,
     # extras, ZIP64 and directories; every leaf gets local+central headers.
-    count=len(limits)+len(failure)
+    count=len(limits)+len(failure);assert count<=1024
     zip_headers=count*(30+46+2*240)+22
     bound=sum(limits.values())+sum(r['limit'] for r in failure)+zip_headers
     assert sum(r['limit'] for r in failure)<=128*MIB
