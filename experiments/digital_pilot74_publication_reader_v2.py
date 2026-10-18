@@ -97,6 +97,9 @@ def check_process(value,authority,identity,sequence):
     assert type(n['owned_pids_before_close']) is list and all(type(p) is int and p>0 for p in n['owned_pids_before_close'])
     owner=o['owner'];assert owner['actual_self_query'] is True and type(owner['pid']) is int and type(owner['creation_filetime']) is int
     assert value['producer']==dict(pid=owner['pid'],creation_filetime_decimal=str(owner['creation_filetime']))
+    observed=n['observed_job_processes'];assert type(observed) is list and len(observed)<=64
+    for member in observed:process_id(member)
+    assert len({m['pid'] for m in observed})==len(observed) and value['producer'] in observed
     assert o['observed_at']==value['observed_at'] and o['identity']=={'revision':identity['source_revision'],'source_sha256':identity['source_manifest_sha256'],'config_sha256':identity['configuration_sha256'],'law':'DIGITAL-PILOT74-FINITE-QUALIFICATION-v1'}
 
 def read_publication(root,registration,*,now=None,previous=None):
