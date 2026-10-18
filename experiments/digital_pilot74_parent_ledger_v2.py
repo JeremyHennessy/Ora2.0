@@ -15,10 +15,10 @@ def encode(v):return physical.encode(v)
 def digest(raw):return hashlib.sha256(raw).hexdigest()
 def utc():return datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
-def precharge(root):
+def precharge(root,source_rows):
     """All raw/failure/archive/restore leaves BEFORE any endpoint or grant."""
     root=Path(root);assert root.is_absolute() and root.resolve().is_relative_to(Path('D:/OraLab/runs').resolve())
-    plan=inventory.plan()
+    plan=inventory.plan(source_rows)
     budget=Budget(root,dict(raw=1280*MIB,archive=1280*MIB,restore=1280*MIB,failure=128*MIB),3968*MIB)
     slots={}
     def reserve(phase,name,cap):

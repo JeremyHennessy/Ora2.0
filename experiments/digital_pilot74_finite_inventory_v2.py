@@ -8,10 +8,14 @@ from experiments import digital_pilot74_inventory as retained
 MIB=1024**2
 KIB=1024
 
-def metadata():
+def metadata(source_rows):
     rows=[]
     def slot(name,limit):rows.append(dict(name='metadata/'+name,limit=limit))
-    for export in ('original','restored'):slot('source/'+export+'.json',1536*KIB)
+    source_fit(source_rows)
+    assert sum(r['extent'] for r in source_rows)+65536<=1536*KIB
+    for export in ('original','restored'):
+        slot('source/'+export+'.json',65536)
+        for row in source_rows:slot('source/'+export+'/'+row['name'],row['extent'])
     slot('source/source.zip',1536*KIB)
     slot('source/owners.json',512*KIB)
     for export in ('original','restored'):
@@ -36,10 +40,10 @@ def metadata():
     assert sum(r['limit'] for r in rows)<=8*MIB
     return rows
 
-def plan():
+def plan(source_rows):
     value=retained.plan()
     assert value['files'][-1]==dict(name='metadata-reserve',limit=8*MIB)
-    value=dict(version='PILOT74-FINITE-LEAF-INVENTORY-v2',roles=value['roles'],files=value['files'][:-1]+metadata())
+    value=dict(version='PILOT74-FINITE-LEAF-INVENTORY-v2',roles=value['roles'],files=value['files'][:-1]+metadata(source_rows))
     value['files'] += [dict(name='stdout/'+r['name']+'.bin',limit=MIB) for r in value['roles']]
     limits={r['name']:r['limit'] for r in value['files']}
     assert len(limits)==len(value['files']) and sum(limits.values())<=retained.RAW_CAP
