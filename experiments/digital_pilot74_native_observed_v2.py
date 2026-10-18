@@ -7,7 +7,7 @@ import json,os,sys,subprocess,threading,time
 from pathlib import Path
 from experiments.process_limits import Limits,Job,process_exited,OUTPUT_LIMIT
 from experiments.digital_pilot74_journal import birth
-from experiments.digital_pilot74_output_capture_v2 import Capture
+from experiments.digital_pilot74_output_capture_v2 import Capture,ParentCapture
 
 def _run(command, limits, cwd, sink):
     limits.validate()
@@ -121,5 +121,17 @@ def run(command,limits=Limits(),cwd=None,*,capture_grant,capture_seal,source_sha
     except BaseException as first:
         try:sink.close()
         except BaseException as later:first.add_note("Capture close failure: "+repr(later))
+        raise
+    sink.close();return result
+
+
+def run_parent(command,limits,cwd,*,capture_grant,capture_seal,source_sha256,configuration_sha256,role):
+    """Unqualified outer-only parent Job; source-bound supervisor supplies grant."""
+    assert role=='parent' and limits.memory_bytes==2048*1024**2 and limits.cpu_seconds==2400 and limits.processes==4 and 0<limits.wall_seconds<=3600
+    sink=ParentCapture(capture_grant,capture_seal,source_sha256,configuration_sha256,role,command)
+    try:result=_run(command,limits,cwd,sink)
+    except BaseException as first:
+        try:sink.close()
+        except BaseException as later:first.add_note('Parent capture close failure: '+repr(later))
         raise
     sink.close();return result

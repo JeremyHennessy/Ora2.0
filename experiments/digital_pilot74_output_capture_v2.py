@@ -11,12 +11,14 @@ def plain(path,directory=False):
 def ident(i):return i.st_dev,i.st_ino
 
 class Capture:
+    VERSION="PILOT74-NATIVE-CAPTURE-GRANT-v2"
+    OVERFLOW=24*MIB
     def __init__(self,grant,seal,source,config,role,command):
         self.opened={};self.used={'raw':0,'overflow':0};self.hashes={k:hashlib.sha256() for k in self.used}
         self.grant=grant;self.seal=seal;self.eof=False;self.errors=[];self.received=0
         try:
             assert type(grant) is dict and set(grant)=={'version','root','source_sha256','configuration_sha256','role','command_sha256','operator_lock','raw','overflow'}
-            assert grant['version']=='PILOT74-NATIVE-CAPTURE-GRANT-v2' and sha(enc(grant))==seal
+            assert grant['version']==self.VERSION and sha(enc(grant))==seal
             assert (grant['source_sha256'],grant['configuration_sha256'],grant['role'])==(source,config,role) and grant['command_sha256']==sha(enc(list(command)))
             for value in (source,config):assert type(value) is str and len(value)==64 and all(c in '0123456789abcdef' for c in value)
             assert type(role) is str and role.isascii() and all(p not in ('','.','..') for p in role.split('/')) and '\\' not in role and ':' not in role
@@ -25,7 +27,7 @@ class Capture:
             assert Path(grant['overflow']['path'])==root/'failure'/'native-first-output.bin'
             self.owner()
             seen=[]
-            for key,limit in (('raw',MIB),('overflow',24*MIB)):
+            for key,limit in (('raw',MIB),('overflow',self.OVERFLOW)):
                 spec=grant[key];assert type(spec) is dict and set(spec)=={'path','limit','device','inode'}
                 assert type(spec['limit']) is int and spec['limit']==limit and type(spec['device']) is int and type(spec['inode']) is int
                 path=Path(spec['path']);chain=[(p,ident(plain(p,True))) for p in path.parents]
@@ -90,3 +92,12 @@ class Capture:
             except BaseException as error:errors.append(repr(error))
             del self.opened[key]
         if errors:raise OSError('Capture close failures: '+repr(errors))
+
+
+class ParentCapture(Capture):
+    """Separate control8MiB sink; child capture remains unchanged."""
+    VERSION="PILOT74-PARENT-CAPTURE-GRANT-v2"
+    OVERFLOW=2*MIB
+    def __init__(self,grant,seal,source,config,role,command):
+        assert role=="parent"
+        super().__init__(grant,seal,source,config,role,command)
