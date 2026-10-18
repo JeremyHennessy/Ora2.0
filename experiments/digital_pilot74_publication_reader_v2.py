@@ -3,7 +3,7 @@
 External registration is the authority premise. Full literal projection proof
 is separate paid work; this reader alone does not accept execution or liveness.
 """
-import hashlib,json,os,stat
+import hashlib,json,math,os,stat
 from pathlib import Path
 from datetime import datetime,timezone
 MIB=1024**2
@@ -42,6 +42,37 @@ def parse(raw,cap):
             for x in v:typed(x,depth+1)
         else:assert v is None or type(v) in (str,int,bool)
     typed(value);return value
+
+def parse_host(raw,cap):
+    """Host-only native timing receipts, never wire/VM/capsule acceptance."""
+    assert type(raw) is bytes and 0<len(raw)<=cap
+    def pairs(items):
+        out={}
+        for key,value in items:assert key not in out;out[key]=value
+        return out
+    def bad(value):raise ValueError(value)
+    value=json.loads(raw.decode('ascii'),object_pairs_hook=pairs,parse_constant=bad)
+    assert encode(value)==raw
+    def typed(v,depth=0):
+        assert depth<=24
+        if type(v) is dict:
+            assert all(type(k) is str for k in v)
+            for item in v.values():typed(item,depth+1)
+        elif type(v) is list:
+            for item in v:typed(item,depth+1)
+        elif type(v) is float:assert math.isfinite(v)
+        else:assert v is None or type(v) in (int,str,bool)
+    typed(value);return value
+
+def parse_native(raw,cap):
+    value=parse_host(raw,cap)
+    assert type(value) is dict and value['schema']=='resource01-result-v1'
+    assert type(value['command']) is list and value['command'] and all(type(v) is str and v for v in value['command'])
+    assert type(value['limits']) is dict and set(value['limits'])=={'memory_bytes','cpu_seconds','processes','wall_seconds'}
+    assert type(value['limits']['memory_bytes']) is int and type(value['limits']['processes']) is int
+    for key in ('cpu_seconds','wall_seconds'):
+        v=value['limits'][key];assert type(v) in (int,float) and math.isfinite(v) and v>0
+    return value
 
 def plain(path,directory=False):
     info=path.lstat();assert not stat.S_ISLNK(info.st_mode) and not getattr(info,'st_file_attributes',0)&0x400
@@ -90,7 +121,7 @@ def check_process(value,authority,identity,sequence):
         assert authority['native'] is authority['observation'] is authority['command'] is authority['stdout'] is None
         assert value['process_status']=='unknown' and value['producer'] is None;return
     assert authority['kind']=='stopped' and value['process_status']=='stopped' and value['observed_at'] is not None
-    process_id(value['producer']);n=parse(external(authority['native'],MIB),MIB);o=parse(external(authority['observation'],16384),16384)
+    process_id(value['producer']);n=parse_native(external(authority['native'],MIB),MIB);o=parse(external(authority['observation'],16384),16384)
     assert type(authority['command']) is list and all(type(x) is str for x in authority['command']) and n['command']==authority['command']
     assert type(n['exit_code']) is int and n['exit_code'] in (0,78) and n['post_close_processes_exited'] is True and type(n['usage']['active_before_close']) is int and n['usage']['active_before_close']==0
     assert n['timed_out'] is False and n['output_truncated'] is False and value['producer']['pid'] in n['owned_pids_before_close']
