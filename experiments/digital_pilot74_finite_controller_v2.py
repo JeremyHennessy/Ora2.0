@@ -103,7 +103,7 @@ class Controller:
         index=len(self.attempted);assert index<26 and self.plan['roles'][index]['name']==name
         for root in self.exported['roots'].values():assert exports.rows(root,self.r['source_files'])==self.rows
         spec=self.save('requests/'+name+'.json',enc(request))
-        command=[self.r['python']['path'],'-B','-m','experiments.'+module,spec['path'],str(spec['extent']),spec['sha256']]+list(extra)
+        command=[self.r['python']['path'],'-B',str(Path(self.exported['roots'][export])/'experiments/digital_pilot74_entrypoint_v2.py'),module,spec['path'],str(spec['extent']),spec['sha256']]+list(extra)
         capture=ledger.capture_grant(self.slots,self.root,self.r['source_sha256'],self.r['configuration_sha256'],name,command,self.r['operator_lock'])
         self.save('metadata/grants/'+name+'.json',enc(dict(request=spec,command=command,capture=capture,endpoint=request)))
         self.attempted.append(name);self.commands[name]=command

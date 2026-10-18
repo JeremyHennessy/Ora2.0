@@ -236,7 +236,7 @@ def external(raw,authority,cap):
 
 class ProjectionCollector:
     def __init__(self,initial,identity,capsule_sha,audit_sha,mode,boundary_state_sha256=None):
-        self.initial=initial;self.identity=clone(identity);self.capsule_sha=capsule_sha;self.audit_sha=audit_sha;self.mode=mode
+        self.initial=initial;assert type(initial) is str and len(initial)==64;self.identity=clone(identity);self.capsule_sha=capsule_sha;self.audit_sha=audit_sha;self.mode=mode
         self.past=[];self.files={};self.chunks=[];self.pending=[];self.checkpoints={}
         self.boundary_expected=boundary_state_sha256;self.boundary_actual={}
     def observe(self,before,event,snapshot):
@@ -248,7 +248,7 @@ class ProjectionCollector:
             child=event['birth']['child'];self.past.append(dict(tick=tick,parent=event['actor'],child=child['id'],generation=child['generation']))
         if tick<8192:return
         if tick==8192:
-            state=snapshot();assert state==self.initial,'Complete independently reconstructed8192 mismatch'
+            state=snapshot();assert h(state)==self.initial,'Complete independently reconstructed8192 hash mismatch'
             v=public_view(state);iv=dict(schema='ora-pilot-initial-state-v1',identity=clone(self.identity),cut=8192,source_capsule_sha256=self.capsule_sha,literal_audit_sha256=self.audit_sha,world_state_sha256=h(state),projection_sha256=h(v),state=v,existing_actor_ids=sorted(int(k) for k in state['entities']),supplied_behavior=True,schematic_positioning=True)
             gv=dict(schema='ora-pilot-genesis-summary-v1',identity=clone(self.identity),cut=8192,source_capsule_sha256=self.capsule_sha,ancestor_words=[u['value'] for u in state['formation'][:27]],formation=clone(state['formation']),past_birth_edges=self.past)
             a=public_bytes(iv);b=public_bytes(gv);assert len(a)<=65536 and len(b)<=16384
@@ -288,20 +288,25 @@ def verify_projection(initial_raw,initial_audit_raw,terminal_raw,terminal_audit_
         text=identity[key];assert type(text) is str and 1<=len(text)<=80 and all(c.isascii() and (c.isalnum() or c in '-_.') for c in text)
     assert identity['source_revision']==source_identity['revision'] and identity['source_manifest_sha256']==source_identity['source_sha256'] and identity['configuration_sha256']==source_identity['config_sha256']
     for a in (initial_authority,terminal_authority):assert type(a) is dict and set(a)=={'capsule','audit'}
-    first=external(initial_raw,initial_authority['capsule'],40*1024**2);first_proof=external(initial_audit_raw,initial_authority['audit'],128*1024)
-    final=external(terminal_raw,terminal_authority['capsule'],40*1024**2);final_proof=external(terminal_audit_raw,terminal_authority['audit'],128*1024)
-    for cap,proof,raw in ((first,first_proof,initial_raw),(final,final_proof,terminal_raw)):
+    # Decode one externally pinned capsule at a time, release it before the
+    # next decode and before independent full literal reconstruction. Complete
+    # initial-state equality relies on the existing canonical SHA256 premise.
+    metadata={}
+    for label,raw,audit_raw,authority in (('first',initial_raw,initial_audit_raw,initial_authority),('final',terminal_raw,terminal_audit_raw,terminal_authority)):
+        cap=external(raw,authority['capsule'],40*1024**2)
+        proof=external(audit_raw,authority['audit'],128*1024)
         assert set(cap)=={'version','identity','checkpoint64','state','state_sha256'} and cap['version']==CAPSULE_VERSION and cap['identity']==source_identity and cap['state_sha256']==h(cap['state'])
         assert set(proof)=={'version','verified','identity','capsule_sha256','extent','state_sha256','tick','audit_prefix_instructions','summary','engineering_only','stage_credit'}
         assert proof['version']==AUDIT_VERSION and proof['verified'] is True and proof['engineering_only'] is True and proof['stage_credit'] is False
         assert proof['identity']==source_identity and proof['capsule_sha256']==public_hash(raw) and type(proof['extent']) is int and proof['extent']==len(raw) and proof['state_sha256']==cap['state_sha256']
         assert type(proof['tick']) is int and proof['tick']==cap['state']['tick'] and type(proof['audit_prefix_instructions']) is int and proof['audit_prefix_instructions']==proof['tick']
-    assert type(first['state']['tick']) is int and first['state']['tick']==8192
-    assert final['state']['events'][:8192]==first['state']['events']
+        metadata[label]=dict(tick=proof['tick'],state_sha256=cap['state_sha256'])
+        del cap,proof
+    assert metadata['first']['tick']==8192
     if boundary_state_sha256 is not None:
-        assert type(boundary_state_sha256) is dict and set(boundary_state_sha256)=={8192,9216,10240} and final['state']['tick']==10240
-        assert boundary_state_sha256[8192]==first['state_sha256'] and boundary_state_sha256[10240]==final['state_sha256']
-    collector=ProjectionCollector(first['state'],identity,public_hash(initial_raw),public_hash(initial_audit_raw),mode,boundary_state_sha256)
+        assert type(boundary_state_sha256) is dict and set(boundary_state_sha256)=={8192,9216,10240} and metadata['final']['tick']==10240
+        assert boundary_state_sha256[8192]==metadata['first']['state_sha256'] and boundary_state_sha256[10240]==metadata['final']['state_sha256']
+    collector=ProjectionCollector(metadata['first']['state_sha256'],identity,public_hash(initial_raw),public_hash(initial_audit_raw),mode,boundary_state_sha256)
     proof=verify_capsule(terminal_raw,source_identity,public_hash(terminal_raw),len(terminal_raw),collector)
     manifest=collector.finish(proof['tick']);assert set(provided)==set(collector.files)
     for name,expected in collector.files.items():assert type(provided[name]) is bytes and provided[name]==expected,'Independent full projection bytes mismatch: '+name
