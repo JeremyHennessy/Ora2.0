@@ -1,6 +1,6 @@
 # PILOT74 native guardian v1 — unqualified source implementation
 
-The selected guardian topology is implemented locally as Windows C source and a Python transport/registration adapter. It has not been compiled or executed. Static Python syntax and C delimiter inspection are not native qualification. The finite pilot remains REFUSED pending independent source/build/resource review, prospectively registered NEW qualification, exact clean whole-source focused CI and separate finite qualification registration. No old closed checks were rerun.
+The selected guardian topology is implemented locally as Windows C source and a Python transport/registration adapter. Its exact C source has now produced an object under C17 /W4 /WX and a separately registered linker stage produced a210944-byte artifact. One NEW no-argument native refusal check returned125 with complete capture/closed tree. This is not native recovery, full source/resource qualification or execution admission. The finite pilot remains REFUSED pending independent source/build/resource review, prospectively registered NEW qualification, exact clean whole-source focused CI and separate finite qualification registration. No old closed checks were rerun.
 
 ## Process and deadline ownership
 
@@ -24,7 +24,7 @@ All original laws,26 experiment roles,2 geneses,15 planned hydrates,34816VMsteps
 
 ## Build and admission remain separate
 
-MSVC was located at Visual Studio2022 Community14.40.33807. A Windows SDK was not confirmed, and no compiler was invoked or binary generated. After separately freezing NEW bounded source/build checks and reserving their complete outputs, the intended x64 build is MSVC C17 with /W4 /O2 /MT /DUNICODE /D_UNICODE and bcrypt.lib. Pin the compiler, SDK, exact command, source bytes, output bytes and full diagnostics. Do not install dependencies, enlarge reservations or discard failed build output to make the artifact fit.
+A separately authorized host setup installed SDK10.0.26100.0. Exact MSVC14.40.33807/source/selected SDK inputs and full commands are pinned in four distinct build contracts. V1 stopped on signedness/unused warnings; V2 stopped on accounting-buffer initialization warning. Each source repair received a distinct registration under unchanged512MiB/30CPU/60wall/3 compiler Job caps with /W4 /WX retained. V3 produced an object/dependency manifest but its combined cl command could not execute the linker. V4 linked that preserved exact object successfully, avoiding repeated code generation or a process-cap increase. The combined-command process-limit diagnosis remains a hypothesis. All three failed attempts and successful link have complete output/native/source/partials archives and exact restores. Installed transitive toolchain trees are an explicit trusted premise, not a reproducibility qualification.
 
 The external registration must bind the compiled artifact, build review, Python/entrypoint/package/module origins, full raw source/CI/export byte identity, reviewed qualification receipts, operator lock and actual host native provenance. PASS strings and checksums are not self-authenticating execution ancestry. This source emits no registration or automatic launch CLI. Independent build/source/resource review, new-only qualification, clean whole-source CI and separate finite registration are all still owed. Live/Observer attachment remains off. No private push, old qualification rerun or new World was performed.
 
@@ -39,3 +39,9 @@ These are source-shape repairs only, not proven G1/G2/G3 runtime closure or a fu
 ## Start deadline gates (source only)
 
 Native process creation and worker/role resume now recheck the original root stop window after setup and file I/O. Role resume also rechecks its original300s deadline; no timer is reset. A denied gate routes to existing first-failure/suspended-handle custody. Gates are point-in-time checks; scheduling/OS-call races and the independent hard root watchdog still require native qualification. There is no claim that a source check makes a kernel call instantaneous or proves a deadline. No build or runtime check was run.
+
+## Actual narrow native observation and next scope
+
+The linked artifact SHA256 is c22a3668dd57bedf2e55def8e39ad867e1ce6c2a4657c583bf067cd5cd46e391; it remains in the registered build evidence tree, not the runnable source export. One separately registered NEW argc-refusal group executed it without arguments, observed expected125/empty full EOF/closed process tree and archived/restored available evidence exactly. No valid guardian registration, worker, role, VM or World was started. No closed checks were rerun. This does not qualify G1/G2/G3/deadline enforcement, a full controller run or natural crash/recovery.
+
+Next native component contract is a draft only until its complete source-bound host harness, request/grant/input/output reservations and independent review are pinned. It must use root Job membership from creation and exact process handles for distinct birth/limit/deadline/registration refusal branches, with no valid worker registration and zero Worlds. Do not repeat the closed argc group. Positive capture/handle-handoff/failure interleavings and complete resource/union/literal peak review remain prerequisites to new focused CI and separate finite registration. The finite pilot stays REFUSED.
