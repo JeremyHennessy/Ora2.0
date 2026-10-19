@@ -95,7 +95,7 @@ def one_case(r,name,owner):
   n=ctypes.c_size_t();k.InitializeProcThreadAttributeList(None,2,0,ctypes.byref(n));assert n.value>0;attributes=ctypes.create_string_buffer(n.value);checked(k.InitializeProcThreadAttributeList(attributes,2,0,ctypes.byref(n)));initialized=True
   jobs=(wt.HANDLE*1)(job.handle);inherited=(wt.HANDLE*4)(*handles);checked(k.UpdateProcThreadAttribute(attributes,0,0x2000D,jobs,ctypes.sizeof(jobs),None,None));checked(k.UpdateProcThreadAttribute(attributes,0,0x20002,inherited,ctypes.sizeof(inherited),None,None))
   actual_start=origin_tick;fixture_start=actual_start
-  if name=='expired_original_stop_window':assert actual_start>=3600000;fixture_start=actual_start-3600000
+  if name=='expired_original_stop_window':assert actual_start>=3590000;fixture_start=actual_start-3590000
   request=r['registration_fixture'];command=[r['artifact']['path'],str(int(job.handle)),str(fixture_start),request['path'],str(request['extent']),'0'*64,str(handles[1])]
   grant=dict(version='PILOT74-NATIVE-CAPTURE-GRANT-v2',root=r['root'],source_sha256=r['source_sha256'],configuration_sha256=r['configuration_sha256'],role=name,command_sha256=sha(enc(command)),operator_lock=owner,raw={key:r['slots']['raw/stdout/'+name+'.bin'][key] for key in ('path','limit','device','inode')},overflow={key:r['slots']['failure/native-first-output.bin'][key] for key in ('path','limit','device','inode')})
   write(r['slots']['raw/grants/'+name+'.json'],enc(grant));sink=Capture(grant,sha(enc(grant)),r['source_sha256'],r['configuration_sha256'],name,command)
@@ -112,13 +112,16 @@ def one_case(r,name,owner):
     try:stop_job()
     except BaseException as later:sink.errors.append(repr(later))
   si=STARTEX();si.startup.cb=ctypes.sizeof(si);si.startup.flags=0x100;si.startup.input=handles[3];si.startup.output=si.startup.error=handles[2];si.attributes=ctypes.cast(attributes,ctypes.c_void_p)
+  if name=='expired_original_stop_window':assert fixture_start+3580000<=k.GetTickCount64()<fixture_start+3600000,'Fixture must remain inside stop window before hard deadline'
   line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command));assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not create G';checked(k.CreateProcessW(r['artifact']['path'],line,None,None,True,0x80000|0x4|0x8000000,None,r['source_root'],ctypes.byref(si),ctypes.byref(pi)))
   original_birth=birth(k,pi.process);handed=original_birth+1 if name=='external_birth_mismatch' else original_birth;assert handed<2**64
   member=wt.BOOL();checked(k.IsProcessInJob(pi.process,job.handle,ctypes.byref(member)));assert member.value;actual=caps.ExtendedLimits();checked(caps.kernel().QueryInformationJobObject(job.handle,9,ctypes.byref(actual),ctypes.sizeof(actual),None));assert actual.job_memory==memory and actual.basic.job_cpu==2400*10_000_000 and actual.basic.active_processes==4 and actual.basic.flags&(0x4|0x8|0x200|0x2000)==(0x4|0x8|0x200|0x2000);facts.update(root_membership_observed=True,root_limit_readback=dict(memory_bytes=int(actual.job_memory),cpu_ticks=int(actual.basic.job_cpu),processes=int(actual.basic.active_processes),flags=int(actual.basic.flags)))
   facts.update(pid=pi.pid,creation_filetime_decimal=str(original_birth),handed_birth_decimal=str(handed),actual_case_start_tick=actual_start,fixture_original_tick=fixture_start,root_limits=vars(job.limits) if hasattr(job,'limits') else dict(memory_bytes=memory,cpu_seconds=2400,processes=4),root_job_membership_from_creation_requested=True,command=command)
   write(r['slots']['raw/native/'+name+'.start.json'],enc(facts))
   assert os.write(bw,struct.pack('<Q',handed))==8;os.close(bw);fds.remove(bw)
-  stream=os.fdopen(out_r,'rb',buffering=0);fds.remove(out_r);thread=threading.Thread(target=drain,daemon=True);thread.start();assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not resume G';facts['setup_elapsed_seconds']=time.monotonic()-started;assert k.ResumeThread(pi.thread)==1
+  stream=os.fdopen(out_r,'rb',buffering=0);fds.remove(out_r);thread=threading.Thread(target=drain,daemon=True);thread.start();assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not resume G'
+  if name=='expired_original_stop_window':assert fixture_start+3580000<=k.GetTickCount64()<fixture_start+3600000
+  facts['setup_elapsed_seconds']=time.monotonic()-started;assert k.ResumeThread(pi.thread)==1
   os.close(out_w);fds.remove(out_w)
   while k.WaitForSingleObject(pi.process,10)==258:
    if time.monotonic()-started>=5:raise TimeoutError('NEW boundary case exceeded5s; closure authority incomplete until exact handles observed')
@@ -168,7 +171,7 @@ def worker(registration,registration_sha256,review,review_sha256):
  r=admission(registration,registration_sha256,review,review_sha256)
  from experiments import process_limits as caps
  limits=caps.ExtendedLimits();k=caps.kernel();caps.checked(k.QueryInformationJobObject(None,9,ctypes.byref(limits),ctypes.sizeof(limits),None));assert limits.job_memory==2048*MIB and limits.basic.job_cpu==60*10_000_000 and limits.basic.active_processes==4
- origins(r,True);owner=r['operator_lock'];read(owner,16384);assert kernel().GetTickCount64()>=3600000,'Expired-window fixture unavailable: abort before ALL case launches';results=[]
+ origins(r,True);owner=r['operator_lock'];read(owner,16384);assert kernel().GetTickCount64()>=3590000,'Stop-window fixture unavailable: abort before ALL case launches';results=[]
  for name in CASES:results.append(one_case(r,name,owner))
  origins(r,True)
  summary=dict(schema='PILOT74-NEW-NATIVE-BOUNDARY-SUMMARY-v1',cases=[dict(case=x['case'],exit_code=x['exit_code']) for x in results],worlds=0,vm_steps=0,positive_custody_qualified=False,recovery_qualified=False,finite_admission=False)
