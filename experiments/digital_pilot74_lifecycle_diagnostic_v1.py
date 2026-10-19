@@ -3,7 +3,7 @@
 A collected diagnostic is not guardian conformance or recovery acceptance.
 The old four-case worker and sealed failures are never called/reopened.
 """
-import ctypes,json,sys,traceback
+import ctypes,json,sys,time,traceback
 from pathlib import Path
 
 KIND='PILOT74-SINGLE-POSTEXIT-LIFECYCLE-v1'
@@ -26,6 +26,11 @@ def validate(request,request_sha256,worker=False):
  assert v['max_guardian_launches']==r['max_guardian_launches']==1
  assert r['case']==CASE and r['worlds']==r['vm_steps']==0
  assert v['source_sha256']==r['source_sha256'] and v['operator_lock']==r['operator_lock']
+ assert v['owner_birth']==r['owner_birth'] and v['controller']==r['controller']
+ assert v['host_driver']==r['host_driver'] and v['host_argv_sha256']==r['host_argv_sha256']
+ assert type(v['issued_monotonic_ns']) is int and type(v['expires_monotonic_ns']) is int
+ assert r['owner_prepared_monotonic_ns']<=v['issued_monotonic_ns']<=time.monotonic_ns()<v['expires_monotonic_ns']
+ assert v['expires_monotonic_ns']<=r['owner_prepared_monotonic_ns']+3600*10**9
  assert r['parent_limits']==dict(memory_bytes=2048*MIB,cpu_seconds=60,wall_seconds=90,processes=4)
  assert r['slot_total_bytes']+r['zip_header_bound']<=64*MIB
  assert r['archive_limit']==r['restore_limit']==64*MIB and r['controller_limit']==8*MIB
@@ -38,7 +43,9 @@ def validate(request,request_sha256,worker=False):
  assert r['artifact']['sha256']=='c22a3668dd57bedf2e55def8e39ad867e1ce6c2a4657c583bf067cd5cd46e391'
  assert h.read(r['registration_fixture'],2)==b'{}'
  for pin in r['input_pins']:h.read(pin,pin['extent'])
- h.read(r['operator_lock'],16384)
+ owner=json.loads(h.read(r['operator_lock'],16384))
+ from experiments.digital_pilot74_journal import birth as current_birth
+ assert current_birth(owner['pid'])==r['owner_birth'],'Original registered owner birth unavailable or changed'
  assert Path(__file__).resolve()==Path(r['source_root'])/'experiments/digital_pilot74_lifecycle_diagnostic_v1.py'
  h.origins(r,worker_main=worker)
  # Actual registration/grant/native issuer ancestry remains external.
