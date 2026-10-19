@@ -35,3 +35,7 @@ The worker launch receipt is now mandatory before resume; a failed/partial recei
 Watchdog/capture stop requests use one immutable native Job-handle duplicate per existing role (at most26), published through an interlocked index before role resume. These duplicates remain valid until guardian process exit; main clears the active index before closing its original handle. A racing observer may terminate an already drained old Job but never a closed/reused handle. Worker handle publication is interlocked and its exact handle stays valid until exit. No mutex blocks the root deadline or waits for file/Python work. No extra process, Job role, test, replay or allowance is added; handle objects and source growth still need resource review.
 
 These are source-shape repairs only, not proven G1/G2/G3 runtime closure or a full-source review PASS. New prospective failure/interleaving/native/build qualification and all separate CI/finite-registration gates remain required.
+
+## Start deadline gates (source only)
+
+Native process creation and worker/role resume now recheck the original root stop window after setup and file I/O. Role resume also rechecks its original300s deadline; no timer is reset. A denied gate routes to existing first-failure/suspended-handle custody. Gates are point-in-time checks; scheduling/OS-call races and the independent hard root watchdog still require native qualification. There is no claim that a source check makes a kernel call instantaneous or proves a deadline. No build or runtime check was run.
