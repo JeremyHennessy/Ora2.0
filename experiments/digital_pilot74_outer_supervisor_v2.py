@@ -77,6 +77,7 @@ def supervise(spec,expected_sha):
     Existing owner lock must already be held. Never create/delete/replace it.
     Actual external review ancestry remains a prerequisite beyond these checks.
     """
+    raise RuntimeError('Python outer topology REFUSED; separately admitted native guardian required')
     started=time.monotonic();cpu_started=time.process_time()
     assert spec['sha256']==expected_sha
     raw=physical.external(spec,65536);r=physical.parse(raw,65536)

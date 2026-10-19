@@ -66,6 +66,9 @@ def parse_host(raw,cap):
 
 def parse_native(raw,cap):
     value=parse_host(raw,cap)
+    if value.get('schema')=='PILOT74-GUARDIAN-NATIVE-v1':
+        from experiments.digital_pilot74_guardian_v1 import normalize_native
+        value=normalize_native(value)
     assert type(value) is dict and value['schema']=='resource01-result-v1'
     assert type(value['command']) is list and value['command'] and all(type(v) is str and v for v in value['command'])
     assert type(value['limits']) is dict and set(value['limits'])=={'memory_bytes','cpu_seconds','processes','wall_seconds'}

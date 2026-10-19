@@ -59,7 +59,7 @@ def bind(root,pins,identities):
     assert type(pins) is dict and 1<=len(pins)<=256
     assert 'experiments/__init__.py' in pins and 'experiments/digital_pilot74_entrypoint_v2.py' in pins
     for relative,pin in pins.items():
-        assert type(relative) is str and relative.isascii() and relative.startswith('experiments/') and relative.endswith('.py') and '..' not in relative and '\\' not in relative and ':' not in relative
+        assert type(relative) is str and relative.isascii() and (relative.startswith('experiments/') and relative.endswith('.py') or relative in {'experiments/native/pilot74_guardian_v1.c','experiments/native/pilot74_guardian_v1.exe'}) and '..' not in relative and '\\' not in relative and ':' not in relative
         assert type(pin) is str and len(pin)==64 and all(c in '0123456789abcdef' for c in pin)
         raw,actual=read(root/relative,MIB);assert digest(raw)==pin;total+=len(raw)
         if relative in identities:assert identities[relative]==actual
@@ -104,6 +104,7 @@ def main():
         second,current=read(Path(original[2]),cap,expected);assert second==raw and current==request_identity
         stage='target-admission'
         if target=='outer':
+            raise RuntimeError('Old Python outer supervisor path REFUSED; reviewed native guardian required')
             result=module.supervise(dict(path=original[2],**expected),expected['sha256'])
             # supervisor owns its terminal receipt; nothing written into inner.
             bind(root,pins,identities)

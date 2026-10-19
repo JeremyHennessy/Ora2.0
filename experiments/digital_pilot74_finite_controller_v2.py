@@ -11,7 +11,7 @@ from experiments import digital_pilot74_publication_reader_v2 as physical
 from experiments import digital_pilot74_parent_ledger_v2 as ledger
 from experiments import digital_pilot74_finite_requests_v2 as requests
 from experiments import digital_pilot74_source_exports_v2 as exports
-from experiments import digital_pilot74_native_observed_v2 as native
+from experiments import digital_pilot74_guardian_v1 as guardian
 from experiments import digital_pilot74_available_archive_v2 as archive
 MIB=1024**2
 CHILD=caps.Limits(memory_bytes=1024*MIB,cpu_seconds=180,processes=3,wall_seconds=300)
@@ -35,7 +35,7 @@ def parent_job():
 def registration(spec,expected_sha):
     assert spec['sha256']==expected_sha
     raw=read(spec,65536);r=physical.parse(raw,65536)
-    assert type(r) is dict and set(r)=={'schema','mode','run_id','world_id','root','source_root','revision','source_files','source_sha256','configuration','configuration_sha256','python','operator_lock','contracts','reviews','compatibility'}
+    assert type(r) is dict and set(r)=={'schema','mode','run_id','world_id','root','source_root','revision','source_files','source_sha256','configuration','configuration_sha256','python','operator_lock','contracts','reviews','compatibility','guardian'}
     assert r['schema']=='PILOT74-FINITE-REGISTRATION-v2' and r['mode']=='finite_qualification'
     assert enc(r['configuration'])==enc(requests.CONFIG) and sha(enc(r['configuration']))==r['configuration_sha256']
     for key in ('run_id','world_id'):
@@ -74,11 +74,12 @@ def registration(spec,expected_sha):
     lock=r['operator_lock'];assert Path(lock['path'])==Path('D:/OraLab/state/operator.lock')
     _,identity=physical.read_exact(lock['path'],{k:lock[k] for k in ('extent','sha256')},16384)
     assert identity[:2]==(lock['device'],lock['inode'])
+    guardian.validate_host_registration(spec,expected_sha)
     return r,raw,reviews,parent_job()
 
 class Controller:
     def __init__(self,r,raw,reviews,job):
-        self.r=r;self.root=Path(r['root']);self.reviews=reviews;self.job=job
+        self.guardian=guardian.current();self.r=r;self.root=Path(r['root']);self.reviews=reviews;self.job=job
         self.rows=exports.rows(r['source_root'],r['source_files'])
         self.budget,self.slots,self.plan=ledger.precharge(self.root,self.rows)
         self.completed=[];self.attempted=[];self.native={};self.commands={};self.observations={};self.publications=[];self.initial={};self.finalized=False
@@ -105,10 +106,10 @@ class Controller:
         spec=self.save('requests/'+name+'.json',enc(request))
         command=[self.r['python']['path'],'-B',str(Path(self.exported['roots'][export])/'experiments/digital_pilot74_entrypoint_v2.py'),module,spec['path'],str(spec['extent']),spec['sha256']]+list(extra)
         capture=ledger.capture_grant(self.slots,self.root,self.r['source_sha256'],self.r['configuration_sha256'],name,command,self.r['operator_lock'])
-        self.save('metadata/grants/'+name+'.json',enc(dict(request=spec,command=command,capture=capture,endpoint=request)))
+        self.save('metadata/grants/'+name+'.json',enc(dict(request=spec,command=command,capture=capture)))
         self.attempted.append(name);self.commands[name]=command
-        n=native.run(command,CHILD,self.exported['roots'][export],capture_grant=capture['grant'],capture_seal=capture['seal'],source_sha256=self.r['source_sha256'],configuration_sha256=self.r['configuration_sha256'],role=name)
-        self.native[name]=n;ledger.retain_native(self.slots,name,n)
+        n=self.guardian.run(command,CHILD,self.exported['roots'][export],capture_grant=capture['grant'],capture_seal=capture['seal'],source_sha256=self.r['source_sha256'],configuration_sha256=self.r['configuration_sha256'],role=name,request=spec)
+        self.native[name]=n;guardian.verify_native(self.slots,name,n)
         expected=self.plan['roles'][index]
         assert n['command']==command and n['limits']==vars(CHILD) and n['exit_code']==expected['exit_code'] and n['timed_out'] is False and n['supervisor_cpu_stop'] is False and n['post_close_processes_exited'] is True and n['usage']['active_before_close']==0
         assert n['stdout_capture']['grant_sha256']==capture['seal'] and n['stdout_capture']['eof'] is True and n['stdout_capture']['errors']==[]
@@ -261,7 +262,7 @@ class Controller:
         assert proof['publication_accepted'] is False and proof['live_attachment'] is False and proof['worlds_constructed']==proof['vm_steps']==0
         self.finish_role(name,dict(genesis=0,hydrates=0,steps=0),dict(proof=row,closed_registration=registration_spec),True)
     def finalize(self,complete,first=None):
-        assert self.finalized is False;self.finalized=True
+        assert self.finalized is False;self.guardian.barrier(complete);self.finalized=True
         if first is not None:
             failure=dict(schema='PILOT74-FIRST-FAILURE-v2',first_exception=repr(first),traceback=''.join(traceback.format_exception(first)),attempted=self.attempted,completed=[x['name'] for x in self.completed],unreceipted_state_unknown=True)
             ledger.write_empty(self.slots['failure/first-exception.json'],enc(failure))
@@ -285,6 +286,7 @@ def execute_registered(spec,expected_sha):
     try:
         controller=Controller.__new__(Controller)
         Controller.__init__(controller,r,raw,reviews,job)
+        controller.guardian.ready(controller)
         controller.exported_roles();controller.journals();controller.publish()
         return controller.finalize(True)
     except BaseException as first:

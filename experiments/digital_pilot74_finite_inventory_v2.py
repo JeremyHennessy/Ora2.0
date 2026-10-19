@@ -5,6 +5,7 @@ data/publication/request/native reservations and the 26-role graph are retained.
 Actual source files and ZIP headers still must pass these caps before endpoints.
 """
 from experiments import digital_pilot74_inventory as retained
+from experiments.digital_pilot74_guardian_v1 import artifact_name
 MIB=1024**2
 KIB=1024
 
@@ -44,6 +45,9 @@ def plan(source_rows):
     value=retained.plan()
     assert value['files'][-1]==dict(name='metadata-reserve',limit=8*MIB)
     value=dict(version='PILOT74-FINITE-LEAF-INVENTORY-v2',roles=value['roles'],files=value['files'][:-1]+metadata(source_rows))
+    value['files']=[dict(row,limit=960*KIB) if row['name'].startswith('native/') else row for row in value['files']]
+    value['files'] += [dict(name='native/'+r['name']+'.start.json',limit=64*KIB) for r in value['roles']]
+    value['files'].append(dict(name='metadata/guardian-preflight.json',limit=64*KIB))
     value['files'] += [dict(name='stdout/'+r['name']+'.bin',limit=MIB) for r in value['roles']]
     limits={r['name']:r['limit'] for r in value['files']}
     assert len(limits)==len(value['files']) and sum(limits.values())<=retained.RAW_CAP
@@ -73,7 +77,7 @@ def source_fit(rows):
     for row in rows:
         assert type(row) is dict and set(row)=={'name','extent','sha256'}
         name=row['name'];assert type(name) is str and name.isascii() and len(name)<=240
-        assert name.startswith('experiments/') and name.endswith('.py') and '..' not in name and '\\' not in name
+        assert artifact_name(name) and '..' not in name and '\\' not in name
         assert type(row['extent']) is int and 0<row['extent']<=MIB
         digest=row['sha256'];assert type(digest) is str and len(digest)==64 and all(c in '0123456789abcdef' for c in digest)
         names.append(name);size+=row['extent']

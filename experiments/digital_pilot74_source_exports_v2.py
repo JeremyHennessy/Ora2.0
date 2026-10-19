@@ -4,13 +4,14 @@ from pathlib import Path
 from experiments import digital_pilot74_parent_ledger_v2 as ledger
 from experiments import digital_pilot74_publication_reader_v2 as physical
 from experiments import digital_pilot74_available_archive_v2 as custody
+from experiments.digital_pilot74_guardian_v1 import artifact_name
 MIB=1024**2
 
 def rows(root,pins):
     root=Path(root);assert root.is_absolute() and type(pins) is dict and pins
     result=[]
     for name,digest in sorted(pins.items()):
-        assert type(name) is str and name.isascii() and name.startswith('experiments/') and name.endswith('.py') and '..' not in name and '\\' not in name and ':' not in name
+        assert type(name) is str and name.isascii() and artifact_name(name) and '..' not in name and '\\' not in name and ':' not in name
         physical.checksum(digest);item=custody.scan(root/name,MIB)
         assert item['extent']>0 and item['sha256']==digest
         result.append(dict(name=name,extent=item['extent'],sha256=digest))
