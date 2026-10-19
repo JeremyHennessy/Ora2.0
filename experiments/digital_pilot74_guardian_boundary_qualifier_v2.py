@@ -48,7 +48,7 @@ def checked(ok):
 def birth(k,h):
  values=[ctypes.c_ulonglong() for unused in range(4)];checked(k.GetProcessTimes(h,*[ctypes.byref(v) for v in values]));assert 0<values[0].value<2**64;return values[0].value
 
-def observe_job(job,known_process=None,known_pid=None,known_birth=None):
+def observe_job(job,known_process=None,known_pid=None,known_birth=None,open_listed_handles=True):
  """One bounded owned-Job sample; no old/recycled-PID closure inference.
 
  Query only this currently owned Job. At most4 listed processes are opened;
@@ -58,7 +58,7 @@ def observe_job(job,known_process=None,known_pid=None,known_birth=None):
  """
  k=kernel();out=dict(schema='PILOT74-OWNED-JOB-OBSERVATION-v2',complete=True,
                     observed_monotonic_ns=time.monotonic_ns(),usage=None,
-                    listed_pids=None,handles=[],errors=[])
+                    listed_pids=None,handles=[],errors=[],open_listed_handles=open_listed_handles)
  def failed(where,error):
   out['complete']=False;out['errors'].append(dict(where=where,error=repr(error)))
  def handle_row(handle,pid,origin,expected_birth=None):
@@ -85,7 +85,7 @@ def observe_job(job,known_process=None,known_pid=None,known_birth=None):
  except BaseException as error:failed('owned_job_pid_list',error)
  if known_process:
   out['handles'].append(handle_row(known_process,known_pid,'original_CreateProcess_handle',known_birth))
- if out['listed_pids'] is not None:
+ if open_listed_handles and out['listed_pids'] is not None:
   if len(out['listed_pids'])>4:
    failed('bounded_handle_observation',RuntimeError('Listed count exceeds4; entire PID roster retained, no extra handles opened'))
   else:
@@ -215,19 +215,20 @@ def one_case(r,name,owner):
   errors=[]
   def cleanup(action):
    try:action()
-   except BaseException as error:errors.append(repr(error))
-  if job:cleanup(close_job)
+   except BaseException as error:errors.append(repr(error));return False
+   return True
   if thread and thread.is_alive():thread.join(2)
   if sink and not(thread and thread.is_alive()):cleanup(sink.close)
   if stream and not(thread and thread.is_alive()):cleanup(stream.close)
   for fd in fds:cleanup(lambda fd=fd:os.close(fd))
-  if pi.thread:cleanup(lambda:checked(k.CloseHandle(pi.thread)))
-  if pi.process:cleanup(lambda:checked(k.CloseHandle(pi.process)))
+  thread_released=cleanup(lambda:checked(k.CloseHandle(pi.thread))) if pi.thread else None
+  process_released=cleanup(lambda:checked(k.CloseHandle(pi.process))) if pi.process else None
+  facts['owned_handle_release_results']=dict(thread=thread_released,process=process_released)
   if initialized:cleanup(lambda:k.DeleteProcThreadAttributeList(attributes))
   # No waiting for counts to become favourable. One immediate fresh Job
   # sample after our references close; keep original assertions unchanged.
   if job and job.handle:
-   try:facts['after_owned_handles_released']=observe_job(job)
+   try:facts['after_owned_handle_release_attempts']=observe_job(job,open_listed_handles=False)
    except BaseException as error:errors.append('Post-release observation unknown:'+repr(error))
   if job:cleanup(close_job)
   if thread and thread.is_alive():errors.append('Capture writer still active; no archive authority')
