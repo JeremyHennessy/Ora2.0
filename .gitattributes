@@ -13,3 +13,11 @@ experiments/native/pilot74_guardian_spawn_fixture_v1.c -text
 experiments/digital_pilot74_guardian_v1.py text eol=lf
 tests/test_digital_pilot74_launch_contract.py text eol=lf
 experiments/native/pilot74_guardian_failure_fixture_v1.c -text
+
+# Audited learning modules: preserve supplied source bytes in integration branch.
+experiments/digital_budgeted_transfer_referee_v1.py -text
+experiments/digital_budgeted_transfer_replay_v1.py -text
+experiments/digital_budgeted_transfer_v1.py -text
+experiments/digital_context90_access_v2.py -text
+experiments/digital_context90_crossed_engine_v1.py -text
+experiments/digital_learning_restart_fixture_v1.py -text

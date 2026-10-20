@@ -18,3 +18,5 @@ jobs:
         run: python -B tests/test_digital_pilot74_launch_contract.py
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
+      - name: New authored learning checkpoint across actual process crash
+        run: python -B tests/test_learning_restart_integration_v1.py
