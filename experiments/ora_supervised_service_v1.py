@@ -9,11 +9,13 @@ import time
 from experiments.ora_native_slice_v1 import run_slice, Limits
 
 
-def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2):
+def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2, max_attempts=64):
     if not 0 < seconds <= 3600 or not 0 < slice_seconds <= 60:
         raise ValueError('Supervision requires finite <=1h total and <=60s slices')
     if type(max_restarts) is not int or not 0 <= max_restarts <= 3:
         raise ValueError('At most three crash retries')
+    if type(max_attempts) is not int or not 1<=max_attempts<=64:
+        raise ValueError('At most 64 attempts')
     root=Path(directory).resolve(); root.mkdir(parents=True,exist_ok=True)
     for p in (root,root/'supervisor.lock'):
         if p.exists() and (p.is_symlink() or getattr(p.lstat(),'st_file_attributes',0)&0x400 or
@@ -23,7 +25,7 @@ def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2):
     with (root/'supervisor.lock').open('a+b') as owner:
         owner.seek(0); msvcrt.locking(owner.fileno(),msvcrt.LK_NBLCK,1)
         reason='time-bound'
-        while time.monotonic()<deadline and len(rows)<64:
+        while time.monotonic()<deadline and len(rows)<max_attempts:
             if stop.exists(): reason='operator-stop'; break
             duration=min(slice_seconds,deadline-time.monotonic())
             def publish_start(value):
@@ -64,7 +66,7 @@ def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2):
                         reason='worker-stop'; break
                 except (ValueError,KeyError,TypeError):
                     raise RuntimeError('Invalid worker terminal output; refuse renewal')
-        if len(rows)==64: reason='attempt-bound'
+        if len(rows)==max_attempts: reason='attempt-bound'
         receipt=dict(schema='ORA-SUPERVISED-SERVICE-v1',reason=reason,attempts=rows,
             crash_failures=failures,elapsed_seconds=time.monotonic()-started,
             all_attempts_closed=all(x['post_close_processes_exited'] for x in rows),
@@ -81,8 +83,9 @@ def main():
     parser.add_argument('--seconds',type=float,default=60)
     parser.add_argument('--slice-seconds',type=float,default=15)
     parser.add_argument('--max-restarts',type=int,default=2)
+    parser.add_argument('--max-attempts',type=int,default=64)
     args=parser.parse_args()
-    receipt=supervise(args.directory,args.seconds,args.slice_seconds,args.max_restarts)
+    receipt=supervise(args.directory,args.seconds,args.slice_seconds,args.max_restarts,args.max_attempts)
     print(json.dumps(dict(reason=receipt['reason'],attempts=len(receipt['attempts']),
                          crash_failures=receipt['crash_failures'],all_attempts_closed=receipt['all_attempts_closed'])))
     return 0 if receipt['reason'] in ('time-bound','operator-stop') else 1

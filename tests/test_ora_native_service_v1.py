@@ -41,8 +41,9 @@ class NativeService(unittest.TestCase):
 
     def test_supervisor_renews_slices_and_stops_retrying_errors(self):
         with tempfile.TemporaryDirectory() as folder:
-            result=supervise(folder,seconds=2,slice_seconds=.5,max_restarts=0)
-            self.assertGreaterEqual(len(result['attempts']),2)
+            result=supervise(folder,seconds=30,slice_seconds=.5,max_restarts=0,max_attempts=2)
+            self.assertEqual(len(result['attempts']),2)
+            self.assertEqual(result['reason'],'attempt-bound')
             self.assertTrue(result['all_attempts_closed'])
             self.assertEqual(result['crash_failures'],0)
             self.assertTrue((Path(folder)/'backups/snapshot-0.sqlite3').exists())

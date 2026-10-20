@@ -25,7 +25,7 @@ def generate(model, prompt):
     try:
         body=canonical(dict(model=model,prompt=prompt,stream=False,keep_alive=0,
             think='low' if model.split(':')[0].endswith('gpt-oss') else False,
-            options=dict(num_predict=128,num_ctx=2048,temperature=0)))
+            options=dict(num_predict=128,num_ctx=2048,num_gpu=0,temperature=0)))
         connection.request('POST','/api/generate',body,{'Content-Type':'application/json'})
         response=connection.getresponse(); raw=response.read(65537)
         if response.status!=200 or len(raw)>65536:

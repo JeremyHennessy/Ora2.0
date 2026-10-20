@@ -72,7 +72,8 @@ against malicious software already running as that account.
 In this mode only `ask`, `recall`, and `approve` tasks are enabled. `ask` first
 checks the exact trusted memory key; a hit returns stored knowledge without a model
 call. A miss calls literal `127.0.0.1:11434/api/generate` with no proxy, redirects
-or tools, 2048 context, 128 output tokens, a 50-second socket timeout and a 64 KiB
+or tools, requested CPU-only generation, 2048 context, 128 output tokens,
+a 50-second socket timeout and a 64 KiB
 response cap. Model text is quarantined among at most 16 proposals. It cannot
 write trusted memory, sign feedback, or submit tasks. Context is limited to the
 explicit prompt; no directory scanning or private memory dump occurs.
