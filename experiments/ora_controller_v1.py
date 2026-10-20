@@ -25,7 +25,14 @@ def atomic(path,value):
     temporary=path.with_name(path.name+'.next')
     with temporary.open('w',encoding='utf8') as stream:
         json.dump(value,stream,sort_keys=True,indent=2); stream.flush(); os.fsync(stream.fileno())
-    os.replace(temporary,path)
+    # Windows readers may briefly open without FILE_SHARE_DELETE. Do not let a
+    # read-only monitor turn a committed state update into controller failure.
+    for attempt in range(51):
+        try:
+            os.replace(temporary,path); return
+        except PermissionError:
+            if attempt==50: raise
+            time.sleep(.02)
 
 
 def identity(pid):
@@ -161,7 +168,7 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2):
                 state['completed_epochs']+=1
                 state['source_offset']=(state['source_offset']+practice)%169
             except BaseException as error:
-                failure=type(error).__name__+': '+str(error)
+                failure=(type(error).__name__+': '+str(error))[:2048]
                 state['failures']+=1
                 if isinstance(error,KeyboardInterrupt): reason='interrupted'
             finally:

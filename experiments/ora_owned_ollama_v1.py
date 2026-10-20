@@ -204,7 +204,7 @@ class OwnedOllama:
         # Only this fixed, validated control slot is rotated; no recursive deletion.
         atomic(self.path/'previous-epoch.json',previous)
         for path in leaves:
-            if path.name!='previous-epoch.json': path.unlink()
+            if path.name!='previous-epoch.json': path.unlink(missing_ok=True)
 
     def check_model(self):
         verify_owner(self.root)

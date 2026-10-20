@@ -12,12 +12,23 @@ import unittest
 from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
-from experiments.ora_controller_v1 import resume_state,identity
+from experiments.ora_controller_v1 import resume_state,identity,atomic
 from experiments.ora_owned_ollama_v1 import OwnedOllama
 from experiments.ora_native_slice_v1 import run_slice,Limits
 
 
 class Controller(unittest.TestCase):
+    def test_monitor_sharing_violation_is_retried_with_fixed_bound(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target=Path(directory)/'status.json'
+            original=os.replace
+            with patch('experiments.ora_controller_v1.os.replace',side_effect=[PermissionError('reader'),None]) as replace:
+                atomic(target,dict(phase='test'))
+                self.assertEqual(replace.call_count,2)
+            with patch('experiments.ora_controller_v1.os.replace',side_effect=PermissionError('permanent')) as replace,patch('experiments.ora_controller_v1.time.sleep'):
+                with self.assertRaises(PermissionError): atomic(target,{})
+                self.assertEqual(replace.call_count,51)
+
     def state(self,**changes):
         value=dict(failures=0,recoveries=0,started_utc=100,boot='boot-A',unclean=True,
                    owner=dict(pid=987654,creation_filetime_decimal='1'))
