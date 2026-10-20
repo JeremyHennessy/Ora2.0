@@ -6,16 +6,36 @@ import sqlite3
 import sys
 import tempfile
 import threading
+import time
 import unittest
 
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from experiments.ora_task_store_v1 import Store,serve
-from experiments.ora_mixed_stream_v1 import run_mix
+from experiments.ora_mixed_stream_v1 import run_mix,read_one
 from experiments.ora_mailbox_v1 import publish,Busy
 from experiments.ora_ollama_feedback_v1 import sign
 
 
 class MixedSource(unittest.TestCase):
+    def test_real_exclusive_writer_read_retry_and_deadline(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            with Store(root): pass
+            writer=sqlite3.connect(root/'memory.sqlite3',check_same_thread=False)
+            writer.execute('BEGIN EXCLUSIVE')
+            released=threading.Event()
+            def release():
+                time.sleep(.5); writer.rollback(); writer.close(); released.set()
+            thread=threading.Thread(target=release); thread.start()
+            try:
+                self.assertEqual(read_one(root,'SELECT submitted FROM meta',(),time.monotonic()+2),(0,))
+            finally: thread.join(2)
+            self.assertTrue(released.is_set())
+            with sqlite3.connect(root/'memory.sqlite3') as db:
+                db.execute('BEGIN EXCLUSIVE')
+                with self.assertRaises(TimeoutError): read_one(root,'SELECT submitted FROM meta',(),time.monotonic()+.1)
+            with self.assertRaises(sqlite3.OperationalError): read_one(root,'SELECT missing FROM meta',(),time.monotonic()+1)
+
     def test_all_three_lanes_preserve_provenance(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory); key=b't'*32

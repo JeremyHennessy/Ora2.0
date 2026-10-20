@@ -14,6 +14,18 @@ from experiments.ora_mailbox_v1 import publish,Busy
 from experiments.ora_ollama_feedback_v1 import configuration,sign
 
 
+def read_one(root,sql,arguments,deadline):
+    """Retry only SQLite lock contention, within the original source deadline."""
+    while time.monotonic()<deadline and not (root/'STOP').exists():
+        try:
+            with closing(sqlite3.connect((root/'memory.sqlite3').resolve().as_uri()+'?mode=ro',uri=True,timeout=.2)) as db:
+                return db.execute(sql,arguments).fetchone()
+        except sqlite3.OperationalError as error:
+            if getattr(error,'sqlite_errorcode',0)&255 not in (sqlite3.SQLITE_BUSY,sqlite3.SQLITE_LOCKED): raise
+            time.sleep(.05)
+    raise TimeoutError('Source stopped/deadline while reading committed task state')
+
+
 def run_mix(directory, files=(), seconds=60, practice=2,offset=0):
     if not 0<seconds<=3600 or type(practice) is not int or not 0<=practice<=32 or len(files)>4:
         raise ValueError('Finite source bounds required')
@@ -34,8 +46,7 @@ def run_mix(directory, files=(), seconds=60, practice=2,offset=0):
         if sequence is None: raise TimeoutError('Source stopped before task publication')
         tasks+=1
         while time.monotonic()<deadline and not (root/'STOP').exists():
-            with closing(sqlite3.connect(root/'memory.sqlite3',timeout=.2)) as db:
-                row=db.execute('SELECT state,result FROM tasks WHERE id=?',(sequence,)).fetchone()
+            row=read_one(root,'SELECT state,result FROM tasks WHERE id=?',(sequence,),deadline)
             if row and row[0]=='done': return row[1]
             time.sleep(.1)
         raise TimeoutError('Source deadline; retain published task for recovery')
@@ -64,9 +75,8 @@ def run_mix(directory, files=(), seconds=60, practice=2,offset=0):
         if len(raw)>3800: raise ValueError('Select a file of at most 3800 bytes; no silent truncation')
         body=raw.decode('utf8'); digest=hashlib.sha256(raw).hexdigest()
         memory_key='project-review:'+digest
-        with closing(sqlite3.connect(root/'memory.sqlite3',timeout=.2)) as db:
-            pending=db.execute('SELECT sha256 FROM proposals WHERE key=?',(memory_key,)).fetchone()
-            trusted=db.execute('SELECT value FROM memories WHERE key=?',(memory_key,)).fetchone()
+        pending=read_one(root,'SELECT sha256 FROM proposals WHERE key=?',(memory_key,),deadline)
+        trusted=read_one(root,'SELECT value FROM memories WHERE key=?',(memory_key,),deadline)
         if pending:
             waiting.append(dict(key=memory_key,proposal_sha256=pending[0],file=resolved.relative_to(repository).as_posix()))
             continue
