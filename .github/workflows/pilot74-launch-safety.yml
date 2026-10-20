@@ -1,0 +1,20 @@
+name: PILOT74 new launcher failure and source checks
+on:
+  push:
+    branches: ['implementation/safe-launcher-20261020']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  new-launch-contract:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+      - name: Check new launch and failure contracts without Ora imports
+        run: python -B tests/test_digital_pilot74_launch_contract.py
+      - name: Parse source dependency closure and check changed raw bytes
+        run: python -B tests/pilot74_source_check.py

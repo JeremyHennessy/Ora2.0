@@ -8,3 +8,8 @@ experiments/digital_pilot74_job_events_v1.py -text
 # Changed native launcher and new VM-free qualification fixture: exact raw bytes.
 experiments/native/pilot74_guardian_v1.c -text
 experiments/native/pilot74_guardian_spawn_fixture_v1.c -text
+
+# New root launch review: retain identical Python bytes in checkout and export.
+experiments/digital_pilot74_guardian_v1.py text eol=lf
+tests/test_digital_pilot74_launch_contract.py text eol=lf
+experiments/native/pilot74_guardian_failure_fixture_v1.c -text

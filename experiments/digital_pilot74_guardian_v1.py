@@ -230,7 +230,7 @@ def launch_guardian(spec,expected):
         checked(k.UpdateProcThreadAttribute(attrs,0,0x2000D,jobs,ctypes.sizeof(jobs),None,None));checked(k.UpdateProcThreadAttribute(attrs,0,0x20002,handles,ctypes.sizeof(handles),None,None))
         t0=k.GetTickCount64();command=[r['guardian']['artifact']['path'],str(int(job.handle)),str(t0),spec['path'],str(spec['extent']),spec['sha256'],str(read_handle)]
         line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command));start=STARTEX();start.startup.cb=ctypes.sizeof(start);start.attributes=ctypes.cast(attrs,ctypes.c_void_p)
-        checked(k.CreateProcessW(None,line,None,None,True,0x80000|0x4|0x8000000,None,r['source_root'],ctypes.byref(start),ctypes.byref(pi)))
+        checked(k.CreateProcessW(None,line,None,None,True,0x80000|0x4|0x8,None,r['source_root'],ctypes.byref(start),ctypes.byref(pi)))
         birth=_birth(k,pi.process);packet=struct.pack('<Q',birth)
         if os.write(birth_write,packet)!=len(packet):raise OSError('Partial external birth handoff; never retry')
         os.close(birth_write);birth_write=None
