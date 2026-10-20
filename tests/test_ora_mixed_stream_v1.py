@@ -31,9 +31,10 @@ class MixedSource(unittest.TestCase):
                 self.assertEqual(read_one(root,'SELECT submitted FROM meta',(),time.monotonic()+2),(0,))
             finally: thread.join(2)
             self.assertTrue(released.is_set())
-            with sqlite3.connect(root/'memory.sqlite3') as db:
+            with closing(sqlite3.connect(root/'memory.sqlite3')) as db:
                 db.execute('BEGIN EXCLUSIVE')
                 with self.assertRaises(TimeoutError): read_one(root,'SELECT submitted FROM meta',(),time.monotonic()+.1)
+                db.rollback()
             with self.assertRaises(sqlite3.OperationalError): read_one(root,'SELECT missing FROM meta',(),time.monotonic()+1)
 
     def test_all_three_lanes_preserve_provenance(self):
