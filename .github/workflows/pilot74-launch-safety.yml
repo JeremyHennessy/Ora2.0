@@ -37,6 +37,8 @@ jobs:
         run: python -B tests/test_ora_memory_restore_v1.py
       - name: Persistent controller budgets, simulated boot change and native shutdown
         run: python -B tests/test_ora_controller_v1.py
+      - name: Prepared startup renewal, activation refusal and persistent failure hold
+        run: python -B tests/test_ora_startup_preparation_v1.py
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
       - name: Select changed learning integration only

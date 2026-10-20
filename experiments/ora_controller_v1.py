@@ -74,7 +74,17 @@ def resume_state(state,boot,now):
     return state
 
 
-def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2):
+def renew_completed(state,now):
+    """Explicitly renew only a clean completed window, preserving lifetime state."""
+    if state.get('unclean') or state.get('phase')!='stopped' or state.get('reason')!='time-bound' or now<state['deadline_utc'] or state['failures']>=3:
+        raise ValueError('Only a clean expired time-bound contract can be renewed')
+    state.setdefault('lifetime_started_utc',state['started_utc'])
+    state.update(started_utc=now,deadline_utc=now+state['seconds'],epoch=0,
+                 window=state.get('window',0)+1)
+    return state
+
+
+def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,renew=False):
     if not math.isfinite(seconds) or not 5<=seconds<=7200 or not 5<=epoch_seconds<=600 or seconds/epoch_seconds>28:
         raise ValueError('Finite <=2h contract, <=600s epochs and <=28 planned epochs required')
     if type(practice) is not int or not 0<=practice<=32 or len(files)>4: raise ValueError('Bounded task source required')
@@ -105,6 +115,8 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2):
             if (state['seconds'],state['epoch_seconds'],state['files'],state['practice'])!=(seconds,epoch_seconds,list(files),practice):
                 raise ValueError('Existing run contract differs; preserve it and choose a new run directory')
             state=resume_state(state,boot,now)
+            if renew and state.get('phase')=='stopped' and state.get('reason')=='time-bound':
+                state=renew_completed(state,now)
         else:
             state=dict(schema='ORA-CONTROLLER-v1',started_utc=now,deadline_utc=now+seconds,
                 seconds=seconds,epoch_seconds=epoch_seconds,files=list(files),practice=practice,
@@ -196,7 +208,8 @@ if __name__=='__main__':
     parser.add_argument('directory',type=Path); parser.add_argument('--seconds',type=float,default=7200)
     parser.add_argument('--epoch-seconds',type=float,default=300); parser.add_argument('--practice',type=int,default=2)
     parser.add_argument('--file',action='append',default=[])
+    parser.add_argument('--renew-completed',action='store_true',help='Explicitly renew a clean expired window; retain memories and lifetime failure budget')
     args=parser.parse_args()
-    result=controller(args.directory,args.seconds,args.epoch_seconds,args.file,args.practice)
+    result=controller(args.directory,args.seconds,args.epoch_seconds,args.file,args.practice,args.renew_completed)
     print(json.dumps({k:result[k] for k in ('reason','phase','completed_epochs','failures') if k in result}))
     raise SystemExit(0 if result['reason'] in ('time-bound','operator-stop') else 1)
