@@ -12,6 +12,14 @@ from experiments.ora_owned_ollama_v1 import OwnedOllama,verify_owner,listener_pi
 
 
 class OwnedPolicy(unittest.TestCase):
+    def test_failed_closed_epoch_cannot_be_reported_as_healthy(self):
+        with tempfile.TemporaryDirectory() as directory:
+            server=OwnedOllama(directory,0); server.path.mkdir()
+            server.thread=Mock(); server.thread.is_alive.return_value=False
+            server.result=dict(post_close_processes_exited=True,output_limit_exceeded=True,
+                               descendant_leak=False,reason='capture-limit')
+            with self.assertRaises(RuntimeError): server.close()
+
     def test_unicode_log_and_physical_log_limit(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)

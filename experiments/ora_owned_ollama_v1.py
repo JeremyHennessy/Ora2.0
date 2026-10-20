@@ -187,6 +187,8 @@ class OwnedOllama:
                 if self.error: raise RuntimeError(self.error)
                 if self.result is None or not self.result['post_close_processes_exited']:
                     raise RuntimeError('Owned model tree did not close')
+                if self.result['output_limit_exceeded'] or self.result['descendant_leak'] or self.result['reason'] not in ('operator-stop','wall-limit'):
+                    raise RuntimeError('Owned model epoch failed; tree closed but renewal requires failure handling')
         finally:
             if self.lock is not None: self.lock.close(); self.lock=None
 

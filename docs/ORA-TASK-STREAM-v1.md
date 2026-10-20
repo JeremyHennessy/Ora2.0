@@ -159,3 +159,17 @@ a bounded output prefix and native result for each of up to four finite epochs.
 This component does not install unattended startup or replace the user's shared
 server. A longer owned-server soak and model-death recovery must qualify it before
 continuous activation.
+
+Explicit corruption recovery is available as:
+
+```powershell
+python -B -m experiments.ora_memory_restore_v1 DIRECTORY SNAPSHOT_PATH SNAPSHOT_SHA256 KNOWN_PRODUCER_CURSOR
+```
+
+The cursor must come from the producer's independently known latest submission,
+not a guess derived from an old snapshot. The command requires a complete snapshot
+at exactly that cursor, no active supervisor/worker/producer, no newer mailbox,
+and no unreconciled SQLite journal/WAL/SHM. It verifies the digest, size and database
+integrity, refuses to replace a healthy primary, and retains one corrupt primary.
+An unfinished or older snapshot is refused. Existing unknown recovery files are
+never overwritten. This remains explicit operator recovery, not automatic rollback.
