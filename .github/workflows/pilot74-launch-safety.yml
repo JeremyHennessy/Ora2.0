@@ -34,6 +34,8 @@ jobs:
         run: python -B tests/test_ora_mixed_stream_v1.py
       - name: Snapshot restoration requires closed owners and reconciled producer cursor
         run: python -B tests/test_ora_memory_restore_v1.py
+      - name: Persistent controller budgets, simulated boot change and native shutdown
+        run: python -B tests/test_ora_controller_v1.py
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
       - name: Select changed learning integration only

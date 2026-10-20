@@ -93,9 +93,9 @@ def verify_owner(directory):
 
 class OwnedOllama:
     def __init__(self,directory,epoch,seconds=300):
-        if type(epoch) is not int or not 0<=epoch<=3 or not 5<=seconds<=900:
+        if type(epoch) is not int or not 0<=epoch<=31 or not 5<=seconds<=900:
             raise ValueError('Finite owned-server epoch required')
-        self.root=Path(directory); self.path=self.root/f'model-server-{epoch}'
+        self.root=Path(directory); self.path=self.root/f'model-server-{epoch%2}'
         self.seconds=seconds; self.result=None; self.error=None; self.start=None
         self.ready=threading.Event(); self.samples=dict(count=0,peak_active=0,observed_pids=[])
         self.lock=None; self.thread=None
@@ -108,7 +108,7 @@ class OwnedOllama:
         try:
             msvcrt.locking(self.lock.fileno(),msvcrt.LK_NBLCK,1)
             if listener_pid() is not None: raise RuntimeError('Owned model port already in use; refuse takeover')
-            self.path.mkdir(exist_ok=False)
+            self.reserve_slot()
             executable=Path(os.environ['LOCALAPPDATA'])/'Programs/Ollama/ollama.exe'
             models=Path('D:/OraLab/tools/ollama-models')
             if not executable.is_file() or not models.is_dir(): raise ValueError('Installed binary and model cache required')
@@ -117,11 +117,14 @@ class OwnedOllama:
                 binary_sha256=hashlib.sha256(executable.read_bytes()).hexdigest())
             environment=dict(OLLAMA_HOST=f'127.0.0.1:{PORT}',OLLAMA_MODELS=str(models),
                 OLLAMA_NO_CLOUD='1',OLLAMA_NUM_PARALLEL='1',OLLAMA_MAX_LOADED_MODELS='1',
+                OLLAMA_NOPRUNE='1',
                 OLLAMA_MAX_QUEUE='2',OLLAMA_CONTEXT_LENGTH='2048',OLLAMA_KEEP_ALIVE='30s',
                 OLLAMA_VULKAN='0',CUDA_VISIBLE_DEVICES='-1',GGML_VK_VISIBLE_DEVICES='-1',
                 ROCR_VISIBLE_DEVICES='-1',HIP_VISIBLE_DEVICES='-1')
             (self.path/'policy.json').write_text(json.dumps(self.policy,indent=2))
             def on_start(value):
+                from experiments.ora_controller_v1 import identity
+                value['custodian']=identity(os.getpid())
                 self.start=value
                 (self.path/'suspended-start.json').write_text(json.dumps(value,indent=2))
                 self.ready.set()
@@ -168,6 +171,40 @@ class OwnedOllama:
         observed=self.check_model()
         if len(observed['models'])!=1: raise RuntimeError('Owned model did not remain prepared')
         return observed
+
+    def reserve_slot(self):
+        from experiments.ora_controller_v1 import identity,atomic
+        if self.path.is_symlink() or (self.path.exists() and getattr(self.path.lstat(),'st_file_attributes',0)&0x400):
+            raise ValueError('Plain model control slot required')
+        self.path.mkdir(exist_ok=True)
+        allowed={'policy.json','suspended-start.json','server.log','native-result.json','error.json','samples.json',
+                 'model-observation.json','STOP','server.log.next','native-result.next','previous-epoch.json','previous-epoch.json.next'}
+        leaves=list(self.path.iterdir())
+        if not leaves: return
+        for path in leaves:
+            if path.name not in allowed or not path.is_file() or path.is_symlink() or path.stat().st_nlink!=1 or getattr(path.lstat(),'st_file_attributes',0)&0x400:
+                raise ValueError('Unknown/shared control artifact; refuse rotation')
+        final=self.path/'native-result.json'
+        if final.exists():
+            prior=json.loads(final.read_text())
+            if not prior['post_close_processes_exited'] or prior['usage']['active_before_close']!=0:
+                raise RuntimeError('Prior model closure not established')
+            previous=dict(native=prior,recovery='recorded-closed-epoch')
+        else:
+            start=json.loads((self.path/'suspended-start.json').read_text())
+            custodian=start.get('custodian')
+            if not custodian or identity(custodian['pid'])==custodian:
+                raise RuntimeError('Prior model custodian not proven dead')
+            server=dict(pid=start['pid'],creation_filetime_decimal=start['creation_filetime_decimal'])
+            if identity(server['pid'])==server: raise RuntimeError('Prior model server still alive')
+            flags=start['usage']['flags']
+            if flags&0x2000!=0x2000 or flags&0x1800: raise RuntimeError('Prior job lacked kill-on-close custody')
+            previous=dict(start=start,recovery='dead-custodian-kill-on-close-no-breakaway',
+                          native_closure_receipt_absent=True)
+        # Only this fixed, validated control slot is rotated; no recursive deletion.
+        atomic(self.path/'previous-epoch.json',previous)
+        for path in leaves:
+            if path.name!='previous-epoch.json': path.unlink()
 
     def check_model(self):
         verify_owner(self.root)

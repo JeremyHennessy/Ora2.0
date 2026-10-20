@@ -34,8 +34,13 @@ class MixedSource(unittest.TestCase):
                 self.assertEqual(result['verified_arithmetic'],2)
                 self.assertEqual(len(result['project_reviews_awaiting_operator']),1)
                 project=result['project_reviews_awaiting_operator'][0]
+                repeated=run_mix(root,['experiments/ora_ollama_prepare_v1.py'],seconds=3,practice=0)
+                self.assertEqual(repeated['published_tasks'],0)
+                self.assertEqual(repeated['project_reviews_awaiting_operator'][0]['proposal_sha256'],project['proposal_sha256'])
+                next_batch=run_mix(root,seconds=3,practice=1,offset=2)
+                self.assertEqual(next_batch['verified_arithmetic'],1)
                 with closing(sqlite3.connect(root/'memory.sqlite3')) as db:
-                    self.assertEqual(db.execute('SELECT count(*) FROM memories').fetchone()[0],2)
+                    self.assertEqual(db.execute('SELECT count(*) FROM memories').fetchone()[0],3)
                     self.assertEqual(db.execute('SELECT DISTINCT issuer FROM memory_provenance').fetchall(),[('verified-arithmetic-v1',)])
                 publish(root,lambda n:dict(sequence=n,kind='approve',key=project['key'],
                     value=sign(key,n,project['key'],project['proposal_sha256'],'Operator-reviewed correction')))

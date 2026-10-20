@@ -31,7 +31,7 @@ class PI(ctypes.Structure):
 
 
 def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False, on_start=None,
-              environment=None, cpu_rate=None, on_sample=None):
+              environment=None, cpu_rate=None, on_sample=None, stop_event=None):
     """Builder receives owned Job, GetTickCount64 and optional birth-read handle.
 
     Wall and STOP supervision are outside the child. Capture retains at most
@@ -148,6 +148,8 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
                 reason='capture-limit'; job.terminate(); break
             if stop_path is not None and Path(stop_path).exists():
                 reason='operator-stop'; job.terminate(); break
+            if stop_event is not None and stop_event.is_set():
+                reason='controller-stop'; job.terminate(); break
             if time.monotonic()-start_time>=limits.wall_seconds:
                 reason='wall-limit'; job.terminate(); break
         if k.WaitForSingleObject(pi.process,3000)!=0:
