@@ -1,8 +1,8 @@
-"""SOURCE ONLY: one NEW pre-create/pre-resume owned-Job observation.
+"""One explicitly granted pre-create/pre-resume owned-Job observation.
 
-No CLI, registration builder, native launch on import or old worker entrypoint.
-Retained v2 and its closed failures remain untouched. Actual new source/caps,
-complete closure/slots/dispatcher/grants require separate prospective review.
+No registration builder, native launch on import or old worker entrypoint.
+The one-role worker requires exact externally granted source and reservations.
+Retained v2 and its closed failures remain untouched.
 """
 import ctypes,json,os,struct,sys,threading,time,traceback
 from ctypes import wintypes as wt
@@ -79,6 +79,16 @@ def observe_job_live(job,known_process=None,known_pid=None,known_birth=None,open
  return out
 
 
+def same_original_exit(observation,pid,creation,exit_code):
+ """Image belongs to the pre-resume record; require independent exit facts."""
+ rows=[row for row in observation.get('handles',[]) if row.get('origin')=='original_CreateProcess_handle']
+ if len(rows)!=1:return False
+ row=rows[0]
+ return (row.get('actual_pid')==pid and row.get('membership') is True
+  and row.get('birth')==str(creation) and row.get('wait_result')==0
+  and row.get('exit_code')==exit_code)
+
+
 def one_case(r,name,owner):
  assert name=='external_birth_mismatch' and r['schema']=='PILOT74-PRECREATE-PRERESUME-REGISTRATION-v1'
  assert r['max_guardian_launches']==1 and r['worlds']==r['vm_steps']==0
@@ -89,7 +99,7 @@ def one_case(r,name,owner):
  import msvcrt,subprocess
  from experiments import process_limits as caps
  from experiments.digital_pilot74_output_capture_v2 import Capture
- k=kernel();root=Path(r['root']);pi=PI();job=None;attributes=None;initialized=False;fds=[];thread=None;sink=None;stream=None;command=None;original_birth=None;started=entered;usage=None;capture=None;first=None;return_code=None;facts={};received=0;job_guard=threading.RLock()
+ k=kernel();root=Path(r['root']);pi=PI();job=None;attributes=None;initialized=False;fds=[];thread=None;sink=None;stream=None;command=None;original_birth=None;started=entered;usage=None;capture=None;first=None;return_code=None;facts={};received=0;out_w=None;monitor=None;job_guard=threading.RLock();capture_claim=threading.Lock()
  def stop_job():
   with job_guard:
    if job is not None and job.handle:job.terminate()
@@ -103,6 +113,8 @@ def one_case(r,name,owner):
   write(r['slots']['raw/prelaunch/empty-job.json'],enc(facts['empty_job_before_create']))
   assert facts['empty_job_before_create']['complete'] and facts['empty_job_before_create']['listed_pids']==[]
   assert facts['empty_job_before_create']['usage']['started_processes']==0 and facts['empty_job_before_create']['usage']['active_before_close']==0
+  from experiments.digital_pilot74_job_events_v1 import JobEvents
+  monitor=JobEvents(job,stop_job);monitor.start()
   br,bw=os.pipe();out_r,out_w=os.pipe();nul=os.open(os.devnull,os.O_RDONLY|os.O_BINARY);fds=[br,bw,out_r,out_w,nul]
   handles=[job.handle,msvcrt.get_osfhandle(br),msvcrt.get_osfhandle(out_w),msvcrt.get_osfhandle(nul)]
   for h in handles:checked(k.SetHandleInformation(h,1,1))
@@ -113,11 +125,13 @@ def one_case(r,name,owner):
   request=r['registration_fixture'];command=[r['artifact']['path'],str(int(job.handle)),str(fixture_start),request['path'],str(request['extent']),'0'*64,str(handles[1])]
   grant=dict(version='PILOT74-NATIVE-CAPTURE-GRANT-v2',root=r['root'],source_sha256=r['source_sha256'],configuration_sha256=r['configuration_sha256'],role=name,command_sha256=sha(enc(command)),operator_lock=owner,raw={key:r['slots']['raw/stdout/'+name+'.bin'][key] for key in ('path','limit','device','inode')},overflow={key:r['slots']['failure/native-first-output.bin'][key] for key in ('path','limit','device','inode')})
   write(r['slots']['raw/grants/'+name+'.json'],enc(grant));sink=Capture(grant,sha(enc(grant)),r['source_sha256'],r['configuration_sha256'],name,command)
-  def drain():
+  def drain(nonblocking=False):
    nonlocal received
+   if not capture_claim.acquire(blocking=False):return
    try:
+    if nonblocking:os.set_blocking(stream.fileno(),False)
     while True:
-     block=stream.read(65536)
+     block=os.read(stream.fileno(),65536)
      if not block:sink.eof=True;break
      received+=len(block);sink.append(block)
      if received>MIB:stop_job()
@@ -125,9 +139,24 @@ def one_case(r,name,owner):
     sink.errors.append(repr(e))
     try:stop_job()
     except BaseException as later:sink.errors.append(repr(later))
+  stream=os.fdopen(out_r,'rb',buffering=0);fds.remove(out_r)
   si=STARTEX();si.startup.cb=ctypes.sizeof(si);si.startup.flags=0x100;si.startup.input=handles[3];si.startup.output=si.startup.error=handles[2];si.attributes=ctypes.cast(attributes,ctypes.c_void_p)
   if name=='expired_original_stop_window':assert fixture_start+3580000<=k.GetTickCount64()<fixture_start+3600000,'Fixture must remain inside stop window before hard deadline'
-  line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command));assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not create G';checked(k.CreateProcessW(r['artifact']['path'],line,None,None,True,0x80000|0x4|0x8000000,None,r['source_root'],ctypes.byref(si),ctypes.byref(pi)))
+  # DETACHED_PROCESS avoids console attachment; explicit IPC handles and
+  # creation-time Job containment remain unchanged (no Job breakaway).
+  line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command));assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not create G';checked(k.CreateProcessW(r['artifact']['path'],line,None,None,True,0x80000|0x4|0x8,None,r['source_root'],ctypes.byref(si),ctypes.byref(pi)))
+  # The sole pipe reader starts immediately after CreateProcess, before
+  # any fallible birth/membership/receipt query. Late startup cannot steal
+  # pipe ownership from the synchronous failure fallback.
+  try:
+   thread=threading.Thread(target=drain,daemon=True);thread.start()
+  except BaseException as startup_error:
+   sink.errors.append('Capture thread startup:'+repr(startup_error))
+   try:stop_job()
+   except BaseException as later:sink.errors.append('Startup stop:'+repr(later))
+   os.close(out_w);fds.remove(out_w)
+   drain(nonblocking=True)
+   raise
   original_birth=birth(k,pi.process);handed=original_birth+1 if name=='external_birth_mismatch' else original_birth;assert handed<2**64
   member=wt.BOOL();checked(k.IsProcessInJob(pi.process,job.handle,ctypes.byref(member)));assert member.value;actual=caps.ExtendedLimits();checked(caps.kernel().QueryInformationJobObject(job.handle,9,ctypes.byref(actual),ctypes.sizeof(actual),None));assert actual.job_memory==memory and actual.basic.job_cpu==2400*10_000_000 and actual.basic.active_processes==4 and actual.basic.flags&(0x4|0x8|0x200|0x2000)==(0x4|0x8|0x200|0x2000);facts.update(root_membership_observed=True,root_limit_readback=dict(memory_bytes=int(actual.job_memory),cpu_ticks=int(actual.basic.job_cpu),processes=int(actual.basic.active_processes),flags=int(actual.basic.flags)))
   facts.update(pid=pi.pid,creation_filetime_decimal=str(original_birth),handed_birth_decimal=str(handed),actual_case_start_tick=actual_start,fixture_original_tick=fixture_start,root_limits=vars(job.limits) if hasattr(job,'limits') else dict(memory_bytes=memory,cpu_seconds=2400,processes=4),root_job_membership_from_creation_requested=True,command=command)
@@ -139,7 +168,7 @@ def one_case(r,name,owner):
   assert Path(original_rows[0]['image']).resolve()==Path(r['artifact']['path']).resolve()
   write(r['slots']['raw/native/'+name+'.start.json'],enc(facts))
   assert os.write(bw,struct.pack('<Q',handed))==8;os.close(bw);fds.remove(bw)
-  stream=os.fdopen(out_r,'rb',buffering=0);fds.remove(out_r);thread=threading.Thread(target=drain,daemon=True);thread.start();assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not resume G'
+  assert time.monotonic()-started<5,'Case setup consumed original5s deadline; do not resume G'
   if name=='expired_original_stop_window':assert fixture_start+3580000<=k.GetTickCount64()<fixture_start+3600000
   facts['setup_elapsed_seconds']=time.monotonic()-started;assert k.ResumeThread(pi.thread)==1
   os.close(out_w);fds.remove(out_w)
@@ -152,7 +181,11 @@ def one_case(r,name,owner):
   facts['before_owned_handle_release']=observe_job_live(job,pi.process,pi.pid,original_birth)
   assert return_code==125 and capture['capture_complete'] and capture['eof'] and not capture['errors'] and received==0
   assert usage['started_processes']==1 and usage['active_before_close']==0,'Unexpected worker/descendant; no valid worker or World is permitted'
-  assert facts['before_owned_handle_release']['complete'],'Native identity/image observation incomplete'
+  assert same_original_exit(facts['before_owned_handle_release'],pi.pid,original_birth,return_code)
+  # The live image was pinned before resume. A later image-query failure
+  # does not erase same-original-handle PID/birth/membership/exit observations.
+  # Keep all errors and complete=False in the raw post-exit snapshot.
+  facts['post_exit_identity_verified_from_retained_handle']=True
   facts.update(schema='PILOT74-NEW-NATIVE-BOUNDARY-RESULT-v1',case=name,exit_code=return_code,exact_process_handle_signaled=True,stdout_capture=capture,usage=usage,elapsed_seconds=time.monotonic()-started,passed=True,worlds=0,vm_steps=0,finite_admission=False)
   # Final result is written only after successful native-handle cleanup below.
  except BaseException as e:
@@ -165,7 +198,20 @@ def one_case(r,name,owner):
    if original_birth is None:
     try:original_birth=birth(k,pi.process)
     except BaseException as later:e.add_note('Birth unknown:'+repr(later))
-  if thread:thread.join(2)
+  if out_w in fds:
+   try:os.close(out_w);fds.remove(out_w)
+   except BaseException as later:e.add_note('Parent output writer close:'+repr(later))
+  if thread and thread.ident is not None:thread.join(2)
+  if sink and not(thread and thread.is_alive()):
+   try:capture=sink.finish()
+   except BaseException as later:e.add_note('Failure capture facts:'+repr(later))
+  if job:
+   try:usage=job.usage()
+   except BaseException as later:e.add_note('Failure usage facts:'+repr(later))
+  if pi.process and facts.get('exact_process_handle_signaled'):
+   try:
+    code=wt.DWORD();checked(k.GetExitCodeProcess(pi.process,ctypes.byref(code)));return_code=code.value
+   except BaseException as later:e.add_note('Failure original exit facts:'+repr(later))
   facts.update(case=name,command=command,pid=pi.pid or None,creation_filetime_decimal=None if original_birth is None else str(original_birth),exception=repr(e),traceback=''.join(traceback.format_exception(e)),closure_unknown=True,passed=False,available_capture_errors=[] if sink is None else sink.errors,raw_EOF_known=False if sink is None else sink.eof)
   facts.update(exit_code=return_code,stdout_capture=capture,usage=usage,observations_missing_explicitly_unknown=True)
   try:write(r['slots']['failure/first-exception.json'],enc(facts))
@@ -192,6 +238,12 @@ def one_case(r,name,owner):
   if job and job.handle:
    try:facts['after_owned_handle_release_attempts']=observe_job_live(job,open_listed_handles=False)
    except BaseException as error:errors.append('Post-release observation unknown:'+repr(error))
+  if monitor:
+   try:
+    facts['job_events']=monitor.finish()
+    write(r['slots']['raw/prelaunch/job-events.json'],enc(facts['job_events']))
+    if not facts['job_events']['monitor_complete']:errors.append('Event observation incomplete; no identity census inferred')
+   except BaseException as error:errors.append('Event finalization:'+repr(error))
   if job:cleanup(close_job)
   if thread and thread.is_alive():errors.append('Capture writer still active; no archive authority')
   facts['cleanup_errors']=errors
@@ -256,7 +308,11 @@ def collect_registered(registration,review):
  empty=facts.get('empty_job_before_create') or {}
  usage=facts.get('usage') or {};after=facts.get('after_owned_handle_release_attempts') or {}
  capture=facts.get('stdout_capture') or {}
- collected=bool(empty.get('complete') and pre.get('complete') and original.get('image')
+ bound_errors=[]
+ for field,value,ceiling in [('case',facts,393216),('pre',pre,65536),('empty',empty,65536),('events',facts.get('job_events'),65536),('after',after,8192),('capture',capture,8192),('traceback',facts.get('traceback'),32768),('cleanup_traceback',facts.get('traceback_after_cleanup'),32768)]:
+  extent=len(enc(value))
+  if extent>ceiling:bound_errors.append(dict(field=field,extent=extent,ceiling=ceiling))
+ collected=bool(not bound_errors and (facts.get('job_events') or {}).get('monitor_complete') and empty.get('complete') and pre.get('complete') and original.get('image')
   and original.get('pid')==facts.get('pid') and original.get('birth')==facts.get('creation_filetime_decimal')
   and facts.get('exact_process_handle_signaled') and facts.get('observed_before_assertions')
   and facts.get('exit_code')==125 and type(usage.get('started_processes')) is int
@@ -269,4 +325,31 @@ def collect_registered(registration,review):
   post_exit_image_not_backfilled=True,actual_started_processes=usage.get('started_processes'),
   actual_active_processes=usage.get('active_before_close'),case_first_exception_present=first is not None,
   first_exception_path=r['slots']['failure/first-exception.json']['path'] if first is not None else None,
-  no_historical_pid_lookup=True,worlds=0,vm_steps=0,finite_admission=False)
+  encoding_bound_errors=bound_errors,no_historical_pid_lookup=True,worlds=0,vm_steps=0,finite_admission=False)
+
+
+def worker(request,request_sha256):
+ """One capped, externally reviewed role; never issues its own grant."""
+ assert request['sha256']==request_sha256
+ raw=read(request,32768);req=json.loads(raw);assert enc(req)==raw
+ assert set(req)=={'schema','registration','review'} and req['schema']=='PILOT74-PRERESUME-REQUEST-v1'
+ body=read(req['registration'],131072);r=json.loads(body);assert enc(r)==body
+ assert r['source_root']==str(Path(__file__).resolve().parents[1])
+ assert r['source_sha256']==sha(enc(r['source_files']))
+ for pin in r['input_pins']:read(pin,pin['extent'])
+ retained.origins(r,worker_main=True)
+ for name in sys.modules:
+  if name.startswith('experiments.'):
+   assert not any(word in name for word in ('_engine','_world','_child','_publication','_registry','_referee'))
+ outcome=collect_registered(req['registration'],req['review']);outcome['kind']=r['kind']
+ raw=enc(outcome);assert len(raw)<=65536
+ write(r['slots']['raw/diagnostic-outcome.json'],raw)
+ summary=enc(dict(diagnostic_collected=outcome['diagnostic_collected'],guardian_conformance_passed=outcome['guardian_conformance_passed'],native=outcome['native'],finite_admission=False))
+ assert len(summary)<=4096;sys.stdout.buffer.write(summary+b'\n');sys.stdout.buffer.flush()
+ retained.origins(r,worker_main=True)
+ return 0 if outcome['diagnostic_collected'] else 2
+
+
+if __name__=='__main__':
+ assert len(sys.argv)==4 and sys.argv[1]=='--worker'
+ sys.exit(worker(json.loads(sys.argv[2]),sys.argv[3]))

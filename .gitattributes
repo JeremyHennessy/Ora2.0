@@ -1,2 +1,6 @@
 # Preserve the frozen manifest byte identity across Windows checkouts.
 data/digital-neutral-tail42-manifest.json -text
+
+# Exact reviewed guardian bytes; prospective raw Git/export/CI identity.
+experiments/digital_pilot74_guardian_preresume_v1.py -text
+experiments/digital_pilot74_job_events_v1.py -text
