@@ -38,7 +38,8 @@ class LaunchContract(unittest.TestCase):
         k.CloseHandle = Mock(side_effect=lambda h: closed.append(h) or 1)
         k.DeleteProcThreadAttributeList = Mock()
         k.TerminateProcess = Mock(return_value=1)
-        job = SimpleNamespace(handle=100, close=Mock())
+        job = SimpleNamespace(handle=100, close=Mock(), terminate=Mock(),
+                              usage=Mock(return_value=dict(active_before_close=0)))
         caps = ModuleType('experiments.process_limits')
         caps.Limits = lambda **kw: kw
         caps.Job = lambda limits: job
@@ -66,6 +67,9 @@ class LaunchContract(unittest.TestCase):
         self.assertFalse(result['publication_accepted'])
         self.assertFalse(result['live_attachment'])
         self.assertIn(101, closed); self.assertIn(102, closed)
+        self.assertNotIn(100, closed)  # Original Job isn't prematurely handed off.
+        job.close.assert_called_once()
+        self.assertTrue(result['post_close_processes_exited'])
 
     def test_resume_failure_is_not_success_and_closes_original_handles(self):
         launch, k, calls, closed, caps, package, job = self.setup_launch(resume=0)
@@ -102,8 +106,54 @@ class LaunchContract(unittest.TestCase):
         with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
             with self.assertRaisesRegex(RuntimeError, 'closure UNKNOWN'):
                 launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
-        k.TerminateProcess.assert_called_once_with(101, 125)
+        job.terminate.assert_called_once()
         self.assertIn(101, closed); self.assertIn(102, closed)
+
+    def test_guardian_exit_with_active_descendant_fails_and_stops_whole_job(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch()
+        job.usage.return_value = dict(active_before_close=1)
+        with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
+            with self.assertRaisesRegex(RuntimeError, 'active descendants'):
+                launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+        job.terminate.assert_called_once()
+        job.close.assert_called_once()
+
+    def test_pipe_setup_failure_closes_already_created_job(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch()
+        with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
+            with patch.object(os, 'pipe', side_effect=OSError('injected pipe setup failure')):
+                with self.assertRaisesRegex(OSError, 'pipe setup failure'):
+                    launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+        job.terminate.assert_called_once()
+        job.close.assert_called_once()
+        k.CreateProcessW.assert_not_called()
+
+    def test_close_failure_retains_first_error_and_closes_other_handles(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch(resume=0)
+        job.close.side_effect = OSError('injected close failure')
+        with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
+            with self.assertRaises(AssertionError) as error:
+                launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+        self.assertIn('Native cleanup incomplete', error.exception.__notes__[0])
+        self.assertIn(101, closed); self.assertIn(102, closed)
+
+    def test_close_failure_cannot_return_success(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch()
+        job.close.side_effect = OSError('injected close failure')
+        with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
+            with self.assertRaisesRegex(OSError, 'Native cleanup incomplete'):
+                launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+
+    def test_termination_failure_does_not_hide_original_deadline_failure(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch()
+        job.terminate.side_effect = OSError('injected Job stop failure')
+        k.WaitForSingleObject.return_value = 258
+        with patch.dict(sys.modules, {'experiments': package, 'experiments.process_limits': caps}):
+            with self.assertRaisesRegex(RuntimeError, 'closure UNKNOWN') as error:
+                launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+        self.assertIn('Whole Job termination failed', error.exception.__notes__[0])
+        k.TerminateProcess.assert_called_once_with(101, 125)
+        job.close.assert_called_once()
 
 
 if __name__ == '__main__':

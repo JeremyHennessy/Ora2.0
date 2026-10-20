@@ -11,6 +11,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12.10'
@@ -18,5 +20,19 @@ jobs:
         run: python -B tests/test_digital_pilot74_launch_contract.py
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
+      - name: Select changed learning integration only
+        id: scope
+        shell: pwsh
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          $needed = $true
+          if ($env:BEFORE -and $env:BEFORE -notmatch '^0+$') {
+            $changed = git diff --name-only $env:BEFORE $env:GITHUB_SHA
+            if ($LASTEXITCODE -ne 0) { throw 'Cannot establish changed-source scope' }
+            $needed = @($changed | Where-Object { $_ -match '^experiments/digital_(budgeted_transfer|context90|learning_restart)' -or $_ -eq 'tests/test_learning_restart_integration_v1.py' }).Count -gt 0
+          }
+          "learning=$($needed.ToString().ToLowerInvariant())" >> $env:GITHUB_OUTPUT
       - name: New authored learning checkpoint across actual process crash
+        if: steps.scope.outputs.learning == 'true'
         run: python -B tests/test_learning_restart_integration_v1.py

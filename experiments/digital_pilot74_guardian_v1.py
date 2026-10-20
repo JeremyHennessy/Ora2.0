@@ -218,13 +218,14 @@ def launch_guardian(spec,expected):
     from experiments import process_limits as caps
     import msvcrt,subprocess
     k=_kernel();limits=caps.Limits(memory_bytes=2048*MIB,cpu_seconds=2400,processes=4,wall_seconds=3600)
-    job=caps.Job(limits);birth_read,birth_write=os.pipe();read_handle=msvcrt.get_osfhandle(birth_read);os.set_handle_inheritable(read_handle,True);checked(k.SetHandleInformation(job.handle,1,1))
+    job=None;birth_read=birth_write=None
     class START(ctypes.Structure):_fields_=[('cb',wt.DWORD),('reserved',wt.LPWSTR),('desktop',wt.LPWSTR),('title',wt.LPWSTR),('x',wt.DWORD),('y',wt.DWORD),('xs',wt.DWORD),('ys',wt.DWORD),('xc',wt.DWORD),('yc',wt.DWORD),('fill',wt.DWORD),('flags',wt.DWORD),('show',wt.WORD),('reserved_n',wt.WORD),('reserved_ptr',ctypes.c_void_p),('input',wt.HANDLE),('output',wt.HANDLE),('error',wt.HANDLE)]
     class STARTEX(ctypes.Structure):_fields_=[('startup',START),('attributes',ctypes.c_void_p)]
     class PI(ctypes.Structure):_fields_=[('process',wt.HANDLE),('thread',wt.HANDLE),('pid',wt.DWORD),('tid',wt.DWORD)]
     k.CreateProcessW.argtypes=[wt.LPCWSTR,wt.LPWSTR,ctypes.c_void_p,ctypes.c_void_p,wt.BOOL,wt.DWORD,ctypes.c_void_p,wt.LPCWSTR,ctypes.c_void_p,ctypes.POINTER(PI)];k.CreateProcessW.restype=wt.BOOL
-    size=ctypes.c_size_t();k.InitializeProcThreadAttributeList(None,2,0,ctypes.byref(size));attrs=ctypes.create_string_buffer(size.value);initialized=False;pi=PI();handed_off=False
+    size=ctypes.c_size_t();k.InitializeProcThreadAttributeList(None,2,0,ctypes.byref(size));attrs=ctypes.create_string_buffer(size.value);initialized=False;pi=PI();first_failure=None
     try:
+        job=caps.Job(limits);birth_read,birth_write=os.pipe();read_handle=msvcrt.get_osfhandle(birth_read);os.set_handle_inheritable(read_handle,True);checked(k.SetHandleInformation(job.handle,1,1))
         checked(k.InitializeProcThreadAttributeList(attrs,2,0,ctypes.byref(size)));initialized=True
         jobs=(wt.HANDLE*1)(job.handle);handles=(wt.HANDLE*2)(job.handle,read_handle)
         checked(k.UpdateProcThreadAttribute(attrs,0,0x2000D,jobs,ctypes.sizeof(jobs),None,None));checked(k.UpdateProcThreadAttribute(attrs,0,0x20002,handles,ctypes.sizeof(handles),None,None))
@@ -235,22 +236,41 @@ def launch_guardian(spec,expected):
         if os.write(birth_write,packet)!=len(packet):raise OSError('Partial external birth handoff; never retry')
         os.close(birth_write);birth_write=None
         assert k.ResumeThread(pi.thread)==1
-        checked(k.CloseHandle(job.handle));job.handle=None;handed_off=True
+        # Retain the external Job handle until actual whole-tree closure.
+        # A guardian exit alone cannot establish descendant closure, and an
+        # exception must still be able to terminate the entire owned tree.
         # Actual guardian native watchdog owns the absolute deadline. Host wait
         # has no task writer, bootstrap or extra experiment role.
         if k.WaitForSingleObject(pi.process,max(0,int(t0+3600000-k.GetTickCount64())))!=0:raise RuntimeError('Guardian closure UNKNOWN; do not claim complete evidence')
         code=wt.DWORD();checked(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
-        return dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
-    except BaseException:
-        if pi.process and k.WaitForSingleObject(pi.process,0)==258:
-            k.TerminateProcess(pi.process,125)  # Exact retained handle, never PID lookup.
-            # No extra wall allowance or asserted closure after timeout.
-            k.WaitForSingleObject(pi.process,0)
+        usage=job.usage()
+        if usage['active_before_close']!=0:raise RuntimeError('Guardian exited with active descendants; whole-tree closure UNKNOWN')
+        return dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,usage=usage,post_close_processes_exited=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
+    except BaseException as first:
+        first_failure=first
+        # Exact owned Job, not just G: W/C may still hold inherited handles.
+        # The original failure remains authoritative if termination also fails.
+        try:
+            if job is not None:job.terminate()
+        except BaseException as later:
+            first.add_note('Whole Job termination failed; closure UNKNOWN: '+repr(later))
+            if pi.process and k.WaitForSingleObject(pi.process,0)==258:
+                try:checked(k.TerminateProcess(pi.process,125))
+                except BaseException as fallback:first.add_note('Exact guardian fallback failed: '+repr(fallback))
+        # No extended deadline, retry or asserted closure after an exception.
         raise
     finally:
-        if job.handle:job.close()
-        if pi.thread:k.CloseHandle(pi.thread)
-        if pi.process:k.CloseHandle(pi.process)
-        if initialized:k.DeleteProcThreadAttributeList(attrs)
-        os.close(birth_read)
-        if birth_write is not None:os.close(birth_write)
+        cleanup=[]
+        if job is not None and job.handle:cleanup.append(('Job',job.close))
+        if pi.thread:cleanup.append(('thread',lambda:checked(k.CloseHandle(pi.thread))))
+        if pi.process:cleanup.append(('process',lambda:checked(k.CloseHandle(pi.process))))
+        if initialized:cleanup.append(('attributes',lambda:k.DeleteProcThreadAttributeList(attrs)))
+        if birth_read is not None:cleanup.append(('birth-read',lambda:os.close(birth_read)))
+        if birth_write is not None:cleanup.append(('birth-write',lambda:os.close(birth_write)))
+        errors=[]
+        for name,close in cleanup:
+            try:close()
+            except BaseException as error:errors.append(name+': '+repr(error))
+        if errors:
+            if first_failure is not None:first_failure.add_note('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
+            else:raise OSError('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
