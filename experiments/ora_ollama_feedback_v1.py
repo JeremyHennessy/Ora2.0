@@ -39,21 +39,26 @@ def generate(model, prompt):
         connection.close()
 
 
-def sign(key, sequence, memory_key, proposal_sha256, corrected_value):
+def sign(key, sequence, memory_key, proposal_sha256, corrected_value, issuer='operator'):
     value=dict(sequence=sequence,key=memory_key,proposal_sha256=proposal_sha256,value=corrected_value)
+    value['issuer']=issuer
     value['mac']=hmac.new(key,canonical(value),hashlib.sha256).hexdigest()
     return json.dumps(value,sort_keys=True,separators=(',',':'))
 
 
 def verify(key, sequence, memory_key, raw):
     value=json.loads(raw)
-    if type(value) is not dict or set(value)!={'sequence','key','proposal_sha256','value','mac'}:
+    if type(value) is not dict or set(value) not in ({'sequence','key','proposal_sha256','value','mac'},
+                                                   {'sequence','key','proposal_sha256','value','mac','issuer'}):
         raise ValueError('Explicit signed feedback required')
     mac=value.pop('mac')
     if type(mac) is not str or not hmac.compare_digest(mac,hmac.new(key,canonical(value),hashlib.sha256).hexdigest()):
         raise ValueError('Feedback authentication failed')
     if value['sequence']!=sequence or value['key']!=memory_key:
         raise ValueError('Feedback bound to another task')
+    if value.get('issuer','operator') not in ('operator','verified-arithmetic-v1'):
+        raise ValueError('Unknown trusted feedback source')
+    value.setdefault('issuer','operator')
     if type(value['value']) is not str or not 0<len(value['value'].encode('utf8'))<=2048:
         raise ValueError('Correction exceeds bounds')
     if type(value['proposal_sha256']) is not str or not re.fullmatch('[0-9a-f]{64}',value['proposal_sha256']):

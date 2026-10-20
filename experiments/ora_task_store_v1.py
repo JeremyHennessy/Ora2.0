@@ -74,6 +74,8 @@ class Store:
                     task INTEGER NOT NULL);
                 CREATE TABLE IF NOT EXISTS proposals(key TEXT PRIMARY KEY, value TEXT NOT NULL,
                     task INTEGER NOT NULL, sha256 TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS memory_provenance(key TEXT PRIMARY KEY, task INTEGER NOT NULL,
+                    issuer TEXT NOT NULL);
                 PRAGMA user_version=1;
             ''')
             with self.db:
@@ -163,10 +165,12 @@ class Store:
                 proposal=self.db.execute('SELECT sha256 FROM proposals WHERE key=?',(key,)).fetchone()
                 if proposal!=(feedback['proposal_sha256'],): raise ValueError('Proposal is absent, replaced or expired')
                 self.db.execute('INSERT OR REPLACE INTO memories VALUES(?,?,?)',(key,feedback['value'],ident))
+                self.db.execute('INSERT OR REPLACE INTO memory_provenance VALUES(?,?,?)',(key,ident,feedback['issuer']))
                 self.db.execute('DELETE FROM proposals WHERE key=?',(key,))
-                result='operator-confirmed'
+                result='operator-confirmed' if feedback['issuer']=='operator' else 'program-confirmed'
             elif kind == 'remember':
                 self.db.execute('INSERT OR REPLACE INTO memories VALUES(?,?,?)', (key, value, ident))
+                self.db.execute('INSERT OR REPLACE INTO memory_provenance VALUES(?,?,?)',(key,ident,'local-operator'))
                 # Deterministic oldest-update eviction. No ever-growing history.
                 self.db.execute('DELETE FROM memories WHERE key IN (SELECT key FROM memories ORDER BY task DESC LIMIT -1 OFFSET ?)', (MAX_MEMORIES,))
                 result = 'remembered'
@@ -179,6 +183,7 @@ class Store:
             else:
                 raise ValueError('Pending task is incompatible with current trust mode')
             self.db.execute('DELETE FROM memories WHERE key IN (SELECT key FROM memories ORDER BY task DESC LIMIT -1 OFFSET ?)', (MAX_MEMORIES,))
+            self.db.execute('DELETE FROM memory_provenance WHERE key NOT IN (SELECT key FROM memories)')
             self.db.execute("UPDATE tasks SET state='done',result=? WHERE id=?", (result, ident))
             self.db.execute("DELETE FROM tasks WHERE id IN (SELECT id FROM tasks WHERE state='done' ORDER BY id DESC LIMIT -1 OFFSET ?)", (MAX_RECEIPTS,))
         return result

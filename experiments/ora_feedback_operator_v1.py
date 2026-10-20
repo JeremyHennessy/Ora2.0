@@ -19,11 +19,11 @@ def main():
     signed=sign(key,args.sequence,args.key,args.proposal_sha256,args.corrected_value)
     from experiments.ora_ollama_feedback_v1 import verify
     verify(key,args.sequence,args.key,signed)
-    raw=json.dumps([dict(sequence=args.sequence,kind='approve',key=args.key,value=signed)]).encode()
-    temporary=args.directory/'operator-inbox.next'
-    with temporary.open('xb') as output:
-        output.write(raw); output.flush(); os.fsync(output.fileno())
-    os.replace(temporary,args.directory/'inbox.json')
+    from experiments.ora_mailbox_v1 import publish
+    def build(sequence):
+        if sequence!=args.sequence: raise ValueError('Requested sequence is not next; refresh operator task cursor')
+        return dict(sequence=sequence,kind='approve',key=args.key,value=signed)
+    publish(args.directory,build)
     print('Published one explicitly operator-reviewed correction; awaiting service receipt.')
 
 

@@ -114,3 +114,26 @@ supervised service promptly after successful preparation; model generation reque
 still retain the ordinary bounded task deadline. These client limits do not cap
 the shared Ollama server itself. The cold-stage command is explicit and is not
 silently repeated on every failed task.
+
+The first ongoing task source combines all three requested lanes. While the
+supervisor runs, start a bounded producer with explicitly selected Ora files:
+
+```powershell
+python -B -m experiments.ora_mixed_stream_v1 DIRECTORY --seconds 60 --practice 2 --file experiments/ora_ollama_prepare_v1.py
+```
+
+The producer itself runs inside a 128 MiB/10-second CPU Job with an outside wall
+deadline. It offers at most 32 arithmetic tasks and four selected files per run.
+Practice uses a supplied Python addition reference and signs the reference answer
+as `verified-arithmetic-v1`; it never uses the model's guess as its own answer key.
+This is a supplied exercise curriculum, not a discovered policy or scientific
+advantage. Repeated exact keys can use retained corrected knowledge.
+
+Selected files must be plain files inside this Ora checkout, at most 3800 bytes
+each. There is no recursive scan or silent truncation. Project findings remain
+untrusted proposals awaiting the operator correction command. Manual corrections
+and automatic sources share `mailbox.lock`; an unconsumed operator task cannot be
+overwritten. The producer stops at its deadline and leaves published unfinished
+work recoverable. Its finite run can be renewed deliberately after reviewing the
+receipt; no scheduler or boot installation is implicit. Feedback provenance is
+retained alongside each memory as `operator` or `verified-arithmetic-v1`.
