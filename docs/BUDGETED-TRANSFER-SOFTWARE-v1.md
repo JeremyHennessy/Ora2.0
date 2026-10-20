@@ -31,3 +31,11 @@ Snapshot contains task configuration, controls, current request, cost, rows, wor
 The separate referee recomputes response correctness and billing without using the producer's target helper or cost totals. It is NOT a full independent bytecode/state/resource replay; terminal energy-short penalties fail closed and need generic replay qualification. No claim that this partial referee alone establishes scientific acceptance.
 
 Before primary execution: independent code review, generic full-state/resource replay and damage/falsifier checks, exact-head CI, performance-blind source enrollment/ancestry, prospective sample units/effect threshold/stopping and fresh custody. No primary launcher is provided. Keep local-worker writes disabled and reuse scheduled focused sessions for review.
+
+## Independent replay implementation increment
+
+A separate standard-library scalar interpreter now reconstructs the complete supported actor state, opcode/control effects, scheduler, packet admission/accessibility/leases, material ownership/reclamation, resource ledger, cap losses, constructor release, actual partial terminal penalties, interventions, event hashes and response/absence records from genesis. It imports no producer/VM or accepted histories. Its agreement is interpreter independence, not an independent human endorsement. Restore now requires legal-prefix replay as well as checksum integrity; rehashing a corrupted live state is rejected.
+
+New focused differential/falsifier tests cover all16 software maps in all3controls under reordered requests, each permitted opcode, full resource/state corruption, a real one-unit terminal wrong-action penalty and deterministic restore. No scientific sample was consumed or accepted.
+
+The older response/billing-only checker remains a limited diagnostic. Primary acceptance must use the full replay and source-specific control review. The next source enrollment still must be performance-blind; a previously observed successful witness cannot become a discovered candidate by renaming it.

@@ -79,6 +79,16 @@ class Fixture:
         code = [[v[0] for v in body["code"][i:i+3]]
                 for i in range(0, len(body["code"]), 3)]
         t = cls(code, p["mask"], tuple(p["order"]), p["mode"], p["budget"], admission)
+        # A recomputed checksum is not proof of a legal checkpoint. Recreate
+        # the entire prefix from genesis using the separate interpreter.
+        from experiments.digital_budgeted_transfer_replay_v1 import replay
+        expected = replay(code, p["mask"], tuple(p["order"]), p["mode"],
+                          p["budget"], None if p["budget_refused"] else w["tick"])
+        if (engine.h(engine.clone(w)) != engine.h(expected["world"]) or engine.h(p["rows"]) != engine.h(expected["rows"]) or
+            p["cost"] != expected["result"]["cost"] or
+            p["completed"] != expected["result"]["completed"] or
+            p["budget_refused"] != expected["budget_refused"]):
+            raise ValueError("checkpoint failed independent prefix replay")
         w["entities"] = {int(k):v for k,v in w["entities"].items()}
         w["food"] = {int(k):v for k,v in w["food"].items()}
         w["leases"] = {int(k):v for k,v in w["leases"].items()}
