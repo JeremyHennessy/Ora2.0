@@ -21,7 +21,7 @@ def generate(model, prompt):
     if type(prompt) is not str or not 0<len(prompt.encode('utf8'))<=4096:
         raise ValueError('Prompt exceeds bounds')
     # http.client uses this literal loopback destination, no proxy or redirects.
-    connection=http.client.HTTPConnection('127.0.0.1',11434,timeout=20)
+    connection=http.client.HTTPConnection('127.0.0.1',11434,timeout=50)
     try:
         body=canonical(dict(model=model,prompt=prompt,stream=False,keep_alive=0,
             think='low' if model.split(':')[0].endswith('gpt-oss') else False,
