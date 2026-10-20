@@ -8,10 +8,20 @@ from unittest.mock import Mock,patch
 
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from experiments.ora_ollama_feedback_v1 import generate
-from experiments.ora_owned_ollama_v1 import OwnedOllama,verify_owner,listener_pid
+from experiments.ora_owned_ollama_v1 import OwnedOllama,verify_owner,listener_pid,retain_result
 
 
 class OwnedPolicy(unittest.TestCase):
+    def test_unicode_log_and_physical_log_limit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            result=dict(output='Unicode: λ → ✓',post_close_processes_exited=True)
+            retain_result(root,result)
+            self.assertEqual((root/'server.log').read_text(encoding='utf8'),'Unicode: λ → ✓')
+            self.assertTrue(json.loads((root/'native-result.json').read_text())['post_close_processes_exited'])
+            retain_result(root,dict(output='λ'*(1024**2),post_close_processes_exited=True))
+            self.assertEqual((root/'server.log').stat().st_size,1024**2)
+
     def test_owned_endpoint_must_authenticate_before_http(self):
         with (patch('experiments.ora_owned_ollama_v1.verify_owner',side_effect=RuntimeError('wrong birth')),
               patch('experiments.ora_ollama_feedback_v1.http.client.HTTPConnection') as http):

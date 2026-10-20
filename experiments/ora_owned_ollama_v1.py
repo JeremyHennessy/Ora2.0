@@ -22,6 +22,16 @@ MEMORY=24*1024**3
 CPU_RATE=2000
 
 
+def retain_result(path,result):
+    output=result.pop('output')
+    raw=output.encode('utf8')[:1024**2]
+    temporary=path/'server.log.next'; temporary.write_bytes(raw); temporary.replace(path/'server.log')
+    result['output_sha256']=hashlib.sha256(raw).hexdigest()
+    result['log_bytes']=len(raw)
+    temporary=path/'native-result.next'; temporary.write_text(json.dumps(result,indent=2),encoding='utf8')
+    temporary.replace(path/'native-result.json')
+
+
 def listener_pid(port=PORT):
     class ROW(ctypes.Structure):
         _fields_=[('state',wt.DWORD),('local_addr',wt.DWORD),('local_port',wt.DWORD),
@@ -126,12 +136,10 @@ class OwnedOllama:
                         Limits(memory_bytes=MEMORY,cpu_seconds=900,processes=8,wall_seconds=self.seconds),
                         stop_path=self.path/'STOP',environment=environment,cpu_rate=CPU_RATE,
                         on_start=on_start,on_sample=on_sample)
-                    output=self.result.pop('output')
-                    (self.path/'server.log').write_text(output)
-                    self.result['output_sha256']=hashlib.sha256(output.encode()).hexdigest()
-                    (self.path/'native-result.json').write_text(json.dumps(self.result,indent=2))
+                    retain_result(self.path,self.result)
                 except BaseException as error:
-                    self.error=repr(error); (self.path/'error.json').write_text(json.dumps(dict(error=self.error)))
+                    self.error=type(error).__name__+': '+str(error)
+                    (self.path/'error.json').write_text(json.dumps(dict(error=self.error)))
                 finally: self.ready.set()
             self.thread=threading.Thread(target=worker,daemon=True); self.thread.start()
             if not self.ready.wait(5) or self.start is None: raise RuntimeError('Owned server did not start suspended: '+str(self.error))
