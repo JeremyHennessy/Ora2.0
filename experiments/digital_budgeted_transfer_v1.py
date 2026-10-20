@@ -70,6 +70,14 @@ class Fixture:
             engine.h(sealed["payload"]) != sealed["sha256"]):
             raise ValueError("snapshot integrity")
         p = engine.clone(sealed["payload"])
+        fields = {"version", "mask", "order", "mode", "budget", "completed",
+                  "cost", "rows", "budget_refused", "world"}
+        if type(p) is not dict or set(p) != fields:
+            raise ValueError("checkpoint payload shape")
+        if (type(p["completed"]) is not int or type(p["cost"]) is not int or
+            type(p["budget_refused"]) is not bool or type(p["rows"]) is not list or
+            type(p["world"]) is not dict or type(p["order"]) is not list):
+            raise ValueError("checkpoint field types")
         if p["version"] != VERSION:
             raise ValueError("snapshot version")
         w = p["world"]

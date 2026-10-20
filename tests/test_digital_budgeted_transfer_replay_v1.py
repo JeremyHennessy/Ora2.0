@@ -76,6 +76,16 @@ class ReplayTests(unittest.TestCase):
         sealed['sha256']=digest(sealed['payload'])
         with self.assertRaises(ValueError):Fixture.restore(sealed,admission=SOFTWARE_ONLY)
 
+    def test_restore_rejects_numeric_equal_float_and_boolean_counters(self):
+        from experiments.digital_budgeted_transfer_replay_v1 import digest
+        f=Fixture(WITNESS,admission=SOFTWARE_ONLY)
+        for field,value in (("completed",0.0),("completed",False),("cost",45.0),
+                            ("budget_refused",0)):
+            sealed=f.snapshot();sealed['payload'][field]=value
+            sealed['sha256']=digest(sealed['payload'])
+            with self.subTest(field=field,value=value):
+                with self.assertRaises(ValueError):Fixture.restore(sealed,admission=SOFTWARE_ONLY)
+
     def test_no_producer_import_in_independent_interpreter(self):
         import ast
         from pathlib import Path
