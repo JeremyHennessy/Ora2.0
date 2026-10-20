@@ -24,6 +24,10 @@ jobs:
         run: python -B tests/test_pilot74_protocol_transcript.py
       - name: Durable bounded task stream including process crash and restart
         run: python -B tests/test_ora_task_store_v1.py
+      - name: Real native service custody and bounded restart behavior
+        run: python -B tests/test_ora_native_service_v1.py
+      - name: Quarantine model guesses and authenticate operator corrections
+        run: python -B tests/test_ora_trusted_feedback_v1.py
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
       - name: Select changed learning integration only

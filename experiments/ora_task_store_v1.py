@@ -1,4 +1,4 @@
-"""Bounded local task/observation service. No model, shell or network execution.
+"""Bounded local task/observation service. No shell or generated-code execution.
 
 New service apparatus, not PILOT74 qualification or an evolved learning policy.
 One owner holds an OS lock; SQLite commits task completion and memory together.
@@ -27,7 +27,11 @@ def text(value, limit):
 
 
 class Store:
-    def __init__(self, directory):
+    def __init__(self, directory, generator=None, feedback_key=None):
+        self.generator=generator
+        self.feedback_key=feedback_key
+        if generator is not None and (type(feedback_key) is not bytes or len(feedback_key)!=32):
+            raise ValueError('Model mode requires separate operator feedback key')
         self.db = None
         self.lock = None
         root = Path(directory)
@@ -68,6 +72,8 @@ class Store:
                     result TEXT, CHECK(state IN ('pending','running','done')));
                 CREATE TABLE IF NOT EXISTS memories(key TEXT PRIMARY KEY, value TEXT NOT NULL,
                     task INTEGER NOT NULL);
+                CREATE TABLE IF NOT EXISTS proposals(key TEXT PRIMARY KEY, value TEXT NOT NULL,
+                    task INTEGER NOT NULL, sha256 TEXT NOT NULL);
                 PRAGMA user_version=1;
             ''')
             with self.db:
@@ -94,13 +100,17 @@ class Store:
     def submit(self, sequence, kind, key, value=''):
         if type(sequence) is not int or not 0 < sequence < 2**63:
             raise ValueError('Positive signed 64-bit sequence required')
-        if kind not in ('remember', 'recall', 'forget'):
-            raise ValueError('Only remember, recall and forget are supported')
+        allowed=('recall','ask','approve') if self.generator is not None else ('remember','recall','forget')
+        if kind not in allowed:
+            raise ValueError('Task kind is not enabled in this trust mode')
         text(key, MAX_KEY)
-        if kind == 'remember':
+        if kind in ('remember','ask','approve'):
             text(value, MAX_TEXT)
         elif value != '':
             raise ValueError('This task has no value')
+        if kind=='approve':
+            from experiments.ora_ollama_feedback_v1 import verify
+            verify(self.feedback_key,sequence,key,value)
         with self.db:
             last = self.db.execute('SELECT submitted FROM meta').fetchone()[0]
             if sequence <= last:
@@ -128,11 +138,34 @@ class Store:
 
     def complete(self, task):
         ident, kind, key, value = task
+        if self.generator is not None and kind in ('remember','forget'):
+            raise ValueError('Unsigned mutation pending from another trust mode; operator migration required')
         with self.db:
             row = self.db.execute('SELECT id,kind,key,value,state FROM tasks WHERE id=?', (ident,)).fetchone()
             if row != (*task, 'running'):
                 raise ValueError('Task is not the current claimed task')
-            if kind == 'remember':
+            if kind=='ask':
+                if self.generator is None: raise ValueError('Pending model task requires model trust mode')
+                # Reuse only previously trusted memory; a key hit avoids generation.
+                remembered=self.db.execute('SELECT value FROM memories WHERE key=?',(key,)).fetchone()
+                if remembered:
+                    result=remembered[0]
+                else:
+                    answer=self.generator(value); text(answer,MAX_TEXT)
+                    digest=hashlib.sha256(answer.encode('utf8')).hexdigest()
+                    self.db.execute('INSERT OR REPLACE INTO proposals VALUES(?,?,?,?)',(key,answer,ident,digest))
+                    self.db.execute('DELETE FROM proposals WHERE key IN (SELECT key FROM proposals ORDER BY task DESC LIMIT -1 OFFSET 16)')
+                    result=json.dumps(dict(trusted=False,proposal_sha256=digest,answer=answer),separators=(',',':'))
+            elif kind=='approve':
+                from experiments.ora_ollama_feedback_v1 import verify
+                if self.generator is None: raise ValueError('Signed feedback mode required')
+                feedback=verify(self.feedback_key,ident,key,value)
+                proposal=self.db.execute('SELECT sha256 FROM proposals WHERE key=?',(key,)).fetchone()
+                if proposal!=(feedback['proposal_sha256'],): raise ValueError('Proposal is absent, replaced or expired')
+                self.db.execute('INSERT OR REPLACE INTO memories VALUES(?,?,?)',(key,feedback['value'],ident))
+                self.db.execute('DELETE FROM proposals WHERE key=?',(key,))
+                result='operator-confirmed'
+            elif kind == 'remember':
                 self.db.execute('INSERT OR REPLACE INTO memories VALUES(?,?,?)', (key, value, ident))
                 # Deterministic oldest-update eviction. No ever-growing history.
                 self.db.execute('DELETE FROM memories WHERE key IN (SELECT key FROM memories ORDER BY task DESC LIMIT -1 OFFSET ?)', (MAX_MEMORIES,))
@@ -140,12 +173,46 @@ class Store:
             elif kind == 'forget':
                 self.db.execute('DELETE FROM memories WHERE key=?', (key,))
                 result = 'forgotten'
-            else:
+            elif kind=='recall':
                 found = self.db.execute('SELECT value FROM memories WHERE key=?', (key,)).fetchone()
                 result = found[0] if found else None
+            else:
+                raise ValueError('Pending task is incompatible with current trust mode')
+            self.db.execute('DELETE FROM memories WHERE key IN (SELECT key FROM memories ORDER BY task DESC LIMIT -1 OFFSET ?)', (MAX_MEMORIES,))
             self.db.execute("UPDATE tasks SET state='done',result=? WHERE id=?", (result, ident))
             self.db.execute("DELETE FROM tasks WHERE id IN (SELECT id FROM tasks WHERE state='done' ORDER BY id DESC LIMIT -1 OFFSET ?)", (MAX_RECEIPTS,))
         return result
+
+    def backup(self, directory):
+        """Two bounded SQLite snapshots. Never silently roll back trusted state."""
+        root=Path(directory); root.mkdir(exist_ok=True)
+        for name in ('snapshot.next','snapshot-0.sqlite3','snapshot-1.sqlite3'):
+            p=root/name
+            if p.exists() and (p.is_symlink() or p.stat().st_nlink!=1 or
+                              getattr(p.lstat(),'st_file_attributes',0)&0x400):
+                raise ValueError('Backup targets must be plain local files')
+        if root.is_symlink() or getattr(root.lstat(),'st_file_attributes',0)&0x400:
+            raise ValueError('Backup directory must be plain')
+        temporary=root/'snapshot.next'
+        if temporary.exists():
+            # Owned fixed temporary only, never an unknown snapshot or directory.
+            temporary.unlink()
+        destination=sqlite3.connect(temporary)
+        try:
+            self.db.backup(destination,pages=64)
+            if destination.execute('PRAGMA integrity_check').fetchone()!=('ok',):
+                raise ValueError('Backup integrity check failed')
+        finally:
+            destination.close()
+        if temporary.stat().st_size>MAX_PAGES*4096:
+            raise ValueError('Snapshot exceeds database cap')
+        with temporary.open('r+b') as stream: stream.flush(); os.fsync(stream.fileno())
+        # A complete current snapshot survives a failed replacement of its older sibling.
+        slot=root/'snapshot-0.sqlite3'; previous=root/'snapshot-1.sqlite3'
+        if slot.exists(): os.replace(slot,previous)
+        os.replace(temporary,slot)
+        return dict(bytes=slot.stat().st_size,sha256=hashlib.sha256(slot.read_bytes()).hexdigest(),
+                    automatic_restore=False)
 
     def status(self):
         return dict(submitted=self.db.execute('SELECT submitted FROM meta').fetchone()[0],
@@ -201,7 +268,9 @@ def main():
     parser.add_argument('--seconds', type=float, default=60)
     parser.add_argument('--max-tasks', type=int, default=1000)
     args = parser.parse_args()
-    with Store(args.directory) as store:
+    from experiments.ora_ollama_feedback_v1 import configuration
+    generator,key=configuration(args.directory)
+    with Store(args.directory,generator=generator,feedback_key=key) as store:
         result = serve(store, args.directory / 'STOP', args.seconds, args.max_tasks,
                        args.directory / 'inbox.json')
         print(json.dumps(dict(run=result, store=store.status()), sort_keys=True))
