@@ -124,12 +124,12 @@ class Client:
         assert (source_sha256,configuration_sha256)==(self.r['source_sha256'],self.r['configuration_sha256'])
         result=self.exchange('ROLE_REQUEST',ordinal=self.ordinal,role=role,command=command,cwd=str(cwd),request=request,capture_grant=capture_grant,capture_seal=capture_seal)
         assert result['schema']=='PILOT74-GUARDIAN-ROLE-RESULT-v1' and result['ordinal']==self.ordinal and result['role']==role
-        self.ordinal+=1;raw=physical.external(result['native'],MIB);wire=physical.parse(raw,MIB)
+        raw=physical.external(result['native'],MIB);wire=physical.parse(raw,MIB)
         assert wire['source_sha256']==source_sha256 and wire['configuration_sha256']==configuration_sha256 and wire['role']==role and wire['command']==command
         n=normalize_native(wire);n['native_spec']=result['native']
         capture=n['stdout_capture'];assert capture['grant_sha256']==capture_seal
         n['output']=physical.external(capture['raw'],MIB).decode('utf8',errors='replace')
-        self.results[role]=n;return n
+        self.results[role]=n;self.ordinal+=1;return n
     def barrier(self,complete):
         if self.archiving:return
         kind='ARCHIVE_BARRIER' if complete else 'STOP'
