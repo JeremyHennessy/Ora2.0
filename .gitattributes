@@ -4,3 +4,7 @@ data/digital-neutral-tail42-manifest.json -text
 # Exact reviewed guardian bytes; prospective raw Git/export/CI identity.
 experiments/digital_pilot74_guardian_preresume_v1.py -text
 experiments/digital_pilot74_job_events_v1.py -text
+
+# Changed native launcher and new VM-free qualification fixture: exact raw bytes.
+experiments/native/pilot74_guardian_v1.c -text
+experiments/native/pilot74_guardian_spawn_fixture_v1.c -text

@@ -113,7 +113,7 @@ static int spawn(WCHAR *cmd,const WCHAR *cwd,HANDLE sub,HANDLE *handles,SIZE_T c
  if(sub&&!UpdateProcThreadAttribute(si.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_JOB_LIST,&sub,sizeof(HANDLE),NULL,NULL)){saved=GetLastError();goto bad;}
  si.StartupInfo.dwFlags=STARTF_USESTDHANDLES;si.StartupInfo.hStdInput=handles[0];si.StartupInfo.hStdOutput=handles[1];si.StartupInfo.hStdError=handles[1];spawn_phase=2;
  if(!start_allowed(0)){saved=GetLastError();goto bad;}
- if(!CreateProcessW(NULL,cmd,NULL,NULL,TRUE,EXTENDED_STARTUPINFO_PRESENT|CREATE_SUSPENDED|CREATE_NO_WINDOW,NULL,cwd,&si.StartupInfo,pi)){saved=GetLastError();goto bad;}
+ if(!CreateProcessW(NULL,cmd,NULL,NULL,TRUE,EXTENDED_STARTUPINFO_PRESENT|CREATE_SUSPENDED|DETACHED_PROCESS,NULL,cwd,&si.StartupInfo,pi)){saved=GetLastError();goto bad;}
  /* Caller owns both exact creation handles on EVERY post-create outcome. */
  spawn_phase=3;spawn_birth=born(pi->hProcess);if(!spawn_birth){saved=GetLastError();goto bad;}
  spawn_phase=4;if(!IsProcessInJob(pi->hProcess,root_job,&in)){saved=GetLastError();goto bad;}spawn_root_known=TRUE;spawn_root_member=in;if(!in){saved=ERROR_INVALID_DATA;goto bad;}
