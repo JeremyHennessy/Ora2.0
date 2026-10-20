@@ -8,7 +8,8 @@ permissions:
 jobs:
   new-launch-contract:
     runs-on: windows-latest
-    timeout-minutes: 5
+    # FULL-sync storage stress alone took 274s on a hosted Windows disk.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
