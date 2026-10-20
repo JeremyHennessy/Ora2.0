@@ -43,12 +43,12 @@ def task_xml(python,repository,store,sid,continuous=False):
     return ET.tostring(task,encoding='utf-8',xml_declaration=False)
 
 
-def export(destination,store,sid):
+def export(destination,store,sid,continuous_store):
     target=Path(destination); target.mkdir(exist_ok=False)
     python=Path(sys.executable).with_name('pythonw.exe')
     if not python.is_file(): raise ValueError('Installed windowless Python required for logon action')
     for continuous,name in ((False,'reboot-test'),(True,'continuous-startup')):
-        raw=task_xml(python,ROOT,Path(store).resolve(),sid,continuous)
+        raw=task_xml(python,ROOT,Path(continuous_store if continuous else store).resolve(),sid,continuous)
         (target/(name+'.xml')).write_bytes(raw)
     # A preparation manifest is deliberately incapable of starting either task.
     head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
@@ -56,7 +56,7 @@ def export(destination,store,sid):
             for p in sorted((ROOT/'experiments').glob('ora_*_v1.py'))}
     hashes['experiments/process_limits.py']=hashlib.sha256((ROOT/'experiments/process_limits.py').read_bytes()).hexdigest()
     value=dict(schema='ORA-STARTUP-PREPARATION-v1',enabled=False,source_head=head,source_hashes=hashes,
-        store=str(Path(store).resolve()),sid=sid,seconds=1200,epoch_seconds=120,practice=1,
+        store=str(Path(store).resolve()),continuous_store=str(Path(continuous_store).resolve()),sid=sid,seconds=1200,epoch_seconds=120,practice=1,
         files=['experiments/ora_ollama_prepare_v1.py'],
         required_before_activation=['Passing soak receipt','Current source CI and closure checks','Baseline boot/owner/memory capture','User-selected reboot time'],
         installed=False,physical_reboot_performed=False,continuous_startup_enabled=False)
@@ -67,5 +67,6 @@ def export(destination,store,sid):
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__); parser.add_argument('destination',type=Path)
     parser.add_argument('store',type=Path); parser.add_argument('sid')
-    args=parser.parse_args(); result=export(args.destination,args.store,args.sid)
+    parser.add_argument('--continuous-store',type=Path,required=True,help='Separate stable service store, restored after reboot test; never clear the test STOP')
+    args=parser.parse_args(); result=export(args.destination,args.store,args.sid,args.continuous_store)
     print(json.dumps({k:result[k] for k in ('enabled','installed','physical_reboot_performed')}))
