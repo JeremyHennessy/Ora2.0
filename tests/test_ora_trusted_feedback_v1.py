@@ -5,17 +5,44 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import Mock,patch
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from experiments.ora_task_store_v1 import Store
-from experiments.ora_ollama_feedback_v1 import sign
+from experiments.ora_ollama_feedback_v1 import sign,generate
 
 KEY=b'k'*32  # Disclosed software-test key only.
 assert len(KEY)==32
 
 
 class TrustedFeedback(unittest.TestCase):
+    def test_adapter_uses_only_bounded_loopback_requests(self):
+        connection=Mock()
+        connection.getresponse.return_value.status=200
+        connection.getresponse.return_value.read.return_value=b'{"done":true,"response":"4"}'
+        with patch('experiments.ora_ollama_feedback_v1.http.client.HTTPConnection',return_value=connection) as factory:
+            self.assertEqual(generate('gpt-oss:20b','2+2?'),'4')
+            factory.assert_called_once_with('127.0.0.1',11434,timeout=50)
+        call=connection.request.call_args.args
+        self.assertEqual(call[:2],('POST','/api/generate'))
+        body=json.loads(call[2])
+        self.assertEqual(body['options']['num_gpu'],0)
+        self.assertEqual(body['options']['num_predict'],128)
+        self.assertEqual(body['keep_alive'],0)
+        self.assertFalse(body['stream'])
+        self.assertNotIn('tools',body)
+        connection.close.assert_called_once()
+
+    def test_adapter_refuses_incomplete_or_oversize_answer(self):
+        for raw in (b'{"done":false,"response":"guess"}',b'x'*65537):
+            connection=Mock()
+            connection.getresponse.return_value.status=200
+            connection.getresponse.return_value.read.return_value=raw
+            with patch('experiments.ora_ollama_feedback_v1.http.client.HTTPConnection',return_value=connection):
+                with self.assertRaises(ValueError): generate('gpt-oss:20b','question')
+            connection.close.assert_called_once()
+
     def test_guess_quarantined_signed_correction_survives_restart(self):
         calls=[]
         generator=lambda prompt: calls.append(prompt) or 'wrong model guess'

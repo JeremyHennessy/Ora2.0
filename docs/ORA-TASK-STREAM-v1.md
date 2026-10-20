@@ -40,7 +40,7 @@ Recovery uses the current database, without replaying all past experience.
 Limits: 128 pending tasks, 256 remembered keys, 128 recent receipts, 128-byte keys,
 4096-byte values, 4 MiB database. Oldest updated memory is evicted first. The
 rollback journal is transient, bounded by database pages plus SQLite metadata;
-reserve at least 20 MiB including two rotating 4 MiB snapshots, two bounded
+reserve at least 32 MiB including two rotating 4 MiB snapshots, two bounded
 transport logs, temporary files and filesystem overhead. SQLite FULL durability
 requests OS flushes; device failure still needs off-device backups.
 `forget` removes the current key; recent task receipts retain their original
@@ -99,3 +99,18 @@ and cancellation policy must be settled before unattended activation. The native
 from admission of the production scientific controller. Remaining gates include
 an integrated soak, fault handling during model calls, backup reconciliation, and
 deliberate continuous-startup configuration after these limits are verified.
+
+For a genuinely cold installed `gpt-oss:20b`, explicitly run the separate preparation
+stage before starting feedback work:
+
+```powershell
+python -B -m experiments.ora_ollama_prepare_v1
+```
+
+It requests an empty-prompt, CPU-only load with a 60-second keep-alive, under a
+separate client Job (64 MiB, 5 seconds client CPU, 125 seconds outside wall deadline).
+The HTTP timeout is 120 seconds. No task or trusted memory is produced. Start the
+supervised service promptly after successful preparation; model generation requests
+still retain the ordinary bounded task deadline. These client limits do not cap
+the shared Ollama server itself. The cold-stage command is explicit and is not
+silently repeated on every failed task.

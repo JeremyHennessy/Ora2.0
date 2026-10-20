@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def inspect():
     todo = list((ROOT / 'experiments').glob('digital_pilot74*.py'))
+    todo.extend((ROOT / 'experiments').glob('ora_*_v1.py'))
     seen = {}
     missing = []
     while todo:
