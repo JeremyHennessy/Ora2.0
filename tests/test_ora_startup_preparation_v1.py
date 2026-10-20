@@ -12,9 +12,18 @@ ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
 from experiments.ora_controller_v1 import renew_completed
 from experiments.ora_startup_plan_v1 import task_xml,NS
 from experiments.ora_session_host_v1 import host,activation
+from experiments.ora_native_slice_v1 import run_slice,Limits
 
 
 class Startup(unittest.TestCase):
+    def test_windowless_python_captures_stdio_under_native_job(self):
+        python=Path(sys.executable).with_name('pythonw.exe')
+        result=run_slice(lambda *unused:[str(python),'-B','-c','print("hidden-capture")'],ROOT,
+            Limits(memory_bytes=128*1024**2,cpu_seconds=2,processes=2,wall_seconds=5))
+        self.assertEqual(result['exit_code'],0)
+        self.assertEqual(result['output'].strip(),'hidden-capture')
+        self.assertTrue(result['post_close_processes_exited']); self.assertTrue(result['capture_eof'])
+
     def state(self):
         return dict(unclean=False,phase='stopped',reason='time-bound',deadline_utc=100,started_utc=0,
             seconds=100,epoch=12,failures=1,recoveries=1,completed_epochs=12,source_offset=24,history=[{'epoch':11}])

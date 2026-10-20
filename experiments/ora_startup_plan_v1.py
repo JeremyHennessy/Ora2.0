@@ -38,13 +38,17 @@ def task_xml(python,repository,store,sid,continuous=False):
     if continuous: arguments.append('--continuous')
     child(execute,'Command',str(python)); child(execute,'Arguments',subprocess.list2cmdline(arguments))
     child(execute,'WorkingDirectory',str(repository))
-    return ET.tostring(task,encoding='utf-8',xml_declaration=True)
+    # No encoding declaration: the same XML is read as UTF-8 from disk and as
+    # UTF-16 BSTR by Task Scheduler's COM XmlText validator.
+    return ET.tostring(task,encoding='utf-8',xml_declaration=False)
 
 
 def export(destination,store,sid):
     target=Path(destination); target.mkdir(exist_ok=False)
+    python=Path(sys.executable).with_name('pythonw.exe')
+    if not python.is_file(): raise ValueError('Installed windowless Python required for logon action')
     for continuous,name in ((False,'reboot-test'),(True,'continuous-startup')):
-        raw=task_xml(sys.executable,ROOT,Path(store).resolve(),sid,continuous)
+        raw=task_xml(python,ROOT,Path(store).resolve(),sid,continuous)
         (target/(name+'.xml')).write_bytes(raw)
     # A preparation manifest is deliberately incapable of starting either task.
     head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
