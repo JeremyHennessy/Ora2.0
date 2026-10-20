@@ -69,6 +69,13 @@ def normalize_native(wire):
         spec=capture[key];assert type(spec) is dict and set(spec)=={'path','extent','sha256'} and type(spec['extent']) is int and 0<=spec['extent']<=cap
         physical.checksum(spec['sha256'])
     physical.checksum(capture['grant_sha256'])
+    assert capture['raw']['extent']+capture['overflow']['extent']==capture['retained_bytes']
+    if capture['capture_complete']:
+        assert capture['raw']['extent']==min(capture['received_bytes'],MIB)
+        assert capture['stdout_limit_exceeded']==(capture['received_bytes']>MIB)
+    start=wire['start'];assert type(start) is dict and set(start)=={'path','extent','sha256'}
+    assert type(start['path']) is str and type(start['extent']) is int and 0<start['extent']<=65536
+    physical.checksum(start['sha256'])
     return dict(schema='resource01-result-v1',platform='Windows',command=wire['command'],limits=dict(memory_bytes=1024*MIB,cpu_seconds=180,wall_seconds=300,processes=3),exit_code=wire['exit_code'],timed_out=wire['timed_out'],supervisor_cpu_stop=False,owned_pids_before_close=[wire['pid']],observed_job_processes=[dict(pid=wire['pid'],creation_filetime_decimal=creation)],post_close_processes_exited=wire['post_close_processes_exited'],usage=dict(user_cpu_seconds=wire['user_cpu_ticks']/10_000_000,windows_reported_peak_job_memory_bytes=wire['peak_job_memory_bytes'],active_before_close=wire['active_before_close'],started_processes=wire['started_processes'],configured_memory_bytes=1024*MIB,configured_cpu_ticks=180*10_000_000,configured_processes=3),elapsed_seconds=wire['elapsed_ms']/1000,stdout_capture=capture,stdout_limit_exceeded=capture['stdout_limit_exceeded'],output_bytes=capture['received_bytes'],retained_bytes=capture['retained_bytes'],output_extent_known=capture['eof'],output_truncated=not capture['capture_complete'],inline_output_complete=capture['received_bytes']<=MIB,guardian_start=wire['start'],guardian_wire=True,isolation_verified=False)
 
 class Client:
@@ -142,7 +149,23 @@ def current():
 def verify_native(slots,name,n):
     slot=slots['raw/native/'+name+'.json'];spec=n['native_spec'];assert spec['path']==slot['path'] and spec['extent']<=slot['limit']
     raw,identity=physical.read_exact(spec['path'],{k:spec[k] for k in ('extent','sha256')},slot['limit']);assert identity[:2]==(slot['device'],slot['inode'])
-    assert normalize_native(physical.parse(raw,slot['limit']))['command']==n['command']
+    wire=physical.parse(raw,slot['limit'])
+    assert normalize_native(wire)['command']==n['command']
+    # Authenticate the actual suspended-start receipt, not just its hash in
+    # the final envelope. Rehashed unrelated starts must not establish custody.
+    start=wire['start'];reserved=slots['raw/native/'+name+'.start.json']
+    assert start['path']==reserved['path'] and start['extent']<=reserved['limit']
+    body,start_identity=physical.read_exact(start['path'],{k:start[k] for k in ('extent','sha256')},reserved['limit'])
+    assert start_identity[:2]==(reserved['device'],reserved['inode'])
+    value=physical.parse(body,reserved['limit'])
+    assert value['schema']=='PILOT74-GUARDIAN-START-v1'
+    assert value['root_member'] is True and value['child_member'] is True
+    for key in ('command','role','source_sha256','configuration_sha256','pid','creation_filetime_decimal'):assert value[key]==wire[key]
+    for key,memory,cpu,processes in (('root_limits',2048*MIB,2400,4),('child_limits',1024*MIB,180,3)):
+        limits=value[key];assert set(limits)=={'memory_bytes','cpu_ticks','processes','flags'}
+        assert all(type(x) is int for x in limits.values())
+        assert (limits['memory_bytes'],limits['cpu_ticks'],limits['processes'])==(memory,cpu*10_000_000,processes)
+        assert limits['flags'] & 0x220c==0x220c and not limits['flags'] & 0x1800
     assert n['stdout_capture']['capture_complete'] is True and n['output_truncated'] is False and n['stdout_limit_exceeded'] is False
     assert n['usage']['started_processes']==1 and n['usage']['active_before_close']==0 and n['post_close_processes_exited'] is True
     return spec
