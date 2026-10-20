@@ -15,17 +15,22 @@ def canonical(value):
     return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=True,allow_nan=False).encode('ascii')
 
 
-def generate(model, prompt):
+def generate(model, prompt, port=11434, owner_directory=None):
     if type(model) is not str or not re.fullmatch(r'[A-Za-z0-9_.:/-]{1,128}',model):
         raise ValueError('Explicit installed model name required')
     if type(prompt) is not str or not 0<len(prompt.encode('utf8'))<=4096:
         raise ValueError('Prompt exceeds bounds')
+    if port not in (11434,11435) or type(port) is not int: raise ValueError('Only configured local endpoints allowed')
+    if port==11435:
+        from experiments.ora_owned_ollama_v1 import verify_owner
+        if owner_directory is None: raise ValueError('Owned endpoint requires owner identity')
+        verify_owner(owner_directory)
     # http.client uses this literal loopback destination, no proxy or redirects.
-    connection=http.client.HTTPConnection('127.0.0.1',11434,timeout=50)
+    connection=http.client.HTTPConnection('127.0.0.1',port,timeout=50)
     try:
-        body=canonical(dict(model=model,prompt=prompt,stream=False,keep_alive=0,
+        body=canonical(dict(model=model,prompt=prompt,stream=False,keep_alive='30s' if port==11435 else 0,
             think='low' if model.split(':')[0].endswith('gpt-oss') else False,
-            options=dict(num_predict=128,num_ctx=2048,num_gpu=0,temperature=0)))
+            options=dict(num_predict=128,num_ctx=2048,num_gpu=0,num_thread=2,temperature=0)))
         connection.request('POST','/api/generate',body,{'Content-Type':'application/json'})
         response=connection.getresponse(); raw=response.read(65537)
         if response.status!=200 or len(raw)>65536:
@@ -72,7 +77,7 @@ def configuration(root):
     raw=path.read_bytes()
     if len(raw)>1024: raise ValueError('Oversized Ollama configuration')
     value=json.loads(raw)
-    if type(value) is not dict or set(value)!={'model'}:
+    if type(value) is not dict or set(value) not in ({'model'},{'model','port'}):
         raise ValueError('Only an explicit local model may be configured')
     model=value['model']
     if type(model) is not str or not re.fullmatch(r'[A-Za-z0-9_.:/-]{1,128}',model):
@@ -82,4 +87,6 @@ def configuration(root):
         raise ValueError('Feedback key must be a plain unshared local file')
     secret=secret_path.read_bytes()
     if len(secret)!=32: raise ValueError('A separately provisioned 32-byte feedback key is required')
-    return lambda prompt:generate(model,prompt),secret
+    port=value.get('port',11434)
+    if type(port) is not int or port not in (11434,11435): raise ValueError('Only fixed local ports allowed')
+    return lambda prompt:generate(model,prompt,port=port,owner_directory=root),secret

@@ -137,3 +137,25 @@ overwritten. The producer stops at its deadline and leaves published unfinished
 work recoverable. Its finite run can be renewed deliberately after reviewing the
 receipt; no scheduler or boot installation is implicit. Feedback provenance is
 retained alongside each memory as `operator` or `verified-arithmetic-v1`.
+
+An owned-server alternative is now provided by `ora_owned_ollama_v1.OwnedOllama`.
+It launches the installed Ollama binary and its inherited runner tree suspended
+inside a dedicated Job on `127.0.0.1:11435`: 24 GiB combined committed RAM, 20%
+CPU hard rate, 900 aggregate user-CPU seconds, eight concurrent processes, a
+finite outside wall deadline, and kill-on-close. CPU-rate and ordinary limits
+must read back exactly before resume. The user's server on 11434 is untouched.
+
+GPU backends are disabled in the child environment and requests force `num_gpu=0`.
+Preparation and model checks require zero reported VRAM and at most one loaded
+model. These are CPU-only configuration and observation checks, not an OS GPU
+memory quota. Cloud use is disabled; only existing local models are used.
+
+Use `{"model":"gpt-oss:20b","port":11435}` in an owned session. Every generation
+authenticates the listener PID and exact process birth against the live owner's
+marker before sending a prompt; it never falls back to 11434. The context owns
+its model Job until all descendants have exited and output reaches EOF. Its
+server STOP is separate from the task service's operator STOP. Controls retain
+a bounded output prefix and native result for each of up to four finite epochs.
+This component does not install unattended startup or replace the user's shared
+server. A longer owned-server soak and model-death recovery must qualify it before
+continuous activation.

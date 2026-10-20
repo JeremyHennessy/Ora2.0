@@ -30,7 +30,8 @@ class PI(ctypes.Structure):
     _fields_ = [('process',wt.HANDLE),('thread',wt.HANDLE),('pid',wt.DWORD),('tid',wt.DWORD)]
 
 
-def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False, on_start=None):
+def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False, on_start=None,
+              environment=None, cpu_rate=None, on_sample=None):
     """Builder receives owned Job, GetTickCount64 and optional birth-read handle.
 
     Wall and STOP supervision are outside the child. Capture retains at most
@@ -60,6 +61,25 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
     start_time = time.monotonic()
     attrs = None
     try:
+        rate_readback=None
+        if cpu_rate is not None:
+            if type(cpu_rate) is not int or not 1<=cpu_rate<=10000:
+                raise ValueError('CPU hard rate must be 1..10000')
+            class RATE(ctypes.Structure): _fields_=[('flags',wt.DWORD),('rate',wt.DWORD)]
+            value=RATE(1|4,cpu_rate); observed=RATE()
+            check(job.k.SetInformationJobObject(job.handle,15,ctypes.byref(value),ctypes.sizeof(value)))
+            check(job.k.QueryInformationJobObject(job.handle,15,ctypes.byref(observed),ctypes.sizeof(observed),None))
+            if (observed.flags,observed.rate)!=(5,cpu_rate): raise RuntimeError('CPU rate readback differs')
+            rate_readback=dict(flags=observed.flags,rate=observed.rate)
+        env_block=None; creation_flags=0x80000|4|8
+        if environment is not None:
+            if type(environment) is not dict or any(type(key) is not str or type(value) is not str or
+                not key or '=' in key or '\0' in key+value for key,value in environment.items()):
+                raise ValueError('Invalid explicit environment')
+            merged={key.upper():value for key,value in os.environ.items()}
+            merged.update({key.upper():value for key,value in environment.items()})
+            env_block=ctypes.create_unicode_buffer('\0'.join(key+'='+merged[key] for key in sorted(merged))+'\0\0')
+            creation_flags|=0x400
         read_fd, write_fd = os.pipe(); descriptors.extend([read_fd, write_fd])
         null = open(os.devnull, 'rb'); files.append(null)
         inherited = [msvcrt.get_osfhandle(null.fileno()), msvcrt.get_osfhandle(write_fd)]
@@ -82,7 +102,7 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         startup.startup.flags=0x100; startup.startup.input=inherited[0]
         startup.startup.output=startup.startup.error=inherited[1]
         line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command))
-        check(k.CreateProcessW(None,line,None,None,True,0x80000|4|8,None,str(cwd),ctypes.byref(startup),ctypes.byref(pi)))
+        check(k.CreateProcessW(None,line,None,None,True,creation_flags,env_block,str(cwd),ctypes.byref(startup),ctypes.byref(pi)))
         times=[ctypes.c_ulonglong() for _ in range(4)]
         check(k.GetProcessTimes(pi.process,*[ctypes.byref(x) for x in times]))
         birth=times[0].value
@@ -110,16 +130,20 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         thread=threading.Thread(target=drain,daemon=True); threads.append(thread); thread.start()
         if on_start is not None:
             on_start(dict(pid=pi.pid,creation_filetime_decimal=str(birth),
-                          suspended=True,creation_flags=0x80000|4|8,usage=job.usage()))
+                          suspended=True,creation_flags=creation_flags,usage=job.usage(),cpu_rate=rate_readback))
         if k.ResumeThread(pi.thread)!=1:
             raise OSError('Cannot resume suspended child')
         reason='exit'
+        next_sample=0
         while True:
             wait=k.WaitForSingleObject(pi.process,20)
             if wait==0:
                 break
             if wait!=258:
                 raise OSError('Native wait failed')
+            if on_sample is not None and time.monotonic()>=next_sample:
+                on_sample(dict(usage=job.usage(),pids=job.pids()))
+                next_sample=time.monotonic()+.5
             if excess.is_set() or errors:
                 reason='capture-limit'; job.terminate(); break
             if stop_path is not None and Path(stop_path).exists():
@@ -144,7 +168,7 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         if not ended.is_set() or errors:
             raise RuntimeError('Capture closure unknown: '+repr(errors))
         return dict(command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,
-                    reason=reason,elapsed_seconds=time.monotonic()-start_time,usage=usage,
+                    reason=reason,elapsed_seconds=time.monotonic()-start_time,usage=usage,cpu_rate=rate_readback,
                     descendant_leak=leaked,post_close_processes_exited=True,capture_eof=True,
                     received_bytes=received,retained_bytes=len(capture),
                     output_limit_exceeded=excess.is_set(),output=bytes(capture).decode('utf8',errors='replace'))

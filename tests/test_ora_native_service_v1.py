@@ -27,6 +27,17 @@ class NativeService(unittest.TestCase):
         self.assertEqual(stopped['reason'],'wall-limit')
         self.assertTrue(stopped['post_close_processes_exited'])
 
+    def test_explicit_child_environment_and_cpu_hard_rate(self):
+        starts=[]
+        result=run_slice(lambda *unused:[sys.executable,'-B','-c','import os; print(os.environ["ORA_TEST_ENV"])'],ROOT,
+            Limits(memory_bytes=128*1024**2,cpu_seconds=2,processes=2,wall_seconds=5),
+            environment={'ORA_TEST_ENV':'private-child-environment'},cpu_rate=2000,on_start=starts.append)
+        self.assertEqual(result['exit_code'],0)
+        self.assertEqual(result['output'].strip(),'private-child-environment')
+        self.assertEqual(result['cpu_rate'],dict(flags=5,rate=2000))
+        self.assertEqual(starts[0]['cpu_rate'],result['cpu_rate'])
+        self.assertNotIn('ORA_TEST_ENV',os.environ)
+
     def test_descendant_cannot_survive_leader_exit(self):
         result=self.run_code('import subprocess,sys; subprocess.Popen([sys.executable,"-c","import time; time.sleep(30)"])')
         self.assertTrue(result['descendant_leak'])

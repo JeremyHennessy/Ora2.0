@@ -26,6 +26,8 @@ jobs:
         run: python -B tests/test_ora_task_store_v1.py
       - name: Real native service custody and bounded restart behavior
         run: python -B tests/test_ora_native_service_v1.py
+      - name: Owned model endpoint identity and CPU-only policy refusal
+        run: python -B tests/test_ora_owned_ollama_v1.py
       - name: Quarantine model guesses and authenticate operator corrections
         run: python -B tests/test_ora_trusted_feedback_v1.py
       - name: Mixed task sources cannot overwrite operator input or self-approve reviews
