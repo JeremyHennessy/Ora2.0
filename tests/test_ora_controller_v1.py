@@ -9,15 +9,40 @@ import sys
 import tempfile
 import threading
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch,MagicMock
 
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT))
-from experiments.ora_controller_v1 import resume_state,identity,atomic
+from experiments.ora_controller_v1 import resume_state,identity,atomic,controller
 from experiments.ora_owned_ollama_v1 import OwnedOllama
 from experiments.ora_native_slice_v1 import run_slice,Limits
 
 
 class Controller(unittest.TestCase):
+    def test_new_service_hold_ends_controller_without_model_renewal(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory); context=MagicMock(); model=context.__enter__.return_value
+            model.start={'pid':123,'creation_filetime_decimal':'1'}
+            def native(builder,*args,**kwargs):
+                command=builder()
+                failed='experiments.ora_supervised_service_v1' in command
+                if failed: atomic(root/'service-safety-hold.json',{'kind':'fixture'})
+                return dict(exit_code=1 if failed else 0,reason='exit',output='failed fixture' if failed else '{}',
+                    post_close_processes_exited=True,descendant_leak=False,output_limit_exceeded=False)
+            with patch('experiments.ora_controller_v1.OwnedOllama',return_value=context) as owned,patch(
+                'experiments.ora_controller_v1.boot_token',return_value='fixture'),patch(
+                'experiments.ora_controller_v1.run_slice',side_effect=native):
+                result=controller(root,seconds=160,epoch_seconds=10,practice=0)
+            self.assertEqual(result['reason'],'service-safety-hold')
+            self.assertEqual(result['failures'],1); self.assertEqual(owned.call_count,1)
+            self.assertTrue((root/'controller-service-result.json').exists())
+
+    def test_saved_service_hold_refuses_before_model_launch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory); (root/'service-safety-hold.json').write_text('{}')
+            with patch('experiments.ora_controller_v1.OwnedOllama') as model:
+                with self.assertRaisesRegex(RuntimeError,'Saved service safety hold'): controller(root)
+                model.assert_not_called()
+
     def test_monitor_sharing_violation_is_retried_with_fixed_bound(self):
         with tempfile.TemporaryDirectory() as directory:
             target=Path(directory)/'status.json'

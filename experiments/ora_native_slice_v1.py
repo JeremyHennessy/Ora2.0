@@ -155,13 +155,29 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         if k.WaitForSingleObject(pi.process,3000)!=0:
             raise RuntimeError('Child closure unknown')
         code=wt.DWORD(); check(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
-        # Kill lingering descendants even if the root exited successfully.
+        # A signaled root and a Job accounting query are distinct observations.
+        # Only when exactly one process EVER joined this Job, and the PID list
+        # contains no other process, can a nonzero count be the exited root.
+        # Give that narrow case 250ms to settle within the existing 3s closure
+        # budget. A Job that admitted any descendant gets no such grace.
+        close_deadline=time.monotonic()+3
         usage=job.usage()
+        initial_usage=usage; initial_pids=job.pids()
+        sole_root=usage['started_processes']==1 and all(pid==pi.pid for pid in initial_pids)
+        grace_reads=0
+        if usage['active_before_close'] and sole_root:
+            settle_deadline=min(close_deadline,time.monotonic()+.25)
+            while usage['active_before_close'] and time.monotonic()<settle_deadline:
+                time.sleep(.005); usage=job.usage(); grace_reads+=1
+                if usage['started_processes']!=1 or any(pid!=pi.pid for pid in job.pids()): break
+        exit_observation=dict(initial_usage=initial_usage,initial_pids=initial_pids,
+            single_root_grace_used=grace_reads>0,grace_reads=grace_reads,
+            before_termination_usage=usage,before_termination_pids=job.pids())
+        # Kill any unresolved accounting/descendant condition, even on exit0.
         leaked=usage['active_before_close']!=0
         if leaked:
             job.terminate()
-        deadline=time.monotonic()+3
-        while job.usage()['active_before_close'] and time.monotonic()<deadline:
+        while job.usage()['active_before_close'] and time.monotonic()<close_deadline:
             time.sleep(.01)
         usage=job.usage()
         if usage['active_before_close']:
@@ -172,6 +188,7 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         return dict(command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,
                     reason=reason,elapsed_seconds=time.monotonic()-start_time,usage=usage,cpu_rate=rate_readback,
                     descendant_leak=leaked,post_close_processes_exited=True,capture_eof=True,
+                    exit_observation=exit_observation,
                     received_bytes=received,retained_bytes=len(capture),
                     output_limit_exceeded=excess.is_set(),output=bytes(capture).decode('utf8',errors='replace'))
     finally:

@@ -97,6 +97,7 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
     with lock_path.open('a+b') as lock:
         lock.seek(0); msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
         if stop.exists(): return dict(reason='operator-stop',started=False)
+        if (root/'service-safety-hold.json').exists(): raise RuntimeError('Saved service safety hold; review before restart')
         for name in ('feedback.key','ollama.json','controller-state.json','controller-state.json.next','owned-ollama.json','owned-ollama.next'):
             path=root/name
             if path.exists() and (not path.is_file() or path.is_symlink() or path.stat().st_nlink!=1 or getattr(path.lstat(),'st_file_attributes',0)&0x400):
@@ -172,11 +173,11 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
                     if service_thread.is_alive(): raise RuntimeError('Service closure unknown')
                     if 'error' in service_result: raise RuntimeError(service_result['error'])
                     result=service_result['native']
+                    atomic(root/'controller-service-result.json',{k:v for k,v in result.items() if k!='output'})
                     if not result['post_close_processes_exited'] or result['descendant_leak'] or result['output_limit_exceeded']:
                         raise RuntimeError('Service custody/capture failed')
                     if not stop.exists() and (result['exit_code']!=0 or result['reason']!='exit'):
                         raise RuntimeError('Service epoch failed: '+result['output'][-1024:])
-                    atomic(root/'controller-service-result.json',{k:v for k,v in result.items() if k!='output'})
                 state['completed_epochs']+=1
                 state['source_offset']=(state['source_offset']+practice)%169
             except BaseException as error:
@@ -191,6 +192,7 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
             state['history']=(state['history']+[dict(epoch=epoch,error=failure,ended_utc=time.time())])[-8:]
             state.update(epoch=epoch+1,unclean=False,phase='between-epochs')
             atomic(state_path,state)
+            if (root/'service-safety-hold.json').exists(): reason='service-safety-hold'; break
             if reason=='interrupted': break
             if stop.exists(): reason='operator-stop'; break
             if failure:

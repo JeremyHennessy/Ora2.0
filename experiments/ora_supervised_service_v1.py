@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import time
 from experiments.ora_native_slice_v1 import run_slice, Limits
+from experiments.ora_controller_v1 import atomic
 
 
 def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2, max_attempts=64):
@@ -24,6 +25,8 @@ def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2, max_attem
     stop=root/'STOP'; rows=[]; failures=0; started=time.monotonic(); deadline=started+seconds
     with (root/'supervisor.lock').open('a+b') as owner:
         owner.seek(0); msvcrt.locking(owner.fileno(),msvcrt.LK_NBLCK,1)
+        if (root/'service-safety-hold.json').exists():
+            raise RuntimeError('Service safety hold requires operator review; no worker started')
         reason='time-bound'
         while time.monotonic()<deadline and len(rows)<max_attempts:
             if stop.exists(): reason='operator-stop'; break
@@ -33,18 +36,27 @@ def supervise(directory, seconds=60, slice_seconds=15, max_restarts=2, max_attem
                 temporary=root/'active-worker.next'
                 temporary.write_text(json.dumps(value,sort_keys=True))
                 temporary.replace(root/'active-worker.json')
-            result=run_slice(lambda *unused:[sys.executable,'-B','-m','experiments.ora_task_store_v1',
-                str(root),'--seconds',str(duration),'--max-tasks','1000'],
-                Path(__file__).resolve().parents[1],
-                Limits(memory_bytes=256*1024**2,cpu_seconds=10,processes=2,wall_seconds=duration+2),
-                stop_path=stop,on_start=publish_start)
-            if result['output_limit_exceeded'] or result['descendant_leak']:
-                raise RuntimeError('Unexpected service capture/process behavior; stop supervision')
+            try:
+                result=run_slice(lambda *unused:[sys.executable,'-B','-m','experiments.ora_task_store_v1',
+                    str(root),'--seconds',str(duration),'--max-tasks','1000'],
+                    Path(__file__).resolve().parents[1],
+                    Limits(memory_bytes=256*1024**2,cpu_seconds=10,processes=2,wall_seconds=duration+2),
+                    stop_path=stop,on_start=publish_start)
+            except BaseException as error:
+                atomic(root/'service-safety-hold.json',dict(kind='native-launch-or-closure-error',
+                    attempt=len(rows),error=(type(error).__name__+': '+str(error))[:2048]))
+                raise
             output=result.pop('output')
             result['output_sha256']=hashlib.sha256(output.encode()).hexdigest()
             # Two rotating bounded transport logs; receipt rows contain no task text.
             log=root/f'service-output-{len(rows)%2}.log'
             with log.open('wb') as stream: stream.write(output.encode())
+            atomic(root/'supervisor-last-attempt.json',dict(attempt=len(rows),native=result,log=log.name))
+            if result['output_limit_exceeded'] or result['descendant_leak']:
+                atomic(root/'service-safety-hold.json',dict(kind='worker-capture-or-process-guard',
+                    attempt=len(rows),native=result,log=log.name))
+                raise RuntimeError('Service safety hold: output_limit_exceeded='+str(result['output_limit_exceeded'])+
+                    ', descendant_leak='+str(result['descendant_leak'])+'; exact native receipt retained')
             rows.append(result)
             if result['exit_code']==0:
                 from experiments.ora_task_store_v1 import Store
