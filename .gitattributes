@@ -21,3 +21,7 @@ experiments/digital_budgeted_transfer_v1.py -text
 experiments/digital_context90_access_v2.py -text
 experiments/digital_context90_crossed_engine_v1.py -text
 experiments/digital_learning_restart_fixture_v1.py -text
+
+# Native preference retrieval: stable raw source and fixture bytes in CI.
+experiments/ora_memory_context_v1.py text eol=lf
+tests/test_ora_memory_context_v1.py text eol=lf
