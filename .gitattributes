@@ -3,3 +3,7 @@ data/digital-neutral-tail42-manifest.json -text
 
 # Frozen crossed contract must retain the original raw SHA across platforms.
 docs/CONTEXT90-CROSSED-CONTRACT-v1.md -text
+
+# Prospective fixed-reference source bytes; no legacy newline normalization.
+data/digital-budgeted-transfer-references-v1.json -text
+docs/BUDGETED-TRANSFER-REFERENCES-v1.md -text
