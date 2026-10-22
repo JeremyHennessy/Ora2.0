@@ -1,0 +1,18 @@
+name: Budgeted transfer source enrollment only
+on:
+  push:
+    branches: ['implementation/budgeted-transfer-enrollment-20261022']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  data-only-registration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify sealed source, dependency pins, refusal and statistical arithmetic
+        run: python -B -m unittest tests.test_budgeted_transfer_registration_v1 -v
