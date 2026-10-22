@@ -21,12 +21,12 @@ class NativeService(unittest.TestCase):
         def pids(job):
             if injected and not injected[-1].get('read'):
                 injected[-1]['read']=True; return [starts[0]['pid']]
-            return original_pids(job)
+            return [] if injected else original_pids(job)
         def usage(job):
             value=original(job)
-            if value['started_processes']>1 and value['active_before_close']==0 and not injected:
+            if value['started_processes']>1 and not injected:
                 injected.append({}); return dict(value,active_before_close=1)
-            return value
+            return dict(value,active_before_close=0) if injected else value
         with patch.object(Job,'usage',usage),patch.object(Job,'pids',pids):
             result=run_slice(lambda *unused:[sys.executable,'-B','-c',
                 'import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)'],ROOT,
