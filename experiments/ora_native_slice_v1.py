@@ -31,13 +31,14 @@ class PI(ctypes.Structure):
 
 
 def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False, on_start=None,
-              environment=None, cpu_rate=None, on_sample=None, stop_event=None):
+              environment=None, cpu_rate=None, on_sample=None, stop_event=None, stop_grace_seconds=0):
     """Builder receives owned Job, GetTickCount64 and optional birth-read handle.
 
     Wall and STOP supervision are outside the child. Capture retains at most
     1 MiB combined; excess terminates the Job. Output draining continues to EOF.
     """
     limits.validate()
+    if not 0<=stop_grace_seconds<=30: raise ValueError("STOP grace must be bounded to30 seconds")
     k = ctypes.WinDLL('kernel32', use_last_error=True)
     signatures = {
         'CreateProcessW': ([wt.LPCWSTR,wt.LPWSTR,ctypes.c_void_p,ctypes.c_void_p,wt.BOOL,wt.DWORD,ctypes.c_void_p,wt.LPCWSTR,ctypes.c_void_p,ctypes.POINTER(PI)],wt.BOOL),
@@ -135,6 +136,7 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
             raise OSError('Cannot resume suspended child')
         reason='exit'
         next_sample=0
+        stop_seen=None
         while True:
             wait=k.WaitForSingleObject(pi.process,20)
             if wait==0:
@@ -147,7 +149,9 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
             if excess.is_set() or errors:
                 reason='capture-limit'; job.terminate(); break
             if stop_path is not None and Path(stop_path).exists():
-                reason='operator-stop'; job.terminate(); break
+                if stop_seen is None: stop_seen=time.monotonic()
+                if time.monotonic()-stop_seen>=stop_grace_seconds:
+                    reason='operator-stop'; job.terminate(); break
             if stop_event is not None and stop_event.is_set():
                 reason='controller-stop'; job.terminate(); break
             if time.monotonic()-start_time>=limits.wall_seconds:

@@ -148,6 +148,7 @@ class OwnedOllama:
             if not self.ready.wait(5) or self.start is None: raise RuntimeError('Owned server did not start suspended: '+str(self.error))
             deadline=time.monotonic()+20
             while time.monotonic()<deadline:
+                if (self.root/'STOP').exists(): raise InterruptedError('Operator STOP during model startup')
                 if not self.thread.is_alive(): raise RuntimeError('Owned server exited at startup: '+str(self.error or self.result))
                 if listener_pid()==self.start['pid']:
                     try:
@@ -160,13 +161,31 @@ class OwnedOllama:
                     except (OSError,http.client.HTTPException): pass
                 time.sleep(.1)
             raise TimeoutError('Owned server readiness deadline')
-        except BaseException:
-            self.close(); raise
+        except BaseException as error:
+            self.record_error(error)
+            try: self.close()
+            except BaseException as closure:
+                raise BaseExceptionGroup('Owned startup and closure failed',[error,closure]) from None
+            raise
 
     def prepare(self):
         verify_owner(self.root)
-        value=request('/api/generate',dict(model='gpt-oss:20b',prompt='',stream=False,keep_alive='30s',
-            options=dict(num_ctx=2048,num_predict=1,num_gpu=0,num_thread=2)),timeout=120)
+        response={}
+        def prepare_request():
+            try:
+                response['value']=request('/api/generate',dict(model='gpt-oss:20b',prompt='',stream=False,keep_alive='30s',
+                    options=dict(num_ctx=2048,num_predict=1,num_gpu=0,num_thread=2)),timeout=120)
+            except BaseException as error: response['error']=error
+        pending=threading.Thread(target=prepare_request,daemon=True); pending.start()
+        while pending.is_alive():
+            if (self.root/'STOP').exists():
+                (self.path/'STOP').touch()
+                pending.join(8)
+                if pending.is_alive(): raise RuntimeError('Model preparation request closure unknown')
+                raise InterruptedError('Operator STOP during model preparation')
+            pending.join(.1)
+        if 'error' in response: raise response['error']
+        value=response['value']
         if value.get('done') is not True: raise RuntimeError('Owned model preparation incomplete')
         observed=self.check_model()
         if len(observed['models'])!=1: raise RuntimeError('Owned model did not remain prepared')
@@ -178,7 +197,7 @@ class OwnedOllama:
             raise ValueError('Plain model control slot required')
         self.path.mkdir(exist_ok=True)
         allowed={'policy.json','suspended-start.json','server.log','native-result.json','error.json','samples.json',
-                 'model-observation.json','STOP','server.log.next','native-result.next','previous-epoch.json','previous-epoch.json.next'}
+                 'model-observation.json','lifecycle-error.json','STOP','server.log.next','native-result.next','previous-epoch.json','previous-epoch.json.next'}
         leaves=list(self.path.iterdir())
         if not leaves: return
         for path in leaves:
@@ -229,4 +248,15 @@ class OwnedOllama:
         finally:
             if self.lock is not None: self.lock.close(); self.lock=None
 
-    def __exit__(self,*unused): self.close()
+    def record_error(self,error):
+        if not self.path.is_dir(): return
+        (self.path/'lifecycle-error.json').write_text(json.dumps(dict(
+            type=type(error).__name__,error=str(error)[:4096])),encoding='utf8')
+
+    def __exit__(self,kind,error,traceback):
+        if error is not None: self.record_error(error)
+        try: self.close()
+        except BaseException as closure:
+            if error is not None:
+                raise BaseExceptionGroup('Owned request and closure failed',[error,closure]) from None
+            raise

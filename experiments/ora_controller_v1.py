@@ -97,6 +97,7 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
     with lock_path.open('a+b') as lock:
         lock.seek(0); msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
         if stop.exists(): return dict(reason='operator-stop',started=False)
+        if (root/'controller-safety-hold.json').exists(): raise RuntimeError('Saved controller safety hold; review before restart')
         if (root/'service-safety-hold.json').exists(): raise RuntimeError('Saved service safety hold; review before restart')
         for name in ('feedback.key','ollama.json','controller-state.json','controller-state.json.next','owned-ollama.json','owned-ollama.next'):
             path=root/name
@@ -182,7 +183,10 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
                 state['source_offset']=(state['source_offset']+practice)%169
             except BaseException as error:
                 failure=(type(error).__name__+': '+str(error))[:2048]
-                state['failures']+=1
+                if stop.exists() and isinstance(error,InterruptedError):
+                    reason='operator-stop'
+                else:
+                    state['failures']+=1
                 if isinstance(error,KeyboardInterrupt): reason='interrupted'
             finally:
                 shutdown.set()
@@ -196,9 +200,8 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
             if reason=='interrupted': break
             if stop.exists(): reason='operator-stop'; break
             if failure:
-                if state['failures']>=3: reason='failure-budget'; break
-                until=min(state['deadline_utc'],time.time()+min(2**state['failures'],30))
-                while time.time()<until and not stop.exists(): time.sleep(.1)
+                atomic(root/'controller-safety-hold.json',dict(error=failure,epoch=epoch,failures=state['failures']))
+                reason='controller-safety-hold'; break
         if state['epoch']>=32: reason='epoch-bound'
         state.update(phase='stopped',reason=reason,unclean=False,ended_utc=time.time())
         atomic(state_path,state)

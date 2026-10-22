@@ -21,7 +21,9 @@ def publish(directory, build):
         except OSError as error: raise Busy('Another producer owns mailbox') from error
         if not (root/'memory.sqlite3').exists(): raise Busy('Service not ready')
         with closing(sqlite3.connect(root/'memory.sqlite3',timeout=.1)) as db:
-            last=db.execute('SELECT submitted FROM meta').fetchone()[0]
+            row=db.execute('SELECT submitted FROM meta').fetchone()
+            if row is None: raise Busy('Service cursor not initialized')
+            last=row[0]
         inbox=root/'inbox.json'
         if inbox.exists():
             with inbox.open('rb') as stream: previous=stream.read(65537)

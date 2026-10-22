@@ -92,12 +92,16 @@ def host(directory,continuous=False,windows=1):
                 if continuous: command.append('--renew-completed')
                 result=run_slice(lambda *unused:command,ROOT,
                     Limits(memory_bytes=32*1024**3,cpu_seconds=21600,processes=16,wall_seconds=seconds+15),
-                    stop_path=stop,on_start=lambda item:atomic(root/'host-active-controller.json',item))
+                    stop_path=stop,stop_grace_seconds=30,on_start=lambda item:atomic(root/'host-active-controller.json',item))
                 output=result.pop('output'); (root/f"host-output-{state['completed_windows']%2}.log").write_bytes(output.encode('utf8')[:1024**2])
                 atomic(root/'host-native-result.json',result)
                 if not result['post_close_processes_exited'] or result['descendant_leak'] or result['output_limit_exceeded'] or not result['capture_eof']:
                     raise RuntimeError('Host custody/capture failed')
-                if stop.exists(): state['reason']='operator-stop'; break
+                if stop.exists():
+                    terminal=read(root/'controller-state.json')
+                    if result['exit_code']!=0 or terminal.get('phase')!='stopped' or terminal.get('unclean') or terminal.get('reason')!='operator-stop':
+                        raise RuntimeError('Controller did not acknowledge cooperative STOP before forced closure')
+                    state['reason']='operator-stop'; break
                 if result['exit_code']!=0 or result['reason']!='exit': raise RuntimeError('Controller window failed')
                 terminal=read(root/'controller-state.json')
                 if terminal.get('phase')!='stopped' or terminal.get('reason')!='time-bound' or terminal.get('unclean'):
