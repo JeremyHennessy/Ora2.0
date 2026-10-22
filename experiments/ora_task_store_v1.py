@@ -102,11 +102,11 @@ class Store:
     def submit(self, sequence, kind, key, value=''):
         if type(sequence) is not int or not 0 < sequence < 2**63:
             raise ValueError('Positive signed 64-bit sequence required')
-        allowed=('recall','ask','approve') if self.generator is not None else ('remember','recall','forget')
+        allowed=('recall','ask','ask-isolated','approve') if self.generator is not None else ('remember','recall','forget')
         if kind not in allowed:
             raise ValueError('Task kind is not enabled in this trust mode')
         text(key, MAX_KEY)
-        if kind in ('remember','ask','approve'):
+        if kind in ('remember','ask','ask-isolated','approve'):
             text(value, MAX_TEXT)
         elif value != '':
             raise ValueError('This task has no value')
@@ -146,18 +146,20 @@ class Store:
             row = self.db.execute('SELECT id,kind,key,value,state FROM tasks WHERE id=?', (ident,)).fetchone()
             if row != (*task, 'running'):
                 raise ValueError('Task is not the current claimed task')
-            if kind=='ask':
+            if kind in ('ask','ask-isolated'):
                 if self.generator is None: raise ValueError('Pending model task requires model trust mode')
                 # Reuse only previously trusted memory; a key hit avoids generation.
-                remembered=self.db.execute('SELECT value FROM memories WHERE key=?',(key,)).fetchone()
+                remembered=self.db.execute('SELECT value FROM memories WHERE key=?',(key,)).fetchone() if kind=='ask' else None
                 if remembered:
                     result=remembered[0]
                 else:
-                    answer=self.generator(value); text(answer,MAX_TEXT)
+                    from experiments.ora_memory_context_v1 import context
+                    prompt,retrieved=context(self.db,value) if kind=='ask' else (value,[])
+                    answer=self.generator(prompt); text(answer,MAX_TEXT)
                     digest=hashlib.sha256(answer.encode('utf8')).hexdigest()
                     self.db.execute('INSERT OR REPLACE INTO proposals VALUES(?,?,?,?)',(key,answer,ident,digest))
                     self.db.execute('DELETE FROM proposals WHERE key IN (SELECT key FROM proposals ORDER BY task DESC LIMIT -1 OFFSET 16)')
-                    result=json.dumps(dict(trusted=False,proposal_sha256=digest,answer=answer),separators=(',',':'))
+                    result=json.dumps(dict(trusted=False,proposal_sha256=digest,answer=answer,retrieved_memories=retrieved),separators=(',',':'))
             elif kind=='approve':
                 from experiments.ora_ollama_feedback_v1 import verify
                 if self.generator is None: raise ValueError('Signed feedback mode required')
