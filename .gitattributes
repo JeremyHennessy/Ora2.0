@@ -7,3 +7,5 @@ docs/CONTEXT90-CROSSED-CONTRACT-v1.md -text
 # Prospective fixed-reference source bytes; no legacy newline normalization.
 data/digital-budgeted-transfer-references-v1.json -text
 docs/BUDGETED-TRANSFER-REFERENCES-v1.md -text
+
+data/digital-budgeted-transfer-enrollment-v1.json -text
