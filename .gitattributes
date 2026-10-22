@@ -9,3 +9,9 @@ data/digital-budgeted-transfer-references-v1.json -text
 docs/BUDGETED-TRANSFER-REFERENCES-v1.md -text
 
 data/digital-budgeted-transfer-enrollment-v1.json -text
+
+# Enrollment pins reviewed local raw bytes; do not translate these dependencies.
+experiments/digital_budgeted_transfer_replay_v1.py -text
+experiments/digital_budgeted_transfer_v1.py -text
+experiments/digital_context90_access_v2.py -text
+experiments/digital_context90_crossed_engine_v1.py -text

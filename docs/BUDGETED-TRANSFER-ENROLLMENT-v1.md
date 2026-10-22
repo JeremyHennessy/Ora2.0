@@ -19,3 +19,7 @@ Conditional opcode algebra gives formation51, endpoint56ticks and maximum whole 
 Enrollment, ancestry, causal roles and the prospective statistical contract are frozen. Primary remains **HELD**. The existing producer deliberately supports software fixtures only, and no primary launcher exists in this change. Before any candidate evaluation, require independent source-specific review, NEW-only qualification of the four new references, exact revised-source CI, and separately reviewed finite native custody/launcher/output/archive/owner execution registration. Generate and seal the fresh seed only after those gates. Do not run the candidate as an informal fixture to preview its result.
 
 Existing15 software/replay tests, constant-zero and witness checks are reused without rerunning. Historical Context90 results and scientific laws are unchanged. This checkout is separate from Ora's live continuous service; no runtime source, memory or task was modified.
+
+## Raw-byte publication correction
+
+The first enrollment CI failed because four dependencies were translated from reviewed local CRLF bytes to Git LF bytes. The sealed manifest and candidate remain unchanged. This isolated branch now explicitly preserves those reviewed raw dependency bytes with -text; only line endings change relative to the inherited Git blobs. Previous checkout,CI receipts and outcomes remain untouched. The data-only CI verifies raw identity, not renewed VM qualification. No candidate was executed to resolve this publication issue.
