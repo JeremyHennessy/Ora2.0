@@ -16,6 +16,45 @@ from experiments.process_limits import Job
 
 @unittest.skipUnless(os.name=='nt','Windows Job enforcement')
 class NativeService(unittest.TestCase):
+    def test_exited_root_after_waited_descendant_can_settle(self):
+        original=Job.usage; original_pids=Job.pids; injected=[]; starts=[]
+        def pids(job):
+            if injected and not injected[-1].get('read'):
+                injected[-1]['read']=True; return [starts[0]['pid']]
+            return original_pids(job)
+        def usage(job):
+            value=original(job)
+            if value['started_processes']>1 and value['active_before_close']==0 and not injected:
+                injected.append({}); return dict(value,active_before_close=1)
+            return value
+        with patch.object(Job,'usage',usage),patch.object(Job,'pids',pids):
+            result=run_slice(lambda *unused:[sys.executable,'-B','-c',
+                'import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)'],ROOT,
+                Limits(memory_bytes=128*1024**2,cpu_seconds=2,processes=3,wall_seconds=3),on_start=starts.append)
+        self.assertTrue(injected)
+        self.assertFalse(result['descendant_leak'])
+        self.assertTrue(result['exit_observation']['single_root_grace_used'])
+        self.assertTrue(result['post_close_processes_exited'])
+
+    def test_nested_accounting_with_missing_root_or_multiple_active_is_rejected(self):
+        for count in (1,2):
+            original=Job.usage; original_pids=Job.pids; injected=[]; starts=[]
+            def usage(job):
+                value=original(job)
+                if value['started_processes']>1 and value['active_before_close']==0 and not injected:
+                    injected.append(True); return dict(value,active_before_close=count)
+                return value
+            def pids(job):
+                if injected: return [] if count==1 else [starts[0]['pid']]
+                return original_pids(job)
+            with patch.object(Job,'usage',usage),patch.object(Job,'pids',pids):
+                result=run_slice(lambda *unused:[sys.executable,'-B','-c',
+                    'import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)'],ROOT,
+                    Limits(memory_bytes=128*1024**2,cpu_seconds=2,processes=3,wall_seconds=3),on_start=starts.append)
+            self.assertTrue(injected)
+            self.assertTrue(result['descendant_leak'])
+            self.assertFalse(result['exit_observation']['single_root_grace_used'])
+
     def test_accounting_that_never_settles_is_not_accepted(self):
         original=Job.usage
         def usage(job):

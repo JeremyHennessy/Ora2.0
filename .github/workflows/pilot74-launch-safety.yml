@@ -1,7 +1,7 @@
 name: PILOT74 new launcher failure and source checks
 on:
   push:
-    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022']
+    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022', 'implementation/remaining-root-accounting-20261022']
   workflow_dispatch:
 permissions:
   contents: read

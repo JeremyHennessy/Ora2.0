@@ -160,20 +160,22 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
             raise RuntimeError('Child closure unknown')
         code=wt.DWORD(); check(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
         # A signaled root and a Job accounting query are distinct observations.
-        # Only when exactly one process EVER joined this Job, and the PID list
-        # contains no other process, can a nonzero count be the exited root.
-        # Give that narrow case 250ms to settle within the existing 3s closure
-        # budget. A Job that admitted any descendant gets no such grace.
+        # A single remaining count can describe the signaled root even after
+        # earlier children exited. For such Jobs require the root PID itself
+        # to be listed; an empty list is ambiguous if descendants ever joined.
+        # Give only this root-accounting case 250ms inside the existing 3s
+        # closure budget. Any other PID or count remains a guard failure.
         close_deadline=time.monotonic()+3
         usage=job.usage()
         initial_usage=usage; initial_pids=job.pids()
-        sole_root=usage['started_processes']==1 and all(pid==pi.pid for pid in initial_pids)
+        sole_root=(usage['active_before_close']==1 and
+            (initial_pids==[pi.pid] or (usage['started_processes']==1 and not initial_pids)))
         grace_reads=0
         if usage['active_before_close'] and sole_root:
             settle_deadline=min(close_deadline,time.monotonic()+.25)
             while usage['active_before_close'] and time.monotonic()<settle_deadline:
                 time.sleep(.005); usage=job.usage(); grace_reads+=1
-                if usage['started_processes']!=1 or any(pid!=pi.pid for pid in job.pids()): break
+                if usage['active_before_close']>1 or any(pid!=pi.pid for pid in job.pids()): break
         exit_observation=dict(initial_usage=initial_usage,initial_pids=initial_pids,
             single_root_grace_used=grace_reads>0,grace_reads=grace_reads,
             before_termination_usage=usage,before_termination_pids=job.pids())
