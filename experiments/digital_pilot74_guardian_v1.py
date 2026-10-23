@@ -341,20 +341,22 @@ def launch_guardian(spec,expected):
         if initialized:cleanup.append(('attributes',lambda:k.DeleteProcThreadAttributeList(attrs)))
         if birth_read is not None:cleanup.append(('birth-read',lambda:os.close(birth_read)))
         if birth_write is not None:cleanup.append(('birth-write',lambda:os.close(birth_write)))
-        errors=[]
+        errors=[];cleanup_diagnostics_lost=False
         for name,close in cleanup:
             try:close()
-            except BaseException as error:errors.append(name+': '+repr(error))
-        if errors:
+            except BaseException as error:
+                try:errors.append(name+': '+repr(error))
+                except BaseException:cleanup_diagnostics_lost=True
+        if errors or cleanup_diagnostics_lost:
             if first_failure is not None:
-                failure_note(first_failure,'Native cleanup incomplete; closure UNKNOWN: ',errors)
+                failure_note(first_failure,'Native cleanup incomplete; closure UNKNOWN: ',dict(errors=errors,diagnostics_lost=cleanup_diagnostics_lost))
                 if failure_evidence is not None:
                     try:
-                        failure_evidence['cleanup_errors']=errors;attach_failure_evidence(first_failure,failure_evidence)
+                        failure_evidence['cleanup_errors']=errors;failure_evidence['cleanup_diagnostics_lost']=cleanup_diagnostics_lost;attach_failure_evidence(first_failure,failure_evidence)
                     except BaseException as diagnostic:failure_note(first_failure,'Cleanup diagnostic unavailable: ',diagnostic)
             else:
                 error=OSError('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
                 attach_failure_evidence(error,dict(schema='PILOT74-EXTERNAL-GUARDIAN-FAILURE-EVIDENCE-v1',registration_sha256=expected,
-                    command=command,first_exception=repr(error),phase='cleanup',cleanup_errors=errors,last_completed_observation=normal_result,
+                    command=command,first_exception=repr(error),phase='cleanup',cleanup_errors=errors,cleanup_diagnostics_lost=cleanup_diagnostics_lost,last_completed_observation=normal_result,
                     durable_retention_by_caller_required=True,closure_observed=False,publication_accepted=False,live_attachment=False))
                 raise error

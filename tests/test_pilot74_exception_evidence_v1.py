@@ -35,14 +35,19 @@ class Evidence(unittest.TestCase):
     @unittest.skipUnless(os.name=='nt','Windows stdlib handle setup;all kernel/process operations mocked')
     def test_diagnostic_note_failure_cannot_skip_termination(self):
         self.create_failure_case(True,True)
-    def create_failure_case(self,diagnostic_failure,note_failure=False):
+    @unittest.skipUnless(os.name=='nt','Windows stdlib handle setup;all kernel/process operations mocked')
+    def test_cleanup_error_repr_failure_cannot_skip_other_cleanup(self):
+        self.create_failure_case(False,False,True)
+    def create_failure_case(self,diagnostic_failure,note_failure=False,bad_cleanup_repr=False):
         class NoteFailure(RuntimeError):
             def add_note(self,value):raise MemoryError('synthetic note failure')
         error=(NoteFailure if note_failure else RuntimeError)('synthetic create failure');k=Mock();k.SetHandleInformation.return_value=1
         def attributes(*args):args[-1]._obj.value=128;return 1
         k.InitializeProcThreadAttributeList.side_effect=attributes;k.UpdateProcThreadAttribute.return_value=1
         k.GetTickCount64.return_value=123;k.CreateProcessW.side_effect=error
-        job=Mock();job.handle=12345;job.usage.return_value={'active_before_close':0};job.pids.return_value=[];job.close.side_effect=OSError('synthetic cleanup failure')
+        class BadRepr(OSError):
+            def __repr__(self):raise RuntimeError('synthetic repr failure')
+        job=Mock();job.handle=12345;job.usage.return_value={'active_before_close':0};job.pids.return_value=[];job.close.side_effect=(BadRepr if bad_cleanup_repr else OSError)('synthetic cleanup failure')
         r={'guardian':{'artifact':{'path':'synthetic.exe'}},'source_root':'synthetic'}
         observation=guardian.failure_observation
         with patch.object(guardian,'validate_host_registration',return_value=r),patch.object(guardian,'_kernel',return_value=k),patch('experiments.process_limits.Job',return_value=job),patch.object(guardian,'failure_observation',side_effect=RuntimeError('synthetic diagnostic failure') if diagnostic_failure else observation):
@@ -53,5 +58,7 @@ class Evidence(unittest.TestCase):
             if not note_failure:self.assertTrue(any('diagnostic unavailable' in n for n in error.__notes__))
             return
         e=error.guardian_failure_evidence
+        if bad_cleanup_repr:
+            self.assertTrue(e['cleanup_diagnostics_lost']);k.DeleteProcThreadAttributeList.assert_called_once();return
         self.assertEqual(e['before_termination']['phase'],'create');self.assertTrue(e['termination_requested']);self.assertFalse(e['after_termination']['closure_observed']);self.assertIn('synthetic cleanup failure',e['cleanup_errors'][0]);k.CreateProcessW.assert_called_once()
 if __name__=='__main__':unittest.main()
