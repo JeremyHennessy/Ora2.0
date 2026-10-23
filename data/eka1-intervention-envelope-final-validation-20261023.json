@@ -1,0 +1,22 @@
+{
+  "schema": "ORA-EKA1-INTERVENTION-ENVELOPE-OFFLINE-v1",
+  "utc": "2026-10-23T21:13:19.654951+00:00",
+  "targeted_tests_passed": 7,
+  "cell_value_combinations": 128,
+  "test_seconds": 0.009,
+  "fixtures": "INCOMPLETE_SYNTHETIC_JSON_NOT_WORLD_STATE",
+  "history_authenticated": false,
+  "nonlethality_qualified": false,
+  "pricing_qualified": false,
+  "causal_assay_qualified": false,
+  "execution_authorized": false,
+  "worlds_executed": 0,
+  "vm_steps": 0,
+  "source_sha256": {
+    "tools/eka1_intervention_envelope.py": "ad8f6822e9e2c3cdaee40d63adaac9e302c1f006782291f7a13530a2acf3873a",
+    "tests/test_eka1_intervention_envelope.py": "b70ab763bad0fc9ec2d5d50f9ff37b69d3808eafb2c86a2825a6601930eda0cc",
+    "docs/EKA-1-INTERVENTION-ENVELOPE-20261023.md": "8124055b1bd18aaf62cecb7b1e66671572ce9b29b69f7d33cefb36c44e7ccc55"
+  },
+  "correction": "Shared Python aliases normalized to independent JSON tree; collateral second-actor delta rejected",
+  "prior_validation": "data/eka1-intervention-envelope-validation-20261023.json"
+}
