@@ -34,6 +34,7 @@ It is not established that such a system would count as living or conscious. We 
 
 ## Start here
 
+- [Future knowledge library and cultural learning (planning only)](docs/DIGITAL-KNOWLEDGE-LIBRARY-ROADMAP-20261023.md)
 - [Founding research charter](docs/FOUNDING-CHARTER.md)
 - [Experiments and progression gates](docs/EXPERIMENT-PLAN.md)
 - [Dedicated computer / runtime design](docs/LOCAL-RUNTIME.md)
