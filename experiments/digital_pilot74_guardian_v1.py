@@ -231,17 +231,41 @@ def validate_host_registration(spec,expected):
     assert Path(r['python']['path']).resolve()==Path(sys.executable).resolve()==Path('D:/OraLab/tools/Python312/python.exe').resolve();physical.external(r['python'],16*MIB)
     return r
 
+def failure_observation(job,k,process,pid,birth,phase):
+    """Available same-handle facts only;no wait extension or closure inference."""
+    value=dict(phase=phase,pid=pid or None,creation_filetime_decimal=None if birth is None else str(birth),
+               usage=None,pids=None,process_wait=None,observation_errors=[])
+    for key,read in (('usage',lambda:job.usage()),('pids',lambda:job.pids())):
+        if job is not None:
+            try:value[key]=read()
+            except BaseException as error:value['observation_errors'].append(key+': '+repr(error))
+    if process:
+        try:value['process_wait']=int(k.WaitForSingleObject(process,0))
+        except BaseException as error:value['observation_errors'].append('process_wait: '+repr(error))
+    # UNKNOWN remains explicit even if termination was requested successfully.
+    usage=value['usage']
+    value['closure_observed']=bool(value['process_wait']==0 and type(usage) is dict and
+        type(usage.get('active_before_close')) is int and usage['active_before_close']==0 and value['pids']==[])
+    return value
+
+def attach_failure_evidence(error,evidence):
+    """Preserve original exception;caller must durably retain this transport."""
+    try:error.guardian_failure_evidence=copy.deepcopy(dict(evidence,exception_notes=list(getattr(error,'__notes__',[]))))
+    except BaseException as later:error.add_note('Guardian failure envelope unavailable: '+repr(later))
+
 def launch_guardian(spec,expected):
     """Trusted host boundary only. No task-file writes outside the root Job.
 
     No CLI invokes this; actual source/native review and separate registration
-    remain required. Caller must retain returned native birth/exit transport.
+    remain required. Caller must retain returned native birth/exit transport and
+    exception.guardian_failure_evidence on failure. This function is not a
+    durable caller,grant issuer or complete exceptional-custody qualification.
     """
     r=validate_host_registration(spec,expected)
     from experiments import process_limits as caps
     import msvcrt,subprocess
     k=_kernel();limits=caps.Limits(memory_bytes=2048*MIB,cpu_seconds=2400,processes=4,wall_seconds=3600)
-    job=None;birth_read=birth_write=None
+    job=None;birth_read=birth_write=None;birth=None;command=None;phase='setup';failure_evidence=None;normal_result=None
     class START(ctypes.Structure):_fields_=[('cb',wt.DWORD),('reserved',wt.LPWSTR),('desktop',wt.LPWSTR),('title',wt.LPWSTR),('x',wt.DWORD),('y',wt.DWORD),('xs',wt.DWORD),('ys',wt.DWORD),('xc',wt.DWORD),('yc',wt.DWORD),('fill',wt.DWORD),('flags',wt.DWORD),('show',wt.WORD),('reserved_n',wt.WORD),('reserved_ptr',ctypes.c_void_p),('input',wt.HANDLE),('output',wt.HANDLE),('error',wt.HANDLE)]
     class STARTEX(ctypes.Structure):_fields_=[('startup',START),('attributes',ctypes.c_void_p)]
     class PI(ctypes.Structure):_fields_=[('process',wt.HANDLE),('thread',wt.HANDLE),('pid',wt.DWORD),('tid',wt.DWORD)]
@@ -254,32 +278,43 @@ def launch_guardian(spec,expected):
         checked(k.UpdateProcThreadAttribute(attrs,0,0x2000D,jobs,ctypes.sizeof(jobs),None,None));checked(k.UpdateProcThreadAttribute(attrs,0,0x20002,handles,ctypes.sizeof(handles),None,None))
         t0=k.GetTickCount64();command=[r['guardian']['artifact']['path'],str(int(job.handle)),str(t0),spec['path'],str(spec['extent']),spec['sha256'],str(read_handle)]
         line=ctypes.create_unicode_buffer(subprocess.list2cmdline(command));start=STARTEX();start.startup.cb=ctypes.sizeof(start);start.attributes=ctypes.cast(attrs,ctypes.c_void_p)
-        checked(k.CreateProcessW(None,line,None,None,True,0x80000|0x4|0x8,None,r['source_root'],ctypes.byref(start),ctypes.byref(pi)))
+        phase='create';checked(k.CreateProcessW(None,line,None,None,True,0x80000|0x4|0x8,None,r['source_root'],ctypes.byref(start),ctypes.byref(pi)))
+        phase='birth-handoff'
         birth=_birth(k,pi.process);packet=struct.pack('<Q',birth)
         if os.write(birth_write,packet)!=len(packet):raise OSError('Partial external birth handoff; never retry')
         os.close(birth_write);birth_write=None
-        assert k.ResumeThread(pi.thread)==1
+        phase='resume';assert k.ResumeThread(pi.thread)==1
         # Retain the external Job handle until actual whole-tree closure.
         # A guardian exit alone cannot establish descendant closure, and an
         # exception must still be able to terminate the entire owned tree.
         # Actual guardian native watchdog owns the absolute deadline. Host wait
         # has no task writer, bootstrap or extra experiment role.
+        phase='wait'
         if k.WaitForSingleObject(pi.process,max(0,int(t0+3600000-k.GetTickCount64())))!=0:raise RuntimeError('Guardian closure UNKNOWN; do not claim complete evidence')
+        phase='exit-readback'
         code=wt.DWORD();checked(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
         usage=job.usage()
         if usage['active_before_close']!=0:raise RuntimeError('Guardian exited with active descendants; whole-tree closure UNKNOWN')
-        return dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,usage=usage,post_close_processes_exited=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
+        normal_result=dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,usage=usage,post_close_processes_exited=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
+        return normal_result
     except BaseException as first:
         first_failure=first
+        failure_evidence=dict(schema='PILOT74-EXTERNAL-GUARDIAN-FAILURE-EVIDENCE-v1',registration_sha256=expected,command=command,
+            first_exception=repr(first),before_termination=failure_observation(job,k,pi.process,pi.pid,birth,phase),
+            termination_requested=False,termination_error=None,after_termination=None,cleanup_errors=[],
+            durable_retention_by_caller_required=True,publication_accepted=False,live_attachment=False)
         # Exact owned Job, not just G: W/C may still hold inherited handles.
         # The original failure remains authoritative if termination also fails.
         try:
-            if job is not None:job.terminate()
+            if job is not None:job.terminate();failure_evidence['termination_requested']=True
         except BaseException as later:
+            failure_evidence['termination_error']=repr(later)
             first.add_note('Whole Job termination failed; closure UNKNOWN: '+repr(later))
-            if pi.process and k.WaitForSingleObject(pi.process,0)==258:
-                try:checked(k.TerminateProcess(pi.process,125))
-                except BaseException as fallback:first.add_note('Exact guardian fallback failed: '+repr(fallback))
+            try:
+                if pi.process and k.WaitForSingleObject(pi.process,0)==258:checked(k.TerminateProcess(pi.process,125))
+            except BaseException as fallback:first.add_note('Exact guardian fallback failed: '+repr(fallback))
+        failure_evidence['after_termination']=failure_observation(job,k,pi.process,pi.pid,birth,phase)
+        attach_failure_evidence(first,failure_evidence)
         # No extended deadline, retry or asserted closure after an exception.
         raise
     finally:
@@ -295,5 +330,12 @@ def launch_guardian(spec,expected):
             try:close()
             except BaseException as error:errors.append(name+': '+repr(error))
         if errors:
-            if first_failure is not None:first_failure.add_note('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
-            else:raise OSError('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
+            if first_failure is not None:
+                first_failure.add_note('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
+                failure_evidence['cleanup_errors']=errors;attach_failure_evidence(first_failure,failure_evidence)
+            else:
+                error=OSError('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
+                attach_failure_evidence(error,dict(schema='PILOT74-EXTERNAL-GUARDIAN-FAILURE-EVIDENCE-v1',registration_sha256=expected,
+                    command=command,first_exception=repr(error),phase='cleanup',cleanup_errors=errors,last_completed_observation=normal_result,
+                    durable_retention_by_caller_required=True,closure_observed=False,publication_accepted=False,live_attachment=False))
+                raise error
