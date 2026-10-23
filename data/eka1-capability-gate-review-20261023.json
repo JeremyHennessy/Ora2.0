@@ -1,0 +1,70 @@
+{
+  "execution_decision": "NO_GO",
+  "external_model_calls": 0,
+  "gates": {
+    "independent_scientific_and_execution_admission": "BLOCKED_NOT_ADMITTED",
+    "mutation_exposure_reproduction_selection_opportunity": "UNKNOWN",
+    "native_resource_custody_owner": "BLOCKED_UNQUALIFIED",
+    "new_functional_question_not_pressure71_rerun": "INDEPENDENT_REVIEW_REQUIRED",
+    "nonlethal_paid_causal_information_assay": "BLOCKED_UNIMPLEMENTED",
+    "ordinary_founder_and_unchanged_discovery_source": "SOURCE_CHECK_REQUIRED",
+    "resource_and_lifetime_affordability": "UNKNOWN",
+    "sampling_power_reserved_conditions": "BLOCKED_UNASSIGNED"
+  },
+  "new_seed_queries": 0,
+  "new_vm_steps": 0,
+  "new_worlds": 0,
+  "plan_sha256": "bcd09dbd2fd8acc90e1ba35a724df22eb2155c958a58f22f3f5ccb73c121b5ca",
+  "preparation_decision": "PROPOSAL_ONLY",
+  "resource_bounds": {
+    "birth_bound_formula": "D +45B <=12+20*(64+16*floor(D/64)); full-horizon D=4096 only, no attainable-birth or survival claim.",
+    "completed_birth_energy_ceiling_at_full_4096_dispatch_horizon": 392,
+    "constructor_energy_credited_as_organism_input": 0,
+    "discovery_global_dispatch_ceiling": 4096,
+    "hypothetical_mutation_supply": [
+      {
+        "dose": 1,
+        "expected_COPY_mutated_information_opcode_words_ceiling": 5.2851612903225815,
+        "expected_mutated_words_ceiling": 122.88,
+        "unchanged_complete27word_copy_probability_under_independence": 0.7623427143471038,
+        "uniform_hash_assumption_only": true,
+        "useful_paid_origin_lower_bound": 0,
+        "warning": "COPY mutation only, not all SELFWRITE-generated behaviour. Hypothetical hash uniformity is not viable variants, sampling power or new seed odds."
+      },
+      {
+        "dose": 8,
+        "expected_COPY_mutated_information_opcode_words_ceiling": 42.28129032258065,
+        "expected_mutated_words_ceiling": 983.04,
+        "unchanged_complete27word_copy_probability_under_independence": 0.10526193234946243,
+        "uniform_hash_assumption_only": true,
+        "useful_paid_origin_lower_bound": 0,
+        "warning": "COPY mutation only, not all SELFWRITE-generated behaviour. Hypothetical hash uniformity is not viable variants, sampling power or new seed odds."
+      }
+    ],
+    "maximum_organism_accessible_energy": 21772,
+    "maximum_renewal_offers": 1024,
+    "mutation_opportunity_qualified": false,
+    "own_turn_expiry": 256,
+    "paid_copy_word_ceiling": 12288,
+    "proposed_dispatch_ceiling_including_all_diagnostic_roles": 61440,
+    "proposed_scientific_starts_per_discovery_world": 15,
+    "resource_affordability_qualified": false,
+    "role_bound_limit": "Schematic only if future admitted diagnostic roles obey the same horizon; law-changing controls remain unqualified. N, native wall/CPU/RAM/log/storage and total assay costs unassigned.",
+    "simultaneous_mature_material_ceiling": 11
+  },
+  "schema": "ORA-EKA1-CAPABILITY-PREPARATION-REVIEW-v1",
+  "scientific_execution_ready": false,
+  "source_mechanism_check": "Exact unchanged Windows discovery source and ordinary founder verified; no World instantiated.",
+  "source_pins": {
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "substrate_feasibility": "UNKNOWN",
+  "validation": {
+    "draft_valid": true,
+    "scientific_execution_ready": false,
+    "warning": "Valid metadata does not implement or qualify a causal assay or admission.",
+    "worlds_authorized": 0
+  }
+}
