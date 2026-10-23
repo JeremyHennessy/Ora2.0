@@ -133,7 +133,8 @@
     "source_artifact_bytes": 916918,
     "template_archive_bound_bytes": 1318373766,
     "ci": 40000940757,
-    "ci_status": "pending",
-    "actual_registration_preflight_and_independent_grant": false
+    "ci_status": "success",
+    "actual_registration_preflight_and_independent_grant": false,
+    "ci_tests_passed": 18
   }
 }
