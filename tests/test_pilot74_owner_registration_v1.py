@@ -65,5 +65,16 @@ class Registration(unittest.TestCase):
             with self.assertRaises((AssertionError,KeyError)):
                 r.verify_nested(path,{'native':{'command':[],'exit_code':1}},['python','-B','probe','case','reg','sha','dir','ordinary'])
 
+    @unittest.skipUnless(sys.platform=='win32','Windows-only process policy;Popen mocked')
+    def test_probe_child_explicitly_avoids_console_without_shell_or_inheritance(self):
+        from unittest.mock import patch
+        from experiments import digital_pilot74_owner_probe_v1 as probe
+        with patch.object(probe.subprocess,'Popen') as create:
+            probe.spawn_wait_child(['synthetic.exe'])
+        args=create.call_args.kwargs
+        self.assertEqual(args['creationflags'],probe.subprocess.DETACHED_PROCESS)
+        self.assertTrue(args['close_fds'])
+        self.assertFalse(args.get('shell',False))
+
 
 if __name__=='__main__':unittest.main()

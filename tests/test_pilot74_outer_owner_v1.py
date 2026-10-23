@@ -50,7 +50,7 @@ class Outer(unittest.TestCase):
         return k, job
 
     def invoke(self, k, job, admission=lambda r: True):
-        with patch.object(o.win, 'kernel', return_value=k), patch.object(o.win, 'birth', return_value=555), patch.object(o.caps, 'Job', return_value=job):
+        with patch.object(o.win, 'kernel', return_value=k), patch.object(o.win, 'birth', return_value=555), patch.object(o.caps, 'Job', return_value=job), patch.object(o,'observe_job_live',return_value={'synthetic':True}):
             return o.launch(REQUEST, admission)
 
     def test_refusal_creates_no_job_or_process(self):

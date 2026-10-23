@@ -14,6 +14,13 @@ def save(path,value,cap=65536):
         stream.flush();os.fsync(stream.fileno())
 
 
+def spawn_wait_child(command):
+    # Same console policy as the enclosing Win32 boundary. This does not prove
+    # the identity/cause of the extra PID in the preserved failed v1 attempt.
+    return subprocess.Popen(command,close_fds=True,creationflags=subprocess.DETACHED_PROCESS,
+        stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+
+
 def main():
     # Direct-file invocation: bind source BEFORE importing the checked package.
     mode,path,expected,*extra=sys.argv[1:]
@@ -70,7 +77,7 @@ def main():
         return 79
     elif name=='caller-crash-live-child':
         command=[sys.executable,'-B',str(Path(__file__)),'leaf-wait',path,expected,str(case_root),name]
-        child=subprocess.Popen(command,close_fds=True,stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+        child=spawn_wait_child(command)
         k=kernel();creation=birth(k,int(child._handle))
         if k.WaitForSingleObject(int(child._handle),0)!=258:raise RuntimeError('Intervention child not live')
         own=k.OpenProcess(0x1000|0x100000,False,os.getpid())

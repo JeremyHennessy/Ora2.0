@@ -12,6 +12,7 @@ from pathlib import Path
 from experiments import process_limits as caps
 from experiments import digital_pilot74_guardian_boundary_qualifier_v2 as win
 from experiments.digital_pilot74_guardian_v1 import failure_observation, attach_failure_evidence, failure_note
+from experiments.digital_pilot74_guardian_preresume_v1 import observe_job_live
 
 MIB = 1024**2
 
@@ -121,6 +122,11 @@ def launch(request, admission_check):
                 original_deadline_ms=deadline, publication_accepted=False, live_attachment=False)
         except BaseException as diagnostic:
             failure_note(error, 'Outer diagnostic unavailable: ', diagnostic)
+        if evidence is not None and job is not None:
+            try:
+                evidence['owned_identity_snapshot_before_termination'] = observe_job_live(job,k and pi.process,pi.pid,birth)
+            except BaseException as diagnostic:
+                failure_note(error, 'Outer owned-image snapshot unavailable: ', diagnostic)
         if job is not None:
             try:
                 job.terminate()

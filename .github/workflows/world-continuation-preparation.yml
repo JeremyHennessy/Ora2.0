@@ -1,7 +1,7 @@
 name: World continuation preparation only
 on:
   push:
-    branches: ['implementation/bounded-world-continuation-prep-20261023', 'implementation/pilot74-exception-evidence-20261023', 'implementation/pilot74-durable-supervisor-20261023', 'implementation/pilot74-native-owner-integration-20261023']
+    branches: ['implementation/bounded-world-continuation-prep-20261023', 'implementation/pilot74-exception-evidence-20261023', 'implementation/pilot74-durable-supervisor-20261023', 'implementation/pilot74-native-owner-integration-20261023', 'implementation/pilot74-probe-console-isolation-20261023']
   workflow_dispatch:
 permissions:
   contents: read
