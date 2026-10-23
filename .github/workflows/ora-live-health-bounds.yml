@@ -1,0 +1,20 @@
+name: Ora live health receipt bounds
+on:
+  push:
+    branches: ['implementation/ora-live-health-bounds-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic-health-bounds:
+    runs-on: windows-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic existing Store bounds;no live store or model
+        run: python -B tests/test_ora_live_task_bounds_v1.py
+      - name: Qualify inherited source bytes and new read-only checker source
+        run: python -B tests/check_ora_live_health_source_v1.py

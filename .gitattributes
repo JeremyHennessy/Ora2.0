@@ -1,33 +1,4 @@
-# Preserve the frozen manifest byte identity across Windows checkouts.
-data/digital-neutral-tail42-manifest.json -text
-
-# Exact reviewed guardian bytes; prospective raw Git/export/CI identity.
-experiments/digital_pilot74_guardian_preresume_v1.py -text
-experiments/digital_pilot74_job_events_v1.py -text
-
-# Changed native launcher and new VM-free qualification fixture: exact raw bytes.
-experiments/native/pilot74_guardian_v1.c -text
-experiments/native/pilot74_guardian_spawn_fixture_v1.c -text
-
-# New root launch review: retain identical Python bytes in checkout and export.
-experiments/digital_pilot74_guardian_v1.py text eol=lf
-tests/test_digital_pilot74_launch_contract.py text eol=lf
-experiments/native/pilot74_guardian_failure_fixture_v1.c -text
-
-# Audited learning modules: preserve supplied source bytes in integration branch.
-experiments/digital_budgeted_transfer_referee_v1.py -text
-experiments/digital_budgeted_transfer_replay_v1.py -text
-experiments/digital_budgeted_transfer_v1.py -text
-experiments/digital_context90_access_v2.py -text
-experiments/digital_context90_crossed_engine_v1.py -text
-experiments/digital_learning_restart_fixture_v1.py -text
-
-# Native preference retrieval: stable raw source and fixture bytes in CI.
-experiments/ora_memory_context_v1.py text eol=lf
-tests/test_ora_memory_context_v1.py text eol=lf
-experiments/ora_project_knowledge_v1.py text eol=lf
-tests/test_ora_project_knowledge_v1.py text eol=lf
-
-# Exact project-work pilot source bytes.
-experiments/ora_project_work_pilot_v1.py text eol=lf
-tests/test_ora_project_work_pilot_v1.py text eol=lf
+experiments/ora_live_task_bounds_v1.py -text
+experiments/ora_runtime_health_review_v8.py -text
+tests/test_ora_live_task_bounds_v1.py -text
+tests/check_ora_live_health_source_v1.py -text
