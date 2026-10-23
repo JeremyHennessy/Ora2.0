@@ -76,5 +76,24 @@ class Registration(unittest.TestCase):
         self.assertTrue(args['close_fds'])
         self.assertFalse(args.get('shell',False))
 
+    def crash_fixture(self):
+        command=['D:/synthetic/python.exe','-B','probe.py','case','reg','sha','dir','caller-crash-live-child']
+        child={'pid':222,'creation_filetime_decimal':'333','caller':{'pid':111,'creation_filetime_decimal':'444'},
+            'child_wait_before_crash':258,'expected_caller_exit':78,'command':[command[0],'-B','probe.py','leaf-wait',*command[4:]]}
+        evidence={'phase':'wait','caller_exit_code':78,'command':command,'after_termination':{'closure_observed':True},
+            'before_termination':{'process_wait':0,'pid':111,'creation_filetime_decimal':'444','pids':[222],
+                'usage':{'started_processes':2,'active_before_close':1}},
+            'owned_identity_snapshot_before_termination':{'listed_pids':[222],'errors':[],
+                'handles':[{'actual_pid':222,'membership':True,'birth':'333','image':command[0],'wait_result':258,'errors':[]}]}}
+        return evidence,child,command
+
+    def test_exact_live_child_identity_accepted_in_synthetic_fixture(self):
+        evidence,child,command=self.crash_fixture();r.verify_crash(evidence,child,command,command[0])
+
+    def test_wrong_child_birth_image_membership_or_wait_is_refused(self):
+        for key,value in [('birth','wrong'),('image','D:/wrong.exe'),('membership',False),('wait_result',0)]:
+            evidence,child,command=self.crash_fixture();evidence['owned_identity_snapshot_before_termination']['handles'][0][key]=value
+            with self.assertRaises(AssertionError):r.verify_crash(evidence,child,command,command[0])
+
 
 if __name__=='__main__':unittest.main()
