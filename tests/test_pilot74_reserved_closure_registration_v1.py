@@ -48,6 +48,14 @@ class Deadline(unittest.TestCase):
    with patch.object(r,'PRESERVED_LOCK',old):
     self.assertEqual(r.qualification_lock(root,root/'qualification-owner.lock'),root/'qualification-owner.lock')
    self.assertEqual(old.read_bytes(),b'original failed evidence');self.assertFalse(root.exists())
+ def test_changed_preserved_lock_rejected_at_postflight(self):
+  import tempfile
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as d:
+   old=Path(d)/'failed.lock';old.write_bytes(b'original');spec=r.pin(old);st=old.stat();spec.update(device=st.st_dev,inode=st.st_ino)
+   with patch.object(r,'PRESERVED_LOCK',old):
+    r.preserved_failure_check(spec);old.write_bytes(b'changed')
+    with self.assertRaises(AssertionError):r.preserved_failure_check(spec)
  def test_modules_parse(self):
   for name in ['digital_pilot74_reserved_closure_probe_v1.py','digital_pilot74_reserved_closure_registration_v1.py']:
    ast.parse((Path(r.__file__).parent/name).read_bytes())

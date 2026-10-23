@@ -78,6 +78,12 @@ def verify_deadline(evidence,intervention,command):
     assert intervention['expected_intervention']=='original-owner-soft-stop-1750-hard-deadline-2000' and intervention['wait_seconds']==60
 
 
+def preserved_failure_check(preserved):
+    assert Path(preserved['path'])==PRESERVED_LOCK
+    assert plain(PRESERVED_LOCK)==(preserved['device'],preserved['inode'])
+    read(preserved)
+
+
 def qualification_lock(root,path):
     root=Path(root);path=Path(path)
     if path!=root/'qualification-owner.lock' or path==PRESERVED_LOCK:
@@ -101,9 +107,7 @@ def main():
     sources();assert plan['native_process_cap']==1 and plan['controller_storage_cap']==8*1024**2
     LOCK=qualification_lock(root,plan['qualification_lock_path'])
     preserved=plan['preserved_failure_lock']
-    assert Path(preserved['path'])==PRESERVED_LOCK
-    assert plain(PRESERVED_LOCK)==(preserved['device'],preserved['inode'])
-    read(preserved)
+    preserved_failure_check(preserved)
     root.mkdir()
     k=win.kernel();own=k.OpenProcess(0x1000|0x100000,False,os.getpid());win.checked(own)
     fd=None;origin=None;original=None;first=None;closed=True
@@ -115,8 +119,7 @@ def main():
         body=enc(dict(schema='PILOT74-QUALIFICATION-OWNER-LOCK-v1',**owner));assert os.write(fd,body)==len(body);os.fsync(fd)
         info=os.fstat(fd);original=(info.st_dev,info.st_ino);origin=dict(**pin(LOCK),device=info.st_dev,inode=info.st_ino)
         def owner_check():
-            assert plain(PRESERVED_LOCK)==(preserved['device'],preserved['inode'])
-            read(preserved)
+            preserved_failure_check(preserved)
             assert plain(LOCK)==original and read({q:origin[q] for q in ('path','extent','sha256')})==body
             assert k.WaitForSingleObject(own,0)==258 and win.birth(k,own)==creation
         owner_check()
@@ -158,6 +161,7 @@ def main():
                 raise AssertionError('Deadline caller returned instead of timing out')
             write(case_root/'owner-result.json',result);results.append(dict(case=name,result=result))
             assert sum(p.stat().st_size for p in root.rglob('*') if p.is_file())<=plan['controller_storage_cap']
+        owner_check();sources();preserved_failure_check(preserved)
         write(root/'result.json',dict(collected=True,cases=results,worlds=0,production_resource_fit=False,natural_one_hour_deadline_tested=False,production_admission=False))
         print('NEW-only native probe panel collected;production admission remains false',flush=True)
     except BaseException as error:
