@@ -84,8 +84,9 @@ def renew_completed(state,now):
     return state
 
 
-# Service native watchdog5 + controller monitor grace6 + join8 + model close8
-# plus bounded 3-second model observation. All remain inside existing deadlines.
+# Guard band for the normal service/native/monitor/model-close tail.
+# Not a hard bound on OS scheduling, socket streaming or filesystem operations.
+# Existing native deadlines and failed-closure/early-exit checks remain fatal.
 EPOCH_CLOSE_RESERVE=30.0
 
 

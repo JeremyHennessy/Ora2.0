@@ -2,7 +2,7 @@
   "experiments/ora_task_store_v1.py": "4c265beae1dc440f00955b0afa7259c87da9592e5a2f7502ebb6a7febcc2f790",
   "experiments/ora_ollama_feedback_v1.py": "8366f450d27c62b9c3f54a1fa6842b53433a1f01ce9b76d0e73e4a88b1a31054",
   "experiments/ora_owned_ollama_v1.py": "a445ccce01149402b9cf975016e15f76b7ddf4ba3f7595c8aa8f02c45a562dc7",
-  "experiments/ora_controller_v1.py": "832b04c31830fb71078751bb0b9b55df84ab9d26781883bca931c1a0ba2ceae4",
+  "experiments/ora_controller_v1.py": "620abeee7c666d381ad475d0b71ff90a7af581436f0bd74a0b3f8bfd44b798f0",
   "experiments/ora_native_slice_v1.py": "aa055927ce0f51889527ffc0087f928354f6cea5525f8d3d261f64aaeaeb763a",
   "experiments/process_limits.py": "c02ff5aed1269ce7165581c8d98d2e9835af46c7938b6fd01664d73f4292ae07",
   "experiments/ora_memory_context_v1.py": "99df8bd2c6dfe44b413b1867e3ad4e11c806bed59e56e0900e9fb9032ffe12e7",
