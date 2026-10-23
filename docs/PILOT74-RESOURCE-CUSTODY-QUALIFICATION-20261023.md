@@ -1,6 +1,11 @@
 # Prospective whole-production resource and caller qualification
 
-Status: PREPARED, NOT ADMITTED, NOT EXECUTED. This does not replace the
+Status: FULL PRODUCTION QUALIFICATION PREPARED, NOT ADMITTED, NOT EXECUTED.
+
+October23 reconciliation: a fresh one-process reserved-closure native probe
+passed at1765ms inside its unchanged2000ms hard budget. Its exact scope and
+remaining production gates are recorded below; historical failed probes remain
+failed. This is not full-workload resource/recovery qualification. This does not replace the
 five PILOT74 gates or create a registration, operator lock or expiring grant.
 The assistant runtime, retention measurement and project-work pilot are separate.
 
@@ -61,14 +66,13 @@ not an additional allowance. Registration and existing caller files must fit
 the remaining 6 MiB. Count actual paths, headers, exports, retained failure
 prefixes and caller receipts; no double reservation or unbounded traceback/log.
 
-The external caller is now an evidence writer outside the native root Job.
-Its allocations, CPU, open handles and blocking filesystem operations before
-and after the native wait are NOT confined by that Job. The former no-external-
-writer premise no longer applies. A separately reviewed enforcing whole-union
-boundary is still required within the unchanged total ceilings; no extra
-post-timeout writing window is granted. If hard termination prevents a terminal
-receipt, STARTED is UNKNOWN, not a complete archive. The current API alone is
-not a bounded whole-system launch supervisor and must not be admitted as one.
+The selected enclosing design contains the durable caller with G+W+serial C
+inside the same four-slot Job. The original trusted owner remains a fifth
+physical process outside that Job, restricted to handle-only supervision.
+Whole-production aggregate CPU, memory, nesting, filesystem blocking and natural
+one-hour deadline remain unqualified. There is no extra post-timeout writing
+window. If hard termination prevents complete terminal evidence, STARTED is
+UNKNOWN and available partial files must be preserved, never promoted to PASS.
 
 The prospective `digital_pilot74_outer_owner_v1.launch` API prepares that
 enclosing boundary: suspended atomic Job assignment, no inherited owner handles,
@@ -79,11 +83,13 @@ outside the Job, with handle-only supervision and no task-file writes. This is
 not a machine-wide four-process guarantee. Existing bootstrap-based run helpers
 add a fifth contained process and must not be used for this topology.
 
-The enclosing API has only mocked tests so far. It is not connected to a launch
-CLI, actual original-owner registration or admitted native workload. A reviewed
-exact source-bound caller entrypoint and authority integration remain required.
-Native proof must cover nesting, outer aggregate memory/CPU, original-handle
-closure and hard-stop behavior; no such proof follows from mocked Win32 calls.
+The enclosing boundary now has scoped native evidence, not only mocked tests:
+corrected-child v2 covered a narrow child case; reserved-closure v1 covered one
+soft1750/hard2000ms no-World process with complete closure at1765ms. The original
+short-deadline v1 failed and remains sealed. These results do not establish the
+26-role workload, natural3600s deadline, full nesting/heap or production recovery.
+Qualification-only native/worker dispatch, exact rebuilt artifact and independent
+pre-execution authority integration remain required before the full attempt.
 
 ## Durable caller and failure panel
 
@@ -101,14 +107,14 @@ before execution. Never reuse historical failure fixtures as fresh evidence.
 The corresponding exact role count and per-case budgets require review; this
 document is not a generic permission to execute arbitrary failure injections.
 
-The outside caller must survive the enclosing Job watchdog and retain the
-terminal transport. Root exit alone is not descendant closure. Termination
+The contained caller may be terminated by the enclosing watchdog. Missing
+terminal transport is UNKNOWN; it cannot be repaired by an outside writer. Root exit alone is not descendant closure. Termination
 requested is not closure. Missing query, partial slot, unknown PID/birth or
 unavailable evidence is FAILED/UNKNOWN, never a pass. Save all partial files
 without cleanup, replacement, retry, new lifetime or deadline extension.
 
-Unit tests currently use mocked launch/Win32 operations and temporary files.
-They do not test native watchdog behavior, native caller custody or full heap.
+Mocked/temporary-file tests and the scoped native probes do not qualify full
+production watchdog behavior, all-role custody, natural deadline or full heap.
 File fsync/readback is not a power-loss, reboot or off-drive recovery claim.
 External close failures remain available in `Attempt.cleanup_errors`; they
 cannot be durably appended by rewriting a sealed terminal receipt. An actual
@@ -126,3 +132,26 @@ Only after the five exact full-scope gates, original-owner registration and
 finite recovery qualification all pass may supervised world attachment proceed.
 No unattended world, mutation, novel scientific admission, learned algorithm or
 evolution claim follows from these engineering checks.
+
+## Exact remaining gate order — independent review, October23
+
+1. **Qualification authority HELD:** add a distinct reviewed qualification-only
+   admission/worker/native route. Existing production checks in
+   `digital_pilot74_finite_controller_v2.registration`, guardian validation and
+   native registration dispatch must continue requiring all five production
+   PASS gates. No manufactured reviews or generic command/module allowance.
+2. **Exact candidate HELD:** rebuild the changed native artifact; seal complete
+   Python/C/binary/export union, 26-role wire/storage sizing and exact-head CI.
+3. **Original-owner custody HELD:** fresh qualification-specific lock, actual
+   original PID/birth, expiring exact grant and one-shot claim. Do not remove,
+   reuse or adopt the old failed `state/operator.lock`.
+4. **Preflight HELD:** independent review of that exact candidate and unchanged
+   26 roles, two genesis,15 hydrations,34816 VM steps under2GiB/2400userCPU/
+   3600wallseconds/four-contained-process ceilings. This is not zero-World work.
+5. **Actual full qualification UNSTARTED:** one finite attempt only after gates
+   above. Preserve every raw native record, intentional crash outcome, archive,
+   restore, compatibility and closure receipt; no reduced workload or retry.
+6. **Production admission HELD:** independent raw-evidence decisions for
+   interface, custody, union_failure, source_fit and whole_source_ci. A scoped
+   probe or successful CI alone cannot satisfy all five. Only then review the
+   supervised launch; continuous scientific world remains off.
