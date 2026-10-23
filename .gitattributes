@@ -29,3 +29,6 @@ tests/test_ora_memory_context_v1.py text eol=lf
 # Accounting-settlement repair: preserve exact candidate bytes.
 experiments/ora_native_slice_v1.py text eol=lf
 tests/test_ora_native_service_v1.py text eol=lf
+
+experiments/ora_controller_v1.py -text
+tests/test_ora_window_close_budget_v1.py -text

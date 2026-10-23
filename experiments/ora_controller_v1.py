@@ -84,6 +84,21 @@ def renew_completed(state,now):
     return state
 
 
+# Service native watchdog5 + controller monitor grace6 + join8 + model close8
+# plus bounded 3-second model observation. All remain inside existing deadlines.
+EPOCH_CLOSE_RESERVE=30.0
+
+
+def service_duration(epoch_seconds,window_remaining,model_remaining):
+    values=(epoch_seconds,window_remaining,model_remaining)
+    if any(isinstance(x,bool) or not isinstance(x,(int,float)) or not math.isfinite(x) for x in values):
+        raise ValueError('Finite numeric epoch budgets required')
+    duration=min(epoch_seconds,window_remaining-EPOCH_CLOSE_RESERVE,model_remaining-EPOCH_CLOSE_RESERVE)
+    if duration<1:
+        raise TimeoutError('Preparation exhausted service and closure budget; no work admitted')
+    return duration
+
+
 def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,renew=False):
     if not math.isfinite(seconds) or not 5<=seconds<=7200 or not 5<=epoch_seconds<=600 or seconds/epoch_seconds>28:
         raise ValueError('Finite <=2h contract, <=600s epochs and <=28 planned epochs required')
@@ -140,11 +155,16 @@ def controller(directory,seconds=7200,epoch_seconds=300,files=(),practice=2,rene
             atomic(state_path,state)
             shutdown=threading.Event(); service_thread=None; service_result={}; failure=None
             try:
-                with OwnedOllama(root,epoch,seconds=min(900,remaining)) as model:
+                model_seconds=min(900,remaining)
+                model_deadline=time.monotonic()+model_seconds
+                with OwnedOllama(root,epoch,seconds=model_seconds) as model:
                     model.prepare()
-                    duration=min(epoch_seconds,max(1,state['deadline_utc']-time.time()))
+                    duration=service_duration(epoch_seconds,
+                        min(state['deadline_utc']-time.time(),monotonic_deadline-time.monotonic()),
+                        model_deadline-time.monotonic())
                     epoch_end=time.monotonic()+duration
-                    state.update(phase='service-running',model_owner=model.start)
+                    state.update(phase='service-running',model_owner=model.start,
+                        service_seconds=duration,closure_reserve_seconds=EPOCH_CLOSE_RESERVE)
                     atomic(state_path,state)
                     def service():
                         try:
