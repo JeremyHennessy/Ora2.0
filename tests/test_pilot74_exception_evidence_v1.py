@@ -32,8 +32,13 @@ class Evidence(unittest.TestCase):
     @unittest.skipUnless(os.name=='nt','Windows stdlib handle setup;all kernel/process operations mocked')
     def test_diagnostic_and_cleanup_failure_cannot_skip_termination_or_replace_first(self):
         self.create_failure_case(True)
-    def create_failure_case(self,diagnostic_failure):
-        error=RuntimeError('synthetic create failure');k=Mock();k.SetHandleInformation.return_value=1
+    @unittest.skipUnless(os.name=='nt','Windows stdlib handle setup;all kernel/process operations mocked')
+    def test_diagnostic_note_failure_cannot_skip_termination(self):
+        self.create_failure_case(True,True)
+    def create_failure_case(self,diagnostic_failure,note_failure=False):
+        class NoteFailure(RuntimeError):
+            def add_note(self,value):raise MemoryError('synthetic note failure')
+        error=(NoteFailure if note_failure else RuntimeError)('synthetic create failure');k=Mock();k.SetHandleInformation.return_value=1
         def attributes(*args):args[-1]._obj.value=128;return 1
         k.InitializeProcThreadAttributeList.side_effect=attributes;k.UpdateProcThreadAttribute.return_value=1
         k.GetTickCount64.return_value=123;k.CreateProcessW.side_effect=error
@@ -44,7 +49,9 @@ class Evidence(unittest.TestCase):
             with self.assertRaises(RuntimeError) as raised:guardian.launch_guardian({'path':'synthetic.json','extent':1,'sha256':'f'*64},'f'*64)
         self.assertIs(raised.exception,error);job.terminate.assert_called_once();k.CreateProcessW.assert_called_once()
         if diagnostic_failure:
-            self.assertFalse(hasattr(error,'guardian_failure_evidence'));self.assertTrue(any('diagnostic unavailable' in n for n in error.__notes__));return
+            self.assertFalse(hasattr(error,'guardian_failure_evidence'))
+            if not note_failure:self.assertTrue(any('diagnostic unavailable' in n for n in error.__notes__))
+            return
         e=error.guardian_failure_evidence
         self.assertEqual(e['before_termination']['phase'],'create');self.assertTrue(e['termination_requested']);self.assertFalse(e['after_termination']['closure_observed']);self.assertIn('synthetic cleanup failure',e['cleanup_errors'][0]);k.CreateProcessW.assert_called_once()
 if __name__=='__main__':unittest.main()

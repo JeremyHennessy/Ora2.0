@@ -320,7 +320,9 @@ def launch_guardian(spec,expected):
                 job.terminate()
                 if failure_evidence is not None:failure_evidence['termination_requested']=True
         except BaseException as later:
-            if failure_evidence is not None:failure_evidence['termination_error']=repr(later)
+            if failure_evidence is not None:
+                try:failure_evidence['termination_error']=repr(later)
+                except BaseException as diagnostic:failure_note(first,'Termination diagnostic unavailable: ',diagnostic)
             failure_note(first,'Whole Job termination failed; closure UNKNOWN: ',later)
             try:
                 if pi.process and k.WaitForSingleObject(pi.process,0)==258:checked(k.TerminateProcess(pi.process,125))
@@ -347,7 +349,9 @@ def launch_guardian(spec,expected):
             if first_failure is not None:
                 failure_note(first_failure,'Native cleanup incomplete; closure UNKNOWN: ',errors)
                 if failure_evidence is not None:
-                    failure_evidence['cleanup_errors']=errors;attach_failure_evidence(first_failure,failure_evidence)
+                    try:
+                        failure_evidence['cleanup_errors']=errors;attach_failure_evidence(first_failure,failure_evidence)
+                    except BaseException as diagnostic:failure_note(first_failure,'Cleanup diagnostic unavailable: ',diagnostic)
             else:
                 error=OSError('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
                 attach_failure_evidence(error,dict(schema='PILOT74-EXTERNAL-GUARDIAN-FAILURE-EVIDENCE-v1',registration_sha256=expected,
