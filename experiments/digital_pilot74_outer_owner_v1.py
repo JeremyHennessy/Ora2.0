@@ -39,6 +39,8 @@ def launch(request, admission_check):
     birth = None
     result = None
     caller_exit_code = None
+    wait_result = None
+    observed_wait_tick = None
     first = None
     phase = 'admission'
     evidence = None
@@ -93,7 +95,9 @@ def launch(request, admission_check):
         if k.ResumeThread(pi.thread) != 1:
             raise OSError('Caller suspended resume failed')
         remaining = max(0, deadline - int(k.GetTickCount64()))
-        if k.WaitForSingleObject(pi.process, remaining) != 0:
+        wait_result = int(k.WaitForSingleObject(pi.process, remaining))
+        observed_wait_tick = int(k.GetTickCount64())
+        if wait_result != 0:
             raise TimeoutError('Outer absolute deadline/unknown wait; never extend')
         code = wt.DWORD()
         win.checked(k.GetExitCodeProcess(pi.process, ctypes.byref(code)))
@@ -119,7 +123,10 @@ def launch(request, admission_check):
                 command=request.get('command'), caller_exit_code=caller_exit_code,
                 before_termination=failure_observation(job, k, pi.process, pi.pid, birth, phase),
                 termination_requested=False, after_termination=None, closure_observed=False,
-                original_deadline_ms=deadline, publication_accepted=False, live_attachment=False)
+                original_deadline_ms=deadline, started_tick_ms=started, wall_limit_ms=wall_ms,
+                raw_wait_result=wait_result, observed_wait_tick_ms=observed_wait_tick,
+                elapsed_at_wait_ms=None if observed_wait_tick is None else observed_wait_tick-started,
+                publication_accepted=False, live_attachment=False)
         except BaseException as diagnostic:
             failure_note(error, 'Outer diagnostic unavailable: ', diagnostic)
         if evidence is not None and job is not None:

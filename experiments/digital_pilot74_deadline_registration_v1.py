@@ -53,6 +53,10 @@ def observed_closed(evidence):
 
 def verify_deadline(evidence,intervention,command):
     assert observed_closed(evidence) and evidence['phase']=='wait'
+    assert evidence['raw_wait_result']==258 and evidence['wall_limit_ms']==2000
+    assert evidence['original_deadline_ms']==evidence['started_tick_ms']+2000
+    assert evidence['observed_wait_tick_ms']>=evidence['original_deadline_ms']
+    assert evidence['elapsed_at_wait_ms']==evidence['observed_wait_tick_ms']-evidence['started_tick_ms']>=2000
     assert evidence['caller_exit_code'] is None and evidence['command']==command
     before=evidence['before_termination'];after=evidence['after_termination']
     assert before['pid']==intervention['pid'] and before['process_wait']==258
@@ -130,7 +134,6 @@ def main():
             else:
                 closed=result['closure_observed']
                 raise AssertionError('Deadline caller returned instead of timing out')
-                assert result['usage']['started_processes']==(4 if name=='ordinary' else 2)
             write(case_root/'owner-result.json',result);results.append(dict(case=name,result=result))
             assert sum(p.stat().st_size for p in root.rglob('*') if p.is_file())<=plan['controller_storage_cap']
         write(root/'result.json',dict(collected=True,cases=results,worlds=0,production_resource_fit=False,natural_one_hour_deadline_tested=False,production_admission=False))

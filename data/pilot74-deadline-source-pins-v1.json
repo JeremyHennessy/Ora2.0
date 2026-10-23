@@ -27,7 +27,7 @@
   "experiments/digital_pilot74_lifecycle_diagnostic_v1.py": "8e880a2d74eb004b9a03b8a932742348da0397a49a1d4836a673436ca80b4452",
   "experiments/digital_pilot74_loader.py": "4df1f018607f8d9e143e7b3cd851997b394810d699526775f032fcbc093f8801",
   "experiments/digital_pilot74_native_observed_v2.py": "0de4dd830264deb95f13e15ee425529fe69a2204e3a0635a0ee569caa3be8e70",
-  "experiments/digital_pilot74_outer_owner_v1.py": "3a40d068566ae43c67476931053dcba9525dc9625ba2ae803443e1941205fd6d",
+  "experiments/digital_pilot74_outer_owner_v1.py": "651209ae9950f77de1d09606d393d1e61bc47d97f93c9c8b1222c3c53601c4af",
   "experiments/digital_pilot74_outer_supervisor_v2.py": "fa637f7b3b5e2ce0b9008f81273ec47892345fd3261098a888ae543669187547",
   "experiments/digital_pilot74_output_capture_v2.py": "681563ade7e16019cbcad0514f17df543b1d428243c7986cfb32e1cc769be4aa",
   "experiments/digital_pilot74_owner_probe_v1.py": "c8194569e2278f12e7b9c3bafb7059c59d413bbbae27f99fb6ce33b3d7fb7739",
@@ -58,6 +58,6 @@
   "experiments/evidence_write_grant68.py": "7e89c92887f678ef531f987882d90f59986d410efab6585a2b4c71bccd7b39f0",
   "experiments/native/pilot74_guardian_v1.c": "4998acc48914f7f5d872c29c8e32ad224369c927cbf45aa5e8e2e6582069ddea",
   "experiments/process_limits.py": "c7f2d236dd7d3d3f9083d54c2a60a3ebf2319ef3d876cb9b654f09495b62660a",
-  "experiments/digital_pilot74_deadline_registration_v1.py": "01807b8852dfb41a8fa85edcacea49865b3c643e96cd672fff1fb6ea19998e43",
+  "experiments/digital_pilot74_deadline_registration_v1.py": "9e1c26c515a3ffb09614ec13fdc7bbce058227ea15759fab1271f9f514fbb04b",
   "experiments/digital_pilot74_deadline_probe_v1.py": "ff6181fc437f62719f255ba303a0bba26ccc35a14660d777bb368d21a4218967"
 }
