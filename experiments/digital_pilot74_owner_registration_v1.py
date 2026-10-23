@@ -45,6 +45,37 @@ def validate_grant(grant,registration,reg,now):
     assert now+60*10**9<=grant['expires_monotonic_ns']<=grant['issued_monotonic_ns']+300*10**9
 
 
+def observed_closed(evidence):
+    if type(evidence) is not dict:return False
+    after=evidence.get('after_termination')
+    return type(after) is dict and after.get('closure_observed') is True
+
+
+def verify_crash(evidence,intervention,command,python):
+    assert observed_closed(evidence) and evidence['phase']=='wait'
+    assert evidence['caller_exit_code']==78 and evidence['command']==command
+    before=evidence['before_termination'];child=intervention
+    assert before['process_wait']==0 and before['pid']==child['caller']['pid']
+    assert before['creation_filetime_decimal']==child['caller']['creation_filetime_decimal']
+    assert before['usage']['started_processes']==2 and before['pids']==[child['pid']]
+    assert before['usage']['active_before_close']==1
+    assert child['child_wait_before_crash']==258 and child['expected_caller_exit']==78
+    assert type(child['pid']) is int and child['pid']>0 and child['pid']!=child['caller']['pid']
+    assert child['creation_filetime_decimal'].isdecimal() and int(child['creation_filetime_decimal'])>0
+    assert child['command']==[python,'-B',command[2],'leaf-wait',*command[4:]]
+
+
+def verify_nested(case_root,terminal,command):
+    observations=[terminal['native'],json.loads((case_root/'level-2.json').read_bytes()),json.loads((case_root/'level-1.json').read_bytes())]
+    for depth,n in zip([2,1,0],observations):
+        expected=[command[0],'-B',command[2],'level',*command[4:],str(depth)]
+        assert n['command']==expected and n['exit_code']==0 and n['closure_observed'] is True
+        assert n['usage']['started_processes']==depth+1 and n['usage']['active_before_close']==0 and n['pids']==[]
+    leaf=json.loads((case_root/'level-0.json').read_bytes())
+    assert leaf['leaf'] is True and leaf['pid']==observations[-1]['pid'] and leaf['creation_filetime_decimal']==observations[-1]['creation_filetime_decimal']
+    assert len({n['pid'] for n in observations})==3
+
+
 def main():
     # Plan pin and exact source are data prerequisites, not self-issued reviews.
     plan_path,expected=sys.argv[1:];raw=Path(plan_path).read_bytes();assert len(raw)<=131072 and sha(raw)==expected
@@ -95,15 +126,26 @@ def main():
             except BaseException as error:
                 evidence=getattr(error,'guardian_failure_evidence',None)
                 write(case_root/'owner-error.json',dict(diagnostic=diagnostic(error),native=evidence))
-                closed=bool(evidence and evidence.get('after_termination',{}).get('closure_observed'))
+                closed=observed_closed(evidence)
                 if name!='caller-crash-live-child' or not closed:raise
+                intervention=json.loads((case_root/'child-before-crash.json').read_bytes())
+                verify_crash(evidence,intervention,command,sys.executable)
                 result=dict(expected_caller_failure=True,native=evidence)
             else:
                 closed=result['closure_observed']
                 assert result['exit_code']==(79 if name=='terminal-write-refusal' else 0)
+                assert result['usage']['started_processes']==(4 if name=='ordinary' else 2)
             write(case_root/'owner-result.json',result);results.append(dict(case=name,result=result))
-            if name=='ordinary':assert read_slot(case_root/'durable/terminal.slot')['status']=='RETURNED'
+            if name=='ordinary':
+                terminal=read_slot(case_root/'durable/terminal.slot');assert terminal['status']=='RETURNED'
+                verify_nested(case_root,terminal,command)
             if name=='terminal-write-refusal':
+                refusal=json.loads((case_root/'write-refusal.json').read_bytes());n=refusal['native']
+                assert refusal['intervention']=='closed-terminal-handle-after-nested-closure' and refusal['no_retry'] is True
+                assert n['exit_code']==0 and n['closure_observed'] is True and n['usage']['started_processes']==1
+                assert n['command']==[command[0],'-B',command[2],'level',*command[4:],'0']
+                leaf=json.loads((case_root/'level-0.json').read_bytes())
+                assert leaf['pid']==n['pid'] and leaf['creation_filetime_decimal']==n['creation_filetime_decimal']
                 assert read_slot(case_root/'durable/started.slot')['status']=='STARTED'
                 try:read_slot(case_root/'durable/terminal.slot')
                 except ValueError:pass

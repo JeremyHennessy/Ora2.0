@@ -48,5 +48,22 @@ class Registration(unittest.TestCase):
             with patch.object(outer.win,'kernel',return_value=k):
                 with self.assertRaises(ValueError):outer.launch({'wall_ms':value},lambda request:True)
 
+    def test_explicit_missing_terminal_observation_is_unknown(self):
+        self.assertFalse(r.observed_closed(None))
+        self.assertFalse(r.observed_closed({'after_termination':None}))
+        self.assertFalse(r.observed_closed({'after_termination':{'closure_observed':False}}))
+
+    def test_unspecified_shutdown_is_not_the_expected_crash(self):
+        evidence={'phase':'wait','caller_exit_code':1,'command':['synthetic'],
+                  'after_termination':{'closure_observed':True}}
+        with self.assertRaises(AssertionError):r.verify_crash(evidence,{},['synthetic'],'synthetic')
+
+    def test_nonzero_nested_exit_rejected_even_if_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)
+            (path/'level-2.json').write_text('{}');(path/'level-1.json').write_text('{}')
+            with self.assertRaises((AssertionError,KeyError)):
+                r.verify_nested(path,{'native':{'command':[],'exit_code':1}},['python','-B','probe','case','reg','sha','dir','ordinary'])
+
 
 if __name__=='__main__':unittest.main()

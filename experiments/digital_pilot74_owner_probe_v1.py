@@ -31,11 +31,19 @@ def main():
     if name not in reg['cases'] or case_root!=Path(reg['root'])/name:raise ValueError('Unregistered probe case')
     def nested(depth):
         command=[sys.executable,'-B',str(Path(__file__)), 'level',path,expected,str(case_root),name,str(depth)]
-        return outer.launch(dict(command=command,cwd=str(root),wall_ms=20000),lambda request:request['command']==command)
+        result=outer.launch(dict(command=command,cwd=str(root),wall_ms=20000),lambda request:request['command']==command)
+        if (result['exit_code']!=0 or not result['closure_observed'] or result['usage']['started_processes']!=depth+1):
+            raise RuntimeError('Nested level did not complete expected exact topology')
+        return result
     if mode=='level':
         depth=int(extra[2])
         if not 0<=depth<=2:raise ValueError('Finite topology only')
-        value=nested(depth-1) if depth else dict(leaf=True,pid=os.getpid())
+        if depth:value=nested(depth-1)
+        else:
+            k=kernel();own=k.OpenProcess(0x1000|0x100000,False,os.getpid())
+            if not own:raise OSError('Leaf original identity unavailable')
+            try:value=dict(leaf=True,pid=os.getpid(),creation_filetime_decimal=str(birth(k,own)))
+            finally:k.CloseHandle(own)
         save(case_root/('level-'+str(depth)+'.json'),value)
         return
     if mode=='leaf-wait':
@@ -56,7 +64,7 @@ def main():
             attempt.handles['terminal'][1].close() # one sealed deterministic intervention
             try:attempt.write('terminal',dict(status='RETURNED',native=result))
             except (ValueError,OSError) as first:
-                save(case_root/'write-refusal.json',dict(diagnostic=diagnostic(first),intervention='closed-terminal-handle-after-nested-closure',no_retry=True))
+                save(case_root/'write-refusal.json',dict(diagnostic=diagnostic(first),native=result,intervention='closed-terminal-handle-after-nested-closure',no_retry=True))
             else:raise AssertionError('Expected terminal write refusal absent')
         finally:attempt.close()
         return 79
@@ -64,7 +72,12 @@ def main():
         command=[sys.executable,'-B',str(Path(__file__)),'leaf-wait',path,expected,str(case_root),name]
         child=subprocess.Popen(command,close_fds=True,stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
         k=kernel();creation=birth(k,int(child._handle))
-        save(case_root/'child-before-crash.json',dict(pid=child.pid,creation_filetime_decimal=str(creation),command=command,expected_caller_exit=78))
+        if k.WaitForSingleObject(int(child._handle),0)!=258:raise RuntimeError('Intervention child not live')
+        own=k.OpenProcess(0x1000|0x100000,False,os.getpid())
+        if not own:raise OSError('Caller original identity unavailable')
+        try:caller=dict(pid=os.getpid(),creation_filetime_decimal=str(birth(k,own)))
+        finally:k.CloseHandle(own)
+        save(case_root/'child-before-crash.json',dict(pid=child.pid,creation_filetime_decimal=str(creation),command=command,caller=caller,child_wait_before_crash=258,expected_caller_exit=78))
         os._exit(78) # deliberately bypass Python cleanup; outer Job owns child
     else:raise ValueError('Unknown sealed case')
     return 0

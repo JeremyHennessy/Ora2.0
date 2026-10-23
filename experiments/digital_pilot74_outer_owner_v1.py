@@ -37,6 +37,7 @@ def launch(request, admission_check):
     attrs = None
     birth = None
     result = None
+    caller_exit_code = None
     first = None
     phase = 'admission'
     evidence = None
@@ -95,6 +96,7 @@ def launch(request, admission_check):
             raise TimeoutError('Outer absolute deadline/unknown wait; never extend')
         code = wt.DWORD()
         win.checked(k.GetExitCodeProcess(pi.process, ctypes.byref(code)))
+        caller_exit_code = int(code.value)
         usage = job.usage()
         pids = job.pids()
         if usage['active_before_close'] != 0 or pids != []:
@@ -102,7 +104,7 @@ def launch(request, admission_check):
         elapsed = int(k.GetTickCount64()) - started
         if elapsed > wall_ms:
             raise TimeoutError('Outer elapsed ceiling exceeded')
-        result = dict(schema='PILOT74-OUTER-OWNER-OBSERVATION-v1', pid=pi.pid,
+        result = dict(schema='PILOT74-OUTER-OWNER-OBSERVATION-v1', command=command, pid=pi.pid,
             creation_filetime_decimal=str(birth), image=image.value, exit_code=int(code.value),
             elapsed_ms=elapsed, wall_limit_ms=wall_ms, usage=usage, pids=pids, process_handle_signaled=True,
             closure_observed=True, owner_outside_job=True, physical_process_count_can_be_five=True,
@@ -113,6 +115,7 @@ def launch(request, admission_check):
         # Evidence collection can fail; it must never prevent owned termination.
         try:
             evidence = dict(schema='PILOT74-OUTER-OWNER-FAILURE-v1', phase=phase,
+                command=request.get('command'), caller_exit_code=caller_exit_code,
                 before_termination=failure_observation(job, k, pi.process, pi.pid, birth, phase),
                 termination_requested=False, after_termination=None, closure_observed=False,
                 original_deadline_ms=deadline, publication_accepted=False, live_attachment=False)
