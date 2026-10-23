@@ -86,6 +86,28 @@ evolution, learned algorithm or new scientific stage follows from this preparati
 
 ## Prepared tool
 
+### New-only source and wire evidence
+
+The resumed review found an existing exact-head CI pass for the old engine
+revision, but its emitted raw hashes differ from the retained Git/export pack
+for50 runtime modules. That old CI remains a pass in its original scope; it is
+not an exact-byte pass for this pack. The prospective candidate now uses `-text`
+for the55 Git members and checks every checkout byte against both its declared
+hash and its Git blob, parsing54 Python modules without importing any World.
+The external guardian binary remains separately pinned and outside Git/CI;
+source syntax and byte identity cannot qualify its native behavior.
+
+A new data-only wire fixture exercised the retained `preflight_all` path for
+all26 roles with56 source members, synthetic empty files and explicitly invented
+owner metadata. It issued no actual registration or grant, launched no process,
+and executed no VM step. Its maximum request/grant/role frame sizes were
+16049/1852/2199 bytes. The complete preflight with80 native slots was26180 bytes
+and the READY frame14796 bytes, both below65536. Raw reservations1283810988 and
+archive bound1318172662 remain below1342177280 bytes each. These are specific
+wire/storage sizing observations, not peak-heap/CPU, all-path memory, original
+ownership or full resource qualification. Actual prelaunch preflight is still
+required for its own future source, registration and physical paths.
+
 `digital_pilot74_continuation_preflight_v1.py` is a standard-library read-only
 inspector of pinned source and existing gate receipts. It imports no World,
 acquires no lock, issues no grant and launches no process. Even complete receipt

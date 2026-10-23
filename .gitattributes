@@ -25,3 +25,60 @@ experiments/digital_learning_restart_fixture_v1.py -text
 # Read-only continuation preparation;exact reviewed bytes.
 experiments/digital_pilot74_continuation_preflight_v1.py text eol=lf
 tests/test_pilot74_continuation_preflight_v1.py text eol=lf
+
+# Prospective world union:checkout bytes must equal the reviewed Git/export blobs.
+experiments/__init__.py -text
+experiments/digital_functional69_contract.py -text
+experiments/digital_informative_exposure23.py -text
+experiments/digital_informative_exposure23_interpret.py -text
+experiments/digital_mobile54.py -text
+experiments/digital_pilot74_available_archive_v2.py -text
+experiments/digital_pilot74_child.py -text
+experiments/digital_pilot74_closed_audit_child_v2.py -text
+experiments/digital_pilot74_closed_publication_audit_v2.py -text
+experiments/digital_pilot74_custody.py -text
+experiments/digital_pilot74_data.py -text
+experiments/digital_pilot74_entrypoint_v2.py -text
+experiments/digital_pilot74_finite_controller_v2.py -text
+experiments/digital_pilot74_finite_inventory_v2.py -text
+experiments/digital_pilot74_finite_requests_v2.py -text
+experiments/digital_pilot74_guardian_boundary_qualifier_v1.py -text
+experiments/digital_pilot74_guardian_boundary_qualifier_v2.py -text
+experiments/digital_pilot74_guardian_preresume_v1.py -text
+experiments/digital_pilot74_guardian_v1.py -text
+experiments/digital_pilot74_inventory.py -text
+experiments/digital_pilot74_job_events_v1.py -text
+experiments/digital_pilot74_journal.py -text
+experiments/digital_pilot74_journal_child.py -text
+experiments/digital_pilot74_journal_observed_child_v2.py -text
+experiments/digital_pilot74_lifecycle_diagnostic_v1.py -text
+experiments/digital_pilot74_loader.py -text
+experiments/digital_pilot74_native_observed_v2.py -text
+experiments/digital_pilot74_outer_supervisor_v2.py -text
+experiments/digital_pilot74_output_capture_v2.py -text
+experiments/digital_pilot74_parent_ledger_v2.py -text
+experiments/digital_pilot74_parent_worker_v2.py -text
+experiments/digital_pilot74_population.py -text
+experiments/digital_pilot74_projection_referee_v2.py -text
+experiments/digital_pilot74_projection_v2.py -text
+experiments/digital_pilot74_publication_reader_v2.py -text
+experiments/digital_pilot74_publication_v2.py -text
+experiments/digital_pilot74_referee.py -text
+experiments/digital_pilot74_source_exports_v2.py -text
+experiments/digital_pilot74_source_ready_v2.py -text
+experiments/digital_pressure71_admission.py -text
+experiments/digital_pressure71_census.py -text
+experiments/digital_pressure71_family.py -text
+experiments/digital_pressure71_natural_referee.py -text
+experiments/digital_pressure71_population.py -text
+experiments/digital_pressure71_referee.py -text
+experiments/digital_pressure71_runplan.py -text
+experiments/digital_pressure71_scientific_child.py -text
+experiments/digital_pressure71_transition.py -text
+experiments/digital_pressure71_world.py -text
+experiments/digital_sharedlineage68_interpret.py -text
+experiments/digital_sharedlineage68_population.py -text
+experiments/evidence_budget.py -text
+experiments/evidence_write_grant68.py -text
+experiments/native/pilot74_guardian_v1.c -text
+experiments/process_limits.py -text
