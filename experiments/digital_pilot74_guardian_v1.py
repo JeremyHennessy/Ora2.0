@@ -248,10 +248,16 @@ def failure_observation(job,k,process,pid,birth,phase):
         type(usage.get('active_before_close')) is int and usage['active_before_close']==0 and value['pids']==[])
     return value
 
+def failure_note(error,label,later):
+    # Even note formatting/allocation is best-effort;shutdown and the original
+    # exception must not depend on it succeeding.
+    try:error.add_note(label+repr(later))
+    except BaseException:pass
+
 def attach_failure_evidence(error,evidence):
     """Preserve original exception;caller must durably retain this transport."""
     try:error.guardian_failure_evidence=copy.deepcopy(dict(evidence,exception_notes=list(getattr(error,'__notes__',[]))))
-    except BaseException as later:error.add_note('Guardian failure envelope unavailable: '+repr(later))
+    except BaseException as later:failure_note(error,'Guardian failure envelope unavailable: ',later)
 
 def launch_guardian(spec,expected):
     """Trusted host boundary only. No task-file writes outside the root Job.
@@ -306,7 +312,7 @@ def launch_guardian(spec,expected):
                 termination_requested=False,termination_error=None,after_termination=None,cleanup_errors=[],
                 durable_retention_by_caller_required=True,publication_accepted=False,live_attachment=False)
         except BaseException as diagnostic:
-            first.add_note('Guardian before-termination diagnostic unavailable: '+repr(diagnostic))
+            failure_note(first,'Guardian before-termination diagnostic unavailable: ',diagnostic)
         # Exact owned Job, not just G: W/C may still hold inherited handles.
         # The original failure remains authoritative if termination also fails.
         try:
@@ -315,13 +321,13 @@ def launch_guardian(spec,expected):
                 if failure_evidence is not None:failure_evidence['termination_requested']=True
         except BaseException as later:
             if failure_evidence is not None:failure_evidence['termination_error']=repr(later)
-            first.add_note('Whole Job termination failed; closure UNKNOWN: '+repr(later))
+            failure_note(first,'Whole Job termination failed; closure UNKNOWN: ',later)
             try:
                 if pi.process and k.WaitForSingleObject(pi.process,0)==258:checked(k.TerminateProcess(pi.process,125))
-            except BaseException as fallback:first.add_note('Exact guardian fallback failed: '+repr(fallback))
+            except BaseException as fallback:failure_note(first,'Exact guardian fallback failed: ',fallback)
         if failure_evidence is not None:
             try:failure_evidence['after_termination']=failure_observation(job,k,pi.process,pi.pid,birth,phase)
-            except BaseException as diagnostic:first.add_note('Guardian after-termination diagnostic unavailable: '+repr(diagnostic))
+            except BaseException as diagnostic:failure_note(first,'Guardian after-termination diagnostic unavailable: ',diagnostic)
             attach_failure_evidence(first,failure_evidence)
         # No extended deadline, retry or asserted closure after an exception.
         raise
@@ -339,7 +345,7 @@ def launch_guardian(spec,expected):
             except BaseException as error:errors.append(name+': '+repr(error))
         if errors:
             if first_failure is not None:
-                first_failure.add_note('Native cleanup incomplete; closure UNKNOWN: '+repr(errors))
+                failure_note(first_failure,'Native cleanup incomplete; closure UNKNOWN: ',errors)
                 if failure_evidence is not None:
                     failure_evidence['cleanup_errors']=errors;attach_failure_evidence(first_failure,failure_evidence)
             else:
