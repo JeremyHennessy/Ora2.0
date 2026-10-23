@@ -1,0 +1,73 @@
+{
+  "schema": "ORA-EKA0-ENVIRONMENT-PAYOFF-INDEPENDENT-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "plan": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-environment-payoff-20261023\\data\\eka0-environment-payoff-plan-20261023.json",
+      "sha256": "91dc7b1070b2b956f14b27d14645b9b5cc9fc29ac04f73d7ddb37aba9389911e",
+      "extent": 5754
+    },
+    "script": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-environment-payoff-20261023\\tools\\eka0_environment_payoff.py",
+      "sha256": "1b6e30039162d0d10eb0ba6601581ad7028681051720d0823b32b597dd425942",
+      "extent": 11640
+    },
+    "result": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-environment-payoff-20261023\\data\\eka0-environment-payoff-result-20261023.json",
+      "sha256": "907b143afdfcdf48cd452456e9fb4b5e99b23c4d39882b5c6daa36204a5ce8a9",
+      "extent": 44768
+    }
+  },
+  "scoped_decision": "ACCEPT_OBSERVATIONAL_COUNTS_AND_CONDITIONAL_SOURCE_ACCOUNTING",
+  "ecological_superiority": "UNKNOWN",
+  "mutation_viability": "UNKNOWN",
+  "population_execution": "NO_GO",
+  "total_observation_counts": {
+    "births": 364,
+    "deaths_or_expiries": 265,
+    "dispatches": 60336,
+    "forages": 14772,
+    "nonempty_attempts": 14456,
+    "nonempty_failures": 7043,
+    "ordinary_stock_attempts": 1235,
+    "other_site_both_nonempty_target_changed": 356,
+    "other_site_both_nonempty_target_stable": 6020,
+    "other_site_intervened_pairs": 6460,
+    "pair_both_nonempty_target_changed": 422,
+    "pair_both_nonempty_target_stable": 13154,
+    "renewal_admitted": 8164,
+    "renewal_offers": 15056,
+    "renewal_rejected": 6892,
+    "renewed_attempts": 12690,
+    "repeated_site_pairs": 14012,
+    "special_stock_attempts": 531,
+    "stock_unlock_events": 16,
+    "successes": 7413,
+    "empty_feedback_zero": 316,
+    "other_site_prior_empty_current_empty": 29,
+    "other_site_prior_empty_current_nonempty": 24,
+    "other_site_prior_nonempty_current_empty": 31,
+    "pair_prior_empty_current_empty": 162,
+    "pair_prior_empty_current_nonempty": 130,
+    "pair_prior_nonempty_current_empty": 144
+  },
+  "checks": [
+    "Exact plan/script/result hashes match",
+    "All16unique closedroles retained and sumexactly to totals and dose totals",
+    "Forage/nonempty/empty/success/packetclass/pair/renewal categories reconcile",
+    "Same27 firstchild rows conserve energy and all retained groupendspositive before256ownturns",
+    "All16 finite source supply upperbounds match stated initialstock andoffer formula",
+    "Source code and declared paths reviewed without executing generator"
+  ],
+  "limits": [
+    "No reader, enumerator, VM, scientific referee, seed query or model rerun by reviewer",
+    "Repeatedsite andinterveningothersitepairs are observational markers, not paired causal memory tests",
+    "Same27 blindfirstchild faster anduseslessfood underconditionalstablefood premise; feedbackparentreservehigher; neither establishes generalfitness",
+    "204grossblindcostvs180intake omits extra cycles; those cycles canaddintakeandmustnot implyimpossibility",
+    "D+45B supplybound assumes27wordstationarysame-sitewholelineage/noinboundtransfer; D=T onlynooutsideactors; not appliedtoactualmobilehistories",
+    "1/180 is formalrenewalsurpluscoefficient afterinitialstock, not realizedrate or infinitehorizon; sourceends4096",
+    "No viablemutationalintermediate, evolvedalgorithm, inheritedacquiredknowledge or paidcausaladvantage proven"
+  ],
+  "next_action": "KeepnewpopulationNO_GO; identify a genuinely equal-resource causalcontrast and affordable mutation path before admission"
+}
