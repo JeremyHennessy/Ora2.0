@@ -75,6 +75,8 @@ Under the expressly hypothetical uniform-independent 64-bit-hash assumption, the
 
 The next highest-value scientific action is an independent source-level bound on whether the existing ecology offers any reachable information opportunity whose saved costs can repay acquisition against a same-length blind policy. It must include empty food, packet/port changes, travel and expiry; shorter authored references remain efficiency warnings. If even an upper benefit bound cannot pay the unavoidable costs, reject that task before proposing a population. Do not begin another genome-authoring search or larger learning algorithm merely to obtain a positive result.
 
+**Completed follow-up:** [actual-environment payoff review](EKA-0-ENVIRONMENT-PAYOFF-20261023.md) authenticates all sixteen old histories, finds observed recurring-target opportunities, removes the blind genome-length confound and bounds real food supply. The feedback candidate still loses first-child time/food to the same-length blind reference while retaining more energy. This tradeoff is not a causal lifetime advantage; UNKNOWN / population NO-GO remains.
+
 ## Seven-stage implications and parallel engineering
 
 1. **Build the universe:** existing instruction/material/energy laws reused; no new substrate installed.

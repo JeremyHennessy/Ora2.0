@@ -1,0 +1,40 @@
+{
+  "schema": "ORA-EKA0-ENVIRONMENT-PAYOFF-PLAN-v1",
+  "status": "FROZEN_BEFORE_NEW_AGGREGATES",
+  "base": "dcef2af0b31a1243b45c6082195c2201fdf23db5",
+  "prior_audit_sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+  "prior_certificate_sha256": "c974e90ad6aaea2d3bd1708dffc44cfd5084eba1944b2e5a454c8ed700bb7608",
+  "roster": "Exactly all sixteen already-closed original Pressure71 mutating/parent_copy dose1/8 histories in the authenticated prior audit; no new, reserved or additional seed outcomes.",
+  "source_identity": "Authenticate the same three Windows source-byte hashes in the previous certificate, never import experiment modules.",
+  "programs": {
+    "blind27": [[4,1,1],[6,0,0],[5,0,1],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0]],
+    "fixed0_27": [[4,0,0],[6,0,0],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0],[18,0,0]],
+    "fixed1_27": [[4,0,1],[6,0,0],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0],[18,0,0]]
+  },
+  "cost_paths": {
+    "blind27": {"startup_dispatches": 1, "cycle_dispatches": 5, "copy_offset": 2, "divide_offset": 3, "max_cycles": 11},
+    "fixed0_27": {"startup_dispatches": 1, "cycle_dispatches": 4, "copy_offset": 1, "divide_offset": 2, "max_cycles": 9},
+    "fixed1_27": {"startup_dispatches": 1, "cycle_dispatches": 4, "copy_offset": 1, "divide_offset": 2, "max_cycles": 9}
+  },
+  "observables": [
+    "For each complete closed role, count every forage dispatch, attempted nonempty packet, empty feedback-zero, successful/failed nonempty attempt and stock/renewed packet class. Reconcile food successes with event attempts; keep all denominators.",
+    "For every forage with an earlier forage by the same actor at the same site, classify prior/current emptiness, or both nonempty with target stable/changed. No simulated counterfactual; retained targets are analyst metadata unavailable directly to organisms.",
+    "Count nonempty repeated-site pairs after an intervening forage at another site, including target stable/changed. Immediate intervening feedback overwrites the last-feedback channel. This is an observational information-opportunity marker, not a matched causal learning test.",
+    "Count actual renewal offers/admissions/rejections, stock unlocks and deaths/expiries; report all sixteen roles and dose totals, never choose a best seed or genotype.",
+    "Grouped first-child accounting for three predeclared SAME27word policies at both initial matches, all dispatch/refusal/cap costs, plus unchanged prior feedback rows. No arbitrary instruction interpreter or entity/World engine.",
+    "Steady accounting identities, not recurrent population simulation: feedback9cycles/birth requires111 gross parent energy against9captures180; blind18 paid-copy cycles and2divisions require204 against9captures180 before waits. This deficit is not impossibility: additional full-nursery cycles charge five dispatches and can add food while COPY refuses. Balanced blind pair after nursery full adds20intake minus10dispatches; account both. Report food/time tradeoff, not a fitness winner.",
+    "Supply upper bounds from actual initialization and four offers/site/64globalticks, admission cap32, locked stock and oldest-packet rule. Stationary same-site27word whole-lineage energy bound: focal dispatch heatD plus at least45extra heat per completed birth <=12+20*(initialstock+4floor(T/64)), initial accessible organism energy12. Use D=T ONLY when every dispatch is in the one-founder focal lineage, all its actors stationary at that same site, no outsiders/inbound transfer. Do not apply this specialization to actual mobile/mutating histories. Constructor energy not an available foraging subsidy. Distinguish transient stock from sustainable arrival rate and global from own time."
+  ],
+  "limits": [
+    "Food stability/plentiful availability assumptions are conditional, not guaranteed by actual ecology; stock16-31 changes target per packet, ordinary stock changes at64, renewed target at2048.",
+    "No outcome-based policy tuning, new genome search, model calls, VM steps, scientific populations or live assistant changes.",
+    "Same length and copying cost does not make intake, timing, total energy or experimental exposures matched. Declared blind is not the best possible memoryless program.",
+    "Include both fixed ports without selecting the matching policy afterward. A future balanced allocation is a control design, not two free founders, new execution or a target-knowing oracle.",
+    "The local port register is experience state, not an evolved algorithm, older-site memory implementation or inherited acquired knowledge.",
+    "Observational opportunity and positive source benefit bounds cannot prove causal economic advantage, mutation intermediate viability or authorize EKA-1."
+  ],
+  "budget": {"closed_roles": 16, "max_raw_bytes_each": 16777216, "max_cost_rows": 8, "wall_seconds": 60, "observed_peak_working_set_bytes": 536870912, "output_bytes": 1048576, "worlds": 0, "vm_steps": 0, "seed_queries": 0, "model_calls": 0},
+  "stop_rule": "One bounded reader invocation, preserve exception/output; no outcome-driven rerun, alternative policy or relaxed gate. Review-only corrections must preserve original failed evidence.",
+  "decision": "Report potential information opportunity separately from resource advantage. Ecological superiority remains UNKNOWN absent matched paid causal evidence; no new population before independent feasibility/registration/execution gates pass.",
+  "independent_design_review": "/root/eka0_independent_research accepted conditional same-length accounting only, required full food/empty/target-change/supply/time limits and stronger fixed-port nulls. Exact plan review required before invocation."
+}

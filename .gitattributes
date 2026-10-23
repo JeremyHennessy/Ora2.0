@@ -5,3 +5,8 @@ data/eka0-certificate-plan-20261023.json -text
 data/eka0-source-certificate-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/eka0-certificate-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tools/eka0_source_certificate.py -text
+# Frozen environmental-payoff plan, reader and Windows receipts.
+data/eka0-environment-payoff-plan-20261023.json -text
+data/eka0-environment-payoff-result-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka0-environment-payoff-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/eka0_environment_payoff.py -text
