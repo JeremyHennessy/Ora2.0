@@ -1,0 +1,31 @@
+{
+  "schema": "ORA-EKA0-LIFETIME-PREPARATION-VALIDATION-v1",
+  "plan_sha256": "b381bdcdf2cca7b07b274e49096cb4df1d502d332eeeaec3301e75e8493629f6",
+  "validator_sha256": "73ff613663221c5b158e9d3b5d1c03e794989e2ccee9c1081d4f5a9657035c81",
+  "test_file_sha256": "58cd7c6015e8a56a707567a317dc95b253c3088bf4cbf26c5fd19302b3a25612",
+  "targeted_test_command": "python -B -m unittest discover -s tests -p test_eka0_lifetime_preparation.py -v",
+  "targeted_tests": 14,
+  "test_seconds": 0.003,
+  "test_outcome": "PASS",
+  "test_scope": "Pure metadata and literal-genotype fixtures, no VM/World/population",
+  "validation": {
+    "preparation_schema_valid": true,
+    "reference_words": 27,
+    "mature_material": 43,
+    "scientific_execution_ready": false,
+    "admission_granted": false,
+    "required_gates_held": [
+      "actual_reachable_information_contrast",
+      "exact_source_and_raw_custody",
+      "exclusive_world_owner_and_execution_authority",
+      "independent_scientific_admission",
+      "native_cpu_memory_storage_deadline_and_custody",
+      "nonlethal_information_lesion_and_sham",
+      "paid_lifetime_resource_and_strong_control_qualification",
+      "sampling_effect_and_reserved_bank_registration",
+      "separate_authored_reference_founder_permission_if_proposed",
+      "viable_mutation_path_and_origin_review"
+    ],
+    "scope": "Static preparation only; no execution method exists."
+  }
+}

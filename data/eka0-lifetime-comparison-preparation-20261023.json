@@ -1,0 +1,88 @@
+{
+  "schema": "ORA-EKA0-LIFETIME-PREPARATION-v1",
+  "status": "DRAFT_NOT_REGISTERED",
+  "execution_ready": false,
+  "worlds_authorized": 0,
+  "base": "afad40526765347a85c15c62f02534ce9322ddd5",
+  "question": "Does personally acquired local port information improve paid whole-lineage outcomes under the existing resource laws after its acquisition, use, copying and opportunity costs?",
+  "claim_scope": "One-bit local feedback retention; no invented algorithm, older-site memory, inherited acquired answer or evolved learning claim from an authored reference.",
+  "scientific_founder": [[4,1,1],[6,0,0],[5,0,1],[6,0,0],[10,0,0],[12,0,0],[13,1,0],[13,1,0],[7,0,1]],
+  "authored_reference_programs": {
+    "feedback": [[4,1,1],[6,0,0],[1,1,1],[8,1,7],[10,0,0],[12,0,0],[7,1,1],[4,1,1],[5,0,1]],
+    "blind_alternator": [[4,1,1],[6,0,0],[5,0,1],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0]],
+    "fixed0": [[4,0,0],[6,0,0],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0],[18,0,0]],
+    "fixed1": [[4,0,1],[6,0,0],[10,0,0],[12,0,0],[7,0,1],[18,0,0],[18,0,0],[18,0,0],[18,0,0]],
+    "nursery_aware_blind": [[4,1,1],[6,0,0],[5,0,1],[11,0,6],[12,0,0],[7,0,1],[10,0,0],[7,0,1],[18,0,0]]
+  },
+  "reference_authority": "Static references only. No authored reference may replace the scientific founder or be installed as an assay founder without separate explicit independent admission and any required operator authorization. No genotype is selected from closed outcomes.",
+  "food_matching": {
+    "basis": "EXOGENOUS_SOURCE_RULES_AND_STARTING_BUDGETS",
+    "initial_physical_stock_by_site": [32,16,16,0],
+    "site0_locked_stock": 16,
+    "unlock_global_tick": 64,
+    "offers_per_site": 4,
+    "offer_period_global_dispatches": 64,
+    "site_capacity": 32,
+    "initial_energy": 12,
+    "energy_cap": 64,
+    "code_words": 27,
+    "state_units": 16,
+    "total_material_units": 512,
+    "configured_population_cap": 32,
+    "oldest_available_packet_rule": true,
+    "schedule_coupling": "Same frozen source seed/exogenous packet and target rules, global time and starting position/state; seed roster remains UNASSIGNED. Admitted offers, captures, survival, offspring scheduling and competition remain endogenous outcomes.",
+    "equal_realized_meals": false,
+    "meal_count_stopping": false,
+    "posthoc_matching_fixed_port": false,
+    "survivor_only_analysis": false,
+    "empty_feedback_and_target_changes_retained": true
+  },
+  "estimand": {
+    "unit": "WHOLE_PAIRED_WORLD_LINEAGE",
+    "horizon_global_dispatches": 4096,
+    "own_turn_expiry": 256,
+    "denominator": "ALL_ASSIGNED_INITIAL_FOUNDERS",
+    "primary_candidate": "Number of founder offspring that themselves produce a paid child by the fixed global horizon, per initial founder. This is finite-horizon reproductive expression, not general viability or inherited intelligence.",
+    "secondary_vector": ["all paid births", "founder/offspring deaths and expiries", "right-censored followup at horizon", "unfinished nursery words", "captured food and failures/empty attempts", "admitted/rejected offers", "cap and other heat", "retained parent/lineage energy", "material occupancy", "actual dispatch/time/copy costs"],
+    "late_birth_handling": "Retain every late birth and expose followup/censoring. No paid descendant before horizon means zero for the finite-horizon primary, not a claim of death or permanent sterility.",
+    "early_extinction": "Keep zero outcomes and the unused budget. Never restart or advance a dead World merely to equalize food exposure.",
+    "inference": "Paired whole-world/lineage units, not forages, births or selected survivors. Sampling, effect margin, multiplicity, independent origins and reserved unseen conditions remain UNASSIGNED pending feasibility review; no power claim.",
+    "no_composite_posthoc_score": true
+  },
+  "causal_controls": {
+    "food_feedback_lesion_and_paid_sham": "REQUIRED_NOT_IMPLEMENTED_OR_ADMITTED",
+    "requirements": "Match legal mechanism/material/paid-read costs where feasible, charge every divergent path and test lethal side effects. Feedback-versus-different-blind-code alone cannot attribute a benefit to acquired information. Feedback erasure/shuffle changes laws and needs separate source review; no free target/presence labels.",
+    "nursery_control_status": "LITERAL_LEGAL_REFERENCE_REQUIRES_COST_SURVIVAL_AND_CAUSAL_REVIEW",
+    "blind_information_boundary": "Controls never read food feedback or analyst target labels. They may use paid internal phase and the legal opcode11 nursery-progress predicate. That operational channel can indirectly reflect resource access; disclose and charge it, not call it no-state."
+  },
+  "required_gates": [
+    "exact_source_and_raw_custody",
+    "actual_reachable_information_contrast",
+    "paid_lifetime_resource_and_strong_control_qualification",
+    "nonlethal_information_lesion_and_sham",
+    "viable_mutation_path_and_origin_review",
+    "sampling_effect_and_reserved_bank_registration",
+    "independent_scientific_admission",
+    "native_cpu_memory_storage_deadline_and_custody",
+    "exclusive_world_owner_and_execution_authority",
+    "separate_authored_reference_founder_permission_if_proposed"
+  ],
+  "gate_status": "ALL_SCIENTIFIC_EXECUTION_GATES_HELD",
+  "prohibited": ["population or VM execution by this preparation", "authored founder insertion", "protected or new seed queries", "retuning from closed outcomes", "new algorithm search", "live Ora/source/task/budget changes", "scientific admission by metadata boolean"],
+  "closed_path_review": {
+    "status": "FROZEN_BEFORE_LOOKUP",
+    "prior_audit_sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+    "prior_certificate_sha256": "c974e90ad6aaea2d3bd1708dffc44cfd5084eba1944b2e5a454c8ed700bb7608",
+    "prior_plan_sha256": "bfcd07ca5b7e8ad3bbe0864e68fcf11addd72c533ea249d66385eb548226cf8d",
+    "roster": "Exactly the same16 original closed Pressure71 mutating/parent_copy dose1/8 roles. Every founder and paid child is retained; no survivor or best-genotype selection.",
+    "queries": [
+      "Check exact fixed founder, target and ten edits from prior plan; label each paid newborn inside the1024 targeted subcube or outside, with complete code, parent and context.",
+      "Reconcile each of27 paid nursery writes to its actual tracked parent code/unit at COPY time and to newborn code. Retain the copied-source vector, parent-birth genotype and code at division separately; source vectors can be temporal mosaics after SELFWRITE.",
+      "Record one intended edit, faithful edge, multiedit jump, outside-subcube edge and source changes separately. A strict intended-route edge requires parent code unchanged since birth, copied-source vector equal birth genotype, and faithful or exactly one additional fixed edit.",
+      "Track actual contiguous founder-to-child ancestry through strict edges, including faithful transmissions. Count complete target paths only if target child later pays for a child with its own birth code unchanged. This is scoped reproductive expression in a historical context, not neutrality, superiority or generic viable intermediates.",
+      "All deaths/expiries, blank newborn state, parent position, generation and birth tick remain. No exact target/path in the closed cohort does not prove global impossibility or authorize a new search."
+    ],
+    "budget": {"closed_roles":16,"max_raw_bytes_each":16777216,"wall_seconds":60,"observed_peak_working_set_bytes":536870912,"output_bytes":2097152,"worlds":0,"vm_steps":0,"new_seed_queries":0,"model_calls":0},
+    "stop_rule": "One bounded review invocation with original output/exception retained. No candidate/path retune, alternate bank, outcome-driven rerun or acceptance change."
+  }
+}

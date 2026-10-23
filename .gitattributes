@@ -10,3 +10,11 @@ data/eka0-environment-payoff-plan-20261023.json -text
 data/eka0-environment-payoff-result-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/eka0-environment-payoff-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tools/eka0_environment_payoff.py -text
+# Exact prospective lifetime preparation and retained closed-path evidence.
+data/eka0-lifetime-comparison-preparation-20261023.json -text
+data/eka0-lifetime-preparation-validation-20261023.json -text
+data/eka0-closed-path-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka0-lifetime-path-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/eka0_lifetime_preparation.py -text
+tools/eka0_closed_path_review.py -text
+tests/test_eka0_lifetime_preparation.py -text

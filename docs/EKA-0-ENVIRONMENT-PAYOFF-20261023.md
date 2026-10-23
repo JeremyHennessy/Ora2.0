@@ -98,6 +98,8 @@ Only when **every** dispatch belongs to that one stationary lineage may `D=T` be
 
 The highest-value next gate is an independent prospective feasibility review of a **food- and opportunity-matched lifetime comparison**, including both fixed ports, the same-length blind alternator and a cheap nursery-aware blind control; count every death, empty encounter, copying cost and viable descendant. Before execution it also needs an actual reachable information contrast, a viable mutation path, frozen metrics/budgets/controls and the existing registration/native ownership/resource gates. If these cannot be justified, retain NO-GO rather than spend another population bank. This report is preparation, not registration or launch authorization.
 
+**Prepared follow-up:** the [lifetime comparison and path review](EKA-0-LIFETIME-PATH-PREPARATION-20261023.md) now supplies the review-only contract, legal nursery-aware blind literal, 14 targeted guard checks and a complete closed birth ledger. No nonzero intermediate in the fixed target subcube or candidate was observed. Scientific execution remains NO-GO; the prepared comparison is not an admitted assay.
+
 ## Seven-stage roadmap and live operation
 
 1. **Build the universe:** existing laws reviewed, no replacement substrate or new scientific World.
