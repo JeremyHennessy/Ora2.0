@@ -121,4 +121,23 @@ class Knowledge(unittest.TestCase):
             self.assertTrue(any(a['key']=='user:project-note:'+q['run_id'] for a in audit))
             self.assertIn('120 seconds',prompt)
 
+    def test_windows_document_and_input_line_endings(self):
+        with fixture() as (c,s):
+            doc=c.root/'windows.py';raw=b'first line\r\nsecond line\r\n';doc.write_bytes(raw)
+            c.config['documents']={'DOC':dict(path=str(doc),sha256=digest(raw))}
+            selected=c.document('DOC');self.assertEqual(selected['sha256'],digest(raw));self.assertEqual(selected['text'],'first line\nsecond line\n')
+            self.assertNotIn('\\r',prompt_for('Question\r\n',selected))
+            self.assertEqual(bound_note('Question\r\n','Answer\r\n'),bound_note('Question\n','Answer\n'))
+            q=c.ask('Question\r\n','DOC');self.assertEqual(c.review(q['run_id'])['question'],'Question\n')
+
+    def test_pending_work_refuses_payload_before_publication(self):
+        from experiments.ora_mailbox_v1 import publish
+        with fixture() as (c,s):
+            s.submit(1,'ask','fixture:pending','Question');run=c.receipts/('e'*32);run.mkdir()
+            atomic(c.root/'active-worker.json',dict(creation_filetime_decimal=str(int((1000+11644473600)*1e7))))
+            with patch('experiments.ora_project_knowledge_v1.time.time',return_value=1000),patch('experiments.ora_project_knowledge_v1.time.monotonic',side_effect=[0,0,101]),patch('experiments.ora_project_knowledge_v1.time.sleep'),patch('experiments.ora_project_knowledge_v1.publish',wraps=publish) as pub:
+                with self.assertRaises(TimeoutError):Client.request(c,run,'fixture','ask','key',lambda n:'must-not-publish')
+                self.assertEqual(pub.call_count,1)
+            self.assertFalse((run/'fixture-publication.json').exists());self.assertEqual(s.status()['submitted'],1)
+
 if __name__=='__main__':unittest.main()
