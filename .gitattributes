@@ -38,3 +38,8 @@ tests/test_eka1_intervention_envelope.py -text
 data/eka1-intervention-envelope-validation-20261023.json -text
 data/eka1-intervention-envelope-final-validation-20261023.json -text
 data/eka1-intervention-envelope-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen rejected causal candidate; retained source-only decision.
+data/eka1-delayed-assay-contract-20261023.json -text
+data/eka1-delayed-assay-source-validation-20261023.json -text
+data/eka1-delayed-assay-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
