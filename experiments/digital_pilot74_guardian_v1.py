@@ -301,7 +301,7 @@ def launch_guardian(spec,expected):
         code=wt.DWORD();checked(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
         usage=job.usage()
         if usage['active_before_close']!=0:raise RuntimeError('Guardian exited with active descendants; whole-tree closure UNKNOWN')
-        normal_result=dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,usage=usage,post_close_processes_exited=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
+        normal_result=dict(schema='PILOT74-EXTERNAL-GUARDIAN-EXIT-v1',command=command,pid=pi.pid,creation_filetime_decimal=str(birth),exit_code=code.value,process_handle_signaled=True,usage=usage,elapsed_ms=int(k.GetTickCount64()-t0),post_close_processes_exited=True,registration_sha256=expected,external_native_provenance_required=True,publication_accepted=False,live_attachment=False)
         return normal_result
     except BaseException as first:
         first_failure=first
