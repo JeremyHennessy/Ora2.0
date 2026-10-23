@@ -27,7 +27,10 @@ def launch(request, admission_check):
         raise OSError('Windows only')
     k = win.kernel()
     started = int(k.GetTickCount64())
-    deadline = started + 3600000  # before admission, allocation or caller setup
+    wall_ms = request.get('wall_ms', 3600000)
+    if type(wall_ms) is not int or not 1 <= wall_ms <= 3600000:
+        raise ValueError('Only a shorter finite outer deadline may be registered')
+    deadline = started + wall_ms  # before admission, allocation or caller setup
     job = None
     pi = win.PI()
     initialized = False
@@ -97,11 +100,11 @@ def launch(request, admission_check):
         if usage['active_before_close'] != 0 or pids != []:
             raise RuntimeError('Caller exit is not whole outer Job closure')
         elapsed = int(k.GetTickCount64()) - started
-        if elapsed > 3600000:
+        if elapsed > wall_ms:
             raise TimeoutError('Outer elapsed ceiling exceeded')
         result = dict(schema='PILOT74-OUTER-OWNER-OBSERVATION-v1', pid=pi.pid,
             creation_filetime_decimal=str(birth), image=image.value, exit_code=int(code.value),
-            elapsed_ms=elapsed, usage=usage, pids=pids, process_handle_signaled=True,
+            elapsed_ms=elapsed, wall_limit_ms=wall_ms, usage=usage, pids=pids, process_handle_signaled=True,
             closure_observed=True, owner_outside_job=True, physical_process_count_can_be_five=True,
             publication_accepted=False, live_attachment=False)
         return result
