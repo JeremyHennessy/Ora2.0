@@ -99,5 +99,12 @@ class MemoryContext(unittest.TestCase):
             q='Which city hosts the astronomy meetup?'
             self.assertEqual(context(s.db,q),(q,[]))
 
+    def test_coverage_never_silently_drops_a_record_to_fit(self):
+        with tempfile.TemporaryDirectory() as folder,Store(folder,lambda p:'unknown',KEY) as s:
+            memory(s,'user:one','x'*1900,task=1)
+            memory(s,'user:two',QUOTE,task=2)
+            q='What is the lunar phase?'
+            self.assertEqual(context(s.db,q),(q,[]))
+
 
 if __name__=='__main__':unittest.main()
