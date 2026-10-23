@@ -42,6 +42,20 @@ class Owners(unittest.TestCase):
   self.assertTrue(kernel.closed)
  def test_exited_owner_refused(self):
   with self.assertRaises(AssertionError):self.check(self.grant(self.body()),wait=0)
+ def test_identity_error_survives_cleanup_error(self):
+  grant=self.grant(self.body());kernel=Kernel();first=RuntimeError('birth query failed')
+  with patch.object(p,'allowed_owner_lock',return_value=True),patch.object(g,'_kernel',return_value=kernel),patch.object(g,'_birth',side_effect=first),patch.object(kernel,'CloseHandle',side_effect=OSError('close failed')):
+   with self.assertRaises(RuntimeError) as caught:p.owner(grant)
+  self.assertIs(caught.exception,first);self.assertTrue(any('cleanup' in n and 'close failed' in n for n in first.__notes__))
+ def test_successful_identity_with_failed_cleanup_refuses(self):
+  grant=self.grant(self.body());kernel=Kernel()
+  with patch.object(p,'allowed_owner_lock',return_value=True),patch.object(g,'_kernel',return_value=kernel),patch.object(g,'_birth',return_value=456),patch.object(kernel,'CloseHandle',side_effect=OSError('close failed')):
+   with self.assertRaises(OSError):p.owner(grant)
+ def test_birth_mismatch_survives_cleanup_error(self):
+  grant=self.grant(self.body());kernel=Kernel()
+  with patch.object(p,'allowed_owner_lock',return_value=True),patch.object(g,'_kernel',return_value=kernel),patch.object(g,'_birth',return_value=457),patch.object(kernel,'CloseHandle',side_effect=OSError('close failed')):
+   with self.assertRaises(AssertionError) as caught:p.owner(grant)
+  self.assertTrue(any('cleanup' in n and 'close failed' in n for n in caught.exception.__notes__))
  def test_noncanonical_birth_refused(self):
   body=self.body();body['creation_filetime_decimal']='0456'
   with self.assertRaises(AssertionError):self.check(self.grant(body))

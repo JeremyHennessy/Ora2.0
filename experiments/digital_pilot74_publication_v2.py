@@ -145,9 +145,16 @@ def owner(grant):
     assert set(lock)=={'schema','pid','creation_filetime_decimal'} and lock['schema']=='PILOT74-QUALIFICATION-OWNER-LOCK-v1'
     identity={k:lock[k] for k in ('pid','creation_filetime_decimal')};physical.process_id(identity)
     k=guardian._kernel();handle=k.OpenProcess(0x1000|0x100000,False,identity['pid']);guardian.checked(handle)
+    first=None
     try:
         assert str(guardian._birth(k,handle))==identity['creation_filetime_decimal'] and k.WaitForSingleObject(handle,0)==258
-    finally:guardian.checked(k.CloseHandle(handle))
+    except BaseException as error:
+        first=error;raise
+    finally:
+        try:guardian.checked(k.CloseHandle(handle))
+        except BaseException as later:
+            if first is None:raise
+            guardian.failure_note(first,'Publication owner handle cleanup: ',later)
 
 def write_slot(path,data,identity,limit,grant):
     assert type(data) is bytes and 0<len(data)<=limit;owner(grant);chain=parents(path);v=plain(path);assert ident(v)==identity
