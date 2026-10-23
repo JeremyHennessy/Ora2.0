@@ -31,3 +31,5 @@ tests/test_ora_project_knowledge_v1.py text eol=lf
 # Exact project-work pilot source bytes.
 experiments/ora_project_work_pilot_v1.py text eol=lf
 tests/test_ora_project_work_pilot_v1.py text eol=lf
+
+tests/test_ora_mailbox_sharing_diagnosis_v1.py -text

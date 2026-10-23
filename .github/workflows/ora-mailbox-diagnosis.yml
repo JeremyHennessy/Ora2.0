@@ -1,0 +1,20 @@
+name: Mailbox sharing diagnosis
+on:
+  push:
+    branches: ['implementation/ora-mailbox-failure-diagnosis-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnosis:
+    runs-on: windows-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Temporary Windows sharing and wrong-sequence recovery diagnosis, zero model calls
+        run: python -B tests/test_ora_mailbox_sharing_diagnosis_v1.py
+      - name: Frozen client and dependency source bytes
+        run: python -B -c "import json,hashlib,pathlib; p=json.loads(pathlib.Path('data/ora-mailbox-diagnosis-source-pins-v1.json').read_text()); assert all(hashlib.sha256(pathlib.Path(n).read_bytes()).hexdigest()==h for n,h in p.items()); print(len(p),'source hashes matched')"
