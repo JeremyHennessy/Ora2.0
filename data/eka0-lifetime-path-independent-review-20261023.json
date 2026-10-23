@@ -1,0 +1,75 @@
+{
+  "schema": "ORA-EKA0-LIFETIME-PATH-INDEPENDENT-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "plan": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-lifetime-path-preparation-20261023\\data\\eka0-lifetime-comparison-preparation-20261023.json",
+      "sha256": "b381bdcdf2cca7b07b274e49096cb4df1d502d332eeeaec3301e75e8493629f6",
+      "extent": 7766
+    },
+    "reader": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-lifetime-path-preparation-20261023\\tools\\eka0_closed_path_review.py",
+      "sha256": "7ec1a958e188b26a42274f5995f15b62003c983aa99fae4287bc25ac40062a32",
+      "extent": 12639
+    },
+    "helper": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-lifetime-path-preparation-20261023\\tools\\eka0_lifetime_preparation.py",
+      "sha256": "73ff613663221c5b158e9d3b5d1c03e794989e2ccee9c1081d4f5a9657035c81",
+      "extent": 4655
+    },
+    "result": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-lifetime-path-preparation-20261023\\data\\eka0-closed-path-review-20261023.json",
+      "sha256": "a5ddefb9a440649af0bad81e97eabe5d67943036ef0058e47631889bf4826134",
+      "extent": 1050950
+    }
+  },
+  "scoped_decision": "ACCEPT_PREPARATION_AND_FIXED_TARGET_CLOSED_LEDGER_ONLY",
+  "actor_denominator": 380,
+  "founders": 16,
+  "births": 364,
+  "birth_masks": {
+    "0": 117,
+    "None": 247
+  },
+  "totals": {
+    "births": 364,
+    "complete_intended_paths_with_target_reproduction": 0,
+    "copied_source_differs_from_division_code": 4,
+    "copied_source_differs_from_parent_birth": 0,
+    "deaths_or_expiries": 265,
+    "founders": 16,
+    "inside_subcube_births": 117,
+    "mutated_copy_words": 612,
+    "newborns_with_later_paid_child": 208,
+    "newborns_with_later_paid_child_before_code_change": 204,
+    "one_added_edit_children_later_reproducing_unchanged": 0,
+    "outside_subcube_births": 247,
+    "paid_copy_words": 13494,
+    "target_births": 0,
+    "transition_faithful": 117,
+    "transition_outside_subcube": 243,
+    "effective_selfwrite_events": 37,
+    "transition_parent_code_changed": 4
+  },
+  "checks": [
+    "Exact frozen plan, reader, helper and retained result hashes match",
+    "All16roles retain founder and every paid child;364birthrecords verified",
+    "All newborn masks, parent/copied masks, transition categories and contiguous ancestry recomputed from retained fields only",
+    "Every later paid child and before-code-change flag agrees with complete retained birthledger",
+    "Generation, blank-state metadata, ownturn bounds and explicitterminal records reconcile",
+    "No subcube mutant beyond founder mask0; no intendedtarget or strict complete target path observed"
+  ],
+  "limits": [
+    "No closed-reader rerun, VM, scientific referee, seed query, genotype search or model execution by reviewer",
+    "Result-ledger verification is not independent World replay or individual source-state simulation",
+    "Historical reproductive expression is not neutralintermediate, survivaladvantage or causal learning",
+    "One targeted10edit subcube only; negativefinding doesnot imply global impossibility",
+    "Authored references remain static/unqualified, not authorized assayfounders",
+    "All10scientificexecutiongatesheld; lesion/sham, sampling andeffectcriteria unassigned"
+  ],
+  "evolutionary_path_qualification": "UNKNOWN",
+  "population_execution": "NO_GO",
+  "scientific_execution_ready": false,
+  "next_action": "Prepare viablepath and matchedpaidcausalcontrast; no population or authoredfounder insertion until independent gates pass"
+}
