@@ -48,3 +48,11 @@ data/eka1-delayed-assay-independent-review-20261023.json -text whitespace=blank-
 data/eka1-own-signal-contrast-proposal-20261023.json -text
 data/eka1-own-signal-source-validation-20261023.json -text
 data/eka1-own-signal-contrast-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Source-only feedback cost and authority qualification.
+data/eka1-feedback-qualification-contract-20261023.json -text
+data/eka1-feedback-offline-validation-20261023.json -text
+tools/eka1_feedback_cost_preflight.py -text
+tests/test_eka1_feedback_cost_preflight.py -text
+data/eka1-feedback-final-validation-20261023.json -text
+data/eka1-feedback-qualification-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

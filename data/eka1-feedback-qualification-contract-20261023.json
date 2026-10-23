@@ -1,0 +1,112 @@
+{
+  "schema": "ORA-EKA1-FEEDBACK-OPPORTUNITY-COST-CUSTODY-v1",
+  "status": "PARTIAL_SOURCE_QUALIFICATION_EXECUTION_HELD",
+  "parent_source": "3d2bb38b69319d3f9c8714221f2a58491faf9f6d",
+  "feedback_opportunity": {
+    "founder_feedback_read_opcode": false,
+    "first_founder_division_earliest_global_dispatch": 70,
+    "division_bound": "First COPY at5, nine COPYs at5+8k, last at69, following DIV at70; any refusal or death delays/prevents birth. No child or other actor exists earlier. No VM executed.",
+    "first_renewal_offers_global_dispatch": 64,
+    "site0_initial_capacity_occupied": 32,
+    "site0_locked_packets_occupy_capacity": true,
+    "site0_tick64_admissions_if_k_prior_removals": "min(4,k); unlock does not free packet slots",
+    "initial_other_site_stocks": [
+      16,
+      16,
+      0
+    ],
+    "access": "Oldest available local packet is attempted; an admitted renewable packet does not establish an actor can reach or attempt it",
+    "conditional_information": "Renewable packet>=64, same seed/site and both probe/exposure ticks<2048 have equal target; no hash or seed query. Actual path/packet/time condition remains an outcome, not a post-treatment filter.",
+    "historical_feedback_access": {
+      "source": "reports/ora-eka0-closed-data-audit-20261023.json",
+      "scope": "Reuse frozen aggregate report only; no reader regeneration, new population or raw-history query",
+      "dose1_feedback_dispatches": 0,
+      "dose8_feedback_dispatches": 104,
+      "dose8_born_actors_expressing_feedback": 8,
+      "dose8_born_reproduced_after_feedback": 3,
+      "limit": "READ expression/reproduction ordering is not informative feedback, delayed useful use, selection benefit or eligibility of the prospectively selected first mutated origin. No source of winners or fresh sample-size estimate."
+    },
+    "actual_selected_origin_useful_opportunity": "UNKNOWN",
+    "useful_opportunity_lower_bound": 0
+  },
+  "source_costs": {
+    "treated_read_energy_to_heat_per_arm": 1,
+    "treated_read_material_creation": 0,
+    "three_arm_read_energy_to_heat": 3,
+    "pre_read_through_delayed_probe_dispatches_minimum": 4,
+    "including_original_exposure_dispatches_minimum": 5,
+    "conditional_pre_read_energy_to_reach_probe": 4,
+    "energy_assumptions": "No incoming transfer or other gain, no extra COPY/division/transfer expenditure, nonhalting path completing two delay dispatches. Extra costs increase floor. Successful probe can restore energy after base debit reaches0; an unsuccessful probe still yields an observed port before death.",
+    "latest_pre_read_completed_own_turns_for_probe_at_expiry": 252,
+    "expiry_order": "Probe at own dispatch256 is recorded before expiry; requiring survival afterward is a stricter endpoint, not an excuse to erase the observed probe.",
+    "latest_pre_read_global_tick_necessary_floor": 4092,
+    "scheduling_limit": "Four remaining global dispatches is necessary only; other actors and branch changes can prevent four own turns. No fairness or survival guarantee follows.",
+    "three_current_restore_branches": "3t prefix replay dispatches plus three separately bounded tails; each prefix+tail<=4096. Original discovery and other panels/reference Worlds are additional costs, not included here.",
+    "three_genesis_formation_heat_component": 129,
+    "three_genesis_total_energy_stock": 4260,
+    "formation_double_counting_rule": "Formation heat is included in each1420 initial energy ledger;129 is a component, not another energy injection. Three separate512-material Worlds are not1536 units inside one lineage.",
+    "full_ledger_required": "All source opcode fees, births/transfers/cap heat, inflow, rejections, deaths and unused resources remain. READ charge alone is not full organism cost.",
+    "unmeasured_costs": [
+      "intervention implementation overhead",
+      "checkpoint validation/copy/archive work",
+      "full replay CPU/wall/RAM",
+      "native process closure",
+      "log/receipt/storage reservations",
+      "all additional panels/references"
+    ],
+    "full_execution_cost_qualification": false,
+    "conditional_pre_read_energy_positive_after_no_intake_probe_before_expiry": 5,
+    "latest_pre_read_age_permitting_survival_past_probe": 251
+  },
+  "checkpoint_authority_contract": {
+    "original_receipt_binding": [
+      "exact original source/configuration/dose/World identity",
+      "complete paid ancestry and authentic original snapshot bytes/hash",
+      "exposure event and unchanged feedback provenance",
+      "actor ID/own age/PC/decoded opcode1/destination",
+      "original full replay equality before any intervention"
+    ],
+    "derived_binding": [
+      "fresh branch ID and original receipt hash",
+      "new prospective sensor-adapter source and exact intervention contract hash",
+      "one true/identity/XOR1 READ-result substitution",
+      "ordinary READ energy/heat and all non-target state checks",
+      "new derived-state receipt not represented as authentic original history"
+    ],
+    "authority_required": [
+      "separate exact prospective scientific/software role registration",
+      "independent source/cost/custody review",
+      "current original-owner PID/birth identity and exclusive lawful lock",
+      "source/config/role/branch/output reservations bound in reviewed native grant",
+      "finite CPU/memory/process/wall/storage ceilings and native closure receipts"
+    ],
+    "existing_PILOT74_grants": "Qualification-only and exact-role scoped; cannot authorize this new sensor law or EKA branches. Do not transfer/adopt/overwrite old operator.lock or old grants.",
+    "current_restore": "Reconstructs genesis/replays source then exact snapshot equality; not a modified-state loader. Keep equality guard unchanged.",
+    "offline_delta_checker": "Structural evidence only, never authentic history, operator authority or an execution grant",
+    "evidence_failure": "Mark comparison INCOMPLETE, preserve evidence and failure budget; no biological-zero scoring or silent retry",
+    "registration": null,
+    "owner_grant": null,
+    "derived_checkpoint_adapter": null,
+    "authority_qualified": false
+  },
+  "qualified_scope": [
+    "source opportunity constraints and conditional information relation",
+    "ordinary READ unit charge and necessary tail floors",
+    "three-current-replay accounting components",
+    "explicit nontransferability and missing authority requirements"
+  ],
+  "unqualified_scope": [
+    "actual useful exposure/probe by selected origin",
+    "intervention source and selective effect",
+    "full host/fork handling prices and native budget",
+    "authentic derived checkpoint authority",
+    "sample/effect/reserved conditions",
+    "scientific admission"
+  ],
+  "execution_decision": "NO_GO",
+  "worlds_authorized": 0,
+  "vm_steps_authorized": 0,
+  "new_seed_queries": 0,
+  "runtime_changes": false,
+  "next_dependency": "Exact sensor-adapter and original/derived checkpoint validation source, independently reviewed bounded software qualification registration and full cost/native authority. No source-only bound can impersonate the missing actual qualification receipts."
+}

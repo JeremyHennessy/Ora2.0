@@ -1,0 +1,45 @@
+{
+  "schema": "ORA-EKA1-FEEDBACK-QUALIFICATION-INDEPENDENT-REVIEW-v1",
+  "reviewed_utc": "2026-10-23T22:57:36.850136+00:00",
+  "reviewer": "independent AI-Research source/method reviewer",
+  "pins": {
+    "tools/eka1_feedback_cost_preflight.py": "5303d7eafd33b8f7404b4f02cfab3c5d1103e3ee000177160b3a2b1cb1eacdb7",
+    "tests/test_eka1_feedback_cost_preflight.py": "f91401baeba114594f77b9f214450d86e3c709ed942b7ec9e8e7d927499a4603",
+    "data/eka1-feedback-qualification-contract-20261023.json": "44f4392a78339ee409a4fd0e5d0474d59ff1d27bd21474c7078e702a4ff7e85d",
+    "docs/EKA-1-FEEDBACK-QUALIFICATION-20261023.md": "34923c8a901e9e4b8431e1f6ae73e59df37d619cac06743d750e027f05a7d392",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "method": "Read source, exact contract, six test definitions and prior immutable aggregate report only; no helper/test execution, VM imports, replay, seeds, genotype or raw-history queries.",
+  "source_bounds": "PASS_NARROW_CONDITIONAL_SCOPE",
+  "findings": [
+    "Founder has no feedback READ; COPY at5+8k yields ninth COPY69 and earliest DIV70 conditional on guards. No mutated child exists earlier.",
+    "Input before actor dispatch64; site0 initial32 including locked stock means min(4,k) admissions after k prior removals. Oldest local packet access and actual opportunity remain unknown.",
+    "Renewable same-site targets within a common side of2048 are algebraically equal; contract conservatively uses both ticks below2048. No actual encounter or useful selected-origin lower bound above0 follows.",
+    "Four focal dispatches from PRE-READ through delayed probe and five including exposure are necessary floors only. Pre-READ energy4 without extra spend/gain reaches observable probe,5 permits positive energy before expiry; turn256 probe precedes expiry, age251 required for surviving beyond it.",
+    "Three current restores replay3t plus three tails with independent initial ledgers:129 formation heat is included within4260 initial energy; no formation double count or1536 material in one lineage. Original discovery and other panels excluded explicitly.",
+    "All arms retain ordinary READ1 energy-to-heat charge; no material created. This is not host/native/fork pricing qualification.",
+    "Existing restore exact replay guard remains unchanged. New derived source/state requires separate identity/custody/scientific registration and original-owner native grant; structural hashes grant none.",
+    "Infrastructure/evidence failure is INCOMPLETE, never biological0."
+  ],
+  "aggregate_reuse": {
+    "path": "D:/OraLab/reports/ora-eka0-closed-data-audit-20261023.json",
+    "sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+    "dose1_reads": 0,
+    "dose8_reads": 104,
+    "dose8_born_readers": 8,
+    "dose8_readers_later_reproduced": 3,
+    "limit": "Aggregate access/temporal order, not useful information, learning, prospective origin eligibility or power."
+  },
+  "blocking_defects_found": [],
+  "tests": "Six offline test definitions inspected; root reported six PASS. Not independently rerun.",
+  "execution_decision": "NO_GO",
+  "actual_useful_opportunity": "UNKNOWN",
+  "full_intervention_cost_qualified": false,
+  "checkpoint_authority_qualified": false,
+  "scientific_admission": false,
+  "new_worlds": 0,
+  "new_vm_steps": 0,
+  "next_component": "Exact test-only sensor adapter and original/derived checkpoint custody source with separately reviewed finite software/native registration; no execution before required authority."
+}
