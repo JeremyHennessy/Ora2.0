@@ -140,4 +140,27 @@ class Knowledge(unittest.TestCase):
                 self.assertEqual(pub.call_count,1)
             self.assertFalse((run/'fixture-publication.json').exists());self.assertEqual(s.status()['submitted'],1)
 
+    def test_archived_question_survives_task_pruning_without_replay(self):
+        with fixture() as (c,s):
+            q=c.ask('Question');root=c.run_dir(q['run_id'])
+            with s.db:s.db.execute('DELETE FROM tasks')
+            (root/'answer.json').unlink();before=s.status()['submitted'];review=c.review(q['run_id'])
+            self.assertTrue(review['task']['archived']);self.assertFalse(review['task']['resubmit'])
+            self.assertEqual(review['proposal']['proposal_sha256'],q['proposal_sha256']);self.assertEqual(s.status()['submitted'],before)
+
+    def test_archived_approval_requires_current_trusted_provenance(self):
+        with fixture() as (c,s):
+            q=c.ask('Question');c.correct(q['run_id'],q['proposal_sha256'],'Fixture approved value')
+            with s.db:s.db.execute('DELETE FROM tasks')
+            review=c.review(q['run_id']);self.assertEqual(review['correction_task']['result'],'operator-confirmed');self.assertTrue(review['correction_task']['archived'])
+            with s.db:s.db.execute('DELETE FROM memories WHERE key=?',('user:project-note:'+q['run_id'],))
+            with self.assertRaises(ValueError):c.review(q['run_id'])
+
+    def test_changed_archived_model_result_rejected(self):
+        with fixture() as (c,s):
+            q=c.ask('Question');root=c.run_dir(q['run_id'])
+            with s.db:s.db.execute('DELETE FROM tasks')
+            saved=json.loads((root/'ask-result.json').read_text());outer=json.loads(saved['result']);outer['answer']='changed';saved['result']=json.dumps(outer);atomic(root/'ask-result.json',saved)
+            with self.assertRaises(ValueError):c.review(q['run_id'])
+
 if __name__=='__main__':unittest.main()

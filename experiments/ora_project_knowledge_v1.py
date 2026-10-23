@@ -105,7 +105,20 @@ class Client:
     def recover(self,run,tag):
         publication=read(run/(tag+'-publication.json'))
         with self.db() as db:row=db.execute('SELECT kind,key,value,state,result FROM tasks WHERE id=?',(publication['sequence'],)).fetchone()
-        if not row:return dict(state='not-in-retained-task-table',sequence=publication['sequence'],resubmit=False)
+        if not row:
+            archive=run/(tag+'-result.json')
+            if not archive.exists():return dict(state='not-in-retained-task-table',sequence=publication['sequence'],resubmit=False)
+            saved=read(archive);q=read(run/'question.json')
+            if set(saved)!={'state','sequence','result'} or saved['state']!='done' or saved['sequence']!=publication['sequence'] or q['key']!=PREFIX+run.name or publication['key']!=q['key']:raise ValueError('Archived receipt identity differs')
+            if tag=='ask':
+                outer=json.loads(saved['result'])
+                if publication['kind'] not in ('ask','ask-isolated') or digest(q['prompt'].encode())!=publication['payload_sha256'] or outer.get('trusted') is not False or digest(outer['answer'].encode())!=outer['proposal_sha256']:raise ValueError('Archived proposal differs')
+            elif tag=='correction':
+                correction=read(run/'operator-correction.json')
+                with self.db() as db:note=db.execute('SELECT m.value,p.issuer,p.task FROM memories m JOIN memory_provenance p USING(key) WHERE m.key=?',(q['key'],)).fetchone()
+                if publication['kind']!='approve' or saved['result']!='operator-confirmed' or note!=(correction['stored_note'],'operator',publication['sequence']):raise ValueError('Archived approval is not backed by current trusted provenance')
+            else:raise ValueError('Unknown archived receipt type')
+            return dict(saved,archived=True,resubmit=False)
         if row[:2]!=(publication['kind'],publication['key']) or digest(row[2].encode())!=publication['payload_sha256']:raise ValueError('Saved sequence belongs to different content;do not resubmit')
         if row[3]!='done':return dict(state=row[3],sequence=publication['sequence'],resubmit=False)
         result=dict(state='done',sequence=publication['sequence'],result=row[4])
@@ -193,7 +206,7 @@ class Client:
 
 def menu(client):
     """Interactive operator input only. No model response selects a command."""
-    print('Ora project knowledge — local operator console')
+    print('Ora project knowledge - local operator console')
     print('Answers are suggestions. Only your explicit correction choice saves an approved note.')
     while True:
         print('\n1 Ask a project question\n2 Review a saved answer\n3 Save your correction to a reviewed answer\n4 Status\n0 Exit')
