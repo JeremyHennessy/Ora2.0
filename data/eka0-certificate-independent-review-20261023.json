@@ -1,0 +1,122 @@
+{
+  "schema": "ORA-EKA0-SOURCE-CERTIFICATE-INDEPENDENT-REVIEW-v1",
+  "reviewer": "/root/eka0_independent_research",
+  "date": "2026-10-23",
+  "pins": {
+    "plan": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-certificate-20261023\\data\\eka0-certificate-plan-20261023.json",
+      "sha256": "bfcd07ca5b7e8ad3bbe0864e68fcf11addd72c533ea249d66385eb548226cf8d",
+      "extent": 6023
+    },
+    "script": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-certificate-20261023\\tools\\eka0_source_certificate.py",
+      "sha256": "c40937437d61cdb2d8309ae9b52c2bc0fb8e68108b6c7c774c55fdf63d36b802",
+      "extent": 12019
+    },
+    "result": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka0-certificate-20261023\\data\\eka0-source-certificate-20261023.json",
+      "sha256": "c974e90ad6aaea2d3bd1708dffc44cfd5084eba1944b2e5a454c8ed700bb7608",
+      "extent": 282929
+    }
+  },
+  "scoped_review": "ACCEPTED_CONDITIONAL_ARITHMETIC_AND_SOURCE_EXPRESSIBILITY_ONLY",
+  "full_evolutionary_feasibility_certificate": false,
+  "mutation_viability": "UNKNOWN",
+  "ecological_advantage": "UNKNOWN",
+  "population_execution": "NO_GO",
+  "checks": [
+    "Exact frozen plan, script and retained result hashes match",
+    "Read source implementation without importing or executing it",
+    "Reviewed declared paths against retained historical opcode source",
+    "All1024 retained mask records present; structural condition is nondiscriminating",
+    "All paid worksheet rows conserve retained energy and reconcile dispatch/copy/division/cap heat",
+    "Every retained group ends positive and first-birth turn below256",
+    "Full-nursery COPY refusal charged base only; insufficient DIVIDE retains dispatch charge",
+    "No result claims formation-inclusive superiority or naturally discovered algorithm"
+  ],
+  "worksheet_summary": [
+    {
+      "name": "candidate",
+      "initially_matching": true,
+      "first_birth_own_turn": 54,
+      "captures": 9,
+      "parent_energy": 27,
+      "heat": 153,
+      "cap_heat": 54
+    },
+    {
+      "name": "candidate",
+      "initially_matching": false,
+      "first_birth_own_turn": 60,
+      "captures": 9,
+      "parent_energy": 27,
+      "heat": 153,
+      "cap_heat": 48
+    },
+    {
+      "name": "authored_same_policy_8",
+      "initially_matching": true,
+      "first_birth_own_turn": 47,
+      "captures": 8,
+      "parent_energy": 27,
+      "heat": 133,
+      "cap_heat": 44
+    },
+    {
+      "name": "authored_same_policy_8",
+      "initially_matching": false,
+      "first_birth_own_turn": 52,
+      "captures": 8,
+      "parent_energy": 27,
+      "heat": 133,
+      "cap_heat": 39
+    },
+    {
+      "name": "fixed_0",
+      "initially_matching": true,
+      "first_birth_own_turn": 20,
+      "captures": 5,
+      "parent_energy": 29,
+      "heat": 71,
+      "cap_heat": 18
+    },
+    {
+      "name": "fixed_1",
+      "initially_matching": true,
+      "first_birth_own_turn": 20,
+      "captures": 5,
+      "parent_energy": 29,
+      "heat": 71,
+      "cap_heat": 18
+    },
+    {
+      "name": "blind_alternator",
+      "initially_matching": true,
+      "first_birth_own_turn": 35,
+      "captures": 4,
+      "parent_energy": 9,
+      "heat": 71,
+      "cap_heat": 0
+    },
+    {
+      "name": "blind_alternator",
+      "initially_matching": false,
+      "first_birth_own_turn": 40,
+      "captures": 4,
+      "parent_energy": 4,
+      "heat": 76,
+      "cap_heat": 0
+    }
+  ],
+  "limits": [
+    "No enumeration, worksheet generator, VM, World, seed or model rerun by reviewer",
+    "Aggregate arithmetic checks inspect existing retained rows; not independent ecological replay",
+    "Boolean identities assume truthful nonempty stable-port feedback; real packets and timing not qualified",
+    "All1024 CFG passes cannot demonstrate viability of any intermediate",
+    "Shorter supplied reference programs are not reachable by fixed-length founder substitution",
+    "Candidate requires9captures versus4for blind reference and5for matching fixed reference; no general economic superiority demonstrated",
+    "Exact ten-edit one-birth probability is conditional on independent uniform hash outputs, not future power or probability of any useful lineage",
+    "Realistic mutant opportunity, competitive resource availability, natural intermediate viability and selected inherited advantage remain unproved"
+  ],
+  "next_action": "Keep population NO_GO; prospectively bound actual reachable feedback opportunity and cheapest viable mutation intermediates without changing closed evidence"
+}
