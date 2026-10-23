@@ -1,0 +1,56 @@
+{
+  "schema": "ORA-EKA1-CAPABILITY-INDEPENDENT-PREPARATION-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "plan": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-capability-preparation-20261023\\data\\eka1-capability-proposal-20261023.json",
+      "sha256": "bcd09dbd2fd8acc90e1ba35a724df22eb2155c958a58f22f3f5ccb73c121b5ca",
+      "extent": 10694
+    },
+    "core": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-capability-preparation-20261023\\tools\\eka1_capability_preparation.py",
+      "sha256": "4efda04f39e71e47f686f2c99df206ffd8e6170d5badc95209320f000c6cd4d6",
+      "extent": 7979
+    },
+    "report": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-capability-preparation-20261023\\data\\eka1-capability-gate-review-20261023.json",
+      "sha256": "fb3fe95df1d9213817fc9ca13af7847ea2af228a5a50de8443f20647b82c9cd2",
+      "extent": 3801
+    },
+    "targeted_test_log": {
+      "path": "D:\\OraLab\\reports\\ora-eka1-capability-targeted-tests-20261023.log",
+      "sha256": "6c3771f5a28405d3b7e84bd0f44ff9acb891d7649095208e5585953c6b1d1275",
+      "extent": 2262
+    }
+  },
+  "decision": "ACCEPT_NOT_READY_PREPARATION_ONLY",
+  "unchanged_source_founder_baseline": "PASS_EXACT_WINDOWS_BYTES_AND_AST_LITERAL_ONLY",
+  "scientific_question": "New narrow Ora inherited-causal-reacquisition question, not a global novelty claim or permission to repeat closed Pressure71 arms",
+  "resource_affordability": "UNKNOWN_NOT_QUALIFIED",
+  "causal_information_assay": "BLOCKED_UNIMPLEMENTED",
+  "mutation_useful_origin_opportunity": "UNKNOWN_NOT_QUALIFIED",
+  "sampling_effect_reserved_authority": "BLOCKED_UNASSIGNED",
+  "native_cpu_memory_storage_custody": "BLOCKED_UNQUALIFIED",
+  "scientific_execution_admission": "BLOCKED_NOT_ADMITTED",
+  "execution_ready": false,
+  "worlds_authorized": 0,
+  "checks": [
+    "Exact final plan/core/report hashes and retained14test log checked",
+    "Three unchanged Windows source bytepins and ordinaryfounder ASTliteral match without experimentimports",
+    "Energy/copy/material/fork integerceilings reconcile; constructorreserve and childtransfer not credited as new intake",
+    "Firstmutatedorigin no replacement and firstliteralfaithfulchild restrictdiagnostics, allWorldfailures retained",
+    "Withincheckpoint causal matching and correlatedsharedfaithful control disclosed",
+    "Mandatory economic nulls separate from positive suppliedlearning benchmark",
+    "Registration fields remain null; all scientific/resource/causal/mutation/native gates unresolved"
+  ],
+  "limitations": [
+    "No gate-report generator, VM, seed, dataoutcome, genotype, diagnostic or population rerun by reviewer",
+    "Ceilings are not CPU/RAM/wall qualification, useful-origin lowerbounds or power",
+    "Literalfaithful-child rule can miss functional inheritance with furthermutation and hasdose-dependent opportunity",
+    "14diagnostic forks schematic; additionalconditions multiplyWorlds/costs andneed newprospectivebudget",
+    "Exactgenome is not evolutionary acceptance; prior authoredroute NO_GO_NOW remains unchanged",
+    "No intelligence/evolution/culture claim, source rating change, closedresult revision or liveOra mutation"
+  ],
+  "next_decision": "Choose whether an independently source-qualified nonlethal causal-information assay and honest opportunity/resource case can be prepared; no new population or Pressure71 rerun authorized"
+}

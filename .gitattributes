@@ -18,3 +18,9 @@ data/eka0-lifetime-path-independent-review-20261023.json -text whitespace=blank-
 tools/eka0_lifetime_preparation.py -text
 tools/eka0_closed_path_review.py -text
 tests/test_eka0_lifetime_preparation.py -text
+# Capability-based preparation: exact proposal, checker and retained evidence.
+data/eka1-capability-proposal-20261023.json -text
+data/eka1-capability-gate-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-capability-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tools/eka1_capability_preparation.py -text
+tests/test_eka1_capability_preparation.py -text
