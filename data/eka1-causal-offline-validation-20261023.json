@@ -1,0 +1,16 @@
+{
+  "schema": "ORA-EKA1-CAUSAL-OFFLINE-VALIDATION",
+  "utc": "2026-10-23T21:02:52.037955+00:00",
+  "tests_passed": 6,
+  "test_seconds": 0.014,
+  "command": "python -B -m unittest discover -s tests -p test_eka1_causal_source_audit.py -v",
+  "source_audit_passed": true,
+  "causal_assay_qualified": false,
+  "worlds_executed": 0,
+  "source_sha256": {
+    "tools/eka1_causal_source_audit.py": "10aedd4755fd1b909c1a83af304ab65a69bbed8c550ffb37a678f682a2987709",
+    "tests/test_eka1_causal_source_audit.py": "e333be2a39958ccb495a0518c1d45c006b03dc87f884735e7eab1e4c597e346a",
+    "data/eka1-causal-source-audit-20261023.json": "a698a83eea4c9bf9d5a8bf4c9c73c443e27d1210ca3cd84f6a645388e41da857",
+    "docs/EKA-1-CAUSAL-ASSAY-QUALIFICATION-20261023.md": "60811bf3d12eec30193106fa08c163576b5a4392ff3e5dce5b4b6a3b63d8502c"
+  }
+}
