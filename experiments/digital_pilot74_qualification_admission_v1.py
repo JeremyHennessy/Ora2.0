@@ -3,7 +3,7 @@
 External exact pins authenticate review origin; this module never issues a grant
 or creates PASS evidence. No World construction, native launch or retry here.
 """
-import copy,os,time
+import copy,os,time,sys
 from pathlib import Path
 from experiments import digital_pilot74_publication_reader_v2 as physical
 from experiments import digital_pilot74_finite_requests_v2 as requests
@@ -40,6 +40,7 @@ def shape(r,plan):
     return True
 
 def validate(r):
+    if sys.flags.optimize:raise ValueError('Optimized admission forbidden')
     q=r['qualification'];plan=parsed(q['plan']);shape(r,plan)
     reviews={}
     for kind,pin in r['reviews'].items():

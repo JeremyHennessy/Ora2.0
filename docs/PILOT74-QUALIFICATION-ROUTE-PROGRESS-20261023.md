@@ -14,7 +14,7 @@ the reviewed enclosing boundary. The contained caller reuses the existing durabl
 two-slot evidence format. It cannot issue a grant or author independent PASS
 reviews. Missing hard-stop terminal evidence remains UNKNOWN.
 
-Eleven new-only software tests initially pass. They do not construct Worlds or
+Eighteen new-only software tests now pass, including actual mocked admission and owner refusal paths. They do not construct Worlds or
 run the guardian. They are not complete preflight/source/resource acceptance.
 The first bounded build compiled the C object but failed to execute the linker
 under a three-process cap (D8027). Its registration/native output/object remain
@@ -22,7 +22,13 @@ sealed locally. A new link-only group reused that exact object with the same
 512MiB/30userCPU/60wallsecond/three-process limits; it passed. The compiler was
 not rerun. New artifact:212480bytes, SHA256
 efbedc111fd27e95c0636c132f26cf0cd3bd11da1f75edd9d1cf4b4e87919ad3.
-The artifact has NOT been executed. Build success is not native behavior,
+The artifact has NOT been executed.
+
+Independent source review required stronger immediate owner descriptor rechecks
+and real validation refusal tests; these were added. Initial Windows CI passed
+the11initial tests but failed raw source pins because new files lacked byte-preserving
+checkout attributes. That failed CI remains failed. The corrected candidate pins
+new route files with -text and preserves actual Git/checkout/export identity. Build success is not native behavior,
 whole-production resource fit, recovery qualification or scientific admission.
 
 Still required: independent review of exact enlarged source/native artifact and

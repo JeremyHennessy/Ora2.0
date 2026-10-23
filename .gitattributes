@@ -100,3 +100,12 @@ tests/test_pilot74_closure_reserve_v1.py -text
 experiments/digital_pilot74_reserved_closure_probe_v1.py -text
 experiments/digital_pilot74_reserved_closure_registration_v1.py -text
 tests/test_pilot74_reserved_closure_registration_v1.py -text
+
+# Exact new qualification route bytes on Windows CI and exports.
+experiments/digital_pilot74_qualification_admission_v1.py -text
+experiments/digital_pilot74_qualification_controller_v1.py -text
+experiments/digital_pilot74_qualification_worker_v1.py -text
+experiments/digital_pilot74_qualification_caller_v1.py -text
+experiments/digital_pilot74_qualification_owner_v1.py -text
+experiments/digital_pilot74_lock_scope_v1.py -text
+experiments/native/pilot74_guardian_v1.exe -text
