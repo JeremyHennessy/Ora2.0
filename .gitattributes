@@ -82,3 +82,6 @@ experiments/evidence_budget.py -text
 experiments/evidence_write_grant68.py -text
 experiments/native/pilot74_guardian_v1.c -text
 experiments/process_limits.py -text
+experiments/digital_pilot74_durable_supervisor_v1.py -text
+tests/test_pilot74_durable_supervisor_v1.py -text
+docs/PILOT74-RESOURCE-CUSTODY-QUALIFICATION-20261023.md -text
