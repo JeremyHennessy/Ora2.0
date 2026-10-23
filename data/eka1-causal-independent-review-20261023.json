@@ -1,0 +1,80 @@
+{
+  "schema": "ORA-EKA1-CAUSAL-INDEPENDENT-SOURCE-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "pressure_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-causal-assay-20261023\\experiments\\digital_pressure71_population.py",
+      "sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "extent": 10219
+    },
+    "base_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-causal-assay-20261023\\experiments\\digital_sharedlineage68_population.py",
+      "sha256": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "extent": 12918
+    },
+    "source_audit_tool": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-causal-assay-20261023\\tools\\eka1_causal_source_audit.py",
+      "sha256": "10aedd4755fd1b909c1a83af304ab65a69bbed8c550ffb37a678f682a2987709",
+      "extent": 3289
+    },
+    "retained_source_audit": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-causal-assay-20261023\\data\\eka1-causal-source-audit-20261023.json",
+      "sha256": "a698a83eea4c9bf9d5a8bf4c9c73c443e27d1210ca3cd84f6a645388e41da857",
+      "extent": 2671
+    },
+    "contract_document": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-causal-assay-20261023\\docs\\EKA-1-CAUSAL-ASSAY-QUALIFICATION-20261023.md",
+      "sha256": "60811bf3d12eec30193106fa08c163576b5a4392ff3e5dce5b4b6a3b63d8502c",
+      "extent": 6301
+    }
+  },
+  "decision": "SOURCE_FACTS_ACCEPTED_CAUSAL_EXECUTION_NO_GO",
+  "source_identity": "PASS_EXACT_PINNED_WINDOWS_BYTES",
+  "restore_facts": [
+    "Both restore methods reconstruct original seed/configuration and replay step to tick",
+    "Both require exact hash equality of complete snapshots including retained history",
+    "Changed-state interventions are not an existing restore capability; deleting equality would weaken custody"
+  ],
+  "information_facts": [
+    "Opcode1 reads current feedback; opcode2 reads literal-addressed memory; opcode3 writes memory from registers",
+    "Feedback overwritten by each forage and zero also denotes empty food",
+    "Registers, memory, code, PC, position and messages can carry history; ecology and resource state can correlate with it",
+    "Eight-cell erasure misses other channels; global erasure can damage motor phase, copying and reproduction",
+    "Read masking can reveal sensory/state dependence without distinguishing delayed learning from immediate reflex",
+    "The AST direct-container Load/Store contexts are not a complete alias, nestedmutation or causal dependence graph"
+  ],
+  "smallest_credible_next_contract": [
+    "Freeze a narrow delayed-personal-information claim and personally available exposure/probe boundary before outcomes",
+    "Authenticate exact checkpoint and ancestry; match causal arms within checkpoint, not posthoc across ages/ecologies",
+    "Validate original replay first, then separately authorize and price a minimal explicit intervention delta with new provenance",
+    "Specify a channel-specific information lesion and equal-handling-cost sham, preserving non-target phase/resources where identifiable",
+    "Qualify sensitivity on disclosed delayed-use fixture and specificity on reactive/blind/phase/reproduction negatives under separately authorized software execution",
+    "Freeze allWorld outcomes, missing/deadhandling, effect thresholds, sampling, native custody and paid descendant reacquisition before scientific admission"
+  ],
+  "wording_caveats": [
+    "Delay requirement applies to proposed delayed-use assay, not a universal definition excluding rapid learning",
+    "Intact/sham identity requires equal handling charges and defined allowed receipt differences; no unpaid sham or impossible exactenergy identity",
+    "No universally selective nonlethal memory lesion is proved; this doesnot show the VM cannot learn"
+  ],
+  "qualification": {
+    "causal_effect": false,
+    "nonlethality": false,
+    "lesion_specificity": false,
+    "intervened_checkpoint_custody": false,
+    "intervention_pricing": false,
+    "resource_affordability": false,
+    "sampling_reserved_authority": false,
+    "native_execution": false,
+    "scientific_admission": false
+  },
+  "retained_source_tests": "Six targeted AST/source metadata tests reported; not successful causal memory tests",
+  "reviewer_generator_reruns": 0,
+  "worlds": 0,
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "model_calls": 0,
+  "repository_edits": false,
+  "historical_findings_changed": false,
+  "next_decision": "Either independently qualify the narrow intervention contract under separate explicit software/world gates, or retain NO_GO; do not manufacture a learner or bypass exact-history restore"
+}

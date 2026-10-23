@@ -24,3 +24,10 @@ data/eka1-capability-gate-review-20261023.json -text whitespace=blank-at-eol,bla
 data/eka1-capability-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tools/eka1_capability_preparation.py -text
 tests/test_eka1_capability_preparation.py -text
+
+# Exact source-only causal audit evidence.
+tools/eka1_causal_source_audit.py -text
+tests/test_eka1_causal_source_audit.py -text
+data/eka1-causal-source-audit-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-causal-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-causal-offline-validation-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

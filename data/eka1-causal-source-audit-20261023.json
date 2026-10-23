@@ -1,0 +1,119 @@
+{
+  "schema": "ORA-EKA1-CAUSAL-SOURCE-AUDIT-v1",
+  "source_findings": {
+    "digital_pressure71_population.py": {
+      "sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "channels": {
+        "code": [
+          "Load"
+        ],
+        "cue": [
+          "Load",
+          "Store"
+        ],
+        "energy": [
+          "Load",
+          "Store"
+        ],
+        "feedback": [
+          "Load",
+          "Store"
+        ],
+        "generation": [
+          "Load"
+        ],
+        "inbox": [
+          "Load",
+          "Store"
+        ],
+        "memory": [
+          "Load"
+        ],
+        "nursery": [
+          "Load",
+          "Store"
+        ],
+        "pc": [
+          "Load",
+          "Store"
+        ],
+        "pos": [
+          "Load",
+          "Store"
+        ],
+        "registers": [
+          "Load"
+        ],
+        "state_units": [
+          "Load"
+        ]
+      },
+      "restore_defined_here": true,
+      "restore_replays_steps": true,
+      "restore_requires_exact_history": true
+    },
+    "digital_sharedlineage68_population.py": {
+      "sha256": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "channels": {
+        "code": [
+          "Load"
+        ],
+        "cue": [
+          "Load",
+          "Store"
+        ],
+        "energy": [
+          "Load",
+          "Store"
+        ],
+        "feedback": [
+          "Load",
+          "Store"
+        ],
+        "generation": [
+          "Load"
+        ],
+        "inbox": [
+          "Load",
+          "Store"
+        ],
+        "memory": [
+          "Load"
+        ],
+        "nursery": [
+          "Load",
+          "Store"
+        ],
+        "pc": [
+          "Load",
+          "Store"
+        ],
+        "pos": [
+          "Load",
+          "Store"
+        ],
+        "registers": [
+          "Load"
+        ],
+        "state_units": [
+          "Load"
+        ]
+      },
+      "restore_defined_here": true,
+      "restore_replays_steps": true,
+      "restore_requires_exact_history": true
+    }
+  },
+  "source_audit": "PASS",
+  "causal_assay_qualified": false,
+  "decision": "NO_GO_FOR_CAUSAL_EXECUTION",
+  "worlds_authorized": 0,
+  "vm_steps_executed": 0,
+  "new_seed_queries": 0,
+  "limits": [
+    "AST presence is not proof of information use or functional learning.",
+    "Memory-only erasure is neither complete nor certified nonlethal.",
+    "Exact-history restore does not provide an intervention API.",
+    "No intervention pricing, causal effect or nonlethality is verified."
+  ]
+}
