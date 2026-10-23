@@ -1,0 +1,55 @@
+{
+  "schema": "ORA-EKA0-SOURCE-CERTIFICATE-PLAN-v1",
+  "status": "FROZEN_BEFORE_ANALYSIS",
+  "base_revision": "fa9f62121daf9887c857f71e26c677314dd8f7f1",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "founder": [[4,1,1],[6,0,0],[5,0,1],[6,0,0],[10,0,0],[12,0,0],[13,1,0],[13,1,0],[7,0,1]],
+  "candidate": [[4,1,1],[6,0,0],[1,1,1],[8,1,7],[10,0,0],[12,0,0],[7,1,1],[4,1,1],[5,0,1]],
+  "references": {
+    "authored_same_policy_8": [[6,0,0],[1,1,0],[8,1,6],[10,0,0],[12,0,0],[7,0,0],[4,1,1],[5,0,1]],
+    "fixed_0": [[4,0,0],[6,0,0],[10,0,0],[12,0,0],[7,0,1]],
+    "fixed_1": [[4,0,1],[6,0,0],[10,0,0],[12,0,0],[7,0,1]],
+    "blind_alternator": [[4,1,1],[6,0,0],[5,0,1],[10,0,0],[12,0,0],[7,0,1]]
+  },
+  "declared_paths": {
+    "candidate": {"startup": [0], "success_cycle": [1,2,3,4,5,6], "failure_cycle": [1,2,3,7,8,0]},
+    "authored_same_policy_8": {"startup": [], "success_cycle": [0,1,2,3,4,5], "failure_cycle": [0,1,2,6,7]},
+    "fixed_0": {"startup": [0], "success_cycle": [1,2,3,4]},
+    "fixed_1": {"startup": [0], "success_cycle": [1,2,3,4]},
+    "blind_alternator": {"startup": [0], "cycle": [1,2,3,4,5]}
+  },
+  "operations": [
+    "Check pinned source bytes and literal program legality without importing VM modules.",
+    "Four Boolean port/target rows under actual nonempty food and truthful stable-port feedback; explicitly reject empty-food inference.",
+    "Enumerate exactly all 1024 subsets of the ten fixed founder-to-candidate word edits. Conservative CFG has both branch edges. Record every mask and reachable recurrent SCC containing FORAGE/COPY/DIVIDE. One-edit path is structural only, never a viable mutation certificate.",
+    "Grouped scalar energy worksheet over declared paths only, with initialization, refused division base costs, one wrong-port failure branch, cap heat, copy extra, division heat/child transfer and expiry. No VM interpreter, organism or ecology simulation.",
+    "Same grouped worksheet for predeclared cheaper references; fixed strategies include both ports without target-based selection. Blind alternator includes wrong-port costs, the six paid COPY groups, full-nursery COPY refusal costs and up to two further cycles after full nursery. Actual mobile ancestor remains a separate resource-access reference, not a matched stationary ecology.",
+    "Exact conditional uniform-independent-64-bit-hash arithmetic for this specified ten-word one-birth route at doses 1 and 8. No seed hash queries or evolutionary probability inference."
+  ],
+  "conditional_cost_assumptions": [
+    "Blank registers and 12 energy; available local food at each attempt, stable target during block, at most one initial wrong-port attempt for feedback policies.",
+    "No transfers, neighbours or competition; enough free material and population slots at each copy/division; unchanged code; no mutation in the arithmetic block.",
+    "All COPY operations before nursery completion succeed and each writes three words for three extra energy. Full-nursery COPY refuses and still pays base dispatch. All early DIVIDE refusals still pay their dispatch energy; only a qualified final division pays extra 30 (18 heat,12 child). Blind alternator may use at most two additional declared cycles after completing its six COPY groups.",
+    "Every dispatch costs one; food grants at most20 under energy cap64; expiry256 own turns. These assumptions are jointly conditional, not a reachable-history witness for an actual mutant.",
+    "Source feedback0 also means absent food. Source environment changes at tick64 and contains packet-specific targets; stable repeated target is not guaranteed by this plan."
+  ],
+  "budget": {"genotypes": 1024, "truth_rows": 4, "maximum_cost_rows": 10, "wall_seconds": 60, "observed_peak_working_set_bytes": 134217728, "result_bytes": 1048576, "worlds": 0, "model_calls": 0, "new_seed_queries": 0},
+  "budget_enforcement": "Finite loops and cooperative wall checks; final wall/output/Windows peak-working-set assertions. This is not a native hard resource-containment qualification.",
+  "pre_execution_clarification": "Before any enumeration or worksheet invocation, full-nursery COPY refusals and at most two additional blind-reference cycles were made explicit. No result was consulted or candidate changed.",
+  "stop_rule": "One bounded analysis invocation; retain exceptions and partial output. No alternate candidate, extra graph search, population, acceptance change or rerun to improve outcomes.",
+  "decision_rules": {
+    "conditional_expressibility_cost": "Pass only legal candidate, four conditional feedback identities, positive parent remainder and paid child before256 own turns under all declared assumptions.",
+    "mutation_viability": "UNKNOWN unless real intermediate viability and opportunity costs are established; a CFG path alone is insufficient.",
+    "ecological_advantage": "UNKNOWN without qualified reachable encounters and paid comparison in actual ecology; worksheet superiority never implies selection.",
+    "population_execution": "NO_GO while either necessary scientific gate remains UNKNOWN; no scientific admission is granted by this analysis."
+  },
+  "independent_prospective_review": {
+    "reviewer": "/root/eka0_independent_research",
+    "accepted_scope": "Conditional source expressibility/cost only; realistic evolutionary feasibility UNKNOWN.",
+    "required_limits": ["Nonempty truthful stable-port premise", "All dispatch and refusal/cap/material/expiry costs", "Targeted subcube not exhaustive search", "Conservative CFG necessary conditions only", "Eight-slot reference unreachable from fixed-length founder", "Established win-stay/lose-shift, no invented or evolved algorithm claim"]
+  }
+}
