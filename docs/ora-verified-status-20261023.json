@@ -121,13 +121,13 @@
     "pilots_retried": false
   },
   "world_qualification_route": {
-    "status": "implemented; independent scoped source preparation accepted, execution held",
+    "status": "terminal qualification failure; prospective LF emission repair software verified",
     "native_rebuilt": true,
     "full_workload_executed": false,
     "all_production_gates_passed": false,
-    "candidate": "de9efd61448610706cf2e48c4485ef620704ed74",
+    "candidate": "99e793834c83ade75af5b300282656c9be42a028",
     "pr": 309,
-    "native_artifact_executed": false,
+    "native_artifact_executed": true,
     "local_tests": 18,
     "source_artifact_pins": 70,
     "source_artifact_bytes": 916918,
@@ -135,6 +135,25 @@
     "ci": 40000940757,
     "ci_status": "success",
     "actual_registration_preflight_and_independent_grant": false,
-    "ci_tests_passed": 18
+    "ci_tests_passed": 18,
+    "readiness_roles_executed": 1,
+    "completed_controller_roles": 0,
+    "actual_genesis": 0,
+    "actual_hydrates": 0,
+    "actual_vm_steps": 0,
+    "owned_births_closed": 5,
+    "partial_archive_members_exactly_restored": 419,
+    "rerun": false
+  },
+  "world_qualification_wire_repair": {
+    "candidate": "2d0703058beacbfa4437b12389f4d9b310ffd82e",
+    "pr": 310,
+    "ci": 40005528005,
+    "ci_conclusion": "success",
+    "new_tests": 5,
+    "source_artifact_pins": 70,
+    "qualification_executed": false,
+    "replacement_authorized": false,
+    "runtime_deployed": false
   }
 }
