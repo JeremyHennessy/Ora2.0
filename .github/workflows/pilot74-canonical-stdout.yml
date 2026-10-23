@@ -1,0 +1,20 @@
+name: PILOT74 canonical output lines
+on:
+  push:
+    branches: ['repair/pilot74-canonical-stdout-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  new_wire_regression:
+    runs-on: windows-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: New output wire tests only, no qualification role or World execution
+        run: python -B tests/test_pilot74_canonical_stdout_v1.py
+      - name: Exact inherited source and modified entrypoint bytes
+        run: python -B -c "import json,hashlib,pathlib; p=json.loads(pathlib.Path('data/pilot74-canonical-stdout-source-pins-v1.json').read_text()); assert all(hashlib.sha256(pathlib.Path(n).read_bytes()).hexdigest()==h for n,h in p.items()); print(len(p),'source hashes matched')"
