@@ -121,4 +121,22 @@ class OwnerDescriptor(unittest.TestCase):
      with self.assertRaises(FileExistsError):owner.launch(dict(path='fixture',extent=1,sha256='f'*64),'f'*64,fd,250)
      self.assertEqual(launch.call_count,1)
    finally:os.close(fd)
+class PhysicalOwnerLock(unittest.TestCase):
+ def test_extended_lock_pin_parses_exact_canonical_header(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d)/'lock';raw=q.physical.encode(dict(schema='PILOT74-QUALIFICATION-OWNER-LOCK-v1',pid=123,creation_filetime_decimal='456'));p.write_bytes(raw);i=p.stat()
+   pin=dict(path=str(p),extent=len(raw),sha256=hashlib.sha256(raw).hexdigest(),device=i.st_dev,inode=i.st_ino)
+   self.assertEqual(q.parsed(pin)['pid'],123)
+   pin['unexpected']=True
+   with self.assertRaises(AssertionError):q.parsed(pin)
+ @unittest.skipUnless(os.name=='nt','Windows share modes')
+ def test_identity_read_while_original_owner_descriptor_is_held(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d)/'lock';fd=os.open(p,os.O_CREAT|os.O_EXCL|os.O_RDWR)
+   try:
+    os.write(fd,b'owner');os.fsync(fd)
+    with self.assertRaises(OSError):q.guardian.win32_id(p)
+    identity=q.guardian.win32_id(p,share=3)
+    self.assertEqual(identity,q.guardian.win32_id(p,share=3))
+   finally:os.close(fd)
 if __name__=='__main__':unittest.main()

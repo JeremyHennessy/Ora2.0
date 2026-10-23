@@ -14,7 +14,9 @@ MODE='new_software_resource_recovery_qualification'
 REVIEWS={'source_scope','native_build','wire_storage','whole_source_ci'}
 CEILINGS=dict(memory_bytes=2147483648,user_cpu_seconds=2400,wall_ms=3600000,contained_processes=4,raw_archive_restore_each_bytes=1342177280,failure_bytes=134217728,controller_bytes=8388608,minimum_free_bytes=6442450944)
 
-def parsed(pin,cap=131072):return physical.parse(physical.external(pin,cap),cap)
+def parsed(pin,cap=131072):
+    assert type(pin) is dict and set(pin) in ({'path','extent','sha256'},{'path','extent','sha256','device','inode'})
+    return physical.parse(physical.external({k:pin[k] for k in ('path','extent','sha256')},cap),cap)
 def binding(r):
     value=copy.deepcopy(r);value['qualification'].pop('grant',None)
     return physical.digest(physical.encode(value))

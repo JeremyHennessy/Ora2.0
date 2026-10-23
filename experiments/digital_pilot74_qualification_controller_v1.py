@@ -21,7 +21,7 @@ def validate_guardian(spec,expected):
     assert build['schema']=='PILOT74-GUARDIAN-BUILD-REVIEW-v1' and build['verdict']=='PASS'
     assert build['revision']==r['revision'] and build['artifact_sha256']==r['guardian']['artifact']['sha256'] and build['old_checks_rerun'] is False
     lock=r['operator_lock'];_,identity=physical.read_exact(lock['path'],{k:lock[k] for k in ('extent','sha256')},16384)
-    assert identity[:2]==(lock['device'],lock['inode']) and guardian.win32_id(lock['path'])==r['guardian']['lock_win32_id']
+    assert identity[:2]==(lock['device'],lock['inode']) and guardian.win32_id(lock['path'],share=3)==r['guardian']['lock_win32_id']
     assert Path(r['python']['path']).resolve()==Path(sys.executable).resolve()==Path('D:/OraLab/tools/Python312/python.exe').resolve()
     physical.external(r['python'],16*1024**2)
     return r
