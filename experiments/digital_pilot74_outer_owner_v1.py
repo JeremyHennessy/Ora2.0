@@ -138,11 +138,11 @@ def launch(request, admission_check):
             failure_note(error, 'Outer diagnostic unavailable: ', diagnostic)
         if evidence is not None and job is not None:
             try:
-                if int(k.GetTickCount64()) < deadline:
+                if int(k.GetTickCount64()) < soft_deadline:
                     evidence['owned_identity_snapshot_before_termination'] = observe_job_live(job,pi.process,pi.pid,birth)
                 else:
                     evidence['owned_identity_snapshot_before_termination'] = None
-                    evidence['owned_identity_snapshot_skipped'] = 'absolute deadline exhausted;termination takes precedence'
+                    evidence['owned_identity_snapshot_skipped'] = ('soft deadline reached;reserved closure takes precedence' if reserve_ms else 'absolute deadline exhausted;termination takes precedence')
             except BaseException as diagnostic:
                 failure_note(error, 'Outer owned-image snapshot unavailable: ', diagnostic)
         if job is not None:
@@ -160,8 +160,14 @@ def launch(request, admission_check):
                     closure_observed_tick = int(k.GetTickCount64())
                 evidence['closure_wait_result'] = closure_wait_result
                 evidence['closure_observed_tick_ms'] = closure_observed_tick
-                evidence['closure_within_original_budget'] = bool(closure_wait_result == 0 and closure_observed_tick is not None and closure_observed_tick <= deadline)
+                evidence['caller_signal_within_original_budget'] = bool(closure_wait_result == 0 and closure_observed_tick is not None and closure_observed_tick <= deadline)
                 evidence['after_termination'] = failure_observation(job, k, pi.process, pi.pid, birth, phase)
+                if reserve_ms:
+                    evidence['full_closure_observed_tick_ms'] = int(k.GetTickCount64())
+                    evidence['closure_within_original_budget'] = bool(evidence['caller_signal_within_original_budget'] and evidence['after_termination']['closure_observed'] and evidence['full_closure_observed_tick_ms'] <= deadline)
+                else:
+                    evidence['full_closure_observed_tick_ms'] = None
+                    evidence['closure_within_original_budget'] = False
                 attach_failure_evidence(error, evidence)
             except BaseException as diagnostic:
                 failure_note(error, 'Outer terminal diagnostic unavailable: ', diagnostic)
