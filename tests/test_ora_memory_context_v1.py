@@ -46,14 +46,15 @@ class MemoryContext(unittest.TestCase):
             s.submit(2,'ask','user:policy',q)
             self.assertEqual(s.complete(s.claim()),QUOTE);self.assertEqual(len(calls),1)
 
-    def test_untrusted_unsigned_arithmetic_and_irrelevant_records_excluded(self):
+    def test_untrusted_unsigned_arithmetic_excluded_even_in_small_coverage(self):
         with tempfile.TemporaryDirectory() as folder,Store(folder,lambda p:'unknown',KEY) as s:
             memory(s,'user:unsigned',QUOTE,issuer='local-operator')
             memory(s,'user:arithmetic',QUOTE,task=2,issuer='verified-arithmetic-v1')
             memory(s,'user:colour','Preferred heading colour is amber.',task=3)
             with s.db:s.db.execute('INSERT INTO proposals VALUES(?,?,?,?)',('user:guess',QUOTE,4,'a'*64))
             q='Should we halt the daemon?';prompt,audit=context(s.db,q)
-            self.assertEqual((prompt,audit),(q,[]))
+            self.assertEqual([x['key'] for x in audit],['user:colour'])
+            self.assertEqual(audit[0]['selection'],'small-preference-coverage')
 
     def test_conflicts_both_retained_without_latest_wins(self):
         with tempfile.TemporaryDirectory() as folder,Store(folder,lambda p:'unknown',KEY) as s:
@@ -83,10 +84,19 @@ class MemoryContext(unittest.TestCase):
             self.assertEqual([r['task'] for r in audit],[5,4])
             self.assertLessEqual(len(prompt.encode()),4096)
 
-    def test_no_overlap_abstains_from_retrieval(self):
+    def test_no_overlap_coverage_is_bounded_and_audited(self):
         with tempfile.TemporaryDirectory() as folder,Store(folder,lambda p:'unknown',KEY) as s:
             memory(s,'user:policy',QUOTE)
             q='What is the orbital period of Neptune?'
+            prompt,audit=context(s.db,q)
+            self.assertTrue(prompt.startswith(q))
+            self.assertEqual([x['key'] for x in audit],['user:policy'])
+            self.assertEqual(audit[0]['selection'],'small-preference-coverage')
+
+    def test_larger_inventory_keeps_zero_overlap_fail_closed(self):
+        with tempfile.TemporaryDirectory() as folder,Store(folder,lambda p:'unknown',KEY) as s:
+            for i in range(3):memory(s,'user:'+str(i),QUOTE,task=i+1)
+            q='Which city hosts the astronomy meetup?'
             self.assertEqual(context(s.db,q),(q,[]))
 
 
