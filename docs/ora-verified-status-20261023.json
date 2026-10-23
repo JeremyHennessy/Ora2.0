@@ -174,5 +174,26 @@
     "scientific_acceptance": false,
     "persistent_world_running": false,
     "prospective_next_plan": "drafts/pilot74-full-qualification-v3-20261023/proposed-plan.json"
+  },
+  "qualification_v3_terminal_and_publication_owner_repair": {
+    "status": "V3_FAILED_NO_RETRY",
+    "completed_roles": 25,
+    "expected_roles": 26,
+    "genesis": 2,
+    "hydrates": 15,
+    "vm_steps": 34816,
+    "publication_completed": false,
+    "all_owned_births_closed": 29,
+    "partial_archive_restore_exact": true,
+    "full_qualification_passed": false,
+    "repair_commit": "16a9090c046f9b0806d36f876db834028b5f3e3d",
+    "repair_pr": 314,
+    "focused_windows_ci": 40010908505,
+    "new_tests": 14,
+    "source_pins": 70,
+    "production_admission": false,
+    "scientific_acceptance": false,
+    "persistent_world_running": false,
+    "prospective_next_plan": "drafts\\pilot74-full-qualification-v4-20261023\\proposed-plan.json"
   }
 }
