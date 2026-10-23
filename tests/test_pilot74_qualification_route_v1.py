@@ -139,4 +139,21 @@ class PhysicalOwnerLock(unittest.TestCase):
     identity=q.guardian.win32_id(p,share=3)
     self.assertEqual(identity,q.guardian.win32_id(p,share=3))
    finally:os.close(fd)
+class NativeReadOnlyLock(unittest.TestCase):
+ @unittest.skipUnless(os.name=='nt','Exact Windows native read sharing')
+ def test_native_read_share_compatible_with_retained_readonly_owner(self):
+  import ctypes
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d)/'lock';write_fd=os.open(p,os.O_CREAT|os.O_EXCL|os.O_RDWR);read_fd=None
+   try:
+    os.write(write_fd,b'owner');os.fsync(write_fd);read_fd=os.open(p,os.O_RDONLY)
+    self.assertEqual(os.fstat(write_fd).st_ino,os.fstat(read_fd).st_ino)
+    os.close(write_fd);write_fd=None
+    k=q.guardian._kernel();h=k.CreateFileW(str(p),0x80000000,1,None,3,0x00200000,None)
+    self.assertNotIn(h,(None,ctypes.c_void_p(-1).value))
+    self.assertTrue(k.CloseHandle(h))
+    self.assertTrue(q.guardian.win32_id(p,share=3))
+   finally:
+    if write_fd is not None:os.close(write_fd)
+    if read_fd is not None:os.close(read_fd)
 if __name__=='__main__':unittest.main()
