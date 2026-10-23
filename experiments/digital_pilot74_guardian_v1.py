@@ -16,6 +16,16 @@ def artifact_name(name):
     return type(name) is str and name.isascii() and '..' not in name and '\\' not in name and ':' not in name and ((name.startswith('experiments/') and name.endswith('.py')) or name in ARTIFACTS)
 def enc(v):return physical.encode(v)
 def digest(b):return physical.digest(b)
+
+def captured_output(spec):
+    """Authenticate an empty capture without admitting empty proof documents."""
+    assert type(spec) is dict and set(spec)=={'path','extent','sha256'}
+    assert type(spec['extent']) is int
+    if spec['extent']!=0:return physical.external(spec,MIB)
+    from experiments.digital_pilot74_available_archive_v2 import scan
+    actual=scan(spec['path'],0)
+    assert {k:actual[k] for k in ('path','extent','sha256')}==spec
+    return b''
 def _kernel():
     assert os.name=='nt'
     k=ctypes.WinDLL('kernel32',use_last_error=True)
@@ -128,7 +138,7 @@ class Client:
         assert wire['source_sha256']==source_sha256 and wire['configuration_sha256']==configuration_sha256 and wire['role']==role and wire['command']==command
         n=normalize_native(wire);n['native_spec']=result['native']
         capture=n['stdout_capture'];assert capture['grant_sha256']==capture_seal
-        n['output']=physical.external(capture['raw'],MIB).decode('utf8',errors='replace')
+        n['output']=captured_output(capture['raw']).decode('utf8',errors='replace')
         self.results[role]=n;return n
     def barrier(self,complete):
         if self.archiving:return
