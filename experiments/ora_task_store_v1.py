@@ -11,6 +11,7 @@ import os
 from pathlib import Path
 import sqlite3
 import time
+from experiments.ora_mailbox_reader_v1 import open_reader
 
 MAX_TEXT = 4096
 MAX_KEY = 128
@@ -246,12 +247,12 @@ def serve(store, stop_path, seconds=60, max_tasks=1000, inbox=None):
             return dict(reason='operator-stop', completed=done)
         if inbox is not None and Path(inbox).exists():
             # A single atomically replaced bounded mailbox; never execute its text.
-            with Path(inbox).open('rb') as stream:
-                raw = stream.read(65537)
-            if len(raw) > 65536:
+            with open_reader(Path(inbox)) as stream:
+                raw = None if stream is None else stream.read(65537)
+            if raw is not None and len(raw) > 65536:
                 raise ValueError('Inbox exceeds 64 KiB')
-            digest = hashlib.sha256(raw).digest()
-            if digest != seen:
+            digest = None if raw is None else hashlib.sha256(raw).digest()
+            if raw is not None and digest != seen:
                 batch = json.loads(raw)
                 if type(batch) is not list or not 0 < len(batch) <= 16:
                     raise ValueError('Inbox must contain 1..16 tasks')
