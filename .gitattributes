@@ -31,3 +31,10 @@ tests/test_eka1_causal_source_audit.py -text
 data/eka1-causal-source-audit-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/eka1-causal-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/eka1-causal-offline-validation-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Offline envelope implementation and validation custody.
+tools/eka1_intervention_envelope.py -text
+tests/test_eka1_intervention_envelope.py -text
+data/eka1-intervention-envelope-validation-20261023.json -text
+data/eka1-intervention-envelope-final-validation-20261023.json -text
+data/eka1-intervention-envelope-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,20 @@
+{
+  "schema": "ORA-EKA1-INTERVENTION-ENVELOPE-OFFLINE-v1",
+  "utc": "2026-10-23T21:12:58.385777+00:00",
+  "targeted_tests_passed": 6,
+  "cell_value_combinations": 128,
+  "test_seconds": 0.01,
+  "fixtures": "INCOMPLETE_SYNTHETIC_JSON_NOT_WORLD_STATE",
+  "history_authenticated": false,
+  "nonlethality_qualified": false,
+  "pricing_qualified": false,
+  "causal_assay_qualified": false,
+  "execution_authorized": false,
+  "worlds_executed": 0,
+  "vm_steps": 0,
+  "source_sha256": {
+    "tools/eka1_intervention_envelope.py": "e60f29f4006e588b1240d899630528f3d9df8abc95b1d3d930a5f9fa22b6dd1f",
+    "tests/test_eka1_intervention_envelope.py": "f8924474278dd56ffdd7db2543aba13b7f12bc0a551caeff7eef34038af94562",
+    "docs/EKA-1-INTERVENTION-ENVELOPE-20261023.md": "97328173981c0a2be06cc59db96399fcb065c58dcc24189690b5f4a50440434e"
+  }
+}
