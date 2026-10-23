@@ -1,3 +1,4 @@
+from experiments.digital_pilot74_lock_scope_v1 import allowed as allowed_owner_lock
 """Strict closed-audit adapter; no World/producer/writer import or activation."""
 import sys
 from pathlib import Path
@@ -26,7 +27,7 @@ def admit(request):
     item=request['output'];assert type(item) is dict and set(item)=={'grant','seal'}
     boundary.validate_grant(dict(grant=item['grant'],grant_seal=item['seal'],configuration_sha256=request['configuration_sha256'],role=ROLE),request['source_sha256'],'proof')
     assert item['grant']['phase']=='raw' and item['grant']['name']=='receipts/'+ROLE+'.json' and item['grant']['limit']==128*1024
-    lock=request['operator_lock'];assert type(lock) is dict and set(lock)=={'path','extent','sha256','device','inode'} and Path(lock['path'])==Path('D:/OraLab/state/operator.lock')
+    lock=request['operator_lock'];assert type(lock) is dict and set(lock)=={'path','extent','sha256','device','inode'} and allowed_owner_lock(lock)
     _,ident=physical.read_exact(lock['path'],{k:lock[k] for k in ('extent','sha256')},16384)
     assert type(lock['device']) is int and type(lock['inode']) is int and ident[:2]==(lock['device'],lock['inode'])
     registration=physical.parse(physical.external(request['registration'],MIB),MIB)

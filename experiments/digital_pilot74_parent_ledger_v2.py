@@ -1,3 +1,4 @@
+from experiments.digital_pilot74_lock_scope_v1 import allowed as allowed_owner_lock
 """Unqualified finite parent precharge/initial-commit evidence helpers.
 
 No controller entrypoint, native launch, World import or execution authority.
@@ -64,7 +65,7 @@ def grant(slot,root,name,source_sha,config_sha,role):
 def initial_commit(directory,slots,capsule_raw,audit_raw,identity,role,receipt_slot,operator_lock):
     """Capture parent commit time at actual head replacement, never later."""
     from experiments import digital_pilot74_journal as journal
-    assert Path(operator_lock['path'])==Path('D:/OraLab/state/operator.lock')
+    assert allowed_owner_lock(operator_lock)
     def owner():
         raw,ident=physical.read_exact(operator_lock['path'],{k:operator_lock[k] for k in ('extent','sha256')},16384)
         assert ident[:2]==(operator_lock['device'],operator_lock['inode'])

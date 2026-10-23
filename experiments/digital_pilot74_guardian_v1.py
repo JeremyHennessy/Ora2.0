@@ -268,6 +268,10 @@ def launch_guardian(spec,expected):
     durable caller,grant issuer or complete exceptional-custody qualification.
     """
     r=validate_host_registration(spec,expected)
+    return _launch_guardian(spec,expected,r)
+
+def _launch_guardian(spec,expected,r):
+    # Private shared transport; public routes validate independently before entry.
     from experiments import process_limits as caps
     import msvcrt,subprocess
     k=_kernel();limits=caps.Limits(memory_bytes=2048*MIB,cpu_seconds=2400,processes=4,wall_seconds=3600)

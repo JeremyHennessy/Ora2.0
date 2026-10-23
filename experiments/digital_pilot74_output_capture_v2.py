@@ -1,3 +1,4 @@
+from experiments.digital_pilot74_lock_scope_v1 import allowed as allowed_owner_lock
 """Unqualified precharged pipe capture; no launch or automatic operations."""
 import hashlib,json,os,stat
 from pathlib import Path
@@ -44,7 +45,7 @@ class Capture:
 
     def owner(self):
         spec=self.grant['operator_lock'];assert type(spec) is dict and set(spec)=={'path','extent','sha256','device','inode'}
-        p=Path(spec['path']);assert p==Path('D:/OraLab/state/operator.lock') and type(spec['extent']) is int and 0<spec['extent']<=16384
+        p=Path(spec['path']);assert allowed_owner_lock(spec) and type(spec['extent']) is int and 0<spec['extent']<=16384
         for parent in p.parents:plain(parent,True)
         old=plain(p);assert old.st_size==spec['extent'] and ident(old)==(spec['device'],spec['inode'])
         fd=os.open(p,os.O_RDONLY|getattr(os,'O_BINARY',0)|getattr(os,'O_NOFOLLOW',0))

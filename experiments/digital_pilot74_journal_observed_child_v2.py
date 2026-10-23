@@ -1,3 +1,4 @@
+from experiments.digital_pilot74_lock_scope_v1 import allowed as allowed_owner_lock
 """Unqualified timestamped journal derivative. No import-time execution."""
 import json,os,sys
 from datetime import datetime,timezone
@@ -28,7 +29,7 @@ def admit(wrapper,seal):
     assert grant['endpoint_sha256']==journal.sha(journal.enc(request))
     assert {'experiments/digital_pilot74_journal_observed_child_v2.py','experiments/digital_pilot74_publication_reader_v2.py'}<=set(request['source_files'])
     lock=grant['operator_lock'];assert type(lock) is dict and set(lock)=={'path','extent','sha256','device','inode'}
-    assert Path(lock['path'])==Path('D:/OraLab/state/operator.lock')
+    assert allowed_owner_lock(lock)
     raw,identity=physical.read_exact(lock['path'],{k:lock[k] for k in ('extent','sha256')},16384)
     assert type(lock['device']) is int and type(lock['inode']) is int
     assert identity[:2]==(lock['device'],lock['inode'])

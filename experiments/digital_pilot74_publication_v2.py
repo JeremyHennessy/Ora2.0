@@ -1,3 +1,4 @@
+from experiments.digital_pilot74_lock_scope_v1 import allowed as allowed_owner_lock
 """Bounded recorded-only PILOT74 publication builder and sealed file writer.
 
 No VM, observer, network, autonomous owner or activation entrypoint. Calls are
@@ -129,7 +130,7 @@ def read_slot(path,expected_size,identity,cap):
     finally:os.close(fd)
 
 def owner(grant):
-    v=grant['operator_lock'];assert type(v) is dict and set(v)=={'path','extent','sha256','device','inode'} and Path(v['path'])==Path('D:/OraLab/state/operator.lock')
+    v=grant['operator_lock'];assert type(v) is dict and set(v)=={'path','extent','sha256','device','inode'} and allowed_owner_lock(v)
     integer(v['extent'],1,65536);assert type(v['device']) is int and type(v['inode']) is int;hexadecimal(v['sha256']);raw=read_slot(Path(v['path']),v['extent'],(v['device'],v['inode']),65536);assert sha(raw)==v['sha256']
     lock=json.loads(raw);assert set(lock)=={'pid','started_utc'} and type(lock['pid']) is int and lock['pid']>0 and type(lock['started_utc']) is str
 

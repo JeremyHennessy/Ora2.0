@@ -1,0 +1,20 @@
+name: PILOT74 qualification-only route
+on:
+  push:
+    branches: ['implementation/pilot74-qualification-route-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  new_route:
+    runs-on: windows-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: New qualification admission only, no native/World execution
+        run: python -B tests/test_pilot74_qualification_route_v1.py
+      - name: Exact whole inherited and new route source bytes
+        run: python -B -c "import json,hashlib,pathlib; p=json.loads(pathlib.Path('data/pilot74-qualification-route-source-pins-v1.json').read_text()); assert all(hashlib.sha256(pathlib.Path(n).read_bytes()).hexdigest()==h for n,h in p.items()); print(len(p),'source hashes matched')"
