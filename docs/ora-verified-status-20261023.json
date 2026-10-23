@@ -1,0 +1,102 @@
+{
+  "schema": "ORA-VERIFIED-STATUS-UPDATE-v1",
+  "observed_at": "2026-10-23T12:29:54.965651-03:00",
+  "timezone": "America/Halifax",
+  "classification": "Reconciliation of retained local evidence; not independent scientific reproduction",
+  "runtime": {
+    "source_commit": "d59f01e90ec0b1557af00d2830c7ce97c3c2b7b0",
+    "running_at_observation": true,
+    "memories": 174,
+    "approved_notes": 3,
+    "fresh_lifetime_failures": 0,
+    "completed_epochs": 1,
+    "completed_windows": 0,
+    "snapshots": 2,
+    "all_baseline_provenance_and_original_key_retained": true,
+    "windows_CI": 39975305239,
+    "tests": 27,
+    "source_hashes": 68,
+    "repaired_two_hour_renewal_verified": false
+  },
+  "retention": {
+    "verified": true,
+    "acceptance_passed": true,
+    "native_grounded": 3,
+    "isolated_correct": 0,
+    "questions_per_condition": 3,
+    "model_weights_changed": false
+  },
+  "pilots": {
+    "v1": {
+      "status": "terminal-software-failure",
+      "saved_answers": 7
+    },
+    "v2": {
+      "status": "terminal-mailbox-publication-failure",
+      "confirmed_saved_answers": 6,
+      "seventh_pilot_publication_proven": false,
+      "sequence_collision_corrected": true
+    },
+    "learning_benefit_demonstrated": false,
+    "no_retry_or_rescoring": true
+  },
+  "qualification": {
+    "real_model_idle_tail_seconds": 160,
+    "completed_epochs": 1,
+    "failures": 0,
+    "reserved_closure_full_observation_ms": 1765,
+    "reserved_closure_hard_ms": 2000,
+    "natural_one_hour_deadline_proven": false,
+    "full_production_26_role_fit_proven": false
+  },
+  "science": {
+    "persistent_world_running": false,
+    "world_launched_by_this_work": false,
+    "budgeted_transfer_primary_admitted": false,
+    "budgeted_transfer_primary_executed": false,
+    "Context90_and_other_closed_findings_unchanged": true,
+    "beneficial_evolved_intelligence_proven": false
+  },
+  "evidence": [
+    {
+      "artifact": "ora-project-knowledge-transfer-review-v4-20261023.json",
+      "sha256": "1e1d19aa0b108e01325ea0dfd1ee76067727a9244efe6bb8b8b6c02a56c6dead",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-project-work-pilot-review-20261023.json",
+      "sha256": "b46d58c20355a0486ac94e74a5f25642882d7c1e077f7d4b130e1b694b800cae",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-project-work-pilot-review-v2-20261023.json",
+      "sha256": "edfeb23dc422f3c16b54153676b15c4a073dffab1f9d07dd81e3cacba6b05e58",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-pilot-mailbox-failure-diagnosis-20261023.json",
+      "sha256": "b8f8103de7f91acf837ac180d2dec8f227cf32a951f3f044cf00cfbb185d6410",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-runtime-v7-terminal-failure-review-20261023.json",
+      "sha256": "310bd869928ad32bb38230310e739237383de7b7475b51a8e556926b2d32b10f",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-world-deadline-qualification-review-20261023.json",
+      "sha256": "7872f4a146188b6b43b0fd49555657124abf6520ec46c4bf87fba3220c59986c",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-world-reserved-closure-qualification-review-20261023.json",
+      "sha256": "5bfa701c2019a3dfda43097d5fcbad81437dd01d6672facdde2e084a08859a43",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "ora-window-close-budget-repair-review-20261023.json",
+      "sha256": "8adf1ccfee3eada7d602890d190092856a26cc27d001cd36d114339a265477b6",
+      "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    }
+  ]
+}
