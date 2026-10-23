@@ -1,4 +1,4 @@
-# Verified Ora engineering and research status — October 23, 2026
+# Verified Ora engineering and research status â€” October 23, 2026
 
 Observation: **2026-10-23T14:56:33.736004-03:00** (Halifax). Runtime liveness is a dated local observation, not a permanent guarantee. [Machine-readable summary](ora-verified-status-20261023.json) records public-safe evidence hashes. Raw stores, notes, signing keys, machine identities and custody archives remain private.
 
@@ -48,3 +48,7 @@ The running assistant is the laboratory helper. It is not the persistent digital
 ## Progress since the prior repository review
 
 The running assistant advanced from one completed epoch/zero windows to29 epochs/one window. Approved-note retention remains the same narrow3/3 result, not a new learning result. The persistent world remains off. Independent audit requires a distinct qualification-only controller/guardian/worker route, a rebuilt native artifact, complete source/wire/storage/CI and original-owner grant/preflight before the exact26-role resource/recovery attempt. Current user conditional authorization covers preparing that route; process ownership alone does not require another human approval. No gate is waived, and no full-workload result is claimed.
+
+## Follow-up qualification preparation
+
+[Candidate de9efd6 / review309](https://github.com/JeremyHennessy/Ora2.0/pull/309) implements the separate qualification-only route and includes the rebuilt212480-byte native guardian. Eighteen local new-only tests and independent scoped source review pass. All70 source/artifact pins total916918bytes; data-only26-role template sizing passes with archive bound1318373766bytes. Actual native behavior/full workload remains untested. Initial compiler+link and exact-byte CI failures remain preserved; the separate link-only build passed, and corrected exact-byte CI is pending. The artifact was not executed. Actual original-owner registration, exact preflight/independent grant and all full-production gates remain required. Latest live check:32epochs,one completed window,zero failures,174memories and two snapshots. No source deployment, world launch or broader learning claim.

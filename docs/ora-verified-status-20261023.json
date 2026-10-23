@@ -121,9 +121,19 @@
     "pilots_retried": false
   },
   "world_qualification_route": {
-    "status": "implementation pending; isolated checkout established",
-    "native_rebuilt": false,
+    "status": "implemented; independent scoped source preparation accepted, execution held",
+    "native_rebuilt": true,
     "full_workload_executed": false,
-    "all_production_gates_passed": false
+    "all_production_gates_passed": false,
+    "candidate": "de9efd61448610706cf2e48c4485ef620704ed74",
+    "pr": 309,
+    "native_artifact_executed": false,
+    "local_tests": 18,
+    "source_artifact_pins": 70,
+    "source_artifact_bytes": 916918,
+    "template_archive_bound_bytes": 1318373766,
+    "ci": 40000940757,
+    "ci_status": "pending",
+    "actual_registration_preflight_and_independent_grant": false
   }
 }
