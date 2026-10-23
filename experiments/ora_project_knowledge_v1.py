@@ -47,6 +47,11 @@ def prompt_for(question,document=None):
     if len(prompt.encode())>3000:raise ValueError('Prompt leaves insufficient bounded memory context')
     return prompt
 
+def bound_note(question,corrected):
+    """Preserve the operator's words with their exact reviewed question."""
+    text(question,512);text(corrected,256)
+    return text('Project question: '+question+'\nOperator-approved answer: '+corrected,512)
+
 def correction_check(db,key,expected,corrected):
     if type(key) is not str or not re.fullmatch(re.escape(PREFIX)+'[a-f0-9]{32}',key):raise ValueError('Only this workflow fresh-note namespace may receive feedback')
     if type(expected) is not str or not re.fullmatch('[a-f0-9]{64}',expected):raise ValueError('Exact reviewed proposal digest required')
@@ -159,14 +164,15 @@ class Client:
     def correct(self,run_id,expected,corrected):
         run=self.run_dir(run_id);q=read(run/'question.json');answer=read(run/'answer.json')
         if q['key']!=PREFIX+run_id or answer.get('trusted') is not False or answer['proposal_sha256']!=expected or digest(answer['answer'].encode())!=expected:raise ValueError('Feedback must bind exact reviewed answer and workflow key')
-        with self.db() as db:correction_check(db,q['key'],expected,corrected)
+        note=bound_note(q['question'],corrected)
+        with self.db() as db:correction_check(db,q['key'],expected,note)
         if (run/'operator-correction.json').exists():raise ValueError('Correction already recorded;review existing submission')
-        atomic(run/'operator-correction.json',dict(value=corrected,expected_proposal_sha256=expected,source='explicit-local-operator-correct-command',utc=time.time()))
+        atomic(run/'operator-correction.json',dict(supplied_value=corrected,stored_note=note,expected_proposal_sha256=expected,source='explicit-local-operator-correct-command',utc=time.time()))
         def build(n):
-            with self.db() as db:correction_check(db,q['key'],expected,corrected)
+            with self.db() as db:correction_check(db,q['key'],expected,note)
             secret=plain_bytes(self.root/'feedback.key',32)
             if len(secret)!=32:raise ValueError('Original32-byte signing key required')
-            return sign(secret,n,q['key'],expected,corrected,issuer='operator')
+            return sign(secret,n,q['key'],expected,note,issuer='operator')
         try:
             result=self.request(run,'correction','approve',q['key'],build)
             if result['result']!='operator-confirmed':raise ValueError('Operator correction not confirmed')
@@ -201,7 +207,8 @@ def menu(client):
                 print('Question: '+review['question']);print('Model proposal: '+json.dumps(review['proposal'],indent=2))
                 if review['approved_note']:print('This note is already approved and protected.');continue
                 if review['proposal'] is None:print('Answer is not complete;review later.');continue
-                value=input('Your reviewed correction to save as an approved project note (Enter cancels): ')
+                print('The saved note includes this exact question and your answer. Maximum256 UTF-8 bytes for your answer;maximum512 for the combined note.')
+                value=input('Your reviewed answer to save as an approved project note (Enter cancels): ')
                 if value:print(json.dumps(client.correct(run_id,review['proposal']['proposal_sha256'],value),indent=2))
             elif choice=='4':print(json.dumps(client.status(),indent=2))
             else:print('Choose a listed operation.')

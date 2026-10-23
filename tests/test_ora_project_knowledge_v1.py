@@ -4,7 +4,7 @@ from contextlib import contextmanager
 import hashlib,json,sys,tempfile,unittest
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from experiments.ora_project_knowledge_v1 import Client,correction_check,prompt_for,digest
+from experiments.ora_project_knowledge_v1 import Client,correction_check,prompt_for,digest,bound_note
 from experiments.ora_task_store_v1 import Store
 from experiments.ora_controller_v1 import atomic
 
@@ -31,7 +31,7 @@ class Knowledge(unittest.TestCase):
             q=c.ask('What fixture fact should be retained?');self.assertFalse(q['trusted'])
             answer=c.correct(q['run_id'],q['proposal_sha256'],'Synthetic operator fixture fact.')
             self.assertTrue(answer['approved'])
-            review=c.review(q['run_id']);self.assertEqual(review['approved_note'][0],'Synthetic operator fixture fact.')
+            review=c.review(q['run_id']);self.assertEqual(review['approved_note'][0],bound_note('What fixture fact should be retained?','Synthetic operator fixture fact.'))
             self.assertEqual(review['approved_note'][1],'operator')
             self.assertEqual(s.db.execute('SELECT value FROM memories WHERE key=?',('user:original',)).fetchone(),('Protected baseline',))
             self.assertNotIn((c.root/'feedback.key').read_bytes().hex(),json.dumps(review))
@@ -49,7 +49,7 @@ class Knowledge(unittest.TestCase):
             with self.assertRaises(ValueError):correction_check(s.db,'user:original',q['proposal_sha256'],'bad overwrite')
             c.correct(q['run_id'],q['proposal_sha256'],'Fixture correction')
             with self.assertRaises(ValueError):c.correct(q['run_id'],q['proposal_sha256'],'Replacement')
-            self.assertEqual(s.db.execute('SELECT value FROM memories WHERE key=?',(key,)).fetchone(),('Fixture correction',))
+            self.assertEqual(s.db.execute('SELECT value FROM memories WHERE key=?',(key,)).fetchone(),(bound_note('Question','Fixture correction'),))
 
     def test_expired_proposal_refused(self):
         with fixture() as (c,s):
@@ -111,5 +111,14 @@ class Knowledge(unittest.TestCase):
             with self.assertRaises(ValueError):c.ask('Question')
             self.assertEqual(len(list(c.receipts.iterdir())),128)
             self.assertEqual(s.status()['submitted'],0)
+
+    def test_short_answer_keeps_question_for_native_transfer_retrieval(self):
+        from experiments.ora_memory_context_v1 import context
+        with fixture() as (c,s):
+            q=c.ask('What is the HTTP timeout in the selected cold preparation source?')
+            c.correct(q['run_id'],q['proposal_sha256'],'120 seconds')
+            prompt,audit=context(s.db,'How many seconds is the HTTP timeout for cold preparation?')
+            self.assertTrue(any(a['key']=='user:project-note:'+q['run_id'] for a in audit))
+            self.assertIn('120 seconds',prompt)
 
 if __name__=='__main__':unittest.main()
