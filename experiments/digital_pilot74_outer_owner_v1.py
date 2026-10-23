@@ -124,7 +124,7 @@ def launch(request, admission_check):
             failure_note(error, 'Outer diagnostic unavailable: ', diagnostic)
         if evidence is not None and job is not None:
             try:
-                evidence['owned_identity_snapshot_before_termination'] = observe_job_live(job,k and pi.process,pi.pid,birth)
+                evidence['owned_identity_snapshot_before_termination'] = observe_job_live(job,pi.process,pi.pid,birth)
             except BaseException as diagnostic:
                 failure_note(error, 'Outer owned-image snapshot unavailable: ', diagnostic)
         if job is not None:
