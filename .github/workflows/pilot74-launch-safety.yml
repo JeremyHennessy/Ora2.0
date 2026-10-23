@@ -1,7 +1,7 @@
 name: PILOT74 new launcher failure and source checks
 on:
   push:
-    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022', 'implementation/remaining-root-accounting-20261022', 'implementation/bounded-memory-retrieval-20261022']
+    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022', 'implementation/remaining-root-accounting-20261022', 'implementation/bounded-memory-retrieval-20261022', 'implementation/project-knowledge-workflow-20261022']
   workflow_dispatch:
 permissions:
   contents: read
@@ -33,6 +33,8 @@ jobs:
         run: python -B tests/test_ora_trusted_feedback_v1.py
       - name: Bounded native memory retrieval and isolated control
         run: python -B tests/test_ora_memory_context_v1.py
+      - name: Operator project knowledge and proposal-bound correction workflow
+        run: python -B tests/test_ora_project_knowledge_v1.py
       - name: Mixed task sources cannot overwrite operator input or self-approve reviews
         run: python -B tests/test_ora_mixed_stream_v1.py
       - name: Snapshot restoration requires closed owners and reconciled producer cursor
