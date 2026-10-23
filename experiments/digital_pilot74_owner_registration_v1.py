@@ -1,4 +1,4 @@
-"""Fresh original-owner integration for three NEW-only no-World probes.
+"""Fresh corrected-child qualification only; old failed three-case panel sealed.
 
 No production registration/grant issuer. Preparation and postflight custody are
 cooperative bounded original-owner writes, outside the measured native Job.
@@ -10,7 +10,7 @@ from experiments import digital_pilot74_outer_owner_v1 as outer
 from experiments import digital_pilot74_guardian_boundary_qualifier_v2 as win
 from experiments.digital_pilot74_durable_supervisor_v1 import ancestors,recheck,plain,read_slot,diagnostic
 
-CASES=['ordinary','terminal-write-refusal','caller-crash-live-child']
+CASES=['caller-crash-live-child']
 LOCK=Path('D:/OraLab/state/operator.lock')
 
 
@@ -63,6 +63,13 @@ def verify_crash(evidence,intervention,command,python):
     assert type(child['pid']) is int and child['pid']>0 and child['pid']!=child['caller']['pid']
     assert child['creation_filetime_decimal'].isdecimal() and int(child['creation_filetime_decimal'])>0
     assert child['command']==[python,'-B',command[2],'leaf-wait',*command[4:]]
+    snapshot=evidence['owned_identity_snapshot_before_termination']
+    assert snapshot['listed_pids']==[child['pid']] and snapshot['errors']==[]
+    rows=[r for r in snapshot['handles'] if r.get('actual_pid')==child['pid']]
+    assert len(rows)==1
+    row=rows[0]
+    assert row['membership'] is True and row['birth']==child['creation_filetime_decimal']
+    assert Path(row['image']).resolve()==Path(python).resolve() and row['wait_result']==258 and row['errors']==[]
 
 
 def verify_nested(case_root,terminal,command):
@@ -87,7 +94,7 @@ def main():
     read(plan['python'],16*1024**2)
     def sources():
         for name,value in plan['source_files'].items():assert sha((source/name).read_bytes())==value
-    sources();assert plan['native_process_cap']==8 and plan['controller_storage_cap']==8*1024**2
+    sources();assert plan['native_process_cap']==2 and plan['controller_storage_cap']==8*1024**2
     root.mkdir()
     k=win.kernel();own=k.OpenProcess(0x1000|0x100000,False,os.getpid());win.checked(own)
     fd=None;origin=None;original=None;first=None;closed=True
