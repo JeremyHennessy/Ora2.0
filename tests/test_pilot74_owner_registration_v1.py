@@ -44,7 +44,8 @@ class Registration(unittest.TestCase):
         # Invalid boundary inputs fail before any process creation.
         from unittest.mock import patch,Mock
         for value in [True,0,3600001]:
-            with patch.object(outer.win,'kernel',return_value=Mock()):
+            k=Mock();k.GetTickCount64.return_value=1
+            with patch.object(outer.win,'kernel',return_value=k):
                 with self.assertRaises(ValueError):outer.launch({'wall_ms':value},lambda request:True)
 
 
