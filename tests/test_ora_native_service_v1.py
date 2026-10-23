@@ -36,7 +36,7 @@ class NativeService(unittest.TestCase):
         self.assertTrue(result['exit_observation']['single_root_grace_used'])
         self.assertTrue(result['post_close_processes_exited'])
 
-    def test_nested_accounting_with_missing_root_or_multiple_active_is_rejected(self):
+    def test_nested_empty_accounting_settles_but_multiple_active_is_rejected(self):
         for count in (1,2):
             original=Job.usage; original_pids=Job.pids; injected=[]; starts=[]
             def usage(job):
@@ -52,8 +52,33 @@ class NativeService(unittest.TestCase):
                     'import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)'],ROOT,
                     Limits(memory_bytes=128*1024**2,cpu_seconds=2,processes=3,wall_seconds=3),on_start=starts.append)
             self.assertTrue(injected)
-            self.assertTrue(result['descendant_leak'])
-            self.assertFalse(result['exit_observation']['single_root_grace_used'])
+            self.assertEqual(result['descendant_leak'],count==2)
+            self.assertEqual(result['exit_observation']['single_root_grace_used'],count==1)
+
+    def test_nested_empty_accounting_never_settles_remains_failure(self):
+        original=Job.usage
+        def usage(job):
+            value=original(job)
+            return dict(value,active_before_close=1) if value['started_processes']>1 else value
+        with patch.object(Job,'usage',usage),patch.object(Job,'pids',return_value=[]):
+            with self.assertRaisesRegex(RuntimeError,'Job closure unknown'):
+                self.run_code('import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)')
+
+    def test_descendant_appearing_during_settlement_is_rejected(self):
+        original=Job.usage; injected=[]
+        def usage(job):
+            value=original(job)
+            if value['started_processes']>1 and value['active_before_close']==0 and not injected:
+                injected.append(True);return dict(value,active_before_close=1)
+            return value
+        reads=[]
+        def pids(job):
+            reads.append(True)
+            return [] if len(reads)==1 else [4294967294]
+        with patch.object(Job,'usage',usage),patch.object(Job,'pids',pids):
+            result=self.run_code('import subprocess,sys; subprocess.run([sys.executable,"-c","pass"],check=True)')
+        self.assertTrue(result['descendant_leak'])
+        self.assertTrue(result['post_close_processes_exited'])
 
     def test_accounting_that_never_settles_is_not_accepted(self):
         original=Job.usage

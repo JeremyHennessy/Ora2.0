@@ -159,28 +159,28 @@ def run_slice(command_builder, cwd, limits, stop_path=None, birth_handoff=False,
         if k.WaitForSingleObject(pi.process,3000)!=0:
             raise RuntimeError('Child closure unknown')
         code=wt.DWORD(); check(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
-        # A signaled root and a Job accounting query are distinct observations.
-        # A single remaining count can describe the signaled root even after
-        # earlier children exited. For such Jobs require the root PID itself
-        # to be listed; an empty list is ambiguous if descendants ever joined.
-        # Give only this root-accounting case 250ms inside the existing 3s
-        # closure budget. Any other PID or count remains a guard failure.
+        # The root handle is signaled. Empty PID enumeration with one active
+        # accounting entry is ambiguous even after earlier children exited.
+        # Observe for at most250ms; accept only actual zero accounting, never
+        # the empty PID list itself. Any visible non-root PID or count>1 fails.
         close_deadline=time.monotonic()+3
         usage=job.usage()
         initial_usage=usage; initial_pids=job.pids()
-        sole_root=(usage['active_before_close']==1 and
-            (initial_pids==[pi.pid] or (usage['started_processes']==1 and not initial_pids)))
+        settlement_candidate=(usage['active_before_close']==1 and
+            not any(pid!=pi.pid for pid in initial_pids))
         grace_reads=0
-        if usage['active_before_close'] and sole_root:
+        observed_descendant=any(pid!=pi.pid for pid in initial_pids)
+        if settlement_candidate:
             settle_deadline=min(close_deadline,time.monotonic()+.25)
             while usage['active_before_close'] and time.monotonic()<settle_deadline:
                 time.sleep(.005); usage=job.usage(); grace_reads+=1
-                if usage['active_before_close']>1 or any(pid!=pi.pid for pid in job.pids()): break
+                observed_descendant=observed_descendant or any(pid!=pi.pid for pid in job.pids())
+                if usage['active_before_close']>1 or observed_descendant: break
         exit_observation=dict(initial_usage=initial_usage,initial_pids=initial_pids,
             single_root_grace_used=grace_reads>0,grace_reads=grace_reads,
             before_termination_usage=usage,before_termination_pids=job.pids())
         # Kill any unresolved accounting/descendant condition, even on exit0.
-        leaked=usage['active_before_close']!=0
+        leaked=usage['active_before_close']!=0 or observed_descendant
         if leaked:
             job.terminate()
         while job.usage()['active_before_close'] and time.monotonic()<close_deadline:
