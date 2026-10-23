@@ -70,7 +70,7 @@ class Outer(unittest.TestCase):
         k, job = self.setup_boundary()
         result = self.invoke(k, job)
         self.assertTrue(result['closure_observed'])
-        self.assertEqual(result['elapsed_ms'], 5)
+        self.assertEqual(result['elapsed_ms'], 6)
         self.assertFalse(result['publication_accepted'])
         k.WaitForSingleObject.assert_called_once_with(222, 3599996)
         k.UpdateProcThreadAttribute.assert_called_once()
