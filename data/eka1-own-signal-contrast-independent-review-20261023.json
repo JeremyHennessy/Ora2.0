@@ -1,0 +1,63 @@
+{
+  "schema": "ORA-EKA1-OWN-SIGNAL-CONTRAST-INDEPENDENT-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "proposal": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\data\\eka1-own-signal-contrast-proposal-20261023.json",
+      "sha256": "09f636650c60cdd8749f424ee79902da4bac119bbb574a27d1ba0721b9cb095b",
+      "extent": 8887
+    },
+    "document": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\docs\\EKA-1-OWN-SIGNAL-CONTRAST-20261023.md",
+      "sha256": "2f4c5a7e43fa6bb7d6d32661841bca4c687a7d50e707b282e38e49b82b6e4363",
+      "extent": 6203
+    },
+    "pressure_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\experiments\\digital_pressure71_population.py",
+      "sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "extent": 10219
+    },
+    "base_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\experiments\\digital_sharedlineage68_population.py",
+      "sha256": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "extent": 12918
+    }
+  },
+  "decision": "CREDIBLE_NARROW_METHOD_DIRECTION_NOT_QUALIFIED_OR_REGISTERED",
+  "execution": "NO_GO",
+  "whole_substrate_learning": "UNKNOWN",
+  "source_semantics": [
+    "Opcode1 writes actorfeedback to reg[a%2] andordinarydispatch paysoneenergytoheat",
+    "EveryFORAGE overwritesfeedback, includingzero for empty; interveningFORAGE invalidates originalexposureprovenance",
+    "Renewedpacket>=64 target expression seed%2 XOR hash(seed//2,renew-port,site)%2 XOR int(tick>=2048) is packet-independent for commonseed/site/timepredicate",
+    "Same-site renewedexposure/probe with bothglobalticks<2048 therefore have equal target without anyhash orseedquery",
+    "Given realnonempty exposure and rememberedownport p, f implies target p XOR(1-f), but no actorpresencehint or analysttargetinput follows"
+  ],
+  "design_checks": [
+    "Firstmutatedorigin/firstnonemptyexposure/firstfeedbackREAD preserved with no replacement",
+    "ExactcommonpreREADfork anddeclared singledestinationtrue/XOR1result distinguish sensorreadlaw fromarbitrarymemoryerasure",
+    "OrdinaryREADprice preserved; additionalhandling/fork/nativeprices explicitlyunqualified",
+    "All biologicalposttreatmentearly/reread/death/expiry/noprobe outcomes retained; no valid-only survivorcomparison",
+    "Native/source/custody/evidence failures rendercomparisonINCOMPLETE andcannotmanufacturebiologicalzero effect orsupportacceptance",
+    "Delayedhardcodedreflex positive forsignaluse butnot strongerlearning/evolution; phase-only timingnegatives declared",
+    "No claim that conditionaltargetidentity proves affordable actualexposure/probe opportunity or genotypefitness"
+  ],
+  "qualification_limits": [
+    "Adapter/sourceimplementation, authenticderivedcustody, handling/forkpricing andnativequalification absent",
+    "Specificity fixtures notexecuted; no observed causal signaluse, learning, inheritance orfitness effect",
+    "Intention-to-treat valid-and-correct contrast combinesroutingeligibility withcorrectness; component effects mustremainseparate",
+    "Samelocation/renewedtargetconditions are conditional, not posttreatmentfilters; actualopportunity, site retention andcost unknown",
+    "Other channels canretain observation; nulls do not implyVM lackslearning",
+    "Sample/effect/reservedassignments andscientificadmission remainunassigned"
+  ],
+  "bounded_deliverable": "METHOD_DIRECTION_DECISION_COMPLETE_NO_MORE_FIXED_CELL_EXTENSION",
+  "next_gate": "Source-qualified informative exposure/probe and paidsensorreadcustody contract before any separatelyauthorized adapter or diagnosticexecution",
+  "new_worlds": 0,
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "generator_runs": 0,
+  "model_calls": 0,
+  "repository_edits": false,
+  "historical_decisions_changed": false
+}
