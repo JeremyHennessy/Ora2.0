@@ -48,3 +48,9 @@ Only after separate durability/stop/restore and human-approved launch gates may 
 Preserve seven-stage semantics, reproduction and learning distinctions, K0 and original research history, all existing native caps/operator locks/private Observer files and current runtime custody. Do not change the assistant's operating schedules, approved notes or model processes. Avoid duplicate broad test runs and repeated closed science.
 
 **Direct next Codex instruction:** Inspect the already-active work, avoid competing writers and perform **documentation/source-only EKA-0** with a falsifiable GO/NO-GO. Report a separate PILOT74 blocked/passed checklist. Do not open a new World or trigger persistent activation from this direction memo.
+
+## Completed EKA-0 review checkpoint
+
+The [paired source/evidence audit](EKA-0-FEASIBILITY-DECISION-20261023.md) returns **UNKNOWN substrate feasibility / NO-GO for a population now**. It authenticates all 16 closed Pressure71 natural-mutation populations without VM execution, distinguishes opcode expression from useful inherited information, and identifies the missing viable-path, information-opportunity and paid-benefit certificate. The independent AI-Research critique agrees. No new population or VM change follows.
+
+The earlier engineering paragraph is historical: PILOT74 v3 subsequently completed 25 roles and all registered VM work, then failed publication owner-body validation. Its evidence is sealed. Publisher correction 16a9090 passed scoped independent review and focused Windows checks but has not run another qualification. Production gates and world launch remain held.
