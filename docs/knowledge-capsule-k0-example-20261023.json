@@ -1,0 +1,39 @@
+{
+  "schema": "ORA-KNOWLEDGE-CAPSULE-DRAFT-v1",
+  "id": "ora.context90.result-boundary",
+  "version": 1,
+  "type": "research-result-summary",
+  "source": {
+    "repository": "JeremyHennessy/AI-Research",
+    "commit": "cdb8d9f85a187ba9d34fcd531f5553b62591057e",
+    "path": "docs/artificial-life/ORA-INTELLIGENCE-CURRENT-20261019.md",
+    "utf8_sha256": "0bc38a9e24d2c9b09f53a1d0b3df6cf34dc88fdb7a6b37fe5a4785087836c57c",
+    "url": "https://github.com/JeremyHennessy/AI-Research/blob/cdb8d9f85a187ba9d34fcd531f5553b62591057e/docs/artificial-life/ORA-INTELLIGENCE-CURRENT-20261019.md"
+  },
+  "payload": {
+    "claim": "Context90 q8 passed its registered functional retrieval gate; all capacities failed registered paid N/O/E advantage flags.",
+    "scope": "Closed finite result under a supplied learner; not general intelligence or beneficial evolved cognition."
+  },
+  "payload_sha256": "998e90e77106c457d938abccc0d158f3c37f2dc13d872a9d71c048c8824383f3",
+  "rights": {
+    "status": "unresolved-for-redistribution",
+    "allowed": "metadata and project-authored summary only",
+    "full_text_included": false
+  },
+  "authority": {
+    "origin": "external human/project curation",
+    "organism_acquired": false,
+    "model_generated": false,
+    "approved_use": "documentation example only",
+    "runtime_import_allowed": false
+  },
+  "uncertainty": "Owner-evidence reconciliation; not independent scientific reproduction by K0.",
+  "validation_history": [
+    {
+      "date": "2026-10-23",
+      "check": "Git-blob source hash and summary checked against the existing closed-result note; no rerun",
+      "status": "documentation-only"
+    }
+  ],
+  "supersedes": null
+}
