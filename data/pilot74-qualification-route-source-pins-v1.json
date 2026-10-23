@@ -67,5 +67,6 @@
   "experiments/digital_pilot74_qualification_worker_v1.py": "a6b7ad4b48f9a492bc9b412ef15f336dc3cf1f676efb65c59aa1d95ac5909af7",
   "experiments/digital_pilot74_qualification_caller_v1.py": "3e732e5f543db0df8db9387a96c2014a8dddd9eaf4c9449ed5200bb741bbcb5b",
   "experiments/digital_pilot74_qualification_owner_v1.py": "1e534fe97eeaaf8dcebde7ed298b50a0a0d1ec0737e2f3cc4098143cbe097302",
-  "experiments/digital_pilot74_lock_scope_v1.py": "94d40d1be3c7b46e2c63ffef7e158a957f1b105311aaa54fddbe8989670e737b"
+  "experiments/digital_pilot74_lock_scope_v1.py": "94d40d1be3c7b46e2c63ffef7e158a957f1b105311aaa54fddbe8989670e737b",
+  "experiments/native/pilot74_guardian_v1.exe": "efbedc111fd27e95c0636c132f26cf0cd3bd11da1f75edd9d1cf4b4e87919ad3"
 }
