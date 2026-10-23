@@ -1,7 +1,7 @@
 name: PILOT74 new launcher failure and source checks
 on:
   push:
-    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022', 'implementation/remaining-root-accounting-20261022', 'implementation/bounded-memory-retrieval-20261022', 'implementation/project-knowledge-workflow-20261022', 'implementation/project-knowledge-input-repair-20261022', 'implementation/project-knowledge-receipt-repair-20261022']
+    branches: ['implementation/safe-launcher-20261020', 'implementation/reboot-host-repair-20261022', 'implementation/remaining-root-accounting-20261022', 'implementation/bounded-memory-retrieval-20261022', 'implementation/project-knowledge-workflow-20261022', 'implementation/project-knowledge-input-repair-20261022', 'implementation/project-knowledge-receipt-repair-20261022', 'implementation/project-work-experience-20261023']
   workflow_dispatch:
 permissions:
   contents: read
@@ -45,6 +45,10 @@ jobs:
         run: python -B tests/test_ora_startup_preparation_v1.py
       - name: Cooperative reboot STOP, hard fallback and original error retention
         run: python -B tests/test_ora_reboot_stop_v1.py
+      - name: Project-work pilot oracle and causal controls
+        run: |
+          python -B tests/test_ora_project_work_pilot_v1.py
+          python -B -c "import hashlib,pathlib;print('PROJECT_WORK_SHA256='+hashlib.sha256(pathlib.Path('experiments/ora_project_work_pilot_v1.py').read_bytes()).hexdigest())"
       - name: Parse source dependency closure and check changed raw bytes
         run: python -B tests/pilot74_source_check.py
       - name: Select changed learning integration only
