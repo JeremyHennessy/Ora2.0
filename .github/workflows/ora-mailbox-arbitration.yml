@@ -1,0 +1,22 @@
+name: Ora mailbox reader arbitration
+on:
+  push:
+    branches: ['repair/ora-mailbox-delete-sharing-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -B tests/test_ora_mailbox_delete_sharing_v1.py
+      - run: python -B tests/test_ora_task_store_v1.py
+      - run: python -B tests/test_ora_controller_v1.py
+      - run: python -B tests/test_ora_window_close_budget_v1.py
+      - name: Exact runtime source bytes
+        run: python -B -c "import json,hashlib,pathlib; p=json.loads(pathlib.Path('data/ora-mailbox-arbitration-source-pins-v1.json').read_text()); assert all(hashlib.sha256(pathlib.Path(n).read_bytes()).hexdigest()==h for n,h in p.items()); print(len(p),'source hashes matched')"
