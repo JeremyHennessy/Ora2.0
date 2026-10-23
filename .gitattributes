@@ -96,3 +96,7 @@ experiments/digital_pilot74_deadline_registration_v1.py -text
 tests/test_pilot74_deadline_registration_v1.py -text
 
 tests/test_pilot74_closure_reserve_v1.py -text
+
+experiments/digital_pilot74_reserved_closure_probe_v1.py -text
+experiments/digital_pilot74_reserved_closure_registration_v1.py -text
+tests/test_pilot74_reserved_closure_registration_v1.py -text
