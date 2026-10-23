@@ -31,7 +31,11 @@ def launch(request, admission_check):
     wall_ms = request.get('wall_ms', 3600000)
     if type(wall_ms) is not int or not 1 <= wall_ms <= 3600000:
         raise ValueError('Only a shorter finite outer deadline may be registered')
+    reserve_ms = request.get('closure_reserve_ms', 0)
+    if type(reserve_ms) is not int or not 0 <= reserve_ms < wall_ms:
+        raise ValueError('Closure reserve must fit inside original wall budget')
     deadline = started + wall_ms  # before admission, allocation or caller setup
+    soft_deadline = deadline - reserve_ms
     job = None
     pi = win.PI()
     initialized = False
@@ -41,6 +45,8 @@ def launch(request, admission_check):
     caller_exit_code = None
     wait_result = None
     observed_wait_tick = None
+    closure_wait_result = None
+    closure_observed_tick = None
     first = None
     phase = 'admission'
     evidence = None
@@ -94,7 +100,7 @@ def launch(request, admission_check):
         phase = 'wait'
         if k.ResumeThread(pi.thread) != 1:
             raise OSError('Caller suspended resume failed')
-        remaining = max(0, deadline - int(k.GetTickCount64()))
+        remaining = max(0, soft_deadline - int(k.GetTickCount64()))
         wait_result = int(k.WaitForSingleObject(pi.process, remaining))
         observed_wait_tick = int(k.GetTickCount64())
         if wait_result != 0:
@@ -123,7 +129,8 @@ def launch(request, admission_check):
                 command=request.get('command'), caller_exit_code=caller_exit_code,
                 before_termination=failure_observation(job, k, pi.process, pi.pid, birth, phase),
                 termination_requested=False, after_termination=None, closure_observed=False,
-                original_deadline_ms=deadline, started_tick_ms=started, wall_limit_ms=wall_ms,
+                original_deadline_ms=deadline, soft_deadline_ms=soft_deadline, closure_reserve_ms=reserve_ms,
+                started_tick_ms=started, wall_limit_ms=wall_ms,
                 raw_wait_result=wait_result, observed_wait_tick_ms=observed_wait_tick,
                 elapsed_at_wait_ms=None if observed_wait_tick is None else observed_wait_tick-started,
                 publication_accepted=False, live_attachment=False)
@@ -147,6 +154,13 @@ def launch(request, admission_check):
                 failure_note(error, 'Outer Job termination failed;UNKNOWN: ', termination)
         if evidence is not None:
             try:
+                if reserve_ms and pi.process:
+                    remaining = max(0, deadline-int(k.GetTickCount64()))
+                    closure_wait_result = int(k.WaitForSingleObject(pi.process,remaining))
+                    closure_observed_tick = int(k.GetTickCount64())
+                evidence['closure_wait_result'] = closure_wait_result
+                evidence['closure_observed_tick_ms'] = closure_observed_tick
+                evidence['closure_within_original_budget'] = bool(closure_wait_result == 0 and closure_observed_tick is not None and closure_observed_tick <= deadline)
                 evidence['after_termination'] = failure_observation(job, k, pi.process, pi.pid, birth, phase)
                 attach_failure_evidence(error, evidence)
             except BaseException as diagnostic:
