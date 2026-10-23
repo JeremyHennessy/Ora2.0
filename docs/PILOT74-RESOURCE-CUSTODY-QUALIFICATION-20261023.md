@@ -70,6 +70,21 @@ post-timeout writing window is granted. If hard termination prevents a terminal
 receipt, STARTED is UNKNOWN, not a complete archive. The current API alone is
 not a bounded whole-system launch supervisor and must not be admitted as one.
 
+The prospective `digital_pilot74_outer_owner_v1.launch` API prepares that
+enclosing boundary: suspended atomic Job assignment, no inherited owner handles,
+actual caller PID/birth/image/membership and limit readback, one deadline starting
+before setup, and full owned-Job termination on failure. Caller+G+W+serial C fit
+four contained slots. The original trusted owner is a fifth physical process,
+outside the Job, with handle-only supervision and no task-file writes. This is
+not a machine-wide four-process guarantee. Existing bootstrap-based run helpers
+add a fifth contained process and must not be used for this topology.
+
+The enclosing API has only mocked tests so far. It is not connected to a launch
+CLI, actual original-owner registration or admitted native workload. A reviewed
+exact source-bound caller entrypoint and authority integration remain required.
+Native proof must cover nesting, outer aggregate memory/CPU, original-handle
+closure and hard-stop behavior; no such proof follows from mocked Win32 calls.
+
 ## Durable caller and failure panel
 
 `digital_pilot74_durable_supervisor_v1.Attempt` creates a fresh exclusive evidence

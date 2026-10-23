@@ -85,3 +85,5 @@ experiments/process_limits.py -text
 experiments/digital_pilot74_durable_supervisor_v1.py -text
 tests/test_pilot74_durable_supervisor_v1.py -text
 docs/PILOT74-RESOURCE-CUSTODY-QUALIFICATION-20261023.md -text
+experiments/digital_pilot74_outer_owner_v1.py -text
+tests/test_pilot74_outer_owner_v1.py -text
