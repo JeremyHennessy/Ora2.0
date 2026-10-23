@@ -151,14 +151,21 @@ class Attempt:
         source/native/reviewer pins and all admission gates immediately here.
         Synthetic callbacks are only valid in synthetic tests, never admission.
         """
+        from experiments.digital_pilot74_guardian_v1 import launch_guardian
+        return self._run(spec,expected,admission_check,launch_guardian)
+
+    def run_qualification(self,spec,expected,admission_check):
+        from experiments.digital_pilot74_qualification_controller_v1 import launch_qualification
+        return self._run(spec,expected,admission_check,launch_qualification)
+
+    def _run(self,spec,expected,admission_check,launcher):
         if self.finished or expected != self.registration_sha256 or spec.get('sha256') != expected:
             raise ValueError('One attempt for one exact registration only')
         self.finished = True  # failures and partial receipts cannot be retried
         try:
             if admission_check(spec, expected) is not True:
                 raise ValueError('External original-owner admission refused')
-            from experiments.digital_pilot74_guardian_v1 import launch_guardian
-            result = launch_guardian(spec, expected)
+            result = launcher(spec, expected)
         except BaseException as first:
             try:
                 self.write('terminal', dict(schema=SCHEMA, status='FAILED',

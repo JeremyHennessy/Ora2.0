@@ -25,10 +25,10 @@ def _kernel():
 def checked(ok):
     if not ok:raise ctypes.WinError(ctypes.get_last_error())
 class ID(ctypes.Structure):_fields_=[('volume',ctypes.c_ulonglong),('identifier',ctypes.c_ubyte*16)]
-def win32_id(path):
+def win32_id(path,share=0):
     p=Path(path);physical.plain(p)
     for parent in p.parents:physical.plain(parent,True)
-    k=_kernel();handle=k.CreateFileW(str(p),0x80000000,0,None,3,0x00200000,None)
+    k=_kernel();handle=k.CreateFileW(str(p),0x80000000,share,None,3,0x00200000,None)
     if handle in (None,ctypes.c_void_p(-1).value):raise ctypes.WinError(ctypes.get_last_error())
     try:
         value=ID();checked(k.GetFileInformationByHandleEx(handle,18,ctypes.byref(value),ctypes.sizeof(value)))
@@ -268,6 +268,10 @@ def launch_guardian(spec,expected):
     durable caller,grant issuer or complete exceptional-custody qualification.
     """
     r=validate_host_registration(spec,expected)
+    return _launch_guardian(spec,expected,r)
+
+def _launch_guardian(spec,expected,r):
+    # Private shared transport; public routes validate independently before entry.
     from experiments import process_limits as caps
     import msvcrt,subprocess
     k=_kernel();limits=caps.Limits(memory_bytes=2048*MIB,cpu_seconds=2400,processes=4,wall_seconds=3600)
