@@ -155,5 +155,24 @@
     "qualification_executed": false,
     "replacement_authorized": false,
     "runtime_deployed": false
+  },
+  "qualification_v2_terminal_and_capture_repair": {
+    "status": "V2_FAILED_NO_RETRY",
+    "completed_roles": 16,
+    "started_roles": 17,
+    "actual_vm_steps": 27648,
+    "controller_accepted_vm_steps": 26624,
+    "all_owned_births_closed": 21,
+    "partial_archive_restore_exact": true,
+    "full_qualification_passed": false,
+    "repair_commit": "d73eba5e982717d75328eae7091d8694f252457c",
+    "repair_pr": 311,
+    "focused_windows_ci": 40008149482,
+    "new_tests": 8,
+    "source_pins": 70,
+    "production_admission": false,
+    "scientific_acceptance": false,
+    "persistent_world_running": false,
+    "prospective_next_plan": "drafts/pilot74-full-qualification-v3-20261023/proposed-plan.json"
   }
 }
