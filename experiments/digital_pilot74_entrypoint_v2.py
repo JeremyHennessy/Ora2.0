@@ -72,7 +72,17 @@ def bind(root,pins,identities):
             path=Path(module.__file__).resolve();relative=path.relative_to(root).as_posix()
             assert relative in pins and digest(read(path,MIB)[0])==pins[relative]
 
+def canonical_output_lines():
+    """Emit canonical JSON with one LF byte on Windows as on other hosts.
+
+    Keep the parent parser strict; never strip/normalize a received proof.
+    This changes only text newline translation, not task/source authority.
+    """
+    sys.stdout.reconfigure(newline='\n')
+    sys.stderr.reconfigure(newline='\n')
+
 def main():
+    canonical_output_lines()
     original=list(sys.argv);stage='arguments'
     try:
         assert not sys.flags.optimize and len(original) in (5,6)
