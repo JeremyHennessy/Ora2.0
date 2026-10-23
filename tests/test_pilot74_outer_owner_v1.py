@@ -49,8 +49,8 @@ class Outer(unittest.TestCase):
         job.pids.return_value = []
         return k, job
 
-    def invoke(self, k, job, admission=lambda r: True):
-        with patch.object(o.win, 'kernel', return_value=k), patch.object(o.win, 'birth', return_value=555), patch.object(o.caps, 'Job', return_value=job), patch.object(o,'observe_job_live',return_value={'synthetic':True}):
+    def invoke(self, k, job, admission=lambda r: True, snapshot_error=None):
+        with patch.object(o.win, 'kernel', return_value=k), patch.object(o.win, 'birth', return_value=555), patch.object(o.caps, 'Job', return_value=job), patch.object(o,'observe_job_live',return_value={'synthetic':True},side_effect=snapshot_error):
             return o.launch(REQUEST, admission)
 
     def test_refusal_creates_no_job_or_process(self):
@@ -122,6 +122,25 @@ class Outer(unittest.TestCase):
                 self.invoke(k, job)
         self.assertIs(raised.exception, first)
         job.terminate.assert_called_once()
+
+    def test_optional_identity_snapshot_failure_cannot_skip_termination(self):
+        k, job = self.setup_boundary()
+        first=RuntimeError('synthetic create failure')
+        k.CreateProcessW.side_effect=first
+        with self.assertRaises(RuntimeError) as raised:
+            self.invoke(k,job,snapshot_error=MemoryError('synthetic image query'))
+        self.assertIs(raised.exception,first)
+        job.terminate.assert_called_once()
+        self.assertTrue(any('snapshot unavailable' in n for n in first.__notes__))
+
+    def test_expired_deadline_skips_optional_identity_snapshot(self):
+        k, job = self.setup_boundary()
+        k.GetTickCount64.side_effect=[100,101,102,103,104,3600100]
+        k.WaitForSingleObject.return_value=258
+        with self.assertRaises(TimeoutError) as raised:
+            self.invoke(k,job,snapshot_error=AssertionError('must not query optional image'))
+        job.terminate.assert_called_once()
+        self.assertIsNone(raised.exception.guardian_failure_evidence['owned_identity_snapshot_before_termination'])
 
 
 if __name__ == '__main__':
