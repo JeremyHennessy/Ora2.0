@@ -13,7 +13,7 @@ REQUEST = dict(command=['D:/synthetic/python.exe', '-B', 'sealed-caller.py'], cw
 class Outer(unittest.TestCase):
     def setup_boundary(self):
         k = Mock()
-        k.GetTickCount64.side_effect = [100, 101, 102, 103, 104, 105]
+        k.GetTickCount64.side_effect = [100, 101, 102, 103, 104, 105, 106]
         def attributes(*args):
             args[-1]._obj.value = 128
             return 1
@@ -135,7 +135,7 @@ class Outer(unittest.TestCase):
 
     def test_expired_deadline_skips_optional_identity_snapshot(self):
         k, job = self.setup_boundary()
-        k.GetTickCount64.side_effect=[100,101,102,103,104,3600100]
+        k.GetTickCount64.side_effect=[100,101,102,103,104,3600100,3600100]
         k.WaitForSingleObject.return_value=258
         with self.assertRaises(TimeoutError) as raised:
             self.invoke(k,job,snapshot_error=AssertionError('must not query optional image'))
