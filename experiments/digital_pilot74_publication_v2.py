@@ -132,7 +132,29 @@ def read_slot(path,expected_size,identity,cap):
 def owner(grant):
     v=grant['operator_lock'];assert type(v) is dict and set(v)=={'path','extent','sha256','device','inode'} and allowed_owner_lock(v)
     integer(v['extent'],1,65536);assert type(v['device']) is int and type(v['inode']) is int;hexadecimal(v['sha256']);raw=read_slot(Path(v['path']),v['extent'],(v['device'],v['inode']),65536);assert sha(raw)==v['sha256']
-    lock=json.loads(raw);assert set(lock)=={'pid','started_utc'} and type(lock['pid']) is int and lock['pid']>0 and type(lock['started_utc']) is str
+    lock=json.loads(raw)
+    if Path(v['path'])==Path('D:/OraLab/state/operator.lock'):
+        assert set(lock)=={'pid','started_utc'} and type(lock['pid']) is int and lock['pid']>0 and type(lock['started_utc']) is str
+        return
+    # Non-production paths already require the native-bound exact QREG in
+    # allowed_owner_lock. Authenticate its distinct body and current birth;
+    # never reinterpret/adopt the preserved global production lock.
+    from experiments import digital_pilot74_publication_reader_v2 as physical
+    from experiments import digital_pilot74_guardian_v1 as guardian
+    assert physical.parse(raw,16384)==lock
+    assert set(lock)=={'schema','pid','creation_filetime_decimal'} and lock['schema']=='PILOT74-QUALIFICATION-OWNER-LOCK-v1'
+    identity={k:lock[k] for k in ('pid','creation_filetime_decimal')};physical.process_id(identity)
+    k=guardian._kernel();handle=k.OpenProcess(0x1000|0x100000,False,identity['pid']);guardian.checked(handle)
+    first=None
+    try:
+        assert str(guardian._birth(k,handle))==identity['creation_filetime_decimal'] and k.WaitForSingleObject(handle,0)==258
+    except BaseException as error:
+        first=error;raise
+    finally:
+        try:guardian.checked(k.CloseHandle(handle))
+        except BaseException as later:
+            if first is None:raise
+            guardian.failure_note(first,'Publication owner handle cleanup: ',later)
 
 def write_slot(path,data,identity,limit,grant):
     assert type(data) is bytes and 0<len(data)<=limit;owner(grant);chain=parents(path);v=plain(path);assert ident(v)==identity
