@@ -39,7 +39,7 @@ def checks():
         assert p.stat().st_size<=4*1024**2
         with closing(sqlite3.connect(p.as_uri()+'?mode=ro',uri=True,timeout=2)) as db:
             db.execute('BEGIN')
-        assert db.execute('pragma integrity_check').fetchone()==('ok',)
+            assert db.execute('pragma integrity_check').fetchone()==('ok',)
             saved=db.execute('select m.key,m.value,p.issuer,p.task from memories m join memory_provenance p using(key)').fetchall()
             assert all(tuple(x) in saved for x in stage['baseline_full_provenance'])
             snapshot_notes.append(all(x in saved for x in notes))

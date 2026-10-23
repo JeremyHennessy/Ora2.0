@@ -31,5 +31,9 @@ class Bounds(unittest.TestCase):
         self.assertEqual(task_bounds(self.db({}))['total'],0)
         self.assertEqual(task_bounds(self.db({'done':128}))['done'],128)
 
+    def test_full_checker_parses_without_live_import(self):
+        import ast
+        ast.parse((Path(__file__).resolve().parents[1]/'experiments/ora_runtime_health_review_v8.py').read_bytes())
+
 
 if __name__=='__main__':unittest.main()
