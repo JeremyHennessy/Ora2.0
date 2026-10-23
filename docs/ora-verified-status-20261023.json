@@ -1,6 +1,6 @@
 {
   "schema": "ORA-VERIFIED-STATUS-UPDATE-v1",
-  "observed_at": "2026-10-23T12:29:54.965651-03:00",
+  "observed_at": "2026-10-23T14:56:33.736004-03:00",
   "timezone": "America/Halifax",
   "classification": "Reconciliation of retained local evidence; not independent scientific reproduction",
   "runtime": {
@@ -9,14 +9,15 @@
     "memories": 174,
     "approved_notes": 3,
     "fresh_lifetime_failures": 0,
-    "completed_epochs": 1,
-    "completed_windows": 0,
+    "completed_epochs": 29,
+    "completed_windows": 1,
     "snapshots": 2,
     "all_baseline_provenance_and_original_key_retained": true,
     "windows_CI": 39975305239,
     "tests": 27,
     "source_hashes": 68,
-    "repaired_two_hour_renewal_verified": false
+    "repaired_two_hour_renewal_verified": true,
+    "first_closed_controller_elapsed_seconds": 7200.734
   },
   "retention": {
     "verified": true,
@@ -97,6 +98,32 @@
       "artifact": "ora-window-close-budget-repair-review-20261023.json",
       "sha256": "8adf1ccfee3eada7d602890d190092856a26cc27d001cd36d114339a265477b6",
       "scope": "Private owner-evidence summary; raw memories, keys, machine identifiers and internal records not published"
+    },
+    {
+      "artifact": "verification.json",
+      "sha256": "97c1b91a66dcde57809c7801e9f48c824d4df80b54bb3aa5f293f2789131579c",
+      "scope": "Private owner-evidence reconciliation; no raw memories, keys or machine identities published"
+    },
+    {
+      "artifact": "ora-mailbox-arbitration-repair-review-20261023.json",
+      "sha256": "568167713c98902a96d0d778be58bfd96baab9a53d8fec73f87e9aead795a2e8",
+      "scope": "Private owner-evidence reconciliation; no raw memories, keys or machine identities published"
     }
-  ]
+  ],
+  "mailbox_repair": {
+    "head": "0bfe1912340b4421257f9a92dc7aa75be71121d1",
+    "pr": 308,
+    "ci": 39998379871,
+    "tests": 35,
+    "runtime_hashes": 69,
+    "deployed": false,
+    "rejected_delete_sharing_attempt_preserved": true,
+    "pilots_retried": false
+  },
+  "world_qualification_route": {
+    "status": "implementation pending; isolated checkout established",
+    "native_rebuilt": false,
+    "full_workload_executed": false,
+    "all_production_gates_passed": false
+  }
 }
