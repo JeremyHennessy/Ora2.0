@@ -63,13 +63,19 @@ def diagnostic(error):
                                function=tb.tb_frame.f_code.co_name, line=tb.tb_lineno))
             tb = tb.tb_next
         notes = list(getattr(current, '__notes__', []))
+        try:
+            representation = repr(current)
+            representation_available = True
+        except BaseException:
+            representation = '<exception formatting unavailable>'
+            representation_available = False
         rows.append(dict(type=type(current).__module__ + '.' + type(current).__qualname__,
-            representation=safe_error(current), frames=frames,
+            representation=representation, representation_available=representation_available, frames=frames,
             frames_complete=tb is None, notes=notes[:16], notes_complete=len(notes) <= 16,
             suppress_context=bool(current.__suppress_context__)))
         current = current.__cause__ if current.__cause__ is not None else current.__context__
     return dict(exceptions=rows, chain_complete=current is None,
-                complete=current is None and all(r['frames_complete'] and r['notes_complete'] for r in rows))
+                complete=current is None and all(r['frames_complete'] and r['notes_complete'] and r['representation_available'] for r in rows))
 
 
 class Attempt:

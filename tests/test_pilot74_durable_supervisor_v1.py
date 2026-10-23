@@ -113,6 +113,14 @@ class Custody(unittest.TestCase):
         self.assertTrue(result['complete'])
         self.assertEqual(result['exceptions'][1]['notes'], ['operator evidence'])
 
+    def test_bad_exception_representation_is_incomplete(self):
+        class BadRepr(RuntimeError):
+            def __repr__(self):
+                raise MemoryError('synthetic formatting failure')
+        result = s.diagnostic(BadRepr('first'))
+        self.assertFalse(result['complete'])
+        self.assertFalse(result['exceptions'][0]['representation_available'])
+
     def test_cleanup_failure_prevents_success(self):
         value = self.attempt()
         close = value.close
