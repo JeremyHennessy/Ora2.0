@@ -64,3 +64,13 @@ data/eka1-feedback-adapter-qualification-20261024.json -text
 data/eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/ora-eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/eka1-feedback-adapter-qualification-20261024.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Prospective whole-World metadata/algebra only.
+tools/eka1_prospective_opportunity.py -text
+tests/test_eka1_prospective_opportunity.py -text
+data/eka1-prospective-world-opportunity-20261024.json -text
+experiments/digital_eka1_paid_read_source_v1.py -text
+tests/test_eka1_paid_read_source_shape_v1.py -text
+data/eka1-world-opportunity-validation-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-world-opportunity-independent-*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md -text

@@ -41,7 +41,8 @@ def verify_context(world, binding, arm):
     decoded = binding['decoded']
     if (type(decoded) is not list or len(decoded) != 3
             or any(type(x) is not int or not 0 <= x < 32 for x in decoded)
-            or decoded[0] != 1 or entity['feedback'] not in (0, 1)):
+            or decoded[0] != 1 or type(entity['feedback']) is not int
+            or entity['feedback'] not in (0, 1)):
         raise ValueError('Truthful feedback READ only')
     if (actor != binding['actor'] or world.tick != binding['tick']
             or world.turns[actor] != binding['own_turns'] or entity['pc'] != binding['pc']

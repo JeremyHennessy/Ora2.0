@@ -51,6 +51,15 @@ class PaidReadSource(unittest.TestCase):
         self.assertIn('snapshot', called)
         self.assertIn("h(world.snapshot()) != digest", ast.unparse(context))
 
+    def test_exact_feedback_type_refused_before_mutation(self):
+        unused, unused_paid, tree = functions()
+        context = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'verify_context')
+        text = ast.unparse(context)
+        self.assertIn("type(entity['feedback']) is not int", text)
+        self.assertLess(text.index("type(entity['feedback']) is not int"), text.index('world.check()'))
+        unused, paid, unused_tree = functions()
+        self.assertEqual(ast.unparse(paid.body[0]), 'pre_hash, branch_id = verify_context(self, binding, arm)')
+
     def test_no_launcher_or_original_restore_replacement_and_no_authority(self):
         unused, unused_paid, tree = functions()
         self.assertFalse(any(isinstance(n, (ast.ClassDef, ast.If)) for n in tree.body))
