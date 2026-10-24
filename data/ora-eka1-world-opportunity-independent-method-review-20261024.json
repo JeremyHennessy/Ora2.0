@@ -1,0 +1,39 @@
+{
+  "schema": "ORA-EKA1-WORLD-OPPORTUNITY-INDEPENDENT-METHOD-REVIEW-v1",
+  "created_utc": "2026-10-24T17:37:01.122987+00:00",
+  "pins": {
+    "data/eka1-prospective-world-opportunity-20261024.json": "b04ff1065d71697e28b9ede75d7c7d29029fea5867c75709d8a12e8f4dc6c088",
+    "docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md": "0b94167bbee67d7384bae78672bedeb8aa210365387620bf9c7b6677552822db"
+  },
+  "verdict": "PASS_PROSPECTIVE_METHOD_DEFINITION_ONLY_EXECUTION_NO_GO",
+  "method": "Read exact final contract/doc, source laws and existing owner evidence; no helper/test execution, VM/source import, rawbank reread, replay or seed query.",
+  "corrections_before_acceptance": [
+    "Original assignedWorld is experimentalunit, not automatically independent; sharedseed dose/control covariance must be declared and no multipliedN.",
+    "Benchmark initialendowment/formationcharges/environment matched, while supplied programs explicitly distinct and separately priced.",
+    "Candidate jointvalidity/composite declared; all biologicalcategories retained, no posttreatment exclusion."
+  ],
+  "accepted_scope": [
+    "New future wholeassignedWorld earliest available earned renewableREAD selection is pretreatment and outcomeagnostic; old firstmutated0of16 and all failed subjects preserved.",
+    "NoeligibleREAD contributes0 interventioncontrast only; original reproductive/energy/survival outcomes retained. Infrastructure failuresINCOMPLETE, never0.",
+    "Conditional target=p XOR(1-f) and same-site renewable phase equality are source algebra; actor ownport retention and actual delayed opportunity UNKNOWN.",
+    "Singlepaid true/sham/XOR READ asks narrow ownsignal sensitivity/consequences; programmed delayedreflex maypass, not learned/evolvedintelligence.",
+    "Firstprobe site/packet/time/early/reread/death differences remain outcomes; jointvalidcorrect composite mixes routing/sourcealignment/correctness and must be decomposed.",
+    "WholeWorldbirths/resources plus focal/donor/competitor ledger separate resource redistribution from netpopulationbenefit.",
+    "Efficient fixed0/fixed1/blind/nursery-aware/reactive references not qualified; blind1/2 only conditionalbalancedindependentnull, not deterministicseed assertion.",
+    "No fullypaid intervention/native fit, sourceauthentication, derivedcontinuation or statisticalacceptance follows frommetadata/sourcealgebra."
+  ],
+  "remaining_gates": [
+    "Authentic commonprefix and paid source transition/derived continuation",
+    "Actual attainable informative opportunity and actor ownport availability",
+    "Specificity and fairbenchmark implementations",
+    "Complete organism/host/native cost and owner containment",
+    "Prospective effect/sample/reservedassignment/seedblock/statisticalacceptance/stopping registration",
+    "Independent scientific admission"
+  ],
+  "statistical_or_scientific_blocking_overclaim_found_after_correction": false,
+  "worlds_authorized": 0,
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "scientific_readiness": "NOT_READY",
+  "next_action": "Existing owner qualify authentic paid source/custody and finite source/native software contract; no population until all gates."
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "ORA-EKA1-FEEDBACK-OFFLINE-VALIDATION-v1",
+  "utc": "2026-10-23T22:56:52.408212+00:00",
+  "targeted_tests_passed": 6,
+  "test_seconds_reported": 0.0,
+  "source_only_checks": [
+    "immutable closed aggregate report SHA/counts reused",
+    "ordinary founder literal/source hash/no READ",
+    "conditional first division arithmetic70"
+  ],
+  "immutable_closed_report_sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+  "artifact_sha256": {
+    "data/eka1-feedback-qualification-contract-20261023.json": "44f4392a78339ee409a4fd0e5d0474d59ff1d27bd21474c7078e702a4ff7e85d",
+    "docs/EKA-1-FEEDBACK-QUALIFICATION-20261023.md": "34923c8a901e9e4b8431e1f6ae73e59df37d619cac06743d750e027f05a7d392",
+    "tools/eka1_feedback_cost_preflight.py": "5303d7eafd33b8f7404b4f02cfab3c5d1103e3ee000177160b3a2b1cb1eacdb7",
+    "tests/test_eka1_feedback_cost_preflight.py": "f91401baeba114594f77b9f214450d86e3c709ed942b7ec9e8e7d927499a4603"
+  },
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "new_history_queries": 0,
+  "authority_granted": false,
+  "full_cost_qualification": false,
+  "actual_useful_opportunity_qualified": false,
+  "prior_validation": "data/eka1-feedback-offline-validation-20261023.json",
+  "clarification": "Energy-positive probe floor explicitly means before expiry; age252 permits observed probe but not survival beyond expiry, regardless of remaining energy. Code/tests/contract refined and six tests rerun on final source."
+}

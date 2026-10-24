@@ -38,3 +38,39 @@ tests/test_eka1_intervention_envelope.py -text
 data/eka1-intervention-envelope-validation-20261023.json -text
 data/eka1-intervention-envelope-final-validation-20261023.json -text
 data/eka1-intervention-envelope-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen rejected causal candidate; retained source-only decision.
+data/eka1-delayed-assay-contract-20261023.json -text
+data/eka1-delayed-assay-source-validation-20261023.json -text
+data/eka1-delayed-assay-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Own-signal method proposal and source-only conditional certificate.
+data/eka1-own-signal-contrast-proposal-20261023.json -text
+data/eka1-own-signal-source-validation-20261023.json -text
+data/eka1-own-signal-contrast-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Source-only feedback cost and authority qualification.
+data/eka1-feedback-qualification-contract-20261023.json -text
+data/eka1-feedback-offline-validation-20261023.json -text
+tools/eka1_feedback_cost_preflight.py -text
+tests/test_eka1_feedback_cost_preflight.py -text
+data/eka1-feedback-final-validation-20261023.json -text
+data/eka1-feedback-qualification-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Offline feedback adapter only.
+tools/eka1_feedback_adapter.py -text
+tests/test_eka1_feedback_adapter.py -text
+data/eka1-feedback-adapter-qualification-20261024.json -text
+data/eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-feedback-adapter-qualification-20261024.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Prospective whole-World metadata/algebra only.
+tools/eka1_prospective_opportunity.py -text
+tests/test_eka1_prospective_opportunity.py -text
+data/eka1-prospective-world-opportunity-20261024.json -text
+experiments/digital_eka1_paid_read_source_v1.py -text
+tests/test_eka1_paid_read_source_shape_v1.py -text
+data/eka1-world-opportunity-validation-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-world-opportunity-independent-*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md -text
