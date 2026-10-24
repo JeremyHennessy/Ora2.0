@@ -1,0 +1,34 @@
+name: PILOT74 mocked CI harness regressions
+on:
+  push:
+    branches: ['repair/pilot74-ci-harness-20261024']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mocked_harness:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.11'
+          - os: windows-latest
+            python: '3.12'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Synthetic transport and cleanup contracts
+        run: python -B -m unittest discover -s tests -p test_digital_pilot74_launch_contract.py -v
+      - name: Invalid registrations and explicit non-Windows refusal
+        run: python -B -m unittest discover -s tests -p test_pilot74_owner_registration_v1.py -v
+      - name: Qualification route and isolated import contracts
+        run: python -B -m unittest discover -s tests -p test_pilot74_qualification_route_v1.py -v
+      - name: Publisher ownership and actual Windows identity where supported
+        run: python -B tests/test_pilot74_publication_owner_v1.py -v
+      - name: Exact inherited production source and artifact bytes
+        run: python -B -c "import json,hashlib,pathlib; p=json.loads(pathlib.Path('data/pilot74-publication-owner-source-pins-v1.json').read_text()); assert all(hashlib.sha256(pathlib.Path(n).read_bytes()).hexdigest()==h for n,h in p.items()); print(len(p),'source hashes matched')"

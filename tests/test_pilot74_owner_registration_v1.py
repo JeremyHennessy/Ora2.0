@@ -45,8 +45,19 @@ class Registration(unittest.TestCase):
         from unittest.mock import patch,Mock
         for value in [True,0,3600001]:
             k=Mock();k.GetTickCount64.return_value=1
-            with patch.object(outer.win,'kernel',return_value=k):
+            # Exercise deadline validation past the platform gate without any
+            # native call. The non-Windows refusal has its own test below.
+            with patch.object(outer.os,'name','nt'),patch.object(outer.win,'kernel',return_value=k):
                 with self.assertRaises(ValueError):outer.launch({'wall_ms':value},lambda request:True)
+            k.CreateProcessW.assert_not_called()
+
+    def test_non_windows_refuses_before_kernel_or_admission(self):
+        from unittest.mock import patch,Mock
+        admission=Mock()
+        with patch.object(outer.os,'name','posix'),patch.object(outer.win,'kernel') as kernel:
+            with self.assertRaisesRegex(OSError,'Windows only'):
+                outer.launch({'wall_ms':1},admission)
+        kernel.assert_not_called();admission.assert_not_called()
 
     def test_explicit_missing_terminal_observation_is_unknown(self):
         self.assertFalse(r.observed_closed(None))
