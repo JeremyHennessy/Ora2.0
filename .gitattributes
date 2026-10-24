@@ -56,3 +56,11 @@ tools/eka1_feedback_cost_preflight.py -text
 tests/test_eka1_feedback_cost_preflight.py -text
 data/eka1-feedback-final-validation-20261023.json -text
 data/eka1-feedback-qualification-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Offline feedback adapter only.
+tools/eka1_feedback_adapter.py -text
+tests/test_eka1_feedback_adapter.py -text
+data/eka1-feedback-adapter-qualification-20261024.json -text
+data/eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-feedback-adapter-qualification-20261024.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

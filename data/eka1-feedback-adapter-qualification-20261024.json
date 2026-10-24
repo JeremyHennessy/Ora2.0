@@ -1,0 +1,36 @@
+{
+  "schema": "ORA-EKA1-OFFLINE-ADAPTER-QUALIFICATION-v1",
+  "status": "OFFLINE_COMPONENT_TESTED_ONLY",
+  "source_pins": {
+    "tools/eka1_feedback_adapter.py": "9d0e43ae79fb53b190cb947141bf70983aa09c266a92456458b9a56f265724ef",
+    "tests/test_eka1_feedback_adapter.py": "534d641d679b80d6d359a0b1fbd9dc2376b9ebd9b077b41dd5a684b090bccd90"
+  },
+  "pressure71_sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+  "validation": {
+    "tests_passed": 9,
+    "synthetic_role_combinations": 1728,
+    "matrix": "2 feedback bits x 32 destination arguments x 9 slots x 3 roles",
+    "world_steps": 0,
+    "populations_launched": 0
+  },
+  "limits": {
+    "nodes": 100000,
+    "serialized_bytes": 2097152,
+    "native_resource_qualification": false,
+    "warning": "Serialization allocates before byte rejection; caller-created inputs are not a qualified hostile resource boundary."
+  },
+  "implemented": [
+    "Pure supplied post-truthful-READ JSON delta and exact structural verifier",
+    "True, identity sham and xor1 roles; original input preserved; aliases separated",
+    "Distinct proposed branch labels; all history, charge, identity and execution authority flags false"
+  ],
+  "missing_gates": [
+    "Authentic common pre-READ source integration and paid transition verification",
+    "Full source checkpoint schema, original event history and ancestry authentication",
+    "Actual native branch identities, custody, CPU/wall/RAM/storage qualification",
+    "Prospective finite execution registration and independent admission"
+  ],
+  "execution_authorized": false,
+  "scientific_admission": false,
+  "failure_policy": "Infrastructure or custody failure is INCOMPLETE; no retry or biological-zero substitution."
+}
