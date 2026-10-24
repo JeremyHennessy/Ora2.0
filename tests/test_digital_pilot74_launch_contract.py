@@ -4,10 +4,12 @@ No Ora imports, native process creation, VM or world. Real anonymous pipes only.
 """
 import ast
 import ctypes
+import copy
 from ctypes import wintypes as wt
 import os
 from pathlib import Path
 import struct
+import subprocess
 import sys
 from types import ModuleType, SimpleNamespace
 import unittest
@@ -15,7 +17,10 @@ from unittest.mock import Mock, patch
 
 SOURCE = Path(__file__).resolve().parents[1] / 'experiments/digital_pilot74_guardian_v1.py'
 tree = ast.parse(SOURCE.read_bytes())
-function = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'launch_guardian')
+NAMES = {'launch_guardian', '_launch_guardian', 'failure_observation',
+         'failure_note', 'attach_failure_evidence'}
+functions = [n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name in NAMES]
+assert {n.name for n in functions} == NAMES
 
 
 class LaunchContract(unittest.TestCase):
@@ -38,7 +43,7 @@ class LaunchContract(unittest.TestCase):
         k.CloseHandle = Mock(side_effect=lambda h: closed.append(h) or 1)
         k.DeleteProcThreadAttributeList = Mock()
         k.TerminateProcess = Mock(return_value=1)
-        job = SimpleNamespace(handle=100, close=Mock(), terminate=Mock(),
+        job = SimpleNamespace(handle=100, close=Mock(), terminate=Mock(), pids=Mock(return_value=[]),
                               usage=Mock(return_value=dict(active_before_close=0)))
         caps = ModuleType('experiments.process_limits')
         caps.Limits = lambda **kw: kw
@@ -49,11 +54,28 @@ class LaunchContract(unittest.TestCase):
         def checked(ok):
             if not ok:
                 raise OSError('injected native failure')
-        ns = dict(ctypes=ctypes, wt=wt, os=os, struct=struct, MIB=1024**2,
-                  validate_host_registration=lambda *a: registration,
+        # Pipes are real; Windows handle conversion/inheritance is synthetic on
+        # every platform, just like the kernel/Job. Import subprocess before
+        # installing msvcrt so its own platform detection is not contaminated.
+        msvcrt = ModuleType('msvcrt'); msvcrt.get_osfhandle = lambda fd: fd
+        self.enterContext(patch.dict(sys.modules, {'msvcrt': msvcrt}))
+        class PipeOS:
+            set_handle_inheritable = Mock()
+            def __getattr__(self, name):
+                return getattr(os, name)
+        ns = dict(ctypes=ctypes, copy=copy, wt=wt, os=PipeOS(), struct=struct, MIB=1024**2,
+                  validate_host_registration=Mock(return_value=registration),
                   _kernel=lambda: k, checked=checked, _birth=lambda *a: 42)
-        exec(compile(ast.Module(body=[function], type_ignores=[]), str(SOURCE), 'exec'), ns)
+        exec(compile(ast.Module(body=functions, type_ignores=[]), str(SOURCE), 'exec'), ns)
         return ns['launch_guardian'], k, calls, closed, caps, package, job
+
+    def test_registration_refusal_never_enters_transport(self):
+        launch, k, calls, closed, caps, package, job = self.setup_launch()
+        launch.__globals__['validate_host_registration'].side_effect = ValueError('registration refused')
+        with self.assertRaisesRegex(ValueError, 'registration refused'):
+            launch(dict(path='D:/registration.json', extent=2, sha256='a'*64), 'a'*64)
+        k.CreateProcessW.assert_not_called()
+        job.close.assert_not_called()
 
     def test_root_is_detached_suspended_and_explicitly_job_bound(self):
         launch, k, calls, closed, caps, package, job = self.setup_launch()

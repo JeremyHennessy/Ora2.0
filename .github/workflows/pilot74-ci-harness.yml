@@ -1,0 +1,27 @@
+name: PILOT74 mocked CI harness regressions
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mocked_harness:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: '3.11'
+          - os: windows-latest
+            python: '3.12'
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Synthetic transport, invalid registrations and import isolation only
+        run: |
+          python -B -m unittest discover -s tests -p test_digital_pilot74_launch_contract.py -v
+          python -B -m unittest discover -s tests -p test_pilot74_owner_registration_v1.py -v
+          python -B -m unittest discover -s tests -p test_pilot74_qualification_route_v1.py -v

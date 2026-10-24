@@ -1,5 +1,6 @@
 """New-only admission/dispatch/source checks; no World or guardian execution."""
 import copy,hashlib,json,os,sys,tempfile,unittest
+import subprocess
 from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
@@ -51,7 +52,23 @@ class Route(unittest.TestCase):
   self.assertEqual(production.GATES,{'interface','custody','union_failure','source_fit','whole_source_ci'})
   self.assertIs(c.Controller,production.Controller)
  def test_no_world_population_import(self):
-  self.assertNotIn('experiments.digital_pilot74_population',sys.modules)
+  # The suite may already have imported population for unrelated tests. Check
+  # this route in a fresh interpreter, and refuse the import BEFORE execution.
+  code = '''import sys
+sys.path.insert(0, sys.argv[1])
+class RefusePopulation:
+ def find_spec(self, fullname, path=None, target=None):
+  if fullname == 'experiments.digital_pilot74_population':
+   raise AssertionError('Qualification route attempted population import')
+sys.meta_path.insert(0, RefusePopulation())
+from experiments import digital_pilot74_qualification_admission_v1
+from experiments import digital_pilot74_lock_scope_v1
+from experiments import digital_pilot74_qualification_controller_v1
+assert 'experiments.digital_pilot74_population' not in sys.modules
+'''
+  result=subprocess.run([sys.executable,'-I','-B','-c',code,str(ROOT)],
+    capture_output=True,text=True,timeout=30)
+  self.assertEqual(result.returncode,0,result.stdout+result.stderr)
 class AdmissionCalls(unittest.TestCase):
  def actual_fixture(self):
   from unittest.mock import Mock
