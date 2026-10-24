@@ -32,3 +32,7 @@ tests/test_ora_native_service_v1.py text eol=lf
 
 experiments/ora_controller_v1.py -text
 tests/test_ora_window_close_budget_v1.py -text
+
+experiments/ora_owned_ollama_v1.py -text whitespace=cr-at-eol
+tests/test_ora_owned_readiness.py -text whitespace=cr-at-eol
+data/ora-readiness-source-pins-20261024.json -text whitespace=cr-at-eol

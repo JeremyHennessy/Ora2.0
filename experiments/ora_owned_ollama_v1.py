@@ -146,27 +146,53 @@ class OwnedOllama:
                 finally: self.ready.set()
             self.thread=threading.Thread(target=worker,daemon=True); self.thread.start()
             if not self.ready.wait(5) or self.start is None: raise RuntimeError('Owned server did not start suspended: '+str(self.error))
-            deadline=time.monotonic()+20
-            while time.monotonic()<deadline:
-                if (self.root/'STOP').exists(): raise InterruptedError('Operator STOP during model startup')
-                if not self.thread.is_alive(): raise RuntimeError('Owned server exited at startup: '+str(self.error or self.result))
-                if listener_pid()==self.start['pid']:
-                    try:
-                        request('/api/version')
-                        marker=dict(port=PORT,pid=self.start['pid'],creation_filetime_decimal=self.start['creation_filetime_decimal'],policy=self.policy)
-                        temporary=self.root/'owned-ollama.next'; temporary.write_text(json.dumps(marker))
-                        temporary.replace(self.root/'owned-ollama.json')
-                        verify_owner(self.root)
-                        return self
-                    except (OSError,http.client.HTTPException): pass
-                time.sleep(.1)
-            raise TimeoutError('Owned server readiness deadline')
+            self.wait_ready()
+            marker=dict(port=PORT,pid=self.start['pid'],creation_filetime_decimal=self.start['creation_filetime_decimal'],policy=self.policy)
+            temporary=self.root/'owned-ollama.next'; temporary.write_text(json.dumps(marker))
+            temporary.replace(self.root/'owned-ollama.json')
+            verify_owner(self.root)
+            return self
         except BaseException as error:
             self.record_error(error)
             try: self.close()
             except BaseException as closure:
                 raise BaseExceptionGroup('Owned startup and closure failed',[error,closure]) from None
             raise
+
+    def wait_ready(self):
+        """Keep the existing 20s budget; retain bounded probe evidence on failure."""
+        started=time.monotonic(); deadline=started+20
+        receipt=dict(budget_seconds=20,attempts=0,listener_matches=0,ready=False,
+                     owner={k:self.start[k] for k in ('pid','creation_filetime_decimal')},recent=[])
+        try:
+            while time.monotonic()<deadline:
+                if (self.root/'STOP').exists(): raise InterruptedError('Operator STOP during model startup')
+                if not self.thread.is_alive(): raise RuntimeError('Owned server exited at startup: '+str(self.error or self.result))
+                pid=listener_pid(); receipt['attempts']+=1
+                sample=dict(listener_pid=pid)
+                if pid==self.start['pid']:
+                    receipt['listener_matches']+=1
+                    remaining=deadline-time.monotonic()
+                    if remaining<=0: break
+                    try:
+                        request('/api/version',timeout=min(3,remaining))
+                        # A response arriving after the budget is not ready in time.
+                        if time.monotonic()>=deadline: break
+                        receipt['ready']=True
+                        return
+                    except (OSError,http.client.HTTPException) as exc:
+                        sample['error']=(type(exc).__name__+': '+str(exc))[:512]
+                receipt['recent']=(receipt['recent']+[sample])[-8:]
+                time.sleep(min(.1,max(0,deadline-time.monotonic())))
+            raise TimeoutError('Owned server readiness deadline')
+        except BaseException as exc:
+            receipt['error']=(type(exc).__name__+': '+str(exc))[:512]
+            raise
+        finally:
+            receipt['elapsed_seconds']=time.monotonic()-started
+            temporary=self.path/'readiness.json.next'
+            temporary.write_text(json.dumps(receipt,indent=2),encoding='utf8')
+            temporary.replace(self.path/'readiness.json')
 
     def prepare(self):
         verify_owner(self.root)
@@ -197,7 +223,7 @@ class OwnedOllama:
             raise ValueError('Plain model control slot required')
         self.path.mkdir(exist_ok=True)
         allowed={'policy.json','suspended-start.json','server.log','native-result.json','error.json','samples.json',
-                 'model-observation.json','lifecycle-error.json','STOP','server.log.next','native-result.next','previous-epoch.json','previous-epoch.json.next'}
+                 'model-observation.json','lifecycle-error.json','readiness.json','readiness.json.next','STOP','server.log.next','native-result.next','previous-epoch.json','previous-epoch.json.next'}
         leaves=list(self.path.iterdir())
         if not leaves: return
         for path in leaves:
