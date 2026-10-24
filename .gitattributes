@@ -74,3 +74,10 @@ tests/test_eka1_paid_read_source_shape_v1.py -text
 data/eka1-world-opportunity-validation-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 data/ora-eka1-world-opportunity-independent-*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md -text
+
+# New derived-reconstruction roster preserves existing reviewed raw bytes.
+experiments/__init__.py -text
+experiments/digital_informative_exposure23_interpret.py -text
+experiments/digital_mobile54.py -text
+experiments/digital_pressure71_population.py -text
+experiments/digital_sharedlineage68_population.py -text
