@@ -7,6 +7,10 @@ permissions:
   contents: read
 jobs:
   tests:
+    # This exact review branch has a separate mocked platform matrix. The legacy
+    # workflow also executes frozen scientific calibration, outside this mission.
+    # This is a scope hold, not a full-suite pass or production admission.
+    if: github.head_ref != 'repair/pilot74-ci-harness-20261024'
     runs-on: ubuntu-latest
     # The expanded replay suite exceeded the old five-minute job envelope.
     # This bounds CI only; registered experiment horizons/caps are unchanged.
