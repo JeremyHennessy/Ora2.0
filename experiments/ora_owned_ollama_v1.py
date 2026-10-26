@@ -117,7 +117,7 @@ class OwnedOllama:
                 binary_sha256=hashlib.sha256(executable.read_bytes()).hexdigest())
             environment=dict(OLLAMA_HOST=f'127.0.0.1:{PORT}',OLLAMA_MODELS=str(models),
                 OLLAMA_NO_CLOUD='1',OLLAMA_NUM_PARALLEL='1',OLLAMA_MAX_LOADED_MODELS='1',
-                OLLAMA_NOPRUNE='1',
+                OLLAMA_NOPRUNE='1',OLLAMA_LLM_LIBRARY='cpu',
                 OLLAMA_MAX_QUEUE='2',OLLAMA_CONTEXT_LENGTH='2048',OLLAMA_KEEP_ALIVE='30s',
                 OLLAMA_VULKAN='0',CUDA_VISIBLE_DEVICES='-1',GGML_VK_VISIBLE_DEVICES='-1',
                 ROCR_VISIBLE_DEVICES='-1',HIP_VISIBLE_DEVICES='-1')

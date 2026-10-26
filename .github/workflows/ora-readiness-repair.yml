@@ -1,7 +1,7 @@
-name: Ora owned readiness repair
+name: Ora CPU-only discovery repair
 on:
   push:
-    branches: ['repair/owned-readiness-evidence-20261024']
+    branches: ['repair/cpu-only-discovery-20261026']
   workflow_dispatch:
 permissions:
   contents: read
