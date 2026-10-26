@@ -81,3 +81,8 @@ experiments/digital_informative_exposure23_interpret.py -text
 experiments/digital_mobile54.py -text
 experiments/digital_pressure71_population.py -text
 experiments/digital_sharedlineage68_population.py -text
+tools/eka1_native_qualification_plan.py -text
+tests/test_eka1_native_qualification_plan_metadata.py -text
+data/eka1-native-authentication-qualification-plan-20261026.json -text
+data/eka1-native-authentication-preparation-check-20261026.json -text
+docs/EKA-1-NATIVE-AUTHENTICATION-QUALIFICATION-PLAN-20261026.md -text

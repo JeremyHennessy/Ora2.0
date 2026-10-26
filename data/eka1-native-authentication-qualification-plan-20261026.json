@@ -1,0 +1,80 @@
+{
+  "schema": "ORA-EKA1-NATIVE-QUALIFICATION-PLAN-v1",
+  "status": "PREPARATION_ONLY_NOT_REGISTERED",
+  "source_gate_sha256": "7bd9a58e541f5380c7e465ee4b18aa2d6e81efaa3d51e3f6dee1f56b38b20b81",
+  "source_pins": {
+    "experiments/__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "experiments/digital_informative_exposure23_interpret.py": "66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_eka1_paid_read_source_v1.py": "5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a",
+    "experiments/digital_eka1_derived_reconstruction_v1.py": "2b569f79eb5066c71cbe3ac1bf9821922b5456f0be9ac4d29a550184b2deaafd",
+    "experiments/digital_eka1_selection_replay_v1.py": "44fc7d9e1890b18783409791ddd4b37380572d8ddf61e3a80e483a7e3d22121b",
+    "tools/eka1_prospective_opportunity.py": "e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76"
+  },
+  "dose_slots": [
+    1,
+    8
+  ],
+  "roles": [
+    "owner",
+    "original_producer",
+    "selection_replay",
+    "true",
+    "identity_sham",
+    "xor1",
+    "independent_verifier"
+  ],
+  "panels": [
+    "complete_original_equality",
+    "earliest_outcome_blind_READ",
+    "empty_FORAGE_overwrites",
+    "paid_birth_ancestry",
+    "no_READ_keeps_outcomes",
+    "common_prestate_tick_minus1",
+    "one_paid_READ_and_conservation",
+    "true_sham_physical_identity",
+    "xor_only_declared_READ",
+    "complete_derived_suffix",
+    "wrong_source_owner_raw_rejected",
+    "early_late_failure_and_restore"
+  ],
+  "caps": {
+    "inputs": 2,
+    "roles_per_input": 7,
+    "concurrency": 1,
+    "processes_per_job": 4,
+    "child_memory_bytes": 2147483648,
+    "job_memory_bytes": 4294967296,
+    "user_cpu_seconds_per_role": 120,
+    "wall_seconds_per_role": 180,
+    "closure_seconds_per_role": 30,
+    "input_bytes_per_role": 67108864,
+    "output_bytes_per_role": 134217728,
+    "archive_bytes_total": 4294967296,
+    "archive_expanded_bytes_total": 4294967296,
+    "files_per_role": 32,
+    "archive_files_total": 512,
+    "json_depth": 64,
+    "json_nodes": 2000000,
+    "process_births_total": 56,
+    "geneses_per_input": 32,
+    "dispatches_per_genesis": 4096
+  },
+  "external_proofs": {
+    "assignment_registry": null,
+    "original_owner_grant": null,
+    "original_raw_native_receipt": null,
+    "common_prestate_raw_custody": null,
+    "executed_code_interpreter_stdlib": null,
+    "exact_source_safe_CI": null,
+    "semantic_panel_fixtures": null,
+    "native_containment_fit": null,
+    "closure_archive_exact_restore": null,
+    "independent_admission": null
+  },
+  "execution_authorized": false,
+  "scientific_admission": false,
+  "retry_policy": "NO_RETRY_NO_REPLACEMENT_RETAIN_PARTIAL_FAILURE"
+}
