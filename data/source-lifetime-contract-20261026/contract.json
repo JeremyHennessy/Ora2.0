@@ -1,0 +1,237 @@
+{
+  "schema": "ORA-SOURCE-LIFETIME-CONTRACT-v1",
+  "source_bindings": [
+    {
+      "path": "prototypes/experience_affordance/census.py",
+      "sha256": "e6cc32bb0a39f16c00f66a6649139e98b75494863835c4e1c914ade60faa6d67",
+      "functions": [
+        {
+          "function": "transition",
+          "line": 52,
+          "end_line": 56,
+          "segment_sha256": "85d38288e2b3a85bc0749629bdc8479c8720d08ab2b86e2befed5fd8b6e43033"
+        },
+        {
+          "function": "evaluate",
+          "line": 63,
+          "end_line": 112,
+          "segment_sha256": "47731479dce83a5d626217bd38416de6845e920f542864b72fadbed49c175c2b"
+        },
+        {
+          "function": "cost",
+          "line": 115,
+          "end_line": 117,
+          "segment_sha256": "5de4eccc5364e090c9077c5a54984202396216525f140ab7a81e919c96823550"
+        }
+      ]
+    },
+    {
+      "path": "prototypes/encoding_accessibility/census.py",
+      "sha256": "3fb32e465a5505ee74ee99b696253e3ec1f7129a08d215db72823301ab62b86b",
+      "functions": [
+        {
+          "function": "expand",
+          "line": 41,
+          "end_line": 52,
+          "segment_sha256": "24d7da74839946e9929a295eb79dd947105cd9ed55346eab4f3c542280e51887"
+        },
+        {
+          "function": "copy_bits",
+          "line": 63,
+          "end_line": 91,
+          "segment_sha256": "85f81c3eb0df0800cefc8295be5a96622f8525636fa09a94076641efe698c3da"
+        }
+      ]
+    },
+    {
+      "path": "prototypes/encoding_accessibility/funding_bound.py",
+      "sha256": "436d703b9af268e2afc46b1d0fd41272181754517e50f40cc6551e066200c6a4",
+      "functions": [
+        {
+          "function": "ledger",
+          "line": 40,
+          "end_line": 45,
+          "segment_sha256": "f9fc711b4cbc4b4a843403ae0c37ef23c04e3a83ec7fa9a4f4f7596a51d03734"
+        }
+      ]
+    },
+    {
+      "path": "prototypes/encoding_accessibility/lifetime_costs.py",
+      "sha256": "dffe8ea2c4d60e30b87a85aba0731496d80246fdc1ff490c395f1459b94c565b",
+      "functions": [
+        {
+          "function": "replay",
+          "line": 29,
+          "end_line": 59,
+          "segment_sha256": "d856c0249a70b3f47879630b2fcadcd6e9ac70c972975ed5d2d6fe94819f76ca"
+        },
+        {
+          "function": "first_probe_headroom",
+          "line": 62,
+          "end_line": 70,
+          "segment_sha256": "edab4ee3cd1ac8e8f5f3a97db347c9960bad45ad794a73171c854b89b1042e3f"
+        }
+      ]
+    },
+    {
+      "path": "experiments/digital_pressure71_population.py",
+      "sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "functions": [
+        {
+          "function": "World.step",
+          "line": 53,
+          "end_line": 135,
+          "segment_sha256": "ccef4f1068469ef9b593b82e73e43c59453b6fc4ba6bca757a8bc8d027067978"
+        }
+      ]
+    },
+    {
+      "path": "experiments/digital_sharedlineage68_population.py",
+      "sha256": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "functions": [
+        {
+          "function": "World.__init__",
+          "line": 40,
+          "end_line": 52,
+          "segment_sha256": "4dc44b518fb092d441e37a675924a7eef86e2a4af15718df0fd307b72ccac912"
+        },
+        {
+          "function": "World.body",
+          "line": 55,
+          "end_line": 58,
+          "segment_sha256": "6a8695047352ca23dabeac65292b04dedfe575f5d001b57570461c68daf2ea80"
+        },
+        {
+          "function": "World.check",
+          "line": 60,
+          "end_line": 74,
+          "segment_sha256": "39dee99d9e3db7e5eda891566c6ba657721d2047f882a544d293701968a75027"
+        },
+        {
+          "function": "World.input",
+          "line": 76,
+          "end_line": 88,
+          "segment_sha256": "1cb1719081acf22a5d5d8ac6e3345397e79b3a85fe6e9838f448c447520248e6"
+        }
+      ]
+    },
+    {
+      "path": "experiments/digital_mobile54.py",
+      "sha256": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+      "functions": [
+        {
+          "function": "budget",
+          "line": 10,
+          "end_line": 23,
+          "segment_sha256": "a6f211f23effeab1db5fa691d9171972c6da2282e5353ca94bc61f2d2e57067f"
+        }
+      ]
+    }
+  ],
+  "compact_model": {
+    "status": "DECLARED_OPERATION_CHARGES_CLOSED_LIFECYCLE_TIMING_UNDEFINED",
+    "transition_including_lookup": 1,
+    "feedback_sensing_extra": 1,
+    "changed_state_write_extra": 1,
+    "selected_storage_price": 0,
+    "formation_per_code_or_state_bit": 1,
+    "required_separate_decoder_tax": false,
+    "correction": "Prior unknown decoder/storage slots are not proof of missing ecological fees. Physical calibration is separate.",
+    "first_probe": {
+      "known_bill": "4+d",
+      "dispatches": "3+d",
+      "startup": 8,
+      "extra_cost_headroom": "4-d",
+      "meaning": "Sensitivity to hypothetical added charges, not missing-fee evidence"
+    },
+    "known_copy": {
+      "bits": 6,
+      "read_heat": 6,
+      "DNA_formation_heat": 6,
+      "state_formation_heat": 1,
+      "division_heat": 1,
+      "startup_transfer": 8,
+      "total": 22
+    },
+    "undefined": [
+      "copy clock and resource-phase progression",
+      "expiry during copying",
+      "parent-owned material acquisition and stock",
+      "complete same-world lifecycle and offspring continuation"
+    ]
+  },
+  "native_source": {
+    "status": "STATIC_LAW_COST_AND_ORDER_CLOSED_ACTUAL_LIFECYCLE_UNVERIFIED",
+    "source_law": "Pressure71 step over SharedLineage68 constructor/input/body/check",
+    "order": [
+      "select actor",
+      "increment global tick",
+      "input/release",
+      "decode instruction",
+      "debit base1",
+      "execute opcode and atomic gain",
+      "death if zero",
+      "increment actor turns",
+      "expiry at256"
+    ],
+    "base_dispatch_fee": 1,
+    "READ_or_memory_or_SELFWRITE_additional_fee": 0,
+    "successful_forage": {
+      "packet_energy": 20,
+      "actor_energy_cap": 64,
+      "base_debit_before_gain": true,
+      "successful_zero_after_base_can_be_rescued": true
+    },
+    "before_first_success": {
+      "startup": 12,
+      "necessary_total_debits_at_successful_forage_at_most": 12,
+      "previous_completed_prefixes_strictly_below": 12,
+      "scope": "No earlier transfers/food; base and opcode extras count; necessary not successful-program evidence"
+    },
+    "COPY": {
+      "words_per_dispatch": 3,
+      "base": 1,
+      "extra": 3,
+      "materials": 3
+    },
+    "DIVIDE": {
+      "base": 1,
+      "extra": 30,
+      "extra_heat": 18,
+      "child_transfer": 12,
+      "state_materials": 16
+    },
+    "founder27_reproduction_floor": {
+      "copy_dispatches": 9,
+      "division_dispatches": 1,
+      "total_without_foraging_or_control": 67,
+      "heat": 55,
+      "child_transfer": 12,
+      "materials": 43,
+      "minimum_successful_food_packets_from_startup12": 3,
+      "total_with_three_forage_base_fees": 70,
+      "scope": "Lower bound only; no program, mutation path, actual food access or viable lineage established"
+    },
+    "clocks": {
+      "actor_expiry_dispatches": 256,
+      "registered_global_horizon": 4096,
+      "renewable_inflow_period_global_ticks": 64,
+      "renewable_target_phase_boundary": 2048
+    },
+    "materials": {
+      "total_units": 512,
+      "founder27_body": 43,
+      "initial_free": 469,
+      "source": "Constructor pool, not a claimed evolved material acquisition capability"
+    }
+  },
+  "host_resources": {
+    "status": "SEPARATE_PHYSICAL_METERING_NOT_AN_INVENTED_ORGANISM_TAX",
+    "cpu_to_organism_energy_conversion": null,
+    "physical_efficiency_claim": false
+  },
+  "full_lifecycle_qualified": false,
+  "scientific_admission": false,
+  "population_execution": false,
+  "verdict": "COMPACT_ROUTE_NO_GO_AS_FULL_LIFECYCLE;NATIVE_FEASIBILITY_UNKNOWN"
+}

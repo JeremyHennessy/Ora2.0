@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-26T19:58:59.726271+00:00",
+  "source_commit": "5e93c8079018a495f8b54638092652ec6c22695b",
+  "exit_code": 0,
+  "wall_seconds": 0.0779999999795109,
+  "subprocess_timeout_seconds": 10,
+  "verification_scope": "Rawpins/ASTspans/literalPROGRAM mechanicallybound; semanticfacts are manuallyreviewed source conclusions, not automatically derived native proof",
+  "legacy_horizon4096": "Existing sourceprotocol only, no newregistration or admission",
+  "native_or_controller_executions": 0,
+  "new_populations": 0,
+  "contract_sha256": "5219a3910653c9222a49d855e9fafe9b385c1ff211441fd6c62e46ce36efecc7"
+}
