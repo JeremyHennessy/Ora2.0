@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETED_NOT_SCIENTIFIC_ACCEPTANCE",
+  "wall_limit_seconds": 300,
+  "cpu_user_job_seconds": 120,
+  "memory_job_bytes": 268435456,
+  "active_process_limit": 1,
+  "output_observed_limit_bytes": 33554432,
+  "output_limit_kind": "trusted finite output, parent polled every0.05s; not hard disk quota",
+  "scientific_population": false,
+  "wall_bound_kind": "290s cooperative stop; cleanup reserved to300s; final filesystem IO cooperative, no hard parent-wall guarantee",
+  "pre_assignment_work": "Trusted Python stdlib bootstrap waits for GO before census import; not Job-charged",
+  "source_sha256": "e6cc32bb0a39f16c00f66a6649139e98b75494863835c4e1c914ade60faa6d67",
+  "runner_sha256": "4574f84a3e1945adecf2283b1e0c26d0bacc63ebd2d495de0236634ebe9410d0",
+  "limits_read_back_exact": true,
+  "assigned_before_census_import": true,
+  "exit_code": 0,
+  "owned_child_reaped": true,
+  "peak_job_committed_bytes": 38846464,
+  "job_user_cpu_seconds": 14.0625,
+  "job_kernel_cpu_seconds": 0.234375,
+  "job_active_processes_after_wait": 0,
+  "job_total_processes": 1,
+  "job_handle_closed": true,
+  "elapsed_wall_seconds": 14.78100000001723,
+  "closure_observed_within_300seconds": true,
+  "files": {
+    "census.json": {
+      "bytes": 18184918,
+      "sha256": "0a6ba8975f364cf04cf23916b72f9c12a00f68c14fc2e1bb6f8d19727f8962e6"
+    },
+    "census.selection.json": {
+      "bytes": 328,
+      "sha256": "e0b822f1d8322e1e03f71d118e47cf983a34ba61d3b4959aa446d5dbab6f77a5"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "cleanup_errors": []
+}
