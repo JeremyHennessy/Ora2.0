@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import itertools
 import json
+import os
 from pathlib import Path
 import random
 
@@ -179,6 +180,8 @@ def main():
     selection_hash = digest(selection)
     with args.output.with_name('selection.json').open('x', encoding='utf-8') as target:
         json.dump(dict(selection=selection, sha256=selection_hash), target, sort_keys=True)
+        target.flush()
+        os.fsync(target.fileno())
     validation = worlds(True)
     val = {p['name']: evaluate(p, validation, 3) for p in reference_policies}
     arms = {arm: evaluate(selected, validation, 3, arm, retain=True)
