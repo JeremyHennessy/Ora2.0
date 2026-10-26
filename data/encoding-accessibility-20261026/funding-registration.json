@@ -1,0 +1,15 @@
+{
+  "scope": "New conditional arithmetic upper bound only; no organism/controller/environment/population execution",
+  "attempts": 1,
+  "startup": 8,
+  "copy_fee": 22,
+  "reward": 8,
+  "all_cases": 48,
+  "source_pins": {
+    "funding_bound.py": "436d703b9af268e2afc46b1d0fd41272181754517e50f40cc6551e066200c6a4",
+    "test_funding_bound.py": "f9b1cc74958b160078b1f171facfe4282283cebf90c4ee010a8e8b9c357de080"
+  },
+  "ordering": "atomic paid action/reward, death only resulting zero; copies at horizon count",
+  "optimism": "clairvoyant free instantaneous copy, no materials, no decoder, no parent formation debit",
+  "admission": false
+}
