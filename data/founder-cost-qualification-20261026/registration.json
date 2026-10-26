@@ -1,0 +1,27 @@
+{
+  "schema": "ORA-FOUNDER-COST-PREREGISTRATION-v1",
+  "created_utc": "2026-10-26T19:29:34.497007+00:00",
+  "attempts": 1,
+  "all_retained_cases": 48,
+  "prices_reward_start_copy": [
+    8,
+    8,
+    22
+  ],
+  "copy_policy": "afterhorizon only; no controller/environment/offspring execution",
+  "earned_requirement": "terminalbank-startup8>=22; startup8 reserve stays",
+  "unknowns": "decoder, physicalstorage, materialacquisition, copyclock/resourcephase, expiry, host/fork mapping remain None; fullqualification false",
+  "limits": {
+    "cases": 48,
+    "max_operations": 28,
+    "copy_bits": 6,
+    "subprocess_seconds": 10
+  },
+  "source_pins": {
+    "prototypes/encoding_accessibility/lifetime_costs.py": "dffe8ea2c4d60e30b87a85aba0731496d80246fdc1ff490c395f1459b94c565b",
+    "prototypes/encoding_accessibility/test_lifetime_costs.py": "5d5ef85b370dbbebe70be6f84d9011a00318e66d6b8082bf227a841c93dc02f0",
+    "prototypes/encoding_accessibility/census.py": "3fb32e465a5505ee74ee99b696253e3ec1f7129a08d215db72823301ab62b86b",
+    "data/encoding-accessibility-20261026/funding-upper-bound.json": "b46785c15396f2d08e765d58f40677e49067bc5096a06aaea1e1ea8bc84c50a9"
+  },
+  "population_admission": false
+}
