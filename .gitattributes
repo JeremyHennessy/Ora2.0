@@ -86,3 +86,6 @@ tests/test_eka1_native_qualification_plan_metadata.py -text
 data/eka1-native-authentication-qualification-plan-20261026.json -text
 data/eka1-native-authentication-preparation-check-20261026.json -text
 docs/EKA-1-NATIVE-AUTHENTICATION-QUALIFICATION-PLAN-20261026.md -text
+tools/eka1_cumulative_reservations.py -text
+tests/test_eka1_cumulative_reservations.py -text
+docs/EKA-1-CUMULATIVE-RESERVATIONS-v1.md -text
