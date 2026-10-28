@@ -112,16 +112,22 @@ class Reservations:
             self._genesis[dose][index] = 0
 
     def dispatch(self, dose, index):
+        self.dispatches(dose, index, 1)
+
+    def dispatches(self, dose, index, count):
+        """Reserve a bounded block before opaque restore; unused credit burns."""
         with self._mutex:
             _integer(dose, 1, 8)
             _integer(index, 0, 31)
+            _integer(count, 1, 4096)
             if dose not in self._genesis or index not in self._genesis[dose]:
                 raise ValueError('Unreserved genesis')
             used = self._genesis[dose][index]
-            if used >= 4096:
+            if used + count > 4096:
                 raise ValueError('Per-genesis dispatch ceiling')
-            self._append(dict(kind='dispatch', dose=dose, genesis=index, index=used))
-            self._genesis[dose][index] = used + 1
+            self._append(dict(kind='dispatch', dose=dose, genesis=index,
+                              index=used, count=count))
+            self._genesis[dose][index] = used + count
 
     def close(self):
         """Close custody only; no execution, EOF or archive completeness claim."""

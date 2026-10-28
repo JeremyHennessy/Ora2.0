@@ -89,3 +89,5 @@ docs/EKA-1-NATIVE-AUTHENTICATION-QUALIFICATION-PLAN-20261026.md -text
 tools/eka1_cumulative_reservations.py -text
 tests/test_eka1_cumulative_reservations.py -text
 docs/EKA-1-CUMULATIVE-RESERVATIONS-v1.md -text
+tests/test_eka1_replay_budget_hooks.py -text
+docs/EKA-1-REPLAY-BUDGET-HOOKS-v1.md -text

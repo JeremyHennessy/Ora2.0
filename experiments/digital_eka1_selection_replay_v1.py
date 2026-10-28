@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_PINS = {'experiments/digital_eka1_derived_reconstruction_v1.py': '2b569f79eb5066c71cbe3ac1bf9821922b5456f0be9ac4d29a550184b2deaafd', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
+INPUT_PINS = {'experiments/digital_eka1_derived_reconstruction_v1.py': 'ca8672080604a511e2133c427c4a06aa68200ed55ba61ea4c79ca9afec2af5b5', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'assignment_id',
                   'assigned_stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}
@@ -78,13 +78,20 @@ def metadata_inputs():
     return reconstruction, selector
 
 
-def replay_original_selection(original_raw, request):
+def replay_original_selection(original_raw, request, *, reservations, genesis_index):
     """One paid genesis/full assigned replay; retain no-READ actual outcomes.
 
     Unchanged source law reconstructs all original fields/events. This is not a
     producer-free literal interpreter or physical/native authority validation.
     """
     config = request_metadata(request)
+    # Mandatory whole-replay precharge precedes runtime imports and genesis.
+    # No refund on invalid input, extinction, comparison failure or exception.
+    from tools.eka1_cumulative_reservations import Reservations
+    if type(reservations) is not Reservations:
+        raise TypeError('Exact owner reservation ledger required')
+    reservations.genesis(config['dose'], genesis_index)
+    reservations.dispatches(config['dose'], genesis_index, request['assigned_stop_tick'])
     reconstruction, selector = metadata_inputs()
     original = reconstruction.parse_checkpoint(original_raw, request['original_raw_sha256'])
     for field, value in config.items():

@@ -137,7 +137,7 @@ def runtime_sources():
     return World, paid_read_dispatch
 
 
-def reconstruct_and_verify(original_raw, derived_raw, request):
+def reconstruct_and_verify(original_raw, derived_raw, request, *, reservations, genesis_index):
     """One original-prefix replay, one paid READ, ordinary suffix; no raw load.
 
     The original World.restore performs genesis, paid replay and exact original
@@ -145,6 +145,13 @@ def reconstruct_and_verify(original_raw, derived_raw, request):
     This function supplies no native/physical registration authentication.
     """
     original, claimed = prepare(original_raw, derived_raw, request)
+    from tools.eka1_cumulative_reservations import Reservations
+    if type(reservations) is not Reservations:
+        raise TypeError('Exact owner reservation ledger required')
+    reservations.genesis(request['configuration']['dose'], genesis_index)
+    # World.restore performs its own prefix loop. Charge prefix+READ+suffix
+    # together BEFORE entering that opaque method, not only the visible tail.
+    reservations.dispatches(request['configuration']['dose'], genesis_index, request['stop_tick'])
     World, paid_read = runtime_sources()
     world = World.restore(original)
     if canonical(world.snapshot()) != canonical(original):
