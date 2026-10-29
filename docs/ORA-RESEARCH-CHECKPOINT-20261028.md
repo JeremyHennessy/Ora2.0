@@ -77,7 +77,7 @@ remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
 
 
-## Dated follow-up — October 29, 2026, 01:05 UTC
+## Dated follow-up â€” October 29, 2026, 01:05 UTC
 
 User-requested repository reconciliation; no new scientific finding. Fresh remote
 inspection found main SHAs and the native EKA/PILOT74/strategy PR heads above
@@ -91,7 +91,7 @@ window31 native closure lasted7201.313 seconds,exit0/EOF/no leaks; the old
 controller birth closed and the next window started normally. Actual owned
 host/controller/model/service/worker births and port11435 ownership matched.
 All174 memory/provenance records,key and two captured snapshots verified;
-failed-v9 all50 retained file pins unchanged. Windows9–12 and16–20 still lack
+failed-v9 all50 retained file pins unchanged. Windows9â€“12 and16â€“20 still lack
 individual monitor verification. These observations establish a scoped assistant
 renewal, not indefinite reliability, a resolved historical readiness cause,
 a scientific population or organism-learning progress.
