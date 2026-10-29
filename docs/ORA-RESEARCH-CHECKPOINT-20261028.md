@@ -77,7 +77,7 @@ remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
 
 
-## Latest coordinated review - October29,16:24 UTC evidence
+## Latest coordinated review - October29,23:29 UTC evidence
 
 **Science remains UNKNOWN; new population NO-GO.** No new learned or evolved
 capability has been demonstrated. Closed noisy-credit0/32 versus fixed32/32
@@ -115,14 +115,14 @@ Local replay-hook handoff SHA256:
 
 ### Separate assistant: LAST VERIFIED, not organism intelligence
 
-At2026-10-29 16:24:33 UTC (13:24 Halifax),v10 reported38 completed windows,
-890epochs and zero failure counters. Latest window38 closure7200.922s was verified
+At2026-10-29 23:29:38 UTC (20:29 Halifax),v10 reported42 completed windows,
+971epochs and zero failure counters. Latest window42 closure7200.938s was verified
 with exit0/EOF/no leaks,old controller birth closed and normal next start.
 All174 memory/provenance records,key,two snapshots and failed-v9 all50 pins
-verified. Windows9-12 and16-20 retain individual-monitor gaps. A review exception
-at a normal service rotation was preserved; one permitted read-only recheck
-passed after clean service closure/new-birth evidence. No runtime work retried.
-Receipt SHA256 `7f35549ad9f7b1b332f57682679e0a226b42624acf0cce3b0acf9be8b7f865a4`.
+verified. Windows9-12 and16-20 retain individual-monitor gaps. The earlier window38 service-rotation review exception and its one justified
+read-only recheck remain preserved; window42 verification needed no recheck.
+No runtime work retried.
+Receipt SHA256 `50bd96f7acf6beb7e421e6d3f3313ca0cc7d3fdd0808573f30b698cdfe0dcb4f`.
 This proves scoped renewal only,not indefinite reliability or historical cause.
 
 ### Repository/qualification status and next action
@@ -147,3 +147,7 @@ This review changed documentation/data only. JSON,relative-link,UTF-8,diff and
 remote exact committed-byte checks are used; executable CI not established.
 Earlier dated status remains in Git history and local receipts. No merge,
 deployment,schedule change or new scientific execution.
+
+Review follow-up: public PR heads and local native-owner head9d2cfe4 were
+rechecked unchanged before this documentation update. No additional source
+qualification or scientific progress is inferred from these later assistant receipts.
