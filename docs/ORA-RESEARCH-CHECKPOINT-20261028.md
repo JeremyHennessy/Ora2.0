@@ -77,34 +77,34 @@ remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
 
 
-## Dated follow-up — October 29, 2026, 01:05 UTC
+## Latest dated follow-up - October 29, 2026, 12:22 UTC
 
-User-requested repository reconciliation; no new scientific finding. Fresh remote
-inspection found main SHAs and the native EKA/PILOT74/strategy PR heads above
-unchanged. All remain draft and unmerged. The older-history opportunity,
-affordability and inherited fitness questions remain UNKNOWN; population NO-GO.
-No new original event or qualified continuation is reported by this review.
+User-requested reconciliation of existing receipts, not a new scientific finding.
+The separate assistant was **LAST VERIFIED at 12:22:27 UTC (09:22 Halifax)**:
+36 host-reported completed windows,844 epochs,zero failure counters. Latest
+window36 closure was independently checked at11:22 UTC:7200.938 seconds,
+exit0/EOF/no leaks,old controller birth closed and next window started normally.
+Actual owned host/controller/model/service/worker births and port11435 ownership
+matched at the latest check. All174 memory/provenance records,key and two
+snapshots verified; failed-v9 all50 file pins unchanged. Windows9-12 and16-20
+still lack individual monitor verification. This is scoped assistant evidence,
+not indefinite reliability,historical readiness-cause proof or organism learning.
 
-The **separate assistant is LAST VERIFIED at 2026-10-29 01:05:55 UTC**:
-31 host-reported completed windows,714 epochs,zero failure counters. The latest
-window31 native closure lasted7201.313 seconds,exit0/EOF/no leaks; the old
-controller birth closed and the next window started normally. Actual owned
-host/controller/model/service/worker births and port11435 ownership matched.
-All174 memory/provenance records,key and two captured snapshots verified;
-failed-v9 all50 retained file pins unchanged. Windows9–12 and16–20 still lack
-individual monitor verification. These observations establish a scoped assistant
-renewal, not indefinite reliability, a resolved historical readiness cause,
-a scientific population or organism-learning progress.
+Retained window36 verification SHA256:
+`dc7e6654427d15865135489c3a8a186bba5dd916087c3f8490f2ffc338c126fc`.
+Private receipts,memory contents,keys and process identities remain local.
+Earlier dated checkpoints remain preserved in Git history and local receipts.
 
-Private retained verification receipt SHA256:
-`8b0552795618f40166c50848963079abb88f7e3bd18b7e8863960b230420ec98`.
-Only the sanitized summary and receipt digest are published; private memory,
-keys, machine identities and raw operating archives stay local.
+No new organism capability or evolutionary improvement has been demonstrated.
+The closed learner0/32 versus fixed-reference32/32 result remains closed.
+Older-history added value,lawful reachability and fully paid inherited benefit
+remain UNKNOWN; population NO-GO. EKA/PILOT74 qualification stays with existing
+owners. Best next action remains an owner-qualified matched-present/older-history
+contrast with lawful origin and fully paid continuation.
 
-Highest-value scientific next action is unchanged: the existing native owner
-must freeze the matched-present/older-history contrast, establish lawful
-reachability and fully paid continuation through its qualification route.
-No new World,experiment,closed-bank rerun or population was executed. Existing
-negative outcomes stay closed. This follow-up uses documentation/link/JSON/diff
-checks only; exact-head executable CI is not established. No merge,deployment,
-assistant change or schedule change.
+Fresh remote main and research heads were checked before this update. Main SHAs
+remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
+`2fb16af7299f4d0c1da4cc60c57e6cf5017931ec`. Existing PRs325/63 are draft,
+unmerged. Documentation/JSON/link/UTF-8/diff checks and remote committed-byte
+verification only; no experiment,calibration,closed-bank rerun,runtime change,
+schedule change,merge or deployment. Exact-head executable CI not established.
