@@ -75,3 +75,36 @@ no VM, old-bank reader, calibration or experimental test is rerun. Exact-head
 executable CI is NOT ESTABLISHED; no merge or deployment. Repository main baselines
 remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
+
+
+## Dated follow-up — October 29, 2026, 01:05 UTC
+
+User-requested repository reconciliation; no new scientific finding. Fresh remote
+inspection found main SHAs and the native EKA/PILOT74/strategy PR heads above
+unchanged. All remain draft and unmerged. The older-history opportunity,
+affordability and inherited fitness questions remain UNKNOWN; population NO-GO.
+No new original event or qualified continuation is reported by this review.
+
+The **separate assistant is LAST VERIFIED at 2026-10-29 01:05:55 UTC**:
+31 host-reported completed windows,714 epochs,zero failure counters. The latest
+window31 native closure lasted7201.313 seconds,exit0/EOF/no leaks; the old
+controller birth closed and the next window started normally. Actual owned
+host/controller/model/service/worker births and port11435 ownership matched.
+All174 memory/provenance records,key and two captured snapshots verified;
+failed-v9 all50 retained file pins unchanged. Windows9–12 and16–20 still lack
+individual monitor verification. These observations establish a scoped assistant
+renewal, not indefinite reliability, a resolved historical readiness cause,
+a scientific population or organism-learning progress.
+
+Private retained verification receipt SHA256:
+`8b0552795618f40166c50848963079abb88f7e3bd18b7e8863960b230420ec98`.
+Only the sanitized summary and receipt digest are published; private memory,
+keys, machine identities and raw operating archives stay local.
+
+Highest-value scientific next action is unchanged: the existing native owner
+must freeze the matched-present/older-history contrast, establish lawful
+reachability and fully paid continuation through its qualification route.
+No new World,experiment,closed-bank rerun or population was executed. Existing
+negative outcomes stay closed. This follow-up uses documentation/link/JSON/diff
+checks only; exact-head executable CI is not established. No merge,deployment,
+assistant change or schedule change.
