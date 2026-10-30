@@ -336,10 +336,14 @@ def accept_case(result,out,mode):
         raw=(out/(str(mode)+'.raw')).read_bytes()
         if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
         if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')
-        if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU limit not observed')
+        if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU termination not observed')
         if mode==4 and b'EKA_MEMORY_LIMIT' not in raw:raise ValueError('Memory limit not observed')
         if mode==5 and (not inner['overflow'] or result['raw_bytes']!=65536):raise ValueError('Output limit not observed')
-        if mode==6 and (b'EKA_PROCESS_CAP_REFUSED' not in raw or b'EKA_DESCENDANT_CREATED' not in raw or inner['started_processes']!=2 or not inner['desc_signaled'] or not inner['desc_pid']):raise ValueError('Process containment not observed')
+        if mode==6:
+            # Windows may count an active-limit-rejected creation in cumulative
+            # TotalProcesses. It must never become a second successful child.
+            expected=('EKA_DESCENDANT_CREATED '+str(inner['desc_pid'])).encode()
+            if (b'EKA_PROCESS_CAP_REFUSED 1816' not in raw or expected not in raw.splitlines() or inner['process_cap']!=2 or inner['started_processes'] not in (2,3) or result['usage']['started_processes']>4 or not inner['desc_signaled'] or not inner['desc_pid']):raise ValueError('Process containment not observed')
         if mode==8 and (inner['exit_code']!=124 or not 1000<=inner['elapsed_ms']<4000 or b'EKA_PYTHON_OWNER_WATCHDOG_STARTED' not in raw):raise ValueError('Blocked Python owner deadline not observed')
 
 
@@ -370,7 +374,7 @@ def qualify(out):
         for mode in range(9):
             owner.ledger  # canonical birth, physical identity/extent and deadline
             result=launch(exe,out,mode,owner,seal,global_end);results.append(result)
-        report={'status':'PASS_SYNTHETIC_OS_CONTROLS_ONLY','results':results,'reserved_births':ledger._births,'no_refunds':True,'elapsed_seconds':time.monotonic()-started,'scientific_admission':False,'finite_scientific_qualification_ready':False,'remaining':'Real original registry and actual World/replay/dispatch hooks, complete executed-code/OS dependency custody and scientific resource/archive fit remain unqualified'}
+        report={'status':'PASS_SYNTHETIC_OS_MECHANISM_OBSERVATIONS_ONLY','results':results,'reserved_births':ledger._births,'no_refunds':True,'elapsed_seconds':time.monotonic()-started,'scientific_admission':False,'finite_scientific_qualification_ready':False,'strict_cpu_ceiling_qualified':False,'remaining':'Strict CPU ceiling (Job CPU time may overshoot), real original registry and actual World/replay/dispatch hooks, complete executed-code/OS dependency custody and scientific resource/archive fit remain unqualified'}
         save(out/'qualification.json',report);return report
     except BaseException as exc:
         owner._fail(exc)

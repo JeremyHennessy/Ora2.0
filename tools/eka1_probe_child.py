@@ -28,11 +28,21 @@ elif mode == 6:
     # Exactly two descendant creation attempts, both covered by the parent's
     # conservative four-birth envelope (guardian, leader, these two attempts).
     child = subprocess.Popen([sys.executable, '-I', '-S', '-B', __file__, '9'])
+    print('EKA_DESCENDANT_CREATED', child.pid, flush=True)
+    import ctypes
+    from ctypes import wintypes as wt
+    gate=ctypes.WinDLL('kernel32',use_last_error=True)
+    gate.WaitForSingleObject.argtypes=[wt.HANDLE,wt.DWORD];gate.WaitForSingleObject.restype=wt.DWORD
+    gate.CloseHandle.argtypes=[wt.HANDLE];gate.CloseHandle.restype=wt.BOOL
+    handle=int(sys.argv[3])
+    if not handle or gate.WaitForSingleObject(handle,3000)!=0:raise OSError('Guardian descendant-birth handshake absent')
+    if not gate.CloseHandle(handle):raise ctypes.WinError(ctypes.get_last_error())
     try:
         subprocess.Popen([sys.executable, '-I', '-S', '-B', __file__, '9'])
-    except OSError:
-        print('EKA_PROCESS_CAP_REFUSED', flush=True)
-    print('EKA_DESCENDANT_CREATED', child.pid, flush=True)
+    except OSError as exc:
+        print('EKA_PROCESS_CAP_REFUSED',getattr(exc,'winerror',None),flush=True)
+    else:
+        raise RuntimeError('Second child unexpectedly admitted')
     # Exit while a real descendant is still alive: guardian must kill the tree.
 elif mode == 8:
     import ctypes

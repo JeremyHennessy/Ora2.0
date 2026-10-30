@@ -1,6 +1,9 @@
 """Offline refusal/archive tests only. OS fixtures have a separate finite entry."""
 import json
+import contextlib
+import io
 import os
+import runpy
 from pathlib import Path
 import sys
 import tempfile
@@ -96,6 +99,36 @@ class ProbeContractChecks(unittest.TestCase):
             with self.assertRaisesRegex(OSError,'compiler failure'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
             with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
         self.assertEqual(invoke.call_count,1);self.assertTrue(self.owner._closed);self.assertEqual(self.ledger._births,36)
+    def tree_script(self,wait_result=0,deny=True):
+        events=[];kernel=Mock();kernel.CloseHandle.return_value=True
+        def wait(*args):events.append('birth_handshake');return wait_result
+        kernel.WaitForSingleObject.side_effect=wait
+        def spawn(*args,**kwargs):
+            events.append('spawn')
+            if events.count('spawn')==2 and deny:
+                error=OSError('quota refused');error.winerror=1816;raise error
+            return Mock(pid=101)
+        output=io.StringIO()
+        with patch.object(sys,'argv',['fixture','6','unused','123']),patch('ctypes.WinDLL',return_value=kernel),patch('subprocess.Popen',side_effect=spawn),contextlib.redirect_stdout(output):
+            runpy.run_path(str(ROOT/'tools/eka1_probe_child.py'),run_name='__main__')
+        return events,output.getvalue()
+    def test_tree_child_waits_for_birth_before_second_attempt(self):
+        events,output=self.tree_script()
+        self.assertEqual(events,['spawn','birth_handshake','spawn'])
+        self.assertIn('EKA_DESCENDANT_CREATED 101',output);self.assertIn('EKA_PROCESS_CAP_REFUSED 1816',output)
+    def test_tree_handshake_timeout_blocks_second_attempt(self):
+        with patch('subprocess.Popen',return_value=Mock(pid=101)) as spawn,patch('ctypes.WinDLL') as load,patch.object(sys,'argv',['fixture','6','unused','123']),contextlib.redirect_stdout(io.StringIO()):
+            load.return_value.WaitForSingleObject.return_value=258
+            with self.assertRaisesRegex(OSError,'handshake absent'):runpy.run_path(str(ROOT/'tools/eka1_probe_child.py'),run_name='__main__')
+        self.assertEqual(spawn.call_count,1)
+    def test_tree_unexpected_second_success_is_failure(self):
+        with self.assertRaisesRegex(RuntimeError,'unexpectedly admitted'):self.tree_script(deny=False)
+    def test_tree_receipt_requires_successful_descendant_identity(self):
+        raw=self.out/'6.raw';raw.write_bytes(b'EKA_DESCENDANT_CREATED 101\nEKA_PROCESS_CAP_REFUSED 1816\n')
+        result={'guardian_exit':0,'root_empty':True,'usage':{'started_processes':4},'inner':{'error':0,'eof':True,'active':0,'process_cap':2,'started_processes':3,'desc_signaled':True,'desc_pid':101}}
+        probe.accept_case(result,self.out,6)
+        result['inner']['desc_pid']=999
+        with self.assertRaisesRegex(ValueError,'containment'):probe.accept_case(result,self.out,6)
     def test_changed_physical_reservation_chain_refused(self):
         raw=self.owner._path.read_bytes();self.owner._path.write_bytes(raw.replace(b'process_birth',b'process_forge',1))
         with self.assertRaisesRegex(ValueError,'chain/catalog'):probe.verify_reservations(self.owner,self.out,self.owner._assignment)

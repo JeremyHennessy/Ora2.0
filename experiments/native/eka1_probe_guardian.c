@@ -62,9 +62,9 @@ end:
 }
 
 int wmain(int argc,WCHAR **argv){
-    HANDLE watchdog_dll=NULL,raw=NULL,record=NULL,readout=NULL,writeout=NULL,nul=NULL,watch=NULL,python=NULL,program=NULL,owner=NULL,root=NULL,jobs[2];
+    HANDLE tree_gate=NULL,watchdog_dll=NULL,raw=NULL,record=NULL,readout=NULL,writeout=NULL,nul=NULL,watch=NULL,python=NULL,program=NULL,owner=NULL,root=NULL,jobs[2];
     PROCESS_INFORMATION pi={0};STARTUPINFOEXW sx={0};SIZE_T attrn=0;BOOL attr_ready=FALSE;
-    SECURITY_ATTRIBUTES sa={sizeof(sa),NULL,TRUE};HANDLE inherited[2];WCHAR command[4096];
+    SECURITY_ATTRIBUTES sa={sizeof(sa),NULL,TRUE};HANDLE inherited[3];WCHAR command[4096];
     JOBOBJECT_EXTENDED_LIMIT_INFORMATION lim={0},observed={0};JOBOBJECT_BASIC_ACCOUNTING_INFORMATION usage={0};
     FILETIME times[4];DWORD code=125,available=0,n=0,written=0,desc_pid=0;UCHAR buffer[16384];HANDLE desc=NULL;ULONGLONG desc_birth=0;
     ULONGLONG received=0,retained=0,birth=0,began=GetTickCount64(),close_end;
@@ -112,10 +112,11 @@ int wmain(int argc,WCHAR **argv){
     InitializeProcThreadAttributeList(NULL,2,0,&attrn);sx.lpAttributeList=malloc(attrn);
     if(!sx.lpAttributeList||!InitializeProcThreadAttributeList(sx.lpAttributeList,2,0,&attrn)){error=7;goto close;}attr_ready=TRUE;
     inherited[0]=nul;inherited[1]=writeout;
+    if(mode==6){tree_gate=CreateEventW(&sa,TRUE,FALSE,NULL);if(!tree_gate){error=35;goto close;}inherited[2]=tree_gate;}
     jobs[0]=root;jobs[1]=child_job;
     if(!UpdateProcThreadAttribute(sx.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_JOB_LIST,jobs,sizeof(jobs),NULL,NULL)||
-       !UpdateProcThreadAttribute(sx.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_HANDLE_LIST,inherited,sizeof(inherited),NULL,NULL)){error=8;goto close;}
-    if(swprintf_s(command,4096,L"\"%ls\" -I -S -B \"%ls\" %d \"%ls\"",mode==1?L"Z:\\EKA-NONEXISTENT\\refused.exe":EKA_PYTHON,EKA_PROGRAM,mode,EKA_OWNER_DLL)<0){error=9;goto close;}
+       !UpdateProcThreadAttribute(sx.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_HANDLE_LIST,inherited,(mode==6?3:2)*sizeof(HANDLE),NULL,NULL)){error=8;goto close;}
+    if(swprintf_s(command,4096,L"\"%ls\" -I -S -B \"%ls\" %d \"%ls\" %llu",mode==1?L"Z:\\EKA-NONEXISTENT\\refused.exe":EKA_PYTHON,EKA_PROGRAM,mode,EKA_OWNER_DLL,(ULONGLONG)(uintptr_t)tree_gate)<0){error=9;goto close;}
     /* All descendants inherit both root Job and this private Job; no breakaway. */
     if(!CreateProcessW(NULL,command,NULL,NULL,TRUE,EXTENDED_STARTUPINFO_PRESENT|CREATE_SUSPENDED|CREATE_NO_WINDOW,
                        NULL,NULL,&sx.StartupInfo,&pi)){error=10;goto close;}
@@ -134,7 +135,10 @@ int wmain(int argc,WCHAR **argv){
             for(i=0;i<ids.listed&&i<4;i++)if(ids.pids[i]!=pi.dwProcessId){
                 desc_pid=(DWORD)ids.pids[i];desc=OpenProcess(SYNCHRONIZE|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,desc_pid);
                 if(!desc||!GetProcessTimes(desc,&times[0],&times[1],&times[2],&times[3])){error=32;break;}
-                desc_birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;break;}
+                desc_birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
+                /* The leader cannot attempt a second child until this exact
+                 * first descendant's handle and birth have been retained. */
+                if(!SetEvent(tree_gate)){error=36;break;}break;}
             if(error)break;}
         if(WaitForSingleObject(owner,0)!=WAIT_TIMEOUT){reason=4;TerminateJobObject(child_job,124);}
         if(GetTickCount64()>=absolute_end-3000){reason=1;TerminateJobObject(child_job,124);}
@@ -168,7 +172,7 @@ close:
     result_n=sprintf_s(result,sizeof(result),"{\"schema\":\"EKA-SYNTHETIC-NATIVE-v1\",\"mode\":%d,\"pid\":%lu,\"birth\":\"%llu\",\"exit_code\":%lu,\"error\":%d,\"cleanup_count\":%d,\"first_cleanup\":%d,\"cleanup\":%s,\"reason\":%d,\"eof\":%s,\"overflow\":%s,\"observed_descendant\":%s,\"desc_pid\":%lu,\"desc_birth\":\"%llu\",\"desc_signaled\":%s,\"received\":%llu,\"retained\":%llu,\"user_cpu_ticks\":%llu,\"peak_job_memory\":%llu,\"process_memory_cap\":%llu,\"job_memory_cap\":%llu,\"process_cap\":%lu,\"started_processes\":%lu,\"active\":%lu,\"elapsed_ms\":%llu}",mode,pi.dwProcessId,birth,code,error,cleanup_count,cleanup_count?cleanup_errors[0]:0,cleanup_raw,reason,eof?"true":"false",overflow?"true":"false",leaked?"true":"false",desc_pid,desc_birth,desc&&WaitForSingleObject(desc,0)==WAIT_OBJECT_0?"true":"false",received,retained,(ULONGLONG)usage.TotalUserTime.QuadPart,(ULONGLONG)observed.PeakJobMemoryUsed,(ULONGLONG)observed.ProcessMemoryLimit,(ULONGLONG)observed.JobMemoryLimit,observed.BasicLimitInformation.ActiveProcessLimit,usage.TotalProcesses,usage.ActiveProcesses,GetTickCount64()-began);
     if(result_n<0||!WriteFile(record,result,(DWORD)result_n,&written,NULL)||written!=(DWORD)result_n||!FlushFileBuffers(record)){if(!error)error=23;}
     if(pi.hThread)CloseHandle(pi.hThread);if(pi.hProcess)CloseHandle(pi.hProcess);if(desc)CloseHandle(desc);
-    if(readout)CloseHandle(readout);if(nul)CloseHandle(nul);if(child_job){CloseHandle(child_job);child_job=NULL;}
+    if(readout)CloseHandle(readout);if(nul)CloseHandle(nul);if(tree_gate)CloseHandle(tree_gate);if(child_job){CloseHandle(child_job);child_job=NULL;}
     if(watchdog_dll)CloseHandle(watchdog_dll);if(python)CloseHandle(python);if(program)CloseHandle(program);
     if(attr_ready)DeleteProcThreadAttributeList(sx.lpAttributeList);free(sx.lpAttributeList);
     SetEvent(done_event);WaitForSingleObject(watch,1000);CloseHandle(watch);CloseHandle(done_event);
