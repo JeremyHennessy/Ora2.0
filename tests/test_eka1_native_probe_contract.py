@@ -40,6 +40,7 @@ class ProbeContractChecks(unittest.TestCase):
         self.assertEqual(command[1:3],['/d','/c']);self.assertNotIn('"',command[-1]);self.assertNotIn('\\"',command[-1])
         raw=(self.out/'build-fixture.cmd').read_bytes()
         self.assertIn(('call "'+str(setup)+'"').encode(),raw);self.assertIn(line.encode(),raw)
+        self.assertLess(raw.index(b'set "VSCMD_SKIP_SENDTELEMETRY=1"'),raw.index(b'call "'))
         self.assertNotIn(b'\\"',raw)
         self.assertLess(raw.index(b'if errorlevel 1 exit /b %errorlevel%'),raw.index(line.encode()))
         self.assertEqual(json.loads((self.out/'compiler-script-fixture.json').read_text())['script_sha256'],probe.sha(raw))

@@ -109,7 +109,7 @@ def compiler_command(out,phase,setup,line):
     batch=out/('build-'+phase+'.cmd')
     if any(c.isspace() or c in '&|<>^%!"' for c in str(batch)):
         raise ValueError('Fixed build script path must be plain and contain no whitespace')
-    raw=('@echo off\r\ncall "'+str(setup)+'" >nul\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+line+'\r\nexit /b %errorlevel%\r\n').encode('ascii')
+    raw=('@echo off\r\nset "VSCMD_SKIP_SENDTELEMETRY=1"\r\ncall "'+str(setup)+'" >nul\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+line+'\r\nexit /b %errorlevel%\r\n').encode('ascii')
     with batch.open('xb') as f:
         if f.write(raw)!=len(raw):raise OSError('Short compiler script write')
         f.flush();os.fsync(f.fileno())
@@ -277,7 +277,8 @@ def _build(out, owner, source, seal, global_end):
     setup=vs/'VC/Auxiliary/Build/vcvars64.bat';exe=out/'eka1_probe_guardian.exe';obj=out/'guardian.obj'
     bindir=sorted((vs/'VC/Tools/MSVC').iterdir())[-1]/'bin/Hostx64/x64'
     compiler=bindir/'cl.exe';linker=bindir/'link.exe'
-    save(out/'compiler-custody.json',{'compiler':str(compiler),'compiler_sha256':sha(compiler.read_bytes()),'linker':str(linker),'linker_sha256':sha(linker.read_bytes()),'setup':str(setup),'setup_sha256':sha(setup.read_bytes()),'complete_SDK_toolchain_custody':False})
+    devcmd=vs/'Common7/Tools/VsDevCmd.bat'
+    save(out/'compiler-custody.json',{'compiler':str(compiler),'compiler_sha256':sha(compiler.read_bytes()),'linker':str(linker),'linker_sha256':sha(linker.read_bytes()),'setup':str(setup),'setup_sha256':sha(setup.read_bytes()),'devcmd':str(devcmd),'devcmd_sha256':sha(devcmd.read_bytes()),'setup_background_telemetry_disabled_locally':True,'complete_SDK_toolchain_custody':False})
     for p in (setup,out,ROOT):
         if any(c in str(p) for c in '&|<>^%!\r\n'):raise ValueError('Unsafe build path')
     dll=out/'eka1_owner_watchdog.dll'
