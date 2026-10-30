@@ -31,6 +31,8 @@ jobs:
           if ($env:EXPECTED_SHA -notmatch '\A[0-9a-f]{40}\z') { throw 'Invalid exact SHA' }
           if ((git rev-parse HEAD) -ne $env:EXPECTED_SHA) { throw 'Source differs' }
           python -I -B -c "import sys; assert sys.version_info[:3] == (3,12,10); print(sys.executable,sys.version)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -I -S -B -c "import sys,os; from pathlib import Path; sys.path.insert(0,str(Path.cwd())); from tools.eka1_native_probe import custody,save,sha; p=Path('runs/eka1-offline-custody'); p.mkdir(parents=True); save(p/'custody.json',dict(head=os.environ['EXPECTED_SHA'],version=sys.version,files=custody(),workflow_sha256=sha(Path('.github/workflows/eka1-native-synthetic.yml').read_bytes()),scope='OFFLINE_ONLY_NOT_NATIVE_QUALIFICATION')); print(sha((p/'custody.json').read_bytes()))"
       - name: Focused offline regression and refusal checks only
         shell: pwsh
         run: |
@@ -42,6 +44,14 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python -B -m unittest discover -s tests -p test_eka1_native_probe_contract.py -v
           exit $LASTEXITCODE
+      - name: Preserve exact offline interpreter and source custody
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eka1-offline-custody-${{ github.sha }}
+          path: runs/eka1-offline-custody/
+          if-no-files-found: error
+          retention-days: 30
       - name: Nine new bounded synthetic cases; no scientific World
         if: github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
         shell: pwsh
