@@ -8,6 +8,8 @@
 #include <bcrypt.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
 #include <wchar.h>
 #include "eka1_probe_pins.h"
 #pragma comment(lib,"bcrypt.lib")
@@ -138,7 +140,7 @@ int wmain(int argc,WCHAR **argv){
         if(GetTickCount64()>=absolute_end-3000){reason=1;TerminateJobObject(child_job,124);}
         if(!PeekNamedPipe(readout,NULL,0,NULL,&available,NULL)){
             if(GetLastError()==ERROR_BROKEN_PIPE){eof=1;break;}error=14;break;}
-        if(available){DWORD count=available>sizeof(buffer)?sizeof(buffer):available;
+        if(available){DWORD count=available>sizeof(buffer)?(DWORD)sizeof(buffer):available;
             if(!ReadFile(readout,buffer,count,&n,NULL)){error=15;break;}received+=n;
             count=(DWORD)((65536-retained)<n?(65536-retained):n);
             if(count&&(!WriteFile(raw,buffer,count,&written,NULL)||written!=count)){error=16;break;}retained+=count;
