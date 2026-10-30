@@ -117,3 +117,4 @@ tools/eka1_probe_child.py -text
 tests/test_eka1_native_probe_contract.py -text
 
 .github/workflows/eka1-native-synthetic.yml -text
+data/eka1-synthetic-native-integration-evidence-20261030.json -text
