@@ -34,6 +34,19 @@ class ProbeContractChecks(unittest.TestCase):
     def test_wrong_owner_before_kernel_or_files(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaises(TypeError):probe.launch(None,None,0,object(),'x',0)
+    def test_compiler_quotes_are_script_bytes_not_escaped_argv(self):
+        setup=Path('C:/Program Files/VS/vcvars64.bat');line='"C:/Program Files/VS/cl.exe" /W4 /WX fixed.c'
+        command=probe.compiler_command(self.out,'fixture',setup,line)
+        self.assertEqual(command[1:3],['/d','/c']);self.assertNotIn('"',command[-1]);self.assertNotIn('\\"',command[-1])
+        raw=(self.out/'build-fixture.cmd').read_bytes()
+        self.assertIn(('call "'+str(setup)+'"').encode(),raw);self.assertIn(line.encode(),raw)
+        self.assertNotIn(b'\\"',raw)
+        self.assertLess(raw.index(b'if errorlevel 1 exit /b %errorlevel%'),raw.index(line.encode()))
+        self.assertEqual(json.loads((self.out/'compiler-script-fixture.json').read_text())['script_sha256'],probe.sha(raw))
+        with self.assertRaises(FileExistsError):probe.compiler_command(self.out,'fixture',setup,line)
+    def test_compiler_script_unsafe_path_refused_before_write(self):
+        with self.assertRaisesRegex(ValueError,'no whitespace'):probe.compiler_command(self.out/'space dir','fixture',Path('setup.bat'),'fixed')
+        self.assertFalse((self.out/'space dir').exists())
     def test_bool_and_unlisted_case_rejected_before_effect(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaises(ValueError):probe.launch(None,None,True,self.owner,'x',0)

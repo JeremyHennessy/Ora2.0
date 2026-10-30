@@ -103,6 +103,21 @@ def checked(ok):
     if not ok: raise ctypes.WinError(ctypes.get_last_error())
 
 
+def compiler_command(out,phase,setup,line):
+    # cmd.exe does not use the C argv escaping applied by subprocess to lists.
+    # Keep quotes inside a retained fixed script, never an argv argument.
+    batch=out/('build-'+phase+'.cmd')
+    if any(c.isspace() or c in '&|<>^%!"' for c in str(batch)):
+        raise ValueError('Fixed build script path must be plain and contain no whitespace')
+    raw=('@echo off\r\ncall "'+str(setup)+'" >nul\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+line+'\r\nexit /b %errorlevel%\r\n').encode('ascii')
+    with batch.open('xb') as f:
+        if f.write(raw)!=len(raw):raise OSError('Short compiler script write')
+        f.flush();os.fsync(f.fileno())
+    command=[os.environ['COMSPEC'],'/d','/c',str(batch)]
+    save(out/('compiler-script-'+phase+'.json'),{'script_sha256':sha(raw),'command':command,'setup_error_checked_before_compiler':True})
+    return command
+
+
 def registration_for(source,global_end):
     return {'schema':'EKA-SYNTHETIC-REGISTRATION-v1','cases':list(CASES),'role_slots':9,'births_per_slot':4,'births_reserved':36,'global_wall_seconds':120,'global_end_tick':global_end,'native_role_wall_seconds':5,'closure_seconds':3,'raw_bytes_per_case':65536,'process_memory_bytes':64*1024**2,'child_job_memory_bytes':128*1024**2,'root_job_memory_bytes':256*1024**2,'child_user_cpu_seconds':1,'root_user_cpu_seconds':8,'source':source,'interpreter':sys.executable,'owner_birth':list(owner_source.current_birth()),'scientific_admission':False}
 
@@ -268,13 +283,13 @@ def _build(out, owner, source, seal, global_end):
     dll=out/'eka1_owner_watchdog.dll'
     commands=[('watchdog',f'"{compiler}" /Bv /LD /MT /O1 /W4 /WX /Fo"{out / "watchdog.obj"}" /Fe"{dll}" "{ROOT / "experiments/native/eka1_probe_owner_watchdog.c"}" /link /IMPLIB:"{out / "watchdog.lib"}"')]
     for phase,line in commands:
-        result=bounded_build([os.environ['COMSPEC'],'/d','/s','/c',f'call "{setup}" >nul && {line}'],Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
+        result=bounded_build(compiler_command(out,phase,setup,line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
         save(out/('build-'+phase+'.json'),result)
         if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
     header_lines += ['#define EKA_OWNER_DLL '+cwide(dll),'#define EKA_OWNER_DLL_SHA '+json.dumps(sha(dll.read_bytes()))]
     header.write_text('\n'.join(header_lines),encoding='ascii')
-    cmd=f'call "{setup}" >nul && "{compiler}" /Bv /MT /O1 /W4 /WX /I"{out}" /Fo"{obj}" /Fe"{exe}" "{ROOT / "experiments/native/eka1_probe_guardian.c"}" /link bcrypt.lib'
-    result=bounded_build([os.environ['COMSPEC'],'/d','/s','/c',cmd],Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
+    cmd=f'"{compiler}" /Bv /MT /O1 /W4 /WX /I"{out}" /Fo"{obj}" /Fe"{exe}" "{ROOT / "experiments/native/eka1_probe_guardian.c"}" /link bcrypt.lib'
+    result=bounded_build(compiler_command(out,'guardian',setup,cmd),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
     save(out/'build-guardian.json',result)
     if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
     save(out/'binary-custody.json',{'source':source,'header_sha256':sha(header.read_bytes()),'artifact_sha256':sha(exe.read_bytes()),'watchdog_sha256':sha(dll.read_bytes()),'interpreter_version':sys.version,'scope':'Synthetic-only build; not original science admission'})

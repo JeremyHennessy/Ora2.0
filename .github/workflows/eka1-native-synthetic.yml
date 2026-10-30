@@ -1,12 +1,18 @@
-name: EKA exact-source finite synthetic OS controls
+name: EKA exact-source offline gates and held native qualification
 on:
   push:
     branches: ['review/eka1-delayed-assay-contract-20261023']
   workflow_dispatch:
+    inputs:
+      native_qualification:
+        description: 'Fresh separately authorized synthetic qualification; never a retry of sealed attempt1'
+        type: boolean
+        required: true
+        default: false
 permissions:
   contents: read
 jobs:
-  synthetic-only:
+  offline-gates-native-held:
     runs-on: windows-2022
     timeout-minutes: 5
     steps:
@@ -37,10 +43,11 @@ jobs:
           python -B -m unittest discover -s tests -p test_eka1_native_probe_contract.py -v
           exit $LASTEXITCODE
       - name: Nine new bounded synthetic cases; no scientific World
+        if: github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
         shell: pwsh
         run: python -I -S -B tools/eka1_native_probe.py runs/eka1-native-synthetic
       - name: Preserve every partial receipt on success or failure
-        if: always()
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
         uses: actions/upload-artifact@v4
         with:
           name: eka1-synthetic-${{ github.sha }}
