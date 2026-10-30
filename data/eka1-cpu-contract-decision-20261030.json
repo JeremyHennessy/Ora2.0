@@ -1,0 +1,192 @@
+{
+  "schema": "EKA-CPU-CONTRACT-DECISION-v1",
+  "date": "2026-10-30",
+  "reviewed_head": "433fb83b00f8a6d6991226a34ba88968602a564b",
+  "decision": "NO_GO_STRICT_ONE_SECOND_OR_NUMERIC_PREPAID_WORST_CASE_BOUND_WITH_EXISTING_MECHANISMS",
+  "status": "NOT_READY",
+  "source_sha256": {
+    "experiments/native/eka1_probe_guardian.c": "6b15e38468282eb914250c0a53842c7d2eea879a0e27851219963a410f283a4a",
+    "experiments/native/eka1_probe_owner_watchdog.c": "8f0e13973269c43ac4898796eecd0c01a5e6ec3e2fa4aebef764ef9dd1559263",
+    "experiments/process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "tools/eka1_native_probe.py": "5260e824da48a341e87dbef085b55b73e77d1364c8921aed15d615e7908a9553",
+    "tools/eka1_cumulative_reservations.py": "735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d"
+  },
+  "requirement_provenance": {
+    "first_synthetic_candidate_commit": "cbf7b49",
+    "sealed_executed_source": "909c1b00d69047a895c5618305a4b8e921e25060",
+    "source_references": [
+      "tools/eka1_native_probe.py:registration_for",
+      "experiments/native/eka1_probe_guardian.c:wmain",
+      "tools/eka1_native_probe.py:accept_case",
+      "experiments/process_limits.py:Job.usage/run",
+      "experiments/native/eka1_probe_owner_watchdog.c:wait_deadline"
+    ],
+    "private_user_ticks": 10000000,
+    "root_user_ticks": 80000000,
+    "interpretation": "1s is the private Job USER threshold registered for synthetic qualification, not a total USER+KERNEL or root8s allowance. No approved scientific law is changed. Existing accept_case checks termination observation only, and report explicitly leaves strict_cpu_ceiling_qualified false."
+  },
+  "retained_measurement": {
+    "outer_sha256": "d2cfe50fe15eb0361c759cb0b80062cc0e792c767cacf5c2582185a1108741b7",
+    "inner_sha256": "46072794e09e29b7af1ac5bf508420cdb255dd944f576cdb42a89a2942ee0c34",
+    "registration_sha256": "3e3a4258a51d74887c5270a0fa5e940d70bdff0a88d027b68a51dec93699be70",
+    "primary_pid": 59652,
+    "primary_birth": "134378426391980705",
+    "private_user_ticks": 20625000,
+    "private_user_seconds": 2.0625,
+    "root_user_seconds": 2.0625,
+    "excess_private_user_ticks": 10625000,
+    "primary_exit_code": 3221225540,
+    "private_elapsed_ms": 2266,
+    "root_elapsed_ms": 2438,
+    "eof": true,
+    "root_empty": true,
+    "kernel_cpu": "NOT_RETAINED; cannot infer zero",
+    "verdict": "FAIL_STRICT_ONE_SECOND_OBSERVATION; consistent with periodic CPU termination, not proof of exact detection latency"
+  },
+  "semantics": [
+    {
+      "source": "time_limit",
+      "finding": "Job user-time threshold is checked periodically after accumulated user time exceeds it. No numerical maximum checking interval is specified. Existing accumulated time is added when setting the limit; the candidate sets it on a fresh empty Job before process creation, so that addition cannot justify this overrun."
+    },
+    {
+      "source": "end_action",
+      "finding": "TERMINATE ends the Job and prevents further assignment until reset. The source never resets it during a role. POST notification can clear a time limit and continue execution, so it is not an acceptable substitute."
+    },
+    {
+      "source": "terminate_process",
+      "finding": "External termination is asynchronous; wait on retained process handles for actual exit. Pending IO can delay final process exit. A stop request or wait timeout is not a completed-closure proof."
+    },
+    {
+      "source": "accounting",
+      "finding": "TotalUserTime and TotalKernelTime include terminated Job processes. Nested root/private accounting overlaps and must not be added as disjoint work. TotalProcesses is not a unique successful-birth inventory."
+    },
+    {
+      "source": "cpu_rate",
+      "finding": "HARD_CAP controls CPU cycles per scheduling interval, not an absolute lifetime user-time budget. No numeric interval/phase or cycles-to-user-time bound is supplied here. This mechanism is not configured in the reviewed candidate."
+    }
+  ],
+  "existing_mechanism_decision": [
+    {
+      "mechanism": "Private1s/root8s Job time limits",
+      "verdict": "NO_GO_STRICT_CEILING",
+      "missing": "A documented bound on check/enforcement latency. The8s outer threshold has the same periodic semantics."
+    },
+    {
+      "mechanism": "Native guardian/owner watchdogs and Python polling",
+      "verdict": "NO_NUMERIC_WORST_CASE_BOUND",
+      "missing": "Scheduling, blocking-call and last-process-stop latency bound. Native threads remove Python/GIL dependence but do not supply hard-real-time scheduling."
+    },
+    {
+      "mechanism": "Affinity times nominal wall interval",
+      "verdict": "CONDITIONAL_ONLY",
+      "missing": "Actual all-process processor concurrency P and actual first-start-to-last-stop W guarantees. Neither nominal timeout nor configured wait supplies a worst-case W. No Job affinity is configured."
+    },
+    {
+      "mechanism": "Earlier termination threshold or more favorable repeated measurements",
+      "verdict": "REJECT_AS_PROOF",
+      "missing": "An observed maximum does not establish worst-case latency; no invented safety margin is permitted."
+    }
+  ],
+  "alternative_proposal": {
+    "name": "EKA-CPU-METERED-ATTEMPT-v1",
+    "approval": "REQUIRES_SEPARATE_EXPLICIT_APPROVAL; not implemented or enabled",
+    "scope": "One prospective synthetic engineering diagnostic only. Postpaid Windows process-CPU accounting plus stop-trigger/closure observations. It does not satisfy the current prepaid worst-case CPU requirement and does not authorize a World or fully paid scientific claim.",
+    "unchanged": [
+      "Private1s USER threshold, root8s USER threshold, existing memory/process/output/wall-trigger values and termination actions remain unchanged. No numerical overshoot allowance.",
+      "All birth reservations, failed attempts, owner lifetime and original registration seals remain consumed and immutable. No retry, reset or refund."
+    ],
+    "acceptance_ceiling": "The historical private Job USER ceiling remains10000000ticks. Private final USER>10000000 is FAIL_CPU_BUDGET with terminal seal, even if termination and accounting are observed correctly. No new1s root or USER+KERNEL ceiling is invented.",
+    "cost_debit": "For the named fresh root Job, retain final raw USER and KERNEL ticks after full tree exit and debit their sum exactly once; private Job totals are a subset/cross-check, never added again. Failed creation/initialization/overrun/closure work inside the root remains charged. Separately record nonoverlapping compiler Jobs and external producer/observer/archive process costs with explicit scope, birth identities and completeness flags. No total-hardware or all-scientific-cost claim follows from Windows process accounting.",
+    "custody": "Retain exact source/interpreter/assignment hashes, limit readbacks, initial zero totals, raw final totals before last Job handle closes, PID+creation-time handles, exit/stop ordering and no-breakaway Job membership evidence. Process-tree and Job totals must reconcile within documented accounting semantics; no unexplained rounding margin.",
+    "failure_policy": "Any overrun is charged in full and terminal. Missing/nonmonotone/finally-unavailable counters, lost birth handle, incomplete tree closure, capture/archive failure or unaccounted path is UNKNOWN/FAIL with unresolved cost, never zero. No new diagnostic may proceed automatically. A kernel counter existing in a struct is not a retained receipt.",
+    "historical_debt": "The four sealed assignments144reservations and all old overrun/missing kernel or final-birth information remain retained unresolved history. No reconstruction, zero imputation, amnesty or reset is implied. Approval must explicitly allow one new diagnostic independently of this unresolved legacy accounting; it cannot reopen an old owner or assignment.",
+    "approval_must_acknowledge": "The platform supplies no proved finite lifetime CPU upper bound here. Operator must explicitly accept possible nondeterministic CPU overshoot for this one nonscientific diagnostic. If a finite prepaid CPU bound is nonnegotiable, reject this alternative and retain NO_GO; different qualified containment would require its own proposal/approval.",
+    "admission_gate": "First approve or reject this alternative contract. Only after approval implement narrowly scoped final USER+KERNEL/closure/debit receipts and terminal classification, then independently review exact source and offline failure fixtures. Only then request a fresh immutable single-purpose native CPU diagnostic assignment; no numeric ceilings or new authority are granted by this document.",
+    "fresh_diagnostic_required_observations": [
+      "Exactly ONE fixed CPU-stress native role: one guardian and its sole CPU child, no descendants, no second role and no replacement. All compiler/setup process attempts must be separately enumerated and precharged in the same prospective immutable assignment before effects; no free compilation authority is implied.",
+      "Retain readbacks, final USER+KERNEL accounting and actual owned-birth closure after unchanged1s trigger. Final privateUSER>1s remains terminal FAIL_CPU_BUDGET. Complete accounting/termination observation is a separate narrow result, never a whole-resource PASS.",
+      "No next role, retry or launch after failure, overrun or unresolved accounting. Preserve raw partial receipts and exact archive restoration. A missing counter or closure receipt leaves the new assignment sealed UNKNOWN, with no automatic replacement."
+    ],
+    "handshake_sequence": "Only after independently accepted accounting/closure evidence within its approved scope and new-assignment charges are settled may a separate fresh descendant/watchdog assignment be requested. A deliberate diagnostic CPU-budget failure is preserved; a new admission needs explicit authorization, not a budget reset. Cases7/8 remain unrun. The original hard CPU-bound requirement and scientific guardian/resource qualification remain NOT_READY.",
+    "offline_prerequisites": [
+      "After contract approval only: exact-source offline fixtures for short success, USER+KERNEL counter units/epochs, overlapping Job deduplication, failed creation without refund, missing/nonmonotone final counters, blocked/crashed owner, archive failure, terminal hold and no subsequent launch. These are offline test fixtures, not native cases authorized by one diagnostic."
+    ],
+    "native_manifest_requirement": "Before separate native authorization, freeze exact reviewed source/binaries/interpreter, one fixed CPU role, every build/launch attempt and precharge, original-or-lower process/memory/output/stop-trigger ceilings, actual deadlines and evidence/closure/archive bytes. No altered ceilings are approved here. No short-success, fault-injection, handshake or watchdog native role is bundled into this single-purpose request."
+  },
+  "preservation": {
+    "sealed_attempts": [
+      {
+        "directory": "eka1-native-synthetic-20261030-attempt1",
+        "sealed_files": 5,
+        "zip_sha256": "83acfb7b7116029e71998dcfe74d4cdaf96569a835bfed1479162bebaf71abe9",
+        "ledger_sha256": "1d601aae40db5903009b18e39c50a57fd007aa10b7f4219ecafd9db6fdb19f46",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-revised-source2",
+        "sealed_files": 8,
+        "zip_sha256": "0c4c75ad44ca44a7bab580ed4d34c7e0b9413025951931a4e4f87c5fa2418fb3",
+        "ledger_sha256": "1d601aae40db5903009b18e39c50a57fd007aa10b7f4219ecafd9db6fdb19f46",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-source3",
+        "sealed_files": 8,
+        "zip_sha256": "86d194e61382a66ded0d573a6a9647caf289f56aabc663f1892a8d0163b94cf2",
+        "ledger_sha256": "1d601aae40db5903009b18e39c50a57fd007aa10b7f4219ecafd9db6fdb19f46",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-source4",
+        "sealed_files": 54,
+        "zip_sha256": "bc90f43e87d9dedef633ae943fc160753b36ecd2dd43f228d4d430899ee1ee94",
+        "ledger_sha256": "1d601aae40db5903009b18e39c50a57fd007aa10b7f4219ecafd9db6fdb19f46",
+        "consumed_birth_reservations": 36
+      }
+    ],
+    "sealed_files_verified": 75,
+    "birth_reservations_consumed": 144,
+    "original_setup_files_verified": 10,
+    "historical_operator_lock_unchanged": true
+  },
+  "verification_this_iteration": {
+    "native_execution": false,
+    "historical_assignment_rerun": false,
+    "test_suite_rerun": false,
+    "checks": "Read-only exact-source, retained JSON arithmetic/hash and archive/restored-byte verification; primary platform-contract review. No runtime behavior was remeasured.",
+    "protected_system_changes": false,
+    "executable_source_changes": false
+  },
+  "primary_sources": {
+    "time_limit": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "c9f5d05e472e1a691ef1ce76cd4f85f172029b7602eb7031d635bb21b6b08802"
+    },
+    "end_action": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_end_of_job_time_information",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "1c9c3eeea5c7a1f744c9d2d5f20ec620699663ae2d4d0d1dc696201d179592eb"
+    },
+    "accounting": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_accounting_information",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "21a60bcb56d48bfd86d32950906808c07fd96180371eb7abdd1fd7a8950d2760"
+    },
+    "cpu_rate": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_cpu_rate_control_information",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "bdaef2a4ae2b45e465c81b03eea9e61814a495b4d045c916dafd9e455bd717f8"
+    },
+    "terminate_job": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/jobapi2/nf-jobapi2-terminatejobobject",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "fa65c918d043477689dcdd5b1c50be55f1e37ed34a036885a1076b8579050d3c"
+    },
+    "terminate_process": {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess",
+      "retrieved_date": "2026-10-30",
+      "raw_html_sha256": "f195708633c2207fe7dbedfedfc6de013eb8a69d3496491c55b739345a389966"
+    }
+  }
+}
