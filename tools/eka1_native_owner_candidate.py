@@ -71,6 +71,7 @@ class NativeOwnerCandidate:
         self._deadline = self._started + 2940
         self._closed = False
         self._failed = None
+        self._cleanup_errors = []
         self._fd = None
         self._ledger = None
         self._role = None
@@ -112,8 +113,16 @@ class NativeOwnerCandidate:
                 raise
 
     def _fail(self, exc):
-        self._failed = type(exc).__name__ + ': ' + str(exc)
-        self.close()
+        # Later refusal/cleanup must not replace the originating failure.
+        if self._failed is None:
+            self._failed = type(exc).__name__ + ': ' + str(exc)
+        try:
+            self.close()
+        except BaseException as cleanup:
+            # close() retains each cleanup cause itself. This fallback covers
+            # a failure before that retention; there is never a cleanup retry.
+            if not self._cleanup_errors:
+                self._cleanup_errors.append(type(cleanup).__name__ + ': ' + str(cleanup))
 
     def _check(self):
         if self._closed or self._failed is not None or _active is not self:
@@ -212,12 +221,25 @@ class NativeOwnerCandidate:
         with _mutex:
             if not self._closed:
                 self._closed = True
+                first_cleanup = None
                 try:
                     if self._ledger is not None:
                         self._ledger.close()
-                finally:
+                except BaseException as exc:
+                    first_cleanup = exc
+                    self._cleanup_errors.append(type(exc).__name__ + ': ' + str(exc))
+                try:
                     if self._fd is not None:
                         os.close(self._fd)
                         self._fd = None
+                except BaseException as exc:
+                    if first_cleanup is None:
+                        first_cleanup = exc
+                    self._cleanup_errors.append(type(exc).__name__ + ': ' + str(exc))
+                    # Keep the failed descriptor number for custody. Logical
+                    # closed means no further work; physical closure UNKNOWN.
+                finally:
                     if _active is self:
                         _active = None
+                if first_cleanup is not None:
+                    raise first_cleanup

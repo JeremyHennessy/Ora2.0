@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_PINS = {'tools/eka1_native_owner_candidate.py': '821d7080be97f0b7e3d6a39790f14c89c7d9d0d752aaa2446322b86746dbfbae', 'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/digital_eka1_derived_reconstruction_v1.py': 'ceadee49200c442ec1342dd1d073187947d170ef5c5123f9ff4e70bdc7a6a198', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
+INPUT_PINS = {'tools/eka1_native_owner_candidate.py': '23d51193052ab97d5c9576afa3c72e49ab6ea52a4a0647c18cbc5fd0118f9b0c', 'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/digital_eka1_derived_reconstruction_v1.py': '64624df799dfd127eae7ca241ebc00eb68a69cfe921e59f4e2833bab20c4926e', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'assignment_id',
                   'assigned_stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}

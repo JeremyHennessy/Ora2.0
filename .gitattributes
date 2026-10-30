@@ -103,3 +103,5 @@ tools/eka1_native_owner_candidate.py -text
 tests/test_eka1_native_owner_candidate.py -text
 
 data/eka1-native-owner-candidate-review-20261030.json -text
+tests/test_eka1_first_failure_custody.py -text
+docs/EKA-1-FIRST-FAILURE-CUSTODY-v1.md -text
