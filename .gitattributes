@@ -94,3 +94,7 @@ docs/EKA-1-REPLAY-BUDGET-HOOKS-v1.md -text
 experiments/digital_eka1_derived_reconstruction_v1.py -text
 experiments/digital_eka1_selection_replay_v1.py -text
 tests/test_eka1_reservation_source_integrity.py -text
+tools/eka1_owner_binding_preflight.py -text
+tests/test_eka1_owner_binding_preflight.py -text
+data/eka1-owner-binding-preflight-v1.json -text
+docs/EKA-1-OWNER-BINDING-PREFLIGHT-v1.md -text

@@ -1,0 +1,145 @@
+{
+  "schema": "ORA-EKA1-OWNER-BINDING-PREFLIGHT-v1",
+  "status": "PROSPECTIVE_UNASSIGNED_NOT_READY",
+  "binding": {
+    "owner_id": "existing-EKA323-owner-PROSPECTIVE-LABEL-ONLY",
+    "assignment_registry_sha256": null,
+    "original_owner_grant_sha256": null,
+    "ledger_file_identity": null
+  },
+  "roles": [
+    {
+      "dose": 1,
+      "role_index": 0,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 1,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 2,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 3,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 4,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 5,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 1,
+      "role_index": 6,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 0,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 1,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 2,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 3,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 4,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 5,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    },
+    {
+      "dose": 8,
+      "role_index": 6,
+      "binding_sha256": "4ee234f605d4ac757b1099cd5ec8640f4b316bcd1ceef165fbccb1218e0bc115",
+      "ledger_file_identity": null
+    }
+  ],
+  "caps": {
+    "inputs": 2,
+    "roles_per_input": 7,
+    "concurrency": 1,
+    "processes_per_job": 4,
+    "child_memory_bytes": 2147483648,
+    "job_memory_bytes": 4294967296,
+    "user_cpu_seconds_per_role": 120,
+    "wall_seconds_per_role": 180,
+    "closure_seconds_per_role": 30,
+    "input_bytes_per_role": 67108864,
+    "output_bytes_per_role": 134217728,
+    "archive_bytes_total": 4294967296,
+    "archive_expanded_bytes_total": 4294967296,
+    "files_per_role": 32,
+    "archive_files_total": 512,
+    "json_depth": 64,
+    "json_nodes": 2000000,
+    "process_births_total": 56,
+    "geneses_per_input": 32,
+    "dispatches_per_genesis": 4096
+  },
+  "source_pins": {
+    "experiments/__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "experiments/digital_informative_exposure23_interpret.py": "66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_eka1_paid_read_source_v1.py": "5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a",
+    "experiments/digital_eka1_derived_reconstruction_v1.py": "f98e36f925b6472fc310b4afccd17208b6d9945474f31d9e907d15ef82270683",
+    "experiments/digital_eka1_selection_replay_v1.py": "557824ce51b2d10aeebcc888bc912feae7ebdb6c6060de8f227962146c765505",
+    "tools/eka1_prospective_opportunity.py": "e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76",
+    "tools/eka1_cumulative_reservations.py": "735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d",
+    "tools/eka1_owner_binding_preflight.py": "122db5fbf2f9ee88377eec9ce3416785f995e752672bacac27e7d8733c9278ba"
+  },
+  "external_proofs": {
+    "assignment_registry": null,
+    "original_owner_grant": null,
+    "original_raw_native_receipt": null,
+    "common_prestate_raw_custody": null,
+    "executed_code_interpreter_stdlib": null,
+    "exact_source_safe_CI": null,
+    "semantic_panel_fixtures": null,
+    "native_containment_fit": null,
+    "closure_archive_exact_restore": null,
+    "independent_admission": null
+  },
+  "execution_authorized": false,
+  "scientific_admission": false
+}
