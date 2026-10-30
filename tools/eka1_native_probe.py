@@ -22,18 +22,23 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools import eka1_native_owner_candidate as owner_source
 from experiments.process_limits import Job, Limits, run as bounded_build
+from tools.eka1_cpu_accounting import RootCpuAttempt, CpuAccountingFailure
 
 CASES = ('ok', 'failed-create', 'wall', 'cpu', 'memory', 'output', 'tree', 'guardian-stall', 'python-owner-stall')
 SOURCE_FILES = ('tools/eka1_native_probe.py', 'tools/eka1_probe_child.py',
                 'tools/eka1_native_owner_candidate.py', 'tools/eka1_cumulative_reservations.py',
                 'experiments/process_limits.py', 'experiments/native/eka1_probe_guardian.c',
-                'experiments/native/eka1_probe_owner_watchdog.c')
+                'experiments/native/eka1_probe_owner_watchdog.c', 'tools/eka1_cpu_accounting.py')
 _used_cases=set()
 _case_lock=threading.RLock()
 _owner_watchdog=None
 _owner_watchdog_started=False
 _evidence_directory=None
 _execution_consumed=False
+
+
+def native_admission():
+    raise owner_source.NativeQualificationRequired('NOT_READY: source-only candidate; fresh immutable native assignment grant not supplied')
 
 
 def sha(raw): return hashlib.sha256(raw).hexdigest()
@@ -91,6 +96,8 @@ def kernel():
         'OpenProcess':([wt.DWORD,wt.BOOL,wt.DWORD],wt.HANDLE),
         'GetFileInformationByHandleEx':([wt.HANDLE,ctypes.c_int,ctypes.c_void_p,wt.DWORD],wt.BOOL),
         'GetProcessTimes':([wt.HANDLE,ctypes.c_void_p,ctypes.c_void_p,ctypes.c_void_p,ctypes.c_void_p],wt.BOOL),
+        'GetProcessId':([wt.HANDLE],wt.DWORD),
+        'IsProcessInJob':([wt.HANDLE,wt.HANDLE,ctypes.POINTER(wt.BOOL)],wt.BOOL),
         'ResumeThread':([wt.HANDLE],wt.DWORD),
         'WaitForSingleObject':([wt.HANDLE,wt.DWORD],wt.DWORD),
         'GetExitCodeProcess':([wt.HANDLE,ctypes.POINTER(wt.DWORD)],wt.BOOL)}
@@ -119,7 +126,7 @@ def compiler_command(out,phase,setup,line,link_line):
 
 
 def registration_for(source,global_end):
-    return {'schema':'EKA-SYNTHETIC-REGISTRATION-v1','cases':list(CASES),'role_slots':9,'births_per_slot':4,'births_reserved':36,'global_wall_seconds':120,'global_end_tick':global_end,'native_role_wall_seconds':5,'closure_seconds':3,'raw_bytes_per_case':65536,'process_memory_bytes':64*1024**2,'child_job_memory_bytes':128*1024**2,'root_job_memory_bytes':256*1024**2,'child_user_cpu_seconds':1,'root_user_cpu_seconds':8,'source':source,'interpreter':sys.executable,'owner_birth':list(owner_source.current_birth()),'scientific_admission':False}
+    return {'schema':'EKA-SYNTHETIC-REGISTRATION-v1','cases':list(CASES),'execution_modes':[3],'accounting_contract':'EKA-CPU-METERED-ATTEMPT-v1','role_slots':9,'births_per_slot':4,'births_reserved':36,'global_wall_seconds':120,'global_end_tick':global_end,'native_role_wall_seconds':5,'closure_seconds':3,'raw_bytes_per_case':65536,'process_memory_bytes':64*1024**2,'child_job_memory_bytes':128*1024**2,'root_job_memory_bytes':256*1024**2,'child_user_cpu_seconds':1,'root_user_cpu_seconds':8,'source':source,'interpreter':sys.executable,'owner_birth':list(owner_source.current_birth()),'scientific_admission':False}
 
 
 def verify_reservations(owner,out,seal):
@@ -156,11 +163,16 @@ def launch(exe, out, mode, owner, seal, global_end):
             owner.ledger
             if type(mode) is not int or mode not in range(9):raise ValueError('Fixed synthetic case required')
             registered=verify_reservations(owner,out,seal)
+            if mode not in registered['execution_modes']:raise ValueError('Only single-purpose CPU role admitted prospectively')
             if global_end!=registered['global_end_tick']:raise ValueError('Original enclosing deadline differs')
             if (owner,mode) in _used_cases:raise ValueError('Native slot already consumed; no retry')
+            native_admission()
             _used_cases.add((owner,mode))
             result=_launch(exe,out,mode,owner,seal,global_end)
             accept_case(result,out,mode)
+            cpu=json.loads((out/(str(mode)+'.cpu-final.json')).read_text())
+            if cpu!=result.get('cpu_accounting') or cpu['assignment']!=seal:
+                raise CpuAccountingFailure('Durable CPU debit/assignment differs')
             if custody()!=registered['source']:raise ValueError('Post-case source/dependency closure differs')
             return result
         except BaseException as exc:
@@ -174,17 +186,21 @@ def _launch(exe, out, mode, owner, seal, global_end):
     owner.ledger
     if type(mode) is not int or mode not in range(9):raise ValueError('Fixed synthetic case required')
     registered=verify_reservations(owner,out,seal)
+    if mode not in registered['execution_modes']:raise ValueError('Only single-purpose CPU role admitted prospectively')
     if registered['source']!=custody():raise ValueError('Source/dependency/interpreter changed')
     registration=(out/'registration.json').read_bytes()
     if seal!=sha(registration) or seal!=owner._assignment:raise ValueError('Assignment differs')
     plain(exe);plain(out)
     if Path(exe)!=out/'eka1_probe_guardian.exe' or sha(exe.read_bytes())!=json.loads((out/'binary-custody.json').read_text())['artifact_sha256']:
         raise ValueError('Exact compiled guardian required')
+    native_admission()
     k=kernel(); began=k.GetTickCount64(); end=min(global_end,began+8000)
     if end-began < 4000: raise TimeoutError('No room for role and closure')
     job=Job(Limits(memory_bytes=256*1024**2,cpu_seconds=8,processes=4,wall_seconds=8))
-    attrs=None; initialized=False; pi=PI(); fds=[]; handles=[]; inherited=[];terminated=False
+    attrs=None; initialized=False; pi=PI(); fds=[]; handles=[]; inherited=[]
+    meter=None;result=None;private=None;expected_birth=None
     try:
+        meter=RootCpuAttempt(job,out,mode,owner,save)
         raw=os.open(out/(str(mode)+'.raw'),os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600);fds.append(raw)
         rec=os.open(out/(str(mode)+'.inner.json'),os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600);fds.append(rec)
         nul=os.open(os.devnull,os.O_RDONLY|os.O_BINARY);fds.append(nul)
@@ -202,6 +218,7 @@ def _launch(exe, out, mode, owner, seal, global_end):
         command=[str(exe),str(mode),str(msvcrt.get_osfhandle(raw)),str(msvcrt.get_osfhandle(rec)),str(end),'EKA-SYNTHETIC-ONLY-v1',str(lh),str(oh),seal,str(int(job.handle))]
         checked(k.CreateProcessW(str(exe),ctypes.create_unicode_buffer(subprocess.list2cmdline(command)),None,None,True,0x80000|4|8,None,str(ROOT),ctypes.byref(start),ctypes.byref(pi)))
         times=[ctypes.c_ulonglong() for _ in range(4)];checked(k.GetProcessTimes(pi.process,*[ctypes.byref(t) for t in times]))
+        expected_birth=str(times[0].value)
         save(out/(str(mode)+'.start.json'),{'pid':pi.pid,'birth':str(times[0].value),'suspended':True,'root_limits':job.usage(),'end_tick':end,'mode':mode})
         if k.GetTickCount64()>=end-3000:raise TimeoutError('Pre-resume deadline')
         if k.ResumeThread(pi.thread)!=1:raise OSError('Cannot resume guardian')
@@ -210,10 +227,8 @@ def _launch(exe, out, mode, owner, seal, global_end):
             if wait==0:break
             if wait!=258:raise OSError('Native guardian wait failed')
             if k.GetTickCount64()>=end:
-                job.terminate();terminated=True;raise TimeoutError('Outer absolute guardian deadline')
+                raise TimeoutError('Outer absolute guardian deadline')
         code=wt.DWORD();checked(k.GetExitCodeProcess(pi.process,ctypes.byref(code)))
-        job.terminate();terminated=True
-        while job.usage()['active_before_close'] and k.GetTickCount64()<end:time.sleep(.005)
         usage=job.usage()
         if usage['active_before_close']:raise RuntimeError('Outer Job closure UNKNOWN')
         if k.WaitForSingleObject(pi.process,0)!=0:raise RuntimeError('Guardian birth not signaled')
@@ -221,11 +236,24 @@ def _launch(exe, out, mode, owner, seal, global_end):
         records=[json.loads(row) for row in inner_bytes.splitlines()]
         result={'mode':mode,'guardian_exit':code.value,'guardian_birth':str(times[0].value),'guardian_pid':pi.pid,'elapsed_ms':k.GetTickCount64()-began,'usage':usage,'root_empty':True,'raw_sha256':sha(raw_bytes),'raw_bytes':len(raw_bytes),'inner_sha256':sha(inner_bytes),'inner':records[-1] if records and records[-1]['schema']=='EKA-SYNTHETIC-NATIVE-v1' else None,'child_start':records[0] if records and records[0]['schema']=='EKA-NATIVE-CHILD-START-v1' else None,'source_binary_sha256':sha(exe.read_bytes())}
         result['descendant_records']=[r for r in records if r['schema'] in ('EKA-DESCENDANT-BOUND-v1','EKA-DESCENDANT-GATE-v1')]
-        save(out/(str(mode)+'.outer.json'),result);return result
+        private_records=[r for r in records if r['schema']=='EKA-PRIVATE-CPU-FINAL-v1']
+        if len(private_records)==1:
+            private=private_records[0]
+            start=result['child_start']
+            if not start or private['pid']!=start['pid'] or private['birth']!=start['birth']:
+                private=None
+                raise CpuAccountingFailure('Private retained birth/start receipt differs')
     finally:
         # Kill-on-close owns the whole root, including a crashed guardian's tree.
-        primary=sys.exc_info()[1];failures=[]
-        actions=[] if terminated else [job.terminate]
+        primary=sys.exc_info()[1];failures=[];final_error=None
+        # Retain the root and guardian birth handles through final counters.
+        try:
+            accounting=settle_root(job,meter,k,pi,expected_birth,private,end)
+            if result is not None:result['cpu_accounting']=accounting
+        except BaseException as exc:
+            final_error=exc
+            failures.append('CPU finalization: '+repr(exc))
+        actions=[]
         actions += [lambda h=h:os.set_handle_inheritable(h,False) for h in inherited]
         actions += [job.close]
         if pi.thread:actions.append(lambda:checked(k.CloseHandle(pi.thread)))
@@ -239,13 +267,39 @@ def _launch(exe, out, mode, owner, seal, global_end):
         if failures:
             try:save(out/(str(mode)+'.cleanup-failure.json'),{'primary':repr(primary),'cleanup':failures,'physical_closure':'UNKNOWN','retry':False})
             except BaseException:pass
-            if primary is None:raise RuntimeError('Native cleanup incomplete: '+repr(failures))
+            if primary is None:
+                if final_error is not None:raise final_error
+                raise RuntimeError('Native cleanup incomplete: '+repr(failures))
+    save(out/(str(mode)+'.outer.json'),result)
+    return result
+
+
+def settle_root(job,meter,k,pi,expected_birth,private,end):
+    """One termination attempt; observe final counters even on custody failure."""
+    failures=[];guardian=None
+    try:job.terminate()
+    except BaseException as exc:failures.append('terminate: '+repr(exc))
+    try:
+        while job.usage()['active_before_close'] and k.GetTickCount64()<end:time.sleep(.005)
+        if pi.process:
+            t=[ctypes.c_ulonglong() for unused in range(4)];member=wt.BOOL()
+            if k.WaitForSingleObject(pi.process,0)!=0:raise CpuAccountingFailure('Guardian not signaled')
+            checked(k.GetProcessTimes(pi.process,*[ctypes.byref(x) for x in t]))
+            checked(k.IsProcessInJob(pi.process,job.handle,ctypes.byref(member)))
+            guardian={'pid':k.GetProcessId(pi.process),'birth':str(t[0].value),'signaled':True,
+                      'root_member':bool(member.value),'user_ticks':t[3].value,'kernel_ticks':t[2].value}
+            if guardian['pid']!=pi.pid or guardian['birth']!=expected_birth:
+                raise CpuAccountingFailure('Guardian retained birth changed')
+    except BaseException as exc:failures.append('birth/closure: '+repr(exc))
+    if meter is None:raise CpuAccountingFailure('CPU pending/initial receipt unavailable')
+    return meter.finish(guardian,private,failures)
 
 
 def build(out, owner, source, seal, global_end):
     if type(owner) is not owner_source.NativeOwnerCandidate:raise TypeError('Exact owner required')
     try:
         if owner._closed or owner._failed is not None:raise RuntimeError('Owner closed/incomplete; no retry')
+        native_admission()
         return _build(out,owner,source,seal,global_end)
     except BaseException as exc:
         owner._fail(exc)
@@ -256,6 +310,7 @@ def _build(out, owner, source, seal, global_end):
     registered=verify_reservations(owner,out,seal)
     if source!=custody() or source!=registered['source'] or global_end!=registered['global_end_tick']:
         raise ValueError('Registered build/source/deadline differs')
+    native_admission()
     k=kernel();identity=FILEID();checked(k.GetFileInformationByHandleEx(msvcrt.get_osfhandle(owner._fd),18,ctypes.byref(identity),ctypes.sizeof(identity)))
     birth=owner_source.current_birth();header=out/'eka1_probe_pins.h';ledger=owner._path.read_bytes()
     cwide=lambda p:'L'+json.dumps(str(p),ensure_ascii=True)
@@ -338,6 +393,7 @@ def accept_case(result,out,mode):
         if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
         if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')
         if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU termination not observed')
+        if mode==3 and result.get('cpu_accounting',{}).get('status')!='MEASURED_WITHIN_USER_CEILINGS_NOT_NATIVE_QUALIFICATION':raise CpuAccountingFailure('Final CPU debit missing/incomplete/over budget')
         if mode==4 and b'EKA_MEMORY_LIMIT' not in raw:raise ValueError('Memory limit not observed')
         if mode==5 and (not inner['overflow'] or result['raw_bytes']!=65536):raise ValueError('Output limit not observed')
         if mode==6:
@@ -364,6 +420,7 @@ def qualify(out):
     global _owner_watchdog,_owner_watchdog_started,_evidence_directory
     out=Path(out).absolute();plain(out.parent);out.mkdir(exist_ok=False)
     _evidence_directory=out
+    save(out/'attempt-costs-pending.json',{'status':'UNRESOLVED_ATTEMPT_COSTS','root_cpu':'PENDING','build_owner_observer_archive_cpu':'UNSETTLED_SEPARATE_SCOPES','historical_costs':'UNRESOLVED_PRESERVED','no_retry':True,'strict_prepaid_bound':False,'scientific_ready':False})
     global_end=kernel().GetTickCount64()+120000;started=time.monotonic();source=custody()
     catalog={(d,r):sha(owner_source.canonical({'schema':'EKA-SYNTHETIC-ONLY-v1','dose':d,'role':r})) for d in (1,8) for r in owner_source.ROLES}
     registration=registration_for(source,global_end)
@@ -384,14 +441,14 @@ def qualify(out):
         _owner_watchdog_started=True
         save(out/'owner-watchdog-start.json',{'owner_birth':birth,'absolute_end_tick':global_end,'native_thread':True,'prebuild_phase':'Separately bounded compiler Jobs; earlier Python metadata IO interruption unqualified'})
         if custody()!=source:raise ValueError('Source/dependency/interpreter closure changed')
-        for mode in range(9):
+        for mode in registration['execution_modes']:
             owner.ledger  # canonical birth, physical identity/extent and deadline
             result=launch(exe,out,mode,owner,seal,global_end);results.append(result)
-        report={'status':'PASS_SYNTHETIC_OS_MECHANISM_OBSERVATIONS_ONLY','results':results,'reserved_births':ledger._births,'no_refunds':True,'elapsed_seconds':time.monotonic()-started,'scientific_admission':False,'finite_scientific_qualification_ready':False,'strict_cpu_ceiling_qualified':False,'remaining':'Strict CPU ceiling (Job CPU time may overshoot), real original registry and actual World/replay/dispatch hooks, complete executed-code/OS dependency custody and scientific resource/archive fit remain unqualified'}
+        report={'status':'MEASURED_SINGLE_CPU_ROLE_SCOPED_ONLY','results':results,'reserved_births':ledger._births,'no_refunds':True,'elapsed_seconds':time.monotonic()-started,'scientific_admission':False,'finite_scientific_qualification_ready':False,'strict_cpu_ceiling_qualified':False,'remaining':'External build/owner/observer/archive costs remain separate/unsettled; strict prepaid CPU bound and scientific qualification remain NOT_READY'}
         save(out/'qualification.json',report);return report
     except BaseException as exc:
         owner._fail(exc)
-        try:save(out/'first-failure.json',{'type':type(exc).__name__,'message':str(exc),'owner_first_failure':owner._failed,'cleanup':owner._cleanup_errors,'completed_cases':len(results),'reserved_births':owner._ledger._births if owner._ledger else None,'status':'INCOMPLETE_NO_RETRY'})
+        try:save(out/'first-failure.json',{'type':type(exc).__name__,'message':str(exc),'owner_first_failure':owner._failed,'cpu_observation':getattr(exc,'cpu_observation',None),'cleanup':owner._cleanup_errors,'completed_cases':len(results),'reserved_births':owner._ledger._births if owner._ledger else None,'status':'INCOMPLETE_NO_RETRY'})
         except BaseException as evidence_error:
             owner._cleanup_errors.append('first-failure evidence: '+repr(evidence_error))
             try:save(out/'evidence-write-failure.json',{'primary':repr(exc),'evidence_error':repr(evidence_error),'status':'INCOMPLETE'})
@@ -403,6 +460,7 @@ def qualify(out):
 def execute(out):
     """Archive only this attempt; every cleanup runs and retains the first cause."""
     global _execution_consumed
+    native_admission()
     if _execution_consumed:raise ValueError('Synthetic owner attempt consumed; no retry')
     _execution_consumed=True
     began=time.monotonic();out=Path(out).absolute()
@@ -414,7 +472,7 @@ def execute(out):
             try:archive_evidence(out)
             except BaseException as exc:
                 cleanup_error=exc
-                try:save(out/'archive-failure.json',{'primary':repr(primary),'archive_error':repr(exc),'status':'INCOMPLETE'})
+                try:save(out/'archive-failure.json',{'primary':repr(primary),'archive_error':repr(exc),'status':'INCOMPLETE','archive_cost':'UNKNOWN_UNRESOLVED','root_debits_not_refunded':True})
                 except BaseException:pass
         if _owner_watchdog_started:
             try:checked(_owner_watchdog.EkaStopWatchdog())
@@ -428,6 +486,4 @@ def execute(out):
 
 
 if __name__=='__main__':
-    if len(sys.argv)!=2:raise SystemExit('One NEW synthetic receipt directory required')
-    report=execute(sys.argv[1])
-    print(json.dumps({'status':report['status'],'cases':len(report['results']),'seconds_before_archive':report['elapsed_seconds']}))
+    raise SystemExit('NOT_READY: source-only metered candidate; separate immutable native assignment authorization required')

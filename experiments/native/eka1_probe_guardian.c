@@ -86,7 +86,7 @@ int wmain(int argc,WCHAR **argv){
     if(argc!=10)return 125;
     mode=_wtoi(argv[1]);raw=(HANDLE)(uintptr_t)_wcstoui64(argv[2],NULL,10);
     record=(HANDLE)(uintptr_t)_wcstoui64(argv[3],NULL,10);absolute_end=_wcstoui64(argv[4],NULL,10);
-    if(mode<0||mode>8||absolute_end<=began||absolute_end-began>8000||absolute_end>EKA_GLOBAL_END||wcscmp(argv[5],L"EKA-SYNTHETIC-ONLY-v1")||wcscmp(argv[8],EKA_SEAL))return 125;
+    if(mode!=3||absolute_end<=began||absolute_end-began>8000||absolute_end>EKA_GLOBAL_END||wcscmp(argv[5],L"EKA-SYNTHETIC-ONLY-v1")||wcscmp(argv[8],EKA_SEAL))return 125;
     /* Native independent watchdog includes source checks, creation and drain. */
     done_event=CreateEventW(NULL,TRUE,FALSE,NULL);if(!done_event)return 125;
     watch=CreateThread(NULL,0,watchdog,NULL,0,NULL);if(!watch){CloseHandle(done_event);return 125;}
@@ -201,17 +201,31 @@ int wmain(int argc,WCHAR **argv){
     }
 close:
     {int primary_error=error;
-    if(child_job)TerminateJobObject(child_job,125);
+    BOOL cpu_valid=FALSE,leader_signaled=FALSE,leader_root=FALSE,leader_private=FALSE;FILETIME final_times[4]={{0}};
+    if(child_job&&!TerminateJobObject(child_job,125)){cleanup_errors[cleanup_count++]=43;if(!error)error=43;}
     close_end=GetTickCount64()+2500;if(close_end>absolute_end)close_end=absolute_end;
     if(child_job){do{if(!QueryInformationJobObject(child_job,JobObjectBasicAccountingInformation,&usage,sizeof(usage),NULL)){cleanup_errors[cleanup_count++]=18;if(!error)error=18;break;}
         if(!usage.ActiveProcesses)break;Sleep(1);}while(GetTickCount64()<close_end);
         if(usage.ActiveProcesses){cleanup_errors[cleanup_count++]=19;if(!error)error=19;}
+        cpu_valid=!usage.ActiveProcesses&&cleanup_count==0;
         if(!QueryInformationJobObject(child_job,JobObjectExtendedLimitInformation,&observed,sizeof(observed),NULL)){cleanup_errors[cleanup_count++]=20;if(!error)error=20;}}
     if(pi.hProcess){if(WaitForSingleObject(pi.hProcess,0)!=WAIT_OBJECT_0){cleanup_errors[cleanup_count++]=21;if(!error)error=21;}GetExitCodeProcess(pi.hProcess,&code);}
+    if(pi.hProcess){
+        ULONGLONG actual_birth;
+        leader_signaled=WaitForSingleObject(pi.hProcess,0)==WAIT_OBJECT_0;
+        if(!leader_signaled||GetProcessId(pi.hProcess)!=pi.dwProcessId||
+           !GetProcessTimes(pi.hProcess,&final_times[0],&final_times[1],&final_times[2],&final_times[3])||
+           !IsProcessInJob(pi.hProcess,root,&leader_root)||!leader_root||
+           !IsProcessInJob(pi.hProcess,child_job,&leader_private)||!leader_private){cpu_valid=FALSE;}
+        actual_birth=((ULONGLONG)final_times[0].dwHighDateTime<<32)|final_times[0].dwLowDateTime;
+        if(actual_birth!=birth)cpu_valid=FALSE;
+    }else cpu_valid=FALSE;
     if(desc&&WaitForSingleObject(desc,0)!=WAIT_OBJECT_0){cleanup_errors[cleanup_count++]=33;if(!error)error=33;}
     if(writeout){CloseHandle(writeout);writeout=NULL;}
     if(!FlushFileBuffers(raw)){cleanup_errors[cleanup_count++]=22;if(!error)error=22;}
     if(primary_error)error=primary_error;
+    {char cpu_record[1024];int count=sprintf_s(cpu_record,sizeof(cpu_record),"{\"schema\":\"EKA-PRIVATE-CPU-FINAL-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"closed\":%s,\"user_ticks\":%llu,\"kernel_ticks\":%llu,\"leader_user_ticks\":%llu,\"leader_kernel_ticks\":%llu,\"leader_signaled\":%s,\"leader_root_member\":%s,\"leader_private_member\":%s}\n",pi.dwProcessId,birth,cpu_valid?"true":"false",(ULONGLONG)usage.TotalUserTime.QuadPart,(ULONGLONG)usage.TotalKernelTime.QuadPart,((ULONGLONG)final_times[3].dwHighDateTime<<32)|final_times[3].dwLowDateTime,((ULONGLONG)final_times[2].dwHighDateTime<<32)|final_times[2].dwLowDateTime,leader_signaled?"true":"false",leader_root?"true":"false",leader_private?"true":"false");
+     if(count<0||!WriteFile(record,cpu_record,(DWORD)count,&written,NULL)||written!=(DWORD)count||!FlushFileBuffers(record)){if(!error)error=44;}}
     cleanup_raw[0]='[';cleanup_offset=1;for(cleanup_i=0;cleanup_i<cleanup_count;cleanup_i++)cleanup_offset+=sprintf_s(cleanup_raw+cleanup_offset,sizeof(cleanup_raw)-cleanup_offset,"%s%d",cleanup_i?",":"",cleanup_errors[cleanup_i]);sprintf_s(cleanup_raw+cleanup_offset,sizeof(cleanup_raw)-cleanup_offset,"]");
     result_n=sprintf_s(result,sizeof(result),"{\"schema\":\"EKA-SYNTHETIC-NATIVE-v1\",\"mode\":%d,\"pid\":%lu,\"birth\":\"%llu\",\"exit_code\":%lu,\"error\":%d,\"cleanup_count\":%d,\"first_cleanup\":%d,\"cleanup\":%s,\"reason\":%d,\"eof\":%s,\"overflow\":%s,\"observed_descendant\":%s,\"desc_pid\":%lu,\"desc_birth\":\"%llu\",\"desc_signaled\":%s,\"received\":%llu,\"retained\":%llu,\"user_cpu_ticks\":%llu,\"peak_job_memory\":%llu,\"process_memory_cap\":%llu,\"job_memory_cap\":%llu,\"process_cap\":%lu,\"started_processes\":%lu,\"active\":%lu,\"elapsed_ms\":%llu}",mode,pi.dwProcessId,birth,code,error,cleanup_count,cleanup_count?cleanup_errors[0]:0,cleanup_raw,reason,eof?"true":"false",overflow?"true":"false",leaked?"true":"false",desc_pid,desc_birth,desc&&WaitForSingleObject(desc,0)==WAIT_OBJECT_0?"true":"false",received,retained,(ULONGLONG)usage.TotalUserTime.QuadPart,(ULONGLONG)observed.PeakJobMemoryUsed,(ULONGLONG)observed.ProcessMemoryLimit,(ULONGLONG)observed.JobMemoryLimit,observed.BasicLimitInformation.ActiveProcessLimit,usage.TotalProcesses,usage.ActiveProcesses,GetTickCount64()-began);
     if(result_n<0||!WriteFile(record,result,(DWORD)result_n,&written,NULL)||written!=(DWORD)result_n||!FlushFileBuffers(record)){if(!error)error=23;}

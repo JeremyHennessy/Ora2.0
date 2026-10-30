@@ -34,11 +34,13 @@ class ProbeContractChecks(unittest.TestCase):
         self.property=patch.object(probe.owner_source.NativeOwnerCandidate,'ledger',new_callable=PropertyMock,return_value=self.ledger);self.property.start()
         # Only entry/refusal fixtures: no assertion of native dependency custody.
         self.custody=patch.object(probe,'custody',return_value={});self.custody.start()
+        # Explicit offline fixture only; production admission remains held.
+        self.admission=patch.object(probe,'native_admission');self.admission.start()
     def tearDown(self):
-        self.custody.stop();self.property.stop();self.ledger.close();os.close(self.fd);self.tmp.cleanup()
+        self.admission.stop();self.custody.stop();self.property.stop();self.ledger.close();os.close(self.fd);self.tmp.cleanup()
     def test_wrong_owner_before_kernel_or_files(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-            with self.assertRaises(TypeError):probe.launch(None,None,0,object(),'x',0)
+            with self.assertRaises(TypeError):probe.launch(None,None,3,object(),'x',0)
     def test_compiler_quotes_are_script_bytes_not_escaped_argv(self):
         setup=Path('C:/Program Files/VS/vcvars64.bat');line='"C:/Program Files/VS/cl.exe" /W4 /WX fixed.c'
         link_line='"C:/Program Files/VS/link.exe" fixed.obj /OUT:fixed.exe'
@@ -63,13 +65,13 @@ class ProbeContractChecks(unittest.TestCase):
                 with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,None,mode,self.owner,'x',0)
     def test_failed_slot_is_never_refunded(self):
         with patch.object(probe,'_launch',side_effect=OSError('synthetic start failure')) as invoke:
-            with self.assertRaises(OSError):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaises(OSError):probe.launch(None,self.out,3,self.owner,self.owner._assignment,0)
             with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,1,self.owner,self.owner._assignment,0)
             self.assertEqual(invoke.call_count,1)
             self.assertEqual(self.ledger._births,36);self.assertTrue(self.owner._closed);self.assertIn('synthetic start failure',self.owner._failed)
     def test_wrong_assignment_rejected_before_kernel(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-            with self.assertRaisesRegex(ValueError,'Assignment'):probe.launch(self.out/'eka1_probe_guardian.exe',self.out,0,self.owner,'wrong',0)
+            with self.assertRaisesRegex(ValueError,'Assignment'):probe.launch(self.out/'eka1_probe_guardian.exe',self.out,3,self.owner,'wrong',0)
     def test_resealed_alternate_limits_and_owner_refused(self):
         for field,value in (('raw_bytes_per_case',65537),('owner_birth',[1,1]),('scientific_admission',True)):
             registration=probe.registration_for({},0);registration[field]=value
@@ -78,22 +80,22 @@ class ProbeContractChecks(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'registered synthetic'):probe.verify_reservations(self.owner,self.out,self.owner._assignment)
     def test_changed_source_refused_before_kernel(self):
         with patch.object(probe,'custody',return_value={'changed':'source'}),patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-            with self.assertRaisesRegex(ValueError,'Source/dependency'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(ValueError,'Source/dependency'):probe.launch(None,self.out,3,self.owner,self.owner._assignment,0)
     def test_changed_binary_rejected_before_kernel(self):
         seal=self.owner._assignment
         exe=self.out/'eka1_probe_guardian.exe';exe.write_bytes(b'unreviewed')
         (self.out/'binary-custody.json').write_text(json.dumps({'artifact_sha256':'0'*64}))
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-            with self.assertRaisesRegex(ValueError,'compiled guardian'):probe.launch(exe,self.out,0,self.owner,seal,0)
+            with self.assertRaisesRegex(ValueError,'compiled guardian'):probe.launch(exe,self.out,3,self.owner,seal,0)
     def test_empty_ledger_cannot_build_or_launch(self):
         self.ledger._births=0
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaisesRegex(ValueError,'36-birth'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
-            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,3,self.owner,self.owner._assignment,0)
     def test_unexpected_native_result_terminally_closes_owner(self):
         result={'guardian_exit':125,'inner':None}
         with patch.object(probe,'_launch',return_value=result) as invoke:
-            with self.assertRaisesRegex(ValueError,'closure/capture'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(ValueError,'closure/capture'):probe.launch(None,self.out,3,self.owner,self.owner._assignment,0)
             with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,1,self.owner,self.owner._assignment,0)
         self.assertEqual(invoke.call_count,1);self.assertEqual(self.ledger._births,36)
     def test_failed_build_cannot_reuse_owner(self):

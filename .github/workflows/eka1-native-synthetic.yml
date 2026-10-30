@@ -43,6 +43,8 @@ jobs:
           python -B -m unittest discover -s tests -p test_eka1_reservation_source_integrity.py -v
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python -B -m unittest discover -s tests -p test_eka1_native_probe_contract.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_cpu_accounting.py -v
           exit $LASTEXITCODE
       - name: Preserve exact offline interpreter and source custody
         if: always()
@@ -52,7 +54,7 @@ jobs:
           path: runs/eka1-offline-custody/
           if-no-files-found: error
           retention-days: 30
-      - name: Nine new bounded synthetic cases; no scientific World
+      - name: Native entry held pending separate immutable CPU assignment authorization
         if: github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
         shell: pwsh
         run: python -I -S -B tools/eka1_native_probe.py runs/eka1-native-synthetic
