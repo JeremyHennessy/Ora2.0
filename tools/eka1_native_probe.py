@@ -136,13 +136,21 @@ def verify_reservations(owner,out,seal):
 def launch(exe, out, mode, owner, seal, global_end):
     with _case_lock:
         if type(owner) is not owner_source.NativeOwnerCandidate:raise TypeError('Exact owner required')
-        owner.ledger
-        if type(mode) is not int or mode not in range(9):raise ValueError('Fixed synthetic case required')
-        registered=verify_reservations(owner,out,seal)
-        if global_end!=registered['global_end_tick']:raise ValueError('Original enclosing deadline differs')
-        if (owner,mode) in _used_cases:raise ValueError('Native slot already consumed; no retry')
-        _used_cases.add((owner,mode))
-        return _launch(exe,out,mode,owner,seal,global_end)
+        try:
+            if owner._closed or owner._failed is not None:raise RuntimeError('Owner closed/incomplete; no retry')
+            owner.ledger
+            if type(mode) is not int or mode not in range(9):raise ValueError('Fixed synthetic case required')
+            registered=verify_reservations(owner,out,seal)
+            if global_end!=registered['global_end_tick']:raise ValueError('Original enclosing deadline differs')
+            if (owner,mode) in _used_cases:raise ValueError('Native slot already consumed; no retry')
+            _used_cases.add((owner,mode))
+            result=_launch(exe,out,mode,owner,seal,global_end)
+            accept_case(result,out,mode)
+            if custody()!=registered['source']:raise ValueError('Post-case source/dependency closure differs')
+            return result
+        except BaseException as exc:
+            owner._fail(exc)
+            raise
 
 
 def _launch(exe, out, mode, owner, seal, global_end):
@@ -219,6 +227,16 @@ def _launch(exe, out, mode, owner, seal, global_end):
 
 
 def build(out, owner, source, seal, global_end):
+    if type(owner) is not owner_source.NativeOwnerCandidate:raise TypeError('Exact owner required')
+    try:
+        if owner._closed or owner._failed is not None:raise RuntimeError('Owner closed/incomplete; no retry')
+        return _build(out,owner,source,seal,global_end)
+    except BaseException as exc:
+        owner._fail(exc)
+        raise
+
+
+def _build(out, owner, source, seal, global_end):
     registered=verify_reservations(owner,out,seal)
     if source!=custody() or source!=registered['source'] or global_end!=registered['global_end_tick']:
         raise ValueError('Registered build/source/deadline differs')
@@ -288,6 +306,26 @@ def archive_evidence(out):
     save(out/'archive-verification.json',{'status':'PASS_EXACT_DATA_RESTORE','file_count':len(pins),'stored_bytes':target.stat().st_size,'expanded_bytes':sum(p.stat().st_size for p in paths),'zip_sha256':sha(target.read_bytes()),'files':pins,'restored_code_executed':False,'full_scientific_archive_qualified':False})
 
 
+def accept_case(result,out,mode):
+    """Only the declared negative outcomes may leave later fixture slots usable."""
+    inner=result['inner']
+    if mode==7:
+        if result['guardian_exit']!=124 or inner is not None or result['child_start'] is None or not result['root_empty']:raise ValueError('Watchdog fixture did not terminate blocked guardian')
+    elif mode==1:
+        if result['guardian_exit']!=125 or inner is None or inner['error']!=10 or inner['pid']!=0 or inner['cleanup_count'] or inner['active'] or not result['root_empty']:raise ValueError('Create failure not retained')
+    else:
+        if result['guardian_exit'] or inner is None or inner['error'] or not inner['eof'] or inner['active'] or not result['root_empty']:
+            raise ValueError('Native closure/capture incomplete')
+        raw=(out/(str(mode)+'.raw')).read_bytes()
+        if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
+        if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')
+        if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU limit not observed')
+        if mode==4 and b'EKA_MEMORY_LIMIT' not in raw:raise ValueError('Memory limit not observed')
+        if mode==5 and (not inner['overflow'] or result['raw_bytes']!=65536):raise ValueError('Output limit not observed')
+        if mode==6 and (b'EKA_PROCESS_CAP_REFUSED' not in raw or b'EKA_DESCENDANT_CREATED' not in raw or inner['started_processes']!=2 or not inner['desc_signaled'] or not inner['desc_pid']):raise ValueError('Process containment not observed')
+        if mode==8 and (inner['exit_code']!=124 or not 1000<=inner['elapsed_ms']<4000 or b'EKA_PYTHON_OWNER_WATCHDOG_STARTED' not in raw):raise ValueError('Blocked Python owner deadline not observed')
+
+
 def qualify(out):
     global _owner_watchdog,_owner_watchdog_started,_evidence_directory
     out=Path(out).absolute();plain(out.parent);out.mkdir(exist_ok=False)
@@ -315,23 +353,6 @@ def qualify(out):
         for mode in range(9):
             owner.ledger  # canonical birth, physical identity/extent and deadline
             result=launch(exe,out,mode,owner,seal,global_end);results.append(result)
-            inner=result['inner']
-            if mode==7:
-                if result['guardian_exit']!=124 or inner is not None or result['child_start'] is None:raise ValueError('Watchdog fixture did not terminate blocked guardian')
-            elif mode==1:
-                if inner is None or inner['error']!=10 or inner['pid']!=0:raise ValueError('Create failure not retained')
-            else:
-                if result['guardian_exit'] or inner is None or inner['error'] or not inner['eof'] or inner['active']:
-                    raise ValueError('Native closure/capture incomplete')
-                raw=(out/(str(mode)+'.raw')).read_bytes()
-                if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
-                if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')
-                if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU limit not observed')
-                if mode==4 and b'EKA_MEMORY_LIMIT' not in raw:raise ValueError('Memory limit not observed')
-                if mode==5 and (not inner['overflow'] or result['raw_bytes']!=65536):raise ValueError('Output limit not observed')
-                if mode==6 and (b'EKA_PROCESS_CAP_REFUSED' not in raw or b'EKA_DESCENDANT_CREATED' not in raw or inner['started_processes']!=2 or not inner['desc_signaled'] or not inner['desc_pid']):raise ValueError('Process containment not observed')
-                if mode==8 and (inner['exit_code']!=124 or not 1000<=inner['elapsed_ms']<4000 or b'EKA_PYTHON_OWNER_WATCHDOG_STARTED' not in raw):raise ValueError('Blocked Python owner deadline not observed')
-            if custody()!=source:raise ValueError('Post-case source/dependency closure differs')
         report={'status':'PASS_SYNTHETIC_OS_CONTROLS_ONLY','results':results,'reserved_births':ledger._births,'no_refunds':True,'elapsed_seconds':time.monotonic()-started,'scientific_admission':False,'finite_scientific_qualification_ready':False,'remaining':'Real original registry and actual World/replay/dispatch hooks, complete executed-code/OS dependency custody and scientific resource/archive fit remain unqualified'}
         save(out/'qualification.json',report);return report
     except BaseException as exc:

@@ -17,6 +17,7 @@ class ProbeContractChecks(unittest.TestCase):
         self.owner=object.__new__(probe.owner_source.NativeOwnerCandidate)
         self.fd=os.open(self.out/'ledger',os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600)
         self.ledger=probe.owner_source.ledger_class()(self.fd)
+        self.owner._closed=False;self.owner._failed=None;self.owner._cleanup_errors=[];self.owner._ledger=self.ledger;self.owner._fd=None
         for dose,index in [(1,i) for i in range(7)]+[(8,0),(8,1)]:
             self.ledger.role(dose,index)
             for unused in range(4):self.ledger.process_birth(dose,index)
@@ -35,13 +36,15 @@ class ProbeContractChecks(unittest.TestCase):
             with self.assertRaises(TypeError):probe.launch(None,None,0,object(),'x',0)
     def test_bool_and_unlisted_case_rejected_before_effect(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-            for mode in (True,-1,9,1.0):
-                with self.assertRaises(ValueError):probe.launch(None,None,mode,self.owner,'x',0)
+            with self.assertRaises(ValueError):probe.launch(None,None,True,self.owner,'x',0)
+            for mode in (-1,9,1.0):
+                with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,None,mode,self.owner,'x',0)
     def test_failed_slot_is_never_refunded(self):
         with patch.object(probe,'_launch',side_effect=OSError('synthetic start failure')) as invoke:
             with self.assertRaises(OSError):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
-            with self.assertRaisesRegex(ValueError,'already consumed'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,1,self.owner,self.owner._assignment,0)
             self.assertEqual(invoke.call_count,1)
+            self.assertEqual(self.ledger._births,36);self.assertTrue(self.owner._closed);self.assertIn('synthetic start failure',self.owner._failed)
     def test_wrong_assignment_rejected_before_kernel(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaisesRegex(ValueError,'Assignment'):probe.launch(self.out/'eka1_probe_guardian.exe',self.out,0,self.owner,'wrong',0)
@@ -50,7 +53,7 @@ class ProbeContractChecks(unittest.TestCase):
             registration=probe.registration_for({},0);registration[field]=value
             raw=probe.owner_source.canonical(registration);(self.out/'registration.json').write_bytes(raw);self.owner._assignment=probe.sha(raw)
             with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
-                with self.assertRaisesRegex(ValueError,'registered synthetic'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+                with self.assertRaisesRegex(ValueError,'registered synthetic'):probe.verify_reservations(self.owner,self.out,self.owner._assignment)
     def test_changed_source_refused_before_kernel(self):
         with patch.object(probe,'custody',return_value={'changed':'source'}),patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaisesRegex(ValueError,'Source/dependency'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
@@ -64,7 +67,18 @@ class ProbeContractChecks(unittest.TestCase):
         self.ledger._births=0
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):
             with self.assertRaisesRegex(ValueError,'36-birth'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
-            with self.assertRaisesRegex(ValueError,'36-birth'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+    def test_unexpected_native_result_terminally_closes_owner(self):
+        result={'guardian_exit':125,'inner':None}
+        with patch.object(probe,'_launch',return_value=result) as invoke:
+            with self.assertRaisesRegex(ValueError,'closure/capture'):probe.launch(None,self.out,0,self.owner,self.owner._assignment,0)
+            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.launch(None,self.out,1,self.owner,self.owner._assignment,0)
+        self.assertEqual(invoke.call_count,1);self.assertEqual(self.ledger._births,36)
+    def test_failed_build_cannot_reuse_owner(self):
+        with patch.object(probe,'_build',side_effect=OSError('compiler failure')) as invoke:
+            with self.assertRaisesRegex(OSError,'compiler failure'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
+            with self.assertRaisesRegex(RuntimeError,'closed/incomplete'):probe.build(self.out,self.owner,{},self.owner._assignment,0)
+        self.assertEqual(invoke.call_count,1);self.assertTrue(self.owner._closed);self.assertEqual(self.ledger._births,36)
     def test_changed_physical_reservation_chain_refused(self):
         raw=self.owner._path.read_bytes();self.owner._path.write_bytes(raw.replace(b'process_birth',b'process_forge',1))
         with self.assertRaisesRegex(ValueError,'chain/catalog'):probe.verify_reservations(self.owner,self.out,self.owner._assignment)
