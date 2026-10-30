@@ -1,0 +1,70 @@
+{
+  "schema": "ORA-EKA1-DELAYED-ASSAY-INDEPENDENT-REVIEW-v1",
+  "date": "2026-10-23",
+  "reviewer": "/root/eka0_independent_research",
+  "pins": {
+    "contract": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\data\\eka1-delayed-assay-contract-20261023.json",
+      "sha256": "ce39fcd8a885fc052306ef9516b7f0d33753b56c60da2e309d1cc3113c330374",
+      "extent": 6260
+    },
+    "document": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\docs\\EKA-1-DELAYED-ASSAY-DECISION-20261023.md",
+      "sha256": "65287d75c194013d22df042d25e6876f9b032b0ba61cff8a4e85142c31c40114",
+      "extent": 4618
+    },
+    "source_validation": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\data\\eka1-delayed-assay-source-validation-20261023.json",
+      "sha256": "63d57114da8242b439f3ff960e143198d24c73178fe39f67fdcf7646f0b7af2c",
+      "extent": 669
+    },
+    "pressure_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\experiments\\digital_pressure71_population.py",
+      "sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "extent": 10219
+    },
+    "base_source": {
+      "path": "D:\\OraLab\\src\\Ora2.0-eka1-delayed-assay-contract-20261023\\experiments\\digital_sharedlineage68_population.py",
+      "sha256": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "extent": 12918
+    }
+  },
+  "decision": "ACCEPT_BOUNDED_SOURCE_REJECTION_OF_FIXED_CELL_METHOD",
+  "method_execution": "NO_GO",
+  "whole_substrate_learning": "UNKNOWN",
+  "source_counterexample": {
+    "literal_words": 27,
+    "feedback_read_opcode_present": false,
+    "checkpoint_pc": 5,
+    "own_dispatches_before_checkpoint": 5,
+    "energy_lower_bound_at_checkpoint": 7,
+    "lesion_death_after_intervention_own_dispatches": 3,
+    "reason": "m0 is configured constant1 before forage; two jumps reach exactdelayPC5; XOR1 makes0, READ feeds IFZEROtoHALT; intact jumpsbackforage. No earnedfeedback information is used.",
+    "scope": "Conditional instruction-source argument over legal27wordliteral; no observedgenotype, World, ancestry, mutationreachability, population or paidreproduction claim"
+  },
+  "channel_miss": "FORAGE changesfeedback notm0; unchangedfeedback/registers cancarryobservation across twodispatchdelay, so m0delta neednotremove relevantinformation",
+  "counterexample_interpretation": "Reject guaranteed exclusion of unrelated configured-control damage for this fixedmethod; death after losing genuinelyuseful information canlegitimately be anoutcome",
+  "not_a_universal_requirement": "Universally nonlethal lesions are not a necessarygate for all valid causalstudies; method-specific attribution and collateral-effect interpretation are needed",
+  "strongest_narrower_method_direction": [
+    "Prospectively paired personally earned exposure histories with matched present observable/probe conditions, not arbitraryfixedcell membership",
+    "Genotype-specific representation/phase rule may be admissible if fixedbeforeoutcomes, retainsallfirstorigins/missingcoverage anddoesnotreplace failedactors",
+    "Use content reversal or history-dependent actioncontrast with equal-handling sham and blind/reactive/phase/reproduction negatives to distinguish informationuse fromgeneralstate dependence",
+    "Record explicit source-qualified paid intervention and authenticoriginal/derivedcheckpoint custody; no silentfeedback/registermasking orfree trainingmeals",
+    "Freeze missing/dead handling, informationaldelay, budget andeffectcriteria before any separatelyadmitted software or scientificexecution"
+  ],
+  "scope_limits": [
+    "No VM, sourceauditgenerator, seed, genotype, population ormodel run by reviewer",
+    "No global claim that learning isimpossible or that everylethal lesion isinvalid",
+    "No implemented qualified selectiveintervention, lawfulchangedstaterestore, handlingprice, nativebudget orscientificadmission",
+    "This completesboundeddesign-or-blockerdeliverable; donotextend same rejectedm0candidate merely by morecells/delay/populations"
+  ],
+  "prior_components": {
+    "causal_source_audit": "Sourcefacts only; no causalqualification",
+    "offline_envelope": "StructuralJSONdelta only; aliasfixed; no history/executionauthority"
+  },
+  "historical_findings_changed": false,
+  "worlds_executed": 0,
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "model_calls": 0
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "ORA-EKA1-QUALIFICATION-PREPARATION-CHECK-v1",
+  "preparation_valid": true,
+  "maximum_native_roles": 14,
+  "total_user_cpu_seconds": 1680,
+  "sequential_wall_including_closure_seconds": 2940,
+  "total_input_bytes": 939524096,
+  "total_output_bytes": 1879048192,
+  "maximum_geneses": 64,
+  "maximum_dispatches": 262144,
+  "missing_external_proofs": [
+    "assignment_registry",
+    "original_owner_grant",
+    "original_raw_native_receipt",
+    "common_prestate_raw_custody",
+    "executed_code_interpreter_stdlib",
+    "exact_source_safe_CI",
+    "semantic_panel_fixtures",
+    "native_containment_fit",
+    "closure_archive_exact_restore",
+    "independent_admission"
+  ],
+  "actual_original_status": "NOT_CREATED_OR_ASSIGNED_BY_THIS_PLAN",
+  "resource_fit_qualified": false,
+  "actual_original_authenticated": false,
+  "actual_prestate_authenticated": false,
+  "actual_paid_continuation_authenticated": false,
+  "native_execution_authorized": false,
+  "scientific_admission": false,
+  "new_metadata_tests_passed": 7,
+  "actual_Worlds": 0,
+  "actual_VM_steps": 0,
+  "actual_native_launches": 0,
+  "scope_notes": [
+    "14 logical role slots, not a proved native process graph",
+    "2940s sequential allowance is not a verified whole-owner deadline; owner/worker overlap and enclosing Job must be registered",
+    "56 total process births need a separate cumulative counter; active-process cap alone is insufficient",
+    "Nine accepted semantic source pins are not the complete future launcher/interpreter/stdlib closure",
+    "Raw input, parsed snapshots, output and archive union fit is unqualified; no silent cap increase"
+  ],
+  "metadata_interpreter": {
+    "executable_filename": "python.exe",
+    "version": "3.11.1",
+    "scope": "Metadata tests only; not native executed-code custody"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "EKA-REUSABLE-GUARDIAN-SOURCE-PREFLIGHT-v1",
+  "parent": "4f45c3866bb76c80d722d97213020b1338f91363",
+  "PR": 323,
+  "decision": "NO_GO",
+  "native_entry_enabled": false,
+  "scope": "SOURCE_ONLY_PROTOTYPE_NOT_NATIVE_QUALIFICATION",
+  "runtime_protocol": "Fixed 478-byte immutable DATA capsule on a retained handle; immutable release pins separate from consumed owner/assignment/ledger/deadline bindings",
+  "authority": "Matching hashes and metadata are consistency only; operator grant origin, registry trust and loaded-image/source provenance remain UNQUALIFIED",
+  "compiler_route": "INLINE_BUILD_RETIRED",
+  "direct_build_assessment": "Absolute cl /c and link invocations with explicit SDK/include/lib/environment remove cmd and vcvars but do not establish every failed or rejected helper attempt before its effects. Active-process caps and child-process restriction do not prove cumulative attempted births.",
+  "single_next_engineering_blocker": "Independently qualify an auditable no-process-creation leaf compiler/linker or a trusted pre-effect process broker for a separately authorized immutable release build; do not execute closed-tool builds under a fabricated attempted-birth contract",
+  "build_qualification_requires": [
+    "Exact source/header/compiler/linker/SDK/interpreter/dependency/environment identities and executed-source-to-binary custody",
+    "Every successful, failed and rejected attempted birth reserved before effects; no inferred helper counts",
+    "Disjoint final USER+KERNEL, actual process-tree closure, full output and immutable binary receipts",
+    "External build-owner, observer, cleanup and archive costs, with all missing costs unresolved"
+  ],
+  "settlement_protocol": "Offline validator orders archive, restore, hash, completion, watchdog shutdown and external original-owner closure; disjoint final CPU scopes charged once; live final verifier write and lifetime remain unresolved debt",
+  "settlement_native_unknowns": [
+    "Actual externally observed root membership, signaled process identities and final counters",
+    "Complete original-owner/observer/cleanup lifetimes and post-archive completion/failure tails",
+    "Final verifier write, registry storage and lifetime under a separately reserved external settlement scope",
+    "Native immutable archive custody and exact restoration"
+  ],
+  "limits_changed": false,
+  "strict_prepaid_CPU_bound": "NOT_READY",
+  "scientific_qualification": "NOT_READY",
+  "human_authorization_only_remaining": false,
+  "native_builds_or_diagnostics_executed": 0,
+  "Worlds_or_populations_executed": 0,
+  "sealed_assignments_preserved": 4,
+  "historical_consumed_reservations_preserved": 144,
+  "research": {
+    "source_head": "4aaa501054b78bfde3b9598f63522dadb3254633",
+    "scope": "AST identities and 1584 conditional fee rows only; no scientific execution",
+    "best_hypothesis": "Retain personally observed renewed-food target in a register and revisit productively within the same renewal phase after current feedback is overwritten",
+    "optimistic_instruction_advantage_upper_bound": "future_packets - acquisition - retrieval - differential_travel_control - wrong_probes * repair_dispatches",
+    "one_read_register_case": "Needs at least two later equal-reward meals even with no detour or error",
+    "pure_unrewarded_overwrite_roundtrip": "Negative even at three remaining meals under optimistic fees",
+    "predictive_increment_beyond_current_feedback": "UNKNOWN",
+    "lawful_founder_survival_and_net_affordability": "UNKNOWN",
+    "organism_learning_demonstrated": false
+  }
+}

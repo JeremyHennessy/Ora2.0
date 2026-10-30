@@ -1,0 +1,24 @@
+{
+  "schema": "ORA-EKA1-FEEDBACK-OFFLINE-VALIDATION-v1",
+  "utc": "2026-10-23T22:56:06.171681+00:00",
+  "targeted_tests_passed": 6,
+  "test_seconds_reported": 0.0,
+  "source_only_checks": [
+    "immutable closed aggregate report SHA/counts reused",
+    "ordinary founder literal/source hash/no READ",
+    "conditional first division arithmetic70"
+  ],
+  "immutable_closed_report_sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+  "artifact_sha256": {
+    "data/eka1-feedback-qualification-contract-20261023.json": "7f5c332cfca74921f3173cd9268a9a02bbb9849dea10b4c9a4e67ed34f3afadd",
+    "docs/EKA-1-FEEDBACK-QUALIFICATION-20261023.md": "55b6ee1d32978602ec40afc50da7201e26eb024e44619061bb19bd41e95885c6",
+    "tools/eka1_feedback_cost_preflight.py": "61054bc4d31e87cc7aa7969866cb5ea41730732fe171468dce92f1b7d6d1e148",
+    "tests/test_eka1_feedback_cost_preflight.py": "ae50c77e881b73b26f1d8ca3e3553feeb05f7f5cd5f29168373a889939d5a4d2"
+  },
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "new_history_queries": 0,
+  "authority_granted": false,
+  "full_cost_qualification": false,
+  "actual_useful_opportunity_qualified": false
+}

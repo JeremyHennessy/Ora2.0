@@ -1,0 +1,36 @@
+{
+  "schema": "EKA-BUILD-ONLY-SINGLE-BUILD-PREFLIGHT-v1",
+  "approved_contract": "EKA-BUILD-ONLY-METERED-RELEASE-v1",
+  "approved_decision_head": "0386a9ba97d9c648d345edbaa8cd3d4796f4ef30",
+  "approval": "https://github.com/JeremyHennessy/Ora2.0/pull/323#issuecomment-6533172723",
+  "handoff": "https://github.com/JeremyHennessy/Ora2.0/issues/317#issuecomment-6533268253",
+  "decision": "NO_GO",
+  "scope": "SOURCE_ONLY_IMPLEMENTATION_NOT_NATIVE_QUALIFICATION",
+  "native_build_execution_enabled": false,
+  "human_operator_execution_authorized": false,
+  "fresh_immutable_single_build_manifest": null,
+  "source_controls": [
+    "Separate BUILD_ONLY logical assignment/once claims and original-owner physical ledger; scientific reservation catalogue unchanged",
+    "Fixed four direct compile/link DATA requests, explicit source/header/toolchain/SDK/include/library/environment/dependency pins and absolute deadline",
+    "Durable supervised-attempt debit before outcome; failed/rejected attempt terminal, no retry/refund/reissued assignment",
+    "Literal UNKNOWN opaque nested attempts; complete associated birth set kept separate from attempted-count claims",
+    "One raw root USER+KERNEL debit, epoch/closure/EOF/limits/deadline validation, missing counter remains unresolved",
+    "Provisional live-owner capture then once-consumed external owner-closure/settlement phase; exact build package, raw counters, retained files and archive/restoration revalidated"
+  ],
+  "unqualified_before_any_build_request": [
+    "Actual Windows process-tree containment, pre-effect OS assignment, parent/birth/image/dependency custody and failed-start cleanup",
+    "Executed native USER+KERNEL provider and complete final root measurement after signaled closure; no USER-only fallback",
+    "Full compiler/linker/SDK/runtime closure and exact immutable release header/input recipe, planned outputs and separately reviewed single-build manifest",
+    "Separate qualified owner/observer/cleanup/archive/restore/hash/completion/watchdog/final-writer/registry scopes; unattributed system costs remain debt",
+    "Independent exact native/OS/binary/measurement/archive qualification and explicit human authorization tied to one immutable build assignment"
+  ],
+  "candidate_limits_are_not_native_authority": {"USER_ticks":300000000,"memory_bytes":536870912,"active_processes":4,"wall_ms":30000,"output_bytes":1048576,"archive_files":128,"archive_bytes":67108864},
+  "historical_configured_limits_are_not_inherited_approval": true,
+  "strict_private_diagnostic_USER_1second": "UNCHANGED_NOT_QUALIFIED",
+  "scientific_and_diagnostic_accounting_exception": false,
+  "final_writer_and_unattributed_system_costs": "UNRESOLVED_NOT_ZERO",
+  "human_authorization_only_remaining": false,
+  "historical_preservation": {"sealed_assignments":4,"consumed_reservations":144,"old_failures":"RETAINED"},
+  "builds_diagnostics_Worlds_populations_executed": 0,
+  "v10_Observatory_scientific_laws": "UNMODIFIED"
+}

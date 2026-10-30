@@ -1,0 +1,51 @@
+{
+  "schema": "ORA-EKA1-WORLD-OPPORTUNITY-INDEPENDENT-SOFTWARE-REVIEW-v1",
+  "created_utc": "2026-10-24T17:38:49.239310+00:00",
+  "reviewer": "independent_world_audit",
+  "source_parent": "539d189d01c3353d6b53d43b8f37f2d0c013ce38",
+  "pins": {
+    "tools/eka1_prospective_opportunity.py": "e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76",
+    "tests/test_eka1_prospective_opportunity.py": "37d47c07306400af6e45a6c6c613d28b971487bd11c1a0a69640fef880d5ef23",
+    "experiments/digital_eka1_paid_read_source_v1.py": "5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a",
+    "tests/test_eka1_paid_read_source_shape_v1.py": "5102f52640fd23f4fb91f6070f1fe730a2dc6e269ed5a3fbf940af93633359e2",
+    "data/eka1-prospective-world-opportunity-20261024.json": "b04ff1065d71697e28b9ede75d7c7d29029fea5867c75709d8a12e8f4dc6c088",
+    "docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md": "0b94167bbee67d7384bae78672bedeb8aa210365387620bf9c7b6677552822db",
+    "data/eka1-world-opportunity-validation-20261024.json": "67d7c62f0a50e65189dd25d369ed1e3774a23c419ce7d75a2a3ea3b1322244db"
+  },
+  "verdict": "SCOPED_STATIC_SOFTWARE_REVIEW_ACCEPTED_EXECUTION_NO_GO",
+  "method": "Read entire derivative dispatch, original source step, metadata helper, tests, contract and documentation; static AST inspection and exact final file hashes. No module import, test execution, World, replay, seed query, model, native qualification or runtime mutation by reviewer.",
+  "corrections_verified": [
+    "Exact integer feedback guard rejects bool before dispatch mutation.",
+    "Conditional target equality explicitly requires common World and reports common_world_authenticated=false; metadata cannot authenticate it.",
+    "Actual READ event tick is pre-dispatch binding tick+1; future authenticated adapter must preserve this boundary convention."
+  ],
+  "accepted_scope": [
+    "Copied paid dispatch preserves ordinary input, release, fees, PC advance, FORAGE, expiry, event/hash ordering except declared READ destination delta and derived metadata.",
+    "True and identity-sham biological/ecological transition are identical; complete event-envelope hashes intentionally differ and must not be called byte-identical original histories.",
+    "Finite4096-row ledger validates exact fields/types, chronological dispatch order, latest-FORAGE consistency and selects first eligible pre-treatment renewable READ; no fitness/probe fields accepted.",
+    "No eligible supplied READ produces opportunity contrast0 without zeroing actual World outcomes; incomplete provenance/ledger authentication remains explicitly false.",
+    "Observer bit algebra and same-site/same-phase renewable relation are conditional source identities; mismatches remain UNKNOWN, not discarded.",
+    "Helper imports no World and grants no execution, checkpoint, history, policy or scientific authority."
+  ],
+  "test_evidence": {
+    "author_reported_metadata_checks": 12,
+    "author_reported_AST_checks": 5,
+    "reviewer_tests_executed": 0,
+    "scope": "Synthetic metadata/algebra and AST source shape only; no semantic replay/native proof."
+  },
+  "remaining_gates": [
+    "Complete original replay/common checkpoint and lineage/latest-own-FORAGE authentication",
+    "Lawful derived continuation custody and true/sham semantic qualification",
+    "Actual attainable delayed informative opportunity and own-port retention",
+    "Fair specificity/reference implementations and net World rather than redistribution outcomes",
+    "Complete organism/host/native resource pricing and independent original-owner registration",
+    "Prospective reserved assignment/effect/power/acceptance/stopping registration and scientific admission"
+  ],
+  "blocking_source_defect_remaining_in_reviewed_scope": false,
+  "scientific_readiness": "NOT_READY",
+  "execution_authorized": false,
+  "worlds_authorized": 0,
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "runtime_changes": false
+}

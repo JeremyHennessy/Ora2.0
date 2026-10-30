@@ -1,0 +1,110 @@
+{
+  "schema": "EKA-CPU-METERED-ASSIGNMENT-REQUEST-v1",
+  "request_id": "EKA-CPU-METERED-20261030-01",
+  "status": "REQUEST_ONLY_UNAUTHORIZED_NATIVE_ENTRY_HELD",
+  "base_commit": "92ce53f8b9425eafb36854ab63d0eabbd91c0dca",
+  "accounting_contract": "EKA-CPU-METERED-ATTEMPT-v1",
+  "source_sha256": {
+    "experiments/native/eka1_probe_guardian.c": "ed38416f21c4228c287a464bfacb8e173b9445591a252985fd93967c5b0625ac",
+    "experiments/native/eka1_probe_owner_watchdog.c": "8f0e13973269c43ac4898796eecd0c01a5e6ec3e2fa4aebef764ef9dd1559263",
+    "experiments/process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776",
+    "tools/eka1_cpu_accounting.py": "27c3b30ef48ddfe27ddc37a6d7f54b7a691838f4188bea0596e8ddab40bcf096",
+    "tools/eka1_cumulative_reservations.py": "735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d",
+    "tools/eka1_native_owner_candidate.py": "23d51193052ab97d5c9576afa3c72e49ab6ea52a4a0647c18cbc5fd0118f9b0c",
+    "tools/eka1_native_probe.py": "bd9c285413f976c563506801d4e108b75397f34b5338c8d3d9bc62bc4e53b78b",
+    "tools/eka1_probe_child.py": "bb2275ca2414d4ef52aea1bcf846837c5b4b6c26b866bbb3d953437a5342bcac"
+  },
+  "test_and_workflow_sha256": {
+    "tests/test_eka1_cpu_accounting.py": "0714fb61e48fb13d5c2added2b6a23b9bc8b504696795cbe8cebb5025a7fdfc1",
+    "tests/test_eka1_native_probe_contract.py": "c605671154ab01e565c6135fe18675ef5b35733ea28c21bb215f42f7f18ab7ff",
+    ".github/workflows/eka1-native-synthetic.yml": "69754b35bd15993a403de95262e84b9bd1feabb37fbd2f945b0d5fb6d648cbe0"
+  },
+  "local_interpreter_library_closure_sha256": "96c825ac9868576bec9f2a5befe1b020a550d7bc4380f97438b956acdbeb9150",
+  "local_observed_hash_count": 795,
+  "complete_OS_or_SDK_dependency_custody": false,
+  "independent_review_sha256": "ec1df5e7181424cb709afb772d0546d96e546235c5a0604e1aacc564a1e6e0bc",
+  "offline_verification": {
+    "final_cpu_checks": 26,
+    "contract_checks": 25,
+    "owner_cleanup_origin_regressions": 42,
+    "additional_independent_raw_query_checks": 2,
+    "native_tests": 0,
+    "C_compilation": false,
+    "scope": "Source-only acceptance; mocked API/failure paths, not actual Windows enforcement qualification"
+  },
+  "repairs_independently_reviewed": [
+    "Once-only claims keyed by actual owner birth and kernel handle, not Python wrapper identity.",
+    "Accounting/budget first cause survives a final-receipt write failure; partial evidence and pending debt remain.",
+    "Exact root flags reject breakaway permission changes.",
+    "Canonical ledger bytes are pinned and same-size corruption is rejected.",
+    "Both public Python and native guardian admit prospective CPU mode3 only; all native admission entrypoints remain held."
+  ],
+  "purpose": "One fresh synthetic CPU-stress accounting/termination observation. No short-success, descendant, watchdog, replay, World or replacement role.",
+  "fixed_CPU_role": {
+    "mode": 3,
+    "guardian_source": "experiments/native/eka1_probe_guardian.c",
+    "child_source": "tools/eka1_probe_child.py",
+    "child_program": "fixed mode3 CPU loop",
+    "successful_role_births": [
+      "guardian",
+      "sole CPU child"
+    ],
+    "descendants_allowed": 0,
+    "replacement_or_resume": false
+  },
+  "unchanged_limits": {
+    "private_USER_ticks": 10000000,
+    "root_USER_ticks": 80000000,
+    "process_memory_bytes": 67108864,
+    "private_job_memory_bytes": 134217728,
+    "root_job_memory_bytes": 268435456,
+    "private_active_processes": 1,
+    "root_active_processes": 4,
+    "role_wall_trigger_seconds": 5,
+    "closure_reserve_seconds": 3,
+    "root_role_wall_seconds": 8,
+    "global_original_deadline_seconds": 120,
+    "raw_output_bytes": 65536,
+    "archive_files": 128,
+    "archive_stored_and_expanded_bytes_each": 67108864,
+    "each_existing_build_job": {
+      "USER_seconds": 30,
+      "wall_trigger_seconds": 30,
+      "memory_bytes": 536870912,
+      "active_processes": 4,
+      "retained_output_bytes": 1048576
+    }
+  },
+  "reservation_rule": {
+    "birth_reservations_preconsumed": 36,
+    "role_rows_preconsumed": 9,
+    "unused_reservations_burn": true,
+    "refund": false,
+    "scope": "Reuse the conservative existing reservation envelope, not its old assignments. No extra role may execute. Exact precharge/closure custody for opaque compiler helper attempts remains a blocking precondition."
+  },
+  "measurement": "Durable pending before child creation; initial zero root epoch. Final raw root USER+KERNEL before last Job handle closes, exactly one debit. Retained guardian/child PID+creation time and signaled root/private membership reconcile root=guardian+private. Private totals are never added twice.",
+  "failure_rule": "PrivateUSER>1s or rootUSER>8s is terminal FAIL_CPU_BUDGET, full measured debit retained. Missing counters/epoch mismatch/custody/termination/capture/archive failures are terminal UNKNOWN/FAIL; no zero imputation, reset, retry or replacement. Any next assignment requires new approval.",
+  "cost_scope": "ROOT_JOB_USER_PLUS_KERNEL_ONLY. Compiler Jobs, external owner/observer/archive costs remain separate and UNSETTLED; no all-costs-paid scientific claim. Historical four assignments144reservations and missing historical costs remain unresolved, never forgiven.",
+  "overshoot_acknowledgement_required": "The one-second and eight-second settings are periodic stop thresholds, not proved lifetime ceilings. Nondeterministic USER and KERNEL CPU overshoot has no demonstrated finite advance bound here. Approval must explicitly accept this risk for one nonscientific diagnostic. No safety margin or increased limit is requested.",
+  "execution_preconditions": [
+    "Separate explicit human authorization tied to this immutable request and acknowledgement; none has been supplied.",
+    "Actual native grant/assignment transport remains held. Any source change to lift that hold must be independently reviewed and resealed before execution; this record grants no enablement.",
+    "Freeze the original producer birth, physical ledger, absolute deadline, toolchain/dependency hashes, every build/launch attempt and output-binary/header hashes before role execution.",
+    "Resolve compiler/helper cumulative birth and exact closure custody under the existing reservation envelope; no free or unaccounted compilation.",
+    "Define and independently verify separate external cost receipts/completeness. Unknown costs must remain held, not disappear into a root-only PASS."
+  ],
+  "requested_store": "runs/eka1-native-cpu-metered-20261030-request1",
+  "store_created": false,
+  "strict_prepaid_CPU_bound": "NOT_READY",
+  "native_scientific_qualification": "NOT_READY",
+  "operator_authorized": false,
+  "scientific_admission": false,
+  "preservation": {
+    "sealed_assignments": 4,
+    "consumed_birth_reservations": 144,
+    "sealed_evidence_files": 75,
+    "archives_and_restored_bytes": "UNCHANGED_INDEPENDENTLY_VERIFIED",
+    "v10_Observatory_scientific_laws": "UNMODIFIED"
+  },
+  "authorization_request": "Authorize exactly the single-purpose fresh CPU diagnostic described here, acknowledging possible nondeterministic CPU overshoot, only after all execution preconditions are independently satisfied. This is a request, not a grant; if a finite prepaid bound remains mandatory, reject the diagnostic."
+}

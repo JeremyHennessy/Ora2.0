@@ -1,0 +1,303 @@
+/* Finite synthetic-only EKA transport. Uses the existing PILOT74 Windows Job
+ * containment pattern; never accepts a command, World module or science grant.
+ * Build-generated pins lock the sole interpreter and sole synthetic program.
+ * Parent precharges four births before creating this guardian. */
+#define WIN32_LEAN_AND_MEAN
+#define _WIN32_WINNT 0x0A00
+#include <windows.h>
+#include <bcrypt.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include <errno.h>
+#include <wchar.h>
+#include "eka1_probe_pins.h"
+#include "eka1_runtime_capsule.h"
+/* Release header contains only immutable interpreter/program/watchdog pins. */
+#ifndef EKA_RUNTIME_REGISTRY_ROOT
+#define EKA_RUNTIME_REGISTRY_ROOT L"" /* Missing release custody must refuse. */
+#endif
+static EKA_RUNTIME_CAPSULE_V1 runtime_binding;
+#pragma comment(lib,"bcrypt.lib")
+
+static HANDLE child_job, done_event;
+static ULONGLONG absolute_end;
+static DWORD WINAPI watchdog(LPVOID unused) {
+    ULONGLONG now=GetTickCount64(),stop=absolute_end-500; (void)unused;
+    if(WaitForSingleObject(done_event,now>=stop?0:(DWORD)(stop-now))==WAIT_TIMEOUT){
+        if(child_job) TerminateJobObject(child_job,124);
+        TerminateProcess(GetCurrentProcess(),124);
+    }
+    return 0;
+}
+static int ledger_matches(HANDLE f){
+    FILE_ID_INFO id;LARGE_INTEGER size,zero={0},position;BCRYPT_ALG_HANDLE a=NULL;BCRYPT_HASH_HANDLE h=NULL;
+    ULONG len=0,got=0;PUCHAR object=NULL;UCHAR bytes[16384],digest[32];DWORD n;char hex[65];int i,ok=0;
+    if(!GetFileInformationByHandleEx(f,FileIdInfo,&id,sizeof(id))||
+       id.VolumeSerialNumber!=runtime_binding.ledger_volume||memcmp(id.FileId.Identifier,runtime_binding.ledger_id,16)||
+       !GetFileSizeEx(f,&size)||size.QuadPart!=runtime_binding.ledger_extent||
+       !SetFilePointerEx(f,zero,&position,FILE_CURRENT)||!SetFilePointerEx(f,zero,NULL,FILE_BEGIN))return 0;
+    if(BCryptOpenAlgorithmProvider(&a,BCRYPT_SHA256_ALGORITHM,NULL,0)<0||
+       BCryptGetProperty(a,BCRYPT_OBJECT_LENGTH,(PUCHAR)&len,sizeof(len),&got,0)<0)goto end;
+    object=malloc(len);if(!object||BCryptCreateHash(a,&h,object,len,NULL,0,0)<0)goto end;
+    for(;;){if(!ReadFile(f,bytes,sizeof(bytes),&n,NULL))goto end;if(!n)break;if(BCryptHashData(h,bytes,n,0)<0)goto end;}
+    if(BCryptFinishHash(h,digest,32,0)<0)goto end;
+    for(i=0;i<32;i++)sprintf_s(hex+i*2,65-i*2,"%02x",digest[i]);ok=!strcmp(hex,runtime_binding.ledger_sha);
+end:
+    if(h)BCryptDestroyHash(h);if(a)BCryptCloseAlgorithmProvider(a,0);free(object);
+    if(!SetFilePointerEx(f,position,NULL,FILE_BEGIN))ok=0;return ok;
+}
+static HANDLE pinned(const WCHAR *path,const char *expected){
+    HANDLE f=CreateFileW(path,GENERIC_READ,FILE_SHARE_READ,NULL,OPEN_EXISTING,FILE_FLAG_OPEN_REPARSE_POINT,NULL);
+    BY_HANDLE_FILE_INFORMATION info; BCRYPT_ALG_HANDLE a=NULL; BCRYPT_HASH_HANDLE h=NULL;
+    ULONG len=0,got=0; PUCHAR object=NULL; UCHAR bytes[16384],digest[32]; DWORD n; char hex[65]; int i,ok=0;
+    if(f==INVALID_HANDLE_VALUE)return NULL;
+    if(!GetFileInformationByHandle(f,&info)||info.nNumberOfLinks!=1||
+       (info.dwFileAttributes&(FILE_ATTRIBUTE_REPARSE_POINT|FILE_ATTRIBUTE_DIRECTORY)))goto end;
+    if(BCryptOpenAlgorithmProvider(&a,BCRYPT_SHA256_ALGORITHM,NULL,0)<0||
+       BCryptGetProperty(a,BCRYPT_OBJECT_LENGTH,(PUCHAR)&len,sizeof(len),&got,0)<0)goto end;
+    object=malloc(len);if(!object||BCryptCreateHash(a,&h,object,len,NULL,0,0)<0)goto end;
+    for(;;){if(!ReadFile(f,bytes,sizeof(bytes),&n,NULL))goto end;if(!n)break;
+        if(BCryptHashData(h,bytes,n,0)<0)goto end;}
+    if(BCryptFinishHash(h,digest,32,0)<0)goto end;
+    for(i=0;i<32;i++)sprintf_s(hex+i*2,65-i*2,"%02x",digest[i]);
+    ok=!strcmp(hex,expected);
+end:
+    if(h)BCryptDestroyHash(h);if(a)BCryptCloseAlgorithmProvider(a,0);free(object);
+    if(!ok){CloseHandle(f);return NULL;}return f; /* held against write/delete */
+}
+
+/* Hashes below establish DATA consistency only. The fixed source-only gate
+ * prevents these checks being mistaken for qualified operator authority. */
+static int capsule_hex(const char *s){int i;for(i=0;i<64;i++)if(!((s[i]>='0'&&s[i]<='9')||(s[i]>='a'&&s[i]<='f')))return 0;return s[64]==0;}
+static int wide_hash(const WCHAR *w,const char *s){int i;if(wcslen(w)!=64||!capsule_hex(s))return 0;for(i=0;i<64;i++)if(w[i]!=(WCHAR)(unsigned char)s[i])return 0;return 1;}
+static int capsule_digest(const void *raw,DWORD bytes,const WCHAR *expected){
+    BCRYPT_ALG_HANDLE a=NULL;BCRYPT_HASH_HANDLE h=NULL;UCHAR digest[32];char hex[65];int i,ok=0;
+    if(BCryptOpenAlgorithmProvider(&a,BCRYPT_SHA256_ALGORITHM,NULL,0)<0)goto end;
+    if(BCryptCreateHash(a,&h,NULL,0,NULL,0,0)<0||BCryptHashData(h,(PUCHAR)raw,bytes,0)<0||BCryptFinishHash(h,digest,32,0)<0)goto end;
+    for(i=0;i<32;i++)sprintf_s(hex+i*2,65-i*2,"%02x",digest[i]);ok=wide_hash(expected,hex);
+end:if(h)BCryptDestroyHash(h);if(a)BCryptCloseAlgorithmProvider(a,0);return ok;
+}
+static int capsule_read(HANDLE capsule,const WCHAR *expected,HANDLE owner,HANDLE root,HANDLE ledger,HANDLE raw,HANDLE record,HANDLE *image_pin){
+    HANDLE all[6]={capsule,owner,root,ledger,raw,record};HANDLE files[4]={capsule,ledger,raw,record};
+    FILE_ID_INFO ids[4];BY_HANDLE_FILE_INFORMATION info;LARGE_INTEGER size,zero={0},position;
+    JOBOBJECT_EXTENDED_LIMIT_INFORMATION limits={0};FILETIME t[4];BOOL member=FALSE;
+    ULONGLONG now,birth;DWORD got,n;int i,j;WCHAR image[32768];
+    for(i=0;i<6;i++){if(!all[i]||all[i]==INVALID_HANDLE_VALUE)return 0;for(j=0;j<i;j++)if(all[i]==all[j])return 0;}
+    for(i=0;i<4;i++){
+        if(GetFileType(files[i])!=FILE_TYPE_DISK||!GetFileInformationByHandle(files[i],&info)||info.nNumberOfLinks!=1||
+           (info.dwFileAttributes&(FILE_ATTRIBUTE_REPARSE_POINT|FILE_ATTRIBUTE_DIRECTORY))||
+           !GetFileInformationByHandleEx(files[i],FileIdInfo,&ids[i],sizeof(ids[i])))return 0;
+        for(j=0;j<i;j++)if(ids[i].VolumeSerialNumber==ids[j].VolumeSerialNumber&&!memcmp(ids[i].FileId.Identifier,ids[j].FileId.Identifier,16))return 0;
+    }
+    if(!GetFileSizeEx(capsule,&size)||size.QuadPart!=EKA_CAPSULE_BYTES||
+       !SetFilePointerEx(capsule,zero,&position,FILE_CURRENT)||position.QuadPart!=0||
+       !ReadFile(capsule,&runtime_binding,EKA_CAPSULE_BYTES,&got,NULL)||got!=EKA_CAPSULE_BYTES||
+       !capsule_digest(&runtime_binding,EKA_CAPSULE_BYTES,expected))return 0;
+    if(memcmp(runtime_binding.magic,"EKACAP1",8)||runtime_binding.version!=EKA_CAPSULE_VERSION||
+       runtime_binding.bytes!=EKA_CAPSULE_BYTES||runtime_binding.mode!=3||runtime_binding.reserved||
+       !runtime_binding.owner_pid||runtime_binding.owner_pid>0xffffffffULL||!runtime_binding.owner_birth||
+       !runtime_binding.ledger_extent||runtime_binding.ledger_extent>80ULL*1024*1024||
+       !capsule_hex(runtime_binding.ledger_sha)||!capsule_hex(runtime_binding.registration_sha)||
+       !capsule_hex(runtime_binding.assignment_sha)||!capsule_hex(runtime_binding.manifest_sha)||
+       !capsule_hex(runtime_binding.guardian_sha)||!capsule_hex(runtime_binding.binding_sha))return 0;
+    now=GetTickCount64();
+    if(runtime_binding.global_end<=now||runtime_binding.global_end-now>120000||
+       runtime_binding.role_end<=now||runtime_binding.role_end-now>8000||runtime_binding.role_end>runtime_binding.global_end)return 0;
+    if(GetProcessId(owner)!=(DWORD)runtime_binding.owner_pid||WaitForSingleObject(owner,0)!=WAIT_TIMEOUT||
+       !GetProcessTimes(owner,&t[0],&t[1],&t[2],&t[3]))return 0;
+    birth=((ULONGLONG)t[0].dwHighDateTime<<32)|t[0].dwLowDateTime;
+    if(birth!=runtime_binding.owner_birth||!ledger_matches(ledger))return 0;
+    if(!IsProcessInJob(GetCurrentProcess(),root,&member)||!member||
+       !QueryInformationJobObject(root,JobObjectExtendedLimitInformation,&limits,sizeof(limits),NULL)||
+       limits.BasicLimitInformation.LimitFlags!=0x220c||limits.BasicLimitInformation.PerJobUserTimeLimit.QuadPart!=80000000||
+       limits.BasicLimitInformation.ActiveProcessLimit!=4||limits.JobMemoryLimit!=256ULL*1024*1024||limits.ProcessMemoryLimit)return 0;
+    n=GetModuleFileNameW(NULL,image,32768);if(!n||n>=32768)return 0;
+    *image_pin=pinned(image,runtime_binding.guardian_sha);if(!*image_pin)return 0;
+    return 1; /* Image pin remains retained through child creation and closure. */
+}
+
+/* Only fixed bounded identity frames qualify the descendant; Job enumeration
+ * order and a CreateProcess return are not evidence of child-code readiness. */
+static int tree_identity(const char *line,const char *prefix,DWORD *pid,ULONGLONG *birth){
+    size_t len=strlen(prefix);char *end,*tail;unsigned long p;ULONGLONG b;
+    if(strncmp(line,prefix,len))return 0;
+    if(line[len]<'0'||line[len]>'9')return -1;
+    errno=0;p=strtoul(line+len,&end,10);if(errno||!p||*end!=' '||end[1]<'0'||end[1]>'9')return -1;
+    errno=0;b=_strtoui64(end+1,&tail,10);if(errno||!b||*tail)return -1;
+    *pid=(DWORD)p;*birth=b;return 1;
+}
+
+int wmain(int argc,WCHAR **argv){
+    HANDLE capsule=NULL,image_pin=NULL,tree_gate=NULL,watchdog_dll=NULL,raw=NULL,record=NULL,readout=NULL,writeout=NULL,nul=NULL,watch=NULL,python=NULL,program=NULL,owner=NULL,root=NULL,jobs[2];
+    PROCESS_INFORMATION pi={0};STARTUPINFOEXW sx={0};SIZE_T attrn=0;BOOL attr_ready=FALSE;
+    SECURITY_ATTRIBUTES sa={sizeof(sa),NULL,TRUE};HANDLE inherited[3];WCHAR command[4096];
+    JOBOBJECT_EXTENDED_LIMIT_INFORMATION lim={0},observed={0};JOBOBJECT_BASIC_ACCOUNTING_INFORMATION usage={0};
+    FILETIME times[4];DWORD code=125,available=0,n=0,written=0,desc_pid=0;UCHAR buffer[16384];HANDLE desc=NULL;ULONGLONG desc_birth=0;
+    ULONGLONG received=0,retained=0,birth=0,began=GetTickCount64(),close_end;
+    int cleanup_errors[32]={0},cleanup_count=0;int mode,reason=0,eof=0,overflow=0,error=0,leaked=0;char result[2048],cleanup_raw[256];int result_n,cleanup_offset,cleanup_i;
+    char tree_line[160];DWORD tree_used=0,tree_parent_pid=0,tree_self_pid=0;
+    ULONGLONG tree_parent_birth=0,tree_self_birth=0;
+    /* Native qualification requires a separately reviewed source/release change. */
+    if(EKA_CAPSULE_SOURCE_ONLY)return 125;
+    if(argc!=12)return 125;
+    mode=_wtoi(argv[1]);raw=(HANDLE)(uintptr_t)_wcstoui64(argv[2],NULL,10);
+    record=(HANDLE)(uintptr_t)_wcstoui64(argv[3],NULL,10);absolute_end=_wcstoui64(argv[4],NULL,10);
+    if(mode!=3||absolute_end<=began||absolute_end-began>8000||wcscmp(argv[5],L"EKA-SYNTHETIC-ONLY-v1"))return 125;
+    /* Native independent watchdog includes source checks, creation and drain. */
+    done_event=CreateEventW(NULL,TRUE,FALSE,NULL);if(!done_event)return 125;
+    watch=CreateThread(NULL,0,watchdog,NULL,0,NULL);if(!watch){CloseHandle(done_event);return 125;}
+    capsule=(HANDLE)(uintptr_t)_wcstoui64(argv[10],NULL,10);
+    owner=(HANDLE)(uintptr_t)_wcstoui64(argv[7],NULL,10);root=(HANDLE)(uintptr_t)_wcstoui64(argv[9],NULL,10);
+    if(!capsule_read(capsule,argv[11],owner,root,(HANDLE)(uintptr_t)_wcstoui64(argv[6],NULL,10),raw,record,&image_pin)||
+       absolute_end!=runtime_binding.role_end||!wide_hash(argv[8],runtime_binding.registration_sha)||!EKA_RUNTIME_REGISTRY_ROOT[0]){error=45;goto close;}
+    {FILETIME t[4];ULONGLONG b;BOOL member=FALSE;owner=(HANDLE)(uintptr_t)_wcstoui64(argv[7],NULL,10);root=(HANDLE)(uintptr_t)_wcstoui64(argv[9],NULL,10);
+     if(!IsProcessInJob(GetCurrentProcess(),root,&member)||!member){error=29;goto close;}
+     if(GetProcessId(owner)!=runtime_binding.owner_pid||WaitForSingleObject(owner,0)!=WAIT_TIMEOUT||
+        !GetProcessTimes(owner,&t[0],&t[1],&t[2],&t[3])){error=24;goto close;}
+     b=((ULONGLONG)t[0].dwHighDateTime<<32)|t[0].dwLowDateTime;
+     if(b!=runtime_binding.owner_birth||!ledger_matches((HANDLE)(uintptr_t)_wcstoui64(argv[6],NULL,10))){error=25;goto close;}}
+    {WCHAR marker[2048],assignment[65];HANDLE f;DWORD used;char line[96];int count,i;
+     for(i=0;i<65;i++)assignment[i]=(WCHAR)(unsigned char)runtime_binding.assignment_sha[i];
+     if(swprintf_s(marker,2048,L"%ls\\assignment-%ls.consumed",EKA_RUNTIME_REGISTRY_ROOT,assignment)<0){error=26;goto close;}
+     f=CreateFileW(marker,GENERIC_WRITE,0,NULL,CREATE_NEW,FILE_ATTRIBUTE_NORMAL,NULL);
+     if(f==INVALID_HANDLE_VALUE){error=27;goto close;}
+     count=sprintf_s(line,sizeof(line),"%lu %llu %d",GetCurrentProcessId(),began,mode);
+     if(count<0||!WriteFile(f,line,(DWORD)count,&used,NULL)||used!=(DWORD)count||!FlushFileBuffers(f)){CloseHandle(f);error=28;goto close;}
+     CloseHandle(f);}
+    python=pinned(EKA_PYTHON,EKA_PYTHON_SHA);program=pinned(EKA_PROGRAM,EKA_PROGRAM_SHA);watchdog_dll=pinned(EKA_OWNER_DLL,EKA_OWNER_DLL_SHA);
+    if(!python||!program||!watchdog_dll){error=1;goto close;}
+    child_job=CreateJobObjectW(NULL,NULL);if(!child_job){error=2;goto close;}
+    lim.BasicLimitInformation.LimitFlags=JOB_OBJECT_LIMIT_JOB_TIME|JOB_OBJECT_LIMIT_ACTIVE_PROCESS|
+        JOB_OBJECT_LIMIT_JOB_MEMORY|JOB_OBJECT_LIMIT_PROCESS_MEMORY|JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE;
+    lim.BasicLimitInformation.PerJobUserTimeLimit.QuadPart=10000000; /* 1 user CPU second */
+    lim.BasicLimitInformation.ActiveProcessLimit=mode==6?2:1;
+    lim.ProcessMemoryLimit=64ULL*1024*1024;lim.JobMemoryLimit=128ULL*1024*1024;
+    if(!SetInformationJobObject(child_job,JobObjectExtendedLimitInformation,&lim,sizeof(lim))||
+       !QueryInformationJobObject(child_job,JobObjectExtendedLimitInformation,&observed,sizeof(observed),NULL)||
+       observed.BasicLimitInformation.LimitFlags!=lim.BasicLimitInformation.LimitFlags||
+       observed.BasicLimitInformation.PerJobUserTimeLimit.QuadPart!=lim.BasicLimitInformation.PerJobUserTimeLimit.QuadPart||
+       observed.BasicLimitInformation.ActiveProcessLimit!=lim.BasicLimitInformation.ActiveProcessLimit||
+       observed.ProcessMemoryLimit!=lim.ProcessMemoryLimit||observed.JobMemoryLimit!=lim.JobMemoryLimit){error=3;goto close;}
+    {DWORD action=JOB_OBJECT_TERMINATE_AT_END_OF_JOB;if(!SetInformationJobObject(child_job,JobObjectEndOfJobTimeInformation,&action,sizeof(action))){error=4;goto close;}}
+    if(!CreatePipe(&readout,&writeout,&sa,0)||!SetHandleInformation(readout,HANDLE_FLAG_INHERIT,0)){error=5;goto close;}
+    nul=CreateFileW(L"NUL",GENERIC_READ,FILE_SHARE_READ|FILE_SHARE_WRITE,&sa,OPEN_EXISTING,0,NULL);
+    if(nul==INVALID_HANDLE_VALUE){nul=NULL;error=6;goto close;}
+    sx.StartupInfo.cb=sizeof(sx);sx.StartupInfo.dwFlags=STARTF_USESTDHANDLES;
+    sx.StartupInfo.hStdInput=nul;sx.StartupInfo.hStdOutput=sx.StartupInfo.hStdError=writeout;
+    InitializeProcThreadAttributeList(NULL,2,0,&attrn);sx.lpAttributeList=malloc(attrn);
+    if(!sx.lpAttributeList||!InitializeProcThreadAttributeList(sx.lpAttributeList,2,0,&attrn)){error=7;goto close;}attr_ready=TRUE;
+    inherited[0]=nul;inherited[1]=writeout;
+    if(mode==6){tree_gate=CreateEventW(&sa,TRUE,FALSE,NULL);if(!tree_gate){error=35;goto close;}inherited[2]=tree_gate;}
+    jobs[0]=root;jobs[1]=child_job;
+    if(!UpdateProcThreadAttribute(sx.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_JOB_LIST,jobs,sizeof(jobs),NULL,NULL)||
+       !UpdateProcThreadAttribute(sx.lpAttributeList,0,PROC_THREAD_ATTRIBUTE_HANDLE_LIST,inherited,(mode==6?3:2)*sizeof(HANDLE),NULL,NULL)){error=8;goto close;}
+    if(swprintf_s(command,4096,L"\"%ls\" -I -S -B \"%ls\" %d \"%ls\" %llu",mode==1?L"Z:\\EKA-NONEXISTENT\\refused.exe":EKA_PYTHON,EKA_PROGRAM,mode,EKA_OWNER_DLL,(ULONGLONG)(uintptr_t)tree_gate)<0){error=9;goto close;}
+    /* All descendants inherit both root Job and this private Job; no breakaway. */
+    if(!CreateProcessW(NULL,command,NULL,NULL,TRUE,EXTENDED_STARTUPINFO_PRESENT|CREATE_SUSPENDED|CREATE_NO_WINDOW,
+                       NULL,NULL,&sx.StartupInfo,&pi)){error=10;goto close;}
+    if(!GetProcessTimes(pi.hProcess,&times[0],&times[1],&times[2],&times[3])){error=11;goto close;}
+    birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
+    {BOOL member=FALSE;if(!IsProcessInJob(pi.hProcess,child_job,&member)||!member){error=12;goto close;}}
+    {char start_record[256];int count=sprintf_s(start_record,sizeof(start_record),"{\"schema\":\"EKA-NATIVE-CHILD-START-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"suspended\":true}\n",pi.dwProcessId,birth);
+     if(count<0||!WriteFile(record,start_record,(DWORD)count,&written,NULL)||written!=(DWORD)count||!FlushFileBuffers(record)){error=30;goto close;}}
+    if(GetTickCount64()>=absolute_end-3000||ResumeThread(pi.hThread)!=1){error=13;goto close;}
+    CloseHandle(pi.hThread);pi.hThread=NULL;CloseHandle(writeout);writeout=NULL;
+    if(mode==7)Sleep(20000); /* explicit blocked-guardian watchdog fixture */
+    for(;;){
+        BOOL alive=WaitForSingleObject(pi.hProcess,0)==WAIT_TIMEOUT;
+        if(WaitForSingleObject(owner,0)!=WAIT_TIMEOUT){reason=4;TerminateJobObject(child_job,124);}
+        if(GetTickCount64()>=absolute_end-3000){reason=1;TerminateJobObject(child_job,124);}
+        if(!PeekNamedPipe(readout,NULL,0,NULL,&available,NULL)){
+            if(GetLastError()==ERROR_BROKEN_PIPE){eof=1;break;}error=14;break;}
+        if(available){DWORD count=available>sizeof(buffer)?(DWORD)sizeof(buffer):available;
+            if(!ReadFile(readout,buffer,count,&n,NULL)){error=15;break;}received+=n;
+            count=(DWORD)((65536-retained)<n?(65536-retained):n);
+            if(count&&(!WriteFile(raw,buffer,count,&written,NULL)||written!=count)){error=16;break;}retained+=count;
+            if(mode==6){DWORD cursor;
+                for(cursor=0;cursor<n;cursor++){
+                    if(buffer[cursor]=='\n'){
+                        DWORD p=0;ULONGLONG b=0;int parent_frame,self_frame;
+                        tree_line[tree_used]=0;tree_used=0;
+                        parent_frame=tree_identity(tree_line,"EKA_DESCENDANT_CREATED ",&p,&b);
+                        if(parent_frame<0||(parent_frame&&tree_parent_pid)){error=37;break;}
+                        if(parent_frame){tree_parent_pid=p;tree_parent_birth=b;}
+                        self_frame=tree_identity(tree_line,"EKA_DESCENDANT_SELF ",&p,&b);
+                        if(self_frame<0||(self_frame&&tree_self_pid)){error=37;break;}
+                        if(self_frame){tree_self_pid=p;tree_self_birth=b;}
+                        if(!desc&&tree_parent_pid&&tree_self_pid){
+                            BOOL private_member=FALSE,root_member=FALSE;char witness[512];int length;ULONGLONG bound_tick;
+                            if(tree_parent_pid!=tree_self_pid||tree_parent_birth!=tree_self_birth||tree_parent_pid==pi.dwProcessId){error=38;break;}
+                            desc_pid=tree_parent_pid;desc=OpenProcess(SYNCHRONIZE|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,desc_pid);
+                            if(!desc||GetProcessId(desc)!=desc_pid||!GetProcessTimes(desc,&times[0],&times[1],&times[2],&times[3])){error=32;break;}
+                            desc_birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
+                            if(desc_birth!=tree_parent_birth||WaitForSingleObject(desc,0)!=WAIT_TIMEOUT||
+                               !IsProcessInJob(desc,child_job,&private_member)||!private_member||
+                               !IsProcessInJob(desc,root,&root_member)||!root_member||WaitForSingleObject(desc,0)!=WAIT_TIMEOUT){error=39;break;}
+                            bound_tick=GetTickCount64();
+                            length=sprintf_s(witness,sizeof(witness),"{\"schema\":\"EKA-DESCENDANT-BOUND-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"live\":true,\"private_job\":true,\"root_job\":true,\"self_ready\":true,\"tick\":%llu}\n",desc_pid,desc_birth,bound_tick);
+                            if(length<0||!WriteFile(record,witness,(DWORD)length,&written,NULL)||written!=(DWORD)length||!FlushFileBuffers(record)){error=40;break;}
+                            /* Durable IO may block: the earlier live/deadline
+                             * observations cannot authorize a later release. */
+                            if(GetTickCount64()>=absolute_end-3000||WaitForSingleObject(owner,0)!=WAIT_TIMEOUT||
+                               WaitForSingleObject(desc,0)!=WAIT_TIMEOUT||
+                               !IsProcessInJob(desc,child_job,&private_member)||!private_member||
+                               !IsProcessInJob(desc,root,&root_member)||!root_member){error=42;break;}
+                            if(!SetEvent(tree_gate)){error=36;break;}
+                            length=sprintf_s(witness,sizeof(witness),"{\"schema\":\"EKA-DESCENDANT-GATE-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"tick\":%llu}\n",desc_pid,desc_birth,GetTickCount64());
+                            if(length<0||!WriteFile(record,witness,(DWORD)length,&written,NULL)||written!=(DWORD)length||!FlushFileBuffers(record)){error=41;break;}
+                        }
+                    }else{
+                        if(buffer[cursor]==0||tree_used>=sizeof(tree_line)-1){error=37;break;}
+                        tree_line[tree_used++]=(char)buffer[cursor];
+                    }
+                }
+                if(error)break;
+            }
+            if(received>65536){overflow=1;reason=2;TerminateJobObject(child_job,124);}
+        }else if(!alive){
+            if(!QueryInformationJobObject(child_job,JobObjectBasicAccountingInformation,&usage,sizeof(usage),NULL)){error=17;break;}
+            if(usage.ActiveProcesses){leaked=1;reason=3;TerminateJobObject(child_job,125);}
+        }
+        Sleep(1);
+    }
+close:
+    {int primary_error=error;
+    BOOL cpu_valid=FALSE,leader_signaled=FALSE,leader_root=FALSE,leader_private=FALSE;FILETIME final_times[4]={{0}};
+    if(child_job&&!TerminateJobObject(child_job,125)){cleanup_errors[cleanup_count++]=43;if(!error)error=43;}
+    close_end=GetTickCount64()+2500;if(close_end>absolute_end)close_end=absolute_end;
+    if(child_job){do{if(!QueryInformationJobObject(child_job,JobObjectBasicAccountingInformation,&usage,sizeof(usage),NULL)){cleanup_errors[cleanup_count++]=18;if(!error)error=18;break;}
+        if(!usage.ActiveProcesses)break;Sleep(1);}while(GetTickCount64()<close_end);
+        if(usage.ActiveProcesses){cleanup_errors[cleanup_count++]=19;if(!error)error=19;}
+        cpu_valid=!usage.ActiveProcesses&&cleanup_count==0;
+        if(!QueryInformationJobObject(child_job,JobObjectExtendedLimitInformation,&observed,sizeof(observed),NULL)){cleanup_errors[cleanup_count++]=20;if(!error)error=20;}}
+    if(pi.hProcess){if(WaitForSingleObject(pi.hProcess,0)!=WAIT_OBJECT_0){cleanup_errors[cleanup_count++]=21;if(!error)error=21;}GetExitCodeProcess(pi.hProcess,&code);}
+    if(pi.hProcess){
+        ULONGLONG actual_birth;
+        leader_signaled=WaitForSingleObject(pi.hProcess,0)==WAIT_OBJECT_0;
+        if(!leader_signaled||GetProcessId(pi.hProcess)!=pi.dwProcessId||
+           !GetProcessTimes(pi.hProcess,&final_times[0],&final_times[1],&final_times[2],&final_times[3])||
+           !IsProcessInJob(pi.hProcess,root,&leader_root)||!leader_root||
+           !IsProcessInJob(pi.hProcess,child_job,&leader_private)||!leader_private){cpu_valid=FALSE;}
+        actual_birth=((ULONGLONG)final_times[0].dwHighDateTime<<32)|final_times[0].dwLowDateTime;
+        if(actual_birth!=birth)cpu_valid=FALSE;
+    }else cpu_valid=FALSE;
+    if(desc&&WaitForSingleObject(desc,0)!=WAIT_OBJECT_0){cleanup_errors[cleanup_count++]=33;if(!error)error=33;}
+    if(writeout){CloseHandle(writeout);writeout=NULL;}
+    if(!FlushFileBuffers(raw)){cleanup_errors[cleanup_count++]=22;if(!error)error=22;}
+    if(image_pin){if(!CloseHandle(image_pin)){cleanup_errors[cleanup_count++]=46;if(!error)error=46;}image_pin=NULL;}
+    if(capsule){if(!CloseHandle(capsule)){cleanup_errors[cleanup_count++]=47;if(!error)error=47;}capsule=NULL;}
+    if(primary_error)error=primary_error;
+    {char cpu_record[1024];int count=sprintf_s(cpu_record,sizeof(cpu_record),"{\"schema\":\"EKA-PRIVATE-CPU-FINAL-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"closed\":%s,\"total_processes\":%lu,\"active_processes\":%lu,\"user_ticks\":%llu,\"kernel_ticks\":%llu,\"leader_user_ticks\":%llu,\"leader_kernel_ticks\":%llu,\"leader_signaled\":%s,\"leader_root_member\":%s,\"leader_private_member\":%s}\n",pi.dwProcessId,birth,cpu_valid?"true":"false",usage.TotalProcesses,usage.ActiveProcesses,(ULONGLONG)usage.TotalUserTime.QuadPart,(ULONGLONG)usage.TotalKernelTime.QuadPart,((ULONGLONG)final_times[3].dwHighDateTime<<32)|final_times[3].dwLowDateTime,((ULONGLONG)final_times[2].dwHighDateTime<<32)|final_times[2].dwLowDateTime,leader_signaled?"true":"false",leader_root?"true":"false",leader_private?"true":"false");
+     if(count<0||!WriteFile(record,cpu_record,(DWORD)count,&written,NULL)||written!=(DWORD)count||!FlushFileBuffers(record)){if(!error)error=44;}}
+    cleanup_raw[0]='[';cleanup_offset=1;for(cleanup_i=0;cleanup_i<cleanup_count;cleanup_i++)cleanup_offset+=sprintf_s(cleanup_raw+cleanup_offset,sizeof(cleanup_raw)-cleanup_offset,"%s%d",cleanup_i?",":"",cleanup_errors[cleanup_i]);sprintf_s(cleanup_raw+cleanup_offset,sizeof(cleanup_raw)-cleanup_offset,"]");
+    result_n=sprintf_s(result,sizeof(result),"{\"schema\":\"EKA-SYNTHETIC-NATIVE-v1\",\"mode\":%d,\"pid\":%lu,\"birth\":\"%llu\",\"exit_code\":%lu,\"error\":%d,\"cleanup_count\":%d,\"first_cleanup\":%d,\"cleanup\":%s,\"reason\":%d,\"eof\":%s,\"overflow\":%s,\"observed_descendant\":%s,\"desc_pid\":%lu,\"desc_birth\":\"%llu\",\"desc_signaled\":%s,\"received\":%llu,\"retained\":%llu,\"user_cpu_ticks\":%llu,\"peak_job_memory\":%llu,\"process_memory_cap\":%llu,\"job_memory_cap\":%llu,\"process_cap\":%lu,\"started_processes\":%lu,\"active\":%lu,\"elapsed_ms\":%llu}",mode,pi.dwProcessId,birth,code,error,cleanup_count,cleanup_count?cleanup_errors[0]:0,cleanup_raw,reason,eof?"true":"false",overflow?"true":"false",leaked?"true":"false",desc_pid,desc_birth,desc&&WaitForSingleObject(desc,0)==WAIT_OBJECT_0?"true":"false",received,retained,(ULONGLONG)usage.TotalUserTime.QuadPart,(ULONGLONG)observed.PeakJobMemoryUsed,(ULONGLONG)observed.ProcessMemoryLimit,(ULONGLONG)observed.JobMemoryLimit,observed.BasicLimitInformation.ActiveProcessLimit,usage.TotalProcesses,usage.ActiveProcesses,GetTickCount64()-began);
+    if(result_n<0||!WriteFile(record,result,(DWORD)result_n,&written,NULL)||written!=(DWORD)result_n||!FlushFileBuffers(record)){if(!error)error=23;}
+    if(pi.hThread)CloseHandle(pi.hThread);if(pi.hProcess)CloseHandle(pi.hProcess);if(desc)CloseHandle(desc);
+    if(readout)CloseHandle(readout);if(nul)CloseHandle(nul);if(tree_gate)CloseHandle(tree_gate);if(child_job){CloseHandle(child_job);child_job=NULL;}
+    if(watchdog_dll)CloseHandle(watchdog_dll);if(python)CloseHandle(python);if(program)CloseHandle(program);
+    if(attr_ready)DeleteProcThreadAttributeList(sx.lpAttributeList);free(sx.lpAttributeList);
+    SetEvent(done_event);WaitForSingleObject(watch,1000);CloseHandle(watch);CloseHandle(done_event);
+    return error?125:0;}
+}

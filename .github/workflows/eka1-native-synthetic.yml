@@ -1,0 +1,78 @@
+name: EKA exact-source offline gates and held native qualification
+on:
+  push:
+    branches: ['review/eka1-delayed-assay-contract-20261023']
+  workflow_dispatch:
+    inputs:
+      native_qualification:
+        description: 'Fresh separately authorized synthetic qualification; never a retry of sealed attempt1'
+        type: boolean
+        required: true
+        default: false
+permissions:
+  contents: read
+jobs:
+  offline-gates-native-held:
+    runs-on: windows-2022
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+      - name: Verify exact head and interpreter
+        shell: pwsh
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          if ($env:EXPECTED_SHA -notmatch '\A[0-9a-f]{40}\z') { throw 'Invalid exact SHA' }
+          if ((git rev-parse HEAD) -ne $env:EXPECTED_SHA) { throw 'Source differs' }
+          python -I -B -c "import sys; assert sys.version_info[:3] == (3,12,10); print(sys.executable,sys.version)"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -I -S -B -c "import sys,os; from pathlib import Path; sys.path.insert(0,str(Path.cwd())); from tools.eka1_native_probe import custody,save,sha; p=Path('runs/eka1-offline-custody'); p.mkdir(parents=True); save(p/'custody.json',dict(head=os.environ['EXPECTED_SHA'],version=sys.version,files=custody(),workflow_sha256=sha(Path('.github/workflows/eka1-native-synthetic.yml').read_bytes()),scope='OFFLINE_ONLY_NOT_NATIVE_QUALIFICATION')); print(sha((p/'custody.json').read_bytes()))"
+      - name: Focused offline regression and refusal checks only
+        shell: pwsh
+        run: |
+          python -B -m unittest discover -s tests -p test_eka1_first_failure_custody.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_native_owner_candidate.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_reservation_source_integrity.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_native_probe_contract.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_cpu_accounting.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_cpu_grant_transport.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_prebuilt_cpu_artifact.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_runtime_capsule.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_external_settlement.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_build_only_contract.py -v
+          exit $LASTEXITCODE
+      - name: Preserve exact offline interpreter and source custody
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eka1-offline-custody-${{ github.sha }}
+          path: runs/eka1-offline-custody/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Native entry held pending separate immutable CPU assignment authorization
+        if: github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
+        shell: pwsh
+        run: python -I -S -B tools/eka1_native_probe.py runs/eka1-native-synthetic
+      - name: Preserve every partial receipt on success or failure
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.native_qualification == true
+        uses: actions/upload-artifact@v4
+        with:
+          name: eka1-synthetic-${{ github.sha }}
+          path: runs/eka1-native-synthetic/
+          if-no-files-found: error
+          retention-days: 30

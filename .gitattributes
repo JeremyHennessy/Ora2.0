@@ -38,3 +38,98 @@ tests/test_eka1_intervention_envelope.py -text
 data/eka1-intervention-envelope-validation-20261023.json -text
 data/eka1-intervention-envelope-final-validation-20261023.json -text
 data/eka1-intervention-envelope-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Frozen rejected causal candidate; retained source-only decision.
+data/eka1-delayed-assay-contract-20261023.json -text
+data/eka1-delayed-assay-source-validation-20261023.json -text
+data/eka1-delayed-assay-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Own-signal method proposal and source-only conditional certificate.
+data/eka1-own-signal-contrast-proposal-20261023.json -text
+data/eka1-own-signal-source-validation-20261023.json -text
+data/eka1-own-signal-contrast-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Source-only feedback cost and authority qualification.
+data/eka1-feedback-qualification-contract-20261023.json -text
+data/eka1-feedback-offline-validation-20261023.json -text
+tools/eka1_feedback_cost_preflight.py -text
+tests/test_eka1_feedback_cost_preflight.py -text
+data/eka1-feedback-final-validation-20261023.json -text
+data/eka1-feedback-qualification-independent-review-20261023.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Offline feedback adapter only.
+tools/eka1_feedback_adapter.py -text
+tests/test_eka1_feedback_adapter.py -text
+data/eka1-feedback-adapter-qualification-20261024.json -text
+data/eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-feedback-adapter-independent-review-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/eka1-feedback-adapter-qualification-20261024.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Prospective whole-World metadata/algebra only.
+tools/eka1_prospective_opportunity.py -text
+tests/test_eka1_prospective_opportunity.py -text
+data/eka1-prospective-world-opportunity-20261024.json -text
+experiments/digital_eka1_paid_read_source_v1.py -text
+tests/test_eka1_paid_read_source_shape_v1.py -text
+data/eka1-world-opportunity-validation-20261024.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/ora-eka1-world-opportunity-independent-*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md -text
+
+# New derived-reconstruction roster preserves existing reviewed raw bytes.
+experiments/__init__.py -text
+experiments/digital_informative_exposure23_interpret.py -text
+experiments/digital_mobile54.py -text
+experiments/digital_pressure71_population.py -text
+experiments/digital_sharedlineage68_population.py -text
+tools/eka1_native_qualification_plan.py -text
+tests/test_eka1_native_qualification_plan_metadata.py -text
+data/eka1-native-authentication-qualification-plan-20261026.json -text
+data/eka1-native-authentication-preparation-check-20261026.json -text
+docs/EKA-1-NATIVE-AUTHENTICATION-QUALIFICATION-PLAN-20261026.md -text
+tools/eka1_cumulative_reservations.py -text
+tests/test_eka1_cumulative_reservations.py -text
+docs/EKA-1-CUMULATIVE-RESERVATIONS-v1.md -text
+tests/test_eka1_replay_budget_hooks.py -text
+docs/EKA-1-REPLAY-BUDGET-HOOKS-v1.md -text
+experiments/digital_eka1_derived_reconstruction_v1.py -text
+experiments/digital_eka1_selection_replay_v1.py -text
+tests/test_eka1_reservation_source_integrity.py -text
+tools/eka1_owner_binding_preflight.py -text
+tests/test_eka1_owner_binding_preflight.py -text
+data/eka1-owner-binding-preflight-v1.json -text
+docs/EKA-1-OWNER-BINDING-PREFLIGHT-v1.md -text
+
+tools/eka1_native_owner_candidate.py -text
+tests/test_eka1_native_owner_candidate.py -text
+
+data/eka1-native-owner-candidate-review-20261030.json -text
+tests/test_eka1_first_failure_custody.py -text
+docs/EKA-1-FIRST-FAILURE-CUSTODY-v1.md -text
+
+experiments/native/eka1_probe_guardian.c -text
+
+experiments/native/eka1_probe_owner_watchdog.c -text
+
+tools/eka1_native_probe.py -text
+
+tools/eka1_probe_child.py -text
+
+tests/test_eka1_native_probe_contract.py -text
+
+.github/workflows/eka1-native-synthetic.yml -text
+data/eka1-synthetic-native-integration-evidence-20261030.json -text
+tools/eka1_cpu_accounting.py -text
+tests/test_eka1_cpu_accounting.py -text
+tools/eka1_cpu_grant_transport.py -text
+tests/test_eka1_cpu_grant_transport.py -text
+tools/eka1_prebuilt_cpu_artifact.py -text
+tests/test_eka1_prebuilt_cpu_artifact.py -text
+tools/eka1_runtime_capsule.py -text
+experiments/native/eka1_runtime_capsule.h -text
+tools/eka1_external_settlement.py -text
+tests/test_eka1_runtime_capsule.py -text
+tests/test_eka1_external_settlement.py -text
+tools/eka1_build_only_contract.py -text
+tests/test_eka1_build_only_contract.py -text
+data/eka1-native-build-decision-20261030.json -text
+data/eka1-build-only-single-build-preflight-20261030.json -text

@@ -1,0 +1,62 @@
+{
+  "schema": "EKA-NATIVE-BUILD-DECISION-v1",
+  "reviewed_checkpoint": "bf50d42f0e208dbfee5c364a563889deb3adc95a",
+  "decision": "NO_EXISTING_PATH_DEMONSTRATES_STRICT_ALL_ATTEMPT_CONTRACT",
+  "native_execution": "NO_GO",
+  "executable_code_changed": false,
+  "leaf_assessment": {
+    "existing_closed_MSVC": "FAIL_PROOF_OBLIGATION: direct paths remove setup scripts, not opaque failed/rejected helper attempts",
+    "auditable_Clang_cc1_and_lld": "POSSIBLE_IN_PRINCIPLE_UNQUALIFIED: direct cc1 dispatch is not a transitive no-process proof; pinned lld contains conditional mt.exe execution",
+    "llvm_release": "llvmorg-20.1.8",
+    "llvm_commit": "87f0227cb60147a26a1eeb4fb06e3b505e9c7261",
+    "scope": "Five selected raw source witnesses independently fetched and SHA256 checked, not a complete dependency/loaded-binary audit",
+    "witnesses": [
+      {"path":"clang/tools/driver/driver.cpp","sha256":"03f4671d92b52ad7701ab678bde4c785d7c7b3acc8c9d32e96aa56534645b698","finding":"Direct -cc1 dispatch at line259; driver modes are not automatically leaf modes"},
+      {"path":"clang/tools/driver/cc1_main.cpp","sha256":"7681a3ed0cdbb8e123d5ff6256a260d3579960b89f9825135bfa8f8b060a3b1f","finding":"ExecuteCompilerInvocation line290 requires transitive audit"},
+      {"path":"lld/COFF/DriverUtils.cpp","sha256":"6dcd9f6a8afc07008dbc6716ac62e7a502a1a29ab77e3447393c99d24a358da4","finding":"ExecuteAndWait line70; conditional external mt.exe route line479. Disabling this one route alone is not a complete leaf proof"},
+      {"path":"lld/COFF/Driver.cpp","sha256":"b19c686be5498972bce67be71a4545a185168fb46bb06a8190dde7a08b0dfb96","finding":"Driver configuration is part of the audit closure"},
+      {"path":"llvm/lib/Support/Windows/Program.inc","sha256":"d36c6c692b7e80fd7f3e1d9e8a787d944cfa6ec1910d118447bf1b647f1a1697","finding":"CreateProcessW line293 under generic execution support; reachability must be excluded or mediated, not inferred absent from successful observations"}
+    ],
+    "provenance_gap": "No qualified immutable installed LLVM executable, bootstrap chain, SDK/runtime/header/library closure or configured leaf binary established; pinned source alone is insufficient"
+  },
+  "broker_assessment": {
+    "supported_Windows_callbacks": "FAIL_STRICT_PROOF: notify/veto before user execution does not cover every failed API attempt before creation effects",
+    "documented_timing": "PsSetCreateProcessNotifyRoutineEx2 documents notification after first thread creation and possible deletion-only notification without a creation notification",
+    "user_mode_hook_or_wrapper": "No enforceable complete mediation of unmodified opaque tool code or alternate native entrypoints demonstrated",
+    "child_process_restriction": "Successful-child restriction is not attempted-birth accounting; documented privileged-handle bypass must also be excluded by a qualified sandbox",
+    "kernel_broker": "A signed installed driver adds system custody and cost; documented callbacks still do not supply the missing earliest all-attempt hook. No driver or unsupported hook proposed"
+  },
+  "selected_path": "PROPOSE_ONE_BUILD_ONLY_ACCOUNTING_AMENDMENT_FOR_SEPARATE_APPROVAL; DO_NOT_IMPLEMENT_SPECULATIVE_BROKER",
+  "alternative_contract": {
+    "name": "EKA-BUILD-ONLY-METERED-RELEASE-v1",
+    "status": "PROPOSED_NOT_APPROVED_NOT_IMPLEMENTED_NOT_AUTHORITY",
+    "scope": "One prospective finite immutable guardian/watchdog release build, separate from every diagnostic and scientific assignment; no generated executable is run by the build assignment",
+    "explicit_change_requiring_approval": "For this external build scope ONLY, waive exact per-attempt unit birth debits for opaque nested tool attempts. Retain their count as UNKNOWN. Replace that charge with declared metered process/Job resource scopes. This does not satisfy or silently reinterpret the old strict contract",
+    "controlled_attempts": "Original supervisor predebits every enumerated top-level launch before calling the OS, including failed/rejected starts and observer/cleanup helpers. Exact catalogue and physical ledger frozen prospectively; no retry, replacement or refund",
+    "opaque_attempts": "Nested failed/rejected count remains UNKNOWN, never zero or an inferred bound. Record actual observed successful births separately; active-process limit is not cumulative count",
+    "immutable_manifest": "Freeze exact source/header, absolute compiler/linker paths and binary identities, SDK/includes/libraries, runtime dependency closure, arguments, environment, original owner birth, physical ledger, assignment, start/deadline, observer and output/archive inventory. No cmd/vcvars, implicit environment discovery, unpinned service or external build daemon",
+    "limits": "Prospective manifest must explicitly preserve applicable existing numerical limits and failure criteria. Historical configured build limits are observations, not inherited authority. No unspecified numeric limit or nondeterministic overshoot margin is admitted",
+    "containment": "Separately qualified root Job assignment before first instruction, no breakaway, actual membership/limits readback, restricted owned handles and exact PID/creation custody. No claim that these controls count every attempt",
+    "billing": "One final disjoint root Job lifetime USER+KERNEL sample after complete tree closure; no added nested/private CPU. Capture peak memory, observed cumulative successful births, wall/output/storage and every failed-start result. Missing samples, inconsistent epochs, overrun, incomplete closure or archive are terminal with unresolved debt",
+    "external_costs": "Original owner, observers, broker if any, watchdog shutdown, restoration/hash/completion/archive/final verifier write and registry storage need explicit disjoint scopes. Job CPU covers only attributed process/Job CPU, not all system/service/kernel allocations. Unattributed costs remain unresolved under their declared scope, never zero",
+    "artifact_custody": "Retain complete output and failure evidence; independently verify source-to-binary provenance, immutable image identity and restored bytes. Matching metadata or a supplied hash is not execution authority",
+    "settlement": "Retain existing external settlement requirements; no final writer self-certification, circular accounting or forgiveness of historical debt",
+    "runtime_and_science": "Existing capsule, immutable owner/assignment/ledger/deadline transport, scientific per-attempt accounting, private USER1second threshold, all other limits and native/scientific NO_GO remain unchanged",
+    "gates": [
+      "Independent exact contract review and explicit human approval of this build-only accounting deviation",
+      "Minimal implementation plus source review and separate qualification of declared custody/containment/measurement/archive scopes",
+      "Explicit human authorization tied to one fresh fully specified immutable finite build assignment; no automatic execution on contract approval",
+      "Independent build outcome and binary-custody acceptance before any separate diagnostic authorization"
+    ]
+  },
+  "next_action": "Human decision on this exact build-only accounting amendment; if declined, retain strict NO_GO and require a complete qualified leaf call/dependency audit. Neither option authorizes a build now",
+  "preserved": {"sealed_assignments":4,"consumed_reservations":144,"historical_failures":true,"v10_Observatory_scientific_laws":"UNMODIFIED"},
+  "new_native_builds_diagnostics_Worlds_populations": 0,
+  "primary_sources": [
+    "https://clang.llvm.org/docs/Toolchain.html",
+    "https://github.com/llvm/llvm-project/tree/87f0227cb60147a26a1eeb4fb06e3b505e9c7261",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2",
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info",
+    "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute"
+  ]
+}
