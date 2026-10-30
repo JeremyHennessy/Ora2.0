@@ -36,17 +36,20 @@ class ProbeContractChecks(unittest.TestCase):
             with self.assertRaises(TypeError):probe.launch(None,None,0,object(),'x',0)
     def test_compiler_quotes_are_script_bytes_not_escaped_argv(self):
         setup=Path('C:/Program Files/VS/vcvars64.bat');line='"C:/Program Files/VS/cl.exe" /W4 /WX fixed.c'
-        command=probe.compiler_command(self.out,'fixture',setup,line)
+        link_line='"C:/Program Files/VS/link.exe" fixed.obj /OUT:fixed.exe'
+        command=probe.compiler_command(self.out,'fixture',setup,line,link_line)
         self.assertEqual(command[1:3],['/d','/c']);self.assertNotIn('"',command[-1]);self.assertNotIn('\\"',command[-1])
         raw=(self.out/'build-fixture.cmd').read_bytes()
         self.assertIn(('call "'+str(setup)+'"').encode(),raw);self.assertIn(line.encode(),raw)
         self.assertLess(raw.index(b'set "VSCMD_SKIP_SENDTELEMETRY=1"'),raw.index(b'call "'))
         self.assertNotIn(b'\\"',raw)
         self.assertLess(raw.index(b'if errorlevel 1 exit /b %errorlevel%'),raw.index(line.encode()))
+        self.assertLess(raw.index(line.encode()),raw.rindex(b'if errorlevel 1 exit /b %errorlevel%'))
+        self.assertLess(raw.rindex(b'if errorlevel 1 exit /b %errorlevel%'),raw.index(link_line.encode()))
         self.assertEqual(json.loads((self.out/'compiler-script-fixture.json').read_text())['script_sha256'],probe.sha(raw))
-        with self.assertRaises(FileExistsError):probe.compiler_command(self.out,'fixture',setup,line)
+        with self.assertRaises(FileExistsError):probe.compiler_command(self.out,'fixture',setup,line,link_line)
     def test_compiler_script_unsafe_path_refused_before_write(self):
-        with self.assertRaisesRegex(ValueError,'no whitespace'):probe.compiler_command(self.out/'space dir','fixture',Path('setup.bat'),'fixed')
+        with self.assertRaisesRegex(ValueError,'no whitespace'):probe.compiler_command(self.out/'space dir','fixture',Path('setup.bat'),'fixed','fixed-link')
         self.assertFalse((self.out/'space dir').exists())
     def test_bool_and_unlisted_case_rejected_before_effect(self):
         with patch.object(probe,'kernel',side_effect=AssertionError('OS effect')):

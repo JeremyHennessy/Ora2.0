@@ -103,18 +103,18 @@ def checked(ok):
     if not ok: raise ctypes.WinError(ctypes.get_last_error())
 
 
-def compiler_command(out,phase,setup,line):
+def compiler_command(out,phase,setup,line,link_line):
     # cmd.exe does not use the C argv escaping applied by subprocess to lists.
     # Keep quotes inside a retained fixed script, never an argv argument.
     batch=out/('build-'+phase+'.cmd')
     if any(c.isspace() or c in '&|<>^%!"' for c in str(batch)):
         raise ValueError('Fixed build script path must be plain and contain no whitespace')
-    raw=('@echo off\r\nset "VSCMD_SKIP_SENDTELEMETRY=1"\r\ncall "'+str(setup)+'" >nul\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+line+'\r\nexit /b %errorlevel%\r\n').encode('ascii')
+    raw=('@echo off\r\nset "VSCMD_SKIP_SENDTELEMETRY=1"\r\ncall "'+str(setup)+'" >nul\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+line+'\r\nif errorlevel 1 exit /b %errorlevel%\r\n'+link_line+'\r\nexit /b %errorlevel%\r\n').encode('ascii')
     with batch.open('xb') as f:
         if f.write(raw)!=len(raw):raise OSError('Short compiler script write')
         f.flush();os.fsync(f.fileno())
     command=[os.environ['COMSPEC'],'/d','/c',str(batch)]
-    save(out/('compiler-script-'+phase+'.json'),{'script_sha256':sha(raw),'command':command,'setup_error_checked_before_compiler':True})
+    save(out/('compiler-script-'+phase+'.json'),{'script_sha256':sha(raw),'command':command,'setup_error_checked_before_compiler':True,'compiler_exits_before_linker':True,'compile_command':line,'link_command':link_line})
     return command
 
 
@@ -282,15 +282,16 @@ def _build(out, owner, source, seal, global_end):
     for p in (setup,out,ROOT):
         if any(c in str(p) for c in '&|<>^%!\r\n'):raise ValueError('Unsafe build path')
     dll=out/'eka1_owner_watchdog.dll'
-    commands=[('watchdog',f'"{compiler}" /Bv /LD /MT /O1 /W4 /WX /Fo"{out / "watchdog.obj"}" /Fe"{dll}" "{ROOT / "experiments/native/eka1_probe_owner_watchdog.c"}" /link /IMPLIB:"{out / "watchdog.lib"}"')]
-    for phase,line in commands:
-        result=bounded_build(compiler_command(out,phase,setup,line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
+    commands=[('watchdog',f'"{compiler}" /Bv /c /MT /O1 /W4 /WX /Fo"{out / "watchdog.obj"}" "{ROOT / "experiments/native/eka1_probe_owner_watchdog.c"}"',f'"{linker}" /DLL /OUT:"{dll}" /IMPLIB:"{out / "watchdog.lib"}" "{out / "watchdog.obj"}"')]
+    for phase,line,link_line in commands:
+        result=bounded_build(compiler_command(out,phase,setup,line,link_line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
         save(out/('build-'+phase+'.json'),result)
         if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
     header_lines += ['#define EKA_OWNER_DLL '+cwide(dll),'#define EKA_OWNER_DLL_SHA '+json.dumps(sha(dll.read_bytes()))]
     header.write_text('\n'.join(header_lines),encoding='ascii')
-    cmd=f'"{compiler}" /Bv /MT /O1 /W4 /WX /I"{out}" /Fo"{obj}" /Fe"{exe}" "{ROOT / "experiments/native/eka1_probe_guardian.c"}" /link bcrypt.lib'
-    result=bounded_build(compiler_command(out,'guardian',setup,cmd),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
+    cmd=f'"{compiler}" /Bv /c /MT /O1 /W4 /WX /I"{out}" /Fo"{obj}" "{ROOT / "experiments/native/eka1_probe_guardian.c"}"'
+    link_line=f'"{linker}" /SUBSYSTEM:CONSOLE /OUT:"{exe}" "{obj}" bcrypt.lib'
+    result=bounded_build(compiler_command(out,'guardian',setup,cmd,link_line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
     save(out/'build-guardian.json',result)
     if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
     save(out/'binary-custody.json',{'source':source,'header_sha256':sha(header.read_bytes()),'artifact_sha256':sha(exe.read_bytes()),'watchdog_sha256':sha(dll.read_bytes()),'interpreter_version':sys.version,'scope':'Synthetic-only build; not original science admission'})
