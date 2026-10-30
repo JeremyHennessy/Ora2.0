@@ -1,0 +1,49 @@
+name: EKA exact-source finite synthetic OS controls
+on:
+  push:
+    branches: ['review/eka1-delayed-assay-contract-20261023']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic-only:
+    runs-on: windows-2022
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.10'
+      - name: Verify exact head and interpreter
+        shell: pwsh
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          if ($env:EXPECTED_SHA -notmatch '\A[0-9a-f]{40}\z') { throw 'Invalid exact SHA' }
+          if ((git rev-parse HEAD) -ne $env:EXPECTED_SHA) { throw 'Source differs' }
+          python -I -B -c "import sys; assert sys.version_info[:3] == (3,12,10); print(sys.executable,sys.version)"
+      - name: Focused offline regression and refusal checks only
+        shell: pwsh
+        run: |
+          python -B -m unittest discover -s tests -p test_eka1_first_failure_custody.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_native_owner_candidate.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_reservation_source_integrity.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_native_probe_contract.py -v
+          exit $LASTEXITCODE
+      - name: Nine new bounded synthetic cases; no scientific World
+        shell: pwsh
+        run: python -I -S -B tools/eka1_native_probe.py runs/eka1-native-synthetic
+      - name: Preserve every partial receipt on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eka1-synthetic-${{ github.sha }}
+          path: runs/eka1-native-synthetic/
+          if-no-files-found: error
+          retention-days: 30

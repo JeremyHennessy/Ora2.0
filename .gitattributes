@@ -105,3 +105,15 @@ tests/test_eka1_native_owner_candidate.py -text
 data/eka1-native-owner-candidate-review-20261030.json -text
 tests/test_eka1_first_failure_custody.py -text
 docs/EKA-1-FIRST-FAILURE-CUSTODY-v1.md -text
+
+experiments/native/eka1_probe_guardian.c -text
+
+experiments/native/eka1_probe_owner_watchdog.c -text
+
+tools/eka1_native_probe.py -text
+
+tools/eka1_probe_child.py -text
+
+tests/test_eka1_native_probe_contract.py -text
+
+.github/workflows/eka1-native-synthetic.yml -text

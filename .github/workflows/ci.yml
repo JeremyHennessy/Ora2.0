@@ -7,6 +7,9 @@ permissions:
   contents: read
 jobs:
   tests:
+    # EKA323 has a separate finite synthetic-only workflow. Never run the
+    # historical full suite/calibration on that preparation branch or its PR.
+    if: github.head_ref != 'review/eka1-delayed-assay-contract-20261023' && github.ref != 'refs/heads/review/eka1-delayed-assay-contract-20261023'
     runs-on: ubuntu-latest
     # The expanded replay suite exceeded the old five-minute job envelope.
     # This bounds CI only; registered experiment horizons/caps are unchanged.
