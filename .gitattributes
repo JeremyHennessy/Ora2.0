@@ -120,3 +120,5 @@ tests/test_eka1_native_probe_contract.py -text
 data/eka1-synthetic-native-integration-evidence-20261030.json -text
 tools/eka1_cpu_accounting.py -text
 tests/test_eka1_cpu_accounting.py -text
+tools/eka1_cpu_grant_transport.py -text
+tests/test_eka1_cpu_grant_transport.py -text

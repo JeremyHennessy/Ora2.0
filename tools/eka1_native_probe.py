@@ -28,7 +28,8 @@ CASES = ('ok', 'failed-create', 'wall', 'cpu', 'memory', 'output', 'tree', 'guar
 SOURCE_FILES = ('tools/eka1_native_probe.py', 'tools/eka1_probe_child.py',
                 'tools/eka1_native_owner_candidate.py', 'tools/eka1_cumulative_reservations.py',
                 'experiments/process_limits.py', 'experiments/native/eka1_probe_guardian.c',
-                'experiments/native/eka1_probe_owner_watchdog.c', 'tools/eka1_cpu_accounting.py')
+                'experiments/native/eka1_probe_owner_watchdog.c', 'tools/eka1_cpu_accounting.py',
+                'tools/eka1_cpu_grant_transport.py')
 _used_cases=set()
 _case_lock=threading.RLock()
 _owner_watchdog=None
@@ -37,7 +38,12 @@ _evidence_directory=None
 _execution_consumed=False
 
 
-def native_admission():
+def native_admission(transport=None):
+    if transport is not None:
+        from tools.eka1_cpu_grant_transport import CpuGrantTransport
+        if type(transport) is not CpuGrantTransport:raise TypeError('Exact once-bound transport required')
+        preflight=transport.preflight()
+        raise owner_source.NativeQualificationRequired('NOT_READY: '+','.join(preflight['unqualified']))
     raise owner_source.NativeQualificationRequired('NOT_READY: source-only candidate; fresh immutable native assignment grant not supplied')
 
 
@@ -59,6 +65,10 @@ def plain(path):
 
 def custody():
     paths = [ROOT / p for p in SOURCE_FILES]
+    paths += [ROOT / ('tests/'+name) for name in (
+        'test_eka1_cpu_accounting.py','test_eka1_cpu_grant_transport.py',
+        'test_eka1_native_probe_contract.py','test_eka1_first_failure_custody.py',
+        'test_eka1_native_owner_candidate.py','test_eka1_reservation_source_integrity.py')]
     python = Path(sys.executable).resolve()
     paths += [python, *python.parent.glob('python*.dll')]
     # Observe the isolated interpreter's standard-library and extension source

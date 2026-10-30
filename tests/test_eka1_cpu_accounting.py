@@ -33,7 +33,7 @@ class CpuChecks(unittest.TestCase):
         self.reader=patch.object(cpu,'root_snapshot',return_value=snapshot());self.read=self.reader.start()
         self.meter=cpu.RootCpuAttempt(self.job,self.out,3,self.owner,probe.save)
         self.guardian=dict(pid=11,birth='333',signaled=True,root_member=True,user_ticks=100,kernel_ticks=50)
-        self.private=dict(pid=12,birth='444',closed=True,user_ticks=1000,kernel_ticks=500,
+        self.private=dict(pid=12,birth='444',closed=True,total_processes=1,active_processes=0,user_ticks=1000,kernel_ticks=500,
                           leader_signaled=True,leader_root_member=True,leader_private_member=True,
                           leader_user_ticks=1000,leader_kernel_ticks=500)
         self.read.return_value=snapshot(1100,550)
@@ -46,6 +46,23 @@ class CpuChecks(unittest.TestCase):
         before=(self.out/'3.cpu-final.json').read_bytes()
         with self.assertRaisesRegex(cpu.CpuAccountingFailure,'consumed'):self.finish()
         self.assertEqual((self.out/'3.cpu-final.json').read_bytes(),before)
+    def test_third_zero_cpu_birth_fails_but_full_measured_debit_remains(self):
+        self.read.return_value['total_processes']=3
+        with self.assertRaisesRegex(cpu.CpuAccountingFailure,'Root successful-birth'):self.finish()
+        self.assertEqual(self.final()['debit_ticks'],1650)
+        self.assertEqual(self.final()['status'],'UNKNOWN_UNRESOLVED')
+    def test_private_extra_birth_fails_without_refunding_root(self):
+        self.private['total_processes']=2
+        with self.assertRaisesRegex(cpu.CpuAccountingFailure,'Sole private'):self.finish()
+        self.assertEqual(self.final()['debit_ticks'],1650)
+    def test_missing_private_cardinality_is_not_imputed(self):
+        del self.private['total_processes']
+        with self.assertRaisesRegex(cpu.CpuAccountingFailure,'Sole private'):self.finish()
+        self.assertEqual(self.final()['debit_ticks'],1650)
+    def test_same_guardian_and_child_birth_fails(self):
+        self.private.update(pid=self.guardian['pid'],birth=self.guardian['birth'])
+        with self.assertRaisesRegex(cpu.CpuAccountingFailure,'distinct retained births'):self.finish()
+        self.assertEqual(self.final()['debit_ticks'],1650)
     def test_overrun_retains_full_debit_and_terminal_failure(self):
         self.private.update(user_ticks=20625000,leader_user_ticks=20625000)
         self.read.return_value=snapshot(20625100,550)

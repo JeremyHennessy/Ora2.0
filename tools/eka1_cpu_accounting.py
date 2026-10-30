@@ -115,10 +115,15 @@ class RootCpuAttempt:
                 raise CpuAccountingFailure('Retained guardian closure missing')
             if type(guardian['pid']) is not int or guardian['pid']<=0 or int(guardian['birth'])<=0:
                 raise CpuAccountingFailure('Guardian birth custody missing')
-            if type(final['total_processes']) is not int or final['total_processes']<2:
+            if type(final['total_processes']) is not int or final['total_processes']!=2:
                 raise CpuAccountingFailure('Root successful-birth accounting inconsistent')
             if not private or private['closed'] is not True:
                 raise CpuAccountingFailure('Private final counters/closure missing')
+            if (type(private.get('total_processes')) is not int or private['total_processes']!=1 or
+                type(private.get('active_processes')) is not int or private['active_processes']!=0):
+                raise CpuAccountingFailure('Sole private successful-birth/closure accounting inconsistent')
+            if (guardian['pid'],str(guardian['birth']))==(private['pid'],str(private['birth'])):
+                raise CpuAccountingFailure('Guardian and sole child must be distinct retained births')
             pu=ticks(private['user_ticks']);pk=ticks(private['kernel_ticks'])
             if (private['leader_signaled'] is not True or private['leader_root_member'] is not True or
                 private['leader_private_member'] is not True or type(private['pid']) is not int or
