@@ -124,3 +124,8 @@ tools/eka1_cpu_grant_transport.py -text
 tests/test_eka1_cpu_grant_transport.py -text
 tools/eka1_prebuilt_cpu_artifact.py -text
 tests/test_eka1_prebuilt_cpu_artifact.py -text
+tools/eka1_runtime_capsule.py -text
+experiments/native/eka1_runtime_capsule.h -text
+tools/eka1_external_settlement.py -text
+tests/test_eka1_runtime_capsule.py -text
+tests/test_eka1_external_settlement.py -text

@@ -30,7 +30,9 @@ SOURCE_FILES = ('tools/eka1_native_probe.py', 'tools/eka1_probe_child.py',
                 'tools/eka1_native_owner_candidate.py', 'tools/eka1_cumulative_reservations.py',
                 'experiments/process_limits.py', 'experiments/native/eka1_probe_guardian.c',
                 'experiments/native/eka1_probe_owner_watchdog.c', 'tools/eka1_cpu_accounting.py',
-                'tools/eka1_cpu_grant_transport.py', 'tools/eka1_prebuilt_cpu_artifact.py')
+                'tools/eka1_cpu_grant_transport.py', 'tools/eka1_prebuilt_cpu_artifact.py',
+                'tools/eka1_runtime_capsule.py','experiments/native/eka1_runtime_capsule.h',
+                'tools/eka1_external_settlement.py')
 _used_cases=set()
 _case_lock=threading.RLock()
 _owner_watchdog=None
@@ -70,7 +72,8 @@ def custody():
         'test_eka1_cpu_accounting.py','test_eka1_cpu_grant_transport.py',
         'test_eka1_native_probe_contract.py','test_eka1_first_failure_custody.py',
         'test_eka1_native_owner_candidate.py','test_eka1_reservation_source_integrity.py',
-        'test_eka1_prebuilt_cpu_artifact.py')]
+        'test_eka1_prebuilt_cpu_artifact.py','test_eka1_runtime_capsule.py',
+        'test_eka1_external_settlement.py')]
     python = Path(sys.executable).resolve()
     paths += [python, *python.parent.glob('python*.dll')]
     # Observe the isolated interpreter's standard-library and extension source
@@ -168,7 +171,7 @@ def verify_reservations(owner,out,seal):
     return registered
 
 
-def launch(exe, out, mode, owner, seal, global_end):
+def launch(exe, out, mode, owner, seal, global_end,transport=None):
     with _case_lock:
         if type(owner) is not owner_source.NativeOwnerCandidate:raise TypeError('Exact owner required')
         try:
@@ -179,9 +182,9 @@ def launch(exe, out, mode, owner, seal, global_end):
             if mode not in registered['execution_modes']:raise ValueError('Only single-purpose CPU role admitted prospectively')
             if global_end!=registered['global_end_tick']:raise ValueError('Original enclosing deadline differs')
             if (owner,mode) in _used_cases:raise ValueError('Native slot already consumed; no retry')
-            native_admission()
+            native_admission(transport) if transport is not None else native_admission()
             _used_cases.add((owner,mode))
-            result=_launch(exe,out,mode,owner,seal,global_end)
+            result=_launch(exe,out,mode,owner,seal,global_end,transport) if transport is not None else _launch(exe,out,mode,owner,seal,global_end)
             accept_case(result,out,mode)
             cpu=json.loads((out/(str(mode)+'.cpu-final.json')).read_text())
             if cpu!=result.get('cpu_accounting') or cpu['assignment']!=seal:
@@ -193,7 +196,7 @@ def launch(exe, out, mode, owner, seal, global_end):
             raise
 
 
-def _launch(exe, out, mode, owner, seal, global_end):
+def _launch(exe, out, mode, owner, seal, global_end,transport=None):
     """No arbitrary command API. Caller precharged the entire fixed catalog."""
     if type(owner) is not owner_source.NativeOwnerCandidate:raise TypeError('Exact owner required')
     owner.ledger
@@ -206,20 +209,24 @@ def _launch(exe, out, mode, owner, seal, global_end):
     plain(exe);plain(out)
     if Path(exe)!=out/'eka1_probe_guardian.exe' or sha(exe.read_bytes())!=json.loads((out/'binary-custody.json').read_text())['artifact_sha256']:
         raise ValueError('Exact compiled guardian required')
-    native_admission()
+    native_admission(transport) if transport is not None else native_admission()
+    if transport is None or transport.owner is not owner or transport.original_end!=global_end:
+        raise owner_source.NativeQualificationRequired('NOT_READY: exact reusable runtime binding required')
     k=kernel(); began=k.GetTickCount64(); end=min(global_end,began+8000)
     if end-began < 4000: raise TimeoutError('No room for role and closure')
     job=Job(Limits(memory_bytes=256*1024**2,cpu_seconds=8,processes=4,wall_seconds=8))
     attrs=None; initialized=False; pi=PI(); fds=[]; handles=[]; inherited=[]
-    meter=None;result=None;private=None;expected_birth=None
+    meter=None;result=None;private=None;expected_birth=None;capsule=None
     try:
         meter=RootCpuAttempt(job,out,mode,owner,save)
+        from tools.eka1_runtime_capsule import prepare
+        capsule=prepare(transport,owner,exe,sha(exe.read_bytes()),end)
         raw=os.open(out/(str(mode)+'.raw'),os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600);fds.append(raw)
         rec=os.open(out/(str(mode)+'.inner.json'),os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600);fds.append(rec)
         nul=os.open(os.devnull,os.O_RDONLY|os.O_BINARY);fds.append(nul)
         oh=k.OpenProcess(0x1000|0x100000,True,os.getpid());checked(oh);handles.append(oh)
         lh=msvcrt.get_osfhandle(owner._fd)
-        inherited=[msvcrt.get_osfhandle(f) for f in (raw,rec,nul)]+[lh,oh,int(job.handle)]
+        inherited=[msvcrt.get_osfhandle(f) for f in (raw,rec,nul)]+[lh,oh,int(job.handle),int(capsule['handle'].handle)]
         for h in inherited:os.set_handle_inheritable(h,True)
         size=ctypes.c_size_t();k.InitializeProcThreadAttributeList(None,2,0,ctypes.byref(size))
         attrs=ctypes.create_string_buffer(size.value);checked(k.InitializeProcThreadAttributeList(attrs,2,0,ctypes.byref(size)));initialized=True
@@ -228,7 +235,7 @@ def _launch(exe, out, mode, owner, seal, global_end):
         checked(k.UpdateProcThreadAttribute(attrs,0,0x20002,hs,ctypes.sizeof(hs),None,None))
         start=STARTEX();start.startup.cb=ctypes.sizeof(start);start.attributes=ctypes.cast(attrs,ctypes.c_void_p)
         start.startup.flags=0x100;start.startup.input=start.startup.output=start.startup.error=msvcrt.get_osfhandle(nul)
-        command=[str(exe),str(mode),str(msvcrt.get_osfhandle(raw)),str(msvcrt.get_osfhandle(rec)),str(end),'EKA-SYNTHETIC-ONLY-v1',str(lh),str(oh),seal,str(int(job.handle))]
+        command=[str(exe),str(mode),str(msvcrt.get_osfhandle(raw)),str(msvcrt.get_osfhandle(rec)),str(end),'EKA-SYNTHETIC-ONLY-v1',str(lh),str(oh),seal,str(int(job.handle)),str(int(capsule['handle'].handle)),capsule['sha256']]
         checked(k.CreateProcessW(str(exe),ctypes.create_unicode_buffer(subprocess.list2cmdline(command)),None,None,True,0x80000|4|8,None,str(ROOT),ctypes.byref(start),ctypes.byref(pi)))
         times=[ctypes.c_ulonglong() for _ in range(4)];checked(k.GetProcessTimes(pi.process,*[ctypes.byref(t) for t in times]))
         expected_birth=str(times[0].value)
@@ -269,6 +276,7 @@ def _launch(exe, out, mode, owner, seal, global_end):
         actions=[]
         actions += [lambda h=h:os.set_handle_inheritable(h,False) for h in inherited]
         actions += [job.close]
+        if capsule is not None:actions += [capsule['handle'].close,capsule['image_handle'].close]
         if pi.thread:actions.append(lambda:checked(k.CloseHandle(pi.thread)))
         if pi.process:actions.append(lambda:checked(k.CloseHandle(pi.process)))
         if initialized:actions.append(lambda:k.DeleteProcThreadAttributeList(attrs))

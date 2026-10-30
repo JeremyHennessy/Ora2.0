@@ -49,6 +49,10 @@ jobs:
           python -B -m unittest discover -s tests -p test_eka1_cpu_grant_transport.py -v
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python -B -m unittest discover -s tests -p test_eka1_prebuilt_cpu_artifact.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_runtime_capsule.py -v
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -B -m unittest discover -s tests -p test_eka1_external_settlement.py -v
           exit $LASTEXITCODE
       - name: Preserve exact offline interpreter and source custody
         if: always()
