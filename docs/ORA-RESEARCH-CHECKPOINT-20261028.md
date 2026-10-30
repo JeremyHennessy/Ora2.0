@@ -1,49 +1,70 @@
-# Ora research checkpoint â€” October 28, 2026
+# Ora research checkpoint - October 30, 2026
 
-## Current verified checkpoint - October 30, 14:24 UTC
+## Current verified checkpoint - October 30, 16:21 UTC
 
 The current EKA engineering head is
-`9b985dacdc0aa4baa5c775ed3c42ec24248f9304` on the existing
+`18439b818cd793d96b03aa1bdece0843a53aeb36` on the existing
 [Ora PR #323](https://github.com/JeremyHennessy/Ora2.0/pull/323), draft and unmerged.
-The earlier first-failure repair `d1bb01d` is now published and independently
-accepted after 46 fresh checks; the earlier 41-check verdict was not reused.
-[Exact-head offline CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/41070392579)
-passed 65 focused checks and retained 1,863 interpreter/library/control-source
-hash observations. Native and historical-calibration steps were skipped, not
-passed; this is scoped offline custody, not complete OS dependency qualification.
+The EKA-CPU-METERED-ATTEMPT-v1 implementation has independent exact-source,
+source-only publication acceptance. Independent offline verification passed 93
+focused checks plus two additional raw-query checks.
+[Exact-head CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/41085296488)
+passed 93 targeted offline checks under CPython 3.12.10 and retained 1,864
+interpreter/library/control-source observations. Native and historical-calibration
+steps were SKIPPED, not passed. Seven runtime files match raw Git bytes; the
+unchanged process_limits.py has an explicitly verified LF-to-CRLF checkout
+exception. Test-file raw hashes are not separately listed in the CI artifact;
+exact-head checkout/logs and independent local Git-blob review bind those tests.
+This is scoped custody, not complete OS/SDK dependency qualification.
 
-**Native qualification FAILED at executed source
-`909c1b00d69047a895c5618305a4b8e921e25060`.** Six existing case predicates were
-accepted before the tree fixture failed: the reported successful descendant PID
-did not match the captured birth identity. CPU termination was observed at
-2.0625 reported CPU seconds against a nominal one second, so a strict CPU ceiling
-remains unqualified. Cases 7-8 were not run. The corrective event handshake at
-`43297d2b7e1a8418e2b37ec1aa2af172a2226f30` passed four independent mocked
-checks and is accepted for source-only publication; its native path remains unrun.
-[Committed evidence](https://github.com/JeremyHennessy/Ora2.0/blob/6a42865ab452b84dedf652f4436edca9d82ea847/data/eka1-synthetic-native-integration-evidence-20261030.json)
-preserves all four sealed assignments, 144 consumed reservations without refunds,
-and 372,874 stored archive bytes. Recorded build/native Job CPU totals 4.453125
-seconds; this excludes parent hashing, archives, offline tests and CI CPU.
+The source records final root Job USER + KERNEL CPU once after owned closure and
+before the last root handle closes. Nested private Job totals are reconciled as
+subsets, never added twice. Missing counters, inconsistent custody, overruns and
+archive failures retain terminal failure and unresolved costs. Existing limits
+are unchanged. Duplicate-debit identity, masked first failure, extra limit flags,
+same-size ledger corruption and the C role bypass were corrected and independently
+reviewed. These are offline/source findings, not demonstrated Windows enforcement.
 
-**Scientific status remains NOT_READY / UNKNOWN.** The authenticated original-only
-producer and immutable assignment/owner-grant transport are not implemented.
-Successful descendant custody and a conservatively paid CPU bound must qualify
-before actual World/replay/dispatch/hidden-restoration integration can be admitted.
-No World, population, historical replay, learning measurement, VM-law change or
-v10 deployment ran for this repository synchronization. All closed results remain
-unchanged. Existing owners and PRs are retained; no merge or competing branch.
+**The strict prepaid CPU bound remains NOT_READY.** The retained native attempt at
+`909c1b00d69047a895c5618305a4b8e921e25060` recorded 2.0625 USER CPU seconds
+against the one-second threshold; its KERNEL CPU is unknown. Existing Windows
+mechanisms provide no documented finite maximum enforcement latency. The
+[CPU decision](https://github.com/JeremyHennessy/Ora2.0/blob/92ce53f8b9425eafb36854ab63d0eabbd91c0dca/data/eka1-cpu-contract-decision-20261030.json)
+therefore rejects certifying that strict bound. The source-only metered alternative
+does not relax scientific admission. The descendant PID mismatch remains a failed
+historical result; corrected handshake native qualification and watchdog cases
+7-8 remain unrun.
 
-The separate assistant was verified at **14:24 UTC on October 30**: 49 completed
-windows and 1,143 epochs, zero failure counters, all 174 approved records with
-provenance and key retained, and two valid snapshots. Window 49 closed after
-7,200.953 seconds with exit 0, EOF, no leaks and the old controller birth closed;
-window 50 started normally. Windows 9-12 and 16-20 remain individually unverified.
-This is dated operating evidence, not LIVE organism intelligence, indefinite
-reliability or proof of the historical readiness cause. Private receipts, memory
-contents, keys and machine identities are not published.
+The [single-purpose CPU assignment request](https://github.com/JeremyHennessy/Ora2.0/blob/18439b818cd793d96b03aa1bdece0843a53aeb36/data/eka1-cpu-metered-assignment-request-20261030.json)
+is **REQUEST_ONLY_UNAUTHORIZED_NATIVE_ENTRY_HELD**, not execution authority.
+Native entry remains hard-held. A separate human grant must acknowledge possible
+nondeterministic CPU overshoot. Immutable grant transport, actual producer/ledger
+and deadline binding, compiler/helper birth and closure custody, frozen toolchain
+and binary identity, and separate external-cost evidence remain prerequisites.
+No compiler or fresh native diagnostic ran for this implementation or this sync.
 
-This update changes documentation only and uses retained engineering evidence
-plus one read-only runtime check. No experiment or closed bank was rerun.
+[Retained sealed evidence](https://github.com/JeremyHennessy/Ora2.0/blob/6a42865ab452b84dedf652f4436edca9d82ea847/data/eka1-synthetic-native-integration-evidence-20261030.json)
+preserves four assignments, 144 consumed reservations without refunds, all 75
+sealed files and 372,874 stored archive bytes. The 4.453125 recorded CPU seconds
+cover disjoint build/native roots only, excluding parent hashing, archives,
+offline tests and CI. Original setup failures and approved checkpoints remain.
+
+**Native scientific qualification remains NOT_READY; learning remains UNKNOWN.**
+Original-only scientific producer integration and immutable grant transport are
+not implemented. No World, population, replay, learning measurement, VM-law change,
+v10 deployment or merge occurred. Existing owners and PRs are retained.
+
+The latest retained assistant observation is **16:21:55 UTC on October 30
+(13:21:55 Halifax, UTC-03)**: 50 completed windows and 1,165 epochs, zero failure
+counters, all 174 approved records with provenance/key retained, and two valid
+snapshots. Window 50 closed after 7,201.109 seconds with exit 0, EOF, no leaks and
+the old controller birth closed; window 51 started normally. Windows 9-12 and
+16-20 remain individually unverified. This is dated operating evidence, not
+organism learning, indefinite reliability or proof of the historical readiness
+cause. Private receipts, memory contents, keys and machine identities stay private.
+
+This documentation-only update uses retained engineering and monitoring receipts.
+No experiment, executable test suite or runtime check was rerun for this sync.
 
 Documentation reconciliation requested by the user. This is not a new scientific
 result, experiment registration, approved main baseline or deployment.
@@ -75,7 +96,7 @@ useful learned behavior or inherited fitness. Historical banks stay closed.
 
 | Workstream | Existing owner/status |
 |---|---|
-| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Public head9b985da; 65 exact-head offline checks pass. Native qualification failed; descendant handshake accepted source-only and strict CPU bound unqualified. Scientific NOT_READY; existing owner retained. |
+| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Public head18439b8; 93 exact-head offline CI checks pass. Root CPU meter independently accepted source-only; fresh request unauthorized and native entry held. Strict prepaid CPU bound and scientific qualification NOT_READY; native handshake/watchdogs unrun. |
 | [Isolated research325](https://github.com/JeremyHennessy/Ora2.0/pull/325) | Existing prototype branch; results preserved, certificate published; no native admission. |
 | [Independent research63](https://github.com/JeremyHennessy/AI-Research/pull/63) | Existing independent assessment; UNKNOWN/NO-GO and negative results retained. |
 | [PILOT74/324](https://github.com/JeremyHennessy/Ora2.0/pull/324) | Headae82bde; scoped Windows59/Linux55+4 explicit skips passed in run40113063808. Legacy calibration skipped; original25/26 native failure sealed. Full qualification held. |
