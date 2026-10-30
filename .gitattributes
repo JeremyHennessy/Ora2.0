@@ -122,3 +122,5 @@ tools/eka1_cpu_accounting.py -text
 tests/test_eka1_cpu_accounting.py -text
 tools/eka1_cpu_grant_transport.py -text
 tests/test_eka1_cpu_grant_transport.py -text
+tools/eka1_prebuilt_cpu_artifact.py -text
+tests/test_eka1_prebuilt_cpu_artifact.py -text

@@ -1,8 +1,9 @@
 """New finite, source-sealed SYNTHETIC OS qualification. No scientific imports.
 
 The real registered original and World path are deliberately not admitted.
-One process, one physical ledger, one immutable nine-case catalog. Four births
-per case are precharged before compilation/OS execution and never refunded.
+One process, one physical ledger, one immutable nine-case catalog. Historical
+birth precharges remain preserved. Inline compilation is now retired because
+its opaque helper attempts cannot satisfy pre-effect attempted-birth custody.
 The native binary is bound to that ledger identity/hash, owner birth and case
 markers. This is not a sandbox against the Windows account administrator.
 """
@@ -21,7 +22,7 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools import eka1_native_owner_candidate as owner_source
-from experiments.process_limits import Job, Limits, run as bounded_build
+from experiments.process_limits import Job, Limits
 from tools.eka1_cpu_accounting import RootCpuAttempt, CpuAccountingFailure
 
 CASES = ('ok', 'failed-create', 'wall', 'cpu', 'memory', 'output', 'tree', 'guardian-stall', 'python-owner-stall')
@@ -29,7 +30,7 @@ SOURCE_FILES = ('tools/eka1_native_probe.py', 'tools/eka1_probe_child.py',
                 'tools/eka1_native_owner_candidate.py', 'tools/eka1_cumulative_reservations.py',
                 'experiments/process_limits.py', 'experiments/native/eka1_probe_guardian.c',
                 'experiments/native/eka1_probe_owner_watchdog.c', 'tools/eka1_cpu_accounting.py',
-                'tools/eka1_cpu_grant_transport.py')
+                'tools/eka1_cpu_grant_transport.py', 'tools/eka1_prebuilt_cpu_artifact.py')
 _used_cases=set()
 _case_lock=threading.RLock()
 _owner_watchdog=None
@@ -68,7 +69,8 @@ def custody():
     paths += [ROOT / ('tests/'+name) for name in (
         'test_eka1_cpu_accounting.py','test_eka1_cpu_grant_transport.py',
         'test_eka1_native_probe_contract.py','test_eka1_first_failure_custody.py',
-        'test_eka1_native_owner_candidate.py','test_eka1_reservation_source_integrity.py')]
+        'test_eka1_native_owner_candidate.py','test_eka1_reservation_source_integrity.py',
+        'test_eka1_prebuilt_cpu_artifact.py')]
     python = Path(sys.executable).resolve()
     paths += [python, *python.parent.glob('python*.dll')]
     # Observe the isolated interpreter's standard-library and extension source
@@ -121,6 +123,7 @@ def checked(ok):
 
 
 def compiler_command(out,phase,setup,line,link_line):
+    """Retained historical formatter fixture only; no execution path uses it."""
     # cmd.exe does not use the C argv escaping applied by subprocess to lists.
     # Keep quotes inside a retained fixed script, never an argv argument.
     batch=out/('build-'+phase+'.cmd')
@@ -310,6 +313,7 @@ def build(out, owner, source, seal, global_end):
     try:
         if owner._closed or owner._failed is not None:raise RuntimeError('Owner closed/incomplete; no retry')
         native_admission()
+        verify_reservations(owner,out,seal)
         return _build(out,owner,source,seal,global_end)
     except BaseException as exc:
         owner._fail(exc)
@@ -317,51 +321,15 @@ def build(out, owner, source, seal, global_end):
 
 
 def _build(out, owner, source, seal, global_end):
-    registered=verify_reservations(owner,out,seal)
-    if source!=custody() or source!=registered['source'] or global_end!=registered['global_end_tick']:
-        raise ValueError('Registered build/source/deadline differs')
-    native_admission()
-    k=kernel();identity=FILEID();checked(k.GetFileInformationByHandleEx(msvcrt.get_osfhandle(owner._fd),18,ctypes.byref(identity),ctypes.sizeof(identity)))
-    birth=owner_source.current_birth();header=out/'eka1_probe_pins.h';ledger=owner._path.read_bytes()
-    cwide=lambda p:'L'+json.dumps(str(p),ensure_ascii=True)
-    header_lines=[
-        '#define EKA_PYTHON '+cwide(Path(sys.executable).resolve()),
-        '#define EKA_PYTHON_SHA '+json.dumps(source[str(Path(sys.executable).resolve())]),
-        '#define EKA_PROGRAM '+cwide(ROOT/'tools/eka1_probe_child.py'),
-        '#define EKA_PROGRAM_SHA '+json.dumps(source[str(ROOT/'tools/eka1_probe_child.py')]),
-        '#define EKA_LEDGER_SHA '+json.dumps(sha(ledger)),
-        '#define EKA_LEDGER_VOLUME '+str(identity.volume)+'ULL',
-        'static const unsigned char EKA_LEDGER_ID[16]={'+','.join(str(i) for i in identity.identifier)+'};',
-        '#define EKA_LEDGER_EXTENT '+str(len(ledger)),
-        '#define EKA_OWNER_PID '+str(birth[0]),'#define EKA_OWNER_BIRTH '+str(birth[1])+'ULL',
-        '#define EKA_GLOBAL_END '+str(global_end)+'ULL',
-        '#define EKA_SEAL '+cwide(seal), '#define EKA_MARKER_ROOT '+cwide(out)]
-    # File discovery only; no unaccounted vswhere child process.
-    roots=[Path('C:/Program Files/Microsoft Visual Studio/2022')/edition for edition in ('Community','Enterprise','Professional','BuildTools')]
-    vs=next((p for p in roots if (p/'VC/Auxiliary/Build/vcvars64.bat').is_file()),None)
-    if vs is None:raise OSError('Existing MSVC installation required; no install/fallback')
-    setup=vs/'VC/Auxiliary/Build/vcvars64.bat';exe=out/'eka1_probe_guardian.exe';obj=out/'guardian.obj'
-    bindir=sorted((vs/'VC/Tools/MSVC').iterdir())[-1]/'bin/Hostx64/x64'
-    compiler=bindir/'cl.exe';linker=bindir/'link.exe'
-    devcmd=vs/'Common7/Tools/VsDevCmd.bat'
-    save(out/'compiler-custody.json',{'compiler':str(compiler),'compiler_sha256':sha(compiler.read_bytes()),'linker':str(linker),'linker_sha256':sha(linker.read_bytes()),'setup':str(setup),'setup_sha256':sha(setup.read_bytes()),'devcmd':str(devcmd),'devcmd_sha256':sha(devcmd.read_bytes()),'setup_background_telemetry_disabled_locally':True,'complete_SDK_toolchain_custody':False})
-    for p in (setup,out,ROOT):
-        if any(c in str(p) for c in '&|<>^%!\r\n'):raise ValueError('Unsafe build path')
-    dll=out/'eka1_owner_watchdog.dll'
-    commands=[('watchdog',f'"{compiler}" /Bv /c /MT /O1 /W4 /WX /Fo"{out / "watchdog.obj"}" "{ROOT / "experiments/native/eka1_probe_owner_watchdog.c"}"',f'"{linker}" /DLL /OUT:"{dll}" /IMPLIB:"{out / "watchdog.lib"}" "{out / "watchdog.obj"}"')]
-    for phase,line,link_line in commands:
-        result=bounded_build(compiler_command(out,phase,setup,line,link_line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
-        save(out/('build-'+phase+'.json'),result)
-        if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
-    header_lines += ['#define EKA_OWNER_DLL '+cwide(dll),'#define EKA_OWNER_DLL_SHA '+json.dumps(sha(dll.read_bytes()))]
-    header.write_text('\n'.join(header_lines),encoding='ascii')
-    cmd=f'"{compiler}" /Bv /c /MT /O1 /W4 /WX /I"{out}" /Fo"{obj}" "{ROOT / "experiments/native/eka1_probe_guardian.c"}"'
-    link_line=f'"{linker}" /SUBSYSTEM:CONSOLE /OUT:"{exe}" "{obj}" bcrypt.lib'
-    result=bounded_build(compiler_command(out,'guardian',setup,cmd,link_line),Limits(memory_bytes=512*1024**2,cpu_seconds=30,processes=4,wall_seconds=30),cwd=ROOT)
-    save(out/'build-guardian.json',result)
-    if result['exit_code']!=0 or result.get('output_truncated') or not result.get('post_close_processes_exited'):raise RuntimeError('Native build failed; retain output, no retry')
-    save(out/'binary-custody.json',{'source':source,'header_sha256':sha(header.read_bytes()),'artifact_sha256':sha(exe.read_bytes()),'watchdog_sha256':sha(dll.read_bytes()),'interpreter_version':sys.version,'scope':'Synthetic-only build; not original science admission'})
-    return exe
+    """Retired: opaque helper attempts cannot be precharged by this owner.
+
+    This inner entry refuses independently of the human/native admission gate.
+    A matching old binary or source hash is not a compatible fresh assignment.
+    No setup script, bootstrap, compiler or linker is invoked here.
+    """
+    raise owner_source.NativeQualificationRequired(
+        'INLINE_BUILD_RETIRED: separately measured immutable prebuilt artifacts '
+        'and independently reviewed fresh-owner binding protocol required')
 
 
 def archive_evidence(out):

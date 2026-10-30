@@ -1,7 +1,7 @@
 """Once-consumed CPU assignment transport. Source-only: NEVER a native grant.
 
 An externally pinned human approval record is necessary, not sufficient. The
-opaque compiler/helper and external settlement gaps remain hard NO_GO reasons.
+separate prebuilt/fresh-binding and external settlement gaps remain NO_GO reasons.
 No process, compiler, World, refund, marker removal or resume API exists here.
 """
 import hashlib
@@ -19,7 +19,7 @@ LIMITS={'private_USER_ticks':10000000,'root_USER_ticks':80000000,
         'root_active_processes':4,'role_wall_ms':5000,'closure_ms':3000,
         'global_wall_ms':120000,'raw_bytes':65536,'archive_files':128,
         'archive_bytes':67108864}
-UNQUALIFIED=('compiler_helper_pre_effect_attempt_custody',
+UNQUALIFIED=('separately_measured_prebuilt_artifact_and_fresh_binding_protocol',
              'complete_executed_SDK_dependency_closure',
              'external_owner_observer_archive_final_settlement',
              'native_grant_guardian_transport_qualification')
