@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 # Prospective parser extent only, NOT a RAM/CPU/native fit qualification.
 MAX_CHECKPOINT_BYTES = 32 * 1024**2
-SOURCE_PINS = {'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/__init__.py': 'd1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab', 'experiments/digital_eka1_paid_read_source_v1.py': '5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a', 'experiments/digital_informative_exposure23_interpret.py': '66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa', 'experiments/digital_mobile54.py': '245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3', 'experiments/digital_pressure71_population.py': 'cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de', 'experiments/digital_sharedlineage68_population.py': '624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609'}
+SOURCE_PINS = {'tools/eka1_native_owner_candidate.py': '821d7080be97f0b7e3d6a39790f14c89c7d9d0d752aaa2446322b86746dbfbae', 'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/__init__.py': 'd1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab', 'experiments/digital_eka1_paid_read_source_v1.py': '5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a', 'experiments/digital_informative_exposure23_interpret.py': '66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa', 'experiments/digital_mobile54.py': '245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3', 'experiments/digital_pressure71_population.py': 'cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de', 'experiments/digital_sharedlineage68_population.py': '624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'derived_raw_sha256',
                   'binding', 'arm', 'stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}
@@ -131,6 +131,18 @@ def reservation_class():
     return budget_source.Reservations
 
 
+def owner_class():
+    """Preparation-path source/origin check; never native authority."""
+    name = 'tools/eka1_native_owner_candidate.py'
+    path = ROOT/name
+    if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != SOURCE_PINS[name]:
+        raise ValueError('Pinned owner source changed')
+    from tools import eka1_native_owner_candidate as owner_source
+    if Path(owner_source.__file__).resolve() != path.resolve():
+        raise ValueError('Owner module origin differs')
+    return owner_source.NativeOwnerCandidate
+
+
 def runtime_sources():
     if sys.flags.optimize:
         raise RuntimeError('Original source assertions must remain enabled')
@@ -149,21 +161,25 @@ def runtime_sources():
     return World, paid_read_dispatch
 
 
-def reconstruct_and_verify(original_raw, derived_raw, request, *, reservations, genesis_index):
+def reconstruct_and_verify(original_raw, derived_raw, request, *, reservations, genesis_index, owner):
     """One original-prefix replay, one paid READ, ordinary suffix; no raw load.
 
     The original World.restore performs genesis, paid replay and exact original
     snapshot equality. Never assign a supplied derived dictionary to __dict__.
     This function supplies no native/physical registration authentication.
     """
-    original, claimed = prepare(original_raw, derived_raw, request)
     Reservations = reservation_class()
     if type(reservations) is not Reservations:
         raise TypeError('Exact owner reservation ledger required')
-    reservations.genesis(request['configuration']['dose'], genesis_index)
-    # World.restore performs its own prefix loop. Charge prefix+READ+suffix
-    # together BEFORE entering that opaque method, not only the visible tail.
-    reservations.dispatches(request['configuration']['dose'], genesis_index, request['stop_tick'])
+    if type(owner) is not owner_class():
+        raise TypeError('Exact canonical owner required')
+    # The canonical owner derives the complete prefix+READ+suffix bound from
+    # the fixed request, consumes it on the physical ledger, then holds native
+    # execution before runtime imports. No caller-supplied smaller tail bound.
+    owner.replay(reservations, assignment_id=request['binding']['original_world_id'],
+                 dose=request['configuration']['dose'], role=request['arm'],
+                 request=request, genesis_index=genesis_index)
+    original, claimed = prepare(original_raw, derived_raw, request)
     World, paid_read = runtime_sources()
     world = World.restore(original)
     if canonical(world.snapshot()) != canonical(original):

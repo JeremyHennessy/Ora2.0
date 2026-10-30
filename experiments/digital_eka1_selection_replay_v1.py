@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_PINS = {'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/digital_eka1_derived_reconstruction_v1.py': 'f98e36f925b6472fc310b4afccd17208b6d9945474f31d9e907d15ef82270683', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
+INPUT_PINS = {'tools/eka1_native_owner_candidate.py': '821d7080be97f0b7e3d6a39790f14c89c7d9d0d752aaa2446322b86746dbfbae', 'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/digital_eka1_derived_reconstruction_v1.py': 'ceadee49200c442ec1342dd1d073187947d170ef5c5123f9ff4e70bdc7a6a198', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'assignment_id',
                   'assigned_stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}
@@ -74,6 +74,18 @@ def reservation_class():
     return budget_source.Reservations
 
 
+def owner_class():
+    """Preparation-path source/origin check; never native authority."""
+    name = 'tools/eka1_native_owner_candidate.py'
+    path = ROOT/name
+    if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != INPUT_PINS[name]:
+        raise ValueError('Pinned owner source changed')
+    from tools import eka1_native_owner_candidate as owner_source
+    if Path(owner_source.__file__).resolve() != path.resolve():
+        raise ValueError('Owner module origin differs')
+    return owner_source.NativeOwnerCandidate
+
+
 def metadata_inputs():
     for name, digest in INPUT_PINS.items():
         path = ROOT/name
@@ -90,20 +102,23 @@ def metadata_inputs():
     return reconstruction, selector
 
 
-def replay_original_selection(original_raw, request, *, reservations, genesis_index):
+def replay_original_selection(original_raw, request, *, reservations, genesis_index, owner):
     """One paid genesis/full assigned replay; retain no-READ actual outcomes.
 
     Unchanged source law reconstructs all original fields/events. This is not a
     producer-free literal interpreter or physical/native authority validation.
     """
-    config = request_metadata(request)
     # Mandatory whole-replay precharge precedes runtime imports and genesis.
     # No refund on invalid input, extinction, comparison failure or exception.
     Reservations = reservation_class()
     if type(reservations) is not Reservations:
         raise TypeError('Exact owner reservation ledger required')
-    reservations.genesis(config['dose'], genesis_index)
-    reservations.dispatches(config['dose'], genesis_index, request['assigned_stop_tick'])
+    if type(owner) is not owner_class():
+        raise TypeError('Exact canonical owner required')
+    owner.replay(reservations, assignment_id=request['assignment_id'],
+                 dose=request['configuration']['dose'], role='selection_replay', request=request,
+                 genesis_index=genesis_index)
+    config = request_metadata(request)
     reconstruction, selector = metadata_inputs()
     original = reconstruction.parse_checkpoint(original_raw, request['original_raw_sha256'])
     for field, value in config.items():

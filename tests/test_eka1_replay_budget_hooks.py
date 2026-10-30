@@ -60,17 +60,17 @@ class ReplayBudgetChecks(unittest.TestCase):
             ('digital_eka1_derived_reconstruction_v1.py', 'reconstruct_and_verify', 'runtime_sources')):
             tree = ast.parse((ROOT/'experiments'/filename).read_bytes())
             fn = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == target)
-            self.assertEqual([n.arg for n in fn.args.kwonlyargs], ['reservations', 'genesis_index'])
-            self.assertEqual(fn.args.kw_defaults, [None, None])
+            self.assertEqual([n.arg for n in fn.args.kwonlyargs], ['reservations', 'genesis_index', 'owner'])
+            self.assertEqual(fn.args.kw_defaults, [None, None, None])
             calls = [n for n in ast.walk(fn) if isinstance(n, ast.Call)]
-            genesis = next(n for n in calls if isinstance(n.func, ast.Attribute) and isinstance(n.func.value, ast.Name) and n.func.value.id == 'reservations' and n.func.attr == 'genesis')
-            debit = next(n for n in calls if isinstance(n.func, ast.Attribute) and isinstance(n.func.value, ast.Name) and n.func.value.id == 'reservations' and n.func.attr == 'dispatches')
+            debit = next(n for n in calls if isinstance(n.func, ast.Attribute) and isinstance(n.func.value, ast.Name) and n.func.value.id == 'owner' and n.func.attr == 'replay')
             load = next(n for n in calls if isinstance(n.func, ast.Name) and n.func.id == runtime)
-            self.assertLess(genesis.lineno, debit.lineno); self.assertLess(debit.lineno, load.lineno)
+            self.assertLess(debit.lineno, load.lineno)
             self.assertFalse(any(isinstance(n, ast.Try) for n in fn.body[:next(i for i, n in enumerate(fn.body) if n.lineno >= load.lineno)+1]))
             self.assertIn("type(reservations) is not Reservations", ast.unparse(fn))
-            # The charged bound is prospective stop_tick, never claimed derived tick.
-            self.assertIn('stop_tick', ast.unparse(debit.args[2]))
+            self.assertIn("type(owner) is not owner_class()", ast.unparse(fn))
+            self.assertNotIn('stop_tick', [k.arg for k in debit.keywords])
+            self.assertIn('request', [k.arg for k in debit.keywords])
 
     def test_selection_raw_dependency_pin_matches(self):
         tree = ast.parse((ROOT/'experiments/digital_eka1_selection_replay_v1.py').read_bytes())

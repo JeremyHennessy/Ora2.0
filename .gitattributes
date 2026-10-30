@@ -98,3 +98,8 @@ tools/eka1_owner_binding_preflight.py -text
 tests/test_eka1_owner_binding_preflight.py -text
 data/eka1-owner-binding-preflight-v1.json -text
 docs/EKA-1-OWNER-BINDING-PREFLIGHT-v1.md -text
+
+tools/eka1_native_owner_candidate.py -text
+tests/test_eka1_native_owner_candidate.py -text
+
+data/eka1-native-owner-candidate-review-20261030.json -text

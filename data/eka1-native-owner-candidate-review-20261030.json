@@ -1,0 +1,59 @@
+{
+  "reviewer": "/root/eka323_exact_review",
+  "independent_of_implementation": true,
+  "verdict": "ACCEPTED_PARTIAL_FAIL_CLOSED_PREPARATION_PATH",
+  "exact_source_hashes": {
+    "tools/eka1_native_owner_candidate.py": "821d7080be97f0b7e3d6a39790f14c89c7d9d0d752aaa2446322b86746dbfbae",
+    "experiments/digital_eka1_selection_replay_v1.py": "22a4d0f87ebb45775cf4da5ef018e98b09e1c359e4d4151d664f3cc328f9a61c",
+    "experiments/digital_eka1_derived_reconstruction_v1.py": "ceadee49200c442ec1342dd1d073187947d170ef5c5123f9ff4e70bdc7a6a198",
+    "tests/test_eka1_native_owner_candidate.py": "3f1fbba3ca9f9f05a48136fde34ff118efb05d18c165febaa74374d90af831f6",
+    "tests/test_eka1_reservation_source_integrity.py": "a2c35aaa40d9d92ad136eda5f62dddc06268e21abb35a41023825470228a7ff8",
+    "tests/test_eka1_replay_budget_hooks.py": "6d8d73fa76d2b21327773b424b314b8ae3b7a580335a70f7506d719ad45d6659"
+  },
+  "tests": {
+    "integration": 28,
+    "source_origin_integrity": 9,
+    "changed_AST_hooks": 2,
+    "independent_fresh_live_and_expired_parser_order": 2,
+    "distinct_total": 41,
+    "all_exit_zero": true,
+    "maximum_subprocess_timeout_seconds": 45,
+    "supplementary_harness_note": "First supplemental unittest.main also discovered imported28 test class; all30passed receipt retained. v2 explicitly selects only2 independently authored tests, bothpass. No scientific/native work."
+  },
+  "verified_controls": [
+    "Current Windows pid/creationtime read-only observation",
+    "Fresh O_EXCL physical file descriptor, namedfile device/inode/link/extent/offset and operation ancestry checks",
+    "Process-local lifetime remains consumed afterclose/failedopen/terminalhold; booldose requestkey refused",
+    "Prospective immutable14-request digestcatalog and assignment binding; no authentication claim",
+    "Exact owner and canonical ledger required by changed wrappers; complete fixedrequest replay envelope precharged before hardhold",
+    "Roledeadline measured before durable roleappend; mockedslowfsync expires without deadlineextension",
+    "Expired/wrongowner and livehardhold block checkpoint parsers and native loaders",
+    "Partialwrite/fsync failures preserve ledgerbytes, closecontext and prohibit retry"
+  ],
+  "corrected_findings": [
+    "Process-local lifetime label-reset loophole",
+    "Boolean dose keyalias",
+    "Rolefsync time excluded from deadline",
+    "Metadata parse before mandatoryowner/deadline gate"
+  ],
+  "preserved_evidence": [
+    "Original oldsetupfailure unchanged",
+    "Currentproducer StopIteration clockmock setupfailure3files pinned",
+    "First38-pass scopedreview superseded by final41 distinct checks",
+    "Interim noncoherent capture during coordinator fix explicitly notacceptanceevidence"
+  ],
+  "native_claim_ceiling": {
+    "registered_original_owner_authenticated": false,
+    "actual_child_process_birth_hook_verified": false,
+    "actual_launches_created": 0,
+    "World_replay_or_population_executed": false,
+    "deadline_kind": "cooperative preparation checks only; blockedsyscall/OSinterrupt UNKNOWN",
+    "OSjob_resource_stop_qualified": false,
+    "output_archive_or_termination_fit_qualified": false,
+    "exact_source_native_CI_established": false,
+    "finite_native_qualification_ready": false,
+    "scientific_admission": false
+  },
+  "next_blocker": "Actual immutable registration and admitted nativeguardian must connect originalproducer and all actual attempted child births to canonical ledger, with independently qualified OS limits/enclosingstop/output/archive/closure and executed-code custody. Do not issue finitequalification yet.",
+  "publication": "Existingowner branch/PR323 only after exactcommittedbyte attestation; do not merge. LegacyCI contains scientificcalibration and must not be dispatched to claim qualification."
+}
