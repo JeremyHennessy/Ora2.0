@@ -1,4 +1,4 @@
-# Ora research checkpoint — October 28, 2026
+# Ora research checkpoint â€” October 28, 2026
 
 Documentation reconciliation requested by the user. This is not a new scientific
 result, experiment registration, approved main baseline or deployment.
@@ -30,7 +30,7 @@ useful learned behavior or inherited fitness. Historical banks stay closed.
 
 | Workstream | Existing owner/status |
 |---|---|
-| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Head06c5659; independent source-only review accepted33 offline checks; actual original/assignment/grant/common-prestate uncreated or unauthenticated; native admission held. Existing owner retains custody. |
+| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Public head94e60da;41 independent offline checks accepted only partial fail-closed preparation. Local d1bb01d repair awaits review and remains unpublished; native admission held. Existing owner retains custody. |
 | [Isolated research325](https://github.com/JeremyHennessy/Ora2.0/pull/325) | Existing prototype branch; results preserved, certificate published; no native admission. |
 | [Independent research63](https://github.com/JeremyHennessy/AI-Research/pull/63) | Existing independent assessment; UNKNOWN/NO-GO and negative results retained. |
 | [PILOT74/324](https://github.com/JeremyHennessy/Ora2.0/pull/324) | Headae82bde; scoped Windows59/Linux55+4 explicit skips passed in run40113063808. Legacy calibration skipped; original25/26 native failure sealed. Full qualification held. |
@@ -56,7 +56,7 @@ useful learned behavior or inherited fitness. Historical banks stay closed.
 completed windows,608 epochs,zero controller/host/seen failures,174 intact approved
 memory/provenance records and key,two valid snapshots. Latest window26 closure
 was7200.937s,exit0/EOF/no leaks,old owned birth closed and next window started.
-Windows9–12 and16–20 lack individual monitor verification; do not describe all26
+Windows9â€“12 and16â€“20 lack individual monitor verification; do not describe all26
 as independently verified. This is dated operating evidence, not a LIVE scientific
 World, proof of indefinite reliability, historical readiness cause or organism
 learning. Raw private receipts remain local; no memory contents, machine IDs,
@@ -77,81 +77,78 @@ remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
 
 
-## Latest coordinated review - October30,09:45 UTC evidence
+## Latest coordinated review - October30,12:43 UTC evidence
 
-**Science remains UNKNOWN; new population NO-GO.** The closed authored learner
-0/32 versus fixed-reference32/32 result is unchanged. No new useful learned
-capability,paid descendant advantage or evolved intelligence is demonstrated.
+This user-requested repository update reuses retained source reviews and monitor
+receipts. It runs no scientific experiment and grants no stage or admission.
 
-### EKA323: independently accepted source preparation is now published
+### EKA323: partial physical-owner integration published; further repair held
 
-[Existing PR323](https://github.com/JeremyHennessy/Ora2.0/pull/323) now contains
-exact head `06c5659f4981f587c956d19e05d671e68789f5c5`,following owner-coordinated
-publication. The previously local b300ccf7/9d2cfe46 commits are included; the old
-public48dee3e status is superseded. No competing branch or PR was created.
+Published head `94e60da0de3f54fb51c140a281f2c5a7d8f8782c` on the existing
+[PR323](https://github.com/JeremyHennessy/Ora2.0/pull/323) directly follows accepted
+baseline06c5659. **41 distinct independent bounded offline checks passed:**28 owner
+integration,9 source/origin,2 affected AST hooks and2 independent parser-order
+checks. Exact committed code/test bytes matched the reviewed source; eight
+remote blobs were verified. [Review and exact source hashes](https://github.com/JeremyHennessy/Ora2.0/blob/94e60da0de3f54fb51c140a281f2c5a7d8f8782c/data/eka1-native-owner-candidate-review-20261030.json);
+review SHA256 `ff80fcc57f62fe3095020e4278cfba19fbec67cbe9b101156165db242b17be84`,
+exact-head acceptance SHA256
+`dc2107508662594ac97c1b6a6a66c6569f0a0654fcb98354c0c6230c13e395ce`.
 
-Independent review examined complete ledger,replay and hidden restore paths.
-It found unpinned ledger import; repair
-`051b6b6df9a1ad209e88694f2f9c8d5b9d598c62` binds raw ledger bytes and module
-origin before use. Full replay envelopes reserve prefix,paid READ and suffix
-before runtime loading. Failed/unused reservations are burned; write/sync/extent
-failure poisons the instance and retains evidence.
+The candidate observes the current Windows owner birth and checks its fresh
+physical ledger, ancestry/link/extent/offset, fixed prospective assignment and
+fourteen request digests. Both replay entrypoints require that canonical owner
+and ledger, charge the full replay/hidden-restoration envelope and unconditionally
+hold before metadata parsing or native loading. Lifetime reset, Boolean key alias,
+delayed role deadline and parser-before-owner defects were corrected. Cooperative
+deadline checks cannot interrupt blocked syscalls. `launch_role` consumes a denied
+launch-request reservation; it creates no child. This is **partial fail-closed
+preparation**, not registered original ownership or actual native enforcement.
+The earlier accepted33 checks, original setup failure and new clock-mock setup
+failure remain retained; no baseline or closed experiment was rerun here.
 
-The next source-only preparation was also implemented: one prospective
-owner/assignment/ledger binding across both doses/all14 roles,with a revised
-11-source closure. Independent review caught and corrected caller-repinning
-of changed laws. Seven unchanged source pins and the exact reviewed wrapper/
-ledger revisions are now fixed. Valid inputs always return NOT_READY; null
-proofs cannot authenticate an owner or grant execution.
+The existing owner subsequently reported local, unpublished repair
+`d1bb01d7d066d541edc604b63a0ba9365be7bad3` for first-failure overwriting and cleanup
+errors masking the primary cause. Its five changed source pins match the local
+handoff and five new producer offline checks are reported. **Independent review
+is pending**: this update neither accepts that repair nor pushes the owner's
+branch. Earlier accepted41-check scope does not certify this later source.
 
-Final independent33 offline checks passed:23 repaired ledger/wrapper/failure
-checks,9 preflight checks and1 independent changed-law/repin rejection witness.
-Committed/tested bytes match; initial review defects,witnesses and original
-temporary-folder setup failure remain preserved. No tests were rerun for this
-reconciliation. Acceptance receipt SHA256:
-`1e12c10d65b476b3358fa0443d315343c14b7115c8d55e4b965e008acd529cfd`.
-See the [published preparation contract](https://github.com/JeremyHennessy/Ora2.0/blob/06c5659f4981f587c956d19e05d671e68789f5c5/docs/EKA-1-OWNER-BINDING-PREFLIGHT-v1.md).
+Actual producer/attempted-child-birth hooks, immutable registered original
+custody, executed-code provenance, OS resource/interrupt/termination controls and
+output/archive/restore fit remain unqualified. Finite native qualification stays
+**NOT_READY**. Exact-head executable CI is NOT_ESTABLISHED; legacy calibration
+was deliberately skipped. Original event/common-prestate/paid continuation
+remain uncreated or unauthenticated in this route. Historical gate pins remain
+frozen and do not admit revised wrappers.
 
-This is independently accepted SOURCE-ONLY preparation,not global native
-resource enforcement. Actual original-producer/process-birth hooks,immutable
-physical ledger/owner/assignment custody,enclosing deadline,executed-code and
-complete resource/output/archive/restore fit remain unqualified. Safe exact-source
-CI has no recorded run on this head. Original event/common-prestate/paid
-continuation remain NOT CREATED/NOT AUTHENTICATED in this route. Historical
-nine-pin gates remain unchanged and cannot admit revised wrappers.
+### Separate assistant: LAST VERIFIED, not organism intelligence
 
-### Separate assistant: LAST VERIFIED,not organism intelligence
+Retained monitor evidence at2026-10-30 12:43:56 UTC (09:43:56 Halifax) reports48
+completed windows,1124epochs and zero failure counters; no new runtime check was
+run for this repository update. Window48 closed after7201.469s with exit0,EOF,
+no leaks,old controller birth closed and normal next start. Five actual current
+owned births,owned11435,all174 memory/provenance records,key,two snapshots and
+failed-v9 all50 immutable files were verified by the monitor. Windows9-12 and
+16-20 retain individual verification gaps. The window48 normal model-rotation
+comparison exception and its single justified read-only recheck remain retained.
+This is scoped assistant operation, not indefinite reliability, a historical
+readiness diagnosis or organism learning. No runtime configuration was changed.
 
-At2026-10-30 09:45:20 UTC (06:45 Halifax),v10 reported47 completed windows,
-1089epochs and zero failure counters. Latest window47 closure7201.281s verified
-exit0/EOF/no leaks,old controller birth closed and normal next start. All174
-memory/provenance records,key,two snapshots and failed-v9 all50 pins verified.
-Windows9-12 and16-20 retain individual-monitor gaps. Earlier window38 normal
-service-rotation exception and its single justified read-only recheck remain
-preserved; latest closure needed no recheck. No runtime work was retried.
-Receipt SHA256 `d280e582a89d4363f9831790be9464b1fc7bf4a2c58e7167a29f4ae3d3f3ebb0`.
-This establishes scoped assistant operating evidence,not indefinite reliability,
-a resolved historical readiness cause or organism intelligence.
+### Next dependency and publication limits
 
-### Remaining tracks and next scientific dependency
+First independently review the owner's exact first-failure repair. Then connect
+the existing native guardian and fixed EKA process entrypoints to the physical
+ledger, including actual attempted births and enclosing resource/output/archive
+closure. Review that whole path and establish safe exact-source CI before asking
+for separately authorized finite qualification. After qualification, test matched
+current observations/latest feedback with different personally acquired older
+history, efficient fixed/reactive/finite-state references and an appropriate
+information-destruction control; charge every lifecycle cost. Older-history added
+value and fully paid inherited advantage remain **UNKNOWN; population NO-GO**.
 
-Main unchanged: Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8`;
-AI-Research `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec`.
-PRs323/324/325/326 and research63/64 remain draft/unmerged. PILOT324 stays
-`ae82bde6c37db4af51787bf74b93f02346b36fa8`,scoped CI40113063808 only;
-original25/26 failure/full native qualification hold unchanged. Strategy326/64
-remain documentation proposals. Observatory sanitized source/export and independent
-portable visual QA remain unavailable; no UI/export/deployment. AgentTest is
-historical/read-only; K0 remains future research.
-
-Highest-value next action remains with the existing native owner: connect actual
-producer and attempted process births to the single immutable registered
-owner/assignment/physical ledger,then independently qualify custody and resource
-fit before separate finite qualification. That prepares an honest native
-information-opportunity test; no such test is authorized here. Older-history
-added value and fully paid inherited advantage remain UNKNOWN.
-
-This requested update reconciles retained evidence only. JSON/relative-link/
-UTF-8/diff and remote exact Git blob checks; no experiment,closed-bank rerun,
-source-law/runtime/schedule change,merge or deployment. Executable CI not
-established for this docs head. Earlier status remains in Git history.
+Main readbacks: Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8`;
+AI-Research `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec`. Existing PRs remain
+unmerged; no source-law,experiment,runtime,schedule,UI,merge or deployment change
+is made by this reconciliation. Observatory verification remains unavailable.
+Only changed documentation/JSON/link/committed-byte checks are appropriate here;
+actual credit usage is unavailable.
