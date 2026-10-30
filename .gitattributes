@@ -129,3 +129,7 @@ experiments/native/eka1_runtime_capsule.h -text
 tools/eka1_external_settlement.py -text
 tests/test_eka1_runtime_capsule.py -text
 tests/test_eka1_external_settlement.py -text
+tools/eka1_build_only_contract.py -text
+tests/test_eka1_build_only_contract.py -text
+data/eka1-native-build-decision-20261030.json -text
+data/eka1-build-only-single-build-preflight-20261030.json -text
