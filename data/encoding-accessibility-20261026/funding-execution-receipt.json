@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-26T19:13:48.346804+00:00",
+  "exit_code": 0,
+  "elapsed_wall_seconds": 0.0779999999795109,
+  "timeout_seconds": 10,
+  "finite_cases": 48,
+  "controller_executions": 0,
+  "population_executions": 0,
+  "new_unit_checks_passed": 4,
+  "result_sha256": "b46785c15396f2d08e765d58f40677e49067bc5096a06aaea1e1ea8bc84c50a9"
+}

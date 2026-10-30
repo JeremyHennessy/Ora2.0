@@ -1,0 +1,10483 @@
+{
+  "protocol": {
+    "schema": "ORA-FOUNDER-COST-QUALIFICATION-v1",
+    "attempts": 1,
+    "startup": 8,
+    "genome": 0,
+    "bits": 6,
+    "reward": 8,
+    "full_copy_bill": 22,
+    "scope": "48 retained paid-operation ledgers; no controller/environment/population",
+    "copy_policy": "After horizon only, if alive; no environment continuation after copying",
+    "earned_policy": "Copy bill must fit terminal balance minus whole initial8 grant",
+    "formation": "Founder body7 externally supplied at setup; never charge formed offspring twice",
+    "unknown_costs": {
+      "decoder_energy_per_dispatch": null,
+      "physical_storage_maintenance": null,
+      "building_material_acquisition": null,
+      "copy_clock_and_resource_phase": null,
+      "expiry_during_copy": null,
+      "host_and_fork_energy_mapping": null
+    },
+    "qualification": "All unknown costs and source/clock/custody must be resolved before any full pass",
+    "population_admission": false
+  },
+  "input_sha256": "b46785c15396f2d08e765d58f40677e49067bc5096a06aaea1e1ea8bc84c50a9",
+  "source_sha256": "dffe8ea2c4d60e30b87a85aba0731496d80246fdc1ff490c395f1459b94c565b",
+  "cases": [
+    {
+      "split": "development",
+      "targets": [
+        0,
+        0,
+        0
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 3,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 4,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 6,
+          "before": 16,
+          "charged": 1,
+          "earned": 8,
+          "after": 23
+        },
+        {
+          "index": 7,
+          "before": 23,
+          "charged": 1,
+          "earned": 8,
+          "after": 30
+        },
+        {
+          "index": 8,
+          "before": 30,
+          "charged": 1,
+          "earned": 0,
+          "after": 29
+        },
+        {
+          "index": 9,
+          "before": 29,
+          "charged": 2,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 10,
+          "before": 27,
+          "charged": 1,
+          "earned": 8,
+          "after": 34
+        },
+        {
+          "index": 11,
+          "before": 34,
+          "charged": 1,
+          "earned": 8,
+          "after": 41
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 41,
+      "total_earned": 48,
+      "total_known_heat": 15,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 33,
+      "known_cost_earned_copy_witness": true,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 41,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 19,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        0,
+        0
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 8,
+          "after": 11
+        },
+        {
+          "index": 4,
+          "before": 11,
+          "charged": 1,
+          "earned": 8,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 2,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 8,
+          "after": 21
+        },
+        {
+          "index": 9,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        },
+        {
+          "index": 10,
+          "before": 28,
+          "charged": 1,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 11,
+          "before": 27,
+          "charged": 2,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 12,
+          "before": 25,
+          "charged": 1,
+          "earned": 0,
+          "after": 24
+        },
+        {
+          "index": 13,
+          "before": 24,
+          "charged": 1,
+          "earned": 8,
+          "after": 31
+        },
+        {
+          "index": 14,
+          "before": 31,
+          "charged": 1,
+          "earned": 8,
+          "after": 38
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 38,
+      "total_earned": 48,
+      "total_known_heat": 18,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 30,
+      "known_cost_earned_copy_witness": true,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 38,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 16,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        0,
+        1
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 3,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 4,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 6,
+          "before": 16,
+          "charged": 1,
+          "earned": 8,
+          "after": 23
+        },
+        {
+          "index": 7,
+          "before": 23,
+          "charged": 1,
+          "earned": 8,
+          "after": 30
+        },
+        {
+          "index": 8,
+          "before": 30,
+          "charged": 1,
+          "earned": 0,
+          "after": 29
+        },
+        {
+          "index": 9,
+          "before": 29,
+          "charged": 2,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 10,
+          "before": 27,
+          "charged": 1,
+          "earned": 0,
+          "after": 26
+        },
+        {
+          "index": 11,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 25,
+      "total_earned": 32,
+      "total_known_heat": 15,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 17,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 25,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 3,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        0,
+        1
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 8,
+          "after": 11
+        },
+        {
+          "index": 4,
+          "before": 11,
+          "charged": 1,
+          "earned": 8,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 2,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 8,
+          "after": 21
+        },
+        {
+          "index": 9,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        },
+        {
+          "index": 10,
+          "before": 28,
+          "charged": 1,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 11,
+          "before": 27,
+          "charged": 2,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 12,
+          "before": 25,
+          "charged": 1,
+          "earned": 0,
+          "after": 24
+        },
+        {
+          "index": 13,
+          "before": 24,
+          "charged": 1,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 14,
+          "before": 23,
+          "charged": 1,
+          "earned": 0,
+          "after": 22
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 22,
+      "total_earned": 32,
+      "total_known_heat": 18,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 14,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 22,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 0,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        1,
+        0
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 3,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 4,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 6,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 2,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 10,
+          "before": 11,
+          "charged": 1,
+          "earned": 8,
+          "after": 18
+        },
+        {
+          "index": 11,
+          "before": 18,
+          "charged": 1,
+          "earned": 8,
+          "after": 25
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 25,
+      "total_earned": 32,
+      "total_known_heat": 15,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 17,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 25,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 3,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        1,
+        0
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 8,
+          "after": 11
+        },
+        {
+          "index": 4,
+          "before": 11,
+          "charged": 1,
+          "earned": 8,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 2,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 2,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 12,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 13,
+          "before": 8,
+          "charged": 1,
+          "earned": 8,
+          "after": 15
+        },
+        {
+          "index": 14,
+          "before": 15,
+          "charged": 1,
+          "earned": 8,
+          "after": 22
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 22,
+      "total_earned": 32,
+      "total_known_heat": 18,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 14,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 22,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 0,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        1,
+        1
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 3,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 4,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 6,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 2,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 10,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 11,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 9,
+      "total_earned": 16,
+      "total_known_heat": 15,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 1,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 9,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 1,
+        "heat": 8,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 3,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        0,
+        1,
+        1
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 8,
+          "after": 11
+        },
+        {
+          "index": 4,
+          "before": 11,
+          "charged": 1,
+          "earned": 8,
+          "after": 18
+        },
+        {
+          "index": 5,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 2,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 7,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 2,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 12,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 13,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 14,
+          "before": 7,
+          "charged": 1,
+          "earned": 0,
+          "after": 6
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 6,
+      "total_earned": 16,
+      "total_known_heat": 18,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -2,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 6,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 0,
+        "heat": 6,
+        "copied_bits": [
+          0,
+          0,
+          0
+        ],
+        "free_units": 4,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        0,
+        0
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        0,
+        0
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 1,
+      "total_earned": 0,
+      "total_known_heat": 7,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -7,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        0,
+        1
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        0,
+        1
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 1,
+      "total_earned": 0,
+      "total_known_heat": 7,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -7,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        1,
+        0
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        1,
+        0
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 1,
+      "total_earned": 0,
+      "total_known_heat": 7,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -7,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "delay": 0,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "development",
+      "targets": [
+        1,
+        1,
+        1
+      ],
+      "delay": 1,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 1,
+      "total_earned": 0,
+      "total_known_heat": 7,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -7,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 11,
+          "before": 19,
+          "charged": 1,
+          "earned": 8,
+          "after": 26
+        },
+        {
+          "index": 12,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 13,
+          "before": 25,
+          "charged": 2,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 14,
+          "before": 23,
+          "charged": 1,
+          "earned": 0,
+          "after": 22
+        },
+        {
+          "index": 15,
+          "before": 22,
+          "charged": 1,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        },
+        {
+          "index": 17,
+          "before": 28,
+          "charged": 1,
+          "earned": 8,
+          "after": 35
+        },
+        {
+          "index": 18,
+          "before": 35,
+          "charged": 1,
+          "earned": 0,
+          "after": 34
+        },
+        {
+          "index": 19,
+          "before": 34,
+          "charged": 2,
+          "earned": 0,
+          "after": 32
+        },
+        {
+          "index": 20,
+          "before": 32,
+          "charged": 1,
+          "earned": 0,
+          "after": 31
+        },
+        {
+          "index": 21,
+          "before": 31,
+          "charged": 1,
+          "earned": 0,
+          "after": 30
+        },
+        {
+          "index": 22,
+          "before": 30,
+          "charged": 1,
+          "earned": 8,
+          "after": 37
+        },
+        {
+          "index": 23,
+          "before": 37,
+          "charged": 1,
+          "earned": 8,
+          "after": 44
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 44,
+      "total_earned": 64,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 36,
+      "known_cost_earned_copy_witness": true,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 44,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 22,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 13,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        },
+        {
+          "index": 14,
+          "before": 24,
+          "charged": 1,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 15,
+          "before": 23,
+          "charged": 2,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 1,
+          "earned": 8,
+          "after": 25
+        },
+        {
+          "index": 20,
+          "before": 25,
+          "charged": 1,
+          "earned": 8,
+          "after": 32
+        },
+        {
+          "index": 21,
+          "before": 32,
+          "charged": 1,
+          "earned": 0,
+          "after": 31
+        },
+        {
+          "index": 22,
+          "before": 31,
+          "charged": 2,
+          "earned": 0,
+          "after": 29
+        },
+        {
+          "index": 23,
+          "before": 29,
+          "charged": 1,
+          "earned": 0,
+          "after": 28
+        },
+        {
+          "index": 24,
+          "before": 28,
+          "charged": 1,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 25,
+          "before": 27,
+          "charged": 1,
+          "earned": 0,
+          "after": 26
+        },
+        {
+          "index": 26,
+          "before": 26,
+          "charged": 1,
+          "earned": 8,
+          "after": 33
+        },
+        {
+          "index": 27,
+          "before": 33,
+          "charged": 1,
+          "earned": 8,
+          "after": 40
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 40,
+      "total_earned": 64,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 32,
+      "known_cost_earned_copy_witness": true,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 40,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 18,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 11,
+          "before": 19,
+          "charged": 1,
+          "earned": 8,
+          "after": 26
+        },
+        {
+          "index": 12,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 13,
+          "before": 25,
+          "charged": 2,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 14,
+          "before": 23,
+          "charged": 1,
+          "earned": 0,
+          "after": 22
+        },
+        {
+          "index": 15,
+          "before": 22,
+          "charged": 1,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        },
+        {
+          "index": 17,
+          "before": 28,
+          "charged": 1,
+          "earned": 8,
+          "after": 35
+        },
+        {
+          "index": 18,
+          "before": 35,
+          "charged": 1,
+          "earned": 0,
+          "after": 34
+        },
+        {
+          "index": 19,
+          "before": 34,
+          "charged": 2,
+          "earned": 0,
+          "after": 32
+        },
+        {
+          "index": 20,
+          "before": 32,
+          "charged": 1,
+          "earned": 0,
+          "after": 31
+        },
+        {
+          "index": 21,
+          "before": 31,
+          "charged": 1,
+          "earned": 0,
+          "after": 30
+        },
+        {
+          "index": 22,
+          "before": 30,
+          "charged": 1,
+          "earned": 0,
+          "after": 29
+        },
+        {
+          "index": 23,
+          "before": 29,
+          "charged": 1,
+          "earned": 0,
+          "after": 28
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 28,
+      "total_earned": 48,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 20,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 28,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 6,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 13,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        },
+        {
+          "index": 14,
+          "before": 24,
+          "charged": 1,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 15,
+          "before": 23,
+          "charged": 2,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 1,
+          "earned": 8,
+          "after": 25
+        },
+        {
+          "index": 20,
+          "before": 25,
+          "charged": 1,
+          "earned": 8,
+          "after": 32
+        },
+        {
+          "index": 21,
+          "before": 32,
+          "charged": 1,
+          "earned": 0,
+          "after": 31
+        },
+        {
+          "index": 22,
+          "before": 31,
+          "charged": 2,
+          "earned": 0,
+          "after": 29
+        },
+        {
+          "index": 23,
+          "before": 29,
+          "charged": 1,
+          "earned": 0,
+          "after": 28
+        },
+        {
+          "index": 24,
+          "before": 28,
+          "charged": 1,
+          "earned": 0,
+          "after": 27
+        },
+        {
+          "index": 25,
+          "before": 27,
+          "charged": 1,
+          "earned": 0,
+          "after": 26
+        },
+        {
+          "index": 26,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 27,
+          "before": 25,
+          "charged": 1,
+          "earned": 0,
+          "after": 24
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 24,
+      "total_earned": 48,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 16,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 24,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 2,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 11,
+          "before": 19,
+          "charged": 1,
+          "earned": 8,
+          "after": 26
+        },
+        {
+          "index": 12,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 13,
+          "before": 25,
+          "charged": 2,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 14,
+          "before": 23,
+          "charged": 1,
+          "earned": 0,
+          "after": 22
+        },
+        {
+          "index": 15,
+          "before": 22,
+          "charged": 1,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 20,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 21,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 22,
+          "before": 14,
+          "charged": 1,
+          "earned": 8,
+          "after": 21
+        },
+        {
+          "index": 23,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 28,
+      "total_earned": 48,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 20,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 28,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 6,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 13,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        },
+        {
+          "index": 14,
+          "before": 24,
+          "charged": 1,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 15,
+          "before": 23,
+          "charged": 2,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 20,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 21,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 22,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 24,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 25,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 26,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 27,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 24,
+      "total_earned": 48,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 16,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 24,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 2,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 11,
+          "before": 19,
+          "charged": 1,
+          "earned": 8,
+          "after": 26
+        },
+        {
+          "index": 12,
+          "before": 26,
+          "charged": 1,
+          "earned": 0,
+          "after": 25
+        },
+        {
+          "index": 13,
+          "before": 25,
+          "charged": 2,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 14,
+          "before": 23,
+          "charged": 1,
+          "earned": 0,
+          "after": 22
+        },
+        {
+          "index": 15,
+          "before": 22,
+          "charged": 1,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 20,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 21,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 22,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 12,
+      "total_earned": 32,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 4,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 12,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 0,
+        "heat": 12,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 1,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 13,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        },
+        {
+          "index": 14,
+          "before": 24,
+          "charged": 1,
+          "earned": 0,
+          "after": 23
+        },
+        {
+          "index": 15,
+          "before": 23,
+          "charged": 2,
+          "earned": 0,
+          "after": 21
+        },
+        {
+          "index": 16,
+          "before": 21,
+          "charged": 1,
+          "earned": 0,
+          "after": 20
+        },
+        {
+          "index": 17,
+          "before": 20,
+          "charged": 1,
+          "earned": 0,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 1,
+          "earned": 0,
+          "after": 17
+        },
+        {
+          "index": 20,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 21,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 22,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 24,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 25,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 26,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 27,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 8,
+      "total_earned": 32,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 0,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 8,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 0,
+        "heat": 8,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 3,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 2,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 14,
+          "before": 7,
+          "charged": 1,
+          "earned": 0,
+          "after": 6
+        },
+        {
+          "index": 15,
+          "before": 6,
+          "charged": 1,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 17,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 20,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 21,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 22,
+          "before": 14,
+          "charged": 1,
+          "earned": 8,
+          "after": 21
+        },
+        {
+          "index": 23,
+          "before": 21,
+          "charged": 1,
+          "earned": 8,
+          "after": 28
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 28,
+      "total_earned": 48,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 20,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 28,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 6,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 14,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 15,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 20,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 21,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 22,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 24,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 25,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 26,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 27,
+          "before": 17,
+          "charged": 1,
+          "earned": 8,
+          "after": 24
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 24,
+      "total_earned": 48,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 16,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 24,
+        "flip": null,
+        "complete_fixture_child": true,
+        "child": 0,
+        "child_memory": 0,
+        "child_energy": 8,
+        "remaining": 2,
+        "heat": 14,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 0,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 2,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 14,
+          "before": 7,
+          "charged": 1,
+          "earned": 0,
+          "after": 6
+        },
+        {
+          "index": 15,
+          "before": 6,
+          "charged": 1,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 8,
+          "after": 12
+        },
+        {
+          "index": 17,
+          "before": 12,
+          "charged": 1,
+          "earned": 8,
+          "after": 19
+        },
+        {
+          "index": 18,
+          "before": 19,
+          "charged": 1,
+          "earned": 0,
+          "after": 18
+        },
+        {
+          "index": 19,
+          "before": 18,
+          "charged": 2,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 20,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 21,
+          "before": 15,
+          "charged": 1,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 22,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 12,
+      "total_earned": 32,
+      "total_known_heat": 28,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 4,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 12,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 0,
+        "heat": 12,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 1,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 14,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 15,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 20,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 21,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 22,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 23,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 24,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 25,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 26,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 27,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        }
+      ],
+      "completed_ledger": true,
+      "alive_at_horizon": true,
+      "terminal_balance": 8,
+      "total_earned": 32,
+      "total_known_heat": 32,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": 0,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": {
+        "parent": 0,
+        "bits": 6,
+        "initial_budget": 8,
+        "flip": null,
+        "complete_fixture_child": false,
+        "child": null,
+        "child_memory": null,
+        "child_energy": 0,
+        "remaining": 0,
+        "heat": 8,
+        "copied_bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "free_units": 3,
+        "energy_conserved": true,
+        "material_conserved": true
+      },
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 2,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 14,
+          "before": 7,
+          "charged": 1,
+          "earned": 0,
+          "after": 6
+        },
+        {
+          "index": 15,
+          "before": 6,
+          "charged": 1,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 16,
+      "total_known_heat": 24,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 14,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 15,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 20,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 16,
+      "total_known_heat": 24,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 8,
+          "after": 10
+        },
+        {
+          "index": 5,
+          "before": 10,
+          "charged": 1,
+          "earned": 8,
+          "after": 17
+        },
+        {
+          "index": 6,
+          "before": 17,
+          "charged": 1,
+          "earned": 0,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 2,
+          "earned": 0,
+          "after": 14
+        },
+        {
+          "index": 8,
+          "before": 14,
+          "charged": 1,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 2,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 14,
+          "before": 7,
+          "charged": 1,
+          "earned": 0,
+          "after": 6
+        },
+        {
+          "index": 15,
+          "before": 6,
+          "charged": 1,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 2,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 16,
+      "total_known_heat": 24,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 8,
+          "after": 9
+        },
+        {
+          "index": 6,
+          "before": 9,
+          "charged": 1,
+          "earned": 8,
+          "after": 16
+        },
+        {
+          "index": 7,
+          "before": 16,
+          "charged": 1,
+          "earned": 0,
+          "after": 15
+        },
+        {
+          "index": 8,
+          "before": 15,
+          "charged": 2,
+          "earned": 0,
+          "after": 13
+        },
+        {
+          "index": 9,
+          "before": 13,
+          "charged": 1,
+          "earned": 0,
+          "after": 12
+        },
+        {
+          "index": 10,
+          "before": 12,
+          "charged": 1,
+          "earned": 0,
+          "after": 11
+        },
+        {
+          "index": 11,
+          "before": 11,
+          "charged": 1,
+          "earned": 0,
+          "after": 10
+        },
+        {
+          "index": 12,
+          "before": 10,
+          "charged": 1,
+          "earned": 0,
+          "after": 9
+        },
+        {
+          "index": 13,
+          "before": 9,
+          "charged": 1,
+          "earned": 0,
+          "after": 8
+        },
+        {
+          "index": 14,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 15,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 16,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 17,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 18,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 19,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 20,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 16,
+      "total_known_heat": 24,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay": 2,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    },
+    {
+      "split": "reused_validation",
+      "targets": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "delay": 3,
+      "operations": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        {
+          "index": 0,
+          "before": 8,
+          "charged": 1,
+          "earned": 0,
+          "after": 7
+        },
+        {
+          "index": 1,
+          "before": 7,
+          "charged": 2,
+          "earned": 0,
+          "after": 5
+        },
+        {
+          "index": 2,
+          "before": 5,
+          "charged": 1,
+          "earned": 0,
+          "after": 4
+        },
+        {
+          "index": 3,
+          "before": 4,
+          "charged": 1,
+          "earned": 0,
+          "after": 3
+        },
+        {
+          "index": 4,
+          "before": 3,
+          "charged": 1,
+          "earned": 0,
+          "after": 2
+        },
+        {
+          "index": 5,
+          "before": 2,
+          "charged": 1,
+          "earned": 0,
+          "after": 1
+        },
+        {
+          "index": 6,
+          "before": 1,
+          "charged": 1,
+          "earned": 0,
+          "after": 0
+        }
+      ],
+      "completed_ledger": false,
+      "alive_at_horizon": false,
+      "terminal_balance": 0,
+      "total_earned": 0,
+      "total_known_heat": 8,
+      "unspent_initial_grant_required": 8,
+      "net_earned_surplus": -8,
+      "known_cost_earned_copy_witness": false,
+      "terminal_copy_fixture": null,
+      "full_cost_reproduction_qualified": false
+    }
+  ],
+  "summary": {
+    "development": {
+      "cases": 16,
+      "reached_horizon_alive": 8,
+      "known_cost_earned_copy_witnesses": 2,
+      "complete_terminal_copy_fixtures": 6,
+      "full_cost_qualified": 0
+    },
+    "reused_validation": {
+      "cases": 32,
+      "reached_horizon_alive": 12,
+      "known_cost_earned_copy_witnesses": 2,
+      "complete_terminal_copy_fixtures": 8,
+      "full_cost_qualified": 0
+    }
+  },
+  "first_probe_headroom": {
+    "0": {
+      "known_required_before_first_reward": 4,
+      "paid_dispatches_to_first_probe": 3,
+      "unknown_total_cost_headroom": 4,
+      "necessary_uniform_decoder_extra_ceiling": [
+        4,
+        3
+      ],
+      "scope": "Necessary only for first probe; not a measured price, sufficient lifetime or fitness bound"
+    },
+    "1": {
+      "known_required_before_first_reward": 5,
+      "paid_dispatches_to_first_probe": 4,
+      "unknown_total_cost_headroom": 3,
+      "necessary_uniform_decoder_extra_ceiling": [
+        3,
+        4
+      ],
+      "scope": "Necessary only for first probe; not a measured price, sufficient lifetime or fitness bound"
+    },
+    "2": {
+      "known_required_before_first_reward": 6,
+      "paid_dispatches_to_first_probe": 5,
+      "unknown_total_cost_headroom": 2,
+      "necessary_uniform_decoder_extra_ceiling": [
+        2,
+        5
+      ],
+      "scope": "Necessary only for first probe; not a measured price, sufficient lifetime or fitness bound"
+    },
+    "3": {
+      "known_required_before_first_reward": 7,
+      "paid_dispatches_to_first_probe": 6,
+      "unknown_total_cost_headroom": 1,
+      "necessary_uniform_decoder_extra_ceiling": [
+        1,
+        6
+      ],
+      "scope": "Necessary only for first probe; not a measured price, sufficient lifetime or fitness bound"
+    }
+  },
+  "full_cost_reproduction_qualified": false,
+  "population_executions": 0,
+  "controller_executions": 0
+}
