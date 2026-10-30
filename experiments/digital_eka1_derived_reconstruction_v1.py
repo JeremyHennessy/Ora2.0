@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 # Prospective parser extent only, NOT a RAM/CPU/native fit qualification.
 MAX_CHECKPOINT_BYTES = 32 * 1024**2
-SOURCE_PINS = {'experiments/__init__.py': 'd1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab', 'experiments/digital_eka1_paid_read_source_v1.py': '5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a', 'experiments/digital_informative_exposure23_interpret.py': '66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa', 'experiments/digital_mobile54.py': '245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3', 'experiments/digital_pressure71_population.py': 'cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de', 'experiments/digital_sharedlineage68_population.py': '624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609'}
+SOURCE_PINS = {'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/__init__.py': 'd1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab', 'experiments/digital_eka1_paid_read_source_v1.py': '5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a', 'experiments/digital_informative_exposure23_interpret.py': '66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa', 'experiments/digital_mobile54.py': '245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3', 'experiments/digital_pressure71_population.py': 'cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de', 'experiments/digital_sharedlineage68_population.py': '624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'derived_raw_sha256',
                   'binding', 'arm', 'stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}
@@ -119,6 +119,18 @@ def prepare(original_raw, derived_raw, request):
     return original, derived
 
 
+def reservation_class():
+    """Reject unreviewed ledger files/origins; not loaded-code authentication."""
+    name = 'tools/eka1_cumulative_reservations.py'
+    path = ROOT/name
+    if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != SOURCE_PINS[name]:
+        raise ValueError('Pinned reservation source changed')
+    from tools import eka1_cumulative_reservations as budget_source
+    if Path(budget_source.__file__).resolve() != path.resolve():
+        raise ValueError('Reservation module origin differs')
+    return budget_source.Reservations
+
+
 def runtime_sources():
     if sys.flags.optimize:
         raise RuntimeError('Original source assertions must remain enabled')
@@ -145,7 +157,7 @@ def reconstruct_and_verify(original_raw, derived_raw, request, *, reservations, 
     This function supplies no native/physical registration authentication.
     """
     original, claimed = prepare(original_raw, derived_raw, request)
-    from tools.eka1_cumulative_reservations import Reservations
+    Reservations = reservation_class()
     if type(reservations) is not Reservations:
         raise TypeError('Exact owner reservation ledger required')
     reservations.genesis(request['configuration']['dose'], genesis_index)

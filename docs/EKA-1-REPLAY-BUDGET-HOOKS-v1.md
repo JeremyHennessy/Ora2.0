@@ -47,3 +47,27 @@ signature/order and the exact revised dependency hash. Replay modules were read
 as AST only and never imported or called. Old test groups, World/VM/native
 experiment roles and closed cohorts were not run. These checks cannot establish
 semantic replay parity, native enforcement, full peak fit or useful learning.
+
+## Independent source review and narrow repair
+
+Independent review of b300ccf7 and9d2cfe46 ran22 bounded offline checks
+(8 ledger,6 hooks,8 independent failures). It requested changes: imported
+ledger class equality did not bind reviewed ledger bytes/origin. Both wrappers
+now check the ledger raw pin before import and its module origin before use.
+The reconstruction dependency pin was updated; original source gates remain
+historical and cannot admit this revised closure. File-specific raw-byte
+attributes preserve reviewed/committed identity.
+
+Independent repaired-source review passed23 checks (8+6+9). New portable
+regressions cover changed bytes,symlink,wrong origin/type,duplicate/invalid
+genesis,poison refusal and precharge-before-runtime sentinels. No World/replay
+module was imported or executed. Original setup failure and all prior evidence
+remain retained. Acceptance is source consistency/offline failure handling only;
+loaded-code authentication,canonical owner/ledger/process integration,full
+resource fit,safe exact-source CI and separate native admission remain held.
+
+Independent initial report SHA256
+`394a1ce169acf24dc59db1f52febc2814ad5ae26e5eaa1fbd36ab69821bd194a`;
+repaired report SHA256
+`fe5bf74acc28e0170db60a1cd19c065e5c6cc3287450d55db05c4259c57de2a4`.
+This is not a useful-learning or evolved-fitness result.

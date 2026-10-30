@@ -91,3 +91,6 @@ tests/test_eka1_cumulative_reservations.py -text
 docs/EKA-1-CUMULATIVE-RESERVATIONS-v1.md -text
 tests/test_eka1_replay_budget_hooks.py -text
 docs/EKA-1-REPLAY-BUDGET-HOOKS-v1.md -text
+experiments/digital_eka1_derived_reconstruction_v1.py -text
+experiments/digital_eka1_selection_replay_v1.py -text
+tests/test_eka1_reservation_source_integrity.py -text

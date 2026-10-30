@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_PINS = {'experiments/digital_eka1_derived_reconstruction_v1.py': 'ca8672080604a511e2133c427c4a06aa68200ed55ba61ea4c79ca9afec2af5b5', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
+INPUT_PINS = {'tools/eka1_cumulative_reservations.py': '735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d', 'experiments/digital_eka1_derived_reconstruction_v1.py': 'f98e36f925b6472fc310b4afccd17208b6d9945474f31d9e907d15ef82270683', 'tools/eka1_prospective_opportunity.py': 'e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76'}
 REQUEST_FIELDS = {'schema', 'original_raw_sha256', 'assignment_id',
                   'assigned_stop_tick', 'configuration'}
 CONFIG_FIELDS = {'seed', 'mode', 'fuel_mode', 'inheritance_mode', 'dose'}
@@ -62,6 +62,18 @@ def earned_read(row):
             and forage['packet'] is not None and forage['packet'] >= 64 and row['tick'] < 2048)
 
 
+def reservation_class():
+    """Reject unreviewed ledger files/origins; not loaded-code authentication."""
+    name = 'tools/eka1_cumulative_reservations.py'
+    path = ROOT/name
+    if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != INPUT_PINS[name]:
+        raise ValueError('Pinned reservation source changed')
+    from tools import eka1_cumulative_reservations as budget_source
+    if Path(budget_source.__file__).resolve() != path.resolve():
+        raise ValueError('Reservation module origin differs')
+    return budget_source.Reservations
+
+
 def metadata_inputs():
     for name, digest in INPUT_PINS.items():
         path = ROOT/name
@@ -87,7 +99,7 @@ def replay_original_selection(original_raw, request, *, reservations, genesis_in
     config = request_metadata(request)
     # Mandatory whole-replay precharge precedes runtime imports and genesis.
     # No refund on invalid input, extinction, comparison failure or exception.
-    from tools.eka1_cumulative_reservations import Reservations
+    Reservations = reservation_class()
     if type(reservations) is not Reservations:
         raise TypeError('Exact owner reservation ledger required')
     reservations.genesis(config['dose'], genesis_index)
