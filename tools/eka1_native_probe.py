@@ -220,6 +220,7 @@ def _launch(exe, out, mode, owner, seal, global_end):
         raw_bytes=(out/(str(mode)+'.raw')).read_bytes();inner_bytes=(out/(str(mode)+'.inner.json')).read_bytes()
         records=[json.loads(row) for row in inner_bytes.splitlines()]
         result={'mode':mode,'guardian_exit':code.value,'guardian_birth':str(times[0].value),'guardian_pid':pi.pid,'elapsed_ms':k.GetTickCount64()-began,'usage':usage,'root_empty':True,'raw_sha256':sha(raw_bytes),'raw_bytes':len(raw_bytes),'inner_sha256':sha(inner_bytes),'inner':records[-1] if records and records[-1]['schema']=='EKA-SYNTHETIC-NATIVE-v1' else None,'child_start':records[0] if records and records[0]['schema']=='EKA-NATIVE-CHILD-START-v1' else None,'source_binary_sha256':sha(exe.read_bytes())}
+        result['descendant_records']=[r for r in records if r['schema'] in ('EKA-DESCENDANT-BOUND-v1','EKA-DESCENDANT-GATE-v1')]
         save(out/(str(mode)+'.outer.json'),result);return result
     finally:
         # Kill-on-close owns the whole root, including a crashed guardian's tree.
@@ -342,8 +343,20 @@ def accept_case(result,out,mode):
         if mode==6:
             # Windows may count an active-limit-rejected creation in cumulative
             # TotalProcesses. It must never become a second successful child.
-            expected=('EKA_DESCENDANT_CREATED '+str(inner['desc_pid'])).encode()
-            if (b'EKA_PROCESS_CAP_REFUSED 1816' not in raw or expected not in raw.splitlines() or inner['process_cap']!=2 or inner['started_processes'] not in (2,3) or result['usage']['started_processes']>4 or not inner['desc_signaled'] or not inner['desc_pid']):raise ValueError('Process containment not observed')
+            identity=str(inner['desc_pid'])+' '+str(inner['desc_birth'])
+            lines=raw.splitlines();records=result.get('descendant_records',[])
+            if (lines.count(('EKA_DESCENDANT_CREATED '+identity).encode())!=1 or
+                lines.count(('EKA_DESCENDANT_SELF '+identity).encode())!=1 or
+                lines.count(b'EKA_PROCESS_CAP_REFUSED 1816')!=1 or
+                inner['process_cap']!=2 or inner['started_processes'] not in (2,3) or
+                result['usage']['started_processes']>4 or not inner['desc_signaled'] or
+                not inner['desc_pid'] or int(inner['desc_birth'])<=0 or
+                [r['schema'] for r in records]!=['EKA-DESCENDANT-BOUND-v1','EKA-DESCENDANT-GATE-v1']):raise ValueError('Process containment not observed')
+            bound,released=records
+            if (any(r.get('pid')!=inner['desc_pid'] or r.get('birth')!=inner['desc_birth'] for r in records) or
+                any(bound.get(flag) is not True for flag in ('live','private_job','root_job','self_ready')) or
+                not isinstance(bound.get('tick'),int) or not isinstance(released.get('tick'),int) or
+                bound['tick']>released['tick']):raise ValueError('Process containment identity/order not observed')
         if mode==8 and (inner['exit_code']!=124 or not 1000<=inner['elapsed_ms']<4000 or b'EKA_PYTHON_OWNER_WATCHDOG_STARTED' not in raw):raise ValueError('Blocked Python owner deadline not observed')
 
 

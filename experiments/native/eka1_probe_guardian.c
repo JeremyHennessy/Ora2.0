@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <string.h>
+#include <errno.h>
 #include <wchar.h>
 #include "eka1_probe_pins.h"
 #pragma comment(lib,"bcrypt.lib")
@@ -61,6 +62,17 @@ end:
     if(!ok){CloseHandle(f);return NULL;}return f; /* held against write/delete */
 }
 
+/* Only fixed bounded identity frames qualify the descendant; Job enumeration
+ * order and a CreateProcess return are not evidence of child-code readiness. */
+static int tree_identity(const char *line,const char *prefix,DWORD *pid,ULONGLONG *birth){
+    size_t len=strlen(prefix);char *end,*tail;unsigned long p;ULONGLONG b;
+    if(strncmp(line,prefix,len))return 0;
+    if(line[len]<'0'||line[len]>'9')return -1;
+    errno=0;p=strtoul(line+len,&end,10);if(errno||!p||*end!=' '||end[1]<'0'||end[1]>'9')return -1;
+    errno=0;b=_strtoui64(end+1,&tail,10);if(errno||!b||*tail)return -1;
+    *pid=(DWORD)p;*birth=b;return 1;
+}
+
 int wmain(int argc,WCHAR **argv){
     HANDLE tree_gate=NULL,watchdog_dll=NULL,raw=NULL,record=NULL,readout=NULL,writeout=NULL,nul=NULL,watch=NULL,python=NULL,program=NULL,owner=NULL,root=NULL,jobs[2];
     PROCESS_INFORMATION pi={0};STARTUPINFOEXW sx={0};SIZE_T attrn=0;BOOL attr_ready=FALSE;
@@ -69,6 +81,8 @@ int wmain(int argc,WCHAR **argv){
     FILETIME times[4];DWORD code=125,available=0,n=0,written=0,desc_pid=0;UCHAR buffer[16384];HANDLE desc=NULL;ULONGLONG desc_birth=0;
     ULONGLONG received=0,retained=0,birth=0,began=GetTickCount64(),close_end;
     int cleanup_errors[32]={0},cleanup_count=0;int mode,reason=0,eof=0,overflow=0,error=0,leaked=0;char result[2048],cleanup_raw[256];int result_n,cleanup_offset,cleanup_i;
+    char tree_line[160];DWORD tree_used=0,tree_parent_pid=0,tree_self_pid=0;
+    ULONGLONG tree_parent_birth=0,tree_self_birth=0;
     if(argc!=10)return 125;
     mode=_wtoi(argv[1]);raw=(HANDLE)(uintptr_t)_wcstoui64(argv[2],NULL,10);
     record=(HANDLE)(uintptr_t)_wcstoui64(argv[3],NULL,10);absolute_end=_wcstoui64(argv[4],NULL,10);
@@ -130,16 +144,6 @@ int wmain(int argc,WCHAR **argv){
     if(mode==7)Sleep(20000); /* explicit blocked-guardian watchdog fixture */
     for(;;){
         BOOL alive=WaitForSingleObject(pi.hProcess,0)==WAIT_TIMEOUT;
-        if(mode==6&&!desc){struct{DWORD assigned,listed;ULONG_PTR pids[4];} ids={0};DWORD i;
-            if(!QueryInformationJobObject(child_job,JobObjectBasicProcessIdList,&ids,sizeof(ids),NULL)){error=31;break;}
-            for(i=0;i<ids.listed&&i<4;i++)if(ids.pids[i]!=pi.dwProcessId){
-                desc_pid=(DWORD)ids.pids[i];desc=OpenProcess(SYNCHRONIZE|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,desc_pid);
-                if(!desc||!GetProcessTimes(desc,&times[0],&times[1],&times[2],&times[3])){error=32;break;}
-                desc_birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
-                /* The leader cannot attempt a second child until this exact
-                 * first descendant's handle and birth have been retained. */
-                if(!SetEvent(tree_gate)){error=36;break;}break;}
-            if(error)break;}
         if(WaitForSingleObject(owner,0)!=WAIT_TIMEOUT){reason=4;TerminateJobObject(child_job,124);}
         if(GetTickCount64()>=absolute_end-3000){reason=1;TerminateJobObject(child_job,124);}
         if(!PeekNamedPipe(readout,NULL,0,NULL,&available,NULL)){
@@ -148,6 +152,46 @@ int wmain(int argc,WCHAR **argv){
             if(!ReadFile(readout,buffer,count,&n,NULL)){error=15;break;}received+=n;
             count=(DWORD)((65536-retained)<n?(65536-retained):n);
             if(count&&(!WriteFile(raw,buffer,count,&written,NULL)||written!=count)){error=16;break;}retained+=count;
+            if(mode==6){DWORD cursor;
+                for(cursor=0;cursor<n;cursor++){
+                    if(buffer[cursor]=='\n'){
+                        DWORD p=0;ULONGLONG b=0;int parent_frame,self_frame;
+                        tree_line[tree_used]=0;tree_used=0;
+                        parent_frame=tree_identity(tree_line,"EKA_DESCENDANT_CREATED ",&p,&b);
+                        if(parent_frame<0||(parent_frame&&tree_parent_pid)){error=37;break;}
+                        if(parent_frame){tree_parent_pid=p;tree_parent_birth=b;}
+                        self_frame=tree_identity(tree_line,"EKA_DESCENDANT_SELF ",&p,&b);
+                        if(self_frame<0||(self_frame&&tree_self_pid)){error=37;break;}
+                        if(self_frame){tree_self_pid=p;tree_self_birth=b;}
+                        if(!desc&&tree_parent_pid&&tree_self_pid){
+                            BOOL private_member=FALSE,root_member=FALSE;char witness[512];int length;ULONGLONG bound_tick;
+                            if(tree_parent_pid!=tree_self_pid||tree_parent_birth!=tree_self_birth||tree_parent_pid==pi.dwProcessId){error=38;break;}
+                            desc_pid=tree_parent_pid;desc=OpenProcess(SYNCHRONIZE|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,desc_pid);
+                            if(!desc||GetProcessId(desc)!=desc_pid||!GetProcessTimes(desc,&times[0],&times[1],&times[2],&times[3])){error=32;break;}
+                            desc_birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
+                            if(desc_birth!=tree_parent_birth||WaitForSingleObject(desc,0)!=WAIT_TIMEOUT||
+                               !IsProcessInJob(desc,child_job,&private_member)||!private_member||
+                               !IsProcessInJob(desc,root,&root_member)||!root_member||WaitForSingleObject(desc,0)!=WAIT_TIMEOUT){error=39;break;}
+                            bound_tick=GetTickCount64();
+                            length=sprintf_s(witness,sizeof(witness),"{\"schema\":\"EKA-DESCENDANT-BOUND-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"live\":true,\"private_job\":true,\"root_job\":true,\"self_ready\":true,\"tick\":%llu}\n",desc_pid,desc_birth,bound_tick);
+                            if(length<0||!WriteFile(record,witness,(DWORD)length,&written,NULL)||written!=(DWORD)length||!FlushFileBuffers(record)){error=40;break;}
+                            /* Durable IO may block: the earlier live/deadline
+                             * observations cannot authorize a later release. */
+                            if(GetTickCount64()>=absolute_end-3000||WaitForSingleObject(owner,0)!=WAIT_TIMEOUT||
+                               WaitForSingleObject(desc,0)!=WAIT_TIMEOUT||
+                               !IsProcessInJob(desc,child_job,&private_member)||!private_member||
+                               !IsProcessInJob(desc,root,&root_member)||!root_member){error=42;break;}
+                            if(!SetEvent(tree_gate)){error=36;break;}
+                            length=sprintf_s(witness,sizeof(witness),"{\"schema\":\"EKA-DESCENDANT-GATE-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"tick\":%llu}\n",desc_pid,desc_birth,GetTickCount64());
+                            if(length<0||!WriteFile(record,witness,(DWORD)length,&written,NULL)||written!=(DWORD)length||!FlushFileBuffers(record)){error=41;break;}
+                        }
+                    }else{
+                        if(buffer[cursor]==0||tree_used>=sizeof(tree_line)-1){error=37;break;}
+                        tree_line[tree_used++]=(char)buffer[cursor];
+                    }
+                }
+                if(error)break;
+            }
             if(received>65536){overflow=1;reason=2;TerminateJobObject(child_job,124);}
         }else if(!alive){
             if(!QueryInformationJobObject(child_job,JobObjectBasicAccountingInformation,&usage,sizeof(usage),NULL)){error=17;break;}
