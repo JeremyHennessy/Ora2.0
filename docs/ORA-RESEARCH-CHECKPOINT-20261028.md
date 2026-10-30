@@ -1,5 +1,50 @@
 # Ora research checkpoint â€” October 28, 2026
 
+## Current verified checkpoint - October 30, 14:24 UTC
+
+The current EKA engineering head is
+`9b985dacdc0aa4baa5c775ed3c42ec24248f9304` on the existing
+[Ora PR #323](https://github.com/JeremyHennessy/Ora2.0/pull/323), draft and unmerged.
+The earlier first-failure repair `d1bb01d` is now published and independently
+accepted after 46 fresh checks; the earlier 41-check verdict was not reused.
+[Exact-head offline CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/41070392579)
+passed 65 focused checks and retained 1,863 interpreter/library/control-source
+hash observations. Native and historical-calibration steps were skipped, not
+passed; this is scoped offline custody, not complete OS dependency qualification.
+
+**Native qualification FAILED at executed source
+`909c1b00d69047a895c5618305a4b8e921e25060`.** Six existing case predicates were
+accepted before the tree fixture failed: the reported successful descendant PID
+did not match the captured birth identity. CPU termination was observed at
+2.0625 reported CPU seconds against a nominal one second, so a strict CPU ceiling
+remains unqualified. Cases 7-8 were not run. The corrective event handshake at
+`43297d2b7e1a8418e2b37ec1aa2af172a2226f30` passed four independent mocked
+checks and is accepted for source-only publication; its native path remains unrun.
+[Committed evidence](https://github.com/JeremyHennessy/Ora2.0/blob/6a42865ab452b84dedf652f4436edca9d82ea847/data/eka1-synthetic-native-integration-evidence-20261030.json)
+preserves all four sealed assignments, 144 consumed reservations without refunds,
+and 372,874 stored archive bytes. Recorded build/native Job CPU totals 4.453125
+seconds; this excludes parent hashing, archives, offline tests and CI CPU.
+
+**Scientific status remains NOT_READY / UNKNOWN.** The authenticated original-only
+producer and immutable assignment/owner-grant transport are not implemented.
+Successful descendant custody and a conservatively paid CPU bound must qualify
+before actual World/replay/dispatch/hidden-restoration integration can be admitted.
+No World, population, historical replay, learning measurement, VM-law change or
+v10 deployment ran for this repository synchronization. All closed results remain
+unchanged. Existing owners and PRs are retained; no merge or competing branch.
+
+The separate assistant was verified at **14:24 UTC on October 30**: 49 completed
+windows and 1,143 epochs, zero failure counters, all 174 approved records with
+provenance and key retained, and two valid snapshots. Window 49 closed after
+7,200.953 seconds with exit 0, EOF, no leaks and the old controller birth closed;
+window 50 started normally. Windows 9-12 and 16-20 remain individually unverified.
+This is dated operating evidence, not LIVE organism intelligence, indefinite
+reliability or proof of the historical readiness cause. Private receipts, memory
+contents, keys and machine identities are not published.
+
+This update changes documentation only and uses retained engineering evidence
+plus one read-only runtime check. No experiment or closed bank was rerun.
+
 Documentation reconciliation requested by the user. This is not a new scientific
 result, experiment registration, approved main baseline or deployment.
 
@@ -30,7 +75,7 @@ useful learned behavior or inherited fitness. Historical banks stay closed.
 
 | Workstream | Existing owner/status |
 |---|---|
-| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Public head94e60da;41 independent offline checks accepted only partial fail-closed preparation. Local d1bb01d repair awaits review and remains unpublished; native admission held. Existing owner retains custody. |
+| [Native EKA323](https://github.com/JeremyHennessy/Ora2.0/pull/323) | Public head9b985da; 65 exact-head offline checks pass. Native qualification failed; descendant handshake accepted source-only and strict CPU bound unqualified. Scientific NOT_READY; existing owner retained. |
 | [Isolated research325](https://github.com/JeremyHennessy/Ora2.0/pull/325) | Existing prototype branch; results preserved, certificate published; no native admission. |
 | [Independent research63](https://github.com/JeremyHennessy/AI-Research/pull/63) | Existing independent assessment; UNKNOWN/NO-GO and negative results retained. |
 | [PILOT74/324](https://github.com/JeremyHennessy/Ora2.0/pull/324) | Headae82bde; scoped Windows59/Linux55+4 explicit skips passed in run40113063808. Legacy calibration skipped; original25/26 native failure sealed. Full qualification held. |
@@ -52,15 +97,13 @@ useful learned behavior or inherited fitness. Historical banks stay closed.
 
 ## Separate assistant checkpoint
 
-**LAST VERIFIED October28 at12:52 Halifax:** local assistant v10 reported26
-completed windows,608 epochs,zero controller/host/seen failures,174 intact approved
-memory/provenance records and key,two valid snapshots. Latest window26 closure
-was7200.937s,exit0/EOF/no leaks,old owned birth closed and next window started.
-Windows9â€“12 and16â€“20 lack individual monitor verification; do not describe all26
-as independently verified. This is dated operating evidence, not a LIVE scientific
-World, proof of indefinite reliability, historical readiness cause or organism
-learning. Raw private receipts remain local; no memory contents, machine IDs,
-keys or runtime paths are published.
+**LAST VERIFIED October30 at14:24 UTC:** separate assistant v10 reported49
+completed windows and1,143 epochs, zero controller/host/seen failures, all174
+approved records with provenance and key intact, and two valid snapshots.
+Window49 closed in7,200.953 seconds with exit0/EOF/no leaks and the next window
+started normally. Windows9-12 and16-20 remain individually unverified. This is
+operating evidence only; no organism learning or indefinite reliability claim.
+Private receipts, memories, keys and machine identities remain local.
 
 ## Next gate and validation
 
@@ -77,7 +120,7 @@ remain Ora `3a3c7e8521271a6eebe22b5cfdc809e19254b3a8` and AI-Research
 `2fb16af7299f4d0c1da4cc60c57e6cf5017931ec` as last retrieved.
 
 
-## Latest coordinated review - October30,12:43 UTC evidence
+## Historical coordinated review - October30,12:43 UTC evidence (superseded above)
 
 This user-requested repository update reuses retained source reviews and monitor
 receipts. It runs no scientific experiment and grants no stage or admission.
