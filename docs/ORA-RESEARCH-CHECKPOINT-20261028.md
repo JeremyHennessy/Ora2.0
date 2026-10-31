@@ -1,4 +1,58 @@
-# Ora research checkpoint - October 30, 2026
+# Ora research checkpoint - October 31, 2026
+
+## Current coordinated checkpoint — October 31, 2026
+
+[EKA PR #323](https://github.com/JeremyHennessy/Ora2.0/pull/323) is published at
+`ca04547ff0e11e952ca5ca32f30376615dc205dd`, draft and unmerged. The approved
+EKA-BUILD-ONLY-METERED-RELEASE-v1 contract has independent exact-source offline
+acceptance: 51 current build fixtures, plus prior unchanged custody checks.
+[Exact-head CI](https://github.com/JeremyHennessy/Ora2.0/actions/runs/41130618195)
+passed 221 offline checks. Native steps and the legacy workflow were SKIPPED,
+not passed. The artifact binds 23 raw control/test hashes and 1,856 interpreter
+dependency observations; this does not qualify the complete OS or SDK.
+
+The separate build-only contract retains owner lifetime and physical ledger,
+precharges supervised attempts, preserves failures without refunds, records root
+USER + KERNEL CPU once, and separates provisional capture from external settlement
+after owner closure. Opaque nested build attempts remain UNKNOWN under the approved
+build-only unit-birth waiver; this is not a scientific or diagnostic exemption.
+Real containment, executed-image/toolchain custody, immutable fresh build manifest,
+external final-writer costs and complete closure/restoration remain unqualified.
+**Single-build preflight is NO_GO. Explicit human approval is not the only missing
+prerequisite.** No compiler, diagnostic, World or population ran for this update.
+The one-second private USER threshold remains unchanged; the historical 2.0625-second
+overrun, failed descendant identity evidence, four sealed assignments and 144 consumed
+reservations remain retained. Strict prepaid CPU and native scientific qualification
+remain NOT_READY; corrected handshake and watchdog cases remain native-unrun.
+
+The [retained source-analysis summary](../data/eka-renewed-food-research-summary-20261031.json)
+now has a 17-case productive-revisit screen
+and six necessary affordability bounds, alongside the earlier 1,584 conditional fee
+rows. These are algebra cases, not organism trials. A remembered personally observed
+renewed target could conditionally rescue an energy 1 productive return; extra
+READ/LOAD at energy 1 would itself kill the organism. The 27-word nursery route costs
+at least 68 before rescue against an energy cap of 64, requiring at least 5 net
+replenishment plus survival of every prefix. Actual funded histories, predictive
+value in unseen conditions and advantage over free-to-stay fixed/reactive or equally
+cheap memory controls remain UNKNOWN. **No organism learning was tested or demonstrated by this update.**
+
+The dated assistant observation at 2026-10-31 16:14:55 UTC records 62 completed windows,
+1,423 epochs, ongoing 63, retained failure counters 1/1/1 with no new increment,
+174 retained memory records, including three approved notes, with provenance/key
+and two valid snapshots. Latest qualified
+window 62 closed in 7,200.937 seconds, exit0/EOF/no leaks with normal next start.
+Window 52 is reviewed partial recovery (828.516 seconds); clean window 56 measured
+7,199.110 native seconds and is not a 7,200-second renewal. Closure 51 and earlier
+gaps 9–12/16–20 remain unverified. The power-off interruption's terminating actor and
+old readiness cause remain UNKNOWN. This is dated scoped assistant evidence, not
+organism learning or indefinite reliability; no runtime check or modification was
+performed for this repository update. Private memory, keys and machine identities
+are not published.
+
+The separate [AI-Research PR #65](https://github.com/JeremyHennessy/AI-Research/pull/65)
+prior-art note remains its existing custodian's work. Its paper analysis was not
+independently repeated by this synchronization. Earlier checkpoint text below is
+historical evidence, superseded for current status by this section.
 
 ## Current verified checkpoint - October 30, 16:21 UTC
 
