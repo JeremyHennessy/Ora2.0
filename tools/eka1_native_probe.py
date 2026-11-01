@@ -116,6 +116,7 @@ def kernel():
         'GetProcessId':([wt.HANDLE],wt.DWORD),
         'IsProcessInJob':([wt.HANDLE,wt.HANDLE,ctypes.POINTER(wt.BOOL)],wt.BOOL),
         'ResumeThread':([wt.HANDLE],wt.DWORD),
+        'TerminateProcess':([wt.HANDLE,wt.UINT],wt.BOOL),
         'WaitForSingleObject':([wt.HANDLE,wt.DWORD],wt.DWORD),
         'GetExitCodeProcess':([wt.HANDLE,ctypes.POINTER(wt.DWORD)],wt.BOOL)}
     for name,(args,result) in definitions.items():
@@ -218,7 +219,7 @@ def _launch(exe, out, mode, owner, seal, global_end,transport=None):
     if end-began < 4000: raise TimeoutError('No room for role and closure')
     job=Job(Limits(memory_bytes=256*1024**2,cpu_seconds=8,processes=4,wall_seconds=8))
     attrs=None; initialized=False; pi=PI(); fds=[]; handles=[]; inherited=[]
-    meter=None;result=None;private=None;expected_birth=None;capsule=None
+    meter=None;result=None;private=None;expected_birth=None;capsule=None;root_verified=False;created=False
     try:
         meter=RootCpuAttempt(job,out,mode,owner,save)
         from tools.eka1_runtime_capsule import prepare
@@ -239,9 +240,14 @@ def _launch(exe, out, mode, owner, seal, global_end,transport=None):
         start.startup.flags=0x100;start.startup.input=start.startup.output=start.startup.error=msvcrt.get_osfhandle(nul)
         command=[str(exe),str(mode),str(msvcrt.get_osfhandle(raw)),str(msvcrt.get_osfhandle(rec)),str(end),'EKA-SYNTHETIC-ONLY-v1',str(lh),str(oh),seal,str(int(job.handle)),str(int(capsule['handle'].handle)),capsule['sha256']]
         checked(k.CreateProcessW(str(exe),ctypes.create_unicode_buffer(subprocess.list2cmdline(command)),None,None,True,0x80000|4|8,None,str(ROOT),ctypes.byref(start),ctypes.byref(pi)))
+        created=True
         times=[ctypes.c_ulonglong() for _ in range(4)];checked(k.GetProcessTimes(pi.process,*[ctypes.byref(t) for t in times]))
         expected_birth=str(times[0].value)
-        save(out/(str(mode)+'.start.json'),{'pid':pi.pid,'birth':str(times[0].value),'suspended':True,'root_limits':job.usage(),'end_tick':end,'mode':mode})
+        root_member=wt.BOOL()
+        checked(k.IsProcessInJob(pi.process,job.handle,ctypes.byref(root_member)))
+        if not root_member.value:raise RuntimeError('Suspended guardian not in retained root Job')
+        root_verified=True
+        save(out/(str(mode)+'.start.json'),{'pid':pi.pid,'birth':str(times[0].value),'suspended':True,'root_member_verified_before_resume':True,'root_limits':job.usage(),'end_tick':end,'mode':mode})
         if k.GetTickCount64()>=end-3000:raise TimeoutError('Pre-resume deadline')
         if k.ResumeThread(pi.thread)!=1:raise OSError('Cannot resume guardian')
         while True:
@@ -268,6 +274,16 @@ def _launch(exe, out, mode, owner, seal, global_end,transport=None):
     finally:
         # Kill-on-close owns the whole root, including a crashed guardian's tree.
         primary=sys.exc_info()[1];failures=[];final_error=None
+        # An unverified member cannot be closed by relying on the intended Job.
+        # Use only the owned creation handle, once, before final CPU observation.
+        if created and pi.process and not root_verified:
+            try:
+                if k.WaitForSingleObject(pi.process,0)!=0:
+                    try:checked(k.TerminateProcess(pi.process,125))
+                    except BaseException as exc:failures.append('Unverified creation handle termination: '+repr(exc))
+                    if k.WaitForSingleObject(pi.process,max(0,end-k.GetTickCount64()))!=0:
+                        raise OSError('Unverified created guardian closure UNKNOWN')
+            except BaseException as exc:failures.append('Unverified creation handle closure: '+repr(exc))
         # Retain the root and guardian birth handles through final counters.
         try:
             accounting=settle_root(job,meter,k,pi,expected_birth,private,end)

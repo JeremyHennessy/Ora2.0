@@ -1,5 +1,7 @@
 """Offline refusal/archive tests only. OS fixtures have a separate finite entry."""
 import json
+import ast
+from types import SimpleNamespace
 import ctypes
 import copy
 import contextlib
@@ -188,5 +190,65 @@ class ProbeContractChecks(unittest.TestCase):
                         with self.assertRaisesRegex((OSError,RuntimeError),expected):probe.execute(self.out)
                     else:self.assertIs(probe.execute(self.out),report)
                 watchdog.EkaStopWatchdog.assert_called_once()
+
+class PreResumeRootSourceChecks(unittest.TestCase):
+    """Execute extracted Python guards with fake APIs; inspect C, never load it."""
+    def source_function(self):
+        tree=ast.parse((ROOT/'tools/eka1_native_probe.py').read_text())
+        return next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='_launch')
+    @staticmethod
+    def run_nodes(nodes,env):
+        exec(compile(ast.fix_missing_locations(ast.Module(body=nodes,type_ignores=[])),'source_guard_fixture','exec'),env)
+    @staticmethod
+    def check(ok):
+        if not ok:raise OSError('fake API refusal')
+    def test_root_readback_false_or_error_never_reaches_resume(self):
+        fn=self.source_function()
+        attempt=next(n for n in ast.walk(fn) if isinstance(n,ast.Try) and any(isinstance(s,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='root_member' for t in s.targets) for s in n.body))
+        start=next(i for i,s in enumerate(attempt.body) if isinstance(s,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='root_member' for t in s.targets))
+        guard=attempt.body[start:start+4]
+        self.assertEqual(ast.unparse(guard[-1]),'root_verified = True')
+        for api_ok,member in ((0,False),(0,True),(1,False),(1,True)):
+            with self.subTest(api_ok=api_ok,member=member):
+                def query(process,job,result):
+                    self.assertEqual((process,job),(123,456));result._obj.value=member;return api_ok
+                resume=Mock();env=dict(wt=probe.wt,ctypes=ctypes,k=SimpleNamespace(IsProcessInJob=query),pi=SimpleNamespace(process=123),job=SimpleNamespace(handle=456),checked=self.check,root_verified=False,resume=resume)
+                nodes=guard+ast.parse('resume()').body
+                if api_ok and member:self.run_nodes(nodes,env)
+                else:
+                    with self.assertRaises((OSError,RuntimeError)):self.run_nodes(nodes,env)
+                self.assertEqual(env['root_verified'],bool(api_ok and member));self.assertEqual(resume.call_count,int(bool(api_ok and member)))
+        calls=[(n.lineno,ast.unparse(n.func)) for n in ast.walk(fn) if isinstance(n,ast.Call)]
+        rootline=next(line for line,name in calls if name=='k.IsProcessInJob')
+        self.assertLess(rootline,next(line for line,name in calls if name=='k.ResumeThread'))
+    def test_unverified_creation_closes_by_owned_handle_without_extending_deadline(self):
+        fn=self.source_function();expected=ast.dump(ast.parse('created and pi.process and not root_verified',mode='eval').body)
+        node=next(n for n in ast.walk(fn) if isinstance(n,ast.If) and ast.dump(n.test)==expected)
+        for initial_wait,terminate_ok,final_wait,now in ((0,1,0,100),(258,1,0,100),(258,0,0,100),(258,0,258,100),(258,1,258,100),(258,1,258,600)):
+            with self.subTest(initial_wait=initial_wait,terminate_ok=terminate_ok,final_wait=final_wait,now=now):
+                wait=Mock(side_effect=[initial_wait,final_wait]);terminate=Mock(return_value=terminate_ok);failures=[]
+                env=dict(created=True,pi=SimpleNamespace(process=123),root_verified=False,k=SimpleNamespace(WaitForSingleObject=wait,TerminateProcess=terminate,GetTickCount64=lambda:now),end=500,checked=self.check,failures=failures)
+                self.run_nodes([node],env)
+                if initial_wait==0:terminate.assert_not_called();self.assertEqual(failures,[])
+                else:
+                    terminate.assert_called_once_with(123,125)
+                    self.assertEqual(wait.call_args.args,(123,max(0,500-now)))
+                    self.assertEqual(wait.call_count,2)
+                    self.assertEqual(bool(failures),not terminate_ok or final_wait!=0)
+        env=dict(created=True,pi=SimpleNamespace(process=123),root_verified=True,k=Mock(),end=500,checked=self.check,failures=[])
+        self.run_nodes([node],env);self.assertEqual(env['k'].mock_calls,[])
+        env.update(created=False,root_verified=False);self.run_nodes([node],env);self.assertEqual(env['k'].mock_calls,[])
+        text=(ROOT/'tools/eka1_native_probe.py').read_text();self.assertLess(node.lineno,next(n.lineno for n in ast.walk(fn) if isinstance(n,ast.Call) and ast.unparse(n.func)=='settle_root'))
+        self.assertIn("'TerminateProcess':([wt.HANDLE,wt.UINT],wt.BOOL)",text)
+    def test_c_guard_and_owned_cleanup_source_order_only(self):
+        text=(ROOT/'experiments/native/eka1_probe_guardian.c').read_text()
+        guard='if(!IsProcessInJob(pi.hProcess,root,&member)||!member){error=48;goto close;}'
+        self.assertIn(guard,text);self.assertLess(text.index(guard),text.index('ResumeThread(pi.hThread)'))
+        self.assertLess(text.index(guard),text.index('root_member_verified_before_resume'))
+        close=text[text.index('\nclose:'):]
+        self.assertIn('created&&pi.hProcess&&!root_verified',close);self.assertIn('TerminateProcess(pi.hProcess,125)',close)
+        self.assertIn('now<close_end?(DWORD)(close_end-now):0',close)
+        self.assertLess(close.index('TerminateProcess(pi.hProcess,125)'),close.index('CloseHandle(pi.hProcess)'))
+        self.assertIn('root_verified=FALSE',text)
 
 if __name__=='__main__':unittest.main(verbosity=2)

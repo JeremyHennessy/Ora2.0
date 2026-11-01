@@ -130,7 +130,7 @@ static int tree_identity(const char *line,const char *prefix,DWORD *pid,ULONGLON
 
 int wmain(int argc,WCHAR **argv){
     HANDLE capsule=NULL,image_pin=NULL,tree_gate=NULL,watchdog_dll=NULL,raw=NULL,record=NULL,readout=NULL,writeout=NULL,nul=NULL,watch=NULL,python=NULL,program=NULL,owner=NULL,root=NULL,jobs[2];
-    PROCESS_INFORMATION pi={0};STARTUPINFOEXW sx={0};SIZE_T attrn=0;BOOL attr_ready=FALSE;
+    PROCESS_INFORMATION pi={0};STARTUPINFOEXW sx={0};SIZE_T attrn=0;BOOL attr_ready=FALSE,root_verified=FALSE,created=FALSE;
     SECURITY_ATTRIBUTES sa={sizeof(sa),NULL,TRUE};HANDLE inherited[3];WCHAR command[4096];
     JOBOBJECT_EXTENDED_LIMIT_INFORMATION lim={0},observed={0};JOBOBJECT_BASIC_ACCOUNTING_INFORMATION usage={0};
     FILETIME times[4];DWORD code=125,available=0,n=0,written=0,desc_pid=0;UCHAR buffer[16384];HANDLE desc=NULL;ULONGLONG desc_birth=0;
@@ -196,10 +196,13 @@ int wmain(int argc,WCHAR **argv){
     /* All descendants inherit both root Job and this private Job; no breakaway. */
     if(!CreateProcessW(NULL,command,NULL,NULL,TRUE,EXTENDED_STARTUPINFO_PRESENT|CREATE_SUSPENDED|CREATE_NO_WINDOW,
                        NULL,NULL,&sx.StartupInfo,&pi)){error=10;goto close;}
+    created=TRUE;
     if(!GetProcessTimes(pi.hProcess,&times[0],&times[1],&times[2],&times[3])){error=11;goto close;}
     birth=((ULONGLONG)times[0].dwHighDateTime<<32)|times[0].dwLowDateTime;
     {BOOL member=FALSE;if(!IsProcessInJob(pi.hProcess,child_job,&member)||!member){error=12;goto close;}}
-    {char start_record[256];int count=sprintf_s(start_record,sizeof(start_record),"{\"schema\":\"EKA-NATIVE-CHILD-START-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"suspended\":true}\n",pi.dwProcessId,birth);
+    {BOOL member=FALSE;if(!IsProcessInJob(pi.hProcess,root,&member)||!member){error=48;goto close;}}
+    root_verified=TRUE;
+    {char start_record[256];int count=sprintf_s(start_record,sizeof(start_record),"{\"schema\":\"EKA-NATIVE-CHILD-START-v1\",\"pid\":%lu,\"birth\":\"%llu\",\"suspended\":true,\"root_member_verified_before_resume\":true}\n",pi.dwProcessId,birth);
      if(count<0||!WriteFile(record,start_record,(DWORD)count,&written,NULL)||written!=(DWORD)count||!FlushFileBuffers(record)){error=30;goto close;}}
     if(GetTickCount64()>=absolute_end-3000||ResumeThread(pi.hThread)!=1){error=13;goto close;}
     CloseHandle(pi.hThread);pi.hThread=NULL;CloseHandle(writeout);writeout=NULL;
@@ -266,6 +269,12 @@ close:
     BOOL cpu_valid=FALSE,leader_signaled=FALSE,leader_root=FALSE,leader_private=FALSE;FILETIME final_times[4]={{0}};
     if(child_job&&!TerminateJobObject(child_job,125)){cleanup_errors[cleanup_count++]=43;if(!error)error=43;}
     close_end=GetTickCount64()+2500;if(close_end>absolute_end)close_end=absolute_end;
+    /* An unverified Job cannot prove closure of this owned creation handle. */
+    if(created&&pi.hProcess&&!root_verified&&WaitForSingleObject(pi.hProcess,0)!=WAIT_OBJECT_0){
+        if(!TerminateProcess(pi.hProcess,125)){cleanup_errors[cleanup_count++]=49;if(!error)error=49;}
+        {ULONGLONG now=GetTickCount64();DWORD left=now<close_end?(DWORD)(close_end-now):0;
+         if(WaitForSingleObject(pi.hProcess,left)!=WAIT_OBJECT_0){cleanup_errors[cleanup_count++]=50;if(!error)error=50;}}
+    }
     if(child_job){do{if(!QueryInformationJobObject(child_job,JobObjectBasicAccountingInformation,&usage,sizeof(usage),NULL)){cleanup_errors[cleanup_count++]=18;if(!error)error=18;break;}
         if(!usage.ActiveProcesses)break;Sleep(1);}while(GetTickCount64()<close_end);
         if(usage.ActiveProcesses){cleanup_errors[cleanup_count++]=19;if(!error)error=19;}
