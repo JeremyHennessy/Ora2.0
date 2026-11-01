@@ -45,7 +45,7 @@ review owners; no recursive or duplicate agent/scheduler creation.
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
 | Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `c96856919686d44419240f44d450268b3e6aeb53` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `3e31a0805ad6fa9a7d82595c5449124958539648` |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -89,6 +89,11 @@ This note is not an independent reproduction or Ora intelligence result.
   ancestry, real stock, correct use, mutation/selection and complete control remain
   UNKNOWN. The parent67-energy successful-operation floor is not a complete
   funded reproductive program; it excludes additional control/probe costs.
+- A later source-only sketch unifies those birth-origin prefixes using paid
+  sensing and a zero/nonzero branch. It has six operation roles and5/6 executed
+  fees, leaving7/27 or6/26 energy. It does not prove a whole nine-slot lifecycle
+  or actual mutation. Repeating the unchanged entry at site3 moves to0, so a
+  reusable learning cycle cannot be inferred from the acquisition prefix.
 
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
@@ -134,10 +139,12 @@ Four sealed assignments and144 consumed reservations remain immutable.
 
 ## Next authorized tasks and evidence
 
-1. Next: test a unified, paid nine-instruction control representation for the
-   cleaner site3 descendant opportunity, including birth-origin sensing/direction,
-   information decoding/use and actual funded ancestry. The separate3/4-fee
-   prefixes do not solve that representation. Do not install a successful genome
+1. Next: test a complete paid nine-instruction lifecycle/control representation
+   for the cleaner site3 descendant opportunity, including information decoding,
+   useful repeated action, phase-aware routing and actual funded ancestry. The
+   unified5/6-fee entry prefix does not solve that representation, and three
+   remaining slots are not by themselves an impossibility proof: role reuse and
+   other control must be examined without inventing free actions. Do not install a successful genome
    or select a mutation/seed/history because it works.
 2. Seek a complete funded representation for productive scarcity, or narrowly
    falsify it and move to another source-supported capability. Do not supply a
@@ -154,13 +161,20 @@ material changes through PR323/325 and issue317 only when coordination warrants 
 
 ## Recurrence and hard boundaries
 
-Reuse automation `continue-ora-development`, now named **Ora 2.0 Autonomous
-Development**, daily08:00 America/Halifax on this chat. It replaces the older
-09:00/17:00 development schedule; no second development schedule was created.
+Reuse automation `continue-ora-development`, named **Ora 2.0 Autonomous
+Development**, every five minutes,24hours/day7days/week, America/Halifax on this
+chat. The user's maximum-throughput update replaces daily08:00 and the older
+09:00/17:00 schedule; no second development schedule was created. Every available
+invocation resumes productive authorized work, not a repeated full status scan.
+An already-active owner/session must not create a second writer or duplicate job;
+use the existing exclusive source-session lease and same-chat continuation.
+Only the platform controls wakeup delivery; do not invent an external CLI loop.
+If no useful authorized task or usage is available, checkpoint and exit quickly
+without repeated failed requests, artificial commits or duplicate reports.
 Host/app availability and usage remain prerequisites; no free/unavailable-work claim.
 The separate hourly v10 monitor and runtime schedule are unchanged.
-Hourly health heartbeats remain health-only. Their dated09:00/17:00 development
-reference does not undo the user's later explicit08:00 development schedule.
+Hourly health heartbeats remain health-only. Their dated development-time
+references do not undo the user's latest explicit five-minute development schedule.
 
 Authorized: bounded source research, non-native offline checks, independently
 reviewed reversible source fixes, existing draft-branch publication and continuity.
@@ -179,3 +193,10 @@ information prefixes. See the three named20261101 DATA certificates in this
 branch. No organism or native qualification ran. Earlier executable acceptance
 remains9e16cef; the local pointer binds the exact later DATA/document publication
 tip and independent receipts without treating it as a new executable CI pass.
+
+Latest throughput session: five-minute recurrence saved/read back through the
+supported app; first nominal wakeup was deferred while the current chat remained
+active. A new source-only unified acquisition prefix and its non-idempotent
+reentry guard are recorded in `data/eka-unified-navigation-prefix-20261101.json`.
+Read the local pointer for exact publication tip, scheduler evidence and next task;
+do not confuse an installed schedule or delivery with a completed development run.

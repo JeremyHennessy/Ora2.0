@@ -1,0 +1,122 @@
+{
+  "schema": "EKA-UNIFIED-NAVIGATION-INFORMATION-PREFIX-v1",
+  "scope": "SOURCE_AST_AND_FOUR_SCALAR_CASES_NOT_SCIENTIFIC_EXECUTION",
+  "source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "question": "Can one source-lawful conditional navigation/acquisition prefix handle both proposed founder-child birth locations without granting birth-origin knowledge for free?",
+  "restricted_same_path_obstruction": {
+    "premises": "Blank private registers/memory, origins0/2, same instruction/control path, only position sensing/static SET/XOR/fixed-index LOAD/STORE/movement and unchanged initial feedback before the first FORAGE; no IF, SELFWRITE, received messages or earlier food feedback.",
+    "invariant": "Positions differ by2mod4 and thus have equal parity. Initial register/memory parities agree; SENSE, common SET, XOR and fixed-index storage preserve parity agreement. Every common MOVE therefore uses the same direction and preserves the position difference. Both origins cannot be at3 at a common acquisition point.",
+    "one_move_scalar_rows": [
+      {
+        "common_direction": -1,
+        "from0": 3,
+        "from2": 1,
+        "both_at3": false
+      },
+      {
+        "common_direction": 1,
+        "from0": 1,
+        "from2": 3,
+        "both_at3": false
+      }
+    ],
+    "limits": "Not a universal navigation impossibility. Branching/self-writing/communication or exploring multiple sites lies outside the invariant. No claim that six slots is the global minimum."
+  },
+  "conditional_unified_control_sketch": "Sense birth position into the direction register; test the full register for zero; the zero branch skips an odd-direction SET while the nonzero branch performs it; both join the same MOVE, known-port0 FORAGE, and READ of resulting feedback. The port register stays blank0 until the probe. This is an abstract prefix, not a serialized genotype or supplied successful organism.",
+  "source_operation_roles_in_prefix": 6,
+  "role_names": [
+    "SENSE",
+    "IF_ZERO",
+    "SET_DIRECTION",
+    "MOVE",
+    "FORAGE",
+    "READ"
+  ],
+  "cases": [
+    {
+      "birth_position": 0,
+      "symbolic_nonempty_target": 0,
+      "paid_dispatches": 5,
+      "final_position": 3,
+      "final_energy": 27,
+      "retained_feedback": 1,
+      "decoded_target_if_later_corrected": 0,
+      "food_packets_consumed": 1,
+      "cap_spill": 0
+    },
+    {
+      "birth_position": 0,
+      "symbolic_nonempty_target": 1,
+      "paid_dispatches": 5,
+      "final_position": 3,
+      "final_energy": 7,
+      "retained_feedback": 0,
+      "decoded_target_if_later_corrected": 1,
+      "food_packets_consumed": 0,
+      "cap_spill": 0
+    },
+    {
+      "birth_position": 2,
+      "symbolic_nonempty_target": 0,
+      "paid_dispatches": 6,
+      "final_position": 3,
+      "final_energy": 26,
+      "retained_feedback": 1,
+      "decoded_target_if_later_corrected": 0,
+      "food_packets_consumed": 1,
+      "cap_spill": 0
+    },
+    {
+      "birth_position": 2,
+      "symbolic_nonempty_target": 1,
+      "paid_dispatches": 6,
+      "final_position": 3,
+      "final_energy": 6,
+      "retained_feedback": 0,
+      "decoded_target_if_later_corrected": 1,
+      "food_packets_consumed": 0,
+      "cap_spill": 0
+    }
+  ],
+  "energy_equation": "E_end=12-[5+int(birth_position!=0)]+20*success. All prefix energy remains positive; no cap overflow. Three/four-fee origin-specific prefixes previously omitted this unified sensing/branch cost.",
+  "premises": [
+    "A legitimately funded ordinary newborn with blank private state at0or2",
+    "An actually available renewed packet at3 when FORAGE executes; no privileged availability/target input",
+    "The proposed inherited control layout and branch targets are represented correctly; no genotype array has been constructed here",
+    "Source laws and every subsequent cost remain unchanged"
+  ],
+  "what_improved": "One conditional source-level control sketch now unifies the two previously separate birth-origin acquisition prefixes. It uses six operation roles and5/6 executed instructions, leaving at most three of nine static instruction slots outside that sketch.",
+  "remaining_unknowns": [
+    "A full nine-instruction lifecycle/control layout, including possible role reuse or self-modification; no impossibility inferred from the three remaining slots",
+    "Actual parent feeding/COPY/division/material/expiry prefix, not merely the parent67-energy successful-operation floor",
+    "Ordinary mutation realization and inheritance rather than insertion of this authored prefix",
+    "Paid correction/use of the informative complement, retention, later useful decisions and fitness",
+    "Advantage over efficient fixed/reactive/free-policy/last-successful and matched memory-positive/sham/erasure/nonpredictive/unseen controls"
+  ],
+  "information_vs_action": "READ stores1-target at known port0. This is personally acquired conditional information, not a demonstrated correct future action or intelligence breakthrough.",
+  "next_iteration_non_idempotence_guard": {
+    "question": "Does simply wrapping this acquisition prefix make a reusable same-site controller?",
+    "source_scalar": "Reentry at position3 makes the sensed value nonzero, selects odd direction, and MOVE goes to0, not3.",
+    "reentry_from3": 0,
+    "decision": "FALSIFIED_FOR_UNCHANGED_ENTRY_PREFIX_AS_STAY_AT3_CYCLE",
+    "limits": "This rejects only an unproved automatic completion. Travel might have value in a different paid lifecycle; phase-aware reuse, different control and mutation remain unknown. No tail program or genotype was built."
+  },
+  "decision": "PASS_CONDITIONAL_UNIFIED_PREFIX_REPRESENTATION_AND_AFFORDABILITY; ORDINARY_EVOLVED_USEFUL_CAPABILITY_UNKNOWN",
+  "scientific_module_imports": 0,
+  "World_VM_population_replay_execution": 0,
+  "target_hash_or_seed_queries": 0,
+  "genotype_arrays_constructed": 0,
+  "scientific_source_edits": 0,
+  "native_execution": 0,
+  "scientific_admission": "NO_GO",
+  "publication_provenance": {
+    "raw_result_sha256": "5649c79c7c5d0424f8854dbb4774ebbaa5521af6ea9b8c9a647b5345125fefad",
+    "check_script_sha256": "0473371681589222e6b3800b011a772178bfd90dbccfc302e582ff13a47f2f10",
+    "retained_first_versions": "check-reviewed-first.py/result-reviewed-first.json retain the independently reviewed prefix before adding the reentry guard",
+    "scope": "Pinned-source AST and fixed arithmetic only; no scientific execution or genotype construction. Independent final publication review required."
+  }
+}
