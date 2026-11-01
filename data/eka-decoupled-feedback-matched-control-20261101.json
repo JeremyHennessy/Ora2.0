@@ -1,0 +1,276 @@
+{
+  "schema": "EKA-DECOUPLED-PORT-FEEDBACK-MATCHED-CONTROL-v1",
+  "scope": "PINNED_SOURCE_NONEXECUTING_WORD_EDIT_AND16_SYMBOLIC_FIXED_PREFIX_LEDGERS",
+  "source_sha256": {
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "hypothesis": "Does reading feedback into the port register while preserving the constant/XOR register provide a fully paid first-birth advantage over a cheaper one-move no-memory control?",
+  "source_level_witness": "At the previously analyzed pc7 slot, a two-word COPY outcome changes MOVE opcode13toREAD1 and its destination operand1to0. The other25 words remain faithful. READ writes personal feedback into port register0; register1 stays constant1, so both forage ports remain complementary and the single remaining MOVE advances+1 per cycle. Original JUMP still skips SET. No new genome array, registry entry, constructor replacement or executed organism was created.",
+  "information_identity": "In a homogeneous nonempty pair, secondPort=1-firstPort and its feedback=firstPort XOR target. Raw READ therefore stores a running parity of observed site targets, not the last successful port. After visitsA,B,C,D,A,B,C,D the parity is0; ninth firstPort is0, exactly as the no-memory control. Earlier unaccepted ideal-decoded-cache ledgers are retained locally and are not evidence about this raw edit.",
+  "polarity_caveat": "No free correction of raw feedback is supplied. The earlier intended last-target interpretation was rejected during source analysis before publication; final ledgers use actual parity feedback. Information-dependent state alone is not demonstrated useful memory.",
+  "matched_control": "A one-word COPY change with fewer altered words13to18 atpc7 is source-legal paid no-effect: code cells accept0..31 and opcode dispatch has effects only0..17. It preserves constant1, one MOVE and both forage ports, with the same fees, materials and route. It carries no READ cache. Fewer changed words is an edit-distance statement, not a lower runtime/COPY price or proved mutation probability. This is a prospective source-level control, not an installed genotype or an undefined free action.",
+  "ordinary_copy_format": "Two adjacent words21/22 of the first daughter nursery are written in the parent eighthCOPY atown/global61. Offsets20and31 yield READ1/destination0 from13/1; matchedcontrol offset5 yields opcode18. Actual joint seed/mutation realization and frequency are UNKNOWN and not queried. Ordinary parent cost and body construction are unchanged.",
+  "conditional_ancestry_and_stock": "Starting from a paid ordinary first birth atglobal70/site0/E12, child own70 isglobal209 if only actors0/1 remain. Parent needs nextDIVIDEown142, later than its139turns by209. Parent+child consume at most12initialA and11initialC packets, below respective initial homogeneous boundaries16; B child2meals<16; D child2meals from4renewed packets admitted64 suffices. No64/2048 phase transition occurs insidechildprefix;128/192 offers do not change existing consumed packet targets. At most3bodies43each plus24parent nursery units =153materialunits atchildbirth, below512. These are conditional paper guards, not observed execution.",
+  "ledger_summary": {
+    "symbolic_cases": 16,
+    "own_first_birth_both": 70,
+    "ordinary_child_global_birth_both": 209,
+    "food_successes_both": 9,
+    "child_material_both": 43,
+    "raw_READ_parent_energy_sum": 448,
+    "matched_control_parent_energy_sum": 448,
+    "raw_READ_better_rows": 0,
+    "raw_READ_worse_rows": 0,
+    "ties": 16
+  },
+  "interpretation": "All sixteen symbolic bit cases tie at first birth: same dispatches, meals, child material and parent/child energy. No distributional assumption is needed for this scoped equality. These are symbolic source ledgers, not actual seeds or executed genotypes. Intermediate cap/spill/timing may differ, but ninth-pair cap saturation and parity cancellation remove the claimed first-birth edge.",
+  "decision": "FALSIFIED_FOR_RAW_TWO_WORD_READ_FIRST_BIRTH_OUTCOME_ADVANTAGE_IN_THIS_FUNDED_PREFIX;CONDITIONAL_REPRODUCTION_FEASIBILITY_SUPPORTED;ACTUAL_MUTATION_AND_LONGER_FITNESS_UNKNOWN",
+  "next": "Keep this first-birth advantage motif closed. Useful information must change a fully paid outcome beyond the same-route one-word no-memory control; investigate genuinely reachable scarcity or success-gated probe omission separately. Do not repair this negative by granting free polarity decoding, selected histories or altered laws.",
+  "scientific_execution": 0,
+  "native_execution": 0,
+  "genotype_arrays": 0,
+  "seed_queries": 0,
+  "scientific_admission": "NO_GO",
+  "case_summary": [
+    {
+      "targets_A_B_C_D": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "raw_READ_parent_energy": 27,
+      "control_parent_energy": 27,
+      "raw_READ_cap_spill": 38,
+      "control_cap_spill": 38,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    },
+    {
+      "targets_A_B_C_D": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "raw_READ_parent_energy": 29,
+      "control_parent_energy": 29,
+      "raw_READ_cap_spill": 36,
+      "control_cap_spill": 36,
+      "first_birth_dispatches_both": 70,
+      "food_successes_both": 9
+    }
+  ],
+  "reproduction_equations": {
+    "raw_feedback": "f_second=firstPort XOR target; raw state is XOR of visited site targets",
+    "state_before_ninth_pair": "A XOR B XOR C XOR D XOR A XOR B XOR C XOR D=0",
+    "first_birth_cost": "Eparent=12+9*20-70base-27COPY-30division-spill; Echild12 is transferred within division30",
+    "ninth_pair_cap": "At ninth pair, sufficient energy forces cap64 on success. First success then XOR+miss leaves62; second success leaves64. AfterCOPY(base+3),DIVbase+30 leaves27/29. Both controllers start ninth pair atport0."
+  },
+  "publication_provenance": {
+    "check.py": "99b63d2e244168ea1958afc90c72ea5965060bb76122c38e76e4b1d55294e58c",
+    "result.json": "9a311bb861413ae21ad8dc7b6c802219931fca9d0050ea6c5a9241ac61aa55db",
+    "independent-review.json": "f9b4aa7e1b46064ade24139310f32593ebeb97ea13740eb77ef147f081d8f8ee",
+    "check-ideal-cache-pending.py": "73415baab7ff13408aaccd2559b90fa4ef60767c7dec102fbcab5abdee24ded1",
+    "result-ideal-cache-pending.json": "33612b92d30aa7dbfe4f660b37e3c03e68dc04300dda029823266e9b31487865",
+    "scope": "Full local16x2x9scalar ledgers retained; public table is condensed. No scientific execution/genotypes/seed queries. Independent exact publication review required."
+  }
+}

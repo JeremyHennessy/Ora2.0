@@ -45,7 +45,7 @@ review owners; no recursive or duplicate agent/scheduler creation.
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
 | Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `245a4f5dd3403f970cc9c61559198e8a72643efe` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `974f3b9a75767a88a05df2934d4fe9e9affff432` |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -107,6 +107,19 @@ This note is not an independent reproduction or Ora intelligence result.
   offspring-count advantage. Matched-handling algebra is not an admitted erasure
   intervention. Initial-packet targets flip at64; the illustrative delayed
   branch forages at60 and divides at64, so whole-world input/release costs differ.
+- Source-law mutation analysis found a conditional two-word ordinary COPY route
+  that reads feedback into the port register while preserving the constant XOR
+  register, paired coverage and one-step travel. Actual raw READ forms running
+  target parity, not a decoded last-target cache. Over A,B,C,D,A,B,C,D it cancels
+  to0. A paid no-memory opcode18 control has the same route and runtime costs
+  with fewer changed words; this is not a mutation-probability estimate.
+  All16 symbolic site-bit cases tie at first birth: own70/global209 under the
+  conditional paid parent/child schedule, nine meals,43 child material and
+  parent27/29 plus child12. Initial-cohort/stock, phase, material and expiry
+  guards were checked; no actual seed/mutation or organism was executed.
+  This closes the claimed first-birth advantage for that raw-feedback motif,
+  not all later scarcity or useful memory. Unaccepted free-decoding assumptions
+  and earlier probe-label/fee errors remain preserved locally.
 
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
@@ -152,12 +165,13 @@ Four sealed assignments and144 consumed reservations remain immutable.
 
 ## Next authorized tasks and evidence
 
-1. Next: assess ordinary mutation accessibility and paid intermediate behavior
-   for success-gated finite-state learning, separately from the hypothetical
-   nine-slot stationary witness. Determine whether saved time can improve fair
-   survival/reproductive outcomes despite cap-spill energy ties and cheaper
-   matching fixed controls. Do not keep appending to the six-role site3 prefix;
-   cross-location complete control and funded ancestry remain UNKNOWN. Do not
+1. Next: challenge the stationary success-gated witness against a target-uninformed
+   paired-port stationary controller, including complete setup, COPY/division,
+   cap spill and phase-change costs. Matching fixed controls alone are too weak
+   a challenge. Separate format-legal/conditional paid mutation ancestry from
+   actual realization and retained fitness. Keep the pc8 and raw port-READ
+   first-birth negatives closed; do not append to the site3 prefix or grant free
+   decoding. Cross-location scarcity and later fitness remain UNKNOWN. Do not
    install a successful genome or select a mutation/seed/history because it works.
 2. Seek a complete funded representation for productive scarcity, or narrowly
    falsify it and move to another source-supported capability. Do not supply a
