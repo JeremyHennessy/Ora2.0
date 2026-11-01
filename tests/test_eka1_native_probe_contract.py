@@ -253,7 +253,7 @@ class PreResumeRootSourceChecks(unittest.TestCase):
 
 class NoBreakawayReadbackChecks(unittest.TestCase):
     """Exercise the real constructor with DATA fake APIs; no Windows Job exists."""
-    def construct(self, extra=0, missing=0):
+    def construct(self, extra=0, missing=0, close_ok=True):
         from experiments import process_limits as resource
         class KernelData:
             def __init__(self):self.closed=[];self.setting=None
@@ -269,9 +269,11 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
                     observed.basic.active_processes=self.setting.basic.active_processes
                     observed.job_memory=self.setting.job_memory
                 return 1
-            def CloseHandle(self,handle):self.closed.append(handle);return 1
+            def CloseHandle(self,handle):self.closed.append(handle);return int(close_ok)
         data=KernelData()
-        with patch.object(resource,'kernel',return_value=data):
+        def check(ok):
+            if not ok:raise OSError('offline API failure')
+        with patch.object(resource,'kernel',return_value=data),patch.object(resource,'checked',side_effect=check):
             try:job=resource.Job(resource.Limits())
             except BaseException:
                 self.assertEqual(data.closed,[99])
@@ -295,5 +297,13 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
             with self.subTest(flag=flag):
                 with self.assertRaisesRegex(RuntimeError,'readback differs'):
                     self.construct(missing=flag)
+
+    def test_setup_rejection_remains_primary_when_close_fails(self):
+        with self.assertRaisesRegex(RuntimeError,'readback differs') as caught:
+            self.construct(extra=0x800,close_ok=False)
+        notes='\n'.join(caught.exception.__notes__)
+        self.assertIn('Job setup cleanup UNKNOWN',notes)
+        self.assertIn("OSError('offline API failure')",notes)
+        self.assertIn('handle=99',notes)
 
 if __name__=='__main__':unittest.main(verbosity=2)

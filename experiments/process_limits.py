@@ -105,8 +105,11 @@ class Job:
                     readback['flags'] & (0x800 | 0x1000) or  # Neither breakaway mode is permitted.
                     readback['flags'] & setting.basic.flags != setting.basic.flags):
                 raise RuntimeError('Job limit readback differs; refuse command')
-        except BaseException:
-            self.close()
+        except BaseException as primary:
+            try:
+                self.close()
+            except BaseException as cleanup:
+                primary.add_note('Job setup cleanup UNKNOWN: '+repr(cleanup)+'; handle='+repr(self.handle))
             raise
 
     def assign(self, process):
