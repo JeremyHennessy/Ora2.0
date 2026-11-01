@@ -1,0 +1,180 @@
+{
+  "scope": "AST_FOUR_BOOLEAN_ROWS_TWO_FIXED_COUNTERFACTUAL_ENERGY_PREFIXES_NO_SCIENTIFIC_EXECUTION",
+  "publication_head": "c96856919686d44419240f44d450268b3e6aeb53",
+  "source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "source_lines": {
+    "unchanged_ancestor_PC2": "digital_mobile54.py:4",
+    "cold_body": "digital_sharedlineage68_population.py:55-58",
+    "initial_stock": "digital_sharedlineage68_population.py:48-51",
+    "base_fee_and_READ_XOR": "digital_pressure71_population.py:67-76",
+    "initial_target_and_reward": "digital_pressure71_population.py:78-87",
+    "COPY_and_DIV": "digital_pressure71_population.py:95-113",
+    "movement_and_closure": "digital_pressure71_population.py:114,123-133"
+  },
+  "polarity_identity": "For a genuinely nonempty packet, f=int(p==T); therefore T=p XOR(1-f). READf is the target itself iff p=1. At p=0 it is the complement, which still encodes the target perfectly when p is preserved/known; action polarity must be corrected.",
+  "truth_rows": [
+    {
+      "personally_chosen_port": 0,
+      "symbolic_nonempty_target": 0,
+      "success_feedback": 1,
+      "polarity_correct_decoded_target": 0,
+      "naive_READ_used_as_port": 1,
+      "naive_second_FORAGE_correct": false,
+      "conditional_next_first_port": 1
+    },
+    {
+      "personally_chosen_port": 0,
+      "symbolic_nonempty_target": 1,
+      "success_feedback": 0,
+      "polarity_correct_decoded_target": 1,
+      "naive_READ_used_as_port": 0,
+      "naive_second_FORAGE_correct": false,
+      "conditional_next_first_port": 0
+    },
+    {
+      "personally_chosen_port": 1,
+      "symbolic_nonempty_target": 0,
+      "success_feedback": 0,
+      "polarity_correct_decoded_target": 0,
+      "naive_READ_used_as_port": 0,
+      "naive_second_FORAGE_correct": true,
+      "conditional_next_first_port": 0
+    },
+    {
+      "personally_chosen_port": 1,
+      "symbolic_nonempty_target": 1,
+      "success_feedback": 1,
+      "polarity_correct_decoded_target": 1,
+      "naive_READ_used_as_port": 1,
+      "naive_second_FORAGE_correct": true,
+      "conditional_next_first_port": 1
+    }
+  ],
+  "information_vs_use": "PASS conditional information encoding: the hypothetical READ stores target-dependent own feedback. FAIL direct interpretation as the correct port for both probe orientations. Acquisition/encoding, appropriate action, paid benefit and evolved origin are distinct claims.",
+  "same_context_recurrence": "Only if the same target/context and availability persist across loops: naive next p=int(p==T). T1 leaves p unchanged (coldp0 remains wrong; p1 remains right); T0 toggles p, yielding one correct probe per pair. The real ancestor moves+2 sites per loop, so this stationary recurrence is NOT asserted for its actual ecological trajectory.",
+  "cold_counterfactual_premises": "Hypothetical sole opcode-semantic replacement at existing PC2, coldenergy12/registers0, site0, first9 global/own actions before64, available initial packet0/1 with symbolicT=seedmod2. No variant array, organism, mutant birth or actual constructor was created. The real constructor still supplies only the unchanged ancestor; ordinary mutant child contexts and reachability remain UNKNOWN.",
+  "cold_prefixes": [
+    {
+      "symbolic_initial_target": 0,
+      "stage_labels": [
+        "SET",
+        "first_FORAGE_port0",
+        "READ_instead_of_XOR",
+        "second_FORAGE_naive_port",
+        "COPY",
+        "refused_DIV",
+        "first_MOVE",
+        "second_MOVE",
+        "JUMP"
+      ],
+      "naive_energy_prefix": [
+        11,
+        30,
+        29,
+        28,
+        24,
+        23,
+        22,
+        21,
+        20
+      ],
+      "original_XOR_energy_prefix": [
+        11,
+        30,
+        29,
+        28,
+        24,
+        23,
+        22,
+        21,
+        20
+      ],
+      "naive_food_packets_consumed": 1,
+      "original_food_packets_consumed": 1,
+      "total_base_fees": 9,
+      "extra_COPY_fees": 3,
+      "cap_spill": 0,
+      "actual_COPY_writes_in_counterfactual": 3,
+      "nursery_words": 3,
+      "new_children": 0,
+      "naive_death_on_ninth_action": false,
+      "expiry": false,
+      "free_units_after_COPY": 466,
+      "free_units_after_end_or_death": 466,
+      "death_released_units": 0
+    },
+    {
+      "symbolic_initial_target": 1,
+      "stage_labels": [
+        "SET",
+        "first_FORAGE_port0",
+        "READ_instead_of_XOR",
+        "second_FORAGE_naive_port",
+        "COPY",
+        "refused_DIV",
+        "first_MOVE",
+        "second_MOVE",
+        "JUMP"
+      ],
+      "naive_energy_prefix": [
+        11,
+        10,
+        9,
+        8,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "original_XOR_energy_prefix": [
+        11,
+        10,
+        9,
+        28,
+        24,
+        23,
+        22,
+        21,
+        20
+      ],
+      "naive_food_packets_consumed": 0,
+      "original_food_packets_consumed": 1,
+      "total_base_fees": 9,
+      "extra_COPY_fees": 3,
+      "cap_spill": 0,
+      "actual_COPY_writes_in_counterfactual": 3,
+      "nursery_words": 3,
+      "new_children": 0,
+      "naive_death_on_ninth_action": true,
+      "expiry": false,
+      "free_units_after_COPY": 466,
+      "free_units_after_end_or_death": 512,
+      "death_released_units": 46
+    }
+  ],
+  "cold_conclusion": "FALSIFIED_FOR_NAIVE_READ_REPLACEMENT_AS_ROBUST_COLD_TARGET_CONTROLLER: T0 endsenergy20, T1 diesonaction9, whereas unchanged XOR comparator ends20 for both symbolic orientations in this prefix. This is not a frequency estimate or global fitness verdict about all READ-containing mutants.",
+  "accounting": "No cap saturation occurs in either cold prefix; gross food is20 or0 and paid fees total12. COPY uses3newunits and makes3symbolic writes but no write values/hashes are evaluated; DIV refuses with nursery3not27 so no formation30debit or child12 exists. At T1 death all46ownedunits return to global free512; the spent energy is not refunded. Ownage9 cannot trigger age256expiry.",
+  "availability_caveat": "Empty FORAGE also writesf0. Thus f0 alone cannot distinguish wrong port from no packet. The polarity identity is conditional on genuinely nonempty food, not privileged availability supplied to an organism.",
+  "next_minimal_information_mechanism_proof": "Preserve the personally chosen probe port and use the correct Boolean relation, or demonstrate a lawful fixed-port1 feedback acquisition path. Prove paid control/retention/retrieval and empty-failure handling across both target orientations before claiming useful acquisition. No successful genome is supplied here.",
+  "controls_and_unknowns": "Use balanced symbolic orientations for algebra only, then separately authorized untouched conditions with paid sham/erasure, nonpredictive information, both fixed ports, blind/reactive controls and a cheap finite-state memory-positive reference. Matching a simple naturally acquired finite-state capability is valuable, not a failure. Nine-instruction representation, mutation occurrence/probability, affordable birth context, actual survival/reproductive benefit and useful inheritance remain UNKNOWN.",
+  "prior_falsifiers": "Faithful-founder noninterference, same-context next-port bound and scoped synchronous-refill constraint remain intact; none is promoted to a universal failure of memory.",
+  "scientific_imports": 0,
+  "World_or_VM_or_population_or_replay_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "variant_genome_arrays_constructed": 0,
+  "source_edits": 0,
+  "organisms_learned": "NOT_TESTED",
+  "scientific_admission": "NO_GO",
+  "publication_provenance": {
+    "raw_result_sha256": "dac9bad41163c5c7c45e32cf0c507b03bf29494fdea39bccbd603deaeb152756",
+    "check_script_sha256": "af80151b2e4d65e7803512dacfad05b23288a1ddb46a5e24ca89ad5b47fb0e95",
+    "independent_review_sha256": "1ba82db934a8a77d6d7a6846a836f5dd72bc5cf936ffaa5425b0e1f4a033c9e7",
+    "method": "Pinned scientific source AST and fixed symbolic/scalar reasoning only; no scientific code import, VM/World/replay/population, target-hash queries or new genotype. Detailed scripts and original receipts remain in local drafts."
+  }
+}

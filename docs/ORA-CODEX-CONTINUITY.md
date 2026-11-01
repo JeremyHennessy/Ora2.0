@@ -1,0 +1,181 @@
+# Current Ora 2.0 — Codex development continuity
+
+Standing user directive: 2026-11-01. This is the current development entry point,
+not a replacement for immutable experiment receipts or the historical
+`D:/OraLab/state/ora-continuity.json`. Keep routine detail in local drafts.
+
+## Mission and acceptance
+
+Develop useful information processing through ordinary variation, personal
+experience, selection and inheritance under the existing scientific laws.
+Progress means a lawful, prefix-funded capability improving paid survival or
+reproduction against fair competitors on unseen conditions. Supplied successful
+genotypes, privileged observations and altered laws cannot demonstrate emergence.
+A cheap naturally acquired finite-state capability is a valid achievement.
+
+Distinguish source consistency, real native enforcement, scientific qualification,
+within-life learning and inherited fitness. None implies the next automatically.
+
+## Resume without duplicating ownership
+
+1. Read `D:/OraLab/state/ora-codex-development-current.json` for exact publication
+   tips, evidence, last iteration and next task. Resolve actual Git HEAD/status
+   and remote branch refs; the pointer is evidence, never execution authority.
+2. Read only new material in coordination issue317 and relevant draft PRs.
+   Check the scoped session lease and owner-chat status before source writes.
+   Do not remove an unexplained lease or `operator.lock`, overwrite another
+   owner's dirty work, or infer inactivity from an elapsed timer.
+3. Repeat OBSERVE → PRIORITIZE → HYPOTHESIZE → TEST → IMPLEMENT → VERIFY →
+   PRESERVE → REASSESS → CONTINUE through useful bounded iterations. Retire
+   falsified approaches within their exact scope. A held stream does not halt
+   independent authorized work. Do not require another broad user prompt.
+4. Independently review changed source/evidence before publication to the existing
+   branch. Preserve first failures and exact hashes. Update this record and the
+   local current-tip pointer after material results; do not create self-referential
+   commits merely to insert the commit's own SHA into this file.
+
+## Owners, branches and exact accepted checkpoints
+
+Current owner: this local Codex development chat; exact internal chat identity is
+in the local current-tip pointer. Existing development automation is retargeted
+here; the older development chat was idle at reconciliation.
+Do not wake it as a competing writer. Independent reviews use existing coordinated
+review owners; no recursive or duplicate agent/scheduler creation.
+
+| Track | Existing branch/worktree | Last accepted checkpoint |
+| --- | --- | --- |
+| Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `c96856919686d44419240f44d450268b3e6aeb53` |
+| Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
+| Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
+| Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
+
+The independent AI-Research PR65 custodian owns its prior-art document. Corrected
+note checkpoint `01ab3429e29ecb4d583c797af079cfc9874f62f7` supersedes withdrawn
+genetic-write-back/library and recovery-number claims. Do not edit that branch.
+This note is not an independent reproduction or Ora intelligence result.
+
+## Confirmed science versus open hypotheses
+
+- The faithful founder's fixed register logic does not acquire the proposed target.
+- Same-site/same-phase older history cannot improve the particular next forage
+  over an intact personally successful port. This is not general memory futility.
+- Synchronous four-site refill alone does not justify a return when B has comparable
+  food and a known valid port. Offers, admission and actual stock are distinct.
+- An A-positive/B-empty return may be useful; lawful reachability, complete
+  nine-instruction control and paid advantage remain UNKNOWN. In the specified
+  lone-actor/one-refill route, clearing B requires at least five B successes.
+- One full27-word child needs43 material units and45 extra dissipated energy.
+  With64 global dispatches, one four-packet cohort and one completed child,
+  population energy changes by at most80−64−45=−29 before extra losses. This
+  does not impose a birth schedule or prove travel necessary.
+- The conditional62→17→33→2→1→20 identity remains historical conditional algebra,
+  not a genuinely acquired target or completed organism program.
+- New source-only polarity analysis separates information from correct use:
+  for known nonempty probe port p and success f, target=p XOR(1−f).
+  READ after port0 stores an informative complement. The examined naive READ
+  replacement loses one cold-start orientation; it is not a general READ failure
+  or evidence that an actual mutant was born.
+- The lone unchanged founder, with no other consumers, has at most32 site0 forage
+  attempts before expiry, but reaching renewed food there requires33 successes.
+  This closes that solitary acquisition premise, not descendants helping clear
+  stock. Initial food counts are32/16/16/0 across sites0/1/2/3. First renewed-site0
+  consumption cannot precede globaltick80; first founder birth cannot precede70.
+- Initially empty site3 is a cleaner prospective renewed-food information context,
+  but the founder forages only at0/2. Separate conditional newborn prefixes can
+  afford one personally informative probe/READ after movement: three fees from0
+  or four from2, ending at9/29 or8/28 energy. These are not one unified9-slot
+  controller, an actual ordinary mutant or a demonstrated advantage. Funded
+  ancestry, real stock, correct use, mutation/selection and complete control remain
+  UNKNOWN. The parent67-energy successful-operation floor is not a complete
+  funded reproductive program; it excludes additional control/probe costs.
+
+Every candidate must pay all probes, acquisition, control, movement, COPY,
+formation, retrieval, cap spill, material, scheduling and expiry prefixes.
+The constructor lineage has27 words/nine instructions; a generic96-word validator
+ceiling is not a growth mechanism. Match fixed/reactive/latest-successful-port,
+location-specific finite-state, unrestricted stay, erasure/sham/nonpredictive and
+unseen controls. A memory-positive finite-state tie is not a failure of learning.
+
+Closed negatives, including delayed-credit0/32 versus32/32 and failed paid
+Context90 comparisons, stay closed. Do not select seeds, retune or rerun them.
+Historical Learning81 supplied within-life findings are not evidence of this
+current mechanism or mutation-originated inherited intelligence.
+
+## Engineering — retain accepted architecture
+
+PR323 has one cumulative owner/assignment/physical ledger/deadline and the approved
+watchdog A → once-derived header → guardian B ordering. The optional raw observer
+retains a noninheritable Job duplicate, compares kernel objects, preserves partial
+USER/KERNEL readings on failure and burns future work on final capture. It does
+not launch processes, supply complete birth/image/EOF evidence or bill separately.
+The existing finalizer is the sole root debit. Native entry remains closed.
+
+Exact-head CI41331323845 at9e16cef passed271 offline checks; native steps7/8 and
+legacy41331327617 were SKIPPED, not passed. Independent review checked raw source,
+interpreter and artifact, explicitly including one unchanged LF→CRLF conversion.
+Prior247 acceptance belongs to64a3a7b;221 belongs to the earlier executable source.
+Do not reuse old counts to accept changed source or repeat unchanged full suites.
+
+Remaining proof obligations: actual suspended creation and root containment;
+retained PID/creation-time/image custody through short helper lifetimes and failed
+starts; qualified final raw CPU/termination; consumed compiler/SDK/header/DLL
+closure including header shadowing; archive/restoration fit; disjoint external
+owner/observer/cleanup/archive/verifier/final-writer and unattributed costs.
+Missing costs remain unresolved debt. Job notifications are not guaranteed to
+capture every helper. Debug creation events are only a conditional future custody
+candidate; changed debug chains and absent rights/handles must fail closed.
+
+Native preflight NO_GO; explicit permission is not the sole missing prerequisite.
+Opaque nested attempts are UNKNOWN only under the approved BUILD_ONLY exception.
+Keep all numerical limits. Strict prepaid CPU remains NOT_READY; the historical
+2.0625 USER-second overrun against one second is not repaired retrospectively.
+Four sealed assignments and144 consumed reservations remain immutable.
+
+## Next authorized tasks and evidence
+
+1. Next: test a unified, paid nine-instruction control representation for the
+   cleaner site3 descendant opportunity, including birth-origin sensing/direction,
+   information decoding/use and actual funded ancestry. The separate3/4-fee
+   prefixes do not solve that representation. Do not install a successful genome
+   or select a mutation/seed/history because it works.
+2. Seek a complete funded representation for productive scarcity, or narrowly
+   falsify it and move to another source-supported capability. Do not supply a
+   successful genotype or mistake a conditional formula for an actual lineage.
+3. Engineering advances only the next demonstrated custody/qualification gap.
+   Use existing infrastructure and focused mock/DATA negatives before exact-source
+   independent review. Actual native qualification requires a separate immutable,
+   independently reviewed request and explicit human authorization.
+
+Local evidence: `D:/OraLab/drafts/eka-root-observation-20261101/publication-final.json`
+and `D:/OraLab/drafts/eka-cross-location-scarcity-obligation-20261101/`.
+Detailed routine notes and new iteration receipts remain local; publish accepted
+material changes through PR323/325 and issue317 only when coordination warrants it.
+
+## Recurrence and hard boundaries
+
+Reuse automation `continue-ora-development`, now named **Ora 2.0 Autonomous
+Development**, daily08:00 America/Halifax on this chat. It replaces the older
+09:00/17:00 development schedule; no second development schedule was created.
+Host/app availability and usage remain prerequisites; no free/unavailable-work claim.
+The separate hourly v10 monitor and runtime schedule are unchanged.
+Hourly health heartbeats remain health-only. Their dated09:00/17:00 development
+reference does not undo the user's later explicit08:00 development schedule.
+
+Authorized: bounded source research, non-native offline checks, independently
+reviewed reversible source fixes, existing draft-branch publication and continuity.
+Separate explicit approval: any approved accounting/scientific contract change;
+native build/diagnostic, scientific World/population/replay, relaxed limits,
+production/merge/deployment, paid API/provider or destructive consequential action.
+Never alter v10, its174 memories/model/configuration/schedule, approved Observatory,
+scientific laws, sealed evidence or unrelated/historical projects. No improvised
+CLI daemon, recursive agents or unattended execution loop. A platform/access hold
+must be recorded honestly; continue another authorized stream where possible.
+
+Last completed session: standing continuity/single recurrence established, then
+three independently reviewed source-only iterations: feedback polarity, renewed
+acquisition frontier/solitary-founder exclusion, and conditional paid newborn
+information prefixes. See the three named20261101 DATA certificates in this
+branch. No organism or native qualification ran. Earlier executable acceptance
+remains9e16cef; the local pointer binds the exact later DATA/document publication
+tip and independent receipts without treating it as a new executable CI pass.
