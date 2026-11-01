@@ -44,8 +44,8 @@ review owners; no recursive or duplicate agent/scheduler creation.
 
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
-| Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `0ecad7bb7056db8d354b23bbc6e81a632f981f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `567b4ea884940aaf46384e7af8cf12f2a2d1f28e` (parent of this DATA/doc checkpoint; exact current tip in local pointer) |
+| Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `2f408d588ab73e7873268a35f3ae8597024b0897` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `12018b891996eb3d9c4f2ba72522fbcf2429d1ac` (parent of this DATA/doc checkpoint; exact current tip in local pointer) |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -160,6 +160,19 @@ feedback, actual ordinary reachability and inherited fitness remain UNKNOWN.
 See `data/eka-ordinary-origin-and-feedback-mask-decision-20261101.json` and its
 exact local proof/review pins. No organism was introduced or executed.
 
+Latest postbirth source analysis retains a conditional memory effect without
+promoting fitness. Starting from the accepted learner E27 after division,
+intact port state reaches the next pc0/nursery3 endpoint in7 actions at37 energy;
+formal target1 port erasure needs12 actions and ends32, with one meal, paid COPY
+and no cap spill. Equal illustrative handling1 gives36/31; if it costs one own
+dispatch, strict remaining-age slack is R>13. No intervention was executed or
+admitted. The nonlearning paired reference matches37 or retains39, so this
+does not establish unique learning benefit. The faster alternator E5 adult
+cannot fund its next correct probe; E10 just reaches it and ends20. Its already
+born child remains a separate fitness obligation; adult death is not extinction.
+Actual ordinary stock/head/scheduler continuation, mutation and inherited fitness
+remain UNKNOWN. See `data/eka-postbirth-reentry-and-port-state-decision-20261101.json`.
+
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
 The constructor lineage has27 words/nine instructions; a generic96-word validator
@@ -181,10 +194,16 @@ USER/KERNEL readings on failure and burns future work on final capture. It does
 not launch processes, supply complete birth/image/EOF evidence or bill separately.
 The existing finalizer is the sole root debit. Native entry remains closed.
 
-Current engineering0ecad7bb binds the exact absolute guardian release header
-with guardian-only /FI, removes basename fallback and requires all seven pins.
-New exact-head Windows CI41347063787 passed276 offline checks; native steps7/8
-and legacy41347068108 were SKIPPED, not passed. Independent source/commit and
+Current engineering2f408d58 adds explicit retained-root membership readback
+before resume in the existing held guardian/private-child paths. Unverified
+successful creations use their exact creation handle for one termination attempt
+and a bounded final wait, even after termination failure. Initial error-code and
+skipped-wait defects were rejected and corrected. This is not the missing
+BUILD_ONLY compiler launcher, complete helper provider or OS qualification.
+Exact-head Windows CI41352147475 passed279 offline checks; native steps7/8 and
+legacy41352151634 were SKIPPED, not passed. Prior0ecad7bb header-selection repair
+and276-check CI41347063787 remain accepted historical source evidence: guardian-
+only absolute /FI, no basename fallback, all seven pins required. Independent source/commit and
 downloaded artifact custody review PASS within offline scope. Actual compiler
 consumption, complete native input custody and OS qualification remain NO_GO.
 Previous CI41331323845 at9e16cef passed271 offline checks; its native steps7/8
@@ -260,11 +279,13 @@ scientific laws, sealed evidence or unrelated/historical projects. No improvised
 CLI daemon, recursive agents or unattended execution loop. A platform/access hold
 must be recorded honestly; continue another authorized stream where possible.
 
-Last completed source checkpoint: the origin/feedback-mask audit above preserves
-the rejected empty-stock extrapolation and closes only its qualified submotifs.
+Last completed source checkpoint: the postbirth reentry/port-state audit above
+retains a conditional energy effect while strong nonlearning controls still match
+it. The origin/feedback-mask audit and rejected empty-stock extrapolation remain
+preserved within their exact earlier scopes.
 The current local pointer records exact source/commit reviews, published tips,
 regularly saved routine research and the next active proof obligation.
-Engineering0ecad7bb/276 offline is accepted source-only preparation. No compiler,
+Engineering2f408d58/279 offline is accepted source-only preparation. No compiler,
 native diagnostic, scientific World or organism ran. The five-minute automation
 has delivered completed source sessions, subject to host/app/tools/usage; no
 continuous work while unavailable or indefinite reliability is claimed.
