@@ -1,0 +1,137 @@
+{
+  "schema": "EKA-INDEPENDENT-SINGLE-ATTEMPT-STAGING-AMENDMENT-PROPOSAL-v1",
+  "reviewed_engineering_head": "4edf93d81706f7a881606d2bff905d084296f8fe",
+  "source_working_sha256": {
+    "tools/eka1_build_only_contract.py": "656b4e0aa13a389e700b175f604dd70b26c5b9f9ecb81aa593721a2eaae9e01e",
+    "tools/eka1_runtime_capsule.py": "d69ab5df13f691826f44ee6b27273175cf1494d5338e5890851f59ecb0bcf973",
+    "tools/eka1_external_settlement.py": "3d25fe1e4839d421a93277c2e72829912569f9e034a3f173e46c4ab31b837e5b",
+    "experiments/native/eka1_probe_owner_watchdog.c": "8f0e13973269c43ac4898796eecd0c01a5e6ec3e2fa4aebef764ef9dd1559263",
+    "experiments/native/eka1_probe_guardian.c": "e79bb0486e61ccf3aa874c4c24381c230f29e58222b4042b6efc2041d46321c6"
+  },
+  "verdict": "COHERENT_PROSPECTIVE_CONTRACT_CHANGE_ONLY_NOT_IMPLEMENTED_NOT_AUTHORIZED",
+  "native_decision": "NO_GO",
+  "title": "One cumulative BUILD_ONLY release attempt with deterministic derived StageB binding",
+  "explicit_change": "Replace current requirement that final release-header bytes are frozen before every slot with a top-level immutable derivation recipe plus one-time derived StageB evidence frozen after successful StageA. Existing BuildOnly._inputs/_check and original frozen-header contract do not implement or authorize this.",
+  "immutable_before_first_effect": [
+    "One original owner PID/creation identity, one logical assignment, one physical ledger handle/identity and original absolute deadline",
+    "Exact source closure, derivation function bytes, interpreter, SDK/compiler/linker/dependency custody, four fixed launch slots and argv/environment; no cmd/vcvars or arbitrary callbacks",
+    "Exact StageA watchdog source/compile/link inputs and fixed watchdog target path; exact StageB guardian source/input/output paths including future header path",
+    "Exact canonical header derivation schema: release_header on fixed interpreter/program pins and watchdog target path with independently observed StageA DLL SHA256; fixed header path and single-create semantics",
+    "Exact derived StageB manifest schema with top-level recipe/assignment hash, StageA outcome/binary identity/hash, derived header bytes/hash and prior physical-ledger tip binding",
+    "One unchanged cumulative limit set, failure policy, artifact/output/storage inventory and explicit external settlement scopes"
+  ],
+  "stages": [
+    {
+      "name": "A",
+      "slots": [
+        "compile_watchdog",
+        "link_watchdog"
+      ],
+      "rules": [
+        "Precharge each supervised attempted OS launch to same physical ledger before CreateProcess effects, including failed/rejected creation",
+        "Assign same retained root Job at suspended process creation; validate exact image, PID/creation identity, membership and caps before resume",
+        "Observe signaled retained process births, complete output/EOF and normal all-helper closure after each stage; no residual process may retain or mutate watchdog bytes",
+        "Do not import, LoadLibrary, invoke or run produced watchdog DLL"
+      ]
+    },
+    {
+      "name": "DERIVE_ONCE",
+      "slots": [],
+      "rules": [
+        "Requires successful StageA with no previous failure and original owner/ledger/deadline intact; no new process lifetime or budget",
+        "Retain exact StageA DLL read custody denying replacement/write, hash actual bytes; source-to-image and complete dependency qualification remain separate",
+        "Generate header by pinned deterministic rule into prospectively fixed absent path; partial write or existing file is terminal; freeze byte hash and retained input custody",
+        "Create derived StageB manifest once at fixed absent path and append its exact byte hash, header hash and StageA observation binding to same ledger before either StageB precharge",
+        "Derivation performs no new launch and grants no independent authority; any caller-supplied replacement derivation values rejected; costs charged to declared original-owner/external scope"
+      ]
+    },
+    {
+      "name": "B",
+      "slots": [
+        "compile_guardian",
+        "link_guardian"
+      ],
+      "rules": [
+        "Same original producer/assignment/physical ledger/root Job/deadline and cumulative counters; no reopen/restore/reconstruction constructor",
+        "Validate top-level recipe plus exact derived manifest/header/binary custody before StageB and again after effects",
+        "Precharge third and fourth exact slots only; no rerun of StageA or slot replacement; no generated guardian execution"
+      ]
+    }
+  ],
+  "cumulative_limits": {
+    "USER_ticks": 300000000,
+    "memory_bytes": 536870912,
+    "active_processes": 4,
+    "wall_ms": 30000,
+    "output_bytes": 1048576,
+    "archive_files": 128,
+    "archive_bytes": 67108864,
+    "scope": "Existing BUILD_ONLY values unchanged, cumulatively across A, derivation, B and closure; active count is simultaneous cap, never cumulative attempted births",
+    "wall": "One absolute deadline measured from original attempt claim; header/hash/observer delays consume same original wall window; no per-stage30seconds",
+    "CPU": "One fresh root Job at initial zero; no resetting Job time limits/epoch or adding nested samples; root USER+KERNEL final debit once after complete termination/closure, before closing retained root handle. Existing USER30second threshold unchanged, no strict overshoot guarantee",
+    "output": "Aggregate bytes across all four slots; per-slot capture is not four independent allowances",
+    "memory": "Same root peak across all stages, no stage-specific cap reset",
+    "storage": "Aggregate all stages, intermediates, manifests, ledger, payload, ZIP, restored copies and covered tails under existing declared scope; no separate stage allowances"
+  },
+  "fail_closed": [
+    "Any failed/rejected creation, nonzero compiler/link exit, interrupted custody, missing/partial evidence or wrong event order terminal with first failure and consumed reservations retained",
+    "Any source/header/image/manifest/ledger identity change, expired original deadline or cap overrun terminal; no retries, refunds, assignment renewal, resume or deadline extension",
+    "Terminate owned root tree on failure and retain process handles through signaled birth verification and final root counters; failed termination/missing counters remain unresolved debt, not zero",
+    "Derivation or archive failure preserves StageA bytes, partial header/output and all costs without StageB authority"
+  ],
+  "external_costs": "Owner/header derivation/hash/observer/archive/restoration/cleanup/completion/final-writer and registry costs need disjoint explicit scopes. Root final CPU does not include external owner CPU or every system/service cost; missing costs remain debt. Current settlement always leaves final live writer tail unresolved and cannot assert complete finite closure.",
+  "proof_obligations": [
+    "Exact minimal amendment human approval separate from implementation and separate from execution approval",
+    "Independent source-only review of minimal implementation and failure fixtures; current221baseline not qualification of changed code",
+    "Actual native suspended creation/Job membership, failed-start and complete helper-birth lifetime observation provider qualification; no active-cap substitution",
+    "Exact executed dependency closure and archive/restoration fit: observed5914file1194234807byte superset exceeds128file64MiB caps and is not actual consumed payload",
+    "Complete disjoint root/external final accounting and explicit independently verifiable final-writer boundary",
+    "Fresh exact immutable assignment with original owner, physical ledger and absolute deadline only after technical prerequisites; explicit separate human native-build authorization"
+  ],
+  "not_claimed": [
+    "No implementation, native adapter, compile/link, produced binary, native qualification or grant",
+    "No cumulative prepaid accounting for opaque nested attempted births; approved BUILD_ONLY exception only, count UNKNOWN",
+    "No change to runtime private USER1second, scientific laws, v10, Observatory, four sealed assignments or144 historical reservations",
+    "No scientific World, population, replay, watchdog loading or diagnostic execution"
+  ],
+  "next_single_requirement": "Review/approve this exact one-attempt derivation amendment before changing frozen-header contract. Approval would authorize neither a build nor automatic native execution.",
+  "human_authorization_only_remaining": false,
+  "name": "EKA-BUILD-ONLY-SINGLE-ATTEMPT-DERIVED-HEADER-v1",
+  "approval_request": {
+    "decision_requested": "Approve source-only implementation of this exact staged derivation amendment",
+    "scope": "One prospective release attempt; two phases inside the same attempt, not two builds or executions with separate allowances",
+    "why_new_approval": "The approved v1 contract requires final header bytes frozen before every slot; this proposal freezes the derivation rule first and its one-time result after StageA",
+    "contract_approved": false,
+    "implementation_authorized_by_this_file": false,
+    "native_execution_authorized": false,
+    "separate_human_native_grant_still_required_after_qualification": true,
+    "approval_of_this_file_is_not_native_execution_permission": true
+  },
+  "approval_basis": "User directive requires explicit approval before implementing changed staging authority; existing BUILD_ONLY approval is not silently reinterpreted.",
+  "proposal_only_cumulative_counterexamples": [
+    {
+      "resource": "USER_ticks",
+      "phase_A": 200000000,
+      "phase_B": 150000000,
+      "cumulative": 350000000,
+      "unchanged_limit": 300000000,
+      "decision": "TERMINAL_OVER_LIMIT; per-phase passing does not refund/reset allowance"
+    },
+    {
+      "resource": "wall_ms",
+      "phase_A": 18000,
+      "phase_B": 15000,
+      "cumulative": 33000,
+      "unchanged_limit": 30000,
+      "decision": "TERMINAL_OVER_LIMIT; per-phase passing does not refund/reset allowance"
+    },
+    {
+      "resource": "output_bytes",
+      "phase_A": 600000,
+      "phase_B": 500000,
+      "cumulative": 1100000,
+      "unchanged_limit": 1048576,
+      "decision": "TERMINAL_OVER_LIMIT; per-phase passing does not refund/reset allowance"
+    }
+  ]
+}
