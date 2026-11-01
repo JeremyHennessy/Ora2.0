@@ -1,0 +1,77 @@
+{
+  "scope": "SOURCE_LAW_SYMMETRIC_REFILL_FALSIFIER_AND_SCARCITY_COST_OBLIGATIONS_ONLY",
+  "publication_head": "1610a95741d212c746bd01275136bf9db934a23f",
+  "scientific_source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "source_lines": {
+    "global_inflow": "digital_sharedlineage68_population.py:76-88",
+    "initial_stock": "digital_sharedlineage68_population.py:50",
+    "base_fee": "digital_pressure71_population.py:67",
+    "renewed_target": "digital_pressure71_population.py:81",
+    "food_selection_and_gain": "digital_pressure71_population.py:69,79-86",
+    "COPY_and_formation": "digital_pressure71_population.py:95-113",
+    "movement": "digital_pressure71_population.py:114",
+    "expiry": "digital_pressure71_population.py:130-133"
+  },
+  "scoped_falsifier": "SYNCHRONOUS_RENEWAL_ALONE_DOES_NOT_JUSTIFY_RETURN: if depleted A and B both refill at the same boundary, B target remains personally known in the same phase, and comparable packets are available without asymmetric competition, returning to A gives no unique next-food opportunity over staying at B. At matched food timing and paid dispatch horizon, correct B FORAGE matches correct cached A FORAGE.",
+  "aligned_scalar_cases": [
+    {
+      "distance": 1,
+      "energy_before": 2,
+      "candidate_MOVE_then_A_FORAGE": 20,
+      "reference_paid_wait_then_B_FORAGE": 20,
+      "common_dispatches": 2
+    },
+    {
+      "distance": 2,
+      "energy_before": 3,
+      "candidate_MOVE_then_A_FORAGE": 20,
+      "reference_paid_wait_then_B_FORAGE": 20,
+      "common_dispatches": 3
+    }
+  ],
+  "falsifier_limits": "This rejects a particular resource justification, not all cross-location memory. Paid wait is a source-action comparator, not a qualified nine-instruction controller. Real code/control costs and future stock/offspring states must be compared. Comparing an earlier B meal against later A meal without matching cap timing can be misleading; no such energy-dominance claim is made.",
+  "nontrivial_stock_witness": {
+    "necessary_event": "A empty at departure; a refill while away leaves A food available; B carry stock and newly admitted food are subsequently depleted before another common refill. Return can then exploit a real A-positive/B-empty asymmetry.",
+    "lone_actor_scope": "If one actor/no births/transfers leaves empty A because energy is below the own-dispatch delay to its next refill, it needs a B meal before that refill. If empty B then receives four new packets and actor must drain them to create B-empty/A-positive asymmetry, at least five B successes are required in this one-cohort motif.",
+    "minimum_B_successes": 5,
+    "minimum_gross_B_food_energy": 100,
+    "caveat": "The five meals are not five useful20-energy gains. Every cap spill and extra fee remains charged. If other actors consume B, their histories, costs, competition and timing must be included. If admission was capped or B had additional stock, use actual admitted/consumed counts; no invented stock depletion."
+  },
+  "productive_reproduction_flux": {
+    "complete27word_child_successful_COPY_operations": 9,
+    "COPY_extra_energy_beyond_base": 27,
+    "formation_parent_extra_debit_beyond_base": 30,
+    "daughter_stored_startup_energy": 12,
+    "formation_heat_beyond_base": 18,
+    "total_extra_heat_per_complete_child_beyond_base": 45,
+    "conditional_64_global_dispatch_budget": "With exactly64 executed global dispatches, food only from one newly admitted4packet cohort, exactly one completed child and no other energy terms, population energy changes by80-64-45=-29 before any cap spill or additional losses. Parent-only accounting must also retain the daughter12 rather than calling it heat.",
+    "population_energy_change_upper_bound": -29,
+    "interpretation": "Productive reproductive expenditure can exceed a single-site renewing energy surplus. This is a possible honest resource pressure for additional food, not an imposed birth schedule, proven travel necessity, viable lineage or experiment result. Initial stock/bank energy/other inflow/constructor costs must be accounted in an actual trace."
+  },
+  "mandatory_paid_actor_equation": "E_return = E_depart +20*M - [D_own +3*C +30*F] - cap_spill + net_neighbor_opcode16_transfer. D_own counts EVERY dispatched instruction once, including moves, successful/failed forage, acquisition, COPY/formation basefees, refused attempts, branch/wait and retrieval; C/F count successful COPY/formation only. The net transfer term includes only energy received minus energy given through neighbor opcode16. It EXCLUDES daughter startup energy: that12 is already included in the parent formation debit30*F and must never be charged again as a transfer. Extra neighbor-transfer cost/history cannot be hidden.",
+  "movement_and_age": "For distinct A/B on four-cycle, shortest roundtrip requires2d MOVEs with d1or2, plus any direction/control setup. To reach first B food without intermediate feeding requires at leastE_depart>=d+1; with a possible failed first probe even ideal warm-port setup needs>=d+2. Every actual prefix must survive. For survival after rescue, prior own age+all own dispatches through rescue must be<=255; global ticks and own age diverge after births.",
+  "material_obligation": "A full27word daughter consumes27nursery+16state=43free units, with3free required at each successful COPY and16at formation; nursery/full-code and population guards remain required. Existing partial nursery credits earlier paid work, never free material or energy.",
+  "paid_information": "Retaining a genuinely successful chosen-port register can have zero extra STORE/LOAD dispatches; do not invent a READ fee for that case. A target learned from the feedback of a known port1 probe needs a paid READ to become register data. Space for port/direction/control and every overwrite/STORE/LOAD must be shown. Available renewed-packet status is a proof premise, never privileged organism input.",
+  "nine_instruction_closure": "This constructor starts27words/9instructions; COPY mutations substitute values without changing length. The generic96word validity ceiling is not evidence that this lineage can grow its program. The particular COPY+nursery-check loop plus seven remaining phase slots has no unused acquisition READ slot. This falsifies only that literal layout; reuse/self-write/alternate control and ordinary mutation accessibility remain UNKNOWN. No new genotype or program has been constructed.",
+  "comparators": "Fixed/reactive and free-stay controls may exploit better timing/food without the trip. Last-global-successful port is insufficient only when another useful B success replaces it and A differs. An equally cheap location-specific finite-state cache tying the candidate is a POSITIVE simplicity/mechanism control, not failure of useful learned memory. The candidate need not beat an equivalent memory-positive reference; it must demonstrate natural paid acquisition/use and advantage over appropriate memoryless competitors.",
+  "causal_controls": "Erasure/nonpredictive interventions must remove personally acquired A information while matching costs and other context, with intact/sham and fixed/reactive controls kept separate. Equal performance to a naturally acquired finite-state implementation is allowed. No forcing departure, protected food, inserted answers or engineered successful genomes.",
+  "remaining_exact_proof": "Exhibit an actually reachable funded A-positive/B-empty resource asymmetry, source-lawful older A acquisition, a full paid nine-instruction representation and prospective unseen controls. Show benefit over free-policy fixed/reactive choices, while measuring rather than rejecting a finite-state memory tie. No complete candidate or advantage has yet been established.",
+  "decision": "PASS_SCOPED_REFILL_FALSIFIER_AND_NECESSARY_RESOURCE_OBLIGATIONS; FULL_LAWFUL_MEMORY_SURVIVAL_CANDIDATE_UNKNOWN",
+  "preserved_setup_failure": "check-setup-failure.py and stderr-setup-failure.txt retain initial AST normalization mismatch: generator target Store context was normalized on only one comparison side. Revised helper normalizes both sides; no scientific law changed.",
+  "scientific_imports": 0,
+  "World_or_population_or_replay_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "supplied_genomes": 0,
+  "source_edits": 0,
+  "organisms_learned": "NOT_TESTED",
+  "scientific_admission": "NO_GO",
+  "reproducibility": {
+    "retained_check_sha256": "ef68fc9946ba6ee2d3cfecaa00848c158128ec27788cf252456d17e08165ed80",
+    "retained_result_sha256": "239f1e7cf6c78aa896fd8f4fb28945d81a0c6862f50651ffcbd6b4f7fbf2c248",
+    "method": "Exact scientific source AST only plus two fixed aligned-time scalar cases, one scoped1+4 meal bound and80-64-(9*3+30-12)=-29. No scientific module import, seed/hash-output query or organism dispatch. Transfer-label clarification changed no calculation."
+  }
+}
