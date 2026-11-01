@@ -251,4 +251,49 @@ class PreResumeRootSourceChecks(unittest.TestCase):
         self.assertLess(close.index('TerminateProcess(pi.hProcess,125)'),close.index('CloseHandle(pi.hProcess)'))
         self.assertIn('root_verified=FALSE',text)
 
+class NoBreakawayReadbackChecks(unittest.TestCase):
+    """Exercise the real constructor with DATA fake APIs; no Windows Job exists."""
+    def construct(self, extra=0, missing=0):
+        from experiments import process_limits as resource
+        class KernelData:
+            def __init__(self):self.closed=[];self.setting=None
+            def CreateJobObjectW(self,unused,name):return 99
+            def SetInformationJobObject(self,handle,kind,value,size):
+                if kind==9:self.setting=value._obj
+                return 1
+            def QueryInformationJobObject(self,handle,kind,value,size,unused):
+                if kind==9:
+                    observed=value._obj
+                    observed.basic.flags=(self.setting.basic.flags|extra)&~missing
+                    observed.basic.job_cpu=self.setting.basic.job_cpu
+                    observed.basic.active_processes=self.setting.basic.active_processes
+                    observed.job_memory=self.setting.job_memory
+                return 1
+            def CloseHandle(self,handle):self.closed.append(handle);return 1
+        data=KernelData()
+        with patch.object(resource,'kernel',return_value=data):
+            try:job=resource.Job(resource.Limits())
+            except BaseException:
+                self.assertEqual(data.closed,[99])
+                raise
+        return job,data
+
+    def test_required_flags_without_breakaway_are_accepted(self):
+        job,data=self.construct()
+        self.assertEqual(data.setting.basic.flags,0x4|0x8|0x200|0x2000)
+        job.close();self.assertEqual(data.closed,[99])
+
+    def test_either_breakaway_flag_refuses_and_closes_before_return(self):
+        for flags in (0x800,0x1000,0x1800):
+            with self.subTest(flags=flags):
+                with self.assertRaisesRegex(RuntimeError,'readback differs'):
+                    job,data=self.construct(extra=flags)
+                    job.close()  # DATA fake cleanup if old predicate accepts.
+
+    def test_each_required_flag_still_must_be_present(self):
+        for flag in (0x4,0x8,0x200,0x2000):
+            with self.subTest(flag=flag):
+                with self.assertRaisesRegex(RuntimeError,'readback differs'):
+                    self.construct(missing=flag)
+
 if __name__=='__main__':unittest.main(verbosity=2)

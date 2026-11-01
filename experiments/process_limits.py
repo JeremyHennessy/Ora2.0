@@ -102,6 +102,7 @@ class Job:
             if (readback['configured_memory_bytes'] != limits.memory_bytes or
                     readback['configured_processes'] != limits.processes or
                     readback['configured_cpu_ticks'] != setting.basic.job_cpu or
+                    readback['flags'] & (0x800 | 0x1000) or  # Neither breakaway mode is permitted.
                     readback['flags'] & setting.basic.flags != setting.basic.flags):
                 raise RuntimeError('Job limit readback differs; refuse command')
         except BaseException:
