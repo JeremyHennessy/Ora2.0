@@ -104,6 +104,8 @@ def cumulative_stage_sample(final,initial):
 
 def invocations(m,out):
     """Fixed source-level catalogue, DATA only; never passed to an OS API here."""
+    header=Path(m['header']['path'])
+    if not header.is_absolute():raise ValueError('Exact absolute release header required')
     includes=sorted({str(Path(p).parent) for p in m['includes']}|{str(Path(m['header']['path']).parent)})
     libraries=sorted({str(Path(p).parent) for p in m['libraries']})
     rows=[]
@@ -111,6 +113,7 @@ def invocations(m,out):
         source=ROOT/('experiments/native/eka1_probe_owner_watchdog.c' if name=='watchdog' else 'experiments/native/eka1_probe_guardian.c')
         obj=out/(name+'.obj');target=out/('eka1_owner_watchdog.dll' if name=='watchdog' else 'eka1_probe_guardian.exe')
         rows.append(dict(role='compile_'+name,image=m['toolchain']['compiler']['path'],argv=['/nologo','/c','/TC','/O1','/MT','/Z7',
+                         *(['/FI'+str(header)] if name=='guardian' else []),
                          *['/I'+p for p in includes],'/Fo'+str(obj),str(source)]))
         rows.append(dict(role='link_'+name,image=m['toolchain']['linker']['path'],argv=['/NOLOGO','/INCREMENTAL:NO','/OUT:'+str(target),
                          *(['/DLL','/IMPLIB:'+str(out/'watchdog.lib')] if name=='watchdog' else []),

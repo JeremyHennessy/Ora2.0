@@ -12,12 +12,11 @@
 #include <string.h>
 #include <errno.h>
 #include <wchar.h>
-#include "eka1_probe_pins.h"
-#include "eka1_runtime_capsule.h"
 /* Release header contains only immutable interpreter/program/watchdog pins. */
-#ifndef EKA_RUNTIME_REGISTRY_ROOT
-#define EKA_RUNTIME_REGISTRY_ROOT L"" /* Missing release custody must refuse. */
+#if !defined(EKA_PYTHON) || !defined(EKA_PYTHON_SHA) || !defined(EKA_PROGRAM) || !defined(EKA_PROGRAM_SHA) || !defined(EKA_OWNER_DLL) || !defined(EKA_OWNER_DLL_SHA) || !defined(EKA_RUNTIME_REGISTRY_ROOT)
+#error "Guardian requires the exact forced release header"
 #endif
+#include "eka1_runtime_capsule.h"
 static EKA_RUNTIME_CAPSULE_V1 runtime_binding;
 #pragma comment(lib,"bcrypt.lib")
 

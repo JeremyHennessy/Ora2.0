@@ -3,7 +3,9 @@ import copy
 import json
 import os
 from pathlib import Path
+import re
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parent))
@@ -81,6 +83,18 @@ class StagedChecks(unittest.TestCase):
         self.assertEqual(len(b.ledger_rows(obj._path)),11);self.assertTrue(all(p.handle is None for p in obj._pins))
         self.assertFalse(r['native_entry_enabled'])
         with self.assertRaises(b.NativeQualificationRequired):b.native_admission(obj)
+    def test_directory_only_guardian_catalogue_is_rejected_and_cannot_reissue(self):
+        row=self.m['invocations'][2]
+        row['argv']=[arg for arg in row['argv'] if not arg.startswith('/FI')]
+        self.plan()
+        with self.assertRaisesRegex(ValueError,'fixed release compile/link'):self.open()
+        self.assertTrue(list(self.f.registry.glob('owner-*.consumed.json')))
+        with self.assertRaises(FileExistsError):self.open()
+    def test_forced_header_substitution_in_catalogue_is_rejected(self):
+        row=self.m['invocations'][2]
+        row['argv']=[('/FI'+str(self.f.base/'substitute.h')) if arg.startswith('/FI') else arg for arg in row['argv']]
+        self.plan()
+        with self.assertRaisesRegex(ValueError,'fixed release compile/link'):self.open()
     def test_external_revalidates_derived_archive_still_native_NO_GO(self):
         obj=self.complete();self.finish(obj);self.package();r=self.f.settle()
         self.assertEqual(r['decision'],'NO_GO');self.assertEqual(r['root_total_ticks'],15)
@@ -435,6 +449,45 @@ class RootObservationChecks(unittest.TestCase):
             with self.assertRaises(OSError) as ctx:obj.close()
         self.assertIn('cleanup disk full',' '.join(ctx.exception.__notes__));self.assertIsNone(obj._fd)
         obj.close();self.assertEqual(self.closed,[99])
+
+
+class HeaderSelectionChecks(unittest.TestCase):
+    """Catalogue and C preprocessor-contract checks, never a compiler invocation."""
+    @staticmethod
+    def manifest(header):
+        root=header.parent
+        return dict(header=dict(path=str(header)),includes={str(root/'sdk.h'):'0'*64},
+                    libraries={str(root/'kernel32.lib'):'0'*64},
+                    toolchain={name:dict(path=str(root/(name+'-DATA.exe'))) for name in ('compiler','linker')})
+    def test_absolute_guardian_header_survives_source_directory_shadow_and_spaces(self):
+        with tempfile.TemporaryDirectory(dir=b.ROOT) as temp:
+            root=Path(temp);header=root/'derived pins'/'eka1_probe_pins.h'
+            header.parent.mkdir();header.write_bytes(b'pinned DATA, never preprocessed')
+            source=root/'source'/'experiments/native';source.mkdir(parents=True)
+            shadow=source/header.name;shadow.write_bytes(b'unpinned DATA, never preprocessed')
+            with patch.object(b,'ROOT',root/'source'):
+                rows=b.invocations(self.manifest(header),header.parent)
+            self.assertEqual(tuple(row['role'] for row in rows),b.CATALOGUE)
+            for row in rows:
+                forced=[arg for arg in row['argv'] if arg.startswith('/FI')]
+                self.assertEqual(forced,['/FI'+str(header)] if row['role']=='compile_guardian' else [])
+            self.assertNotEqual(header.read_bytes(),shadow.read_bytes())
+    def test_relative_release_header_cannot_enter_catalogue(self):
+        for value in ('eka1_probe_pins.h','../eka1_probe_pins.h','C:eka1_probe_pins.h'):
+            with self.subTest(path=value):
+                with self.assertRaisesRegex(ValueError,'absolute release header'):
+                    b.invocations(self.manifest(Path(value)),b.ROOT/'runs')
+    def test_guardian_has_no_basename_fallback_and_requires_every_release_pin(self):
+        source=(b.ROOT/'experiments/native/eka1_probe_guardian.c').read_text()
+        self.assertNotIn('#include "eka1_probe_pins.h"',source)
+        expected={'EKA_PYTHON','EKA_PYTHON_SHA','EKA_PROGRAM','EKA_PROGRAM_SHA',
+                  'EKA_OWNER_DLL','EKA_OWNER_DLL_SHA','EKA_RUNTIME_REGISTRY_ROOT'}
+        guard=next(line for line in source.splitlines() if line.startswith('#if !defined(EKA_PYTHON)'))
+        terms=guard.removeprefix('#if ').split(' || ')
+        self.assertEqual(set(terms),{'!defined('+name+')' for name in expected})
+        self.assertEqual(set(re.findall(r'!defined\((EKA_[A-Z_]+)\)',guard)),expected)
+        self.assertIn('#error "Guardian requires the exact forced release header"',source)
+        self.assertNotIn('#define EKA_RUNTIME_REGISTRY_ROOT L""',source)
 
 
 if __name__=='__main__':unittest.main()
