@@ -45,7 +45,7 @@ review owners; no recursive or duplicate agent/scheduler creation.
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
 | Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `0b18c7442d4ab5f2ee7aeda7a8395d4f3d3baa77` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `f5cbd5d20eaea91c80ac49c5dc7d43f47e578943` |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -135,6 +135,17 @@ This note is not an independent reproduction or Ora intelligence result.
   selection and later fitness are UNKNOWN. Faster nonlearning control is not
   intelligence. Do not transplant initial learner53/58 to the ordinary daughter
   context without its separate full stock/schedule proof.
+- That ordinary success-gated daughter prefix is now conditionally source-funded:
+ 16 late-bit cases give birth175/185/195global in6/6/4 symbolic rows, nine meals,
+  parent27+child12 and147/150material units. Actual seed/mutation realization
+  remains UNKNOWN; those row counts are not probabilities.
+- A stronger no-feedback single-probe alternator pays for COPY even on misses.
+  It conditionally births at159/169global using five meals, with parent10/5
+  and child12. The tenth-cycle full-nursery COPY refusal and ninth-cycle refused
+  division in one orientation are charged. Earlier reproduction/fewer meals
+  versus lower parental reserve is an outcome tradeoff, not uniform survival
+  or long-term fitness dominance. These source witnesses were not introduced
+  or executed, and no useful intelligence or selection is demonstrated.
 
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
@@ -180,14 +191,16 @@ Four sealed assignments and144 consumed reservations remain immutable.
 
 ## Next authorized tasks and evidence
 
-1. Next: establish or bound the success-gated witness's conditional ordinary-child
-   stock/schedule costs after the paid parentbirth70, then compare with the
-   stationary nonlearning177/193global controls under the same conditions. The
-   initial constructor53/58 numbers cannot answer that question. Include mixed
-   packet targets, parent consumption, failure costs, cap spill, potential later
-   births and exact expiry. Actual mutation realization/selection remain separate.
+1. Next: evaluate the postbirth survival/resource tradeoff rather than ranking
+   first-birth times as intelligence. One narrow source hypothesis is whether
+   existing nursery-completion sensing after a refused DIVIDE can trigger paid
+   productive movement when copying is complete but energy is insufficient.
+   First establish exact guard logic, affordability and an ordinarily funded
+   scarcity prefix; compare constant stay/move/alternating controls. Do not
+   assume that prefix is reachable or call body-state control learned food memory.
+   Actual mutation realization/selection and longer fitness remain separate.
    Keep closed first-birth negatives closed; no free decoding, favorable histories
-   or successful genome insertion. Cross-location scarcity/later fitness UNKNOWN.
+   or successful genome insertion. Cross-location scarcity remains UNKNOWN.
 2. Seek a complete funded representation for productive scarcity, or narrowly
    falsify it and move to another source-supported capability. Do not supply a
    successful genotype or mistake a conditional formula for an actual lineage.
