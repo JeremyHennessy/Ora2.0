@@ -1,0 +1,92 @@
+{
+  "schema": "EKA-RELEASE-BUILD-DEPENDENCY-DECISION-v1",
+  "reviewed_engineering_head": "ca04547ff0e11e952ca5ca32f30376615dc205dd",
+  "accepted_221_offline_baseline": "UNCHANGED_NOT_RERUN",
+  "scope": "STATIC_BYTES_AND_SOURCE_REVIEW_ONLY",
+  "dependency_addressed": "Select and independently pin actual installed x64 compiler, SDK headers and libraries without invoking them",
+  "static_input_pinning": "PASS_POINT_IN_TIME_ONLY",
+  "inventory_file": "eka1-release-static-input-inventory-20261101.json",
+  "inventory_sha256": "a30a5902834cf78b3bcfc4cc2290c9b8cc86b0fd830ec91c59d02e10de2a33e8",
+  "inventory_files": 5914,
+  "inventory_bytes": 1194234807,
+  "independent_static_review_sha256": "df3ba1b72bd5177d7a70e84142a251518f8bd1c2de6c1868beeb31580c842023",
+  "independent_source_review_sha256": "324a2704d4d4319663e8526c4ea6d755333c00a1efdf5e765e3b84bba68617c9",
+  "existing_route": {
+    "containment": "Reuse existing Job and STARTUPINFOEX JOB_LIST at CREATE_SUSPENDED, immutable owner/precharge before creation, PID/creation-time/member verification before ResumeThread; not integrated into BUILD_ONLY",
+    "CPU_provider": "Reuse raw root_snapshot USER plus KERNEL and period counters, not USER-only Job.usage or diagnostic-specific RootCpuAttempt constraints",
+    "closure": "Retain root and successful birth handles through termination/signaled closure, capture complete outputs and final root once; active0/live PID snapshot alone does not prove every short-lived helper identity",
+    "opaque_build_helper_attempts": "UNKNOWN_ONLY_UNDER_APPROVED_BUILD_ONLY_EXCEPTION_NOT_SCIENCE"
+  },
+  "prospective_release_manifest": "NOT_FREEZABLE_AS_CURRENT_FRESH_FOUR_SLOT_RECIPE",
+  "demonstrated_ordering_blocker": {
+    "verdict": "FAIL_PROSPECTIVE_FULL_RELEASE_CUSTODY",
+    "premises": [
+      "tools/eka1_runtime_capsule.py release_header pins exact watchdog DLL SHA",
+      "BuildOnly freezes header and inputs before four compile/link slots",
+      "First two slots create the prospective watchdog DLL; no independently known matching output or reproducibility proof exists",
+      "Watchdog C does not include release header; guardian C does"
+    ],
+    "interpretation": "Unknown-output staging dependency, not a mathematical self-hash cycle",
+    "rejected_workarounds": [
+      "Placeholder or guessed output hash",
+      "Changing frozen header, deadline, ledger or assignment mid-attempt",
+      "Reusing sealed assignment or an expired bound guardian",
+      "Asserting observed bytes prove reproducible output"
+    ],
+    "smallest_proposed_remedy": "Separately qualify immutable watchdog release, then freeze guardian header and second-stage manifest against that exact binary. Requires independent review and separate explicit staging/build authorization; not implemented or authorized here."
+  },
+  "external_settlement": {
+    "status": "UNQUALIFIED_FINAL_WRITER_UNSETTLED",
+    "required": [
+      "Disjoint build-root, original-owner, observer, cleanup, archive, restoration, hashing, completion and watchdog scopes",
+      "Complete final signaled-birth USER+KERNEL samples with no nested duplicate billing",
+      "Exact source/input/output/ledger/receipt archive and restoration inventory",
+      "Separate final verifier/writer and registry-tail evidence; a reserved live tail is not closed measured cost",
+      "Unattributed system and any missing costs remain debt, never zero"
+    ],
+    "finite_final_writer_closure_proved": false
+  },
+  "execution_request": {
+    "status": "NOT_EXECUTABLE_NOT_AN_IMMUTABLE_NATIVE_ASSIGNMENT",
+    "purpose": "Future one-purpose staged watchdog release qualification only, never run the generated DLL or scientific code",
+    "why_not_fabricated": "Exact staged executor/source, fresh owner birth, physical ledger, immutable absolute deadline, complete dependency custody and external settlement are missing. A public hash or null-field request is not authority.",
+    "fresh_assignment_registered": false,
+    "owner_birth": null,
+    "physical_ledger": null,
+    "deadline_tick": null,
+    "generated_binary_sha256": null,
+    "human_authorized": false
+  },
+  "next_single_action": "Review the minimal two-stage release remedy before preparing any fresh native request; preserve existing four-slot contract and NO_GO until separately reviewed staged source and OS custody are exact.",
+  "preflight": "NO_GO",
+  "human_authorization_only_remaining": false,
+  "actual_build_OS_qualification": "UNKNOWN_UNRUN",
+  "strict_private_USER_one_second": "UNCHANGED_NOT_READY",
+  "limits": "UNCHANGED",
+  "sealed_assignments": 4,
+  "consumed_reservations": 144,
+  "new_native_builds": 0,
+  "new_native_diagnostics": 0,
+  "Worlds_populations_replays": 0,
+  "v10_Observatory_laws": "UNMODIFIED",
+  "inspection_cost_observation": {
+    "USER_plus_KERNEL_seconds_before_collector_receipt": 6.234375,
+    "wall_seconds_before_collector_receipt": 50.09299999999348,
+    "scope": "Read-only collector only, self-reported process clock; excludes startup, shell, independent review and final writer/closure; not settled build cost",
+    "unresolved_costs_preserved": true
+  },
+  "references": [
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/process-creation-flags",
+    "https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects",
+    "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_accounting_information",
+    "https://learn.microsoft.com/en-us/cpp/build/building-on-the-command-line?view=msvc-170"
+  ],
+  "archive_feasibility": {
+    "verdict": "FULL_INVENTORY_CANNOT_BE_NAIVELY_PACKAGED_UNDER_EXISTING_CAPS",
+    "static_superset_files": 5914,
+    "static_superset_bytes": 1194234807,
+    "unchanged_build_archive_files_cap": 128,
+    "unchanged_build_archive_bytes_cap": 67108864,
+    "requirement": "This directory inventory is not the release payload or proven consumed subset. Establish exact relevant dependency custody/restoration within existing caps before admission; no cap increase or claim that hashing substitutes for archived bytes."
+  }
+}
