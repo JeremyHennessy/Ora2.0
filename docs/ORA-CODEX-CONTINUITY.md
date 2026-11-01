@@ -289,3 +289,29 @@ Engineering2f408d58/279 offline is accepted source-only preparation. No compiler
 native diagnostic, scientific World or organism ran. The five-minute automation
 has delivered completed source sessions, subject to host/app/tools/usage; no
 continuous work while unavailable or indefinite reliability is claimed.
+
+
+## One-shot personally acquired specialization — source-only checkpoint
+
+Parent research commit: `68713c2d85b2dab8b492779e519d50f1afb54383`.
+Engineering remains `2f408d588ab73e7873268a35f3ae8597024b0897` /279 offline;
+native steps skipped. Read the current-tip pointer for the publication commit.
+
+The nine-slot one-shot latch in
+`data/eka-one-shot-specialization-decision-20261101.json` pays for its own initial
+probe, READ and control, then uses a four-action forage/copy/divide/jump loop.
+Conditional ordinary-daughter first birth is own39/global147, parent22 or29,
+child12, all27 copied words paid. The ninth hot probe may hit special packet16
+in target0; both outcomes remain funded. No favorable noise bit was chosen.
+Named paired/alternating/feedback-gated controls are later in these prefixes,
+but lucky fixed-port controls are earlier at139/141 and the direct layout needs
+at least14 changed founder words, versus the paired control's two. Actual joint
+mutation, a selected path, causal intervention and inherited fitness remain
+UNKNOWN. This is a representability witness, not an organism or supplied genome.
+
+Port-only reset can test the used latch but leaves a backup register encoding;
+all-information erasure requires a separately qualified stronger manipulation.
+Future work: challenge the candidate with cheaper reactive one-shot controls,
+matched handling/current observations, offspring competition and unchanged law
+reachability. Do not optimize the closed older-history motif or infer long-term
+fitness from a first birth. No World, VM, seed query or native execution occurred.
