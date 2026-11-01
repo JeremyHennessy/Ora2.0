@@ -133,3 +133,8 @@ tools/eka1_build_only_contract.py -text
 tests/test_eka1_build_only_contract.py -text
 data/eka1-native-build-decision-20261030.json -text
 data/eka1-build-only-single-build-preflight-20261030.json -text
+
+# Approved one-attempt staged release, exact DATA/source bytes.
+data/eka1-single-attempt-staged-release-amendment-20261101.json -text
+tests/test_eka1_staged_build_only.py -text
+data/eka1-staged-release-implementation-preflight-20261101.json -text

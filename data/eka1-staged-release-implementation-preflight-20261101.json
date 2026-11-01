@@ -1,0 +1,44 @@
+{
+  "schema": "EKA-STAGED-RELEASE-IMPLEMENTATION-PREFLIGHT-v1",
+  "decision": "NO_GO",
+  "accepted_executable_baseline": "ca04547ff0e11e952ca5ca32f30376615dc205dd",
+  "implementation_parent": "1805657168117323995f5eb3199be477557894a2",
+  "approved_amendment": "EKA-BUILD-ONLY-SINGLE-ATTEMPT-DERIVED-HEADER-v1",
+  "amendment_file": "data/eka1-single-attempt-staged-release-amendment-20261101.json",
+  "amendment_sha256": "e0858730a375f44629eb60d0d163880fc71dc4fa3e8f9a28d896cafbbbcced0c",
+  "approval_scope": "Explicit human approval for source-only implementation; never native build or diagnostic permission",
+  "source_only_controls": [
+    "Preserved v1 path and four-slot catalogue; optional staged immutable recipe",
+    "Same once-claimed original owner, assignment, physical ledger and source-asserted fresh root/zero epoch",
+    "Derivation attempt consumed and raw StageA observation retained before hash or writes",
+    "Fixed release_header derivation, fixed output paths, retained DATA read handles and once-frozen StageB manifest",
+    "StageB requires exact derivative and original binding before its two precharges",
+    "Same root/start/epoch and monotone cumulative counters; one final USER plus KERNEL debit, not a StageA second charge",
+    "External validator rechecks eleven ledger records, root claim, derivative, current outputs and complete archive package",
+    "First failure, partial writes, closed-handle failures and unresolved costs retained without retry or authority"
+  ],
+  "numerical_limits": "UNCHANGED; one cumulative 30s/30USERseconds/512MiB/4active/1MiBoutput/128files/64MiB covered storage, not one allowance per stage",
+  "opaque_nested_attempts": "UNKNOWN_ONLY_FOR_APPROVED_BUILD_ONLY_SCOPE",
+  "native_build_execution_enabled": false,
+  "human_native_execution_authorized": false,
+  "actual_native_custody_independently_verified": false,
+  "fresh_native_assignment": null,
+  "remaining_unqualified": [
+    "Actual BUILD_ONLY suspended-creation/root Job launch and raw-counter provider",
+    "Complete short-lived successful helper PID/birth/image/closure custody and failed-start evidence",
+    "Actual consumed compiler/SDK/DLL/header/library closure, including exclusion of generated-header shadowing",
+    "Exact dependency/source-to-binary/archive/restoration fit within existing cumulative caps",
+    "Disjoint owner/derivation/observer/cleanup/archive/restore/hash/completion/watchdog costs and final writer/registry settlement",
+    "Independent fresh native qualification and separate explicit immutable human build authorization"
+  ],
+  "human_authorization_only_remaining": false,
+  "source_checks": "Focused offline DATA tests and independent exact-source review; no claim old221 checks accept changed source",
+  "preserved": {
+    "sealed_assignments": 4,
+    "consumed_reservations": 144,
+    "old_failures": "UNCHANGED",
+    "strict_private_USER_one_second": "UNCHANGED_NOT_READY",
+    "v10_Observatory_laws_schedules": "UNMODIFIED"
+  },
+  "native_builds_diagnostics_Worlds_populations": 0
+}

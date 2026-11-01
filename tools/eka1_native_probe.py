@@ -74,7 +74,8 @@ def custody():
         'test_eka1_native_probe_contract.py','test_eka1_first_failure_custody.py',
         'test_eka1_native_owner_candidate.py','test_eka1_reservation_source_integrity.py',
         'test_eka1_prebuilt_cpu_artifact.py','test_eka1_runtime_capsule.py',
-        'test_eka1_external_settlement.py','test_eka1_build_only_contract.py')]
+        'test_eka1_external_settlement.py','test_eka1_build_only_contract.py',
+        'test_eka1_staged_build_only.py')]
     python = Path(sys.executable).resolve()
     paths += [python, *python.parent.glob('python*.dll')]
     # Observe the isolated interpreter's standard-library and extension source

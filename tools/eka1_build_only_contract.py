@@ -15,11 +15,17 @@ import threading
 from tools.eka1_native_owner_candidate import canonical,current_birth,NativeQualificationRequired
 from tools.eka1_cpu_grant_transport import plain,hexhash,read_exact,save,tick
 from tools import eka1_external_settlement as settlement
+from tools.eka1_runtime_capsule import release_header,CapsuleReadHandle
 
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/'runs/eka1-build-only-registry-v1'
 CONTRACT='EKA-BUILD-ONLY-METERED-RELEASE-v1'
 CONTRACT_SHA='a24c1a888d286a5cf5919c0725bb1330e21ab1d4e207ef6efa1512f4b3254952'
+STAGED_CONTRACT='EKA-BUILD-ONLY-SINGLE-ATTEMPT-DERIVED-HEADER-v1'
+STAGED_SCHEMA='EKA-BUILD-ONLY-STAGED-MANIFEST-v1'
+AMENDMENT_FILE='data/eka1-single-attempt-staged-release-amendment-20261101.json'
+AMENDMENT_SHA='e0858730a375f44629eb60d0d163880fc71dc4fa3e8f9a28d896cafbbbcced0c'
+DERIVED_OUTPUTS=('eka1_probe_pins.h','stage-b-manifest.json')
 CATALOGUE=('compile_watchdog','link_watchdog','compile_guardian','link_guardian')
 BUILD_OUTPUTS=('eka1_probe_guardian.exe','eka1_owner_watchdog.dll','guardian.obj','watchdog.obj','watchdog.lib','watchdog.exp')
 # Explicit candidate thresholds from the retained build scope, NOT authority
@@ -35,6 +41,64 @@ EXTERNAL=('owner','observer','cleanup','archive','restore','hash','completion','
           'verifier_final_write','registry','unattributed_system_costs')
 
 def recipe(m):return digest(canonical({k:v for k,v in m.items() if k!='external_settlement_plan'}))
+
+def staged(m):return m.get('schema')==STAGED_SCHEMA
+def source_names(m):return SOURCES+('tools/eka1_probe_child.py',) if staged(m) else SOURCES
+
+def release_inputs(m,out):
+    """Fixed precommitted arguments; only the future DLL hash is derived."""
+    return dict(python=m['interpreter']['path'],python_sha=m['interpreter']['sha256'],
+                program=str(ROOT/'tools/eka1_probe_child.py'),program_sha=m['source']['tools/eka1_probe_child.py'],
+                watchdog=str(out/'eka1_owner_watchdog.dll'))
+
+def root_binding(m):
+    value=m['root_binding'];rid=hexhash(value['root_identity'])
+    expected=dict(root_identity=rid,USER_ticks=0,KERNEL_ticks=0,period_USER_ticks=0,period_KERNEL_ticks=0,
+                  active=0,total_processes=0,root_handle_retained=True)
+    if canonical(value)!=canonical(expected):raise ValueError('Fresh retained root and exact zero epoch required')
+    return rid
+
+def ledger_rows(path):return [json.loads(x) for x in path.read_bytes().splitlines()]
+
+def stage_binding(m,msha,physical,claim_tick,rows,out):
+    """Revalidate retained derived DATA, never OS custody or execution authority."""
+    if len(rows)<7:raise ValueError('Missing one-time StageB binding')
+    attempt=rows[5]['event'];event=rows[6]['event']
+    if set(attempt)!={'kind','input_recipe_sha256','stage_a_sample'} or attempt['kind']!='derive_attempt' or attempt['input_recipe_sha256']!=recipe(m):
+        raise ValueError('Derivation was not consumed before effects')
+    if set(event)!={'kind','manifest_sha256'} or event['kind']!='derived_stage_b':
+        raise ValueError('Missing exact derived-manifest event')
+    d,raw=read_exact(out/DERIVED_OUTPUTS[1],event['manifest_sha256'])
+    prior=digest(canonical(rows[5])+b'\n')
+    keys={'schema','assignment_sha256','input_recipe_sha256','owner_birth','ledger_identity','deadline_tick',
+          'prior_ledger_tip','derived_tick','stage_a_sample','watchdog','header','release_pins','invocations'}
+    if (set(d)!=keys or d['schema']!='EKA-BUILD-ONLY-DERIVED-STAGE-B-v1' or
+        d['assignment_sha256']!=msha or d['input_recipe_sha256']!=recipe(m) or
+        d['owner_birth']!=m['owner_birth'] or d['ledger_identity']!=list(physical) or
+        d['deadline_tick']!=m['deadline_tick'] or d['prior_ledger_tip']!=prior or
+        d['invocations']!=m['invocations'][2:] or d['stage_a_sample']!=attempt['stage_a_sample']):raise ValueError('Derived StageB binding changed')
+    created=[birth(rows[i]['event']['result']['birth']) for i in (2,4)]
+    s=d['stage_a_sample'];validate_sample(s,m,msha,physical,created,claim_tick);validate_limits(s,m)
+    if not s['measured_tick']<=number(d['derived_tick'])<m['deadline_tick']:raise ValueError('Derived observation ordering differs')
+    if s.get('root_handle_retained') is not True:raise ValueError('Same root handle must remain retained')
+    pins=dict(release_inputs(m,out),watchdog_sha=d['watchdog']['sha256'])
+    if d['release_pins']!=pins:raise ValueError('Caller substituted release pins')
+    for key,path in [('watchdog',out/'eka1_owner_watchdog.dll'),('header',out/DERIVED_OUTPUTS[0])]:
+        item=d[key];plain(path);info=path.stat()
+        if (set(item)!={'path','sha256','file_identity'} or item['path']!=str(path) or
+            item['file_identity']!=[info.st_dev,info.st_ino] or digest(path.read_bytes())!=hexhash(item['sha256'])):
+            raise ValueError('Derived artifact bytes or physical custody changed')
+    if (out/DERIVED_OUTPUTS[0]).read_bytes()!=release_header(pins):raise ValueError('Header differs from pinned derivation rule')
+    return d
+
+def cumulative_stage_sample(final,initial):
+    """One root, lifetime and epoch; StageA is an observation, not a debit."""
+    if (final.get('root_handle_retained') is not True or final['root_identity']!=initial['root_identity'] or
+        final['started_tick']!=initial['started_tick'] or final['closed_tick']<initial['measured_tick'] or
+        not set(map(birth,initial['members']))<=set(map(birth,final['members']))):
+        raise ValueError('Original root, start, closure order or StageA members changed')
+    for name in ('USER_ticks','KERNEL_ticks','elapsed_ms','peak_memory_bytes','output_bytes','job_total_processes'):
+        if final[name]<initial[name]:raise ValueError('Cumulative root counter decreased: '+name)
 
 def invocations(m,out):
     """Fixed source-level catalogue, DATA only; never passed to an OS API here."""
@@ -72,6 +136,8 @@ def validate_sample(s,m,manifest_sha256,physical,created,claim_tick):
         s.get('initial_KERNEL_ticks')!=0 or type(s.get('initial_KERNEL_ticks')) is not int or
         s.get('period_USER_ticks')!=u or s.get('period_KERNEL_ticks')!=k):
         raise ValueError('Incomplete/duplicate/corrupt root scope, epochs or custody')
+    if staged(m) and (s['root_identity']!=m['root_binding']['root_identity'] or s.get('root_handle_retained') is not True):
+        raise ValueError('Frozen source-only root binding changed')
     number(s['period_USER_ticks']);number(s['period_KERNEL_ticks'])
     if number(s['job_total_processes'])!=len(members):raise ValueError('Unexplained associated-process count; complete identity set missing')
     start=number(s['started_tick']);end=number(s['closed_tick']);measured=number(s['measured_tick'])
@@ -97,6 +163,7 @@ class BuildOnly:
         self._mutex=threading.RLock();self._fd=None;self._closed=False;self._failed=None
         self._storage_failed=False;self._finalized=False;self._seq=0;self._bytes=0;self._tip='0'*64;self._cleanup_errors=[]
         self._pending=None;self._outcomes=[];self._attempts=0;self._files={};self._debits=[]
+        self._derive_consumed=False;self._derived=None;self._pins=[];self._pin_cleanup_recorded=False
         self._start=tick();self._birth=current_birth();self._end=self._start+LIMITS['wall_ms']
         self._manifest_path=Path(manifest);self._preparation_path=Path(preparation)
         self._manifest_sha=hexhash(manifest_sha256);self._preparation_sha=hexhash(preparation_sha256)
@@ -122,8 +189,9 @@ class BuildOnly:
             keys={'schema','scope','contract','assignment_id','owner_birth','deadline_tick','limits','output_relative',
                   'source','header','interpreter','toolchain','sdk','includes','libraries','dependencies',
                   'environment','invocations','outputs','external_cost_categories','external_settlement_plan'}
-            if (set(m)!=keys or m['schema']!='EKA-BUILD-ONLY-MANIFEST-v1' or m['scope']!='BUILD_ONLY' or
-                m['contract']!=CONTRACT or birth(m['owner_birth'])!=self._birth or
+            if staged(m):keys.update(('release_pins','root_binding'))
+            if (set(m)!=keys or m['schema'] not in ('EKA-BUILD-ONLY-MANIFEST-v1',STAGED_SCHEMA) or m['scope']!='BUILD_ONLY' or
+                m['contract']!=(STAGED_CONTRACT if staged(m) else CONTRACT) or birth(m['owner_birth'])!=self._birth or
                 canonical(m['limits'])!=canonical(LIMITS) or m['external_cost_categories']!=list(EXTERNAL)):
                 raise ValueError('Strictly separate build scope, original owner and explicit unchanged limits required')
             self._end=number(m['deadline_tick'])
@@ -132,9 +200,16 @@ class BuildOnly:
                 raise ValueError('Fresh fixed build output required')
             self.out=ROOT/m['output_relative']
             if self.out.exists():raise FileExistsError('No output replacement')
-            if set(m['source'])!=set(SOURCES):raise ValueError('Exact reviewed build source closure required')
+            if set(m['source'])!=set(source_names(m)):raise ValueError('Exact reviewed build source closure required')
             if Path(m['interpreter']['path'])!=Path(sys.executable).resolve():raise ValueError('Exact interpreter required')
             if set(m['toolchain'])!={'compiler','linker'}:raise ValueError('Fixed toolchain only')
+            if staged(m):
+                binding=m['root_binding'];rid=root_binding(m)
+                self._root_marker=REGISTRY/('root-'+rid+'.consumed.json')
+                save(self._root_marker,dict(root_binding=binding,assignment_sha256=self._manifest_sha,owner=list(self._birth)))
+            if staged(m) and (m['header']!=dict(path=str(self.out/DERIVED_OUTPUTS[0])) or
+                              m['release_pins']!=release_inputs(m,self.out)):
+                raise ValueError('Exact future header path and fixed release derivation required')
             self._inputs()
             inv=m['invocations']
             if type(inv) is not list or len(inv)!=4:raise ValueError('Exact four supervised build slots required')
@@ -151,10 +226,11 @@ class BuildOnly:
             names=m['outputs']
             if (type(names) is not list or not 2<=len(names)<=128 or any(type(n) is not str for n in names) or len(set(n.casefold() for n in names))!=len(names) or
                 any(settlement.safe_name(n)!=n for n in names) or
-                not set(BUILD_OUTPUTS)<=set(names)):
+                not set(BUILD_OUTPUTS+(DERIVED_OUTPUTS if staged(m) else ()))<=set(names)):
                 raise ValueError('Fixed exact retained output inventory required')
             for p in (self._manifest_path,self._preparation_path,self._marker,self._assignment_marker,self._owner_marker):
                 self._files[p]=(p.read_bytes(),(p.stat().st_dev,p.stat().st_ino))
+            if staged(m):self._files[self._root_marker]=(self._root_marker.read_bytes(),(self._root_marker.stat().st_dev,self._root_marker.stat().st_ino))
             self.out.mkdir();plain(self.out);self._path=self.out/'build-ledger.jsonl'
             self._fd=os.open(self._path,os.O_CREAT|os.O_EXCL|os.O_RDWR|os.O_BINARY,0o600)
             s=os.fstat(self._fd);self._physical=(s.st_dev,s.st_ino)
@@ -170,8 +246,9 @@ class BuildOnly:
     def _inputs(self):
         m=self._manifest
         if digest((ROOT/'data/eka1-native-build-decision-20261030.json').read_bytes())!=CONTRACT_SHA:raise ValueError('Approved contract bytes changed')
+        if staged(m) and digest((ROOT/AMENDMENT_FILE).read_bytes())!=AMENDMENT_SHA:raise ValueError('Approved staging amendment bytes changed')
         pins={str(ROOT/n):h for n,h in m['source'].items()}
-        for name in ('header','interpreter',*m['toolchain']):
+        for name in (*(() if staged(m) else ('header',)),'interpreter',*m['toolchain']):
             item=m['toolchain'][name] if name in m['toolchain'] else m[name]
             if set(item)!={'path','sha256'}:raise ValueError('Exact file identity fields required')
             if item['path'] in pins and pins[item['path']]!=item['sha256']:raise ValueError('Conflicting file pin')
@@ -221,6 +298,10 @@ class BuildOnly:
             plain(p);s=p.stat()
             if p.read_bytes()!=raw or (s.st_dev,s.st_ino)!=identity:raise ValueError('Immutable binding replaced')
         self._physical_check();self._inputs()
+        if staged(self._manifest) and self._derived is not None:
+            if any(p.handle is None for p in self._pins):raise ValueError('Retained derived input handle closed early')
+            if stage_binding(self._manifest,self._manifest_sha,self._physical,self._start,ledger_rows(self._path),self.out)!=self._derived:
+                raise ValueError('In-memory StageB evidence changed')
 
     def _fail(self,exc):
         if self._failed is None:self._failed=type(exc).__name__+': '+str(exc)
@@ -235,11 +316,61 @@ class BuildOnly:
                 self._check()
                 if self._finalized or self._pending is not None or self._attempts>=4 or role!=CATALOGUE[self._attempts]:
                     raise ValueError('Uncharged, repeated or out-of-order supervised attempt')
+                if staged(self._manifest) and self._attempts>=2 and self._derived is None:
+                    raise ValueError('StageB requires once-frozen derived header and manifest')
                 self._append(dict(kind='supervised_attempt',role=role,index=self._attempts,request_sha256=digest(canonical(self._manifest['invocations'][self._attempts]))))
                 self._pending=(role,self._attempts);self._attempts+=1
                 return dict(role=role,index=self._attempts-1,ledger_identity=list(self._physical),ledger_tip=self._tip,
                             scope='SOURCE_ONLY_DEBIT_NOT_EXECUTION_AUTHORITY')
             except BaseException as exc:self._fail(exc);raise
+
+    def derive_stage_b(self,sample):
+        """Freeze fixed derived DATA once; creates no process or native authority."""
+        with self._mutex:
+            try:
+                self._check()
+                if (not staged(self._manifest) or self._finalized or self._derive_consumed or
+                    self._attempts!=2 or len(self._outcomes)!=2 or self._pending is not None):
+                    raise ValueError('Exactly one successful StageA before derivation required')
+                self._derive_consumed=True
+                raw=canonical(sample)
+                if len(raw)>65536:raise ValueError('Bounded StageA sample required')
+                sample=json.loads(raw)
+                self._append(dict(kind='derive_attempt',input_recipe_sha256=recipe(self._manifest),stage_a_sample=sample))
+                created=[birth(x[2]['birth']) for x in self._outcomes]
+                validate_sample(sample,self._manifest,self._manifest_sha,self._physical,created,self._start)
+                validate_limits(sample,self._manifest)
+                derived_tick=tick()
+                if sample['measured_tick']>derived_tick:raise ValueError('StageA sample cannot be from the future')
+                if sample.get('root_handle_retained') is not True:raise ValueError('StageA root must remain retained')
+                dll=self.out/'eka1_owner_watchdog.dll';plain(dll);h,n=settlement.file_digest(dll)
+                pin=CapsuleReadHandle(dll,h);self._pins.append(pin)
+                info=dll.stat();watchdog=dict(path=str(dll),sha256=h,file_identity=[info.st_dev,info.st_ino])
+                pins=dict(self._manifest['release_pins'],watchdog_sha=h)
+                header=self.out/DERIVED_OUTPUTS[0];data=release_header(pins)
+                with header.open('xb') as stream:
+                    if stream.write(data)!=len(data):raise OSError('Short derived header write')
+                    stream.flush();os.fsync(stream.fileno())
+                self._pins.append(CapsuleReadHandle(header,digest(data)))
+                info=header.stat()
+                d=dict(schema='EKA-BUILD-ONLY-DERIVED-STAGE-B-v1',assignment_sha256=self._manifest_sha,
+                       input_recipe_sha256=recipe(self._manifest),owner_birth=list(self._birth),ledger_identity=list(self._physical),
+                       deadline_tick=self._end,prior_ledger_tip=self._tip,derived_tick=derived_tick,stage_a_sample=sample,watchdog=watchdog,
+                       header=dict(path=str(header),sha256=digest(data),file_identity=[info.st_dev,info.st_ino]),
+                       release_pins=pins,invocations=self._manifest['invocations'][2:])
+                path=self.out/DERIVED_OUTPUTS[1];save(path,d);dsha=digest(path.read_bytes())
+                self._pins.append(CapsuleReadHandle(path,dsha))
+                for p in (dll,header,path):self._files[p]=(p.read_bytes(),(p.stat().st_dev,p.stat().st_ino))
+                self._append(dict(kind='derived_stage_b',manifest_sha256=dsha))
+                self._derived=json.loads(canonical(d));self._check()
+                return dict(manifest_sha256=dsha,header_sha256=digest(data),decision='NO_GO',native_entry_enabled=False)
+            except BaseException as exc:
+                self._fail(exc)
+                try:self._close_pins()
+                except BaseException as cleanup:
+                    exc.add_note('Derived input closure incomplete: '+repr(cleanup))
+                    for note in getattr(cleanup,'__notes__',()):exc.add_note(note)
+                raise
 
     def outcome(self,role,index,result):
         with self._mutex:
@@ -280,9 +411,14 @@ class BuildOnly:
                 self._check(final=True)
                 created=[birth(x[2]['birth']) for x in self._outcomes if x[2]['status']=='CREATED']
                 u,k,members=validate_sample(sample,self._manifest,self._manifest_sha,self._physical,created,self._start)
+                if staged(self._manifest) and self._derived is not None:
+                    cumulative_stage_sample(sample,self._derived['stage_a_sample'])
+                    if sample['closed_tick']<self._derived['derived_tick'] or sample['measured_tick']>tick():
+                        raise ValueError('Final staged measurement ordering differs')
                 self._debits.append(dict(root_identity=sample['root_identity'],USER_ticks=report['USER_ticks'],KERNEL_ticks=report['KERNEL_ticks'],nested_added=False))
                 report['observed_births']=len(members);report['observed_job_total_processes']=number(sample['job_total_processes'])
                 validate_limits(sample,self._manifest)
+                if staged(self._manifest) and self._derived is None:raise ValueError('Incomplete staged build; no derived binding')
                 if self._pending is not None or self._attempts!=4 or len(created)!=4 or self._failed is not None:raise ValueError('Incomplete/failed build attempt')
                 inventory={};size=0
                 for p in self.out.rglob('*'):
@@ -308,7 +444,9 @@ class BuildOnly:
                 primary=sys.exception()
                 try:self.close()
                 except BaseException as cleanup:
-                    if primary is not None:primary.add_note('Ledger closure incomplete: '+repr(cleanup))
+                    if primary is not None:
+                        primary.add_note('Ledger closure incomplete: '+repr(cleanup))
+                        for note in getattr(cleanup,'__notes__',()):primary.add_note(note)
                     else:raise
 
     def preflight(self):
@@ -320,15 +458,38 @@ class BuildOnly:
                     unqualified=['OS_containment_and_birth_image_custody','complete_executed_dependency_provenance',
                                  'root_USER_KERNEL_measurement_and_external_settlement','independent_exact_single_build_manifest','separate_human_execution_authorization'])
 
+    def _close_pins(self):
+        errors=[]
+        for pin in reversed(self._pins):
+            try:
+                if not pin.close_attempted:pin.close()
+                elif pin.handle is not None:raise OSError('Prior retained handle closure incomplete; no retry')
+            except BaseException as exc:errors.append(exc);self._cleanup_errors.append(repr(exc));self._fail(exc)
+        if errors:
+            first=errors[0]
+            details=[repr(error)[:2048] for error in errors]
+            first.add_note('All retained DATA handle closure errors: '+repr(details))
+            if not self._pin_cleanup_recorded:
+                self._pin_cleanup_recorded=True  # Failed writes are consumed too; never retry.
+                try:save(self.out/'derived-cleanup-failure.json',dict(first_failure=self._failed,
+                         cleanup_errors=details,unresolved_handles=sum(p.handle is not None for p in self._pins),
+                         native_entry_enabled=False,retry=False))
+                except BaseException as write:first.add_note('Cleanup tail write incomplete; no retry: '+repr(write))
+            raise first
+
     def close(self):
         if not self._closed:
             self._closed=True
+            pin_error=None
+            try:self._close_pins()
+            except BaseException as exc:pin_error=exc
             if self._fd is not None:
                 fd=self._fd
                 try:os.close(fd)
                 except BaseException as exc:
                     self._cleanup_errors.append(repr(exc));self._fail(exc);raise
                 else:self._fd=None
+            if pin_error is not None:raise pin_error
 
 def native_admission(*unused,**ignored):
     raise NativeQualificationRequired('NO_GO: source-only build contract; no compilation/execution authority')
@@ -341,7 +502,7 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
     disjoint external CPU/archive/restoration. Native custody remains unknown.
     """
     m,mraw=read_exact(Path(manifest_path),manifest_sha256)
-    if m.get('scope')!='BUILD_ONLY' or m.get('contract')!=CONTRACT:raise ValueError('Separate build scope required')
+    if m.get('scope')!='BUILD_ONLY' or m.get('contract')!=(STAGED_CONTRACT if staged(m) else CONTRACT):raise ValueError('Separate build scope required')
     aid=m['assignment_id'];key=digest(aid.encode('ascii'));REGISTRY.mkdir(parents=True,exist_ok=True);plain(REGISTRY)
     claim=REGISTRY/('settlement-'+key+'.consumed.json')
     save(claim,dict(assignment_id=aid,manifest_sha256=manifest_sha256,receipt_sha256=receipt_sha256,status='CONSUMED_PENDING_UNRESOLVED'))
@@ -350,9 +511,16 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
     try:
         if current_birth()==birth(m['owner_birth']):raise ValueError('Live original owner cannot settle its own closure')
         out=ROOT/m['output_relative'];receipt_path=Path(receipt_path)
-        if (m.get('schema')!='EKA-BUILD-ONLY-MANIFEST-v1' or canonical(m.get('limits'))!=canonical(LIMITS) or
-            set(m.get('source',{}))!=set(SOURCES) or m.get('external_cost_categories')!=list(EXTERNAL) or
+        if (m.get('schema') not in ('EKA-BUILD-ONLY-MANIFEST-v1',STAGED_SCHEMA) or canonical(m.get('limits'))!=canonical(LIMITS) or
+            set(m.get('source',{}))!=set(source_names(m)) or m.get('external_cost_categories')!=list(EXTERNAL) or
             m.get('invocations')!=invocations(m,out)):raise ValueError('Frozen build contract changed')
+        if staged(m):
+            rid=root_binding(m);plain(REGISTRY/('root-'+rid+'.consumed.json'))
+            if (REGISTRY/('root-'+rid+'.consumed.json')).read_bytes()!=canonical(dict(root_binding=m['root_binding'],assignment_sha256=manifest_sha256,owner=m['owner_birth'])):
+                raise ValueError('Retained once-only root claim differs')
+            if (digest((ROOT/AMENDMENT_FILE).read_bytes())!=AMENDMENT_SHA or
+                m['release_pins']!=release_inputs(m,out) or m['header']!=dict(path=str(out/DERIVED_OUTPUTS[0]))):
+                raise ValueError('Frozen staged derivation changed')
         if receipt_path!=out/'build-final.json':raise ValueError('Fixed build receipt path required')
         r,rraw=read_exact(receipt_path,receipt_sha256)
         if (r.get('scope')!='BUILD_ONLY' or r.get('assignment_sha256')!=manifest_sha256 or r.get('input_recipe_sha256')!=recipe(m) or
@@ -363,7 +531,7 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
             raise ValueError('Inconsistent or duplicated root cost')
         report.update(root_total_ticks=u+k,root_debit=r['debits'][0])
         ledger=out/'build-ledger.jsonl';lraw=ledger.read_bytes();rows=[json.loads(x) for x in lraw.splitlines()]
-        if digest(lraw)!=r['output_inventory'].get('build-ledger.jsonl') or len(rows)!=9:raise ValueError('Exact retained ledger required')
+        if digest(lraw)!=r['output_inventory'].get('build-ledger.jsonl') or len(rows)!=(11 if staged(m) else 9):raise ValueError('Exact retained ledger required')
         tip='0'*64
         for i,row in enumerate(rows):
             if row['sequence']!=i or type(row['sequence']) is not int or row['previous']!=tip:raise ValueError('Ledger sequence/hash chain differs')
@@ -375,7 +543,8 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
                                   ledger_identity=list(physical),claim_tick=claim_tick)):raise ValueError('Ledger binding changed')
         created=[]
         for i,role in enumerate(CATALOGUE):
-            a=rows[1+i*2]['event'];o=rows[2+i*2]['event']
+            offset=2 if staged(m) and i>=2 else 0
+            a=rows[1+i*2+offset]['event'];o=rows[2+i*2+offset]['event']
             if a!=dict(kind='supervised_attempt',role=role,index=i,request_sha256=digest(canonical(m['invocations'][i]))) or o['kind']!='outcome' or o['role']!=role or o['index']!=i:
                 raise ValueError('Supervised attempt not durably precharged before outcome')
             v=o['result'];created.append(birth(v['birth']))
@@ -384,6 +553,11 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
                 type(v.get('exit_code')) is not int or v['exit_code']!=0 or
                 any(v.get(n) is not True for n in ('signaled','root_member','EOF','termination_succeeded'))):raise ValueError('Incomplete attempted-start evidence')
         raw_u,raw_k,members=validate_sample(sample,m,manifest_sha256,physical,created,claim_tick)
+        derived=None
+        if staged(m):
+            derived=stage_binding(m,manifest_sha256,physical,claim_tick,rows,out)
+            cumulative_stage_sample(sample,derived['stage_a_sample'])
+            if sample['closed_tick']<derived['derived_tick']:raise ValueError('Final closure precedes derivation')
         if len(set(created))!=4 or (raw_u,raw_k)!=(u,k):raise ValueError('Changed raw root cost/custody')
         validate_limits(sample,m)
         retained={}
@@ -399,7 +573,8 @@ def settle_build(manifest_path,manifest_sha256,receipt_path,receipt_sha256,*,ext
             raise ValueError('External settlement double bills build root/member')
         evidence=Path(plan['path']).parent
         if evidence==out or out in evidence.parents or evidence in out.parents:raise ValueError('Disjoint evidence roots required')
-        expected={'build/manifest.json':manifest_sha256,'build/receipt.json':receipt_sha256,'build/header.h':m['header']['sha256']}
+        expected={'build/manifest.json':manifest_sha256,'build/receipt.json':receipt_sha256,
+                  'build/header.h':derived['header']['sha256'] if derived is not None else m['header']['sha256']}
         expected.update({'build/source/'+n:h for n,h in m['source'].items()})
         expected.update({'build/output/'+n:h for n,h in r['output_inventory'].items()})
         actual={x.relative_to(evidence/'payload').as_posix():settlement.file_digest(x)[0] for x in (evidence/'payload').rglob('*') if x.is_file()}
