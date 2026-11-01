@@ -2,7 +2,7 @@
   "schema": "EKA-STAGED-RELEASE-IMPLEMENTATION-PREFLIGHT-v1",
   "decision": "NO_GO",
   "accepted_executable_baseline": "ca04547ff0e11e952ca5ca32f30376615dc205dd",
-  "implementation_parent": "1805657168117323995f5eb3199be477557894a2",
+  "implementation_parent": "64a3a7b1cfae31734a906e4e2fac40989b7cf005",
   "approved_amendment": "EKA-BUILD-ONLY-SINGLE-ATTEMPT-DERIVED-HEADER-v1",
   "amendment_file": "data/eka1-single-attempt-staged-release-amendment-20261101.json",
   "amendment_sha256": "e0858730a375f44629eb60d0d163880fc71dc4fa3e8f9a28d896cafbbbcced0c",
@@ -15,7 +15,12 @@
     "StageB requires exact derivative and original binding before its two precharges",
     "Same root/start/epoch and monotone cumulative counters; one final USER plus KERNEL debit, not a StageA second charge",
     "External validator rechecks eleven ledger records, root claim, derivative, current outputs and complete archive package",
-    "First failure, partial writes, closed-handle failures and unresolved costs retained without retry or authority"
+    "First failure, partial writes, closed-handle failures and unresolved costs retained without retry or authority",
+    "Optional root observer binds before any precharge; retained noninheritable duplicate plus CompareObjectHandles, not integer equality or a supplied logical hash",
+    "Existing dependency/output fields must pin observation helper source, process-limit source and KernelBase image plus four fixed observation receipts; no schema or numerical-limit change",
+    "One StageA raw observation and one terminal final CPU query; observer does no billing and never fabricates members, image identities, EOF or closure",
+    "Final observation consumes future work; available raw CPU remains retained when original binding fails; missing measurements remain unresolved",
+    "Original native gate refuses before observation API entry; mock-kernel fixtures do not establish Windows qualification"
   ],
   "numerical_limits": "UNCHANGED; one cumulative 30s/30USERseconds/512MiB/4active/1MiBoutput/128files/64MiB covered storage, not one allowance per stage",
   "opaque_nested_attempts": "UNKNOWN_ONLY_FOR_APPROVED_BUILD_ONLY_SCOPE",
@@ -24,15 +29,15 @@
   "actual_native_custody_independently_verified": false,
   "fresh_native_assignment": null,
   "remaining_unqualified": [
-    "Actual BUILD_ONLY suspended-creation/root Job launch and raw-counter provider",
-    "Complete short-lived successful helper PID/birth/image/closure custody and failed-start evidence",
+    "Actual BUILD_ONLY suspended creation/root Job launch plus native qualification of the new raw-observation candidate",
+    "Successful short-lived helper PID/birth/image/retained-handle and completed-termination provider; ordinary Job notifications are insufficient",
     "Actual consumed compiler/SDK/DLL/header/library closure, including exclusion of generated-header shadowing",
     "Exact dependency/source-to-binary/archive/restoration fit within existing cumulative caps",
     "Disjoint owner/derivation/observer/cleanup/archive/restore/hash/completion/watchdog costs and final writer/registry settlement",
     "Independent fresh native qualification and separate explicit immutable human build authorization"
   ],
   "human_authorization_only_remaining": false,
-  "source_checks": "Focused offline DATA tests and independent exact-source review; no claim old221 checks accept changed source",
+  "source_checks": "Focused changed-source mock-kernel and relevant regression checks; exact-source independent review required before publication. Prior247 checks do not accept changed source.",
   "preserved": {
     "sealed_assignments": 4,
     "consumed_reservations": 144,
@@ -40,5 +45,32 @@
     "strict_private_USER_one_second": "UNCHANGED_NOT_READY",
     "v10_Observatory_laws_schedules": "UNMODIFIED"
   },
-  "native_builds_diagnostics_Worlds_populations": 0
+  "native_builds_diagnostics_Worlds_populations": 0,
+  "root_observation_scope": {
+    "status": "IMPLEMENTED_SOURCE_CANDIDATE_NOT_NATIVE_QUALIFIED",
+    "exact_primitive": "Optional methods in existing BuildOnly; uses existing root_snapshot, no launcher or debugger framework",
+    "logical_root_label": "Not proof of kernel-object identity or global exclusion of all alternate callers/ledgers",
+    "debit": "None in observer; existing BuildOnly.finalize remains sole root debit",
+    "new_native_authority": false,
+    "complete_build_sample_provider": false,
+    "successful_helper_identity_provider": false,
+    "actual_CPU_or_resource_measurements_this_change": "NONE; numeric fixture counters are synthetic",
+    "external_costs": "All existing owner/observer/cleanup/archive/restore/hash/completion/watchdog/verifier/final-writer and unattributed scopes remain unsettled; never zero substitutes"
+  },
+  "new_primary_OS_findings": {
+    "ordinary_Job_process_notifications": "Delivery is not guaranteed; live PID lists and final counts cannot reconstruct every retired helper birth/image.",
+    "conditional_debug_event_candidate": "CREATE_PROCESS_DEBUG_EVENT provides pre-user-mode process/image handles. Completed exit requires continued EXIT event and signaled retained duplicate. Descendant debug-chain changes and missing rights/handles remain failure conditions; not implemented or qualified here.",
+    "references": [
+      "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_associate_completion_port",
+      "https://learn.microsoft.com/en-us/windows/win32/debug/debugging-events",
+      "https://learn.microsoft.com/en-us/windows/win32/debug/process-functions-for-debugging",
+      "https://learn.microsoft.com/en-us/windows/win32/api/handleapi/nf-handleapi-compareobjecthandles"
+    ]
+  },
+  "previous_offline_acceptance": {
+    "commit": "64a3a7b1cfae31734a906e4e2fac40989b7cf005",
+    "run": 41263666533,
+    "checks": 247,
+    "scope": "PRIOR_EXECUTED_SOURCE_ONLY_NOT_ACCEPTANCE_OF_THIS_CHANGED_SOURCE"
+  }
 }

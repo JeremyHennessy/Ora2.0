@@ -26,6 +26,8 @@ STAGED_SCHEMA='EKA-BUILD-ONLY-STAGED-MANIFEST-v1'
 AMENDMENT_FILE='data/eka1-single-attempt-staged-release-amendment-20261101.json'
 AMENDMENT_SHA='e0858730a375f44629eb60d0d163880fc71dc4fa3e8f9a28d896cafbbbcced0c'
 DERIVED_OUTPUTS=('eka1_probe_pins.h','stage-b-manifest.json')
+ROOT_OBSERVATION_FILES=('root-observation-pending.json','root-observation-initial.json',
+                        'root-observation-stage-a.json','root-observation-final.json')
 CATALOGUE=('compile_watchdog','link_watchdog','compile_guardian','link_guardian')
 BUILD_OUTPUTS=('eka1_probe_guardian.exe','eka1_owner_watchdog.dll','guardian.obj','watchdog.obj','watchdog.lib','watchdog.exp')
 # Explicit candidate thresholds from the retained build scope, NOT authority
@@ -164,6 +166,9 @@ class BuildOnly:
         self._storage_failed=False;self._finalized=False;self._seq=0;self._bytes=0;self._tip='0'*64;self._cleanup_errors=[]
         self._pending=None;self._outcomes=[];self._attempts=0;self._files={};self._debits=[]
         self._derive_consumed=False;self._derived=None;self._pins=[];self._pin_cleanup_recorded=False
+        self._root_observation_consumed=False;self._root_job=None;self._root_api=None;self._root_duplicate=None
+        self._root_close_attempted=False;self._root_cleanup_recorded=False;self._root_phases=set();self._root_compare=None
+        self._root_initial=None;self._root_last=None;self._root_context=None
         self._start=tick();self._birth=current_birth();self._end=self._start+LIMITS['wall_ms']
         self._manifest_path=Path(manifest);self._preparation_path=Path(preparation)
         self._manifest_sha=hexhash(manifest_sha256);self._preparation_sha=hexhash(preparation_sha256)
@@ -290,6 +295,7 @@ class BuildOnly:
         self._seq+=1;self._bytes+=len(raw);self._tip=digest(raw);self._ledger_sha=digest(self._path.read_bytes())
 
     def _check(self,final=False):
+        if not final and 'final' in self._root_phases:raise RuntimeError('Final root observation consumed; work authority closed')
         if self._failed is not None and not final:raise RuntimeError('Original failure; no reusable preparation')
         if current_birth()!=self._birth:raise ValueError('Original process birth changed')
         if not final and tick()>=self._end:raise TimeoutError('Original deadline expired; no extension')
@@ -458,6 +464,199 @@ class BuildOnly:
                     unqualified=['OS_containment_and_birth_image_custody','complete_executed_dependency_provenance',
                                  'root_USER_KERNEL_measurement_and_external_settlement','independent_exact_single_build_manifest','separate_human_execution_authorization'])
 
+    def _root_observation_context(self):
+        """Source binding only; kernel-object comparison is recorded separately."""
+        self._check(final=True)
+        expected=(self._birth,self._manifest_sha,self._physical,self._end,root_binding(self._manifest),str(self.out))
+        if self._root_context is not None and expected!=self._root_context:
+            raise ValueError('Original root-observation owner/manifest/ledger/deadline changed')
+        for name in ('tools/eka1_cpu_accounting.py','experiments/process_limits.py'):
+            path=ROOT/name
+            if self._manifest['dependencies'].get(str(path))!=digest(path.read_bytes()):
+                raise ValueError('Root observation dependency not pinned: '+name)
+        kernelbase=Path(self._manifest['environment']['SystemRoot'])/'System32/KernelBase.dll'
+        if self._manifest['dependencies'].get(str(kernelbase))!=digest(kernelbase.read_bytes()):
+            raise ValueError('Exact KernelBase observation dependency not pinned')
+        return expected
+
+    def _root_observation_record(self,phase):
+        context=self._root_context or (self._birth,self._manifest_sha,self._physical,self._end,None,str(self.out))
+        return dict(schema='EKA-BUILD-ONLY-RAW-ROOT-OBSERVATION-v1',phase=phase,
+                    scope='RAW_ROOT_COUNTERS_ONLY_NOT_A_FULL_BUILD_SAMPLE',decision='NO_GO',
+                    assignment_sha256=context[1],owner_birth=list(context[0]),
+                    ledger_identity=list(context[2]),logical_root_identity=context[4],
+                    deadline_tick=context[3],raw=None,available_USER_ticks=None,available_KERNEL_ticks=None,
+                    known_component_ticks_lower_bound=0,custody_errors=[],debit_performed=False,
+                    native_entry_enabled=False,actual_native_custody_independently_qualified=False)
+
+    @staticmethod
+    def _validate_root_observation(raw,initial=False,previous=None):
+        for name in ('user_ticks','kernel_ticks','period_user_ticks','period_kernel_ticks','active','total_processes',
+                     'cpu_limit_ticks','memory_limit','process_limit','flags'):
+            number(raw[name])
+        if (raw['period_user_ticks']!=raw['user_ticks'] or raw['period_kernel_ticks']!=raw['kernel_ticks'] or
+            raw['cpu_limit_ticks']!=LIMITS['USER_ticks'] or raw['memory_limit']!=LIMITS['memory_bytes'] or
+            raw['process_limit']!=LIMITS['active_processes'] or raw['flags']!=0x220c or
+            raw['active']>LIMITS['active_processes']):
+            raise ValueError('Root observation epoch or unchanged limits differ')
+        if initial and any(raw[n] for n in ('user_ticks','kernel_ticks','active','total_processes')):
+            raise ValueError('Root observation must begin in fresh zero epoch')
+        if previous is not None and any(raw[n]<previous[n] for n in ('user_ticks','kernel_ticks','total_processes')):
+            raise ValueError('Root lifetime observation counter decreased')
+        if not initial and raw['active']!=0:raise ValueError('Raw root remains active; closure unresolved')
+        if raw['user_ticks']>LIMITS['USER_ticks']:raise ValueError('Terminal root USER resource overrun')
+
+    def bind_root_observation(self,job):
+        """Gated observation only. No process creation, continuation or grant."""
+        native_admission()  # Must precede claims, imports and all kernel APIs.
+        with self._mutex:
+            record_write_attempted=False;duplicate_acquired=False
+            try:
+                self._check()
+                if (not staged(self._manifest) or self._root_observation_consumed or self._attempts or
+                    self._pending is not None or self._derived is not None):
+                    raise ValueError('One root observation binding before any precharge required')
+                self._root_observation_consumed=True
+                self._root_context=self._root_observation_context()
+                if not set(ROOT_OBSERVATION_FILES)<=set(self._manifest['outputs']):
+                    raise ValueError('Root observation receipts must be reserved in output inventory')
+                from experiments.process_limits import Job,checked
+                from tools.eka1_cpu_accounting import root_snapshot
+                from types import SimpleNamespace
+                import ctypes
+                from ctypes import wintypes as wt
+                if type(job) is not Job or not job.handle:raise TypeError('Exact live existing Job required')
+                record=self._root_observation_record('initial')
+                save(self.out/ROOT_OBSERVATION_FILES[0],dict(record,status='PENDING_UNRESOLVED'))
+                k=job.k;self._root_job=job;self._root_api=k
+                definitions={'GetCurrentProcess':([],wt.HANDLE),
+                    'GetModuleHandleW':([wt.LPCWSTR],wt.HMODULE),
+                    'DuplicateHandle':([wt.HANDLE,wt.HANDLE,wt.HANDLE,ctypes.POINTER(wt.HANDLE),wt.DWORD,wt.BOOL,wt.DWORD],wt.BOOL),
+                    }
+                for name,(args,result) in definitions.items():
+                    fn=getattr(k,name);fn.argtypes=args;fn.restype=result
+                kernelbase=Path(self._manifest['environment']['SystemRoot'])/'System32/KernelBase.dll'
+                module=k.GetModuleHandleW(str(kernelbase));checked(module)
+                # Borrow an already loaded core module; no LoadLibrary reference or FreeLibrary ownership.
+                # This does not qualify loaded-image identity or exclude concurrent module unloading.
+                self._root_compare=ctypes.WinDLL(str(kernelbase),handle=module,use_last_error=True).CompareObjectHandles
+                self._root_compare.argtypes=[wt.HANDLE,wt.HANDLE];self._root_compare.restype=wt.BOOL
+                process=k.GetCurrentProcess();held=wt.HANDLE()
+                checked(k.DuplicateHandle(process,job.handle,process,ctypes.byref(held),0,False,2))
+                if not held.value:raise OSError('Root duplicate unavailable')
+                self._root_duplicate=held.value
+                duplicate_acquired=True
+                if not self._root_compare(job.handle,self._root_duplicate):
+                    raise OSError('Root duplicate kernel-object identity differs')
+                record['same_kernel_object']=True
+                record['raw']=root_snapshot(SimpleNamespace(k=k,handle=self._root_duplicate))
+                self._root_observation_values(record)
+                self._validate_root_observation(record['raw'],initial=True)
+                self._root_initial=json.loads(canonical(record['raw']));self._root_last=self._root_initial
+                self._root_observation_context()
+                record.update(status='INITIAL_ZERO_OBSERVED_UNQUALIFIED',observed_tick=tick())
+                if record['observed_tick']>=self._end:raise TimeoutError('Original observation deadline exceeded')
+                record_write_attempted=True
+                save(self.out/ROOT_OBSERVATION_FILES[1],record)
+                return record
+            except BaseException as exc:
+                self._fail(exc)
+                if 'record' in locals():
+                    if record['raw'] is None and hasattr(exc,'raw_root_partial'):
+                        record['raw']=exc.raw_root_partial.copy();self._root_observation_values(record)
+                    record.update(status='FAILED_UNRESOLVED',failure=repr(exc))
+                    self._retain_root_observation_failure(exc,self.out/ROOT_OBSERVATION_FILES[1],record,persist=not record_write_attempted)
+                if duplicate_acquired:
+                    try:self._close_root_observation()
+                    except BaseException as cleanup:
+                        exc.add_note('Root duplicate closure incomplete: '+repr(cleanup))
+                        for note in getattr(cleanup,'__notes__',()):exc.add_note(note)
+                raise
+
+    @staticmethod
+    def _root_observation_values(record):
+        raw=record['raw']
+        if isinstance(raw,dict):
+            for name,key in (('USER','user_ticks'),('KERNEL','kernel_ticks')):
+                value=raw.get(key)
+                if type(value) is int and 0<=value<2**63:
+                    record['available_'+name+'_ticks']=value
+                    record['known_component_ticks_lower_bound']+=value
+
+    @staticmethod
+    def _retain_root_observation_failure(exc,path,record,*,persist=True):
+        exc.root_observation=json.loads(canonical(record))
+        if not persist:
+            exc.add_note('Raw observation write already attempted; pending evidence unresolved, no retry')
+            return
+        try:save(path,record)
+        except BaseException as write:exc.add_note('Raw observation write incomplete; no retry: '+repr(write))
+
+    def snapshot_root(self,phase):
+        """One StageA observation and one final raw read; neither is a debit."""
+        native_admission()
+        with self._mutex:
+            if phase not in ('stage_a','final'):
+                exc=ValueError('Fixed root observation phase required');self._fail(exc);raise exc
+            if phase in self._root_phases:
+                exc=RuntimeError('Root observation phase consumed; no retry');self._fail(exc);raise exc
+            self._root_phases.add(phase)  # Read and persistence failures consume the phase too.
+            record=self._root_observation_record(phase);errors=[];record_write_attempted=False
+            path=Path(self._root_context[5] if self._root_context is not None else self.out)/ROOT_OBSERVATION_FILES[2 if phase=='stage_a' else 3]
+            try:
+                if phase=='stage_a' and 'final' in self._root_phases:raise RuntimeError('StageA observation cannot follow final capture')
+                if self._root_duplicate is None or self._root_close_attempted or self._root_initial is None:
+                    raise RuntimeError('Retained initialized root observation unavailable')
+                try:
+                    self._root_observation_context()
+                    if phase=='stage_a' and (self._failed is not None or self._attempts!=2 or self._pending is not None or self._derived is not None):
+                        raise ValueError('StageA observation requires its exact completed two slots')
+                    if self._failed is not None:raise RuntimeError('Original failure remains terminal')
+                    if not self._root_job.handle or not self._root_compare(self._root_job.handle,self._root_duplicate):
+                        raise OSError('Original root handle lost or kernel object replaced')
+                    record['same_kernel_object']=True
+                except BaseException as binding:
+                    errors.append(repr(binding))
+                    if phase!='final':raise
+                from tools.eka1_cpu_accounting import root_snapshot
+                from types import SimpleNamespace
+                record['raw']=root_snapshot(SimpleNamespace(k=self._root_api,handle=self._root_duplicate))
+                self._root_observation_values(record)
+                try:self._validate_root_observation(record['raw'],previous=self._root_last)
+                except BaseException as invalid:errors.append(repr(invalid))
+                record['observed_tick']=tick()
+                if record['observed_tick']>self._end:errors.append('Original absolute deadline exceeded')
+                record['custody_errors']=errors
+                if errors:raise ValueError('Raw root observation terminal unresolved: '+repr(errors))
+                self._root_last=json.loads(canonical(record['raw']))
+                record['status']='RAW_ROOT_OBSERVED_UNQUALIFIED_NOT_BILLED'
+                record_write_attempted=True
+                save(path,record)
+                return record
+            except BaseException as exc:
+                if record['raw'] is None and hasattr(exc,'raw_root_partial'):
+                    record['raw']=exc.raw_root_partial.copy();self._root_observation_values(record)
+                self._fail(exc);record.update(status='FAILED_UNRESOLVED',failure=repr(exc),custody_errors=errors)
+                self._retain_root_observation_failure(exc,path,record,persist=not record_write_attempted)
+                raise
+
+    def _close_root_observation(self):
+        if self._root_duplicate is None:return
+        if self._root_close_attempted:raise OSError('Prior root duplicate closure incomplete; no retry')
+        self._root_close_attempted=True
+        try:
+            from experiments.process_limits import checked
+            checked(self._root_api.CloseHandle(self._root_duplicate))
+            self._root_duplicate=None
+        except BaseException as exc:
+            self._cleanup_errors.append(repr(exc));self._fail(exc)
+            if not self._root_cleanup_recorded:
+                self._root_cleanup_recorded=True
+                try:save(self.out/'root-observation-cleanup-failure.json',dict(first_failure=self._failed,
+                         cleanup_errors=[repr(exc)[:2048]],unresolved_root_duplicate=True,retry=False,native_entry_enabled=False))
+                except BaseException as write:exc.add_note('Root cleanup tail incomplete; no retry: '+repr(write))
+            raise
+
     def _close_pins(self):
         errors=[]
         for pin in reversed(self._pins):
@@ -483,11 +682,21 @@ class BuildOnly:
             pin_error=None
             try:self._close_pins()
             except BaseException as exc:pin_error=exc
+            try:self._close_root_observation()
+            except BaseException as root_error:
+                if pin_error is None:pin_error=root_error
+                else:
+                    pin_error.add_note('Root duplicate closure incomplete: '+repr(root_error))
+                    for note in getattr(root_error,'__notes__',()):pin_error.add_note(note)
             if self._fd is not None:
                 fd=self._fd
                 try:os.close(fd)
                 except BaseException as exc:
-                    self._cleanup_errors.append(repr(exc));self._fail(exc);raise
+                    self._cleanup_errors.append(repr(exc));self._fail(exc)
+                    if pin_error is not None:
+                        exc.add_note('Retained input/root closure incomplete: '+repr(pin_error))
+                        for note in getattr(pin_error,'__notes__',()):exc.add_note(note)
+                    raise
                 else:self._fd=None
             if pin_error is not None:raise pin_error
 

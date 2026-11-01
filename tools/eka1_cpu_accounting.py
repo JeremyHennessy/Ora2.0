@@ -30,12 +30,16 @@ def root_snapshot(job):
     """Raw integer counters from the same retained root handle, never floats."""
     a=Accounting();limits=ExtendedLimits()
     checked(job.k.QueryInformationJobObject(job.handle,1,ctypes.byref(a),ctypes.sizeof(a),None))
-    checked(job.k.QueryInformationJobObject(job.handle,9,ctypes.byref(limits),ctypes.sizeof(limits),None))
-    return {'user_ticks':a.user,'kernel_ticks':a.kernel,'period_user_ticks':a.period_user,
+    raw={'user_ticks':a.user,'kernel_ticks':a.kernel,'period_user_ticks':a.period_user,
             'period_kernel_ticks':a.period_kernel,'active':a.active_processes,
-            'total_processes':a.total_processes,'cpu_limit_ticks':limits.basic.job_cpu,
-            'memory_limit':limits.job_memory,'process_limit':limits.basic.active_processes,
-            'flags':limits.basic.flags}
+            'total_processes':a.total_processes}
+    try:checked(job.k.QueryInformationJobObject(job.handle,9,ctypes.byref(limits),ctypes.sizeof(limits),None))
+    except BaseException as exc:
+        exc.raw_root_partial=raw.copy()  # Preserve the first read; never query again to repair it.
+        raise
+    return dict(raw,cpu_limit_ticks=limits.basic.job_cpu,
+                memory_limit=limits.job_memory,process_limit=limits.basic.active_processes,
+                flags=limits.basic.flags)
 
 
 class RootCpuAttempt:

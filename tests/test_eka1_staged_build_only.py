@@ -239,4 +239,202 @@ class StagedChecks(unittest.TestCase):
             for pin in obj._pins:pin.close_attempted=False;close(pin)
 
 
+class RootObservationChecks(unittest.TestCase):
+    """Mock kernel only: no Job constructor, DLL load, child or compilation."""
+    def setUp(self):
+        from unittest.mock import Mock
+        from experiments import process_limits as pl
+        from tools import eka1_cpu_accounting as cpu
+        self.case=StagedChecks();self.case.setUp();self.f=self.case.f;self.m=self.case.m
+        system=self.f.base/'Windows';(system/'System32').mkdir(parents=True)
+        kernelbase=system/'System32/KernelBase.dll';kernelbase.write_bytes(b'DATA fake KernelBase, never loaded')
+        self.m['environment']['SystemRoot']=str(system)
+        for path in (b.ROOT/'tools/eka1_cpu_accounting.py',b.ROOT/'experiments/process_limits.py',kernelbase):
+            self.m['dependencies'][str(path)]=b.digest(path.read_bytes())
+        self.m['outputs']+=list(b.ROOT_OBSERVATION_FILES);self.case.plan()
+        self.origins={41:'root-A',99:'root-A'};self.closed=[];self.samples=[(0,0,0),(4,2,2),(10,5,4)]
+        self.index=0;self.reads=[];self.fail_info=None;self.bad_caps=False;self.close_ok=True
+        def duplicate(source,handle,target,output,access,inherit,flags):output._obj.value=99;return True
+        def compare(a,c):return self.origins.get(a)==self.origins.get(c) and a in self.origins and c in self.origins
+        def query(handle,kind,pointer,size,used):
+            self.reads.append((handle,kind));self.assertEqual(handle,99)
+            if self.fail_info==kind:return False
+            u,k,count=self.samples[min(self.index,len(self.samples)-1)];value=pointer._obj
+            if kind==1:
+                value.user=u;value.kernel=k;value.period_user=u;value.period_kernel=k
+                value.active_processes=0;value.total_processes=count
+            else:
+                self.assertEqual(kind,9);value.basic.job_cpu=b.LIMITS['USER_ticks']
+                value.basic.active_processes=b.LIMITS['active_processes'];value.basic.flags=0x220c
+                value.job_memory=b.LIMITS['memory_bytes']+(1 if self.bad_caps else 0);self.index+=1
+            return True
+        def close(handle):self.closed.append(handle);return self.close_ok
+        self.k=Mock();self.k.GetCurrentProcess.return_value=-1;self.k.DuplicateHandle.side_effect=duplicate
+        self.k.GetModuleHandleW.return_value=808
+        self.k.QueryInformationJobObject.side_effect=query;self.k.CloseHandle.side_effect=close
+        self.base=Mock();self.base.CompareObjectHandles.side_effect=compare
+        self.job=object.__new__(pl.Job);self.job.handle=41;self.job.k=self.k
+        def checked(ok):
+            if not ok:raise OSError('mock kernel refusal')
+        self.patches=[patch.object(b,'native_admission',return_value=None),
+                      patch('ctypes.WinDLL',return_value=self.base),patch.object(pl,'checked',side_effect=checked),
+                      patch.object(cpu,'checked',side_effect=checked)]
+        self.mocks=[p.start() for p in self.patches]
+    def tearDown(self):
+        try:self.case.tearDown()
+        finally:
+            for p in reversed(self.patches):p.stop()
+    def open(self):return self.case.open()
+    def bound(self):
+        obj=self.open();r=obj.bind_root_observation(self.job);return obj,r
+    def stage_a(self,obj):
+        for i in (0,1):obj.precharge(b.CATALOGUE[i]);obj.outcome(b.CATALOGUE[i],i,self.f.outcome(i))
+    def test_native_gate_first_no_api_or_claim(self):
+        obj=self.open();self.mocks[0].side_effect=b.NativeQualificationRequired('held')
+        with self.assertRaises(b.NativeQualificationRequired):obj.bind_root_observation(self.job)
+        self.assertFalse(obj._root_observation_consumed);self.assertIsNone(obj._failed)
+        self.k.DuplicateHandle.assert_not_called();self.mocks[1].assert_not_called()
+    def test_initial_duplicate_actual_compare_no_debit_or_authority(self):
+        obj,r=self.bound()
+        self.assertEqual(r['logical_root_identity'],self.m['root_binding']['root_identity'])
+        self.assertTrue(r['same_kernel_object']);self.assertEqual(r['available_USER_ticks'],0)
+        self.assertFalse(r['debit_performed']);self.assertFalse(r['actual_native_custody_independently_qualified'])
+        self.assertEqual(len(b.ledger_rows(obj._path)),1);self.assertEqual(obj._debits,[])
+        self.assertEqual(self.k.DuplicateHandle.call_args.args[-3:],(0,False,2))
+        self.assertEqual(self.mocks[1].call_args.args[0],str(self.f.base/'Windows/System32/KernelBase.dll'))
+        self.assertEqual(self.mocks[1].call_args.kwargs['handle'],808)
+        self.assertEqual(self.reads,[(99,1),(99,9)])
+    def test_bind_after_precharge_terminal_without_api(self):
+        obj=self.open();obj.precharge(b.CATALOGUE[0])
+        with self.assertRaises(ValueError):obj.bind_root_observation(self.job)
+        self.k.DuplicateHandle.assert_not_called();self.assertEqual(obj._attempts,1)
+    def test_second_binding_cannot_mint_replacement_root(self):
+        obj,r=self.bound()
+        with self.assertRaises(ValueError):obj.bind_root_observation(self.job)
+        self.assertEqual(self.k.DuplicateHandle.call_count,1);self.assertEqual(self.closed,[])
+        with self.assertRaises(RuntimeError):obj.precharge(b.CATALOGUE[0])
+        with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        self.assertEqual(ctx.exception.root_observation['available_USER_ticks'],4)
+        obj.close();self.assertEqual(self.closed,[99])
+    def test_missing_python_dependency_precedes_dll_or_api(self):
+        del self.m['dependencies'][str(b.ROOT/'tools/eka1_cpu_accounting.py')];self.case.plan();obj=self.open()
+        with self.assertRaisesRegex(ValueError,'dependency'):obj.bind_root_observation(self.job)
+        self.k.DuplicateHandle.assert_not_called();self.mocks[1].assert_not_called()
+    def test_missing_kernelbase_pin_precedes_dll_or_api(self):
+        del self.m['dependencies'][str(self.f.base/'Windows/System32/KernelBase.dll')];self.case.plan();obj=self.open()
+        with self.assertRaisesRegex(ValueError,'KernelBase'):obj.bind_root_observation(self.job)
+        self.mocks[1].assert_not_called()
+    def test_unavailable_borrowed_module_never_loads_or_duplicates(self):
+        obj=self.open();self.k.GetModuleHandleW.return_value=0
+        with self.assertRaises(OSError):obj.bind_root_observation(self.job)
+        self.mocks[1].assert_not_called();self.k.DuplicateHandle.assert_not_called();self.assertEqual(self.closed,[])
+    def test_duplicate_failure_terminal_no_second_binding(self):
+        obj=self.open();self.k.DuplicateHandle.return_value=False;self.k.DuplicateHandle.side_effect=None
+        with self.assertRaises(OSError):obj.bind_root_observation(self.job)
+        with self.assertRaises(RuntimeError):obj.bind_root_observation(self.job)
+        self.assertEqual(self.k.DuplicateHandle.call_count,1);self.assertEqual(self.closed,[])
+    def test_initial_same_integer_wrong_kernel_object_rejected(self):
+        self.origins[99]='other-root';obj=self.open()
+        with self.assertRaisesRegex(OSError,'kernel-object'):obj.bind_root_observation(self.job)
+        self.assertEqual(self.reads,[]);self.assertEqual(self.closed,[99])
+    def test_nonzero_initial_epoch_retained_no_refund(self):
+        self.samples[0]=(1,2,1);obj=self.open()
+        with self.assertRaisesRegex(ValueError,'fresh zero'):obj.bind_root_observation(self.job)
+        r=json.loads((obj.out/b.ROOT_OBSERVATION_FILES[1]).read_bytes())
+        self.assertEqual((r['available_USER_ticks'],r['available_KERNEL_ticks']),(1,2));self.assertEqual(obj._debits,[])
+        self.assertEqual(self.closed,[99])
+    def test_changed_limits_retains_raw_failure(self):
+        self.bad_caps=True;obj=self.open()
+        with self.assertRaisesRegex(ValueError,'limits differ'):obj.bind_root_observation(self.job)
+        self.assertEqual(json.loads((obj.out/b.ROOT_OBSERVATION_FILES[1]).read_bytes())['raw']['memory_limit'],b.LIMITS['memory_bytes']+1)
+    def test_stage_a_and_final_raw_only_no_second_billing(self):
+        obj,r=self.bound();self.stage_a(obj);a=obj.snapshot_root('stage_a');z=obj.snapshot_root('final')
+        self.assertEqual((a['available_USER_ticks'],z['available_USER_ticks']),(4,10))
+        self.assertEqual(obj._debits,[]);self.assertNotIn('members',z);self.assertNotIn('signaled_births',z)
+        self.assertFalse(z['debit_performed']);self.assertFalse(z['native_entry_enabled']);self.assertFalse(obj._finalized)
+        with self.assertRaises(RuntimeError):obj.snapshot_root('final')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),3)
+    def test_final_before_work_closes_future_work_authority(self):
+        self.samples[1]=(0,0,0);obj,r=self.bound();obj.snapshot_root('final')
+        with self.assertRaisesRegex(RuntimeError,'authority closed'):obj.precharge(b.CATALOGUE[0])
+        self.assertEqual(obj._attempts,0)
+        with self.assertRaises(RuntimeError):obj.snapshot_root('stage_a')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),2)
+    def test_early_stage_a_failure_no_query_but_final_costs_retained(self):
+        obj,r=self.bound()
+        with self.assertRaises(ValueError):obj.snapshot_root('stage_a')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),1)
+        with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        self.assertEqual(ctx.exception.root_observation['available_USER_ticks'],4)
+    def test_decreasing_final_counter_is_retained_terminal_not_new_epoch(self):
+        obj,r=self.bound();self.stage_a(obj);obj.snapshot_root('stage_a');self.samples[2]=(3,1,4)
+        with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        self.assertEqual(ctx.exception.root_observation['raw']['user_ticks'],3)
+        self.assertEqual(obj._root_last['user_ticks'],4);self.assertEqual(obj._debits,[])
+    def test_final_reused_handle_keeps_retained_duplicate_raw_costs(self):
+        obj,r=self.bound();self.origins[41]='replacement-object'
+        with self.assertRaisesRegex(ValueError,'unresolved') as ctx:obj.snapshot_root('final')
+        record=ctx.exception.root_observation
+        self.assertEqual(record['available_KERNEL_ticks'],2);self.assertTrue(record['custody_errors'])
+        self.assertEqual(record['raw']['user_ticks'],4);self.assertEqual(obj._debits,[])
+        with self.assertRaises(RuntimeError):obj.snapshot_root('final')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),2)
+    def test_final_original_handle_closed_still_reads_duplicate(self):
+        obj,r=self.bound();self.job.handle=None
+        with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        self.assertEqual(ctx.exception.root_observation['available_USER_ticks'],4)
+    def test_final_deleted_manifest_binding_still_retains_raw_once(self):
+        obj,r=self.bound();original=obj._root_context;del obj._manifest['root_binding']
+        with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        record=ctx.exception.root_observation
+        self.assertEqual(record['logical_root_identity'],original[4]);self.assertEqual(record['available_USER_ticks'],4)
+        with self.assertRaises(RuntimeError):obj.snapshot_root('final')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),2)
+    def test_final_changed_owner_still_retains_raw_costs(self):
+        obj,r=self.bound()
+        with patch.object(b,'current_birth',return_value=(101,1001)):
+            with self.assertRaises(ValueError) as ctx:obj.snapshot_root('final')
+        self.assertEqual(ctx.exception.root_observation['owner_birth'],[100,1000])
+        self.assertEqual(ctx.exception.root_observation['available_KERNEL_ticks'],2)
+    def test_final_query_failure_stays_missing_not_zero_or_retry(self):
+        obj,r=self.bound();self.fail_info=1
+        with self.assertRaises(OSError) as ctx:obj.snapshot_root('final')
+        self.assertIsNone(ctx.exception.root_observation['available_USER_ticks']);self.assertIsNone(ctx.exception.root_observation['raw'])
+        with self.assertRaises(RuntimeError):obj.snapshot_root('final')
+        self.assertEqual(sum(kind==1 for handle,kind in self.reads),2)
+    def test_final_write_failure_preserves_raw_no_second_write(self):
+        obj,r=self.bound();original=b.save;calls=[]
+        def disk(path,value):
+            if path.name==b.ROOT_OBSERVATION_FILES[3]:calls.append(path);raise OSError('mock final disk full')
+            return original(path,value)
+        with patch.object(b,'save',side_effect=disk):
+            with self.assertRaisesRegex(OSError,'disk full') as ctx:obj.snapshot_root('final')
+        self.assertEqual(len(calls),1);self.assertEqual(ctx.exception.root_observation['available_KERNEL_ticks'],2)
+        self.assertTrue(ctx.exception.__notes__)
+    def test_final_limits_query_failure_retains_already_read_cpu_once(self):
+        obj,r=self.bound();self.fail_info=9
+        with self.assertRaises(OSError) as ctx:obj.snapshot_root('final')
+        record=ctx.exception.root_observation
+        self.assertEqual((record['available_USER_ticks'],record['available_KERNEL_ticks']),(4,2))
+        self.assertEqual(record['known_component_ticks_lower_bound'],6);self.assertNotIn('memory_limit',record['raw'])
+        self.assertEqual(self.reads,[(99,1),(99,9),(99,1),(99,9)])
+        with self.assertRaises(RuntimeError):obj.snapshot_root('final')
+        self.assertEqual(len(self.reads),4)
+    def test_duplicate_close_failure_preserved_no_retry(self):
+        obj,r=self.bound();self.close_ok=False
+        with self.assertRaises(OSError):obj.close()
+        tail=json.loads((obj.out/'root-observation-cleanup-failure.json').read_bytes())
+        self.assertTrue(tail['unresolved_root_duplicate']);self.assertFalse(tail['retry']);self.assertIsNone(obj._fd)
+        obj.close();self.assertEqual(self.closed,[99])
+    def test_root_cleanup_tail_write_failure_does_not_retry_close(self):
+        obj,r=self.bound();self.close_ok=False;original=b.save
+        def disk(path,value):
+            if path.name=='root-observation-cleanup-failure.json':raise OSError('mock cleanup disk full')
+            return original(path,value)
+        with patch.object(b,'save',side_effect=disk):
+            with self.assertRaises(OSError) as ctx:obj.close()
+        self.assertIn('cleanup disk full',' '.join(ctx.exception.__notes__));self.assertIsNone(obj._fd)
+        obj.close();self.assertEqual(self.closed,[99])
+
+
 if __name__=='__main__':unittest.main()
