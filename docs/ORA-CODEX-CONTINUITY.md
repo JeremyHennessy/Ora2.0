@@ -44,8 +44,8 @@ review owners; no recursive or duplicate agent/scheduler creation.
 
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
-| Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `f5cbd5d20eaea91c80ac49c5dc7d43f47e578943` |
+| Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `0ecad7bb7056db8d354b23bbc6e81a632f981f70` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `567b4ea884940aaf46384e7af8cf12f2a2d1f28e` (parent of this DATA/doc checkpoint; exact current tip in local pointer) |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -147,6 +147,19 @@ This note is not an independent reproduction or Ora intelligence result.
   or long-term fitness dominance. These source witnesses were not introduced
   or executed, and no useful intelligence or selection is demonstrated.
 
+The latest origin audit narrows two further claims. The accepted fixed
+success-gated layout needs13 word changes (8 opcodes,5 operands) from the
+ordinary ancestor under either register assignment and equivalent immediates.
+This is a fixed-layout distance, not a global learning minimum or13 generations.
+A distinct single-word feedback-to-mask edit fails an abundant, uniform-target
+prefix: at most2 meals plus E12 gives52, below the bare67 energy needed for
+nine COPY actions and division. BOTH probes must be nonempty; an earlier empty-
+stock extrapolation was rejected and retained. The resulting zero-feedback
+freeze is locally matched by an equally paid constant SET0 control. Mixed
+feedback, actual ordinary reachability and inherited fitness remain UNKNOWN.
+See `data/eka-ordinary-origin-and-feedback-mask-decision-20261101.json` and its
+exact local proof/review pins. No organism was introduced or executed.
+
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
 The constructor lineage has27 words/nine instructions; a generic96-word validator
@@ -168,8 +181,14 @@ USER/KERNEL readings on failure and burns future work on final capture. It does
 not launch processes, supply complete birth/image/EOF evidence or bill separately.
 The existing finalizer is the sole root debit. Native entry remains closed.
 
-Exact-head CI41331323845 at9e16cef passed271 offline checks; native steps7/8 and
-legacy41331327617 were SKIPPED, not passed. Independent review checked raw source,
+Current engineering0ecad7bb binds the exact absolute guardian release header
+with guardian-only /FI, removes basename fallback and requires all seven pins.
+New exact-head Windows CI41347063787 passed276 offline checks; native steps7/8
+and legacy41347068108 were SKIPPED, not passed. Independent source/commit and
+downloaded artifact custody review PASS within offline scope. Actual compiler
+consumption, complete native input custody and OS qualification remain NO_GO.
+Previous CI41331323845 at9e16cef passed271 offline checks; its native steps7/8
+and legacy41331327617 were SKIPPED, not passed. Independent review checked raw source,
 interpreter and artifact, explicitly including one unchanged LF→CRLF conversion.
 Prior247 acceptance belongs to64a3a7b;221 belongs to the earlier executable source.
 Do not reuse old counts to accept changed source or repeat unchanged full suites.
@@ -241,17 +260,11 @@ scientific laws, sealed evidence or unrelated/historical projects. No improvised
 CLI daemon, recursive agents or unattended execution loop. A platform/access hold
 must be recorded honestly; continue another authorized stream where possible.
 
-Last completed session: standing continuity/single recurrence established, then
-three independently reviewed source-only iterations: feedback polarity, renewed
-acquisition frontier/solitary-founder exclusion, and conditional paid newborn
-information prefixes. See the three named20261101 DATA certificates in this
-branch. No organism or native qualification ran. Earlier executable acceptance
-remains9e16cef; the local pointer binds the exact later DATA/document publication
-tip and independent receipts without treating it as a new executable CI pass.
-
-Latest throughput session: five-minute recurrence saved/read back through the
-supported app; first nominal wakeup was deferred while the current chat remained
-active. A new source-only unified acquisition prefix and its non-idempotent
-reentry guard are recorded in `data/eka-unified-navigation-prefix-20261101.json`.
-Read the local pointer for exact publication tip, scheduler evidence and next task;
-do not confuse an installed schedule or delivery with a completed development run.
+Last completed source checkpoint: the origin/feedback-mask audit above preserves
+the rejected empty-stock extrapolation and closes only its qualified submotifs.
+The current local pointer records exact source/commit reviews, published tips,
+regularly saved routine research and the next active proof obligation.
+Engineering0ecad7bb/276 offline is accepted source-only preparation. No compiler,
+native diagnostic, scientific World or organism ran. The five-minute automation
+has delivered completed source sessions, subject to host/app/tools/usage; no
+continuous work while unavailable or indefinite reliability is claimed.
