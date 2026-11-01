@@ -45,7 +45,7 @@ review owners; no recursive or duplicate agent/scheduler creation.
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
 | Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `974f3b9a75767a88a05df2934d4fe9e9affff432` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `0b18c7442d4ab5f2ee7aeda7a8395d4f3d3baa77` |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -120,6 +120,21 @@ This note is not an independent reproduction or Ora intelligence result.
   This closes the claimed first-birth advantage for that raw-feedback motif,
   not all later scarcity or useful memory. Unaccepted free-decoding assumptions
   and earlier probe-label/fee errors remain preserved locally.
+- A stronger target-uninformed stationary paired-port reference fits the same
+  nine-slot lineage. In the initial fixed-target context it births at54 for
+  both targets, parent27/29, versus success-gated53/58,parent27. Both pay six
+  steady-cycle base actions; observation/control offsets the saved probe.
+  This narrows the claim to a one-dispatch conditional learner lead in one
+  orientation, not a uniform advantage. Fixed matching controls remain stronger
+  where their predeclared port matches.
+- Conditional paid ordinary COPY ancestry is supported for stationary controls:
+  two-word JUMP1 gives child54own/177global with9–10 meals; a single opcode-word
+  JUMP0 that repeats SET gives62own/193global with9–11 meals. Mixed initial-food
+  cohorts and parent interleaving were checked across16 late-bit cases, with
+  material bounds147/150 and postdivision parent27–29. Actual joint mutation,
+  selection and later fitness are UNKNOWN. Faster nonlearning control is not
+  intelligence. Do not transplant initial learner53/58 to the ordinary daughter
+  context without its separate full stock/schedule proof.
 
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
@@ -165,14 +180,14 @@ Four sealed assignments and144 consumed reservations remain immutable.
 
 ## Next authorized tasks and evidence
 
-1. Next: challenge the stationary success-gated witness against a target-uninformed
-   paired-port stationary controller, including complete setup, COPY/division,
-   cap spill and phase-change costs. Matching fixed controls alone are too weak
-   a challenge. Separate format-legal/conditional paid mutation ancestry from
-   actual realization and retained fitness. Keep the pc8 and raw port-READ
-   first-birth negatives closed; do not append to the site3 prefix or grant free
-   decoding. Cross-location scarcity and later fitness remain UNKNOWN. Do not
-   install a successful genome or select a mutation/seed/history because it works.
+1. Next: establish or bound the success-gated witness's conditional ordinary-child
+   stock/schedule costs after the paid parentbirth70, then compare with the
+   stationary nonlearning177/193global controls under the same conditions. The
+   initial constructor53/58 numbers cannot answer that question. Include mixed
+   packet targets, parent consumption, failure costs, cap spill, potential later
+   births and exact expiry. Actual mutation realization/selection remain separate.
+   Keep closed first-birth negatives closed; no free decoding, favorable histories
+   or successful genome insertion. Cross-location scarcity/later fitness UNKNOWN.
 2. Seek a complete funded representation for productive scarcity, or narrowly
    falsify it and move to another source-supported capability. Do not supply a
    successful genotype or mistake a conditional formula for an actual lineage.
