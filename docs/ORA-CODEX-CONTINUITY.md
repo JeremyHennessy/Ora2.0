@@ -45,7 +45,7 @@ review owners; no recursive or duplicate agent/scheduler creation.
 | Track | Existing branch/worktree | Last accepted checkpoint |
 | --- | --- | --- |
 | Engineering PR323 | `review/eka1-delayed-assay-contract-20261023`; `D:/OraLab/src/Ora2.0-eka1-delayed-assay-contract-20261023` | `9e16cef13a2e6542c0fa4549918eae18d5530f70` |
-| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `3e31a0805ad6fa9a7d82595c5449124958539648` |
+| Research PR325 | `research/experience-affordance-prototype-20261026`; `D:/OraLab/src/Ora2.0-experience-affordance-prototype-20261026` | `245a4f5dd3403f970cc9c61559198e8a72643efe` |
 | Scientific law identity | Pressure71 / SharedLineage68 / Mobile54 source | unchanged from `4aaa501054b78bfde3b9598f63522dadb3254633` |
 | Earlier accepted executable preparation | ancestor retained in PR323 | `ca04547ff0e11e952ca5ca32f30376615dc205dd` |
 | Approved single-attempt staging | retained PR323 parent | `64a3a7b1cfae31734a906e4e2fac40989b7cf005` |
@@ -94,6 +94,19 @@ This note is not an independent reproduction or Ora intelligence result.
   fees, leaving7/27 or6/26 energy. It does not prove a whole nine-slot lifecycle
   or actual mutation. Repeating the unchanged entry at site3 moves to0, so a
   reusable learning cycle cannot be inferred from the acquisition prefix.
+- A different stationary success-gated symbolic controller fits nine slots,
+  including COPY/division and paid failure recovery. Conditional on already
+  possessing this code at the supplied initial site0 context, first birth takes
+  53/58 dispatches for the two symbolic targets, nine meals and43 child material;
+  parent ends27. Matching predeclared fixed stay-put controls need35/36 dispatches
+  and leave29. This is full first-birth control feasibility, not an ordinary
+  ancestor mutation, introduced genotype or demonstrated evolved fitness.
+  After eight successful meals, erasing only the successful-port cache costs
+  five extra dispatches on the target1 branch, but lower cap spill leaves both
+  arms at27+12 energy at first birth. A timing saving is not an energy or
+  offspring-count advantage. Matched-handling algebra is not an admitted erasure
+  intervention. Initial-packet targets flip at64; the illustrative delayed
+  branch forages at60 and divides at64, so whole-world input/release costs differ.
 
 Every candidate must pay all probes, acquisition, control, movement, COPY,
 formation, retrieval, cap spill, material, scheduling and expiry prefixes.
@@ -139,13 +152,13 @@ Four sealed assignments and144 consumed reservations remain immutable.
 
 ## Next authorized tasks and evidence
 
-1. Next: test a complete paid nine-instruction lifecycle/control representation
-   for the cleaner site3 descendant opportunity, including information decoding,
-   useful repeated action, phase-aware routing and actual funded ancestry. The
-   unified5/6-fee entry prefix does not solve that representation, and three
-   remaining slots are not by themselves an impossibility proof: role reuse and
-   other control must be examined without inventing free actions. Do not install a successful genome
-   or select a mutation/seed/history because it works.
+1. Next: assess ordinary mutation accessibility and paid intermediate behavior
+   for success-gated finite-state learning, separately from the hypothetical
+   nine-slot stationary witness. Determine whether saved time can improve fair
+   survival/reproductive outcomes despite cap-spill energy ties and cheaper
+   matching fixed controls. Do not keep appending to the six-role site3 prefix;
+   cross-location complete control and funded ancestry remain UNKNOWN. Do not
+   install a successful genome or select a mutation/seed/history because it works.
 2. Seek a complete funded representation for productive scarcity, or narrowly
    falsify it and move to another source-supported capability. Do not supply a
    successful genotype or mistake a conditional formula for an actual lineage.
