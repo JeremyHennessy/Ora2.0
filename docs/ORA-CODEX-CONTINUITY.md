@@ -315,3 +315,33 @@ Future work: challenge the candidate with cheaper reactive one-shot controls,
 matched handling/current observations, offspring competition and unchanged law
 reachability. Do not optimize the closed older-history motif or infer long-term
 fitness from a first birth. No World, VM, seed query or native execution occurred.
+
+
+## One-word resource-routing control — source-only checkpoint
+
+Parent research: `042cee3182e8a1e202778dcf2afe9003359a8f32`.
+Engineering: `6e4e845a6413b75cc5fa5e45197a8c37c0248d96`,283 offline checks;
+native and historical calibration skipped. Current-tip pointer names this
+publication's commit; these are checkpoint identities, not native qualification.
+
+`data/eka-one-word-resource-route-control-20261101.json` checks one ordinary
+COPY-word source change, MOVE-to-SENSE at ancestorpc7. Conditional daughter
+first birth is own70/global209 in all eight symbolic initial-target cases,
+with nine meals, all27 COPY words paid and parent16/18/29 plus child12.
+The parent transits positions1/3 but does not forage there; this change forages
+site1. Actual mutation and inherited fitness are UNKNOWN.
+
+An equally small sensor-free MOVE-to-NOP control forages all four sites and
+also births209, with nine meals and parent27/29 in all16 symbolic target cases.
+Site3 already receives food at64, before the daughter is born70; an artificial
+empty-site penalty must not be imposed. Spatial leftovers differ; unchanged
+admission caps may change accepted offers. Equal focal totals are not whole-world
+fitness equivalence.
+
+Neither route learns food targets. The SENSE route never reads foodfeedback;
+source control is deterministic once birthposition/control are fixed. Preserve
+this negative distinction and the cheaper control for future memory proposals.
+No source law, founder, seed, genotype registry, World or population was changed
+or executed. These source-effect witnesses must not be installed as founders.
+Next: a genuinely information-dependent, ordinary-accessible paid capability,
+or exact remaining proof obligation; no further tuning of authored witnesses.
