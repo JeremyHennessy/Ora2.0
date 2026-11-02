@@ -306,4 +306,69 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
         self.assertIn("OSError('offline API failure')",notes)
         self.assertIn('handle=99',notes)
 
+class ReaderFailureContractTests(unittest.TestCase):
+    def exercise(self, fail):
+        tree=ast.parse((ROOT/'experiments/process_limits.py').read_bytes())
+        run=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='run')
+        drain=next(n for n in run.body if isinstance(n,ast.FunctionDef) and n.name=='drain')
+        guard=next(n for n in ast.walk(run) if isinstance(n,ast.If) and isinstance(n.test,ast.Name) and n.test.id=='reader_errors')
+        failure=OSError('synthetic reader failure')
+        stream=Mock();stream.read.side_effect=[b'abcdefgh',failure if fail else b'']
+        ns=dict(process=SimpleNamespace(stdout=stream),kept=bytearray(),counts={'bytes':0},reader_errors=[],OUTPUT_LIMIT=3)
+        exec(compile(ast.fix_missing_locations(ast.Module(body=[drain],type_ignores=[])),'drain','exec'),ns)
+        import threading
+        reader=threading.Thread(target=ns['drain']);reader.start();reader.join(timeout=2)
+        self.assertFalse(reader.is_alive())
+        self.assertEqual(ns['counts']['bytes'],8);self.assertEqual(ns['kept'],b'abc')
+        code=compile(ast.fix_missing_locations(ast.Module(body=[guard],type_ignores=[])),'reader guard','exec')
+        if fail:
+            with self.assertRaises(OSError) as caught:exec(code,ns)
+            self.assertIs(caught.exception,failure)
+            self.assertEqual(failure.output_bytes,8);self.assertEqual(failure.retained_output,b'abc')
+            self.assertIn('EOF unverified',' '.join(failure.__notes__))
+        else:
+            exec(code,ns);self.assertEqual(ns['reader_errors'],[])
+        self.assertEqual(stream.read.call_count,2)
+    def test_partial_read_failure_rejects_capture(self):self.exercise(True)
+    def test_clean_eof_preserves_raw_and_retained_counts(self):self.exercise(False)
+
+class ReaderCleanupFirstCauseTests(unittest.TestCase):
+    def exercise(self, reader_failed):
+        import sys
+        tree=ast.parse((ROOT/'experiments/process_limits.py').read_bytes())
+        run=next(n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=='run')
+        outer=next(n for n in run.body if isinstance(n,ast.Try))
+        guard=next(n for n in ast.walk(run) if isinstance(n,ast.If) and isinstance(n.test,ast.Name) and n.test.id=='reader_errors')
+        calls=[]
+        read_error=OSError('synthetic read failure')
+        job_error=OSError('synthetic job close failure')
+        errors=dict(job=job_error,terminate=OSError('synthetic terminate failure'),
+                    reader=OSError('synthetic reader join failure'),stdout=OSError('synthetic stdout close failure'))
+        def action(name):
+            calls.append(name)
+            if name in errors:raise errors[name]
+        process=SimpleNamespace(poll=lambda:None,terminate=lambda:action('terminate'),
+                                wait=lambda **kw:action('wait'),
+                                stdin=SimpleNamespace(close=lambda:action('stdin')),
+                                stdout=SimpleNamespace(close=lambda:action('stdout')))
+        ns=dict(sys=sys,reader_errors=[read_error] if reader_failed else [],
+                counts={'bytes':8},kept=bytearray(b'abc'),process=process,
+                job=SimpleNamespace(close=lambda:action('job')),
+                reader=SimpleNamespace(join=lambda **kw:action('reader')))
+        node=ast.Try(body=[guard],handlers=[],orelse=[],finalbody=outer.finalbody)
+        code=compile(ast.fix_missing_locations(ast.Module(body=[node],type_ignores=[])),'actual reader guard and cleanup','exec')
+        with self.assertRaises(OSError) as caught:exec(code,ns)
+        primary=read_error if reader_failed else job_error
+        self.assertIs(caught.exception,primary)
+        self.assertEqual(calls,['job','terminate','reader','stdin','stdout'])
+        notes='\n'.join(primary.__notes__)
+        for error in errors.values():self.assertIn(repr(error),notes)
+        self.assertIn('Cleanup UNKNOWN; no retry',notes)
+        if reader_failed:
+            self.assertEqual(read_error.output_bytes,8)
+            self.assertEqual(read_error.retained_output,b'abc')
+            self.assertIn('EOF unverified',notes)
+    def test_reader_primary_survives_multiple_cleanup_failures(self):self.exercise(True)
+    def test_cleanup_only_raises_first_and_attempts_remaining_closes(self):self.exercise(False)
+
 if __name__=='__main__':unittest.main(verbosity=2)
