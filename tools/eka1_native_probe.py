@@ -397,6 +397,8 @@ def accept_case(result,out,mode):
             raise ValueError('Unexpected output limit termination outside declared output fixture')
         raw=(out/(str(mode)+'.raw')).read_bytes()
         if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
+        if mode==0 and (type(inner.get('exit_code')) is not int or inner['exit_code']!=0 or type(inner.get('reason')) is not int or inner['reason']!=0):
+            raise ValueError('Normal fixture did not exit successfully without termination')
         if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')
         if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU termination not observed')
         if mode==3 and result.get('cpu_accounting',{}).get('status')!='MEASURED_WITHIN_USER_CEILINGS_NOT_NATIVE_QUALIFICATION':raise CpuAccountingFailure('Final CPU debit missing/incomplete/over budget')

@@ -307,6 +307,30 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
         self.assertIn('handle=99',notes)
 
 class UnexpectedOutputContractTests(unittest.TestCase):
+    def test_normal_success_requires_exact_zero_exit_and_reason(self):
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);(out/'0.raw').write_bytes(b'EKA_SYNTHETIC_OK')
+            value=dict(guardian_exit=0,root_empty=True,inner=dict(error=0,eof=True,active=0,overflow=False,reason=0,exit_code=0))
+            probe.accept_case(value,out,0)
+    def test_normal_rejects_boolean_and_missing_exit_or_reason(self):
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);(out/'0.raw').write_bytes(b'EKA_SYNTHETIC_OK')
+            for field in ('exit_code','reason'):
+                for bad in (False,True,None):
+                    inner=dict(error=0,eof=True,active=0,overflow=False,reason=0,exit_code=0)
+                    if bad is None:del inner[field]
+                    else:inner[field]=bad
+                    with self.subTest(field=field,bad=bad):
+                        with self.assertRaisesRegex(ValueError,'Normal fixture'):
+                            probe.accept_case(dict(guardian_exit=0,root_empty=True,inner=inner),out,0)
+
+    def test_normal_token_does_not_excuse_failed_exit_or_termination(self):
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);(out/'0.raw').write_bytes(b'EKA_SYNTHETIC_OK')
+            for exit_code,reason in ((9,0),(0,1),(0,3),(0,4)):
+                value=dict(guardian_exit=0,root_empty=True,inner=dict(error=0,eof=True,active=0,overflow=False,reason=reason,exit_code=exit_code))
+                with self.subTest(exit_code=exit_code,reason=reason):
+                    with self.assertRaisesRegex(ValueError,'Normal fixture'):probe.accept_case(value,out,0)
     def test_normal_case_rejects_unexpected_output_termination(self):
         with tempfile.TemporaryDirectory() as folder:
             out=Path(folder);(out/'0.raw').write_bytes(b'EKA_SYNTHETIC_OK')
