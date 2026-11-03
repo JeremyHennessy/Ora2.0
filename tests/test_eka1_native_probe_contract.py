@@ -306,6 +306,26 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
         self.assertIn("OSError('offline API failure')",notes)
         self.assertIn('handle=99',notes)
 
+class JobCloseNoRetryTests(unittest.TestCase):
+    def test_failed_close_is_not_reissued(self):
+        from experiments import process_limits as resource
+        job=resource.Job.__new__(resource.Job);job.handle=99
+        kernel=SimpleNamespace(CloseHandle=Mock(side_effect=[False,True]));job.k=kernel
+        def checked(value):
+            if not value:raise OSError('synthetic close failure')
+            return value
+        with patch.object(resource,'checked',checked):
+            with self.assertRaisesRegex(OSError,'synthetic close failure'):job.close()
+            with self.assertRaisesRegex(OSError,'no retry'):job.close()
+        self.assertEqual(kernel.CloseHandle.call_count,1)
+        self.assertEqual(job.handle,99)
+    def test_successful_close_remains_idempotent(self):
+        from experiments import process_limits as resource
+        job=resource.Job.__new__(resource.Job);job.handle=99
+        job.k=SimpleNamespace(CloseHandle=Mock(return_value=True))
+        with patch.object(resource,'checked',lambda value:value):job.close();job.close()
+        self.assertEqual(job.k.CloseHandle.call_count,1);self.assertIsNone(job.handle)
+
 class ReaderFailureContractTests(unittest.TestCase):
     def exercise(self, fail):
         tree=ast.parse((ROOT/'experiments/process_limits.py').read_bytes())

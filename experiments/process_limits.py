@@ -143,6 +143,9 @@ class Job:
 
     def close(self):
         if self.handle:
+            if getattr(self, '_close_attempted', False):
+                raise OSError('Prior Job handle closure incomplete; no retry')
+            self._close_attempted = True
             checked(self.k.CloseHandle(self.handle))
             self.handle = None
 
