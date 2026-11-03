@@ -393,6 +393,8 @@ def accept_case(result,out,mode):
     else:
         if result['guardian_exit'] or inner is None or inner['error'] or not inner['eof'] or inner['active'] or not result['root_empty']:
             raise ValueError('Native closure/capture incomplete')
+        if mode!=5 and (inner.get('overflow') or inner.get('reason')==2):
+            raise ValueError('Unexpected output limit termination outside declared output fixture')
         raw=(out/(str(mode)+'.raw')).read_bytes()
         if mode==0 and b'EKA_SYNTHETIC_OK' not in raw:raise ValueError('Missing normal output')
         if mode==2 and inner['reason']!=1:raise ValueError('Wall limit not observed')

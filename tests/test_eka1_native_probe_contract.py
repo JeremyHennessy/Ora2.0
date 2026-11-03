@@ -306,6 +306,20 @@ class NoBreakawayReadbackChecks(unittest.TestCase):
         self.assertIn("OSError('offline API failure')",notes)
         self.assertIn('handle=99',notes)
 
+class UnexpectedOutputContractTests(unittest.TestCase):
+    def test_normal_case_rejects_unexpected_output_termination(self):
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);(out/'0.raw').write_bytes(b'EKA_SYNTHETIC_OK')
+            for overflow,reason in ((True,2),(True,0),(False,2)):
+                value=dict(guardian_exit=0,root_empty=True,inner=dict(error=0,eof=True,active=0,overflow=overflow,reason=reason))
+                with self.subTest(overflow=overflow,reason=reason):
+                    with self.assertRaisesRegex(ValueError,'Unexpected output'):probe.accept_case(value,out,0)
+    def test_declared_output_fixture_still_accepts_observed_limit(self):
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);(out/'5.raw').write_bytes(b'x'*65536)
+            value=dict(guardian_exit=0,root_empty=True,raw_bytes=65536,inner=dict(error=0,eof=True,active=0,overflow=True,reason=2))
+            probe.accept_case(value,out,5)
+
 class JobCloseNoRetryTests(unittest.TestCase):
     def test_failed_close_is_not_reissued(self):
         from experiments import process_limits as resource
