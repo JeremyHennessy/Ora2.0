@@ -345,3 +345,18 @@ No source law, founder, seed, genotype registry, World or population was changed
 or executed. These source-effect witnesses must not be installed as founders.
 Next: a genuinely information-dependent, ordinary-accessible paid capability,
 or exact remaining proof obligation; no further tuning of authored witnesses.
+
+
+## Conditional second founder birth — source-only checkpoint
+
+Parent research71cc5e2; engineeringeccb59c /287 independently verified offline
+checks, native and historical calibration skipped. See current-tip pointer for
+publication identity. The DATA certificate retains a stronger sensor-free control:
+after accepted daughter birth209, the unchanged original parent can fund its
+second birth215..217 even if the newborn dies on one of its first three turns.
+Scheduling, material, energy and death-removal branches were independently checked.
+Parent retains27/29 without incoming transfer; neither newborn genotype nor seed
+was selected. Corrected scalar minima9/9/11/11 and the original failed minimum
+report remain preserved locally. This is conditional source accounting, not an
+executed cohort, learned capability, inherited fitness or later child survival.
+No source laws, founder, runtime, v10, Observatory or execution holds changed.
