@@ -1,0 +1,24 @@
+{
+  "schema": "ORA-EKA1-OWN-SIGNAL-SOURCE-VALIDATION-v1",
+  "utc": "2026-10-23T21:57:04.057071+00:00",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "proposal_sha256": "09f636650c60cdd8749f424ee79902da4bac119bbb574a27d1ba0721b9cb095b",
+  "document_sha256": "2f4c5a7e43fa6bb7d6d32661841bca4c687a7d50e707b282e38e49b82b6e4363",
+  "checks": [
+    "JSON parsed",
+    "exact Pressure71/base source hashes",
+    "both renewable-target AST expressions match seed/site/time formula",
+    "no post-treatment exclusion",
+    "infrastructure failure invalidates comparison",
+    "no execution authority"
+  ],
+  "conditional_relation": "Common seed and site and both tick predicates false imply equal renewable packet targets; no hash or seed evaluated",
+  "vm_steps": 0,
+  "new_seed_queries": 0,
+  "new_organism_tests": 0,
+  "causal_assay_qualified": false,
+  "opportunity_affordability_qualified": false
+}

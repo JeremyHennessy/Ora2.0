@@ -1,0 +1,11 @@
+# EKA-1 common paid READ source derivative
+
+This isolated source adds one supplied `paid_read_dispatch` function; it does not change the original Pressure71 file, loader, founders, prices or runtime. It takes an actual original-source World at a supplied complete pre-READ snapshot hash and checks the scheduled actor, own age, PC and decoded READ before the first mutation. It then uses a copied ordinary step with the READ result as the only organism-state change: true and identity sham deliver feedback; xor1 delivers its complement. Ordinary input/release, debit, scheduling, expiry and both event hashes retain the original order. A distinct event envelope discloses the derived branch and intervention.
+
+The complete original step AST, excluding the declared context prelude and READ branch, is identical to the pinned source. Four NEW AST checks import no World or source derivative and execute no VM steps. This is a source-shape claim, not native qualification or actual transition parity. No module entrypoint or automatic branch discovery is provided.
+
+The supplied hash proves consistency only under canonical SHA256. It does not authenticate original file bytes, legal replay, useful exposure, independent branch identity or authority. The caller must authenticate the original prefix through the unchanged original restore/replay before calling this derivative. Modified states/events must never be passed off as original history. The old loader remains unchanged and does not grant a derived-state route.
+
+Remaining work is a separately reviewed original/paid/derived checkpoint validator and continuation path, paid host/fork handling and full peak/resource accounting, exact source/module/config/request/grant/PID-birth/native closure custody and prospective finite qualification registration. No valid grant, seed or population is emitted. The three event labels do not prove globally unique native Worlds. Structural equal handling is not an actual CPU or energy-price qualification. Full snapshot hashing can retain large history; peak fit remains unqualified.
+
+Execution remains NO_GO: zero World/VM execution, fresh seeds, old checks or live changes are authorized by this source. It is an intervention apparatus, not a supplied natural learner, evolved policy or learning result. PILOT74 authority is not transferable.

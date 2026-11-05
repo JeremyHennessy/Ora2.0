@@ -1,0 +1,590 @@
+{
+  "schema": "ORA-EKA1-SYNTHETIC-NATIVE-INTEGRATION-EVIDENCE-v1",
+  "reviewed_candidate_commit": "43297d2b7e1a8418e2b37ec1aa2af172a2226f30",
+  "native_executed_commit": "909c1b00d69047a895c5618305a4b8e921e25060",
+  "branch": "review/eka1-delayed-assay-contract-20261023",
+  "pr": 323,
+  "acceptance": "SOURCE_ONLY_REPAIR_ACCEPTED_NATIVE_QUALIFICATION_FAILED",
+  "scientific_status": "NOT_READY",
+  "merge_authorized": false,
+  "scientific_admission": false,
+  "source_sha256": {
+    "tools/eka1_native_probe.py": "e53e402c79a31a2457fe1fffac1001c2c5acf45c0e1be0a4d7bc4b591b5e23d1",
+    "tools/eka1_probe_child.py": "b6b93c214e0758f5eccb235d5dee1ed48f8cde8ebead47a48b042ee0f45f0b99",
+    "experiments/native/eka1_probe_guardian.c": "0fa956ffa70c2e16dc74452e2c2e00db8bffc321c6bcbb374f23c5280c231420",
+    "experiments/native/eka1_probe_owner_watchdog.c": "8f0e13973269c43ac4898796eecd0c01a5e6ec3e2fa4aebef764ef9dd1559263",
+    "tests/test_eka1_native_probe_contract.py": "aafca515536e4b5fce5c26a2a4daf750edc9aa36b9b010fa4c631c010c6eee2b",
+    ".github/workflows/eka1-native-synthetic.yml": "1c8267ea151e35f6b51fd46ddbee32a69ba50974c3d1cb03ef34198b8aa157b6",
+    "tools/eka1_native_owner_candidate.py": "23d51193052ab97d5c9576afa3c72e49ab6ea52a4a0647c18cbc5fd0118f9b0c",
+    "tools/eka1_cumulative_reservations.py": "735c7fbd9564e04e715e8125df315eba47e36a8dc66c3d1a24dc23ef7c33b73d",
+    "experiments/process_limits.py": "5b6f3df66078955c772ab99f2ac20d79826005dd88f152a2201a7017a53f5776"
+  },
+  "cleanup_repair": {
+    "commit": "d1bb01d7d066d541edc604b63a0ba9365be7bad3",
+    "independent_fresh_checks": 46,
+    "receipt": "drafts/eka1-first-failure-independent-20261030/review.json",
+    "sha256": "5592039a56861fd261f3f8e85a421623ceb7018efe706316ee45d703bdc2f053",
+    "earlier41_check_acceptance_not_reused": true
+  },
+  "independent_receipts": {
+    "drafts/eka1-native-guardian-independent-prereview-20261030/G7-final/finite-trial-prereview.json": "1182120ca57d2b4724896281750320dcca85f61f8192a2546243d8df8b672fd9",
+    "drafts/eka1-native-guardian-independent-prereview-20261030/quote-repair-attempt2-prereview/finite-trial-prereview.json": "848631a91c977a353708ac0916209f6459be78739abef086003c71835b3e9f1b",
+    "drafts/eka1-native-guardian-independent-prereview-20261030/source3-prereview/finite-trial-prereview.json": "6571d267d920d7146dd06843bbc1bd0a1ff95312ad52aa10f84206dfce286f87",
+    "drafts/eka1-native-guardian-independent-prereview-20261030/source4-prereview/finite-trial-prereview.json": "d8651dfe15ce561efd15c0baf14a8279c35ac98d23bb8aae7defdfeaeb75df34",
+    "drafts/eka1-native-guardian-independent-prereview-20261030/source4-postflight/review.json": "b44a5ad41560c7de47aa6f73d6ba3265de414666e584018f802e62ab6ce68e3d",
+    "drafts/eka1-native-guardian-independent-prereview-20261030/tree-repair-source-only/review.json": "ac01e100b1a5f6c0ec030696e665ddfcb65d5bdffaa548a1a046a6d9d04fb4fa"
+  },
+  "targeted_offline_checks": {
+    "producer_owner_cleanup_integrity_regressions": 42,
+    "contract_before_handshake_repair": 19,
+    "independent_handshake_repair_mocked_checks": 4,
+    "native_handshake_compilation_or_execution_after_repair": false,
+    "exact_source_CI": "PENDING; automatic CI is offline only; native dispatch default false"
+  },
+  "native_attempts": [
+    {
+      "source_commit": "7cb5a291d1175e7d558e954a7100ec67184470f0",
+      "path": "runs/eka1-native-synthetic-20261030-attempt1",
+      "status": "FAILED_SEALED_NO_RETRY",
+      "reserved_birth_attempts": 36,
+      "first_failure": {
+        "cleanup": [],
+        "completed_cases": 0,
+        "message": "Native build failed; retain output, no retry",
+        "owner_first_failure": "RuntimeError: Native build failed; retain output, no retry",
+        "reserved_births": 36,
+        "status": "INCOMPLETE_NO_RETRY",
+        "type": "RuntimeError"
+      },
+      "first_failure_sha256": "1684e4d12b12ca26c7214e287a130cbff1844723079f330a68001d5feff08551",
+      "archive": {
+        "sha256": "83acfb7b7116029e71998dcfe74d4cdaf96569a835bfed1479162bebaf71abe9",
+        "file_count": 5,
+        "stored_bytes": 42174,
+        "expanded_bytes": 112015,
+        "status": "PASS_EXACT_DATA_RESTORE",
+        "receipt_sha256": "dbb96f968461c00de5734d68098845793867e99343cf54c73233f95bab33caa7"
+      },
+      "engineering_builds_separately_metered": [
+        {
+          "receipt": "build-watchdog.json",
+          "sha256": "84dc9279a4870ba4d1a372a7d371b27cf75cdbcea1589fc298bf2c5b8c0e2a39",
+          "exit": 1,
+          "elapsed_seconds": 0.0940000000409782,
+          "usage": {
+            "active_before_close": 0,
+            "configured_cpu_ticks": 300000000,
+            "configured_memory_bytes": 536870912,
+            "configured_processes": 4,
+            "flags": 8716,
+            "started_processes": 2,
+            "user_cpu_seconds": 0.0625,
+            "windows_reported_peak_job_memory_bytes": 19886080
+          },
+          "post_close_processes_exited_receipt": true,
+          "exact_process_birth_custody": "UNKNOWN: reused engineering builder records PIDs without birth times"
+        }
+      ]
+    },
+    {
+      "source_commit": "eccfc6c59694af04df16f4ad8eb4ebd533596455",
+      "path": "runs/eka1-native-synthetic-20261030-revised-source2",
+      "status": "FAILED_SEALED_NO_RETRY",
+      "reserved_birth_attempts": 36,
+      "first_failure": {
+        "cleanup": [],
+        "completed_cases": 0,
+        "message": "Native build failed; retain output, no retry",
+        "owner_first_failure": "RuntimeError: Native build failed; retain output, no retry",
+        "reserved_births": 36,
+        "status": "INCOMPLETE_NO_RETRY",
+        "type": "RuntimeError"
+      },
+      "first_failure_sha256": "1684e4d12b12ca26c7214e287a130cbff1844723079f330a68001d5feff08551",
+      "archive": {
+        "sha256": "0c4c75ad44ca44a7bab580ed4d34c7e0b9413025951931a4e4f87c5fa2418fb3",
+        "file_count": 8,
+        "stored_bytes": 44743,
+        "expanded_bytes": 117327,
+        "status": "PASS_EXACT_DATA_RESTORE",
+        "receipt_sha256": "c07b4e7c6caf8c0d8ed5292a4e5e5d1f6db0f517fd4758bc6dd7f533bdc320c5"
+      },
+      "engineering_builds_separately_metered": [
+        {
+          "receipt": "build-watchdog.json",
+          "sha256": "e87dafa85add3dfba860757b2498ef57938ec2372cb915544e7d6a0db38901cc",
+          "exit": 2,
+          "elapsed_seconds": 1.312000000034459,
+          "usage": {
+            "active_before_close": 1,
+            "configured_cpu_ticks": 300000000,
+            "configured_memory_bytes": 536870912,
+            "configured_processes": 4,
+            "flags": 8716,
+            "started_processes": 42,
+            "user_cpu_seconds": 0.40625,
+            "windows_reported_peak_job_memory_bytes": 229273600
+          },
+          "post_close_processes_exited_receipt": true,
+          "exact_process_birth_custody": "UNKNOWN: reused engineering builder records PIDs without birth times"
+        }
+      ]
+    },
+    {
+      "source_commit": "5ffd0341d8c819248d8e9d0e623c194d3f43865a",
+      "path": "runs/eka1-native-synthetic-20261030-source3",
+      "status": "FAILED_SEALED_NO_RETRY",
+      "reserved_birth_attempts": 36,
+      "first_failure": {
+        "cleanup": [],
+        "completed_cases": 0,
+        "message": "Native build failed; retain output, no retry",
+        "owner_first_failure": "RuntimeError: Native build failed; retain output, no retry",
+        "reserved_births": 36,
+        "status": "INCOMPLETE_NO_RETRY",
+        "type": "RuntimeError"
+      },
+      "first_failure_sha256": "1684e4d12b12ca26c7214e287a130cbff1844723079f330a68001d5feff08551",
+      "archive": {
+        "sha256": "86d194e61382a66ded0d573a6a9647caf289f56aabc663f1892a8d0163b94cf2",
+        "file_count": 8,
+        "stored_bytes": 44845,
+        "expanded_bytes": 117548,
+        "status": "PASS_EXACT_DATA_RESTORE",
+        "receipt_sha256": "65bb812d24fbadb6d3719a52d35e511fc7b19aa51347ff0eac3030fcf97a28b7"
+      },
+      "engineering_builds_separately_metered": [
+        {
+          "receipt": "build-watchdog.json",
+          "sha256": "135ffb29099a1785bf3bb1c050e992dedefd35c60638986d9d2aa0b2bf43148b",
+          "exit": 2,
+          "elapsed_seconds": 1.202999999979511,
+          "usage": {
+            "active_before_close": 1,
+            "configured_cpu_ticks": 300000000,
+            "configured_memory_bytes": 536870912,
+            "configured_processes": 4,
+            "flags": 8716,
+            "started_processes": 42,
+            "user_cpu_seconds": 0.484375,
+            "windows_reported_peak_job_memory_bytes": 202170368
+          },
+          "post_close_processes_exited_receipt": true,
+          "exact_process_birth_custody": "UNKNOWN: reused engineering builder records PIDs without birth times"
+        }
+      ]
+    },
+    {
+      "source_commit": "909c1b00d69047a895c5618305a4b8e921e25060",
+      "path": "runs/eka1-native-synthetic-20261030-source4",
+      "status": "FAILED_SEALED_NO_RETRY",
+      "reserved_birth_attempts": 36,
+      "first_failure": {
+        "cleanup": [],
+        "completed_cases": 6,
+        "message": "Process containment not observed",
+        "owner_first_failure": "ValueError: Process containment not observed",
+        "reserved_births": 36,
+        "status": "INCOMPLETE_NO_RETRY",
+        "type": "ValueError"
+      },
+      "first_failure_sha256": "d3134ac602deb908244301aeb7ffb371b8129605c425be93e243d783571f75b8",
+      "archive": {
+        "sha256": "bc90f43e87d9dedef633ae943fc160753b36ecd2dd43f228d4d430899ee1ee94",
+        "file_count": 54,
+        "stored_bytes": 241112,
+        "expanded_bytes": 590147,
+        "status": "PASS_EXACT_DATA_RESTORE",
+        "receipt_sha256": "68f88e3c240951cd51a4749bde27ead9498f7f88ca42d943bf9d3baa30fa654f"
+      },
+      "engineering_builds_separately_metered": [
+        {
+          "receipt": "build-guardian.json",
+          "sha256": "5aa67e3767b33ffa8d1f51431114a5939d099344328bcafd597ed3896b2469f2",
+          "exit": 0,
+          "elapsed_seconds": 1.3910000000614673,
+          "usage": {
+            "active_before_close": 1,
+            "configured_cpu_ticks": 300000000,
+            "configured_memory_bytes": 536870912,
+            "configured_processes": 4,
+            "flags": 8716,
+            "started_processes": 43,
+            "user_cpu_seconds": 0.546875,
+            "windows_reported_peak_job_memory_bytes": 217964544
+          },
+          "post_close_processes_exited_receipt": true,
+          "exact_process_birth_custody": "UNKNOWN: reused engineering builder records PIDs without birth times"
+        },
+        {
+          "receipt": "build-watchdog.json",
+          "sha256": "6a4e899d9a9b96b934b6c5cd2cee88c92ca4fd2fdd69d7609a3e930b40ebf953",
+          "exit": 0,
+          "elapsed_seconds": 1.3440000000409782,
+          "usage": {
+            "active_before_close": 1,
+            "configured_cpu_ticks": 300000000,
+            "configured_memory_bytes": 536870912,
+            "configured_processes": 4,
+            "flags": 8716,
+            "started_processes": 43,
+            "user_cpu_seconds": 0.640625,
+            "windows_reported_peak_job_memory_bytes": 217575424
+          },
+          "post_close_processes_exited_receipt": true,
+          "exact_process_birth_custody": "UNKNOWN: reused engineering builder records PIDs without birth times"
+        }
+      ]
+    }
+  ],
+  "cumulative_reserved_attempts_all_versions": 144,
+  "no_refunds_or_resume": true,
+  "executed_source4_cases": [
+    {
+      "case": 0,
+      "receipt_sha256": "884a1c4b9a43878b8d83cb55991d0978af0850b551e06de7102e165ed5261743",
+      "guardian_exit": 0,
+      "elapsed_ms": 328,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 3,
+        "user_cpu_seconds": 0.046875,
+        "windows_reported_peak_job_memory_bytes": 9842688
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426304940120",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 172,
+        "eof": true,
+        "error": 0,
+        "exit_code": 0,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 0,
+        "observed_descendant": false,
+        "overflow": false,
+        "peak_job_memory": 9043968,
+        "pid": 27344,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 0,
+        "received": 18,
+        "retained": 18,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 2,
+        "user_cpu_ticks": 312500
+      }
+    },
+    {
+      "case": 1,
+      "receipt_sha256": "b834d447debf0bfcf0bd89a570ae0bd6d04beb3ea7e7686eec6296c872080f7f",
+      "guardian_exit": 125,
+      "elapsed_ms": 157,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 1,
+        "user_cpu_seconds": 0.03125,
+        "windows_reported_peak_job_memory_bytes": 802816
+      },
+      "inner": {
+        "active": 0,
+        "birth": "0",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 47,
+        "eof": false,
+        "error": 10,
+        "exit_code": 125,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 1,
+        "observed_descendant": false,
+        "overflow": false,
+        "peak_job_memory": 0,
+        "pid": 0,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 0,
+        "received": 0,
+        "retained": 0,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 0,
+        "user_cpu_ticks": 0
+      }
+    },
+    {
+      "case": 2,
+      "receipt_sha256": "7860ee383a1cecaaf24c4be8bebf943da9d99a34b91b684387baeb7052656411",
+      "guardian_exit": 0,
+      "elapsed_ms": 5094,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 3,
+        "user_cpu_seconds": 0.03125,
+        "windows_reported_peak_job_memory_bytes": 9830400
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426330385854",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 4985,
+        "eof": true,
+        "error": 0,
+        "exit_code": 124,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 2,
+        "observed_descendant": false,
+        "overflow": false,
+        "peak_job_memory": 9080832,
+        "pid": 31876,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 1,
+        "received": 19,
+        "retained": 19,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 2,
+        "user_cpu_ticks": 156250
+      }
+    },
+    {
+      "case": 3,
+      "receipt_sha256": "d2cfe50fe15eb0361c759cb0b80062cc0e792c767cacf5c2582185a1108741b7",
+      "guardian_exit": 0,
+      "elapsed_ms": 2438,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 3,
+        "user_cpu_seconds": 2.0625,
+        "windows_reported_peak_job_memory_bytes": 9752576
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426391980705",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 2266,
+        "eof": true,
+        "error": 0,
+        "exit_code": 3221225540,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 3,
+        "observed_descendant": false,
+        "overflow": false,
+        "peak_job_memory": 8990720,
+        "pid": 59652,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 0,
+        "received": 17,
+        "retained": 17,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 2,
+        "user_cpu_ticks": 20625000
+      }
+    },
+    {
+      "case": 4,
+      "receipt_sha256": "98c6a3ae0ab5bd13ea8cf56090f93bef532300e0f7684d3f913e48b29c55c115",
+      "guardian_exit": 0,
+      "elapsed_ms": 328,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 3,
+        "user_cpu_seconds": 0.0625,
+        "windows_reported_peak_job_memory_bytes": 68902912
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426426483412",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 203,
+        "eof": true,
+        "error": 0,
+        "exit_code": 0,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 4,
+        "observed_descendant": false,
+        "overflow": false,
+        "peak_job_memory": 68149248,
+        "pid": 51160,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 0,
+        "received": 18,
+        "retained": 18,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 2,
+        "user_cpu_ticks": 468750
+      }
+    },
+    {
+      "case": 5,
+      "receipt_sha256": "5b2814bdc6e895a0bceca3f34cd0edc1df9ec1ae71fe3f5ef1f1b010e6e2be22",
+      "guardian_exit": 0,
+      "elapsed_ms": 469,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 3,
+        "user_cpu_seconds": 0.03125,
+        "windows_reported_peak_job_memory_bytes": 9752576
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426440290173",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "0",
+        "desc_pid": 0,
+        "desc_signaled": false,
+        "elapsed_ms": 390,
+        "eof": true,
+        "error": 0,
+        "exit_code": 124,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 5,
+        "observed_descendant": false,
+        "overflow": true,
+        "peak_job_memory": 8998912,
+        "pid": 51664,
+        "process_cap": 1,
+        "process_memory_cap": 67108864,
+        "reason": 2,
+        "received": 81920,
+        "retained": 65536,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 2,
+        "user_cpu_ticks": 156250
+      }
+    },
+    {
+      "case": 6,
+      "receipt_sha256": "68e27c3a8bbd8a53028a111caaa031a2e8b83f1690bf625002d995f7b1e22a38",
+      "guardian_exit": 0,
+      "elapsed_ms": 313,
+      "root_empty_receipt": true,
+      "root_usage": {
+        "active_before_close": 0,
+        "configured_cpu_ticks": 80000000,
+        "configured_memory_bytes": 268435456,
+        "configured_processes": 4,
+        "flags": 8716,
+        "started_processes": 4,
+        "user_cpu_seconds": 0.046875,
+        "windows_reported_peak_job_memory_bytes": 11849728
+      },
+      "inner": {
+        "active": 0,
+        "birth": "134378426455489135",
+        "cleanup": [],
+        "cleanup_count": 0,
+        "desc_birth": "134378426456005235",
+        "desc_pid": 51280,
+        "desc_signaled": true,
+        "elapsed_ms": 203,
+        "eof": true,
+        "error": 0,
+        "exit_code": 0,
+        "first_cleanup": 0,
+        "job_memory_cap": 134217728,
+        "mode": 6,
+        "observed_descendant": true,
+        "overflow": false,
+        "peak_job_memory": 11091968,
+        "pid": 55796,
+        "process_cap": 2,
+        "process_memory_cap": 67108864,
+        "reason": 3,
+        "received": 55,
+        "retained": 55,
+        "schema": "EKA-SYNTHETIC-NATIVE-v1",
+        "started_processes": 3,
+        "user_cpu_ticks": 312500
+      }
+    }
+  ],
+  "native_verdicts": {
+    "normal_fixed_child": "PASS_OBSERVED_AT_EXECUTED_SOURCE",
+    "failed_create_retention": "PASS_OBSERVED_AT_EXECUTED_SOURCE",
+    "wall_stop_EOF_root_empty": "PASS_OBSERVED_AT_EXECUTED_SOURCE",
+    "memory_denial": "PASS_OBSERVED_AT_EXECUTED_SOURCE",
+    "output_limit_65536_bytes": "PASS_OBSERVED_AT_EXECUTED_SOURCE",
+    "CPU_termination": "OBSERVED; 2.0625 reported CPU seconds against nominal 1 second; strict ceiling UNKNOWN",
+    "tree_successful_descendant_birth": "FAIL: reported successful PID50948 differs from captured PID51280; current handshake repair has offline checks only",
+    "blocked_guardian_and_owner_watchdog_cases": "UNRUN: stopped before cases7/8",
+    "archive": "PASS_DATA_ONLY_EXACT_RESTORE; not full scientific archive"
+  },
+  "unqualified": [
+    "Original-only scientific producer is not implemented as an authenticated EKA entrypoint",
+    "External immutable original assignment/owner grant and real producer physical-ledger transport absent",
+    "Actual World/genesis/dispatch/replay/hidden restoration hooks remain held",
+    "Strict CPU ceiling and complete unique process birth accounting require further qualification",
+    "Post-repair native event inheritance/descendant correlation and cases7/8 unqualified",
+    "Prebuild metadata interruption and complete SDK/OS executed dependency custody unqualified",
+    "Scientific archive/resource fit and independent finite admission absent"
+  ],
+  "original_producer_handoff": {
+    "path": "drafts/eka1-original-producer-gap-handoff-20261030.json",
+    "sha256": "73593eba996c772ddf707748094a18d96893d33af33e88f9b8821eb82ddc4aae"
+  },
+  "preserved": {
+    "operator_lock_sha256": "20049f05aab00c7f7a9272cb91d4db4243fb221d7cc3c2ca0fa5b7b1d5baec6c",
+    "old_failed_assignments": "All original files unchanged; independent postflights retain failures",
+    "World_population_historical_bank_or_persistent_service_launch": false,
+    "Ora_v10_or_Observatory_changes": false
+  },
+  "next_blocker": "Qualify exact successful descendant/process topology and a paid conservative CPU ceiling before native original-producer admission; no scientific qualification request is ready"
+}

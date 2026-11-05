@@ -102,10 +102,14 @@ class Job:
             if (readback['configured_memory_bytes'] != limits.memory_bytes or
                     readback['configured_processes'] != limits.processes or
                     readback['configured_cpu_ticks'] != setting.basic.job_cpu or
+                    readback['flags'] & (0x800 | 0x1000) or  # Neither breakaway mode is permitted.
                     readback['flags'] & setting.basic.flags != setting.basic.flags):
                 raise RuntimeError('Job limit readback differs; refuse command')
-        except BaseException:
-            self.close()
+        except BaseException as primary:
+            try:
+                self.close()
+            except BaseException as cleanup:
+                primary.add_note('Job setup cleanup UNKNOWN: '+repr(cleanup)+'; handle='+repr(self.handle))
             raise
 
     def assign(self, process):
@@ -139,6 +143,9 @@ class Job:
 
     def close(self):
         if self.handle:
+            if getattr(self, '_close_attempted', False):
+                raise OSError('Prior Job handle closure incomplete; no retry')
+            self._close_attempted = True
             checked(self.k.CloseHandle(self.handle))
             self.handle = None
 
@@ -186,13 +193,17 @@ def run(command, limits=Limits(), cwd=None):
         raise OSError('Windows only; command was not started')
     job, process, reader = Job(limits), None, None
     kept, counts = bytearray(), {'bytes': 0}
+    reader_errors = []
     def drain():
-        while True:
-            block = process.stdout.read(65536)
-            if not block:
-                return
-            counts['bytes'] += len(block)
-            kept.extend(block[:max(0, OUTPUT_LIMIT - len(kept))])
+        try:
+            while True:
+                block = process.stdout.read(65536)
+                if not block:
+                    return
+                counts['bytes'] += len(block)
+                kept.extend(block[:max(0, OUTPUT_LIMIT - len(kept))])
+        except BaseException as exc:
+            reader_errors.append(exc)
     started = time.monotonic()
     timed_out = False
     supervisor_cpu_stop = False
@@ -234,6 +245,12 @@ def run(command, limits=Limits(), cwd=None):
         reader.join(timeout=5)
         if reader.is_alive():
             raise RuntimeError('Output pipe stayed open after whole-job closure')
+        if reader_errors:
+            failure = reader_errors[0]
+            failure.output_bytes = counts['bytes']
+            failure.retained_output = bytes(kept)
+            failure.add_note('Output capture failed; partial bytes retained, EOF unverified; no retry')
+            raise failure
         return dict(schema='resource01-result-v1', platform='Windows', command=list(command),
                     bootstrap_python=bootstrap_python,
                     limits=vars(limits), exit_code=process.returncode, timed_out=timed_out,
@@ -244,16 +261,31 @@ def run(command, limits=Limits(), cwd=None):
                     output_bytes=counts['bytes'], retained_bytes=len(kept),
                     output_truncated=counts['bytes'] > len(kept), isolation_verified=False)
     finally:
-        job.close()
+        primary = sys.exception()
+        cleanup_errors = []
+        def cleanup(action):
+            try:
+                action()
+            except BaseException as exc:
+                cleanup_errors.append(exc)
+        cleanup(job.close)
         if process is not None:
-            if process.poll() is None:
-                process.terminate()  # Also covers an unassigned waiting bootstrap.
-                process.wait(timeout=5)
+            def close_process():
+                if process.poll() is None:
+                    process.terminate()  # Also covers an unassigned waiting bootstrap.
+                    process.wait(timeout=5)
+            cleanup(close_process)
             if reader is not None:
-                reader.join(timeout=5)
+                cleanup(lambda: reader.join(timeout=5))
             for stream in (process.stdin, process.stdout):
                 if stream is not None:
-                    stream.close()
+                    cleanup(stream.close)
+        if cleanup_errors:
+            failure = primary if primary is not None else cleanup_errors[0]
+            for error in cleanup_errors:
+                failure.add_note('Cleanup UNKNOWN; no retry: '+repr(error))
+            if primary is None:
+                raise failure
 
 
 def bootstrap(command):

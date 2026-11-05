@@ -1,0 +1,14 @@
+{
+  "schema": "ORA-EKA1-DELAYED-CONTRACT-SOURCE-VALIDATION-v1",
+  "utc": "2026-10-23T21:38:54.897632+00:00",
+  "validation": "JSON_PARSE_EXACT_SOURCE_PINS_LITERAL_BOUNDS_AND_NO_FEEDBACK_READ",
+  "counterexample": "MANUAL_SOURCE_SEMANTICS_NOT_EXECUTED",
+  "new_vm_tests": 0,
+  "vm_steps": 0,
+  "scientific_results": 0,
+  "source_sha256": {
+    "data/eka1-delayed-assay-contract-20261023.json": "ce39fcd8a885fc052306ef9516b7f0d33753b56c60da2e309d1cc3113c330374",
+    "docs/EKA-1-DELAYED-ASSAY-DECISION-20261023.md": "65287d75c194013d22df042d25e6876f9b032b0ba61cff8a4e85142c31c40114"
+  },
+  "qualification": "FIXED_CELL_ATTRIBUTION_UNQUALIFIED_NOT_GLOBAL_IMPOSSIBILITY"
+}

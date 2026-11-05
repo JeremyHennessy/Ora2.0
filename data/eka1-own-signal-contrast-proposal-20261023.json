@@ -1,0 +1,99 @@
+{
+  "schema": "ORA-EKA1-OWN-SIGNAL-CONTRAST-PROPOSAL-v1",
+  "status": "CREDIBLE_NARROW_METHOD_DIRECTION_NOT_REGISTERED",
+  "parent_source": "192162c628c72793ce4d5ba358e1f28c4b745190",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "question": "Does changing the content delivered by one personally earned feedback READ causally change later delayed actions and their usefulness under prospectively qualified informative conditions?",
+  "claim_ceiling": "Delayed own-signal use under this source/channel intervention, not general memory, evolved learning, inheritance or paid fitness advantage",
+  "sampling": {
+    "origin": "Retain existing first-mutated-paid-birth rule and whole-discovery-World denominator; no genotype or performance replacement",
+    "exposure": "First actual nonempty FORAGE by that selected origin, not a later more favourable meal",
+    "treated_read": "First READ-feedback opcode1 after exposure; any intervening FORAGE, including empty or failed, overwrites feedback and makes the original exposure provenance unavailable",
+    "unavailable_before_treatment": [
+      "no selected origin",
+      "death",
+      "expiry",
+      "no nonempty exposure",
+      "exposure overwritten before READ",
+      "no READ before original horizon"
+    ],
+    "handling_unavailable": "Keep every assigned World and exact category; do not substitute another actor, exposure or READ",
+    "independent_unit": "Whole assigned discovery World, not arms, probes, births or diagnostic clones"
+  },
+  "intervention": {
+    "checkpoint": "Exact authenticated common PRE-READ state before executing selected opcode1",
+    "arms": [
+      "true feedback read",
+      "equal-handling identity sham",
+      "XOR1 feedback-content read"
+    ],
+    "true_sham_result": "reg[a%2] receives the actor's actual feedback f",
+    "content_result": "reg[a%2] receives f XOR1; f is the same actor's authenticated 0/1 feedback, never a target label or analyst answer",
+    "scope": "Override this single READ result only; leave current food, reward, energy, memory, feedback field, other registers and all pre-dispatch state unchanged except ordinary paid READ effects",
+    "important_limit": "Explicit prospective sensor-read law intervention, not existing historical restore or single-memory-cell envelope authority",
+    "organism_dispatch_charge": "All arms execute the same ordinary READ dispatch, whose existing source charges one energy to heat; no extra free instruction or altered base price",
+    "additional_host_and_fork_accounting": null,
+    "pricing_status": "Ordinary dispatch price identified only; source implementation, intervention/formation handling and native CPU/storage/wall accounting remain unqualified",
+    "custody": "First authenticate original replay; bind exact source, exposure, pre-READ receipt, declared result substitution and each separately authorized derived branch. Do not reuse original historical hash as an authentic changed history.",
+    "fork_authority": "Every derived branch is separately counted and paid as a World; no branch or VM operation is authorized here"
+  },
+  "probe_and_outcomes": {
+    "probe": "First subsequent FORAGE dispatch only; record its port before new feedback/reward is assigned. Never advance to a later qualifying attempt.",
+    "delay_rule": "At least two complete intervening own dispatches between treated READ and probe; no intervening READ-feedback. This defines a narrow delayed-use category, not all learning.",
+    "timing_clock": "Own dispatches and global tick both retained; global time, target changes, position, packet identity and competition may diverge as outcomes",
+    "all_arm_categories": [
+      "valid delayed port0",
+      "valid delayed port1",
+      "early probe",
+      "feedback reread before probe",
+      "death before probe",
+      "expiry before probe",
+      "no probe at fixed horizon",
+      "native/source/custody failure"
+    ],
+    "no_post_treatment_exclusion": true,
+    "category_rule": "Keep first occurrence ordering and full raw timeline. All-arm categories describe outcomes, never eligibility for dropping arms or selecting pairs. Compound timing/reread flags also remain in raw vectors.",
+    "candidate_intent_to_treat_endpoint": "Across all assigned Worlds, valid-and-correct(true) minus valid-and-correct(XOR1), with prospectively defined BIOLOGICAL unavailable/missing/invalid outcomes retained as zero and their rates separately reported. Native/source/custody/evidence failures are never scored as biological zeros: the comparison/assay is INCOMPLETE and cannot support acceptance. Identity sham checks handling. This candidate is not a frozen accepted statistical test.",
+    "endpoint_limit": "This endpoint can combine routing/timing eligibility with port correctness. Report both separately; do not call conditional valid-only correctness a causal effect or survivor-only learning result.",
+    "condition_requirement": "Independently qualify a prospective exposure-to-probe predictive relation under exact site/packet/tick rules. Two elapsed instructions do not guarantee useful information. Different sites or target changes must remain disclosed outcomes, never be posthoc filtered or corrected with target hints.",
+    "directional_requirement": "Predeclare expected content-response relation and balanced reserved assignments independently of outcomes; do not treat any damage, behaviour change or reversed bit as useful learning",
+    "infrastructure_failure_rule": "Retain full denominator and exact failure evidence, mark causal comparison INCOMPLETE/qualification-failed, no scientific acceptance or silent retry; a missing XOR branch cannot manufacture a positive signed effect."
+  },
+  "software_controls_before_science": {
+    "feedback_ignored_or_overwritten": "Signal-use null",
+    "immediate_reflex": "Early-probe category, not delayed-use success",
+    "delayed_hardcoded_reflex": "Positive for delayed own-signal use; insufficient for stronger learning/evolution claims",
+    "phase_only_signal_branch_with_fixed_port": "Timing/eligibility negative; distinguishes availability changes from useful content response",
+    "prior_constant_memory_HALT_fixture": "No feedback READ; should be untreated/unavailable rather than falsely detected as learning",
+    "scope": "Disclosed supplied qualification apparatus only, never inserted discovery founders; no fixture has been executed under this proposal"
+  },
+  "gates": {
+    "source_semantics_direction": "STATIC_REVIEW_ONLY",
+    "sensor_read_adapter": "UNIMPLEMENTED_UNQUALIFIED",
+    "original_derived_checkpoint_custody": "UNQUALIFIED",
+    "intervention_host_and_fork_prices": "UNQUALIFIED",
+    "positive_negative_specificity": "UNTESTED",
+    "informative_exposure_probe_conditions": "UNQUALIFIED",
+    "sampling_effect_reserved_assignments": "UNASSIGNED",
+    "native_containment_and_owner": "UNQUALIFIED",
+    "scientific_admission": "NOT_ADMITTED"
+  },
+  "null_result_limit": "Redundant channels, missed READ, short lifetime or unavailable informative probe can yield nulls; these do not establish absence of learning throughout the VM",
+  "execution_decision": "NO_GO",
+  "whole_substrate_learning": "UNKNOWN",
+  "worlds_authorized": 0,
+  "vm_steps_authorized": 0,
+  "new_seed_queries": 0,
+  "runtime_changes": false,
+  "next_decision": "Qualify informative exposure-to-probe conditions and source/custody/pricing of the narrow READ intervention before implementing a diagnostic execution path. Keep broader EKA1 held.",
+  "conditional_source_information_relation": {
+    "case": "Exposure and later probe both consume/attempt renewable packets>=64 at the same site, with both global ticks<2048",
+    "source_identity": "For packet>=64, target is seed%2 XOR renew_port(seed//2,site) XOR int(tick>=2048). The common seed/site and false time predicate give equal targets without evaluating a hash or seed.",
+    "scope": "Conditional source identity only. Actual ordinary-origin exposure/probe opportunity, delay, site retention, packet access and paid advantage remain unqualified. Do not select survivors or source-matched pairs posttreatment; retain mismatches as outcomes and never insert an analyst source-match/presence/target flag into policy.",
+    "actor_information_limit": "Given actual nonempty exposure and remembered own attempted port p, f implies target p XOR (1-f); actor receives only ordinary f and its own actions. Empty attempts also yield0, so no extra food-presence oracle is supplied.",
+    "boundary": "Cross-site, non-renewable packets or crossing tick2048 are outside this certificate, not proof information is useless in those cases."
+  }
+}

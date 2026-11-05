@@ -1,0 +1,33 @@
+{
+  "schema": "ORA-EKA1-WORLD-OPPORTUNITY-VALIDATION-v1",
+  "utc": 1792863406.3721642,
+  "pins": {
+    "tools/eka1_prospective_opportunity.py": "e49714d895183ce2931b1173829dfb07b1300cc910bb292792c00e7fd33d5b76",
+    "tests/test_eka1_prospective_opportunity.py": "37d47c07306400af6e45a6c6c613d28b971487bd11c1a0a69640fef880d5ef23",
+    "experiments/digital_eka1_paid_read_source_v1.py": "5e50d7cdb7a1bbf44fd1255e0c51924ce6504c35062040ebbc4707b261a4a17a",
+    "tests/test_eka1_paid_read_source_shape_v1.py": "5102f52640fd23f4fb91f6070f1fe730a2dc6e269ed5a3fbf940af93633359e2",
+    "data/eka1-prospective-world-opportunity-20261024.json": "b04ff1065d71697e28b9ede75d7c7d29029fea5867c75709d8a12e8f4dc6c088",
+    "docs/EKA-1-PROSPECTIVE-WORLD-OPPORTUNITY-20261024.md": "0b94167bbee67d7384bae78672bedeb8aa210365387620bf9c7b6677552822db"
+  },
+  "tests": {
+    "new_prospective_metadata_algebra": {
+      "passed": 12,
+      "seconds": 0.001
+    },
+    "paid_READ_AST_after_exact_integer_guard_fix": {
+      "passed": 5,
+      "seconds": 0.055
+    }
+  },
+  "World_imports": 0,
+  "VM_steps": 0,
+  "new_seed_queries": 0,
+  "new_populations": 0,
+  "authority_granted": false,
+  "limits": "Metadata cannot authenticate original/completeness/ancestry; source-shape comparison is not replay/semantic/nativequalification; source relation is conditional and actual opportunity/fullypaidfitnessUNKNOWN.",
+  "clarification": "Helper returns EQUAL_IF_COMMON_WORLD and common_world_authenticated=false. Helper row tick is actual READ dispatch; source verify_context binding tick is pre-dispatch, so adapter must add1. No adapter or replay is executed.",
+  "review_revisions": [
+    "Independent review added exact-intfeedback guard before source mutation;5ASTchecksPASS.",
+    "Independent review made commonWorld premise explicit;relevant12metadata/algebra checks rerunPASS. Earlier helper and validation preserved separately."
+  ]
+}

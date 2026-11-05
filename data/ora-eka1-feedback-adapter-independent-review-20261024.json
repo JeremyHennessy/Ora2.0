@@ -1,0 +1,36 @@
+{
+  "schema": "ORA-EKA1-OFFLINE-FEEDBACK-ADAPTER-INDEPENDENT-REVIEW-v1",
+  "reviewed_utc": "2026-10-24T06:11:09.588055+00:00",
+  "pins": {
+    "tools/eka1_feedback_adapter.py": "9d0e43ae79fb53b190cb947141bf70983aa09c266a92456458b9a56f265724ef",
+    "tests/test_eka1_feedback_adapter.py": "534d641d679b80d6d359a0b1fbd9dc2376b9ebd9b077b41dd5a684b090bccd90",
+    "data/eka1-feedback-adapter-qualification-20261024.json": "d354a8ab84eb20293346b8bdc132441486b8b4bc629f03bd53fe5b347d0034ef",
+    "docs/EKA-1-FEEDBACK-ADAPTER-20261024.md": "f0f97bafae65143ad086d520c2f7acda71b30777f20bdcf2ca6450c85abdf002"
+  },
+  "verdict": "PASS_OFFLINE_STRUCTURAL_COMPONENT_ONLY",
+  "method": "Read-only hostile source/test-definition/manifest/doc review. No helper tests independently executed, VM imported, state loaded/replayed, seeds queried or runtime changed.",
+  "blocking_defects_found": [],
+  "verified_scope": [
+    "Sourcebound exact binding fields, canonical input hash, local27word READ slot/PC, decoded destination and truthful feedback consistency checked.",
+    "JSON normalization separates Python aliases; full expected derived frame and receipt comparison rejects collateral changes and forged authority.",
+    "Three proposed branch labels must be distinct and unequal original world label; execution identity explicitly unverified.",
+    "Receipt grants no original-history, paid-charge, derived-checkpoint, native identity or execution authority.",
+    "1728 synthetic combinations =2bits*32arguments*9slots*3roles, not actual source READs. Nine test definitions/root-reported PASS only."
+  ],
+  "limitations": [
+    "Supplied post-READ data consistency is not source-law pre/post transition authentication or complete checkpoint schema validation.",
+    "External read receipt hash format checked only, not contents, ancestry or actual paid event. Canonical JSON hash is not original file-byte identity.",
+    "No proof actual common PRE-READ fork, source charges, event finalization, derived lawful loader, global branch uniqueness or exclusive native ownership.",
+    "100000node/2MiB rejection limits do not bound construction/serialization peak RAM or CPU; allocation precedes byte rejection.",
+    "No opportunity, learning, evolution, scientific novelty or causal result follows."
+  ],
+  "execution_decision": "NO_GO",
+  "full_sensor_intervention_qualified": false,
+  "original_checkpoint_authentication_qualified": false,
+  "derived_checkpoint_authority_qualified": false,
+  "native_resources_qualified": false,
+  "scientific_admission": false,
+  "world_steps": 0,
+  "new_seed_queries": 0,
+  "next_requirement": "Actual source integration with ordinary paid transition/event finalization, original replay and derived custody validator, then separate finite resource/native/source registration and independent admission."
+}

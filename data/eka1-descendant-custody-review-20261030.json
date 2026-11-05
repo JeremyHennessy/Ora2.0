@@ -1,0 +1,106 @@
+{
+  "schema": "EKA-DESCENDANT-CUSTODY-SOURCE-REVIEW-v1",
+  "base_commit": "9b985dacdc0aa4baa5c775ed3c42ec24248f9304",
+  "status": "NOT_READY",
+  "independent_verdict": "ACCEPT_SOURCE_ONLY_DESCENDANT_IDENTITY_CORRECTION",
+  "source_sha256": {
+    "experiments/native/eka1_probe_guardian.c": "6b15e38468282eb914250c0a53842c7d2eea879a0e27851219963a410f283a4a",
+    "tools/eka1_probe_child.py": "bb2275ca2414d4ef52aea1bcf846837c5b4b6c26b866bbb3d953437a5342bcac",
+    "tools/eka1_native_probe.py": "5260e824da48a341e87dbef085b55b73e77d1364c8921aed15d615e7908a9553",
+    "tests/test_eka1_native_probe_contract.py": "1d6ed8096fc6e67ec0895172884a6152ec4dd3a73f6c0b52453af1ef50b9c7d1"
+  },
+  "independent_scope": "Exact-source review and mocked offline checks only. No corrected C compilation or native execution; no native guardian qualification acceptance.",
+  "historical_case6": {
+    "executed_source": "909c1b00d69047a895c5618305a4b8e921e25060",
+    "returned_pid": 50948,
+    "captured_pid": 51280,
+    "captured_birth": "134378426456005235",
+    "identity_verdict": "FAIL_MATCH; UNKNOWN_HISTORICAL_CAUSE",
+    "finding": "Job TotalProcesses includes failed associations; first nonleader enumeration and Popen return do not establish live child-code identity."
+  },
+  "source_correction": [
+    "Require child self-ready PID/birth and matching live retained Popen handle identity.",
+    "Native guardian opens exact PID/birth, checks live state and root/private Job membership, durably records BOUND before gate release.",
+    "After potentially blocking flush, recheck role deadline, owner/descendant live state and both Job memberships before SetEvent.",
+    "Require ordered BOUND/GATE identity receipts, exact self/parent output and error1816; preserve same handle until signaled closure."
+  ],
+  "cpu": {
+    "configured_user_seconds": 1,
+    "observed_user_seconds": 2.0625,
+    "strict_one_second_verdict": "FAIL_OBSERVATION",
+    "numeric_worst_case_upper_bound": "UNKNOWN",
+    "semantics": "Windows periodically checks accumulated user CPU. Published contract gives no numeric maximum check interval or termination latency. Do not infer a bound or approved margin from this measurement.",
+    "configuration_or_acceptance_relaxed": false,
+    "overlapping_root_and_private_totals_not_added": true,
+    "required_proof": "Platform-supported bound covering threshold detection, processor concurrency and final termination/accounting latency, or separately approved accounting contract; neither is established."
+  },
+  "tests": {
+    "producer_contract": {
+      "count": 25,
+      "seconds": 35.185,
+      "exit": 0
+    },
+    "independent_contract": {
+      "count": 25,
+      "seconds": 36.203,
+      "exit": 0
+    },
+    "independent_focused": {
+      "executions": 10,
+      "additional_unique_reviewer_checks": 4,
+      "seconds": 8.03200000000652,
+      "exit": 0
+    },
+    "native_tests_this_iteration": 0,
+    "watchdog_cases7_and8": "UNRUN_NATIVE; fresh admission required"
+  },
+  "preservation": {
+    "status": "PASS_BYTES_AND_EXACT_DATA_RESTORES_UNCHANGED",
+    "original_setup_files": 10,
+    "sealed_attempts": [
+      {
+        "directory": "eka1-native-synthetic-20261030-attempt1",
+        "sealed_files": 5,
+        "zip_sha256": "83acfb7b7116029e71998dcfe74d4cdaf96569a835bfed1479162bebaf71abe9",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-revised-source2",
+        "sealed_files": 8,
+        "zip_sha256": "0c4c75ad44ca44a7bab580ed4d34c7e0b9413025951931a4e4f87c5fa2418fb3",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-source3",
+        "sealed_files": 8,
+        "zip_sha256": "86d194e61382a66ded0d573a6a9647caf289f56aabc663f1892a8d0163b94cf2",
+        "consumed_birth_reservations": 36
+      },
+      {
+        "directory": "eka1-native-synthetic-20261030-source4",
+        "sealed_files": 54,
+        "zip_sha256": "bc90f43e87d9dedef633ae943fc160753b36ecd2dd43f228d4d430899ee1ee94",
+        "consumed_birth_reservations": 36
+      }
+    ],
+    "total_consumed_birth_reservations": 144,
+    "historical_operator_lock_unchanged": true,
+    "native_execution": false
+  },
+  "local_receipt_sha256": {
+    "drafts/eka1-case6-independent-diagnosis-20261030/diagnosis.json": "0c1677ae03fc16240c82aa1a98fc5e96310e64ceadceec090535ae3f47f57bbe",
+    "drafts/eka1-cpu-bound-independent-diagnosis-20261030/diagnosis.json": "b2f09dfd68af7fed16fb04af04f8b5298179b4c7b5f837ec63786ecc894295cc",
+    "drafts/eka323-descendant-independent-20261030/offline-receipt.json": "aa8ac02546b2fa445ddb02525a9dfe17f9d053c28443f5cbc0d8ad157a900124",
+    "drafts/eka323-descendant-independent-20261030/full-contract-receipt.json": "c1f2e73afe2aebfe9b3868254b25787c4320c189f372ede51aa90df2212c9e4b",
+    "drafts/eka323-descendant-custody-20261030/preservation.json": "6144bcd74d5e4518404085bd519c71f1feb381d8c582b2fde9360fa6915a4446",
+    "drafts/eka323-descendant-independent-20261030/review.json": "62629fdebe9eb0f8bd4b67b5107e4cff00e9ab75799ee2a2a70f953da768739e"
+  },
+  "remaining_gate": "CPU worst-case resource bound unqualified; corrected descendant behavior and watchdog cases require fresh separately authorized synthetic native assignment. Four old assignments remain sealed. No original producer integration or immutable scientific grant transport admitted.",
+  "docs": {
+    "cpu_limit": "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_limit_information",
+    "job_accounting": "https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-jobobject_basic_accounting_information"
+  },
+  "scientific_execution": false,
+  "v10_or_observatory_modified": false,
+  "merged": false
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "ORA-EKA1-DELAYED-PRIVATE-ASSAY-CANDIDATE-v1",
+  "status": "REJECTED_SOURCE_QUALIFICATION_NO_GO",
+  "question": "Would a fixed single-cell intervention identify delayed use of personally acquired information across otherwise unknown ordinary-origin genotypes?",
+  "parent_source": "8c791463ad86c06a745d8dfc93c0386b9bbf88a2",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "evaluated_candidate": {
+    "channel": "private memory cell 0 only",
+    "exposure": "First actual nonempty FORAGE by the prospectively selected origin; use feedback available to actor, never hidden target as an input",
+    "checkpoint": "After exactly two additional completed own dispatches following exposure, before a subsequent FORAGE; retain death or missing checkpoint rather than substitute actor/time",
+    "probe": "First subsequent FORAGE port, recorded before the new feedback assignment; no repeated attempts or successful-meal stopping",
+    "arms": [
+      "intact",
+      "equal-handling sham",
+      "memory[0] XOR 1"
+    ],
+    "cell_selection": "Fixed index 0; no outcome-based or best-cell selection",
+    "replacement": "old_value XOR 1, still in 0..15; not claimed to erase information or be neutral",
+    "intact_sham": "Preserve cell value and equal declared handling charges; receipt metadata may differ",
+    "all_other_state": "Exact original checkpoint values before intervention, including PC, registers, feedback, age, energy, code, nursery, neighbours, food and time",
+    "handling_price": null,
+    "price_status": "No frozen-law intervention operation or qualified cost; cannot assign free or arbitrary organism charge",
+    "fork_authority": "Each diagnostic branch would be a separately admitted paid World; zero are authorized here",
+    "claim_scope": "Candidate delayed private-cell use only, never all learning channels or broad intelligence"
+  },
+  "source_counterexamples": {
+    "control_damage": {
+      "literal_slots": [
+        [
+          4,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          4
+        ],
+        [
+          7,
+          0,
+          5
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          8
+        ],
+        [
+          7,
+          0,
+          2
+        ],
+        [
+          17,
+          0,
+          0
+        ]
+      ],
+      "assumptions": "Hypothetical legal nine-slot body initially PC0/energy12, private state blank, nonempty first forage, no external transfer/message interference; SET/STORE fixes m0=1 before exposure. After FORAGE, two own JUMPs reach checkpointPC5. This is conditional source reasoning, not an observed or admitted founder/checkpoint.",
+      "source_reasoning": "No READ-feedback occurs. After the fixed two-JUMP delay, READm0 then IFZERO reaches HALT8 when XOR1 maps1to0; unchanged m0=1 reaches JUMP2 and continues fixed-port FORAGE. Configured constant control state, not acquired information, explains the lesion effect. At least7 energy remains at checkpoint even if the first forage yields no gain, sufficient for three instructions under the stated no-interference condition.",
+      "evidence_extent": "Constructive source-level counterexample to a universal nonlethality assertion, not a VM execution, ecological viability result or mutation-reachability witness",
+      "inserted_into_population": false
+    },
+    "channel_miss": {
+      "source_reasoning": "FORAGE updates feedback, not memory0. Without a subsequent FORAGE, feedback can persist through the delay and READ-feedback can directly supply the probe decision. Registers or code can also retain the observation. A cell0 lesion may remove none of the relevant information.",
+      "limit": "Two elapsed own instructions do not alone distinguish retained immediate feedback from a more general learning mechanism; rapid learning is not globally excluded."
+    },
+    "static_state_confound": "A configured cell value can control branch/phase without being acquired information. A single before/after receipt cannot authenticate the causal origin of its information."
+  },
+  "future_software_controls_not_executed": {
+    "positive": "Supplied delayed-feedback-to-cell use, disclosed only as apparatus, never a scientific founder",
+    "negative": [
+      "immediate feedback-reactive policy",
+      "blind policy ignoring cell0",
+      "memory-dependent phase/HALT counterexample",
+      "memory-dependent nursery/division control"
+    ],
+    "qualification": "A method must distinguish information loss from these control hazards; positive sensitivity alone is insufficient. No fixtures are executed by this contract."
+  },
+  "decision": {
+    "universal_nonlethality": "REFUTED_BY_SOURCE_COUNTEREXAMPLE",
+    "delayed_information_specificity": "NOT_ESTABLISHED",
+    "history_and_derived_checkpoint_custody": "UNIMPLEMENTED",
+    "intervention_pricing": "UNQUALIFIED",
+    "assay_execution": "NO_GO",
+    "eka1_population": "NO_GO_NOW",
+    "whole_substrate_learning": "UNKNOWN",
+    "reason_not_to_expand": "More cells, longer delay, more populations or a supplied learner cannot repair the identified attribution gap by themselves.",
+    "nonlethality_nuance": "Death after loss of genuinely useful information can be a legitimate outcome. This counterexample rejects guaranteed exclusion of unrelated configured control damage, not every lesion that affects survival."
+  },
+  "next_requirement": "Independent scientific method review must specify an information-specific contrast with prospective sampling and channel scope, and explain how phase/reflex/reproduction hazards are distinguished rather than assume harmless erasure. Only then consider a separately priced/source-qualified diagnostic implementation.",
+  "worlds_authorized": 0,
+  "vm_steps_executed": 0,
+  "new_seed_queries": 0,
+  "historical_results_changed": false,
+  "runtime_changes": false
+}

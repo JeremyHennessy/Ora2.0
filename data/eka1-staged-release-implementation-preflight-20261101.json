@@ -1,0 +1,165 @@
+{
+  "schema": "EKA-STAGED-RELEASE-IMPLEMENTATION-PREFLIGHT-v1",
+  "decision": "NO_GO",
+  "accepted_executable_baseline": "ca04547ff0e11e952ca5ca32f30376615dc205dd",
+  "implementation_parent": "64a3a7b1cfae31734a906e4e2fac40989b7cf005",
+  "approved_amendment": "EKA-BUILD-ONLY-SINGLE-ATTEMPT-DERIVED-HEADER-v1",
+  "amendment_file": "data/eka1-single-attempt-staged-release-amendment-20261101.json",
+  "amendment_sha256": "e0858730a375f44629eb60d0d163880fc71dc4fa3e8f9a28d896cafbbbcced0c",
+  "approval_scope": "Explicit human approval for source-only implementation; never native build or diagnostic permission",
+  "source_only_controls": [
+    "Preserved v1 path and four-slot catalogue; optional staged immutable recipe",
+    "Same once-claimed original owner, assignment, physical ledger and source-asserted fresh root/zero epoch",
+    "Derivation attempt consumed and raw StageA observation retained before hash or writes",
+    "Fixed release_header derivation, fixed output paths, retained DATA read handles and once-frozen StageB manifest",
+    "StageB requires exact derivative and original binding before its two precharges",
+    "Same root/start/epoch and monotone cumulative counters; one final USER plus KERNEL debit, not a StageA second charge",
+    "External validator rechecks eleven ledger records, root claim, derivative, current outputs and complete archive package",
+    "First failure, partial writes, closed-handle failures and unresolved costs retained without retry or authority",
+    "Optional root observer binds before any precharge; retained noninheritable duplicate plus CompareObjectHandles, not integer equality or a supplied logical hash",
+    "Existing dependency/output fields must pin observation helper source, process-limit source and KernelBase image plus four fixed observation receipts; no schema or numerical-limit change",
+    "One StageA raw observation and one terminal final CPU query; observer does no billing and never fabricates members, image identities, EOF or closure",
+    "Final observation consumes future work; available raw CPU remains retained when original binding fails; missing measurements remain unresolved",
+    "Original native gate refuses before observation API entry; mock-kernel fixtures do not establish Windows qualification",
+    "Guardian catalogue forces the exact absolute release-header path with /FI only after StageA; C has no basename lookup or empty-registry fallback and rejects any missing required release macro. Directory-only or substituted forced-header catalogues cannot reuse a consumed owner.",
+    "Existing held guardian/private-child paths explicitly read back retained-root membership before resume. Unverified successful creations use their exact returned creation handle for one termination attempt plus bounded signaled observation, retaining failures; this is not a BUILD_ONLY compiler launcher or OS qualification."
+  ],
+  "numerical_limits": "UNCHANGED; one cumulative 30s/30USERseconds/512MiB/4active/1MiBoutput/128files/64MiB covered storage, not one allowance per stage",
+  "opaque_nested_attempts": "UNKNOWN_ONLY_FOR_APPROVED_BUILD_ONLY_SCOPE",
+  "native_build_execution_enabled": false,
+  "human_native_execution_authorized": false,
+  "actual_native_custody_independently_verified": false,
+  "fresh_native_assignment": null,
+  "remaining_unqualified": [
+    "Actual BUILD_ONLY suspended creation/root Job launch plus native qualification of the new raw-observation candidate",
+    "Successful short-lived helper PID/birth/image/retained-handle and completed-termination provider; ordinary Job notifications are insufficient",
+    "Actual consumed compiler/SDK/DLL/header/library closure and immutable file custody, including native proof that the exact forced release header is consumed; the direct basename-selection gap has source-only controls, not compiler qualification",
+    "Exact dependency/source-to-binary/archive/restoration fit within existing cumulative caps",
+    "Disjoint owner/derivation/observer/cleanup/archive/restore/hash/completion/watchdog costs and final writer/registry settlement",
+    "Independent fresh native qualification and separate explicit immutable human build authorization"
+  ],
+  "human_authorization_only_remaining": false,
+  "source_checks": "Three targeted extracted-Python fake-API/source-C checks passed after independent review fixes. No real Job, CreateProcess, TerminateProcess, C compilation or native diagnostic executed. New immutable-head offline CI must be independently checked after publication; prior276 belongs to0ecad7bb only.",
+  "preserved": {
+    "sealed_assignments": 4,
+    "consumed_reservations": 144,
+    "old_failures": "UNCHANGED",
+    "strict_private_USER_one_second": "UNCHANGED_NOT_READY",
+    "v10_Observatory_laws_schedules": "UNMODIFIED"
+  },
+  "native_builds_diagnostics_Worlds_populations": 0,
+  "root_observation_scope": {
+    "status": "IMPLEMENTED_SOURCE_CANDIDATE_NOT_NATIVE_QUALIFIED",
+    "exact_primitive": "Optional methods in existing BuildOnly; uses existing root_snapshot, no launcher or debugger framework",
+    "logical_root_label": "Not proof of kernel-object identity or global exclusion of all alternate callers/ledgers",
+    "debit": "None in observer; existing BuildOnly.finalize remains sole root debit",
+    "new_native_authority": false,
+    "complete_build_sample_provider": false,
+    "successful_helper_identity_provider": false,
+    "actual_CPU_or_resource_measurements_this_change": "NONE; numeric fixture counters are synthetic",
+    "external_costs": "All existing owner/observer/cleanup/archive/restore/hash/completion/watchdog/verifier/final-writer and unattributed scopes remain unsettled; never zero substitutes"
+  },
+  "new_primary_OS_findings": {
+    "ordinary_Job_process_notifications": "Delivery is not guaranteed; live PID lists and final counts cannot reconstruct every retired helper birth/image.",
+    "conditional_debug_event_candidate": "CREATE_PROCESS_DEBUG_EVENT provides pre-user-mode process/image handles. Completed exit requires continued EXIT event and signaled retained duplicate. Descendant debug-chain changes and missing rights/handles remain failure conditions; not implemented or qualified here.",
+    "references": [
+      "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_associate_completion_port",
+      "https://learn.microsoft.com/en-us/windows/win32/debug/debugging-events",
+      "https://learn.microsoft.com/en-us/windows/win32/debug/process-functions-for-debugging",
+      "https://learn.microsoft.com/en-us/windows/win32/api/handleapi/nf-handleapi-compareobjecthandles"
+    ]
+  },
+  "previous_offline_acceptance": {
+    "commit": "64a3a7b1cfae31734a906e4e2fac40989b7cf005",
+    "run": 41263666533,
+    "checks": 247,
+    "scope": "PRIOR_EXECUTED_SOURCE_ONLY_NOT_ACCEPTANCE_OF_THIS_CHANGED_SOURCE"
+  },
+  "generated_header_selection": {
+    "status": "SOURCE_ONLY_ABSOLUTE_PATH_BINDING",
+    "change_parent": "9e16cef13a2e6542c0fa4549918eae18d5530f70",
+    "mechanism": "Guardian-only absolute /FI, no quoted/angle basename fallback, required-release-macro #error; watchdog still has no generated-header dependency",
+    "local_tests": {
+      "count": 106,
+      "failures": 0,
+      "errors": 0,
+      "new_header_checks": 5,
+      "log_sha256": "6376d822d8c74e2b7410f9e7bba325a944475c51120ae182fafa855f671abfd4",
+      "receipt_sha256": "aa9a36d65cb0612649b6e0ce079ca963386347953182b4864c903a2cea021a36"
+    },
+    "local_executed_source_sha256": {
+      "tools/eka1_build_only_contract.py": "ec2d3b57f442be8186149f505f2a451860e6e42751286a0a313cbb3a4f5830b8",
+      "experiments/native/eka1_probe_guardian.c": "1dbc9b17973637be8b55d13cef4092e32395c16d4234158120e9f0669835935c",
+      "tests/test_eka1_staged_build_only.py": "6db955f597ad4a00ad859ac91b0b9bbc0a31a980ab9fc202641fdeebbbaef89c"
+    },
+    "independent_source_review_sha256": "89634eca8d5b20cc54e5b2a69334b407afb67e823fb42be1636309d29af03136",
+    "previous_exact_head_CI": {
+      "commit": "9e16cef13a2e6542c0fa4549918eae18d5530f70",
+      "run": 41331323845,
+      "offline_checks": 271,
+      "native": "SKIPPED_NOT_PASSED",
+      "scope": "RETAINED_BASELINE_NOT_CHANGED_SOURCE_ACCEPTANCE"
+    },
+    "new_head_CI_policy": "Existing push workflow records exact checkout/interpreter/source custody and offline checks; inspect new immutable run after publication. Manual native flags remain false, no compilation enabled.",
+    "native_compiler_or_preprocessor_tested": false,
+    "actual_Windows_header_custody_qualified": false,
+    "fresh_future_manifest_source_pins_and_recipe_required": true,
+    "sealed_assignments_reused": false,
+    "primary_sources": [
+      "https://learn.microsoft.com/en-us/cpp/preprocessor/hash-include-directive-c-cpp?view=msvc-160",
+      "https://learn.microsoft.com/en-us/cpp/build/reference/fi-name-forced-include-file"
+    ]
+  },
+  "previous_header_selection_source_checks": "106 focused offline checks in the two affected BUILD_ONLY modules passed, including five new header-selection/refusal tests. Independent exact-source and publication review required; prior271 acceptance belongs only to9e16cef and is not acceptance of this changed source. No compiler, preprocessor or native diagnostic executed.",
+  "pre_resume_root_readback": {
+    "status": "SOURCE_ONLY_GUARD_AND_FAILURE_CLOSURE_CANDIDATE",
+    "change_parent": "0ecad7bb7056db8d354b23bbc6e81a632f981f70",
+    "scope": "Existing held synthetic guardian/CPU-child paths only; no new launcher, Job provider, attempt, accounting contract or native authority",
+    "atomic_job_list_preserved": true,
+    "actual_containment_failure_demonstrated": false,
+    "checks": "Both API success and TRUE membership through retained process/root handles required before ResumeThread; positive start receipt records verification only after the check.",
+    "negative_paths": "Successful CreateProcess required before direct process termination authority. False/error readback never resumes. Unverified owned creation uses one exact-handle termination and bounded final wait even if termination returns FALSE; no PID reopen, retry, deadline extension or root-only closure assumption. Unsuccessful closure stays UNKNOWN/terminal.",
+    "billing": "Existing final root USER+KERNEL debit unchanged. Existing retained guardian/leader raw counters are not added as duplicate root cost. Outside-root, missing identity/closure or partial measurements stay unresolved; no new paid scope or amnesty.",
+    "local_focused_checks": {
+      "schema": "EKA-PRERESUME-FOCUSED-OFFLINE-RESULT-v1",
+      "command": "Python312/python.exe -B -m unittest tests.test_eka1_native_probe_contract.PreResumeRootSourceChecks -v",
+      "tool_reported_tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "tool_reported_test_seconds": 0.016,
+      "source_sha256": {
+        "tools/eka1_native_probe.py": "23d1ed1318502ff8418ba58e66d4a597ddab8fb7005e404b13123bf77d83c4f5",
+        "experiments/native/eka1_probe_guardian.c": "8742050dd03bd55e5bba4a38638f07fbedd8cbe14da4be6d2cf0187382a59572",
+        "tests/test_eka1_native_probe_contract.py": "7b2f7b1c78fed0cd43e6759f87b8fa9caaf540e15c152ec37968307f77b50fa0"
+      },
+      "interpreter": "D:\\OraLab\\tools\\Python312\\python.exe",
+      "interpreter_sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+      "scope": "Executed extracted Python guard/cleanup AST with fake APIs and inspected C source; no Job creation, real WinAPI, compiler, child or scientific run. This receipt transcribes actual tool unittest result, not a retained raw stdout log.",
+      "cost_scope": "No complete wall/CPU/external settlement measured or claimed; not a native qualification or strictCPUreceipt",
+      "review_fixes": "Distinct48/49/50Ccodes; boundedfinalwait evenwhenTerminateProcessFALSE; explicitsuccessfulcreation ownership"
+    },
+    "independent_source_review_sha256": "777dcee4383b95d0464dee9678e7fa4d47ec0a39117cde5918dc2eb8f3f1d2e7",
+    "initial_rejected_review_sha256": "14946ff220b0a07ecb03b982484ff693fd4e6297bf3609984defdaa6fed86c6c",
+    "initial_defects_preserved": [
+      "C error-code collisions with existing45/46/47; corrected to48/49/50",
+      "Python termination FALSE skipped final wait; now retains termination failure and still observes final handle"
+    ],
+    "previous_exact_head_CI": {
+      "commit": "0ecad7bb7056db8d354b23bbc6e81a632f981f70",
+      "run": 41347063787,
+      "offline_checks": 276,
+      "native": "SKIPPED_NOT_PASSED",
+      "scope": "RETAINED_BASELINE_NOT_CHANGED_SOURCE_ACCEPTANCE"
+    },
+    "actual_OS_or_native_CPU_qualified": false,
+    "complete_BUILD_ONLY_launcher_or_helper_provider": false,
+    "fresh_future_source_pins_recipe_binary_and_manifest_reseal_required": true,
+    "sealed_assignments_reused": false,
+    "primary_sources": [
+      "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute",
+      "https://learn.microsoft.com/en-us/windows/win32/api/jobapi/nf-jobapi-isprocessinjob",
+      "https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminateprocess"
+    ]
+  }
+}

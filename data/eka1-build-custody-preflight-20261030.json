@@ -1,0 +1,85 @@
+{
+  "schema": "EKA-BUILD-CUSTODY-PREFLIGHT-v1",
+  "parent_checkpoint": "1a060e76cfd7bf3a93d8f3a45c108c6157fa03e2",
+  "baseline_CI_checks_preserved": 117,
+  "scope": "Single compiler/helper blocker; source-only retirement and DATA-only alternative evaluation, no native execution",
+  "opaque_old_build_chain": {
+    "decision": "FAIL_ATTEMPTED_BIRTH_CONTRACT",
+    "chain": [
+      "_build calls bounded_build twice",
+      "process_limits.run starts base-Python bootstrap",
+      "bootstrap waits for assignment/go then subprocess.call cmd /d /c",
+      "cmd fixed script calls vcvars64/vcvarsall/VsDevCmd",
+      "VsDevCmd uses FOR/F command substitutions and extension batch calls, including vswhere.exe",
+      "cl /c and link run after setup only if preceding errorlevel succeeds",
+      "compiler/linker can invoke opaque environment-dependent helpers"
+    ],
+    "minimum_successful_births": 8,
+    "minimum_is_not_cap": true,
+    "active_cap_is_not_cumulative_attempt_bound": true,
+    "failed_attempts_without_PID_not_zero_imputed": true,
+    "trace_sha256": "807cd4fb71293ccaac443e28ca82d1e92ee240a9da1d5edb4c7d82e87f279619",
+    "installed_batch_pins": {
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat": "6b516d8fcf543c14b2d861e1f45661e0029230fe0dc48e86ce78522801822209",
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat": "ee67e4181ae2578b7842f9f1549a7f66e2166638fa544ce6838d9e9033a02275",
+      "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd.bat": "4cfb396a94f0ac50094a170804068bcade694129c711a6898e1411ea6a36f620"
+    },
+    "official_references": [
+      "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/for",
+      "https://learn.microsoft.com/en-us/windows/win32/api/winnt/ns-winnt-jobobject_basic_accounting_information",
+      "https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex"
+    ]
+  },
+  "diagnostic_local_inline_compiler": {
+    "decision": "PASS_SOURCE_SCOPE_BY_REMOVAL",
+    "bounded_build_alias_removed": true,
+    "inner_build_unconditionally_retired": true,
+    "public_owner_reservation_checks_and_failure_poison_preserved": true,
+    "compiler_formatter": "Historical DATA-only fixture retained; no diagnostic execution call site"
+  },
+  "prebuilt_alternative": {
+    "existing_static_binding_artifacts": "FAIL_FRESH_OWNER_ASSIGNMENT_COMPATIBILITY",
+    "available_independently_qualified_reusable_artifact": "UNKNOWN_NOT_ADMITTED",
+    "evaluation": "Fixed package/source/header/binary/build-receipt byte and physical observations only. Never load, patch or execute. Matching hashes/claimedapproval/claimedpayment never authorize native execution.",
+    "unknown_attempt_or_KERNEL_measurements": "UNRESOLVED_NOT_ZERO",
+    "complete_package_extent_bytes": 67108864,
+    "reusable_binding_protocol": "NOT_IMPLEMENTED_OR_NATIVE_QUALIFIED"
+  },
+  "remaining_external_cost_requirements": [
+    "Separate approved build provenance binds exact source/generated header/SDK/compiler/linker/helpers/commands/environment and guardian/watchdog bytes; final disjoint root USER+KERNEL, all attempted births and owned process/EOF/termination closure; old missing costs remain unresolved.",
+    "Owner/observer lifetime USER+KERNEL through actual signaled completion by an external custodian or explicit non-overlapping settlement scope; no self-measurement before own exit presented as final.",
+    "Cleanup and termination costs/failures retained; missing counters or incomplete capture stay terminal unresolved; no refund, retry or replacement.",
+    "Exact bounded128-file/64MiB stored-and-expanded archive inventory/restoration must cover cost/output/failure/closure receipts and reference immutable prebuilt evidence.",
+    "Current execute stops watchdog and writes completion.json after archive_evidence. These tails require an explicit final settlement artifact/cutoff; the ZIP cannot certify its own last write or owner-final CPU."
+  ],
+  "preflight": "NO_GO",
+  "human_authorization_only_remaining": false,
+  "native_entry_enabled": false,
+  "no_new_compile_diagnostic_World_population_or_v10_changes": true,
+  "independent_source_review_sha256": "7c0228f0e935c5dacb05d73804acfe8048a5d60b217b5d37582932671f16cf9e",
+  "independent_checks": {
+    "prebuilt": 17,
+    "transport": 20,
+    "contract": 25,
+    "additional_negative_witnesses": 5
+  },
+  "preservation": {
+    "sealed_assignments": 4,
+    "consumed_historical_reservations": 144,
+    "historical_117_tests_unmodified": true,
+    "initial_contract_regression_failure": "Preserved; required36birth reservation error restored, final25checksPASS",
+    "sealed_evidence": "No historical assignment/binary/store modified; prior independent full hash verification retained"
+  },
+  "research": {
+    "method": "AST and128 uninterpreted Boolean rows; no seed/hash-output query or scientific import",
+    "source_head": "4aaa501054b78bfde3b9598f63522dadb3254633",
+    "result_sha256": "ef970fe07d1d129a8ab6e2fa06329c51ede45699a7dbe69b36f39c6f43bc77bc",
+    "initial_stock_guarantees_renewed_target": "FAIL_SOURCE_ALGEBRA_GUARANTEE",
+    "actual_predictive_information": "UNKNOWN; domain separation does not prove statistical independence",
+    "same_phase_renewed_target_stability": "PASS_SOURCE_SCOPE",
+    "next_lawful_hypothesis": "Fund own earlier renewed-target exposure and a paid revisit with matched current feedback; bootstrap>=3initialfood founder-only necessary, not sufficient.",
+    "organism_learning": "NOT_TESTED"
+  },
+  "strict_prepaid_CPU_and_scientific_qualification": "NOT_READY",
+  "diagnostic_authorized": false
+}

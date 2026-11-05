@@ -1,0 +1,92 @@
+{
+  "schema": "ORA-EKA1-PROSPECTIVE-WORLD-OPPORTUNITY-v1",
+  "status": "FUTURE_SAMPLING_CHOICE_FIXED_SOURCE_CONDITIONAL_ONLY",
+  "supersedes_for_future_only": "eka1-own-signal-contrast-proposal-20261023.json first-mutated individual selection. Old proposal and0/16closed result preserved; no historical protocol changed.",
+  "source_parent": "539d189d01c3353d6b53d43b8f37f2d0c013ce38",
+  "question": "What is the causal effect of one first available naturally expressed earned-feedback READ on delayed decisions and cost-complete whole-population reproduction?",
+  "claim_ceiling": "Single-event own-signal use and its net World consequences, not general learning, selection for learning or multigenerational advantageous inheritance.",
+  "sampling": {
+    "independent_unit": "Experimental unit: assigned original discovery World. Independent sampling blocks/covariance are not yet qualified. Shared-seed dose strata/references and derived arms are declared matched blocks, never extra independentN; actual block/seed allocation remains a registration gate.",
+    "founders": "Unchanged ordinary founders; no selected historical genomes, supplied learner, mutation-rate or energy-price change.",
+    "strata": "Retain ordinary mutating parent_copy dose1 and dose8 strata; no high-dose-only selection based on old readers. Equal fixed stratum weighting is prospective; counts/seeds unassigned pending power/resource gate.",
+    "eligible_read": "First global opcode1READ by any naturally born actor with ordinary mutating-copy ancestry, whose latest own FORAGE was nonempty packet>=64 and whose READ tick<2048. LatestFORAGEsuccess must equal currently storedfeedback. Only pre-treatment provenance is used.",
+    "selection_order": "Lowest global dispatch tick; original source schedules one actor per tick. Freeze selected actor/exposure/READ/common complete pre-state BEFORE forks. No energy, age, genome, future site, future packet, probe, survival, accuracy or reproduction filter.",
+    "not_first_mutant": "The original first-mutant remains in all birth/death denominators; no claim that its0/16history gained a READ. This is a different future estimand, not a replacement in that closed test.",
+    "no_eligible_read": "Record exact unavailability and untreated actual World outcomes. Intervention contrast/opportunity indicator is0; actual reproduction/energy/survival are never relabeled0. No new actor/seed/world replacement.",
+    "no_later_replacement": "Once selected, a lost/empty/cross-site/early/dead/reread/late first probe cannot be replaced by a later matched probe.",
+    "complete_denominator": "All assigned Worlds, all natural births, failures, extinct lineages, unavailable READs and intervention outcomes retained. Selection/search and all replayed formation costs are counted."
+  },
+  "information": {
+    "source_law": "packet>=64target=seed%2 XOR renew_port(seed//2,site) XOR int(tick>=2048). Same seed/site/phase implies identical target without evaluating hash/seed.",
+    "acquisition": "For an actual nonemptyFORAGE, feedbackf=[p==target], so target=p XOR(1-f). Fourbitcases exhaustively checked as algebra only.",
+    "actor_limit": "Actor receives ordinaryfeedback only and must retain/recover its own attemptedportp; no analysttarget/packetpresence/site-match flag or decodedanswer is supplied. Analyst observer algebra is never a controller.",
+    "delayed_limit": "First laterFORAGE must actually encounter another renewable packet at same site and phase for this sufficient predictive identity. Stock, movement, phasecrossing and empty probe remain outcomes, not exclusions. Other relations are UNKNOWN, not asserted useless.",
+    "blind_limit": "A fair balanced independent target has blindaccuracy1/2 arithmetically only. No claim deterministic seed/site targets are balanced or independent; reserved assignment and fair fixed/reactive benchmarks remain unqualified.",
+    "actual_opportunity": "UNKNOWN; conditional source theorem is not proof ordinary lineages attain useful delayed opportunities."
+  },
+  "causal_arms": {
+    "common_prefix": "Authenticate unchanged original replay and complete pre-READ checkpoint before any intervention. Source539d189checks supplied consistency only; history authentication still missing.",
+    "true_sham": "Both execute same ordinary paidREAD and receive samef. Complete biological/ecological state, scheduling and original event payload must agree after removing ONLY predeclared derived-role metadata; raw envelope identity remains distinct and preserved. Divergence is software qualification failure.",
+    "xor1": "Only READdestination receives fXOR1; stored actualfeedback, environment/food/reward/otherregisters/memory unaffected except ordinary source effects.",
+    "branch_accounting": "Three independently owned paidbranches; no reuse of original historyhash as changedhistory. Original discovery World plus3prefix replays/tails and all controlWorlds separately metered.",
+    "infrastructure_failure": "Any missing/source/custody/native/receipt/identity failure makes comparison INCOMPLETE, never biological0 or a silent retry."
+  },
+  "outcomes": {
+    "delayed_end_to_end": "First subsequentFORAGE port recorded before reward, >=2intervening own dispatches, no feedback reread. Report valid-and-correct contrast true-minusxor1 across ALLassigned Worlds, plus exact opportunity/routing/packet/timing/survival categories. Native failuresINCOMPLETE.",
+    "not_conditional_only": "Same-site/valid-probe-only accuracy is descriptive, not a causal population result. Keep all first-probe outcomes.",
+    "whole_world_fitness": "At unchanged4096global horizon record total actual paidbirths, terminalsurvivors/energy/material/heat/inflow and full transferledger for each arm. Primary candidate fitnesscontrast Btrue-Bxor1 over all assignedWorlds; no cheap-control superiority or statistical acceptance is frozen yet.",
+    "focal_lineage": "Separate selectedactor/descendant births,survival,energy and donor/competitor outcomes. Focalgain from redistribution/incominghelp is not netWorldfitness.",
+    "inheritance": "Faithful READinstruction expression is separate from useful information acquisition and advantageous inheritance. No multigeneration claim without separately qualified causal descendant evidence.",
+    "candidate_validity": "For the first laterFORAGE only, delayed>=2interveningown dispatches and nofeedbackreread, actualnonemptyrenewablepacket at same site and same phase as the exposure. Allotherbiologicalcategories contribute0 to this composite with exactcategoryreported; noWorld orarm is dropped. Correctness uses actualsourceattemptport/target only for observer scoring, never policy input. This compound end-to-end contrast includes sourcealignment/routing, not conditionalvalid-onlyaccuracy or a generallearning measure; finalstatisticalacceptance remains unassigned."
+  },
+  "paid_costs": {
+    "ordinaryREAD": "1energy toheat perarm; no newmaterial or price discount.",
+    "delayed_lower_bound": "READ+twointervening ownsteps+FORAGE=atleast4paidown dispatches,including original exposure>=5. Extraopcodefees/inflow change affordability.",
+    "necessary_limits": "PreREADcompletedage<=252permits observingprobe beforeexpiry;<=251necessaryforpotentialsurvivalafterprobe. PreREADglobaltick<=4092necessaryonly; scheduler/path/food notguaranteed.",
+    "world_replay": "For preREADtickt and tailH,threebranches3t+3H<=3*4096steps,plusoriginaldiscovery and allreference/otherqualificationWorlds. Separate threegenesisstocks4260energy/1536material capacities;129formationheat is already withinenergybalances, not newenergy.",
+    "full_source_ledger": "All formation,ordinaryCOPY3per3words,DIV30debit,stateformation,capheat,release/inflow,transfers,deaths,unusedresources recorded withoutdoublecounting.",
+    "unqualified_host_costs": [
+      "actual native CPU/wall/RAM peak",
+      "checkpoint hashing/history copies",
+      "fork/restore/storage/log/IO capture",
+      "original search and control panels"
+    ],
+    "pricing_qualified": false
+  },
+  "controls": {
+    "performance_references": [
+      "fixedport0",
+      "fixedport1",
+      "blindalternator",
+      "nursery-aware compactblind",
+      "supplied reactivefeedback reference"
+    ],
+    "fairness": "Same declared initial endowments/placement/material, full formation charges, source/environment assignments/horizon and resource ceilings. Supplied benchmark programs are explicitly different and separately accounted, never installed into natural founders. Program size/formation/access differences require review; no retuning on reserved outcomes.",
+    "specificity": [
+      "feedbackignored/overwritten null",
+      "immediatereflex earlyprobe",
+      "delayedhardcodedreflex positive for narrowdelayedsignaluse only",
+      "phase-onlybranch/fixedport availabilitynull",
+      "identitysham exact-state equivalence"
+    ]
+  },
+  "remaining_gates": {
+    "prospective_sampling": "DEFINED_NEW_ESTIMAND_NOT_REGISTERED",
+    "metadata_and_algebra": "12syntheticchecksPASS; noauthenticWorldexecution",
+    "source_transition": "539d189ASTonly; independentreviewpending",
+    "original_replay_and_complete_checkpoint": "MISSING",
+    "derived_continuation_custody": "MISSING",
+    "specificity_and_benchmark_implementation": "MISSING_UNEXECUTED",
+    "actual_delayed_informative_opportunity": "UNKNOWN",
+    "net_fitness_and_viable_mutation_path": "UNKNOWN",
+    "effect_power_reserved_assignments_acceptance": "UNASSIGNED",
+    "native_resource_caps_owner_and_execution_registration": "MISSING",
+    "scientific_admission": "NOT_ADMITTED"
+  },
+  "execution_authorized": false,
+  "worlds_authorized": 0,
+  "vm_steps_authorized": 0,
+  "new_seed_queries": 0,
+  "runtime_changes": false,
+  "decision": "NO_GO_FOR_EXECUTION; conditional channel and prospective choice only, not fully qualified informative/paid causal experiment."
+}
