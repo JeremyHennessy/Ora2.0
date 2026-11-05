@@ -360,3 +360,41 @@ was selected. Corrected scalar minima9/9/11/11 and the original failed minimum
 report remain preserved locally. This is conditional source accounting, not an
 executed cohort, learned capability, inherited fitness or later child survival.
 No source laws, founder, runtime, v10, Observatory or execution holds changed.
+
+## Manual engineering and paper comparison update — 2026-11-05
+
+Development automations remain paused by the user. Ora v10 remains stopped under
+its November 3 terminal safety holds. The archived verification records the
+last independently verified full window as 98, an unknown service-exit cause,
+174 preserved memory records and two verified snapshots. No recovery is open.
+
+PR323 published `379594c504ec58c49f257f876619c175ab790b93`. The output fixture
+requires final guardian reason 2 along with overflow and the existing 64 KiB
+capture check. A synthetic receipt reproduced acceptance of final wall-limit
+reason 1 before the fix. Independent review and 43 local offline tests passed.
+GitHub Actions run 42112397235 was skipped. Native qualification remains held.
+
+Paper question for PR325: can personally acquired food-location and successful
+port information increase living descendants at a common, prospectively fixed
+horizon against the strongest simple route? Compare paired unseen conditions
+after freezing controls on design cases. Include fixed, alternating, reactive,
+free-stay, latest-success and location-based finite-state controls, plus
+cost-matched erasure and uninformative-clue controls. Preserve deaths and
+failed births in the comparison.
+
+Use the same ordinary founder, legal mutation path, nine instructions / 27 words,
+food stock, scheduling, material and population constraints and expiry. Pay one
+energy per dispatch, including failed probes and memory actions, with up to 20
+food energy subject to the 64 cap. A full nursery requires nine successful COPY
+actions at four energy each. DIV costs 31 including its dispatch. Check every
+prefix, including the cap spill, before comparing lineage outcomes.
+
+The conditional no-sensor control funds birth 209 and a second birth at 215–217.
+Separate conditional three- and four-dispatch personal-feedback prefixes do not
+yet close a unified controller. See
+`data/eka-conditional-second-founder-birth-20261103.json` and
+`data/eka-personal-information-prefix-20261101.json`. Next paper dependency is
+one founder-reachable, fully paid find–remember–return–use–reproduce cycle and
+the corresponding control, including actual stock, scheduling and expiry
+branches. No genotype, seed selection, execution, fitness result or admission
+was produced by this update.
