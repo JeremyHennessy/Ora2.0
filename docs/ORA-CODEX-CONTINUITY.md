@@ -398,3 +398,72 @@ one founder-reachable, fully paid find–remember–return–use–reproduce cyc
 the corresponding control, including actual stock, scheduling and expiry
 branches. No genotype, seed selection, execution, fitness result or admission
 was produced by this update.
+
+
+## Stable-stock second-birth decision — 2026-11-05
+
+Hypothesis: retained successful-port information gives the stationary
+success-gated learner a paid second-birth edge over the opposite-port paired
+control, whose ordinary COPY witness differs by two words. Reuse the
+post-birth balances at COPY 1 / next forage: learner 37, paired 37 (next
+success on probe one) or 39 (next success on probe two). These align each
+actor to its own first birth. See
+`data/eka-postbirth-reentry-and-port-state-decision-20261101.json` and
+`data/eka-stationary-nonlearning-controls-20261101.json`.
+
+Assume stable target and one available meal per cycle, no competing depletion
+or transfers, 43 material units as needed (27 COPY, 16 DIV), an open population
+slot at DIV, and more than 54 own dispatches of age slack after first DIV.
+The scheduler must supply those turns before the observation horizon.
+
+At COPY 2–8 the next-forage balance is
+`min(64, E - k + 20) - (9 - k)`, where successful probe dispatch k is
+1 for the learner and alternates 1,3 or 3,1 for the paired route. Both pay six
+base actions and three COPY energy per cycle. At COPY 9 subtract 29 more:
+30 birth energy and no final one-energy JUMP. A separate action-by-action
+calculation matched these endpoints.
+
+| Reentry | COPY 2–8 end energies | COPY 9 / DIV parent energy |
+| --- | --- | --- |
+| Learner 37 | 48, 56, 56, 56, 56, 56, 56 | 27 |
+| Paired 37 | 48, 58, 56, 58, 56, 58, 56 | 29 |
+| Paired 39 | 50, 56, 58, 56, 58, 56, 58 | 27 |
+
+From its own first DIV, each needs 54 dispatches, nine meals, nine COPYs and
+111 energy in gross dispatch/COPY/birth fees to a second birth. Each newborn
+starts with 12 energy. Cap spill explains the two-energy paired advantage in
+one orientation. This comparison does not align global first-birth times.
+
+NO-GO for a stable-stock second-birth advantage of this stationary motif.
+Ordinary mutation realization, shared-stock scheduling, scarcity and inherited
+fitness remain UNKNOWN. Retire stable-stock extensions as a discriminator.
+
+Next milestone: close one ordinary paid recurrent-scarcity opportunity.
+Investigate a location-bound clue on return to a depleted/refilled site,
+distinct from stationary port retention. First establish one source-derived,
+founder-reachable sequence where a correct first probe and a later paired
+probe have different real availability, without selecting seeds. Compare
+frozen reactive, free-stay and latest-success controls. Require a complete
+nine-instruction paid path and a common-horizon reproductive edge attributable
+to the clue under cost-matched erasure/sham. Retire the route if reachability
+or the paid differential fails. Substrate-wide sufficiency remains UNKNOWN.
+No World, seed, native execution, or experimental result was produced.
+
+
+Manual phase review: exact PR323 head 379594c passed all 294 selected
+offline tests in the 11 workflow suites under local Python 3.11.1 with
+site packages disabled after a global `tests` package shadowed imports in
+the first invocation. The GitHub workflow remains skipped. Native NO-GO
+continues. Next decisive native evidence, after approved launcher/provider
+and a separate exact grant, is one BUILD_ONLY contained compiler invocation
+with actual helper birth/image/input custody, final root CPU and terminal
+closure under existing limits. No organism or diagnostic launches in that test.
+
+Ora v10 STOP and both holds were observed. All 50 terminal manifest files
+matched both the protected store and its archive, including the database and
+two snapshots; the receipt records all 174 records. The retained window 98
+closure is the last verified full window. Service exit 1073807364 remains
+unattributed after a bounded Windows System/Application event lookup.
+Four Ora automations remain paused and the terminal health monitor is absent.
+The local Observatory Release 5 static source and visual QA are available;
+recorded events and illustrative visuals remain separate. No service was started.
