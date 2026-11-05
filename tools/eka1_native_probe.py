@@ -403,7 +403,8 @@ def accept_case(result,out,mode):
         if mode==3 and (inner['exit_code']==0 or inner['user_cpu_ticks']<10000000):raise ValueError('CPU termination not observed')
         if mode==3 and result.get('cpu_accounting',{}).get('status')!='MEASURED_WITHIN_USER_CEILINGS_NOT_NATIVE_QUALIFICATION':raise CpuAccountingFailure('Final CPU debit missing/incomplete/over budget')
         if mode==4 and b'EKA_MEMORY_LIMIT' not in raw:raise ValueError('Memory limit not observed')
-        if mode==5 and (not inner['overflow'] or result['raw_bytes']!=65536):raise ValueError('Output limit not observed')
+        if mode == 5 and (inner.get('reason') != 2 or not inner['overflow'] or result['raw_bytes'] != 65536):
+            raise ValueError('Output limit not observed')
         if mode==6:
             # Windows may count an active-limit-rejected creation in cumulative
             # TotalProcesses. It must never become a second successful child.

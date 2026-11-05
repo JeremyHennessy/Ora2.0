@@ -343,6 +343,11 @@ class UnexpectedOutputContractTests(unittest.TestCase):
             out=Path(folder);(out/'5.raw').write_bytes(b'x'*65536)
             value=dict(guardian_exit=0,root_empty=True,raw_bytes=65536,inner=dict(error=0,eof=True,active=0,overflow=True,reason=2))
             probe.accept_case(value,out,5)
+            for reason in (0, 1, 3, 4, None):
+                with self.subTest(reason=reason):
+                    value['inner']['reason'] = reason
+                    with self.assertRaisesRegex(ValueError, 'Output limit not observed'):
+                        probe.accept_case(value, out, 5)
 
 class JobCloseNoRetryTests(unittest.TestCase):
     def test_failed_close_is_not_reissued(self):
