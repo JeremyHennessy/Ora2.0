@@ -1,0 +1,104 @@
+{
+  "schema": "EKA-ORDINARY-ORIGIN-AND-FEEDBACK-MASK-DECISION-v1",
+  "scope": "SOURCE_ANALYSIS_AND_FINITE_BOOLEAN_ENERGY_PROOFS_NOT_SCIENTIFIC_EXECUTION",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "accepted_research_parent": "567b4ea884940aaf46384e7af8cf12f2a2d1f28e",
+  "question": "Does conditional authored-controller feasibility establish nearby ordinary learning, and does a distinct one-word feedback-to-mask edit supply a robust shortcut?",
+  "accepted_layout_distance": {
+    "result": "The existing fixed nine-slot success-gated layout requires at least13 changed words:8 opcode and5 operand changes, under either register assignment.",
+    "method": "Membership in semantic operand classes, allowing ignored operands, unreachable padding and0..31 aliases modulo2/9/16 for the accepted layout. Broader odd SET masks still require changing the original zero operand, so do not reduce this count.",
+    "cases": [
+      {
+        "port_register": 0,
+        "feedback_register": 1,
+        "minimum_word_changes": 13,
+        "opcode_changes": 8,
+        "operand_changes": 5,
+        "per_role_change_counts": {
+          "FORAGE": 2,
+          "READ": 2,
+          "IF_ZERO": 3,
+          "COPY": 1,
+          "DIVIDE": 1,
+          "JUMP": 1,
+          "UNREACHABLE_PADDING": 0,
+          "SET_ODD_MASK": 2,
+          "XOR": 1
+        }
+      },
+      {
+        "port_register": 1,
+        "feedback_register": 0,
+        "minimum_word_changes": 13,
+        "opcode_changes": 8,
+        "operand_changes": 5,
+        "per_role_change_counts": {
+          "FORAGE": 1,
+          "READ": 1,
+          "IF_ZERO": 2,
+          "COPY": 1,
+          "DIVIDE": 1,
+          "JUMP": 1,
+          "UNREACHABLE_PADDING": 0,
+          "SET_ODD_MASK": 3,
+          "XOR": 3
+        }
+      }
+    ],
+    "ceiling": "Not the global minimum for learning, shifted layouts, self-modification or intermediate lineages. Not13 generations: a single daughter COPY can change multiple words. Actual joint mutation, accessible funded intermediates and selection remain UNKNOWN; no probability or seed was inferred."
+  },
+  "single_edit_mask_hypothesis": {
+    "mechanism": "An original MOVE opcode at pc6 or pc7 changed to READ retains destination register1, replacing the constant XOR/direction mask with personal second-forage feedback. No genome array or introduced organism.",
+    "nonempty_uniform_proof": "For first port p, mask m and homogeneous target T, second port q=p XOR m and new mask f=int(q==T). Starting m=1, at most two successful meals precede an absorbing wrong-port/mask0 state if BOTH forage heads are nonempty and retain T throughout the prefix.",
+    "energy_upper": 52,
+    "bare_first_birth_floor": 67,
+    "accounting": "Ordinary E12 plus at most2 meals of20 is52. Nine successful COPY operations require9 base+27 extra and DIVIDE1 base+30 extra:67. This already excludes all forage/control/movement fees, cap spill and refusals. Child12 is inside DIVIDE30, not an extra charge. Thus first birth is impossible in this scoped prefix.",
+    "decision": "FALSIFIED_FOR_ROBUST_UNIFORM_NONEMPTY_FIRST_BIRTH_SHORTCUT",
+    "scope_correction": "The original local claim that absent food could only lower future meals was rejected and preserved. An empty planned-correct second probe can freeze a correct port with mask0; the nonempty proof does not cover this scarcity behavior.",
+    "remaining": "No actual ordinary world, seed or uniform history is asserted. Mixed targets, stock gaps and phase changes remain outside this falsification."
+  },
+  "stockgap_competitor": {
+    "comparison": "At the same original slot, constant SET register1to0 is also a one-opcode change retaining a1,b0, and pays the same base fee as READ.",
+    "identity": "Every READ result0 matches SET0 locally. Along a prebirth prefix where all these READ results are0, adult control, fees and resource effects match. Code/nursery bytes and hashes differ, and offspring behavior is not claimed identical.",
+    "truth_cases": 32,
+    "zero_result_matching_cases": 24,
+    "decision": "An always-zero feedback freeze alone cannot establish information advantage. Later mixed feedback may diverge; no global fitness dominance or environmental probability is inferred."
+  },
+  "scientific_decision": "Preserve both scoped negatives. Neither an authored feasible layout nor personally dependent register state proves ordinary evolved fitness. A complete funded mutation-accessible capability and matched causal advantage remain UNKNOWN.",
+  "required_next_proof": [
+    "A distinct ordinary funded intermediate/control route, without supplying a successful genotype or selecting seeds.",
+    "All action, acquisition, code/state copying, movement, cap spill, materials, reproduction, scheduling and expiry costs.",
+    "Fair fixed/reactive/latest-success/finite-state/free-stay references, erasure/sham/nonpredictive history and unseen conditions.",
+    "Actual mutation accessibility, retention through selection and inherited paid survival or offspring benefit."
+  ],
+  "execution": {
+    "World_VM_population_replay": 0,
+    "native_compiler_diagnostic": 0,
+    "seed_queries": 0,
+    "genotypes_supplied": 0,
+    "scientific_admission": "NO_GO",
+    "native_qualification": "NO_GO"
+  },
+  "local_evidence": {
+    "eka-accepted-learner-edit-burden-20261101": {
+      "check.py": "9971a59837b97e92f9c15644eaf48583a2ea92ba9fb1835ec7725d80c14371fb",
+      "result.json": "247877c42d83b6f64cb39a62850cd6ec04b35bfcad016b46e033af9c4672b04e",
+      "independent-review.json": "492a8b6332459c5a18589ef8e3638ef9b2c95612dccca63e707192b481571a9a"
+    },
+    "eka-feedback-mask-trap-20261101": {
+      "check.py": "38f8eb3f23dd289945fd7a0f7849cdbc2960b985864804ecddbc0f4a10b1476b",
+      "result.json": "66145c423710fb872435e74c31d295a5b5e14a2b6bfd974a981a75b499987822",
+      "independent-review.json": "0ef76f40c538b14055b4ea0941f1ff7fcd77ea58f78f79e867f35b9b03d451d8",
+      "availability.py": "0d2d0ece802371211b8c8e6c9d26dcbf63f24c8491dcc4163bb3cf0cf65efee2",
+      "availability-result.json": "01d02e54e603f1094673d92db836defa48d6130bb579f8d2fdd0337596a27dfb",
+      "availability-independent-review.json": "6caa4932fbb5f53ba905ffd05e13c890c4f5c6139b321e6683cfae09b445f30e",
+      "check-before-stock-scope-fix.py": "8b9ab8cb5549000f36754c3d4b885004270822180524de3be2e8cdbc5d2d0b28",
+      "result-before-stock-scope-fix.json": "da5cf672812c58a065480b58ec4be10123e5f248dde33c29c660d0dc1b63e9d3",
+      "stock-scope-failure.json": "59b70988471b7612735e9f4822b0bf4e062d5f331948ff0af28b7ac610476397"
+    }
+  }
+}

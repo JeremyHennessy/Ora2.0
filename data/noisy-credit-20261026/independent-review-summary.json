@@ -1,0 +1,11 @@
+{
+  "independent-research-review.json": {
+    "sha256": "04405038efa45252b26ba7b42e0142f7e806205058674411587ede5ab4315666",
+    "verdict": "CLOSED_NEGATIVE_REGISTERED_NET_ENERGY_AND_ENDPOINT_CAUSAL_CRITERIA"
+  },
+  "independent-resource-review.json": {
+    "sha256": "d330c30a59d947974c57e18203e5df4f8517399499cf79fb43d3180719716141",
+    "verdict": "RETAINED_LEDGER_SELECTION_RESOURCE_INTEGRITY_VERIFIED_PRIMARY_FAILED"
+  },
+  "scope": "Pre-outcome source critique and independent retained-data arithmetic/trace/resource checks, no policy/environment rerun or scientific admission"
+}

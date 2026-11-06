@@ -1,0 +1,26 @@
+{
+  "schema": "ORA-SOURCE-LIFETIME-CONTRACT-REGISTRATION-v1",
+  "created_utc": "2026-10-26T19:56:51.796009+00:00",
+  "attempts": 1,
+  "method": "Source hashes/AST spans/literalPROGRAM only; no originalmodule imports or organism execution",
+  "source_pins": {
+    "prototypes/encoding_accessibility/source_contract.py": "ad4e82cfe978f15817688d255526aac31cdfa7db6d68f927e0f3b58c050c7b75",
+    "prototypes/encoding_accessibility/test_source_contract.py": "c80bf674eaf72fe683b19feeb000424ba5da937e80273888ab8d4d3fcc747836"
+  },
+  "read_only_bound_sources": {
+    "prototypes/experience_affordance/census.py": "e6cc32bb0a39f16c00f66a6649139e98b75494863835c4e1c914ade60faa6d67",
+    "prototypes/encoding_accessibility/census.py": "3fb32e465a5505ee74ee99b696253e3ec1f7129a08d215db72823301ab62b86b",
+    "prototypes/encoding_accessibility/funding_bound.py": "436d703b9af268e2afc46b1d0fd41272181754517e50f40cc6551e066200c6a4",
+    "prototypes/encoding_accessibility/lifetime_costs.py": "dffe8ea2c4d60e30b87a85aba0731496d80246fdc1ff490c395f1459b94c565b",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "limits": {
+    "files": 7,
+    "bytes_each": 1048576,
+    "subprocess_seconds": 10
+  },
+  "scope": "Correct source-defined fee versus physical calibration distinction; compact lifecycle timing NO_GO; native static fees/order not actual feasibility",
+  "population_admission": false
+}

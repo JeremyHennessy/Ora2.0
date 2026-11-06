@@ -1,0 +1,611 @@
+{
+  "schema": "EKA-POSTBIRTH-REENTRY-AND-PORT-STATE-DECISION-v1",
+  "scope": "SOURCE_ONLY_FIXED_SCALAR_PREFIXES_NOT_ORGANISM_OR_INTERVENTION_EXECUTION",
+  "accepted_research_parent": "12018b891996eb3d9c4f2ba72522fbcf2429d1ac",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de"
+  },
+  "accepted_source_certificates": {
+    "eka-ordinary-learning-and-alternator-controls-20261101.json": "378929ecc95f36f8ec396a666afc44eb29152fa11adbd3bcd329f144e44b642f",
+    "eka-stationary-nonlearning-controls-20261101.json": "668fb874439cfdb9118288e42dd939016775587cb2d01d285712362921fcaa51",
+    "eka-success-gated-controller-feasibility-20261101.json": "a3444e7829d85e8f39cfc84e6eba2e402e08fa0fd65268eeef823e09c3e1d04f"
+  },
+  "question": "Does a personally retained port state improve a paid postbirth prefix, and does that establish an advantage over strong legal nonlearning strategies?",
+  "premises": [
+    "All entry balances come from previously accepted conditional ordinary-daughter first-birth prefixes; no organism starting energy was changed. Actual joint mutation and evolutionary origin remain UNKNOWN.",
+    "Correct forage heads remain homogeneous, nonempty and unchanged at the different later times in each compared prefix; no other-actor depletion, target/phase switch or transfer. Actual ordinary scheduler/stock continuation is not proved.",
+    "At least3 free material units at COPY; one COPY adds3 nursery words and costs3 extra only when post-base energy is at least3. The next incomplete-nursery DIVIDE refuses but pays its base fee.",
+    "For adult survival, remaining own-age slack must exceed the executed prefix. R>7 covers reentry. Formal erasure uses12 listed actions; if equal handling fee1 represents an extra own dispatch, require strict R>13. Equality expires. Actual handling age/time/energy protocol is unqualified."
+  ],
+  "paid_reentry": {
+    "alternator_entry_E5": {
+      "alive": false,
+      "rows": [
+        {
+          "role": "JUMP",
+          "before": 5,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 4,
+          "outcome": "paid"
+        },
+        {
+          "role": "FORAGE_WRONG",
+          "before": 4,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 3,
+          "outcome": "paid"
+        },
+        {
+          "role": "XOR",
+          "before": 3,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 2,
+          "outcome": "paid"
+        },
+        {
+          "role": "COPY",
+          "before": 2,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 1,
+          "outcome": "COPY_REFUSED_LOW_ENERGY"
+        },
+        {
+          "role": "DIVIDE_INCOMPLETE_REFUSAL",
+          "before": 1,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 0,
+          "outcome": "paid"
+        }
+      ],
+      "final_energy": 0,
+      "nursery_words": 0,
+      "cap_spill": 0
+    },
+    "alternator_entry_E10": {
+      "alive": true,
+      "rows": [
+        {
+          "role": "JUMP",
+          "before": 10,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 9,
+          "outcome": "paid"
+        },
+        {
+          "role": "FORAGE_WRONG",
+          "before": 9,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 8,
+          "outcome": "paid"
+        },
+        {
+          "role": "XOR",
+          "before": 8,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 7,
+          "outcome": "paid"
+        },
+        {
+          "role": "COPY",
+          "before": 7,
+          "base_fee": 1,
+          "extra_fee": 3,
+          "food_gain": 0,
+          "after": 3,
+          "outcome": "paid"
+        },
+        {
+          "role": "DIVIDE_INCOMPLETE_REFUSAL",
+          "before": 3,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 2,
+          "outcome": "paid"
+        },
+        {
+          "role": "JUMP",
+          "before": 2,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 1,
+          "outcome": "paid"
+        },
+        {
+          "role": "FORAGE_CORRECT",
+          "before": 1,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 20,
+          "after": 20,
+          "outcome": "paid"
+        }
+      ],
+      "final_energy": 20,
+      "nursery_words": 3,
+      "cap_spill": 0
+    },
+    "minimum_entry_to_next_correct_probe": 10,
+    "learner_entry_E27": {
+      "alive": true,
+      "rows": [
+        {
+          "role": "JUMP",
+          "before": 27,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 26,
+          "outcome": "paid"
+        },
+        {
+          "role": "FORAGE_CORRECT",
+          "before": 26,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 20,
+          "after": 45,
+          "outcome": "paid"
+        },
+        {
+          "role": "READ",
+          "before": 45,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 44,
+          "outcome": "paid"
+        },
+        {
+          "role": "IF_SUCCESS",
+          "before": 44,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 43,
+          "outcome": "paid"
+        },
+        {
+          "role": "COPY",
+          "before": 43,
+          "base_fee": 1,
+          "extra_fee": 3,
+          "food_gain": 0,
+          "after": 39,
+          "outcome": "paid"
+        },
+        {
+          "role": "DIVIDE_INCOMPLETE_REFUSAL",
+          "before": 39,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 38,
+          "outcome": "paid"
+        },
+        {
+          "role": "JUMP",
+          "before": 38,
+          "base_fee": 1,
+          "extra_fee": 0,
+          "food_gain": 0,
+          "after": 37,
+          "outcome": "paid"
+        }
+      ],
+      "final_energy": 37,
+      "nursery_words": 3,
+      "cap_spill": 0
+    },
+    "paired_reference_actual_stable_couplings": {
+      "E27_next_second_probe_correct": {
+        "alive": true,
+        "rows": [
+          {
+            "role": "JUMP",
+            "before": 27,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 26,
+            "outcome": "paid"
+          },
+          {
+            "role": "FORAGE_WRONG",
+            "before": 26,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 25,
+            "outcome": "paid"
+          },
+          {
+            "role": "XOR",
+            "before": 25,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 24,
+            "outcome": "paid"
+          },
+          {
+            "role": "FORAGE_CORRECT",
+            "before": 24,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 20,
+            "after": 43,
+            "outcome": "paid"
+          },
+          {
+            "role": "COPY",
+            "before": 43,
+            "base_fee": 1,
+            "extra_fee": 3,
+            "food_gain": 0,
+            "after": 39,
+            "outcome": "paid"
+          },
+          {
+            "role": "DIVIDE_INCOMPLETE_REFUSAL",
+            "before": 39,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 38,
+            "outcome": "paid"
+          },
+          {
+            "role": "JUMP",
+            "before": 38,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 37,
+            "outcome": "paid"
+          }
+        ],
+        "final_energy": 37,
+        "nursery_words": 3,
+        "cap_spill": 0
+      },
+      "E29_next_first_probe_correct": {
+        "alive": true,
+        "rows": [
+          {
+            "role": "JUMP",
+            "before": 29,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 28,
+            "outcome": "paid"
+          },
+          {
+            "role": "FORAGE_CORRECT",
+            "before": 28,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 20,
+            "after": 47,
+            "outcome": "paid"
+          },
+          {
+            "role": "XOR",
+            "before": 47,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 46,
+            "outcome": "paid"
+          },
+          {
+            "role": "FORAGE_WRONG",
+            "before": 46,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 45,
+            "outcome": "paid"
+          },
+          {
+            "role": "COPY",
+            "before": 45,
+            "base_fee": 1,
+            "extra_fee": 3,
+            "food_gain": 0,
+            "after": 41,
+            "outcome": "paid"
+          },
+          {
+            "role": "DIVIDE_INCOMPLETE_REFUSAL",
+            "before": 41,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 40,
+            "outcome": "paid"
+          },
+          {
+            "role": "JUMP",
+            "before": 40,
+            "base_fee": 1,
+            "extra_fee": 0,
+            "food_gain": 0,
+            "after": 39,
+            "outcome": "paid"
+          }
+        ],
+        "final_energy": 39,
+        "nursery_words": 3,
+        "cap_spill": 0
+      }
+    },
+    "interpretation": "The E5 alternator adult dies on the fifth postbirth action before its next correct probe; low-energy COPY refuses and must not be charged3 extra. E10 pays7 base+3 COPY extra and is rescued by the final correct forage after its base fee reaches zero, ending20. Learner27 ends37; nonlearning paired27/29 ends37/39. This comparison does not establish unique learning benefit.",
+    "lineage_caution": "The alternator already produced a child with12 energy. Adult death is not lineage extinction or proof of lower fitness; released body material and descendant outcomes still require accounting."
+  },
+  "formal_port_erasure": {
+    "description": "Reuse the accepted learner post-DIVIDE E27 state. On target1, zero only the personally acquired port register; current feedback, the separate feedback register, code, position, nursery and resources remain unchanged. Target0 is unaffected by zeroing.",
+    "cases": [
+      {
+        "handling_fee": 0,
+        "intact_target1": {
+          "formal_equal_handling_fee": 0,
+          "dispatches": 7,
+          "rows": [
+            {
+              "role": "JUMP",
+              "after_energy": 26
+            },
+            {
+              "role": "SUCCESS",
+              "after_energy": 45
+            },
+            {
+              "role": "READ",
+              "after_energy": 44
+            },
+            {
+              "role": "IF",
+              "after_energy": 43
+            },
+            {
+              "role": "COPY",
+              "after_energy": 39
+            },
+            {
+              "role": "DIV_REFUSED",
+              "after_energy": 38
+            },
+            {
+              "role": "JUMP",
+              "after_energy": 37
+            }
+          ],
+          "end_energy": 37,
+          "food_meals": 1,
+          "COPY_extra": 3,
+          "nursery_words": 3,
+          "cap_spill": 0,
+          "endpoint": "pc0 beforeFORAGE, nursery3"
+        },
+        "port_register_erased_to0_target1": {
+          "formal_equal_handling_fee": 0,
+          "dispatches": 12,
+          "rows": [
+            {
+              "role": "JUMP",
+              "after_energy": 26
+            },
+            {
+              "role": "MISS",
+              "after_energy": 25
+            },
+            {
+              "role": "READ",
+              "after_energy": 24
+            },
+            {
+              "role": "IF",
+              "after_energy": 23
+            },
+            {
+              "role": "SET_MASK",
+              "after_energy": 22
+            },
+            {
+              "role": "XOR",
+              "after_energy": 21
+            },
+            {
+              "role": "SUCCESS",
+              "after_energy": 40
+            },
+            {
+              "role": "READ",
+              "after_energy": 39
+            },
+            {
+              "role": "IF",
+              "after_energy": 38
+            },
+            {
+              "role": "COPY",
+              "after_energy": 34
+            },
+            {
+              "role": "DIV_REFUSED",
+              "after_energy": 33
+            },
+            {
+              "role": "JUMP",
+              "after_energy": 32
+            }
+          ],
+          "end_energy": 32,
+          "food_meals": 1,
+          "COPY_extra": 3,
+          "nursery_words": 3,
+          "cap_spill": 0,
+          "endpoint": "pc0 beforeFORAGE, nursery3"
+        },
+        "target0_erasure": "No portchange; sameprefixasintact atthisabstractstate, no5feeclaim."
+      },
+      {
+        "handling_fee": 1,
+        "intact_target1": {
+          "formal_equal_handling_fee": 1,
+          "dispatches": 7,
+          "rows": [
+            {
+              "role": "JUMP",
+              "after_energy": 25
+            },
+            {
+              "role": "SUCCESS",
+              "after_energy": 44
+            },
+            {
+              "role": "READ",
+              "after_energy": 43
+            },
+            {
+              "role": "IF",
+              "after_energy": 42
+            },
+            {
+              "role": "COPY",
+              "after_energy": 38
+            },
+            {
+              "role": "DIV_REFUSED",
+              "after_energy": 37
+            },
+            {
+              "role": "JUMP",
+              "after_energy": 36
+            }
+          ],
+          "end_energy": 36,
+          "food_meals": 1,
+          "COPY_extra": 3,
+          "nursery_words": 3,
+          "cap_spill": 0,
+          "endpoint": "pc0 beforeFORAGE, nursery3"
+        },
+        "port_register_erased_to0_target1": {
+          "formal_equal_handling_fee": 1,
+          "dispatches": 12,
+          "rows": [
+            {
+              "role": "JUMP",
+              "after_energy": 25
+            },
+            {
+              "role": "MISS",
+              "after_energy": 24
+            },
+            {
+              "role": "READ",
+              "after_energy": 23
+            },
+            {
+              "role": "IF",
+              "after_energy": 22
+            },
+            {
+              "role": "SET_MASK",
+              "after_energy": 21
+            },
+            {
+              "role": "XOR",
+              "after_energy": 20
+            },
+            {
+              "role": "SUCCESS",
+              "after_energy": 39
+            },
+            {
+              "role": "READ",
+              "after_energy": 38
+            },
+            {
+              "role": "IF",
+              "after_energy": 37
+            },
+            {
+              "role": "COPY",
+              "after_energy": 33
+            },
+            {
+              "role": "DIV_REFUSED",
+              "after_energy": 32
+            },
+            {
+              "role": "JUMP",
+              "after_energy": 31
+            }
+          ],
+          "end_energy": 31,
+          "food_meals": 1,
+          "COPY_extra": 3,
+          "nursery_words": 3,
+          "cap_spill": 0,
+          "endpoint": "pc0 beforeFORAGE, nursery3"
+        },
+        "target0_erasure": "No portchange; sameprefixasintact atthisabstractstate, no5feeclaim."
+      }
+    ],
+    "accounting": "Aligned endpoints are pc0 before forage with3 nursery words. Intact:7 base+3 COPY extra, one20 meal, no spill, ending37. Erased:12 base+3 COPY extra, one20 meal, no spill, ending32. Equal illustrative handling fee1 gives36 versus31. Both adults survive and neither has another child in these prefixes. Child12 was already inside the prior DIVIDE30 transfer, not charged again.",
+    "decision": "SUPPORTED_CONDITIONALLY_FOR_A_FIVE_ENERGY_RETAINED_PORT_STATE_EFFECT; NOT_PROOF_OF_UNIQUE_OR_EVOLVED_FITNESS_ADVANTAGE",
+    "strong_control": "The legal paired nonlearning reference matches intact37 and can retain39 in its other accepted branch. Earlier prebirth E56 erasure fees were absorbed by cap spill; that older scoped result remains valid.",
+    "handling_authority": "Formal equal handling0/1 is illustrative scalar bookkeeping, not an implemented erasure/sham protocol, a new law or execution permission.",
+    "limits": [
+      "No uniform5-energy claim across both targets or seed probabilities.",
+      "Matched starting observations do not prove the required equal food availability at different later global times.",
+      "Later cap saturation can eliminate the temporary reserve gap. Longer survival, additional offspring, selection and inheritance remain unproved."
+    ]
+  },
+  "scientific_decision": "A conditional personally acquired state can retain energy in a complete paid source prefix. Strong nonlearning controls still explain the same reserve, so ordinary evolved survival or reproductive advantage remains UNKNOWN.",
+  "required_next_proof": [
+    "Ordinary mutation accessibility and funded ancestry/intermediates, not a supplied successful genotype.",
+    "Actual source-lawful stock/head/scheduler continuation, materials and expiry for the relevant comparison.",
+    "Fully paid survival/offspring advantage against fixed, reactive, latest-success, finite-state and free-stay references with causal erasure/sham/nonpredictive/unseen controls."
+  ],
+  "preserved": "All earlier scoped negatives, four sealed assignments and144 consumed reservations remain unchanged.",
+  "execution": {
+    "World_VM_population_replay": 0,
+    "native_build_diagnostic": 0,
+    "seed_queries": 0,
+    "genotypes_supplied": 0,
+    "erasure_interventions": 0,
+    "scientific_admission": "NO_GO",
+    "native_qualification": "NO_GO"
+  },
+  "local_evidence": {
+    "check.py": "3f4d42a333c26550f28bff4f9f9e0998e9b4bc9b2cb57956e26082d67e6749a4",
+    "result.json": "7c281235d6b96b383e196dbc3c6d7d390cb8d054b05e5a44116e92b606be3f18",
+    "independent-review.json": "02843e27b798fb6c4d064f088bee7aea406b99794bb865de99706412c43369e3",
+    "erasure.py": "aa92f3e29f00bd5f28938bda1818ff7012a11f17606bf22a2874a7077730b8cd",
+    "erasure-result.json": "f3dde4a019794c8e287a13744e43c67da74e6d84e919dc0ba92cb8f042ad208b",
+    "erasure-independent-review.json": "b5e6f30857813d0bffadd949f690b9f56aef0c87b3ac3c9aea8dbea31c94eb0f",
+    "handling-age-note.json": "ac82be5d4d0944a337531ae71f65cdbe0f3b1c70fe33015a0540ff9b09e8e3b5"
+  }
+}

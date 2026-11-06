@@ -1,0 +1,191 @@
+{
+  "schema": "EKA-RENEWED-FOOD-SOURCE-ANALYSIS-SUMMARY-v1",
+  "source_commit": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "scope": "SOURCE_ALGEBRA_ONLY_NOT_EXECUTED_WORLD_OR_LEARNING",
+  "new_analysis_executed_for_publication": false,
+  "retained_analysis": [
+    {
+      "name": "conditional_fee_screen",
+      "conditional_rows": 1584,
+      "symbolic_mutation_word_support_witnesses": 31,
+      "receipt_sha256": "f4adb2a995d651bebe09d06c93af4727fc152833bd81e5e0545628f900ce8b9b",
+      "script_sha256": "48a0aa1b0235f67c8f2f6817177826bc6501d51adc22a6ccbc03f8ed9a12c989"
+    },
+    {
+      "name": "productive_revisit",
+      "symbolic_cases": 17,
+      "receipt_sha256": "c227ed59ab4fd6b68aebcd90ec0c01402293556c235f3bbe82d873374c9718dc",
+      "script_sha256": "020935b5611bdf881e9e4ed899847d6e79dd1f3681c2ad9580a2cee9e8904256",
+      "break_even_addendum_sha256": "ea19ab4d2afbdb7b9c0535abf22e853a9fe963cb6cd6547494ec7de81c3485ab"
+    },
+    {
+      "name": "productive_affordability_bounds",
+      "symbolic_cases": 6,
+      "receipt_sha256": "38a76379958a25a7d928c957dab9fef9fe0d3d6c77927abeaa3a65467bb45c2e",
+      "script_sha256": "dd89852a806fb354d1e0a55e0d9a7509f5832460999b959022403f85abeb306c"
+    }
+  ],
+  "hypothesis": "A personally observed renewed-target bit already retained in a register may rescue a naturally necessary productive return at energy1, if it predicts the still-current target and correct FORAGE rewards before death; a wrong blind probe dies.",
+  "not_established": [
+    "Matched lawful funded history",
+    "Predictive information beyond current feedback in actual unseen histories",
+    "Fully paid advantage over free-to-stay fixed/reactive and equally cheap finite-state memory comparators",
+    "Evolved or inherited useful capability"
+  ],
+  "fee_bound": {
+    "expression": "delta <= N - C*W - A - R - D",
+    "meaning": "N later packets; W wrong cached first probes; C additional repair dispatches per wrong probe in the two screened motifs (1 or 2, not a universal lower bound); A incremental acquisition; R total retrieval; D differential travel/control. A surviving register has no per-step retention fee. At most one saved dispatch per later packet versus warm two-register literal blind pair, under equal-reward/common-control assumptions.",
+    "perfect_register_A1_R0_D0_W0_min_later_meals_for_positive_headroom": 2,
+    "READ_STORE_A2_and_LOAD_each_R_equals_N": "Cannot beat this reference by dispatch savings alone",
+    "unrewarded_overwrite_and_return_min_extra_dispatches": 3,
+    "first_new_batch_remaining_meals_at_most": 3,
+    "READ_STORE_and_batched_LOAD_cost": 3,
+    "READ_STORE_batched_LOAD_first_batch_positive_fee_headroom": false
+  },
+  "energy_cap": "F(E)=min(E+19,64), E>=1; compare F(E)-F(E-A) only when E-A>=1. Cap waste can erase an earlier energy deficit, never refund energy, heat or ticks. Equal two-dispatch high-energy comparison at E63 gives cache(food+idle)=63 and blind pair=63 or64: no guaranteed endpoint gain.",
+  "paid_productive_route_necessary_bounds": {
+    "COPY_cost": 4,
+    "COPY_pre_energy5": "Leaves1; cannot MOVE",
+    "COPY_pre_energy6": "Leaves2; one MOVE reaches1 by energy alone",
+    "formation_cost": 31,
+    "formation_pre_energy32": "Leaves1; cannot MOVE",
+    "formation_pre_energy33": "Leaves2; one MOVE reaches1 by energy alone",
+    "27_word_nursery_COPY_operations": 9,
+    "COPY_formation_adjacent_return_cost": 68,
+    "starting_cap": 64,
+    "minimum_net_replenishment_before_rescue": 5,
+    "daughter_material_units": 43,
+    "optimistic_own_dispatches": 12,
+    "latest_observation_own_age_for_rescue_before_expiry256": 243,
+    "caveat": "Necessary optimistic bounds only: excludes acquisition/control/failed probes/cap waste, requires every intermediate prefix to survive. Own age differs from global ticks after birth."
+  },
+  "controls_required": [
+    "Matched current feedback, energy, resources, timing and handling",
+    "Fixed/reactive competitors free to stay or avoid trip",
+    "Equally cheap finite-state memory comparator",
+    "Erasure plus sham handling",
+    "Nonpredictive target control",
+    "Unseen conditions"
+  ],
+  "mutation_inheritance": "Symbolic word support is not a demonstrated viable program or selection probability. Newborn registers/memory are blank; inherited code capability does not transmit the personal answer.",
+  "verdict": "UNKNOWN; conditional opportunity and necessary bounds, not demonstrated affordability or learning",
+  "next_scientific_step": "Find a lawful, prefix-funded productive revisit and matched histories from source analysis; only then request a separately authorized finite test with controls. No supplied winning genome or changed laws.",
+  "engineering": {
+    "observed_date": "2026-10-31",
+    "native_public_head": "ca04547ff0e11e952ca5ca32f30376615dc205dd",
+    "PR": 323,
+    "draft": true,
+    "merged": false,
+    "accounting_contract": "EKA-BUILD-ONLY-METERED-RELEASE-v1",
+    "independent_acceptance": "PASS_EXACT_SOURCE_OFFLINE_ONLY",
+    "independent_checks": {
+      "current_build_fixture_checks": 51,
+      "prior_unchanged_custody_checks": 20
+    },
+    "offline_CI": {
+      "run_id": 41130618195,
+      "checks": 221,
+      "status": "PASS_OFFLINE_ONLY",
+      "native_steps": "SKIPPED_NOT_PASSED",
+      "interpreter_dependency_observations": 1856,
+      "raw_control_test_hashes": 23,
+      "complete_OS_SDK_custody": false
+    },
+    "CI_artifact_sha256": "3bab8ec4c5253104275e6805cb0cbf989b750b077a3d52b3e5b30ef37f6e5973",
+    "controls_source_verified": [
+      "Separate BUILD_ONLY owner/assignment registry retains physical ledger and lifetime identity",
+      "Durable precharge; failed or rejected attempts terminal without refunds",
+      "Measured root USER plus KERNEL CPU debited once; nested totals never added twice",
+      "Missing custody, counters, overruns and archive failures preserve failure and unresolved costs",
+      "Provisional capture is distinct from external settlement after original owner closure"
+    ],
+    "opaque_nested_build_attempts": "UNKNOWN; approved build-only unit-birth waiver, not a scientific or diagnostic exemption",
+    "original_only_producer_and_assignment_grant_transport": "PARTIAL_SOURCE_ONLY_BINDING; actual native custody and transport UNQUALIFIED",
+    "strict_CPU_ceiling": "NOT_READY; no documented finite worst-case enforcement latency",
+    "retained_CPU_result": {
+      "private_USER_seconds": 2.0625,
+      "configured_USER_seconds": 1,
+      "KERNEL_seconds": null
+    },
+    "native_executed_head": "909c1b00d69047a895c5618305a4b8e921e25060",
+    "native_qualification": "FAILED_HISTORICAL; NEW_BUILD_ONLY_IMPLEMENTATION_UNRUN",
+    "handshake_repair_native": "UNRUN; historical mismatch FAIL and attribution UNKNOWN",
+    "cases7_8": "UNRUN",
+    "sealed_assignments": 4,
+    "sealed_files": 75,
+    "consumed_reservations": 144,
+    "archive_stored_bytes": 372874,
+    "recorded_disjoint_build_native_CPU_seconds": 4.453125,
+    "CPU_scope_excludes": [
+      "parent hashing",
+      "archive work",
+      "offline tests",
+      "CI"
+    ],
+    "limits_unchanged": true,
+    "original_setup_failures_preserved": true,
+    "refunds_or_resume": false,
+    "scientific_status": "NOT_READY",
+    "single_build_preflight": "NO_GO",
+    "next_dependency": [
+      "Independently qualified real OS build containment, owned birth/image and executed-source custody",
+      "Pinned compiler/linker/SDK/header/dependency and immutable binary identities",
+      "Fresh immutable single-build manifest, physical ledger and original owner binding",
+      "External owner/observer/cleanup/archive/final-writer costs and closure/restoration settlement",
+      "Separate explicit human authorization before any build; subsequent diagnostics separately authorized"
+    ],
+    "independent_receipts_sha256": {
+      "exact_head_acceptance": "0f0eab1a1194131e1a041dc885acb799b7c6af3222fdbc104603ff7cc297719e",
+      "CI_acceptance": "e09ea4455178f3cece741e7de68bdac4fb2aec9dcb32266b84c10a7a0dff72ac"
+    },
+    "learning_advantage_verdict": "UNKNOWN",
+    "no_new_native_or_compile_execution": true,
+    "no_new_scientific_execution": true,
+    "new_tests_run_for_documentation_sync": 0
+  },
+  "dated_assistant_observation": {
+    "observed_utc": "2026-10-31T16:14:55.250933+00:00",
+    "observed_Halifax": "2026-10-31T13:14:55-03:00",
+    "completed_windows": 62,
+    "completed_epochs": 1423,
+    "ongoing_window": 63,
+    "retained_failure_counters": {
+      "controller": 1,
+      "host": 1,
+      "seen": 1
+    },
+    "new_failures": 0,
+    "memory_records": 174,
+    "full_provenance_and_key": true,
+    "valid_snapshots": 2,
+    "latest_qualified_full_window": 62,
+    "latest_window_seconds": 7200.937,
+    "exit0_EOF_no_leaks_and_next_start": true,
+    "reviewed_partial_window": {
+      "number": 52,
+      "seconds": 828.516,
+      "classification": "PARTIAL_REVIEWED_RECOVERY_NOT_7200_SECOND_RENEWAL"
+    },
+    "clean_but_short_window": {
+      "number": 56,
+      "native_seconds": 7199.11,
+      "qualified_7200_second_renewal": false
+    },
+    "individually_unverified_windows": [
+      9,
+      10,
+      11,
+      12,
+      16,
+      17,
+      18,
+      19,
+      20,
+      51
+    ],
+    "reviewed_interruption": "Service exit1073807364 during Windows power-off; exact terminating actor UNKNOWN; original lifetime/deadline preserved",
+    "old_readiness_root_cause": "UNKNOWN",
+    "claim_ceiling": "Dated scoped assistant operation, not organism learning, indefinite reliability or historical cause proof",
+    "source": "Retained monitoring receipts; no runtime check in this documentation sync"
+  }
+}

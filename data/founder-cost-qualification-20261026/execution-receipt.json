@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-26T19:30:53.271145+00:00",
+  "execution_source_commit": "62379896c76ff6d0c91508792bed3d1fa5df28df",
+  "exit_code": 0,
+  "wall_seconds": 0.09399999998277053,
+  "timeout_seconds": 10,
+  "cases": 48,
+  "controller_executions": 0,
+  "population_executions": 0,
+  "result_sha256": "94c5ae38c27333e485c95b76ee71cbf2929db44d22c67682287f5914753e94f1"
+}

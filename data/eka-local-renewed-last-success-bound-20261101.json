@@ -1,0 +1,184 @@
+{
+  "scope": "AST_AND_TWELVE_FIXED_BOOLEAN_ENERGY_IDENTITIES_NOT_A_VM_OR_HISTORY",
+  "publication_head": "61534e078efe6893740dc75538ae2b96f63e46bc",
+  "source": {
+    "file": "experiments/digital_pressure71_population.py",
+    "working_sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+    "relevant_lines": [
+      67,
+      69,
+      78,
+      79,
+      80,
+      81,
+      82,
+      84,
+      85,
+      86,
+      123,
+      130
+    ]
+  },
+  "theorem": "At a fixed site and unchanged renewed-target phase, after genuine personal success on a renewed packet, the successful personally chosen port equals the target of every next available renewed packet. Keeping that register yields correct next FORAGE at the minimum one-instruction fee. Arbitrarily older history cannot improve that next port choice or its immediate food reward over an intact last-successful-port reference.",
+  "preconditions": [
+    "Last success and next consumed candidate are genuinely renewed packets, not mixed initial-stock labels",
+    "Same physical site and same side of globaltick2048",
+    "At least one packet available when FORAGE executes",
+    "The successful chosen-port register remains intact",
+    "Positive energy and no expiry on this action if claiming survival beyond dispatch",
+    "Comparisons match current energy/resource/timing and pay all acquisition/control costs"
+  ],
+  "proof": [
+    "Success feedback1 occurs only when chosen port equals target on an available packet.",
+    "Renewed target is a function of site/seed and phase only; it has no packet-specific term. No hash output need be evaluated.",
+    "FORAGE does not overwrite the chosen-port register. Under unchanged context it already contains a perfect next-port answer.",
+    "A successful reference action attains success1 and maximal source-defined food reward for the matched state, at the common minimum basefee1. Additional older history cannot exceed either bound.",
+    "This proves one-action port sufficiency, not full ecological sufficiency, phenotype accessibility or a universally optimal lifetime policy."
+  ],
+  "local_cases": [
+    {
+      "current_target": 0,
+      "intact_last_successful_port": 0,
+      "energy_before": 1,
+      "minimum_FORAGE_dispatch_fee": 1,
+      "max_available_food_gain": 20,
+      "reference_energy_after_FORAGE": 20,
+      "opposite_port_energy_after_FORAGE": 0,
+      "strict_older_history_port_improvement_possible": false
+    },
+    {
+      "current_target": 0,
+      "intact_last_successful_port": 0,
+      "energy_before": 64,
+      "minimum_FORAGE_dispatch_fee": 1,
+      "max_available_food_gain": 1,
+      "reference_energy_after_FORAGE": 64,
+      "opposite_port_energy_after_FORAGE": 63,
+      "strict_older_history_port_improvement_possible": false
+    },
+    {
+      "current_target": 1,
+      "intact_last_successful_port": 1,
+      "energy_before": 1,
+      "minimum_FORAGE_dispatch_fee": 1,
+      "max_available_food_gain": 20,
+      "reference_energy_after_FORAGE": 20,
+      "opposite_port_energy_after_FORAGE": 0,
+      "strict_older_history_port_improvement_possible": false
+    },
+    {
+      "current_target": 1,
+      "intact_last_successful_port": 1,
+      "energy_before": 64,
+      "minimum_FORAGE_dispatch_fee": 1,
+      "max_available_food_gain": 1,
+      "reference_energy_after_FORAGE": 64,
+      "opposite_port_energy_after_FORAGE": 63,
+      "strict_older_history_port_improvement_possible": false
+    }
+  ],
+  "fixed_port_comparison": "Both target labels0/1 are covered. In each case the fixed port equal to that target ties the intact cache for the next action without paying acquisition; the opposite fixed port fails. No universally correct fixed choice, real unseen target distribution, or aggregate fixed-policy advantage is asserted.",
+  "reference_cost_scope": "Keeping an already personally chosen successful register across the invariant context needs no extra STORE/LOAD. This is not a zero-cost global last-success tracking controller: success detection, switching between registers/locations, validity, phase tracking and all program control must be paid and qualified in a complete implementation. The success/renewal conditions here are theorem premises, not privileged inputs supplied to an organism.",
+  "scoped_verdict": "FALSIFIED_FOR_SAME_CONTEXT_NEXT_FORAGE_SUPERIORITY_OVER_INTACT_LAST_SUCCESS_REFERENCE",
+  "fee_interpretation": "Earlier N-A optimistic savings was against blind two-port probing, not against this intact same-context cache. If both cache/reference use one correct FORAGE per later packet, additional READ acquisition cannot yield port-dispatch savings against the reference. Acquisition may still matter for obtaining a bit initially; that full paid implementation is unqualified.",
+  "feedback_overwrite_boundary": "A wrong or empty B probe writes feedback0 but need not erase the last SUCCESSFUL A port. Overwriting feedback alone therefore does not establish an information advantage over a last-successful-port comparator. A genuine successful B observation can replace a global last-successful port; lawful necessary repurposing of the chosen register is another possible boundary but cannot be imposed for free.",
+  "cross_location_cases": [
+    {
+      "symbolic_A_target": 0,
+      "symbolic_B_target": 0,
+      "after_genuine_B_success_global_last_port": 0,
+      "older_A_port": 0,
+      "global_last_port_correct_back_at_A": true,
+      "older_A_port_correct_back_at_A": true,
+      "scope": "No actual source hash outputs, matched histories, frequency or benefit measured"
+    },
+    {
+      "symbolic_A_target": 0,
+      "symbolic_B_target": 1,
+      "after_genuine_B_success_global_last_port": 1,
+      "older_A_port": 0,
+      "global_last_port_correct_back_at_A": false,
+      "older_A_port_correct_back_at_A": true,
+      "scope": "No actual source hash outputs, matched histories, frequency or benefit measured"
+    },
+    {
+      "symbolic_A_target": 1,
+      "symbolic_B_target": 0,
+      "after_genuine_B_success_global_last_port": 0,
+      "older_A_port": 1,
+      "global_last_port_correct_back_at_A": false,
+      "older_A_port_correct_back_at_A": true,
+      "scope": "No actual source hash outputs, matched histories, frequency or benefit measured"
+    },
+    {
+      "symbolic_A_target": 1,
+      "symbolic_B_target": 1,
+      "after_genuine_B_success_global_last_port": 1,
+      "older_A_port": 1,
+      "global_last_port_correct_back_at_A": true,
+      "older_A_port_correct_back_at_A": true,
+      "scope": "No actual source hash outputs, matched histories, frequency or benefit measured"
+    }
+  ],
+  "phase_change_cases": [
+    {
+      "symbolic_site_latent_bit": 0,
+      "old_phase": 0,
+      "new_phase": 0,
+      "raw_old_A_bit": 0,
+      "current_A_target": 0,
+      "old_cache_and_unadjusted_last_success_correct": true
+    },
+    {
+      "symbolic_site_latent_bit": 0,
+      "old_phase": 0,
+      "new_phase": 1,
+      "raw_old_A_bit": 0,
+      "current_A_target": 1,
+      "old_cache_and_unadjusted_last_success_correct": false
+    },
+    {
+      "symbolic_site_latent_bit": 1,
+      "old_phase": 0,
+      "new_phase": 0,
+      "raw_old_A_bit": 1,
+      "current_A_target": 1,
+      "old_cache_and_unadjusted_last_success_correct": true
+    },
+    {
+      "symbolic_site_latent_bit": 1,
+      "old_phase": 0,
+      "new_phase": 1,
+      "raw_old_A_bit": 1,
+      "current_A_target": 0,
+      "old_cache_and_unadjusted_last_success_correct": false
+    }
+  ],
+  "phase_boundary": "Across2048 the raw renewed target flips. Raw olderA and raw last-successfulA answers both become wrong; old raw history alone has no established benefit. Phase/timing inference would require a lawful, paid mechanism and comparison with equally informed finite-state controls.",
+  "erasure_control": "Erasing both candidate old bit and comparator last-successful-port state demonstrates dependence on the removed information, not superiority over an intact comparator. Keep a separate intact cheap reference and cost-matched sham; distinguish causal information use from older-history advantage or evolved origin.",
+  "exact_nontrivial_next_falsifier": "Find a lawful funded success at A on renewed food, then a genuinely useful success at B or necessary paid state overwrite, then return to A in the same target phase with renewed food still available. Match current feedback/context and allow free-policy references to remain atA or avoid the trip. Require a prospective untouched case family where oldA is not recoverable from currentB/cheap cues. If every competitive route can retain/recover the same answer in the equally cheap last-successful or location-specific finite-state cache, reject older-history superiority for that route.",
+  "cross_location_limits": "The four symbolic A/B labels do not establish that the real hash family supplies informative variation or matched lawful histories. A location-specific cache is a required memory-positive comparator; its validity/location/phase tracking, acquisition and retrieval costs are not free or qualified.",
+  "productive_departure": "Global material/COPY/formation laws do not by themselves require a location change. The previous paid reproduction-return energy certificate did not establish a genuine need to leave; no forced starvation, travel, resource protection or modified law is admitted here.",
+  "remaining_unknowns": [
+    "Useful lawful productive departure/revisit under freely acting strong references",
+    "Real unseen site-target conditional information beyond current cues",
+    "Nine-instruction paid acquisition/control and ordinary mutation accessibility",
+    "Complete energy/material/cap-waste/expiry and offspring-scheduling prefix",
+    "Net survival/reproductive advantage and inheritance of useful behavior"
+  ],
+  "old_evidence": "All earlier source-only receipts and original failures preserved unchanged; faithful-founder acquired-r0 motif remains falsified within its prior scope.",
+  "scientific_imports": 0,
+  "World_or_population_or_replay_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "supplied_genomes": 0,
+  "source_edits": 0,
+  "organisms_learned": "NOT_TESTED",
+  "scientific_admission": "NO_GO",
+  "reproducibility": {
+    "script_sha256": "75f1f0b07316cbce4b626138a68e31e19e5b92235284fdaa29bd446b4fc73d8b",
+    "retained_raw_result_sha256": "4ec335f37bfda6aefafeea2936c6dc8f2e8ceb62ae65c3e521df6524d26a3b2e",
+    "method": "Parse exact scientific source as AST only, no import. Four local identities: t in {0,1}, E in {1,64}, p=t, E_after=E-1+min(20,65-E). Four symbolic A/B equalities: last=B, old=A. Four phase equalities: target=latent XOR phase. No actual hash outputs evaluated.",
+    "independent_review": "Independent exact source/script/result review retained locally; publication accepted only after reviewed bytes match."
+  }
+}

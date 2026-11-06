@@ -1,0 +1,36 @@
+{
+  "schema": "EKA-PRIOR-ART-EXPLICIT-CORRECTION-v1",
+  "decision": "WITHDRAW_INCORRECT_GENETIC_WRITEBACK_AND_LIBRARY_ATTRIBUTION",
+  "preserved_original": {
+    "commit": "b6f24ad77a0554298f0279a43eed15bfad989700",
+    "file": "data/eka-paid-memory-phase-review-20261101.json",
+    "field": "prior_art.implication",
+    "exact_text": "Authored write-back/library machinery does not establish mutation-origin learning; equal evaluation counts do not establish fully paid lifecycle costs; isolate inherited information from genetic write-back in fair controls",
+    "status": "Original file and all conditional energy evidence retained unchanged; this correction supersedes the prior-art implication only."
+  },
+  "withdrawn": [
+    "Genetic-weight or genetic-write-back characterization of PHENO learning",
+    "Library-machinery attribution unsupported by the actual v2 methods",
+    "Prior note post-switch recovery numbers 28.4/14.7/8.3 and associated section attributions"
+  ],
+  "primary": "https://arxiv.org/html/2602.00978v2",
+  "independent_corrected_note": {
+    "PR": 65,
+    "repository": "JeremyHennessy/AI-Research",
+    "commit": "01ab3429e29ecb4d583c797af079cfc9874f62f7",
+    "file": "docs/artificial-life/EKA-0-PHENOPOIESIS-PRIOR-ART-20261031.md",
+    "raw_sha256": "5716daceb5b7948758db9e9457f332424b30aad0bdd0b7296d8d6d5ad676abcd"
+  },
+  "corrected_findings": [
+    "Six fixed binary-shape tasks, 30 replicates per algorithm/task, 50 individuals, 150 generations; not environment-switch recovery.",
+    "BALDWIN and PHENO each receive 20 supplied learning trials and genetic mutation; PHENO additionally transmits its acquired 100-bit epigenome unchanged. Learned activations are not written to genetic weights.",
+    "The inheritance contrast is intentional. The old unmatched-genetic-update criticism is withdrawn.",
+    "Supplied learning and epigenomic inheritance do not establish mutation-origin learning. Equal trial counts do not establish fully paid lifecycle costs.",
+    "Equation 1 unpenalized target recall permits all-active phenotype score 1 for any nonempty target. This is a representation/scoring observation, not evidence of cheap reachability, evolved behavior or paid advantage."
+  ],
+  "independent_primary_review_sha256": "127e3064ab04135736ec732bff6dba152d96cc6c303ab56b140369cb035734ca",
+  "paper_replication": false,
+  "new_scientific_execution": false,
+  "scientific_admission": "NO_GO",
+  "scope": "Correct attribution in this owned research branch; no edits to independent custodian PR65 or Ora scientific laws."
+}

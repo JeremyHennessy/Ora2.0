@@ -1,0 +1,145 @@
+{
+  "schema": "EKA-PAID-MEMORY-PHASE-REVIEW-v1",
+  "publication_base": "b6a6755b6f2560ba2c371e1f091e97cd5319e961",
+  "source_commit": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "certificate": {
+    "scope": "SOURCE_AST_AND_TWO_CONDITIONAL_PHASE_IDENTITIES_ONLY",
+    "publication_head": "b6a6755b6f2560ba2c371e1f091e97cd5319e961",
+    "scientific_source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+    "source_sha256": {
+      "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+      "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+      "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+    },
+    "source_lines": {
+      "ancestor_program": "digital_mobile54.py:4",
+      "base_cost": "digital_pressure71_population.py:67",
+      "READ": "digital_pressure71_population.py:72",
+      "food_selection": "digital_pressure71_population.py:69,79-86",
+      "COPY": "digital_pressure71_population.py:95-104",
+      "nursery_branch": "digital_pressure71_population.py:105-106",
+      "formation": "digital_pressure71_population.py:108-113",
+      "MOVE": "digital_pressure71_population.py:114",
+      "death_and_expiry": "digital_pressure71_population.py:123-133",
+      "global_material": "digital_sharedlineage68_population.py:49-51,61-70"
+    },
+    "preconditions_not_proved": [
+      "Genuine older personally acquired A renewed-target bit already in r0; no supplied answer",
+      "Phase starts with energy62, own age at most230, empty27word nursery, enough global materials and population headroom",
+      "B+1 modulo4 equalsA; B first available packets are renewed and in the same target phase",
+      "A still has a correct same-phase renewed packet at rescue, after interleaved child/other actors",
+      "All lower-ID initial packets at sampled sites have actually been consumed",
+      "Nine-instruction program can realize acquisition, repeatedCOPY checks, pair feeding, formation and return with every additional control fee charged",
+      "No intervening write destroys r0; any extra READ/LOAD occurs and is paid before E1",
+      "Complete founder prefix pays acquisition and reaches these conditions before expiry"
+    ],
+    "conditional_phase_cases": [
+      {
+        "symbolic_B_target": 0,
+        "phase_entry_energy": 62,
+        "paid_COPY_and_nursery_check_fees": 45,
+        "after_COPY_and_checks": 17,
+        "lowest_B_pair_energy_before_gain": 15,
+        "after_B_pair": 33,
+        "after_formation": 2,
+        "after_return_MOVE": 1,
+        "after_cached_rescue": 20,
+        "gross_food_energy": 40,
+        "daughter_energy": 12,
+        "heat": 70
+      },
+      {
+        "symbolic_B_target": 1,
+        "phase_entry_energy": 62,
+        "paid_COPY_and_nursery_check_fees": 45,
+        "after_COPY_and_checks": 17,
+        "lowest_B_pair_energy_before_gain": 13,
+        "after_B_pair": 33,
+        "after_formation": 2,
+        "after_return_MOVE": 1,
+        "after_cached_rescue": 20,
+        "gross_food_energy": 40,
+        "daughter_energy": 12,
+        "heat": 70
+      }
+    ],
+    "material_bound": "27code+16state=43 newly allocated units; initial founder43 plus one child43 fits512 only if other allocations leave43free. Formation creates a real child in source semantics, so scheduling/food competition cannot be omitted from any future actual trace.",
+    "actor_age_bound": "9COPY+9nursery checks+4B probes/sets+formation+MOVE+rescue=25own dispatches. Observation own age must be<=230 for rescue by255. Any extra acquisition/control narrows this bound; global ticks differ after child birth.",
+    "code_closure": "The optimistic9consecutiveCOPY phase cannot directly precede other opcodes in a9instruction circular program without extra control: all9visitedslots would beCOPY. Nine nursery-check dispatches are now explicitly paid in this energy certificate. This does not prove complete9instruction control/acquisition representability.",
+    "production_does_not_force_travel": "COPY and formation guards do not require a particular position; free material is global. They preserve the old register but do not by themselves justify leaving and revisitingA. A freely staying comparator may carry out the same reproductive work atA.",
+    "faithful_ancestor_limitation": "Existing ancestor has no READ/LOAD/STORE/self-write/RECEIVE opcodes. Its behavior cannot newly use a feedback-derived target bit through those mechanisms, and faithful copying cannot introduce them. Mutation accessibility, useful multiword control and selection remain UNKNOWN; no genome search performed.",
+    "comparison_requirements": [
+      "Both fixed ports and cheap blind pair with matched costs",
+      "Latest-feedback/last-port reactive reference",
+      "Budget-matched finite-state register cache",
+      "Cost-preserving old-bit erasure and sham",
+      "Nonpredictive old-history control and untouched unseen conditions",
+      "Free-to-stay references; no forced starvation/trip or protected food"
+    ],
+    "decision": {
+      "local_paid_phase_energy_and_material_necessary_conditions": "PASS_CONDITIONAL_ONLY",
+      "complete_lawful_founder_to_rescue_path": "UNKNOWN",
+      "complete27word_program_representability": "UNKNOWN",
+      "reproduction_alone_justifies_return": "FAIL",
+      "advantage_over_free_strong_comparators": "UNKNOWN",
+      "new_learning_or_evolution": "NOT_TESTED"
+    },
+    "single_next_research_blocker": "Close genuine acquisition and complete9instruction control/founder prefix without target insertion, while showing a real reason that free-policy references cannot avoid the productive return. Local E1 arithmetic is now compatible with cap64 but is not a lawful full trace.",
+    "scientific_imports": 0,
+    "World_or_population_or_replay_execution": 0,
+    "seed_or_hash_output_queries": 0,
+    "supplied_genomes": 0,
+    "source_edits": 0,
+    "scientific_admission": "NO_GO"
+  },
+  "certificate_sha256": "b4353a0f93042de7edce08110dcd3917594213492ecf2c7edd7b94c2f15886ac",
+  "source_analysis_script_sha256": "22493026eccf051eb4270ba5b29dc0bc78c66c251f60dbbb982538745fdb8245",
+  "independent_review_sha256": "00ce36417e84d016f92926e74ec70e8cc9273be8afbd2ea43fe61664b8d6b9fa",
+  "bounded_independent_control_arithmetic": [
+    {
+      "A_target_label": 0,
+      "chosen_port_label": 0,
+      "entry_energy": 1,
+      "endpoint_energy": 20,
+      "survives_this_forage": true
+    },
+    {
+      "A_target_label": 0,
+      "chosen_port_label": 1,
+      "entry_energy": 1,
+      "endpoint_energy": 0,
+      "survives_this_forage": false
+    },
+    {
+      "A_target_label": 1,
+      "chosen_port_label": 0,
+      "entry_energy": 1,
+      "endpoint_energy": 0,
+      "survives_this_forage": false
+    },
+    {
+      "A_target_label": 1,
+      "chosen_port_label": 1,
+      "entry_energy": 1,
+      "endpoint_energy": 20,
+      "survives_this_forage": true
+    }
+  ],
+  "negative_cases": {
+    "entry61_with_same_phase_fees": "MOVE reaches0; death occurs before rescue",
+    "only42_free_material_units": "After27 nursery units only15 remain; formation needs16 and rejects",
+    "observation_age231_plus25_steps": "Rescue at256 would be followed by source expiry, so no surviving endpoint",
+    "erasure_to_constant0": "Fails only for A_target1; ties for A_target0. No universal erasure-loss claim",
+    "literal_nine_slot_motif": "COPY/check2 + four SET/FORAGE slots + formation/MOVE/rescue3 consumes9 slots with no READ. This literal cannot acquire the bit; alternative full program UNKNOWN"
+  },
+  "strong_competitor_verdict": "UNKNOWN_NO_DEMONSTRATED_WIN; position-independent reproduction does not justify travel and a free-to-stay policy may reproduce at A; equally cheap finite-state cache may tie",
+  "prior_art": {
+    "exact_note": "https://github.com/JeremyHennessy/AI-Research/blob/a103c5e50a693c726859ea10a9d744667ed6583f/docs/artificial-life/EKA-0-PHENOPOIESIS-PRIOR-ART-20261031.md",
+    "scope": "Attribution to independently owned note, not independent paper replication",
+    "implication": "Authored write-back/library machinery does not establish mutation-origin learning; equal evaluation counts do not establish fully paid lifecycle costs; isolate inherited information from genetic write-back in fair controls"
+  },
+  "new_scientific_execution": false,
+  "new_genome_supplied": false,
+  "decision": "PASS_CONDITIONAL_ENERGY_IDENTITIES_ONLY; FULL_FOUNDER_PATH_AND_INFORMATION_ADVANTAGE_UNKNOWN; SCIENTIFIC_NO_GO",
+  "next_falsifier": "Genuine acquisition plus complete 27-word control and funded founder prefix, with matched histories/current observations and competitors free to stay. Reject this motif if no such lawful fit exists; do not infer a general impossibility."
+}

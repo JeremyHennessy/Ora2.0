@@ -1,0 +1,412 @@
+{
+  "schema": "EKA-STATIONARY-NONLEARNING-CONTROLS-CERTIFICATE-v1",
+  "scope": "SOURCE_ONLY_STATIC_CONTROL_AND_CONDITIONAL_PAID_ANCESTRY;NO_SCIENTIFIC_EXECUTION",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "initial_context": {
+    "paired_layout": "Nine slots unchanged27words:0SET constant register1to1,1FORAGE port register0,2XORport byconstant,3FORAGEport,4COPY,5DIVIDE,6JUMP1;7/8unreachable. Both ports are tried per meal cycle without observing feedback. A source-format two-word ordinaryCOPY outcome atoldpc6 changes MOVE13toJUMP7 and targetoperand0to1; remaining25words faithful. No new genome array or constructor replacement is made.",
+    "costs": "One cold SET then six-dispatch cycles, nine paid COPY actions27words, refused intermediate DIVIDE attempts charged, ninth DIVIDE succeeds with43 material available. First birth=1+9*6-1=54 dispatches. All nine successes occur on homogeneous initial site0 packets before64; no current target is supplied to the controller.",
+    "comparison": "For target0 success-gated53 vs paired54 (learning one dispatch earlier, same parent27). For target1 success-gated58,parent27 vs paired54,parent29 (paired four dispatches earlier and two more parent energy). Both produce one12-energy child after nine meals. Thus no uniform first-birth advantage from learning; the target-uninformed control improves worst-case time54 vs58. A uniform two-symbolic-target mean55.5 vs54 is only a mathematical summary, not an actual seed distribution or measured fitness.",
+    "steady_cycle_economics": "Per successful steady cycle, the success-gated witness pays FORAGE+READ+IF+COPY+DIVIDE+JUMP=6 base actions. Paired pays FORAGE+XOR+FORAGE+COPY+DIVIDE+JUMP=6. Saving a probe is exactly offset by its observation/control under these source fees. Both pay COPY extra3 when nursery incomplete; this is a named-controller comparison, not an optimality theorem.",
+    "phase_response_scope": "If a genuine target flip occurs just before a known-nonempty feeding cycle and stays stable through its actions, success-gated old-port failure executes FORAGE/READ/IF/SET/XOR before retry: five extra dispatches versus a successful steady loop. Paired remains one success from opposite ports if the flip does not fall between its probes. No bound is asserted for a phase flip inside a pair, empty stock, low energy, competing consumers or an actual post-birth population schedule.",
+    "cases": [
+      {
+        "target": 0,
+        "paired_first_birth_dispatches": 54,
+        "paired_parent_energy": 27,
+        "child_energy": 12,
+        "food_successes": 9,
+        "COPY_extra": 27,
+        "DIVIDE_extra": 30,
+        "cap_spill": 54,
+        "retained_learning_first_birth_dispatches": 53,
+        "retained_learning_parent_energy": 27
+      },
+      {
+        "target": 1,
+        "paired_first_birth_dispatches": 54,
+        "paired_parent_energy": 29,
+        "child_energy": 12,
+        "food_successes": 9,
+        "COPY_extra": 27,
+        "DIVIDE_extra": 30,
+        "cap_spill": 52,
+        "retained_learning_first_birth_dispatches": 58,
+        "retained_learning_parent_energy": 27
+      }
+    ]
+  },
+  "ordinary_two_word_control": {
+    "origin": "Ordinary unchanged parent firstDIVIDE70 is retained accepted source evidence. Exactly daughterpc6opcode13to7 and its JUMPtarget operand0to1 change in ordinary seventhCOPY atglobal53 (words18and20); other25words faithful. Existing mutation law permits the value offsets26and1, but actual joint seed/mutation event/frequency is UNKNOWN. Child starts at0/E12/pc0 through existing paid body formation; no constructor genotype is replaced.",
+    "schedule": "With parent0 and child1 only, childowni occurs atglobal70+2i-1. Paired child cyclek FORAGEs occur at73+12(k-1),77+12(k-1), COPY79+12(k-1), DIVIDE81+12(k-1). NinthCOPY175 and ninthDIVIDE177 follow directly from54own\u2192177global; no replaced constructor or extra actor is assumed.",
+    "equations": {
+      "child_birth_parent_global": 70,
+      "child_first_birth_own": 54,
+      "child_first_birth_global": 177,
+      "ninth_COPY_global": 175,
+      "ninth_DIVIDE_global": 177,
+      "parent_own_by_global176": 123
+    },
+    "pre_boundary_stock": "Beforeglobal157, original parent consumed5A beforebirth and2additionalA meals at94/98 and126/130; child consumed7A meals. Total14A packets consumed, so lowest available packet14. Initial site0 packets0..15 share post64 targetA;16..31 use the special latent/noise law, whose next three targets are covered symbolically without querying hashes.",
+    "critical_forage_order": [
+      {
+        "global": 157,
+        "actor": "child",
+        "port": 1
+      },
+      {
+        "global": 158,
+        "actor": "parent",
+        "port": 0
+      },
+      {
+        "global": 161,
+        "actor": "child",
+        "port": 0
+      },
+      {
+        "global": 162,
+        "actor": "parent",
+        "port": 1
+      },
+      {
+        "global": 169,
+        "actor": "child",
+        "port": 0
+      },
+      {
+        "global": 173,
+        "actor": "child",
+        "port": 1
+      }
+    ],
+    "funding": "The first7child cycles each get one meal; lower energy recurrence under target-uninformed opposite ports is E_end>=min(56,E_start+11) after the initial cold E22. Thus E>=56 beforecycle8, which gets exactlyone meal in all16shared-stockcases. Cycle9 gets atleastone and possiblytwo meals. Its pair end>=62, COPYbase+3 and DIVIDEbase leave>=57; division30 leaves parent27..29 and ordinarychild12. Refused earlier divisions and all9COPY costs27words are paid.",
+    "resource_guards": "Atglobal176 parentown123<secondDIVIDE142, so no third actor changes the childschedule beforeitsbirth177. Parent has6newCOPYactions/18nurserywords; all3body allocations43each plus18parentnursery =147materialunits<=512. Site2 parent initial4 plus atmost4postbirth meals remains under16 (no child visits2). Initial A14..18 are available; global128 offers do not replace these lower-numbered initial packets. No phase2048 flip occurs. Both own ages54/123 are below256; parent homogeneouspaired feeding beforethecriticalpair and at leastonecriticalAmeal keep it alive.",
+    "child_food_range": [
+      9,
+      10
+    ],
+    "parent_energy_bound": [
+      27,
+      29
+    ],
+    "material_bound": 147
+  },
+  "ordinary_one_word_control": {
+    "origin": "Only parent-COPY daughterpc6 opcode changesMOVE13toJUMP7, preserving existing operandb0. It jumps0, so SET1 repeats each cycle. Original pc7/8 are unreachable; both FORAGEs, XOR, COPY and DIVIDE remain. This is one source-format word outcome, not an inserted or executed genotype. Actual joint mutation event is UNKNOWN.",
+    "initial_cost": "Repeated seven-dispatch cycles, one success per homogeneous-stock pair,9COPY extra27, divisionextra30. Firstbirth9*7-1=62own dispatches for either initialtarget, before64, versus unchanged ancestor70. Both retain27wordcode/43childmaterial. No personally acquired feedback is read or used.",
+    "ordinary_birth": "Accepted parent firstbirth70, source-format singleopcode outcome atword18 in seventhCOPYglobal53, other26words faithful. Child starts0/E12 throughpaid formation; parentown131<nextdivision142, so childown62\u2192global193 beforeotherbirths. This is a conditional paid ancestry template, not an observed mutation or frequency estimate.",
+    "critical_forage_order": [
+      {
+        "global": 157,
+        "actor": "child",
+        "port": 0
+      },
+      {
+        "global": 158,
+        "actor": "parent",
+        "port": 0
+      },
+      {
+        "global": 161,
+        "actor": "child",
+        "port": 1
+      },
+      {
+        "global": 162,
+        "actor": "parent",
+        "port": 1
+      },
+      {
+        "global": 171,
+        "actor": "child",
+        "port": 1
+      },
+      {
+        "global": 175,
+        "actor": "child",
+        "port": 0
+      },
+      {
+        "global": 185,
+        "actor": "child",
+        "port": 0
+      },
+      {
+        "global": 189,
+        "actor": "child",
+        "port": 1
+      }
+    ],
+    "stock_premise": "Before157, parent5A beforebirth plus2postbirthA meals and child6A meals consumed13A packets. Four157..162probes consume exactly13and14 in either initialAorientation. Childcycle8therefore reaches last normal packet15, then special packet16; cycle9reaches16..18. All16late-bit assignments are included without hash/seed queries. Parent nextAfirst190 is after childlastforage189.",
+    "outcome": {
+      "own_dispatch": 62,
+      "global_tick": 193,
+      "food_successes_range": [
+        9,
+        11
+      ],
+      "parent_energy_interval": [
+        27,
+        29
+      ],
+      "newborn_energy": 12,
+      "child_material": 43,
+      "total_material_at_childbirth_upper": 150,
+      "live_entities_after_childbirth": 3
+    },
+    "resource_guards": "Parent7newCOPY actions own77..125 hold21nurserywords, so three43unitbodies+21=150<=512. Paired child first7cycles eachreceiveonefood, energybound reaches>=56 at later cycle entry beforeSET and>=55 immediately beforefirstFORAGE; mixedcohort cases neverremovebothsuccessfulopportunities. Cycle9pairend>=62 leaves>=57 afterCOPY+DIVIDEbase, permits30 extra. Parent sites0/2 remainfunded, no ownexpiry256 or entitycap32 boundary. Global128/192 offers do not replace lower-numbered consumed initial packets; no2048phaseflip. No whole-world input/CPU/archive cost measurement is claimed."
+  },
+  "late_bit_cases": [
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 2,
+      "two_word_total_foods": 10,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 2,
+      "one_word_total_foods": 10
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 2,
+      "two_word_total_foods": 10,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 2,
+      "one_word_total_foods": 10
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 2,
+      "two_word_total_foods": 10,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 2,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 10
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 2,
+      "one_word_child9_foods": 2,
+      "one_word_total_foods": 11
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 2,
+      "two_word_total_foods": 10,
+      "one_word_child8_foods": 2,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 10
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 2,
+      "two_word_total_foods": 10,
+      "one_word_child8_foods": 2,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 10
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    },
+    {
+      "post64_A_and_late16_17_18": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "two_word_child8_foods": 1,
+      "two_word_child9_foods": 1,
+      "two_word_total_foods": 9,
+      "one_word_child8_foods": 1,
+      "one_word_child9_foods": 1,
+      "one_word_total_foods": 9
+    }
+  ],
+  "comparison_limits": "This resolves the nonlearning reference ancestry boundary only. Earlier success-gated53/58 comparison used hypothetical initialconstant-target context; do not transplant those numbers to its ordinary daughter across this mixed-packet/population boundary. Child intake may be9or10 meals here, so do not substitute the nine-meal fixed-target ledger as a measured ordinary result. No learning advantage, actual population or native qualification is claimed.",
+  "decision": "STRONG_TARGET_UNINFORMED_STATIONARY_REFERENCE_SUPPORTED;LEARNING_NOT_UNIFORMLY_BETTER_IN_INITIAL_CONTEXT;ORDINARY_LEARNER_COMPARISON_UNKNOWN",
+  "next": "Complete or bound the success-gated conditional ordinary-daughter stock/schedule prefix under the same paid parentbirth70, rather than reusing initial53/58. Include parent consumption, mixed packet targets and possible later births. Do not claim ordinary mutation/selection, useful intelligence or full long-term fitness from these source controls.",
+  "scientific_execution": 0,
+  "native_execution": 0,
+  "genotype_arrays": 0,
+  "seed_queries": 0,
+  "scientific_admission": "NO_GO",
+  "provenance": {
+    "check.py": "ed13029d9f88ddf3504d83925e1b1a0fd5dc96c3a2c46a6803130aa76ace107b",
+    "result.json": "1306390ab501cda26f31cef3c5e2bf800ebc4b5f49383131d487bbc10d7e7bf7",
+    "independent-review.json": "fd1e1efe5fa925a66652f3d9a3f7fda4be0696e60de913bce508f81b145b44d8",
+    "ancestry-boundary.py": "5d58b9d4df4930d50c2181b718a4138a8e2b40502dd982188b8b8db8129361d1",
+    "ancestry-boundary-result.json": "58d9d27b4abcbe0e1ab1ee65e5b46b331a1f3b781b01c31168e198b11a097ae6",
+    "ancestry-review.json": "484b45d0edb484777882c93ff1e66cdecf3862dc05f50dd582c59d0ee3aa5eb1",
+    "one-word.py": "567cdc21b5f3014555ec709d2c2587d8e08f1f56e57a38de33971a9f8eea0a11",
+    "one-word-result.json": "6af2a391e261358f9baa2da17097749eba1a4a18652c84de80a961db769c6acb",
+    "one-word-review.json": "1abc07e330e6484d76412f245ecdfc8885a28088779da9d1628433b6c240be00",
+    "one-word-final-review.json": "6d2ca1f04c9cd128d8c7ee9b4e94d03909e51ccc1aa95fb2c08e953491aca9a7",
+    "one-word-before-energy-label-fix.py": "b11d1ed2502fe7f8b617d2de47cec0640590fa9a87053c3d51078deb68f5f2d7",
+    "one-word-result-before-energy-label-fix.json": "d99541bb9650497c7ca0f3e5458420d3740188fe94db3e2e1c202e11e1aaa777",
+    "scope": "Full local scalar ledgers/reviews and pre-correction wording preserved. Public table condenses all16stockcases. Original learner evidence reused at its exact accepted identity; no unchanged executable suite rerun. Exact publication independent review required."
+  }
+}

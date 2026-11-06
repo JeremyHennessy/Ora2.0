@@ -1,0 +1,1495 @@
+{
+  "schema": "EKA-ONE-SHOT-SPECIALIZATION-DECISION-v1",
+  "scope": "SOURCE_ONLY_CONDITIONAL_REPRESENTABILITY_AND_FIRST_BIRTH_NOT_EVOLUTION",
+  "accepted_research_parent": "68713c2d85b2dab8b492779e519d50f1afb54383",
+  "candidate": {
+    "schema": "EKA-ONE-SHOT-PERSONAL-SPECIALIZATION-FEASIBILITY-v1",
+    "scope": "NONEXECUTING_SYMBOLIC_LAYOUT_AND_FIXED_SCALAR_PREFIXES_NOT_A_SUPPLIED_GENOTYPE_OR_EVOLUTION_RESULT",
+    "research_head": "68713c2d85b2dab8b492779e519d50f1afb54383",
+    "source_sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "hypothesis": "A one-shot learned port latch can remove repeated READ/IF overhead while the feeding target remains suitable long enough for one productive birth. Test first-birth affordability, not indefinite adaptation.",
+    "symbolic_nine_slot_layout": "0 personal FORAGE port-register(initial0);1 READ own feedback into other register;2 IF other zero go4 else fallthrough3;3 JUMP5;4 SET port-register1;5 FORAGE current port;6 COPY;7 DIVIDE;8 JUMP5. No new opcode, supplied target, constructor override, program registry insertion or serialized genome. Both newborn registers start0. Code still27words; private memory is not inherited.",
+    "information": "Provided the initial probe has nonempty homogeneous stock, success identifies target0 and failure identifies target1. The organism pays the probe/READ/IF/JUMP-or-SET. A failed probe on empty stock does not identify a target, and this one-shot controller does not recover from that condition or later target changes.",
+    "ordinary_ancestry_conditions": [
+      "Original unchanged parent first birth at global70 is reused accepted exact-source evidence; this daughter begins at site0/E12/pc0 with blank registers. The required complete COPY mutation pattern is NOT shown to occur and no seed is queried.",
+      "Original parent remains faithful with only parent0/daughter1 until daughter firstbirth147; parent own108<its next possible DIVIDE142, so no third actor before147.",
+      "After its first birth the parent has site0 forage pairs94/98 and126/130, one success each while their heads remain initial0..15. Parent initial site0 successes5. No unmodelled incoming transfer or mutation."
+    ],
+    "stock_argument": [
+      "Daughter personal probe global71; hot forages79,87,95,103,111,119,127,135,143. Parent pair probes bracket95 and127. For target1, daughter initialprobe fails and its nine hot successes consume initial packets up to15; with parent7successes total16. Hence every hot head is homogeneous and available.",
+      "For target0, daughter initialprobe succeeds. First8hot successes plus parent7successes exhaust initial0..15. Ninth hot probe global143 sees initialspecial packet16. Its target is left completely symbolic: either success or failure is paid and both permit birth147. No claim all nine hot targets are homogeneous.",
+      "At147 parentown108, at most4new parentCOPY actions/12nurserywords. Before focal birth: two bodies86+parentnursery12+focalnursery27=125material; free387>=16. After birth3bodies129+parentnursery12=141<=512. Entitycap32 and own ages39/108<256. Higher-numbered renewed stock is not needed."
+    ],
+    "paid_cases": [
+      {
+        "initial_target": 0,
+        "last_hot_success": false,
+        "startup_energy": 28,
+        "own_dispatches": 39,
+        "global_first_birth": 147,
+        "foods": 9,
+        "COPY_extra": 27,
+        "DIVIDE_extra": 30,
+        "spill": 74,
+        "parent_energy": 22,
+        "child_energy": 12,
+        "events": [
+          {
+            "own_dispatch": 1,
+            "name": "personal initial port0 probe",
+            "food": true,
+            "energy": 31
+          },
+          {
+            "own_dispatch": 2,
+            "name": "READ own feedback",
+            "food": false,
+            "energy": 30
+          },
+          {
+            "own_dispatch": 3,
+            "name": "IF initial failure",
+            "food": false,
+            "energy": 29
+          },
+          {
+            "own_dispatch": 4,
+            "name": "SET port1 on failure, or JUMP hot loop on success",
+            "food": false,
+            "energy": 28
+          },
+          {
+            "own_dispatch": 5,
+            "name": "hot forage 1",
+            "food": true,
+            "energy": 47
+          },
+          {
+            "own_dispatch": 6,
+            "name": "paid COPY 1",
+            "food": false,
+            "energy": 43
+          },
+          {
+            "own_dispatch": 7,
+            "name": "DIVIDE 1",
+            "food": false,
+            "energy": 42
+          },
+          {
+            "own_dispatch": 8,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 41
+          },
+          {
+            "own_dispatch": 9,
+            "name": "hot forage 2",
+            "food": true,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 10,
+            "name": "paid COPY 2",
+            "food": false,
+            "energy": 56
+          },
+          {
+            "own_dispatch": 11,
+            "name": "DIVIDE 2",
+            "food": false,
+            "energy": 55
+          },
+          {
+            "own_dispatch": 12,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 54
+          },
+          {
+            "own_dispatch": 13,
+            "name": "hot forage 3",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 14,
+            "name": "paid COPY 3",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 15,
+            "name": "DIVIDE 3",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 16,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 17,
+            "name": "hot forage 4",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 18,
+            "name": "paid COPY 4",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 19,
+            "name": "DIVIDE 4",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 20,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 21,
+            "name": "hot forage 5",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 22,
+            "name": "paid COPY 5",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 23,
+            "name": "DIVIDE 5",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 24,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 25,
+            "name": "hot forage 6",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 26,
+            "name": "paid COPY 6",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 27,
+            "name": "DIVIDE 6",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 28,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 29,
+            "name": "hot forage 7",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 30,
+            "name": "paid COPY 7",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 31,
+            "name": "DIVIDE 7",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 32,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 33,
+            "name": "hot forage 8",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 34,
+            "name": "paid COPY 8",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 35,
+            "name": "DIVIDE 8",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 36,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 37,
+            "name": "hot forage 9",
+            "food": false,
+            "energy": 57
+          },
+          {
+            "own_dispatch": 38,
+            "name": "paid COPY 9",
+            "food": false,
+            "energy": 53
+          },
+          {
+            "own_dispatch": 39,
+            "name": "DIVIDE 9",
+            "food": false,
+            "energy": 22
+          }
+        ]
+      },
+      {
+        "initial_target": 0,
+        "last_hot_success": true,
+        "startup_energy": 28,
+        "own_dispatches": 39,
+        "global_first_birth": 147,
+        "foods": 10,
+        "COPY_extra": 27,
+        "DIVIDE_extra": 30,
+        "spill": 87,
+        "parent_energy": 29,
+        "child_energy": 12,
+        "events": [
+          {
+            "own_dispatch": 1,
+            "name": "personal initial port0 probe",
+            "food": true,
+            "energy": 31
+          },
+          {
+            "own_dispatch": 2,
+            "name": "READ own feedback",
+            "food": false,
+            "energy": 30
+          },
+          {
+            "own_dispatch": 3,
+            "name": "IF initial failure",
+            "food": false,
+            "energy": 29
+          },
+          {
+            "own_dispatch": 4,
+            "name": "SET port1 on failure, or JUMP hot loop on success",
+            "food": false,
+            "energy": 28
+          },
+          {
+            "own_dispatch": 5,
+            "name": "hot forage 1",
+            "food": true,
+            "energy": 47
+          },
+          {
+            "own_dispatch": 6,
+            "name": "paid COPY 1",
+            "food": false,
+            "energy": 43
+          },
+          {
+            "own_dispatch": 7,
+            "name": "DIVIDE 1",
+            "food": false,
+            "energy": 42
+          },
+          {
+            "own_dispatch": 8,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 41
+          },
+          {
+            "own_dispatch": 9,
+            "name": "hot forage 2",
+            "food": true,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 10,
+            "name": "paid COPY 2",
+            "food": false,
+            "energy": 56
+          },
+          {
+            "own_dispatch": 11,
+            "name": "DIVIDE 2",
+            "food": false,
+            "energy": 55
+          },
+          {
+            "own_dispatch": 12,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 54
+          },
+          {
+            "own_dispatch": 13,
+            "name": "hot forage 3",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 14,
+            "name": "paid COPY 3",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 15,
+            "name": "DIVIDE 3",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 16,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 17,
+            "name": "hot forage 4",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 18,
+            "name": "paid COPY 4",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 19,
+            "name": "DIVIDE 4",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 20,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 21,
+            "name": "hot forage 5",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 22,
+            "name": "paid COPY 5",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 23,
+            "name": "DIVIDE 5",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 24,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 25,
+            "name": "hot forage 6",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 26,
+            "name": "paid COPY 6",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 27,
+            "name": "DIVIDE 6",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 28,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 29,
+            "name": "hot forage 7",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 30,
+            "name": "paid COPY 7",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 31,
+            "name": "DIVIDE 7",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 32,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 33,
+            "name": "hot forage 8",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 34,
+            "name": "paid COPY 8",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 35,
+            "name": "DIVIDE 8",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 36,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 37,
+            "name": "hot forage 9",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 38,
+            "name": "paid COPY 9",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 39,
+            "name": "DIVIDE 9",
+            "food": false,
+            "energy": 29
+          }
+        ]
+      },
+      {
+        "initial_target": 1,
+        "last_hot_success": true,
+        "startup_energy": 8,
+        "own_dispatches": 39,
+        "global_first_birth": 147,
+        "foods": 9,
+        "COPY_extra": 27,
+        "DIVIDE_extra": 30,
+        "spill": 67,
+        "parent_energy": 29,
+        "child_energy": 12,
+        "events": [
+          {
+            "own_dispatch": 1,
+            "name": "personal initial port0 probe",
+            "food": false,
+            "energy": 11
+          },
+          {
+            "own_dispatch": 2,
+            "name": "READ own feedback",
+            "food": false,
+            "energy": 10
+          },
+          {
+            "own_dispatch": 3,
+            "name": "IF initial failure",
+            "food": false,
+            "energy": 9
+          },
+          {
+            "own_dispatch": 4,
+            "name": "SET port1 on failure, or JUMP hot loop on success",
+            "food": false,
+            "energy": 8
+          },
+          {
+            "own_dispatch": 5,
+            "name": "hot forage 1",
+            "food": true,
+            "energy": 27
+          },
+          {
+            "own_dispatch": 6,
+            "name": "paid COPY 1",
+            "food": false,
+            "energy": 23
+          },
+          {
+            "own_dispatch": 7,
+            "name": "DIVIDE 1",
+            "food": false,
+            "energy": 22
+          },
+          {
+            "own_dispatch": 8,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 21
+          },
+          {
+            "own_dispatch": 9,
+            "name": "hot forage 2",
+            "food": true,
+            "energy": 40
+          },
+          {
+            "own_dispatch": 10,
+            "name": "paid COPY 2",
+            "food": false,
+            "energy": 36
+          },
+          {
+            "own_dispatch": 11,
+            "name": "DIVIDE 2",
+            "food": false,
+            "energy": 35
+          },
+          {
+            "own_dispatch": 12,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 34
+          },
+          {
+            "own_dispatch": 13,
+            "name": "hot forage 3",
+            "food": true,
+            "energy": 53
+          },
+          {
+            "own_dispatch": 14,
+            "name": "paid COPY 3",
+            "food": false,
+            "energy": 49
+          },
+          {
+            "own_dispatch": 15,
+            "name": "DIVIDE 3",
+            "food": false,
+            "energy": 48
+          },
+          {
+            "own_dispatch": 16,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 47
+          },
+          {
+            "own_dispatch": 17,
+            "name": "hot forage 4",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 18,
+            "name": "paid COPY 4",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 19,
+            "name": "DIVIDE 4",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 20,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 21,
+            "name": "hot forage 5",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 22,
+            "name": "paid COPY 5",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 23,
+            "name": "DIVIDE 5",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 24,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 25,
+            "name": "hot forage 6",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 26,
+            "name": "paid COPY 6",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 27,
+            "name": "DIVIDE 6",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 28,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 29,
+            "name": "hot forage 7",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 30,
+            "name": "paid COPY 7",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 31,
+            "name": "DIVIDE 7",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 32,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 33,
+            "name": "hot forage 8",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 34,
+            "name": "paid COPY 8",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 35,
+            "name": "DIVIDE 8",
+            "food": false,
+            "energy": 59
+          },
+          {
+            "own_dispatch": 36,
+            "name": "JUMP hot loop",
+            "food": false,
+            "energy": 58
+          },
+          {
+            "own_dispatch": 37,
+            "name": "hot forage 9",
+            "food": true,
+            "energy": 64
+          },
+          {
+            "own_dispatch": 38,
+            "name": "paid COPY 9",
+            "food": false,
+            "energy": 60
+          },
+          {
+            "own_dispatch": 39,
+            "name": "DIVIDE 9",
+            "food": false,
+            "energy": 29
+          }
+        ]
+      }
+    ],
+    "strong_controls": [
+      "Named accepted paired two-probe stationary controller firstbirth177; named accepted feedback-gated controller firstbirth175/185/195. Conditional latch147 is earlier in all these scalar cases; no matched full-population fitness conclusion follows from comparing firstbirth times.",
+      "Named accepted alternator firstbirth159/169 is also earlier than paired but later than147. Its stronger food efficiency and existing children must not be ignored in lineage comparisons.",
+      "A genetically fixed correct port can avoid acquisition and beat this latch. Both fixed0 and fixed1 must be retained without target-aware selection; wrong-port controls may fail under these conditions. No seed distribution, average or evolutionary probability is assigned.",
+      "Equally cheap learned one-shot finite-state specialization is the mechanism itself and is a legitimate candidate, not a competitor that must be made more complex. Unrestricted stay-put is allowed throughout; no artificial travel."
+    ],
+    "causal_controls": "NOT YET QUALIFIED. Port-only reset leaves the initial READ register as a second encoded information copy, but that register is never read by the fixed hot loop. A qualified port-state reset can test use of the causal latch without claiming all represented information was erased. Joint erasure is a distinct stronger manipulation requiring matched current feedback/energy/pc, sham handling, timing and damage controls. Reactive reconstruction remains a legitimate competitor.",
+    "decision": "CONSTRUCTIVE_SOURCE_ONLY_FIRST_BIRTH_CANDIDATE; ORDINARY_MUTATION_ACCESSIBILITY_AND_CAUSAL_FULLY_PAID_INHERITED_FITNESS_UNKNOWN",
+    "limitations": [
+      "The symbolic layout is an authored representability witness only, not evidence an ordinary organism has this code or evolved it.",
+      "No advantage over a lucky fixed correct-port genotype; target-uninformed environmental generality and selection remain unproved.",
+      "No protection against later empty stock/noisy targets, expiry, offspring competition or phase changes. No long-term survival/reproductive/learning claim.",
+      "No World,VM,genotype,closed seed,calibration,native build/diagnostic or scientific intervention executed."
+    ]
+  },
+  "fixed_controls": {
+    "scope": "FIXED_FEE_CONTROL_PREFIXES_NOT_VM_OR_GENOTYPES",
+    "cases": [
+      {
+        "homogeneous_target": 0,
+        "fixed_port": 0,
+        "own_dispatches": 35,
+        "global_end": 139,
+        "birth": true,
+        "energy": 29,
+        "spill": 71,
+        "events": [
+          {
+            "age": 1,
+            "name": "fixed forage",
+            "energy": 31,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 2,
+            "name": "COPY",
+            "energy": 27,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 3,
+            "name": "DIVIDE",
+            "energy": 26,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 4,
+            "name": "JUMP feeding cycle",
+            "energy": 25,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 5,
+            "name": "fixed forage",
+            "energy": 44,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 6,
+            "name": "COPY",
+            "energy": 40,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 7,
+            "name": "DIVIDE",
+            "energy": 39,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 8,
+            "name": "JUMP feeding cycle",
+            "energy": 38,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 9,
+            "name": "fixed forage",
+            "energy": 57,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 10,
+            "name": "COPY",
+            "energy": 53,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 11,
+            "name": "DIVIDE",
+            "energy": 52,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 12,
+            "name": "JUMP feeding cycle",
+            "energy": 51,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 13,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 14,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 15,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 16,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 17,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 18,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 19,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 20,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 21,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 22,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 23,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 24,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 25,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 26,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 27,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 28,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 29,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 30,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 31,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 32,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 33,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 34,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 27,
+            "birth": false
+          },
+          {
+            "age": 35,
+            "name": "DIVIDE",
+            "energy": 29,
+            "nursery": 27,
+            "birth": true
+          }
+        ]
+      },
+      {
+        "homogeneous_target": 0,
+        "fixed_port": 1,
+        "own_dispatches": 9,
+        "global_end": 87,
+        "birth": false,
+        "energy": 0,
+        "spill": 0,
+        "events": [
+          {
+            "age": 1,
+            "name": "cold SET fixed1",
+            "energy": 11,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 2,
+            "name": "fixed forage",
+            "energy": 10,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 3,
+            "name": "COPY",
+            "energy": 6,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 4,
+            "name": "DIVIDE",
+            "energy": 5,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 5,
+            "name": "JUMP feeding cycle",
+            "energy": 4,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 6,
+            "name": "fixed forage",
+            "energy": 3,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 7,
+            "name": "COPY",
+            "energy": 2,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 8,
+            "name": "DIVIDE",
+            "energy": 1,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 9,
+            "name": "JUMP feeding cycle",
+            "energy": 0,
+            "nursery": 3,
+            "birth": false
+          }
+        ]
+      },
+      {
+        "homogeneous_target": 1,
+        "fixed_port": 0,
+        "own_dispatches": 6,
+        "global_end": 81,
+        "birth": false,
+        "energy": 0,
+        "spill": 0,
+        "events": [
+          {
+            "age": 1,
+            "name": "fixed forage",
+            "energy": 11,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 2,
+            "name": "COPY",
+            "energy": 7,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 3,
+            "name": "DIVIDE",
+            "energy": 6,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 4,
+            "name": "JUMP feeding cycle",
+            "energy": 5,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 5,
+            "name": "fixed forage",
+            "energy": 4,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 6,
+            "name": "COPY",
+            "energy": 0,
+            "nursery": 6,
+            "birth": false
+          }
+        ]
+      },
+      {
+        "homogeneous_target": 1,
+        "fixed_port": 1,
+        "own_dispatches": 36,
+        "global_end": 141,
+        "birth": true,
+        "energy": 29,
+        "spill": 70,
+        "events": [
+          {
+            "age": 1,
+            "name": "cold SET fixed1",
+            "energy": 11,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 2,
+            "name": "fixed forage",
+            "energy": 30,
+            "nursery": 0,
+            "birth": false
+          },
+          {
+            "age": 3,
+            "name": "COPY",
+            "energy": 26,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 4,
+            "name": "DIVIDE",
+            "energy": 25,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 5,
+            "name": "JUMP feeding cycle",
+            "energy": 24,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 6,
+            "name": "fixed forage",
+            "energy": 43,
+            "nursery": 3,
+            "birth": false
+          },
+          {
+            "age": 7,
+            "name": "COPY",
+            "energy": 39,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 8,
+            "name": "DIVIDE",
+            "energy": 38,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 9,
+            "name": "JUMP feeding cycle",
+            "energy": 37,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 10,
+            "name": "fixed forage",
+            "energy": 56,
+            "nursery": 6,
+            "birth": false
+          },
+          {
+            "age": 11,
+            "name": "COPY",
+            "energy": 52,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 12,
+            "name": "DIVIDE",
+            "energy": 51,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 13,
+            "name": "JUMP feeding cycle",
+            "energy": 50,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 14,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 9,
+            "birth": false
+          },
+          {
+            "age": 15,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 16,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 17,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 18,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 12,
+            "birth": false
+          },
+          {
+            "age": 19,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 20,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 21,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 22,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 15,
+            "birth": false
+          },
+          {
+            "age": 23,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 24,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 25,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 26,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 18,
+            "birth": false
+          },
+          {
+            "age": 27,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 28,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 29,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 30,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 21,
+            "birth": false
+          },
+          {
+            "age": 31,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 32,
+            "name": "DIVIDE",
+            "energy": 59,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 33,
+            "name": "JUMP feeding cycle",
+            "energy": 58,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 34,
+            "name": "fixed forage",
+            "energy": 64,
+            "nursery": 24,
+            "birth": false
+          },
+          {
+            "age": 35,
+            "name": "COPY",
+            "energy": 60,
+            "nursery": 27,
+            "birth": false
+          },
+          {
+            "age": 36,
+            "name": "DIVIDE",
+            "energy": 29,
+            "nursery": 27,
+            "birth": true
+          }
+        ]
+      }
+    ],
+    "stock": "Matched correct fixed controls consume9food plus unchangedparent7=16 initial packets by birth139/141; no special packet needed. Wrong fixed controls die by global81/87, before parent could exhaust homogeneous stock. No no-food failure has been relabelled as a target sample.",
+    "comparison": "Lucky fixed0/1 beats one-shot147 by8/6global ticks and may retain more energy than latch22case. Unknown-target latch reaches147 in bothsymbolicA contexts, while each fixedorientationfails in itswrongcontext undertheseconditions. This is no average,seed probability,population fitness or universal strategy optimality theorem.",
+    "legitimacy": "All controls free to stay. Identical27word/43body assumptions and paid COPY/DIVIDE/base costs. Unused slots do not shrink body. No favorable target assigned or genotype inserted."
+  },
+  "origin_burden": {
+    "scope": "MINIMUM_LITERAL_WORD_DISTANCE_FOR_THIS_FIXED_NINE_SLOT_LAYOUT_ONLY",
+    "source_sha256": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "cases": [
+      {
+        "port_register": 0,
+        "feedback_register": 1,
+        "per_slot_minimum_changed_words": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_minimum_changed_words": 15
+      },
+      {
+        "port_register": 1,
+        "feedback_register": 0,
+        "per_slot_minimum_changed_words": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          2,
+          1,
+          1,
+          1
+        ],
+        "total_minimum_changed_words": 14
+      }
+    ],
+    "minimum": 14,
+    "interpretation": "Includes all moduloaliases and ignored operands for this specified layout. Not a global minimum for one-shot learning, another layout, arbitrary learning or fitness. No winning genome was serialized or inserted.",
+    "ordinary_origin": "Source COPY law admits every nonidentical0..31 value as an algebraic output class. Actual fourteen jointly required mutations, hash draws, intermediate survival/selection and inheritable capability remain UNKNOWN. Distance is not generations, probability, waiting time or proof of a selected path.",
+    "comparison": "Paired control needs only two specific ordinary COPY words under accepted source evidence; this candidate has a substantially larger direct origin burden despite its earlier conditional first birth. This must not be reported as naturally evolved intelligence."
+  },
+  "independent_review": {
+    "candidate_receipt_sha256": "ae14ab99f4e817a7a92483d9ed2504ec7ccde7f5108bb95fbb6a9552f55893f0",
+    "origin_receipt_sha256": "edeca45e245936e83a9a8937a3026953f0ccb198dc0569e698a30f5c70b2cf22",
+    "local_evidence_directory": "D:\\OraLab\\drafts\\eka-one-shot-specialization-20261101"
+  },
+  "execution": {
+    "World_VM_genotype_seed_native_diagnostic_build": 0,
+    "new_executable_CI": false,
+    "scientific_admission": "NO_GO",
+    "native_admission": "NO_GO"
+  },
+  "scientific_decision": "SUPPORTED_CONDITIONALLY_FOR_SOURCE_FIRST_BIRTH_ONLY; ACTUAL_ORDINARY_ORIGIN_AND_CAUSAL_FITNESS_UNKNOWN"
+}

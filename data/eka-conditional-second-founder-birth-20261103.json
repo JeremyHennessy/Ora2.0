@@ -1,0 +1,119 @@
+{
+  "schema": "EKA-CONDITIONAL-SECOND-FOUNDER-BIRTH-v1",
+  "parent_research_head": "71cc5e2b23d5edb9c4e91b4d3f7b496922290cdb",
+  "engineering_head": "eccb59c2b621540928694d8ff0297048a80f4e2c",
+  "engineering_offline_checks": 287,
+  "scope": "SOURCE_ONLY_CONDITIONAL_CONTROL_NOT_LEARNING_OR_FITNESS",
+  "accepted_prefix": "Previously reviewed one-word sensor-free control gives ordinary daughter firstbirth209. Unchanged oldparent has139own dispatches. No new genotype installed.",
+  "scalar": {
+    "scope": "Conditional unchanged oldparent scalar fee sequence only; no VM/World/genotype/seed",
+    "rows": [
+      {
+        "A": 0,
+        "C": 0,
+        "E139": 52,
+        "E142": 29,
+        "births": [
+          [
+            70,
+            27
+          ],
+          [
+            142,
+            29
+          ]
+        ],
+        "minimum": 9
+      },
+      {
+        "A": 0,
+        "C": 1,
+        "E139": 63,
+        "E142": 27,
+        "births": [
+          [
+            70,
+            27
+          ],
+          [
+            142,
+            27
+          ]
+        ],
+        "minimum": 9
+      },
+      {
+        "A": 1,
+        "C": 0,
+        "E139": 54,
+        "E142": 29,
+        "births": [
+          [
+            70,
+            29
+          ],
+          [
+            142,
+            29
+          ]
+        ],
+        "minimum": 11
+      },
+      {
+        "A": 1,
+        "C": 1,
+        "E139": 63,
+        "E142": 27,
+        "births": [
+          [
+            70,
+            29
+          ],
+          [
+            142,
+            27
+          ]
+        ],
+        "minimum": 11
+      }
+    ],
+    "limits": "No child incoming transfer included; may add at most1 under separately reviewed routing bound. Stock/schedule/survival premises separate. Not lineage fitness or actual mutated offspring proof."
+  },
+  "branches": [
+    {
+      "newborn_death_tick": 210,
+      "oldF": 211,
+      "oldCOPY": 213,
+      "oldDIV": 215
+    },
+    {
+      "newborn_death_tick": 213,
+      "oldF": 211,
+      "oldCOPY": 214,
+      "oldDIV": 216
+    },
+    {
+      "newborn_death_tick": 216,
+      "oldF": 211,
+      "oldCOPY": 214,
+      "oldDIV": 217
+    },
+    {
+      "newborn_death_tick": null,
+      "oldF": 211,
+      "oldCOPY": 214,
+      "oldDIV": 217
+    }
+  ],
+  "material": "Three bodies129 plus oldparent nursery24 use153/512 units at209; max12 more before next oldparentDIV =>free>=347, age142 andentity<=3. Newborn death only frees material.",
+  "result": "Given accepted209 prefix and unchanged oldparent/focal code/source laws, arbitrary newborn2 code cannot block oldparent secondbirth at215..217. Parent reserve27/29 without incoming, possible incoming<=1 helps. Newborn survival is not required. No guarantees for newly born children or later fitness.",
+  "limits": "No actual ordinary mutation, World/VM/population/seed/genotype or native execution. No learning, selected lineage or common-horizon advantage established. Original minimum reporting failure preserved; corrected minima9/9/11/11 do not change guard balances.",
+  "reviews": {
+    "eka-post209-death-branches-review-20261103.json": "2aa5b7a2269a62d7ee59edbdeb1650af49d7417c28a3d20ab6914a7a2c55ccb7",
+    "eka-oldparent-guard-revised-review-20261103.json": "dfdf6df59ff9f6532858e91a0c31e1142326c322643b6a0bf79142ef375866aa",
+    "eka-post209-material-review-20261103.json": "b96f5184e1cc97d093b74a06d148de399482ffb4d32138734fedb60df7842be3",
+    "eka-oldparent-guard-review-20261103.json": "c3cb90c3ac24b544d54419cce20b202629c1e5c11123fb0fe58a50c8bee84dfb",
+    "eka-post209-energy-review-20261103.json": "95fdb55be238ebbba90fb7f9a9ad5365260cfd6f359dfd77c84c0d6b7add0e3a",
+    "eka-post209-scheduler-review-20261103.json": "f7cd549cf0e3b6ee59f3a8a80ee4b367de5ec0ca8d989e9136a68c177cdf609b"
+  }
+}
