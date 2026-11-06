@@ -656,3 +656,51 @@ Separate reviewer invocations were unavailable due to usage limits.
 The prior workflow patch review remains applicable to byte-identical YAML;
 new exact-commit and science checks are local and the phase note remains
 unpublished pending independent review.
+
+
+## Isolated workflow handoff and dedicated two-site cost boundary
+
+Reverified main 3a3c7e8521271a6eebe22b5cfdc809e19254b3a8, PR323
+379594c and PR325 ff8eccf. The isolated local candidate fc75f377 is
+unpublished. Reapplication of the exact approved patch to a temporary
+main index reproduced its complete Git tree and published fix blob.
+Workflow 378443811 is disabled_manually, with zero runs at fix 3b53c2d.
+GitHub reports main unprotected, protection endpoint 404 and empty
+effective branch rules. The owner's review requirement remains.
+Other automatic workflows do not match the single candidate path under
+the isolated branch/PR events; do not rely on that static result without
+a fresh prepublication readback. Local review packet:
+al01-cal-workflow-gate-20261106/isolated-pr-review.md. No remote action.
+
+The shared phase flip preserves cross-site renewed-port parity, but the
+known paid prefix through the old founder's next birth (no later than
+217) has at most four live actors. For an actor alive at 217, between
+its turns the sorted-ID scheduler gives each other identity at most one
+turn. Birth IDs increase and removed actors do not reappear. With B
+total additional births after 217 and before the observation, each
+interval is at most 4+B global ticks, including the focal dispatch.
+This also bounds the interval from 217 to its first subsequent turn.
+Thus even a fresh actor with 256 turns remaining requires at least four
+additional births to reach 2048: 217+256*7=2009. The routed focal already
+had 70 turns by 209, so with at most 186 turns remaining it requires at
+least six additional births: 217+186*9=1891. These are necessary, not
+sufficient, bounds on already present actors. A later-born learner is
+outside scope. A final-turn observation cannot support later use.
+
+A single-use dedicated parity encoder costs at least one distinct
+formation dispatch, then XOR and FORAGE at use. Even if both prior
+samples and the later anchor observation were free to the comparison,
+that is three gross dispatches, tying the wrong-first paired retry and
+losing to correct-first. A distinct STORE/LOAD increases this bill.
+The same gross comparison applies to base energy; spill/timing can
+change balances, so this is not a fitness dominance theorem. A free-to-
+stay or reactive correct-first route may win sooner; latest-success
+alone has no cross-site relationship, and a paid phase-aware location
+cache can implement the same information. No matched whole histories.
+
+NO-GO for paying a dedicated encoder from one warm use's dispatch saving.
+Retire that motif. UNKNOWN for incidental/shared encoding, repeated use,
+or a later-born actor. No ordinary funded phase-spanning sequence,
+reproduction, material/scheduling ledger or lineage advantage was found.
+Do not invent a genome or cross the execution holds. No calibration,
+native attempt, population or runtime restart.
