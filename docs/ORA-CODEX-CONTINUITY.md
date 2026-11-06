@@ -593,3 +593,66 @@ Release 5 source and visual QA hashes match the prior review. No UI edits
 or live activity claims. Native BUILD_ONLY remains NO-GO pending the
 reviewed launch and evidence adapter and an exact separately authorized
 assignment, with complete compiler/helper, resource and closure custody.
+
+
+## Isolated CI integration and cross-site phase information
+
+The approved validation-only patch reproduces the workflow blob at 3b53c2d
+byte for byte when applied to main 3a3c7e85 in an isolated Git index.
+Local commit fc75f3774cf5a2700b41e3f090258898b20d911e changes only ci.yml
+from main. YAML comparison preserves the existing tests, permissions,
+triggers and timeout while removing exactly the calibration and its upload.
+A separate Git parent, scope and blob check passed. Workflow 378443811
+was read back disabled_manually and had zero runs for the published fix.
+Do not re-enable while main has the old bytes. No remote branch or merge.
+The owner-controlled integration path is this one-file candidate, with
+normal repository review and checks. Eight other legacy workflow files
+have protocol-document paths in automatic triggers; each requires
+separate scope review. The risk inventory is in the local
+al01-cal-workflow-gate-20261106/main-integration.json receipt.
+
+Ecological source audit responding to AI-Research PR66 a9659ab0:
+For renewed packets only, Pressure71 target at site s is K_s XOR phase,
+where phase is the shared tick>=2048 bit. If personally observed successful
+ports A_old and B_old both came from one phase, their XOR is a retained
+relative bit independent of phase. If a later personal success A_now is
+obtained at A, then B_now = A_now XOR (A_old XOR B_old), provided the two
+later observations are also within one phase and the head at B is renewed.
+The old and later phases may differ. This is useful information in the
+source equation, independent of the proposed last-packet contest.
+
+An exhaustive check of 16 symbolic site-key/phase assignments confirms
+the identity. For either A_now, both B_now values remain possible without
+the relative bit in the symbolic model. These assignments are not seed
+queries or assertions that all cases occur at equal frequency. Packet
+class and phase are not direct organism inputs; wrong-port and empty
+forages both yield feedback zero. No personally acquired complete history
+or lawful mutant is established by the identity.
+
+At B, if both operands already occupy registers, XOR plus correct FORAGE
+costs two actions and needs entry energy >=2. An extra LOAD costs a third
+action. A wrong-first FORAGE/XOR/FORAGE costs three and needs >=3;
+a fixed, reactive, alternating or stay-at-B correct-first choice costs
+one and can start at energy one. For the same available meal the final
+energies are min(64,E+18), min(64,E+17), and min(64,E+19) for the
+two-action, three-action and direct paths respectively. These formulas
+exclude preparation, routing, acquisition, stock and expiry costs.
+Within an unchanged phase, a location-specific remembered B port can
+match direct use. Across the boundary, a location cache that also obtains
+the phase correction can match the parity idea. Latest success at A
+alone does not supply the relative bit. Thus information transfer is
+conditionally possible; a net reproductive advantage is not established.
+
+PASS for the symbolic information identity. UNKNOWN for affordable
+ecological and evolutionary use. The next science proof is a source-lawful,
+personally funded, renewed-head anchor/target history with one ordinary
+actor, no privileged phase cue and sufficient age and energy for use.
+If it cannot beat the full cost of a paid simpler control, retire the
+motif before designing a genotype. Common-horizon reproduction, COPY/DIV
+material, mutation, death and causal erasure/sham/unseen controls remain
+unclosed. No World, population, seed or native execution.
+
+Separate reviewer invocations were unavailable due to usage limits.
+The prior workflow patch review remains applicable to byte-identical YAML;
+new exact-commit and science checks are local and the phase note remains
+unpublished pending independent review.
