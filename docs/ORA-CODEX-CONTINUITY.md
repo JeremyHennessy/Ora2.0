@@ -518,3 +518,74 @@ hashes. Treat as out-of-scope execution evidence, with no new scientific
 acceptance. Issue 317 comment 6674030086 asks the owner to gate the legacy
 workflow. Its research push and pull request triggers have no path filter.
 No rerun or further remote push while this trigger is unresolved.
+
+
+## Paid last-packet boundary and workflow correction proposal
+
+Exact remote checkpoints: PR325 9c37adb, PR323 379594c. In ordinary CI the
+research push and pull_request both reach an unconditional frozen calibration
+step after validation. The push run 42142073009 tested 9c37adb; the PR run
+42142079235 tested merge revision 24a0942d7c68758ef4917a5cb5c6e96ca1c165fb.
+Both retained 32-world archives match server and inner hashes. Out-of-scope
+historical repetition, no new scientific acceptance. Issue 317 comment
+6674030086 records the owner action. The validation-only patch (SHA-256
+78ce28cfe08080783f6db81edb18471335b2bd54afe9b3a5e95b00fb45eec11a) removes
+only the calibration command and artifact step. Existing event triggers,
+permissions, timeout and unittest command remain. Static independent review
+and git apply --check passed. Patch is unapplied pending owner approval and
+controlled publication. Separate legacy workflows still need trigger review.
+No workflow changes, new dispatch, rerun or push.
+
+For a distinct post-birth last-packet contest, start at the already accepted
+conditional sensor-free birth 209. At site 3, tick 64/128/192 each admits
+four packets; the focal consumes exactly two and the old founder consumes
+none, so stock is 10. The unchanged focal's next site-3 probes would be
+its own turns 90/92 if it survives and retains its route. These are own
+turns, with no fixed global times assigned after births or deaths.
+
+To miss the meal, stock must be empty at the matching probe: first at port 1,
+second at port 0. Independent source review confirmed the bound of 10 rival
+removals before that probe, or 14 if the tick-256 refill has been credited by
+then. Count any further admitted stock as well. At 256 all four offers are
+admitted since stock was at most 10. A last-packet first probe requires nine
+prior removals if it precedes 256, or thirteen after that refill alone.
+With exactly three unchanged surviving actors and a refill strictly between
+the probes, a wrong first probe leaves one packet and the refill adds four.
+Rivals have only four turns between probes, so this branch cannot empty five
+packets before the matching second probe. Even granting one consumption per
+newborn dispatch, there are at most three such dispatches through the
+old founder's own next birth (global 215–217), so that window cannot be
+the depletion witness. Source references: Pressure71 step and forage,
+SharedLineage68 input, the one-word resource route and conditional second
+founder birth certificates. No future genotype, seed, arrival or stock
+history is assumed.
+
+Local economics: from equal entry energy E, a correct first FORAGE yields
+min(64,E+19). The wrong FORAGE, XOR and correct late FORAGE cost three
+dispatches and yield min(64,E+17) only if E>=3 and food survives. At E=1
+or 2 the delayed probe cannot be reached alive. If a competitor removes
+the last packet, the late route gets no food. These are conditional source
+possibilities, not evidence for realized low energy or competition.
+Fixed/reactive policies can match the early probe when their choice is
+correct; the same paired route is the strongest verified paid control for
+this history. Alternation, unrestricted stay, latest-success and a
+location-specific finite-state controller have no matched common-horizon
+outcomes for this new history. Retention/retrieval, all fees, COPY/DIVIDE,
+materials, expiry, mutations and offspring accounting would need a full
+matched ledger; a first meal does not settle reproductive value.
+
+UNKNOWN for the distinct post-birth competition mechanism. The missing
+dependency is one lawfully reachable paid competing lineage with the
+required removals and the exact scheduler gap. Stop before designing a
+learner if the stock and schedule witness cannot be closed. Stable-stock
+second birth and the earlier site-3 visits remain retired within scope.
+No scientific or native execution.
+
+Operational recheck: v10 STOP and both holds present, no owned port-11435
+listener observed, both 50-file terminal pin sets match. Last full window
+98, 174 memories and two snapshots. Archived service logs add no
+termination attribution. Four Ora automations remain paused. Observatory
+Release 5 source and visual QA hashes match the prior review. No UI edits
+or live activity claims. Native BUILD_ONLY remains NO-GO pending the
+reviewed launch and evidence adapter and an exact separately authorized
+assignment, with complete compiler/helper, resource and closure custody.
