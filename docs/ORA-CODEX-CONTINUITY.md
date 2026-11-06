@@ -467,3 +467,54 @@ unattributed after a bounded Windows System/Application event lookup.
 Four Ora automations remain paused and the terminal health monitor is absent.
 The local Observatory Release 5 static source and visual QA are available;
 recorded events and illustrative visuals remain separate. No service was started.
+
+
+## Site 3 return before birth 209 — scarcity NO-GO
+
+The accepted one-word sensor-free daughter route in
+`data/eka-one-word-resource-route-control-20261101.json` visits site 3 at
+global probes 121/125, leaves, and returns at 185/189. The parent never
+forages there and there is no third actor in this prefix. This is a
+conditional ordinary COPY witness, with actual mutation realization unknown.
+
+Site 3 starts empty. SharedLineage68 offers four packets per site every
+64 ticks before the actor acts, subject to a 32-packet cap. All four are
+admitted at tick 64. Exactly one packet is consumed on the first pair, so
+tick 128 admits four more and leaves seven for the return. Before the two
+second probes stock is at least three and six, respectively. Renewed port
+target is constant per site before tick 2048. Both visits use the same port
+order, 1 then 0. Neither orientation can lose a meal to stock before its
+correct probe. The possible prior success does not hide a stock race.
+
+The frozen sensor-free paired route spends three base actions per pair
+(FORAGE, XOR, FORAGE) and conditionally reaches birth at own turn 70,
+global 209, across all 16 symbolic cases. Its ledger includes nine meals,
+minimum paid prefix energy nine, nine paid COPY operations, birth fees
+and guards, and parent energy 27 or 29 plus newborn 12. The fixed first-port
+choice can save a probe only when that port matches. A paid learned cache
+requiring LOAD and FORAGE saves at most one warm dispatch against the pair
+before charging acquisition, location, validity and branch. The accepted
+route has one warm return here and performs no READ or STORE. A reactive
+route, stay, latest-success and location-specific finite state remain
+prospective controls for any different stock history. There is no matched
+lifecycle or common-horizon descendant result against them in this prefix.
+
+NO-GO for site 3's two known visits as a recurrent-scarcity discriminator.
+The exact missing premise is a founder-reachable contested packet or
+asymmetric stock history. Acquisition, integrated paid nine-slot control
+and heritable fitness remain unproved. Retire this motif. Next source task:
+screen for one distinct shared-stock opportunity where an independently
+funded competitor takes the last packet between probe times. Require an
+actual scheduler and prefix witness before designing a memory controller.
+No new organism, seed query, native attempt or scientific execution.
+
+## Legacy workflow execution incident
+
+Run 42142079235, job 127644574410, executed the frozen AL01-CAL calibration
+after the previous documentation push. The artifact binds PR head 9c37adb
+and its summary records the tested revision 24a0942d7c68758ef4917a5cb5c6e96ca1c165fb.
+Preserved ZIP 13467329603 matched the server digest and both inner data
+hashes. Treat as out-of-scope execution evidence, with no new scientific
+acceptance. Issue 317 comment 6674030086 asks the owner to gate the legacy
+workflow. Its research push and pull request triggers have no path filter.
+No rerun or further remote push while this trigger is unresolved.
