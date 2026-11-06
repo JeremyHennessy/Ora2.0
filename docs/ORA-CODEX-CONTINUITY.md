@@ -532,9 +532,13 @@ historical repetition, no new scientific acceptance. Issue 317 comment
 78ce28cfe08080783f6db81edb18471335b2bd54afe9b3a5e95b00fb45eec11a) removes
 only the calibration command and artifact step. Existing event triggers,
 permissions, timeout and unittest command remain. Static independent review
-and git apply --check passed. Patch is unapplied pending owner approval and
-controlled publication. Separate legacy workflows still need trigger review.
-No workflow changes, new dispatch, rerun or push.
+and git apply --check passed. The owner approved the exact patch, which was
+published to draft PR325 as 3b53c2dafb111c888b1877521921e0e22caa6d77 after
+GitHub workflow 378443811 was disabled. GitHub reports zero runs of that
+workflow for the fix commit. The default branch still contains the legacy
+calibration step, so hosted validation in this workflow stays disabled
+until the default branch is safe. Separate legacy workflows still need
+trigger review. No calibration rerun, merge or workflow reactivation.
 
 For a distinct post-birth last-packet contest, start at the already accepted
 conditional sensor-free birth 209. At site 3, tick 64/128/192 each admits
