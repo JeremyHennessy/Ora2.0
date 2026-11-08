@@ -794,3 +794,29 @@ Evidence: local ora-decisive-review-20261108 repeated-use-bound.json
 and pr327-review.json. Independent source review accepted the cost
 bounds with the baseline-control and spill/timing qualifications.
 No World, population, seed query or native attempt executed.
+
+
+## Verified integration update — supersedes pending merge status
+
+GitHub confirms PR327 merged at 2026-11-08T05:42:54Z into main
+d3f8356262916a5771a25c8db0a77b8830fa57d1. The full main comparison from
+3a3c7e85 changes only ci.yml with the reviewed eight deletions.
+The merged workflow Git blob 714bd1ea95bb888b02d9e48bce686e864649a064
+equals PR327 and local fc75f377. Ordinary unittest validation is retained;
+the frozen AL01-CAL sweep and its artifact upload are absent.
+
+Direct administrative readback confirms workflow 378443811 remains
+disabled_manually. This integration does not imply hosted validation
+passed or grant enablement/dispatch authority. No workflow was enabled
+or run by this report update. The preserved old calibration artifacts
+remain historical repetition. PR323 remains 379594c, draft/unmerged.
+
+AI-Research PR66 advanced to 9526e6a0cfd6a1dffa75820b8d52ffa03191f5cf
+with one documentation-line replacement recording this safety merge;
+the ecological hypothesis is unchanged. AI-Research main remains
+2fb16af7 and PR65 remains 55f5b740. Repeated-use learning remains UNKNOWN
+for a fully paid ordinary lineage; the repeated-LOAD parity dispatch
+NO-GO remains scoped. Existing v10 STOP/holds and four paused automations
+remain. Next scientific dependency is a paid founder-reachable repeated
+retained-port history, not another parity query calculation. Any hosted
+validation restoration requires a separate authorized enablement decision.
