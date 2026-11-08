@@ -1,0 +1,53 @@
+{
+  "schema": "ORA-EXISTING-LATCH-FIRST-CHILD-SOURCE-DECISION-v1",
+  "decision": "UNKNOWN_LINEAGE_ADVANTAGE",
+  "scope": "ACCEPTED_FIRST_BIRTH_REUSED_AND_CONDITIONAL_SOURCE_PREFIXES_ONLY",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "data/eka-one-shot-specialization-decision-20261101.json": "d2887e3fcb935c1f314175c5f31286cbab6f10c1b905afce3a782ce7fd07d86d"
+  },
+  "causal_receipt": {
+    "local_path": "drafts/eka-one-shot-causal-bound-20261101/result.json",
+    "sha256": "1a16d03f1bfef5eb1db1ac5357970efe1733b71131db060255ae5ae14928ef09",
+    "scope": "Formal port-use comparison only; backup state, handling and intervention qualification limitations retained. Original not rerun."
+  },
+  "inherited_state": "Condition on faithful copy of the already accepted latch, not a newly constructed genotype. Birth supplies code and blank registers/memory/feedback/PC/nursery with E12; acquired port is not copied. Actual COPY draws and child code are unknown.",
+  "shared_schedule_148_through_160": [
+    [148, "child2", "personal FORAGE port0", 1],
+    [149, "founder0", "COPY", 109],
+    [150, "parent1", "JUMP", 40],
+    [151, "child2", "READ", 2],
+    [152, "founder0", "DIV refused", 110],
+    [153, "parent1", "hot FORAGE", 41],
+    [154, "child2", "IF", 3],
+    [155, "founder0", "MOVE site2 to3", 111],
+    [156, "parent1", "COPY", 42],
+    [157, "child2", "SET or JUMP", 4],
+    [158, "founder0", "MOVE site3 to0", 112],
+    [159, "parent1", "DIV refused", 43],
+    [160, "child2", "first hot FORAGE", 5]
+  ],
+  "positive_reacquisition_prefix": {
+    "premise": "Accepted initial target A0 and special16 failure at143, so head16 has target1 at147. Faithfully inherited latch; no new genotype or seed chosen.",
+    "child_events": [[148, "FORAGE0 miss", 11], [151, "READ", 10], [154, "IF", 9], [157, "SET port1", 8], [160, "FORAGE1 success", 27]],
+    "stock": "Parent hot port0 also fails153, leaving head16 for the child. Founder does not forage site0 before164. All special stock is available after64; newer renewed packets cannot preempt the older head.",
+    "result": "Child personally reacquires and uses port1, opposite its parent's port0, with all five dispatches paid. No child reproduction or common-horizon advantage follows."
+  },
+  "adverse_prefix": {
+    "premise": "Accepted initial target A1, faithfully inherited latch, special targets S16=1 and S17=S18=0. These are symbolic antecedents, not queried or proven realized joint seed/mutation values.",
+    "child_events": [[148, "FORAGE0 miss", 11], [151, "READ", 10], [154, "IF", 9], [157, "SET port1", 8], [160, "FORAGE1 miss", 7], [163, "COPY3words", 3], [166, "DIV refused", 2], [169, "JUMP", 1], [172, "FORAGE1 miss and death", 0]],
+    "food_order": "Parent1 FORAGE1 consumes16 at153. Child160 sees17 and fails. Founder0 first port0 consumes17 at164. Parent1 port1 fails18 at165, founder second port1 fails18 at170, and child port1 fails18 at172.",
+    "accounting": "E12 minus9 base dispatches minus3 COPY extra equals0. No successful child forage, no cap spill, one3word nursery, no child birth. Own age9 excludes expiry as cause. Death releases43body+3nursery=46units.",
+    "resource_guards": "At147 three43unit bodies plus founder12word nursery use141/512. COPY149,156,163,168 add12, so at most153 occupied before child death. Founder and parent remain alive; founder own116 at170 is below next possible DIV142, parent own47 has6 nursery words, so no additional birth changes this schedule.",
+    "result": "Permanent latch does not guarantee useful reuse even in this short inherited-code extension. No actual-seed failure probability or complete lineage fitness comparison is established."
+  },
+  "controls_and_horizon": "Fixed correct ports have accepted firstbirth139/141, latch147, alternator159/169 and paired177 in their own conditional histories. These are different evolving food/scheduler states, not a matched common-horizon population comparison. The adverse child death does not prove paired or reactive controls win that world. Equivalent acquired finite-state memory remains eligible. No shared preregistered horizon comparison is complete.",
+  "origin": "The accepted literal latch layout needs at least14 changed founder words, versus2 for the named paired route. COPY algebra admits substitutions but actual hash draws, viable intermediates, ordinary realized origin and selected inheritance remain unproved. Do not infer probabilities or generations from distance.",
+  "first_unresolved_obligation": "Actual post147 offspring COPY provenance is unknown. Even conditional faithful inheritance requires the actual special-head targets and joint consumption history for a complete common-horizon comparison. Neither branch establishes those observations.",
+  "independent_review": "founder_source_followup confirmed schedule, paid opposite-port reacquisition prefix, adverse12-energy ledger and food ordering; no source writes or execution",
+  "scientific_imports": 0,
+  "World_or_population_or_VM_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "supplied_genomes": 0
+}

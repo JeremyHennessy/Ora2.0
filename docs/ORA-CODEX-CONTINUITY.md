@@ -914,3 +914,48 @@ with shared-stock scheduling and strong controls at one common horizon.
 Pass only with a paid descendant benefit; close this permanent-latch
 extension if it requires favorable hidden bits or privileged replenishment.
 Do not create another candidate before that evidence gap is resolved.
+
+## Existing latch first-child lineage investigation
+
+Decision UNKNOWN for sustained lineage advantage. Exact existing source
+and firstbirth certificate hashes were verified and reused, including the
+formal port-reset147/195 limitations. No original experiment was rerun.
+New evidence is data/eka-existing-latch-first-child-20261108.json.
+
+After parent1 birth147, newborn2 acts148 before founder0 acts149 and
+parent1 acts150. Conditional faithful inheritance of the accepted latch
+therefore gives child probe148, READ151, IF154, SET/JUMP157 and first
+hot forage160. Founder has no site0 forage between sample148 and use160.
+The child inherits code but blank private state, not the parent's port.
+Actual COPY mutations are the first unresolved ordinary-lineage fact.
+
+One accepted branch positively funds personal reacquisition: initial A0
+with special16 failing the parent at143 leaves target1 head16. Child's
+port0 probe148 fails, it pays to latch1, and parent port0 fails153 without
+consuming that head. Child port1 succeeds160, reaching E27 after its five
+paid actions. The inherited capability can thus reacquire an opposite
+port conditionally. This is not a child's birth or fitness result.
+
+A separate adverse symbolic branch refutes a guarantee of repeated use:
+initial A1 with S16=1,S17=S18=0. Child learns1 from a failed port0 probe,
+but parent1 consumes16 at153. Child hot1 fails17 at160. Founder's port0
+consumes17 at164; parent and founder port1 attempts fail18 at165/170.
+Child port1 fails18 at172 and dies at own9. Full bill is9base+3COPYextra
+from E12, no child food or spill, one3word nursery and no reproduction.
+Body/nursery occupancy never exceeds153/512 before death, and no other
+birth or expiry changes this short scheduler prefix. The source symbols
+are not observations of an actual seed or joint mutation history.
+
+These prefixes show both paid offspring reacquisition and the permanent
+latch's failure to guarantee persistence as sampled packets are consumed.
+Neither supports a global advantage or disadvantage against controls.
+Actual mutant offspring, intermediate viability, food symbols, subsequent
+competition and same-horizon descendant outcomes remain unknown. Existing
+firstbirth times and formal erasure do not settle that comparison.
+Independent source review accepted the exact schedule and both ledgers.
+
+Next milestone is an exact ancestry-bound common-horizon comparison of
+this existing capability, with strong controls and unchanged laws. It
+needs prospectively qualified evidence of offspring COPY and food queue
+events; old closed seeds must not be queried or evidence resubmitted.
+No redesigned learner, World, population or native run is authorized.
