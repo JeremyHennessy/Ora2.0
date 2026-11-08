@@ -959,3 +959,51 @@ this existing capability, with strong controls and unchanged laws. It
 needs prospectively qualified evidence of offspring COPY and food queue
 events; old closed seeds must not be queried or evidence resubmitted.
 No redesigned learner, World, population or native run is authorized.
+
+## Retained natural ancestry audit and retrospective stop
+
+The retained closed-data audit24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6
+covers16 fixed historical populations. All19 pinned input extents/digests
+were verified (189447912bytes) without decoding/searching raw actor payloads
+for a favorable result. It documents real ordinary paid COPY and mutation,
+and dose8 feedback104 plus3 born actors reproducing after feedback. Its
+explicit conclusion is descriptive co-occurrence, not learning or fitness.
+The newborn-publication qualification reports no changed-child controls
+and no complete child lifetimes within that qualification; this is not a
+claim that historical raw populations contain no child histories.
+
+The accepted one-shot certificate has execution0 and actual ordinary
+origin UNKNOWN. No inspected certificate joins an actual one-shot
+functional ancestry to a qualified matched common-horizon descendant
+comparison. Stop retrospective inference here. Do not search the closed
+raw seed roster for a matching winner or infer no suitable code exists.
+The three audited scientific source pins were reconciled: Pressure71 raw
+matches and Mobile54/SharedLineage68 match after newline normalization;
+this does not authenticate every old dependency against the current tree.
+
+Prepared data/eka-natural-ancestry-prospective-protocol-20261108.json as
+a proposed preregistration specification, NOT a registered or executable
+grant. It separates ordinary candidate incidence across8 new sealed
+contexts from a conditional causal comparison for at most one actor,
+selected by frozen context/birth order and genotype before outcomes.
+The latter uses one common absolute horizon4096, full shared-world
+checkpoints and at most10 derived sham/information/strong-control arms.
+Maximum18 endpoints/73728scientific dispatches exclude separately charged
+qualification. No-match ends the study; no extra contexts or horizon.
+
+Independent concept review requires exact recognizer/control pins and
+matched intervention/cost accounting before registration. Used-port reset
+does not erase every backup bit. Actual mutation is established only by
+original paid ancestry; supplied comparator arms establish no natural
+origin. Every control may stay, fixed0/1 are both retained, equivalent
+learned finite-state memory may tie, and incomplete/failure cases remain
+UNKNOWN. No selection-frequency or broad evolution claim follows from
+one selected-context causal contrast.
+
+Native, source/fork, scientific admission and new exact owner grants are
+still mandatory. The protocol states every missing field and approval;
+no qualification, stage, grant, population or retrospective replay ran.
+Next milestone: independently qualify and freeze the exact protocol,
+especially its recognizer and law-preserving matched intervention, before
+requesting any execution decision. Existing147/160/172 source evidence
+and all prior failures remain preserved.

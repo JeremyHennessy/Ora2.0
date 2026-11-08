@@ -1,0 +1,83 @@
+{
+  "schema": "ORA-NATURAL-ANCESTRY-PROSPECTIVE-PROTOCOL-v1",
+  "status": "PROPOSED_FOR_INDEPENDENT_QUALIFICATION_NOT_REGISTERED",
+  "execution_decision": "NO_GO",
+  "retrospective_decision": "STOP_NO_CERTIFIED_ACTUAL_LATCH_AND_MATCHED_DESCENDANT_COMPARISON",
+  "retrospective_scope": "Inspected retained certificates and the existing closed descriptive audit. This is not a claim that no suitable code exists in unsearched raw histories. No raw actor search, seed query, replay, rescore or experiment was performed.",
+  "existing_evidence": {
+    "one_shot": {
+      "path": "data/eka-one-shot-specialization-decision-20261101.json",
+      "sha256": "d2887e3fcb935c1f314175c5f31286cbab6f10c1b905afce3a782ce7fd07d86d",
+      "classification": "Conditional paid firstbirth147; explicit execution0 and actual ordinary origin UNKNOWN."
+    },
+    "closed_audit": {
+      "local_path": "reports/ora-eka0-closed-data-audit-20261023.json",
+      "sha256": "24d65f94db1675d3672e221c9f850ffc2b8ff3af1ef04c3de679aaa6be6551a6",
+      "classification": "16 fixed historical populations; natural paid COPY/mutation and descriptive expression. Dose8 feedback104 and3 born actors reproducing after feedback are temporal co-occurrence, not certified learning or causally useful inheritance.",
+      "input_integrity": "All19 pinned input extents/digests verified by streaming bytes,189447912bytes, no payload search."
+    },
+    "newborn_qualification": {
+      "local_path": "reports/pressure71-newborn-publication-complete.json",
+      "classification": "This qualification reports actual_changed_child_controls0, actual_child_complete_lifetimes0, full_newborn_controls_qualified=false and scientific_admission=false. These are qualification limits, not a statement that raw populations have no child histories.",
+      "sha256": "734441679205d25831b24485b5a7bf775394fbbb5a7ef21b1eee06d363516a3e"
+    },
+    "source_reconciliation": "Pressure71 raw hash matches. The audited Mobile54 and SharedLineage68 pins match current files after CRLF-to-LF normalization. This covers three files only, not the entire old dependency closure."
+  },
+  "question": "Does an actually born ordinary mutant with the accepted one-shot functional capability acquire and use personal information, then gain a causal living-descendant benefit at a fixed horizon in its observed context?",
+  "stage1_natural_ancestry": {
+    "primary": "Qualifying ancestry-bound capability births divided by ALL ordinary nonfounder births at or before global1024 across all eight contexts, plus contexts with matches out of8. Count faithfully transmitted capability births as well as newly mutated ones and retain their full origin chain. Total births through4096 are separately reported. Preserve every context, including failures and zero matches; incomplete provenance makes its incidence uncertified rather than replacing the context.",
+    "contexts": 8,
+    "context_selection": "Independent custodian seals eight fresh contexts disjoint from all closed registrations before any new outputs. No context is opened, generated or searched by this preparation. Seed roster, order and digest are mandatory before registration.",
+    "source": "Freeze exact current Pressure71/SharedLineage68/Mobile54 and complete dependency/interpreter closure. Original ordinary ancestor, parent_copy inheritance, mutating dose8, nine instructions/27words, unchanged food, material, energy, scheduling, population and own-turn limits. No inserted learner.",
+    "global_horizon": 4096,
+    "birth_cutoff": 1024,
+    "recognizer": "Freeze a source-verified genotype/semantics recognizer for the already accepted one-shot capability, including register/operand aliases, before context disclosure. Eligibility uses birth code and paid COPY provenance only, not subsequent food, survival, birth or descendant outcomes. Exact recognizer bytes remain a qualification blocker.",
+    "selection": "Once across the entire ordered roster: first context in frozen order with a qualifying birth at or before cutoff, then earliest birth tick and smallest actor ID. At most one selected actor in the whole study. Selection is deterministic and outcome-blind.",
+    "required_records": "All original founder/genesis pins; every actor birth/death/expiry; parent-child identity and code units; every27word COPY binding with source value, effective value, write ID and mutation draw; actual body formation; complete actions, food queue/offers/admissions, energy/heat/spill/material and scheduler states through4096. No assumed faithful offspring.",
+    "no_match": "Stop after the eight registered contexts. Report observed eligibility incidence0 in this sample and UNKNOWN for the capability/fitness question. No replacement contexts, extended horizon, extra generations or search for a winner."
+  },
+  "stage2_selected_context_causality": {
+    "scope": "Conditional test of the prospectively selected actual actor and its descendants in one checkpoint context. Does not estimate natural discovery probability, population selection or cross-context generality.",
+    "checkpoint": "Authenticate complete shared-world state immediately after selected actor birth and before its first action: all competitors, code/private state, food queue, scheduled inputs, source RNG/hash state, time, own ages, material, energy/heat, COPY counter and accumulated costs. Verify original continuation and unchanged restore before contrasts. Qualification repetitions are finite and separately charged.",
+    "absolute_global_horizon": 4096,
+    "original": "Reuse the original Stage1 continuation only after exact custody and endpoint verification; preserve it independently from derived arms.",
+    "derived_arms": [
+      "intact_sham",
+      "used_port_information_reset",
+      "nonpredictive_port_information",
+      "fixed_port0",
+      "fixed_port1",
+      "paired_ports",
+      "alternating",
+      "reactive_error_recovery",
+      "last_success",
+      "location_specific_finite_state"
+    ],
+    "control_freeze": "Pin exact existing control implementations, same27word/43unit body requirements and all accounting before any contexts are disclosed. All policies may stay. Fixed0 and fixed1 both remain in the roster; no setting is chosen using target outcomes. Control code substitutions are explicitly qualified derived comparisons, not evidence of naturally inherited control genotypes. No new successful learner is supplied.",
+    "information_contrast": "Predeclare the used-port manipulation at the recognized acquisition-completion event before first warm use. Reset to the fixed neutral port0; nonpredictive value comes from a separately sealed context-independent roster. Sham performs matched handling. Preserve code, food and all other state. Backup history bits remain: this tests causal use of this mediator, not erasure of every information copy.",
+    "intervention_costs": "Before registration, independently qualify exact state-write counts, storage, time, energy/heat, instruction/age/global scheduling and host costs for every arm. No assumed scalar handling fee or free surgery. If no scientifically authorized method preserves the laws and matches sham, Stage2 remains NO_GO. Existing held intervention contracts do not grant permission.",
+    "primary_score": "Count living strict descendants of selected actor at absolute global4096. Retain their actual code and full provenance; count dead and absent descendants as zero. Root survival, food, births, timing and heat are declared secondary explanatory endpoints.",
+    "declared_contrasts": "Intact sham minus used-port reset is the primary mediator contrast. Separately compare intact to the frozen nonlearning control portfolio upper envelope at the same horizon; this is a conservative benchmark, not an oracle policy choosing per context. Equivalent acquired finite-state memory may tie. Nonpredictive and other strategy results remain fully reported.",
+    "interpretation": "Positive effects require actual acquisition/use, complete paid records, strict positive primary mediator contrast and superiority to the nonlearning benchmark. Ties yield no demonstrated advantage. A complete negative contrast closes this selected-context claim only. Invalid checkpoint, censoring, failed custody or intervention mismatch yields UNKNOWN and retained failure, never a successful score. No claim of broadly evolved intelligence or selection from this one selected context."
+  },
+  "bounded_envelope": {
+    "maximum_original_worlds": 8,
+    "maximum_derived_continuations": 10,
+    "maximum_world_endpoints": 18,
+    "maximum_scientific_dispatches_excluding_separately_charged_qualification": 73728,
+    "limits": "These are prospective finite ceilings, not a resource grant. Every native process, retry prohibition, CPU, memory, deadline, storage/archive/restore and final-writer debit must fit separately reviewed immutable reservations without relaxing current limits. No current sealed assignment is reused."
+  },
+  "registration_blockers": [
+    "Fresh sealed context roster and declared nonpredictive roster",
+    "Exact recognizer and existing control implementation pins",
+    "Complete source/interpreter/dependency and raw/proof closure",
+    "Fresh protocol-specific admission must be reviewed: the old Pressure71 admission binds closed SEEDS and cannot authorize new contexts or be silently relaxed",
+    "Independently qualified shared-world checkpoint and derived comparison",
+    "Exact matched intervention and cost contract",
+    "Independent scientific review and native/resource qualification",
+    "Fresh explicit owner scientific and native authorization binding one finite registration, source, grants, scopes, expiry and output paths"
+  ],
+  "approval_rule": "No stage starts before all required fields are frozen, independently reviewed and registered. Stage1 and Stage2 require distinct explicit grants; permission for discovery never authorizes forks. No grants issued here.",
+  "preservation": "Old artifacts, failed fixtures and closed contexts remain immutable. No retry, rescore, favorable seed search, world-law change, v10 restart, workflow enablement or UI change.",
+  "review_status": "Independent read-only draft review accepted the explicit all-nonfounder-birth denominator, one outcome-blind selection, bounded arms and fresh-admission nonreuse after corrections. Exact recognizer, controls and intervention contracts remain unresolved qualification prerequisites. This review is not scientific admission."
+}
