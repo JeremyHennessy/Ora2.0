@@ -863,3 +863,54 @@ Approved main workflow blob714bd1ea95bb888b02d9e48bce686e864649a064 and
 disabled workflow378443811 were reverified. PR323 remains379594c; its
 historical workflow file cannot replace the approved main bytes in any
 future integration. No merge or engineering branch rewrite.
+
+## Research reconciliation — use the strongest accepted witness
+
+Recent summaries overstated the absence of a paid cold-to-warm source
+witness. The accepted one-shot specialization certificate already funds
+its personal probe, READ, control and first birth at own39/global147,
+parent22or29 and child12, conditional on the specified ordinary COPY
+outcome and stock history. Its exact SHA is
+d2887e3fcb935c1f314175c5f31286cbab6f10c1b905afce3a782ce7fd07d86d.
+The existing causal receipt, SHA
+1a16d03f1bfef5eb1db1ac5357970efe1733b71131db060255ae5ae14928ef09,
+formally contrasts intact target1 birth147 with port-reset death195 and
+no focal birth. It leaves backup information and is not a qualified
+intervention or general fitness result. Reuse these accepted results;
+do not repeat their calculations or restart acquisition design from zero.
+
+The literal latch still requires at least14 changed founder words under
+the accepted fixed-layout audit, versus two for the paired control.
+Actual mutation, viable intermediates and selection remain UNKNOWN.
+Correct fixed-port controls birth139/141 when matched and fail in their
+opposite contexts; the latch's conditional147 is neither global dominance
+nor an unseen-context or common-horizon descendant result. Alternating,
+reactive, free-stay, latest-success and equivalent acquired FSM controls
+remain required. Acquired register values are reset at birth; the code
+can confer reacquisition capability, not inheritance of this private bit.
+
+A distinct persistence boundary follows directly from the food equations.
+For initial site0 packets0..15 after tick64, learned A=b XOR1 where
+b=seed%2. Special packets16..31 instead use b XOR L XOR N_i, so
+S_i=A XOR1 XOR L XOR N_i and match A iff L XOR N_i=1. Initial experience
+alone does not supply those later symbols. No hash values or seed
+frequencies were queried. The hot loop has no subsequent READ, SET, XOR,
+conditional branch, RECEIVE or SELFWRITE. It cannot autonomously retarget
+when a later packet disagrees. Another actor could remove that head,
+so no inevitable-death or complete-lineage claim follows.
+
+NO-GO for treating the initial latch prediction as guaranteed across
+food classes. The existing147/195 evidence is unaffected: special16 was
+already symbolic in the birth proof and the reset arm never reached it.
+Independent source review confirmed the reconciliation, including the
+post64 XOR1 in the target relation. The current bottleneck is ordinary
+origin and sustained causal descendant advantage of an already source-
+feasible capability. It is not a demonstrated absence of useful personal
+information or a justification to replace the approved ecology.
+
+Next scientific milestone: qualify the scope of the existing latch's
+faithfully inherited capability through the actual packet-class transition,
+with shared-stock scheduling and strong controls at one common horizon.
+Pass only with a paid descendant benefit; close this permanent-latch
+extension if it requires favorable hidden bits or privileged replenishment.
+Do not create another candidate before that evidence gap is resolved.
