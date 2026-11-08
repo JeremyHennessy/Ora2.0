@@ -1060,3 +1060,23 @@ Next action is to qualify that exact complete-history integration using
 isolated corruption fixtures and immutable source pins before considering
 registration. No World, population, seed selection, native qualification,
 workflow activation, merge or v10 restart.
+
+
+## 2026-11-08 — Complete-history ancestry/custody interface gate
+
+NOT READY. Existing independent semantic referees already recompute the
+required VM, mutation, payment, scheduling and ancestry history; they remain
+unqualified Stage1 candidates. Do not build a duplicate interpreter. The
+first missing interface is fresh Stage1 admission and parent-owned actual
+raw/proof/native custody bound to recognized births. Legacy closed-context
+metadata receipts cannot supply that authority. Three existing isolated
+metadata acceptance/corruption tests passed; independent review agrees and
+independently passed the metadata predicate test. Authored consistent
+receipts pass structure only, never scientific authentication. No complete
+history fixture or actual lineage authentication was claimed. Stop at this
+missing interface as instructed. Eight contexts remain descriptive only;
+14 changed words supplies no probability or power calculation. Exact pins,
+fixtures, limitations and next requirement are preserved in
+data/eka-stage1-ancestry-custody-boundary-20261108.json. Recognizer unchanged;
+no scientific/native execution, context registration, workflow activation,
+merge, runtime restart or automation change.

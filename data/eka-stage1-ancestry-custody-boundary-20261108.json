@@ -1,0 +1,54 @@
+{
+  "schema": "ORA-STAGE1-ANCESTRY-CUSTODY-BOUNDARY-v1",
+  "created_utc": "2026-11-08T17:45:13.846669+00:00",
+  "source_commit": "227d2f59673f89397538b29ca0ea48dac7e82e51",
+  "verdict": "NOT_READY",
+  "scope": "Static existing verifier/interface inspection and isolated synthetic metadata fixtures only; no complete-history scientific replay.",
+  "source_raw_sha256": {
+    "experiments/digital_pressure71_natural_referee.py": "b86bbb4ab4eedc240d18bce2753c645284ebee42202a6d931fa21040dd9e4f70",
+    "experiments/digital_pressure71_referee.py": "73f5fc2edf56e8873ab888e0636066cd27cd048438fdcbf1e4100cc83a787024",
+    "experiments/digital_pressure71_scientific_child.py": "91cf54dffd7a2fea0e81d92cb06044c1076e7c95e17dcacb3a007bb04984f57f",
+    "experiments/digital_pressure71_admission.py": "e6d945032139f08469376429f1bca87bc7bcdfc9bf38cb79c2a3d724aa772f96",
+    "experiments/digital_pressure71_runplan.py": "1e10b40f865b949ac0c3b31cceaaedc8678609fa9b4dbfe2ebdb9325f32ee1b8",
+    "experiments/eka_one_shot_recognizer.py": "cf9929635ba67902e5f575cff749a9572591691f5f51451cfb34d5cf6da87e92",
+    "tests/test_digital_pressure71_runner_boundaries.py": "87dc0099c042fcc058c66075e80b20b0569c61aa9446db228af366b918d2800c"
+  },
+  "findings": [
+    "Existing natural_referee.audit independently recomputes genesis, parent identity, scheduling, VM transitions, food/energy/material costs, COPY source words and deterministic mutation draws, birth/death, every event and final horizon. Its module remains explicitly UNQUALIFIED.",
+    "Existing scientific_child has bounded physical reads, source pins, record grants and population_ref dispatch to the independent referee. It is a reusable candidate interface, not qualified Stage1 custody.",
+    "Existing admission/runplan bind historical closed contexts and roles. require_durable_admission explicitly checks metadata only; schema/hash consistency is never paid replay or physical custody.",
+    "The missing interface is qualified fresh Stage1 admission plus parent-owned actual raw/proof/native custody, binding exact source/configuration, grants, process births/images, accounting/closure and immutable file identities to the referee-authenticated birth set consumed by the unchanged recognizer.",
+    "No actual qualifying birth was authenticated. No complete synthetic history acceptance or complete-history corruption qualification was claimed. Stop here rather than build a duplicate interpreter or invent execution evidence."
+  ],
+  "fixtures": {
+    "structural_acceptance": [
+      "Authored receipt() with a*64 source, b*64 configuration, c*64 raw and d*64 proof hashes and 16 synthetic reference metadata rows. This is NOT authenticated scientific evidence."
+    ],
+    "rejections": [
+      "references=True",
+      "treatment_worlds=1",
+      "native_children=33",
+      "all_paid_gates=1",
+      "source_sha256=e*64",
+      "raw_proof_pairs=15",
+      "duplicate reference after recomputing bundle hash",
+      "out-of-roster reference identifier after recomputing bundle hash",
+      "dose=1 reference after recomputing bundle hash",
+      "out-of-roster request identifier",
+      "request dose=1 or True",
+      "request inheritance_mode=ancestor_copy"
+    ]
+  },
+  "validation": {
+    "command": "Python -B selected RunnerBoundaryTests: test_prepared_receipt_schema_bindings_only; test_rehashed_duplicate_or_reserve_receipt_refused; test_ordinary_metadata_and_early_membership_guard",
+    "result": "3 PASS in 0.001s",
+    "setup_failure": "Initial tests namespace import failed before tests ran; corrected by adding tests directory to sys.path.",
+    "independent_review": "output_review independently agreed NOT_READY and ran prepared_receipt_schema_bindings_only: 1 PASS. No producer/World execution."
+  },
+  "eight_context_assessment": {
+    "decision": "DESCRIPTIVE_ONLY_NOT_POWER_QUALIFIED",
+    "reason": "At least 14 changed literal founder words is a distance, not a discovery probability. No justified independent-draw model, viable-intermediate rate or per-context incidence estimate exists. Eight fresh contexts could report bounded incidence; their informativeness for observing this capability is UNKNOWN. Do not register or expand from this arithmetic."
+  },
+  "next_requirement": "Specify and independently qualify the fresh Stage1 producer-to-parent raw/proof/custody admission contract using the existing semantic referee; actual execution remains separately held.",
+  "preservation": "No recognizer/world/workflow/runtime/UI/schedule changes; v10 STOP and paused automations remain required. No contexts registered, closed records queried, World/replay/native process or experiment launched."
+}
