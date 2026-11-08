@@ -2,7 +2,7 @@
   "schema": "AL02-SELECTION-FIRST-DECISION-PACKAGE-v1",
   "charter": "https://github.com/JeremyHennessy/Ora2.0/issues/328",
   "decision": "BLOCKED_NOT_READY_FOR_EXECUTION_AUTHORIZATION",
-  "source_status": "SCOPED_SYNTHETIC_COMPONENTS_INDEPENDENTLY_VERIFIED",
+  "source_status": "INDEPENDENTLY_VERIFIED_UNMOCKED_INERT_FULL_HISTORY_DATA_PATH_ONLY",
   "native_execution_qualified": false,
   "scientific_experiment_authorized": false,
   "actual_new_scientific_result": false,
@@ -10,8 +10,8 @@
   "source_pins_raw_sha256": {
     "data/al02-selection-first-protocol-20261108.json": "0ce1f514feb1519f7b820bcba7e5204ddd578606d53be1eb5719ca095d48a620",
     "experiments/al02_selection_request.py": "beefb42596365a14b0f4c55ca67cc062306b7df950ef450b39618af155cf11da",
-    "experiments/al02_selection_referee.py": "fcd88de6a1c5f3b0b42c42dca5815856dc82a5cf2da34e177cd34c6beeb43a05",
-    "tests/test_al02_selection_source.py": "15fb663ffbc11ec65642f3aaaf89c2f5754b7ab46b873b733e1a67be9a24c5ae",
+    "experiments/al02_selection_referee.py": "5d9ba6e0bcc79d06b63b2dbd0c340d76592b9ee9fb3466bfb834830e5692475a",
+    "tests/test_al02_selection_source.py": "57e03926b53a520f3cb5abc6fc17f5528dbae2129bbf09af4a054553adda1be5",
     "experiments/executed_heredity.py": "03e3f1035233e8e1a078cd401ee10857de8ea20dc0249dd6c973675e8fc80342",
     "experiments/lineage_audit.py": "56ad759c0c4957e0f5110d13ae57450438eabccd0ff10dd3cbf4307771e86312",
     "experiments/causal_genealogy_audit.py": "18391a36b871e3a2a7d18c01a3a5b1520ae92f4e36a0c967e11ca1ef5c25e12c"
@@ -30,21 +30,23 @@
   "stages": {
     "A": "VERIFIED_COMPLETE_SCOPED_PROSPECTIVE_PILOT_NOT_REGISTERED",
     "B": "VERIFIED_COMPLETE_DATA_ADMISSION_NOT_EXECUTION_ENTRY",
-    "C": "PARTIALLY_COMPLETE_INDEPENDENT_INTERPRETER_AND_FIXTURES_NO_COMPLETE34WORLD_POSITIVE_TRANSCRIPT",
-    "D": "VERIFIED_COMPLETE_TWO_DEMONSTRATED_CANDIDATE_REPAIRS",
+    "C": "PARTIALLY_COMPLETE_UNMOCKED34SLOT_INERT_FULL_HISTORIES_VERIFIED_ACTUAL_PROTOCOL_UNVERIFIED",
+    "D": "VERIFIED_COMPLETE_DEMONSTRATED_REPAIRS_INCLUDING_DISCOVERY_GATE",
     "E": "BLOCKED_STUDY_BOUND_ACTUAL_PRODUCER_PARENT_RESOURCE_CUSTODY_ROUTE_UNQUALIFIED",
     "F": "VERIFIED_COMPLETE_BLOCKED_DECISION_PACKET_NOT_EXECUTION_READY"
   },
-  "first_execution_blocker": "No qualified study-bound actual producer invocation connected to independently owned bounded parent/resource/custody/closure acceptance. DATA plan, historical World callable and synthetic log acceptance do not establish that path.",
+  "first_execution_blocker": "Actual study-bound producer-to-parent admission and physical owner/resource/custody/closure proof remain unqualified. Existing request is DATA only, oldstudyCLI includes installedB assay, old native runner binds a differentclosed study. No execution-ready source-to-process path or grant exists.",
   "scientific_limit": "Primary resource-composition by mutation output contrast is not an isolated B-allele selection effect; actual B feeding, paid reproduction, canonical functional inheritance and concurrent A failure are separate gates. No eligible cohorts is UNKNOWN, not exclusion.",
   "current_test_evidence": {
     "command": "python -B -S -m unittest tests.test_al02_selection_source -v",
-    "local_pass": 18,
-    "independent_pass": 18,
+    "local_pass": 23,
+    "independent_pass": 23,
     "world_or_producer_calls": 0,
-    "fixtures": "Authored3/16tick extinct histories, one mutation-draw double, corruption cases;34slot and primary-boundary joins explicitly mock the interpreter. Fixture seeds0/100 are inert tests, not registered contexts or outcome searches.",
-    "full_panel_history_acceptance_verified": false,
-    "independent_reviewer": "message_review exact-source/fixture and final repairs review"
+    "fixtures": "Existing literal faithful1A/0B birth-and-extinction history at16ticks reused in34fixed membership positions. Real independent history/RNG/AL07/join/aggregate path, no mocks in acceptance. Fixture seed0 is pre-existing inert smoke data, not a scientific context. Corrupt scheduler,food,heat,energy,material,births,selectionclaims,extinction and denominator rejected. Superseded mockacceptance removed; only arithmetic and regression tests mock interpretation.",
+    "full_inert_panel_history_acceptance_verified": true,
+    "full_actual_protocol_panel_history_acceptance_verified": false,
+    "native_provenance_verified": false,
+    "independent_reviewer": "message_review exact final23tests and scientific interpretation review"
   },
   "required_native_identity_and_grants": {
     "producer_entry": null,
@@ -84,10 +86,65 @@
   "evidence_acceptance": "Host must authenticate producer/source/interpreter, owner/file grants, original bytes/digests, process receipts, independently rerun referee under qualified limits and archive/restore custody. Referee output always authenticated_execution=False absent external proof. No child self-authorization.",
   "failure_and_rollback": "Any source, denominator, custody or process failure preserves raw/partial/proof/failure evidence and accounts/closes all owned processes. Zero automatic retry or seed replacement. Extinction is a valid biological result. No immediate run proposed; quarantine local branch to roll back candidate without changing legacy files or protected main.",
   "next_safe_steps": [
-    "Independent final decision-package/source review, preserving source qualification limits.",
-    "Complete remaining full-panel/referee boundary evidence only with permitted inert fixtures; no synthetic-to-authentic promotion and no duplicate framework.",
-    "Separately scope exact existing parent/producer qualification and external CPU/process/archive evidence; owner authorization required before any native measurement or scientific World."
+    "Independent final exact-source/package review (completed for code and scopedscience).",
+    "Freeze local reviewed delta and update issue328/canonicalcontinuity; no codepush or workflowtrigger.",
+    "Stop at actualproducer/nativeowner/custody preflight. Existing rawarchives not located in targetedarchives/AL07receipt checks; do not regenerateclosedworlds."
   ],
-  "publication": "LOCAL_ONLY_NO_PUSH_OR_PR; workflow administrative enablement not freshly queried; mainCIblob verified714bd1ea95bb888b02d9e48bce686e864649a064; legacy AL02 push/dispatch workflow forbidden.",
-  "protected": "Main and approvedCI read-only verified; no workflow changes. v10STOP file present, memories unread. Automation status/Observatory visuals not freshly inspected; no actions. All prior parked studies/negative records/dirtywork preserved."
+  "publication": "LOCAL_SOURCE_ONLY_NO_PUSH_OR_PR. Issue328coordination comment explicitly authorized. Remote main d3f8356262916a5771a25c8db0a77b8830fa57d1 freshlyverified; completeworkflowtree26229718cead131e5fd700a8a9b60b574c72e60d equalslocalHEAD; no issue_comment/issues workflow triggers found. Workflowenablement not changed.",
+  "protected": "Main and approvedCI read-only verified; no workflow changes. v10STOP file present, memories unread. Automation status/Observatory visuals not freshly inspected; no actions. All prior parked studies/negative records/dirtywork preserved.",
+  "protocol_interpretation_review": {
+    "protocol_bytes_changed": false,
+    "protocol_sha256": "0ce1f514feb1519f7b820bcba7e5204ddd578606d53be1eb5719ca095d48a620",
+    "scientific_conclusion": "Resource-composition by mutation effect on reproductive output, NOT isolated beneficial-allele selection. Resource arms both permit ordinary A founder feeding (12A vs30A), equal600foodenergy, but composition changes mutation load/access and subsequent competition. Faithful is deterministic percomposition, not16independentcontrols. Extinction/null/nonorigins retained.",
+    "confirmed_defect": "Atf948, positiveD with no discoveredB expression could satisfy primary despite frozen no-discoverynonpositive clause. Reproduced failure against original preservedbytes before accepting repair.",
+    "prospective_semantic_repair": "For mixed_mutating indexi, discovery_i is actual independently reconstructed B consumption by any COPY-born nonfounder, without canonicalwinnerclassification. output_positive reports rawD>0; positive/primary require D>0 AND discovery_i. No registered contexts or outcomes exist; original primaryclause honored rather than resource/null change.",
+    "null_bound": "P(D>0 AND discovery)<=P(D>0)<=1/2 under originalnull; original12of16/binomial2517/65536 remainsconservative with independentprospectivecontextdraws.",
+    "mechanistic_limit": "Canonical actualBfeeding/paidinheritedreproduction/coexistingAstarvation is separate restrictedresourceviability evidence. Combinedpositiveindicators still do not isolate population allele selection from linkedmutations,birthtiming,resourcepartition ordrift."
+  },
+  "inert_profile_boundary": {
+    "entrypoint": "experiments.al02_selection_referee.verify_inert_panel",
+    "fixed_profile": "LITERAL_FAITHFUL_ONE_FOOD_v1",
+    "overrides_allowed": false,
+    "membership": "same34fixedrole/indexpositions; identicalinert contents do not prove physicalroleownership or detectcontent-swaps between identicalslots",
+    "scope": "INERT_34_SLOT_INTEGRATION_NOT_SCIENTIFIC_EVIDENCE",
+    "actual_protocol_rejects_inert_histories": true,
+    "context_opening_verified": false,
+    "authenticated_execution": false,
+    "scientific_selection_claim": false,
+    "real_protocol_entrypoint": "verify_panel still checks originalcontextopening and originalresource/mutationroles; unchangedadmission"
+  },
+  "authorization_decision": {
+    "ready_to_authorize_native_or_scientific_execution": false,
+    "decision_available_now": "RETAIN_NO_GO_PENDING_EXACT_PRODUCER_PARENT_ADMISSION_AND_NATIVE_PREFLIGHT",
+    "known_inputs": [
+      "frozenprotocol and currentcandidate rawsourcepins",
+      "ordinaryfounder[0,2,3,4]",
+      "future16context commitment method; zero contexts opened",
+      "34source-definedworldrecords,maximum20400organisminstructions"
+    ],
+    "required_outputs": [
+      "originalrole/source/context-boundrawhistory",
+      "independentfull-historyproof and allnull/extinctionrecords",
+      "authenticatedowner,filegrant,fileidentity/extent/digest andprocessclosure receipts",
+      "archive/restore/failure preservation and finalresource settlement"
+    ],
+    "unknown_must_not_be_invented": [
+      "producer_entry",
+      "original_owner_assignment",
+      "executable_interpreter_for_science",
+      "consumed_dependency_closure",
+      "cumulative_USER_and_KERNEL_CPU",
+      "memory",
+      "wall_deadline",
+      "concurrent_process_limit",
+      "total_process_births",
+      "bootstrap_guardian_helpers",
+      "physical_output_grants",
+      "archive_restore_failure_reservations",
+      "free_disk_floor",
+      "independent_closure_receipts"
+    ],
+    "next_scope": "Review exact producer role consumed by existing originalowner/native route, preserving historicalsource. Actual boundedmeasurement requires a separatecompletepreflight and ownerauthorization; no newlauncher/BUILD_ONLYrestart.",
+    "stop": "Do not request immediate execution or reinterpret nullnativefields as approvals. Preserve failureevidence, close/account ownedprocesses, no retries/seedreplacement iffutureattemptfails."
+  }
 }

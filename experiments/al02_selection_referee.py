@@ -239,9 +239,12 @@ def verify_fixture(seed, variant, food_a, food_b, events, births, summary):
     return dict(result, scope='SYNTHETIC_FIXTURE_NOT_SCIENTIFIC_EVIDENCE')
 
 
-def verify_panel(request, manifest, records):
-    plan = prepare_request(request)
-    seeds = validate_opening(plan, manifest)
+def _panel_records(plan, seeds, records, *, inert=False):
+    """Same bounded join and real history interpreter for both explicit scopes.
+
+    The sole inert profile is the existing literal faithful one-food history.
+    It cannot select arbitrary physics or become an admitted scientific arm.
+    """
     if type(records) is not list or len(records) != 34:
         raise ValueError('all34 worlds required; no exclusions')
     expected = {(slot['role'], slot['context_index']) for slot in plan['slots']}
@@ -255,18 +258,49 @@ def verify_panel(request, manifest, records):
         if key not in expected or key in results:
             raise ValueError('duplicate, unauthorized or swapped world')
         variant, food_a, food_b = ARMS[key[0]]
+        if inert:
+            variant, food_a, food_b = 'faithful', 1, 0
         results[key] = _interpret(seeds[key[1]], variant, food_a, food_b,
                                   record['events'], record['births'], record['summary'])
     if set(results) != expected:
         raise ValueError('incomplete denominator')
     deltas = [(results['mixed_mutating', i]['births'] - results['mixed_faithful', 0]['births']) -
               (results['all_a_mutating', i]['births'] - results['all_a_faithful', 0]['births']) for i in range(16)]
+    # Honor the frozen protocol's no-discovery-is-nonpositive clause. A born
+    # actor's actual B intake is expression, not an installed genome/hash match.
+    discovered = [any(identity != 0 and actor['foods_b'] > 0
+                      for identity, actor in results['mixed_mutating', i]['actors'].items())
+                  for i in range(16)]
+    positive = sum(delta > 0 and found for delta, found in zip(deltas, discovered))
     return dict(scope='LOG_CONSISTENCY_ONLY_NOT_NATIVE_AUTHENTICATION',
                 authenticated_execution=False, deltas=deltas,
-                positive=sum(value > 0 for value in deltas),
-                primary_positive=sum(value > 0 for value in deltas) >= 12,
+                output_positive=sum(value > 0 for value in deltas),
+                discovered=discovered, positive=positive,
+                primary_positive=positive >= 12,
                 scientific_selection_claim=False,
                 mechanistic=[dict(role=key[0], context_index=key[1], **mechanism(value))
                              for key, value in results.items()],
                 worlds=[dict(role=key[0], context_index=key[1], **value)
                         for key, value in results.items()])
+
+
+def verify_panel(request, manifest, records):
+    """Canonical prospective resource/mutation arms, never fixture overrides."""
+    plan = prepare_request(request)
+    seeds = validate_opening(plan, manifest)
+    return _panel_records(plan, seeds, records)
+
+
+def verify_inert_panel(request, records):
+    """Unmocked DATA integration only, never scientific study admission.
+
+    All 34 membership positions consume the same pre-existing fixed faithful
+    one-food fixture at literal fixture seed0. No contexts are drawn/opened,
+    no World is imported/constructed, and real resource arms stay unchanged.
+    """
+    plan = prepare_request(request)
+    result = _panel_records(plan, (0,) * 16, records, inert=True)
+    result.update(scope='INERT_34_SLOT_INTEGRATION_NOT_SCIENTIFIC_EVIDENCE',
+                  fixture_profile='LITERAL_FAITHFUL_ONE_FOOD_v1',
+                  context_opening_verified=False)
+    return result

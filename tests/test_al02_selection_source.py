@@ -231,25 +231,6 @@ class RefereeTests(unittest.TestCase):
         actors[2]['b_events']=[dict(tick=16,food_before=1,coexisting=[2])]
         self.assertFalse(referee.mechanism({'actors':actors})['demonstrated_in_log'])
 
-    def test_panel_join_denominator_and_serializable_proof(self):
-        # DATA join only. Transition verifier is mocked, never a World or run.
-        manifest={'schema':'AL02-SELECTION-CONTEXTS-v1','seeds':[100]*16}
-        req=request(); req['context_commitment']=admission.digest(manifest)
-        slots=admission.prepare_request(req)['slots']
-        records=[dict(role=s['role'],context_index=s['context_index'],
-                      events=[],births=[],summary={}) for s in slots]
-        verified=dict(births=0,actors={},eligible_births=[],ticks=0,extinct=True,
-                      authenticated_execution=False)
-        with patch.object(referee,'_interpret',return_value=verified):
-            result=referee.verify_panel(req,manifest,records)
-        self.assertFalse(result['primary_positive'])
-        self.assertFalse(result['scientific_selection_claim'])
-        self.assertEqual(result['deltas'],[0]*16)
-        json.dumps(result)
-        for invalid in (records[:-1], records[:-1]+[records[0]]):
-            with self.subTest(length=len(invalid)), patch.object(referee,'_interpret',return_value=verified), self.assertRaises(ValueError):
-                referee.verify_panel(req,manifest,invalid)
-
     def test_context_opening_is_bound_and_closed_contexts_refused(self):
         manifest={'schema':'AL02-SELECTION-CONTEXTS-v1','seeds':[100]*16}
         req=request(); req['context_commitment']=admission.digest(manifest)
@@ -269,13 +250,96 @@ class RefereeTests(unittest.TestCase):
                           events=[int(s['role']=='mixed_mutating' and s['context_index']<positive)],
                           births=[],summary={}) for s in slots]
             def inert_result(seed,variant,food_a,food_b,events,births,summary):
-                return dict(births=events[0],actors={},eligible_births=[],ticks=0,
+                return dict(births=events[0],actors={1:dict(eligible=False,foods_b=1)},eligible_births=[],ticks=0,
                             extinct=True,authenticated_execution=False)
             with self.subTest(positive=positive), patch.object(referee,'_interpret',side_effect=inert_result):
                 result=referee.verify_panel(req,manifest,records)
             self.assertEqual(result['positive'],positive)
             self.assertEqual(result['primary_positive'],positive==12)
             self.assertFalse(result['scientific_selection_claim'])
+
+    def test_output_without_discovery_cannot_pass_primary(self):
+        # Regression for the frozen no-discovery-is-nonpositive clause. This
+        # isolates arithmetic; unmocked history/panel acceptance is below.
+        manifest={'schema':'AL02-SELECTION-CONTEXTS-v1','seeds':[100]*16}
+        req=request(); req['context_commitment']=admission.digest(manifest)
+        slots=admission.prepare_request(req)['slots']
+        records=[dict(role=s['role'],context_index=s['context_index'],
+                      events=[int(s['role']=='mixed_mutating')],births=[],summary={}) for s in slots]
+        def no_discovery(seed,variant,food_a,food_b,events,births,summary):
+            return dict(births=events[0],actors={},eligible_births=[],ticks=0,
+                        extinct=True,authenticated_execution=False)
+        with patch.object(referee,'_interpret',side_effect=no_discovery):
+            result=referee.verify_panel(req,manifest,records)
+        self.assertFalse(result['primary_positive'])
+        self.assertEqual(result['output_positive'],16)
+        self.assertEqual(result['positive'],0)
+
+
+def inert_panel():
+    """34 copies of an authored complete literal log, no generated histories."""
+    plan=admission.prepare_request(request())
+    return [dict(role=slot['role'],context_index=slot['context_index'],
+                 events=copy.deepcopy(fixture(True)[0]),
+                 births=copy.deepcopy(fixture(True)[1]),
+                 summary=copy.deepcopy(fixture(True)[2])) for slot in plan['slots']]
+
+
+class FullHistoryPanelTests(unittest.TestCase):
+    def test_unmocked_complete_inert_histories_to_null_panel(self):
+        # No mocks of transition/RNG/genealogy/join or aggregation anywhere.
+        with patch.dict('sys.modules', {'experiments.executed_heredity': None}):
+            result=referee.verify_inert_panel(request(),inert_panel())
+        self.assertEqual(len(result['worlds']),34)
+        self.assertTrue(all(world['births']==1 and world['extinct'] and world['ticks']==16
+                            for world in result['worlds']))
+        self.assertEqual(result['deltas'],[0]*16)
+        self.assertFalse(result['primary_positive'])
+        self.assertFalse(any(result['discovered']))
+        self.assertFalse(result['scientific_selection_claim'])
+        self.assertFalse(result['authenticated_execution'])
+        self.assertFalse(result['context_opening_verified'])
+        self.assertIn('INERT',result['scope'])
+        json.dumps(result)
+
+    def test_inert_fixture_is_not_actual_protocol_admission(self):
+        manifest={'schema':'AL02-SELECTION-CONTEXTS-v1','seeds':[100]*16}
+        req=request(); req['context_commitment']=admission.digest(manifest)
+        with self.assertRaises(ValueError): referee.verify_panel(req,manifest,inert_panel())
+
+    def test_missing_duplicate_and_swapped_worlds(self):
+        for mode in ('missing','duplicate','wrong_role','wrong_index'):
+            records=inert_panel()
+            if mode=='missing': records.pop()
+            elif mode=='duplicate': records[-1]=records[0]
+            elif mode=='wrong_role': records[0]['role']='unapproved'
+            else: records[0]['context_index']=True
+            with self.subTest(mode=mode), self.assertRaises(ValueError):
+                referee.verify_inert_panel(request(),records)
+
+    def test_forged_selection_or_dropped_extinction_denominator(self):
+        for mode in ('fitness','extinction','extra_claim','birth_receipt'):
+            records=inert_panel()
+            if mode=='fitness': records[0]['summary']['birth_count']=99
+            elif mode=='extinction': records[0]['summary']['world_extinct']=False
+            elif mode=='extra_claim': records[0]['selection_evidence']=True
+            else: records[0]['births'][0]['child_genome_ops']=[1,2,3,4]
+            with self.subTest(mode=mode), self.assertRaises(ValueError):
+                referee.verify_inert_panel(request(),records)
+
+    def test_scheduler_food_and_accounting_corruption(self):
+        for mode in ('scheduler','false_food','heat','energy','material','truncation'):
+            records=inert_panel(); events=records[-1]['events']
+            if mode=='scheduler':
+                next(e for e in events if e['tick']==11 and e['kind']=='EXEC')['organism_id']=0
+            elif mode=='false_food':
+                next(e for e in events if e['tick']==11 and e['kind']=='EXEC')['outcome']='ate_a'
+            elif mode=='heat': events[1]['heat']=0
+            elif mode=='energy': events[1]['energy_after']=24
+            elif mode=='material': next(e for e in events if e['kind']=='COPY_WRITE')['material_unit']=0
+            else: events.pop()
+            with self.subTest(mode=mode), self.assertRaises(ValueError):
+                referee.verify_inert_panel(request(),records)
 
 
 if __name__=='__main__':
