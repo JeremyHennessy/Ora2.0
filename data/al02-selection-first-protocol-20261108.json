@@ -1,0 +1,29 @@
+{
+  "schema": "AL02-SELECTION-FIRST-PROSPECTIVE-v1",
+  "status": "SOURCE_CANDIDATE_NOT_REGISTERED_NOT_AUTHORIZED",
+  "charter": "https://github.com/JeremyHennessy/Ora2.0/issues/328",
+  "founder": [0, 2, 3, 4],
+  "contexts": 16,
+  "horizon": 600,
+  "material": 256,
+  "population_limit": 64,
+  "initial_energy": 4,
+  "mutation_rate": 0.08,
+  "arms": [
+    {"role": "mixed_mutating", "variant": "mutating", "food_a": 12, "food_b": 18, "context_indices": "all"},
+    {"role": "all_a_mutating", "variant": "mutating", "food_a": 30, "food_b": 0, "context_indices": "all"},
+    {"role": "mixed_faithful", "variant": "faithful", "food_a": 12, "food_b": 18, "context_indices": [0]},
+    {"role": "all_a_faithful", "variant": "faithful", "food_a": 30, "food_b": 0, "context_indices": [0]}
+  ],
+  "maximum_worlds": 34,
+  "maximum_organism_instructions": 20400,
+  "context_method": "After separate registration/authority, draw 16 independent uniform 64-bit seeds with replacement using an approved host RNG. Reject only historical smoke 0..7, closed 5000..5063 and historical assay 771177; rejection is fixed before draws. Keep duplicates and all outcomes, identify by index not seed. Commit canonical {schema:AL02-SELECTION-CONTEXTS-v1,seeds:[...]} bytes with SHA256 before opening any outcomes. Same indexed seed for paired mutating resource arms; faithful reference uses index0, not 16 pseudo-replicates. No contexts generated now.",
+  "primary": "Y is all independently verified paid births by global600 or extinction. D_i=(Y_mixed_mutating_i-Y_mixed_faithful_0)-(Y_all_a_mutating_i-Y_all_a_faithful_0). Primary success is at least12 of16 D_i strictly positive; ties and no-discovery worlds count nonpositive. Report all D_i, mean, signs and extinctions. This tests the resource-composition by mutation reproductive-output contrast, not an isolated B-allele selection coefficient.",
+  "null": "Under independent context sampling and frozen deterministic references, Pr(D_i>0)<=1/2. At least12 of16 positives has one-sided binomial tail 2517/65536, below0.05. Independence/uniformity are prospective context-generation assumptions requiring review, not proved by a synthetic fixture. No optional stopping, seed replacement or secondary endpoint substitution.",
+  "mechanistic_gate": "Predeclare canonical A=[0,2,3,4], B=[1,2,3,4]. Include every naturally born canonical A/B after A stock is already0 immediately before birth, actual E4/PC0 and coexistence recorded. Require an eligible B actor to consume B and pay a child, with faithfully copied B child subsequently consuming B and paying reproduction. Retain all eligible A/B, sterile/late/failed origins and actual shared stock; no eligible coexisting cohorts is UNKNOWN, not exclusion. Canonical A at E4/A0 cannot reproduce: failed EAT->E3,COPY->E1,LOOP->death. This supports resource-causal reproductive viability in that restricted state, not general isolated population selection. Neither gate nor primary alone licenses a broad selection claim.",
+  "rivals": ["mutation load differs by resource composition", "birth-time and food-opportunity confounding", "linked nonfeeding changes", "drift", "resource partition rather than superior replication", "late-origin censoring", "producer or custody error"],
+  "denominators": "All34 worlds, every COPY including incomplete nurseries, mutation, birth, refusal, food attempt, death, extinction and surviving incomplete lineage. Worlds/independent context draws are units; correlated offspring are not replicates. Faithful has two deterministic trajectory classes. Endpoint survivors alone are not primary.",
+  "claims": "Natural mutation occurrence, B expression, paid reproduction, faithful functional inheritance and population output are separately reported. A positive primary plus canonical mechanism is bounded evidence consistent with resource-dependent beneficial heritable variation under competition; do not claim a fully isolated allele effect, general evolution, learning or intelligence.",
+  "stop": "No replacement contexts or retries. Any invalid law/source/denominator/custody/process receipt makes execution invalid and preserves partial evidence. Biological extinction is a valid result, not infrastructure failure. No-genotype-discovery is retained. Physical grants, native readiness and execution authority remain absent.",
+  "execution": "No historical study(), main(), B-only founder assay, World construction, seed opening or launch from the request interface. Any actual producer must later be explicitly admitted, reuse unchanged World semantics, preserve all original files and be separately reviewed and authorized. No new launcher is proposed."
+}

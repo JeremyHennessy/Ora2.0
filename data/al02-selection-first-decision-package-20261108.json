@@ -1,0 +1,93 @@
+{
+  "schema": "AL02-SELECTION-FIRST-DECISION-PACKAGE-v1",
+  "charter": "https://github.com/JeremyHennessy/Ora2.0/issues/328",
+  "decision": "BLOCKED_NOT_READY_FOR_EXECUTION_AUTHORIZATION",
+  "source_status": "SCOPED_SYNTHETIC_COMPONENTS_INDEPENDENTLY_VERIFIED",
+  "native_execution_qualified": false,
+  "scientific_experiment_authorized": false,
+  "actual_new_scientific_result": false,
+  "protocol": "data/al02-selection-first-protocol-20261108.json",
+  "source_pins_raw_sha256": {
+    "data/al02-selection-first-protocol-20261108.json": "0ce1f514feb1519f7b820bcba7e5204ddd578606d53be1eb5719ca095d48a620",
+    "experiments/al02_selection_request.py": "beefb42596365a14b0f4c55ca67cc062306b7df950ef450b39618af155cf11da",
+    "experiments/al02_selection_referee.py": "fcd88de6a1c5f3b0b42c42dca5815856dc82a5cf2da34e177cd34c6beeb43a05",
+    "tests/test_al02_selection_source.py": "15fb663ffbc11ec65642f3aaaf89c2f5754b7ab46b873b733e1a67be9a24c5ae",
+    "experiments/executed_heredity.py": "03e3f1035233e8e1a078cd401ee10857de8ea20dc0249dd6c973675e8fc80342",
+    "experiments/lineage_audit.py": "56ad759c0c4957e0f5110d13ae57450438eabccd0ff10dd3cbf4307771e86312",
+    "experiments/causal_genealogy_audit.py": "18391a36b871e3a2a7d18c01a3a5b1520ae92f4e36a0c967e11ca1ef5c25e12c"
+  },
+  "worktree_branch": "research/al02-selection-first-20261108",
+  "base_commit": "24d613787493740dc1bbd40c5c8c017a0f0b016a",
+  "scientific_workload_ceiling": {
+    "contexts": 16,
+    "mutating_worlds": 32,
+    "deterministic_faithful_worlds": 2,
+    "maximum_worlds": 34,
+    "global_ticks_each": 600,
+    "organism_instructions_total": 20400,
+    "physical_resource_grant": false
+  },
+  "stages": {
+    "A": "VERIFIED_COMPLETE_SCOPED_PROSPECTIVE_PILOT_NOT_REGISTERED",
+    "B": "VERIFIED_COMPLETE_DATA_ADMISSION_NOT_EXECUTION_ENTRY",
+    "C": "PARTIALLY_COMPLETE_INDEPENDENT_INTERPRETER_AND_FIXTURES_NO_COMPLETE34WORLD_POSITIVE_TRANSCRIPT",
+    "D": "VERIFIED_COMPLETE_TWO_DEMONSTRATED_CANDIDATE_REPAIRS",
+    "E": "BLOCKED_STUDY_BOUND_ACTUAL_PRODUCER_PARENT_RESOURCE_CUSTODY_ROUTE_UNQUALIFIED",
+    "F": "VERIFIED_COMPLETE_BLOCKED_DECISION_PACKET_NOT_EXECUTION_READY"
+  },
+  "first_execution_blocker": "No qualified study-bound actual producer invocation connected to independently owned bounded parent/resource/custody/closure acceptance. DATA plan, historical World callable and synthetic log acceptance do not establish that path.",
+  "scientific_limit": "Primary resource-composition by mutation output contrast is not an isolated B-allele selection effect; actual B feeding, paid reproduction, canonical functional inheritance and concurrent A failure are separate gates. No eligible cohorts is UNKNOWN, not exclusion.",
+  "current_test_evidence": {
+    "command": "python -B -S -m unittest tests.test_al02_selection_source -v",
+    "local_pass": 18,
+    "independent_pass": 18,
+    "world_or_producer_calls": 0,
+    "fixtures": "Authored3/16tick extinct histories, one mutation-draw double, corruption cases;34slot and primary-boundary joins explicitly mock the interpreter. Fixture seeds0/100 are inert tests, not registered contexts or outcome searches.",
+    "full_panel_history_acceptance_verified": false,
+    "independent_reviewer": "message_review exact-source/fixture and final repairs review"
+  },
+  "required_native_identity_and_grants": {
+    "producer_entry": null,
+    "original_owner_assignment": null,
+    "executable_interpreter_for_science": null,
+    "consumed_dependency_closure": null,
+    "cumulative_USER_and_KERNEL_CPU": null,
+    "memory": null,
+    "wall_deadline": null,
+    "concurrent_process_limit": null,
+    "total_process_births": null,
+    "bootstrap_guardian_helpers": null,
+    "physical_output_grants": null,
+    "archive_restore_failure_reservations": null,
+    "free_disk_floor": null,
+    "independent_closure_receipts": null
+  },
+  "offline_test_interpreter": {
+    "path": "C:\\Users\\Jerem\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "version": "3.11.1 (tags/v3.11.1:a7a450f, Dec  6 2022, 19:58:39) [MSC v.1934 64 bit (AMD64)]",
+    "sha256": "0cbf71efa09ec4ce62d95c1448553314728ed5850720c8ad40352bfbb39be99a",
+    "native_scientific_qualification": false
+  },
+  "historical_only_not_new_grants": {
+    "local_ecosystem_source": "1cd4103082cd322a70b25436ab88d823c0fd7bf7",
+    "per_job_CPU_USER_seconds": 5,
+    "memory_bytes": 134217728,
+    "wall_seconds": 10,
+    "process_limit": 3,
+    "total_evidence_bytes": 33554432,
+    "phase_evidence_bytes": 8388608,
+    "free_floor_bytes": 5368709120,
+    "historical_AL02_python": "3.11.17",
+    "isolation_hardening_qualified": false,
+    "not_transferred": true
+  },
+  "evidence_acceptance": "Host must authenticate producer/source/interpreter, owner/file grants, original bytes/digests, process receipts, independently rerun referee under qualified limits and archive/restore custody. Referee output always authenticated_execution=False absent external proof. No child self-authorization.",
+  "failure_and_rollback": "Any source, denominator, custody or process failure preserves raw/partial/proof/failure evidence and accounts/closes all owned processes. Zero automatic retry or seed replacement. Extinction is a valid biological result. No immediate run proposed; quarantine local branch to roll back candidate without changing legacy files or protected main.",
+  "next_safe_steps": [
+    "Independent final decision-package/source review, preserving source qualification limits.",
+    "Complete remaining full-panel/referee boundary evidence only with permitted inert fixtures; no synthetic-to-authentic promotion and no duplicate framework.",
+    "Separately scope exact existing parent/producer qualification and external CPU/process/archive evidence; owner authorization required before any native measurement or scientific World."
+  ],
+  "publication": "LOCAL_ONLY_NO_PUSH_OR_PR; workflow administrative enablement not freshly queried; mainCIblob verified714bd1ea95bb888b02d9e48bce686e864649a064; legacy AL02 push/dispatch workflow forbidden.",
+  "protected": "Main and approvedCI read-only verified; no workflow changes. v10STOP file present, memories unread. Automation status/Observatory visuals not freshly inspected; no actions. All prior parked studies/negative records/dirtywork preserved."
+}
