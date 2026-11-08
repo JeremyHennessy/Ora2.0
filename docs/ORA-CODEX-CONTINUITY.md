@@ -727,3 +727,70 @@ scientific result is inferred from the symbolic cases. Engineering PR323
 remains 379594c and AI-Research PR66 remains a9659ab0. Both fifty-file
 v10 terminal pin comparisons passed; STOP/holds and paused automations
 are retained. No calibration, native attempt or population executed.
+
+
+## Decisive PR327 and repeated-use review
+
+PR327 head b0506ffad97733eef0f3b451b986f9234b5e562f remains OPEN/DRAFT,
+unmerged, on main 3a3c7e85. READY FOR OWNER MERGE REVIEW was submitted as
+GitHub COMMENT review 5816631605 after exact static and separate read-only
+review. The expected parent, one-file/eight-deletion scope, full tree
+equality with fc75f377, approved-patch tree reconstruction, YAML equality
+apart from the two removed steps and diff check all passed. No extra
+technical defect found. Workflow 378443811 is disabled_manually and no
+Actions runs are recorded for this head. Recheck these before owner
+integration; verify main workflow blob 714bd1ea95bb888b02d9e48bce686e864649a064
+after any separately authorized merge and decide enablement separately.
+No merge, enablement, dispatch or frozen calibration.
+
+Repeated-use question: a renewed target at B remains stable within one
+phase. After a valid parity prediction and successful B forage, the
+attempted port remains in its register: FORAGE changes feedback, energy
+and stock but does not overwrite that register. Repeated same-phase
+B queries can retain the answer and use one FORAGE rather than paying
+XOR plus FORAGE again. This is a positive simple acquired-memory control,
+not a nonlearning baseline and not a complete nine-slot lifecycle.
+
+Let Q be extra acquisition/formation dispatches over a fully matched
+baseline (including its setup), and L be extra retrieval/control
+dispatches over V genuine uses. On stable available renewed heads, a
+full blind FORAGE/XOR/FORAGE block costs 3V local query dispatches; parity
+recomputation costs 2V+Q+L, at most V-Q-L saved. If a separate LOAD is
+needed each use, L>=V and any positive Q is never repaid in dispatch
+savings. NO-GO for that repeated-load recomputation motif. Without that
+load, positive savings are algebraically possible: V>Q+L. A retained
+correct B port could cost V+Q+L query dispatches, saving up to 2V-Q-L.
+These comparisons assume the matched mask/setup and one meal per pair,
+not free feedback-adaptive stopping or an implemented controller.
+
+For example Q=1,V=2,L=0 allows parity one gross dispatch saved against
+two blind pairs. This is an allowance, not an instantiated history.
+Correct-first fixed/reactive/free-stay behavior can match one local
+query action when correct; alternating/latest-success have context-
+dependent outcomes. A phase-aware location-specific finite-state
+memory is an eligible learner and can match the retained-port strategy.
+At tick2048 an old B answer becomes wrong, and the parity relation alone
+does not reveal the new phase; another personally funded current anchor
+success is required. These costs cannot be charged once and forgotten.
+
+Age a is measured before A additional acquisition dispatches. For a
+surviving parent with c local dispatches per use, uses are bounded by
+floor((255-a-A-D)/c), where D includes all other remaining navigation,
+control and reproductive dispatches. Do not double-charge acquisition
+already included in a. A new full nursery/birth needs nine COPY plus
+one DIV dispatch, 27 extra COPY energy, 30 extra DIV energy, and 43
+material units as required. The actual ledger must include refused
+actions, probe failures, cap spill, stock, global scheduler, deaths
+and expiry. The prior necessary four/six additional birth bounds for
+known actors to reach phase2048 still apply within their stated scope.
+
+UNKNOWN for full paid repeated-use learning and ordinary mutation.
+No exact attainable V, affordable integrated control or common-horizon
+descendant advantage is established. A broad NO-GO for learning would
+be unsupported. The next scientific dependency is a founder-reachable
+paid history yielding multiple useful same-phase uses of a retained
+port; do not author a genome before its stock/age/cost history closes.
+Evidence: local ora-decisive-review-20261108 repeated-use-bound.json
+and pr327-review.json. Independent source review accepted the cost
+bounds with the baseline-control and spill/timing qualifications.
+No World, population, seed query or native attempt executed.
