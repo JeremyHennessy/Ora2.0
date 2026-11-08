@@ -1007,3 +1007,56 @@ Next milestone: independently qualify and freeze the exact protocol,
 especially its recognizer and law-preserving matched intervention, before
 requesting any execution decision. Existing147/160/172 source evidence
 and all prior failures remain preserved.
+
+## Stage1 recognizer component qualified; registration NOT READY
+
+Implemented experiments/eka_one_shot_recognizer.py as an inert data reader.
+Its definition is exactly the accepted November1 nine-slot one-shot class,
+including either global register orientation, modulo2 register aliases,
+modulo9 branch aliases, ignored operands and SET immediate1/17. Other odd
+SET values are intentionally outside this previously fixed class. It does
+not claim to recognize every possible learning algorithm or execute code.
+
+The birth reader binds nine supplied successful COPY records, mutation
+arithmetic at dose8,27 write/code units,16 state units and the blank E12
+newborn formation. It always reports ancestry_authenticated=false and
+registered_eligibility=NOT_EVALUATED. Consistent forged records cannot be
+promoted through a supplied verified flag. Actual genesis, prior parent
+states, payment, hash-derived draws, full history and custody are unproved
+without the separately qualified complete-history consumer.
+
+Fifteen isolated synthetic tests passed, including1728 single-word alias
+class checks, swapped registers, unused feedback, fixed/overwritten port,
+nonfunctional loops, malformed instructions, refused operations, material
+and COPY corruption. Independent review found missing decoded/outcome
+checks; those were repaired and all15 tests passed independently at the
+exact pinned source/test bytes. No producer, World or historical record
+was imported or run. Qualification record and exact raw source/test pins:
+data/eka-stage1-recognizer-qualification-20261108.json.
+
+The accepted direct literal origin distances15/14 remain necessary only
+for this class, not probabilities or generations. Eight prospectively
+sealed contexts are a bounded descriptive incidence attempt; no mutation
+independence, discovery power or chance of finding a learner is established.
+All ordinary nonfounder births through1024 remain the denominator, all
+eight contexts and failures stay visible, no-match ends the study and
+the horizon stays4096. The Stage1 ceiling32768 scientific dispatches is
+not a CPU/process/storage/native grant or allowance for extra contexts.
+
+Protocolv2 now separates Stage1 blockers from deferred Stage2. No Stage2
+intervention qualification or execution was performed. A later Stage2
+comparison needs control references committed before disclosure; absent
+that commitment Stage1 incidence can stand alone, but retrospective
+control selection cannot repair its Stage2 context. Source checkpoints,
+external interventions and new grants remain independently gated.
+
+Overall NOT READY. First blocker is the qualified complete-history
+ancestry/payment/custody consumer, not another code-pattern fixture.
+Static project source pins were reviewed, but the actual execution
+entrypoint, interpreter/stdlib/OS closure, fresh-context admission and
+physical resource/evidence reservations remain incomplete. Neither the
+recognizer nor protocol is frozen as a registered scientific experiment.
+Next action is to qualify that exact complete-history integration using
+isolated corruption fixtures and immutable source pins before considering
+registration. No World, population, seed selection, native qualification,
+workflow activation, merge or v10 restart.
