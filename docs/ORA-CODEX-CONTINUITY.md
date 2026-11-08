@@ -652,10 +652,11 @@ motif before designing a genotype. Common-horizon reproduction, COPY/DIV
 material, mutation, death and causal erasure/sham/unseen controls remain
 unclosed. No World, population, seed or native execution.
 
-Separate reviewer invocations were unavailable due to usage limits.
-The prior workflow patch review remains applicable to byte-identical YAML;
-new exact-commit and science checks are local and the phase note remains
-unpublished pending independent review.
+Separate reviewer invocations were unavailable at this earlier checkpoint.
+The prior workflow patch review applies to byte-identical YAML. Subsequent
+independent source review accepted the parity, energy and scheduler claims
+within their explicit conditional scope. The single-use NO-GO concerns gross
+dispatch saving only; spill and timing prevent a universal fitness claim.
 
 
 ## Isolated workflow handoff and dedicated two-site cost boundary
@@ -704,3 +705,25 @@ or a later-born actor. No ordinary funded phase-spanning sequence,
 reproduction, material/scheduling ledger or lineage advantage was found.
 Do not invent a genome or cross the execution holds. No calibration,
 native attempt, population or runtime restart.
+
+
+## Coordination reconciliation and publication review
+
+Issue 317 comment 6695966272 reports the existing isolated draft PR327
+at b0506ffad97733eef0f3b451b986f9234b5e562f. Current GitHub readback confirms
+OPEN/DRAFT/UNMERGED, parent main 3a3c7e85, exactly one changed file and eight
+deleted lines. Its workflow Git blob 714bd1ea95bb888b02d9e48bce686e864649a064
+equals local fc75f377 and the previously reviewed fix. Use PR327 for
+integration review; do not create a duplicate or merge it as part of this
+documentation publication. Hosted workflow 378443811 remains disabled.
+Main remains unchanged and has no effective branch protection rules;
+owner integration authority and exact verification still apply.
+
+Independent read-only science review accepted the renewed-site parity
+identity, entry-energy accounting and necessary lifespan/scheduler bounds.
+It explicitly retains UNKNOWN for real seed realization, full paid
+history, ordinary origin and common-horizon descendant fitness. No new
+scientific result is inferred from the symbolic cases. Engineering PR323
+remains 379594c and AI-Research PR66 remains a9659ab0. Both fifty-file
+v10 terminal pin comparisons passed; STOP/holds and paused automations
+are retained. No calibration, native attempt or population executed.
