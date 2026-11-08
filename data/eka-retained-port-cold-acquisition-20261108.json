@@ -1,0 +1,27 @@
+{
+  "schema": "ORA-RETAINED-PORT-COLD-ACQUISITION-GATES-v1",
+  "scope": "SOURCE_ONLY_AST_AND_NECESSARY_ENERGY_INEQUALITY",
+  "pressure71_sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+  "register_gate": {
+    "verdict": "NO_GO_BARE_FREE_ACQUISITION_CLAIM",
+    "finding": "FORAGE preserves the attempted port on success and failure. Fixed outcome-independent continuation repeats the same prechosen port as its matched constant-port control. Preservation alone does not prove acquisition or recognition.",
+    "limits": "No universal READ requirement. Energy, nursery, control, communication and selection can mediate indirect outcome dependence. Warm-cache bounds remain valid after acquisition is established."
+  },
+  "cold_roundtrip": {
+    "verdict": "NO_GO_THREE_MEAL_DIRECT_READ_ROUNDTRIP_FIRST_BIRTH",
+    "premises": "Fresh E12 daughter, empty nursery, no incoming transfer, full27word child, distinct-site roundtrip of distance d>=1, R>=1 direct READ before first birth.",
+    "birth_energy_including_base": 67,
+    "minimum_cost": "67 + M + 2*d + R",
+    "maximum_supply": "12 + 20*M",
+    "necessary_condition": "19*M >= 55 + 2*d + R",
+    "closest_case": {"M": 3, "d": 1, "R": 1, "supply": 72, "minimum_cost": 73, "minimum_meals_necessary": 4},
+    "limits": "The daughter startup12 is inside DIV30. Allowing parent death does not fund this case. Failed probes, control, spill, extra memory work, material, scheduling and expiry remain uncharged optimistic obligations. Four meals are necessary, not sufficient. No claim for transfers, prefilled nursery or other acquisition mechanisms."
+  },
+  "central_verdict": "UNKNOWN_FULL_ORDINARY_LEARNING_LIFECYCLE",
+  "first_unclosed_dependency": "One lawful personal outcome-conditioned cold-to-warm transition with paid reproduction, actual stock/scheduler and common-horizon outcomes against strong controls.",
+  "independent_review": "founder_source_followup scoped PASS for acquisition distinction and separate cold-roundtrip bound",
+  "checks": ["Source SHA matched", "AST FORAGE body has zero register writes", "Four symbolic chosen-port/target cases", "Necessary energy inequality checked at distances1/2 and READ counts1/2"],
+  "scientific_imports": 0,
+  "World_or_population_or_seed_execution": 0,
+  "supplied_genomes": 0
+}

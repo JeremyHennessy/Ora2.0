@@ -820,3 +820,46 @@ NO-GO remains scoped. Existing v10 STOP/holds and four paused automations
 remain. Next scientific dependency is a paid founder-reachable repeated
 retained-port history, not another parity query calculation. Any hosted
 validation restoration requires a separate authorized enablement decision.
+
+## Retained-port acquisition and cold roundtrip decision
+
+The next gate is acquisition, not another warm-query estimate. Pressure71
+FORAGE preserves the chosen port on success and failure. With fixed
+outcome-independent continuation, a constant-port control makes the same
+next choice. Bare register preservation therefore does not establish
+personal acquisition or recognition. This scoped NO-GO does not rule out
+learning through energy, nursery/control, communication or other indirect
+outcome-dependent paths. Warm-cache bounds remain valid after acquisition.
+
+A necessary budget closes one minimal first-birth motif. A fresh ordinary
+daughter starts E12 with empty nursery and no incoming transfer. Nine COPYs
+and DIV cost67 including bases and the daughter startup within DIV30.
+M successful meals yield at most20M and cost M base instructions. A
+distinct-site roundtrip costs at least2d MOVEs and R>=1 direct READ.
+Thus 12+20M >=67+M+2d+R, or 19M >=55+2d+R. At d1,R1,M3, supply72
+cannot cover cost73, even if the parent dies after DIV. At least four
+meals are necessary; four are not proven sufficient. Failed probes,
+control, spill, stock, material, survival prefixes, schedule and expiry
+remain additional obligations. Other acquisition mechanisms, transfers
+and already paid nursery fall outside this result.
+
+Independent source review accepted both scoped claims. Exact source pin,
+checks and limitations are in data/eka-retained-port-cold-acquisition-20261108.json.
+The full ordinary cold-to-warm learning lifecycle remains UNKNOWN. Its
+first missing proof is an affordable personal outcome-conditioned change
+to future action, followed by paid reproduction against constant-port,
+paired, alternating, reactive, free-stay, latest-success and finite-state
+controls. No authored organism or seed search was introduced.
+
+Pontes et al., The Evolutionary Origin of Associative Learning,
+doi:10.1086/706252 (https://pubmed.ncbi.nlm.nih.gov/31868538/), report
+evolved digital learning under exploitable within-lifetime patterns and
+reflexive predecessors. This supports testing ecological information
+before designing a learner. These bounds do not establish that Ora's
+approved environment is globally unsuitable, so replacing it is not yet
+scientifically justified. No new world was implemented.
+
+Approved main workflow blob714bd1ea95bb888b02d9e48bce686e864649a064 and
+disabled workflow378443811 were reverified. PR323 remains379594c; its
+historical workflow file cannot replace the approved main bytes in any
+future integration. No merge or engineering branch rewrite.
