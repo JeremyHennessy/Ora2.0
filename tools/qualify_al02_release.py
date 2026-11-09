@@ -106,7 +106,7 @@ def qualify(out):
     baseline = audit()
     run(out, 'regressions.log', ['-m', 'unittest', '-v', *(f'tests.{n}' for n in TESTS)])
     # Reintroduce the exact historical failure in memory, without changing any file.
-    mutation = '''
+    mutation = r'''
 from pathlib import Path
 from unittest import main
 from experiments import al02_depletion_producer as producer
