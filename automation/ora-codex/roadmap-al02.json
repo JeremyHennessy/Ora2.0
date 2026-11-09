@@ -9,17 +9,14 @@
       "path": "tests/test_al02_continuation.py",
       "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py -k inert_continuation",
       "inspect": "tools/run_al02_campaign.py",
-      "testNote": "Name the new tests with inert_continuation in the name. Use the existing Windows inert worker only. Do not fake custody or Job execution; fixture verification must remain honest about synthetic evidence.",
-      "completionCriteria": {
+      "requirements": {
         "capacity": "Verify the real continuation controller refuses insufficient archive space before claim or custody using disposable fixtures and mocked capacity.",
         "inert-custody": "Add and run an isolated end-to-end test from real run_next(continuation=True) at committed index 8 through existing real Windows Job, inert worker, journal, custody and evidence readback. Reuse the inert shim and lawful fixture technique in tests/al02_release_rehearsal/campaign-controller-probe.py and tests/test_al02_campaign_controller.py. Keep changes within this test module. Adapt command, context and paths only inside the test. Enforce a hard prelaunch barrier that refuses the scientific worker and non-temporary attempts. Carry frozen continuation binding/package identity and committed index/seed separately from synthetic context/seed. Verify terminal custody and analyze with the existing evidence verifier. Do not use production attempt paths or run a World. Do not change frozen artifacts or rerun the completed final batch controller repair.",
         "inert-reconciliation": "After the inert-custody requirement is accepted, extend that fixture with a restart or tampered-journal refusal demonstrating the real controller and custody evidence prevent a new claim or Job launch. Retain the earlier test. Never invoke scientific worker.",
         "journal-integrity": "Extend the already accepted inert continuation fixture to test a distinct gap: tamper only a disposable partial journal after real Windows Job and custody, and verify the real evidence verifier rejects the modified journal against the original terminal pin. Preserve all accepted tests and test-only launch guards; do not run a World or modify production evidence.",
-        "launch-provenance": "Exercise the prelaunch no-World barrier of the accepted inert continuation fixture with a substituted command or changed inert shim bytes. Assert refusal before Windows Job or attempt claim. Keep the lawful inert path passing and all existing acceptance intact.",
-        "reviewed-batch-custody": "Demonstrate a disposable controller-owned multi-index inert Windows Job and custody run spanning a reviewed batch boundary. Require independently reverified retained evidence and the batch review before the first next-batch claim. Keep committed and synthetic identities separate. Verify one-use, STOP and resource safeguards, and refuse absent or inconsistent review. Preserve the frozen artifacts and scientific no-launch barrier."
+        "launch-provenance": "Exercise the prelaunch no-World barrier of the accepted inert continuation fixture with a substituted command or changed inert shim bytes. Assert refusal before Windows Job or attempt claim. Keep the lawful inert path passing and all existing acceptance intact."
       },
-      "maxProgressPerCriterion": 2,
-      "goal": "Qualify the existing AL02 continuation engineering for committed contexts 8\u2013127 through inert custody and independent batch review."
+      "testNote": "Name the new tests with inert_continuation in the name. Use the existing Windows inert worker only. Do not fake custody or Job execution; fixture verification must remain honest about synthetic evidence."
     },
     "evidence-authentication": {
       "priority": 2,

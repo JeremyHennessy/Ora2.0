@@ -98,33 +98,26 @@ function Get-OraEngineeringDecision($task,$state,$receipt,$sourceOk) {
                  expected=$task.expected;evidence=$state.stdout}
     }
 }
-function Get-OraObjectiveCriteria($objective) {
-    $objective.completionCriteria ?? $objective.requirements
-}
-
 function Get-OraRoadmapPrompt($task, $roadmap) {
-    $requirements=Get-OraObjectiveCriteria $roadmap
-    $history=@($task.progress) | ConvertTo-Json -Depth 5 -Compress
-    $objective=if ($roadmap.goal) { $roadmap.goal } else { $task.objective }
     $scope="Worktree HEAD $($task.head). No production, scientific dispatch, Worlds, network, pushes, merges, permission changes, or new agents. Use only disposable fixtures. A real custody or Job invocation is allowed only for a pinned inert fixture with a technical barrier against any scientific command or production path."
     switch ($task.stage) {
         'direct' {
-            $open=@($requirements.Keys | Where-Object {"$($task.objective)/$_" -cnotin $task.accepted})
-            $criteria=($requirements | ConvertTo-Json -Compress)
-            "$scope Objective: $objective. Inspect $($roadmap.path), $($roadmap.inspect) and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Reviewed intermediate evidence: $history. Select an unfinished acceptance criterion and create the next specific task from the actual source and evidence. Do not repeat an accepted step. A task may advance a criterion without closing it. Select PARK only if no useful authorized work is available. Return structured output."
+            $open=@($roadmap.requirements.Keys | Where-Object {"$($task.objective)/$_" -cnotin $task.accepted})
+            $criteria=($roadmap.requirements | ConvertTo-Json -Compress)
+            "$scope Objective: $($task.objective). Inspect $($roadmap.path), $($roadmap.inspect) and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Select one genuinely unfinished requirement and compose a specific implementation instruction based on the observed code. Select PARK only if no useful authorized work is available. Return structured output."
         }
         'execute' {
-            "$scope Only $($roadmap.path) may change. Preserve all accepted tests and do not commit. Requirement: $($requirements[$task.requirement]). Director proposal, subordinate to this scope: $($task.instruction). Rejection evidence if applicable: $($task.rejection). Acceptance command: $($roadmap.test). $($roadmap.testNote) Rollback: restore the pre-task file snapshot after inspection if rejected. Budget: $($roadmap.secondsPerTurn) seconds, no background jobs."
+            "$scope Only $($roadmap.path) may change. Preserve all accepted tests and do not commit. Requirement: $($roadmap.requirements[$task.requirement]). Director proposal, subordinate to this scope: $($task.instruction). Rejection evidence if applicable: $($task.rejection). Acceptance command: $($roadmap.test). $($roadmap.testNote) Rollback: restore the pre-task file snapshot after inspection if rejected. Budget: $($roadmap.secondsPerTurn) seconds, no background jobs."
         }
         'review' {
-            "$scope Read-only independent review at the exact candidate diff. Inspect actual source, prior file snapshot $($task.backup), and raw executor log $($task.evidence). Requirement: $($requirements[$task.requirement]). Check the exact source and passing raw test evidence. Compare the resulting evidence with the full criterion. ACCEPT only when the criterion is satisfied. For objective-mode criteria, return PROGRESS only for distinct, verified progress with a concrete remaining gap. Preserve prior tests; only guarded inert custody and Job may run. Previously reviewed progress: $history. REJECT with a concise defect and correction when actionable, otherwise UNKNOWN."
+            "$scope Read-only independent review at the exact candidate diff. Inspect actual source, prior file snapshot $($task.backup), and raw executor log $($task.evidence). Requirement: $($roadmap.requirements[$task.requirement]). ACCEPT only if the exact requested test is effective, prior tests are preserved, only the specified inert custody and Job may run; no scientific dispatch occurs, and the raw log demonstrates the focused suite passed. REJECT with a concise defect and correction when actionable, otherwise UNKNOWN."
         }
     }
 }
 
 function Get-OraEligibleObjective($catalog,$accepted) {
     foreach ($id in ($catalog.objectives.Keys | Sort-Object { $catalog.objectives[$_].priority }, {$_})) {
-        foreach ($criterion in (Get-OraObjectiveCriteria $catalog.objectives[$id]).Keys) {
+        foreach ($criterion in $catalog.objectives[$id].requirements.Keys) {
             if ("$id/$criterion" -cnotin $accepted) { return $id }
         }
     }
@@ -133,9 +126,8 @@ function Get-OraEligibleObjective($catalog,$accepted) {
 function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap,$catalog) {
     if ($state.exitCode -ne 0 -or !$receipt.completed -or $receipt.failed -or !$state.session -or
         $state.after.head -cne $task.head -or !$state.roadmapScopeOk) { return }
-    $requirements=Get-OraObjectiveCriteria $roadmap
     $next=@{id='ORA-DIRECTOR';item='ROADMAP';head=$task.head;expected=$task.expected;
-            evidence=$state.stdout;accepted=@($task.accepted);diffSha256=$state.diffSha256;objective=$task.objective;progress=@($task.progress | Where-Object { $_ })}
+            evidence=$state.stdout;accepted=@($task.accepted);diffSha256=$state.diffSha256;objective=$task.objective}
     if ($task.stage -ceq 'execute') {
         if (!$receipt.roadmapTests -or $state.diffSha256 -ceq $task.diffSha256) { return }
         $next.stage='review'
@@ -144,16 +136,9 @@ function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap,$catalog) {
     }
     try { $value=$receipt.message | ConvertFrom-Json -AsHashtable -ErrorAction Stop } catch { return }
     if ($task.stage -ceq 'direct') {
-        if ($value.Count -ne 2 -or !$requirements.Contains($value.requirement) -or
+        if ($value.Count -ne 2 -or !$roadmap.requirements.Contains($value.requirement) -or
             "$($task.objective)/$($value.requirement)" -cin $task.accepted -or $value.instruction -isnot [string] -or
             !$value.instruction.Trim() -or $value.instruction.Length -gt 2400) { return }
-        if (@($next.progress | Where-Object {
-            $_.objective -ceq $task.objective -and $_.criterion -ceq $value.requirement -and
-            $_.instruction.Trim() -ieq $value.instruction.Trim()
-        }).Count) {
-            $state.reason='Planner repeated independently reviewed work'
-            return
-        }
         $next.stage='execute'
         $next.requirement=$value.requirement
         $next.instruction=$value.instruction
@@ -167,20 +152,6 @@ function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap,$catalog) {
                 $state.reason='All scoped roadmap requirements independently accepted'
                 return
             }
-            $next.stage='direct'
-        } elseif ($value.decision -ceq 'PROGRESS' -and $roadmap.completionCriteria -and
-                  $value.finding -is [string] -and $value.finding.Trim() -and $value.finding.Length -le 2400) {
-            $prior=@($next.progress | Where-Object {
-                $_.objective -ceq $task.objective -and $_.criterion -ceq $task.requirement
-            })
-            if ($prior.Count -ge $roadmap.maxProgressPerCriterion -or
-                @($prior | Where-Object { $_.finding.Trim() -ieq $value.finding.Trim() }).Count) {
-                $state.reason='No distinct reviewed progress within the criterion budget'
-                return
-            }
-            $next.progress+=@(@{objective=$task.objective;criterion=$task.requirement;
-                instruction=$task.instruction;finding=$value.finding;review=$state.stdout;
-                reviewSha256=$state.evidenceSha256;diffSha256=$state.diffSha256})
             $next.stage='direct'
         } elseif ($value.decision -ceq 'REJECT' -and $task.corrections -lt $roadmap.maxCorrections -and
                   $value.finding -is [string] -and $value.finding.Trim() -and $value.finding.Length -le 2400) {
