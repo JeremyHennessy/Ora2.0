@@ -23,6 +23,7 @@ class FinalV2Tests(TestCase):
 
     def test_exact_artifacts_with_temporary_authority_gate_only(self):
         import hashlib
+        attempt_existed = gate.ATTEMPT.exists()
         binding = json.loads((gate.V2_DRAFT/'installed-binding-v2.json').read_bytes())
         record = dict(schema='AL02-CANDIDATE-ONE-ATTEMPT-v2', worker_sha256=gate.CANDIDATE_WORKER,
                       binding_sha256=gate.V2_BINDING, package_sha256=gate.V2_PACKAGE,
@@ -36,7 +37,7 @@ class FinalV2Tests(TestCase):
                 verified = gate.require_bound_worker(binding['installed_file_pins'],
                     binding['proposed_command'], binding['proposed_relay_argv'])
                 self.assertEqual(verified['binding_sha256'],gate.V2_BINDING)
-        self.assertFalse(gate.ATTEMPT.exists())
+        self.assertEqual(gate.ATTEMPT.exists(), attempt_existed)
 
 
     def test_tampered_frozen_artifacts_refused_without_repinning(self):

@@ -12,6 +12,22 @@ raw journal and output, custody receipts, race and interruption results, and log
 Keep the evidence and obtain an independent rerun at the same stable revision.
 Any changed source or artifact invalidates the affected evidence.
 
+## Scientific entry is mandatory
+
+Qualification also calls the actual continuation restore entry twice on a lawful
+inert checkpoint. It checks canonical state and RNG equivalence, actor order,
+resource and material conservation, independent branch storage, and the B
+escrow difference. The World constructor, scheduler and instruction dispatch
+are blocked. A controlled in-memory regression must reject the historical
+two-argument dictionary update.
+
+The current command checks the repaired producer under a separate source pin
+and exercises the consumed V2 artifacts only as historical engineering inputs.
+It verifies the preserved attempt and authorization bytes before and after.
+It neither rebuilds the consumed package nor qualifies a future release
+identity. A future package must bind the repaired producer and pass both
+engineering and scientific-entry checks against its final artifacts.
+
 ## Trust and dependency order
 
 Reviewed runtime bytes except consent feed the source inventory, then the binding,

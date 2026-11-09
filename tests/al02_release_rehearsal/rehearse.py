@@ -25,7 +25,8 @@ final_authority.write_bytes(_canonical(dict(
 
 final_authority_pin = hashlib.sha256(final_authority.read_bytes()).hexdigest()
 assert out.is_dir() and not (out/'lawful').exists()
-assert out != c.ATTEMPT.parent and not c.ATTEMPT.exists()
+assert not out.is_relative_to(c.ATTEMPT.parent)
+original_attempt_existed = c.ATTEMPT.exists()
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def records(rows):
     return [dict(zip(fixture._PAIR_COLUMNS[row[0]],deepcopy(row[1:]),strict=True)) for row in rows]
@@ -239,6 +240,6 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
         assert not (attempt/'04-terminal.json').exists()
     assert not (stage/'unexpected').exists()
     assert attempt.exists()==(name in ('lawful','forged','interrupt','auth-swap','pending-fail','receipt-swap','late-stop','final-auth-swap'))
-assert not original_attempt.exists()
+assert original_attempt.exists() == original_attempt_existed
 (out/'results.json').write_text(json.dumps(results,indent=2))
 print(json.dumps(results,indent=2))

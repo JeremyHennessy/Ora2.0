@@ -1,4 +1,4 @@
-"""Qualify the frozen AL02 V2 release with inert Windows transactions only."""
+"""Inert AL02 engineering and continuation-entry qualification. Never releases."""
 import hashlib
 import json
 import os
@@ -12,11 +12,15 @@ ROOT = Path(__file__).resolve().parents[1]
 FROZEN = Path('D:/OraLab/drafts/ora-al02-release-v2')
 PRODUCTION = Path('D:/OraLab/src/Ora2.0-al02-first-depletion-20261109')
 V1 = FROZEN.with_name('ora-al02-production-installation')
+CONSUMED = Path('D:/OraLab/reports/ora-al02-v2-scientific-release-20261109')
+RESTORE = 'experiments/al02_depletion_producer.py'
+REPAIRED_RESTORE = '266677b97c920a11359f818943c17aef240578b8cf58220c14d9d5333a1a0279'
 HELPERS = ROOT / 'tests/al02_release_rehearsal'
 TESTS = (
     'test_al02_final_v2', 'test_al02_candidate_binding', 'test_al02_one_pair_consent',
     'test_al02_one_pair_release', 'test_al02_partial_history', 'test_al02_one_pair_custody',
-    'test_al02_depletion_integration',
+    'test_al02_depletion_integration', 'test_al02_depletion_checkpoint',
+    'test_al02_depletion_producer', 'test_al02_restore_entry',
 )
 EXPECTED = {
     'source-pins-v2.json': '56c343f5824ef86497db5f4cb2702431c446799e3756a0983269d6d2e1c79e7c',
@@ -45,37 +49,51 @@ def audit():
         require(sha(FROZEN / name) == expected, f'Frozen artifact changed: {name}')
     binding = read(FROZEN / 'installed-binding-v2.json')
     attempt = Path(binding['attempt'])
-    require(not attempt.exists(), 'Production attempt must remain absent')
-    for name in ('candidate-scientific-authorization.json',
-                 'candidate-scientific-authorization-v2.json'):
-        require(not (attempt.parent / name).exists(), f'Production authority exists: {name}')
+    evidence = CONSUMED/'evidence-sha256.json'
+    require(sha(evidence) == 'c39e0b3a4d6475a7b6f6c7f2d94e831dd25d4b5a047a9d5fe98805d0d1733eff',
+            'Consumed evidence inventory changed')
+    evidence_rows = read(evidence)
+    attempt_files = {Path(row['path']).name for row in evidence_rows
+                     if Path(row['path']).parent == attempt}
+    require({p.name for p in attempt.iterdir()} == attempt_files,
+            'Consumed attempt file set differs')
+    for row in evidence_rows:
+        path = Path(row['path'])
+        require(path.stat().st_size == row['bytes'] and sha(path) == row['sha256'],
+                f'Consumed evidence differs: {path}')
+    require(not (attempt.parent/'candidate-scientific-authorization.json').exists(),
+            'Unexpected V1 candidate authority')
     require(binding['scientific_authorization'] is False, 'Inactive binding required')
     require(read(FROZEN/'human-release-package-v2.json')['scientific_authorization'] is False,
             'Inactive package required')
     require(read(Path('D:/OraLab/automation/ora-codex/status.json'))['status'] == 'parked',
             'Supervisor must remain PARKED')
     receipt = read(FROZEN / 'installation-verification-v2.json')
-    production_pins = read(V1 / 'installed-binding-v1.json')['installed_file_pins']
-    for target, expected in production_pins.items():
-        require(sha(Path(target)) == expected, f'Production pin changed: {target}')
+    activation = read(CONSUMED/'activation.json')
     for target, pair in receipt['replacements'].items():
         path = Path(target)
-        require(sha(path) == pair['before'], f'Production replacement baseline changed: {path}')
+        expected = activation['consent_after'] if path.name.endswith('_consent.py') else pair['after']
+        require(sha(path) == expected, f'Consumed production module changed: {path}')
         require(sha(ROOT / path.relative_to(PRODUCTION)) == pair['after'],
                 f'Qualification module differs: {path}')
     local = {}
     for target, expected in binding['installed_file_pins'].items():
         path = Path(target)
+        require(sha(path) == expected, f'Consumed production pin changed: {path}')
         if path.is_relative_to(PRODUCTION):
-            path = ROOT / path.relative_to(PRODUCTION)
-        require(sha(path) == expected, f'V2 source inventory mismatch: {path}')
+            relative = path.relative_to(PRODUCTION).as_posix()
+            path = ROOT / relative
+            if relative == RESTORE:
+                expected = REPAIRED_RESTORE
+        require(sha(path) == expected, f'Repair rehearsal source inventory mismatch: {path}')
         local[str(path)] = expected
     for name in ('installed-binding-v1.json', 'human-release-package-v1.json'):
         expected = {'installed-binding-v1.json':'4da179bad479aadaec04d96483a6032bb33187593abc0ed45cd1493f0ed1a7fb',
                     'human-release-package-v1.json':'9f01cd5355961fa769efd38fc5cb956fb0abbdfa59cf6423169c4cc5e7843208'}[name]
         require(sha(V1/name) == expected, f'V1 artifact changed: {name}')
     return dict(head=git('rev-parse', 'HEAD'), pins=local, artifacts=EXPECTED,
-                production_attempt=str(attempt), scientific_authorization=False,
+                consumed_attempt=str(attempt), historical_artifacts_only=True,
+                repaired_restore_sha256=REPAIRED_RESTORE, scientific_authorization=False,
                 helpers={path.name: sha(path) for path in sorted(HELPERS.glob('*.py'))})
 
 def run(out, name, args, *, source=None):
@@ -86,10 +104,30 @@ def run(out, name, args, *, source=None):
 
 def qualify(out):
     baseline = audit()
-    run(out, 'rebuild.log', [str(ROOT/'tools/build_al02_release_v2.py'), str(out/'rebuilt')])
-    for name, expected in EXPECTED.items():
-        require(sha(out/'rebuilt'/name) == expected, f'Rebuilt bytes differ: {name}')
     run(out, 'regressions.log', ['-m', 'unittest', '-v', *(f'tests.{n}' for n in TESTS)])
+    # Reintroduce the exact historical failure in memory, without changing any file.
+    mutation = '''
+from pathlib import Path
+from unittest import main
+from experiments import al02_depletion_producer as producer
+from tests import test_al02_restore_entry
+path = Path(producer.__file__)
+raw = path.read_text()
+fixed = "vars(obj).update(config)\n        vars(obj).update(state['counters'])"
+assert raw.count(fixed) == 1
+mutated = raw.replace(fixed, "vars(obj).update(config, state['counters'])")
+exec(compile(mutated, str(path), 'exec'), producer.__dict__)
+main(module=test_al02_restore_entry, argv=['mutation',
+    'RestoreEntryTests.test_real_restore_and_both_branch_starts'])
+'''
+    with (out/'restore-mutation.log').open('xb') as log:
+        result = subprocess.run([sys.executable, '-B', '-S', '-'], cwd=ROOT,
+                                input=mutation.encode(), stdout=log,
+                                stderr=subprocess.STDOUT, timeout=30)
+    require(result.returncode != 0 and
+            'TypeError: update expected at most 1 argument, got 2' in
+            (out/'restore-mutation.log').read_text(),
+            'Scientific-entry readiness did not reject the original restore defect')
     rehearsal = out / 'inert'
     rehearsal.mkdir()
     shutil.copyfile(HELPERS/'inert-worker.py', rehearsal/'inert-worker.py')
@@ -127,7 +165,8 @@ def qualify(out):
     require(terminal['result']['authenticated_execution'] is False, 'Expected inert outcome')
     require(results['lawful']['second_claim'] == 'FileExistsError', 'Duplicate not refused')
     require(audit() == baseline, 'Baseline changed during qualification')
-    return dict(status='PASS', scope='inert qualification only', baseline=baseline,
+    return dict(status='PASS', scope='isolated restore repair and historical V2 inert engineering only',
+                scientific_entry='both initialized with zero ticks', future_release_qualified=False, baseline=baseline,
                 terminal_sha256=sha(attempt/'04-terminal.json'), results_sha256=sha(rehearsal/'results.json'),
                 release_identities=identities)
 

@@ -75,7 +75,8 @@ class EscrowContinuation(frozen.World):
         if role == 'sequestered':
             state = sequester_b(state)
         obj = object.__new__(cls)
-        vars(obj).update(config, state['counters'])
+        vars(obj).update(config)
+        vars(obj).update(state['counters'])
         for key in ('food_a', 'food_b', 'escrow_b', 'heat', 'last_actor',
                     'next_organism_id', 'events', 'births'):
             setattr(obj, key, state[key])
