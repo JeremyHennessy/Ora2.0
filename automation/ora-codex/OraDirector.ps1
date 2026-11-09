@@ -99,18 +99,18 @@ function Get-OraEngineeringDecision($task,$state,$receipt,$sourceOk) {
     }
 }
 function Get-OraRoadmapPrompt($task, $roadmap) {
-    $scope="Worktree HEAD $($task.head). No production, scientific dispatch, Worlds, network, pushes, merges, permission changes, or new agents. Use only disposable fixtures and block real custody dispatch."
+    $scope="Worktree HEAD $($task.head). No production, scientific dispatch, Worlds, network, pushes, merges, permission changes, or new agents. Use only disposable fixtures. A real custody or Job invocation is allowed only for a pinned inert fixture with a technical barrier against any scientific command or production path."
     switch ($task.stage) {
         'direct' {
             $open=@($roadmap.requirements.Keys | Where-Object {"$($task.objective)/$_" -cnotin $task.accepted})
             $criteria=($roadmap.requirements | ConvertTo-Json -Compress)
-            "$scope Inspect $($roadmap.path), $($roadmap.inspect) and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Select one genuinely unfinished requirement and compose a specific implementation instruction based on the observed code. Select PARK only if no useful authorized work is available. Return structured output."
+            "$scope Objective: $($task.objective). Inspect $($roadmap.path), $($roadmap.inspect) and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Select one genuinely unfinished requirement and compose a specific implementation instruction based on the observed code. Select PARK only if no useful authorized work is available. Return structured output."
         }
         'execute' {
             "$scope Only $($roadmap.path) may change. Preserve all accepted tests and do not commit. Requirement: $($roadmap.requirements[$task.requirement]). Director proposal, subordinate to this scope: $($task.instruction). Rejection evidence if applicable: $($task.rejection). Acceptance command: $($roadmap.test). $($roadmap.testNote) Rollback: restore the pre-task file snapshot after inspection if rejected. Budget: $($roadmap.secondsPerTurn) seconds, no background jobs."
         }
         'review' {
-            "$scope Read-only independent review at the exact candidate diff. Inspect actual source, prior file snapshot $($task.backup), and raw executor log $($task.evidence). Requirement: $($roadmap.requirements[$task.requirement]). ACCEPT only if the exact requested test is effective, prior tests are preserved, no live custody or scientific code is launched, and the raw log demonstrates the focused suite passed. REJECT with a concise defect and correction when actionable, otherwise UNKNOWN."
+            "$scope Read-only independent review at the exact candidate diff. Inspect actual source, prior file snapshot $($task.backup), and raw executor log $($task.evidence). Requirement: $($roadmap.requirements[$task.requirement]). ACCEPT only if the exact requested test is effective, prior tests are preserved, only the specified inert custody and Job may run; no scientific dispatch occurs, and the raw log demonstrates the focused suite passed. REJECT with a concise defect and correction when actionable, otherwise UNKNOWN."
         }
     }
 }
