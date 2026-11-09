@@ -128,15 +128,19 @@ def run_next(*, pilot=False, continuation=False):
             report = analyze_committed_panel(root,ordered,admitted)
             accepted = [r['index'] for r in report['rows'] if r['status']=='accepted']
             row = next_unclaimed(root,ordered,accepted,stop=gate.STOP,start=8 if continuation else 0)
-            if row is None or (pilot and row['index'] >= 8):
+            if gate.STOP.exists():
                 return None
             if continuation:
-                for start in range(8,row['index']-7,8):
+                # Completion has the same review requirement as advancing a batch.
+                next_index = row['index'] if row is not None else 8 + len(accepted)
+                for start in range(8, next_index - 7, 8):
                     path = root/f'batch-{start:03d}-review.json'
                     if not path.is_file():
                         raise ValueError('Independent batch review absent')
                     if json.loads(path.read_bytes()) != batch_review(admitted,start):
                         raise ValueError('Independent batch review evidence differs')
+            if row is None or (pilot and row['index'] >= 8):
+                return None
             budget = binding['budget']
             if continuation:
                 start = row['index'] // 8 * 8

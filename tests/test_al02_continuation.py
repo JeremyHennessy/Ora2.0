@@ -23,16 +23,17 @@ class ContinuationPolicyTests(unittest.TestCase):
 
     @contextmanager
     def _continuation_fixture(self, *, with_attempts=True, with_admissions=False,
-                              with_accepted_evidence=True):
+                              with_accepted_evidence=True, next_index=16):
         ordered = gate.inventory()
         binding = gate.continuation_binding()
         authority = 'test-authorization'
         # Supply accepted evidence at the verification boundary without running science.
         report = {'rows': [
-            {'index': i, 'status': 'accepted',
+            {'index': i,
+             'status': 'accepted' if with_accepted_evidence and 8 <= i < next_index else 'not_run',
              'job_accounting': {'cpu_ticks': 0, 'wall_seconds': 0}}
-            for i in range(8, 16)
-        ] if with_accepted_evidence else []}
+            for i in range(128)
+        ]}
         with TemporaryDirectory() as temp:
             root = Path(temp)
             checkout = root / 'checkout'
@@ -41,13 +42,13 @@ class ContinuationPolicyTests(unittest.TestCase):
             status.parent.mkdir(parents=True)
             status.write_text('{"status": "parked"}', encoding='utf-8')
             if with_attempts:
-                for row in ordered[8:16]:
+                for row in ordered[8:next_index]:
                     (root / row['attempt']).mkdir()
 
             pins = dict(binding['pins'], **{str(source): campaign.ADMISSION_SHA256})
             admissions = {}
             if with_admissions:
-                for row in ordered[8:16]:
+                for row in ordered[8:next_index]:
                     admissions[row['index']] = {
                         'command': [binding['python'], '-I', '-S', '-B', binding['worker'],
                                     str(root / row['attempt'] / '00-pending.json'), gate.TOKEN],
@@ -178,6 +179,35 @@ class ContinuationPolicyTests(unittest.TestCase):
             admitted.assert_not_called()
             custody.transaction.assert_not_called()
             self.assertFalse((root / ordered[16]['attempt']).exists())
+
+    def test_every_reviewed_boundary_advances_or_completes_without_a_real_claim(self):
+        for index in range(16, 129, 8):
+            with self.subTest(index=index), self._continuation_fixture(
+                with_admissions=True, next_index=index
+            ) as (root, ordered, admissions, admitted, custody):
+                for start in range(8, index - 8, 8):
+                    (root / f'batch-{start:03d}-review.json').write_text(
+                        json.dumps(campaign.batch_review(admissions, start)), encoding='utf-8')
+
+                with self.assertRaisesRegex(ValueError, '^Independent batch review absent$'):
+                    run_next(continuation=True)
+                admitted.assert_not_called()
+                custody.transaction.assert_not_called()
+
+                start = index - 8
+                (root / f'batch-{start:03d}-review.json').write_text(
+                    json.dumps(campaign.batch_review(admissions, start)), encoding='utf-8')
+                with patch.object(custody, 'pinned_path', side_effect=[root, root / 'checkout']):
+                    if index == 128:
+                        self.assertIsNone(run_next(continuation=True))
+                        custody.transaction.assert_not_called()
+                    else:
+                        custody.transaction.side_effect = None
+                        custody.transaction.return_value = sentinel.custody_result
+                        self.assertIs(run_next(continuation=True), sentinel.custody_result)
+                        self.assertEqual(custody.transaction.call_args.args[0],
+                                         root / ordered[index]['attempt'])
+                        self.assertFalse((root / ordered[index]['attempt']).exists())
 
     def test_order_completion_stop_and_unresolved_claim(self):
         rows = gate.inventory()
