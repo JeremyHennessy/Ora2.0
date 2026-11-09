@@ -249,6 +249,14 @@ class ControllerProcessTests(TestCase):
             self.assertEqual(terminal['release_identities']['context_index'],index)
             self.assertTrue(terminal['release_identities']['inert_execution'])
         self.assertFalse((root/'reviewed-admissions.json').exists())
+        (root/'STOP').touch()
+        review=self.invoke(root,'pilot-review')
+        self.assertEqual(review.returncode,0,review)
+        summary=json.loads(review.stdout)
+        self.assertEqual((summary['accepted'],summary['committed'],summary['distribution']),
+                         (2,8,[0,0]))
+        self.assertIsNone(summary['all_context_mean'])
+        (root/'STOP').unlink()
         out=os.environ.get('AL02_CAMPAIGN_TEST_EVIDENCE')
         if out:
             shutil.copytree(root,Path(out)/'supervised-eight-transitions')

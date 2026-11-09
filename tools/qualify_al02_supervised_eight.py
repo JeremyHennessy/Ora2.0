@@ -17,8 +17,21 @@ TESTS=('test_al02_campaign_controller','test_al02_campaign_admission','test_al02
 
 def sha(path):return sha256(path.read_bytes()).hexdigest()
 
+def protected():
+    reports=ART.parent
+    assert json.loads(Path('D:/OraLab/automation/ora-codex/status.json').read_bytes())['status']=='parked'
+    for version in ('v2','v3'):
+        rows=json.loads((reports/f'ora-al02-{version}-scientific-release-20261109/evidence-sha256.json').read_bytes())
+        for row in rows:
+            path=Path(row['path'])
+            assert path.stat().st_size==row['bytes'] and sha(path)==row['sha256'], path
+    assert not (reports/'al02-supervised-eight-attempts-20261109').exists()
+    assert not (reports/'al02-natural-b-campaign-attempts-20261109').exists()
+
+
 def run(out):
     assert os.name=='nt' and not sys.flags.optimize
+    protected()
     assert not subprocess.check_output(['git','status','--porcelain'],cwd=ROOT).strip()
     for name in ('contexts.json','campaign-binding.json','campaign-package.json'):
         shutil.copyfile(ART/name,out/name)
@@ -40,6 +53,7 @@ def run(out):
         receipts[str(index)]=sha(path)
     assert not (out/'supervised-eight-transitions/reviewed-admissions.json').exists()
     assert not Path('D:/OraLab/reports/al02-supervised-eight-attempts-20261109').exists()
+    protected()
     return dict(status='PASS', scope='inert supervised pilot only',
                 pilot_binding_sha256=pin,terminals=receipts,
                 head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),

@@ -73,13 +73,7 @@ def admitted(directory, cwd, command, owner, context, limits, pins):
     if authority_pin is None:
         raise ValueError('Campaign scientific authorization absent')
     if pilot:
-        authority = read_pinned(root/'pilot-authority.json',authority_pin)
-        if authority != dict(schema='al02-supervised-eight-one-claim-per-index-v1',owner=OWNER,
-                             pilot_binding_sha256=PILOT_BINDING_SHA256):
-            raise ValueError('Pilot authority scope differs')
-        return dict(authorization_sha256=authority_pin,binding_sha256=BINDING_SHA256,
-                    package_sha256=PACKAGE_SHA256,contexts_sha256=CONTEXTS_SHA256,
-                    pilot_binding_sha256=PILOT_BINDING_SHA256,context_index=row['index'],seed=row['seed'])
+        return pilot_identity(row)
     authority = read_pinned(DESTINATION/'campaign-authority.json', AUTHORIZATION_SHA256)
     if authority != dict(schema='al02-campaign-one-claim-per-index-v1', owner=OWNER,
                          binding_sha256=BINDING_SHA256, package_sha256=PACKAGE_SHA256,
@@ -107,3 +101,17 @@ def pilot_binding():
     if pilot != expected:
         raise ValueError('Supervised pilot binding differs')
     return dict(base, destination=str(PILOT_DESTINATION),budget=pilot['budget'])
+
+def pilot_identity(row):
+    """Recheck authority identity for retained evidence, including after STOP."""
+    if PILOT_AUTHORIZATION_SHA256 is None:
+        raise ValueError('Campaign scientific authorization absent')
+    authority = read_pinned(PILOT_DESTINATION/'pilot-authority.json', PILOT_AUTHORIZATION_SHA256)
+    if authority != dict(schema='al02-supervised-eight-one-claim-per-index-v1',owner=OWNER,
+                         pilot_binding_sha256=PILOT_BINDING_SHA256):
+        raise ValueError('Pilot authority scope differs')
+    if row['index'] not in range(8) or inventory()[row['index']] != row:
+        raise ValueError('Pilot context differs')
+    return dict(authorization_sha256=PILOT_AUTHORIZATION_SHA256,binding_sha256=BINDING_SHA256,
+                package_sha256=PACKAGE_SHA256,contexts_sha256=CONTEXTS_SHA256,
+                pilot_binding_sha256=PILOT_BINDING_SHA256,context_index=row['index'],seed=row['seed'])

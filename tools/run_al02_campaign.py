@@ -9,10 +9,10 @@ from experiments import al02_one_pair_custody as custody
 from tools.al02_campaign_evidence import analyze_committed_panel, next_unclaimed
 
 # Downstream identity, outside the binding that the admission module embeds.
-ADMISSION_SHA256 = '8c924e5b4a5a84d8c1901f137136d402668f188c3f3bc84e70a66a1a20e55711'
+ADMISSION_SHA256 = '67e323c77f4d42ad6f86c04fa84da634d49f46e7cc8388d93c0d19fbb5a55e61'
 
 
-def pilot_admissions(root, ordered, binding, checkout, pins):
+def pilot_admissions(root, ordered, binding, checkout, pins, *, review=False):
     """Derive lower-assurance admission inputs from custody, with no review ledger."""
     admitted = {}
     for item in ordered[:8]:
@@ -22,8 +22,9 @@ def pilot_admissions(root, ordered, binding, checkout, pins):
             continue
         command = [binding['python'],'-I','-S','-B',binding['worker'],
                    str(directory/'00-pending.json'),gate.TOKEN]
-        identity = gate.admitted(directory,checkout,command,gate.OWNER,
-                                 item['context_sha256'],gate.LIMITS,pins)
+        identity = (gate.pilot_identity(item) if review else
+                    gate.admitted(directory,checkout,command,gate.OWNER,
+                                  item['context_sha256'],gate.LIMITS,pins))
         source_path = str(checkout/'experiments/al02_one_pair.py')
         identity.update(referee_entry='experiments.al02_one_pair.verify_context',
                         referee_sha256=pins[source_path])
@@ -44,7 +45,7 @@ def review_pilot():
     for path, expected in pins.items():
         if custody.digest(path) != expected:
             raise ValueError(f'Pilot review source differs: {path}')
-    admissions = pilot_admissions(root, ordered, binding, checkout, pins)
+    admissions = pilot_admissions(root, ordered, binding, checkout, pins, review=True)
     rows = analyze_committed_panel(root, ordered, admissions)['rows'][:8]
     differences = [row['result']['contrast'] for row in rows if row['status']=='accepted']
     complete = len(differences)==8

@@ -23,6 +23,7 @@ assert stage.name.startswith('ora-controller-probe-')
 assert not stage.is_relative_to(gate.DESTINATION)
 frozen_binding=gate.binding
 frozen_admitted=gate.admitted
+frozen_pilot_identity=gate.pilot_identity
 frozen_read=gate.read_pinned
 original_strict_root=gate.DESTINATION
 frozen_root=gate.PILOT_DESTINATION if pilot else gate.DESTINATION
@@ -30,7 +31,7 @@ frozen_pilot=gate.pilot_binding
 original_pilot_root=gate.PILOT_DESTINATION
 frozen_checkout=gate.CHECKOUT
 frozen_stop=gate.STOP
-live = mode in ('live','after-intent','after-terminal','during-worker','positive')
+live = mode in ('live','after-intent','after-terminal','during-worker','positive','review')
 review_path = stage/'reviewed-admissions.json'
 reviewed = json.loads(review_path.read_bytes()) if review_path.exists() else {}
 row=gate.inventory()[len(list(stage.glob('attempt-*'))) if pilot else len(reviewed)]
@@ -110,7 +111,7 @@ def run_probe(*args,**kwargs):
             callback(*args)
             os._exit(44)
         return real_run(*args,**dict(kwargs,before_go=before_go))
-    if live:
+    if live and mode!='review':
         return real_run(*args,**kwargs)
 
     if mode=='after-pending':
@@ -121,6 +122,12 @@ def fixture_context(index, name):
     return dict(index=index,attempt=name,context=pair.CONTEXT,
                 context_sha256=pair.CONTEXT_SHA256,seed=pair.SEED)
 
+def fixture_pilot_identity(item):
+    with patch.object(gate,'PILOT_DESTINATION',frozen_root):
+        identity=frozen_pilot_identity(item)
+    return dict(identity,inert_execution=True,committed_seed=item['seed'],
+                seed=fixture_seed,fixture_context_sha256=fixture_digest)
+
 def fixture_review(root, ordered, admissions):
     rows=[]
     for index, admission in sorted(admissions.items()):
@@ -129,7 +136,7 @@ def fixture_review(root, ordered, admissions):
         assert admission['identities']['committed_seed']==committed['seed']
         rows.append(verify_attempt(root/committed['attempt'],
                     fixture_context(index,committed['attempt']),**admission))
-    return dict(rows=rows)
+    return dict(rows=rows + [dict(index=i,status='not_run') for i in range(len(rows),128)])
 
 real_transaction=custody.transaction
 def fixture_transaction(directory, **kwargs):
@@ -146,7 +153,7 @@ with patch.multiple(gate,DESTINATION=stage,CHECKOUT=root,STOP=stage/'STOP',
                     AUTHORIZATION_SHA256=pin if not pilot else None,
                     PILOT_AUTHORIZATION_SHA256=pin if pilot else None,
                     PILOT_DESTINATION=stage if pilot else original_pilot_root,
-                    pilot_binding=lambda:physical,
+                    pilot_binding=lambda:physical,pilot_identity=fixture_pilot_identity if mode=='review' else frozen_pilot_identity,
                     binding=lambda:physical,admitted=admit,read_pinned=read_authority), \
      patch.object(Path,'mkdir',mkdir), patch.object(Path,'open',open_probe), patch.object(job,'run',run_probe), \
      patch.object(controller.shutil,'disk_usage',
@@ -157,12 +164,14 @@ with patch.multiple(gate,DESTINATION=stage,CHECKOUT=root,STOP=stage/'STOP',
     try:
         start_wall=time.monotonic()
         start_cpu=time.process_time()
-        result=controller.run_next(pilot=pilot)
+        result=controller.review_pilot() if mode=='review' else controller.run_next(pilot=pilot)
     except (OSError,ValueError) as error:
         print(f'{type(error).__name__}: {error}')
         sys.exit(10)
     else:
-        if live:
+        if mode=='review':
+            print(json.dumps(result))
+        elif live:
             assert result['contrast']==(3 if mode=='positive' else 0)
             print(json.dumps(dict(result=result,controller_cpu_seconds=time.process_time()-start_cpu,
                                   controller_total_wall_seconds=time.monotonic()-start_wall)))
