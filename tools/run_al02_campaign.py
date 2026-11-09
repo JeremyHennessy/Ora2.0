@@ -138,6 +138,20 @@ def run_next(*, pilot=False, continuation=False):
                     if json.loads(path.read_bytes()) != batch_review(admitted,start):
                         raise ValueError('Independent batch review evidence differs')
             budget = binding['budget']
+            if continuation:
+                start = row['index'] // 8 * 8
+                batch = [r for r in report['rows'][start:row['index']]
+                         if r['status']=='accepted']
+                unclaimed = 8-len(batch)
+                batch_cpu = sum(r['job_accounting']['cpu_ticks'] for r in batch)
+                batch_wall = sum(r['job_accounting']['wall_seconds'] for r in batch)
+                batch_archive = sum(path.stat().st_size for r in batch
+                                    for path in (root/ordered[r['index']]['attempt']).rglob('*')
+                                    if path.is_file())
+                if (batch_cpu + unclaimed*50_000_000 > 400_000_000
+                        or batch_wall + unclaimed*10 > 80
+                        or batch_archive + unclaimed*budget['archive_bytes_per_pair'] > 64*1048576):
+                    raise ValueError('Continuation batch reservation exhausted')
             remaining = binding['budget']['pairs']-len(accepted)
             # The 1 GiB cap is for attempt archives. Control files already
             # occupy disk and are reflected in the physical free-space check.
