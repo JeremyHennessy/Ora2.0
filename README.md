@@ -94,6 +94,7 @@ The separately designed virtual instruction system can **execute one-byte COPY w
 
 A frozen study of **64 world seeds × 4 conditions** recorded **853** mutating-arm births and **768** faithful-arm births, all with valid write-linked ancestry; copy-disabled and no-food arms produced **0** births. The mutation-enabled arm included **254 children with altered genomes** and **118 faithfully inherited mutant grandchildren**. A source-recorded A-food→B-food opcode variant produced 3 children in a sealed B-only assay; the original A-only tape produced none. **All 256 worlds eventually went extinct** when usable resources ran out. Energy/material residuals remained zero. Full test and artifact hashes are documented below.
 
+- [AL02 release qualification and mandatory validation](docs/AL02-RELEASE-QUALIFICATION.md)
 - [AL02-COPY frozen protocol](docs/AL02-COPY-PROTOCOL.md)
 - [AL02-COPY measured results, limitations, checksums](docs/AL02-COPY-RESULTS.md)
 - [AL02 heredity architecture comparison](docs/AL02-HEREDITY-DESIGN.md)
