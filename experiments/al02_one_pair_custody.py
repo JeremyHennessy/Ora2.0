@@ -9,6 +9,7 @@ import stat
 import sys
 
 from experiments import al02_one_pair_job as transport
+from experiments.al02_one_pair import verify as candidate_referee
 
 ARCHIVE_MAX = 8 * 1024 * 1024
 FREE_MIN = 32 * 1024 * 1024
@@ -71,14 +72,25 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         raise ValueError('Required source or interpreter pin missing')
 
     def preflight():
+        identities = None
         if consent is not None:
             pinned_path(limited.BINDING)
-            limited.require_bound_worker(pins, command, transport.relay_argv(python, command))
+            identities = limited.require_bound_worker(
+                pins, command, transport.relay_argv(python, command))
+            if identities is not None:
+                source = str(Path(__file__).with_name('al02_one_pair.py').resolve())
+                if (referee is not candidate_referee
+                        or candidate_referee.__code__.co_filename != source
+                        or source not in pins):
+                    raise ValueError('Candidate referee identity differs')
+                identities = dict(identities, referee_entry='experiments.al02_one_pair.verify',
+                                  referee_sha256=pins[source])
         if account() != expected_account or shutil.disk_usage(parent).free < FREE_MIN:
             raise ValueError('Account or free-space admission failed')
         for path, expected in pins.items():
             if digest(path) != expected:
                 raise ValueError(f'Identity mismatch: {path}')
+        return identities
 
     def record(name, value):
         raw = json.dumps(value, sort_keys=True, separators=(',', ':'),
@@ -104,22 +116,37 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         except (OSError, ValueError) as exc:
             return dict(error=str(exc)[:512])
 
-    preflight()
+    identities = preflight()
+    chain = {'release_identities': identities} if identities is not None else {}
+    receipts = {}
+
+    def verify_receipts():
+        for name, expected in receipts.items():
+            if digest(directory / name) != expected:
+                raise ValueError(f'Candidate receipt identity differs: {name}')
+
+    def recheck():
+        if preflight() != identities:
+            raise ValueError('Candidate release identities changed')
+        verify_receipts()
+
     directory.mkdir()
     released = False
-    pending = record('00-pending.json', dict(
-        context=context, consent=consent, evidence_tier=limited.TIER if consent else None,
-        command=command, cwd=str(cwd), pins=pins, python_version=sys.version,
-        relay_argv=transport.relay_argv(python, command) if consent else None,
-        owner=expected_account, owner_pid=os.getpid(), limits=vars(transport.LIMITS),
-        archive_max=ARCHIVE_MAX, free_min=FREE_MIN, stdout_max=transport.OUTPUT_LIMIT,
-        process_births_expected=2, environment_sha256=hashlib.sha256(json.dumps(
-            environment, sort_keys=True).encode()).hexdigest()))
     try:
+        pending = record('00-pending.json', dict(
+            context=context, consent=consent, evidence_tier=limited.TIER if consent else None,
+            command=command, cwd=str(cwd), pins=pins, python_version=sys.version,
+            relay_argv=transport.relay_argv(python, command) if consent else None,
+            owner=expected_account, owner_pid=os.getpid(), limits=vars(transport.LIMITS),
+            archive_max=ARCHIVE_MAX, free_min=FREE_MIN, stdout_max=transport.OUTPUT_LIMIT,
+            process_births_expected=2, environment_sha256=hashlib.sha256(json.dumps(
+                environment, sort_keys=True).encode()).hexdigest(), **chain))
+        if chain:
+            receipts['00-pending.json'] = pending
         with (directory / 'raw.bin').open('xb', buffering=0) as raw:
             def before_go(executable, script, process, usage):
                 nonlocal released
-                preflight()
+                recheck()
                 expected_script = tuple(transport.relay_argv(python, command)) if consent else bootstrap
                 actual_script = script if consent else str(script)
                 if (executable != python or actual_script != expected_script or process.poll() is not None
@@ -139,12 +166,15 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                         limited.check_manifest(manifest.read(ARCHIVE_MAX + 1), pending,
                                                command=command, owner=expected_account,
                                                context=context, limits=vars(transport.LIMITS))
-                preflight()
+                recheck()
                 if sum(p.stat().st_size for p in directory.iterdir()) + transport.OUTPUT_LIMIT * (2 if consent else 1) + 65536 > ARCHIVE_MAX:
                     raise ValueError('Insufficient bounded archive headroom')
                 verified = record('01-verified.json', dict(
-                    pending_sha256=pending, bootstrap_pid=process.pid, usage=usage))
-                intent = record('02-release-intent.json', dict(verified_sha256=verified))
+                    pending_sha256=pending, bootstrap_pid=process.pid, usage=usage, **chain))
+                intent = record('02-release-intent.json', dict(verified_sha256=verified, **chain))
+                if chain:
+                    receipts.update({'01-verified.json': verified, '02-release-intent.json': intent})
+                    recheck()
                 if consent is not None:
                     limited.check_scope(directory, cwd, command, expected_account,
                                         context, vars(transport.LIMITS))
@@ -162,7 +192,10 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         raw_path = directory / 'raw.bin'
         raw_sha = digest(raw_path)
         partial = partial_receipt()
-        record('03-transport.json', dict(raw_sha256=raw_sha, receipt=receipt, partial=partial))
+        transport_sha = record('03-transport.json', dict(
+            raw_sha256=raw_sha, receipt=receipt, partial=partial, **chain))
+        if chain:
+            receipts['03-transport.json'] = transport_sha
         if consent and (not partial or not partial.get('bytes') or partial.get('error')):
             raise ValueError('Missing or invalid partial-history journal')
         if not released or not receipt['accepted']:
@@ -186,8 +219,13 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
             if (len(journal) != partial['bytes'] or hashlib.sha256(journal).hexdigest() != partial['sha256']
                     or journal != expected_bytes):
                 raise ValueError('Partial-history journal does not match raw result')
+        if chain:
+            recheck()
         result = referee(data)
-        record('04-terminal.json', dict(raw_sha256=raw_sha, result=result))
+        if chain:
+            verify_receipts()
+        record('04-terminal.json', dict(raw_sha256=raw_sha, result=result, **chain,
+                                        **({'receipt_sha256': receipts} if chain else {})))
         return result
     except BaseException as exc:
         raw_path = directory / 'raw.bin'
@@ -197,7 +235,11 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         except (OSError, ValueError) as raw_exc:
             raw_sha = None
             raw_error = str(raw_exc)[:512]
-        record('99-failed.json', dict(release_intent=released, error_type=type(exc).__name__,
-                                      error=str(exc)[:2048], partial=partial_receipt(),
-                                      raw_sha256=raw_sha, raw_error=raw_error))
+        try:
+            record('99-failed.json', dict(release_intent=released, error_type=type(exc).__name__,
+                                          error=str(exc)[:2048], partial=partial_receipt(),
+                                          raw_sha256=raw_sha, raw_error=raw_error, **chain,
+                                          **({'receipt_sha256': receipts} if chain else {})))
+        except Exception as receipt_error:
+            exc.add_note(f'Attempt remains claimed; failure receipt unavailable: {receipt_error}')
         raise

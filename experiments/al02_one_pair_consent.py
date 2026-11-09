@@ -119,5 +119,5 @@ def _require_candidate(pins, command, relay_argv):
                                    text=True, timeout=2).strip()
     if head != binding['production_git_head']:
         raise ValueError('Candidate production HEAD differs')
-
-
+    return dict(authorization_sha256=CANDIDATE_AUTHORIZATION_SHA256,
+                binding_sha256=CANDIDATE_BINDING, package_sha256=CANDIDATE_PACKAGE)
