@@ -15,6 +15,16 @@ from experiments.process_limits import (
 LIMITS = Limits(wall_seconds=10)
 FLAGS = 0x4 | 0x8 | 0x200 | 0x2000
 
+# The relay receives one bounded frame after assignment, then forwards it on
+# a new anonymous stdin pipe. EOF is part of the protocol.
+RELAY = """import json, subprocess, sys
+frame = sys.stdin.buffer.read(513)
+if not frame or len(frame) > 512:
+    raise SystemExit(125)
+raise SystemExit(subprocess.run(json.loads(sys.argv[1]), input=frame,
+                               shell=False, close_fds=True).returncode)
+"""
+
 
 class PairJob(Job):
     def usage(self):
@@ -27,10 +37,17 @@ class PairJob(Job):
                     active_before_close=counters.active_processes)
 
 
-def run(command, cwd, *, before_go=None, capture=None, environment=None):
+def relay_argv(python, command):
+    return [python, '-I', '-S', '-B', '-c', RELAY, json.dumps(command)]
+
+
+
+def run(command, cwd, *, before_go=None, capture=None, environment=None, relay=False):
     """Return raw bounded stdout and lower-assurance receipts. Never retries."""
     if os.name != 'nt' or not command or any(type(x) is not str or not x for x in command):
         raise ValueError('Explicit Windows worker command required')
+    if relay and before_go is None:
+        raise ValueError('Relay requires pre-go admission')
     job = PairJob(LIMITS)
     process = reader = None
     overflow, eof = threading.Event(), threading.Event()
@@ -62,15 +79,18 @@ def run(command, cwd, *, before_go=None, capture=None, environment=None):
             raise ValueError('Fresh Job flags or initial census mismatch')
         python = getattr(sys, '_base_executable', sys.executable)
         bootstrap = Path(__file__).with_name('process_limits.py').resolve(strict=True)
+        argv = (relay_argv(python, command) if relay else
+                [python, '-I', '-S', '-B', str(bootstrap), '--bootstrap', json.dumps(command)])
         process = subprocess.Popen(
-            [python, '-I', '-S', '-B', str(bootstrap), '--bootstrap', json.dumps(command)],
+            argv,
             cwd=cwd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT, close_fds=True, shell=False, env=environment)
         job.assign(process)
         reader = threading.Thread(target=drain, daemon=True)
         reader.start()
+        binding = None
         if before_go is not None:
-            before_go(python, bootstrap, process, job.usage())
+            binding = before_go(python, tuple(argv) if relay else bootstrap, process, job.usage())
         if before_go is not None:
             settled = job.usage()
             if (settled['started_processes'] != 1 or settled['active_before_close'] != 1
@@ -78,7 +98,15 @@ def run(command, cwd, *, before_go=None, capture=None, environment=None):
                 raise RuntimeError('Job census or CPU budget failed before go')
         if time.monotonic() - start >= LIMITS.wall_seconds:
             raise TimeoutError('Job deadline reached before go')
-        process.stdin.write(b'go\n')
+        if relay:
+            if not isinstance(binding, str) or len(binding) != 64 or any(
+                    char not in '0123456789abcdef' for char in binding):
+                raise ValueError('Invalid pre-go release binding')
+            frame = json.dumps(dict(version=1, journal=binding, relay_pid=process.pid,
+                                    expires=start + LIMITS.wall_seconds)).encode('ascii')
+            process.stdin.write(frame)
+        else:
+            process.stdin.write(b'go\n')
         process.stdin.close()
         while True:
             usage = job.usage()

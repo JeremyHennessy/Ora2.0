@@ -97,6 +97,7 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     pending = record('00-pending.json', dict(
         context=context, consent=consent, evidence_tier=limited.TIER if consent else None,
         command=command, cwd=str(cwd), pins=pins, python_version=sys.version,
+        relay_argv=transport.relay_argv(python, command) if consent else None,
         owner=expected_account, owner_pid=os.getpid(), limits=vars(transport.LIMITS),
         archive_max=ARCHIVE_MAX, free_min=FREE_MIN, stdout_max=transport.OUTPUT_LIMIT,
         process_births_expected=2, environment_sha256=hashlib.sha256(json.dumps(
@@ -106,7 +107,9 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
             def before_go(executable, script, process, usage):
                 nonlocal released
                 preflight()
-                if (executable != python or str(script) != bootstrap or process.poll() is not None
+                expected_script = tuple(transport.relay_argv(python, command)) if consent else bootstrap
+                actual_script = script if consent else str(script)
+                if (executable != python or actual_script != expected_script or process.poll() is not None
                         or usage['flags'] != transport.FLAGS or usage['started_processes'] != 1
                         or usage['active_before_close'] != 1
                         or usage['configured_memory_bytes'] != transport.LIMITS.memory_bytes
@@ -128,15 +131,20 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                     raise ValueError('Insufficient bounded archive headroom')
                 verified = record('01-verified.json', dict(
                     pending_sha256=pending, bootstrap_pid=process.pid, usage=usage))
-                record('02-release-intent.json', dict(verified_sha256=verified))
+                intent = record('02-release-intent.json', dict(verified_sha256=verified))
+                if consent is not None:
+                    limited.check_scope(directory, cwd, command, expected_account,
+                                        context, vars(transport.LIMITS))
                 released = True
+                return intent
 
             def capture(chunk):
                 if raw.write(chunk) != len(chunk):
                     raise OSError('Short raw evidence write')
 
             _, receipt = transport.run(command, cwd, before_go=before_go,
-                                       capture=capture, environment=environment)
+                                       capture=capture, environment=environment,
+                                       relay=consent is not None)
             os.fsync(raw.fileno())
         raw_path = directory / 'raw.bin'
         raw_sha = digest(raw_path)

@@ -1,12 +1,16 @@
 """Fixed AL02 worker. Probe mode verifies imports without evaluating the context."""
+import ctypes
+from ctypes import wintypes
 import hashlib
 import importlib.abc
 import importlib.util
 import json
+import msvcrt
 import os
 from pathlib import Path
 import stat
 import sys
+import time
 
 PROJECT = (
     'experiments', 'experiments.al02_one_pair', 'experiments.executed_heredity',
@@ -78,6 +82,41 @@ def runtime_files():
     return sorted(files)
 
 
+def read_release(journal_sha256, expected_relay):
+    """Accept exactly one live frame from the assigned relay, with bounded EOF."""
+    kernel = ctypes.WinDLL('kernel32', use_last_error=True)
+    kernel.GetCurrentProcess.restype = wintypes.HANDLE
+    kernel.GetFileType.argtypes = [wintypes.HANDLE]
+    kernel.IsProcessInJob.argtypes = [
+        wintypes.HANDLE, wintypes.HANDLE, ctypes.POINTER(wintypes.BOOL)]
+    kernel.GetNamedPipeServerProcessId.argtypes = [
+        wintypes.HANDLE, ctypes.POINTER(wintypes.ULONG)]
+    pipe = msvcrt.get_osfhandle(sys.stdin.fileno())
+    assigned = wintypes.BOOL()
+    server = wintypes.ULONG()
+    if (kernel.GetFileType(pipe) != 3
+            or not kernel.IsProcessInJob(kernel.GetCurrentProcess(), None, ctypes.byref(assigned))
+            or not assigned.value):
+        raise PermissionError('Release requires a live Job stdin pipe')
+    if (not kernel.GetNamedPipeServerProcessId(pipe, ctypes.byref(server))
+            or server.value != expected_relay):
+        raise PermissionError('Release pipe server is not the recorded relay')
+    raw = sys.stdin.buffer.read(513)
+    if not raw or len(raw) > 512:
+        raise PermissionError('Missing or oversized release frame')
+    try:
+        frame = json.loads(raw)
+        expires = frame['expires']
+        expected = dict(version=1, journal=journal_sha256, relay_pid=expected_relay,
+                        expires=expires)
+        if raw != json.dumps(expected).encode('ascii') or os.getppid() != expected_relay:
+            raise ValueError('Release binding or relay differs')
+        if type(expires) is not float or not 0 < expires - time.monotonic() <= 10:
+            raise ValueError('Release expired or out of bounds')
+    except (ValueError, TypeError, KeyError) as exc:
+        raise PermissionError('Incorrect, duplicate or expired release frame') from exc
+
+
 def main():
     if not (sys.flags.isolated and sys.flags.no_site and sys.dont_write_bytecode):
         raise ValueError('Require isolated, no-site, no-bytecode Python')
@@ -102,7 +141,8 @@ def main():
                 or manifest['consent'] != CONSENT
                 or manifest['evidence_tier'] != 'LOW_ASSURANCE_EXPLORATORY'):
             raise ValueError('Worker command or environment differs')
-        intent = json.loads((manifest_path.parent / '02-release-intent.json').read_bytes())
+        intent_raw = (manifest_path.parent / '02-release-intent.json').read_bytes()
+        intent = json.loads(intent_raw)
         verified = (manifest_path.parent / '01-verified.json').read_bytes()
         if (intent['verified_sha256'] != hashlib.sha256(verified).hexdigest()
                 or json.loads(verified)['pending_sha256'] != hashlib.sha256(raw).hexdigest()):
@@ -116,9 +156,15 @@ def main():
         checked_bytes(path, pins)
     if manifest['context'] != pair.CONTEXT_SHA256:
         raise ValueError('Fixed context differs')
-    # The on-disk hash journal can be forged by a direct same-account caller.
-    # The current bootstrap has no authenticated live handoff to this worker.
-    raise PermissionError('Scientific worker lacks a verified live Job release channel')
+    read_release(hashlib.sha256(intent_raw).hexdigest(), json.loads(verified)['bootstrap_pid'])
+    ora = Path('D:/OraLab')
+    attempt = ora / 'reports/al02-first-depletion-exploratory-20261109/attempt-6740691539'
+    if (manifest_path != attempt / '00-pending.json'
+            or root != ora / 'src/Ora2.0-al02-first-depletion-20261109'
+            or manifest['owner'] != 'hennessydesktop\\hennessy'
+            or (ora / 'automation/ora-codex/STOP').exists()):
+        raise PermissionError('Scientific release outside fixed scope or STOP present')
+    produce_bound_pair(pair, loader)
 
 
 def produce_bound_pair(pair, loader):

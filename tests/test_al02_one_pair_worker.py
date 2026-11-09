@@ -77,13 +77,13 @@ class WorkerClosureTests(TestCase):
             environment_sha256=hashlib.sha256(json.dumps(
                 dict(os.environ), sort_keys=True).encode()).hexdigest())).encode()
         self.manifest.write_bytes(pending)
-        verified = json.dumps(dict(pending_sha256=hashlib.sha256(pending).hexdigest())).encode()
+        verified = json.dumps(dict(pending_sha256=hashlib.sha256(pending).hexdigest(), bootstrap_pid=os.getpid())).encode()
         (self.root / '01-verified.json').write_bytes(verified)
         (self.root / '02-release-intent.json').write_text(json.dumps(
             dict(verified_sha256=hashlib.sha256(verified).hexdigest())))
-        result = subprocess.run(command, cwd=self.root, capture_output=True, timeout=10)
+        result = subprocess.run(command, cwd=self.root, stdin=subprocess.DEVNULL, capture_output=True, timeout=10)
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn(b'lacks a verified live Job release channel', result.stderr)
+        self.assertIn(b'Release requires a live Job stdin pipe', result.stderr)
         self.assertEqual(result.stdout, b'')
 
     def test_requires_isolated_no_site_startup(self):
