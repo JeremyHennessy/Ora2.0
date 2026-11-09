@@ -9,17 +9,61 @@ from experiments import al02_one_pair_custody as custody
 from tools.al02_campaign_evidence import analyze_committed_panel, next_unclaimed
 
 # Downstream identity, outside the binding that the admission module embeds.
-ADMISSION_SHA256 = '07b292f2a921b353d8dfe866442b024ebef8d73de307ddcd15c153c21b35a84c'
+ADMISSION_SHA256 = '8c924e5b4a5a84d8c1901f137136d402668f188c3f3bc84e70a66a1a20e55711'
 
 
-def run_next():
+def pilot_admissions(root, ordered, binding, checkout, pins):
+    """Derive lower-assurance admission inputs from custody, with no review ledger."""
+    admitted = {}
+    for item in ordered[:8]:
+        directory = root/item['attempt']
+        terminal = directory/'04-terminal.json'
+        if not terminal.exists():
+            continue
+        command = [binding['python'],'-I','-S','-B',binding['worker'],
+                   str(directory/'00-pending.json'),gate.TOKEN]
+        identity = gate.admitted(directory,checkout,command,gate.OWNER,
+                                 item['context_sha256'],gate.LIMITS,pins)
+        source_path = str(checkout/'experiments/al02_one_pair.py')
+        identity.update(referee_entry='experiments.al02_one_pair.verify_context',
+                        referee_sha256=pins[source_path])
+        admitted[item['index']] = dict(command=command,pins=pins,identities=identity,
+                                      terminal_pin=custody.digest(terminal))
+    return admitted
+
+
+def review_pilot():
+    """Read-only batch reanalysis, with missing outcomes retained."""
+    from statistics import mean, stdev
+    binding = gate.pilot_binding()
+    ordered = gate.inventory()
+    root = custody.pinned_path(gate.PILOT_DESTINATION)
+    checkout = custody.pinned_path(gate.CHECKOUT)
+    source = str(checkout/'experiments/al02_campaign_admission.py')
+    pins = dict(binding['pins'], **{source: ADMISSION_SHA256})
+    for path, expected in pins.items():
+        if custody.digest(path) != expected:
+            raise ValueError(f'Pilot review source differs: {path}')
+    admissions = pilot_admissions(root, ordered, binding, checkout, pins)
+    rows = analyze_committed_panel(root, ordered, admissions)['rows'][:8]
+    differences = [row['result']['contrast'] for row in rows if row['status']=='accepted']
+    complete = len(differences)==8
+    return dict(scope='supervised lower assurance; batch review required', rows=rows,
+                committed=8, accepted=len(differences), distribution=differences,
+                all_context_mean=mean(differences) if complete else None,
+                all_context_se=stdev(differences)/8**0.5 if complete else None,
+                observed_only_mean=mean(differences) if differences else None)
+
+
+def run_next(*, pilot=False):
     # No writes, including lock creation, before authority is present.
-    if gate.AUTHORIZATION_SHA256 is None:
+    authority_pin = gate.PILOT_AUTHORIZATION_SHA256 if pilot else gate.AUTHORIZATION_SHA256
+    if authority_pin is None:
         raise ValueError('Campaign scientific authorization absent')
     import msvcrt
-    binding = gate.binding()
+    binding = gate.pilot_binding() if pilot else gate.binding()
     ordered = gate.inventory()
-    root = custody.pinned_path(gate.DESTINATION)
+    root = custody.pinned_path(gate.PILOT_DESTINATION if pilot else gate.DESTINATION)
     checkout = custody.pinned_path(gate.CHECKOUT)
     source = str(checkout/'experiments/al02_campaign_admission.py')
     if Path(gate.__file__) != Path(source) or custody.digest(source) != ADMISSION_SHA256:
@@ -45,6 +89,10 @@ def run_next():
             admitted_path = root/'reviewed-admissions.json'
             admitted = ({int(key):value for key,value in
                          json.loads(admitted_path.read_bytes()).items()} if admitted_path.exists() else {})
+            if pilot:
+                if admitted_path.exists():
+                    raise ValueError('Strict review ledger is outside pilot scope')
+                admitted = pilot_admissions(root, ordered, binding, checkout, pins)
             for index, review in admitted.items():
                 if index not in range(128):
                     raise ValueError('Reviewed index outside commitment')
@@ -56,15 +104,15 @@ def run_next():
                         or identity['binding_sha256'] != gate.BINDING_SHA256
                         or identity['package_sha256'] != gate.PACKAGE_SHA256
                         or identity['contexts_sha256'] != gate.CONTEXTS_SHA256
-                        or identity['authorization_sha256'] != gate.AUTHORIZATION_SHA256):
+                        or identity['authorization_sha256'] != authority_pin):
                     raise ValueError('Reviewed campaign release identity differs')
             report = analyze_committed_panel(root,ordered,admitted)
             accepted = [r['index'] for r in report['rows'] if r['status']=='accepted']
             row = next_unclaimed(root,ordered,accepted,stop=gate.STOP)
-            if row is None:
+            if row is None or (pilot and row['index'] >= 8):
                 return None
             budget = binding['budget']
-            remaining = len(ordered)-len(accepted)
+            remaining = binding['budget']['pairs']-len(accepted)
             # The 1 GiB cap is for attempt archives. Control files already
             # occupy disk and are reflected in the physical free-space check.
             used = sum(path.stat().st_size
@@ -94,4 +142,11 @@ def run_next():
 
 
 if __name__ == '__main__':
-    print(json.dumps(run_next()))
+    import argparse
+    parser = argparse.ArgumentParser()
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument('--supervised-eight', action='store_true')
+    mode.add_argument('--review-supervised-eight', action='store_true')
+    args = parser.parse_args()
+    print(json.dumps(review_pilot() if args.review_supervised_eight
+                     else run_next(pilot=args.supervised_eight)))

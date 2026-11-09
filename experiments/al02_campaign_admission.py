@@ -55,9 +55,11 @@ def binding():
 def admitted(directory, cwd, command, owner, context, limits, pins):
     if STOP.exists():
         raise ValueError('STOP present')
-    b = binding()
-    rows = inventory()
-    candidates = [row for row in rows if DESTINATION/row['attempt'] == directory]
+    pilot = directory.parent == PILOT_DESTINATION
+    b = pilot_binding() if pilot else binding()
+    root = PILOT_DESTINATION if pilot else DESTINATION
+    rows = inventory()[:8] if pilot else inventory()
+    candidates = [row for row in rows if root/row['attempt'] == directory]
     if len(candidates) != 1:
         raise ValueError('Campaign destination differs')
     row = candidates[0]
@@ -67,8 +69,17 @@ def admitted(directory, cwd, command, owner, context, limits, pins):
             or limits != LIMITS or list(command) != expected
             or not b['pins'].items() <= pins.items()):
         raise ValueError('Campaign admission scope differs')
-    if AUTHORIZATION_SHA256 is None:
+    authority_pin = PILOT_AUTHORIZATION_SHA256 if pilot else AUTHORIZATION_SHA256
+    if authority_pin is None:
         raise ValueError('Campaign scientific authorization absent')
+    if pilot:
+        authority = read_pinned(root/'pilot-authority.json',authority_pin)
+        if authority != dict(schema='al02-supervised-eight-one-claim-per-index-v1',owner=OWNER,
+                             pilot_binding_sha256=PILOT_BINDING_SHA256):
+            raise ValueError('Pilot authority scope differs')
+        return dict(authorization_sha256=authority_pin,binding_sha256=BINDING_SHA256,
+                    package_sha256=PACKAGE_SHA256,contexts_sha256=CONTEXTS_SHA256,
+                    pilot_binding_sha256=PILOT_BINDING_SHA256,context_index=row['index'],seed=row['seed'])
     authority = read_pinned(DESTINATION/'campaign-authority.json', AUTHORIZATION_SHA256)
     if authority != dict(schema='al02-campaign-one-claim-per-index-v1', owner=OWNER,
                          binding_sha256=BINDING_SHA256, package_sha256=PACKAGE_SHA256,
@@ -77,3 +88,22 @@ def admitted(directory, cwd, command, owner, context, limits, pins):
     return dict(authorization_sha256=AUTHORIZATION_SHA256, binding_sha256=BINDING_SHA256,
                 package_sha256=PACKAGE_SHA256, contexts_sha256=CONTEXTS_SHA256,
                 context_index=row['index'], seed=row['seed'])
+
+
+PILOT_DESTINATION = ROOT/'reports/al02-supervised-eight-attempts-20261109'
+PILOT_BINDING_SHA256 = 'c12a44cd19ba01f5b84b4f2467835797b09c645a39b1209aeb1aa086a1e292c5'
+PILOT_AUTHORIZATION_SHA256 = None
+
+
+def pilot_binding():
+    base = binding()
+    pilot = read_pinned(ARTIFACTS/'supervised-eight-binding.json', PILOT_BINDING_SHA256)
+    expected = dict(schema='al02-supervised-eight-v1', scientific_authorization=False,
+                    campaign_binding_sha256=BINDING_SHA256, campaign_package_sha256=PACKAGE_SHA256,
+                    contexts_sha256=CONTEXTS_SHA256, destination=str(PILOT_DESTINATION),
+                    indices=list(range(8)), policy='verified-custody-then-batch-review',
+                    budget=dict(base['budget'],pairs=8,instructions=9600,cpu_seconds=40,
+                                job_wall_seconds=80,archive_bytes=67108864))
+    if pilot != expected:
+        raise ValueError('Supervised pilot binding differs')
+    return dict(base, destination=str(PILOT_DESTINATION),budget=pilot['budget'])

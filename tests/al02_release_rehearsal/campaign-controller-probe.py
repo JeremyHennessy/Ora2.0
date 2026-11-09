@@ -16,31 +16,35 @@ from tools.al02_campaign_evidence import verify_attempt
 
 root=Path.cwd()
 stage=Path(sys.argv[1]).resolve()
-mode=sys.argv[2]
+pilot = sys.argv[2].startswith('pilot-')
+mode = sys.argv[2].removeprefix('pilot-')
 assert stage.is_relative_to(Path(os.environ['TEMP']).resolve())
 assert stage.name.startswith('ora-controller-probe-')
 assert not stage.is_relative_to(gate.DESTINATION)
 frozen_binding=gate.binding
 frozen_admitted=gate.admitted
 frozen_read=gate.read_pinned
-frozen_root=gate.DESTINATION
+original_strict_root=gate.DESTINATION
+frozen_root=gate.PILOT_DESTINATION if pilot else gate.DESTINATION
+frozen_pilot=gate.pilot_binding
+original_pilot_root=gate.PILOT_DESTINATION
 frozen_checkout=gate.CHECKOUT
 frozen_stop=gate.STOP
 live = mode in ('live','after-intent','after-terminal','during-worker','positive')
 review_path = stage/'reviewed-admissions.json'
 reviewed = json.loads(review_path.read_bytes()) if review_path.exists() else {}
-row=gate.inventory()[len(reviewed)]
+row=gate.inventory()[len(list(stage.glob('attempt-*'))) if pilot else len(reviewed)]
 fixture_digest = ('2b92aa5c0d187afcf5031bd6d6d6511a45f6667fc8d4f73530e845531b9cd216'
                   if mode=='positive' else pair.CONTEXT_SHA256)
 fixture_seed = 42 if mode=='positive' else pair.SEED
-b=frozen_binding()
+b=frozen_pilot() if pilot else frozen_binding()
 historical_command=[b['python'],'-I','-S','-B',b['worker'],
                     str(frozen_root/row['attempt']/'00-pending.json'),gate.TOKEN]
 shim=stage/'inert.py'
 if not live:
     assert shim.read_bytes()==b'raise AssertionError("Controller crash probe must not launch")\n'
 gate_source=Path(gate.__file__)
-authority=stage/'campaign-authority.json'
+authority=stage/('pilot-authority.json' if pilot else 'campaign-authority.json')
 pin=custody.digest(authority)
 pins={str(p):custody.digest(p) for p in (Path(b['python']),shim,
       Path(custody.__file__),Path(job.__file__),root/'experiments/process_limits.py',
@@ -56,20 +60,25 @@ real_open=Path.open
 real_run=job.run
 
 def read_authority(path,expected):
-    if path==frozen_root/'campaign-authority.json':
+    if path==frozen_root/authority.name:
         path=authority
     return frozen_read(path,expected)
 
 def admit(directory,cwd,command,owner,context,limits,actual_pins):
-    assert directory==target and cwd==root
+    selected = next(item for item in gate.inventory() if item['attempt']==directory.name)
+    assert cwd==root and directory.parent==stage
+    assert pilot or directory==target
     assert list(command)==[b['python'],'-I','-S','-B',str(shim),
-                           str(target/'00-pending.json'),gate.TOKEN]
-    assert context in ((row['context_sha256'],fixture_digest) if live else (row['context_sha256'],))
+                           str(directory/'00-pending.json'),gate.TOKEN]
+    assert context in ((selected['context_sha256'],fixture_digest) if live else (selected['context_sha256'],))
     assert actual_pins==dict(pins,**{str(gate_source):custody.digest(gate_source)})
-    with patch.multiple(gate,DESTINATION=frozen_root,CHECKOUT=frozen_checkout,
-                        STOP=frozen_stop,binding=frozen_binding):
-        identity=frozen_admitted(frozen_root/row['attempt'],frozen_checkout,
-            historical_command,owner,row['context_sha256'],limits,b['pins'])
+    proposed=[b['python'],'-I','-S','-B',b['worker'],
+              str(frozen_root/selected['attempt']/'00-pending.json'),gate.TOKEN]
+    with patch.multiple(gate,DESTINATION=original_strict_root,CHECKOUT=frozen_checkout,
+                        PILOT_DESTINATION=frozen_root if pilot else original_pilot_root,STOP=frozen_stop,
+                        binding=frozen_binding,pilot_binding=frozen_pilot):
+        identity=frozen_admitted(frozen_root/selected['attempt'],frozen_checkout,
+            proposed,owner,selected['context_sha256'],limits,b['pins'])
     if mode=='before-claim':
         os._exit(41)
     if mode=='hold':
@@ -78,8 +87,8 @@ def admit(directory,cwd,command,owner,context,limits,actual_pins):
         while not (stage/'continue').exists():
             if time.monotonic()>until:raise TimeoutError('Test synchronization')
             time.sleep(.01)
-    if live and context==fixture_digest:
-        return dict(identity,inert_execution=True,committed_seed=row['seed'],
+    if pilot or (live and context==fixture_digest):
+        return dict(identity,inert_execution=True,committed_seed=selected['seed'],
                     seed=fixture_seed,fixture_context_sha256=fixture_digest)
     return dict(identity,inert_execution=True)
 
@@ -134,7 +143,11 @@ def fixture_transaction(directory, **kwargs):
 if mode=='before-lock':
     os._exit(40)
 with patch.multiple(gate,DESTINATION=stage,CHECKOUT=root,STOP=stage/'STOP',
-                    AUTHORIZATION_SHA256=pin,binding=lambda:physical,admitted=admit,read_pinned=read_authority), \
+                    AUTHORIZATION_SHA256=pin if not pilot else None,
+                    PILOT_AUTHORIZATION_SHA256=pin if pilot else None,
+                    PILOT_DESTINATION=stage if pilot else original_pilot_root,
+                    pilot_binding=lambda:physical,
+                    binding=lambda:physical,admitted=admit,read_pinned=read_authority), \
      patch.object(Path,'mkdir',mkdir), patch.object(Path,'open',open_probe), patch.object(job,'run',run_probe), \
      patch.object(controller.shutil,'disk_usage',
                   (lambda _: type('Disk',(),{'free':0})()) if mode=='capacity' else controller.shutil.disk_usage), \
@@ -144,7 +157,7 @@ with patch.multiple(gate,DESTINATION=stage,CHECKOUT=root,STOP=stage/'STOP',
     try:
         start_wall=time.monotonic()
         start_cpu=time.process_time()
-        result=controller.run_next()
+        result=controller.run_next(pilot=pilot)
     except (OSError,ValueError) as error:
         print(f'{type(error).__name__}: {error}')
         sys.exit(10)

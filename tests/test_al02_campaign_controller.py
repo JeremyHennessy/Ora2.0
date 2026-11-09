@@ -230,3 +230,65 @@ class ControllerProcessTests(TestCase):
         self.assertIn('Unreconciled attempt claim',self.invoke(root,'restart').stdout)
         print(json.dumps(dict(crash='during-worker',worker=worker,relay=relay,closed=True,
                               partial_bytes=(attempt/'partial.jsonl').stat().st_size)))
+
+
+    def test_supervised_pilot_advances_only_after_evidence_recheck(self):
+        import os
+        import shutil
+        root=self.stage()
+        self.live_fixture(root)
+        (root/'pilot-authority.json').write_text(json.dumps(dict(
+            schema='al02-supervised-eight-one-claim-per-index-v1',owner=gate.OWNER,
+            pilot_binding_sha256=gate.PILOT_BINDING_SHA256)))
+        for index in range(2):
+            result=self.invoke(root,'pilot-live')
+            self.assertEqual(result.returncode,0,result)
+            attempt=root/f'attempt-{index:03d}'
+            terminal=json.loads((attempt/'04-terminal.json').read_bytes())
+            self.assertEqual(terminal['release_identities']['pilot_binding_sha256'],gate.PILOT_BINDING_SHA256)
+            self.assertEqual(terminal['release_identities']['context_index'],index)
+            self.assertTrue(terminal['release_identities']['inert_execution'])
+        self.assertFalse((root/'reviewed-admissions.json').exists())
+        out=os.environ.get('AL02_CAMPAIGN_TEST_EVIDENCE')
+        if out:
+            shutil.copytree(root,Path(out)/'supervised-eight-transitions')
+        journal=root/'attempt-000/partial.jsonl'
+        journal.write_bytes(journal.read_bytes()+b' ')
+        failure=self.invoke(root,'pilot-live')
+        self.assertEqual(failure.returncode,10,failure)
+        self.assertIn('Journal differs',failure.stdout)
+        self.assertFalse((root/'attempt-002').exists())
+
+    def test_supervised_pilot_exact_inactive_scope(self):
+        from tools.run_al02_campaign import run_next
+        binding=gate.pilot_binding()
+        self.assertEqual(binding['budget']['pairs'],8)
+        with self.assertRaisesRegex(ValueError,'authorization absent'):
+            run_next(pilot=True)
+        for row in gate.inventory():
+            target=gate.PILOT_DESTINATION/row['attempt']
+            command=[binding['python'],'-I','-S','-B',binding['worker'],
+                     str(target/'00-pending.json'),gate.TOKEN]
+            message='authorization absent' if row['index']<8 else 'destination differs'
+            with self.assertRaisesRegex(ValueError,message):
+                gate.admitted(target,gate.CHECKOUT,command,gate.OWNER,row['context_sha256'],
+                              gate.LIMITS,binding['pins'])
+        self.assertFalse(gate.PILOT_DESTINATION.exists())
+
+
+    def test_pilot_controller_stop_capacity_and_consumed_claim(self):
+        root=self.stage()
+        (root/'pilot-authority.json').write_text(json.dumps(dict(
+            schema='al02-supervised-eight-one-claim-per-index-v1',owner=gate.OWNER,
+            pilot_binding_sha256=gate.PILOT_BINDING_SHA256)))
+        (root/'STOP').touch()
+        result=self.invoke(root,'pilot-restart')
+        self.assertEqual(result.stdout.strip(),'STOP')
+        self.assertFalse((root/'attempt-000').exists())
+        (root/'STOP').unlink()
+        self.assertIn('Campaign archive or disk reservation exhausted',
+                      self.invoke(root,'pilot-capacity').stdout)
+        self.assertFalse((root/'attempt-000').exists())
+        self.assertEqual(self.invoke(root,'pilot-after-claim').returncode,42)
+        self.assertIn('Unreconciled attempt claim',self.invoke(root,'pilot-restart').stdout)
+        self.assertFalse((root/'attempt-001').exists())
