@@ -323,7 +323,7 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'Cannot record engineering diff' }
             $state.diffSha256=[Convert]::ToHexString([Security.Cryptography.SHA256]::HashData(
                 [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
-            $diff | Set-Content "$logs/$run.diff" -Encoding utf8
+            [IO.File]::WriteAllText("$logs/$run.diff", ($diff -join "`n"))
             if ($roadmapMode) {
                 $state.diffFileSha256=(Get-FileHash "$logs/$run.diff").Hash.ToLowerInvariant()
                 $state.roadmapScopeOk=(@($state.after.dirty | Where-Object { $_ -cnotin $allowedDirty }).Count -eq 0)
