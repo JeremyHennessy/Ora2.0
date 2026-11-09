@@ -1,0 +1,1 @@
+{"type":"object","properties":{"requirement":{"type":"string","enum":["handoff","review-integrity","stop","PARK"]},"instruction":{"type":"string"}},"required":["requirement","instruction"],"additionalProperties":false}

@@ -1,0 +1,14 @@
+{
+  "objective": "AL02 continuation controller inert boundary qualification",
+  "basis": "D:/OraLab/reports/ora-al02-supervised-eight-execution-20261109/prospective-remaining-120.md",
+  "path": "tests/test_al02_continuation.py",
+  "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py",
+  "maxTurns": 12,
+  "maxCorrections": 1,
+  "secondsPerTurn": 180,
+  "requirements": {
+    "handoff": "Verify actual run_next selects index 8 with no continuation claims, with custody replaced by a spy and no scientific dispatch.",
+    "review-integrity": "Verify actual run_next refuses an inconsistent prior batch review at index 16 before custody.",
+    "stop": "Verify actual run_next with STOP present does not claim or call custody."
+  }
+}

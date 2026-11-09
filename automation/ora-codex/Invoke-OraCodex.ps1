@@ -23,6 +23,12 @@ function Snapshot {
     if ($LASTEXITCODE -ne 0) { throw 'Cannot verify worktree status' }
     @{head=$head; dirty=$dirty}
 }
+function Get-OraDiffHash {
+    $diff=git -C $config.worktree diff --binary HEAD
+    if ($LASTEXITCODE -ne 0) { throw 'Cannot verify candidate diff' }
+    [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData(
+        [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
+}
 function Receipt($path) {
     $result=@{session=$null; completed=$false; failed=$false; gitOutputs=@()}
     if (Test-Path $path) {
@@ -77,6 +83,22 @@ try {
     $before=Snapshot
     $task=$previous.task
     $director=$task.id -ceq 'ORA-DIRECTOR'
+    $roadmapMode=$director -and $task.item -ceq 'ROADMAP'
+    if ($roadmapMode) {
+        if (!$config.engineeringQualification -or $FakeWorker -or
+            $config.worktree -cne 'D:/OraLab/src/Ora2.0-director-qualification' -or
+            $StateRoot -cne 'D:/OraLab/drafts/ora-director-roadmap') { throw 'Roadmap isolation differs' }
+        $roadmapPath=Join-Path $PSScriptRoot 'roadmap-al02.json'
+        if ((Get-FileHash $roadmapPath).Hash -ine $config.roadmapSha256) { throw 'Roadmap identity differs' }
+        $roadmap=Get-Content -Raw $roadmapPath | ConvertFrom-Json -AsHashtable
+        if ($config.timeoutSeconds -gt $roadmap.secondsPerTurn) { throw 'Roadmap turn budget differs' }
+        if ($before.dirty.Count -gt 1 -or ($before.dirty.Count -and $before.dirty[0] -cne " M $($roadmap.path)")) {
+            throw 'Roadmap source scope differs'
+        }
+        if ($previous.status -ne 'interrupted' -and (Get-OraDiffHash) -cne $task.diffSha256) {
+            throw 'Roadmap checkpoint diff differs'
+        }
+    }
     $engineering=$director -and $OraEngineering.ContainsKey([string]$task.item)
     $engineeringEdit=$engineering -and $task.item -ceq 'AL02-CONTROLLER-TEST'
     $engineeringReview=$engineeringEdit -and $task.stage -ceq 'review'
@@ -89,19 +111,20 @@ try {
             [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
         if ($LASTEXITCODE -ne 0 -or $hash -cne $task.diffSha256) { throw 'Reviewed diff differs' }
     }
-    if ($director -and (!$config.directorEnabled -or $previous.status -ne 'ready' -or
-        $task.stage -cnotin $OraDirectorStages -or (!$engineering -and !$OraTasks.ContainsKey([string]$task.item)) -or
-        $task.head -cne $before.head -or ($before.dirty.Count -and !$engineeringReview) -or
-        $task.turn -notin 1..6)) {
+    if ($director -and (!$config.directorEnabled -or ($previous.status -ne 'ready' -and !($roadmapMode -and $previous.status -eq 'interrupted' -and $previous.session -and $previous.attempts -lt 2)) -or
+        $task.stage -cnotin $OraDirectorStages -or (!$roadmapMode -and !$engineering -and !$OraTasks.ContainsKey([string]$task.item)) -or
+        $task.head -cne $before.head -or ($before.dirty.Count -and !$engineeringReview -and !$roadmapMode) -or
+        $task.turn -notin 1..$(if ($roadmapMode) {$roadmap.maxTurns} else {6}))) {
         Save @{status='parked';reason='Director scope, source, budget or restart mismatch';task=$task;source=$before}
         return
     }
     if ($director) {
+        $task.evidenceRun=$task.evidenceRun ?? $previous.previousRun
         $blob=git -C $config.worktree rev-parse HEAD:experiments/executed_heredity.py
         if ($LASTEXITCODE -ne 0 -or $blob -cne $task.blob -or
             $task.expected -cne $(if ($task.item -eq 'FROZEN-BLOB') {$blob} else {$before.head}) -or
-            ($task.turn -gt 1 -and ($previous.previousRun -cnotmatch '^[0-9a-f-]{36}$' -or
-             [IO.Path]::GetFullPath($task.evidence ?? '') -cne [IO.Path]::GetFullPath((Join-Path $StateRoot "runs/$($previous.previousRun).jsonl")) -or
+            ($task.turn -gt 1 -and ($task.evidenceRun -cnotmatch '^[0-9a-f-]{36}$' -or
+             [IO.Path]::GetFullPath($task.evidence ?? '') -cne [IO.Path]::GetFullPath((Join-Path $StateRoot "runs/$($task.evidenceRun).jsonl")) -or
              !(Test-Path -LiteralPath $task.evidence) -or
              (Get-FileHash -LiteralPath $task.evidence).Hash.ToLowerInvariant() -cne $task.evidenceSha256))) {
             Save @{status='parked';reason='Director evidence identity mismatch';task=$task;source=$before}
@@ -118,7 +141,7 @@ try {
         Save @{status='review'; reason='Interrupted session source HEAD changed'; source=$before}
         return
     }
-    if (!$engineeringReview -and $before.dirty.Count -and (!$previous -or $previous.status -ne 'interrupted' -or !$previous.session)) {
+    if (!$roadmapMode -and !$engineeringReview -and $before.dirty.Count -and (!$previous -or $previous.status -ne 'interrupted' -or !$previous.session)) {
         Save @{status='review'; reason='Unowned dirty worktree'; source=$before}
         return
     }
@@ -144,7 +167,7 @@ try {
         'Use the latest verified Ora checkpoint and issue #328. The supervisor holds the exclusive source lease for this worker. Do not reacquire, remove or modify it. Perform one bounded safe source-only milestone in this worktree. First look for a reproduced AL02 defect or missing admitted source integration. Never treat a synthetic fixture as scientific evidence. No Worlds, scientific contexts, native qualification, workflows, push, merges, automation or protected runtime changes. Preserve existing partial work. If all useful work is blocked, say ORA_NO_SAFE_WORK and name the exact blocker. Do not start another controller.'
     }
     if ($director) {
-        $prompt=if ($engineering) { Get-OraEngineeringPrompt $task } else { Get-OraDirectorPrompt $task }
+        $prompt=if ($roadmapMode) { Get-OraRoadmapPrompt $task $roadmap } elseif ($engineering) { Get-OraEngineeringPrompt $task } else { Get-OraDirectorPrompt $task }
     } elseif ($task.id -ceq 'AL02-WORKER-CLOSURE-REVIEW') {
         $prompt="Read-only review of exact AL02 worker commit $($task.head). Inspect only the worker and tests. Do not run tests, workers or Worlds."
     } elseif ($task.id -ceq 'AL02-ONE-PAIR-REVIEW') {
@@ -157,11 +180,11 @@ try {
     if ($config.mode -eq 'development' -and !$task) {
         $argsList=@('exec','--json','--color','never','-C',$config.worktree,'--approve-for-me')
     }
-    if ($engineeringEdit -and $task.stage -ceq 'execute') {
+    if (($engineeringEdit -or $roadmapMode) -and $task.stage -ceq 'execute') {
         $argsList=@('exec','--json','--color','never','-C',$config.worktree,'--sandbox','workspace-write','-c','approval_policy="never"')
     }
     if ($director -and $task.stage -ne 'execute') {
-        $schema=if ($task.stage -eq 'review') {'director-review.schema.json'} else {'director-plan.schema.json'}
+        $schema=if ($roadmapMode) { if ($task.stage -ceq 'review') {'director-roadmap-review.schema.json'} else {'director-roadmap.schema.json'} } elseif ($task.stage -eq 'review') {'director-review.schema.json'} else {'director-plan.schema.json'}
         $argsList+=@('--output-schema',(Join-Path $PSScriptRoot $schema))
     }
     if ($resuming) { $argsList+=@('resume',$previous.session) }
@@ -182,7 +205,11 @@ try {
     $state=@{status='launching';run=$run;task=$task;ownerPid=$PID;ownerBirth=$owner.StartTime.ToUniversalTime().Ticks;source=$before;stdout=$stdout;stderr=$stderr;
              session=if ($resuming) {$previous.session}; attempts=if ($previous -and $previous.status -eq 'interrupted') {1+[int]$previous.attempts} else {1};
              heartbeat=[DateTimeOffset]::UtcNow.ToString('o')}
-    if ($engineering) { $state.prompt=$prompt }
+    if ($engineering -or $roadmapMode) { $state.prompt=$prompt }
+    if ($roadmapMode -and $task.stage -ceq 'execute' -and !$resuming) {
+        $task.backup=Join-Path $logs "$run.before.py"
+        Copy-Item -LiteralPath (Join-Path $config.worktree $roadmap.path) -Destination $task.backup
+    }
     Save $state
     if (Test-Path "$StateRoot/STOP") { $state.status='stopped'; Save $state; return }
     $out=[IO.FileStream]::new($stdout,'CreateNew','Write','ReadWrite',1)
@@ -252,32 +279,36 @@ try {
     $state.nextUtc=[DateTimeOffset]::UtcNow.AddMinutes($minutes).ToString('o')
     $state.heartbeat=[DateTimeOffset]::UtcNow.ToString('o')
     if ($director) {
-        if ($state.status -eq 'interrupted') { $state.status='parked' }
-        if ($engineeringEdit) {
+        if ($state.status -eq 'interrupted' -and (!$roadmapMode -or !$state.session)) { $state.status='parked' }
+        if ($engineeringEdit -or $roadmapMode) {
             $diff=git -C $config.worktree diff --binary HEAD
             if ($LASTEXITCODE -ne 0) { throw 'Cannot record engineering diff' }
             $state.diffSha256=[Convert]::ToHexString([Security.Cryptography.SHA256]::HashData(
                 [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
             $diff | Set-Content "$logs/$run.diff" -Encoding utf8
-            if ($engineeringReview -and $state.diffSha256 -cne $task.diffSha256) {
+            if (($engineeringReview -or ($roadmapMode -and $task.stage -cne 'execute')) -and $state.diffSha256 -cne $task.diffSha256) {
                 throw 'Reviewer changed the source'
             }
         }
         $state.evidenceSha256=(Get-FileHash -LiteralPath $stdout).Hash.ToLowerInvariant()
         $state | ConvertTo-Json -Depth 10 | Set-Content "$logs/$run.receipt.json" -Encoding utf8
         if ($state.status -eq 'parked' -and !$rate -and !(Test-Path "$StateRoot/STOP")) {
-            $next=if ($engineering) {
+            $next=if ($roadmapMode) { Get-OraRoadmapDecision $task $state $receipt $roadmap } elseif ($engineering) {
                 Get-OraEngineeringDecision $task $state $receipt ($state.after.head -ceq $task.head)
             } else {
                 Get-OraDirectorDecision $task $state $receipt ($state.after.head -ceq $task.head)
             }
-            if ($next -and $task.turn -lt 6) {
+            if ($next -and $task.turn -lt $(if ($roadmapMode) {$roadmap.maxTurns} else {6})) {
                 $next.turn=1+[int]$task.turn
                 $next.blob=$task.blob
                 $next.evidenceSha256=$state.evidenceSha256
+                $next.evidenceRun=$run
                 Save @{status='ready';task=$next;previousRun=$run;nextUtc=if ($config.directorAcceptance) {[DateTimeOffset]::UtcNow.ToString('o')} else {$state.nextUtc}}
                 return
             }
+        }
+        if ($roadmapMode -and $state.status -ceq 'parked' -and !$state.reason) {
+            $state.reason=if ($task.turn -ge $roadmap.maxTurns) {'Roadmap turn budget exhausted'} else {'No verified eligible transition'}
         }
         Save $state
     } else {

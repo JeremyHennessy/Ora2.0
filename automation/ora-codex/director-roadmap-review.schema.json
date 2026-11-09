@@ -1,0 +1,1 @@
+{"type":"object","properties":{"head":{"type":"string"},"decision":{"type":"string","enum":["ACCEPT","REJECT","UNKNOWN"]},"finding":{"type":"string"}},"required":["head","decision","finding"],"additionalProperties":false}
