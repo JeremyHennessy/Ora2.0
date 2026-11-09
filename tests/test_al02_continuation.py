@@ -153,6 +153,7 @@ class ContinuationPolicyTests(unittest.TestCase):
         custody = campaign.custody
         job = custody.transport
         real_transaction, real_run, real_admit = custody.transaction, job.run, gate.admitted
+        real_transaction = Mock(wraps=real_transaction)
         production = (gate.CHECKOUT, gate.CONTINUATION_DESTINATION)
         source = Path(gate.__file__).resolve()
         worker = source.with_name('al02_one_pair_worker.py')
@@ -263,7 +264,40 @@ class ContinuationPolicyTests(unittest.TestCase):
                 patch.object(custody, 'transaction', side_effect=guarded_transaction) as handoff,
                 patch.object(job, 'run', side_effect=guarded_job) as launch,
             ):
+                original_command = command
+                try:
+                    command = (*command[:4], binding['worker'], *command[5:])
+                    with self.subTest(inert_continuation='substituted command'):
+                        with self.assertRaisesRegex(
+                                AssertionError, '^Inert continuation launch barrier refused$'):
+                            run_next(continuation=True)
+                        handoff.assert_called_once()
+                        real_transaction.assert_not_called()
+                        launch.assert_not_called()
+                        self.assertEqual(list(root.glob('attempt-*')), [])
+                finally:
+                    command = original_command
+
+                handoff.reset_mock()
+                admission.reset_mock()
+                try:
+                    shim.write_bytes(shim_bytes + b'\n# changed inert fixture bytes\n')
+                    with self.subTest(inert_continuation='changed shim bytes'):
+                        with self.assertRaisesRegex(
+                                AssertionError, '^Inert continuation launch barrier refused$'):
+                            run_next(continuation=True)
+                        handoff.assert_called_once()
+                        real_transaction.assert_not_called()
+                        launch.assert_not_called()
+                        self.assertEqual(list(root.glob('attempt-*')), [])
+                        self.assertEqual(pins[str(shim)], sha256(shim_bytes).hexdigest())
+                finally:
+                    shim.write_bytes(shim_bytes)
+
+                handoff.reset_mock()
+                admission.reset_mock()
                 result = run_next(continuation=True)
+                real_transaction.assert_called_once()
 
                 handoff.assert_called_once()
                 launch.assert_called_once()
@@ -276,12 +310,13 @@ class ContinuationPolicyTests(unittest.TestCase):
                 record = json.loads(terminal_bytes)
                 self.assertEqual(record['release_identities'], identities)
                 self.assertEqual(record['result'], result)
+                terminal_pin = custody.digest(terminal)
                 # Local readback pin for the synthetic fixture, with no independent review.
                 verified = verify_attempt(
                     directory, dict(index=row['index'], attempt=row['attempt'], context=pair.CONTEXT,
                                     context_sha256=pair.CONTEXT_SHA256, seed=pair.SEED),
                     command=list(command), pins=pins, identities=identities,
-                    terminal_pin=custody.digest(terminal),
+                    terminal_pin=terminal_pin,
                 )
                 self.assertEqual((verified['index'], verified['status']), (8, 'accepted'))
                 self.assertEqual(verified['raw_sha256'], pins[str(lawful)])
@@ -297,6 +332,44 @@ class ContinuationPolicyTests(unittest.TestCase):
                 self.assertEqual(list(root.glob('attempt-*')), [directory])
                 self.assertEqual(terminal.read_bytes(), terminal_bytes)
                 self.assertEqual(partial.read_bytes(), partial_bytes)
+
+                raw = directory / 'raw.bin'
+                raw_bytes = raw.read_bytes()
+                offset = next(i for i, byte in enumerate(partial_bytes)
+                              if byte not in (10, 13))
+                replacement = b'!' if partial_bytes[offset] != ord('!') else b'?'
+                tampered = partial_bytes[:offset] + replacement + partial_bytes[offset + 1:]
+                self.assertEqual(len(tampered), len(partial_bytes))
+                self.assertNotEqual(tampered, partial_bytes)
+                try:
+                    partial.write_bytes(tampered)
+                    with self.assertRaisesRegex(ValueError, '^Journal differs$'):
+                        verify_attempt(
+                            directory, dict(index=row['index'], attempt=row['attempt'],
+                                            context=pair.CONTEXT,
+                                            context_sha256=pair.CONTEXT_SHA256, seed=pair.SEED),
+                            command=list(command), pins=pins, identities=identities,
+                            terminal_pin=terminal_pin,
+                        )
+                    self.assertEqual(terminal.read_bytes(), terminal_bytes)
+                    self.assertEqual(raw.read_bytes(), raw_bytes)
+                    handoff.assert_called_once()
+                    launch.assert_called_once()
+                finally:
+                    partial.write_bytes(partial_bytes)
+                    restored = verify_attempt(
+                        directory, dict(index=row['index'], attempt=row['attempt'],
+                                        context=pair.CONTEXT,
+                                        context_sha256=pair.CONTEXT_SHA256, seed=pair.SEED),
+                        command=list(command), pins=pins, identities=identities,
+                        terminal_pin=terminal_pin,
+                    )
+                    self.assertEqual(restored, verified)
+                    self.assertEqual(partial.read_bytes(), partial_bytes)
+                    self.assertEqual(terminal.read_bytes(), terminal_bytes)
+                    self.assertEqual(raw.read_bytes(), raw_bytes)
+                    handoff.assert_called_once()
+                    launch.assert_called_once()
 
     def test_run_next_refuses_index_16_without_prior_batch_review(self):
         with (
