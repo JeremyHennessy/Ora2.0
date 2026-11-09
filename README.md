@@ -1,6 +1,8 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
-**Status (2026-10-08): independent catalytic, heredity, ecological and spatial-organization experiments with reproducible negative controls. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
+**Latest verified checkpoint (2026-10-23):** [Running assistant, completed note retention, failed pilots and held world gates](docs/VERIFIED-STATUS-20261023.md). The assistant is operating; repaired two-hour renewal and a persistent scientific population remain unproven.
+
+**Founding status (2026-10-08): independent catalytic, heredity, ecological and spatial-organization experiments with reproducible negative controls. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
 
 ## Research mission
 
@@ -33,6 +35,9 @@ It is not established that such a system would count as living or conscious. We 
 **GitHub stores source code and versioned research; it is not itself an always-on organism runtime.**
 
 ## Start here
+
+- [Latest verified status and next gates](docs/VERIFIED-STATUS-20261023.md)
+- [K0 capsule feasibility draft — no runtime activation](docs/KNOWLEDGE-CAPSULE-K0-FEASIBILITY-20261023.md)
 
 - [Future knowledge library and cultural learning (planning only)](docs/DIGITAL-KNOWLEDGE-LIBRARY-ROADMAP-20261023.md)
 - [Founding research charter](docs/FOUNDING-CHARTER.md)

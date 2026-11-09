@@ -9,8 +9,10 @@
 
 Ora's long-term ambition is not to make organisms rediscover everything independently. Human knowledge, existing algorithms, useful published research and eventually another organism's observations could become **information sources**. But using a lookup or a local LLM is not itself proof that the organism learned, evolved or invented the referenced algorithm.
 
-At the October 23 checkpoint:
-- Separate local assistant: working signed/approved memory and native retrieval; retention for new notes and the sealed 36-call project-work pilot still pending. This is a different runtime, not the scientific organism universe.
+For the latest dated evidence see [verified status](VERIFIED-STATUS-20261023.md). [K0 feasibility and example](KNOWLEDGE-CAPSULE-K0-FEASIBILITY-20261023.md) are now drafted; rights and organism-interface costs remain unresolved. No K1 service or organism channel is authorized.
+
+At the updated October 23 observation:
+- Separate local assistant: working signed/approved memory and native retrieval; new-note retention passed its narrow transfer/control gate; both project-work pilot attempts failed in software and remain sealed without a learning result. This is a different runtime, not the scientific organism universe.
 - Scientific population: bounded reproduction and finite ecology exist; no continuous scientific World or beneficial evolved learning capacity proven.
 - Learning81: a scoped own-experience decision benefit under supplied architecture, but retained-resource advantage not met.
 - Context90: scoped previously learned information retrieval at capacity q8, with no full paid N/O/E advantage.
@@ -34,7 +36,7 @@ Only after independent K2/K3 knowledge-use results, consider bounded in-world me
 
 | Milestone | Smallest deliverable | Evidence needed | Status |
 | --- | --- | --- | --- |
-| K0 — Traceable library schema | Reviewed schema plus one safely sourced, versioned example and cost/permission audit | Provenance, rights, scope and clear distinction between authored versus acquired | **Proposed; may draft now** |
+| K0 — Traceable library schema | Reviewed schema plus one safely sourced, versioned example and cost/permission audit | Provenance, rights, scope and clear distinction between authored versus acquired | **K0 documentation drafted; not approved for runtime import** |
 | K1 — Offline deterministic librarian | Restricted, exact-hash read-only snapshot with reject paths | Retrieval and corruption tests without VM or service activation | **Future optional engineering** |
 | K2 — First paid organism read | One prospectively registered encoded information opportunity | Real same-organism query, access, action, budget, null and fixed/reactive controls | **Not admitted** |
 | K3 — Learn to seek knowledge | Resource-aware self-chosen queries on unseen tasks | Improved actual choice/return versus equal-access, equally funded references | **Not demonstrated** |
