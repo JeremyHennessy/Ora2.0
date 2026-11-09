@@ -1,0 +1,1 @@
+{"type": "object", "properties": {"head": {"type": "string"}, "decision": {"type": "string", "enum": ["FROZEN-BLOB", "PARK", "AL02-CONTROLLER-TEST"]}}, "required": ["head", "decision"], "additionalProperties": false}
