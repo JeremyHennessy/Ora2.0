@@ -96,6 +96,8 @@ def audit():
         require(sha(path)==pair['before_sha256'] and
                 sha(ROOT/path.relative_to(PRODUCTION))==pair['after_sha256'],
                 f'Successor replacement differs: {target}')
+    require(proposal['installed_file_pins'].keys()==binding['installed_file_pins'].keys(),
+            'Successor inventory scope differs')
     local = {}
     for target, expected in binding['installed_file_pins'].items():
         path = Path(target)
@@ -187,7 +189,7 @@ main(module=test_al02_restore_entry, argv=['mutation',
     require(results['lawful']['second_claim'] == 'FileExistsError', 'Duplicate not refused')
     require(audit() == baseline, 'Baseline changed during qualification')
     return dict(status='PASS', scope='inactive V3 inert engineering only',
-                scientific_entry='both initialized with zero ticks', future_release_qualified=False, baseline=baseline,
+                scientific_entry='both initialized with zero ticks', scientific_execution_qualified=False, baseline=baseline,
                 terminal_sha256=sha(attempt/'04-terminal.json'), results_sha256=sha(rehearsal/'results.json'),
                 release_identities=identities)
 

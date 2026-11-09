@@ -21,6 +21,7 @@ attempt=Path('D:/OraLab/reports/al02-first-depletion-successor-20261109/attempt-
 assert not attempt.exists()
 assert b['seed']==8195177122164069225 and b['scientific_authorization'] is False
 pins=b['installed_file_pins']
+b['project_git_blobs'].pop('experiments/al02_one_pair_consent.py',None)
 changes={}
 for name in ('al02_depletion_producer.py','al02_one_pair_worker.py',
              'al02_one_pair_custody.py','al02_one_pair_consent.py'):
@@ -54,7 +55,10 @@ package=encode(dict(schema='AL02-INACTIVE-HUMAN-RELEASE-PACKAGE-v3',candidate=b[
 files={'source-pins-v3.json':inventory,'installed-binding-v3.json':binding,
        'human-release-package-v3.json':package}
 files['installation-verification-v3.json']=encode(dict(scientific_authorization=False,
-    replacements=changes,artifact_sha256={name:sha(raw) for name,raw in files.items()},
+    replacements=changes, consent_git_blob=subprocess.check_output(
+        ['git','-C',str(root),'hash-object','--path=experiments/al02_one_pair_consent.py',
+         str(root/'experiments/al02_one_pair_consent.py')],text=True).strip(),
+    artifact_sha256={name:sha(raw) for name,raw in files.items()},
     rollback='Restore byte-exact backups of authorized replacements and preserve all attempt paths.'))
 out=Path(sys.argv[1])
 out.mkdir(exist_ok=True)
