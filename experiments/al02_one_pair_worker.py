@@ -1,0 +1,131 @@
+"""Fixed AL02 worker. Probe mode verifies imports without evaluating the context."""
+import hashlib
+import importlib.abc
+import importlib.util
+import json
+import os
+from pathlib import Path
+import stat
+import sys
+
+PROJECT = (
+    'experiments', 'experiments.al02_one_pair', 'experiments.executed_heredity',
+    'experiments.al02_depletion_checkpoint', 'experiments.al02_depletion_producer',
+    'experiments.al02_depletion_projection', 'experiments.al02_depletion_suffix',
+    'experiments.al02_selection_referee', 'experiments.al02_selection_request',
+    'experiments.causal_genealogy_audit',
+)
+CONSENT = 'JeremyHennessy/Ora2.0#328:6740691539'
+
+
+def checked_bytes(path, pins):
+    path = Path(path)
+    if not path.is_absolute() or any(p.lstat().st_file_attributes &
+            stat.FILE_ATTRIBUTE_REPARSE_POINT for p in (path, *path.parents)):
+        raise ValueError(f'Unqualified path: {path}')
+    raw = path.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != pins.get(str(path)):
+        raise ValueError(f'Pinned source mismatch: {path}')
+    return raw
+
+
+class ProjectLoader(importlib.abc.MetaPathFinder, importlib.abc.Loader):
+    def __init__(self, root, pins):
+        self.sources = {}
+        for name in PROJECT:
+            path = root.joinpath(*name.split('.'))
+            path = path / '__init__.py' if name == 'experiments' else path.with_suffix('.py')
+            self.sources[name] = (path, checked_bytes(path, pins))
+
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname in self.sources:
+            file, _ = self.sources[fullname]
+            return importlib.util.spec_from_file_location(
+                fullname, file, loader=self,
+                submodule_search_locations=[] if fullname == 'experiments' else None)
+        if fullname.startswith('experiments.'):
+            raise ImportError(f'Unapproved project import: {fullname}')
+        return None
+
+    def create_module(self, spec):
+        return None
+
+    def exec_module(self, module):
+        path, raw = self.sources[module.__name__]
+        exec(compile(raw, str(path), 'exec'), module.__dict__)
+
+
+def load_project(root, pins):
+    if any(n == 'experiments' or n.startswith('experiments.') for n in sys.modules):
+        raise ValueError('Project code already imported')
+    loader = ProjectLoader(root, pins)
+    sys.meta_path.insert(0, loader)
+    from experiments import al02_one_pair
+    actual = {n for n in sys.modules if n == 'experiments' or n.startswith('experiments.')}
+    if actual != set(PROJECT) or any(sys.modules[n].__loader__ is not loader for n in actual):
+        raise ValueError('Imported project closure differs')
+    return al02_one_pair, loader
+
+
+def runtime_files():
+    files = {str(Path(sys.executable))}
+    for module in tuple(sys.modules.values()):
+        path = getattr(module, '__file__', None)
+        if path and not str(path).startswith('<'):
+            file = Path(path)
+            if file.is_file():
+                files.add(str(file))
+    return sorted(files)
+
+
+def main():
+    if not (sys.flags.isolated and sys.flags.no_site and sys.dont_write_bytecode):
+        raise ValueError('Require isolated, no-site, no-bytecode Python')
+    if len(sys.argv) != 3 or sys.argv[2] not in ('--probe', CONSENT):
+        raise ValueError('Unexpected worker arguments')
+    manifest_path = Path(sys.argv[1])
+    with manifest_path.open('rb') as stream:
+        raw = stream.read(8 * 1024 * 1024 + 1)
+    if len(raw) > 8 * 1024 * 1024:
+        raise ValueError('Oversized manifest')
+    manifest = json.loads(raw)
+    pins = manifest['pins']
+    checked_bytes(sys.executable, pins)
+    checked_bytes(__file__, pins)
+    root = Path(manifest['cwd'])
+    if Path.cwd() != root or Path(__file__).parent.parent != root:
+        raise ValueError('Worker root differs')
+    if sys.argv[2] == CONSENT:
+        expected = [sys.executable, '-I', '-S', '-B', __file__, sys.argv[1], CONSENT]
+        environment = hashlib.sha256(json.dumps(dict(os.environ), sort_keys=True).encode()).hexdigest()
+        if (manifest['command'] != expected or manifest['environment_sha256'] != environment
+                or manifest['consent'] != CONSENT
+                or manifest['evidence_tier'] != 'LOW_ASSURANCE_EXPLORATORY'):
+            raise ValueError('Worker command or environment differs')
+        intent = json.loads((manifest_path.parent / '02-release-intent.json').read_bytes())
+        verified = (manifest_path.parent / '01-verified.json').read_bytes()
+        if (intent['verified_sha256'] != hashlib.sha256(verified).hexdigest()
+                or json.loads(verified)['pending_sha256'] != hashlib.sha256(raw).hexdigest()):
+            raise ValueError('Release journal differs')
+    pair, loader = load_project(root, pins)
+    files = runtime_files()
+    if sys.argv[2] == '--probe':
+        print(json.dumps(files))
+        return
+    for path in files:
+        checked_bytes(path, pins)
+    if manifest['context'] != pair.CONTEXT_SHA256:
+        raise ValueError('Fixed context differs')
+    # The on-disk hash journal can be forged by a direct same-account caller.
+    # The current bootstrap has no authenticated live handoff to this worker.
+    raise PermissionError('Scientific worker lacks a verified live Job release channel')
+
+
+def produce_bound_pair(pair, loader):
+    """Scientific entry body for the admitted parent handoff only."""
+    original = loader.sources['experiments.executed_heredity'][1]
+    sys.stdout.buffer.write(pair.produce(pair.CONTEXT, pair.CONTEXT_SHA256, pair.SEED, original))
+
+
+if __name__ == '__main__':
+    main()
