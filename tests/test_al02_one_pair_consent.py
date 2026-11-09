@@ -1,5 +1,6 @@
 from hashlib import sha256
 import json
+import os
 from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
@@ -18,7 +19,17 @@ class LimitedConsentTests(TestCase):
         self.root = Path(temporary.name).resolve()
         self.attempt = self.root / 'attempt'
         self.worker = self.root / 'inert.py'
-        self.worker.write_text('print("inert")\n', encoding='ascii')
+        self.worker.write_text(
+            'import json, os, sys\n'
+            'from pathlib import Path\n'
+            'event = {"kind": "fixture", "event_id": 0}\n'
+            'checkpoint = json.dumps({"state": {"events": [event]}})\n'
+            'journal = {"phase": "prefix", "event": event}\n'
+            'if os.environ.get("ORA_FIXTURE_MISMATCH"): journal["event"]["event_id"] = False\n'
+            '(Path(sys.argv[1]).parent / "partial.jsonl").write_bytes(json.dumps(journal, sort_keys=True, separators=(",", ":")).encode() + b"\\n")\n'
+            'print(json.dumps({"checkpoint": checkpoint, "branches": '
+            '{"accessible": {"events": []}, "sequestered": {"events": []}}}))\n',
+            encoding='ascii')
         self.python = getattr(sys, '_base_executable', sys.executable)
         self.command = [self.python, '-I', '-S', '-B', str(self.worker),
                         str(self.attempt / '00-pending.json'), consent.CONSENT]
@@ -48,10 +59,19 @@ class LimitedConsentTests(TestCase):
 
     def test_inert_consent_release_and_duplicate(self):
         with patch.object(consent, 'APPROVED_WORKER_SHA256', self.pins[str(self.worker)]):
-            self.assertEqual(self.run_inert(), 'inert')
+            self.assertIn('fixture', self.run_inert())
             with self.assertRaises(FileExistsError):
                 self.run_inert()
         self.assertTrue((self.attempt / '04-terminal.json').exists())
+
+    def test_mismatched_partial_journal_blocks_referee(self):
+        with patch.object(consent, 'APPROVED_WORKER_SHA256', self.pins[str(self.worker)]), \
+             patch.dict(os.environ, ORA_FIXTURE_MISMATCH='1'):
+            with self.assertRaisesRegex(ValueError, 'does not match'):
+                self.run_inert(referee=lambda raw: self.fail('Referee received invalid evidence'))
+        failure = json.loads((self.attempt / '99-failed.json').read_bytes())
+        self.assertTrue(failure['release_intent'])
+        self.assertIn('sha256', failure['partial'])
 
     def test_scope_and_unqualified_worker_fail_before_attempt(self):
         for changes, reason in [

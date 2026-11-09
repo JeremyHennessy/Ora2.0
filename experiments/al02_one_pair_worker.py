@@ -164,13 +164,24 @@ def main():
             or manifest['owner'] != 'hennessydesktop\\hennessy'
             or (ora / 'automation/ora-codex/STOP').exists()):
         raise PermissionError('Scientific release outside fixed scope or STOP present')
-    produce_bound_pair(pair, loader)
+    produce_bound_pair(pair, loader, attempt / "partial.jsonl")
 
 
-def produce_bound_pair(pair, loader):
+def produce_bound_pair(pair, loader, evidence_path):
     """Scientific entry body for the admitted parent handoff only."""
     original = loader.sources['experiments.executed_heredity'][1]
-    sys.stdout.buffer.write(pair.produce(pair.CONTEXT, pair.CONTEXT_SHA256, pair.SEED, original))
+    with evidence_path.open('xb', buffering=0) as stream:
+        def save_event(phase, event):
+            raw = json.dumps(dict(phase=phase, event=event), sort_keys=True, separators=(',', ':'),
+                             ensure_ascii=True, allow_nan=False).encode('ascii') + b'\n'
+            if stream.tell() + len(raw) > pair.MAX_OUTPUT:
+                raise ValueError('Partial history exceeds evidence budget')
+            if stream.write(raw) != len(raw):
+                raise OSError('Short partial-history write')
+
+        result = pair.produce(pair.CONTEXT, pair.CONTEXT_SHA256, pair.SEED, original,
+                              save_event=save_event)
+    sys.stdout.buffer.write(result)
 
 
 if __name__ == '__main__':

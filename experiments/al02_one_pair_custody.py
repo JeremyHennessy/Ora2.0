@@ -92,6 +92,18 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
             os.fsync(stream.fileno())
         return hashlib.sha256(raw).hexdigest()
 
+    def partial_receipt():
+        path = directory / 'partial.jsonl'
+        try:
+            size = pinned_path(path).stat().st_size
+            if size > transport.OUTPUT_LIMIT:
+                return dict(bytes=size, error='Invalid partial-history extent')
+            return dict(bytes=size, sha256=digest(path))
+        except FileNotFoundError:
+            return None
+        except (OSError, ValueError) as exc:
+            return dict(error=str(exc)[:512])
+
     preflight()
     directory.mkdir()
     released = False
@@ -128,7 +140,7 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                                                command=command, owner=expected_account,
                                                context=context, limits=vars(transport.LIMITS))
                 preflight()
-                if sum(p.stat().st_size for p in directory.iterdir()) + transport.OUTPUT_LIMIT + 65536 > ARCHIVE_MAX:
+                if sum(p.stat().st_size for p in directory.iterdir()) + transport.OUTPUT_LIMIT * (2 if consent else 1) + 65536 > ARCHIVE_MAX:
                     raise ValueError('Insufficient bounded archive headroom')
                 verified = record('01-verified.json', dict(
                     pending_sha256=pending, bootstrap_pid=process.pid, usage=usage))
@@ -149,19 +161,43 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
             os.fsync(raw.fileno())
         raw_path = directory / 'raw.bin'
         raw_sha = digest(raw_path)
-        record('03-transport.json', dict(raw_sha256=raw_sha, receipt=receipt))
+        partial = partial_receipt()
+        record('03-transport.json', dict(raw_sha256=raw_sha, receipt=receipt, partial=partial))
+        if consent and (not partial or not partial.get('bytes') or partial.get('error')):
+            raise ValueError('Missing or invalid partial-history journal')
         if not released or not receipt['accepted']:
             raise ValueError('Transport rejected')
         with pinned_path(raw_path).open('rb') as stream:
             data = stream.read(transport.OUTPUT_LIMIT + 1)
         if len(data) != receipt['retained_bytes'] or hashlib.sha256(data).hexdigest() != raw_sha:
             raise ValueError('Preserved raw evidence mismatch')
+        if consent:
+            payload = json.loads(data)
+            prefix = json.loads(payload['checkpoint'])['state']['events']
+            expected = [dict(phase='prefix', event=event) for event in prefix]
+            for role in ('accessible', 'sequestered'):
+                expected.extend(dict(phase=role, event=event)
+                                for event in payload['branches'][role]['events'])
+            with pinned_path(directory / 'partial.jsonl').open('rb') as stream:
+                journal = stream.read(transport.OUTPUT_LIMIT + 1)
+            expected_bytes = b''.join(json.dumps(row, sort_keys=True, separators=(',', ':'),
+                                                ensure_ascii=True, allow_nan=False).encode('ascii') + b'\n'
+                                      for row in expected)
+            if (len(journal) != partial['bytes'] or hashlib.sha256(journal).hexdigest() != partial['sha256']
+                    or journal != expected_bytes):
+                raise ValueError('Partial-history journal does not match raw result')
         result = referee(data)
         record('04-terminal.json', dict(raw_sha256=raw_sha, result=result))
         return result
     except BaseException as exc:
         raw_path = directory / 'raw.bin'
+        raw_error = None
+        try:
+            raw_sha = digest(raw_path) if raw_path.exists() else None
+        except (OSError, ValueError) as raw_exc:
+            raw_sha = None
+            raw_error = str(raw_exc)[:512]
         record('99-failed.json', dict(release_intent=released, error_type=type(exc).__name__,
-                                      error=str(exc)[:2048],
-                                      raw_sha256=digest(raw_path) if raw_path.exists() else None))
+                                      error=str(exc)[:2048], partial=partial_receipt(),
+                                      raw_sha256=raw_sha, raw_error=raw_error))
         raise

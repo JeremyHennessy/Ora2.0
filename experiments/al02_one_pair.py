@@ -48,7 +48,21 @@ def terminal_checkpoint(world, config_pin):
     return encode_checkpoint(state, world.rng)
 
 
-def produce(context, digest, seed, source_bytes):
+def observe_events(world, phase, save_event, start=0):
+    """Copy emitted evidence without changing the frozen transition methods."""
+    for event in world.events[start:]:
+        save_event(phase, event)
+    emit = world.emit
+
+    def observed_emit(*args, **kwargs):
+        event_id = emit(*args, **kwargs)
+        save_event(phase, world.events[event_id])
+        return event_id
+
+    world.emit = observed_emit
+
+
+def produce(context, digest, seed, source_bytes, *, save_event=None):
     """Worker entry point. The external supervisor must authorize launch first."""
     check_context(context, digest, seed)
     from experiments.al02_depletion_projection import SOURCE_SHA256
@@ -59,6 +73,8 @@ def produce(context, digest, seed, source_bytes):
                   genesis_material=256, initial_food_a=12, initial_food_b=18)
     config_pin = sha256(_canonical(config)).hexdigest()
     world = frozen.World(seed)
+    if save_event is not None:
+        observe_events(world, "prefix", save_event)
     while world.organisms and world.tick_count < frozen.MAX_STEPS and world.food_a:
         world.execute_one()
     triggered = world.food_a == 0
@@ -70,6 +86,8 @@ def produce(context, digest, seed, source_bytes):
         events = []
         if triggered:
             branch = EscrowContinuation.restore(raw, pin, seed, role)
+            if save_event is not None:
+                observe_events(branch, role, save_event, len(world.events))
             branch.run()
             events = branch.events[len(world.events):]
         branches[role] = dict(role=role, prefix_sha256=pin, events=events)
