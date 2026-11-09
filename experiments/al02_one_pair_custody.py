@@ -38,13 +38,25 @@ def account():
 
 
 def transaction(directory, *, command, cwd, pins, expected_account, context,
-                referee, admission_check):
+                referee, admission_check=None, consent=None):
     """Persist one attempt at a fixed directory; admission_check must fail closed."""
+    from experiments import al02_one_pair_consent as limited
+
     directory = Path(directory)
+    if consent is None:
+        if not callable(admission_check):
+            raise ValueError('Strict admission check required')
+    elif consent != limited.CONSENT or admission_check is not None:
+        raise ValueError('Unrecognized or mixed admission authority')
+    else:
+        limited.check_scope(directory, cwd, command, expected_account, context,
+                            vars(transport.LIMITS))
     cwd = pinned_path(cwd)
     parent = pinned_path(directory.parent)
     command = tuple(command)
     pins = dict(pins)
+    if consent is not None:
+        limited.require_bound_worker(pins)
     environment = dict(os.environ)
     if len(command) < 5:
         raise ValueError('Explicit worker script required')
@@ -55,6 +67,8 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         raise ValueError('Unexpected worker interpreter or startup arguments')
     required = (python, bootstrap, worker, str(Path(__file__).resolve()),
                 str(Path(transport.__file__).resolve()))
+    if consent is not None:
+        required += (str(Path(limited.__file__).resolve()),)
     if any(path not in pins for path in required):
         raise ValueError('Required source or interpreter pin missing')
 
@@ -81,7 +95,8 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     directory.mkdir()
     released = False
     pending = record('00-pending.json', dict(
-        context=context, command=command, cwd=str(cwd), pins=pins, python_version=sys.version,
+        context=context, consent=consent, evidence_tier=limited.TIER if consent else None,
+        command=command, cwd=str(cwd), pins=pins, python_version=sys.version,
         owner=expected_account, owner_pid=os.getpid(), limits=vars(transport.LIMITS),
         archive_max=ARCHIVE_MAX, free_min=FREE_MIN, stdout_max=transport.OUTPUT_LIMIT,
         process_births_expected=2, environment_sha256=hashlib.sha256(json.dumps(
@@ -98,8 +113,16 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                         or usage['configured_processes'] != transport.LIMITS.processes
                         or usage['configured_cpu_ticks'] != 50_000_000):
                     raise ValueError('Pre-go executable or Job readback differs')
-                if admission_check() is not True:
-                    raise ValueError('Admission did not affirm release')
+                if consent is None:
+                    if admission_check() is not True:
+                        raise ValueError('Admission did not affirm release')
+                else:
+                    limited.check_scope(directory, cwd, command, expected_account,
+                                        context, vars(transport.LIMITS))
+                    with pinned_path(directory / '00-pending.json').open('rb') as manifest:
+                        limited.check_manifest(manifest.read(ARCHIVE_MAX + 1), pending,
+                                               command=command, owner=expected_account,
+                                               context=context, limits=vars(transport.LIMITS))
                 preflight()
                 if sum(p.stat().st_size for p in directory.iterdir()) + transport.OUTPUT_LIMIT + 65536 > ARCHIVE_MAX:
                     raise ValueError('Insufficient bounded archive headroom')
