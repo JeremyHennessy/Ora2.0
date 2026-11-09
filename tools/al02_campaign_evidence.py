@@ -83,7 +83,9 @@ def verify_attempt(directory, context, *, command, pins, identities, terminal_pi
     require(analysis['result'] == terminal['result']
             and analysis['result']['authenticated_execution'] is False, 'Referee verdict differs')
     return dict(index=context['index'],status='accepted',terminal_sha256=terminal_pin,
-                raw_sha256=digest(raw),journal_sha256=digest(journal),**analysis)
+                raw_sha256=digest(raw),journal_sha256=digest(journal),
+                job_accounting=dict(cpu_ticks=final['user_ticks']+final['kernel_ticks'],
+                                    wall_seconds=job['elapsed_seconds']),**analysis)
 
 
 def next_unclaimed(root, ordered, accepted_indices, *, stop):

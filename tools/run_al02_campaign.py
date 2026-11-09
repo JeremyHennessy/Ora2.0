@@ -1,5 +1,4 @@
 """One-claim campaign controller. Inactive source always refuses execution."""
-from hashlib import sha256
 import json
 from pathlib import Path
 import shutil
@@ -31,7 +30,10 @@ def run_next():
     pins = dict(binding['pins'], **{source: ADMISSION_SHA256})
     with (root/'campaign.lock').open('a+b') as lock:
         lock.seek(0)
-        msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+        try:
+            msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+        except OSError as exc:
+            raise ValueError('Campaign ownership lock unavailable') from exc
         try:
             if gate.STOP.exists():
                 return None
@@ -43,6 +45,19 @@ def run_next():
             admitted_path = root/'reviewed-admissions.json'
             admitted = ({int(key):value for key,value in
                          json.loads(admitted_path.read_bytes()).items()} if admitted_path.exists() else {})
+            for index, review in admitted.items():
+                if index not in range(128):
+                    raise ValueError('Reviewed index outside commitment')
+                committed = ordered[index]
+                expected_command = [binding['python'],'-I','-S','-B',binding['worker'],
+                                    str(root/committed['attempt']/'00-pending.json'),gate.TOKEN]
+                identity = review['identities']
+                if (review['command'] != expected_command or review['pins'] != pins
+                        or identity['binding_sha256'] != gate.BINDING_SHA256
+                        or identity['package_sha256'] != gate.PACKAGE_SHA256
+                        or identity['contexts_sha256'] != gate.CONTEXTS_SHA256
+                        or identity['authorization_sha256'] != gate.AUTHORIZATION_SHA256):
+                    raise ValueError('Reviewed campaign release identity differs')
             report = analyze_committed_panel(root,ordered,admitted)
             accepted = [r['index'] for r in report['rows'] if r['status']=='accepted']
             row = next_unclaimed(root,ordered,accepted,stop=gate.STOP)
@@ -50,8 +65,18 @@ def run_next():
                 return None
             budget = binding['budget']
             remaining = len(ordered)-len(accepted)
-            used = sum(path.stat().st_size for path in root.rglob('*') if path.is_file())
+            # The 1 GiB cap is for attempt archives. Control files already
+            # occupy disk and are reflected in the physical free-space check.
+            used = sum(path.stat().st_size
+                       for index in accepted
+                       for path in (root/ordered[index]['attempt']).rglob('*')
+                       if path.is_file())
             reservation = remaining*budget['archive_bytes_per_pair']
+            cpu = sum(r['job_accounting']['cpu_ticks'] for r in report['rows'] if r['status']=='accepted')
+            wall = sum(r['job_accounting']['wall_seconds'] for r in report['rows'] if r['status']=='accepted')
+            if (cpu + remaining*50_000_000 > budget['cpu_seconds']*10_000_000
+                    or wall + remaining*10 > budget['job_wall_seconds']):
+                raise ValueError('Campaign aggregate Job reservation exhausted')
             if (used + reservation > budget['archive_bytes'] or
                     shutil.disk_usage(root).free < reservation + custody.FREE_MIN):
                 raise ValueError('Campaign archive or disk reservation exhausted')

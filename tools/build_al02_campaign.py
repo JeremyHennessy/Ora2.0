@@ -29,7 +29,21 @@ b=raw(dict(schema='al02-campaign-binding-v1', scientific_authorization=False,
            halt_policy='halt after any unreviewed claim, STOP, integrity or capacity failure'))
 p=raw(dict(schema='al02-campaign-package-v1',scientific_authorization=False,
            binding_sha256=sha(b), controls='separate protocols; excluded'))
-for name,data in [('campaign-binding.json',b),('campaign-package.json',p)]:
+runtime_paths = [
+    'experiments/al02_campaign_admission.py', 'experiments/al02_one_pair.py',
+    'experiments/al02_one_pair_worker.py', 'experiments/al02_one_pair_custody.py',
+    'experiments/al02_depletion_suffix.py', 'tools/run_al02_campaign.py',
+    'tools/al02_campaign_evidence.py', 'tools/al02_natural_b_analysis.py',
+    'tools/build_al02_campaign.py', 'tools/qualify_al02_campaign.py',
+    'tests/test_al02_campaign_controller.py',
+    'tests/al02_release_rehearsal/campaign-controller-probe.py',
+]
+external=raw(dict(schema='al02-campaign-external-verification-v1',
+    scientific_authorization=False, binding_sha256=sha(b), package_sha256=sha(p),
+    raw_source_sha256={name:sha((ROOT/name).read_bytes()) for name in runtime_paths},
+    review_trust='Independent reviewer publication identity must be provisioned before activation'))
+for name,data in [('campaign-binding.json',b),('campaign-package.json',p),
+                  ('campaign-verification.json',external)]:
     path=OUT/name
     if path.exists():
         if path.read_bytes()!=data: raise ValueError(f'Refusing to replace {name}')
