@@ -46,6 +46,9 @@ def audit():
     binding = read(FROZEN / 'installed-binding-v2.json')
     attempt = Path(binding['attempt'])
     require(not attempt.exists(), 'Production attempt must remain absent')
+    for name in ('candidate-scientific-authorization.json',
+                 'candidate-scientific-authorization-v2.json'):
+        require(not (attempt.parent / name).exists(), f'Production authority exists: {name}')
     require(binding['scientific_authorization'] is False, 'Inactive binding required')
     require(read(FROZEN/'human-release-package-v2.json')['scientific_authorization'] is False,
             'Inactive package required')
@@ -112,6 +115,15 @@ def qualify(out):
             and pending['command'] != read(FROZEN/'installed-binding-v2.json')['proposed_command'],
             'Execution was not the identified inert command')
     require(sha(attempt/'raw.bin') == terminal['raw_sha256'], 'Raw receipt mismatch')
+    transport = read(attempt/'03-transport.json')
+    journal = attempt/'partial.jsonl'
+    require(sha(journal) == transport['partial']['sha256']
+            and journal.stat().st_size == transport['partial']['bytes'],
+            'Journal receipt mismatch')
+    job = transport['receipt']
+    require(job['accepted'] and job['eof'] and job['observed_closed']
+            and job['final']['started_processes'] == 2
+            and job['final']['active_before_close'] == 0, 'Job closure incomplete')
     require(terminal['result']['authenticated_execution'] is False, 'Expected inert outcome')
     require(results['lawful']['second_claim'] == 'FileExistsError', 'Duplicate not refused')
     require(audit() == baseline, 'Baseline changed during qualification')

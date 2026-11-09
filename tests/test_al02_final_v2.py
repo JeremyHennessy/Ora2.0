@@ -37,3 +37,28 @@ class FinalV2Tests(TestCase):
                     binding['proposed_command'], binding['proposed_relay_argv'])
                 self.assertEqual(verified['binding_sha256'],gate.V2_BINDING)
         self.assertFalse(gate.ATTEMPT.exists())
+
+
+    def test_tampered_frozen_artifacts_refused_without_repinning(self):
+        import shutil
+        original = gate.V2_DRAFT
+        binding = json.loads((original/'installed-binding-v2.json').read_bytes())
+        args = (binding['installed_file_pins'], binding['proposed_command'],
+                binding['proposed_relay_argv'])
+        names = ('installed-binding-v2.json', 'human-release-package-v2.json',
+                 'source-pins-v2.json')
+        with TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in names:
+                shutil.copyfile(original/name, root/name)
+            with patch.object(gate, 'V2_DRAFT', root):
+                for name in names:
+                    with self.subTest(name=name):
+                        path = root/name
+                        pristine = path.read_bytes()
+                        path.write_bytes(pristine + b' ')
+                        try:
+                            with self.assertRaisesRegex(ValueError, 'artifact identity differs: ' + name):
+                                gate.require_bound_worker(*args)
+                        finally:
+                            path.write_bytes(pristine)
