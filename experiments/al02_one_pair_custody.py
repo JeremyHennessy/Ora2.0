@@ -43,13 +43,17 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     """Persist one attempt at a fixed directory; admission_check must fail closed."""
     from experiments import al02_one_pair_consent as limited
 
+    from experiments import al02_campaign_admission as campaign
+    is_campaign = consent == campaign.TOKEN
+    if is_campaign and referee is not None:
+        raise ValueError('Campaign referee is selected by custody')
     directory = Path(directory)
     if consent is None:
         if not callable(admission_check):
             raise ValueError('Strict admission check required')
-    elif consent not in (limited.CONSENT, limited.SUCCESSOR) or admission_check is not None:
+    elif consent not in (limited.CONSENT, limited.SUCCESSOR, campaign.TOKEN) or admission_check is not None:
         raise ValueError('Unrecognized or mixed admission authority')
-    else:
+    elif not is_campaign:
         limited.check_scope(directory, cwd, command, expected_account, context,
                             vars(transport.LIMITS))
     cwd = pinned_path(cwd)
@@ -66,14 +70,22 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         raise ValueError('Unexpected worker interpreter or startup arguments')
     required = (python, bootstrap, worker, str(Path(__file__).resolve()),
                 str(Path(transport.__file__).resolve()))
-    if consent is not None:
+    if is_campaign:
+        required += (str(Path(campaign.__file__).resolve()),)
+    elif consent is not None:
         required += (str(Path(limited.__file__).resolve()),)
     if any(path not in pins for path in required):
         raise ValueError('Required source or interpreter pin missing')
 
     def preflight():
         identities = None
-        if consent is not None:
+        if is_campaign:
+            identities = campaign.admitted(directory,cwd,command,expected_account,context,
+                                           vars(transport.LIMITS),pins)
+            source = str(Path(__file__).with_name('al02_one_pair.py').resolve())
+            identities.update(referee_entry='experiments.al02_one_pair.verify_context',
+                              referee_sha256=pins[source])
+        elif consent is not None:
             if consent != limited.SUCCESSOR:
                 pinned_path(limited.BINDING)
             identities = limited.require_bound_worker(
@@ -161,10 +173,12 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                     if admission_check() is not True:
                         raise ValueError('Admission did not affirm release')
                 else:
-                    limited.check_scope(directory, cwd, command, expected_account,
+                    if not is_campaign:
+                        limited.check_scope(directory, cwd, command, expected_account,
                                         context, vars(transport.LIMITS))
                     with pinned_path(directory / '00-pending.json').open('rb') as manifest:
-                        limited.check_manifest(manifest.read(ARCHIVE_MAX + 1), pending,
+                        if not is_campaign:
+                            limited.check_manifest(manifest.read(ARCHIVE_MAX + 1), pending,
                                                command=command, owner=expected_account,
                                                context=context, limits=vars(transport.LIMITS))
                 recheck()
@@ -177,7 +191,8 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                     receipts.update({'01-verified.json': verified, '02-release-intent.json': intent})
                     recheck()
                 if consent is not None:
-                    limited.check_scope(directory, cwd, command, expected_account,
+                    if not is_campaign:
+                        limited.check_scope(directory, cwd, command, expected_account,
                                         context, vars(transport.LIMITS))
                 released = True
                 return intent
@@ -222,7 +237,11 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
                 raise ValueError('Partial-history journal does not match raw result')
         if chain:
             recheck()
-        result = referee(data)
+        if is_campaign:
+            from experiments.al02_one_pair import verify_context
+            result = verify_context(data,context,identities['seed'])
+        else:
+            result = referee(data)
         if chain:
             verify_receipts()
         record('04-terminal.json', dict(raw_sha256=raw_sha, result=result, **chain,

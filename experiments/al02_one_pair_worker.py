@@ -21,6 +21,7 @@ PROJECT = (
 )
 CONSENT = 'JeremyHennessy/Ora2.0#328:6740691539'
 SUCCESSOR = 'AL02-SUCCESSOR-20261109-v3'
+CAMPAIGN = 'AL02-NATURAL-B-PANEL-20261109-v1'
 SUCCESSOR_ATTEMPT = Path('D:/OraLab/reports/al02-first-depletion-successor-20261109/attempt-v3')
 
 
@@ -122,7 +123,7 @@ def read_release(journal_sha256, expected_relay):
 def main():
     if not (sys.flags.isolated and sys.flags.no_site and sys.dont_write_bytecode):
         raise ValueError('Require isolated, no-site, no-bytecode Python')
-    if len(sys.argv) != 3 or sys.argv[2] not in ('--probe', CONSENT, SUCCESSOR):
+    if len(sys.argv) != 3 or sys.argv[2] not in ('--probe', CONSENT, SUCCESSOR, CAMPAIGN):
         raise ValueError('Unexpected worker arguments')
     manifest_path = Path(sys.argv[1])
     with manifest_path.open('rb') as stream:
@@ -157,6 +158,24 @@ def main():
         return
     for path in files:
         checked_bytes(path, pins)
+    if release == CAMPAIGN:
+        from types import SimpleNamespace
+        gate_path = root/'experiments/al02_campaign_admission.py'
+        gate = {'__file__': str(gate_path)}
+        exec(compile(checked_bytes(gate_path, pins), str(gate_path), 'exec'), gate)
+        identity = gate['admitted'](manifest_path.parent, root, manifest['command'],
+                                    manifest['owner'], manifest['context'], manifest['limits'], pins)
+        if not all(manifest['release_identities'].get(k) == v for k,v in identity.items()):
+            raise PermissionError('Campaign receipt identity differs')
+        read_release(hashlib.sha256(intent_raw).hexdigest(), json.loads(verified)['bootstrap_pid'])
+        if gate['STOP'].exists():
+            raise PermissionError('STOP present')
+        def produce(_context, digest, seed, source, *, save_event):
+            return pair.produce_pair(digest, seed, source, save_event=save_event)
+        scoped = SimpleNamespace(CONTEXT=None, CONTEXT_SHA256=manifest['context'],
+                                 SEED=identity['seed'], MAX_OUTPUT=pair.MAX_OUTPUT, produce=produce)
+        produce_bound_pair(scoped, loader, manifest_path.parent/'partial.jsonl')
+        return
     if manifest['context'] != pair.CONTEXT_SHA256:
         raise ValueError('Fixed context differs')
     read_release(hashlib.sha256(intent_raw).hexdigest(), json.loads(verified)['bootstrap_pid'])

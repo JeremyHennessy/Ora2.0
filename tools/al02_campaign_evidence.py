@@ -118,6 +118,11 @@ def analyze_committed_panel(root, ordered, admissions):
         index = context['index']
         attempt = root/context['attempt']
         if index in admissions:
+            identities = admissions[index]['identities']
+            require(not identities.get('inert_execution') and
+                    identities.get('context_index') == index and
+                    identities.get('seed') == context['seed'],
+                    'Campaign scientific identity differs')
             rows.append(verify_attempt(attempt, context, **admissions[index]))
         elif (attempt/'04-terminal.json').exists():
             raise ValueError('Terminal receipt lacks independent admission')

@@ -65,6 +65,11 @@ def observe_events(world, phase, save_event, start=0):
 def produce(context, digest, seed, source_bytes, *, save_event=None):
     """Worker entry point. The external supervisor must authorize launch first."""
     check_context(context, digest, seed)
+    return produce_pair(digest, seed, source_bytes, save_event=save_event)
+
+
+def produce_pair(digest, seed, source_bytes, *, save_event=None):
+    """Shared transition driver. Its caller must admit the exact context first."""
     from experiments.al02_depletion_projection import SOURCE_SHA256
     if sha256(source_bytes.replace(b'\r\n', b'\n')).hexdigest() != SOURCE_SHA256:
         raise ValueError('Frozen source mismatch')
@@ -100,14 +105,18 @@ def produce(context, digest, seed, source_bytes, *, save_event=None):
 
 def verify(raw):
     """Consume preserved raw bytes after worker closure, independently of producer state."""
+    return verify_context(raw, CONTEXT_SHA256, SEED)
+
+
+def verify_context(raw, digest, seed):
     import json
     if type(raw) is not bytes or not 0 < len(raw) <= MAX_OUTPUT:
         raise ValueError('Raw evidence extent invalid')
     data = json.loads(raw.decode('ascii'))
     if (type(data) is not dict
             or set(data) != {'context_sha256', 'checkpoint', 'checkpoint_sha256', 'branches'}
-            or _canonical(data) != raw or data['context_sha256'] != CONTEXT_SHA256
+            or _canonical(data) != raw or data['context_sha256'] != digest
             or type(data['checkpoint']) is not str):
         raise ValueError('Raw evidence format or context invalid')
-    return verify_pair(SEED, data['checkpoint'].encode('ascii'),
+    return verify_pair(seed, data['checkpoint'].encode('ascii'),
                        data['checkpoint_sha256'], data['branches'])
