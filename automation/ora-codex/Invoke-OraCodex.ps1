@@ -97,6 +97,13 @@ try {
     $task=$previous.task
     $director=$task.id -ceq 'ORA-DIRECTOR'
     $roadmapMode=$director -and $task.item -ceq 'ROADMAP'
+    if ($config.scheduledQualification -and (!$roadmapMode -or $FakeWorker -or
+        $config.dailyLaunchLimit -isnot [long] -or $config.dailyLaunchLimit -notin 1..6 -or
+        $config.timeoutSeconds -notin 1..420 -or $config.directorAcceptance -or
+        (Get-FileHash -LiteralPath $config.codex).Hash -ine $config.codexSha256)) {
+        Save @{status='parked';reason='Scheduled scope, launch budget or executable identity differs';task=$task}
+        return
+    }
     if ($roadmapMode) {
         if (!$config.engineeringQualification -or $FakeWorker -or
             $config.worktree -cne 'D:/OraLab/src/Ora2.0-director-qualification' -or
@@ -254,6 +261,32 @@ try {
     $err=[IO.FileStream]::new($stderr,'CreateNew','Write','ReadWrite',1)
     $worker=$null
     try {
+        if ($config.scheduledQualification) {
+            # The outer controller lock serializes reservation, launch and recovery.
+            # Count attempts before Process.Start, including interrupted or failed launches.
+            $now=[DateTimeOffset]::UtcNow
+            $day=$now.ToString('yyyy-MM-dd')
+            $budgetRoot=Join-Path $StateRoot 'launch-budget'
+            if (!(Test-Path -LiteralPath $budgetRoot -PathType Container)) { throw 'Launch ledger missing' }
+            $used=@(Get-ChildItem -LiteralPath $budgetRoot -File -Filter "$day-*.json").Count
+            if ($used -ge $config.dailyLaunchLimit) {
+                $previous.nextUtc=$now.UtcDateTime.Date.AddDays(1).ToString('o')
+                $previous.reason='Daily launch budget exhausted'
+                $previous.launchBudget=@{utcDay=$day;used=$used;limit=$config.dailyLaunchLimit}
+                Save $previous
+                return
+            }
+            $budgetPath=Join-Path $budgetRoot "$day-$run.json"
+            $slot=[IO.File]::Open($budgetPath,'CreateNew','Write','Read')
+            try {
+                $bytes=[Text.Encoding]::UTF8.GetBytes((@{utc=$now.ToString('o');run=$run;
+                    stage=$task.stage;head=$task.head;requirement=$task.requirement} | ConvertTo-Json -Compress))
+                $slot.Write($bytes)
+                $slot.Flush($true)
+            } finally { $slot.Dispose() }
+            $state.launchBudget=@{utcDay=$day;used=$used+1;limit=$config.dailyLaunchLimit;reservation=$budgetPath}
+        }
+        if (Test-Path "$StateRoot/STOP") { $state.status='stopped'; Save $state; return }
         $worker=[Diagnostics.Process]::Start($info)
         $closed=$false
         $state.workerPid=$worker.Id
