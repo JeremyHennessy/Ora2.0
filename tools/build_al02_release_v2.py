@@ -30,6 +30,8 @@ for name in ('al02_one_pair_consent.py', 'al02_one_pair_custody.py'):
         pins[target] = changes[target]['after']
 inventory = encode(pins)
 base = 'a5b1cb72775314340d87b9b868c9b7232b00c78f'
+b['pre_install_source_revision'] = b.pop('installed_source_revision')
+b['project_git_blobs']['experiments/al02_one_pair_custody.py'] = 'e7515c317f011d4e5f5e4e7e74624b25d505f560'
 binding = encode(dict(b, schema='ora.al02.installed-binding.v2', candidate_commit=base,
                       installed_file_pins=pins, source_inventory_sha256=sha(inventory),
                       engineering_status='Inactive V2 proposal'))
@@ -57,3 +59,4 @@ for name, raw in files.items():
         with path.open('xb') as stream:
             stream.write(raw)
 print(sha(binding), sha(package))
+

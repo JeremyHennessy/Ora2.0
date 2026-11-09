@@ -67,8 +67,8 @@ RELEASE_DRAFT = ROOT / 'drafts/ora-al02-production-installation'
 CANDIDATE_AUTHORIZATION_SHA256 = None
 V2_DRAFT = ROOT / 'drafts/ora-al02-release-v2'
 V2_CUSTODY = '5c092df6e0bd0b8c61f2bf6556a30b3cfa7780cbaf0cd1f47b54861a9834bf47'
-V2_BINDING = '913ed1226fed8a0ac67085ce876e9e7f717a2b1edd1d32f32f6e0775bf72d3f9'
-V2_PACKAGE = '9f86091f636aeace97dac957b36d5284e3845e026531f5f5388854105483fa6a'
+V2_BINDING = 'dbf11f4ba6dfecdbc205d392176e186b9072d682d2de229a20f025e5639a3327'
+V2_PACKAGE = '380087f218147745a1e06bd51f47dfe841255415126a5d156b483654d700104e'
 V2_AUTHORIZATION_SHA256 = None
 
 
@@ -142,4 +142,3 @@ def _require_candidate(pins, command, relay_argv):
         raise ValueError('Candidate production HEAD differs')
     return dict(authorization_sha256=authority_pin,
                 binding_sha256=binding_pin, package_sha256=package_pin)
-
