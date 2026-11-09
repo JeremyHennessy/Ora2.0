@@ -1,3 +1,5 @@
+from hashlib import sha256
+import json
 from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
@@ -23,8 +25,17 @@ class LimitedConsentTests(TestCase):
         self.pins = {str(p): custody.digest(p) for p in
                      (self.python, self.worker, custody.__file__, consent.__file__,
                       job.__file__, Path(job.__file__).with_name('process_limits.py'))}
+        self.dependency = self.root / 'dependency.py'
+        self.dependency.write_text('# inert dependency', encoding='ascii')
+        self.pins[str(self.dependency)] = custody.digest(self.dependency)
+        binding = self.root / 'binding.json'
+        raw = json.dumps(dict(command=self.command, relay_argv=job.relay_argv(self.python, self.command),
+                              context=consent.CONTEXT, seed=consent.SEED, pins=self.pins)).encode()
+        binding.write_bytes(raw)
         scope = patch.multiple(consent, WORKTREE=self.root, ATTEMPT=self.attempt,
-                               WORKER=self.worker, STOP=self.root / 'STOP')
+                               WORKER=self.worker, STOP=self.root / 'STOP',
+                               BINDING=binding, BINDING_SHA256=sha256(raw).hexdigest(),
+                               APPROVED_WORKER_SHA256=None)
         scope.start()
         self.addCleanup(scope.stop)
 
@@ -53,6 +64,17 @@ class LimitedConsentTests(TestCase):
             with self.subTest(changes=changes), self.assertRaisesRegex(ValueError, reason):
                 self.run_inert(**changes)
             self.assertFalse(self.attempt.exists())
+
+    def test_approved_binding_rejects_missing_pin_and_modified_bytes(self):
+        with patch.object(consent, 'APPROVED_WORKER_SHA256', self.pins[str(self.worker)]):
+            missing = dict(self.pins)
+            del missing[str(self.dependency)]
+            with self.assertRaisesRegex(ValueError, 'required closure'):
+                self.run_inert(pins=missing)
+            consent.BINDING.write_bytes(b'{}')
+            with self.assertRaisesRegex(ValueError, 'binding manifest differs'):
+                self.run_inert()
+        self.assertFalse(self.attempt.exists())
 
     def test_stop_refuses_even_the_inert_pin(self):
         consent.STOP.touch()

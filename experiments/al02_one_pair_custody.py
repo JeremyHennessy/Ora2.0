@@ -55,8 +55,6 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     parent = pinned_path(directory.parent)
     command = tuple(command)
     pins = dict(pins)
-    if consent is not None:
-        limited.require_bound_worker(pins)
     environment = dict(os.environ)
     if len(command) < 5:
         raise ValueError('Explicit worker script required')
@@ -73,6 +71,9 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
         raise ValueError('Required source or interpreter pin missing')
 
     def preflight():
+        if consent is not None:
+            pinned_path(limited.BINDING)
+            limited.require_bound_worker(pins, command, transport.relay_argv(python, command))
         if account() != expected_account or shutil.disk_usage(parent).free < FREE_MIN:
             raise ValueError('Account or free-space admission failed')
         for path, expected in pins.items():
