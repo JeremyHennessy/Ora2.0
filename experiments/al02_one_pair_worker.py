@@ -20,6 +20,8 @@ PROJECT = (
     'experiments.causal_genealogy_audit',
 )
 CONSENT = 'JeremyHennessy/Ora2.0#328:6740691539'
+SUCCESSOR = 'AL02-SUCCESSOR-20261109-v3'
+SUCCESSOR_ATTEMPT = Path('D:/OraLab/reports/al02-first-depletion-successor-20261109/attempt-v3')
 
 
 def checked_bytes(path, pins):
@@ -120,7 +122,7 @@ def read_release(journal_sha256, expected_relay):
 def main():
     if not (sys.flags.isolated and sys.flags.no_site and sys.dont_write_bytecode):
         raise ValueError('Require isolated, no-site, no-bytecode Python')
-    if len(sys.argv) != 3 or sys.argv[2] not in ('--probe', CONSENT):
+    if len(sys.argv) != 3 or sys.argv[2] not in ('--probe', CONSENT, SUCCESSOR):
         raise ValueError('Unexpected worker arguments')
     manifest_path = Path(sys.argv[1])
     with manifest_path.open('rb') as stream:
@@ -134,11 +136,12 @@ def main():
     root = Path(manifest['cwd'])
     if Path.cwd() != root or Path(__file__).parent.parent != root:
         raise ValueError('Worker root differs')
-    if sys.argv[2] == CONSENT:
-        expected = [sys.executable, '-I', '-S', '-B', __file__, sys.argv[1], CONSENT]
+    release = sys.argv[2]
+    if release != '--probe':
+        expected = [sys.executable, '-I', '-S', '-B', __file__, sys.argv[1], release]
         environment = hashlib.sha256(json.dumps(dict(os.environ), sort_keys=True).encode()).hexdigest()
         if (manifest['command'] != expected or manifest['environment_sha256'] != environment
-                or manifest['consent'] != CONSENT
+                or manifest['consent'] != release
                 or manifest['evidence_tier'] != 'LOW_ASSURANCE_EXPLORATORY'):
             raise ValueError('Worker command or environment differs')
         intent_raw = (manifest_path.parent / '02-release-intent.json').read_bytes()
@@ -158,7 +161,8 @@ def main():
         raise ValueError('Fixed context differs')
     read_release(hashlib.sha256(intent_raw).hexdigest(), json.loads(verified)['bootstrap_pid'])
     ora = Path('D:/OraLab')
-    attempt = ora / 'reports/al02-first-depletion-exploratory-20261109/attempt-6740691539'
+    attempt = (SUCCESSOR_ATTEMPT if release == SUCCESSOR else
+               ora / 'reports/al02-first-depletion-exploratory-20261109/attempt-6740691539')
     if (manifest_path != attempt / '00-pending.json'
             or root != ora / 'src/Ora2.0-al02-first-depletion-20261109'
             or manifest['owner'] != 'hennessydesktop\\hennessy'

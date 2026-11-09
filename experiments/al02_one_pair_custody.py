@@ -47,7 +47,7 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     if consent is None:
         if not callable(admission_check):
             raise ValueError('Strict admission check required')
-    elif consent != limited.CONSENT or admission_check is not None:
+    elif consent not in (limited.CONSENT, limited.SUCCESSOR) or admission_check is not None:
         raise ValueError('Unrecognized or mixed admission authority')
     else:
         limited.check_scope(directory, cwd, command, expected_account, context,
@@ -74,7 +74,8 @@ def transaction(directory, *, command, cwd, pins, expected_account, context,
     def preflight():
         identities = None
         if consent is not None:
-            pinned_path(limited.BINDING)
+            if consent != limited.SUCCESSOR:
+                pinned_path(limited.BINDING)
             identities = limited.require_bound_worker(
                 pins, command, transport.relay_argv(python, command))
             if identities is not None:

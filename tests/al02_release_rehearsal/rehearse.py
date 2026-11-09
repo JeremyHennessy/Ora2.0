@@ -14,14 +14,21 @@ out=Path(sys.argv[1]).resolve()
 helpers = root / 'tests/al02_release_rehearsal'
 real_gate = c.require_bound_worker
 frozen_scope = {name: getattr(c, name) for name in (
-    'WORKTREE', 'ATTEMPT', 'WORKER', 'STOP', 'CONSENT', 'CONTEXT', 'SEED',
-    'V2_DRAFT', 'V2_BINDING', 'V2_PACKAGE', 'CANDIDATE_WORKER')}
-final = json.loads((c.V2_DRAFT / 'installed-binding-v2.json').read_bytes())
-final_authority = out / 'candidate-scientific-authorization-v2.json'
+    'WORKTREE', 'WORKER', 'STOP', 'CONTEXT', 'SEED',
+    'V3_DRAFT', 'V3_BINDING', 'V3_PACKAGE', 'V3_WORKER')}
+final = json.loads((c.V3_DRAFT / 'installed-binding-v3.json').read_bytes())
+successor_attempt = c.SUCCESSOR_ATTEMPT
+assert not successor_attempt.exists()
+final_authority = out / 'candidate-scientific-authorization-v3.json'
 final_authority.write_bytes(_canonical(dict(
-    schema='AL02-CANDIDATE-ONE-ATTEMPT-v2', worker_sha256=c.CANDIDATE_WORKER,
-    binding_sha256=c.V2_BINDING, package_sha256=c.V2_PACKAGE,
-    seed=str(c.SEED), attempt=str(c.ATTEMPT), owner=c.OWNER)))
+    schema='AL02-CANDIDATE-ONE-ATTEMPT-v3', worker_sha256=c.V3_WORKER,
+    binding_sha256=c.V3_BINDING, package_sha256=c.V3_PACKAGE,
+    seed=str(c.SEED), attempt=str(successor_attempt), owner=c.OWNER)))
+read_pinned = c._read_pinned_record
+def read_test_authority(path, digest):
+    if path == successor_attempt.parent / final_authority.name:
+        path = final_authority
+    return read_pinned(path, digest)
 
 final_authority_pin = hashlib.sha256(final_authority.read_bytes()).hexdigest()
 assert out.is_dir() and not (out/'lawful').exists()
@@ -98,7 +105,7 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
         config = dict(command=command,pins=local_pins,scope=dict(
             WORKTREE=str(root), ATTEMPT=str(attempt), WORKER=str(shim), STOP=str(stop),
             CONSENT=authority,CONTEXT=context,SEED=42,BINDING=str(old_binding),
-            V2_DRAFT=str(stage),CANDIDATE_WORKER=sha(shim),V2_BINDING=sha(binding),
+            V2_DRAFT=str(stage),V2_CUSTODY=sha(Path(custody.__file__)),CANDIDATE_WORKER=sha(shim),V2_BINDING=sha(binding),
             V2_PACKAGE=sha(package),V2_AUTHORIZATION_SHA256=sha(auth)))
         path=stage/'race.json'
         path.write_bytes(_canonical(config))
@@ -141,7 +148,7 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
     referee.__name__ = 'verify'
     with patch.multiple(c,WORKTREE=root,ATTEMPT=attempt,WORKER=shim,STOP=stop,
                         CONSENT=authority,CONTEXT=context,SEED=42,BINDING=old_binding,
-                        V2_DRAFT=stage,CANDIDATE_WORKER=sha(shim),
+                        V2_DRAFT=stage,V2_CUSTODY=sha(Path(custody.__file__)),CANDIDATE_WORKER=sha(shim),
                         V2_BINDING=sha(binding),V2_PACKAGE=sha(package),
                         V2_AUTHORIZATION_SHA256=None if name=='no-authority' else sha(auth)), \
          patch.multiple(pair,SEED=42,CONTEXT_SHA256=context):
@@ -176,8 +183,8 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
                 raise ValueError('Unexpected inert evidence destination')
             if tuple(actual_command[4:]) != (str(shim), str(attempt/'00-pending.json'), authority):
                 raise ValueError('Scientific command prohibited')
-            with patch.multiple(c, **frozen_scope, BINDING=out/'unused',
-                                V2_AUTHORIZATION_SHA256=final_authority_pin):
+            with patch.multiple(c, **frozen_scope, _read_pinned_record=read_test_authority,
+                                V3_AUTHORIZATION_SHA256=final_authority_pin):
                 identity = real_gate(final['installed_file_pins'], final['proposed_command'],
                                      final['proposed_relay_argv'])
             return dict(identity, source_inventory_sha256=final['source_inventory_sha256'],
@@ -225,8 +232,8 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
                       ('00-pending.json','01-verified.json','02-release-intent.json','04-terminal.json')]
         assert all(x == identities[0] for x in identities)
         assert identities[0]['authorization_sha256'] == final_authority_pin
-        assert identities[0]['binding_sha256'] == frozen_scope['V2_BINDING']
-        assert identities[0]['package_sha256'] == frozen_scope['V2_PACKAGE']
+        assert identities[0]['binding_sha256'] == frozen_scope['V3_BINDING']
+        assert identities[0]['package_sha256'] == frozen_scope['V3_PACKAGE']
         assert identities[0]['source_inventory_sha256'] == final['source_inventory_sha256']
         assert identities[0]['inert_execution']['command'] == command
         terminal = json.loads((attempt/'04-terminal.json').read_bytes())
@@ -241,5 +248,6 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
     assert not (stage/'unexpected').exists()
     assert attempt.exists()==(name in ('lawful','forged','interrupt','auth-swap','pending-fail','receipt-swap','late-stop','final-auth-swap'))
 assert original_attempt.exists() == original_attempt_existed
+assert not successor_attempt.exists()
 (out/'results.json').write_text(json.dumps(results,indent=2))
 print(json.dumps(results,indent=2))

@@ -108,3 +108,40 @@ class RestoreEntryTests(TestCase):
         ):
             with self.subTest(error=error), self.assertRaisesRegex(ValueError, error):
                 restore(raw, pin, seed, role)
+
+
+    def test_consumed_prefix_reconstruction(self):
+        import json
+        from experiments.al02_depletion_suffix import _verify_events
+        path = Path('D:/OraLab/reports/al02-first-depletion-exploratory-20261109/'
+                    'attempt-6740691539/partial.jsonl')
+        journal = path.read_bytes()
+        self.assertEqual(sha256(journal).hexdigest(),
+                         '1a7c1286e2f3b348538d31ef3ce9647fc9b2a679f70ad864057495a15d2c7990')
+        rows = [json.loads(row) for row in journal.splitlines()]
+        self.assertTrue(all(row['phase'] == 'prefix' for row in rows))
+        events = [row['event'] for row in rows]
+        self.assertEqual(events[0], self.state['events'][0])
+        seed = 8195177122164069225
+        config = dict(self.config, seed=seed)
+        initial = dict(config_sha256=sha256(_canonical(config)).hexdigest(), tick=0,
+                       last_actor=-1, next_organism_id=1,
+                       organisms=[dict(organism_id=0, tape=[[op,i] for i,op in enumerate((0,2,3,4))],
+                                       energy=4, generation=0, parent_id=None, born_tick=0,
+                                       pc=0, read_head=0, nursery=[], nursery_write_ids=[])],
+                       free_units=list(range(4,256)), food_a=12, food_b=18, escrow_b=0,
+                       heat=0, events=events[:1], births=[], counters=dict.fromkeys(COUNTERS,0))
+        initial['counters']['max_population_seen'] = 1
+        _, raw = _verify_events(initial, Random(seed), events[1:], 82)
+        pin = sha256(raw).hexdigest()
+        state, rng = restore_checkpoint(raw, pin)
+        self.assertEqual((state['tick'], state['food_a'], state['food_b'], len(state['organisms'])),
+                         (82,0,18,5))
+        for role in ('accessible','sequestered'):
+            obj = producer.EscrowContinuation.restore(raw,pin,seed,role)
+            self.assertEqual(obj.rng.getstate(),rng.getstate())
+            self.assertEqual(obj.events, events)
+            self.assertEqual(obj.assert_invariants(),(0,0))
+            self.assertEqual(obj.food_b + obj.escrow_b,18)
+            self.assertEqual(obj.tick_count,82)
+        print(f'reconstructed historical checkpoint sha256={pin}; producer commitment unavailable')

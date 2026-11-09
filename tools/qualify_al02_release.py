@@ -13,6 +13,7 @@ FROZEN = Path('D:/OraLab/drafts/ora-al02-release-v2')
 PRODUCTION = Path('D:/OraLab/src/Ora2.0-al02-first-depletion-20261109')
 V1 = FROZEN.with_name('ora-al02-production-installation')
 CONSUMED = Path('D:/OraLab/reports/ora-al02-v2-scientific-release-20261109')
+SUCCESSOR = FROZEN.with_name('ora-al02-release-v3')
 RESTORE = 'experiments/al02_depletion_producer.py'
 REPAIRED_RESTORE = '266677b97c920a11359f818943c17aef240578b8cf58220c14d9d5333a1a0279'
 HELPERS = ROOT / 'tests/al02_release_rehearsal'
@@ -74,25 +75,42 @@ def audit():
         path = Path(target)
         expected = activation['consent_after'] if path.name.endswith('_consent.py') else pair['after']
         require(sha(path) == expected, f'Consumed production module changed: {path}')
-        require(sha(ROOT / path.relative_to(PRODUCTION)) == pair['after'],
-                f'Qualification module differs: {path}')
+    proposal = read(SUCCESSOR/'installed-binding-v3.json')
+    external = read(SUCCESSOR/'installation-verification-v3.json')
+    package = read(SUCCESSOR/'human-release-package-v3.json')
+    require(all(sha(SUCCESSOR/name)==pin for name,pin in external['artifact_sha256'].items()),
+            'Successor artifact hashes differ')
+    require(external['artifact_sha256'] == {
+        **package['artifact_sha256'],
+        'human-release-package-v3.json': sha(SUCCESSOR/'human-release-package-v3.json')},
+        'Successor package links differ')
+    require(not Path(proposal['attempt']).exists()
+            and not (Path(proposal['attempt']).parent/'candidate-scientific-authorization-v3.json').exists(),
+            'Successor production scope must remain unused')
+    require(proposal['seed']==binding['seed'] and proposal['limits']==binding['limits'],
+            'Successor scientific scope differs')
+    require(all(record['scientific_authorization'] is False
+                for record in (proposal,external,package)), 'Successor must be inactive')
+    for target, pair in external['replacements'].items():
+        path = Path(target)
+        require(sha(path)==pair['before_sha256'] and
+                sha(ROOT/path.relative_to(PRODUCTION))==pair['after_sha256'],
+                f'Successor replacement differs: {target}')
     local = {}
     for target, expected in binding['installed_file_pins'].items():
         path = Path(target)
         require(sha(path) == expected, f'Consumed production pin changed: {path}')
+        successor_pin = proposal['installed_file_pins'][target]
         if path.is_relative_to(PRODUCTION):
-            relative = path.relative_to(PRODUCTION).as_posix()
-            path = ROOT / relative
-            if relative == RESTORE:
-                expected = REPAIRED_RESTORE
-        require(sha(path) == expected, f'Repair rehearsal source inventory mismatch: {path}')
-        local[str(path)] = expected
+            path = ROOT/path.relative_to(PRODUCTION)
+        require(sha(path)==successor_pin, f'Successor source pin differs: {path}')
+        local[str(path)] = successor_pin
     for name in ('installed-binding-v1.json', 'human-release-package-v1.json'):
         expected = {'installed-binding-v1.json':'4da179bad479aadaec04d96483a6032bb33187593abc0ed45cd1493f0ed1a7fb',
                     'human-release-package-v1.json':'9f01cd5355961fa769efd38fc5cb956fb0abbdfa59cf6423169c4cc5e7843208'}[name]
         require(sha(V1/name) == expected, f'V1 artifact changed: {name}')
     return dict(head=git('rev-parse', 'HEAD'), pins=local, artifacts=EXPECTED,
-                consumed_attempt=str(attempt), historical_artifacts_only=True,
+                consumed_attempt=str(attempt), successor_artifacts=external['artifact_sha256'],
                 repaired_restore_sha256=REPAIRED_RESTORE, scientific_authorization=False,
                 helpers={path.name: sha(path) for path in sorted(HELPERS.glob('*.py'))})
 
@@ -104,6 +122,9 @@ def run(out, name, args, *, source=None):
 
 def qualify(out):
     baseline = audit()
+    run(out, 'successor-rebuild.log', [str(ROOT/'tools/build_al02_release_v3.py'),str(out/'rebuilt')])
+    for name in (*baseline['successor_artifacts'], 'installation-verification-v3.json'):
+        require(sha(out/'rebuilt'/name)==sha(SUCCESSOR/name), f'Successor rebuild differs: {name}')
     run(out, 'regressions.log', ['-m', 'unittest', '-v', *(f'tests.{n}' for n in TESTS)])
     # Reintroduce the exact historical failure in memory, without changing any file.
     mutation = r'''
@@ -139,10 +160,10 @@ main(module=test_al02_restore_entry, argv=['mutation',
     attempt = rehearsal/'lawful/lawful'
     terminal = read(attempt/'04-terminal.json')
     identities = terminal['release_identities']
-    for field, name in [('source_inventory_sha256', 'source-pins-v2.json'),
-                        ('binding_sha256', 'installed-binding-v2.json'),
-                        ('package_sha256', 'human-release-package-v2.json')]:
-        require(identities[field] == EXPECTED[name], f'Terminal {field} differs')
+    for field, name in [('source_inventory_sha256', 'source-pins-v3.json'),
+                        ('binding_sha256', 'installed-binding-v3.json'),
+                        ('package_sha256', 'human-release-package-v3.json')]:
+        require(identities[field] == baseline['successor_artifacts'][name], f'Terminal {field} differs')
     for name in ('00-pending.json','01-verified.json','02-release-intent.json','03-transport.json'):
         path = attempt/name
         require(sha(path) == terminal['receipt_sha256'][name], f'Receipt hash differs: {name}')
@@ -165,7 +186,7 @@ main(module=test_al02_restore_entry, argv=['mutation',
     require(terminal['result']['authenticated_execution'] is False, 'Expected inert outcome')
     require(results['lawful']['second_claim'] == 'FileExistsError', 'Duplicate not refused')
     require(audit() == baseline, 'Baseline changed during qualification')
-    return dict(status='PASS', scope='isolated restore repair and historical V2 inert engineering only',
+    return dict(status='PASS', scope='inactive V3 inert engineering only',
                 scientific_entry='both initialized with zero ticks', future_release_qualified=False, baseline=baseline,
                 terminal_sha256=sha(attempt/'04-terminal.json'), results_sha256=sha(rehearsal/'results.json'),
                 release_identities=identities)
