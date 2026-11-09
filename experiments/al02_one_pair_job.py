@@ -27,7 +27,7 @@ class PairJob(Job):
                     active_before_close=counters.active_processes)
 
 
-def run(command, cwd):
+def run(command, cwd, *, before_go=None, capture=None, environment=None):
     """Return raw bounded stdout and lower-assurance receipts. Never retries."""
     if os.name != 'nt' or not command or any(type(x) is not str or not x for x in command):
         raise ValueError('Explicit Windows worker command required')
@@ -35,6 +35,7 @@ def run(command, cwd):
     process = reader = None
     overflow, eof = threading.Event(), threading.Event()
     data = bytearray()
+    capture_failed = threading.Event()
     reason = None
     start = time.monotonic()
 
@@ -45,7 +46,13 @@ def run(command, cwd):
                 eof.set()
                 return
             remaining = OUTPUT_LIMIT - len(data)
-            data.extend(chunk[:remaining])
+            kept = chunk[:remaining]
+            data.extend(kept)
+            if capture is not None and kept:
+                try:
+                    capture(kept)
+                except OSError:
+                    capture_failed.set()
             if len(chunk) > remaining:
                 overflow.set()
 
@@ -58,15 +65,26 @@ def run(command, cwd):
         process = subprocess.Popen(
             [python, '-I', '-S', '-B', str(bootstrap), '--bootstrap', json.dumps(command)],
             cwd=cwd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT, close_fds=True, shell=False)
+            stderr=subprocess.STDOUT, close_fds=True, shell=False, env=environment)
         job.assign(process)
         reader = threading.Thread(target=drain, daemon=True)
         reader.start()
+        if before_go is not None:
+            before_go(python, bootstrap, process, job.usage())
+        if before_go is not None:
+            settled = job.usage()
+            if (settled['started_processes'] != 1 or settled['active_before_close'] != 1
+                    or settled['user_ticks'] + settled['kernel_ticks'] >= 50_000_000):
+                raise RuntimeError('Job census or CPU budget failed before go')
+        if time.monotonic() - start >= LIMITS.wall_seconds:
+            raise TimeoutError('Job deadline reached before go')
         process.stdin.write(b'go\n')
         process.stdin.close()
         while True:
             usage = job.usage()
-            if overflow.is_set():
+            if capture_failed.is_set():
+                reason = 'raw_capture_failed'
+            elif overflow.is_set():
                 reason = 'output_overflow'
             elif time.monotonic() - start >= LIMITS.wall_seconds:
                 reason = 'wall_timeout'
@@ -83,6 +101,8 @@ def run(command, cwd):
         process.wait(timeout=5)
         reader.join(timeout=5)
         final = job.usage()
+        if reason is None and capture_failed.is_set():
+            reason = 'raw_capture_failed'
         if reason is None and overflow.is_set():
             reason = 'output_overflow'
         owned = sorted(set(job.pids() + [process.pid]))
