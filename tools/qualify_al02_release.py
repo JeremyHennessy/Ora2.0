@@ -21,7 +21,7 @@ TESTS = (
     'test_al02_final_v2', 'test_al02_candidate_binding', 'test_al02_one_pair_consent',
     'test_al02_one_pair_release', 'test_al02_partial_history', 'test_al02_one_pair_custody',
     'test_al02_depletion_integration', 'test_al02_depletion_checkpoint',
-    'test_al02_depletion_producer', 'test_al02_restore_entry',
+    'test_al02_depletion_producer', 'test_al02_restore_entry', 'test_al02_successor_worker_entry',
 )
 EXPECTED = {
     'source-pins-v2.json': '56c343f5824ef86497db5f4cb2702431c446799e3756a0983269d6d2e1c79e7c',
@@ -171,7 +171,7 @@ main(module=test_al02_restore_entry, argv=['mutation',
     pending = read(attempt/'00-pending.json')
     require(pending['command'] == identities['inert_execution']['command']
             and pending['command'][4] == str(rehearsal/'inert-worker.py')
-            and pending['command'] != read(FROZEN/'installed-binding-v2.json')['proposed_command'],
+            and pending['command'] != read(SUCCESSOR/'installed-binding-v3.json')['proposed_command'],
             'Execution was not the identified inert command')
     require(sha(attempt/'raw.bin') == terminal['raw_sha256'], 'Raw receipt mismatch')
     transport = read(attempt/'03-transport.json')

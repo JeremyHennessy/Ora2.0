@@ -43,7 +43,9 @@ for name in ('approved_worker_sha256','prior_release_sha256','candidate_binding_
 inventory=encode(pins)
 b.update(schema='ora.al02.installed-binding.v3', candidate_commit='01b4ae6f7b468d5924322816da1d6c4520886011',
          attempt=str(attempt),candidate_worker_sha256=pins[command[4]],
-         source_inventory_sha256=sha(inventory), engineering_status='Inactive successor proposal')
+         source_inventory_sha256=sha(inventory), engineering_status='Inactive successor proposal',
+         one_attempt_policy='Atomic directory claim consumes attempt; no retry',
+         precondition='Separate approval for installation and exact successor scientific authorization')
 binding=encode(b)
 package=encode(dict(schema='AL02-INACTIVE-HUMAN-RELEASE-PACKAGE-v3',candidate=b['candidate_commit'],
     production_head=b['production_git_head'],seed=str(b['seed']),attempt=str(attempt),
