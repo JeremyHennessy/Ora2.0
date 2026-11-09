@@ -9,20 +9,20 @@ from experiments import al02_one_pair_custody as custody
 from tools.al02_campaign_evidence import analyze_committed_panel, next_unclaimed
 
 # Downstream identity, outside the binding that the admission module embeds.
-ADMISSION_SHA256 = '67e323c77f4d42ad6f86c04fa84da634d49f46e7cc8388d93c0d19fbb5a55e61'
+ADMISSION_SHA256 = '536ec33a2a2901e5dc226ad8146781caf6a4a45921867897988b9e90acf9cd98'
 
 
-def pilot_admissions(root, ordered, binding, checkout, pins, *, review=False):
+def pilot_admissions(root, ordered, binding, checkout, pins, *, review=False, continuation=False):
     """Derive lower-assurance admission inputs from custody, with no review ledger."""
     admitted = {}
-    for item in ordered[:8]:
+    for item in (ordered[8:] if continuation else ordered[:8]):
         directory = root/item['attempt']
         terminal = directory/'04-terminal.json'
         if not terminal.exists():
             continue
         command = [binding['python'],'-I','-S','-B',binding['worker'],
                    str(directory/'00-pending.json'),gate.TOKEN]
-        identity = (gate.pilot_identity(item) if review else
+        identity = ((gate.continuation_identity(item) if continuation else gate.pilot_identity(item)) if review else
                     gate.admitted(directory,checkout,command,gate.OWNER,
                                   item['context_sha256'],gate.LIMITS,pins))
         source_path = str(checkout/'experiments/al02_one_pair.py')
@@ -33,38 +33,56 @@ def pilot_admissions(root, ordered, binding, checkout, pins, *, review=False):
     return admitted
 
 
-def review_pilot():
+def review_pilot(*, continuation=False):
     """Read-only batch reanalysis, with missing outcomes retained."""
     from statistics import mean, stdev
-    binding = gate.pilot_binding()
+    binding = gate.continuation_binding() if continuation else gate.pilot_binding()
     ordered = gate.inventory()
-    root = custody.pinned_path(gate.PILOT_DESTINATION)
+    root = custody.pinned_path(gate.CONTINUATION_DESTINATION if continuation else gate.PILOT_DESTINATION)
     checkout = custody.pinned_path(gate.CHECKOUT)
     source = str(checkout/'experiments/al02_campaign_admission.py')
     pins = dict(binding['pins'], **{source: ADMISSION_SHA256})
     for path, expected in pins.items():
         if custody.digest(path) != expected:
             raise ValueError(f'Pilot review source differs: {path}')
-    admissions = pilot_admissions(root, ordered, binding, checkout, pins, review=True)
-    rows = analyze_committed_panel(root, ordered, admissions)['rows'][:8]
+    admissions = pilot_admissions(root, ordered, binding, checkout, pins, review=True, continuation=continuation)
+    rows = analyze_committed_panel(root, ordered, admissions)['rows']
+    rows = rows[8:] if continuation else rows[:8]
     differences = [row['result']['contrast'] for row in rows if row['status']=='accepted']
-    complete = len(differences)==8
+    count = 120 if continuation else 8
+    complete = len(differences)==count
     return dict(scope='supervised lower assurance; batch review required', rows=rows,
-                committed=8, accepted=len(differences), distribution=differences,
+                batch_review_proposals=[
+                    batch_review(admissions,start)
+                    for start in range(8,128,8)
+                    if continuation and all(row['status']=='accepted'
+                                            for row in rows[start-8:start])
+                ],
+                committed=count, accepted=len(differences), distribution=differences,
                 all_context_mean=mean(differences) if complete else None,
-                all_context_se=stdev(differences)/8**0.5 if complete else None,
+                all_context_se=stdev(differences)/count**0.5 if complete else None,
                 observed_only_mean=mean(differences) if differences else None)
 
 
-def run_next(*, pilot=False):
+def batch_review(admissions, start):
+    return dict(schema='al02-continuation-batch-review-v1', start=start,
+                evidence=[dict(admissions[i]['identities'],
+                               terminal_sha256=admissions[i]['terminal_pin'])
+                          for i in range(start,start+8)])
+
+
+def run_next(*, pilot=False, continuation=False):
+    if pilot and continuation:
+        raise ValueError('Conflicting supervised scopes')
     # No writes, including lock creation, before authority is present.
-    authority_pin = gate.PILOT_AUTHORIZATION_SHA256 if pilot else gate.AUTHORIZATION_SHA256
+    authority_pin = (gate.CONTINUATION_AUTHORIZATION_SHA256 if continuation else
+                     gate.PILOT_AUTHORIZATION_SHA256 if pilot else gate.AUTHORIZATION_SHA256)
     if authority_pin is None:
         raise ValueError('Campaign scientific authorization absent')
     import msvcrt
-    binding = gate.pilot_binding() if pilot else gate.binding()
+    binding = gate.continuation_binding() if continuation else gate.pilot_binding() if pilot else gate.binding()
     ordered = gate.inventory()
-    root = custody.pinned_path(gate.PILOT_DESTINATION if pilot else gate.DESTINATION)
+    root = custody.pinned_path(gate.CONTINUATION_DESTINATION if continuation else gate.PILOT_DESTINATION if pilot else gate.DESTINATION)
     checkout = custody.pinned_path(gate.CHECKOUT)
     source = str(checkout/'experiments/al02_campaign_admission.py')
     if Path(gate.__file__) != Path(source) or custody.digest(source) != ADMISSION_SHA256:
@@ -90,10 +108,10 @@ def run_next(*, pilot=False):
             admitted_path = root/'reviewed-admissions.json'
             admitted = ({int(key):value for key,value in
                          json.loads(admitted_path.read_bytes()).items()} if admitted_path.exists() else {})
-            if pilot:
+            if pilot or continuation:
                 if admitted_path.exists():
                     raise ValueError('Strict review ledger is outside pilot scope')
-                admitted = pilot_admissions(root, ordered, binding, checkout, pins)
+                admitted = pilot_admissions(root, ordered, binding, checkout, pins, continuation=continuation)
             for index, review in admitted.items():
                 if index not in range(128):
                     raise ValueError('Reviewed index outside commitment')
@@ -102,16 +120,23 @@ def run_next(*, pilot=False):
                                     str(root/committed['attempt']/'00-pending.json'),gate.TOKEN]
                 identity = review['identities']
                 if (review['command'] != expected_command or review['pins'] != pins
-                        or identity['binding_sha256'] != gate.BINDING_SHA256
-                        or identity['package_sha256'] != gate.PACKAGE_SHA256
+                        or identity['binding_sha256'] != (gate.CONTINUATION_BINDING_SHA256 if continuation else gate.BINDING_SHA256)
+                        or identity['package_sha256'] != (gate.CONTINUATION_PACKAGE_SHA256 if continuation else gate.PACKAGE_SHA256)
                         or identity['contexts_sha256'] != gate.CONTEXTS_SHA256
                         or identity['authorization_sha256'] != authority_pin):
                     raise ValueError('Reviewed campaign release identity differs')
             report = analyze_committed_panel(root,ordered,admitted)
             accepted = [r['index'] for r in report['rows'] if r['status']=='accepted']
-            row = next_unclaimed(root,ordered,accepted,stop=gate.STOP)
+            row = next_unclaimed(root,ordered,accepted,stop=gate.STOP,start=8 if continuation else 0)
             if row is None or (pilot and row['index'] >= 8):
                 return None
+            if continuation:
+                for start in range(8,row['index']-7,8):
+                    path = root/f'batch-{start:03d}-review.json'
+                    if not path.is_file():
+                        raise ValueError('Independent batch review absent')
+                    if json.loads(path.read_bytes()) != batch_review(admitted,start):
+                        raise ValueError('Independent batch review evidence differs')
             budget = binding['budget']
             remaining = binding['budget']['pairs']-len(accepted)
             # The 1 GiB cap is for attempt archives. Control files already
@@ -148,6 +173,9 @@ if __name__ == '__main__':
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--supervised-eight', action='store_true')
     mode.add_argument('--review-supervised-eight', action='store_true')
+    mode.add_argument('--continuation', action='store_true')
+    mode.add_argument('--review-continuation', action='store_true')
     args = parser.parse_args()
-    print(json.dumps(review_pilot() if args.review_supervised_eight
-                     else run_next(pilot=args.supervised_eight)))
+    print(json.dumps(review_pilot(continuation=args.review_continuation)
+                     if args.review_supervised_eight or args.review_continuation
+                     else run_next(pilot=args.supervised_eight, continuation=args.continuation)))

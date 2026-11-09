@@ -55,10 +55,12 @@ def binding():
 def admitted(directory, cwd, command, owner, context, limits, pins):
     if STOP.exists():
         raise ValueError('STOP present')
+    later = (directory.parent == CONTINUATION_DESTINATION
+             and CONTINUATION_AUTHORIZATION_SHA256 is not None)
     pilot = directory.parent == PILOT_DESTINATION
-    b = pilot_binding() if pilot else binding()
-    root = PILOT_DESTINATION if pilot else DESTINATION
-    rows = inventory()[:8] if pilot else inventory()
+    b = continuation_binding() if later else (pilot_binding() if pilot else binding())
+    root = CONTINUATION_DESTINATION if later else (PILOT_DESTINATION if pilot else DESTINATION)
+    rows = inventory()[8:] if later else (inventory()[:8] if pilot else inventory())
     candidates = [row for row in rows if root/row['attempt'] == directory]
     if len(candidates) != 1:
         raise ValueError('Campaign destination differs')
@@ -69,6 +71,8 @@ def admitted(directory, cwd, command, owner, context, limits, pins):
             or limits != LIMITS or list(command) != expected
             or not b['pins'].items() <= pins.items()):
         raise ValueError('Campaign admission scope differs')
+    if later:
+        return continuation_identity(row)
     authority_pin = PILOT_AUTHORIZATION_SHA256 if pilot else AUTHORIZATION_SHA256
     if authority_pin is None:
         raise ValueError('Campaign scientific authorization absent')
@@ -115,3 +119,48 @@ def pilot_identity(row):
     return dict(authorization_sha256=PILOT_AUTHORIZATION_SHA256,binding_sha256=BINDING_SHA256,
                 package_sha256=PACKAGE_SHA256,contexts_sha256=CONTEXTS_SHA256,
                 pilot_binding_sha256=PILOT_BINDING_SHA256,context_index=row['index'],seed=row['seed'])
+
+CONTINUATION_DESTINATION = DESTINATION
+CONTINUATION_AUTHORIZATION_SHA256 = None
+CONTINUATION_BINDING_SHA256 = 'a7f477b626a96a0d26f822473e88ebea585e1ce2d74d6596548cb2ff26fd1a5d'
+CONTINUATION_PACKAGE_SHA256 = 'c9ffccf5dead5e6693b5fedfa3d2d42923e94d3ef44b0e221304140ce6500462'
+
+
+def continuation_spec():
+    base = binding()
+    return dict(schema='al02-supervised-continuation-v1', scientific_authorization=False,
+                campaign_binding_sha256=BINDING_SHA256, campaign_package_sha256=PACKAGE_SHA256,
+                contexts_sha256=CONTEXTS_SHA256, destination=str(CONTINUATION_DESTINATION),
+                batches=[list(range(start,start+8)) for start in range(8,128,8)],
+                budget=dict(base['budget'],pairs=120,instructions=144000,cpu_seconds=600,
+                            job_wall_seconds=1200,archive_bytes=120*8388608))
+
+
+def continuation_binding():
+    b = read_pinned(ARTIFACTS/'continuation-binding.json', CONTINUATION_BINDING_SHA256)
+    p = read_pinned(ARTIFACTS/'continuation-package.json', CONTINUATION_PACKAGE_SHA256)
+    if b != continuation_spec() or p != dict(
+        schema='al02-supervised-continuation-package-v1', scientific_authorization=False,
+        binding_sha256=CONTINUATION_BINDING_SHA256, contexts_sha256=CONTEXTS_SHA256
+    ):
+        raise ValueError('Continuation binding scope differs')
+    return dict(binding(), destination=b['destination'], budget=b['budget'])
+
+
+def continuation_identity(row):
+    if CONTINUATION_AUTHORIZATION_SHA256 is None:
+        raise ValueError('Campaign scientific authorization absent')
+    continuation_binding()
+    authority = read_pinned(CONTINUATION_DESTINATION/'continuation-authority.json',
+                            CONTINUATION_AUTHORIZATION_SHA256)
+    if authority != dict(schema='al02-continuation-one-claim-per-index-v1', owner=OWNER,
+                         binding_sha256=CONTINUATION_BINDING_SHA256,
+                         package_sha256=CONTINUATION_PACKAGE_SHA256,
+                         contexts_sha256=CONTEXTS_SHA256):
+        raise ValueError('Continuation authority scope differs')
+    if row['index'] not in range(8,128) or inventory()[row['index']] != row:
+        raise ValueError('Continuation context differs')
+    return dict(authorization_sha256=CONTINUATION_AUTHORIZATION_SHA256,
+                binding_sha256=CONTINUATION_BINDING_SHA256,
+                package_sha256=CONTINUATION_PACKAGE_SHA256, contexts_sha256=CONTEXTS_SHA256,
+                context_index=row['index'], seed=row['seed'])

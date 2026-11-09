@@ -88,7 +88,7 @@ def verify_attempt(directory, context, *, command, pins, identities, terminal_pi
                                     wall_seconds=job['elapsed_seconds']),**analysis)
 
 
-def next_unclaimed(root, ordered, accepted_indices, *, stop):
+def next_unclaimed(root, ordered, accepted_indices, *, stop, start=0):
     """Plan only. Existing failed, incomplete or unreviewed claims halt."""
     require(len(ordered) == 128 and [r['index'] for r in ordered] == list(range(128)),
             'Invalid ordered campaign inventory')
@@ -101,8 +101,9 @@ def next_unclaimed(root, ordered, accepted_indices, *, stop):
     require(len(accepted) == len(accepted_indices), 'Duplicate accepted index')
     require(accepted <= set(range(128)), 'Invalid accepted index')
     require(existing == {names[i] for i in accepted}, 'Unreconciled attempt claim')
-    require(accepted == set(range(len(accepted))), 'Noncontiguous campaign progress')
-    return ordered[len(accepted)] if len(accepted) < 128 else None
+    require(accepted == set(range(start,start+len(accepted))), 'Noncontiguous campaign progress')
+    index = start+len(accepted)
+    return ordered[index] if index < 128 else None
 
 
 def analyze_committed_panel(root, ordered, admissions):
