@@ -102,12 +102,12 @@ function Get-OraRoadmapPrompt($task, $roadmap) {
     $scope="Worktree HEAD $($task.head). No production, scientific dispatch, Worlds, network, pushes, merges, permission changes, or new agents. Use only disposable fixtures and block real custody dispatch."
     switch ($task.stage) {
         'direct' {
-            $open=@($roadmap.requirements.Keys | Where-Object {$_ -cnotin $task.accepted})
+            $open=@($roadmap.requirements.Keys | Where-Object {"$($task.objective)/$_" -cnotin $task.accepted})
             $criteria=($roadmap.requirements | ConvertTo-Json -Compress)
-            "$scope Inspect $($roadmap.path), tools/run_al02_campaign.py and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Select one genuinely unfinished requirement and compose a specific implementation instruction based on the observed code. Select PARK only if no useful authorized work is available. Return structured output."
+            "$scope Inspect $($roadmap.path), $($roadmap.inspect) and, if present, prior raw review $($task.evidence). Open authorized requirements: $($open -join ', '). Criteria: $criteria. Select one genuinely unfinished requirement and compose a specific implementation instruction based on the observed code. Select PARK only if no useful authorized work is available. Return structured output."
         }
         'execute' {
-            "$scope Only $($roadmap.path) may change. Preserve all accepted tests and do not commit. Requirement: $($roadmap.requirements[$task.requirement]). Director proposal, subordinate to this scope: $($task.instruction). Rejection evidence if applicable: $($task.rejection). Acceptance command: $($roadmap.test). Rollback: restore the pre-task file snapshot after inspection if rejected. Budget: $($roadmap.secondsPerTurn) seconds, no background jobs."
+            "$scope Only $($roadmap.path) may change. Preserve all accepted tests and do not commit. Requirement: $($roadmap.requirements[$task.requirement]). Director proposal, subordinate to this scope: $($task.instruction). Rejection evidence if applicable: $($task.rejection). Acceptance command: $($roadmap.test). $($roadmap.testNote) Rollback: restore the pre-task file snapshot after inspection if rejected. Budget: $($roadmap.secondsPerTurn) seconds, no background jobs."
         }
         'review' {
             "$scope Read-only independent review at the exact candidate diff. Inspect actual source, prior file snapshot $($task.backup), and raw executor log $($task.evidence). Requirement: $($roadmap.requirements[$task.requirement]). ACCEPT only if the exact requested test is effective, prior tests are preserved, no live custody or scientific code is launched, and the raw log demonstrates the focused suite passed. REJECT with a concise defect and correction when actionable, otherwise UNKNOWN."
@@ -115,14 +115,21 @@ function Get-OraRoadmapPrompt($task, $roadmap) {
     }
 }
 
-function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap) {
+function Get-OraEligibleObjective($catalog,$accepted) {
+    foreach ($id in ($catalog.objectives.Keys | Sort-Object { $catalog.objectives[$_].priority }, {$_})) {
+        foreach ($criterion in $catalog.objectives[$id].requirements.Keys) {
+            if ("$id/$criterion" -cnotin $accepted) { return $id }
+        }
+    }
+}
+
+function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap,$catalog) {
     if ($state.exitCode -ne 0 -or !$receipt.completed -or $receipt.failed -or !$state.session -or
-        $state.after.head -cne $task.head -or $state.after.dirty.Count -gt 1 -or
-        ($state.after.dirty.Count -and $state.after.dirty[0] -cne " M $($roadmap.path)")) { return }
+        $state.after.head -cne $task.head -or !$state.roadmapScopeOk) { return }
     $next=@{id='ORA-DIRECTOR';item='ROADMAP';head=$task.head;expected=$task.expected;
-            evidence=$state.stdout;accepted=@($task.accepted);diffSha256=$state.diffSha256}
+            evidence=$state.stdout;accepted=@($task.accepted);diffSha256=$state.diffSha256;objective=$task.objective}
     if ($task.stage -ceq 'execute') {
-        if (!$receipt.continuationTests -or $state.diffSha256 -ceq $task.diffSha256) { return }
+        if (!$receipt.roadmapTests -or $state.diffSha256 -ceq $task.diffSha256) { return }
         $next.stage='review'
         foreach($key in 'requirement','instruction','backup','corrections') { $next[$key]=$task[$key] }
         return $next
@@ -130,7 +137,7 @@ function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap) {
     try { $value=$receipt.message | ConvertFrom-Json -AsHashtable -ErrorAction Stop } catch { return }
     if ($task.stage -ceq 'direct') {
         if ($value.Count -ne 2 -or !$roadmap.requirements.Contains($value.requirement) -or
-            $value.requirement -cin $task.accepted -or $value.instruction -isnot [string] -or
+            "$($task.objective)/$($value.requirement)" -cin $task.accepted -or $value.instruction -isnot [string] -or
             !$value.instruction.Trim() -or $value.instruction.Length -gt 2400) { return }
         $next.stage='execute'
         $next.requirement=$value.requirement
@@ -138,8 +145,9 @@ function Get-OraRoadmapDecision($task,$state,$receipt,$roadmap) {
         $next.corrections=0
     } elseif ($value.Count -eq 3 -and $value.head -ceq $task.head) {
         if ($value.decision -ceq 'ACCEPT') {
-            $next.accepted+=@($task.requirement)
-            if ($next.accepted.Count -eq $roadmap.requirements.Count) {
+            $next.accepted+=@("$($task.objective)/$($task.requirement)")
+            $next.objective=Get-OraEligibleObjective $catalog $next.accepted
+            if (!$next.objective) {
                 $state.task.accepted=$next.accepted
                 $state.reason='All scoped roadmap requirements independently accepted'
                 return

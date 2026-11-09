@@ -1,14 +1,28 @@
 {
-  "objective": "AL02 continuation controller inert boundary qualification",
-  "basis": "D:/OraLab/reports/ora-al02-supervised-eight-execution-20261109/prospective-remaining-120.md",
-  "path": "tests/test_al02_continuation.py",
-  "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py",
   "maxTurns": 12,
   "maxCorrections": 1,
   "secondsPerTurn": 180,
-  "requirements": {
-    "handoff": "Verify actual run_next selects index 8 with no continuation claims, with custody replaced by a spy and no scientific dispatch.",
-    "review-integrity": "Verify actual run_next refuses an inconsistent prior batch review at index 16 before custody.",
-    "stop": "Verify actual run_next with STOP present does not claim or call custody."
+  "objectives": {
+    "continuation": {
+      "priority": 1,
+      "basis": "D:/OraLab/reports/ora-al02-supervised-eight-execution-20261109/prospective-remaining-120.md",
+      "path": "tests/test_al02_continuation.py",
+      "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py",
+      "inspect": "tools/run_al02_campaign.py",
+      "requirements": {
+        "capacity": "Verify the real continuation controller refuses insufficient archive space before claim or custody using disposable fixtures and mocked capacity."
+      }
+    },
+    "evidence-authentication": {
+      "priority": 2,
+      "basis": "docs/ORA-CODEX-CONTINUITY.md, Next authorized tasks and evidence; existing AL02 campaign evidence qualification",
+      "path": "tests/test_al02_campaign_evidence.py",
+      "test": "python -B -m unittest discover -s tests -p test_al02_campaign_evidence.py -k uncommitted_mapping",
+      "inspect": "tools/al02_campaign_evidence.py",
+      "requirements": {
+        "uncommitted-mapping": "Verify the campaign analyzer rejects a substituted frozen context seed before attempting evidence validation; use only a temporary directory and the frozen context list. Run only the new test by using unittest -k uncommitted_mapping with the authorized discovery command."
+      },
+      "testNote": "Name the test test_rejects_uncommitted_mapping. Do not run the historical-evidence tests."
+    }
   }
 }

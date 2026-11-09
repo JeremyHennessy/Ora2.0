@@ -29,6 +29,15 @@ function Get-OraDiffHash {
     [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData(
         [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
 }
+function Get-OraProtectedPaths($objective) {
+    $hashes=@{}
+    foreach ($path in $allowedPaths) {
+        if ($path -cne $objective.path) {
+            $hashes[$path]=(Get-FileHash -LiteralPath (Join-Path $config.worktree $path)).Hash
+        }
+    }
+    $hashes
+}
 function Receipt($path) {
     $result=@{session=$null; completed=$false; failed=$false; gitOutputs=@()}
     if (Test-Path $path) {
@@ -42,6 +51,10 @@ function Receipt($path) {
                 'item.completed' {
                     if ($event.item.type -eq 'agent_message') { $result.message=$event.item.text }
                     $result.gitOutputs+=@(Get-OraGitOutputs $event.item)
+                    if ($roadmap -and $event.item.type -ceq 'command_execution' -and $event.item.exit_code -eq 0 -and
+                        $event.item.command.Contains($roadmap.test) -and
+                        $event.item.aggregated_output -match '(?m)^OK\s*$' -and
+                        $event.item.aggregated_output -match 'Ran [1-9][0-9]* test') { $result.roadmapTests=$true }
                     if ($event.item.type -ceq 'command_execution' -and $event.item.exit_code -eq 0 -and
                         $event.item.command -match 'python -B -m unittest discover -s tests -p test_al02_continuation[.]py' -and
                         $event.item.aggregated_output -match '(?m)^OK\s*$') { $result.continuationTests=$true }
@@ -87,15 +100,37 @@ try {
     if ($roadmapMode) {
         if (!$config.engineeringQualification -or $FakeWorker -or
             $config.worktree -cne 'D:/OraLab/src/Ora2.0-director-qualification' -or
-            $StateRoot -cne 'D:/OraLab/drafts/ora-director-roadmap') { throw 'Roadmap isolation differs' }
+            $StateRoot -cne 'D:/OraLab/drafts/ora-director-cross-objective') { throw 'Roadmap isolation differs' }
         $roadmapPath=Join-Path $PSScriptRoot 'roadmap-al02.json'
         if ((Get-FileHash $roadmapPath).Hash -ine $config.roadmapSha256) { throw 'Roadmap identity differs' }
-        $roadmap=Get-Content -Raw $roadmapPath | ConvertFrom-Json -AsHashtable
+        $catalog=Get-Content -Raw $roadmapPath | ConvertFrom-Json -AsHashtable
+        $expectedObjective=Get-OraEligibleObjective $catalog $task.accepted
+        if (!$expectedObjective -or $task.objective -cne $expectedObjective) { throw 'Roadmap objective order differs' }
+        $roadmap=$catalog.objectives[$task.objective]
+        $roadmap.secondsPerTurn=$catalog.secondsPerTurn
+        $roadmap.maxCorrections=$catalog.maxCorrections
+        $roadmap.maxTurns=$catalog.maxTurns
+        $allowedPaths=@($catalog.objectives.Values | ForEach-Object { $_.path })
+        $allowedDirty=@($allowedPaths | ForEach-Object { " M $_" })
+        $protected=Get-OraProtectedPaths $roadmap
         if ($config.timeoutSeconds -gt $roadmap.secondsPerTurn) { throw 'Roadmap turn budget differs' }
-        if ($before.dirty.Count -gt 1 -or ($before.dirty.Count -and $before.dirty[0] -cne " M $($roadmap.path)")) {
+        if (@($before.dirty | Where-Object { $_ -cnotin $allowedDirty }).Count) {
             throw 'Roadmap source scope differs'
         }
-        if ($previous.status -ne 'interrupted' -and (Get-OraDiffHash) -cne $task.diffSha256) {
+        $observedDiff=Get-OraDiffHash
+        if ($previous.status -eq 'interrupted') {
+            $recovered=Receipt $previous.stdout
+            $savedDiff=Join-Path $StateRoot "runs/$($previous.run).diff"
+            if (!$previous.evidenceSha256 -or !$previous.diffSha256 -or !$previous.diffFileSha256 -or
+                $observedDiff -cne $previous.diffSha256 -or
+                $recovered.session -cne $previous.session -or $recovered.completed -or
+                (Get-FileHash -LiteralPath $previous.stdout).Hash -ine $previous.evidenceSha256 -or
+                (Get-FileHash -LiteralPath $savedDiff).Hash -ine $previous.diffFileSha256 -or
+                !$previous.roadmapScopeOk -or !$previous.after -or $previous.after.head -cne $before.head) {
+                Save @{status='parked';reason='Interrupted roadmap evidence or source cannot be reconciled';task=$task;source=$before;previousRun=$previous.run}
+                return
+            }
+        } elseif ($observedDiff -cne $task.diffSha256) {
             throw 'Roadmap checkpoint diff differs'
         }
     }
@@ -174,6 +209,9 @@ try {
         $prompt="Read-only review of AL02 one-pair source commit $($task.head). Inspect experiments/al02_one_pair.py, experiments/al02_one_pair_job.py and tests/test_al02_one_pair.py. No process smoke tests, World, source edits or scientific launch. Identify exact remaining conditional admission blockers. Never run the fixed context."
     } elseif ($task) {
         $prompt="Read-only independent review of AL02 escrow continuation commit $($task.head). Inspect only the two new files and relevant frozen methods. Run only python -B -S -m unittest tests.test_al02_depletion_producer -v. Do not construct or dispatch a World, edit files, or run historical tests. Report specific defects or scoped PASS."
+    }
+    if ($resuming -and $roadmapMode) {
+        $prompt="Inspect saved partial diff $savedDiff and raw interrupted log $($previous.stdout). Preserve useful unfinished edits and reconcile them against the task. $prompt"
     }
     if ($resuming) { $prompt="Recover only the recorded interrupted work. Verify its partial changes first. $prompt" }
     $argsList=@('exec','--json','--color','never','-C',$config.worktree,'--sandbox','read-only')
@@ -286,6 +324,19 @@ try {
             $state.diffSha256=[Convert]::ToHexString([Security.Cryptography.SHA256]::HashData(
                 [Text.Encoding]::UTF8.GetBytes(($diff -join "`n")))).ToLowerInvariant()
             $diff | Set-Content "$logs/$run.diff" -Encoding utf8
+            if ($roadmapMode) {
+                $state.diffFileSha256=(Get-FileHash "$logs/$run.diff").Hash.ToLowerInvariant()
+                $state.roadmapScopeOk=(@($state.after.dirty | Where-Object { $_ -cnotin $allowedDirty }).Count -eq 0)
+                foreach ($path in $protected.Keys) {
+                    if ((Get-FileHash -LiteralPath (Join-Path $config.worktree $path)).Hash -cne $protected[$path]) {
+                        $state.roadmapScopeOk=$false
+                    }
+                }
+                if (!$state.roadmapScopeOk) {
+                    $state.status='parked'
+                    $state.reason='Roadmap write scope differs'
+                }
+            }
             if (($engineeringReview -or ($roadmapMode -and $task.stage -cne 'execute')) -and $state.diffSha256 -cne $task.diffSha256) {
                 throw 'Reviewer changed the source'
             }
@@ -293,7 +344,7 @@ try {
         $state.evidenceSha256=(Get-FileHash -LiteralPath $stdout).Hash.ToLowerInvariant()
         $state | ConvertTo-Json -Depth 10 | Set-Content "$logs/$run.receipt.json" -Encoding utf8
         if ($state.status -eq 'parked' -and !$rate -and !(Test-Path "$StateRoot/STOP")) {
-            $next=if ($roadmapMode) { Get-OraRoadmapDecision $task $state $receipt $roadmap } elseif ($engineering) {
+            $next=if ($roadmapMode) { Get-OraRoadmapDecision $task $state $receipt $roadmap $catalog } elseif ($engineering) {
                 Get-OraEngineeringDecision $task $state $receipt ($state.after.head -ceq $task.head)
             } else {
                 Get-OraDirectorDecision $task $state $receipt ($state.after.head -ceq $task.head)
