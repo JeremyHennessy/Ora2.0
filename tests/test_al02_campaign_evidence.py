@@ -72,3 +72,11 @@ class CampaignEvidenceTests(TestCase):
                 analyze_committed_panel(root, rows, {})
             with self.assertRaisesRegex(ValueError,'Duplicate evidence ownership'):
                 analyze_committed_panel(root, rows, {0:dict(terminal_pin='a'),1:dict(terminal_pin='a')})
+
+    def test_rejects_uncommitted_mapping(self):
+        with TemporaryDirectory() as temp:
+            root = Path(temp)
+            rows = contexts()
+            rows[0]['seed'] = rows[1]['seed']
+            with self.assertRaisesRegex(ValueError, '^Frozen context mapping differs$'):
+                analyze_committed_panel(root, rows, {0: {}})

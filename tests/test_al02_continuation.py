@@ -94,6 +94,25 @@ class ContinuationPolicyTests(unittest.TestCase):
             for row in ordered[8:]:
                 self.assertFalse((root / row['attempt']).exists(), row['attempt'])
 
+    def test_run_next_refuses_insufficient_archive_space_before_claim_or_custody(self):
+        with self._continuation_fixture(with_attempts=False, with_accepted_evidence=False) as (
+            root, ordered, _, admitted, custody
+        ):
+            budget = gate.continuation_binding()['budget']
+            custody.FREE_MIN = 1024
+            required = budget['pairs'] * budget['archive_bytes_per_pair'] + custody.FREE_MIN
+            with patch.object(campaign.shutil, 'disk_usage',
+                              return_value=Mock(free=required - 1)) as disk_usage:
+                with self.assertRaises(ValueError) as error:
+                    run_next(continuation=True)
+
+            self.assertEqual(str(error.exception), 'Campaign archive or disk reservation exhausted')
+            disk_usage.assert_called_once_with(root)
+            admitted.assert_not_called()
+            custody.transaction.assert_not_called()
+            for row in ordered[8:]:
+                self.assertFalse((root / row['attempt']).exists(), row['attempt'])
+
     def test_run_next_hands_off_index_8_without_continuation_claims(self):
         binding = gate.continuation_binding()
         with self._continuation_fixture(with_attempts=False, with_accepted_evidence=False) as (
