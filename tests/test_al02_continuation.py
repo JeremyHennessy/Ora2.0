@@ -1,14 +1,18 @@
-"""No-dispatch tests for the frozen continuation policy."""
+"""Frozen continuation policy tests with an isolated inert Windows handoff."""
 from contextlib import contextmanager
+from hashlib import sha256
 import json
 from pathlib import Path
+import shutil
+import sys
 from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import Mock, patch, sentinel
 
 from experiments import al02_campaign_admission as gate
+from experiments import al02_one_pair as pair
 from tools import run_al02_campaign as campaign
-from tools.al02_campaign_evidence import next_unclaimed
+from tools.al02_campaign_evidence import next_unclaimed, verify_attempt
 from tools.run_al02_campaign import run_next
 
 
@@ -138,6 +142,161 @@ class ContinuationPolicyTests(unittest.TestCase):
             )
             for row in ordered[8:]:
                 self.assertFalse((root / row['attempt']).exists(), row['attempt'])
+
+    @unittest.skipUnless(sys.platform == 'win32', 'Requires a real Windows Job')
+    def test_inert_continuation_index_8(self):
+        binding = gate.continuation_binding()
+        row = gate.inventory()[8]
+        self.assertEqual(row['index'], 8)
+        self.assertNotEqual(row['seed'], pair.SEED)
+        self.assertNotEqual(row['context_sha256'], pair.CONTEXT_SHA256)
+        custody = campaign.custody
+        job = custody.transport
+        real_transaction, real_run, real_admit = custody.transaction, job.run, gate.admitted
+        production = (gate.CHECKOUT, gate.CONTINUATION_DESTINATION)
+        source = Path(gate.__file__).resolve()
+        worker = source.with_name('al02_one_pair_worker.py')
+        template = (Path(__file__).parent / 'al02_release_rehearsal/inert-worker.py').read_bytes()
+        self.assertEqual(sha256(template.replace(b'\r\n', b'\n')).hexdigest(),
+                         'ff7edeeba200f9366aaf04e9034c72a34173326c03f49a6b249fb984f245cd93')
+        shim_bytes = template.replace(b'ORA-PHASE6-INERT', gate.TOKEN.encode('ascii'))
+        python = getattr(sys, '_base_executable', sys.executable)
+        self.assertEqual(python, binding['python'])
+        owner = gate.OWNER
+
+        with TemporaryDirectory(prefix='ora-inert-continuation-') as temp:
+            root = Path(temp).resolve()
+            checkout = root / 'checkout'
+            local_source = checkout / 'experiments' / source.name
+            local_source.parent.mkdir(parents=True)
+            local_worker = local_source.with_name(worker.name)
+            shutil.copyfile(source, local_source)
+            shutil.copyfile(worker, local_worker)
+            status = root / 'automation/ora-codex/status.json'
+            status.parent.mkdir(parents=True)
+            status.write_text('{"status":"parked"}', encoding='ascii')
+            shim = root / 'inert.py'
+            shim.write_bytes(shim_bytes)
+            lawful = root / 'lawful.bin'
+            # Same retained payload used by the controller rehearsal.
+            shutil.copyfile(
+                'D:/OraLab/reports/al02-first-depletion-successor-20261109/attempt-v3/raw.bin',
+                lawful,
+            )
+            frozen_identity = dict(binding_sha256=gate.CONTINUATION_BINDING_SHA256,
+                                   package_sha256=gate.CONTINUATION_PACKAGE_SHA256,
+                                   contexts_sha256=gate.CONTEXTS_SHA256)
+            authority = root / 'continuation-authority.json'
+            authority.write_text(json.dumps(dict(
+                schema='al02-continuation-one-claim-per-index-v1', owner=owner,
+                **frozen_identity)), encoding='ascii')
+            authority_pin = custody.digest(authority)
+            committed_identity = dict(frozen_identity, authorization_sha256=authority_pin,
+                                      context_index=8, seed=row['seed'])
+            fixture_identity = dict(
+                committed_identity, inert_execution=True, committed_seed=row['seed'],
+                committed_context_sha256=row['context_sha256'], seed=pair.SEED,
+                fixture_context_sha256=pair.CONTEXT_SHA256,
+            )
+            referee_source = str(Path(pair.__file__).resolve())
+            pins = {str(path): custody.digest(path) for path in (
+                Path(custody.__file__).resolve(), Path(job.__file__).resolve(),
+                worker.with_name('process_limits.py'), referee_source,
+            )}
+            local_referee = local_source.with_name('al02_one_pair.py')
+            shutil.copyfile(referee_source, local_referee)
+            pins.update({
+                str(local_referee): pins[referee_source],
+                python: binding['pins'][python],
+                str(shim): sha256(shim_bytes).hexdigest(),
+                str(local_worker): binding['pins'][binding['worker']],
+                str(lawful): 'e136d0e1a10895b2e500766026957ed987f0a9cd4365776f589797eac9a416d7',
+                str(local_source): campaign.ADMISSION_SHA256,
+            })
+            directory = root / row['attempt']
+            pending = directory / '00-pending.json'
+            command = (python, '-I', '-S', '-B', str(shim), str(pending), gate.TOKEN)
+            proposed = (*command[:4], binding['worker'], *command[5:])
+
+            def require_inert(target, cwd, argv):
+                if (tuple(argv) != command or Path(cwd) != checkout or target != directory
+                        or command[4] == binding['worker']
+                        or any(not path.resolve().is_relative_to(root)
+                               or any(path.resolve().is_relative_to(base) for base in production)
+                               for path in (Path(cwd), target, Path(argv[4]), Path(argv[5])))
+                        or any(custody.digest(path) != pins[path] for path in (python, str(shim)))):
+                    raise AssertionError('Inert continuation launch barrier refused')
+
+            def admit(target, cwd, argv, account, context, limits, actual_pins):
+                if context == pair.CONTEXT_SHA256:
+                    require_inert(target, cwd, argv)
+                    self.assertEqual(actual_pins, pins)
+                    self.assertEqual(account, owner)
+                    self.assertEqual(limits, gate.LIMITS)
+                    return dict(fixture_identity)
+                identity = real_admit(target, cwd, argv, account, context, limits, actual_pins)
+                self.assertEqual(identity, committed_identity)
+                return identity
+
+            def guarded_transaction(target, **kwargs):
+                self.assertEqual(kwargs, dict(command=list(proposed), cwd=checkout, pins=pins,
+                                             expected_account=owner, context=row['context_sha256'],
+                                             referee=None, consent=gate.TOKEN))
+                physical = dict(kwargs, command=command, context=pair.CONTEXT_SHA256)
+                require_inert(target, physical['cwd'], physical['command'])
+                self.assertFalse(target.exists())
+                return real_transaction(target, **physical)
+
+            def guarded_job(argv, cwd, **kwargs):
+                require_inert(directory, cwd, argv)
+                self.assertIs(kwargs['relay'], True)
+                return real_run(argv, cwd, **kwargs)
+
+            with (
+                patch.multiple(gate, ROOT=root, STOP=root / 'STOP', CHECKOUT=checkout,
+                               CONTINUATION_DESTINATION=root, __file__=str(local_source),
+                               CONTINUATION_AUTHORIZATION_SHA256=authority_pin),
+                patch.object(gate, 'continuation_binding', return_value=dict(binding, pins=pins)),
+                patch.object(gate, 'admitted', side_effect=admit) as admission,
+                patch.object(campaign.subprocess, 'check_output',
+                             return_value=binding['production_head']),
+                patch.object(custody, 'transaction', side_effect=guarded_transaction) as handoff,
+                patch.object(job, 'run', side_effect=guarded_job) as launch,
+            ):
+                result = run_next(continuation=True)
+
+                handoff.assert_called_once()
+                launch.assert_called_once()
+                self.assertEqual(admission.call_args_list[0].args[4], row['context_sha256'])
+                self.assertEqual(list(root.glob('attempt-*')), [directory])
+                terminal = directory / '04-terminal.json'
+                identities = dict(fixture_identity, referee_entry='experiments.al02_one_pair.verify_context',
+                                  referee_sha256=pins[referee_source])
+                terminal_bytes = terminal.read_bytes()
+                record = json.loads(terminal_bytes)
+                self.assertEqual(record['release_identities'], identities)
+                self.assertEqual(record['result'], result)
+                # Local readback pin for the synthetic fixture, with no independent review.
+                verified = verify_attempt(
+                    directory, dict(index=row['index'], attempt=row['attempt'], context=pair.CONTEXT,
+                                    context_sha256=pair.CONTEXT_SHA256, seed=pair.SEED),
+                    command=list(command), pins=pins, identities=identities,
+                    terminal_pin=custody.digest(terminal),
+                )
+                self.assertEqual((verified['index'], verified['status']), (8, 'accepted'))
+                self.assertEqual(verified['raw_sha256'], pins[str(lawful)])
+                self.assertEqual(verified['result']['contrast'], 0)
+                self.assertIs(verified['result']['authenticated_execution'], False)
+                partial = directory / 'partial.jsonl'
+                partial_bytes = partial.read_bytes()
+                with self.assertRaisesRegex(ValueError, '^Release identity differs$'):
+                    run_next(continuation=True)
+
+                handoff.assert_called_once()
+                launch.assert_called_once()
+                self.assertEqual(list(root.glob('attempt-*')), [directory])
+                self.assertEqual(terminal.read_bytes(), terminal_bytes)
+                self.assertEqual(partial.read_bytes(), partial_bytes)
 
     def test_run_next_refuses_index_16_without_prior_batch_review(self):
         with (
