@@ -31,4 +31,3 @@ with patch.multiple(consent, **scope), patch.multiple(pair, SEED=42, CONTEXT_SHA
     else:
         assert result['contrast'] == 3
         print('claim won')
-

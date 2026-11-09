@@ -39,6 +39,3 @@ with patch.object(Path, 'mkdir', claim_boundary), patch.multiple(consent, **scop
     else:
         assert result['contrast'] == 3
         print('claim won')
-
-
-

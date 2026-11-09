@@ -94,7 +94,7 @@ def qualify(out):
     results = read(rehearsal/'results.json')
     require(set(results) == {'lawful', 'forged', 'interrupt', 'wrong-pin', 'stop', 'no-authority',
                             'race', 'substitute', 'auth-swap', 'pending-fail', 'receipt-swap',
-                            'late-stop', 'crash-boundary'}, 'Mandatory scenario missing')
+                            'late-stop', 'crash-boundary', 'final-auth-swap', 'wrong-destination'}, 'Mandatory scenario missing')
     attempt = rehearsal/'lawful/lawful'
     terminal = read(attempt/'04-terminal.json')
     identities = terminal['release_identities']

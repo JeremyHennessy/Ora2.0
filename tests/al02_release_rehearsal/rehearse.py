@@ -65,7 +65,7 @@ head = subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 original_attempt = c.ATTEMPT
 authority = 'ORA-PHASE6-INERT'
 results = {}
-for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','race','substitute','auth-swap','pending-fail','receipt-swap','late-stop','crash-boundary'):
+for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','race','substitute','auth-swap','pending-fail','receipt-swap','late-stop','crash-boundary','final-auth-swap','wrong-destination'):
     stage = out/name
     stage.mkdir()
     attempt = stage/name
@@ -147,6 +147,8 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
         real_run = job.run
         real_open = Path.open
         def altered_run(*args, **kwargs):
+            if name == 'final-auth-swap':
+                final_authority.write_bytes(b'{}')
             if name == 'auth-swap':
                 auth.write_bytes(b'{}')
             return real_run(*args, **kwargs)
@@ -161,7 +163,7 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
                     stop.touch()
             return real_open(path,*args,**kwargs)
         def run():
-            if name in ('auth-swap','pending-fail','receipt-swap','late-stop','crash-boundary'):
+            if name in ('auth-swap','pending-fail','receipt-swap','late-stop','final-auth-swap'):
                 with patch.object(job,'run',altered_run), patch.object(Path,'open',altered_open):
                     return transact()
             return transact()
@@ -186,12 +188,12 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
                             fixture_context=context, attempt=str(attempt), command=list(actual_command),
                             worktree=str(root), relay=actual_relay))
         def transact():
-            if name == 'lawful':
+            if name in ('lawful','final-auth-swap'):
                 with patch.object(c, 'require_bound_worker', checked_inert_admission):
                     return perform()
             return perform()
         def perform():
-            return custody.transaction(attempt,command=command,cwd=root,pins=local_pins,
+            return custody.transaction(stage/'unexpected' if name=='wrong-destination' else attempt,command=command,cwd=root,pins=local_pins,
                 expected_account=c.OWNER,context=context,referee=referee if name=='substitute' else pair.verify,consent=authority)
         if name=='wrong-pin':
             local_pins[str(shim)]='0'*64
@@ -203,13 +205,14 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
                       'no-authority':'Candidate scientific authorization absent',
                       'substitute':'Candidate referee identity differs','auth-swap':'artifact identity differs',
                       'pending-fail':'injected pending write failure','receipt-swap':'Candidate receipt identity differs',
-                      'late-stop':'STOP present'}[name]
+                      'late-stop':'STOP present','final-auth-swap':'artifact identity differs',
+                      'wrong-destination':'Outside explicit AL02 lower-assurance consent scope'}[name]
             assert expected in str(exc),(name,str(exc))
             results[name]=dict(error=str(exc),referee_inputs=called)
         else:
             assert name=='lawful' and result['contrast']==3
             results[name]=dict(result=result,referee_inputs=called)
-        if attempt.exists() and name not in ('auth-swap','late-stop'):
+        if attempt.exists() and name not in ('auth-swap','late-stop','final-auth-swap'):
             try:
                 run()
             except FileExistsError:
@@ -230,7 +233,12 @@ for name in ('lawful','forged','interrupt','wrong-pin','stop','no-authority','ra
         assert all(sha(attempt/f) == h for f,h in terminal['receipt_sha256'].items())
         assert identities[0]['referee_sha256'] == sha(Path(pair.__file__))
         results[name]['release_identities'] = identities[0]
-    assert attempt.exists()==(name in ('lawful','forged','interrupt','auth-swap','pending-fail','receipt-swap','late-stop'))
+    if name in ('auth-swap','pending-fail','receipt-swap','late-stop','final-auth-swap'):
+        failure = json.loads((attempt/'99-failed.json').read_bytes())
+        assert failure['release_intent'] is False and failure['partial'] is None
+        assert not (attempt/'04-terminal.json').exists()
+    assert not (stage/'unexpected').exists()
+    assert attempt.exists()==(name in ('lawful','forged','interrupt','auth-swap','pending-fail','receipt-swap','late-stop','final-auth-swap'))
 assert not original_attempt.exists()
 (out/'results.json').write_text(json.dumps(results,indent=2))
 print(json.dumps(results,indent=2))
