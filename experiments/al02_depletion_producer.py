@@ -40,7 +40,8 @@ def check_ledger(state):
     authorized = {0} | {birth['child_id'] for birth in state.births}
     if not state.organisms.keys() <= authorized:
         raise AssertionError('Unregistered live organism without executed birth')
-    if any(actor.organism_id and actor.parent_id is None for actor in state.organisms.values()):
+    if any(identity != actor.organism_id or (identity and actor.parent_id is None)
+           for identity, actor in state.organisms.items()):
         raise AssertionError('Unverified descendant ancestry')
     return material, energy
 

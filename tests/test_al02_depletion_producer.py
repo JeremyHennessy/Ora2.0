@@ -39,6 +39,12 @@ class EscrowProducerTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, 'Material units'):
             check_ledger(self.state)
 
+    def test_rejects_birth_identity_hidden_under_authorized_key(self):
+        self.state.organisms[0].organism_id = 1
+        self.state.organisms[0].parent_id = 0
+        with self.assertRaisesRegex(AssertionError, 'Unverified descendant'):
+            check_ledger(self.state)
+
     def test_rejects_unregistered_birth_and_forged_meal(self):
         actor = self.state.organisms.pop(0)
         actor.organism_id = 1
