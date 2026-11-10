@@ -89,7 +89,7 @@ try {
         Save $previous
     }
     if ($previous -and ($previous.status -in @('parked','review','stopped') -or
-        ($previous.nextUtc -and [DateTimeOffset]::Parse($previous.nextUtc) -gt [DateTimeOffset]::UtcNow))) { return }
+        ($previous.nextUtc -and ([DateTimeOffset]$previous.nextUtc) -gt [DateTimeOffset]::UtcNow))) { return }
     if (Test-Path "$StateRoot/STOP") { return }
     if (!$FakeWorker -and $config.mode -eq 'probe' -and
         @(Get-ChildItem "$StateRoot/runs" -Filter '*.receipt.json' -ErrorAction SilentlyContinue).Count -ge 2) { return }
