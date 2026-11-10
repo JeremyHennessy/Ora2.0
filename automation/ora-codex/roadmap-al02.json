@@ -44,6 +44,45 @@
       "completionCriteria": {
         "inactive-package": "Write the release package in docs/AL02-CONTINUATION-RELEASE.md only. Verify the frozen context commitment and inactive binding/package bytes, accepted source and diff receipts in D:/OraLab/drafts/ora-director-cross-objective/utc-rollover-install-20261110/live-acceptance.json, resource limits, batch review and rollback. Separate proven inert 8–16 evidence from production verification, identify concrete remaining source-pin, admission, authorization or release blockers, and specify the smallest corrective action for each. Preserve all artifacts and claims. No activation, production installation or scientific execution."
       }
+    },
+    "release-readiness-reconcile": {
+      "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py -k exact_artifacts",
+      "maxProgressPerCriterion": 2,
+      "goal": "Independently qualify the exact inactive AL02 continuation release for committed contexts 8–127. Preserve frozen history, current safeguards and inactive authority.",
+      "testNote": "Only the no-authority test is permitted in this stage. No worker, Job, claim, source/pin change, or production write.",
+      "inspect": "tools/run_al02_campaign.py",
+      "path": "docs/AL02-CONTINUATION-READINESS.md",
+      "basis": "docs/AL02-CONTINUATION-RELEASE.md at 463c754a40fc8485cf67e4fdd34c7ff83f430e3d",
+      "priority": 4,
+      "completionCriteria": {
+        "runtime-identity": "Produce a reproducible read-only discrepancy inventory before any fixes. Reconcile raw installed producer, simulator/referee, command, interpreter, Git revision, checkout path and all frozen runtime pins against the reviewed candidate and immutable records. Record each mismatch with evidence, cause if established, which source is authoritative, smallest isolated correction and all remaining blockers. Preserve the accepted package and evidence. Distinguish missing authorization for installation or science from engineering that may still proceed."
+      }
+    },
+    "release-readiness-artifacts": {
+      "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py -k exact_artifacts",
+      "maxProgressPerCriterion": 2,
+      "goal": "Independently qualify the exact inactive AL02 continuation release for committed contexts 8–127. Preserve frozen history, current safeguards and inactive authority.",
+      "testNote": "Use temporary output only. Run deterministic artifact rebuild and tamper refusal checks separately as needed and the pinned no-authority test. No scientific worker or Job.",
+      "inspect": "docs/AL02-CONTINUATION-READINESS.md",
+      "path": "tools/build_al02_continuation.py",
+      "basis": "docs/AL02-CONTINUATION-RELEASE.md at 463c754a40fc8485cf67e4fdd34c7ff83f430e3d",
+      "priority": 5,
+      "completionCriteria": {
+        "inactive-successor": "Use the accepted runtime reconciliation to prepare a consistent deterministic immutable inactive candidate artifact set in disposable storage and retain exact identities and reproduction instructions in the builder. Prove rebuilt byte identity and dependency consistency. Preserve all historical artifacts, fixed context commitments and authorization pins. Resolve only demonstrated builder defects within the scoped file. Report exact remaining source or admission changes if outside this task file, without substituting pins speculatively or treating a proposal as a qualified release."
+      }
+    },
+    "release-readiness-inert": {
+      "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py -k inert_continuation",
+      "maxProgressPerCriterion": 2,
+      "goal": "Independently qualify the exact inactive AL02 continuation release for committed contexts 8–127. Preserve frozen history, current safeguards and inactive authority.",
+      "testNote": "Reuse only the existing digest-pinned inert shim and disposable paths with a prelaunch guard. No scientific worker or real attempt.",
+      "inspect": "docs/AL02-CONTINUATION-READINESS.md",
+      "path": "tests/test_al02_continuation.py",
+      "basis": "docs/AL02-CONTINUATION-RELEASE.md at 463c754a40fc8485cf67e4fdd34c7ff83f430e3d",
+      "priority": 6,
+      "completionCriteria": {
+        "exact-candidate-acceptance": "Using the accepted reconciliation and inactive candidate artifacts, independently exercise the exact available execution and admission guards up to the enforced no-World boundary and inert controller-to-custody path. Bind actual frozen artifact and source identities to inert receipts. Preserve previous tests and explicitly record all substitutions. Compare the complete objective against actual evidence, including closure of each release blocker; park as blocked only with a demonstrated remaining boundary and precise corrective scope. No production changes or scientific authority."
+      }
     }
   }
 }
