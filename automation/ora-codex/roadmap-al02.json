@@ -19,7 +19,7 @@
         "reviewed-batch-custody": "Demonstrate a disposable controller-owned multi-index inert Windows Job and custody run spanning a reviewed batch boundary. Require independently reverified retained evidence and the batch review before the first next-batch claim. Keep committed and synthetic identities separate. Verify one-use, STOP and resource safeguards, and refuse absent or inconsistent review. Preserve the frozen artifacts and scientific no-launch barrier."
       },
       "maxProgressPerCriterion": 2,
-      "goal": "Qualify the existing AL02 continuation engineering for committed contexts 8\u2013127 through inert custody and independent batch review."
+      "goal": "Qualify the existing AL02 continuation engineering for committed contexts 8–127 through inert custody and independent batch review."
     },
     "evidence-authentication": {
       "priority": 2,
@@ -31,6 +31,19 @@
         "uncommitted-mapping": "Verify the campaign analyzer rejects a substituted frozen context seed before attempting evidence validation; use only a temporary directory and the frozen context list. Run only the new test by using unittest -k uncommitted_mapping with the authorized discovery command."
       },
       "testNote": "Name the test test_rejects_uncommitted_mapping. Do not run the historical-evidence tests."
+    },
+    "release-package": {
+      "test": "python -B -m unittest discover -s tests -p test_al02_continuation.py -k exact_artifacts",
+      "basis": "D:/OraLab/drafts/ora-director-cross-objective/utc-rollover-install-20261110/live-acceptance.json",
+      "inspect": "tools/run_al02_campaign.py",
+      "path": "docs/AL02-CONTINUATION-RELEASE.md",
+      "goal": "Prepare an inactive AL02 release package for committed contexts 8–127 from independently accepted qualification evidence.",
+      "testNote": "Only run the exact_artifacts test, which checks inactive artifacts and refusal without authorization. Do not run any worker or Job.",
+      "maxProgressPerCriterion": 1,
+      "priority": 3,
+      "completionCriteria": {
+        "inactive-package": "Write the release package in docs/AL02-CONTINUATION-RELEASE.md only. Verify the frozen context commitment and inactive binding/package bytes, accepted source and diff receipts in D:/OraLab/drafts/ora-director-cross-objective/utc-rollover-install-20261110/live-acceptance.json, resource limits, batch review and rollback. Separate proven inert 8–16 evidence from production verification, identify concrete remaining source-pin, admission, authorization or release blockers, and specify the smallest corrective action for each. Preserve all artifacts and claims. No activation, production installation or scientific execution."
+      }
     }
   }
 }
