@@ -1,0 +1,68 @@
+{
+  "file_sha256": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "DECISION.md": "3af1506291d07e2197357fc6578d95e16cc7c2d46dff9732934d445ab1795592",
+    "PROTOCOL.md": "2f431927e673c0d2bdec57fef913391d2ae0f98b70d57e95de3a09655978a45f",
+    "RESEARCH-EVIDENCE.json": "c7af8706bf3acfa0a5879e9fdb2f794815967038b9dceda53de7d24183ea7264",
+    "feasibility.py": "d8cddf6e7539611339c7166c0d84c5993e03fa56ee70539e491de6ded43c42c0"
+  },
+  "independent_reproductions": {
+    "AL03_readonly_analyzer": "Executed unchanged accepted analyzer; both outputs byte-identical to parent reproduction and accepted AL03 checkpoint; primary15, siteJ18/0/12/0,8jobs16conditions all extinct",
+    "STOP_asserted": true,
+    "clean_commit_blob_export": "independent-clean-source",
+    "preserved_status_config_acceptance_and_result_pins": 6,
+    "production_files_independently_rehashed": 2049,
+    "scalar_command": "python -I -B -S independent-clean-source/feasibility.py",
+    "scalar_output_sha256": "798eaa5f6f3474c6583b3042f06855654f978007dedc38485a454c1dd45aa53a",
+    "scalar_result": "128 authored binary/delay cases; intact4/4, cue-erased2/4; all4 memoryless maps2/4; malformed scalar inputs refused",
+    "scalar_scope": "No VM, World, mutation, population, scientific attempt, copy or fitness result"
+  },
+  "mandatory_future_release_prerequisites": [
+    "Implement and independently qualify the minimal finite integer kernel and producer-independent DATA replay with only synthetic authored fixtures",
+    "Freeze exact transition/operand/PRNG/scheduler/indel atomicity, source hashes and founderbytes; demonstrate lawful mutableancestor replication and one-edit viability without task-performance search",
+    "Demonstrate full-policy costs and possible paid reproductive benefit against cheap fixed/reactive references; if not achievable stop rather than retrospectively tune science",
+    "Qualify fullstateinformation isolation, read-onlyheldout panel, one-outputgrant, conservation/copy/ancestry and corruptreceipt rejection",
+    "Measure worstcase producer, custody, DATA, archive and assay work within independently approved proposed budgets",
+    "Commit exact fresh seedblocks/orders/holdouts/attempts and inactive source/artifact identities before outcomes; obtain separate specific installation/execution authorization and finalindependentGO"
+  ],
+  "objections_resolved": [
+    "Budget now charges COPY writes and ten-word birth-state initialization; hard cap4194304/job100663296total proposed rather than claim measured fit",
+    "Basal opportunity clock consistent across bonus-on/off input phases and4096-lifetime; bonus work separately charged",
+    "All assays founder-only with paid diagnostic children removed explicitly, not counterfeit ecological deaths",
+    "Erasure restores all organism-visible cue channels including PC/nursery/head/credits using explicitly counterfactual intervention ledger; erasure failure alone not memory evidence",
+    "Indels have paid unique-material writes/returns, no replacement draws, cached nursery proposals so blocked division does not redraw",
+    "Q ascertainment restricted to endpoint genotypes; transient lost genotypes unassayed and unknown",
+    "F is qualifying occupancy of capacity64, with living-denominator prevalence separately reported",
+    "Parent-blind R no-payoff256step evaluations, score-independent replacement, no scheduled offspring and no promotion of partialcandidate",
+    "No generic claim that six symbols cannot compute; actual old IO/control/mutation restrictions distinguished from instruction-count/theoretical universality",
+    "Authored tinyFSM/CPU payoff and priorAvida memory literature acknowledged; no learning/intelligence/openended or autonomousgoal claim"
+  ],
+  "publication_review": {
+    "actual_github_main": "d3f8356262916a5771a25c8db0a77b8830fa57d1",
+    "branch": "decision/substrate-20261112",
+    "constraint": "Curate only new reviewed research/docs/proof/evidence/review; no divergentlocalcode; preserve all workflowbytes and protected main; recheck exact GitHubref/triggerfilters beforepush",
+    "evidence": "independent-github-workflow-inspection.json",
+    "github_remote": "https://github.com/JeremyHennessy/Ora2.0.git",
+    "resolved_identity_ambiguity": "Local origin points to local consent-repair checkout and origin/main7a9, NOT GitHub. github remote was independently ls-remote verified atd3; earlier local-origin workflowinspection retained asdiagnostic, superseded forpublication by independent-github-workflow-inspection.json",
+    "status": "CONDITIONALLY ACCEPT CURATED RESEARCH-ONLY BRANCH; NO PULL REQUEST OR DISPATCH",
+    "workflow_files_independently_inspected": 10
+  },
+  "remaining_scientific_objections_and_limits": [
+    "B is chosen as an economical instrument for this question, not demonstrated superior to chemistry, FSMs or currentOra across generalcriteria",
+    "Task and task-to-CPU payoff are researcher authored; positive result is useful program evolution under artificial selection, not endogenous ecological purpose",
+    "No mutation accessibility or actual paid net reproductive benefit established by scalar NAND witness; syntaxvalid does not mean viable and wholecopyloop staysmutable",
+    "Eight blocks exploratory; descendants/deterministic assays are not independentworldreplicates; no power claim",
+    "R is an unequal-ecology search reference; equalchargedwork is not equalmutation or reproductiveopportunity",
+    "Endpoint census can miss extinct/lost innovations; child-removal solo utility is not competitivefitness",
+    "Delayedparity admits small finite-state solution; no unknownrule learning or evolvinginterpreter measured",
+    "Proposed5CPU10wall128MiB and32MiBraw+32MiBjournal96MiBarchive caps have no demonstrated fullruntime fit; future inert worstcase measurement can force reviewedprospectivebudget amendment before seeds/outcomes"
+  ],
+  "reviewer": "/root/architecture_critic",
+  "reviewer_production_source_changes": 0,
+  "reviewer_scientific_attempts_claimed": 0,
+  "reviewer_scientific_authority_changes": 0,
+  "reviewer_worlds_executed": 0,
+  "source_commit": "328433a1eae840fb1d4cb884d3cb364a273d52e4",
+  "utc": "2026-11-12T19:27:42.692626+00:00",
+  "verdict": "ACCEPT - RESEARCH ARCHITECTURAL DECISION AND PROSPECTIVE SCIENTIFIC DESIGN ONLY; NOT RUNTIME QUALIFICATION OR SCIENTIFIC GO"
+}

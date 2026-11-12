@@ -1,0 +1,47 @@
+{
+  "AI_Research_checkout_HEAD": "2fb16af7299f4d0c1da4cc60c57e6cf5017931ec",
+  "AL03_readonly_reproduction": {
+    "analysis_sha256": "37758d9c3df429f55171d36de4d3407c8266fa480980a33ed61879f04ee80352",
+    "conditions_sha256": "8be5d9985fc389efae3ded4c879771b04e45e6aa318d95420ad030477bef691a",
+    "matches_accepted_outputs": true,
+    "primary": 15,
+    "site_interactions": [
+      18,
+      0,
+      12,
+      0
+    ]
+  },
+  "baseline_commit": "2aaab414f77e6765ade3a16bf3d4fd551c656a92",
+  "classification": "Research design plus scalar engineering evidence, NOT executable scientific qualification",
+  "future_execution_authorized": false,
+  "next_study": "B-COMP-01 - proposed, inactive, no seeds generated",
+  "preservation_receipt_sha256": "7a44855c89f2a1ed3c55a47c46a35ee738e83707b644f78b904903d2fafc62f2",
+  "production_modifications": 0,
+  "scalar_proof": {
+    "all_cue_erased_tables_accuracy": 0.5,
+    "authored_balanced_cases": 128,
+    "command": "python -I -B -S research/substrate-decision-20261112/feasibility.py",
+    "evolutionary_searches": 0,
+    "imports_only": [
+      "itertools",
+      "json"
+    ],
+    "memoryless_functions": 4,
+    "output_sha256": "798eaa5f6f3474c6583b3042f06855654f978007dedc38485a454c1dd45aa53a",
+    "scientific_worlds": 0,
+    "scope": "Truth table and charged scalar operations only; no runtime scheduling, copying, selection, mutation accessibility or net fitness proof",
+    "source_sha256": "d8cddf6e7539611339c7166c0d84c5993e03fa56ee70539e491de6ded43c42c0"
+  },
+  "source_records": {
+    "D:\\OraLab\\reports\\ora-eka0-route-specific-decision-20261023.json": "21be4453b2031e957b681b375f9a5d8d78d1e49e3617ade5c70001b0bdfd4671",
+    "D:\\OraLab\\src\\AI-Research\\data\\alife\\combined-path-eerc-v6.json": "bc4928b7f97d79c70f9ab3af4ed789e629fe8663afc191316183ade37c0a38a1",
+    "D:\\OraLab\\src\\AI-Research\\docs\\artificial-life\\29-evolvable-semantics-cross-study.md": "c5dafd6209c5c798c8a267e7e90bb6c11d408bc3b4479b8065c236c01a3a28c9",
+    "D:\\OraLab\\src\\AI-Research\\docs\\artificial-life\\32-why-evolvable-computation-fails.md": "002e598b20b420c7db7956487f2282d0eb76c4a91517b9ab2052a96352ec1d3f",
+    "D:\\OraLab\\src\\AI-Research\\docs\\artificial-life\\41-pass9-alchemy-organization-barriers-full-review.md": "6a2dc88da37ef68bc026b984260fe4200d33225b69b3aa4188cb85d3bd53dbe8",
+    "D:\\OraLab\\src\\Ora2.0-al03-results-20261112\\docs\\DIGITAL-RENEWABLE-ECOLOGY-64-PROTOCOL.md": "9a85bc1ca85cfa6db595a176b47e9a0193c1137153e341c44f5ec9292cdce5b5",
+    "D:\\OraLab\\src\\Ora2.0-al03-results-20261112\\docs\\ENDOGENOUS-LEARNING-EVOLUTION-STRATEGY-20261023.md": "a30efe04fae0dd3d5027bf1b43bef8193ce0f6906cfd57ac84b5775764df7ea1",
+    "D:\\OraLab\\src\\Ora2.0-al03-results-20261112\\docs\\FOUNDING-CHARTER.md": "619e1b4c435af1ed517f759fd739a93ec8ad918441cff06b84c4b21d5d996c6d",
+    "D:\\OraLab\\src\\Ora2.0-al03-results-20261112\\experiments\\executed_heredity.py": "03e3f1035233e8e1a078cd401ee10857de8ea20dc0249dd6c973675e8fc80342"
+  }
+}
