@@ -6,7 +6,7 @@
 
 ## Current position and custody
 
-- **Leading decision:** pause bespoke OEB-01 implementation. Make **one read-only, archive-first Avida comparison** before choosing a new Ora experiment. Do not execute Avida or an Ora evolutionary population under this documentation decision.
+- **Leading decision (updated 2026-11-13):** the bounded, archive-first Avida comparison is complete with **partial but substantial authentic genotype evidence**. Pause bespoke OEB-01. The next research priority is a *read-only novelty and feasibility assessment* of conditional behavior under changing environments, not a released experiment. No Avida or Ora evolutionary population is authorized.
 - **Latest reported local engineering checkpoint:** OEB-01 final resource review at local commit c4db9111da8459a147355751d553d16e4a496597. Eight one-use diagnostic starts consumed, all 16 child-Job processes closed, two longest cases resource-refused as *incomplete*. Do not retry.
 - **Remote GitHub baseline at compilation:** Ora2.0/main d3f8356262916a5771a25c8db0a77b8830fa57d1. The separately published Candidate B **research-only** decision is [82256ca](https://github.com/JeremyHennessy/Ora2.0/commit/82256ca2d06cdfb19e6b4471893f497e4819f4dc) on decision/substrate-20261112; it does not imply integrated OEB-01 source was published.
 - **Local-vs-remote limitation:** most post-AL02/AL03 engineering and science commit SHAs are reported from isolated D: worktrees and *were not retrievable from connected GitHub at this write*. The issue records are remotely visible evidence of a report; they are not an independent read of its local source, binary receipts or process state.
@@ -48,7 +48,7 @@ A final **eight-start** diagnostic allowance (no retries) showed complete 64-inp
 
 **Decision C:** OEB-01's private population/evidence/ancestry infrastructure is disproportionate to a calibration already known in Avida-class systems. Preserve the working integrated instrument, original protocol, negative records and consumed claims; do not rerun or install a larger version merely to finish the calibration. **Candidate B is not thereby proved incapable of evolving useful computation.**
 
-## Current highest-value action: read-only Avida evidence comparison
+## Completed archive-first Avida audit (original plan preserved)
 
 Focus on the source-authentic historical evidence behind Lenski et al. (2003), *The Evolutionary Origin of Complex Features*, and on Avida's **documented** native analysis capabilities. Published records describe the original 50-population study and 23 pivotal genotypes in a particular evolved-EQU lineage. Do not confuse 23 pivotal genotypes with 23 independent experimental populations.
 
@@ -63,6 +63,20 @@ Reference material:
 - [Avida source](https://github.com/devosoft/avida), including documented genotype classification and analysis configuration
 - [Avida to ALife converters](https://github.com/alife-data-standards/converters-avida), with **example** .spop population files; those examples are *not* authenticated original 2003 evidence
 - [Original Candidate B research-only publication](https://github.com/JeremyHennessy/Ora2.0/commit/82256ca2d06cdfb19e6b4471893f497e4819f4dc)
+
+## Latest material finding — authenticated Avida evidence recovered
+
+**Reported independent local audit (November 13, 2026):** [decision and receipt summary](https://github.com/JeremyHennessy/Ora2.0/issues/328#issuecomment-6856912720); local-only commit `9104677d21022f81863c712a67b59c262b6616a6`, not available on connected GitHub at this documentation update. The local reviewer reportedly reproduced 345 case-lineage entries, 112 Caltech-overlapping records and nine recovered pivotal arrays; these raw local checks were **not** rerun by this GitHub write.
+
+- Original **50-instruction ancestor** recovered; complete **345-genotype case-study lineage** with sequences, task flags and reported relative fitness recovered via a historically captured author page.
+- **112 overlapping genotype records** crosschecked against [Caltech's original supplement](https://authors.library.caltech.edu/records/8gckk-p8p83), with reported matches for sequence, origin/update, task flags and rounded fitness. [Archived original author lineage](https://web.archive.org/web/20030703043914id_/http://myxo.css.msu.edu:80/papers/nature2003/case-study/lineage.html).
+- **Nine of 23 pivotal genotype/intervention arrays** recovered from the author's historical [pivotal index](https://web.archive.org/web/20200127205125id_/http://myxo.css.msu.edu/papers/nature2003/pivotal_arrays/index.html). Fourteen arrays, exact original executable build/config, full population-wide birth/death logs and direct all-individual paid-ancestry history remain **UNKNOWN**.
+- The original paper's **50 independent experimental populations**, 23 selected pivotal functions/cases and 345 sequential case genotypes refer to **different inferential units**. Genotype genealogy and modern Avida's ability to recalculate/test a genotype do not reconstruct absent individual paid births.
+- **Decision B — partial evidence sufficient for the scoped historical comparison.** Historical Avida provides prior art for evolved logic functions. It does not certify that Candidate B (Ora) can evolve composed logic, nor prove speed or evidence-assurance equivalence.
+
+## Next highest-value question — changing environments (research only)
+
+Investigate when within-lifetime retained state or condition-dependent policies produce a **fully costed, inherited reproductive advantage** over strong fixed, current-cue/reactive, random and compact-reproducer strategies under genuinely changing conditions. First examine existing Avida plasticity/learning literature and articulate a **new, falsifiable Ora-relevant difference**. Do not repeat B-COMP-01's closed one-shot delayed-parity/CPU-bonus scheme, post-hoc reward tuning or bespoke instrumentation by default. Compare read-only Avida methods against Candidate B/C before requesting any execution; no new scientific run, seed, installation or resource-cap change is authorized.
 
 ## What would count as the next real breakthrough?
 
