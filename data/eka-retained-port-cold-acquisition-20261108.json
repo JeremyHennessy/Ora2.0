@@ -1,0 +1,43 @@
+{
+  "schema": "ORA-RETAINED-PORT-COLD-ACQUISITION-GATES-v1",
+  "scope": "SOURCE_ONLY_AST_AND_NECESSARY_ENERGY_INEQUALITY",
+  "pressure71_sha256": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+  "register_gate": {
+    "verdict": "NO_GO_BARE_FREE_ACQUISITION_CLAIM",
+    "finding": "FORAGE preserves the attempted port on success and failure. Fixed outcome-independent continuation repeats the same prechosen port as its matched constant-port control. Preservation alone does not prove acquisition or recognition.",
+    "limits": "No universal READ requirement. Energy, nursery, control, communication and selection can mediate indirect outcome dependence. Warm-cache bounds remain valid after acquisition is established."
+  },
+  "cold_roundtrip": {
+    "verdict": "NO_GO_THREE_MEAL_DIRECT_READ_ROUNDTRIP_FIRST_BIRTH",
+    "premises": "Fresh E12 daughter, empty nursery, no incoming transfer, full27word child, distinct-site roundtrip of distance d>=1, R>=1 direct READ before first birth.",
+    "birth_energy_including_base": 67,
+    "minimum_cost": "67 + M + 2*d + R",
+    "maximum_supply": "12 + 20*M",
+    "necessary_condition": "19*M >= 55 + 2*d + R",
+    "closest_case": {"M": 3, "d": 1, "R": 1, "supply": 72, "minimum_cost": 73, "minimum_meals_necessary": 4},
+    "limits": "The daughter startup12 is inside DIV30. Allowing parent death does not fund this case. Failed probes, control, spill, extra memory work, material, scheduling and expiry remain uncharged optimistic obligations. Four meals are necessary, not sufficient. No claim for transfers, prefilled nursery or other acquisition mechanisms."
+  },
+  "central_verdict": "UNKNOWN_FULL_ORDINARY_LEARNING_LIFECYCLE",
+  "first_unclosed_dependency": "Actual ordinary origin, qualified causal intervention and common-horizon descendant advantage of a complete candidate against strong controls. A conditional paid cold-to-warm first-birth witness already exists in the one-shot certificate.",
+  "accepted_witness_reconciliation": {
+    "source": "data/eka-one-shot-specialization-decision-20261101.json",
+    "sha256": "d2887e3fcb935c1f314175c5f31286cbab6f10c1b905afce3a782ce7fd07d86d",
+    "conditional_birth": "Personal probe, READ and control fund first birth at own39/global147, parent22or29 and child12. Actual jointly required mutations remain unknown.",
+    "causal_receipt": "drafts/eka-one-shot-causal-bound-20261101/result.json",
+    "causal_sha256": "1a16d03f1bfef5eb1db1ac5357970efe1733b71131db060255ae5ae14928ef09",
+    "formal_port_reset": "Target1 fixed latch births147 intact; formal port-only reset arm dies195 with no focal birth. Backup information remains, handling qualification and general control superiority are unproved.",
+    "scope": "Reuses accepted exact evidence without rerun. Corrects the recent overbroad statement that no paid acquisition-to-birth source witness existed. Does not weaken the bare-register or three-meal scoped negatives."
+  },
+  "special_food_boundary": {
+    "identity": "For post64 initial site0 target A=b XOR1, special packet16..31 target S_i=b XOR L XOR N_i=A XOR1 XOR L XOR N_i.",
+    "match_condition": "S_i equals A iff L XOR N_i equals1.",
+    "decision": "NO_GO_EXTENDING_INITIAL_LATCH_PREDICTION_AS_A_GUARANTEE_ACROSS_PACKET_CLASSES",
+    "source_reason": "No constraint in the reviewed equations supplies L or N_i from the initial successful port. The fixed hot loop has no later acquisition or retarget instruction.",
+    "limits": "No actual hash outputs, seed frequencies or descendant histories inferred. Other actors can clear a mismatching head. Existing147/195 proofs remain valid because their special-stock premises were already scoped."
+  },
+  "independent_review": "founder_source_followup scoped PASS for acquisition distinction and separate cold-roundtrip bound",
+  "checks": ["Source SHA matched", "AST FORAGE body has zero register writes", "Four symbolic chosen-port/target cases", "Necessary energy inequality checked at distances1/2 and READ counts1/2"],
+  "scientific_imports": 0,
+  "World_or_population_or_seed_execution": 0,
+  "supplied_genomes": 0
+}

@@ -1,0 +1,20 @@
+{
+  "execution_source_commit": "773eb98feb1ac06278ff7270810256f5efbf1709",
+  "raw_result_sha256": "14a97ec4f4cce33daf82d92967fb9d7459641134f185680a6819f39e2794c600",
+  "raw_result_bytes": 6670775,
+  "sources": {
+    "bounded_runner.py": "4574f84a3e1945adecf2283b1e0c26d0bacc63ebd2d495de0236634ebe9410d0",
+    "census.py": "bbb2a21d43ea164de86e96799f7e70e409cfc8257b9cb3fb274f01a0617710f1",
+    "PROTOCOL.md": "46afc416e951f4ba5880466a93f87cb68c6f2b50890d7935363d1784954bfacc",
+    "README.md": "5a9ed4ddb713c2019400c5f92f108764b06dce78be130336c886bb82783f7689",
+    "RESULT.md": "cfa220e4270ce5c3a4b453ff281067c0080e3c1fa925f4b9357946c2747a2753",
+    "test_assay.py": "3990b966ca1fe5ce8f6cdc29cd76cd3a997615ca1cdfbcd39db230118700b8cf",
+    "verify_retained.py": "2dd3541f951c0933669a88745935825d99a5d748a5c50fd3e079bdb8b4563884"
+  },
+  "artifacts": {
+    "complete-assay.json.gz": "edee4e87babd6e2b9ccc0c0d172d49a830eeb78e77921cb81f01edc67edf6945",
+    "execution-summary.json": "576afcd50b95fff5d6b7cd2315ae28ed5a97bb1224cfd0bafe47ef5dd72803fd",
+    "independent-review-summary.json": "842a5d8eca9f8b5c5bcd375d416ad2c2008b2e678723b06e2a2382d5fd8772e7",
+    "selection.json": "4c76eeb6657fd8c904f5d89854c76f9ddefda27d1e0c562d233f34b19cdf52da"
+  }
+}

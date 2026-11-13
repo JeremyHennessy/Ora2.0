@@ -1,0 +1,98 @@
+{
+  "schema": "ORA-STAGE1-RECOGNIZER-QUALIFICATION-v1",
+  "decision": "NOT_READY",
+  "component_decision": "PASS_NARROW_STATIC_RECOGNITION_AND_LOCAL_COPY_BINDING_ONLY",
+  "first_blocker": "Qualified producer-independent complete-history verifier plus custody consumer binding actual COPY, source-state, mutation draws, payment, genesis, genealogy and provenance to each eligible birth",
+  "definition": "NOV1-ONE-SHOT-FIXED-LAYOUT-v1",
+  "accepted_certificate_sha256": "d2887e3fcb935c1f314175c5f31286cbab6f10c1b905afce3a782ce7fd07d86d",
+  "accepted_origin_rule": "drafts/eka-one-shot-specialization-20261101/origin-burden.py exact previously accepted operand classes; no expansion to other odd SET immediates",
+  "source_pins": {
+    "experiments/__init__.py": "d1b4e4db64becb173467ca4fc66c8770e14411b895ea5305a8fe6d2d359a15ab",
+    "experiments/eka_one_shot_recognizer.py": "cf9929635ba67902e5f575cff749a9572591691f5f51451cfb34d5cf6da87e92",
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_pressure71_referee.py": "73f5fc2edf56e8873ab888e0636066cd27cd048438fdcbf1e4100cc83a787024",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3",
+    "experiments/digital_informative_exposure23_interpret.py": "66b041685abfdd5081c35a022faba68491a36df4a52cc620875ebab0e1e84aaa",
+    "experiments/digital_informative_exposure23.py": "13a72d5000a5f4cbf90d922c20caee9a1ad78d7907cd188af92772de64f77e48"
+  },
+  "tests_sha256": "fe7cbdece505644bf03342df0cdd4b711c8ffd6832af28f8cd3e1202574568ec",
+  "tests": {
+    "method": "python -B -S -m unittest discover -s tests -p test_eka_one_shot_recognizer.py",
+    "passed": 15,
+    "single_word_class_checks": 1728,
+    "scope": "Synthetic data and Boolean implications only; no interpreter/World/seed or real lineage"
+  },
+  "independent_review": {
+    "definition": "founder_source_followup scoped PASS",
+    "implementation": "output_review scoped PASS; malformed decoded instructions and refused-event outcomes found and fixed before acceptance",
+    "module_sha256": "cf9929635ba67902e5f575cff749a9572591691f5f51451cfb34d5cf6da87e92",
+    "tests_sha256": "fe7cbdece505644bf03342df0cdd4b711c8ffd6832af28f8cd3e1202574568ec"
+  },
+  "birth_binding_limit": "A consistent fake record remains unauthenticated, including a fake verified flag. Mutation arithmetic is checked against supplied draws, not independently derived seed hashes or paid parent source state. No actual source-state history or current native qualification is claimed.",
+  "ordinary_accessibility": {
+    "minimum_direct_word_changes": [
+      15,
+      14
+    ],
+    "interpretation": "Accepted fixed-class distances only. COPY algebra permits substitutions but no realized hash path, viable intermediate lineage or discovery probability has been established. Do not infer independence."
+  },
+  "eight_contexts": "A finite descriptive incidence attempt with all nonfounder births and failure denominators. Not eight independent mutation draws or a powered chance of discovery; zero class matches cannot rule out learning or longer paths. No replacement contexts or adaptation to results.",
+  "resource_review": {
+    "Stage1_worlds": 8,
+    "maximum_original_dispatches": 32768,
+    "physical_reservations_complete": false,
+    "new_contexts_registered": 0,
+    "native_execution_authorized": false
+  },
+  "dependency_review": {
+    "project_static_import_members_pinned": [
+      "experiments/__init__.py",
+      "experiments/eka_one_shot_recognizer.py",
+      "experiments/digital_pressure71_population.py",
+      "experiments/digital_pressure71_referee.py",
+      "experiments/digital_sharedlineage68_population.py",
+      "experiments/digital_mobile54.py",
+      "experiments/digital_informative_exposure23_interpret.py",
+      "experiments/digital_informative_exposure23.py"
+    ],
+    "local_only_members": [
+      "experiments/digital_informative_exposure23.py reachable from the preserved Mobile54 generate function, not invoked here"
+    ],
+    "stdlib_and_runtime": [
+      "base64",
+      "hashlib",
+      "json",
+      "sys",
+      "zlib",
+      "3.11.1"
+    ],
+    "complete_execution_closure": false,
+    "reason": "No accepted actual entrypoint/reader/custody manifest, full interpreter/stdlib/OS binary closure or qualified complete-history integration. Static project pins do not close those requirements."
+  },
+  "protocol_sha256": "dfd2397b421bb2da8c469c1b863e4a874dd22e5316757b4e50d2f6efad1a8134",
+  "freeze_status": "Component bytes pinned for review; full protocol NOT_FROZEN_NOT_REGISTERED",
+  "rollback": "Revert this isolated source/test/data/doc commit on PR325. Scientific source files, closed evidence, current main workflow and engineering branch are untouched.",
+  "execution": {
+    "World": 0,
+    "population": 0,
+    "closed_seed_queries": 0,
+    "native_qualification": 0,
+    "contexts_registered": 0,
+    "stage2_qualification": 0
+  },
+  "protocol_review": "Independent review resolved Stage1/Stage2 timing: Stage1 can stand alone; a later Stage2 comparison needs controls committed before disclosure, with qualification still deferred. No retroactive control choice.",
+  "pin_semantics": "source_pins are physical current-worktree bytes; git_blob_sha256 identifies repository-normalized bytes separately. Any execution manifest must bind the actual consumed bytes and independently reconcile line endings.",
+  "git_blob_sha256": {
+    "experiments/__init__.py": "aba73293015e4872bcb7cf6eeb9ae34d49cc7012fa4773ce168a65c18bf628d5",
+    "experiments/eka_one_shot_recognizer.py": "cf9929635ba67902e5f575cff749a9572591691f5f51451cfb34d5cf6da87e92",
+    "experiments/digital_pressure71_population.py": "18e72ada34709977edf300ed5eea6abceaddb64f208a9e78c626da160b844faf",
+    "experiments/digital_pressure71_referee.py": "ea8c951cf2b2fce43f95215266621dde4daa97710356bb4d2058a6188be96892",
+    "experiments/digital_sharedlineage68_population.py": "c0f5b40818be9e2a34573b3fd3b592acb2229bd8187501400de2718aac881232",
+    "experiments/digital_mobile54.py": "412e3f414a42b3625ae40a1235db25843039a7d52d7ae71802128fa84f06a07c",
+    "experiments/digital_informative_exposure23_interpret.py": "49ad03424d24c8a6a8523156545ebe77207e3ff062cb416bcaea6d3a0df6506d",
+    "experiments/digital_informative_exposure23.py": "96027606584e8fa7e30b6c7ced3d4e29c3e335ce3985306bd059433bbd9c6065"
+  },
+  "protocol_pin_semantics": "protocol_sha256 is the physical worktree-byte SHA256; protocol_git_blob_sha256 is the committed normalized-byte SHA256. Exact normalization was checked as CRLF to LF only.",
+  "protocol_git_blob_sha256": "4e415ee61a0700265ea79245465dda466fe833b9cbf14ee915e8c064a199e9be"
+}

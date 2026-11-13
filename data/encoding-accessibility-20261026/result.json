@@ -1,0 +1,190 @@
+{
+  "schema": "ORA-ENCODING-ACCESSIBILITY-PUBLISHED-RESULT-v1",
+  "execution_source_commit": "7e037d5009354552b3625116f03c70a23e88ba10",
+  "prior_325_raw_unchanged": "0a6ba8975f364cf04cf23916b72f9c12a00f68c14fc2e1bb6f8d19727f8962e6",
+  "complete_projection_sha256": "1dbc99b06a38ba7aaa32ec6e5d68edbc9839def582aea42ad17de7a8495ab3ee",
+  "protocol_sha256": "960763734250d0ff0aafb6dd14ae3aa20d658f367b8d11b6697d3fca5359afbf",
+  "source_pins": {
+    ".gitattributes": "2b4a36b3152af89c2af116c71c13e3d20ee2acb0c8cbc4b468d8e2d388727ae0",
+    "bounded_runner.py": "4574f84a3e1945adecf2283b1e0c26d0bacc63ebd2d495de0236634ebe9410d0",
+    "census.py": "3fb32e465a5505ee74ee99b696253e3ec1f7129a08d215db72823301ab62b86b",
+    "README.md": "edace5ebd83f8869c72a85a041d0a86ca044bc32091953d44bf5e582d35dafda",
+    "test_projection.py": "26133578fb92a1b5d454feb50e36611874f5c39bc8c89b7cecd4725a9269fcdc"
+  },
+  "input_reward_unchanged": 8,
+  "original_controller_executions": 0,
+  "new_population_executions": 0,
+  "families": {
+    "6": {
+      "genotypes": 64,
+      "undirected_edges": 192,
+      "summary": {
+        "development": {
+          "founder_net": 8,
+          "beats_fixed": 2,
+          "beats_strong": 0,
+          "best_net": 368,
+          "nonpositive_net": 38
+        },
+        "validation": {
+          "founder_net": -160,
+          "beats_fixed": 2,
+          "beats_strong": 0,
+          "best_net": 800,
+          "nonpositive_net": 54
+        }
+      },
+      "reachable": 24,
+      "development_selected_endpoint": 37,
+      "development_path": [
+        {
+          "genome": 0,
+          "development_net": 8,
+          "reused_validation_net": -160
+        },
+        {
+          "genome": 1,
+          "development_net": 8,
+          "reused_validation_net": -160
+        },
+        {
+          "genome": 5,
+          "development_net": 266,
+          "reused_validation_net": 494
+        },
+        {
+          "genome": 37,
+          "development_net": 368,
+          "reused_validation_net": 800
+        }
+      ],
+      "path_is_observed_evolution": false
+    },
+    "8": {
+      "genotypes": 256,
+      "undirected_edges": 1024,
+      "summary": {
+        "development": {
+          "founder_net": -24,
+          "beats_fixed": 2,
+          "beats_strong": 0,
+          "best_net": 336,
+          "nonpositive_net": 238
+        },
+        "validation": {
+          "founder_net": -224,
+          "beats_fixed": 0,
+          "beats_strong": 0,
+          "best_net": 736,
+          "nonpositive_net": 248
+        }
+      },
+      "reachable": 48,
+      "development_selected_endpoint": 197,
+      "development_path": [
+        {
+          "genome": 0,
+          "development_net": -24,
+          "reused_validation_net": -224
+        },
+        {
+          "genome": 1,
+          "development_net": -24,
+          "reused_validation_net": -224
+        },
+        {
+          "genome": 5,
+          "development_net": 24,
+          "reused_validation_net": -352
+        },
+        {
+          "genome": 69,
+          "development_net": 24,
+          "reused_validation_net": -352
+        },
+        {
+          "genome": 197,
+          "development_net": 336,
+          "reused_validation_net": 736
+        }
+      ],
+      "path_is_observed_evolution": false
+    }
+  },
+  "copy_fixture_summary": {
+    "total": 8334,
+    "complete": 2778,
+    "incomplete": 5556,
+    "minimum_complete_copy_budget": {
+      "6": 22,
+      "8": 26,
+      "12": 34
+    },
+    "actual_organism_births": 0,
+    "twelve_bit_scope": "two arbitrary reference genotypes, all single-bit locations; no phenotype execution"
+  },
+  "native": {
+    "status": "COMPLETED_NOT_SCIENTIFIC_ACCEPTANCE",
+    "exit_code": 0,
+    "job_user_cpu_seconds": 0.3125,
+    "elapsed_wall_seconds": 0.4220000000204891,
+    "peak_job_committed_bytes": 74629120,
+    "job_total_processes": 1,
+    "job_active_processes_after_wait": 0,
+    "job_handle_closed": true
+  },
+  "reviews": {
+    "independent-postflight-review.json": "675a664f7bd9a484ab58ba815ebc59b4e577a83a81c9a5ce705ce78d23358683",
+    "independent-preflight-review.json": "7f4fe520a8e52b2fae2a2cc958a1f67ce2a87655ef1761599fed8c64ac1f855b"
+  },
+  "research_review": {
+    "sha256": "cf878da313f25aeb69d378f58f309301ef5cea96b9290392ea82e7bc2bfbabd0"
+  },
+  "unpriced_decoder_overhead_margin": {
+    "best_event6_reused_validation_delta_fixed": 64,
+    "sequences": 32,
+    "units_per_sequence_to_erase_advantage": 2
+  },
+  "claims": {
+    "natural_evolution": false,
+    "new_learning_behavior": false,
+    "fresh_unseen_validation": false,
+    "actual_reproductive_fitness": false,
+    "population_admission": false
+  },
+  "next_gate": "Actual within-life debit ordering/decoder cost/founder survival and earned copying budget, then independently admitted finite evolutionary pilot. No supplied winner, no old rerun/reward change.",
+  "funding_upper_bound": {
+    "artifact": "funding-upper-bound.json",
+    "sha256": "b46785c15396f2d08e765d58f40677e49067bc5096a06aaea1e1ea8bc84c50a9",
+    "source_sha256": "436d703b9af268e2afc46b1d0fd41272181754517e50f40cc6551e066200c6a4",
+    "summary": {
+      "development": {
+        "cases": 16,
+        "total_maximum_copies": 6,
+        "R_upper_numerator": 6,
+        "R_upper_denominator": 16,
+        "zero_copy_cases": 10,
+        "maximum": 1,
+        "conditional_descendants_upper_fraction": [
+          6,
+          10
+        ]
+      },
+      "reused_validation": {
+        "cases": 32,
+        "total_maximum_copies": 11,
+        "R_upper_numerator": 11,
+        "R_upper_denominator": 32,
+        "zero_copy_cases": 22,
+        "maximum": 2,
+        "conditional_descendants_upper_fraction": [
+          11,
+          21
+        ]
+      }
+    },
+    "scope": "Conditional optimistic event6blind0 accounting only; no controller, environment or population execution",
+    "unit_checks": 4,
+    "independent_postflight_sha256": "748c827b0686b1221d5cd52470624635efcec3257b5c985dfbed9d43299dd894"
+  }
+}

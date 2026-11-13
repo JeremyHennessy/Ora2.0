@@ -1,0 +1,482 @@
+{
+  "schema": "EKA-SUCCESS-GATED-STATIC-CONTROLLER-FEASIBILITY-v1",
+  "scope": "NONEXECUTING_SYMBOLIC_LAYOUT_AND_SCALAR_COSTS_NOT_ORGANISM_EXECUTION",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "question": "Is simple personally acquired successful-port behavior representable with full copying/division under the nine-slot limit, independently of cross-location navigation?",
+  "symbolic_control_witness": "Nine slots; entry0: FORAGE(port register),1: READ(feedback register),2: IF feedback register zero go7 else fallthrough3,3:COPY,4:DIVIDE,5:JUMP0,6:unreachable padding,7:SET feedback register to1,8:XOR port register with feedback register then wrap0. Two distinct existing registers. This is a symbolic static feasibility witness, not a serialized genome, inserted founder, selected seed or executed program.",
+  "control_argument": "Blank port0 probes first. Success feedback1 passes to COPY/DIVIDE then loops without changing the port. Failure feedback0 goes through paid SET1 and XOR to flip the port, then wraps. COPY executes once per successful feeding cycle; exactly nine successful COPY actions fill27 nursery words. Earlier DIVIDE attempts refuse and still pay their base fee. Ninth DIVIDE succeeds if resources and energy guards hold. No nursery-completion opcode is needed for this particular periodic loop.",
+  "newborn_behavior": "The same code can restart from blank registers/pc0 at its parent site and reacquire its own port; no private cache is inherited. Code length27 and unchanged opcode/operand ranges permit the symbolic layout, but literal ancestor reachability is not demonstrated.",
+  "feasibility_conditions": [
+    "Hypothetical organism already has this code; no replacement of the approved ordinary ancestor",
+    "Single actor until first birth at site0, tick0, energy12, blank registers and43 initial body material",
+    "Initial site0 food has32 packets; first16 are initially unlocked, port target is seed parity on packets0..15",
+    "No other consumers, transfer, mutation during these scalar prefix costs; the two target cases exhaust symbolic parity without querying any seed",
+    "Nine successes occur before global64, so release/renewed target and scheduling interference are absent",
+    "469 free material initially exceeds43 child requirement; entity cap allows first child"
+  ],
+  "paid_first_birth_cases": [
+    {
+      "symbolic_target": 0,
+      "prefix_fees": 0,
+      "dispatches_to_first_birth": 53,
+      "food_successes": 9,
+      "copy_extra_energy": 27,
+      "division_extra_energy": 30,
+      "cap_spill": 55,
+      "parent_energy": 27,
+      "child_energy": 12,
+      "population_energy": 39,
+      "materials_for_child": 43,
+      "own_expiry": 256,
+      "rows": [
+        {
+          "meal": 1,
+          "start_energy": 12,
+          "post_food": 31,
+          "pre_division_extra": 24,
+          "post_division": 24,
+          "cycle_end_or_birth": 23,
+          "birth": false
+        },
+        {
+          "meal": 2,
+          "start_energy": 23,
+          "post_food": 42,
+          "pre_division_extra": 35,
+          "post_division": 35,
+          "cycle_end_or_birth": 34,
+          "birth": false
+        },
+        {
+          "meal": 3,
+          "start_energy": 34,
+          "post_food": 53,
+          "pre_division_extra": 46,
+          "post_division": 46,
+          "cycle_end_or_birth": 45,
+          "birth": false
+        },
+        {
+          "meal": 4,
+          "start_energy": 45,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 5,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 6,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 7,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 8,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 9,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 27,
+          "cycle_end_or_birth": 27,
+          "birth": true
+        }
+      ]
+    },
+    {
+      "symbolic_target": 1,
+      "prefix_fees": 5,
+      "dispatches_to_first_birth": 58,
+      "food_successes": 9,
+      "copy_extra_energy": 27,
+      "division_extra_energy": 30,
+      "cap_spill": 50,
+      "parent_energy": 27,
+      "child_energy": 12,
+      "population_energy": 39,
+      "materials_for_child": 43,
+      "own_expiry": 256,
+      "rows": [
+        {
+          "meal": 1,
+          "start_energy": 7,
+          "post_food": 26,
+          "pre_division_extra": 19,
+          "post_division": 19,
+          "cycle_end_or_birth": 18,
+          "birth": false
+        },
+        {
+          "meal": 2,
+          "start_energy": 18,
+          "post_food": 37,
+          "pre_division_extra": 30,
+          "post_division": 30,
+          "cycle_end_or_birth": 29,
+          "birth": false
+        },
+        {
+          "meal": 3,
+          "start_energy": 29,
+          "post_food": 48,
+          "pre_division_extra": 41,
+          "post_division": 41,
+          "cycle_end_or_birth": 40,
+          "birth": false
+        },
+        {
+          "meal": 4,
+          "start_energy": 40,
+          "post_food": 59,
+          "pre_division_extra": 52,
+          "post_division": 52,
+          "cycle_end_or_birth": 51,
+          "birth": false
+        },
+        {
+          "meal": 5,
+          "start_energy": 51,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 6,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 7,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 8,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 57,
+          "cycle_end_or_birth": 56,
+          "birth": false
+        },
+        {
+          "meal": 9,
+          "start_energy": 56,
+          "post_food": 64,
+          "pre_division_extra": 57,
+          "post_division": 27,
+          "cycle_end_or_birth": 27,
+          "birth": true
+        }
+      ]
+    }
+  ],
+  "fixed_stay_put_matching_port_cases": [
+    {
+      "symbolic_target": 0,
+      "prefix_fees": 0,
+      "dispatches_to_first_birth": 35,
+      "food_successes": 9,
+      "copy_extra_energy": 27,
+      "division_extra_energy": 30,
+      "cap_spill": 71,
+      "parent_energy": 29,
+      "child_energy": 12,
+      "population_energy": 41,
+      "materials_for_child": 43,
+      "own_expiry": 256,
+      "rows": [
+        {
+          "meal": 1,
+          "start_energy": 12,
+          "post_food": 31,
+          "pre_division_extra": 26,
+          "post_division": 26,
+          "cycle_end_or_birth": 25,
+          "birth": false
+        },
+        {
+          "meal": 2,
+          "start_energy": 25,
+          "post_food": 44,
+          "pre_division_extra": 39,
+          "post_division": 39,
+          "cycle_end_or_birth": 38,
+          "birth": false
+        },
+        {
+          "meal": 3,
+          "start_energy": 38,
+          "post_food": 57,
+          "pre_division_extra": 52,
+          "post_division": 52,
+          "cycle_end_or_birth": 51,
+          "birth": false
+        },
+        {
+          "meal": 4,
+          "start_energy": 51,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 5,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 6,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 7,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 8,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 9,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 29,
+          "cycle_end_or_birth": 29,
+          "birth": true
+        }
+      ]
+    },
+    {
+      "symbolic_target": 1,
+      "prefix_fees": 1,
+      "dispatches_to_first_birth": 36,
+      "food_successes": 9,
+      "copy_extra_energy": 27,
+      "division_extra_energy": 30,
+      "cap_spill": 70,
+      "parent_energy": 29,
+      "child_energy": 12,
+      "population_energy": 41,
+      "materials_for_child": 43,
+      "own_expiry": 256,
+      "rows": [
+        {
+          "meal": 1,
+          "start_energy": 11,
+          "post_food": 30,
+          "pre_division_extra": 25,
+          "post_division": 25,
+          "cycle_end_or_birth": 24,
+          "birth": false
+        },
+        {
+          "meal": 2,
+          "start_energy": 24,
+          "post_food": 43,
+          "pre_division_extra": 38,
+          "post_division": 38,
+          "cycle_end_or_birth": 37,
+          "birth": false
+        },
+        {
+          "meal": 3,
+          "start_energy": 37,
+          "post_food": 56,
+          "pre_division_extra": 51,
+          "post_division": 51,
+          "cycle_end_or_birth": 50,
+          "birth": false
+        },
+        {
+          "meal": 4,
+          "start_energy": 50,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 5,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 6,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 7,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 8,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 59,
+          "cycle_end_or_birth": 58,
+          "birth": false
+        },
+        {
+          "meal": 9,
+          "start_energy": 58,
+          "post_food": 64,
+          "pre_division_extra": 59,
+          "post_division": 29,
+          "cycle_end_or_birth": 29,
+          "birth": true
+        }
+      ]
+    }
+  ],
+  "fixed_wrong_port": "A fixed wrong port receives no energy on this initial homogeneous stock. Starting12 cannot reach the >=31 pre-dispatch energy needed for division; no offspring regardless of its control schedule. This does not permit selecting the matching fixed control after seeing a target.",
+  "comparison_decision": "A single fixed port fails one of the two symbolic targets; the feedback policy is robust to both conditional targets and certifies the used port by personal success. However each predeclared matching fixed stay-put control is cheaper:35/36 vs53/58 dispatches, same9 meals, parent29 vs27. Equal-cost reactive success-gated memory is this same mechanism, a valid learning comparator. No distributional, population or evolved-fitness advantage is demonstrated.",
+  "paired_cache_erasure_algebra": [
+    {
+      "symbolic_target": 1,
+      "identical_handling_fees": 0,
+      "port_register_erased_to_zero": false,
+      "extra_failure_dispatches": 0,
+      "dispatches_to_birth_after_checkpoint": 5,
+      "birth_global_tick": 58,
+      "cap_spill_on_last_meal": 11,
+      "parent_energy": 27,
+      "child_energy": 12
+    },
+    {
+      "symbolic_target": 1,
+      "identical_handling_fees": 0,
+      "port_register_erased_to_zero": true,
+      "extra_failure_dispatches": 5,
+      "dispatches_to_birth_after_checkpoint": 10,
+      "birth_global_tick": 63,
+      "cap_spill_on_last_meal": 6,
+      "parent_energy": 27,
+      "child_energy": 12
+    },
+    {
+      "symbolic_target": 1,
+      "identical_handling_fees": 1,
+      "port_register_erased_to_zero": false,
+      "extra_failure_dispatches": 0,
+      "dispatches_to_birth_after_checkpoint": 5,
+      "birth_global_tick": 59,
+      "cap_spill_on_last_meal": 10,
+      "parent_energy": 27,
+      "child_energy": 12
+    },
+    {
+      "symbolic_target": 1,
+      "identical_handling_fees": 1,
+      "port_register_erased_to_zero": true,
+      "extra_failure_dispatches": 5,
+      "dispatches_to_birth_after_checkpoint": 10,
+      "birth_global_tick": 64,
+      "cap_spill_on_last_meal": 5,
+      "parent_energy": 27,
+      "child_energy": 12
+    }
+  ],
+  "erasure_decision": "At target1 after eight successful meals, the hypothetical organism has E56, pc0, feedback1, feedback-register1 and nursery24. Counterfactually erasing only its port register adds five failed-path dispatches before reacquisition. Under zero or one identical scalar handling fee, cap spill falls by the same five and both arms give parent27+child12 at first birth. Thus this first-birth construction shows a conditional timing saving, not retained-energy or offspring-count advantage. No erasure operation or intervention protocol was executed/admitted; the handling fee is an illustrative equal-cost scalar, not a changed law. With handling1, successful FORAGE is at global60, before the initial-packet target flip at64; only DIVIDE reaches64. Input/release occurs at64 and requires accounting in any whole-world comparison. The earlier incorrect wording that packet8 retained seed-parity target at64 was rejected independently and preserved locally; no numerical row depended on that wording.",
+  "retired_subproblem": "Do not keep extending the unified six-role site3 entry as if three spare slots guaranteed a lifecycle. The different stationary success-gated witness uses no navigation/SENSE and remains subject to natural-origin and fair-competition proof.",
+  "remaining_proof": [
+    "Ordinary ancestor mutation accessibility and prefix-funded intermediate genotypes; code-format representability is not realized mutation or selection",
+    "Inherited fitness advantage rather than supplied adaptive controller",
+    "Matched causal erasure/sham handling with current feedback matched; successful-port register is personally acquired and erasing it may cost extra probes, but no performed intervention or survival result",
+    "Unseen conditions and fair fixed/reactive/free-stay/location-memory controls; no favorable target/history selection",
+    "Beyond first birth, descendants change scheduling, stock, energy/cap costs and global phases; no indefinite survival or renewed-food claim"
+  ],
+  "scientific_decision": "CONDITIONAL_STATIC_FULL_CONTROL_REPRESENTABILITY; NATURAL_ORIGIN_AND_COMPARATIVE_FITNESS_UNKNOWN",
+  "scientific_execution": 0,
+  "native_execution": 0,
+  "genotype_arrays": 0,
+  "scientific_imports": 0,
+  "seed_queries": 0,
+  "scientific_admission": "NO_GO",
+  "publication_provenance": {
+    "check_sha256": "914d21192c88228eb5b0ed71102c70a85eee68876f00c516b287af9d9fe640cb",
+    "result_sha256": "65ccb41fc121bc8ad58f1ba72d4bd26818fbdd02a042e9da92cf61903885919f",
+    "preserved_negative": "Independent initial-packet tick64 wording rejection and rejected exact script/result retained locally; corrected final result distinguishes FORAGE60 from DIVIDE64",
+    "scope": "No serialized genotype, scientific execution or scientific source change; exact-source independent review required before publication"
+  }
+}

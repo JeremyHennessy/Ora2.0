@@ -1,0 +1,89 @@
+{
+  "schema": "EKA-RENEWED-ACQUISITION-FRONTIER-v1",
+  "scope": "EXACT_SOURCE_AST_AND_FIXED_COUNTING_ONLY",
+  "source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "initial_food_counts_by_site": {
+    "0": 32,
+    "1": 16,
+    "2": 16,
+    "3": 0
+  },
+  "source_finding": "Site3 has no initial food. It receives four offered renewed packets at tick64 like every site, subject to admission; the unchanged founder forages only at0/2 and cannot consume them at3.",
+  "site0_first_renewed_lower_global_tick": 80,
+  "site0_proof": "Initial packets16..31 are inaccessible before globaltick64. All16 are therefore still at0 at that boundary. Oldest-ID selection and at most one successful food consumption per global dispatch require16 actions64..79 before first renewed consumption, hence no earlier than80. Other actors cannot speed this global bound; remaining0..15 stock can delay it.",
+  "site3_opportunity": "With no old stock at3, the oldest food there after the first refill is genuinely renewed. This removes one initial-versus-renewed ambiguity for a future funded arrival; it is not a supplied target bit or an admitted learner.",
+  "founder_first_birth_lower_global_tick": 70,
+  "founder_birth_proof": "Only one COPY at PC4, first possible action5 and then once per8-action loop. Nine successful COPY operations cannot finish before action69; the following DIV cannot birth before70. Guard failures can delay or prevent birth. Parent code has no SELFWRITE and COPY changes nursery, not parent code.",
+  "ordinary_access_limit": "Before the first birth there is only the unchanged founder, whose forage sites are0/2. Tick64 availability at3 is NOT a demonstrated opportunity for a novel ordinary descendant at64; descendants do not yet exist. Actual birth funding, mutation realization, position, control and future arrival must be proved.",
+  "lone_unchanged_founder_site0_acquisition": {
+    "premises": "Unchanged literal founder, no births and no other food consumers, no host intervention. This restriction scopes a falsifier; it must not be imposed on future competitors.",
+    "maximum_site0_FORAGE_attempts_before_own_expiry": 32,
+    "site0_attempt_ages": [
+      2,
+      4,
+      18,
+      20,
+      34,
+      36,
+      50,
+      52,
+      66,
+      68,
+      82,
+      84,
+      98,
+      100,
+      114,
+      116,
+      130,
+      132,
+      146,
+      148,
+      162,
+      164,
+      178,
+      180,
+      194,
+      196,
+      210,
+      212,
+      226,
+      228,
+      242,
+      244
+    ],
+    "required_successful_meals_at_site0_before_first_renewed_meal": 33,
+    "decision": "FALSIFIED_FOR_LONE_UNCHANGED_FOUNDER_SITE0_RENEWED_ACQUISITION",
+    "proof": "First/second forage ages2+8k and4+8k. Each loop moves net+2, so site0 occurs only for even k. At most16 site0 visits and32 attempts survive own age255;32 initial site0 packets must be consumed before the33rd successful meal can be renewed. Even granting every attempt success cannot meet33. Earlier death only tightens the bound.",
+    "limits": "Other consumers can clear initial stock; this proof does not apply when descendants or neighbors consume it. Mutated control need not share this attempt bound. No general memory impossibility or no-birth requirement is inferred."
+  },
+  "preserved_first_analysis": {
+    "files": "check-first-version.py and result-first-version.json",
+    "conditional_spill_arithmetic": 326,
+    "withdrawn_interpretation": "The computed326 spill lower bound did not establish a reachable literal-founder acquisition corridor. Independent source review established the stronger32<33 impossibility for that lone unchanged founder. Retain the first receipt as conditional algebra, not paid feasibility."
+  },
+  "pre_first_refill_funding": {
+    "whole_population_before_tick64_min_initial_food_successes": 3,
+    "proof": "Before first renewed-food gain, surviving through63 prior global basefees requires aggregate positive organism energy:12+20M-63-extra_heat>=1. Hence M>=3. Cap spill, deaths and other costs only raise the requirement. Internal daughter startup is not new aggregate energy.",
+    "qualification": "Necessary aggregate funding bound, not evidence that a particular program reaches the boundary or that mutant descendants exist at64."
+  },
+  "next_hypothesis": "A funded ordinary descendant accessing initially-empty site3 after the genuine first birth may face a cleaner renewed-target information opportunity than a bare old-bit premise at0. Test affordable lawful acquisition/use and9instruction representation first, with cheap fixed/reactive/last-success/FSM/stay/erasure/sham/unseen controls. Do not supply a winning genotype or choose a favorable seed.",
+  "decision": "FALSIFIED_LONE_UNCHANGED_FOUNDER_SITE0_ACQUISITION; PASS_SOURCE_TIMING; SITE3_PAID_LEARNING_CANDIDATE_UNKNOWN",
+  "scientific_imports": 0,
+  "scientific_World_population_replay": 0,
+  "seed_or_hash_output_queries": 0,
+  "new_genotypes": 0,
+  "actual_organism_learning_this_analysis": "NOT_TESTED",
+  "scientific_admission": "NO_GO",
+  "publication_provenance": {
+    "raw_result_sha256": "0d8c2d5589545de0aa6206819d2237b2c91527b802f84d0d2e4094dd976605ec",
+    "check_script_sha256": "cbda56ea0d338b2356e3f854c6a07f32554c746f82b0d9bc0926dbac9a755ec5",
+    "independent_review_sha256": "6f2f0178b20e9b0a9e493cdc0008712ecc2056eb817453c5cab9493c7364785e",
+    "method": "Pinned scientific source AST and fixed symbolic/scalar reasoning only; no scientific code import, VM/World/replay/population, target-hash queries or new genotype. Detailed scripts and original receipts remain in local drafts."
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "scope": "SOURCE_PROJECTION_NONINTERFERENCE_AND_EIGHT_BOOLEAN_IDENTITIES_ONLY",
+  "publication_head": "b6f24ad77a0554298f0279a43eed15bfad989700",
+  "scientific_source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609",
+    "experiments/digital_mobile54.py": "245647ae7681a57b37d5d6e939c25d76a5df1365ccbdd98de3e4bd3cbb5ae1a3"
+  },
+  "source_lines": {
+    "existing_ancestor": "digital_mobile54.py:4",
+    "initial_registers": "digital_sharedlineage68_population.py:55-58",
+    "faithful_COPY": "digital_pressure71_population.py:20-24",
+    "register_write_semantics": "digital_pressure71_population.py:72-76",
+    "FORAGE_feedback": "digital_pressure71_population.py:78-87",
+    "unconditional_jump": "digital_pressure71_population.py:88",
+    "COPY_and_formation": "digital_pressure71_population.py:94-113",
+    "MOVE": "digital_pressure71_population.py:114",
+    "death_and_expiry": "digital_pressure71_population.py:123-133"
+  },
+  "relational_proof": [
+    "At birth both registers0; the first fixed SET establishes r1=1.",
+    "After setup the sole register-writing instruction is XOR r0,r1 once per loop; r1 remains1.",
+    "At loop k first FORAGE uses r0=k modulo2; second FORAGE uses r0=(k+1) modulo2. No target or feedback enters either value.",
+    "All program-control instructions are unconditional; no READ/LOAD/STORE, conditional branch, self-write or RECEIVE exists in this code.",
+    "Therefore paired live actors with this code and matched own instruction phase have equal r0/r1 even if target/feedback differ. Energy, heat, nursery, births, survival and global scheduling can differ and are not asserted equal.",
+    "In faithful parent_copy, COPY returns the parent word unchanged; newborn registers reset to0. This projection applies inductively to faithful code copies.",
+    "Survivor selection or a correlation between deterministic phase and target is not ruled out; it is not acquisition of a feedback-derived answer in r0."
+  ],
+  "bounded_boolean_cases": [
+    {
+      "loop_parity": 0,
+      "paired_feedback": [
+        0,
+        0
+      ],
+      "r0_first_probe_both": 0,
+      "r0_second_probe_both": 1,
+      "after_loop_both": 1
+    },
+    {
+      "loop_parity": 0,
+      "paired_feedback": [
+        0,
+        1
+      ],
+      "r0_first_probe_both": 0,
+      "r0_second_probe_both": 1,
+      "after_loop_both": 1
+    },
+    {
+      "loop_parity": 0,
+      "paired_feedback": [
+        1,
+        0
+      ],
+      "r0_first_probe_both": 0,
+      "r0_second_probe_both": 1,
+      "after_loop_both": 1
+    },
+    {
+      "loop_parity": 0,
+      "paired_feedback": [
+        1,
+        1
+      ],
+      "r0_first_probe_both": 0,
+      "r0_second_probe_both": 1,
+      "after_loop_both": 1
+    },
+    {
+      "loop_parity": 1,
+      "paired_feedback": [
+        0,
+        0
+      ],
+      "r0_first_probe_both": 1,
+      "r0_second_probe_both": 0,
+      "after_loop_both": 0
+    },
+    {
+      "loop_parity": 1,
+      "paired_feedback": [
+        0,
+        1
+      ],
+      "r0_first_probe_both": 1,
+      "r0_second_probe_both": 0,
+      "after_loop_both": 0
+    },
+    {
+      "loop_parity": 1,
+      "paired_feedback": [
+        1,
+        0
+      ],
+      "r0_first_probe_both": 1,
+      "r0_second_probe_both": 0,
+      "after_loop_both": 0
+    },
+    {
+      "loop_parity": 1,
+      "paired_feedback": [
+        1,
+        1
+      ],
+      "r0_first_probe_both": 1,
+      "r0_second_probe_both": 0,
+      "after_loop_both": 0
+    }
+  ],
+  "movement_correction": "Both MOVE instructions use constant r1=1 and each advances+1. One loop displacement is+2mod4, not cancellation. Four MOVEs across two loops return to the old foraging site. From founderpos0, FORAGE sites alternate0/2; sites1/3 are crossed without FORAGE in this faithful code.",
+  "motif_verdict": "FALSIFIED_FOR_THIS_MOTIF: the faithful founder-derived r0-as-personally-acquired-old-target premise is false. A coincidentally correct deterministic port is not a learned personal answer. This does not falsify general memory, lawful mutants, physiological energy effects, or source-level conditional E1 reward arithmetic.",
+  "prior_evidence_preserved": "Earlier17case,6bound,1584fee and2conditionalphase receipts remain unchanged. Their genuine-old-bit precondition was conditional; they never established faithful-founder acquisition.",
+  "free_policy_comparison": "Reproduction uses global material and does not require departure. A freely staying reference may avoid all four round-trip MOVE fees over two faithful loops. This is a comparator opportunity, not a supplied replacement genome, validated safe transformation, or proof of equal food/descendant scheduling.",
+  "nine_slot_closure": "The two-instruction repeatedCOPY motif plus seven other phase slots leaves no unused slot for genuine READ acquisition in that particular layout. Alternate nine-instruction layouts/reuse remain UNKNOWN; no genotype search or construction performed.",
+  "next_hypothesis": {
+    "statement": "Local personally observed same-phase renewed-port caching may repay a paid READ without an imposed travel task.",
+    "source_mechanism": "For a genuinely available renewed packet, port1 feedback equals the targetbit; one paid READ can retain it in a register. This identifies a lawful observation channel, not a supplied successful program.",
+    "cost_screen": "With the informative probe common, incremental acquisitionA=1, surviving registerR=0 and no travelD=0, each later meal saves at most one blind-pair dispatch. At least two later meals are necessary for positive fee room; correct fixed-port or last-successful-port references may tie or beat the cache.",
+    "limits": "Acquisition control and port setup, mixed initial-stock depletion, cap waste, repeated packet availability,27word program representation, mutation accessibility, actual net energy/fitness and unseen generalization remain UNKNOWN. A cheap latest-successful-port finite-state cache is a required comparator; outperforming blind probing alone does not establish older-memory superiority over reactive strategies.",
+    "controls": "Paid sham/erasure, nonpredictive older bit, prospective unseen conditions, both fixedports/blindpair and equally cheap last-port/finite-state controls; no imposed travel/starvation or privileged target."
+  },
+  "scientific_imports": 0,
+  "World_or_population_or_replay_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "supplied_genomes": 0,
+  "source_edits": 0,
+  "scientific_admission": "NO_GO"
+}

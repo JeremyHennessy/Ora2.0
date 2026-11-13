@@ -1,0 +1,417 @@
+{
+  "schema": "EKA-ORDINARY-LEARNING-VERSUS-EFFICIENT-ALTERNATOR-v1",
+  "scope": "CONDITIONAL_PAID_SOURCE_PREFIXES_NOT_SCIENTIFIC_EXECUTION",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "ordinary_success_gated": {
+    "authority_and_origin": "The accepted symbolic9slot success-gated layout is reused as a conditional ordinary-COPY daughter outcome. No new genome array or introduced population is made. All desired values must already be legal0..31COPY outcomes, but an actual joint seed/mutation event, intermediate lineage or selection probability is UNKNOWN and not queried. Parent owns unchanged ancestor code and pays27wordCOPY plus existing formation; daughter private state is blank,E12,site0.",
+    "fixed_parent_schedule": "Parent firstbirth70; if only parent0/child1 exist, childowni occurs70+2i-1. Parent Aforagepairs94/98,126/130,158/162,190/194; parentfirstport0 on158/190. Parent nextdivisionown142 would be later than all daughterfirstbirths175..195, so exactlytwoactorsuntilthisfirstbirth. Parent owncode/nurserycontents cannot be changed by daughterCOPY.",
+    "early_child_schedule": "TargetA0 coldprobe succeeds atglobal71, then successfulFORAGE every12globalticks: eighth155,ninthscheduled167. TargetA1 coldprobe fails at71 and paysREAD/IF/SET/XOR; success81, then every12: eighth165,ninthscheduled177. All earlier childsuccessfulmeals address initial0..15class underphase>=64; two parentAmeals occurred beforethecritical158/162pair.",
+    "critical_A0": "Beforechildeighth155,parent5+post2+child7=14packets consumed. Child0eats14 at155; parent0eats15 at158; parent1at162eats16 iff late16is1. Childheldport0 at167 seespacket16(T0ifparentleftit) or17. It fails only when late16=late17=1, retriesport1 at177 beforeparentnextA190; otherwise no late miss.",
+    "critical_A1": "Childseven successes consumed7 plusparent5+post2=14before158. Parent0misses14 at158; parent1eats14 at162. Childeighth1eats15 at165; ninthheld1at177 sees16. If late16is0 it paysfive extraactions and retries0at187, beforeparentA190; otherwise succeedsat177. Parent190/194 occurs afterchildlastfood even inlatebirth195 case.",
+    "funding_and_costs": "Coldwrongprobe path costs5 beforethe first success; E12\u21927 then success replenishes. A0/A1 firstsuccessfulcycle ends23/18; recurring known-port successcycles gain20 and pay6base+3COPYextra, reaching E56 aftercap beforethelastcycle. Late miss5 leavesE51 beforecorrectFORAGE, which still caps at64; READ/IF/COPY(base+3)/DIVIDEbase then30 leaves27. All9COPYactions paid, intermediateDIVIDErefusals charged, foodsuccesses9, failedprobes0..2. At most132parentturns and63daughterturns,147/150materialunits,3entitiesafterbirth; guards below256/512/32.",
+    "phase_and_stock": "No64or2048phaseflip duringchild71..195. Global128/192 foodoffers do not replace lower-numbered initial packets14..18. Late special-packet targets16..18 cover every symbolic bitcase without reading latent hashes. Initialsite0contains32packets, released16..31available after64. Parent site2 stock remains belowinitial16consumption and alive; criticalAparentpair getsatleastonefood.",
+    "histogram_of_symbolic_first_births": {
+      "175": 6,
+      "185": 6,
+      "195": 4
+    },
+    "matched_reference_scope": "Previously source-qualified ordinary stationary nonlearning two-wordcontrol firstbirth177global and one-wordcontrol193global. Relative to177, this witness is earlier in6symbolicrows, laterin10; relativeto193 earlierin12,laterin4. These rowcounts describe a complete symbolic case split, not actual seed probabilities. References mayconsume9..10or9..11foods versus9here; parentenergy27..29vs27here. Count food/heat/capspill explicitly before any fitness ranking.",
+    "limits": "No ordinary organism was executed, observed to learn or evolve. This is neither a source-law change nor a scientific population admission. A static authored witness is not an emerged capability. Fully matched causal erasure/sham/unseen and fullpopulation resource/fitness outcomes remain unqualified."
+  },
+  "learner_case_summary": [
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        0,
+        0,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        0,
+        0,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        0,
+        1,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        0,
+        1,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        1,
+        0,
+        0
+      ],
+      "last_packet_before_ninth_success": 17,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        1,
+        0,
+        1
+      ],
+      "last_packet_before_ninth_success": 17,
+      "last_target": 0,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 53,
+      "first_birth_global": 175,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 55,
+      "material_units_after_birth": 147
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        1,
+        1,
+        0
+      ],
+      "last_packet_before_ninth_success": 17,
+      "last_target": 1,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 0,
+      "late_targets16_17_18": [
+        1,
+        1,
+        1
+      ],
+      "last_packet_before_ninth_success": 17,
+      "last_target": 1,
+      "cold_failed_probes": 0,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        0,
+        0,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 63,
+      "first_birth_global": 195,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 45,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        0,
+        0,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 63,
+      "first_birth_global": 195,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 45,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        0,
+        1,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 63,
+      "first_birth_global": 195,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 45,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        0,
+        1,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 0,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 1,
+      "first_birth_own_dispatch": 63,
+      "first_birth_global": 195,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 45,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        1,
+        0,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 1,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        1,
+        0,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 1,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        1,
+        1,
+        0
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 1,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    },
+    {
+      "post64_initial_A": 1,
+      "late_targets16_17_18": [
+        1,
+        1,
+        1
+      ],
+      "last_packet_before_ninth_success": 16,
+      "last_target": 1,
+      "cold_failed_probes": 1,
+      "late_failed_probes": 0,
+      "first_birth_own_dispatch": 58,
+      "first_birth_global": 185,
+      "successful_foods": 9,
+      "parent_energy": 27,
+      "newborn_energy": 12,
+      "COPY_extra": 27,
+      "DIVIDE_extra": 30,
+      "cap_spill": 50,
+      "material_units_after_birth": 150
+    }
+  ],
+  "efficient_no_feedback_alternator": {
+    "static_witness": "Nine slots/27words:0SET constant1,1FORAGEport0register,2XORport byconstant,3COPY,4DIVIDE,5JUMP1;6..8unreachable. This is a nonexecuting symbolic reference, not an introduced genome. It alternates port without reading feedback, and attempts COPY even after a failed forage. Intrinsic COPY/DIVIDE guards are charged, not waived.",
+    "ordinary_format": "A four-word COPY outcome changes oldpc3FORAGEopcode6toCOPY10, oldpc4COPY10toDIVIDE12, oldpc5DIVIDE12toJUMP7 and its targetoperand0to1; other23words faithful. Offsets4/2/27/1 are source-format legal; no actual joint mutation event, seed, likelihood or selection was queried. Parentcode remainsunchanged and pays ordinary birth70. All offspring code length/material/startup requirements remainunchanged.",
+    "closed_form": "BeforeDIVIDEn, energy=12+20H_n-5n-3min(n,9), because one initialSET plus prior cycles/currentprefix placesDIVIDEatown5n. H_n=ceil(n/2) for target0 or floor(n/2) for target1. First full nursery is9COPYactions. Target0 divides atn9; target1 refuses n9atE20, then n10COPYfull refusal paysbasebutnoextra andDIVIDEatE35succeeds.",
+    "ordinary_stock_and_phase_guard": "Before firstbirth159/169, totalAconsumption<=parent5beforebirth+3laterAmeals+child5=13<16, so no specialcohort crossing is needed. Parentotherfoodcomesfrominitialsite2withadequatestock. ChildsuccessfulFORAGEs are73/93/113/133/153 forA0 or83/103/123/143/163 forA1, allafter64andbefore2048. Parent190/194isafterbothbirths; its158/162pair doesnot remove the initial16class. Input128doesnotreplace oldlowpacket IDs. Parentown114/119<nextDIVIDE142 means onlytwoactorsuntilchildbirth; resourcebound144/147 andage45/50,parent114/119 belowcaps.",
+    "comparison": "All costs are paid, including failedforages and refusedCOPY/DIVIDE. This conditional nonlearning reference produces firstoffspring atglobal159/169 using5meals, whereas the ordinary success-gated source cases reach175/185/195 using9meals. It starts the next parent cycle with only10/5energy versus27, so this is a resource/timing versus parental-reserve tradeoff, not uniform survival or long-term fitness dominance. No new scalar reward or posthoc fitness score is introduced.",
+    "causal_scope": "Skipping redundant food via feedback is not by itself a conservation achievement: an unconditional lower-duty-cycle strategy already usesfourfewermeals here. Exact success-gated ordinary comparison must include this cheaper no-feedback control, parent survival, offspring outcomes, resource leftovers, causal erasure/sham and unseenconditions. A mutation-format/legal cost witness is not emergence."
+  },
+  "alternator_case_summary": [
+    {
+      "post64_initial_target_A": 0,
+      "first_birth_own_dispatch": 45,
+      "ordinary_conditional_first_birth_global": 159,
+      "food_successes": 5,
+      "failed_forages": 4,
+      "COPY_extra": 27,
+      "division_extra": 30,
+      "cap_spill": 0,
+      "parent_energy": 10,
+      "newborn_energy": 12,
+      "parent_reserve_tradeoff": 17,
+      "material_units_upper": 144
+    },
+    {
+      "post64_initial_target_A": 1,
+      "first_birth_own_dispatch": 50,
+      "ordinary_conditional_first_birth_global": 169,
+      "food_successes": 5,
+      "failed_forages": 5,
+      "COPY_extra": 27,
+      "division_extra": 30,
+      "cap_spill": 0,
+      "parent_energy": 5,
+      "newborn_energy": 12,
+      "parent_reserve_tradeoff": 22,
+      "material_units_upper": 147
+    }
+  ],
+  "scope_of_comparison": "The success-gated witness has9successful meals and parent27; the no-feedback alternator has5 and parent10/5. Both pay formation/COPY/base/refusal costs. Alternate firstoffspring159/169 precedes learner175/185/195, but its parent has less reserve. Do not claim complete fitness/survival dominance or a distribution of source seeds; full descendant outcomes and resource leftovers remain required.",
+  "decision": "CONDITIONAL_ORDINARY_FIRST_BIRTH_FEASIBILITY_SUPPORTED;USEFUL_LEARNING_ADVANTAGE_NOT_DEMONSTRATED;PARENTAL_SURVIVAL_RESOURCE_TRADEOFF_UNRESOLVED",
+  "next": "Analyze postbirth survival/resource control under the same laws. One narrow source hypothesis is nursery-completion sensing after refusedDIVIDE as a paid trigger for productive navigation when copied but energy-poor. Guard logic/affordability/reachable ordinary scarcity and stronger fixed controls must be proved; do not equate body-state control with learned food memory.",
+  "scientific_execution": 0,
+  "native_execution": 0,
+  "genotype_arrays": 0,
+  "seed_queries": 0,
+  "scientific_admission": "NO_GO",
+  "provenance": {
+    "check.py": "215fb0c14dae7bffaa23864a419f53eb293e7891d07e89ce878ac2295100b025",
+    "result.json": "f649c273cb4aa3aaab7474e7831ac5572cdc5e6ee8668bfed4f022894034fe9f",
+    "independent-review.json": "ce0fb88f2225be2323dbb2bb07ef6151978679db7d260f41ee34ae06b59bd7db",
+    "alternating-control.py": "fdd898022ea8859dcd713f3c1d2173e5f1bfeaf5a055e320abdd8907e746eb28",
+    "alternating-control-result.json": "ad03af772912f5f3d536d4a1803c9c8abd918acd5b51dc985a5df1bdbd5bda1e",
+    "alternating-review.json": "004b26d15b865fb1eeffe7e12ddef9fab323e55042e81674da9a13fc54f2c149",
+    "scope": "Public summaries match retained full scalar ledgers. No World/VM imports, no genotype insertion, no hash/seed query or new executable CI. Independent exact-publication review required."
+  }
+}

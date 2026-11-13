@@ -1,0 +1,128 @@
+{
+  "scope": "PERSONAL_INFORMATION_PREFIX_AFFORDABILITY_CONDITIONAL_NOT_UTILITY_OR_GENOTYPE",
+  "publication_head": "c96856919686d44419240f44d450268b3e6aeb53",
+  "source_unchanged_from": "4aaa501054b78bfde3b9598f63522dadb3254633",
+  "source_sha256": {
+    "experiments/digital_pressure71_population.py": "cf22e109878bae6ac6b22e0563c8593f1c93e8ac03296a9ed9cd0cd43e1400de",
+    "experiments/digital_sharedlineage68_population.py": "624e861387ceac70e4c2413ed852228db08f6b1ebd774e442732650ae2103609"
+  },
+  "source_lines": {
+    "initial_site_mapping": "digital_sharedlineage68_population.py:50",
+    "newborn_empty_state": "digital_sharedlineage68_population.py:55-58",
+    "base_fee": "digital_pressure71_population.py:67",
+    "READ_SET": "digital_pressure71_population.py:72,75",
+    "own_FORAGE_feedback_and_gain": "digital_pressure71_population.py:78-87",
+    "parent_COPY_formation": "digital_pressure71_population.py:95-113",
+    "MOVE": "digital_pressure71_population.py:114",
+    "expiry": "digital_pressure71_population.py:130-133"
+  },
+  "conditional_prefixes": {
+    "born_at0": "With both registers0, an even-direction MOVE reaches3. A personally chosen port0 FORAGE followed by READ of its feedback uses3paid instructions in total. No target bit is supplied.",
+    "born_at2": "SET odd direction in the OTHER register, preserving the probe register0; odd MOVE reaches3; port0 FORAGE and READ use4paid instructions in total. No target bit is supplied.",
+    "separate_not_unified": "These are separate position-conditioned source-action prefixes. They are NOT one common nine-instruction controller. Costs of sensing birth position, branches, jumps and unified routing have not been proved or waived."
+  },
+  "four_scalar_cases": [
+    {
+      "birth_position": 0,
+      "symbolic_available_renewed_target": 0,
+      "paid_own_dispatches": 3,
+      "energy_prefix": [
+        11,
+        30,
+        29
+      ],
+      "food_packets_consumed": 1,
+      "gross_food_energy": 20,
+      "cap_spill": 0,
+      "retained_personal_feedback_bit": 1,
+      "decoded_target_if_polarity_is_later_corrected": 0,
+      "new_COPY_writes": 0,
+      "new_births": 0,
+      "expiry": false
+    },
+    {
+      "birth_position": 0,
+      "symbolic_available_renewed_target": 1,
+      "paid_own_dispatches": 3,
+      "energy_prefix": [
+        11,
+        10,
+        9
+      ],
+      "food_packets_consumed": 0,
+      "gross_food_energy": 0,
+      "cap_spill": 0,
+      "retained_personal_feedback_bit": 0,
+      "decoded_target_if_polarity_is_later_corrected": 1,
+      "new_COPY_writes": 0,
+      "new_births": 0,
+      "expiry": false
+    },
+    {
+      "birth_position": 2,
+      "symbolic_available_renewed_target": 0,
+      "paid_own_dispatches": 4,
+      "energy_prefix": [
+        11,
+        10,
+        29,
+        28
+      ],
+      "food_packets_consumed": 1,
+      "gross_food_energy": 20,
+      "cap_spill": 0,
+      "retained_personal_feedback_bit": 1,
+      "decoded_target_if_polarity_is_later_corrected": 0,
+      "new_COPY_writes": 0,
+      "new_births": 0,
+      "expiry": false
+    },
+    {
+      "birth_position": 2,
+      "symbolic_available_renewed_target": 1,
+      "paid_own_dispatches": 4,
+      "energy_prefix": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "food_packets_consumed": 0,
+      "gross_food_energy": 0,
+      "cap_spill": 0,
+      "retained_personal_feedback_bit": 0,
+      "decoded_target_if_polarity_is_later_corrected": 1,
+      "new_COPY_writes": 0,
+      "new_births": 0,
+      "expiry": false
+    }
+  ],
+  "conditional_finding": "PASS: once a legitimately funded newborn and an available renewed packet at site3 are premises, either separate prefix can pay for a genuine personal feedback-dependent register bit within startup12. It endsenergy9or29 fromsite0,8or28 fromsite2. This establishes local conditional information-acquisition affordability, not correct use or advantage.",
+  "polarity": "At chosen port0, f=int(0==T)=1-T. READ therefore stores the informative COMPLEMENT, not the correct port. A later decoding/action mechanism must be paid and independently proved; no correct-action or learned survival claim follows here.",
+  "site3_frontier": "Site3 has no initial packets under the constructor mapping; any available packet there must come from renewed inflow with ID>=64. Synchronous offers alone do not prove current availability. The explicit premise is an actually admitted packet surviving until the child FORAGE, with no intervening consumer; this is never a privileged availability or target input to the organism.",
+  "ancestry_costs_unresolved": "Ordinary founder-derived offspring begin with empty private registers/memory and12startup only because parent formation already paid30extra beyond base, including that12. For27words,9successfulCOPY actions add27extra beyond9base, formation adds30extra beyond1base: parent total67minimum including those10base actions,57extra,43newmaterialunits. Do not bill daughter12 a second time. Full legal parent feeding, COPY/control, material guards, age, birth position and causal mutation history remain unproved; newborn startup is not an energy donation inserted by this analysis.",
+  "actual_reachability": "UNKNOWN. No newborn, mutation or genotype was created. The fixed founder supplies its unchanged instruction sequence; ordinary mutations would have to generate a compatible route/acquisition prefix in a27word child. Separate prefix fit is not complete nine-instruction representability or proof of mutation occurrence/probability.",
+  "remaining_paid_costs": "Location sensing/unified branches, port-polarity correction, retention under future work, retrieval and future forage/control all remain outside this prefix and must be charged. Three/four own actions cannot reach child expiry256, but parent and subsequent global/own timing remain unresolved.",
+  "comparators_and_causality": "Future tests must separate paid information acquisition from use and advantage: fixed/reactive and free-stay references, sham/erasure/nonpredictive information and untouched conditions. A simple naturally acquired finite-state cache is a valuable positive mechanism comparator, not a capability the learner must surpass.",
+  "decision": {
+    "conditional_personal_feedback_acquisition_affordability": "PASS",
+    "complete_paid_ordinary_mutant_prefix": "UNKNOWN",
+    "correct_target_action": "NOT_ESTABLISHED",
+    "net_survival_or_reproductive_advantage": "UNKNOWN",
+    "evolved_or_inherited_learning": "NOT_TESTED"
+  },
+  "prior_evidence": "All previous counterexamples/falsifiers and original setup failures retained. This does not reopen them or promote native/scientific admission.",
+  "scientific_imports": 0,
+  "World_or_VM_or_population_or_replay_execution": 0,
+  "seed_or_hash_output_queries": 0,
+  "variant_genome_arrays_constructed": 0,
+  "source_edits": 0,
+  "organisms_learned": "NOT_TESTED",
+  "scientific_admission": "NO_GO",
+  "publication_provenance": {
+    "raw_result_sha256": "01ea1d51ae936333d326c95336016799ca615748ee729ff06c44cbea019df6fb",
+    "check_script_sha256": "457488ecc4e5fa61b3f2d481409c13e477e2a1778734205160796ead41f96aea",
+    "independent_review_sha256": "9003fc93dfaa62d4a82d9c688a181d06bc252c664b9311bf61f6d891af820fbb",
+    "method": "Pinned scientific source AST and fixed symbolic/scalar reasoning only; no scientific code import, VM/World/replay/population, target-hash queries or new genotype. Detailed scripts and original receipts remain in local drafts."
+  }
+}

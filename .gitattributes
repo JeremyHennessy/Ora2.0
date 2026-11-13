@@ -1,2 +1,4 @@
 # Preserve the frozen manifest byte identity across Windows checkouts.
 data/digital-neutral-tail42-manifest.json -text
+prototypes/noisy_credit/** -text
+data/noisy-credit-20261026/** -text
