@@ -1,5 +1,7 @@
 # Ora 2.0 — Artificial Life Research Laboratory
 
+**Latest research decision (13 November 2026):** [AL02/AL03 → Candidate B/C → OEB-01 evidence and Avida archive-first pivot](research/2026-11-13-status/RESEARCH-STATUS.md), with [source/custody register](research/2026-11-13-status/SOURCE-REGISTER.md). Documentation only; no new scientific execution authority.
+
 **Status (2026-10-08): independent catalytic, heredity, ecological and spatial-organization experiments with reproducible negative controls. No demonstrably living, autonomous or self-sustaining digital organism has been created.**
 
 ## Research mission
